@@ -1,4 +1,4 @@
-# Mafh-Island · MathCups 数学群岛
+# Math-Island · MathCups 数学群岛
 
 **[中文完整说明](README.zh-CN.md) · [Full documentation in English](README.en.md)**
 
