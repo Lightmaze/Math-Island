@@ -1,0 +1,17 @@
+import {useState} from 'react';
+import {heatValue,heatEnergy} from './models';
+import {Axes,Frame,Readout,Slider,Svg,tr,palette,plotScale,path,number,type AdvancedProps} from './shared';
+export default function HeatLab({language,onExplore}:AdvancedProps) {
+  const [time,setTime]=useState(.12),[amplitude,setAmplitude]=useState(.8);
+  const s=plotScale(-Math.PI,Math.PI,-2.7,2.7,340,48);
+  const samples=(t:number)=>Array.from({length:361},(_,i)=>{const x=-Math.PI+2*Math.PI*i/360;return [x,heatValue(x,t,amplitude)] as [number,number]});
+  const first=Math.exp(-time),third=amplitude*Math.exp(-9*time);
+  return <Frame title={tr(language,'高频纹理比低频更快消退','High frequencies fade faster')} formula="∂ₜu = ∂ₓₓu · u(x,0)=sin x+a sin 3x" description={tr(language,'虚线是初始温度，实线是扩散后的温度。拖动时间，观察细密的三阶波纹先退去，而宽阔的一阶波仍然存在。','The dashed curve is the initial temperature; the solid curve is its diffused state. Move time forward: the fine third-harmonic texture fades before the broad first harmonic.')} metrics={[{label:tr(language,'一阶模态振幅','First-mode amplitude'),value:number(first)},{label:tr(language,'三阶模态振幅','Third-mode amplitude'),value:number(third)},{label:tr(language,'能量 ∫u² dx','Energy ∫u² dx'),value:number(heatEnergy(time,amplitude))}]} readout={<Readout language={language} summary={tr(language,`时间 t=${number(time,2)} 时，一阶振幅为 ${number(first,5)}，三阶振幅为 ${number(third,5)}；能量从 ${number(heatEnergy(0,amplitude),5)} 变为 ${number(heatEnergy(time,amplitude),5)}，周期平均值仍为 0。`,`At t=${number(time,2)}, the first-mode amplitude is ${number(first,5)} and the third-mode amplitude is ${number(third,5)}. Energy changes from ${number(heatEnergy(0,amplitude),5)} to ${number(heatEnergy(time,amplitude),5)}; the periodic mean remains 0.`)} caption={tr(language,'一个周期的九个采样点；数值近似','Nine samples across one period; numerical approximations')} headers={['x','u(x,0)',`u(x,${number(time,2)})`]} rows={Array.from({length:9},(_,i)=>{const x=-Math.PI+i*Math.PI/4;return [number(x,4),number(heatValue(x,0,amplitude),5),number(heatValue(x,time,amplitude),5)]})}/>} boundary={tr(language,'区域是长度 2π 的周期圆周，扩散系数为 1。图示为精确双模态解的有限采样，而非对任意热方程边界问题的通用数值解。均值保持 0，能量随时间下降。','The domain is a circle of period 2π and diffusivity is 1. The chart samples an exact two-mode solution, not a general PDE solver. The mean stays zero and energy decreases.')} controls={<><Slider label={tr(language,'扩散时间 t','Diffusion time t')} value={time} min={0} max={1} step={.01} onChange={v=>{setTime(v);onExplore?.()}} format={v=>number(v,2)}/><Slider label={tr(language,'初始高频振幅 a','Initial high-frequency amplitude a')} value={amplitude} min={0} max={1.5} step={.1} onChange={v=>{setAmplitude(v);onExplore?.()}} format={v=>number(v,1)}/></>}>
+    <Svg language={language} title={tr(language,'周期热方程的双模态扩散','Two-mode diffusion of the periodic heat equation')} description={tr(language,'对比初始波形与时间t后的波形，两个模态分别按exp(-t)和exp(-9t)衰减。','The first and third harmonics decay by exp(-t) and exp(-9t), respectively.')} height={340}>
+      <Axes scale={s} xTicks={[-Math.PI,0,Math.PI]} yTicks={[-2,-1,0,1,2]} yLabel="u"/>
+      <path d={path(samples(0),s.x,s.y)} fill="none" stroke={palette.muted} strokeWidth={1.8} strokeDasharray="6 6" opacity={.7}/>
+      <path d={path(samples(time),s.x,s.y)} fill="none" stroke={palette.teal} strokeWidth={3.5}/>
+      <line x1={75} x2={103} y1={27} y2={27} stroke={palette.muted} strokeDasharray="5 4"/><text x={113} y={31}>t = 0</text><line x1={202} x2={230} y1={27} y2={27} stroke={palette.teal} strokeWidth={3}/><text x={240} y={31}>t = {number(time,2)}</text>
+    </Svg>
+  </Frame>;
+}

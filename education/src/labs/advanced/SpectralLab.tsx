@@ -1,0 +1,19 @@
+import {useState} from 'react';
+import {dirichletEigenmode} from './models';
+import {Frame,Readout,Slider,Svg,tr,palette,number,type AdvancedProps} from './shared';
+export default function SpectralLab({language,onExplore}:AdvancedProps) {
+  const [n,setN]=useState(8),[k,setK]=useState(2), model=dirichletEigenmode(n,k);
+  const x=(j:number)=>64+j/(n+1)*592,y=(v:number)=>145-v*145;
+  const points=[0,...model.vector,0];
+  return <Frame title={tr(language,'离散弦的本征态','Eigenmodes of a discrete string')} formula="Lv = λv · L = tridiag(−1,2,−1)" description={tr(language,'每个点是弦上的一个自由度，两端固定为零。选择模态，看拉普拉斯算子如何只缩放这个形状，而不改变其方向。','Each point is one degree of freedom; both endpoints are fixed at zero. Choose a mode and see a shape the Laplacian scales without changing direction.')} metrics={[{label:tr(language,'本征值 λ','Eigenvalue λ'),value:number(model.lambda,4)},{label:tr(language,'向量长度 ‖v‖₂','Vector norm ‖v‖₂'),value:number(Math.hypot(...model.vector))},{label:tr(language,'残差 ‖Lv−λv‖∞','Residual ‖Lv−λv‖∞'),value:model.residual.toExponential(1)}]} readout={<Readout language={language} summary={tr(language,`当前 N=${n}、k=${k}，λ≈${number(model.lambda,6)}，两端分量为 0。下表逐分量比较 Lv 与 λv；最大差为 ${model.residual.toExponential(2)}。`,`Currently N=${n}, k=${k}, and λ≈${number(model.lambda,6)}; both boundary entries are 0. Compare Lv with λv component by component below; their maximum difference is ${model.residual.toExponential(2)}.`)} caption={tr(language,'归一化本征向量与算子作用；显示六位小数','Normalized eigenvector and operator action; six decimal places')} headers={['j','vⱼ','(Lv)ⱼ','λvⱼ']} rows={model.vector.map((v,j)=>[j+1,number(v,6),number(model.applied[j],6),number(model.lambda*v,6)])}/>} boundary={tr(language,'这是有限维实对称矩阵，Dirichlet 边界 v₀=vₙ₊₁=0，未乘以网格步长的 h⁻² 因子。连接线只帮助阅读离散样本；该实验没有把无穷维算子的定义域问题省略为矩阵。','This is a finite real symmetric matrix with Dirichlet boundaries v₀=vₙ₊₁=0, without an h⁻² grid scaling factor. Lines connect discrete samples for readability. This finite model does not remove domain questions for infinite-dimensional operators.')} controls={<><Slider label={tr(language,'内部格点数 N','Interior points N')} value={n} min={4} max={12} onChange={v=>{setN(v);setK(Math.min(k,v));onExplore?.()}}/><Slider label={tr(language,'模态编号 k','Mode k')} value={k} min={1} max={n} onChange={v=>{setK(v);onExplore?.()}}/></>}>
+    <Svg language={language} title={tr(language,'离散拉普拉斯的正弦本征向量','Sine eigenvectors of a discrete Laplacian')} description={tr(language,'上方是选中的归一化本征向量，下方谱线表示全部本征值的位置。','The upper plot is the selected normalized eigenvector; the lower spectrum marks every eigenvalue.')} height={350}>
+      <line x1={64} x2={656} y1={145} y2={145} stroke={palette.line}/><text x={24} y={149}>0</text>
+      <polyline points={points.map((v,j)=>`${x(j)},${y(v)}`).join(' ')} fill="none" stroke={palette.teal} strokeWidth={2.7}/>
+      {points.map((v,j)=><g key={j}><line x1={x(j)} x2={x(j)} y1={145} y2={y(v)} stroke={palette.teal} opacity={.3}/><circle cx={x(j)} cy={y(v)} r={j===0||j===n+1?5:6} stroke={j===0||j===n+1?palette.muted:palette.teal} strokeWidth={2} fill={j===0||j===n+1?palette.paper:palette.teal}/><text x={x(j)} y={245} textAnchor="middle" className="advanced-note">{j}</text></g>)}
+      <text x={360} y={29} textAnchor="middle">vⱼ = √(2/(N+1)) sin(jkπ/(N+1))</text>
+      <line x1={64} x2={656} y1={300} y2={300} stroke={palette.line}/><text x={24} y={305} className="advanced-math-label">λ</text>
+      {Array.from({length:n},(_,i)=>dirichletEigenmode(n,i+1)).map(mode=><g key={mode.k}><line x1={64+mode.lambda/4*592} x2={64+mode.lambda/4*592} y1={mode.k===k?275:287} y2={312} stroke={mode.k===k?palette.copper:palette.muted} strokeWidth={mode.k===k?4:1.8}/>{mode.k===k&&<circle cx={64+mode.lambda/4*592} cy={273} r={4} fill={palette.copper}/>}</g>)}
+      <text x={64} y={335}>0</text><text x={656} y={335} textAnchor="end">4</text>
+    </Svg>
+  </Frame>;
+}

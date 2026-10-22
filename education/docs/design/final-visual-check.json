@@ -1,0 +1,1199 @@
+{
+  "checkedAt": "2026-10-22T14:47:54.480Z",
+  "base": "http://127.0.0.1:33049/",
+  "buildIndexModified": "2026-10-22T14:44:32.786Z",
+  "served": "Existing final production dist/; visual reviewer did not rebuild",
+  "browser": "Playwright Chromium; Browser js/runtime tool absent after discovery",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1505,
+      "height": 1045,
+      "language": "zh",
+      "title": "数学群岛",
+      "heading": "数学，在岛屿间生长",
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1505,
+        "height": 78,
+        "right": 1505,
+        "bottom": 78
+      },
+      "brand": {
+        "x": 134,
+        "y": 22.296875,
+        "width": 129.609375,
+        "height": 32.390625,
+        "right": 263.609375,
+        "bottom": 54.6875
+      },
+      "languageControls": {
+        "x": 1385.5,
+        "y": 16.5,
+        "width": 87.5,
+        "height": 44,
+        "right": 1473,
+        "bottom": 60.5
+      },
+      "map": {
+        "x": 0,
+        "y": 78,
+        "width": 1155,
+        "height": 967,
+        "right": 1155,
+        "bottom": 1045
+      },
+      "dock": {
+        "x": 1155,
+        "y": 78,
+        "width": 350,
+        "height": 967,
+        "right": 1505,
+        "bottom": 1045
+      },
+      "horizontalOverflow": false,
+      "outerStopCount": 24,
+      "svgInNamedButtons": 0,
+      "siblingDecorativeSvg": true,
+      "copper": "#a95430",
+      "targets": {
+        "domains": [
+          {
+            "text": "全部海域",
+            "x": 30,
+            "y": 303,
+            "width": 83,
+            "height": 38.296875,
+            "right": 113,
+            "bottom": 341.296875
+          },
+          {
+            "text": "数论与算术",
+            "x": 30,
+            "y": 341.296875,
+            "width": 97,
+            "height": 38.296875,
+            "right": 127,
+            "bottom": 379.59375
+          },
+          {
+            "text": "代数与结构",
+            "x": 30,
+            "y": 379.59375,
+            "width": 97,
+            "height": 38.296875,
+            "right": 127,
+            "bottom": 417.890625
+          },
+          {
+            "text": "交换代数",
+            "x": 30,
+            "y": 417.890625,
+            "width": 83,
+            "height": 38.296875,
+            "right": 113,
+            "bottom": 456.1875
+          },
+          {
+            "text": "代数几何",
+            "x": 30,
+            "y": 456.1875,
+            "width": 83,
+            "height": 38.296875,
+            "right": 113,
+            "bottom": 494.484375
+          },
+          {
+            "text": "范畴与同调",
+            "x": 30,
+            "y": 494.484375,
+            "width": 97,
+            "height": 38.296875,
+            "right": 127,
+            "bottom": 532.78125
+          },
+          {
+            "text": "几何与拓扑",
+            "x": 30,
+            "y": 532.78125,
+            "width": 97,
+            "height": 38.296875,
+            "right": 127,
+            "bottom": 571.078125
+          },
+          {
+            "text": "分析与微分方程",
+            "x": 30,
+            "y": 571.078125,
+            "width": 125,
+            "height": 38.296875,
+            "right": 155,
+            "bottom": 609.375
+          },
+          {
+            "text": "概率与统计",
+            "x": 30,
+            "y": 609.375,
+            "width": 97,
+            "height": 38.296875,
+            "right": 127,
+            "bottom": 647.671875
+          },
+          {
+            "text": "离散与计算",
+            "x": 30,
+            "y": 647.671875,
+            "width": 97,
+            "height": 38.296875,
+            "right": 127,
+            "bottom": 685.96875
+          },
+          {
+            "text": "逻辑与基础",
+            "x": 30,
+            "y": 685.96875,
+            "width": 97,
+            "height": 38.296875,
+            "right": 127,
+            "bottom": 724.265625
+          },
+          {
+            "text": "数值与优化",
+            "x": 30,
+            "y": 724.265625,
+            "width": 97,
+            "height": 38.296875,
+            "right": 127,
+            "bottom": 762.5625
+          },
+          {
+            "text": "数学物理与应用",
+            "x": 30,
+            "y": 762.5625,
+            "width": 125,
+            "height": 38.296875,
+            "right": 155,
+            "bottom": 800.859375
+          }
+        ],
+        "language": [
+          {
+            "text": "中文",
+            "x": 1385.5,
+            "y": 16.5,
+            "width": 30,
+            "height": 44,
+            "right": 1415.5,
+            "bottom": 60.5
+          },
+          {
+            "text": "EN",
+            "x": 1443,
+            "y": 16.5,
+            "width": 30,
+            "height": 44,
+            "right": 1473,
+            "bottom": 60.5
+          }
+        ],
+        "index": [
+          {
+            "text": "岛屿目录24",
+            "x": 30,
+            "y": 937,
+            "width": 112.234375,
+            "height": 38,
+            "right": 142.234375,
+            "bottom": 975
+          }
+        ],
+        "journeyLabel": [
+          {
+            "text": "策展学习路径选择一条学习路径频率，怎样组织热的演化？局部的地图，能拼成世界吗？一片森林里藏着什么结构？随机之中，什么会稳定下来？",
+            "x": 152.234375,
+            "y": 937,
+            "width": 197,
+            "height": 38,
+            "right": 349.234375,
+            "bottom": 975
+          }
+        ],
+        "journeyNativeSelect": [
+          {
+            "text": "选择一条学习路径频率，怎样组织热的演化？局部的地图，能拼成世界吗？一片森林里藏着什么结构？随机之中，什么会稳定下来？",
+            "x": 163.234375,
+            "y": 938,
+            "width": 157,
+            "height": 36,
+            "right": 320.234375,
+            "bottom": 974
+          }
+        ],
+        "mapTools": [
+          {
+            "text": "放大地图",
+            "x": 1088,
+            "y": 832,
+            "width": 42,
+            "height": 42,
+            "right": 1130,
+            "bottom": 874
+          },
+          {
+            "text": "缩小地图",
+            "x": 1088,
+            "y": 874,
+            "width": 42,
+            "height": 42,
+            "right": 1130,
+            "bottom": 916
+          },
+          {
+            "text": "总览24座教学岛",
+            "x": 1088,
+            "y": 916,
+            "width": 42,
+            "height": 42,
+            "right": 1130,
+            "bottom": 958
+          }
+        ],
+        "entry": [
+          {
+            "text": "进入岛屿",
+            "x": 1185,
+            "y": 709.421875,
+            "width": 291,
+            "height": 48.390625,
+            "right": 1476,
+            "bottom": 757.8125
+          }
+        ],
+        "textActions": [
+          {
+            "text": "查看图谱与数学出处",
+            "x": 1185,
+            "y": 896.3125,
+            "width": 291,
+            "height": 32.5,
+            "right": 1476,
+            "bottom": 928.8125
+          }
+        ]
+      },
+      "dynamicTargets": {},
+      "interaction": "Select Symmetry Grove → matching journal and pressed state → D4 laboratory passed.",
+      "errors": [],
+      "warnings": [],
+      "favicon": [
+        {
+          "path": "/favicon.svg",
+          "status": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "status": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "language": "zh",
+      "title": "数学群岛",
+      "heading": "数学，在岛屿间生长",
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 112,
+        "right": 390,
+        "bottom": 112
+      },
+      "brand": {
+        "x": 72,
+        "y": 19.40625,
+        "width": 97.453125,
+        "height": 25.1875,
+        "right": 169.453125,
+        "bottom": 44.59375
+      },
+      "languageControls": {
+        "x": 268.890625,
+        "y": 10,
+        "width": 101.109375,
+        "height": 44,
+        "right": 370,
+        "bottom": 54
+      },
+      "map": {
+        "x": 0,
+        "y": 112,
+        "width": 390,
+        "height": 742.390625,
+        "right": 390,
+        "bottom": 854.390625
+      },
+      "dock": {
+        "x": 0,
+        "y": 840.390625,
+        "width": 390,
+        "height": 538.46875,
+        "right": 390,
+        "bottom": 1378.859375
+      },
+      "horizontalOverflow": false,
+      "outerStopCount": 24,
+      "svgInNamedButtons": 0,
+      "siblingDecorativeSvg": true,
+      "copper": "#a95430",
+      "targets": {
+        "domains": [
+          {
+            "text": "全部海域",
+            "x": 20,
+            "y": 289.390625,
+            "width": 77.015625,
+            "height": 44,
+            "right": 97.015625,
+            "bottom": 333.390625
+          },
+          {
+            "text": "数论与算术",
+            "x": 104.015625,
+            "y": 289.390625,
+            "width": 90.015625,
+            "height": 44,
+            "right": 194.03125,
+            "bottom": 333.390625
+          },
+          {
+            "text": "代数与结构",
+            "x": 201.03125,
+            "y": 289.390625,
+            "width": 90.015625,
+            "height": 44,
+            "right": 291.046875,
+            "bottom": 333.390625
+          },
+          {
+            "text": "交换代数",
+            "x": 298.046875,
+            "y": 289.390625,
+            "width": 77.015625,
+            "height": 44,
+            "right": 375.0625,
+            "bottom": 333.390625
+          },
+          {
+            "text": "代数几何",
+            "x": 382.0625,
+            "y": 289.390625,
+            "width": 77.015625,
+            "height": 44,
+            "right": 459.078125,
+            "bottom": 333.390625
+          },
+          {
+            "text": "范畴与同调",
+            "x": 466.078125,
+            "y": 289.390625,
+            "width": 90.015625,
+            "height": 44,
+            "right": 556.09375,
+            "bottom": 333.390625
+          },
+          {
+            "text": "几何与拓扑",
+            "x": 563.09375,
+            "y": 289.390625,
+            "width": 90.015625,
+            "height": 44,
+            "right": 653.109375,
+            "bottom": 333.390625
+          },
+          {
+            "text": "分析与微分方程",
+            "x": 660.109375,
+            "y": 289.390625,
+            "width": 116.015625,
+            "height": 44,
+            "right": 776.125,
+            "bottom": 333.390625
+          },
+          {
+            "text": "概率与统计",
+            "x": 783.125,
+            "y": 289.390625,
+            "width": 90.015625,
+            "height": 44,
+            "right": 873.140625,
+            "bottom": 333.390625
+          },
+          {
+            "text": "离散与计算",
+            "x": 880.140625,
+            "y": 289.390625,
+            "width": 90.015625,
+            "height": 44,
+            "right": 970.15625,
+            "bottom": 333.390625
+          },
+          {
+            "text": "逻辑与基础",
+            "x": 977.15625,
+            "y": 289.390625,
+            "width": 90.015625,
+            "height": 44,
+            "right": 1067.171875,
+            "bottom": 333.390625
+          },
+          {
+            "text": "数值与优化",
+            "x": 1074.171875,
+            "y": 289.390625,
+            "width": 90.015625,
+            "height": 44,
+            "right": 1164.1875,
+            "bottom": 333.390625
+          },
+          {
+            "text": "数学物理与应用",
+            "x": 1171.1875,
+            "y": 289.390625,
+            "width": 116.015625,
+            "height": 44,
+            "right": 1287.203125,
+            "bottom": 333.390625
+          }
+        ],
+        "language": [
+          {
+            "text": "中文",
+            "x": 268.890625,
+            "y": 10,
+            "width": 44,
+            "height": 44,
+            "right": 312.890625,
+            "bottom": 54
+          },
+          {
+            "text": "EN",
+            "x": 326,
+            "y": 10,
+            "width": 44,
+            "height": 44,
+            "right": 370,
+            "bottom": 54
+          }
+        ],
+        "index": [
+          {
+            "text": "岛屿目录24",
+            "x": 20,
+            "y": 787.390625,
+            "width": 112.234375,
+            "height": 44,
+            "right": 132.234375,
+            "bottom": 831.390625
+          }
+        ],
+        "journeyLabel": [
+          {
+            "text": "策展学习路径选择一条学习路径频率，怎样组织热的演化？局部的地图，能拼成世界吗？一片森林里藏着什么结构？随机之中，什么会稳定下来？",
+            "x": 140.234375,
+            "y": 787.390625,
+            "width": 229.765625,
+            "height": 44,
+            "right": 370,
+            "bottom": 831.390625
+          }
+        ],
+        "journeyNativeSelect": [
+          {
+            "text": "选择一条学习路径频率，怎样组织热的演化？局部的地图，能拼成世界吗？一片森林里藏着什么结构？随机之中，什么会稳定下来？",
+            "x": 151.234375,
+            "y": 788.390625,
+            "width": 189.765625,
+            "height": 42,
+            "right": 341,
+            "bottom": 830.390625
+          }
+        ],
+        "mapTools": [
+          {
+            "text": "放大地图",
+            "x": 326,
+            "y": 586.390625,
+            "width": 44,
+            "height": 44,
+            "right": 370,
+            "bottom": 630.390625
+          },
+          {
+            "text": "缩小地图",
+            "x": 326,
+            "y": 630.390625,
+            "width": 44,
+            "height": 44,
+            "right": 370,
+            "bottom": 674.390625
+          },
+          {
+            "text": "总览24座教学岛",
+            "x": 326,
+            "y": 674.390625,
+            "width": 44,
+            "height": 44,
+            "right": 370,
+            "bottom": 718.390625
+          }
+        ],
+        "entry": [
+          {
+            "text": "进入岛屿",
+            "x": 24,
+            "y": 1093.671875,
+            "width": 342,
+            "height": 49,
+            "right": 366,
+            "bottom": 1142.671875
+          }
+        ],
+        "textActions": [
+          {
+            "text": "查看图谱与数学出处",
+            "x": 24,
+            "y": 1264.171875,
+            "width": 342,
+            "height": 44,
+            "right": 366,
+            "bottom": 1308.171875
+          }
+        ]
+      },
+      "dynamicTargets": {
+        "searchClear": {
+          "width": 44,
+          "height": 44
+        },
+        "indexClose": {
+          "width": 44,
+          "height": 44
+        },
+        "markObserved": {
+          "width": 94,
+          "height": 44
+        },
+        "journalDelete": {
+          "width": 44,
+          "height": 44
+        }
+      },
+      "interaction": "Select Symmetry Grove → matching journal and pressed state → D4 laboratory passed.",
+      "errors": [],
+      "warnings": [],
+      "favicon": [
+        {
+          "path": "/favicon.svg",
+          "status": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "status": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "status": 200
+        },
+        {
+          "path": "/favicon.svg",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "name": "mobile-en",
+      "width": 390,
+      "height": 844,
+      "language": "en",
+      "title": "Math Islands",
+      "heading": "Mathematics grows between islands.",
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 112,
+        "right": 390,
+        "bottom": 112
+      },
+      "brand": {
+        "x": 72,
+        "y": 20,
+        "width": 125.234375,
+        "height": 24,
+        "right": 197.234375,
+        "bottom": 44
+      },
+      "languageControls": {
+        "x": 268.890625,
+        "y": 10,
+        "width": 101.109375,
+        "height": 44,
+        "right": 370,
+        "bottom": 54
+      },
+      "map": {
+        "x": 0,
+        "y": 112,
+        "width": 390,
+        "height": 770.765625,
+        "right": 390,
+        "bottom": 882.765625
+      },
+      "dock": {
+        "x": 0,
+        "y": 868.765625,
+        "width": 390,
+        "height": 563.171875,
+        "right": 390,
+        "bottom": 1431.9375
+      },
+      "horizontalOverflow": false,
+      "outerStopCount": 24,
+      "svgInNamedButtons": 0,
+      "siblingDecorativeSvg": true,
+      "copper": "#a95430",
+      "targets": {
+        "domains": [
+          {
+            "text": "All regions",
+            "x": 20,
+            "y": 317.765625,
+            "width": 87.96875,
+            "height": 44,
+            "right": 107.96875,
+            "bottom": 361.765625
+          },
+          {
+            "text": "Number theory",
+            "x": 114.96875,
+            "y": 317.765625,
+            "width": 117.59375,
+            "height": 44,
+            "right": 232.5625,
+            "bottom": 361.765625
+          },
+          {
+            "text": "Algebra",
+            "x": 239.5625,
+            "y": 317.765625,
+            "width": 70.984375,
+            "height": 44,
+            "right": 310.546875,
+            "bottom": 361.765625
+          },
+          {
+            "text": "Commutative algebra",
+            "x": 317.546875,
+            "y": 317.765625,
+            "width": 155.5625,
+            "height": 44,
+            "right": 473.109375,
+            "bottom": 361.765625
+          },
+          {
+            "text": "Algebraic geometry",
+            "x": 480.109375,
+            "y": 317.765625,
+            "width": 142.515625,
+            "height": 44,
+            "right": 622.625,
+            "bottom": 361.765625
+          },
+          {
+            "text": "Categories & homology",
+            "x": 629.625,
+            "y": 317.765625,
+            "width": 165.359375,
+            "height": 44,
+            "right": 794.984375,
+            "bottom": 361.765625
+          },
+          {
+            "text": "Geometry & topology",
+            "x": 801.984375,
+            "y": 317.765625,
+            "width": 154.3125,
+            "height": 44,
+            "right": 956.296875,
+            "bottom": 361.765625
+          },
+          {
+            "text": "Analysis",
+            "x": 963.296875,
+            "y": 317.765625,
+            "width": 74.375,
+            "height": 44,
+            "right": 1037.671875,
+            "bottom": 361.765625
+          },
+          {
+            "text": "Probability",
+            "x": 1044.671875,
+            "y": 317.765625,
+            "width": 91.703125,
+            "height": 44,
+            "right": 1136.375,
+            "bottom": 361.765625
+          },
+          {
+            "text": "Discrete mathematics",
+            "x": 1143.375,
+            "y": 317.765625,
+            "width": 156.53125,
+            "height": 44,
+            "right": 1299.90625,
+            "bottom": 361.765625
+          },
+          {
+            "text": "Logic & foundations",
+            "x": 1306.90625,
+            "y": 317.765625,
+            "width": 145.3125,
+            "height": 44,
+            "right": 1452.21875,
+            "bottom": 361.765625
+          },
+          {
+            "text": "Numerics & optimization",
+            "x": 1459.21875,
+            "y": 317.765625,
+            "width": 174.5625,
+            "height": 44,
+            "right": 1633.78125,
+            "bottom": 361.765625
+          },
+          {
+            "text": "Mathematical physics",
+            "x": 1640.78125,
+            "y": 317.765625,
+            "width": 155.828125,
+            "height": 44,
+            "right": 1796.609375,
+            "bottom": 361.765625
+          }
+        ],
+        "language": [
+          {
+            "text": "中文",
+            "x": 268.890625,
+            "y": 10,
+            "width": 44,
+            "height": 44,
+            "right": 312.890625,
+            "bottom": 54
+          },
+          {
+            "text": "EN",
+            "x": 326,
+            "y": 10,
+            "width": 44,
+            "height": 44,
+            "right": 370,
+            "bottom": 54
+          }
+        ],
+        "index": [
+          {
+            "text": "Island index24",
+            "x": 20,
+            "y": 815.765625,
+            "width": 131.5625,
+            "height": 44,
+            "right": 151.5625,
+            "bottom": 859.765625
+          }
+        ],
+        "journeyLabel": [
+          {
+            "text": "Curated learning journeyChoose a learning journeyHow do frequencies organize heat flow?Can local maps make a world?What structure hides in a forest?What settles within randomness?",
+            "x": 159.5625,
+            "y": 815.765625,
+            "width": 210.4375,
+            "height": 44,
+            "right": 370,
+            "bottom": 859.765625
+          }
+        ],
+        "journeyNativeSelect": [
+          {
+            "text": "Choose a learning journeyHow do frequencies organize heat flow?Can local maps make a world?What structure hides in a forest?What settles within randomness?",
+            "x": 170.5625,
+            "y": 816.765625,
+            "width": 170.4375,
+            "height": 42,
+            "right": 341,
+            "bottom": 858.765625
+          }
+        ],
+        "mapTools": [
+          {
+            "text": "Zoom in",
+            "x": 326,
+            "y": 614.765625,
+            "width": 44,
+            "height": 44,
+            "right": 370,
+            "bottom": 658.765625
+          },
+          {
+            "text": "Zoom out",
+            "x": 326,
+            "y": 658.765625,
+            "width": 44,
+            "height": 44,
+            "right": 370,
+            "bottom": 702.765625
+          },
+          {
+            "text": "Fit all 24 educational islands",
+            "x": 326,
+            "y": 702.765625,
+            "width": 44,
+            "height": 44,
+            "right": 370,
+            "bottom": 746.765625
+          }
+        ],
+        "entry": [
+          {
+            "text": "Explore this island",
+            "x": 24,
+            "y": 1146.75,
+            "width": 342,
+            "height": 49,
+            "right": 366,
+            "bottom": 1195.75
+          }
+        ],
+        "textActions": [
+          {
+            "text": "View atlas entry & source",
+            "x": 24,
+            "y": 1317.25,
+            "width": 342,
+            "height": 44,
+            "right": 366,
+            "bottom": 1361.25
+          }
+        ]
+      },
+      "dynamicTargets": {},
+      "interaction": "English brand, navigation, headline spacing and mobile target layout checked.",
+      "errors": [],
+      "warnings": [],
+      "favicon": [
+        {
+          "path": "/favicon.svg",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "name": "mobile-320-en",
+      "width": 320,
+      "height": 844,
+      "language": "en",
+      "title": "Math Islands",
+      "heading": "Mathematics grows between islands.",
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 112,
+        "right": 320,
+        "bottom": 112
+      },
+      "brand": {
+        "x": 66,
+        "y": 20,
+        "width": 125.234375,
+        "height": 24,
+        "right": 191.234375,
+        "bottom": 44
+      },
+      "languageControls": {
+        "x": 204.890625,
+        "y": 10,
+        "width": 101.109375,
+        "height": 44,
+        "right": 306,
+        "bottom": 54
+      },
+      "map": {
+        "x": 0,
+        "y": 112,
+        "width": 320,
+        "height": 828.34375,
+        "right": 320,
+        "bottom": 940.34375
+      },
+      "dock": {
+        "x": 0,
+        "y": 926.34375,
+        "width": 320,
+        "height": 589.21875,
+        "right": 320,
+        "bottom": 1515.5625
+      },
+      "horizontalOverflow": false,
+      "outerStopCount": 24,
+      "svgInNamedButtons": 0,
+      "siblingDecorativeSvg": true,
+      "copper": "#a95430",
+      "targets": {
+        "domains": [
+          {
+            "text": "All regions",
+            "x": 20,
+            "y": 375.34375,
+            "width": 87.96875,
+            "height": 44,
+            "right": 107.96875,
+            "bottom": 419.34375
+          },
+          {
+            "text": "Number theory",
+            "x": 114.96875,
+            "y": 375.34375,
+            "width": 117.59375,
+            "height": 44,
+            "right": 232.5625,
+            "bottom": 419.34375
+          },
+          {
+            "text": "Algebra",
+            "x": 239.5625,
+            "y": 375.34375,
+            "width": 70.984375,
+            "height": 44,
+            "right": 310.546875,
+            "bottom": 419.34375
+          },
+          {
+            "text": "Commutative algebra",
+            "x": 317.546875,
+            "y": 375.34375,
+            "width": 155.5625,
+            "height": 44,
+            "right": 473.109375,
+            "bottom": 419.34375
+          },
+          {
+            "text": "Algebraic geometry",
+            "x": 480.109375,
+            "y": 375.34375,
+            "width": 142.515625,
+            "height": 44,
+            "right": 622.625,
+            "bottom": 419.34375
+          },
+          {
+            "text": "Categories & homology",
+            "x": 629.625,
+            "y": 375.34375,
+            "width": 165.359375,
+            "height": 44,
+            "right": 794.984375,
+            "bottom": 419.34375
+          },
+          {
+            "text": "Geometry & topology",
+            "x": 801.984375,
+            "y": 375.34375,
+            "width": 154.3125,
+            "height": 44,
+            "right": 956.296875,
+            "bottom": 419.34375
+          },
+          {
+            "text": "Analysis",
+            "x": 963.296875,
+            "y": 375.34375,
+            "width": 74.375,
+            "height": 44,
+            "right": 1037.671875,
+            "bottom": 419.34375
+          },
+          {
+            "text": "Probability",
+            "x": 1044.671875,
+            "y": 375.34375,
+            "width": 91.703125,
+            "height": 44,
+            "right": 1136.375,
+            "bottom": 419.34375
+          },
+          {
+            "text": "Discrete mathematics",
+            "x": 1143.375,
+            "y": 375.34375,
+            "width": 156.53125,
+            "height": 44,
+            "right": 1299.90625,
+            "bottom": 419.34375
+          },
+          {
+            "text": "Logic & foundations",
+            "x": 1306.90625,
+            "y": 375.34375,
+            "width": 145.3125,
+            "height": 44,
+            "right": 1452.21875,
+            "bottom": 419.34375
+          },
+          {
+            "text": "Numerics & optimization",
+            "x": 1459.21875,
+            "y": 375.34375,
+            "width": 174.5625,
+            "height": 44,
+            "right": 1633.78125,
+            "bottom": 419.34375
+          },
+          {
+            "text": "Mathematical physics",
+            "x": 1640.78125,
+            "y": 375.34375,
+            "width": 155.828125,
+            "height": 44,
+            "right": 1796.609375,
+            "bottom": 419.34375
+          }
+        ],
+        "language": [
+          {
+            "text": "中文",
+            "x": 204.890625,
+            "y": 10,
+            "width": 44,
+            "height": 44,
+            "right": 248.890625,
+            "bottom": 54
+          },
+          {
+            "text": "EN",
+            "x": 262,
+            "y": 10,
+            "width": 44,
+            "height": 44,
+            "right": 306,
+            "bottom": 54
+          }
+        ],
+        "index": [
+          {
+            "text": "Island index24",
+            "x": 20,
+            "y": 873.34375,
+            "width": 131.5625,
+            "height": 44,
+            "right": 151.5625,
+            "bottom": 917.34375
+          }
+        ],
+        "journeyLabel": [
+          {
+            "text": "Curated learning journeyChoose a learning journeyHow do frequencies organize heat flow?Can local maps make a world?What structure hides in a forest?What settles within randomness?",
+            "x": 159.5625,
+            "y": 873.34375,
+            "width": 140.4375,
+            "height": 44,
+            "right": 300,
+            "bottom": 917.34375
+          }
+        ],
+        "journeyNativeSelect": [
+          {
+            "text": "Choose a learning journeyHow do frequencies organize heat flow?Can local maps make a world?What structure hides in a forest?What settles within randomness?",
+            "x": 170.5625,
+            "y": 874.34375,
+            "width": 100.4375,
+            "height": 42,
+            "right": 271,
+            "bottom": 916.34375
+          }
+        ],
+        "mapTools": [
+          {
+            "text": "Zoom in",
+            "x": 256,
+            "y": 672.34375,
+            "width": 44,
+            "height": 44,
+            "right": 300,
+            "bottom": 716.34375
+          },
+          {
+            "text": "Zoom out",
+            "x": 256,
+            "y": 716.34375,
+            "width": 44,
+            "height": 44,
+            "right": 300,
+            "bottom": 760.34375
+          },
+          {
+            "text": "Fit all 24 educational islands",
+            "x": 256,
+            "y": 760.34375,
+            "width": 44,
+            "height": 44,
+            "right": 300,
+            "bottom": 804.34375
+          }
+        ],
+        "entry": [
+          {
+            "text": "Explore this island",
+            "x": 24,
+            "y": 1230.375,
+            "width": 272,
+            "height": 49,
+            "right": 296,
+            "bottom": 1279.375
+          }
+        ],
+        "textActions": [
+          {
+            "text": "View atlas entry & source",
+            "x": 24,
+            "y": 1400.875,
+            "width": 272,
+            "height": 44,
+            "right": 296,
+            "bottom": 1444.875
+          }
+        ]
+      },
+      "dynamicTargets": {},
+      "interaction": "English brand, navigation, headline spacing and mobile target layout checked.",
+      "errors": [],
+      "warnings": [],
+      "favicon": [
+        {
+          "path": "/favicon.svg",
+          "status": 200
+        }
+      ]
+    }
+  ],
+  "httpFailures": []
+}

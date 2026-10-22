@@ -1,0 +1,1169 @@
+{
+  "schemaVersion": 2,
+  "reviewer": {
+    "kind": "sub-agent",
+    "task": "/root/education_review",
+    "parentResponsibilities": [
+      "application integration",
+      "commits",
+      "publication"
+    ],
+    "independentOfFeatureImplementation": true
+  },
+  "updatedAt": "2026-10-22T14:56:48.856038+00:00",
+  "status": "functional_review_passed_publication_audit_pending",
+  "sourceSnapshot": {
+    "coreCommit": "66751e9d9b0e661ec06c4b60c61c9204972917b6",
+    "nodes": 21741,
+    "edges": 46812,
+    "bridgeGuides": 21,
+    "authoredLessons": 24,
+    "teachingDomains": 12,
+    "uniqueCoreReferences": 51,
+    "payloadManifestSha256": "0b1910b99a93db94b503cfb52b8ae1502b03d37fa913fd5c9efa6eead5b7df13"
+  },
+  "coreAudit": {
+    "historicalPreIntegration": {
+      "status": "passed",
+      "baseline_commit": "66751e9d9b0e661ec06c4b60c61c9204972917b6",
+      "baseline_sha256": "b75f8dcaa27ca020eeb0181b8312022042efe972be4d5fce8bdbd5b93596e44a",
+      "baseline_file_count": 7314,
+      "files_checked": 7314,
+      "git_tree_checked": true,
+      "errors": [],
+      "scope": "All pinned core file bytes; no core file was written or repaired.",
+      "future_core_changes": "This delivery audit is not a permanent core gate. Education may retain its pinned snapshot while core evolves; importing a new education snapshot requires an explicit reference migration."
+    },
+    "upstreamDelta": [
+      {
+        "path": "README.md",
+        "reason": "Upstream project-name typo correction from Mafh to Math; preserved during education rebase.",
+        "old_git_blob": "06c16ea3117da498cbb740c0be48feb018142f32",
+        "new_git_blob": "13ed239d46ac7ea6facb67c8f100797d2601aa53",
+        "old_sha256": "3fb02a4663e78404f75fe6bc4e1510b71236d677cd4254189615a9bb998e6d27",
+        "new_sha256": "daf65b75d587230c2c1da828a238e1ea5a0d51c36269976c3193d33aa24c4844"
+      }
+    ],
+    "publicationBaselineSha256": "3a38d24b53d44fbc73718567cd29c1147472fc3c76b6f283bde0ffe8c1f34919",
+    "publicationBeforeRebase": {
+      "expectedDifferenceOnly": true,
+      "report": {
+        "status": "failed",
+        "baseline_commit": "0b56806abb61fe06f7f63481c2008adad646a3af",
+        "baseline_sha256": "3a38d24b53d44fbc73718567cd29c1147472fc3c76b6f283bde0ffe8c1f34919",
+        "baseline_file_count": 7314,
+        "files_checked": 7314,
+        "git_tree_checked": true,
+        "errors": [
+          {
+            "path": "README.md",
+            "reason": "sha256_changed",
+            "expected": "daf65b75d587230c2c1da828a238e1ea5a0d51c36269976c3193d33aa24c4844",
+            "actual": "3fb02a4663e78404f75fe6bc4e1510b71236d677cd4254189615a9bb998e6d27"
+          },
+          {
+            "path": "README.md",
+            "reason": "differs_from_pinned_git_blob"
+          }
+        ],
+        "scope": "All pinned core file bytes; no core file was written or repaired.",
+        "future_core_changes": "This delivery audit is not a permanent core gate. Education may retain its pinned snapshot while core evolves; importing a new education snapshot requires an explicit reference migration."
+      }
+    },
+    "publicationAfterRebase": {
+      "status": "pending"
+    },
+    "futureGrowth": "Version-specific delivery audits; not a permanent core-development gate. Education may keep an older snapshot as core evolves."
+  },
+  "temporaryGitFixture": {
+    "validAccepted": true,
+    "changedFileRejected": true,
+    "missingFileRejected": true,
+    "changedFileAndRewrittenHashRejected": true,
+    "prunedManifestRejected": true,
+    "realCoreMutatedForTest": false
+  },
+  "architectureReview": {
+    "coreWriteBackEndpoint": false,
+    "coreInputWrites": false,
+    "clientWrites": "localStorage journal only",
+    "exportOutputDirectory": "education/public/data",
+    "editorialJourneysCreateCoreEdges": false
+  },
+  "unitTests": {
+    "command": "npm test -- --reporter=json --outputFile=test-results/review-unit-tests.json",
+    "passed": 93,
+    "failed": 0,
+    "skipped": 0,
+    "suites": {
+      "baseMathematics": 44,
+      "advancedMathematics": 22,
+      "dataAndCurriculumContracts": 21,
+      "state": 6
+    }
+  },
+  "dataContracts": {
+    "sourceNodesCompared": 21741,
+    "sourceEdgesCompared": 46812,
+    "fieldsPerEdge": 8,
+    "existingLiteratureBridges": 21,
+    "bilingualReportSections": 42,
+    "historicalSourceAuditCopiedExactly": true,
+    "sourceFidelitySkipped": false,
+    "historicalLiteratureAuditsWereNotRedoneAsFullProofReviews": true
+  },
+  "browser": {
+    "schemaVersion": 1,
+    "started": "2026-10-22T14:47:11.778Z",
+    "finished": "2026-10-22T14:49:26.270Z",
+    "browser": "154.0.8037.57",
+    "buildIndexSha256": "54669e61ea022d68adb556c237dcec57a5d513b3d5411b210d266799ffcae408",
+    "lessonCount": 24,
+    "configurations": 96,
+    "passedConfigurations": 96,
+    "navigationChecks": 20,
+    "passedNavigationChecks": 20,
+    "lessonErrors": [],
+    "navigationErrors": [],
+    "pageErrors": [],
+    "scope": "24 lessons × two languages × desktop/mobile; route, focus, storage, import/export, and atlas integration.",
+    "passed": true,
+    "command": "npm run test:browser",
+    "isolatedContexts": true,
+    "immutableTemporaryBuildSnapshot": true,
+    "viewports": [
+      {
+        "width": 1440,
+        "height": 1000
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "configurationsDetail": [
+      {
+        "lesson": "prime-reef",
+        "labKey": "sieve",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "elliptic-garden",
+        "labKey": "elliptic",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 1
+      },
+      {
+        "lesson": "symmetry-grove",
+        "labKey": "group",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "finite-field-atoll",
+        "labKey": "finitefield",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 16
+      },
+      {
+        "lesson": "ideal-basin",
+        "labKey": "ideal",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "spectrum-marsh",
+        "labKey": "spectrum",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "zero-set-peaks",
+        "labKey": "algebraiccurve",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "sheaf-canopy",
+        "labKey": "sheaf",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 4
+      },
+      {
+        "lesson": "homology-cavern",
+        "labKey": "homology",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 2
+      },
+      {
+        "lesson": "functor-harbor",
+        "labKey": "category",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 1
+      },
+      {
+        "lesson": "covering-terraces",
+        "labKey": "topology",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "curvature-ridge",
+        "labKey": "geometry",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "fourier-tide",
+        "labKey": "fourier",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 2
+      },
+      {
+        "lesson": "complex-current",
+        "labKey": "complex",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 2
+      },
+      {
+        "lesson": "brownian-delta",
+        "labKey": "probability",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "mean-tide",
+        "labKey": "lln",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "graph-bridges",
+        "labKey": "graph",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "matroid-forest",
+        "labKey": "matroid",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 8
+      },
+      {
+        "lesson": "type-observatory",
+        "labKey": "logic",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "cantor-coast",
+        "labKey": "fractal",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 1
+      },
+      {
+        "lesson": "gradient-basin",
+        "labKey": "optimization",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "transport-sandbar",
+        "labKey": "transport",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "heat-shore",
+        "labKey": "heat",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "spectral-lighthouse",
+        "labKey": "spectral",
+        "width": 1440,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "prime-reef",
+        "labKey": "sieve",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "elliptic-garden",
+        "labKey": "elliptic",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 1
+      },
+      {
+        "lesson": "symmetry-grove",
+        "labKey": "group",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "finite-field-atoll",
+        "labKey": "finitefield",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 16
+      },
+      {
+        "lesson": "ideal-basin",
+        "labKey": "ideal",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "spectrum-marsh",
+        "labKey": "spectrum",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "zero-set-peaks",
+        "labKey": "algebraiccurve",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "sheaf-canopy",
+        "labKey": "sheaf",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 4
+      },
+      {
+        "lesson": "homology-cavern",
+        "labKey": "homology",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 2
+      },
+      {
+        "lesson": "functor-harbor",
+        "labKey": "category",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 1
+      },
+      {
+        "lesson": "covering-terraces",
+        "labKey": "topology",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "curvature-ridge",
+        "labKey": "geometry",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "fourier-tide",
+        "labKey": "fourier",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 2
+      },
+      {
+        "lesson": "complex-current",
+        "labKey": "complex",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 2
+      },
+      {
+        "lesson": "brownian-delta",
+        "labKey": "probability",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "mean-tide",
+        "labKey": "lln",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "graph-bridges",
+        "labKey": "graph",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "matroid-forest",
+        "labKey": "matroid",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 8
+      },
+      {
+        "lesson": "type-observatory",
+        "labKey": "logic",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "cantor-coast",
+        "labKey": "fractal",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 1
+      },
+      {
+        "lesson": "gradient-basin",
+        "labKey": "optimization",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "transport-sandbar",
+        "labKey": "transport",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "heat-shore",
+        "labKey": "heat",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "spectral-lighthouse",
+        "labKey": "spectral",
+        "width": 1440,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "prime-reef",
+        "labKey": "sieve",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "elliptic-garden",
+        "labKey": "elliptic",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "symmetry-grove",
+        "labKey": "group",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "finite-field-atoll",
+        "labKey": "finitefield",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 18
+      },
+      {
+        "lesson": "ideal-basin",
+        "labKey": "ideal",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "spectrum-marsh",
+        "labKey": "spectrum",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "zero-set-peaks",
+        "labKey": "algebraiccurve",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 7
+      },
+      {
+        "lesson": "sheaf-canopy",
+        "labKey": "sheaf",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 6
+      },
+      {
+        "lesson": "homology-cavern",
+        "labKey": "homology",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 4
+      },
+      {
+        "lesson": "functor-harbor",
+        "labKey": "category",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "covering-terraces",
+        "labKey": "topology",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "curvature-ridge",
+        "labKey": "geometry",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "fourier-tide",
+        "labKey": "fourier",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 4
+      },
+      {
+        "lesson": "complex-current",
+        "labKey": "complex",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 4
+      },
+      {
+        "lesson": "brownian-delta",
+        "labKey": "probability",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "mean-tide",
+        "labKey": "lln",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 7
+      },
+      {
+        "lesson": "graph-bridges",
+        "labKey": "graph",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 7
+      },
+      {
+        "lesson": "matroid-forest",
+        "labKey": "matroid",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 10
+      },
+      {
+        "lesson": "type-observatory",
+        "labKey": "logic",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "cantor-coast",
+        "labKey": "fractal",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "gradient-basin",
+        "labKey": "optimization",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "transport-sandbar",
+        "labKey": "transport",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "heat-shore",
+        "labKey": "heat",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "spectral-lighthouse",
+        "labKey": "spectral",
+        "width": 390,
+        "language": "zh",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "prime-reef",
+        "labKey": "sieve",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "elliptic-garden",
+        "labKey": "elliptic",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "symmetry-grove",
+        "labKey": "group",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "finite-field-atoll",
+        "labKey": "finitefield",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 18
+      },
+      {
+        "lesson": "ideal-basin",
+        "labKey": "ideal",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "spectrum-marsh",
+        "labKey": "spectrum",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "zero-set-peaks",
+        "labKey": "algebraiccurve",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 7
+      },
+      {
+        "lesson": "sheaf-canopy",
+        "labKey": "sheaf",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 6
+      },
+      {
+        "lesson": "homology-cavern",
+        "labKey": "homology",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 4
+      },
+      {
+        "lesson": "functor-harbor",
+        "labKey": "category",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "covering-terraces",
+        "labKey": "topology",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "curvature-ridge",
+        "labKey": "geometry",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "fourier-tide",
+        "labKey": "fourier",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 4
+      },
+      {
+        "lesson": "complex-current",
+        "labKey": "complex",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 4
+      },
+      {
+        "lesson": "brownian-delta",
+        "labKey": "probability",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "mean-tide",
+        "labKey": "lln",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 7
+      },
+      {
+        "lesson": "graph-bridges",
+        "labKey": "graph",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 7
+      },
+      {
+        "lesson": "matroid-forest",
+        "labKey": "matroid",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 10
+      },
+      {
+        "lesson": "type-observatory",
+        "labKey": "logic",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "cantor-coast",
+        "labKey": "fractal",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 3
+      },
+      {
+        "lesson": "gradient-basin",
+        "labKey": "optimization",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "transport-sandbar",
+        "labKey": "transport",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "heat-shore",
+        "labKey": "heat",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      },
+      {
+        "lesson": "spectral-lighthouse",
+        "labKey": "spectral",
+        "width": 390,
+        "language": "en",
+        "passed": true,
+        "actions": 5
+      }
+    ],
+    "checks": [
+      {
+        "name": "skip-link preserves hash route and moves focus",
+        "passed": true
+      },
+      {
+        "name": "notes survive reload and language changes; text stays inert",
+        "passed": true
+      },
+      {
+        "name": "journal exports exact JSON and Markdown contents",
+        "passed": true,
+        "files": [
+          "math-islands-field-notes.md",
+          "math-islands-journal.json"
+        ],
+        "jsonVersion": 1,
+        "bytes": [
+          227,
+          345
+        ]
+      },
+      {
+        "name": "cross-tab notes synchronize without navigation",
+        "passed": true
+      },
+      {
+        "name": "cancel preserves note; confirmed deletion removes only local entry",
+        "passed": true
+      },
+      {
+        "name": "browser Back and Forward restore lesson route",
+        "passed": true
+      },
+      {
+        "name": "full atlas deep link, quality note, keyboard and share",
+        "passed": true,
+        "zoom": "490%",
+        "selectedId": "pm:SieveOfEratosthenes"
+      },
+      {
+        "name": "shared atlas URL restores root route, selection, search and zoom",
+        "passed": true
+      },
+      {
+        "name": "atlas PNG download contains a real PNG payload",
+        "passed": true,
+        "filename": "mathcups-atlas-view.png",
+        "bytes": 155144
+      },
+      {
+        "name": "atlas selection opens matching authored lesson",
+        "passed": true
+      },
+      {
+        "name": "blocked browser storage reports failure while keeping exportable in-memory notes",
+        "passed": true
+      },
+      {
+        "name": "malformed saved journal is recovered as an empty journal",
+        "passed": true
+      },
+      {
+        "name": "mobile full-atlas controls, selected source, and no horizontal overflow",
+        "passed": true,
+        "viewport": 390,
+        "document": 390
+      },
+      {
+        "name": "import keeps newer local data, unknown lessons, and inherited-property names",
+        "passed": true,
+        "importedUnique": 5,
+        "unknownLessons": 2,
+        "partialImportRejected": true,
+        "oversizeRejected": true,
+        "roundTripIdentical": true
+      },
+      {
+        "name": "mathematical conditions change visible conclusions",
+        "passed": true,
+        "coveringLoops": [
+          1,
+          2,
+          3
+        ],
+        "triangleRank": 2,
+        "sieve120PrimeCount": 30,
+        "inverseAtInfinity": true,
+        "singularLawRefused": true,
+        "typeMismatchRefused": true,
+        "gluingNeedsCompatibility": true
+      },
+      {
+        "name": "clipboard denial provides a manually copyable lesson URL",
+        "passed": true
+      },
+      {
+        "name": "all 21 literature guides preserve bilingual mathematical statements and source attribution",
+        "passed": true,
+        "guides": 21,
+        "bilingualPanels": 42
+      },
+      {
+        "name": "a selected literature guide survives sharing and keeps its two recorded endpoints",
+        "passed": true,
+        "bridge": "bridge:003",
+        "endpoints": [
+          "pm:HodgeTheory",
+          "pm:Matroid"
+        ]
+      },
+      {
+        "name": "failed lesson chunks preserve saved notes and recover after reload in both languages",
+        "passed": true,
+        "outcomes": [
+          {
+            "language": "en",
+            "failedRequests": 1,
+            "expectedPageErrors": 0,
+            "recovered": true,
+            "savedNotesPreserved": true
+          },
+          {
+            "language": "zh",
+            "failedRequests": 1,
+            "expectedPageErrors": 0,
+            "recovered": true,
+            "savedNotesPreserved": true
+          }
+        ]
+      },
+      {
+        "name": "educational map keyboard controls, bilingual search, index, filters and journeys select real lessons",
+        "passed": true,
+        "lessonsInIndex": 24,
+        "bilingualSearch": true,
+        "journeys": 4,
+        "keyboardPanZoom": true
+      }
+    ]
+  },
+  "accessibility": {
+    "command": "npm run test:a11y",
+    "started": "2026-10-22T14:47:11.147Z",
+    "finished": "2026-10-22T14:50:15.002Z",
+    "browser": "154.0.8037.57",
+    "buildIndexSha256": "54669e61ea022d68adb556c237dcec57a5d513b3d5411b210d266799ffcae408",
+    "cases": 112,
+    "passedCases": 112,
+    "violationRules": [],
+    "pageErrors": [],
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa"
+    ],
+    "ruleExclusions": [],
+    "incompleteRules": [
+      "aria-prohibited-attr",
+      "color-contrast"
+    ],
+    "focusedSemanticGroupRecheck": {
+      "status": "pending"
+    },
+    "fullWCAGConformanceClaimed": false
+  },
+  "manualReview": {
+    "mathematicalModels": 24,
+    "selectedVisualChecks": [
+      "desktop explorer",
+      "390px initial map framing and readable labels",
+      "390px elliptic curve and secant law",
+      "390px complex multiplication and circular image",
+      "390px real-curve data readout"
+    ],
+    "teacherGuideFocus": [
+      "sqrt(2) Brownian scaling from generator 1/2 Delta to Delta",
+      "Fourier decay exp(-n^2 t)",
+      "W1 lab versus W2 displacement-convexity literature",
+      "finite-model workshop hypotheses and quantifiers"
+    ],
+    "screenReaderStudyPerformed": false
+  },
+  "findings": [
+    {
+      "id": "parallel-edge-cost",
+      "status": "fixed_and_regression_tested",
+      "summary": "The actual parent-edge cost is retained, including parallel edges with different weights."
+    },
+    {
+      "id": "ordered-node-identity",
+      "status": "fixed_and_negative_tested",
+      "summary": "Shared ordered-ID SHA and strict ordering reject silent endpoint miswiring."
+    },
+    {
+      "id": "geometric-axis-scaling",
+      "status": "fixed_and_visually_reviewed",
+      "summary": "Complex multiplication and real-curve plots use equal axis units; circle scaling is tested."
+    },
+    {
+      "id": "curve-root-continuity",
+      "status": "fixed_and_regression_tested",
+      "summary": "Real root refinement joins branches; isolated in-window real singularities are included explicitly."
+    },
+    {
+      "id": "curriculum-hypotheses",
+      "status": "corrected_and_reviewed",
+      "summary": "Controls, torsion vocabulary, nonnegative equal-weight BFS, fixed-n probability bounds, finite Spec scope, and model boundaries are explicit."
+    },
+    {
+      "id": "journal-inherited-key",
+      "status": "fixed_and_browser_tested",
+      "summary": "Import preserves unknown lesson IDs including toString, chooses newer records, keeps local ties, and rejects partial invalid input without loss."
+    },
+    {
+      "id": "skip-link-routing",
+      "status": "fixed_and_browser_tested",
+      "summary": "Skip-to-content moves focus without altering the hash route."
+    },
+    {
+      "id": "mobile-readability-and-contrast",
+      "status": "fixed_and_rechecked",
+      "summary": "Figure zoom, readable labels, data tables, darker text, and 112 automated states plus selected screenshots were checked."
+    },
+    {
+      "id": "decorative-button-label",
+      "status": "fixed_and_axe_tested",
+      "summary": "Decorative mathematical SVGs are separate from buttons carrying visible lesson titles."
+    },
+    {
+      "id": "named-control-groups",
+      "status": "source_fix_pending_focused_recheck",
+      "summary": "Manual investigation of axe incomplete records found unnamed-role div groups; owners are adding role=group."
+    }
+  ],
+  "retainedArtifactHashes": {
+    "scripts/verify_core.py": "45844536bb66a4587c94d4d3fdca3717cd301df78e8948691ff9cc828b927ae0",
+    "scripts/browser-audit.mjs": "20c3a0933323bba5a6cca8ace135bfd47883d8e2ae4616a1b553761b4a7213b3",
+    "scripts/accessibility-audit.mjs": "29f17065427cbad00cf1e5f2028d5c0d1b8ab72beeca45c577622e2b87033e70",
+    "tests/education-contract.test.ts": "1e9728c624f06e6308da6356cf625a81b62c6e1c2a8134511065df094f1ecc50",
+    "docs/core-baseline.json": "b75f8dcaa27ca020eeb0181b8312022042efe972be4d5fce8bdbd5b93596e44a",
+    "docs/publication-base.json": "3a38d24b53d44fbc73718567cd29c1147472fc3c76b6f283bde0ffe8c1f34919"
+  },
+  "pending": [
+    "focused_semantic_group_recheck",
+    "publication_baseline_after_rebase"
+  ],
+  "scopeLimitations": [
+    "Finite models and source fidelity are not formal proof verification or full literature certification.",
+    "Automated axe success is not full WCAG conformance; text over SVG/images and short labels require visual assessment.",
+    "Control scans do not exhaust every Cartesian product of parameters.",
+    "21,741 source entries are not presented as 21,741 fully authored lessons.",
+    "Historical and publication README versions differ by the independently committed upstream project-name correction."
+  ]
+}

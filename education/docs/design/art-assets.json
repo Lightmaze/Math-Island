@@ -1,0 +1,110 @@
+[
+  {
+    "source": "docs/design/source-art/math-islands-c.png",
+    "production": "public/art/math-islands-c.webp",
+    "source_sha256": "5f749c4798eba89847270413cb535ee79edb84855c08c839ac9385c98e5d07a9",
+    "production_sha256": "55a5fefd729a9985913b10d1ce21246399b3716002575f1e3a63ef4e9c4161bb",
+    "width": 1254,
+    "height": 1254,
+    "source_bytes": 2666119,
+    "production_bytes": 1735688,
+    "rgba_pixel_identical": true,
+    "encoding": "WebP lossless, exact=True, quality=100, method=6",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "generator": "image_gen__imagegen",
+    "role": "Illustrative mathematical ecological relief; not a numerical plot or proof evidence."
+  },
+  {
+    "source": "docs/design/source-art/math-islands-d.png",
+    "production": "public/art/math-islands-d.webp",
+    "source_sha256": "2a8f806bcb5b5afe6660c7daabd8d5fe41718e2e73e718a7585b9168da753887",
+    "production_sha256": "b7f636d7de86543a4c71611c89db28ef40b45b13e64aa789cde60c92f214d519",
+    "width": 1254,
+    "height": 1254,
+    "source_bytes": 1761013,
+    "production_bytes": 1124332,
+    "rgba_pixel_identical": true,
+    "encoding": "WebP lossless, exact=True, quality=100, method=6",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "generator": "image_gen__imagegen",
+    "role": "Illustrative mathematical ecological relief; not a numerical plot or proof evidence."
+  },
+  {
+    "source": "docs/design/source-art/math-islands-e.png",
+    "production": "public/art/math-islands-e.webp",
+    "source_sha256": "ecf127b10a881d643b0a55e9227fb9943a07623bbff0acebe11b0cb06d7e4222",
+    "production_sha256": "4db298f6ff0dc860d994ff75cb114c106e1f6462dbe8c3269b40003f0a4d2b42",
+    "width": 1254,
+    "height": 1254,
+    "source_bytes": 2203190,
+    "production_bytes": 1456818,
+    "rgba_pixel_identical": true,
+    "encoding": "WebP lossless, exact=True, quality=100, method=6",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "generator": "image_gen__imagegen",
+    "role": "Illustrative mathematical ecological relief; not a numerical plot or proof evidence."
+  },
+  {
+    "source": "docs/design/source-art/math-islands-f.png",
+    "production": "public/art/math-islands-f.webp",
+    "source_sha256": "f137d6c751e3cd623edd9002f8fd0efbe05919fe575216732c7e972d34af5d4f",
+    "production_sha256": "400122a2fb6f05bccff7e9f41abbe8b5f85f289f1a5e8cf41e9deedd97fa3ae5",
+    "width": 1254,
+    "height": 1254,
+    "source_bytes": 2278954,
+    "production_bytes": 1447070,
+    "rgba_pixel_identical": true,
+    "encoding": "WebP lossless, exact=True, quality=100, method=6",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "generator": "image_gen__imagegen",
+    "role": "Illustrative mathematical ecological relief; not a numerical plot or proof evidence."
+  },
+  {
+    "source": "docs/design/source-art/math-islands-g.png",
+    "production": "public/art/math-islands-g.webp",
+    "source_sha256": "0d5e1cd6519601d2ed3687575de1c4e74a574ba57c80d97ff991de393a4e0a46",
+    "production_sha256": "13a85c6f95731682d685dd7ed30ead0c1233f1a79aba0f67335a1bb9ee7ba416",
+    "width": 1254,
+    "height": 1254,
+    "source_bytes": 2707487,
+    "production_bytes": 1789052,
+    "rgba_pixel_identical": true,
+    "encoding": "WebP lossless, exact=True, quality=100, method=6",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "generator": "image_gen__imagegen",
+    "role": "Illustrative mathematical ecological relief; not a numerical plot or proof evidence."
+  },
+  {
+    "source": "docs/design/source-art/math-islands-h.png",
+    "production": "public/art/math-islands-h.webp",
+    "source_sha256": "59a313e487dea4f375284f871a81a3d2db9d9520d91d0ab075f4bac24c7a59f9",
+    "production_sha256": "971f017ea5a018894e6c9ca74a2abf3cd43e1c11476bc2edc3df5722b39bb411",
+    "width": 1254,
+    "height": 1254,
+    "source_bytes": 2688082,
+    "production_bytes": 1775952,
+    "rgba_pixel_identical": true,
+    "encoding": "WebP lossless, exact=True, quality=100, method=6",
+    "alpha_range": [
+      0,
+      255
+    ],
+    "generator": "image_gen__imagegen",
+    "role": "Illustrative mathematical ecological relief; not a numerical plot or proof evidence."
+  }
+]
