@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Pseudoprime}
+\pmcreated{2013-03-22 16:49:44}
+\pmmodified{2013-03-22 16:49:44}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{pseudoprime}
+\pmrecord{6}{39068}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em pseudoprime} is a composite number $p$ that passes a given primality test. In other words, a pseudoprime is a false positive on a primality test.
+
+The primality test is usually a power congruence to a given base $b$ that is coprime to $p$, such as $b^{p - 1} \equiv 1 \mod p$ (from Fermat's little theorem). For example, if $p$ is an odd prime, then the congruence $2^{p - 1} \equiv 1 \mod p$ will be true, but in reverse, $p$ can satisfy the congruence but turn out to be an odd composite number. Such pseudoprimes are then called {\em pseudoprime to base $b$}, and in our example with $b = 2$, the first few are 341, 561, 645, 1105, 1387, 1729, 1905 (A001567 in Sloane's OEIS). According to Neil Sloane, writing in the OEIS, the term ``pseudoprime'' is sometimes used specifically to refer to pseudoprimes to base 2. These are sometimes called Sarrus numbers.
+
+Another kind of pseudoprimes are those in which a composite $p$ divides an element it indexes in a Fibonacci-like sequence. For example, a Perrin pseudoprime $p$ divides $a_p$, where $a_n$ is the $n$-th element in the Perrin sequence.
+
+\begin{thebibliography}{1}
+\bibitem{rc} R. Crandall \& C. Pomerance, {\it Prime Numbers: A Computational Perspective}, Springer, NY, 2001: 5.1
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

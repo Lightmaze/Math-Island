@@ -1,0 +1,178 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KKMLemma}
+\pmcreated{2013-03-22 16:26:31}
+\pmmodified{2013-03-22 16:26:31}
+\pmowner{uriw}{288}
+\pmmodifier{uriw}{288}
+\pmtitle{KKM lemma}
+\pmrecord{14}{38597}
+\pmprivacy{1}
+\pmauthor{uriw}{288}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54H25}
+\pmclassification{msc}{47H10}
+\pmsynonym{K-K-M lemma}{KKMLemma}
+\pmrelated{BrouwerFixedPointTheorem}
+
+\endmetadata
+
+\usepackage{amsmath, amsthm, amssymb}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{definition}[theorem]{Definition}
+
+\DeclareMathOperator{\diam}{diam}
+
+\begin{document}
+\section{Preliminaries}
+We start by introducing some standard notation. $\mathbb{R}^{n+1}$
+is the $(n+1)$-dimensional real space with Euclidean norm and
+metric. For a subset $A\subset \mathbb{R}^{n+1}$ we denote by
+$\diam(A)$ the diameter of $A$.
+
+The $n$-dimensional simplex $\mathcal{S}_n$ is the following
+subset of $\mathbb{R}^{n+1}$
+\[
+\left\{(\alpha_1,\alpha_2,\ldots,\alpha_{n+1}) \, \Big| \,
+\sum_{i=1}^{n+1}\alpha_i=1, \quad \alpha_i\geq0 \quad \forall
+i=1,\ldots,n+1\right\}
+\]
+More generally, if $V=\{v_1,v_2,\ldots,v_k\}$ is a set of vectors,
+then $S(V)$ is the simplex spanned by $V$:
+\[
+S(V)=\left\{\sum_{i=1}^k\alpha_i v_i\ ,\Big|\,
+\sum_{i=1}^k\alpha_i=1, \quad \alpha_i\geq0 \quad \forall
+i=1,\ldots,k\right\}
+\]
+Let $\mathcal{E}=\{e_1,e_1,\ldots,e_{n+1}\}$ be the standard
+orthonormal basis of $\mathbb{R}^{n+1}$. So, $\mathcal{S}_n$ is
+the simplex spanned by $\mathcal{E}$. Any element $v$ of $S(V)$ is
+represented by a vector of coordinates
+$(\alpha_1,\alpha_2,\ldots,\alpha_k)$ such that $v=\sum_i\alpha_i
+v_i$; these are called a barycentric coordinates of $v$. If the
+set $V$ is in general position then the above representation is
+unique and we say that $V$ is a basis for $S(V)$. If we write
+$S(V)$ then $V$ is always a basis.
+
+Let $v$ be in $S(V)$, $V=\{v_1,v_2,\ldots,v_k\}$ a basis and $v$
+represented (uniquely) by barycentric coordinates
+$(\alpha_1,\alpha_2,\ldots,\alpha_k)$. We denote by $F_V(v)$ the
+subset $\left\{j \,|\, \alpha_j \neq 0 \right\}$ of
+$\{1,2,\ldots,k\}$ (i.e., the set of non-null coordinates). Let
+$I\subset \{1,2,\ldots,k\}$, the $I$-th face of $S(V)$ is the set
+$\{v\in S(V)|F_V(v) \subseteq I\}$. A \emph{face} of $S(V)$ is an
+$I$-face for some $I$ (note that this is independent of the choice
+of basis).
+
+\section{KKM Lemma}
+
+The main result we prove is the following:
+
+\begin{theorem}[Knaster-Kuratowski-Mazurkiewicz Lemma \cite{KKM}]
+Let $\mathcal{S}_n$ be the standard simplex spanned by
+$\mathcal{E}$ the standard orthonormal basis for
+$\mathbb{R}^{n+1}$. Assume we have $n+1$ closed subsets
+$C_1,\ldots,C_{n+1}$ of $\mathcal{S}_n$ with the property that for
+every subset $I$ of $\{1,2,\ldots,n+1\}$ the following holds: the
+$I$-th face of $\mathcal{S}_n$ is a subset of $\cup_{i\in I}C_i$.
+Then, the intersection of the sets $C_1,C_2,\ldots,C_{n+1}$ is
+non-empty.
+\end{theorem}
+
+We prove the KKM Lemma by using Sperner's Lemma; Sperner's Lemma
+is based on the notion of simplicial subdivision and coloring.
+
+\begin{definition}[Simplicial subdivision of $\mathcal{S}_n$]
+A \emph{simplicial subdivision} of $\mathcal{S}_n$ is a couple
+$D=(V,\mathcal{B})$; $V$ are the vertices, a finite subset of
+$\mathcal{S}_n$; $\mathcal{B}$ is a set of simplexes $S(V_1),
+S(V_2), \ldots, S(V_k)$ where each $V_i$ is a subset of $V$ of
+size $n+1$. $D$ has the following properties:
+\begin{enumerate}
+    \item The union of the simplexes in $\mathcal{B}$ is
+    $\mathcal{S}_n$.
+    \item If $S(V_i)$ and $S(V_j)$ intersect then the
+    intersection is a face of both $S(V_i)$ and $S(V_j)$.
+\end{enumerate}
+The \emph{norm} of $D$, denoted by $|D|$, is the diameter of the
+largest simplex in $\mathcal{B}$.
+\end{definition}
+
+An $(n+1)$-\emph{coloring} of a subdivision $D=(V,\mathcal{B})$ of
+$\mathcal{S}_n$ is a function
+\[
+C:V\to\{1,2,\ldots,n+1\}
+\]
+A \emph{Sperner Coloring} of $D$ is an $(n+1)$-coloring $C$ such
+that $C(v)\in F_\mathcal{E}(v)$ for every $v\in V$, that is, if
+$v$ is on the $I$-th face then its color is from $I$. For example,
+if $D=(V,\mathcal{B})$ is a subdivision of the standard simplex
+$\mathcal{S}_n$ then the standard basis $\mathcal{E}$ is a subset
+of $V$ and $F_\mathcal{E}(e_i)=i$. Hence, If $C$ is a Sperner
+Coloring of $D$ then $C(e_i)=i$ for all $i=1,2,\ldots,n+1$.
+
+\begin{theorem}[Sperner's Lemma]
+Let $D=(V,\mathcal{B})$ be a simplicial subdivision of
+$\mathcal{S}_n$ and $C:V\to\{1,2,\ldots,n+1\}$ a Sperner Coloring
+of $D$. Then, there is a simplex $S(V_i)\in\mathcal{B}$ such that
+$C(V_i)=\{1,2,\ldots,n+1\}$.
+\end{theorem}
+
+It is a standard result, for example by barycentric subdivisions,
+that $\mathcal{S}_n$ has a sequence of simplicial subdivisions
+$D_1,D_2,\ldots$ such that $|D_i|\to0$. We use this fact to prove
+the KKM Lemma:
+
+\begin{proof}[Proof of KKM Lemma]
+Let $C_1,C_2,\ldots,C_{n+1}$ be closed subsets of $\mathcal{S}_n$
+as given in the lemma. We define the following function
+$\gamma:\mathcal{S}_n\to\{1,2,\ldots,n+1\}$ as follows:
+\[
+\gamma(v) = \min\{i|i\in F_\mathcal{E}(v) \textrm{ and } v\in
+C_i\}
+\]
+$\gamma$ is well defined by the hypothesis of the lemma and
+$\gamma(v) \in F_\mathcal{E}(v)$. Also, if $\gamma(v)=i$ then
+$v\in C_i$. Let $D_1,D_2,\ldots$ be a sequence of simplicial
+subdivisions such that $|D_i|\to0$. We set the color of every
+vertex $v$ in $D_i$ to be $\gamma(v)$. This is a Sperner Coloring
+since if $v$ is in $I$-fact then $\gamma(v) \in F_\mathcal{E}(v)
+\subseteq I$. Therefore, by Sperner's Lemma we have in each
+subdivision $D_i$ a simplex $S(V_i)$ such that
+$\gamma(V_i)=\{1,2,\ldots,n+1\}$. Moreover, $\diam(S(V_i))\to0$.
+By the properties of $\gamma$ for every $i=1,2,\ldots$ and every
+$j\in\{1,2,\ldots,n+1\}$ we have that $S(V_i)\cap C_j\neq\phi$.
+Let $u_i$ be the arithmetic mean of the elements of $V_i$ (this is
+an element of $S(V_i)$ and thus an element of $\mathcal{S}_n$).
+Since $\mathcal{S}_n$ is bounded and closed we get that $u_i$ has
+a converging subsequence with a limit $L\in\mathcal{S}_n$. Now,
+every set $C_j$ is closed, and for every $\epsilon>0$ we have an
+element of $C_j$ of $\epsilon$-distance from $L$; thus $L$ is in
+$C_j$.
+
+Therefore, $L$ is in the intersection of all the sets
+$C_1,C_2,\ldots,C_{n+1}$, and that proves the assertion.
+\end{proof}
+
+\begin{thebibliography}{1}
+
+\bibitem{KKM}
+B. Knaster, C. Kuratowski, and S. Mazurkiewicz, Ein Beweis des
+Fixpunktsatzes f\"ur n-dimensionale Simplexe,
+\newblock {\em Fund. Math. 14 (1929) 132-137.}
+
+\end{thebibliography}
+
+
+%%%%%
+%%%%%
+\end{document}

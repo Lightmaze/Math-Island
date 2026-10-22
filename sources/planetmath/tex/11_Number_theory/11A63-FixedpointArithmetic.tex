@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FixedpointArithmetic}
+\pmcreated{2013-03-22 16:32:31}
+\pmmodified{2013-03-22 16:32:31}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{fixed-point arithmetic}
+\pmrecord{5}{38724}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{fixed point arithmetic}{FixedpointArithmetic}
+\pmsynonym{fixed point}{FixedpointArithmetic}
+\pmsynonym{fixed-point}{FixedpointArithmetic}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+For computation or display in {\em fixed-point arithmetic}, each real number $x$ has a variable number $k > 0$ of integer digits $d_{k - 1}, \ldots, d_0$ (in order left to right from the most to the least significant digit) in base $b$ but always $l$ fractional digits to the right of the point. Thus, $$x = \sum_{i = -l}^{k - 1} d_ib^i.$$ For example, for the usual mundane applications of money, $b = 10$ and $l = 2$.
+
+Fixed-point arithmetic can adequately represent any rational number ${n \over m}$ provided that $m \leq b^l$ and $m$ has no prime factors $b$ doesn't (counting repeated prime factors). Addition and subtraction in fixed-point arithmetic present no special problems for  such numbers. When it comes to multiplication and division, we run into cases where the result cannot be adequately represented though the operands can.
+
+In those cases it may be practical to perform the computations in floating point and display the results in fixed-point. In fact, this is what many business calculators do (such as cash registers); they compute in binary floating point and display in decimal fixed-point. Another option is to continue the calculations in fixed-point by settling for crude approximations. Depending on the application and the user, the loss of precision may be acceptable. There are two ways to handle the loss of precision: if $d_{-l-1} > {b \over 2}$, we could then assign $d_{-l} = d_{-l} + 1$ (propagating the change as needed to the more significant digits); or we could simply ignore everything to the right of $d_{-l}$.
+
+Older versions of FractInt for 80386 IBM-compatibles used fixed-point arithmetic. Most computers (and even game consoles) today have floating point units, reducing the need for fixed-point. Even so, newer implementations of the C programming language are expected to provide fixed-point data types and appropriately overload built-in functions to handle those data types (see ISO/IEC TR 18037:2004).
+%%%%%
+%%%%%
+\end{document}

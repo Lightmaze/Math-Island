@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Weightstrings}
+\pmcreated{2013-03-22 15:13:17}
+\pmmodified{2013-03-22 15:13:17}
+\pmowner{GrafZahl}{9234}
+\pmmodifier{GrafZahl}{9234}
+\pmtitle{weight (strings)}
+\pmrecord{6}{36985}
+\pmprivacy{1}
+\pmauthor{GrafZahl}{9234}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94A55}
+\pmsynonym{weight}{Weightstrings}
+\pmrelated{KleeneStar}
+\pmdefines{Hamming weight}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\mbb}{\mathbb}
+\newcommand{\mbf}{\mathbf}
+\newcommand{\mc}{\mathcal}
+
+% mathematical operators
+\DeclareMathOperator{\wt}{wt}
+\begin{document}
+\PMlinkescapeword{times}
+Let $A$ be an alphabet, $a\in A$ a letter from $A$ and $c\in A^*$ a
+string over $a$. Then the $a$-\emph{weight} of $c$, denoted by
+$\wt_a(c)$, is the number of times $a$ occurs in $c$.
+
+If $A$ is an abelian group, the \emph{Hamming weight} $\wt(c)$ of $c$ (no \PMlinkescapetext{index}),
+often simply referred to as ``weight'', is the number of nonzero letters in $c$.
+
+\subsubsection*{Examples}
+
+\begin{itemize}
+\item Let $A=\{x,y,z\}$. In the string $c:=yxxzyyzxyzzyx$, $y$ occurs $5$
+  times, so the $y$-weight $\wt_y(c)=5$.
+\item Let $A=\mbb{Z}_3=\{0,1,2\}$ (an abelian group) and
+  $c:=002001200$. Then $\wt_0(c)=6$, $\wt_1(c)=1$, $\wt_2(c)=2$ and
+  $\wt(c)=\wt_1(c)+\wt_2(c)=3$.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

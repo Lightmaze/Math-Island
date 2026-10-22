@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PellsEquationAndSimpleContinuedFractions}
+\pmcreated{2013-03-22 13:21:04}
+\pmmodified{2013-03-22 13:21:04}
+\pmowner{Thomas Heye}{1234}
+\pmmodifier{Thomas Heye}{1234}
+\pmtitle{Pell's equation and simple continued fractions}
+\pmrecord{9}{33870}
+\pmprivacy{1}
+\pmauthor{Thomas Heye}{1234}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D09}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{thm}{Theorem}
+\begin{document}
+\begin{thm}
+Let $d$ be a positive integer which is not a perfect square, and let $(x,y)$ be
+a solution of $x^2 -dy^2 =1$. Then $\frac{x}{y}$ is a convergent in the simple
+continued fraction expansion of $\sqrt{d}$.
+\end{thm}
+\begin{proof}
+Suppose we have a non-trivial solution $x,y$ of Pell's equation, i.e. $y \neq
+0$. Let $x,y$ both be positive integers. From
+\[\left(\frac{x}{y}\right)^2 =d +\frac{1}{y^2}\]
+we see that $\left(\frac{x}{y}\right)^2 > d$, hence $\frac{x}{y} >
+\sqrt{d}$. So we get
+\begin{eqnarray*}
+\left\vert \frac{x}{y} -\sqrt{d}\right\vert =\frac{1}{y^2\left(\frac{x}{y}
++\sqrt{d}\right)} & < \frac{1}{y^2\left(2\sqrt{d}\right)} \\
+& < \frac{1}{2y^2}.
+\end{eqnarray*}
+This implies that $\frac{x}{y}$ is a convergent of the continued fraction of
+$\sqrt{d}$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

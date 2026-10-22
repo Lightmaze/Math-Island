@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Coarser}
+\pmcreated{2013-03-22 12:56:03}
+\pmmodified{2013-03-22 12:56:03}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{coarser}
+\pmrecord{10}{33290}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+\pmsynonym{stronger}{Coarser}
+\pmrelated{InitialTopology}
+\pmrelated{LatticeOfTopologies}
+\pmdefines{weaker}
+\pmdefines{finer}
+\pmdefines{refinement}
+\pmdefines{expansion}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The set of topologies which can be defined on a set is partially ordered under inclusion.  Below, we list several synonymous terms which are used to refer to this order.  Let $\mathcal{U}$ and $\mathcal{V}$ be two topologies defined on a set $E$.  All of the following expressions mean that $\mathcal{U} \subset \mathcal{V}$:
+\begin{itemize}
+\item $\mathcal{U}$ is \textbf{weaker} than $\mathcal{V}$
+\item $\mathcal{U}$ is \textbf{coarser} than $\mathcal{V}$
+\item $\mathcal{V}$ is \textbf{finer} than $\mathcal{U}$
+\item $\mathcal{V}$ is a \textbf{refinement} of $\mathcal{U}$
+\item $\mathcal{V}$ is an \textbf{expansion} of $\mathcal{U}$
+\end{itemize}
+
+It is worth noting that this condition is equivalent to the requirement that  the identity map from $(E, \mathcal{V})$ to $(E, \mathcal{U})$ is continuous.
+%%%%%
+%%%%%
+\end{document}

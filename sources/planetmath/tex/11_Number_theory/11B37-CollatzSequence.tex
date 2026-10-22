@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CollatzSequence}
+\pmcreated{2013-03-22 16:43:51}
+\pmmodified{2013-03-22 16:43:51}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Collatz sequence}
+\pmrecord{4}{38952}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B37}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em Collatz sequence} is a sequence formed by iteratively applying the function defined for the Collatz problem to a given starting integer $n$, in which if $2|n$, $f(n) = \frac{n}{2}$ and if not then $f(n) = 3n + 1$.
+
+For example, the Collatz sequence starting with 47 goes: 47, 142, 71, 214, 107, 322, 161, 484, 242, 121, 364, 182, 91, 274, 137, 412, 206, 103, 310, 155, 466, 233, 700, 350, 175, 526, 263, 790, 395, 1186, 593, 1780, 890, 445, 1336, 668, 334, 167, 502, 251, 754, 377, 1132, 566, 283, 850, 425, 1276, 638, 319, 958, 479, 1438, 719, 2158, 1079, 3238, 1619, 4858, 2429, 7288, 3644, 1822, 911, 2734, 1367, 4102, 2051, 6154, 3077, 9232, 4616, 2308, 1154, 577, 1732, 866, 433, 1300, 650, 325, 976, 488, 244, 122, 61, 184, 92, 46, 23, 70, 35, 106, 53, 160, 80, 40, 20, 10, 5, 16, 8, 4, 2, 1.
+
+It is obvious that for a power of 2, $n = 2^x$, the Collatz sequence will be $x$ long (not counting the starting number) and consist of the first $x$ integer powers of 2 in descending order: $2^{x - 1}, 2^{x - 2}, \ldots, 2, 1$.
+
+For other kinds of $n$ there are various formulas giving heuristic estimates of the length of the Collatz sequence of $n$ but no simple formula to give the exact value. The number of iterations needed to reach 1 for the first few $n$ are 1, 2, 8, 3, 6, 9, 17, 4, 20, 7, 15, 10, 10, 18, 18, 5, 13, 21, 21, 8, 8, 16, 16, 11, 24, etc., listed in sequence A008908 of Sloane's OEIS. The number of iterations needed to reach a power of 2 for the first few $n$ are 0, 0, 3, 0, 1, 4, 12, 0, 15, 2, 10, 5, 5, 13, 13, 0, 8, 16, 16, 3, 1, 11, 11, 6, 19, 6, 107, 14, 14, 14, 102, 0, 22, 9, 9, 17, 17, 17, 30, 4, 105, 2, 25, etc., which can be calculated with the Mathematica command \verb=Flatten[Table[Take[Select[Range[Length[Collatz[n]]], IntegerQ[1 / Log[Collatz[n][[#]], 2]] &], 1], {n, 100}]]= (the \verb=Collatz[n]= command needs to be defined by the user; the program will complain about division by zero but still give the desired results).
+%%%%%
+%%%%%
+\end{document}

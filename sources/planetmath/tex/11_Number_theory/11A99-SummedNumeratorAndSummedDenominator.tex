@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SummedNumeratorAndSummedDenominator}
+\pmcreated{2013-10-11 15:35:42}
+\pmmodified{2013-10-11 15:35:42}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{summed numerator and summed denominator}
+\pmrecord{11}{37203}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{Remark added}
+\pmclassification{msc}{11A99}
+\pmrelated{InequalityForRealNumbers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+If\, $\displaystyle\frac{a_1}{b_1},\,\ldots,\,\frac{a_n}{b_n}$\, are any  real fractions with positive denominators and
+ $$m \;:=\; \min\left\{\frac{a_1}{b_1},\,\ldots,\,\frac{a_n}{b_n}\right\}, \quad 
+   M \;:=\; \max\left\{\frac{a_1}{b_1},\,\ldots,\,\frac{a_n}{b_n}\right\}$$
+are \PMlinkname{the least and the greatest}{MinimalAndMaximalNumber} of the fractions, then
+\begin{align}
+m \;\leqq\; \frac{a_1\!+\!\ldots\!+\!a_n}{b_1\!+\!\ldots\!+\!b_n} \;\leqq\; M.
+\end{align}
+The equality signs are valid if and only if all fractions are equal; in this case one has 
+ $$\frac{a_1}{b_1} \;=\; \ldots \;=\; \frac{a_n}{b_n} \;=\; \frac{a_1\!+\!\ldots+\!a_n}{b_1\!+\!\ldots\!+\!b_n}.$$
+{\em Proof.}\, Set\; $\displaystyle q_1 := \frac{a_1}{b_1}$,\, \ldots,\; $\displaystyle q_n := \frac{a_n}{b_n}$.\, Then we have\, 
+$a_1\!+\!\ldots\!+\!a_n = b_1q_1\!+\!\ldots\!+\!b_nq_n$,\, which apparently has the lower bound\, $(b_1\!+\cdots+\!b_n)m$\, and the upper bound\, $(b_1\!+\ldots+\!b_n)M$.\, Dividing the three last expressions by the sum\,  $b_1\!+\ldots+\!b_n$\, yields the asserted double inequality (1).
+
+
+\textbf{Remark.}\, Cf. also the mediant.
+%%%%%
+%%%%%
+\end{document}

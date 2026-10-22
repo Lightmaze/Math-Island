@@ -1,0 +1,28 @@
+Wikipedia / MathWorld 来源调查与取舍
+执行者：/root/atlas_wikipedia 子代理。构建日期：2026-10-22。
+
+发布主库的可用补充：50 个手工选择的现代数学桥梁条目（Wikipedia）。
+覆盖数论、几何、分析、概率、离散、逻辑、代数；包括朗兰兹纲领、模性定理、完美胚空间、棱柱上同调、几何朗兰兹对应、同伦类型论、月光、压缩感知、正则结构、粗糙路径、大筛等。
+每条保存原始文章、读取时间、SHA-256、canonical URL、Wikipedia revision id；中文名和 kind/domain 是本次手工标题级分类，不是原文完成的形式类型证明。
+仅从文章正文抽取 Wikipedia 内链；去掉 navbox/sidebar/reflist/hatnote。source_hyperlink 表示实际文章超链接，不能直接解释为逻辑前提、证明依赖、历史影响或可用工具契约。
+50 个条目之间的边文件独立给出；每条的 source_links 保留原文链接目标标题，供主代理与其他开放来源的精确匹配。
+从两个不同来源出现同名条目时，应由总构建器去重或保留明确的跨来源同名候选，不得为数字把同一概念算作多座岛。
+
+许可与归属：Wikipedia 文本依网页页脚的 CC BY-SA 4.0 使用；署名原条目贡献者，保留每条原始 URL、revision id 和历史入口。摘要是原条目短摘录，并非自主撰写。转载此数据的相应摘要和页面文本继续遵守 CC BY-SA 4.0。
+源脚本 scripts/acquire_wikipedia.py 默认仅构建这 50 个现代桥梁页面；显式参数可重现两个被排除的探索索引。
+
+已探索但不纳入发布岛屿计数的索引：
+1. MathWorld 27 个字母索引提供 21,323 个索引链接、21,322 个不同 URL；sitemap 有 17,693 个 URL，其中 17,218 与字母索引相交。
+   这些是 URL 数量，并非已消歧的数学概念数量。抽样 ChoiceAxiom 与 AxiomofChoice 的 canonical 都是自指，说明 canonical 不能消除“另见”式别名。XNORGate 与 XNORLogicGate 也分别自指。
+   MathWorld Terms 明示禁止未经许可的 bulk copy/mirror/redistribution/printing/reproduction 及 robots archival copies；只允许 limited academic research with conventional citations。因此仅把少量索引元数据、hash、术语取舍调查作为未发布研究缓存，不将完整站点正文、该全量元数据集或其“21,322”数字用于主库发布。
+   robots URL: https://mathworld.wolfram.com/robots.txt
+   terms URL: https://www.wolfram.com/legal/terms/mathworld.html
+2. Wikipedia 26 个数学字母索引中，去除 HTML 中明确标记为 redirect、disambiguation、redlink 的链接后得到 23,872 个不同 URL。该集合仍含数学家、机构、书刊等，尚未完成语义筛选与当前重定向核验，因此不当作 23,872 座数学概念岛，不纳入发布主库。
+3. Wikidata “mathematical concept” 路径的试探查询空返回，“mathematical object” 路径查询超时；没有将返回值缺失包装为可靠完整性。
+4. GitHub gaetanX21/mathematics-graph 是数学史、数学家、领域知识图谱，人物/机构占据大量节点，不满足此次岛屿的定义，因此没有将其现成节点数用于达标。
+
+本模块没有证明新的数学联系，没有为超过 10,000 的目标自动合成节点。开放主库的规模由 PlanetMath 与 Stacks 项目的实际去重数据决定。
+
+补充核验：应21条文献桥端点需求，保留初始30节点并追加20节点，现50节点、52条正文互链、4348条原文链接目标记录。49个独立文章+1个明确命名节。
+模型论稳定性采用 Stable theory（抓取入口 Stability_(model_theory)），避免误接动力系统 Stability theory。
+Polynomial partitioning 从 Polynomial method in combinatorics 的 Polynomial_partitioning 命名节实际抽取；仅该节的摘要和链接属于此节点，manifest与node均标记 named_article_section。

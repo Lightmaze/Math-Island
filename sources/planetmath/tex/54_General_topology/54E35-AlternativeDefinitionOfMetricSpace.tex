@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AlternativeDefinitionOfMetricSpace}
+\pmcreated{2013-03-22 15:09:19}
+\pmmodified{2013-03-22 15:09:19}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{alternative definition of metric space}
+\pmrecord{8}{36903}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{definition}{Definition}
+\begin{document}
+\section{Definition}
+
+The notion of \emph{metric space} may be defined in a way which makes use only of rational numbers as opposed to real numbers.  To avoid mention of real numbers we take a three place relation as our primitive term instead of the distance function.  Thus, one can use this definition to define the set of real numbers as the completion of the set of rational numbers as a metric space.  Let $\mathbb{Q}_+$ denote the set of strictly positive rational numbers
+
+\begin{definition}
+A \emph{metric space} consists of a set $X$ and a relation $D \subset X \times X \times \mathbb{Q}_+$ which satisfies 
+the following properties:
+\begin{enumerate}
+\item  For all $x,y \in X$, it is the case that $D(x,y,r)$ for all $r \in \mathbb{Q}_+$ if and only if $x = y$.
+\item  For all $x,y \in X$ and all $r \in \mathbb{Q}_+$, it is the case that $D(x,y,r)$ if and only if $D(y,x,r)$.
+\item For all $x,y \in X$ and all $r,s \in \mathbb{Q}_+$, if $r \le s$ and $D(x,y,r)$ then $D(x,y,s)$.
+\item For all $x,y,z \in X$ and all $r,s \in \mathbb{Q}_+$, if $D(x,y,r)$ and $D(y,z,s)$, then $D(x,z,r+s)$.
+\end{enumerate}
+\end{definition}
+
+\section{Equivalence with usual definition}
+
+The definition presented above is equivalent to the definition presented in 
+\PMlinkname{metric space}{MetricSpace}.
+This equivalence is 
+given by the following equations which relate the primitive term ``$D$'' used in this definition with the primitive 
+term ``$d$'' of the previous definition:
+ \[ d(x,y) = \inf \{r \mid D(x,y,r) \} \]
+ \[ D(x,y,r) \leftrightarrow d(x,y) \le r \]
+%%%%%
+%%%%%
+\end{document}

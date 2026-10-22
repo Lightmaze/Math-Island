@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UlamNumber}
+\pmcreated{2013-03-22 16:46:24}
+\pmmodified{2013-03-22 16:46:24}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Ulam number}
+\pmrecord{6}{39002}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B13}
+\pmdefines{Ulam sequence}
+\pmdefines{Ulam-type sequence}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The $n$th {\em Ulam number} $U_n$ for $n > 2$ is the smallest number greater than $U_{n - 1}$ which is a sum of two smaller Ulam numbers in a unique way. $U_1 = 1$ and $U_2 = 2$; the sequence continues 3, 4, 6, 8, 11, 13, 16, 18, 26, 28, 36, 38, 47, 48, 53, 57, 62, 69, 72, 77, 82, 87, 97, 99, 102, 106, 114, 126, 131, 138, 145, 148, 155, 175, 177, 180, 182, 189, 197, etc. (listed in A002858 of Sloane's OEIS); it is what is usually referred to as the {\em Ulam sequence}.
+
+So, for example, 47 is an Ulam number because it is the sum of the pair of smaller Ulam numbers 11 and 36, and no other pair, while 48 is also an Ulam number because it is the sum of 1 and 47, and no other pair. 49 is not an Ulam number because it is the sum of 1 and 48, and of 2 and 47.
+
+\PMlinkname{Stanis\l{}aw Ulam}{StanislawUlam} first studied this sequences in the 1960s ``in a peculiar attempt to get a 1D analog of a 2D cellular automaton'' (Wolfram, 2002). In 2001 Jud McCranie verified that among the first 40000000, the only consecutive pairs that are also both Ulam numbers are 1 and 2, 2 and 3, 3 and 4, and 47 and 48. More recently, in 2006, Neil Sloane conjectured that a plot of the Ulam numbers will produce a line that is very close to $$y = \frac{1351}{100}x.$$
+
+Ulam numbers and the resulting Ulam sequences can be generalized to having different initial values $U_1$ and $U_2$ with the only requirement being that $U_1 < U_2$, these are sometimes referred to as {\em Ulam-type sequences}. If $U_1 = 2$ and $2 \nmid U_2$, then the Ulam-type sequence will have only one other even term (Schmerl \& Spiegel, 1994).
+
+\begin{thebibliography}{2}
+\bibitem{js} J. Schmerl \& E. Spiegel, ``The Regularity of Some 1-Additive Sequences''. {\it J. Combinatoric Theory Ser.} A {\bf 66} (1994): 172 - 175
+\bibitem{sw} S. Wolfram {\it A New Kind of Science} New York: Wolfram Media (2002): 908
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

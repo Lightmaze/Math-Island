@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EveryEvenIntegerGreaterThan46IsTheSumOfTwoAbundantNumbers}
+\pmcreated{2013-03-22 16:06:17}
+\pmmodified{2013-03-22 16:06:17}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{every even integer greater than 46 is the sum of two abundant numbers}
+\pmrecord{10}{38169}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\begin{document}
+\begin{thm}
+Every sufficiently large even integer $n > 46$ can be expressed as the sum of abundant numbers $a$ and $b$ thus: $a + b = n$.
+\end{thm}
+\begin{proof} 
+First we rewrite $n = 2x$ (where $x$ is some positive integer) as $n = 20m + r$, where $r$ satisfies $n \equiv r \mod 20$ and $m = {{n - r} \over {20}}$. If $r = 0$, then we're done, we can simply set $a = 20$ and $b = 20(m - 1)$ (or vice versa if preferred), thanks to the theorem on multiples of abundant numbers.
+
+The other nine possible values of $r$ are almost as easy to dispose of:
+
+If $r = 2$, then assign $a = 20(m - 2)$ and $b = 42$. This works for $m > 2$.
+
+If $r = 4$, then set $a = 20(m - 1)$ and $b = 24$. This works for $m > 1$.
+
+If $r = 6$, then $a = 20(m - 3)$ and $b = 66$. This works for $m > 3$.
+
+If $r = 8$, then $a = 20(m - 2)$ and $b = 48$.
+
+If $r = 10$, then $a = 20(m - 1)$ and $b = 30$.
+
+If $r = 12$, then $a = 20m$ and $b = r$.
+
+If $r = 14$, then $a = 20(m - 5)$ and $b = 114$. This works for $m > 4$.
+
+If $r = 16$, then $a = 20(m - 1)$ and $b = 36$.
+
+If $r = 18$, then $a = 20m$ and $b = r$.
+
+This leaves us 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 26, 28, 34, 46, 54, 74 and 94 to concern ourselves with. We can get rid of 54, 74 and 94 by simply subtracting 24 from each of them. 46 is the largest even value we can't remove from this list. Thus it's proven that all even $n > 46$ can be expressed as the sum of a pair of abundant numbers.
+\end{proof}
+
+We wish to generalize this to odd integers. Given the fact that the smallest odd abundant number is 945, by "sufficiently large" we will have to mean an integer greater than that, and an empirical proof such as the one given above for even integers might have to use the second odd abundant number, 1575. This would give us almost eight hundred possible values of $r$ to worry about, making a more abstract method appear more attractive.
+%%%%%
+%%%%%
+\end{document}

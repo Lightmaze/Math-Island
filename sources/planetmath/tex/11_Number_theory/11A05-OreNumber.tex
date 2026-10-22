@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{OreNumber}
+\pmcreated{2013-03-22 15:56:28}
+\pmmodified{2013-03-22 15:56:28}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{Ore number}
+\pmrecord{15}{37950}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmsynonym{harmonic divisor number}{OreNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given a positive integer $n$ with divisors $d_1, \ldots , d_k,$ if the harmonic mean $${k \over {\sum_{i = 1}^k {1 \over {d_i}}}} \in \Bbb{Z},$$ then $n$ is an {\em Ore number} or {\em harmonic divisor number}.
+
+For example, 270 has the divisors 1, 2, 3, 5, 6, 9, 10, 15, 18, 27, 30, 45, 54, 90, 135 and 270. The reciprocals of these 16 divisors add up to ${8 \over 3}$. Then 16 divided by that fraction is 6, an integer. Thus 270 is an Ore number.
+
+The first few Ore numbers are 1, 6, 28, 140, 270, 496, 672, 1638, 2970, listed in A001599 of Sloane's OEIS.
+
+All even perfect numbers are Ore numbers, a fact proven by {\O}ystein Ore in 1948.
+
+1 is the only known odd Ore number. If there's another, it would have to be pretty big, and is considered as unlikely to exist as an odd perfect number.
+%%%%%
+%%%%%
+\end{document}

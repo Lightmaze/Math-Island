@@ -1,0 +1,9 @@
+{
+  "entry_input_sha256": "7763910fb70f234802f2fe4d1cf71cf1edf9cc00515731d34283ae8d027ddb66",
+  "island_records": 6936,
+  "source_files": 6953,
+  "total_source_bytes": 22209861,
+  "all_sha256_verified": true,
+  "path_rule": "sources/planetmath/tex/<repository-name>/<source-basename>.tex; representative mapping in sources/planetmath/tex-manifest.json",
+  "source_preparation_does_not_apply_final_quarantine_or_concept_merges": true
+}

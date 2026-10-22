@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrimeGap}
+\pmcreated{2013-03-22 16:26:07}
+\pmmodified{2013-03-22 16:26:07}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{prime gap}
+\pmrecord{7}{38588}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The range of consecutive integers between prime number $p_n$ and the next prime $p_{n + 1}$ is called a {\em prime gap}, though sometimes this term is applied to the number of members of that range. For example, from 89 to 97 the numbers 90 to 96 form a gap of seven non-primes.
+
+Obviously in between each twin prime there is a gap of 1. Since there are infinitely many primes, so there are infinitely many prime gaps. If the twin prime conjecture is ever proven, it would also prove that there are infinitely many prime gaps of length 1.
+
+A little reflection will show that the easiest way to find a prime gap of a desired length $n$ is to look at the range $n! + 2, \ldots , n! + n$, though this gap might actually go all the way from $n! - p_{\pi(n)} + 1$ to $n! + p_{\pi(n)} - 1$ (with $p_x$ being the $x$th prime and $\pi(x)$ being the prime counting function). Another way is to look at the range $n\# + 2, \ldots , n\# + n$, where $n\#$ is the $n$th primorial (though it might be slightly longer). 
+
+In general it is often possible to find prime gaps of greater lengths with much smaller numbers. A000230 in Sloane's OEIS lists integers that begin prime gaps of greater lengths than previous integers. Harald CramÃ©r conjectured that for large $n$ a gap of greater lengths than all previous ones can be found at approximately $(\ln n)^2$.
+%%%%%
+%%%%%
+\end{document}

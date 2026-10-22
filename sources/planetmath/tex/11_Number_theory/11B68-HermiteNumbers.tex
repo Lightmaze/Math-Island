@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HermiteNumbers}
+\pmcreated{2013-03-22 19:08:32}
+\pmmodified{2013-03-22 19:08:32}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Hermite numbers}
+\pmrecord{8}{42042}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B68}
+\pmrelated{EulerNumbers2}
+\pmrelated{AppellSequence}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+The \emph{Hermite numbers} $H_n$\, may be defined by the generating function
+\begin{align}
+e^{-t^2} \;:=\; \sum_{n=0}^\infty H_n\frac{t^n}{n!}
+\end{align}
+which is same as the generating function of Hermite polynomials at the value 0 of the argument $z$.\, After expanding the left hand side of (1) to Taylor series $1-\frac{t^2}{1!}+\frac{t^4}{2!}-\frac{t^6}{3!}+-\ldots$, one can write
+\begin{align}
+1-2\!\cdot\!\frac{t^2}{2!}+12\!\cdot\!\frac{t^4}{4!}-120\!\cdot\!\frac{t^6}{6!}+-\ldots \;\;=\; \sum_{n=0}^\infty H_n\frac{t^n}{n!}.
+\end{align}
+Thus one sees that
+$$H_0 = 1,\quad H_1 = 0,\quad H_2 = -2,\quad H_3 = 0,\quad H_4 = 12,\quad H_5 = 0,\quad H_6 = -120,\quad\ldots$$
+Evidently,
+\begin{align}
+H_n \;=\; 
+\begin{cases}
+\frac{(-1)^{\frac{n}{2}}n!}{(\frac{n}{2})!} \textrm{  when  } 2 \mid n\\
+0\; \qquad \textrm{ when  } 2 \nmid n 
+\end{cases}
+\end{align}
+The Hermite numbers form the sequence (\PMlinkexternal{Sloane A067994}{http://www.research.att.com/~njas/sequences/index.html?q=A067994&language=english&go=Search})
+$$1,\,0,\,-2,\,0,\,12,\,0,\,-120,\,0,\,1680,\,0,\,-30240,\,0,\,665280,\,0,\,-17297280,\,0,\,\ldots$$
+which obeys the recurrence relation
+\begin{align}
+H_n \;=\; 2(1\!-\!n)H_{n-2}.
+\end{align}
+
+According to (1), the Hermite numbers satisfy\, $H_n \,=\, H_n(0)$\, where $H_n(x)$ is the Hermite polynomial of degree $n$.\, The \PMlinkescapetext{connection} of Hermite numbers and Hermite polynomials may be expressed also by using symbolic powers
+$$H^\nu \;=:\; H_\nu$$
+as follows:
+\begin{align}
+(2x+H)^n \;=\; H_n(x).
+\end{align}
+This means e.g. that
+$$(2x+H)^2 \;=\; (2x)^2+2\cdot2xH^1+H^2 \;=\; 4x^2+4xH_1+H_2 \;=\; 4x^2-2 \;=\; H_2(x).$$
+
+%%%%%
+%%%%%
+\end{document}

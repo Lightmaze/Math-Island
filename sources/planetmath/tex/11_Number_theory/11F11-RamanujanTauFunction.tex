@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RamanujanTauFunction}
+\pmcreated{2013-03-22 17:51:24}
+\pmmodified{2013-03-22 17:51:24}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{Ramanujan tau function}
+\pmrecord{12}{40333}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11F11}
+\pmclassification{msc}{11A25}
+\pmsynonym{Ramanujan's tau function}{RamanujanTauFunction}
+\pmrelated{ModularForms}
+\pmrelated{ModularDiscriminant}
+\pmrelated{Ramanujan}
+\pmrelated{ApplicationsOfSecondOrderRecurrenceRelationFormula}
+\pmdefines{Lehmer's conjecture}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pstricks}
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\begin{document}
+The \emph{Ramanujan tau function} is the arithmetic function $\tau\colon\mathbb{N}\to\mathbb{Z}$ such that, for all $q\in\mathbb{C}$ with $|q|<1$,
+\[
+q\prod_{k=1}^{\infty}(1-q^k)^{24}=\sum_{n=1}^{\infty} \tau(n)q^n.
+\]
+Thus, the Ramanujan tau function is the generating function for the \PMlinkname{Weierstrass $\Delta$ function}{ModularForms}.
+
+Determining values of the Ramanujan tau function directly can be somewhat involved.  For example, the values of $\tau(1)$, $\tau(2)$, and $\tau(3)$ will be determined:
+
+To determine $\tau(1)$, $\tau(2)$, and $\tau(3)$, we need to find the coefficient of $q$, $q^2$, and $q^3$, respectively, of the expression
+\[
+q\prod_{k=1}^{\infty}(1-q^k)^{24}.
+\]
+Note that we only need to consider $k=1$ and $k=2$, since higher values of $k$ yield \PMlinkname{powers}{Power} of $q$ that are too large.  Thus:
+\begin{align*}
+q(1-q)^{24}(1-q^2)^{24} & =q(1-24q+276q^2-\dots)(1-24q^2+\dots) \\
+& =q(1-24q+276q^2-\dots-24q^2+576q^3-\dots) \\
+& =q(1-24q+252q^2-\dots) \\
+& =q-24q^2+252q^3-\dots
+\end{align*}
+Hence, $\tau(1)=1$, $\tau(2)=-24$, and $\tau(3)=252$.
+
+The sequence $\{\tau(n)\}$ appears in the OEIS as sequence \PMlinkexternal{A000594}{http://www.research.att.com/~njas/sequences/A000594}.
+
+Although the values of $|\tau(n)|$ seem to increase rapidly as $n$ increases, the conjecture that $\tau(n)\neq 0$ for all $n\in\mathbb{N}$ has not yet been proven.  This conjecture is known as \emph{Lehmer's conjecture}.
+
+The Ramanujan tau function has the following properties:
+\begin{itemize}
+\item It is a multiplicative function:  For $a,b\in\mathbb{N}$ with $\gcd(a,b)=1$, we have $\tau(ab)=\tau(a)\tau(b)$.
+\item For any prime $p$ and any $n\in\mathbb{N}$,
+\[
+\tau(p^{n+1})=\tau(p)\tau(p^n)-p^{11}\tau(p^{n-1}).
+\]
+\item For any prime $p$,
+\[
+|\tau(p)|\le 2p^{\frac{11}{2}}.
+\]
+\end{itemize}
+
+Ramanujan asserted that $\tau$ \PMlinkescapetext{satisfies} several congruences, all of which have been proven.  Some simpler examples of such congruences include:
+\begin{itemize}
+\item For any $n\in\mathbb{N}$,
+\[
+\tau(5n)\equiv 0\pmod 5.
+\]
+\item For any $n\in\mathbb{N}$ and for any nonnegative integer $r<7$ which is a quadratic residue modulo $7$,
+\[
+\tau(7n-r)\equiv 0\pmod 7.
+\]
+\item For any $n\in\mathbb{N}$ and for any nonnegative integer $r<23$ which is a quadratic residue modulo $23$,
+\[
+\tau(23n-r)\equiv 0\pmod{23}.
+\]
+\end{itemize}
+
+\begin{thebibliography}{9}
+\bibitem{berndt} Berndt, Bruce C. \emph{Number Theory in the Spirit of Ramanujan}. Providence, RI: American Mathematical Society, 2006.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

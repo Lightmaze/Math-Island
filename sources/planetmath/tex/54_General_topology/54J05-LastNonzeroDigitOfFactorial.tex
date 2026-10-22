@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LastNonzeroDigitOfFactorial}
+\pmcreated{2013-03-24 0:23:36}
+\pmmodified{2013-03-24 0:23:36}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{last non-zero digit of factorial}
+\pmrecord{4}{87304}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{tgf}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%\usepackage{xypic}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+We will show how to compute the last non-zero
+digit of the factorial of a number from its
+digits without having to compute the factorial itself.
+
+Let $L(n)$ denote the last non-zero digit of $n$ in base 10.
+We note some basic properties of $L$ which can easily
+be checked:
+\begin{itemize}
+\item For all $n$, we have $L(10n) = L(n)$.
+\item If $L(m) \neq 5$ and $L(n) \neq 5$, then $L(mn) = L (L(m) L(n))$.
+\end{itemize}
+
+We also tabulate the values of $L(n!)$ for small values of $n$:
+\begin{eqnarray*}
+L(0!) &=& 1 \\
+L(1!) &=& 1 \\
+L(2!) &=& 2 \\
+L(3!) &=& 6 \\
+L(4!) &=& 4 \\
+L(5!) &=& 2 \\
+L(6!) &=& 2 \\
+L(7!) &=& 4 \\
+L(8!) &=& 2 \\
+L(9!) &=& 8 \\
+L(10!) &=& 8 
+\end{eqnarray*}
+
+Next, we make two less trivial observations:
+
+\begin{theorem}
+For all positive integers $n$, we have $L(n!) \neq 5$.
+\end{theorem}
+\end{document}

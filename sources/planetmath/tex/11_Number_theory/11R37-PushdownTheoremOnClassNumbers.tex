@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PushdownTheoremOnClassNumbers}
+\pmcreated{2013-03-22 15:05:19}
+\pmmodified{2013-03-22 15:05:19}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{push-down theorem on class numbers}
+\pmrecord{6}{36815}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R37}
+\pmclassification{msc}{11R32}
+\pmclassification{msc}{11R29}
+\pmrelated{IdealClass}
+\pmrelated{PExtension}
+\pmrelated{ExtensionsWithoutUnramifiedSubextensionsAndClassNumberDivisibility}
+\pmrelated{ClassNumberDivisibilityInPExtensions}
+\pmrelated{ClassNumbersAndDiscriminantsTopicsOnClassGroups}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+As in the \PMlinkname{parent}{ClassNumberDivisibilityInExtensions} entry, given a number field $K$, the class number of $K$ is denoted by $h_K$.
+
+\begin{thm}[Pushing-Down Theorem]
+Let $E/F$ be a $p$-extension of number fields and suppose that only one prime ideal of $F$ is ramified in $E$ and that this prime is totally ramified. Then $p|h_E$ implies $p|h_F$.
+\end{thm}
+
+\begin{thebibliography}{HGM02} % '2nd argument contains the widest acronym'
+
+\bibitem[Fr\"oh]{hgm}
+A. Fr\"ohlich, \emph{On a method for the determination of class number factors in number fields}, Mathematika, 4 (1957), 113-121.
+
+\bibitem[Iwas]{green}
+K. Iwasawa, \emph{A note on Class Numbers of Algebraic Number Fields}, Abh. Math. Sem. Univ. Hamburg, 20 (1956), 257-258.
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

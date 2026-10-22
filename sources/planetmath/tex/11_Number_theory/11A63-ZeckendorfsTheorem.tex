@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ZeckendorfsTheorem}
+\pmcreated{2013-03-22 16:03:57}
+\pmmodified{2013-03-22 16:03:57}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{Zeckendorf's theorem}
+\pmrecord{11}{38120}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmclassification{msc}{11B39}
+\pmsynonym{Zeckendorff's theorem}{ZeckendorfsTheorem}
+\pmrelated{FibonacciSequence}
+\pmrelated{UniquenessOfDigitalRepresentation}
+\pmdefines{Zeckendorf representation}
+\pmdefines{Fibonacci base}
+\pmdefines{Fibonacci coding}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\PMlinkescapeword{even}
+\PMlinkescapeword{mean}
+
+Theorem. Every positive integer can be represented as a sum of distinct non-consecutive Fibonacci numbers in a unique way.
+
+This is {\em Zeckendorf's theorem}, first formulated by Edouard Zeckendorf.
+
+For our purposes here, define the Fibonacci sequence thus: $F_0 = 1$, $F_1 = 1$ and $F_m = F_{m - 2} + F_{m - 1}$ for all $m > 0$. 1 and 1 are not distinct even though the first is $F_0$ and the latter is $F_1$. We will consider two Fibonacci numbers $F_i$ and $F_j$ consecutive if their indexes $i$ and $j$ are consecutive integers, e.g., $j = i + 1$.
+
+A consequence of the theorem is that for every positive integer $n$ there is a unique ordered tuplet $Z$ consisting of $k$ elements, all 0s or 1s, such that $$\sum_{i = 1}^k Z_iF_i = n,$$ where $Z_i$ is the $i$th element in $Z$. This ordered tuplet $Z$ is the {\em Zeckendorf representation} of $n$, or we might even say the {\em Fibonacci base} representation of $n$ (or the {\em Fibonacci coding} of $n$).
+
+So for example, 53 = 34 + 13 + 5 + 1, that is, $F_8 + F_6 + F_4 + F_1$. Furthermore, $Z = (1, 0, 1, 0, 1, 0, 0, 1)$. We list the constituent elements in descending order from $Z_k$ to $Z_1$ to facilitate reinterpretation as a binary integer, 10101001 (or 169) in this example.  Taking the Zeckendorf representations of integers in order and reinterpreting in binary as $$\sum_{i = 1}^k Z_i2^{i - 1}$$ gives the sequence 1, 2, 4, 5, 8, 9, 10, 16, 17, 18, 20, 21, 32, 33, 34, ... (A003714 in Sloane's OEIS). It can be observed that these numbers have no consecutive 1s in their binary representations.
+
+\begin{thebibliography}{6}
+\bibitem{jt} J. Tatersall, {\it Elementary number theory in nine chapters} Cambridge: Cambridge University Press (2005): 44
+\bibitem{ja} J.-P. Allouche, J. Shallit and G. Skordev, ``Self-generating sets, integers with missing blocks and substitutions" {\it Discrete Math.}, 292 (2005): 1 - 15
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

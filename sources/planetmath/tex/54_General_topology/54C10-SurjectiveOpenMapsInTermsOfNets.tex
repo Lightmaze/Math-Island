@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SurjectiveOpenMapsInTermsOfNets}
+\pmcreated{2013-03-22 18:02:59}
+\pmmodified{2013-03-22 18:02:59}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{surjective open maps in terms of nets}
+\pmrecord{13}{40575}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C10}
+%\pmkeywords{open map}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Theorem -} Let $f:X \longrightarrow Y$ be a surjective map between the topological spaces $X$ and $Y$. Then $f$ is an open mapping if and only if given a net $\{y_i\}_{i \in I} \subset Y$ such that $y_i \longrightarrow y$, then for every $x \in f^{-1}(\{y\})$ there exists a subnet $\{y_{i_j}\}_{j \in J}$ that \PMlinkescapetext{{lifts} to a net $\{x_{i_j}\}_{j \in J} \subset X$ such that $x_{i_j} \longrightarrow x$. By "\PMlinkescapetext{lift}" we \PMlinkescapetext{mean} that $\{x_{i_j}\}_{j \in J}$ is such that $f(x_{i_j}) = y_{i_j}$.
+
+$\,$
+
+{\bf \emph{\PMlinkescapetext{Proof}:}} $(\Longrightarrow)$ Suppose $f:X \longrightarrow Y$ is a surjective open mapping and $\{y_i\}_{i \in I} \subset Y$ is a net such that $y_i \longrightarrow y$. Let $x$ be any element of $f^{-1}(\{y\})$ and denote by $\mathcal{N}(x)$ the set of neighborhoods around $x$.
+
+We define the set $J:= \{(U, i) \in \mathcal{N}(x) \times I : y_i \in f(U) \}$ and introduce in it the partial order given by $(U,i_1) < (V,i_2)$ if $V \subseteq U$ and $i_1 \leq i_2$. With this partial order we claim that $J$ is a directed set. 
+
+Let $(U,i_1)$ and $(V,i_2)$ be two elements of $J$. Since $f$ is open, $f(U \cap V)$ is a neighborhood of $y$. Thus, since $y_i \longrightarrow y$, there must be an $i_3 \in I$ such that $i_1, i_2 \leq i_3$ and $y_{i_3} \in f(U \cap V)$. Hence, the element $(U \cap V , i_3) \in J$ and satisfies $(U,i_1) < (U \cap V , i_3)$ and $(V,i_2) < (U \cap V , i_3)$, which proves that $J$ is a directed set.
+
+A \PMlinkescapetext{simple argument} shows that the map $J \longrightarrow I$ given by $(U,i) \longmapsto i$ is increasing and cofinal, hence proving that $\{y_{(U,i)}\}_{(U, i) \in J}$ is a subnet of $\{y_i\}_{i \in I}$.
+
+Now, for each $(U, i) \in J$ pick an element $x_{(U,i)} \in U$ such that $f(x_{(U,i)}) = y_i$ (which exists, by construction).
+
+It is clear that $x_{(U,i)} \longrightarrow x$.
+
+$(\Longleftarrow)$ Suppose now that the condition about nets stated in the theorem is satisfied. We shall prove that $f$ is then an open mapping.
+
+Suppose $f$ is not an open mapping, i.e. there exists an open set $U \subset X$ such that $f(U)$ is not open in $Y$. Thus, there is a point $y \in f(U)$ that does not lie in the interior of $f(U)$. This implies that there is a net $\{y_i\}_{i \in I}$ such that $y_i \longrightarrow y$ and $y_i \notin f(U)$.
+
+Pick an element $x \in f^{-1}(\{y\})$. By assumption, there is a subnet $\{y_{i_j}\}_{j \in J}$ such that $x_{i_j} \longrightarrow x$, where $\{x_{i_j}\}_{j \in J}$ is such that $f(x_{i_j}) = y_{i_j}$. But then, there must be a $j \in J$ such that $x_{i_j} \in U$. This implies that $y_{i_j} \in f(U)$, which is a contradiction. Thus, $f$ must be open. $\square$
+%%%%%
+%%%%%
+\end{document}

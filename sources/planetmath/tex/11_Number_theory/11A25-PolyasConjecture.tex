@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PolyasConjecture}
+\pmcreated{2013-03-22 16:39:43}
+\pmmodified{2013-03-22 16:39:43}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{P\'olya's conjecture}
+\pmrecord{5}{38867}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmsynonym{Polya's conjecture}{PolyasConjecture}
+\pmsynonym{Polya conjecture}{PolyasConjecture}
+\pmsynonym{P\'olya conjecture}{PolyasConjecture}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+(George P\'olya) Given any range of consecutive integers from 1 to $n > 1$, at least half, if not more, of the integers in that range will have an odd number of prime factors (not necessarily distinct). Or, restated using the Liouville function $\lambda(i) = (-1)^{\Omega(i)}$ (where $\Omega(i)$ is the \PMlinkname{number of (nondistinct) prime factors function}{NumberOfNondistinctPrimeFactorsFunction}), there is no such $n > 1$ such that $L(n) > 0$ where $$L(n) = \sum_{i = 1}^n \lambda(i).$$
+
+The zeroes of the sum of the Liouville function below 1000 (namely 2, 4, 6, 10, 16, 26, 40, 96, 586, listed in A028488 of Sloane's OEIS) were known early on after the conjecture was posed. These are all followed by primes, with the exception of 26, which is followed by $3^3$.
+
+Arthur Ingham proved the conjecture false in 1942 and gave a method for finding counterexamples, but the first counterexample wasn't found until 1960 by Robert Lehman, namely $n = 906180359$. Two decades later, Minoru Tanaka found the smallest counterexample at $n = 906150257$; the next three integers have 2, 4 or 6 non-distinct prime factors.
+%%%%%
+%%%%%
+\end{document}

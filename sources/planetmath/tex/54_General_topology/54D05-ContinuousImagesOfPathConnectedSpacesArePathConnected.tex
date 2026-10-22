@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ContinuousImagesOfPathConnectedSpacesArePathConnected}
+\pmcreated{2013-03-22 15:52:38}
+\pmmodified{2013-03-22 15:52:38}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{continuous images of path connected spaces are path connected}
+\pmrecord{6}{37874}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem*{proposition*}{Proposition}
+\newcommand{\fm}[1]{{\it #1}}
+\begin{document}
+\begin{proposition*}
+The continuous image of a path connected space is path connected.
+\end{proposition*}
+
+\begin{proof} 
+Let \fm{X} be a path connected space, and suppose \fm{f} is a
+continuous surjection whose domain is \fm{X}.  Let \fm{a} and \fm{b}
+be points in the image of \fm{f}.  Each has at least one preimage in
+\fm{X}, and by the path connectedness of \fm{X}, there is a path in
+\fm{X} from a preimage of \fm{a} to a preimage of \fm{b}.  Applying
+\fm{f} to this path yields a path in the image of \fm{f} from \fm{a}
+to \fm{b}.
+\end{proof}
+
+\PMlinkescapeword{between}
+\PMlinkescapeword{connected}
+\PMlinkescapeword{connectedness}
+\PMlinkescapeword{path}
+
+%%%%%
+%%%%%
+\end{document}

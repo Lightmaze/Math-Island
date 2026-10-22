@@ -1,0 +1,66 @@
+PlanetMath 官方来源采集与纳入说明
+
+已获取官方组织的 63 个 MSC 分域仓库，无下载失败。每个归档都核验包含 CC BY-SA 3.0 许可。原始归档按 SHA-256 固定。连接器用于发现源，批量归档因连接器无批量下载能力由 HTTPS 下载。
+
+{
+  "repositories_succeeded": 63,
+  "failed": [],
+  "raw_records": 9477,
+  "unique_canonical_names": 9450,
+  "unique_record_ids": 9365,
+  "types": {
+    "Result": 236,
+    "Theorem": 1809,
+    "Feature": 258,
+    "Definition": 4721,
+    "Example": 521,
+    "Application": 45,
+    "Topic": 511,
+    "Corollary": 54,
+    "Conjecture": 55,
+    "unknown": 6,
+    "Derivation": 212,
+    "Data Structure": 37,
+    "Proof": 699,
+    "Axiom": 21,
+    "Algorithm": 98,
+    "Biography": 168,
+    "Bibliography": 26
+  },
+  "all_archives_cc_by_sa_3_0": true,
+  "raw_explicit_links": 20577,
+  "accepted_islands": 6936,
+  "rejected_or_auxiliary": 2514,
+  "canonically_merged_raw_duplicates": 27,
+  "accepted_kind_counts": {
+    "result": 231,
+    "theorem": 1789,
+    "concept": 4688,
+    "corollary": 54,
+    "conjecture": 55,
+    "axiom": 21,
+    "method": 98
+  },
+  "exclusion_counts": {
+    "source_type_not_counted_as_concept_island:Feature": 258,
+    "source_type_not_counted_as_concept_island:Example": 520,
+    "source_type_not_counted_as_concept_island:Application": 45,
+    "source_type_not_counted_as_concept_island:Topic": 510,
+    "source_type_not_counted_as_concept_island:Proof": 694,
+    "source_type_not_counted_as_concept_island:unknown": 6,
+    "source_type_not_counted_as_concept_island:Derivation": 212,
+    "source_type_not_counted_as_concept_island:Biography": 168,
+    "source_type_not_counted_as_concept_island:Data Structure": 37,
+    "source_type_not_counted_as_concept_island:Bibliography": 26,
+    "editorial_index_or_bibliographic_title": 24,
+    "empty_or_near_empty_source_body": 2,
+    "proof_title_not_independent_concept": 12
+  },
+  "entry_sha256": "7763910fb70f234802f2fe4d1cf71cf1edf9cc00515731d34283ae8d027ddb66",
+  "identity_rule": "canonical name casefold; empty pmrecord IDs never merge unrelated records",
+  "type_truth_limit": "Source pmtype and content are editorial source claims; not independently re-proved. Topic metadata may include broader expositions."
+}
+
+纳入真实数学定义、定理、结果、推论、猜想、公理、算法。Topic、Feature、Data Structure（该来源主要是表格和名单）、Proof、Example、Derivation、Application 和来源类型不明项保留在 excluded-entries.jsonl 作为辅助材料，不计独立概念岛屿；人物、书目、编辑目录、空记录不计数。相关航线仅来自原文明确 pmrelated / PMlinkname / PMlinkid 命令。PMlinkexternal 是否命中另一岛屿须下游核对；自动词语提及若使用，必须另标候选。
+
+本源独立严格纳入不足 10000，不得称其单独达到用户数量要求。本文没有验证全部数学陈述的正确性，也没有把正文更新时间视作数学发现时间。

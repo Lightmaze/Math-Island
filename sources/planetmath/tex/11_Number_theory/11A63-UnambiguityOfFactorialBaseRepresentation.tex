@@ -1,0 +1,116 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UnambiguityOfFactorialBaseRepresentation}
+\pmcreated{2013-03-22 16:38:35}
+\pmmodified{2013-03-22 16:38:35}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{unambiguity of factorial base representation}
+\pmrecord{14}{38846}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmrelated{UniquenessOfDigitalRepresentation}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\begin{theorem}
+For all positive integers $n$, it is the case that 
+ \[n! = 1 + \sum_{k = 1}^{n - 1} k \cdot k!\]
+\end{theorem}
+
+\begin{proof}
+We first consider two degenerate cases.  When $n=0$
+or $n=1$, the sum has no terms because the lower limit
+is bigger than the upper limit.  By the convention that
+a sum with no terms equals zero, the equation reduces 
+to $0! = 1$ or $1! = 1$, which is correct.
+
+Next, assume that $n > 1$.  Note that 
+ \[k \cdot k! = (k + 1) k! - k! = (k + 1)! - k!,\]
+hence, we have a telescoping sum:
+ \[\sum_{k = 1}^{n - 1} k \cdot k! = \sum_{k = 1}^{n - 1}
+\left( (k + 1)! - k! \right) = n! - 1\]
+Adding 1, we conclude that
+ \[n! = 1 + \sum_{k = 1}^{n - 1} k \cdot k!\]
+\end {proof}
+
+\begin{theorem}
+If $d_m \ldots d_2 d_1$ is the factoradic representation of
+a positive integer $n$, then $(d_m + 1) \, m! > n \ge d_m 
+\cdot m!$
+\end{theorem}
+
+\begin{proof}
+By definition,
+\[ n = d_m \cdot m! + \sum_{k=1}^{m-1} d_k \cdot k! .\]
+Since each term of the sum is nonnegative, the sum is positive,
+hence $n \ge d_m \cdot m!$.  Using the fact that $0 \le d_k < k$ 
+to bound each term in the sum, we have
+\[ n \le d_m \cdot m! + \sum_{k=1}^{m-1} k \cdot k!.\]
+By theorem 1, the right-hand side equals $m! - 1$, so we have
+$n \le d_m \cdot m! + m! - 1$, which is the same as saying 
+$(d_m + 1) \, m! > n$.
+\end{proof}
+
+\begin{theorem}
+If $d_m \ldots d_2 d_1$ and ${d'}_{m'} \ldots {d'}_2 {d'}_1$ are
+distinct factoradic representations with $d_m \neq 0$ and ${d'}_{m'}
+\neq 0$  (i.e. not padded with leading zeros), then they denote 
+distinct integers.
+\end{theorem}
+
+\begin{proof}
+Let $n = \sum_{k=1}^m d_k \cdot k!$ and let $n' = \sum_{k=1}^{m'} 
+{d'}_k \cdot k!$.
+
+Suppose that $m$ and $m'$ are distinct.  Without loss of generality,
+we may assume that $m < m'$.  Then, $(m+1)! \le {m'}!$.  By theorem 2, 
+we have $n < (d_m + 1) \, m!$ and $d_{m'} \cdot {m'}! \le n'$.  Because
+$d_m \le m$, we have $(d_m + 1) \,m! \le (m + 1) \, m! = (m + 1)!$.
+Because $d_{m'} \neq 0$, we have $n' > {m'}!$.  Hence, $n < n'$, so $n$ 
+does not equal $n'$.
+
+To complete the proof, we use the method of infinite descent.  Assume
+that factoradic representations are not unique.  Then there must exist
+a least integer $n$ such that $n$ has two distinct factoradic 
+representations $d_m \ldots d_2 d_1$ and ${d'}_{m'} \ldots {d'}_2 {d'}_1$
+with $d_m \neq 0$ and ${d'}_{m'} \neq 0$.  By the conclusion of the
+previous paragraph, we must have $m = m'$.  By theorem 2, we must have
+$d_m = {d'}_m$. Let $m_1$ be the chosen such
+that $d_{m_1} \neq 0$ but $d_{m_1 + 1} = \cdots = d_{m-1} = 0$ and let
+$m_2$ be the chosen such that ${d'}_{m_2} \neq 0$ but ${d'}_{m_2 + 1} = 
+\cdots = {d'}_{m-1} = 0$.  Then $d_{m_1} \ldots d_2 d_1$ and ${d'}_{m_2}
+\ldots {d'}_2 {d'}_1$ would be distinct factoradic representations of
+$n - d_m \cdot m!$ whose leading digits are not zero but this would 
+contradict the assumption that $n$ is the smallest number with this
+property. 
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

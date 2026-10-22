@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RSA}
+\pmcreated{2013-03-22 15:14:50}
+\pmmodified{2013-03-22 15:14:50}
+\pmowner{aoh45}{5079}
+\pmmodifier{aoh45}{5079}
+\pmtitle{RSA}
+\pmrecord{5}{37025}
+\pmprivacy{1}
+\pmauthor{aoh45}{5079}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94A60}
+\pmsynonym{RSA cryptosystem}{RSA}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\begin{document}
+\emph{RSA} is an example of public key cryptography. It is a widely used system, relying for its security on the difficulty of factoring a large number.
+
+Alice forms her public and private keys as follows:
+\begin{itemize}
+\item Chooses large primes $p$ and $q$, then form $n=pq$.
+\item Chooses e coprime with $\phi (n) = (p-1)(q-1)$.
+\item Publishes $(n,e)$ as her public key.
+\item Computes private key $d$ such that $de \equiv 1 \quad\textrm{mod } \phi(n)$.
+\end{itemize}
+
+To encrypt a message $M$ (where $M < n$) the user Bob  forms $C = M^e \quad\textrm{mod } n$.
+
+To decrypt the message, Alice forms $d(C) = C^d \quad\textrm{mod } n$.
+
+This recovers message $M$ because:
+\begin{align*}
+d(C) &= C^d \quad\textrm{mod } n \\
+     &= (M^e + rn)^d \quad\textrm{mod } n \qquad \textrm{for some }r \\
+     &= (M^{(p-1)})^{t(q-1)}M \quad\textrm{mod } n \qquad \textrm{for some }t\\
+     &\equiv (1+sp)^{t(q-1)}M \quad\textrm{mod } p \qquad \textrm{for some }s \\
+     &\equiv M \quad\textrm{mod } p
+\end{align*}
+
+So $d(C) \equiv M \quad\textrm{mod } p$ and similarly, $d(C) \equiv M \quad\textrm{mod } q$ so by the Chinese remainder theorem, $d(C) \equiv M \quad\textrm{mod } n$, and since we know $M<n$ we know that $M = d(C)$.
+%%%%%
+%%%%%
+\end{document}

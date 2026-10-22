@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConditionForPowerBasis}
+\pmcreated{2013-03-22 17:49:56}
+\pmmodified{2013-03-22 17:49:56}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{condition for power basis}
+\pmrecord{9}{40302}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmrelated{IntegralBasis}
+\pmrelated{PowerBasis}
+\pmrelated{CanonicalBasis}
+\pmrelated{PropertiesOfDiscriminantInAlgebraicNumberField}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\textbf{Lemma.}\, If $K$ is an algebraic number field of \PMlinkname{degree}{Degree} $n$ and the elements $\alpha_1,\,\alpha_2,\,\ldots,\,\alpha_n$ of $K$ can be expressed as linear combinations
+\begin{align*}
+\begin{cases}
+\alpha_1 = c_{11}\beta_1+c_{12}\beta_2+\ldots+c_{1n}\beta_n\\
+\alpha_2 = c_{21}\beta_1+c_{22}\beta_2+\ldots+c_{2n}\beta_n\\
+\qquad\cdots\\
+\alpha_n = c_{n1}\beta_1+c_{n2}\beta_2+\ldots+c_{nn}\beta_n
+\end{cases}
+\end{align*}
+of the elements $\beta_1,\,\beta_2,\,\ldots,\,\beta_n$ of $K$ with rational coefficients $c_{ij}$, then the discriminants of $\alpha_i$ and $\beta_j$ are \PMlinkescapetext{related} by the equation
+$$\Delta(\alpha_1,\,\alpha_2,\,\ldots,\,\alpha_n) = \det(c_{ij})^2\cdot\Delta(\beta_1,\,\beta_2,\,\ldots,\,\beta_n).\\$$
+
+\textbf{Theorem.}\, Let $\vartheta$ be an algebraic integer of \PMlinkname{degree}{DegreeOfAnAlgebraicNumber} $n$.\, The set\, $\{1,\,\vartheta,\,\ldots,\,\vartheta^{n-1}\}$\, is an integral basis of $\mathbb{Q}(\vartheta)$ if the discriminant \,$d(\vartheta) := \Delta(1,\,\vartheta,\,\ldots,\,\vartheta^{n-1})$\, is square-free.
+
+{\em Proof.}\, The adjusted canonical basis
+
+$\displaystyle\omega_1 = 1,$\\
+$\displaystyle\omega_2 = \frac{a_{21}\!+\!\vartheta}{d_2},$\\
+$\displaystyle\omega_3 = \frac{a_{31}\!+\!a_{32}\vartheta\!+\!\vartheta^2}{d_3},$\\
+$\vdots\,\qquad\vdots\,\qquad\vdots$\\
+$\displaystyle\omega_n = \frac{a_{n1}\!+\!a_{n2}\vartheta\!+\ldots+\!a_{n,n-1}\vartheta^{n-2}\!+\!\vartheta^{n-1}}{d_n}$\\
+
+\noindent of $\mathbb{Q}(\vartheta)$ is an integral basis, where $d_2,\,d_3,\,\ldots,\,d_n$ are integers.\, Its discriminant is the fundamental number $d$ of the field.\, By the lemma, we obtain
+
+\begin{equation*}
+d = \Delta(\omega_1,\,\omega_2,\,\ldots,\,\omega_n) = \left|
+\begin{array}{cccc}
+1 & 0 &\ldots & 0 \\
+\frac{a_{21}}{d_2} & \frac{1}{d_2} & \ddots & 0\\
+\vdots & \vdots & \ddots & 0 \\
+\frac{a_{n1}}{d_n} & \frac{a_{n2}}{d_n}& \ldots & \frac{1}{d_n}
+\end{array}\right|^2 \Delta(1,\,\vartheta,\,\ldots,\,\vartheta^{n-1})
+= \frac{d(\vartheta)}{(d_2d_3\cdots d_n)^2}.
+\end{equation*}
+Thus\, $(d_2d_3\cdots d_n)^2d = d(\vartheta)$,\, and since $d(\vartheta)$ is assumed to be square-free, we have 
+$(d_2d_3\cdots d_n)^2 = 1$,\, and accordingly\, $d(\vartheta)$ equals the \PMlinkname{discriminant of the field}{MinimalityOfIntegralBasis}.\, This implies (see minimality of integral basis) that the numbers $1,\,\vartheta,\,\ldots,\,\vartheta^{n-1}$ form an integral basis of the field $\mathbb{Q}(\vartheta)$.
+%%%%%
+%%%%%
+\end{document}

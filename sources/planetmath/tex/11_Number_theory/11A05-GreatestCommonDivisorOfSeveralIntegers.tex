@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GreatestCommonDivisorOfSeveralIntegers}
+\pmcreated{2013-03-22 19:20:14}
+\pmmodified{2013-03-22 19:20:14}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{greatest common divisor of several integers}
+\pmrecord{5}{42285}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmsynonym{GCD of several integers}{GreatestCommonDivisorOfSeveralIntegers}
+%\pmkeywords{linear combination}
+\pmrelated{BezoutsLemma}
+\pmrelated{IdealDecompositionInDedekindDomain}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\textbf{Theorem.}\, If the greatest common divisor of the nonzero integers $a_1,\,a_2,\,\ldots,\,a_n$ is $d$, then there exist the integers $x_1,\,x_2,\,\ldots,\,x_n$ such that
+\begin{align}
+d \;=\; x_1a_1\!+\!x_2a_2\!+\ldots+\!x_na_n.
+\end{align}
+
+\emph{Proof.}\, In the case \,$n = 2$\, the Euclidean algorithm for two nonzero integers $a,\,b$ always guarantees the integers $x,\,y$ such that
+\begin{align}
+\gcd(a,\,b) \;=\; xa\!+\!yb.
+\end{align}
+Make the induction hypothesis that the theorem is true whenever\, $n < k$.\\
+Since obviously
+$$d \;=\; \gcd(a_1,\,a_2,\,\ldots,\,a_k) \;=\; \gcd(\gcd(a_1,\,a_2,\,\ldots,\,a_{k-1}),\,a_k),$$
+we may write by (2) that
+$$d \;=\; x\gcd(a_1,\,a_2,\,\ldots,\,a_{k-1})+ya_k$$
+and thus by the induction hypothesis that
+$$d \;=\; x(x_1a_1\!+\!x_2a_2\!+\ldots+\!x_{k-1}a_{k-1})\!+\!ya_k.$$
+Consequently, we have gotten an equation of the form (1), Q.E.D.\\
+
+
+\textbf{Note.}\, An analogous theorem concerns elements of any \PMlinkname{B\'ezout domain}{BezoutDomain}.
+%%%%%
+%%%%%
+\end{document}

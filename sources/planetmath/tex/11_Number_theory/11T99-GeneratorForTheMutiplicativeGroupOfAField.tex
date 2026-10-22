@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GeneratorForTheMutiplicativeGroupOfAField}
+\pmcreated{2013-03-22 16:53:17}
+\pmmodified{2013-03-22 16:53:17}
+\pmowner{polarbear}{3475}
+\pmmodifier{polarbear}{3475}
+\pmtitle{generator for the mutiplicative group of a field}
+\pmrecord{16}{39143}
+\pmprivacy{1}
+\pmauthor{polarbear}{3475}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11T99}
+\pmclassification{msc}{12E20}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\begin{proposition} The multiplicative group $K^{*}$ of a finite field $K$ is cyclic.\end{proposition}
+Theorem 3.1 in the \PMlinkname{finite fields}{FiniteField} entry proves
+this proposition along with a more general result:\newline
+\begin{proposition} If for every natural number $d$, the equation $x^d = 1$ has at most $d$ solutions in a finite group $G$ then $G$ is cyclic. Equivalently, for any positive divisor $d$ of $|G|$. \end{proposition} This last proposition implies that every finite subgroup of the multiplicative group of a field (finite or not) is cyclic.
+\newline
+  We will give an alternative constructive proof of Proposition 1:\newline
+ We first factorize $q-1 = \prod_{i=1}^n p_i^{e_i}$. There exists an element $y_i$ in $K^{*}$ such that $y_i$ is not root of $x^{(q-1)/p_i} -1$, since the polynomial has degree less than $q-1$ . Let $z_i = y_i^{(q-1)/p_i^{e_i}}$. We note that $z_i$ has order $p_i^{e_i}$. In fact $z_i^{{p_i}^{e_i}} = 1$ and $z_i^{{p_i}^{e_i-1}} = y_i^{(q-1)/p_i} \ne 1$.\newline
+ Finally we choose the element $z = \prod_{i=1}^n z_i$. By the Theorem 1 \PMlinkname{here}{OrderOfElementsInFiniteGroups}, we obtain that the order of $z$ is $q-1$ i.e. $z$ is a generator of the cyclic group $K^{*}$.
+%%%%%
+%%%%%
+\end{document}

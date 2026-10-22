@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HewittMarczewskiPondiczeryTheorem}
+\pmcreated{2013-03-22 17:16:56}
+\pmmodified{2013-03-22 17:16:56}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{Hewitt-Marczewski-Pondiczery theorem}
+\pmrecord{6}{39623}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D65}
+\pmclassification{msc}{54A25}
+\pmrelated{Dense}
+\pmrelated{Separable}
+
+\endmetadata
+
+\usepackage{amsthm}
+
+\newtheorem*{thm*}{Theorem}
+
+% The following lines should work as the command
+% \renewcommand{\bibname}{References}
+% without creating havoc when rendering an entry in
+% the page-image mode.
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+
+\begin{document}
+\PMlinkescapeword{theorem}
+
+The \emph{Hewitt--Marczewski--Pondiczery Theorem}
+is a result on the density of products of topological spaces.
+This theorem was arrived at independently by 
+Hewitt\cite{hewitt}, Marczewski\cite{marcz} and Pondiczery\cite{pond}
+in the 1940s.
+
+\begin{thm*}
+Let $\kappa$ be an infinite cardinal number and $S$ an index set
+of cardinality at most $2^\kappa$.
+If $X_s$ $(s\in S)$ are topological spaces with $d(X_s)\le\kappa$ then
+\[
+  d\left(\prod_{s\in S}X_s\right)\le\kappa.
+\]
+\end{thm*}
+
+The special case $\kappa=\aleph_0$
+says that the product of at most continuum many separable spaces is separable.
+
+\begin{thebibliography}{3}
+\bibitem{hewitt}
+ Edwin Hewitt,
+ {\it A remark on density characters},
+ Bull.\ Amer.\ Math.\ Soc.\ 52 (1946), 641--643.
+ (This paper is available as a PDF file from the AMS website:
+  \PMlinkexternal{Bull. Amer. Math. Soc., Volume 52, Number 8}{http://www.ams.org/journals/bull/1946-52-08/home.html}.)
+\bibitem{marcz}
+ Edward Marczewski,
+ {\it S\'eparabilit\'e et multiplication cart\'esienne des espaces topologiques},
+ Fund.\ Math.\ 34 (1947), 127--143.
+ (This paper is available as a PDF file from the Polish Virtual Library of Science:
+  \PMlinkexternal{Fundamenta Mathematicae, Volume 34}{http://matwbn.icm.edu.pl/tresc.php?wyd=1&tom=34&jez=en}.)
+\bibitem{pond}
+ E.\ S.\ Pondiczery,
+ {\it Power problems in abstract spaces},
+ Duke Math.\ J.\ 11 (1944), 835--837.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

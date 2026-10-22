@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Mean}
+\pmcreated{2013-03-22 12:43:43}
+\pmmodified{2013-03-22 12:43:43}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{mean}
+\pmrecord{16}{33028}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmclassification{msc}{62-07}
+\pmrelated{ArithmeticMean}
+\pmrelated{GeometricMean}
+\pmrelated{ContraharmonicProportion}
+\pmrelated{OrderOfSixMeans}
+\pmrelated{AverageValueOfFunction}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Loosely speaking, a mean is a way to describe a collection of numbers such
+that the mean in some sense describe the ``average'' entry of these numbers. 
+The most familiar mean is the arithmetic mean, and unless otherwise noted, by mean,
+we always mean the arithmetic mean. 
+
+\subsubsection*{Example} 
+The mean of the numbers $\{1,\,2,\,\ldots,\,n\}$ is $\frac{n+1}{2}$. 
+
+Mathematically, we define a mean as follows:
+
+\subsubsection*{Definition}
+A \emph{mean} is a function $f$ whose domain is the collection of
+all finite multisets of $\mathbb{R}$ and whose codomain is $\mathbb{R}$, 
+such that 
+\begin{itemize}
+\item $f$ is a homogeneous function of degree 1.\, That is, if $\{x_1, \ldots, x_n\}$ is a multiset, then 
+$$ 
+  f(\{ \lambda x_1, \ldots, \lambda x_n\}) = \lambda f(\{x_1, \ldots, x_n\}),\quad \lambda\ge 0.
+$$
+\item For any set $S = \{x_1,\ldots,x_n\}$ of real numbers,
+$$ \min\{x_1,\ldots,x_n\} \leq f(S) \leq \max\{x_1,\ldots,x_n\}.$$
+\end{itemize}
+
+Pythagoras identified three types of means: the \PMlinkname{arithmetic mean}{ArithmeticMean}, the geometric
+mean, and the harmonic mean. However, in the sense of the above definition, 
+there is a wealth of ther means too. For instance, the minimum function and maximum
+functions can be seen as ``trivial'' means. Other well-known means include: 
+
+\begin{itemize}
+\item median, 
+\item mode, 
+\item generalized mean
+\item power mean
+\item Lehmer mean
+\item arithmetic-geometric mean, 
+\item arithmetic-harmonic mean, 
+\item harmonic-geometric mean, 
+\item root-mean-square (sometimes called the quadratic mean), 
+\item identric mean, 
+\item contraharmonic mean,
+\item Heronian mean, 
+\item Cesaro mean,
+\item \PMlinkname{maximum function, minimum function}{MinimalAndMaximalNumber}
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

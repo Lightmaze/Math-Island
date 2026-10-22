@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UniformlyDistributed}
+\pmcreated{2013-03-22 14:17:29}
+\pmmodified{2013-03-22 14:17:29}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{uniformly distributed}
+\pmrecord{6}{35746}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11K06}
+\pmclassification{msc}{11K38}
+\pmsynonym{equidistributed}{UniformlyDistributed}
+\pmrelated{WeylsCriterion}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+Let $\{u_n\}$ be a sequence of real numbers. For
+$0\leq\alpha<\beta\leq 1$ put
+\begin{equation*}
+Z(N,\alpha,\beta)=\operatorname{card}\{n\in[1..N] : \alpha \leq
+(u_n \bmod 1)< \beta \}.
+\end{equation*}
+The sequence $\{u_n\}$ is \emph{uniformly distributed modulo $1$}
+if
+\begin{equation*}\label{eq:modcond}
+\lim_{N\to\infty} \frac{1}{N} Z(N,\alpha,\beta)=\beta-\alpha
+\end{equation*}
+for all $0\leq\alpha<\beta\leq 1$. In other words a sequence is
+uniformly distributed modulo $1$ if each subinterval of $[0,1]$
+gets its ``fair share'' of fractional parts of $\{u_n\}$.
+
+More generally, a sequence $\{u_n\}$ of points in a finite measure
+space $(X,\mathcal{A},\mu)$ is uniformly distributed with respect
+to a family of sets $\mathcal{F}\subset\mathcal{A}$ if
+\begin{equation*}
+\lim_{N\to\infty} \frac{\operatorname{card}\{n\in[1..N] :u_n\in
+S\}}{N}=\frac{\mu(S)}{\mu(X)}\qquad\text{for every
+}S\in\mathcal{F}.
+\end{equation*}
+
+\begin{thebibliography}{1}
+
+\bibitem{cite:chen_irreg_dist}
+William Chen.
+\newblock Lectures on irregularities of point distribution.
+\newblock Available at \PMlinkexternal{http://www.maths.mq.edu.au/~wchen/ln.html}{http://www.maths.mq.edu.au/~wchen/ln.html}, 2000.
+
+\bibitem{cite:montgomery_tenlect}
+Hugh~L. Montgomery.
+\newblock {\em Ten Lectures on the Interface Between Analytic Number Theory and
+  Harmonic Analysis}, volume~84 of {\em Regional Conference Series in
+  Mathematics}.
+\newblock AMS, 1994.
+\newblock \PMlinkexternal{Zbl 0814.11001}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0814.11001}.
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

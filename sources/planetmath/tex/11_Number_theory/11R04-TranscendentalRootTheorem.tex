@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TranscendentalRootTheorem}
+\pmcreated{2013-03-22 14:04:23}
+\pmmodified{2013-03-22 14:04:23}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{transcendental root theorem}
+\pmrecord{8}{35431}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Suppose a constant $x$ is transcendental over some field $F$. Then $\sqrt[n]{x}$ is also transcendental over $F$ for any $n\geq 1$. 
+
+\begin{proof}
+Let $\overline{F}$ denote an algebraic closure of $F$.  Assume for the sake of contradiction that $\sqrt[n]{x}\in\overline{F}$.  Then since algebraic numbers are closed under multiplication (and thus exponentiation by positive integers), we have $(\sqrt[n]{x})^n=x\in \overline{F}$, so that $x$ is algebraic over $F$, creating a contradiction.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

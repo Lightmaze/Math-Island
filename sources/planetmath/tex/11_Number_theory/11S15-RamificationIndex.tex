@@ -1,0 +1,402 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RamificationIndex}
+\pmcreated{2013-03-22 12:36:36}
+\pmmodified{2013-03-22 12:36:36}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{ramification index}
+\pmrecord{17}{32868}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11S15}
+\pmclassification{msc}{30F99}
+\pmclassification{msc}{12F99}
+\pmclassification{msc}{13B02}
+\pmclassification{msc}{14E22}
+\pmsynonym{ramify}{RamificationIndex}
+\pmsynonym{ramified}{RamificationIndex}
+\pmsynonym{unramified}{RamificationIndex}
+\pmsynonym{ramification degree}{RamificationIndex}
+\pmsynonym{ramification}{RamificationIndex}
+\pmrelated{NumberField}
+\pmrelated{DecompositionGroup}
+\pmrelated{UnramifiedExtensionsAndClassNumberDivisibility}
+\pmrelated{SplittingAndRamificationInNumberFieldsAndGaloisExtensions}
+\pmdefines{branch point}
+\pmdefines{ramification point}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+\usepackage{epsfig}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\p}{{\mathfrak{p}}}
+\newcommand{\m}{{\mathfrak{m}}}
+\renewcommand{\P}{{\mathfrak{P}}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\renewcommand{\H}{\mathcal{H}}
+\newcommand{\A}{\mathbb{A}}
+\renewcommand{\c}{\mathcal{C}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\lra}{\longrightarrow}
+\renewcommand{\div}{\mid}
+\newcommand{\res}{\operatorname{res}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\diff}{\operatorname{diff}}
+\newcommand{\incl}{\operatorname{incl}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\renewcommand{\Re}{\operatorname{Re}}
+\newcommand{\intersect}{\cap}
+\newcommand{\union}{\cup}
+\newcommand{\bigintersect}{\bigcap}
+\newcommand{\bigunion}{\bigcup}
+\newcommand{\ilim}{\,\underset{\longleftarrow}{\lim}\,}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\begin{document}
+\section{Ramification in number fields}
+
+\begin{definition}[First definition]\label{definition-1}
+Let $L/K$ be an extension of number fields. Let $\p$ be a nonzero
+prime ideal in the ring of integers $\O_K$ of $K$, and suppose the
+ideal $\p \O_L \subset \O_L$ factors as
+$$
+\p \O_L = \prod_{i=1}^n \P_i^{e_i}
+$$
+for some prime ideals $\P_i \subset \O_L$ and exponents $e_i \in
+\N$. The natural number $e_i$ is called the {\em ramification index}
+of $\P_i$ over $\p$. It is often denoted $e(\P_i/\p)$. If $e_i > 1$
+for any $i$, then we say the ideal $\p$ {\em ramifies} in $L$.
+
+Likewise, if $\P$ is a nonzero prime ideal in $\O_L$, and $\p := \P
+\intersect \O_K$, then we say $\P$ {\em ramifies} over $K$ if the
+ramification index $e(\P/\p)$ of $\P$ in the factorization of the
+ideal $\p \O_L \subset \O_L$ is greater than 1. That is, a prime $\p$
+in $\O_K$ ramifies in $L$ if at least one prime $\P$ dividing $\p
+\O_L$ ramifies over $K$. If $L/K$ is a Galois extension, then the
+ramification indices of all the primes dividing $\p \O_L$ are equal,
+since the Galois group is transitive on this set of primes.
+\end{definition}
+
+\subsection{The local view}
+
+The phenomenon of ramification has an equivalent interpretation in
+terms of local rings. With $L/K$ as before, let $\P$ be a prime in
+$\O_L$ with $\p := \P \intersect \O_K$. Then the induced map of
+localizations $(\O_K)_\p \hookrightarrow (\O_L)_\P$ is a local
+homomorphism of local rings (in fact, of discrete valuation rings),
+and the ramification index of $\P$ over $\p$ is the unique natural
+number $e$ such that
+$$
+\p (\O_L)_\P = (\P (\O_L)_\P)^e \subset (\O_L)_\P.
+$$
+
+An astute reader may notice that this formulation of ramification
+index does not require that $L$ and $K$ be number fields, or even that
+they play any role at all. We take advantage of this fact here to give
+a second, more general definition.
+
+\begin{definition}[Second definition]\label{definition-2}
+Let $\iota: A \lra B$ be any ring homomorphism. Suppose $\P \subset B$
+is a prime ideal such that the localization $B_\P$ of $B$ at $\P$ is a
+discrete valuation ring. Let $\p$ be the prime ideal $\iota^{-1}(\P)
+\subset A$, so that $\iota$ induces a local homomorphism $\iota_\P:
+A_\p \lra B_\P$. Then the {\em ramification index} $e(\P/\p)$ is
+defined to be the unique natural number such that
+$$
+\iota(\p)B_\P = (\P B_\P)^{e(\P/\p)} \subset B_\P,
+$$
+or $\infty$ if $\iota(\p)B_\P = (0)$.
+\end{definition}
+
+The reader who is not interested in local rings may assume that $A$
+and $B$ are unique factorization domains, in which case $e(\P/\p)$ is
+the exponent of $\P$ in the factorization of the ideal $\iota(\p) B$,
+just as in our first definition (but without the requirement that the
+rings $A$ and $B$ originate from number fields).
+
+There is of course much more that can be said about ramification
+indices even in this purely algebraic setting, but we limit ourselves
+to the following remarks:
+
+\begin{enumerate}
+\item Suppose $A$ and $B$ are themselves discrete valuation rings,
+with respective maximal ideals $\p$ and $\P$. Let $\hat{A} := \ilim
+A/\p^n$ and $\hat{B} := \ilim B/\P^n$ be the completions of $A$
+and $B$ with respect to $\p$ and $\P$. Then
+\begin{equation}\label{completion}
+e(\P/\p) = e(\P\hat{B}/\p\hat{A}).
+\end{equation}
+In other words, the ramification index of $\P$ over $\p$ in the
+$A$--algebra $B$ equals the ramification index in the completions of
+$A$ and $B$ with respect to $\p$ and $\P$.
+\item Suppose $A$ and $B$ are Dedekind domains, with respective
+fraction fields $K$ and $L$. If $B$ equals the integral closure of $A$
+in $L$, then
+\begin{equation}\label{sum-formula}
+\sum_{\P \div \p} e(\P/\p) f(\P/\p) \leq [L:K],
+\end{equation}
+where $\P$ ranges over all prime ideals in $B$ that divide $\p B$, and
+$f(\P/\p) := \dim_{A/\p}(B/\P)$ is the inertial degree of $\P$ over
+$\p$. Equality holds in Equation~\eqref{sum-formula} whenever $B$ is
+finitely generated as an $A$--module.
+\end{enumerate}
+
+\section{Ramification in algebraic geometry}
+
+The word ``ramify'' in English means ``to divide into two or more
+branches,'' and we will show in this section that the mathematical term
+lives up to its common English meaning.
+
+\begin{definition}[Algebraic version]\label{algebraic}
+Let $f: C_1 \lra C_2$ be a non--constant regular morphism of curves
+(by which we mean one dimensional nonsingular irreducible algebraic
+varieties) over an algebraically closed field $k$. Then $f$ has a
+nonzero degree $n := \deg f$, which can be defined in any of the
+following ways:
+\begin{itemize}
+\item The number of points in a generic fiber $f^{-1}(p)$, for $p \in
+C_2$
+\item The maximum number of points in $f^{-1}(p)$, for $p \in C_2$
+\item The degree of the extension $k(C_1)/f^* k(C_2)$ of function
+fields
+\end{itemize}
+
+There is a finite set of points $p \in C_2$ for which the inverse
+image $f^{-1}(p)$ does not have size $n$, and we call these points the
+{\em branch points} or {\em ramification points} of $f$. If $P \in
+C_1$ with $f(P) = p$, then the {\em ramification index} $e(P/p)$ of
+$f$ at $P$ is the ramification index obtained algebraically from
+Definition~\ref{definition-2} by taking
+\begin{itemize}
+\item $A = k[C_2]_p$, the local ring consisting of all rational
+functions in the function field $k(C_2)$ which are regular at $p$.
+\item $B = k[C_1]_P$, the local ring consisting of all rational
+functions in the function field $k(C_1)$ which are regular at $P$.
+\item $\p = \m_p$, the maximal ideal in $A$ consisting of all
+functions which vanish at $p$.
+\item $\P = \m_P$, the maximal ideal in $B$ consisting of all
+functions which vanish at $P$.
+\item $\iota = f^*_p: k[C_2]_p \hookrightarrow k[C_1]_P$, the map on
+the function fields induced by the morphism $f$.
+\end{itemize}
+\end{definition}
+
+\begin{example}\label{example-1}
+The picture in Figure~\ref{parabola-figure} may be worth a thousand words. Let $k = \C$ and
+$C_1 = C_2 = \C = \A^1_\C$. Take the map $f: \C \lra \C$ given by
+$f(y) = y^2$. Then $f$ is plainly a map of degree 2, and every point
+in $C_2$ except for 0 has two preimages in $C_1$. The point 0 is thus
+a ramification point of $f$ of index 2, and we have drawn the graph of $f$ near $0$.
+\begin{figure}
+\epsfig{file=curve.eps}
+\caption{The function $f(y) = y^2$ near $y=0$.}
+\label{parabola-figure}
+\end{figure}
+
+Note that we have only drawn the real locus of $f$ because that is all
+that can fit into two dimensions. We see from the figure that a
+typical point on $C_2$ such as the point $x = 1$ has two points in
+$C_1$ which map to it, but that the point $x = 0$ has only one
+corresponding point of $C_1$ which ``branches'' or ``ramifies'' into two
+distinct points of $C_1$ whenever one moves away from 0.
+\end{example}
+
+\subsection{Relation to the number field case}
+
+The relationship between Definition~\ref{definition-2} and
+Definition~\ref{algebraic} is easiest to explain in the case where $f$
+is a map between affine varieties. When $C_1$ and $C_2$ are affine,
+then their coordinate rings $k[C_1]$ and $k[C_2]$ are Dedekind
+domains, and the points of the curve $C_1$ (respectively, $C_2$)
+correspond naturally with the maximal ideals of the ring $k[C_1]$
+(respectively, $k[C_2]$). The ramification points of the curve $C_1$
+are then exactly the points of $C_1$ which correspond to maximal
+ideals of $k[C_1]$ that ramify in the algebraic sense, with respect to
+the map $f^*: k[C_2] \lra k[C_1]$ of coordinate rings.
+
+Equation~\eqref{sum-formula} in this case says
+$$
+\sum_{P \in f^{-1}(p)} e(P/p) = n,
+$$
+and we see that the well known formula~\eqref{sum-formula} in number
+theory is simply the algebraic analogue of the geometric fact that the
+number of points in the fiber of $f$, counting multiplicities, is
+always $n$.
+
+\begin{example}
+Let $f: \C \lra \C$ be given by $f(y) = y^2$ as in
+Example~\ref{example-1}. Since $C_2$ is just the affine line, the
+coordinate ring $\C[C_2]$ is equal to $\C[X]$, the polynomial ring in
+one variable over $\C$. Likewise, $\C[C_1] = \C[Y]$, and the induced
+map $f^*: \C[X] \lra \C[Y]$ is naturally given by $f^*(X) = Y^2$. We
+may accordingly identify the coordinate ring $\C[C_2]$ with the
+subring $\C[X^2]$ of $\C[X] = \C[C_1]$.
+
+Now, the ring $\C[X]$ is a principal ideal domain, and the maximal
+ideals in $\C[X]$ are exactly the principal ideals of the form $(X -
+a)$ for any $a \in \C$. Hence the nonzero prime ideals in $\C[X^2]$
+are of the form $(X^2 - a)$, and these factor in $\C[X]$ as
+$$
+(X^2 - a) = (X - \sqrt{a}) (X + \sqrt{a}) \subset \C[X].
+$$
+Note that the two prime ideals $(X - \sqrt{a})$ and $(X + \sqrt{a})$
+of $\C[X]$ are equal only when $a = 0$, so we see that the ideal $(X^2
+- a)$ in $\C[X^2]$, corresponding to the point $a \in C_2$, ramifies
+in $C_1$ exactly when $a = 0$. We have therefore recovered our
+previous geometric characterization of the ramified points of $f$,
+solely in terms of the algebraic factorizations of ideals in $\C[X]$.
+\end{example}
+
+In the case where $f$ is a map between projective varieties,
+Definition~\ref{definition-2} does not directly apply to the
+coordinate rings of $C_1$ and $C_2$, but only to those of open covers
+of $C_1$ and $C_2$ by affine varieties. Thus we do have an instance of
+yet another new phenomenon here, and rather than keep the reader in
+suspense we jump straight to the final, most general definition of
+ramification that we will give.
+
+\begin{definition}[Final form]\label{final}
+Let $f: (X,\O_X) \lra (Y,\O_Y)$ be a morphism of locally ringed
+spaces. Let $p \in X$ and suppose that the stalk $(\O_X)_p$ is a
+discrete valuation ring. Write $\phi_p: (\O_Y)_{f(p)} \lra (\O_X)_p$
+for the induced map of $f$ on stalks at $p$. Then the {\em
+ramification index} of $p$ over $Y$ is the unique natural number $e$,
+if it exists (or $\infty$ if it does not exist), such that
+$$
+\phi_p(\m_{f(p)})(\O_X)_p = \m_p^e,
+$$
+where $\m_p$ and $\m_{f(p)}$ are the respective maximal ideals of
+$(\O_X)_p$ and $(\O_Y)_{f(p)}$. We say $p$ is {\em ramified} in $Y$ if
+$e > 1$.
+\end{definition}
+
+\begin{example}
+A ring homomorphism $\iota: A \lra B$ corresponds functorially to a
+morphism $\Spec(B) \lra \Spec(A)$ of locally ringed spaces from the
+prime spectrum of $B$ to that of $A$, and the algebraic notion of
+ramification from Definition~\ref{definition-2} equals the
+sheaf--theoretic notion of ramification from Definition~\ref{final}.
+\end{example}
+
+\begin{example}
+For any morphism of varieties $f: C_1 \lra C_2$, there is an induced
+morphism $f^\#$ on the structure sheaves of $C_1$ and $C_2$, which are
+locally ringed spaces. If $C_1$ and $C_2$ are curves, then the stalks are one dimensional regular local rings and therefore discrete valuation rings, so in this way we recover the algebraic
+geometric definition (Definition~\ref{algebraic}) from the sheaf
+definition (Definition~\ref{final}).
+\end{example}
+
+\section{Ramification in complex analysis}
+
+Ramification points or branch points in complex geometry are merely a
+special case of the high--flown terminology of
+Definition~\ref{final}. However, they are important enough to merit a
+separate mention here.
+
+\begin{definition}[Analytic version]\label{analytic}
+Let $f: M \lra N$ be a holomorphic map of Riemann surfaces. For any $p
+\in M$, there exists local coordinate charts $U$ and $V$ around $p$
+and $f(p)$ such that $f$ is locally the map $z \mapsto z^e$ from $U$
+to $V$. The natural number $e$ is called the {\em ramification index}
+of $f$ at $p$, and $p$ is said to be a {\em branch point} or {\em
+ramification point} of $f$ if $e > 1$.
+\end{definition}
+
+\begin{example}
+Take the map $f: \C \lra \C$, $f(y) = y^2$ of
+Example~\ref{example-1}. We study the behavior of $f$ near the
+unramified point $y=1$ and near the ramified point $y=0$. Near $y=1$,
+take the coordinate $w = y-1$ on the domain and $v = x-1$ on the
+range. Then $f$ maps $w+1$ to $(w+1)^2$, which in the $v$ coordinate
+is $(w+1)^2 - 1 = 2w + w^2$. If we change coordinates to $z = 2w +
+w^2$ on the domain, keeping $v$ on the range, then $f(z) = z$, so the
+ramification index of $f$ at $y=1$ is equal to 1.
+
+Near $y=0$, the function $f(y) = y^2$ is already in the form $z
+\mapsto z^e$ with $e=2$, so the ramification index of $f$ at $y=0$ is
+equal to 2.
+\end{example}
+
+\subsection{Algebraic--analytic correspondence}
+
+Of course, the analytic notion of ramification given in
+Definition~\ref{analytic} can be couched in terms of locally ringed
+spaces as well. Any Riemann surface together with its sheaf of
+holomorphic functions is a locally ringed space. Furthermore the stalk
+at any point is always a discrete valuation ring, because germs of
+holomorphic functions have Taylor expansions making the stalk
+isomorphic to the power series ring $\C[[z]]$. We can therefore apply
+Definition~\ref{final} to any holomorphic map of Riemann surfaces, and
+it is not surprising that this process yields the same results as
+Definition~\ref{analytic}.
+
+More generally, every map of algebraic varieties $f: V \lra W$ can be
+interpreted as a holomorphic map of Riemann surfaces in the usual way,
+and the ramification points on $V$ and $W$ under $f$ as algebraic
+varieties are identical to their ramification points as Riemann
+surfaces. It turns out that the analytic structure may be regarded in
+a certain sense as the ``completion'' of the algebraic structure, and in
+this sense the algebraic--analytic correspondence between the
+ramification points may be regarded as the geometric version of the
+equality~\eqref{completion} in number theory.
+
+The algebraic--analytic correspondence of ramification points is
+itself only one manifestation of the wide ranging identification
+between algebraic geometry and analytic geometry which is explained to
+great effect in the seminal paper of Serre~\cite{gaga}.
+
+\begin{thebibliography}{9}
+\bibitem{hartshorne} Robin Hartshorne, {\em Algebraic
+Geometry}, Springer--Verlag, 1977 (GTM {\bf 52}).
+\bibitem{janusz} Gerald Janusz, {\em Algebraic Number Fields, Second
+Edition}, American Mathematical Society, 1996 (GSM {\bf 7}).
+\bibitem{jost} J\"urgen Jost, {\em Compact Riemann Surfaces},
+Springer--Verlag, 1997.
+\bibitem{lorenzini} Dino Lorenzini, {\em An Invitation to Arithmetic Geometry}, American Mathematical Society, 1996 (GSM {\bf 9}).
+\bibitem{serre} Jean--Pierre Serre, {\em Local Fields},
+Springer--Verlag, 1979 (GTM {\bf 67}).
+\bibitem{gaga} Jean--Pierre Serre, ``G\'eom\'etrie alg\'ebraique et
+g\'eom\'etrie analytique,'' Ann. de L'Inst. Fourier {\bf 6} pp. 1--42,
+1955--56.
+\bibitem{silverman} Joseph Silverman, {The Arithmetic of Elliptic
+Curves}, Springer--Verlag, 1986 (GTM {\bf 106}).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

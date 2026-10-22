@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{YIsCompactIfAndOnlyIfEveryOpenCoverOfYHasAFiniteSubcover}
+\pmcreated{2013-03-22 13:34:07}
+\pmmodified{2013-03-22 13:34:07}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{$Y$ is compact if and only if every open cover of $Y$ has a finite subcover}
+\pmrecord{6}{34179}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D30}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+{\bf Theorem. }\\
+Let $X$ be a topological space and $Y$ a subset of $X$. Then the following 
+statements are equivalent.
+\begin{enumerate}
+\item $Y$ is compact as a subset of $X$. 
+\item Every open cover of $Y$ (with open sets in $X$) has a finite
+subcover.
+\end{enumerate}
+
+\emph{Proof.} 
+Suppose $Y$ is compact, and $\{U_i\}_{i\in I}$ is an arbitrary 
+open cover of $Y$, where $U_i$ are open sets in $X$. Then 
+$\{U_i\cap Y\}_{i\in I}$  is a collection of open sets in $Y$ with 
+union $Y$. Since $Y$ is compact, there is a finite subset $J\subset I$
+such that $Y=\cup_{i\in J} (U_i\cap Y)$. Now 
+$Y=(\cup_{i\in J} U_i)\cap Y \subset \cup_{i\in J} U_i$, so
+$\{U_i\}_{i\in J}$ is finite open cover of $Y$. 
+
+Conversely, suppose every open cover of $Y$ has a finite subcover, 
+and $\{U_i\}_{i\in I}$ is an arbitrary collection of open sets 
+(in $Y$) with union $Y$. By the definition of the subspace topology, 
+each $U_i$ is of the form $U_i = V_i\cap Y$ for some open set 
+$V_i$ in $X$. Now $U_i \subset V_i$, so $\{V_i\}_{i\in I}$ is a cover
+of $Y$ by open sets in $X$. By assumption, it has a finite subcover
+$\{V_i\}_{i\in J}$. It follows that 
+$\{U_i\}_{i\in J}$ covers $Y$, and $Y$ is compact. $\Box$
+
+
+The above proof follows the proof given in \cite{ikenaga}.
+\begin{thebibliography}{9}
+ \bibitem{ikenaga}
+ B.Ikenaga, \emph{Notes on Topology}, August 16, 2000, available online
+ \PMlinkexternal{http://www.millersv.edu/~bikenaga/topology/topnote.html}{http://www.millersv.edu/~bikenaga/topology/topnote.html}.
+ \end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

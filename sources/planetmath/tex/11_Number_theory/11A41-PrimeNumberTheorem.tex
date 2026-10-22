@@ -1,0 +1,135 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrimeNumberTheorem}
+\pmcreated{2013-03-22 11:45:18}
+\pmmodified{2013-03-22 11:45:18}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{prime number theorem}
+\pmrecord{21}{30199}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmclassification{msc}{55U10}
+\pmclassification{msc}{55U30}
+\pmclassification{msc}{55T25}
+\pmclassification{msc}{55M05}
+\pmclassification{msc}{55U15}
+\pmclassification{msc}{81T25}
+\pmclassification{msc}{81-XX}
+\pmclassification{msc}{20G42}
+\pmclassification{msc}{81R50}
+\pmclassification{msc}{17B37}
+\pmclassification{msc}{81Q60}
+\pmclassification{msc}{81V05}
+\pmclassification{msc}{81T05}
+\pmclassification{msc}{55R40}
+%\pmkeywords{number theory}
+\pmdefines{pi(x)}
+\pmdefines{logarithmic integral}
+
+\endmetadata
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+%\usepackage{graphicx}
+%%%%%\usepackage{xypic}
+\DeclareMathOperator{\li}{li}
+\begin{document}
+\PMlinkescapeword{term}
+\PMlinkescapeword{behavior}
+
+Define $\pi (x)$ as the number of primes less than or equal to $x$. The prime number theorem asserts that \[ \pi (x) \sim \frac{x}{\log x} \] as $x \rightarrow \infty$, that is, $\pi(x) / \frac{x}{\log x}$ tends to 1 as $x$ increases. Here ${\log x}$ is the natural logarithm.
+
+There is a sharper statement that is also known as the prime number
+theorem:
+\begin{equation*}
+\pi(x)=\li x+R(x),
+\end{equation*}
+where $\li$ is the logarithmic integral defined as
+\begin{equation*}
+\li x=\int_2^x \frac{dt}{\log t}=\frac{x}{\log x}+\frac{1!x}{(\log
+x)^2}+\dotsb+\frac{(k-1)!x}{(\log x)^{k}}+O\left\{\frac{x}{(\log
+x)^{k+1}}\right\},\qquad\text{for any fixed $k$}
+\end{equation*}
+and $R(x)$ is the error term whose behavior is still not fully
+known. From the work of Korobov and Vinogradov on zeroes of
+Riemann zeta-function it is known that
+\begin{equation*}
+R(x)=O\left\{x \exp(-c(\theta)(\log x)^\theta)\right\}
+\end{equation*}
+for every $\theta>\tfrac{3}{5}$. The unproven Riemann hypothesis
+is equivalent to the statement that $R(x)=O(x^{1/2}\log x)$.
+
+There exist a number of proofs of the prime number theorem. The
+original proofs by Hadamard \cite{cite:hadamard_pnt} and de~la
+Vall\'ee~Poussin\cite{cite:poussin_pnt} called on analysis of
+behavior of the Riemann zeta function $\zeta(s)$ near the line $\Re s=1$
+to deduce the estimates for $R(x)$. For a long time it was an open
+problem to find an elementary proof of the prime number theorem
+(``elementary'' meaning ``not involving complex analysis'').
+Finally Erd\H{o}s and Selberg
+\cite{cite:erdos_elempnt,cite:selberg_elempnt} found such a proof.
+Nowadays there are some very short proofs of the prime number
+theorem (for example, see~\cite{cite:newman_shortpnt}).
+
+\begin{thebibliography}{1}
+
+\bibitem{cite:apostol_introanalytic}
+Tom~M. Apostol.
+\newblock {\em Introduction to Analytic Number Theory}.
+\newblock Narosa Publishing House, second edition, 1990.
+\newblock \PMlinkexternal{Zbl
+  0335.10001}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0335.10001}.
+
+\bibitem{cite:davenport_multnumtheory}
+Harold Davenport.
+\newblock {\em Multiplicative Number Theory}.
+\newblock Markham Pub.\ Co., 1967.
+\newblock \PMlinkexternal{Zbl
+  0159.06303}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0159.06303}.
+
+\bibitem{cite:erdos_elempnt}
+Paul Erd{\H{o}}s.
+\newblock On a new method in elementary number theory.
+\newblock {\em Proc. Nat. Acad. Sci. U.S.A.}, 35:374--384, 1949.
+\newblock \PMlinkexternal{Zbl
+  0034.31403}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0034.31403}.
+
+\bibitem{cite:hadamard_pnt}
+Jacques Hadamard.
+\newblock Sur la distribution des z{\'e}ros de la fonction $\zeta(s)$ et ses
+  cons{\'e}quences arithm{\'e}tiques.
+\newblock {\em Bull. Soc. Math. France}, 24:199--220.
+\newblock 
+\PMlinkexternal{JFM 27.0154.01}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=27.0154.01}.
+
+\bibitem{cite:newman_shortpnt}
+Donald~J. Newman.
+\newblock Simple analytic proof of the prime number theorem.
+\newblock {\em Amer. Math. Monthly}, 87:693--696, 1980.
+\newblock 
+\PMlinkexternal{Available online}{http://links.jstor.org/sici?sici=0002-9890\%28198011\%2987\%3A9\%3C693\%3ASAPOTP\%3E2.0.CO\%3B2-U}
+ at \PMlinkexternal{JSTOR}{http://www.jstor.org}.
+
+\bibitem{cite:selberg_elempnt}
+Atle Selberg.
+\newblock An elementary proof of the prime number theorem.
+\newblock {\em Ann. Math. (2)}, 50:305--311, 1949.
+\newblock \PMlinkexternal{Zbl
+  0036.30604}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0036.30604}.
+
+\bibitem{cite:poussin_pnt}
+Charles~{de~la} {Vall\'ee~Poussin}.
+\newblock Recherces analytiques sur la th{\'e}orie des nombres premiers.
+\newblock {\em Ann. Soc. Sci. Bruxells}, 1897.
+
+\end{thebibliography}
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

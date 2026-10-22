@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FareyPair}
+\pmcreated{2013-03-22 14:54:42}
+\pmmodified{2013-03-22 14:54:42}
+\pmowner{drini}{3}
+\pmmodifier{drini}{3}
+\pmtitle{Farey pair}
+\pmrecord{6}{36597}
+\pmprivacy{1}
+\pmauthor{drini}{3}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A55}
+\pmrelated{ContinuedFraction}
+\pmdefines{mediant}
+\pmdefines{Farey interval}
+
+\endmetadata
+
+\usepackage{graphicx}
+%%%\usepackage{xypic} 
+\usepackage{bbm}
+\newcommand{\Z}{\mathbbmss{Z}}
+\newcommand{\C}{\mathbbmss{C}}
+\newcommand{\R}{\mathbbmss{R}}
+\newcommand{\Q}{\mathbbmss{Q}}
+\newcommand{\mathbb}[1]{\mathbbmss{#1}}
+\newcommand{\figura}[1]{\begin{center}\includegraphics{#1}\end{center}}
+\newcommand{\figuraex}[2]{\begin{center}\includegraphics[#2]{#1}\end{center}}
+\newtheorem{dfn}{Definition}
+\begin{document}
+Two nonnegative reduced fractions $a/b$ and $c/d$ make a \emph{Farey pair} (with $a/b < c/d$) whenever $bc-ad=1$, in other words, they are a Farey pair if their difference is $1/bd$. The interval $[a/b, c/d]$ is known as a \emph{Farey interval.}
+
+Given a Farey pair $a/b,c/d$, their \emph{mediant} is $(a+c)/(b+d)$. The mediant has the following property:
+
+{\sl If $[a,b,c/d]$ is a Farey interval, then the two subintervals obtained when inserting the mediant are also Farey pairs. Besides, between all fractions that are strictly between $a/b,c/d$, the mediant is the one having the smallest denominator.}
+
+{\bf Example.}\\
+Notice that $3/8$ and $5/11$ form a Farey pair, since 
+$8\cdot 5 - 3\cdot 13 =40-391$. The mediant here is $8/21$.
+
+Then $3/8$ and $8/21$ form a Farey pair: $8\cdot 8 - 3\cdot 21 = 64-63=1$.
+No fraction between $3/8$ and $5/11$ other than $8/21$ has a denominator smaller or equal than $21$.
+%%%%%
+%%%%%
+\end{document}

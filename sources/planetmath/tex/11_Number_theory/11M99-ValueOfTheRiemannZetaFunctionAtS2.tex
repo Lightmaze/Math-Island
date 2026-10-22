@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ValueOfTheRiemannZetaFunctionAtS2}
+\pmcreated{2013-03-22 13:57:16}
+\pmmodified{2013-03-22 13:57:16}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{value of the Riemann zeta function at $s=2$}
+\pmrecord{15}{34719}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11M99}
+\pmclassification{msc}{42A16}
+\pmrelated{ExampleOfFourierSeries}
+\pmrelated{PersevalEquality}
+\pmrelated{ValuesOfTheRiemannZetaFunctionInTermsOfBernoulliNumbers}
+\pmrelated{ValueOfRiemannZetaFunctionAtS4}
+\pmrelated{ValueOfDirichletEtaFunctionAtS2}
+\pmrelated{APathologicalFunctionOfRiemann}
+\pmrelated{KummersAccelerationMethod}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+Here we present an application of Parseval's equality to number
+theory. Let $\zeta(s)$ denote the Riemann zeta function. We will
+compute the value
+$$\zeta(2)$$
+with the help of Fourier analysis.
+
+{\bf Example:}
+
+Let $f\colon \Reals \to \Reals$ be the ``identity'' function,
+defined by
+$$f(x)=x, \text{ for all }x\in\Reals.$$
+
+The Fourier series of this function has been computed in the entry
+example of Fourier series.
+
+Thus
+\begin{eqnarray*}
+ f(x)=\ x&=& a_0^f +
+\sum_{n=1}^{\infty}(a_n^f\cos(nx)+b_n^f\sin(nx)) \\
+&=& \sum_{n=1}^{\infty}(-1)^{n+1}\frac{2}{n} \sin(nx), \quad \forall x\in
+(-\pi,\pi).
+\end{eqnarray*}
+
+Parseval's theorem asserts that:
+
+$$\frac{1}{\pi}\int_{-\pi}^{\pi}f^2(x)dx = 2(a_0^f)^2 + \sum_{k=1}^{\infty}[(a_k^f)^2+(b_k^f)^2].$$
+
+So we apply this to the function $f(x)= x $:
+$$2(a_0^f)^2 +
+\sum_{k=1}^{\infty}[(a_k^f)^2+(b_k^f)^2]= \sum_{n=1}^{\infty}
+\frac{4}{n^2}= 4\sum_{n=1}^{\infty}\frac{1}{n^2}$$ and
+$$\frac{1}{\pi}\int_{-\pi}^{\pi}f^2(x)dx = \frac{1}{\pi}\int_{-\pi}^{\pi}x^2dx= \frac{2\pi^2}{3}.$$
+
+Hence by Parseval's equality
+$$4\sum_{n=1}^{\infty}\frac{1}{n^2}=\frac{2\pi^2}{3}$$
+and hence
+$$\zeta(2)=\sum_{n=1}^{\infty}\frac{1}{n^2}=\frac{\pi^2}{6}.$$
+%%%%%
+%%%%%
+\end{document}

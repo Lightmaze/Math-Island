@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UrysohnExtensionTheorem}
+\pmcreated{2013-03-22 17:01:43}
+\pmmodified{2013-03-22 17:01:43}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{Urysohn extension theorem}
+\pmrecord{5}{39314}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C45}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+Let $X$ be a topological space, and $C(X)$ and $C^*(X)$ the rings of continuous functions and bounded continuous functions respectively.
+
+\textbf{Urysohn Extension Theorem}.  \emph{A subset $A\subseteq X$ is} \PMlinkname{\emph{$C^*$-embedded}}{CEmbedding} \emph{if and only if any two completely separated sets in $A$ are completely separated in $X$ as well.}
+
+\textbf{Remarks}.  
+\begin{itemize}
+\item
+Suppose that $X$ is a metric space and $A$ is closed in $X$.  If $S,T$ are completely separated sets in $A$, then they are contained in disjoint zero sets $S'$ and $T'$ in $A$.  Since $S'$ and $T'$ are closed in $A$, and $A$ is closed in $X$, $S'$ and $T'$ are closed in $X$.  Since $X$ is a metric space, $S'$ and $T'$ are zero sets in $X$.  Since $S\subseteq S'$ and $T\subseteq T'$ and $S'\cap T'$ are disjoint, $S$ and $T$ are completely separated in $X$ as well.  By Urysohn Extension Theorem, any bounded continuous function defined on $A$ can be extended to a continuous function on $X$, which is the statement of the metric space version of the Tietze extension theorem.
+\item
+However, the above argument does not generalize to normal spaces, so can not be used to prove the generalized version of the Tietze extension theorem.  Urysohn's lemma is required to prove this more general result.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

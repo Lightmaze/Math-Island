@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NormAndTraceOfAlgebraicNumber}
+\pmcreated{2013-03-22 15:19:08}
+\pmmodified{2013-03-22 15:19:08}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{norm and trace of algebraic number}
+\pmrecord{15}{37125}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+%\pmkeywords{norm}
+%\pmkeywords{trace}
+\pmrelated{TheoryOfAlgebraicNumbers}
+\pmrelated{AlgebraicNumberTheory}
+\pmrelated{IdealNorm}
+\pmrelated{UnitsOfRealCubicFieldsWithExactlyOneRealEmbedding}
+\pmrelated{IndependenceOfCharacteristicPolynomialOnPrimitiveElement}
+\pmdefines{absolute norm}
+\pmdefines{absolute trace}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem{thmplain}{Theorem}
+\begin{document}
+\begin{thmplain}
+\, Let $K$ be an algebraic number field and $\alpha$ an element of $K$.\, The norm  $\mbox{N}(\alpha)$ and the trace $\mbox{S}(\alpha)$ of $\alpha$ in the field extension $K/\mathbb{Q}$ both are rational numbers and especially rational integers in the case $\alpha$ is an algebraic integer.\, If $\beta$ is another element of $K$, then 
+\begin{align}
+\mbox{N}(\alpha\beta) \;=\; \mbox{N}(\alpha)\mbox{N}(\beta), \quad
+  \mbox{S}(\alpha\!+\!\beta) \;=\; \mbox{S}(\alpha)\!+\!\mbox{S}(\beta),
+\end{align}
+i.e. the norm is multiplicative and the trace additive.\, If\,  
+$[K\!:\!\mathbb{Q}] = n$\, and\, $a\in\mathbb{Q}$, then
+$$\mbox{N}(a) = a^n, \quad \mbox{S}(a) = na.$$
+\end{thmplain}
+
+\textbf{Remarks}
+
+1.\, The notions norm and trace were originally introduced in German \PMlinkescapetext{language} as ``die Norm'' and ``die Spur''.\, Therefore in German and many other literature the symbol of trace is S, Sp or sp.\, Nowadays the symbols T and Tr are common. 
+
+2.\, The norm and trace of an algebraic number $\alpha$ in the field extension\, $\mathbb{Q}(\alpha)/\mathbb{Q}$,\, i.e. the product and sum of all algebraic conjugates of $\alpha$, are called the {\em absolute norm} and the {\em absolute trace} of $\alpha$.\, Formulae like (1) concerning the absolute norms and traces are not sensible.\, 
+
+\begin{thmplain}
+\, An algebraic integer $\varepsilon$ is a unit if and only if 
+        $$\mbox{N}(\varepsilon) \;=\; \pm 1,$$
+i.e. iff the absolute norm of $\varepsilon$ is a rational unit.\, Thus \PMlinkescapetext{the constant term} in the minimal polynomial of an algebraic unit is always \,$\pm 1$.
+\end{thmplain}
+
+\textbf{Example.}\, The minimal polynomial of the number $2\!+\!\sqrt{3}$, which is the fundamental unit of the quadratic field $\mathbb{Q}(\sqrt{3})$, is \,$x^2\!-\!4x\!+\!1$.
+%%%%%
+%%%%%
+\end{document}

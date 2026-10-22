@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CanonicalBasis}
+\pmcreated{2015-02-06 13:12:19}
+\pmmodified{2015-02-06 13:12:19}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{canonical basis}
+\pmrecord{14}{37165}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmrelated{MinimalityOfIntegralBasis}
+\pmrelated{ExamplesOfRingOfIntegersOfANumberField}
+\pmrelated{ConditionForPowerBasis}
+\pmrelated{IntegralBasisOfQuadraticField}
+\pmrelated{CanonicalFormOfElementOfNumberField}
+\pmdefines{canonical basis}
+\pmdefines{canonical basis of a number field}
+\pmdefines{adjusted canonical basis}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+Let $\vartheta$ be an algebraic integer of \PMlinkname{degree}{ExtensionField} $n$.\, The algebraic number field $\mathbb{Q}(\vartheta)$ has always an integral basis of the form 
+
+$\displaystyle\omega_1 = 1,$\\
+$\displaystyle\omega_2 = \frac{a_{21}\!+\!\vartheta}{d_2},$\\
+$\displaystyle\omega_3 = \frac{a_{31}\!+\!a_{32}\vartheta\!+\!\vartheta^2}{d_3},$\\
+$\vdots\,\qquad\vdots\,\qquad\vdots$\\
+$\displaystyle\omega_n = \frac{a_{n1}\!+\!a_{n2}\vartheta\!+\ldots+\!a_{n,n-1}\vartheta^{n-2}\!+\!\vartheta^{n-1}}{d_n}$,
+
+where the $a_{ij}$'s and $d_i$'s are rational integers such that
+               $$d_2\mid d_3\mid d_4\mid\ldots\mid d_n,$$
+i.e.
+    $$d_i\mid d_{i+1}\quad \forall\, i = 2,\,3,\,\ldots,\,n\!-\!1.$$
+
+The integral basis\, $\omega_1,\,\omega_2,\,\ldots,\,\omega_n$\ is called a {\em canonical basis} of the number field.
+
+\textbf{Remark.}\, The integers $a_{ij}$ can be reduced so that for all $i$ and $j$, 
+         $$-\frac{d_i}{2} < a_{ij} \leqq \frac{d_i}{2}.$$
+Then one may speak of an {\em adjusted canonical basis}.\, In the case of a quadratic number field $\mathbb{Q}(\sqrt{d})$ with\, 
+$d \equiv 1\, (\mbox{mod}\, 4)$\, we have (see the examples of ring of integers of a number field)
+    $$\omega_1 = 1,  \quad \omega_2 = \frac{1\!+\!\sqrt{d}}{2}.$$
+The discriminant of this basis is $d$.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EulerFoursquareIdentity}
+\pmcreated{2013-03-22 12:35:20}
+\pmmodified{2013-03-22 12:35:20}
+\pmowner{vitriol}{148}
+\pmmodifier{vitriol}{148}
+\pmtitle{Euler four-square identity}
+\pmrecord{6}{32839}
+\pmprivacy{1}
+\pmauthor{vitriol}{148}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N32}
+\pmrelated{Quaternions}
+\pmrelated{MultiplicativityOfSumsOfSquares}
+\pmrelated{LagrangesFourSquareTheorem}
+\pmrelated{SumsOfTwoSquares}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The Euler four-square identity simply states that
+
+$(x_1^2 + x_2^2 + x_3^2 + x_4^2)(y_1^2 + y_2^2 + y_3^2 + y_4^2) =$
+$(x_1y_1 + x_2y_2 + x_3y_3 + x_4y_4)^2 + (x_1y_2 - x_2y_1 + x_3y_4 - x_4y_3)^2$
+$+ (x_1y_3 - x_3y_1 + x_4y_2 - x_2y_4)^2 + (x_1y_4 - x_4y_1 + x_2y_3 - x_3y_2)^2$
+
+It may be derived from the property of quaternions that the norm of the product is equal to the product of the norms.
+%%%%%
+%%%%%
+\end{document}

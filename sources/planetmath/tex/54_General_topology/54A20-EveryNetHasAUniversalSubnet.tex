@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EveryNetHasAUniversalSubnet}
+\pmcreated{2013-03-22 17:25:16}
+\pmmodified{2013-03-22 17:25:16}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{every net has a universal subnet}
+\pmrecord{8}{39795}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A20}
+\pmsynonym{Kelley's theorem}{EveryNetHasAUniversalSubnet}
+%\pmkeywords{Kelley}
+%\pmkeywords{universal net}
+%\pmkeywords{ultranet}
+\pmrelated{Ultranet}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Theorem - (Kelley's theorem) -} Let $X$ be a non-empty set. Every net $(x_{\alpha})_{\alpha \in \mathcal{A}}$ in $X$ has a \PMlinkname{universal subnet}{Ultranet}. That is, there is a subnet such that for every $E \subseteq X$ either the subnet is eventually in $E$ or eventually in $X-E$.
+
+{\bf Proof :} Let $\mathcal{F}$ be a section filter for the net $(x_{\alpha})_{\alpha \in \mathcal{A}}$.
+
+ Let $\mathcal{D}=\{(\alpha,U):\alpha \in \mathcal{A}\;,\; U \in \mathcal{F},\; x_{\alpha} \in U \}$. $\mathcal{D}$ is a directed set under the order relation given by
+\begin{displaymath}
+(\alpha,U) \leq (\beta,V) \Longleftrightarrow \begin{cases}  
+  \alpha \leq \beta \\
+  V \subseteq U
+\end{cases}
+\end{displaymath}
+
+The map $f:\mathcal{D} \longrightarrow \mathcal{A}$ defined by $f(\alpha,U):=\alpha$ is order preserving and cofinal. Therefore there is a subnet $(y_{(\alpha,U)})_{(\alpha,U) \in \mathcal{D}}$ of $(x_{\alpha})_{\alpha \in \mathcal{A}}$ associated with the map $f$ (that is, $y_{(\alpha,U)} = x_{\alpha}$).
+
+We now prove that $(y_{(\alpha,U)})_{(\alpha,U) \in \mathcal{D}}$ is a \PMlinkescapetext{universal} net.
+
+Let $E \subseteq X$. We have that $(y_{(\alpha,U)})_{(\alpha,U) \in \mathcal{D}}$ is frequently in $E$ or frequently in $X-E$.
+
+Suppose $(y_{(\alpha,U)})_{(\alpha,U) \in \mathcal{D}}$ is frequently in $E$.
+
+Let $A \in \mathcal{F}$ and $S(\alpha):=\{x_{\beta}:\alpha \leq \beta\}$. We have that $S(\alpha) \in \mathcal{F}$ by definition of section filter.
+
+As $\mathcal{F}$ is a filter, $A \cap S(\alpha) \neq \emptyset$ and so there exists $\beta$ with $\alpha \leq \beta$ such that $x_{\beta} \in A$. Hence, $(\beta,A) \in \mathcal{D}$.
+
+As $(y_{(\alpha,U)})_{(\alpha,U) \in \mathcal{D}}$ is frequently in $E$, there exists $(\gamma,B) \in \mathcal{D}$ with $(\beta,A) \leq (\gamma,B)$ such that $y_{(\gamma,B)} \in E$.
+
+Also, $y_{(\gamma,B)}$ is in $B$, and therefore, in $A$. So $A \cap E \neq \emptyset$.
+
+We conclude that $E \cap A \neq \emptyset$ for every $A \in \mathcal{F}$. Therefore, $\mathcal{F} \cup \{E\}$ \PMlinkescapetext{generates} a filter in $X$. As $\mathcal{F}$ is a maximal filter we conclude that $E \in \mathcal{F}$, and consequently, $(\gamma,E) \in \mathcal{D}$.
+
+We can now see that for every $(\delta,C)$ with $(\gamma,E) \leq (\delta,C)$, $y_{(\delta,C)}$ is in $C$ and so is in $E$. Therefore, $(y_{(\alpha,U)})_{(\alpha,U) \in \mathcal{D}}$ is eventually in $E$.
+
+\emph{Remark:} If $(y_{(\alpha,U)})_{(\alpha,U) \in \mathcal{D}}$ is frequently in $X-E$, by an analogous \PMlinkescapetext{argument} we can conclude that it is eventually in $X-E$.
+
+This proves that $(y_{(\alpha,U)})_{(\alpha,U) \in \mathcal{D}}$ is a \PMlinkescapetext{universal} subnet of $(x_{\alpha})_{\alpha \in \mathcal{A}}$. $\square$
+%%%%%
+%%%%%
+\end{document}

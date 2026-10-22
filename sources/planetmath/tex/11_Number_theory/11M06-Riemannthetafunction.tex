@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Riemannthetafunction}
+\pmcreated{2013-03-22 13:23:58}
+\pmmodified{2013-03-22 13:23:58}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Riemann $\theta$-function}
+\pmrecord{13}{33940}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11M06}
+\pmsynonym{Riemann theta-function}{Riemannthetafunction}
+\pmsynonym{Riemann theta function}{Riemannthetafunction}
+\pmrelated{LandsbergSchaarRelation}
+
+\endmetadata
+
+
+\begin{document}
+The \emph{Riemann theta function} is a number-theoretic function
+which is only really used in
+the derivation of the functional equation for the Riemann xi function.
+ 
+The Riemann theta function is defined as:
+\[
+  \theta(x) = 2\omega (x) + 1,
+\]
+where $\omega$ is the Riemann omega function.
+
+The \PMlinkname{domain}{Function} of the Riemann theta function is $x > 0$.
+
+To give an explicit form for the theta function, note that
+\begin{eqnarray*}
+\omega(x) &=& \sum_{n=1}^{\infty} e^{-n^2 \pi x}\\
+          &=& \sum_{n=-1}^{-\infty} e^{-(-n)^2 \pi x}\\
+          &=& \sum_{n=-1}^{-\infty} e^{-n^2 \pi x}
+\end{eqnarray*}
+and so
+\begin{eqnarray*}
+2\omega(x) + 1 &=& \sum_{n=-1}^{-\infty} e^{-n^2 \pi x} + \omega(x) + 1\\
+               &=& \sum_{n=-1}^{-\infty} e^{-n^2 \pi x} + \sum_{n=1}^{\infty} e^{-n^2 \pi x} + e^{-0^2 \pi x}\\
+               &=& \sum_{n=-\infty}^{\infty} e^{-n^2 \pi x}.
+\end{eqnarray*}
+Thus we have
+\[
+\theta(x) = \sum_{n=-\infty}^{\infty} e^{-n^2 \pi x}.
+\]
+
+Riemann showed that the theta function satisfied a functional equation,
+which was the key step
+in the proof of the analytic continuation for the Riemann xi function.
+This has direct consequences for the Riemann zeta function.
+
+%%%%%
+%%%%%
+\end{document}

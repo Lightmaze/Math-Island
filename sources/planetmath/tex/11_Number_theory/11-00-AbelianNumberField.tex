@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AbelianNumberField}
+\pmcreated{2013-03-22 16:01:24}
+\pmmodified{2013-03-22 16:01:24}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{abelian number field}
+\pmrecord{5}{38063}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmrelated{GaloisGroupsOfFiniteAbelianExtensionsOfMathbbQ}
+\pmdefines{cyclic number field}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+\begin{defn}
+An abelian number field is a number field $K$ such that $K/\Rats$ is an abelian extension, i.e. $K/\Rats$ is Galois and $\Gal(K/\Rats)$ is an abelian group.
+\end{defn}
+
+The abelian number fields are classified by the Kronecker-Weber Theorem.
+
+\begin{defn}
+A cyclic number field is an (abelian) number field $K$ such that $K/\Rats$ is a Galois extension and $\Gal(K/\Rats)$ is a finite cyclic group (therefore abelian).
+\end{defn}
+%%%%%
+%%%%%
+\end{document}

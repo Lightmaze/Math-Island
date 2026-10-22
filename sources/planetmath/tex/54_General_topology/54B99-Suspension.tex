@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Suspension}
+\pmcreated{2013-03-22 13:25:37}
+\pmmodified{2013-03-22 13:25:37}
+\pmowner{antonio}{1116}
+\pmmodifier{antonio}{1116}
+\pmtitle{suspension}
+\pmrecord{10}{33984}
+\pmprivacy{1}
+\pmauthor{antonio}{1116}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B99}
+\pmrelated{Cone}
+\pmrelated{LoopSpace}
+\pmrelated{Join3}
+\pmrelated{SuspensionIsomorphism}
+\pmdefines{suspension}
+\pmdefines{reduced suspension}
+\pmdefines{based suspension}
+\pmdefines{unreduced suspension}
+\pmdefines{unbased suspension}
+
+\endmetadata
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\newcommand{\limv}[2]{\lim\limits_{#1\rightarrow #2}}
+\newcommand{\eb}{\mathbf{e}}    % Standard basis
+\newcommand{\comp}{\circ}       % Function composition
+\newcommand{\reals}{{\mathbb R}}        % The reals
+\newcommand{\integs}{{\mathbb Z}}        % The integers
+\newcommand{\setc}[2]{\left\{#1:\: #2\right\}}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\cycle}[1]{\left(#1\right)}
+\newcommand{\tuple}[1]{\left(#1\right)}
+\newcommand{\Partial}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\PartialSl}[2]{\partial #1/\partial #2}
+\newcommand{\funcsig}[2]{#1\rightarrow #2}
+\newcommand{\funcdef}[3]{#1:\funcsig{#2}{#3}}
+\newcommand{\supp}{\mathop{\mathrm{Supp}}} % Support of a function
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}} % Sign function
+\newcommand{\tr}[1]{#1^\mathrm{tr}} % Transpose of a matrix
+\newcommand{\inprod}[2]{\left<#1,#2\right>} % Inner product
+\newenvironment{smallbmatrix}{\left[\begin{smallmatrix}}{\end{smallmatrix}\right]}
+\newcommand{\maps}[2]{\mathop{\mathrm{Maps}}\left(#1,#2\right)}
+\newcommand{\bmaps}[2]{\mathop{\mathrm{Maps}_*}\left(#1,#2\right)}
+\newcommand{\intoc}[2]{\left(#1,#2\right]}
+\newcommand{\intco}[2]{\left[#1,#2\right)}
+\newcommand{\intoo}[2]{\left(#1,#2\right)}
+\newcommand{\intcc}[2]{\left[#1,#2\right]}
+\newcommand{\transv}{\pitchfork}
+\newcommand{\pair}[2]{\left\langle#1,#2\right\rangle}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\sqnorm}[1]{\left\|#1\right\|^2}
+\newcommand{\bdry}{\partial}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\tensor}{\otimes}
+\newcommand{\bigtensor}{\bigotimes}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\coker}{\operatorname{im}}
+\newcommand{\map}{\operatorname{Map}}
+\newcommand{\crit}{\operatorname{Crit}}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{dthm}{Desired Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{dcor}[thm]{Desired Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{defn}{Definition}
+\newcommand{\cross}{\times}
+\newcommand{\del}{\nabla}
+\newcommand{\homeo}{\cong}
+\newcommand{\isom}{\cong}
+\newcommand{\codim}{\operatorname{codim}}
+\newcommand{\susp}{\Sigma}
+\begin{document}
+\section{The unreduced suspension}
+
+Given a topological space $X,$ the {\em suspension} of $X,$ often denoted by $SX,$ is defined to be the quotient space $X\cross[0,1]/\sim,$ where $(x,0)\sim(y,0)$ and $(x,1)\sim(y,1)$ for any $x, y\in X.$ 
+
+Given a continuous map $\funcdef{f}{X}{Y},$ there is a map 
+$\funcdef{Sf}{SX}{SY}$ defined by $Sf([x,t]):=[f(x),t].$ This makes $S$ into a functor from the category of topological spaces into itself. 
+
+Note that $SX$ is homeomorphic to the join $X\star S^0,$ where $S^0$ is a discrete space with two points.
+
+The space $SX$ is sometimes called the {\em unreduced}, {\em unbased} or {\em free} suspension of $X,$ to distinguish it from the reduced suspension described below.
+
+
+\section{The reduced suspension}
+If $(X,x_0)$ is a based topological space, the {\em reduced suspension} of $X,$ often denoted $\susp X$ (or $\susp_{x_0} X$ when the basepoint needs to be explicit), is defined to be the quotient space $X\times[0,1]/(X\cross\set{0}\cup X\cross\set{1}\cup\set{x_0}\cross[0,1].$ Setting the basepoint of $\susp X$ to be the equivalence class of $(x_0,0),$ the reduced suspension is a functor from the category of based topological spaces into itself.
+
+An important property of this functor is that it is a left adjoint to the functor $\Omega$ taking a (based) space $X$ to its loop space $\Omega X$. In other words, $\bmaps{\susp X}{Y}\isom\bmaps{X}{\Omega Y}$ naturally, where $\bmaps{X}{Y}$ stands for continuous maps which preserve basepoints.
+
+The reduced suspension is also known as the {\em based\/} suspension.
+%%%%%
+%%%%%
+\end{document}

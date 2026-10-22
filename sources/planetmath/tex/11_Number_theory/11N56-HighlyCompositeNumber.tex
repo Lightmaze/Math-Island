@@ -1,0 +1,37 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HighlyCompositeNumber}
+\pmcreated{2013-03-22 13:40:44}
+\pmmodified{2013-03-22 13:40:44}
+\pmowner{Kevin OBryant}{1315}
+\pmmodifier{Kevin OBryant}{1315}
+\pmtitle{highly composite number}
+\pmrecord{7}{34347}
+\pmprivacy{1}
+\pmauthor{Kevin OBryant}{1315}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N56}
+\pmdefines{superior highly composite number}
+
+\endmetadata
+
+
+\begin{document}
+We call $n$ a highly composite number if $d(n)>d(m)$ for all $m<n$, where $d(n)$ is the number of divisors of
+$n$. The first several are 1, 2, 4, 6, 12, 24. The sequence is \PMlinkexternal{A002182}{http://www.research.att.com/cgi-bin/access.cgi/as/njas/sequences/eisA.cgi?Anum=002182} in Sloane's OEIS.
+
+
+The integer $n$ is {\em superior} highly composite if there is an $\epsilon>0$ such that for all
+$m\not=n$,
+    $$d(n) n^{-\epsilon} > d(m) m^{-\epsilon}.$$
+The first several superior highly composite numbers are 2, 6, 12, 60, 120, 360. The sequence is \PMlinkexternal{A002201}{http://www.research.att.com/cgi-bin/access.cgi/as/njas/sequences/eisA.cgi?Anum=002201} in Sloane's encyclopedia.
+
+
+\begin{thebibliography}{9}
+    \bibitem[1]{AEr1944} L. Alaoglu\ and\ P. Erd\"os, {\em On highly composite and similar numbers}. Trans. Amer. Math. Soc.
+        {\bf 56} (1944), 448--469. \PMlinkexternal{Available at www.jstor.org}{http://links.jstor.org/sici?sici=0002-9947\%28194411\%2956\%3A3\%3C448\%3AOHCASN\%3E2.0.CO\%3B2-S}
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

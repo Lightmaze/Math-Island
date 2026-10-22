@@ -1,0 +1,198 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DeterminationOfEvenAbundantNumbersWithOneOddPrimeFactor}
+\pmcreated{2013-03-22 16:47:51}
+\pmmodified{2013-03-22 16:47:51}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{determination of even abundant numbers with one odd prime factor}
+\pmrecord{24}{39031}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\begin{document}
+In this entry, we will use the criterion of the parent entry to determine
+the first few even abundant numbers.  To keep things more managable, 
+we shall take advantage of the fact that a multiple of an abundant number 
+is abundant and only look for abundant numbers none of whose proper divisors 
+are abundant.  Once we know these numbers, it becomes a rather easy matter
+to find the rest of the abundant numbers by taking multiples.
+
+To begin, we look at the criterion of the second thorem.  Since $2 / (2 - 1) = 2$
+and, for any $p > 2$, we have $1 < p / (p - 1) < 2$, it follows that, for
+every prime $p$, there will exist abundant numbers of the form $2^m p^n$.
+By the first theorem, for such a number to be abundant, we must have
+\[
+{(1 - 2^{-m-1}) (1 - p^{-n-1}) \over \frac{1}{2} (1 - p^{-1})} > 2
+\]
+or, after a little algebraic simplification,
+\[
+(1 - 2^{-m-1}) (1 - p^{-n-1}) > 1 - p^{-1}.
+\]
+From this inequality, we can deduce a description of abundant numbers 
+of the form $2^m p^n$.
+
+\begin{thm}
+Let $p>2$ be prime.  Then, for all $n \ge 0$, we find that $2^m p^n$ 
+is abundant for $m$ sufficiently large.
+\end{thm}
+
+\begin{proof}
+When $n \ge 0$, we have
+\[
+1 - p^{-n-1} > 1 - p^{-1}.
+\]
+Since $\lim_{m \to \infty} 2^{-m-1} = 0$, it follows that 
+\[
+(1 - 2^{-m-1}) (1 - p^{-n-1}) > 1 - p^{-1}.
+\]
+for $m$ sufficiently large, hence $2^m p^n$ 
+will be abundant for $m$ sufficiently large.
+\end{proof}
+
+\begin{thm}
+Let $p>2$ be prime.  Then there exists $m_0$ such that:
+\begin{enumerate}
+\item If $m < m_0$, then $2^m p^n$ is not abundant for any $n$.
+\item if $m \ge m_0$, then $2^m p^n$ is abundant for $n$ 
+sufficiently large.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+Set $m_0$ to be the smallest integer such that $2^{m_0 + 1} > p$.
+This inequality is equivalent to
+\[
+1 - 2^{-m_0 - 1} > 1 - p^{-1}.
+\]
+On the one hand, if $m < m_0$, then it will be impossible to satisfy 
+our criterion for any choice of $n$.  On the other hand, if $m \ge m_0$,
+then, by ther same sort of continuity argument employed previously, 
+the criterion will be satisfied for $m$ sufficiently large.
+\end{proof}
+
+\begin{thm}
+Let $p>2$ be prime and let $m_0$ be the unique integer such that
+\[
+2^{m_0 + 1} > p > 2^{m_0}.
+\]
+Then $2^{m_0} p$ is either perfect or abundant and every abundant
+number of the form $2^m p^n$ is a multiple of $2^{m_0} p$.
+\end{thm}
+
+\begin{proof}
+We begin with the equation
+\[
+p + 1 \le 2^{m_0 +1}.
+\]
+Making some algebraic manipulations, we obtain the following:
+\begin{align*}
+p &\le {2^{m_0} + 1 \over 1 + p^{-1}} \\
+p^{-1} &\ge 2^{-m_0 - 1} (1 + p^{-1}) \\
+p^{-1} - 2^{-m_0 - 1} (1 + p^{-1}) &\ge 0 \\
+1 + p^{-1} - 2^{-m_0 - 1} (1 + p^{-1}) &\ge 1 \\
+(1 - 2^{-m_0 - 1}) (1 + p^{-1}) &\ge 1 \\
+(1 - 2^{-m_0 - 1}) (1 + p^{-2}) &\ge 1 - p^{-1}
+\end{align*}
+According to our earlier inequality, this means that
+$2^{m_0} p$ is either perfect or abundant.  
+
+Suppose that $2^m p^n$ is abundant.  Then, by the previous
+result, $m \le m_0$; since powers of $2$ are deficient, $n > 0$,
+so $2^{m_0} p \mid 2^m p^n$.
+\end{proof}
+
+This result makes it rather easy to draw up a list of abundant 
+numbers with one odd prime factor none of whose proper factors 
+are abundant starting with a table of prime numbers, as has
+been done below.  Note that, in the case where $2^{m_0} p$ is
+perfect, we have listed $2^{m_0 + 1} p$ and $2^{m_0} p^2$ as
+these numbers are abundant.
+
+\begin{tabular}
+{| c | l |}
+$3$ & $12$ $(2^2 \cdot 3)$, $18$ $(2 \cdot 3^2)$ \\
+$5$ & $20$ $(2^2 \cdot 5)$ \\
+$7$ & $56$ $(2^3 \cdot 7)$, $196$ $(2^2 \cdot 7^2)$ \\
+$11$ & $88$ $(2^3 \cdot 11)$ \\
+$13$ & $104$ $(2^3 \cdot 13)$ \\
+$17$ & $272$ $(2^4 \cdot 17)$ \\
+$19$ & $304$ $(2^4 \cdot 19)$ \\
+$23$ & $368$ $(2^4 \cdot 23)$ \\
+$29$ & $464$ $(2^4 \cdot 29)$ \\
+$31$ & $992$ $(2^5 \cdot 31)$, $7688$ $(2^5 \cdot 31^2)$ \\
+$37$ & $1184$ $(2^5 \cdot 37)$ \\
+$41$ & $1312$ $(2^5 \cdot 41)$ \\
+$43$ & $1376$ $(2^5 \cdot 43)$ \\
+$47$ & $1504$ $(2^5 \cdot 47)$ \\
+$53$ & $1696$ $(2^5 \cdot 53)$ \\
+$59$ & $1888$ $(2^5 \cdot 59)$ \\
+$61$ & $1952$ $(2^5 \cdot 61)$ \\
+$67$ & $4208$ $(2^6 \cdot 67)$ \\
+$71$ & $4544$ $(2^6 \cdot 71)$ \\
+$73$ & $4672$ $(2^6 \cdot 73)$ \\
+$79$ & $5056$ $(2^6 \cdot 79)$ \\
+$83$ & $5312$ $(2^6 \cdot 83)$ \\
+$89$ & $5696$ $(2^6 \cdot 89)$ \\
+$97$ & $6208$ $(2^6 \cdot 97)$ \\
+$101$ & $6464$ $(2^6 \cdot 101)$ \\
+$103$ & $6592$ $(2^6 \cdot 103)$ \\
+$107$ & $6848$ $(2^6 \cdot 107)$ \\
+$109$ & $6976$ $(2^6 \cdot 109)$ \\
+$113$ & $7232$ $(2^6 \cdot 113)$ \\
+$127$ & $16256$ $(2^7 \cdot 127)$, $1032256$ $(2^6 \cdot 127^2)$ \\
+$131$ & $16768$ $(2^7 \cdot 131)$ \\
+$137$ & $17536$ $(2^7 \cdot 137)$ \\
+$139$ & $17792$ $(2^7 \cdot 139)$ \\
+$149$ & $19072$ $(2^7 \cdot 149)$ \\
+$151$ & $19328$ $(2^7 \cdot 151)$ \\
+$157$ & $20096$ $(2^7 \cdot 157)$ \\
+$163$ & $20864$ $(2^7 \cdot 163)$ \\ 
+$167$ & $21376$ $(2^7 \cdot 167)$ \\
+$173$ & $22144$ $(2^7 \cdot 173)$ \\
+$179$ & $22912$ $(2^7 \cdot 179)$ \\
+$181$ & $23168$ $(2^7 \cdot 181)$ \\
+$191$ & $24448$ $(2^7 \cdot 191)$ \\
+$193$ & $24704$ $(2^7 \cdot 193)$ \\
+$197$ & $25216$ $(2^7 \cdot 197)$ \\
+$199$ & $25472$ $(2^7 \cdot 199)$ \\
+$211$ & $27008$ $(2^7 \cdot 211)$ \\
+$223$ & $28544$ $(2^7 \cdot 223)$ \\
+$227$ & $29056$ $(2^7 \cdot 227)$ \\
+$229$ & $29312$ $(2^7 \cdot 229)$ \\
+$233$ & $29824$ $(2^7 \cdot 233)$ \\
+$239$ & $30592$ $(2^7 \cdot 239)$ \\
+$241$ & $30848$ $(2^7 \cdot 241)$ \\
+$251$ & $32128$ $(2^7 \cdot 251)$
+\end{tabular}
+%%%%%
+%%%%%
+\end{document}

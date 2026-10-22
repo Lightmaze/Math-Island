@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Px1Map}
+\pmcreated{2013-03-22 18:56:32}
+\pmmodified{2013-03-22 18:56:32}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{$px + 1$ map}
+\pmrecord{4}{41798}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B37}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The {\em $px + 1$ map} is a generalization of the $3x + 1$ map, or Collatz problem, in which an input number $x$ is tested for divisibility by primes less than an odd prime $p$: if $x$ is divisible by any such prime, it is divided by the smallest such prime; otherwise it is multiplied by $p$ and incremented by 1. In the case $p = 3$, the test for the input number simplifies to a parity test, because 2 is the only prime less than 3. The map can be iteratively applied, generally resulting in sequences that rise and fall aperiodically before reaching 1 in ways that are not readily apparent from the original $x$ (with the obvious exception of $x$ being a power of two, in which case the resulting sequence from the original $x$ to 1 is a listing of powers of two in strictly descending order; a similar pattern occurs when $x$ is a power of a prime). Once the sequence reaches 1, continued iteration produces a predictable cycle, especially when $p$ is a Mersenne prime.
+
+For example, with the $7x + 1$ map, an input $x$ is tested for divisibility by 2, 3 and 5 (in that order), and whichever test passes first causes the output to be $x$ divided by that prime; but if all tests fail, then the output is $7x + 1$. Applied to 19, the map gives the sequence 19, 134, 67, 470, 235, 47, 330, 165, 55, 11, 78, 39, 13, 92, 46, 23, 162, 81, 27, 9, 3, 1. (Notice that 470 is followed by 235 and then 47; similarly 330 is followed by 165, 55 and then 11). It is believed that for any $p$, iteration on any $x$ will eventually reach 1, but just as the original $p = 3$ problem remains unsolved, so does the generalized problem.
+%%%%%
+%%%%%
+\end{document}

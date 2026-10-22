@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MultiplicativeCongruence}
+\pmcreated{2013-03-22 12:50:16}
+\pmmodified{2013-03-22 12:50:16}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{multiplicative congruence}
+\pmrecord{4}{33163}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R37}
+\pmsynonym{multiplicatively congruent}{MultiplicativeCongruence}
+\pmrelated{Congruence2}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\p}{{\mathfrak{p}}}
+\newcommand{\m}{{\mathfrak{m}}}
+\renewcommand{\P}{{\mathfrak{P}}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\renewcommand{\H}{\mathcal{H}}
+\newcommand{\A}{\mathbb{A}}
+\renewcommand{\c}{\mathcal{C}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\lra}{\longrightarrow}
+\renewcommand{\div}{\mid}
+\newcommand{\res}{\operatorname{res}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\diff}{\operatorname{diff}}
+\newcommand{\incl}{\operatorname{incl}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\renewcommand{\Re}{\operatorname{Re}}
+\newcommand{\intersect}{\cap}
+\newcommand{\union}{\cup}
+\newcommand{\bigintersect}{\bigcap}
+\newcommand{\bigunion}{\bigcup}
+\newcommand{\ilim}{\,\underset{\longleftarrow}{\lim}\,}
+\begin{document}
+Let $\p$ be any real prime of a number field $K$, and write $i: K \lra \R$ for the corresponding real embedding of $K$. We say two elements $\alpha, \beta \in K$ are {\em multiplicatively congruent} mod $\p$ if the real numbers $i(\alpha)$ and $i(\beta)$ are either both positive or both negative.
+
+Now let $\p$ be a finite prime of $K$, and write $(\O_K)_\p$ for the localization of the ring of integers $\O_K$ of $K$ at $\p$. For any natural number $n$, we say $\alpha$ and $\beta$ are {\em multiplicatively congruent} mod $\p^n$ if they are members of the same coset of the subgroup $1+\p^n(\O_K)_\p$ of the multiplicative group $K^\times$ of $K$.
+
+If $\m$ is any modulus for $K$, with factorization
+$$
+\m = \prod_{\p} \p^{n_\p},
+$$
+then we say $\alpha$ and $\beta$ are {\em multiplicatively congruent} mod $\m$ if they are multiplicatively congruent mod $\p^{n_\p}$ for every prime $\p$ appearing in the factorization of $\m$.
+
+Multiplicative congruence of $\alpha$ and $\beta$ mod $\m$ is commonly denoted using the notation
+$$
+\alpha \equiv^* \beta \pmod{\m}.
+$$
+%%%%%
+%%%%%
+\end{document}

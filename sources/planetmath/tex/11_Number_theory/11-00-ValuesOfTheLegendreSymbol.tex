@@ -1,0 +1,103 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ValuesOfTheLegendreSymbol}
+\pmcreated{2013-03-22 16:18:13}
+\pmmodified{2013-03-22 16:18:13}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{values of the Legendre symbol}
+\pmrecord{5}{38425}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmrelated{1IsQuadraticResidueIfAndOnlyIfPequiv1Mod4}
+\pmrelated{QuadraticCharacterOf2}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+For an integer $a$ and an odd prime $p$, let $\displaystyle \left(\frac{a}{p}\right)$ be the Legendre symbol.
+
+\begin{thm}
+Let $p$ be an odd prime. The Legendre symbol takes the following values:
+\begin{enumerate}
+\item \[
+\left(\frac{-1}{p}\right) =
+\begin{cases}
+1 &\text{if }p \equiv 1 \mod 4\\
+-1 &\text{if }p \equiv 3 \mod 4.
+\end{cases}
+\]
+\item \[
+\left(\frac{2}{p}\right) =
+\begin{cases}
+1 &\text{if }p\equiv \pm 1 \mod 8\\
+-1 &\text{if }p\equiv 3,5 \mod 8.
+\end{cases}
+\]
+\item \[
+\left(\frac{3}{p}\right) =
+\begin{cases}
+1 &\text{if }p\equiv \pm 1 \mod 12\\
+-1 &\text{otherwise.}
+\end{cases}
+\]
+\item \[
+\left(\frac{5}{p}\right) =
+\begin{cases}
+1 &\text{if }p\equiv \pm 1 \mod 5\\
+-1 &\text{if }p\equiv 2,3 \mod 5.
+\end{cases}
+\]
+\end{enumerate}
+\end{thm}
+\begin{proof}
+For a proof of (1), see \PMlinkid{this entry}{1IsQuadraticResidueIfAndOnlyIfPequiv1Mod4}. Part (2) is proved in \PMlinkid{this entry}{QuadraticCharacterOf2}. For parts (3), (4) and (5), we use quadratic reciprocity. For example, 
+$$\left(\frac{5}{p}\right)=\left(\frac{p}{5}\right)$$
+and the only quadratic residues modulo $5$ are $\pm 1 \mod 5$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

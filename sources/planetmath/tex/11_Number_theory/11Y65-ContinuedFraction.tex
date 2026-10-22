@@ -1,0 +1,109 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ContinuedFraction}
+\pmcreated{2013-03-22 12:47:12}
+\pmmodified{2013-03-22 12:47:12}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{continued fraction}
+\pmrecord{29}{33101}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11Y65}
+\pmclassification{msc}{11J70}
+\pmclassification{msc}{11A55}
+\pmsynonym{chain fraction}{ContinuedFraction}
+%\pmkeywords{number theory}
+%\pmkeywords{rational number}
+%\pmkeywords{irrational number}
+%\pmkeywords{Pell}
+\pmrelated{FareySequence}
+\pmrelated{AdjacentFraction}
+\pmrelated{SternBrocotTree}
+\pmrelated{FareyPair}
+\pmdefines{anthyphairetic ratio}
+\pmdefines{simple continued fraction}
+
+\endmetadata
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\makeatletter
+\@ifundefined{url}{\newcommand*{\sfrac}{\cfrac}}{\newcommand*{\sfrac}{\frac}}
+\makeatother
+% @ifundefined tests whether LaTeX2HTML or page image mode
+% is used because LaTeX2HTML has a bug, which prevents 
+% from rendering \cfrac
+\begin{document}
+\PMlinkescapeword{distribution}
+\PMlinkescapeword{simple}
+\PMlinkescapeword{terms}
+\PMlinkescapeword{cycle}
+Given a sequence of positive real numbers $(a_n)_{n \ge 1}$, with $a_0$ any real number. Consider the sequence
+
+\begin{align*}
+c_1&=a_0+\sfrac{1}{a_1}\\
+c_2&=a_0+\sfrac{1}{a_1+\sfrac{1}{a_2}}\\
+c_3&=a_0+\sfrac{1}{a_1+\sfrac{1}{a_2+\sfrac{1}{a_3}}}\\
+c_4&=\ldots
+\end{align*}
+
+The limit $c$ of this sequence, if it exists, is called the value or limit of the \emph{infinite continued fraction} with \emph{convergents} $(c_n)$, and is denoted by $$a_0 + \sfrac{1}{a_1 + \sfrac{1}{a_2 + \sfrac{1}{a_3 + \ldots}}}$$ or by $$a_{0} + \frac{1}{a_{1} + }\frac{1}{a_{2} + }\frac{1}{a_{3} + }\ldots$$
+
+In the same way, a finite sequence $$(a_n)_{1\le n\le k}$$ defines a finite sequence $$(c_n)_{1\le n\le k}\;.$$ We then speak of a finite continued fraction with value $c_k$.
+
+An archaic word for a continued fraction is \emph{anthyphairetic ratio}.
+
+If the denominators $a_n$ are all (positive) integers, we speak of a \emph{simple} continued fraction. We then use the notation $q = \langle a_0; a_1, a_2, a_3,\ldots \rangle $ or, in the finite case, $q = \langle a_0; a_1, a_2, a_3, \ldots , a_n \rangle \;.$
+
+It is not hard to prove that any irrational number $c$ is the value of a unique infinite simple continued fraction. Moreover, if $c_n$ denotes its $n$th convergent, then $c-c_n$ is an alternating sequence and $|c - c_n|$ is decreasing (as well as convergent to zero). Also, the value of an infinite simple continued fraction is perforce
+irrational.
+
+Any rational number is the value of two and only two finite continued fractions; in one of them, the last denominator is 1. E.g. $$\frac{43}{30} = \langle 1;2,3,4 \rangle = \langle 1;2,3,3,1 \rangle \;.$$
+
+These two conditions on a real number $c$ are equivalent:
+
+\noindent
+1. $c$ is a root of an irreducible quadratic polynomial with
+integer coefficients.
+
+\noindent
+2. $c$ is irrational and its simple
+continued fraction is ``eventually periodic''; i.e.
+$$c=\langle a_0;a_1,a_2,\ldots\rangle$$
+and, for some integer $m$ and some integer $k>0$, we have $a_n=a_{n+k}$
+for all $n\ge m$.
+
+For example, consider the quadratic equation for the golden ratio: $$x^2 = x + 1$$ or equivalently $$x = 1 + \frac{1}{x}\;.$$ We get
+
+\begin{eqnarray*}
+x & = & 1 + \sfrac{1}{1+\sfrac{1}{x}} \\
+  & = & 1 + \sfrac{1}{1+\sfrac{1}{1+\sfrac{1}{x}}}
+\end{eqnarray*}
+
+and so on.
+If $x > 0$, we therefore expect $$x = \langle 1; 1, 1, 1, \ldots \rangle$$ which indeed can be proved. As an exercise, you might like to look for a continued fraction expansion of the \emph{other} solution of $x^2 = x + 1$.
+
+Although $e$ is transcendental, there is a surprising pattern in its simple continued fraction expansion. 
+$$e=\langle 2; 1, 2, 1, 1, 4, 1, 1, 6, 1, 1, 8, 1, 1, 10, \ldots \rangle$$
+No pattern is apparent in the expansions some other well-known transcendental constants, such as $\pi$ and Ap\'ery's constant $\zeta(3)$.
+
+Owing to a kinship with the Euclidean division algorithm, continued fractions arise naturally in number theory. An
+interesting example is the Pell diophantine equation $$x^2 - Dy^2 = 1$$ where $D$ is a nonsquare integer $> 0$. It turns out that if $(x, y)$ is any solution of the Pell equation other than $(\pm 1, 0)$, then $| \frac{x}{y}|$ is a convergent to $\sqrt{D}$.
+
+$\frac{22}{7}$ and $\frac{355}{113}$ are well-known rational approximations to $\pi$, and indeed both are convergents to $\pi$:
+
+\begin{eqnarray*}
+3.14159265\ldots & = & \pi = \langle 3;7,15,1,292,...\rangle \\
+3.14285714\ldots & = & \frac{22}{7} = \langle 3;7\rangle \\
+3.14159292\ldots & = & \frac{355}{113} = \langle 3;7,15,1\rangle=\langle 3;7,16\rangle
+\end{eqnarray*}
+
+For one more example, the distribution of leap years in the 4800-month cycle of the Gregorian calendar can be interpreted (loosely speaking) in terms of the continued fraction expansion of the number of days
+in a solar year.
+%%%%%
+%%%%%
+\end{document}

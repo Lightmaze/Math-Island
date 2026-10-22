@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DavenportSchmidtTheorem}
+\pmcreated{2013-03-22 13:32:58}
+\pmmodified{2013-03-22 13:32:58}
+\pmowner{Daume}{40}
+\pmmodifier{Daume}{40}
+\pmtitle{Davenport-Schmidt theorem}
+\pmrecord{9}{34151}
+\pmprivacy{1}
+\pmauthor{Daume}{40}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11J68}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+For any real $\xi$ which is not rational or quadratic irrational, there are infinitely many rational or real quadratic irrational $\alpha$ which satisfy
+\begin{displaymath}
+\mid \xi - \alpha \mid < C\cdot H(\alpha)^{-3},
+\end{displaymath}
+where
+\begin{displaymath}
+C = \left\{
+\begin{array}{ll}
+C_0, & \textrm{if} \mid\xi\mid < 1, \\
+C_0\cdot \xi^2, & \textrm{if} \mid\xi\mid >1.
+\end{array}\right.
+\end{displaymath}
+$C_0$ is any fixed number greater than $\frac{160}{9}$ and $H(\alpha )$ is the \PMlinkescapetext{height} of $\alpha$.\cite{DS}\\
+The \emph{\PMlinkescapetext{height} of the rational or quadratic irrational number} $\alpha$ is 
+$$H(\alpha)=\operatorname{max}(|x|,|y|,|z|)$$
+where $x$,$y$,$z$ are from the unique equation
+$$x\alpha^2+y\alpha+z=0$$
+such that $x$,$y$,$z$ are not all zero relatively prime integral coefficients.\cite{DS}
+\begin{thebibliography}{1}
+\bibitem[DS]{DS} Davenport, H. Schmidt, M. Wolfgang:  Approximation to real numbers by quadratic irrationals. Acta Arithmetica XIII, 1967.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TotallyBounded}
+\pmcreated{2013-03-22 13:09:54}
+\pmmodified{2013-03-22 13:09:54}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{totally bounded}
+\pmrecord{12}{33608}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+%\pmkeywords{bounded}
+%\pmkeywords{totally}
+%\pmkeywords{totally bounded}
+%\pmkeywords{total}
+%\pmkeywords{bound}
+%\pmkeywords{finite bound}
+\pmrelated{MetricSpace}
+\pmrelated{Bounded}
+\pmrelated{Subset}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $A$ be a subset of a topological vector space $X$.
+
+$A$ is called \emph{totally bounded} if , for each neighborhood $G$ of 0,
+there exists a finite subset $S$ of $A$ with $A$ contained in the sumset $S + G$.
+
+The definition can be restated in the following form when $X$ is a metric space:
+
+A set $A \subseteq X$ is said to be {\em totally bounded} if  for every $\epsilon>0$, there exists a finite subset $\{s_1,s_2,\ldots ,s_n\}$ of $A$ such that $A\subseteq \bigcup _{k=1} ^n B(s_k,\epsilon )$, where $B(s_k,\epsilon)$ denotes the open ball around $s_k$ with radius $\epsilon$.
+
+
+ 
+
+\begin{thebibliography}{9}
+\bibitem{bachman} G. Bachman, L. Narici, \emph{Functional analysis}, Academic Press, 1966.
+\bibitem{wil} A. Wilansky, \emph{Functional Analysis}, Blaisdell Publishing Co., 1964
+\bibitem{rudin} W. Rudin, \emph{Functional Analysis}, 2nd ed. McGraw-Hill , 1973
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

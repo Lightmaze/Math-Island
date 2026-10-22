@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IdealClassGroupIsFinite}
+\pmcreated{2013-03-22 17:57:23}
+\pmmodified{2013-03-22 17:57:23}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{ideal class group is finite}
+\pmrecord{7}{40456}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R29}
+\pmrelated{IdealNorm}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\bigp}{\mathfrak{P}}
+\newcommand{\Alg}{\mathcal{O}}
+\DeclareMathOperator{\N}{N}
+\DeclareMathOperator{\Cl}{Cl}
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}{Lemma}
+\begin{document}
+We give two proofs of the finiteness of the class group, one using the bound provided by \PMlinkname{Minkowski's theorem}{MinkowskisConstant} and a second, more elementary, proof that does not provide the same computational benefits as Minkowski's bound does. Both proofs rely on the following lemma:
+\begin{lem} If $K$ is an algebraic extension of $\Rats$ and $0<d\in\Ints$, then there are only a finite number of ideals of norm $d$.
+\end{lem}
+\textbf{Proof. }
+\newline
+The norm of a prime ideal $\bigp$ of $K$ lying over a rational prime $p$ is $p^f$, where $f$ is the residue field degree $[\Alg_K/\bigp\Alg_K:\Ints/p\Ints]$, and there are at most $[K:\Rats]$ prime ideals lying over any given rational prime. There are thus only a finite number of possibilities for ideals with norm $d$ - simply factor $d$ into a product of prime powers and note that each prime power must correspond to one of a finite number of possibilities.
+
+
+The finiteness of the class group now follows trivially from Minkowski's theorem:
+\begin{thm} If $K$ is an algebraic extension of $\Rats$, then the class group of $K$, denoted $\Cl(K)$, is finite.
+\end{thm}
+\textbf{Proof. }
+\newline
+Minkowski's theorem guarantees that each ideal class contains a representative integral ideal whose norm is bounded by a constant depending only on the field, and the lemma shows that there are only a finite number of integral ideals with norm less than that constant.
+
+Minkowski's theorem gives enough information about the size of the class group to be computationally useful in some cases (see the topic on using Minkowski's constant to find a class number). It does, however, require quite a bit of machinery. To see in a more elementary way that $\Cl(K)$ is finite, one can proceed as follows:
+
+\textbf{Proof. } (alternate proof of theorem)
+\newline
+By the lemma, it suffices to show that there is \emph{some} constant $C$, depending only on $K$, such that every class in $\Cl(K)$ has a representative $I\subset\Alg_K$ with $\N(I)\leq C$.
+For $u\in K$, denote by $T_u$ the linear map left multiplication by $u$, and let $e_1,\ldots,e_n$ be a basis of $\Alg_K$ as a $\Ints$-module (where $[K:\Rats]=n$). Then if $u=\sum b_i(u)e_i$, it follows that
+\[\N(u) = \det(T_u)=\det\left(\sum b_i(u)T_{e_i}\right)\]
+is a polynomial of total degree at most $n$ in the $b_i(u)$, whose coefficients are functions of the $T_{e_i}$ and thus depend only on $K$ (and not on $u$). Let $C$ be the sum of the magnitude of those coefficients.
+
+Let $c$ be a class in $\Cl(K)$ and let $J\subset \Alg_K$ be a representative of the class $c^{-1}$. Consider $S=\{\sum_{i=1}^n r_ie_i\ \mid\  1\leq r_i\leq \lfloor \N(J)^{1/n}+1\rfloor\}$. The cardinality of $S$ is strictly greater than $\N(J)$, while $\lvert\Alg_K/J\rvert=\N(J)$. So by the pigenhole principle, two distinct elements of $S$ are in the same $J$-coset of $\Alg_K$. Taking their difference, we get an element $0\neq x=\sum b_i(x)e_i\in J$, where not all the $b_i(x)$ are zero, and $\lvert b_i(x)\rvert \leq \N(J)^{1/n}$. 
+
+Now, since $x\in J$, using unique factorization of ideals in the Dedekind ring $\Alg_K$, we can construct an integral ideal $I$ such that $IJ = (x)$, so that $I$ is in the class $c\in\Cl(K)$. Finally,
+\[\N(I)\N(J) = \N(x)\leq C(\max(b_1(x),\ldots,b_n(x)))^n \leq C\N(J)\]
+so that $\N(I)\leq C$.
+%%%%%
+%%%%%
+\end{document}

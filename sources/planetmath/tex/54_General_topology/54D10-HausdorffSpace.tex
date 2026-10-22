@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HausdorffSpace}
+\pmcreated{2013-03-22 12:18:18}
+\pmmodified{2013-03-22 12:18:18}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{Hausdorff space}
+\pmrecord{23}{31855}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D10}
+\pmsynonym{Hausdorff topological space}{HausdorffSpace}
+\pmsynonym{T2 space}{HausdorffSpace}
+\pmrelated{SeparationAxioms}
+\pmrelated{T1Space}
+\pmrelated{T0Space}
+\pmrelated{T3Space}
+\pmrelated{RegularSpace}
+\pmrelated{MetricSpace}
+\pmrelated{NormalTopologicalSpace}
+\pmrelated{ASpaceMathnormalXIsHausdorffIfAndOnlyIfDeltaXIsClosed}
+\pmrelated{SierpinskiSpace}
+\pmrelated{HausdorffSpaceNotCompletelyHausdorff}
+\pmrelated{Tychonoff}
+\pmrelated{PropertyThatCompactSetsInASpaceAreClosedLies}
+\pmdefines{Hausdorff}
+\pmdefines{Hausdorff topology}
+\pmdefines{T2}
+\pmdefines{T2 topology}
+\pmdefines{T2 axiom}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\def\emptyset{\varnothing}
+\begin{document}
+A topological space $(X,\tau)$ is said to be $T_2$ 
+(or said to satisfy the $T_2$ axiom) if given 
+distinct $x,y\in X$, there exist disjoint 
+open sets $U,V\in\tau$ (that is, $U\cap V=\emptyset$) 
+such that $x\in U$ and $y\in V$.
+
+A $T_2$ space is also known as a \emph{Hausdorff space}.
+A \emph{Hausdorff topology} for a set $X$ is a topology 
+$\tau$ such that $(X,\tau)$ is a Hausdorff space.
+
+\subsubsection*{Properties}
+The following properties are equivalent:
+\begin{enumerate}
+\item $X$ is a Hausdorff space. 
+\item The set 
+$$
+\Delta=\{(x,y)\in X\times X:x=y\}
+$$
+is closed in the product topology of $X\times X$.
+\item For all $x\in X$, we have
+$$
+  \{x\} = \bigcap \{A : A\subseteq X\ \mbox{closed}, \mbox{$\exists$ open set}\  U\ \mbox{such that}\ x\in U\subseteq A\}.
+$$
+\end{enumerate}
+
+Important examples of Hausdorff spaces are metric spaces, manifolds, 
+and topological vector spaces.
+%%%%%
+%%%%%
+\end{document}

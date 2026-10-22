@@ -1,0 +1,127 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SeparationAxioms}
+\pmcreated{2013-03-22 13:28:47}
+\pmmodified{2013-03-22 13:28:47}
+\pmowner{Koro}{127}
+\pmmodifier{Koro}{127}
+\pmtitle{separation axioms}
+\pmrecord{26}{34050}
+\pmprivacy{1}
+\pmauthor{Koro}{127}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D10}
+\pmclassification{msc}{54D15}
+\pmsynonym{separation properties}{SeparationAxioms}
+\pmrelated{NormalTopologicalSpace}
+\pmrelated{HausdorffSpaceNotCompletelyHausdorff}
+\pmrelated{SierpinskiSpace}
+\pmrelated{MetricSpacesAreHausdorff}
+\pmrelated{ZeroDimensional}
+\pmrelated{T2Space}
+\pmrelated{RegularSpace}
+\pmrelated{T4Space}
+\pmdefines{Hausdorff}
+\pmdefines{completely Hausdorff}
+\pmdefines{normal}
+\pmdefines{completely normal}
+\pmdefines{regular}
+\pmdefines{Tychonoff}
+\pmdefines{completely regular}
+\pmdefines{perfectly normal}
+\pmdefines{Tychonov}
+\pmdefines{perfectly $T_4$}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\renewcommand{\text}{\textnormal}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\begin{document}
+\PMlinkescapeword{name} \PMlinkescapeword{names} 
+\PMlinkescapeword{type} \PMlinkescapeword{types} 
+\PMlinkescapeword{order} \PMlinkescapeword{axiom}
+
+The \emph{separation axioms} are additional conditions which may be required to a topological space in order to ensure that some particular types of sets can be
+separated by open sets, thus avoiding certain pathological cases.
+
+\begin{center}
+\begin{tabular*}{.8\textwidth}{lp{0.65\textwidth}}
+\textbf{Axiom}                          & \textbf{Definition} \\
+\hline
+$T_0$ & given two distinct points, there is an open set containing exactly one of them; \\
+\PMlinkname{$T_1$}{T1Space} & given two distinct points, there is a neighborhood of each of them which does not contain the other point;\\
+\PMlinkname{$T_2$}{T2Space} & given two distinct points, there are two disjoint open sets each of which contains one of the points;\\
+$T_{2\frac{1}{2}}$ & given two distinct points, there are two open sets, each of which contains one of the points, whose closures are disjoint;\\
+\PMlinkname{$T_3$}{T3Space} & given a closed set $A$ and a point $x\notin A$, there are two disjoint open sets $U$ and $V$ such that $x\in U$ and $A\subset V$;\\
+$T_{3\frac{1}{2}}$ & given a closed set $A$ and a point $x\notin A$, there is an Urysohn function for $A$ and $\{b\}$;\\
+$T_4$ & given two disjoint closed sets $A$ and $B$, there are two disjoint open sets $U$ and $V$ such that $A\subset U$ and $B\subset V$;\\
+$T_5$ & given two separated sets $A$ and $B$, there are two disjoint open sets $U$ and $V$ such that $A\subset U$ and $B\subset V$.\\
+\end{tabular*}
+\end{center}
+
+If a topological space satisfies a $T_i$ axiom, it is called a $T_i$-space.
+The following table shows other common names for topological spaces with these or other additional separation properties.
+\begin{center}
+\begin{tabular}{ll}
+\textbf{Name}                         & \textbf{Separation properties} \\
+\hline
+Kolmogorov space                      & $T_0$ \\
+Fr\'echet space                         & $T_1$ \\
+Hausdorff space                       & $T_2$ \\
+Completely Hausdorff space            & $T_{2\frac{1}{2}}$\\
+Regular space                         & $T_3$ and $T_0$\\
+Tychonoff or completely regular space & $T_{3\frac{1}{2}}$ and $T_0$\\
+Normal space                          & $T_4$ and $T_1$\\
+Perfectly $T_4$ space                 & $T_4$ and every closed set is a $G_\delta$ (see \PMlinkname{here}{G_deltaSet}) \\
+Perfectly normal space                & $T_1$ and perfectly $T_4$\\
+Completely normal space               & $T_5$ and $T_1$\\
+\end{tabular}
+\end{center}
+
+The following implications hold strictly:
+\begin{align*}
+    (T_2 \text{ and } T_3) &\Rightarrow T_{2\frac{1}{2}}\\
+    (T_3 \text{ and } T_4) &\Rightarrow T_{3\frac{1}{2}}\\
+    T_{3\frac{1}{2}}       &\Rightarrow T_3\\
+    T_5                    &\Rightarrow T_4
+\end{align*}
+
+\begin{align*}
+\text{Completely normal } &\Rightarrow \text{ normal }\Rightarrow
+\text{ completely regular }\\
+&\Rightarrow \text{ regular }\Rightarrow T_{2\frac{1}{2}}\Rightarrow T_2\Rightarrow T_1 \Rightarrow T_0
+\end{align*}
+
+\textbf{Remark.} Some authors define $T_3$ spaces in the way we defined regular spaces, and $T_4$ spaces in the way we defined normal spaces (and vice-versa); there is no consensus on this issue.
+\medskip
+
+\textbf{Bibliography:} \emph{Counterexamples in Topology}, L. A. Steen, J. A. Seebach Jr., Dover Publications Inc. (New York)
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UnramifiedAction}
+\pmcreated{2013-03-22 13:56:26}
+\pmmodified{2013-03-22 13:56:26}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{unramified action}
+\pmrecord{5}{34702}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11S15}
+\pmsynonym{set is unramified at a valuation}{UnramifiedAction}
+%\pmkeywords{unramifies}
+%\pmkeywords{action}
+%\pmkeywords{inertia}
+%\pmkeywords{valuation}
+\pmrelated{InfiniteGaloisTheory}
+\pmrelated{DecompositionGroup}
+\pmrelated{Valuation}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+Let $K$ be a number field and let $\nu$ be a discrete valuation on
+$K$ (this might be, for example, the valuation attached to a prime
+ideal $\mathfrak{P}$ of $K$).
+
+Let $K_{\nu}$ be the completion of $K$ at $\nu$, and let
+$\mathcal{O}_{\nu}$ be the ring of integers of $K_{\nu}$, i.e.
+$$\mathcal{O}_{\nu}=\{ k\in K_{\nu} \mid \nu(k)\geq 0 \}$$
+The maximal ideal of $\mathcal{O}_{\nu}$ will be denoted by
+$$\mathcal{M}=\{ k\in K_{\nu} \mid \nu(k)>0 \}$$
+and we denote by $k_{\nu}$ the residue field of $K_{\nu}$, which
+is
+$$k_{\nu}=\mathcal{O}_{\nu}/\mathcal{M}$$
+We will consider three different global Galois groups, namely
+$$G_{\overline{K}/K}=\operatorname{Gal}(\overline{K}/K)$$
+$$G_{\overline{K_{\nu}}/K_{\nu}}=\operatorname{Gal}(\overline{K_{\nu}}/K_{\nu})$$
+$$G_{\overline{k_{\nu}}/k_{\nu}}=\operatorname{Gal}(\overline{k_{\nu}}/k_{\nu})$$
+where $\overline{K},\overline{K_{\nu}},\overline{k_{\nu}}$ are \PMlinkescapetext{separable} algebraic closures of the corresponding field. We also
+define notation for the inertia group of
+$G_{\overline{K_{\nu}}/K_{\nu}}$
+$$I_{\nu} \subseteq G_{\overline{K_{\nu}}/K_{\nu}}$$
+
+\begin{defn}
+Let $\mathcal{S}$ be a set and suppose there is a group action of
+$Gal(\overline{K_{\nu}}/K_{\nu})$ on $\mathcal{S}$. We say that
+$\mathcal{S}$ is \emph{unramified} at $\nu$, or the action of
+$G_{\overline{K_{\nu}}/K_{\nu}}$ on $\mathcal{S}$ is unramified at
+$\nu$, if the action of $I_{\nu}$ on $\mathcal{S}$ is trivial,
+i.e.
+$$\sigma(s)=s\quad \forall \sigma \in I_{\nu},\quad \forall s\in \mathcal{S}$$
+\end{defn}
+
+{\bf Remark}: By Galois theory we know that,
+$K_{\nu}^{\operatorname{nr}}$, the fixed field of $I_{\nu}$, the
+inertia subgroup, is the maximal unramified extension of
+$K_{\nu}$, so
+$$I_{\nu}\cong
+\operatorname{Gal}(\overline{K_{\nu}}/K_{\nu}^{\operatorname{nr}})$$
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProductTopologyPreservesTheHausdorffProperty}
+\pmcreated{2013-03-22 13:39:40}
+\pmmodified{2013-03-22 13:39:40}
+\pmowner{archibal}{4430}
+\pmmodifier{archibal}{4430}
+\pmtitle{product topology preserves the Hausdorff property}
+\pmrecord{7}{34317}
+\pmprivacy{1}
+\pmauthor{archibal}{4430}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B10}
+\pmclassification{msc}{54D10}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+\begin{document}
+{\bf Theorem} Suppose $\{X_\alpha\}_{\alpha\in A}$ is a collection of
+Hausdorff spaces. Then the
+ generalized Cartesian product
+ $ \prod_{\alpha\in A} X_\alpha $
+equipped with the product topology is a Hausdorff space.
+
+\emph{Proof.} Let $Y=\prod_{\alpha\in A} X_\alpha$, and
+let $x,y$ be distinct points in $Y$. Then there is an index $\beta \in A$
+such that $x(\beta)$ and $y(\beta)$ are distinct points in
+the Hausdorff space $X_\beta$. It follows that there are open sets
+$U$ and $V$ in $X_\beta$ such that $x(\beta)\in U$, $y(\beta) \in V$,
+and $U\cap V = \emptyset$.
+Let $\pi_\beta$ be the projection operator $Y\to X_\beta$ defined
+\PMlinkname{here}{GeneralizedCartesianProduct}. By the definition of
+the product topology, $\pi_\beta$ is continuous, so
+$\pi_\beta^{-1}(U)$ and $\pi_\beta^{-1}(V)$ are open sets in $Y$. Also,
+since the 
+\PMlinkname{preimage commutes with set operations}{InverseImageCommutesWithSetOperations}, 
+we have that
+\begin{eqnarray*}
+\pi_\beta^{-1}(U) \cap \pi_\beta^{-1}(V) &=& \pi_\beta^{-1} \big(U \cap V\big) \\
+ &=& \emptyset.
+\end{eqnarray*}
+Finally, since $x(\beta)\in U$, i.e., $\pi_\beta(x)\in U$,
+it follows
+that $x\in \pi_\beta^{-1}(U)$. Similarly,  $y\in \pi_\beta^{-1}(V)$.
+We have shown that $U$ and $V$ are open disjoint neighborhoods of
+$x$ respectively $y$. In other words, $Y$ is a Hausdorff space.
+$\Box$
+%%%%%
+%%%%%
+\end{document}

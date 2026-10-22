@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TotallyBoundedSubsetOfAMetricSpaceIsBounded}
+\pmcreated{2013-03-22 15:25:27}
+\pmmodified{2013-03-22 15:25:27}
+\pmowner{georgiosl}{7242}
+\pmmodifier{georgiosl}{7242}
+\pmtitle{totally bounded subset of a metric space is bounded}
+\pmrecord{12}{37269}
+\pmprivacy{1}
+\pmauthor{georgiosl}{7242}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+
+\endmetadata
+
+% this is the default PlanetMath preamble. as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+\usepackage{bbm}
+\newcommand{\Z}{\mathbbmss{Z}}
+\newcommand{\C}{\mathbbmss{C}}
+\newcommand{\R}{\mathbbmss{R}}
+\newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{thm}
+Every totally bounded subset of a metric space is bounded.
+\end{thm}
+
+\begin{proof}
+Let $K$ be a totally bounded subset of a metric space. Suppose $x,y \in K$. We will show that there exists $M>0$ 
+such that for any x,y we have $d(x,y)<M$. From the definition of totally bounded, 
+we can find an $\varepsilon>0$ and a finite subset $\{x_1,x_2...,x_n\}$
+of $K$ such that $K\subseteq \bigcup_{k=1}^n B(x_k,\varepsilon )$, so $x\in B(x_i,\varepsilon )$,$y\in B(x_l,\varepsilon)$, $i,l \in \{1,2,...n\}$. So we have that
+\begin{eqnarray*}
+d(x,y) & \leq & d(x,x_i)+d(x_i,x_l)+d(x_l,y)\\
+       & < & \varepsilon +\max_{1\leq{s,t}\leq n}d(x_s,x_t)+\varepsilon = M
+\end{eqnarray*}
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

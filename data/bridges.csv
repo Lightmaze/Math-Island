@@ -1,0 +1,22 @@
+source,target,bridge_id,label,status
+pm:EllipticCurve,pm:ModularForm,bridge:001,椭圆曲线 → 模形式,known_in_literature
+pm:ModularForm,wikipedia:Sphere_packing,bridge:002,模形式 → 八维球堆积,known_in_literature
+pm:HodgeTheory,pm:Matroid,bridge:003,霍奇理论结构 → 拟阵对数凹性,known_in_literature
+wikipedia:Lovász_local_lemma,wikipedia:Randomized_algorithm,bridge:004,局部引理 → 重抽样算法,known_in_literature
+pm:SzemeredisTheorem,pm:Prime,bridge:005,稠密组合定理 → 素数等差数列,known_in_literature
+wikipedia:Optimal_transport,wikipedia:Ricci_curvature,bridge:006,最优输运 → 合成 Ricci 曲率,known_in_literature
+wikipedia:Expander_graph,wikipedia:Error_correction_code,bridge:007,扩张图 → 纠错码,known_in_literature
+wikipedia:Stable_theory,wikipedia:Szemerédi_regularity_lemma,bridge:008,模型论稳定性 → 图正则性,known_in_literature
+wikipedia:Intuitionistic_logic,pm:LambdaCalculus,bridge:009,直觉主义逻辑 ↔ 带类型 λ 演算,known_in_literature
+wikipedia:Type_theory,wikipedia:Homotopy_theory,bridge:010,依赖类型论 ↔ 同伦结构,known_in_literature
+pm:VonNeumannAlgebra,wikipedia:Jones_polynomial,bridge:011,算子代数 → 纽结不变量,known_in_literature
+pm:CoveringSpace,pm:FundamentalGroup,bridge:012,覆盖空间 ↔ 基本群的子群,known_in_literature
+pm:RadicalOfAnIdeal,pm:AlgebraicSetsAndPolynomialIdeals,bridge:013,根理想 ↔ 仿射代数集合,known_in_literature
+pm:GaussianCurvature,pm:EulerCharacteristic,bridge:014,曲率积分 → 欧拉示性数,known_in_literature
+pm:BrownianMotion,pm:HeatEquation,bridge:015,Brownian 路径 → 抛物型 PDE,known_in_literature
+wikipedia:Restricted_isometry_property,wikipedia:Compressed_sensing,bridge:016,稀疏几何 → 凸优化恢复,known_in_literature
+wikipedia:Concentration_of_measure,wikipedia:Johnson–Lindenstrauss_lemma,bridge:017,概率集中 → 欧氏降维,known_in_literature
+pm:BorsukUlamTheorem,wikipedia:Polynomial_partitioning,bridge:018,拓扑零点原理 → 多项式划分,known_in_literature
+wikipedia:Semidefinite_programming,wikipedia:Shannon_capacity_of_a_graph,bridge:019,半正定优化 → 零误差容量上界,known_in_literature
+wikipedia:Polynomial_interpolation,wikipedia:Reed–Solomon_error_correction,bridge:020,有限域插值 → Reed–Solomon 码,known_in_literature
+wikipedia:Polynomial_identity_testing,wikipedia:Sum-check_protocol,bridge:021,多项式根数界 → 交互式证明,known_in_literature

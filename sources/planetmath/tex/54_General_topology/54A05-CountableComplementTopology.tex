@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CountableComplementTopology}
+\pmcreated{2013-03-22 14:37:56}
+\pmmodified{2013-03-22 14:37:56}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{countable complement topology}
+\pmrecord{5}{36214}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A05}
+\pmsynonym{cocountable topology}{CountableComplementTopology}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Let $X$ be an infinite set.  We define the \emph{countable complement topology} on $X$ by declaring the empty set to be open, and a non-empty subset $U\subset X$ to be open if $X\backslash U$ is countable.
+
+If $X$ is countable, then the countable complement topology is just the discrete topology, as the complement of \emph{any} set is countable and thus open.
+
+Though defined similarly to the finite complement topology, the countable complement topology lacks many of the strong compactness properties of the finite complement topology.  For example, the countable complement topology on an uncountable set gives an example of a topological space that is not weakly countably compact (but \emph{is} pseudocompact).
+%%%%%
+%%%%%
+\end{document}

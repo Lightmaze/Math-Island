@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CellAttachment}
+\pmcreated{2013-03-22 13:25:53}
+\pmmodified{2013-03-22 13:25:53}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{cell attachment}
+\pmrecord{13}{33991}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B15}
+\pmsynonym{cell adjunction}{CellAttachment}
+\pmrelated{CWComplex}
+\pmdefines{cell}
+\pmdefines{open cell}
+\pmdefines{closed cell}
+\pmdefines{attaching map}
+
+\endmetadata
+
+\usepackage{amsmath}
+
+\newtheorem{rmk}{Remark}
+
+\newcommand{\funcsig}[2]{#1\rightarrow #2}
+\newcommand{\funcdef}[3]{#1\colon\funcsig{#2}{#3}}
+\newcommand{\bdry}{\partial}
+\newcommand{\set}[1]{{\left\{#1\right\}}}
+
+% open cells (not very nice...)
+\newcommand{\oce}{\smash{\overset{\circ}e}}
+\newcommand{\ocD}{D^\circ}
+
+\begin{document}
+\PMlinkescapeword{closed}
+\PMlinkescapeword{open}
+
+Let $X$ be a topological space,
+and let $Y$ be the adjunction
+$Y := X\cup_\varphi D^k$,
+where $D^k$ is a closed \PMlinkname{$k$-ball}{StandardNBall}
+and $\funcdef{\varphi}{S^{k-1}}{X}$ is a continuous map,
+with $S^{k-1}$ is the $(k-1)$-sphere considered as the boundary of $D^k$.
+Then, we say that $Y$ is obtained from $X$
+by the {\em attachment of a $k$-cell,} by the {\em attaching map} $\varphi.$
+The image $e^k$ of $D^k$ in $Y$ is called a {\em closed $k$-cell},
+and the image $\oce^k$ of the interior
+\[
+  \ocD := D^k\setminus S^{k-1}
+\]
+of $D^k$ is the corresponding {\em open $k$-cell}.
+
+Note that for $k=0$ the above definition reduces to
+the statement that $Y$ is the disjoint union of $X$ with a one-point space.
+
+More generally, we say that $Y$ is obtained from $X$ by {\em cell attachment\/}
+if $Y$ is homeomorphic to an adjunction $X\cup_\set{\varphi_i} D^{k_i}$,
+where the maps $\set{\varphi_i}$ into $X$
+are defined on the boundary spheres of closed balls $\set{D^{k_i}}$.
+
+%\begin{rmk}
+%A recognition principle for attached cells is as follows:
+%Let $Y$ be a Hausdorff topological space and 
+%$e$ a closed subspace such that for some $k\ge 1$ there exists a map
+%$\funcdef{\Phi}{D^k}{Y}$ satisfying
+%\begin{enumerate}
+%\item
+%$\Phi(D^k) = e$ and
+%\item
+%the restriction of $\Phi$ to $\ocD^k := D^k\setminus \bdry D^k$
+%is an embedding.
+%\end{enumerate}
+%Then, $Y$ is obtained from $X := Y\setminus\Phi(\ocD^k)$
+%by the attachment of the $k$-cell $e$.
+%$k$ is called the {\em dimension} of $e$,
+%and is well-defined by virtue of the invariance of domain theorem.
+%
+%Attached $0$-cells are recognized as being isolated points of $X$.
+%\end{rmk}
+%%%%%
+%%%%%
+\end{document}

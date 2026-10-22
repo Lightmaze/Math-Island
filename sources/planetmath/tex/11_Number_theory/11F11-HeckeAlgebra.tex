@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HeckeAlgebra}
+\pmcreated{2013-03-22 14:08:13}
+\pmmodified{2013-03-22 14:08:13}
+\pmowner{olivierfouquetx}{2421}
+\pmmodifier{olivierfouquetx}{2421}
+\pmtitle{Hecke algebra}
+\pmrecord{13}{35551}
+\pmprivacy{1}
+\pmauthor{olivierfouquetx}{2421}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11F11}
+\pmclassification{msc}{20C08}
+\pmrelated{ModularForms}
+\pmrelated{AlgebraicNumberTheory}
+\pmdefines{Hecke operator}
+\pmdefines{Hecke algebra ${H}(G)$ of the group G}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+\newcommand{\sldeuxz}{\textrm{SL}_{2}(\mathbb Z)}
+\newcommand{\somme}[2]{\underset{#1}{\overset{#2}{\sum}}}
+\begin{document}
+Let $f$ be a modular form for $\Gamma$ a congruence subgroup of $\sldeuxz$.
+\begin{equation}
+f(z)=\somme{n=0}{\infty}a_{n}q^n
+\end{equation}
+where $q=e^{2i\pi \tau}$. 
+
+For $m\in \mathbb N$, let $T_{m}f(z)=\somme{n=0}{\infty}b_{n}q^n$ with :
+\begin{equation}
+b_{n}=\somme{d|\gcd(m,n)}{}d^{k-1}a_{mn/d^2}
+\end{equation}
+In particular, for $p$ a prime, $T_{p}f(z)=\somme{n=0}{\infty}b_{n}q^n$ with;
+\begin{equation}
+b_{n}=a_{pn}+p^{k-1}a_{n/p}
+\end{equation}
+where $a_{n/p}=0$ if $n$ is not divisible by $p$.
+
+The operator $T_n$ is a linear operator on the space of modular forms called a \emph{Hecke operator}.
+
+
+The Hecke operators leave the space of modular forms and cusp forms invariant
+and turn out to be self-adjoint for a scalar product called the Petersson 
+scalar product. In particular they have real eigenvalues. Hecke operators
+also satisfy multiplicative properties that are best summarized by the formal
+identity:
+\begin{equation}
+\underset{n=1}{\overset{\infty}{\sum}}T_{n}n^{-s}=\underset{p}{\prod}(1-
+T_{p}p^{-s}+p^{k-1-2s})^{-1}
+\end{equation}
+That equation in particular implies that $T_mT_n=T_nT_m$ whenever $\gcd(n,m)=1$.
+
+The set of all Hecke operators is usually denoted $\mathbb T$ and is called the \emph{Hecke algebra}.
+
+\subsection{Group algebra example}
+\textbf{Definition 0.1}
+Let $G_{lcd}$ be a locally compact totally disconnected group; then the 
+\emph{Hecke algebra $\mathcal{H}(G_{lcd})$ of the group} $G_{lcd}$ is defined as the convolution algebra of 
+locally constant complex-valued functions on $G_{lcd}$ with compact support. 
+
+
+Such $\mathcal{H}(G)$ algebras play an important role in the theory of 
+decomposition of group representations into tensor products.
+
+
+
+%%%%%
+%%%%%
+\end{document}

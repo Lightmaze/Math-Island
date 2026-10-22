@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MarkovNumber}
+\pmcreated{2013-03-22 15:46:19}
+\pmmodified{2013-03-22 15:46:19}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{Markov number}
+\pmrecord{10}{37729}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D72}
+\pmclassification{msc}{11J06}
+\pmsynonym{Markoff number}{MarkovNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A \emph{Markov number} is an integer $x$, $y$ or $z$ that fits in the Diophantine equation $$x^2 + y^2 + z^2 = 3xyz$$ and gives a Lagrange number $$L_x = \sqrt{9 - {4 \over x^2}}$$ (or $y$ or $z$ as the case may be).
+
+The solutions, (1, 1, 1), (1, 1, 2), (1, 2, 5), (1, 5, 13), (2, 5, 29), (1, 13, 34), (1, 34, 89), (2, 29, 169), (5, 13, 194), (1, 89, 233), etc., can be put in a binary graph tree. Thus arranged, the numbers on 1's branch are Fibonacci numbers with odd index, and the numbers on 2's branch are Pell numbers with odd index.
+
+Georg Frobenius proved that, with the exception of the smallest Markov triple, the numbers in a Markov triple are pairwise coprime. He also proved that an odd Markov number $x \equiv 1 \mod 4$ (or $y$ or $z$) and an even Markov number $x \equiv 2 \mod 8$. Ying Zhang used this to prove that even Markov numbers satisfy the sharper congruence $x \equiv 2 \mod 32$, which he calls the best possible since the first two even Markov numbers are 2 and 34.
+
+\begin{thebibliography}{1}
+\bibitem{yz} Ying Zhang, ``Congruence and Uniqueness of Certain Markov Numbers'' {\it Acta Arithmetica} {\bf 128} 3 (2007): 297
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

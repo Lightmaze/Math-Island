@@ -1,0 +1,100 @@
+{
+  "auditor": "/root/atlas_audit",
+  "nodes_sha256": "4f146b824e4cce0f3b8e47e1c756557124c5075288fdf8cd7db0145a879abce1",
+  "maps": [
+    {
+      "path": "maps/domain-01.svg",
+      "node_count": 9693,
+      "sha256": "e5bed417a676dc9af90b6024f47af8799d6991c2379581fe535e698b408293e3"
+    },
+    {
+      "path": "maps/domain-02.svg",
+      "node_count": 2530,
+      "sha256": "cd1745d08aaae917661dcaef99495d5b33fdd0056a2a3e5b2a50656ee76ac97a"
+    },
+    {
+      "path": "maps/domain-03.svg",
+      "node_count": 2292,
+      "sha256": "6b7e01a5c54c3458050fa039ba11672e72dd853eb774fbeb5301f43d90d16d83"
+    },
+    {
+      "path": "maps/domain-04.svg",
+      "node_count": 1759,
+      "sha256": "d0b7b849f48d3e9e0338ab6c74aa980c09f2f2b88f4b0709b14b0281c15cf16b"
+    },
+    {
+      "path": "maps/domain-05.svg",
+      "node_count": 1551,
+      "sha256": "a4289cc7868c0e735904d9cc2f2a048700e008672f86d579b0f49ee1377c41aa"
+    },
+    {
+      "path": "maps/domain-06.svg",
+      "node_count": 1420,
+      "sha256": "3000207cd332c5712dc6ed7679c397f299acf213399e493c974aac7400fe0ce1"
+    },
+    {
+      "path": "maps/domain-07.svg",
+      "node_count": 825,
+      "sha256": "d846980a5701d8d1feb44f0923114db12976a982724d4129e2e2c2725793732d"
+    },
+    {
+      "path": "maps/domain-08.svg",
+      "node_count": 707,
+      "sha256": "63af32544e17ae0134179c325b88c284e697276840724e9be472921c36d4b36f"
+    },
+    {
+      "path": "maps/domain-09.svg",
+      "node_count": 587,
+      "sha256": "47a1a24e42aff153855547b4c2d3bca9119b0e02583c8efecc156ee0398b4ab6"
+    },
+    {
+      "path": "maps/domain-10.svg",
+      "node_count": 259,
+      "sha256": "167e0b88adafcf5bcfd59b835b944914c057be877a4280f0863e2eb49f30f548"
+    },
+    {
+      "path": "maps/domain-11.svg",
+      "node_count": 66,
+      "sha256": "924ae01952ed04e2e8ff432f44cb6fff1775f68a4cb594932c3c8efbe1afac57"
+    },
+    {
+      "path": "maps/domain-12.svg",
+      "node_count": 52,
+      "sha256": "cb7cb4bf3bbf3cc3436fd4c1ba7def69413a23bb779827b707bcc73d488a8e92"
+    }
+  ],
+  "domain_count": 12,
+  "detail_node_sum": 21741,
+  "bridge_background_groups": [
+    [
+      "bridge-map-background-islands",
+      21741
+    ]
+  ],
+  "bridge_route_groups": [
+    "documented-route-01",
+    "documented-route-02",
+    "documented-route-03",
+    "documented-route-04",
+    "documented-route-05",
+    "documented-route-06",
+    "documented-route-07",
+    "documented-route-08",
+    "documented-route-09",
+    "documented-route-10",
+    "documented-route-11",
+    "documented-route-12",
+    "documented-route-13",
+    "documented-route-14",
+    "documented-route-15",
+    "documented-route-16",
+    "documented-route-17",
+    "documented-route-18",
+    "documented-route-19",
+    "documented-route-20",
+    "documented-route-21"
+  ],
+  "bridge_svg_sha256": "06e5c5e36f252a573cb069fee34754d2d856d10700a0303aecd4cd8fd1c7f913",
+  "pass": true,
+  "scope": "Direct XML marker/anchor counts and input-hash matching; not merely trusting the renderer manifest."
+}

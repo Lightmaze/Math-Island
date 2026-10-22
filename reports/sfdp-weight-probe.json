@@ -1,0 +1,22 @@
+{
+  "source": "local installed sfdp on actual macro graph",
+  "docs": "https://graphviz.org/docs/attrs/weight/",
+  "results": {
+    "original": {
+      "hash": "b226d338510f7c5996bc770173d404666140758b259857999ff2a7882861c577",
+      "bytes": 4286,
+      "node_lines": "node d0 1.4097 6.0937 2.8194 2.8194 \"\" solid circle black lightgrey\nnode d1 14.688 1.9878 2.4306 2.4306 \"\" solid circle black lightgrey\nnode d2 5.4796 4.4587 5.0972 5.0972 \"\" solid circle black lightgrey\nnode d3 12.446 9.6403 2.3056 2.3056 \"\" solid circle black lightgrey\nnode d4 23.926 7.2841 2.2222 2.2222 \"\" solid circle black lightgrey\nnode d5 20.267 0.625 1.25 1.25 \"\" solid circle black lightgrey\nnode d6 18.32 13.335 1.25 1.25 \"\" solid circle black lightgrey\nnode d7 18.64 3.8171 1.8056 1.8056 \"\" solid circle black lightgrey\nnode d8 16.745 9.3627 1.25 1.25 \"\" solid circle black lightgrey\nnode d9 20.385 7.8055 1.5833 1.5833 \"\" solid circle black lightgrey\nnode d10 7.4075 9.7853 2.7083 2.7083 \"\" solid circle black lightgrey\nnode d11 11.81 5.0158 1.7639 1.7639 \"\" solid circle black lightgrey"
+    },
+    "all_one": {
+      "hash": "b226d338510f7c5996bc770173d404666140758b259857999ff2a7882861c577",
+      "bytes": 4286,
+      "node_lines": "node d0 1.4097 6.0937 2.8194 2.8194 \"\" solid circle black lightgrey\nnode d1 14.688 1.9878 2.4306 2.4306 \"\" solid circle black lightgrey\nnode d2 5.4796 4.4587 5.0972 5.0972 \"\" solid circle black lightgrey\nnode d3 12.446 9.6403 2.3056 2.3056 \"\" solid circle black lightgrey\nnode d4 23.926 7.2841 2.2222 2.2222 \"\" solid circle black lightgrey\nnode d5 20.267 0.625 1.25 1.25 \"\" solid circle black lightgrey\nnode d6 18.32 13.335 1.25 1.25 \"\" solid circle black lightgrey\nnode d7 18.64 3.8171 1.8056 1.8056 \"\" solid circle black lightgrey\nnode d8 16.745 9.3627 1.25 1.25 \"\" solid circle black lightgrey\nnode d9 20.385 7.8055 1.5833 1.5833 \"\" solid circle black lightgrey\nnode d10 7.4075 9.7853 2.7083 2.7083 \"\" solid circle black lightgrey\nnode d11 11.81 5.0158 1.7639 1.7639 \"\" solid circle black lightgrey"
+    },
+    "large": {
+      "hash": "b226d338510f7c5996bc770173d404666140758b259857999ff2a7882861c577",
+      "bytes": 4286,
+      "node_lines": "node d0 1.4097 6.0937 2.8194 2.8194 \"\" solid circle black lightgrey\nnode d1 14.688 1.9878 2.4306 2.4306 \"\" solid circle black lightgrey\nnode d2 5.4796 4.4587 5.0972 5.0972 \"\" solid circle black lightgrey\nnode d3 12.446 9.6403 2.3056 2.3056 \"\" solid circle black lightgrey\nnode d4 23.926 7.2841 2.2222 2.2222 \"\" solid circle black lightgrey\nnode d5 20.267 0.625 1.25 1.25 \"\" solid circle black lightgrey\nnode d6 18.32 13.335 1.25 1.25 \"\" solid circle black lightgrey\nnode d7 18.64 3.8171 1.8056 1.8056 \"\" solid circle black lightgrey\nnode d8 16.745 9.3627 1.25 1.25 \"\" solid circle black lightgrey\nnode d9 20.385 7.8055 1.5833 1.5833 \"\" solid circle black lightgrey\nnode d10 7.4075 9.7853 2.7083 2.7083 \"\" solid circle black lightgrey\nnode d11 11.81 5.0158 1.7639 1.7639 \"\" solid circle black lightgrey"
+    }
+  },
+  "all_coordinate_outputs_identical": true
+}

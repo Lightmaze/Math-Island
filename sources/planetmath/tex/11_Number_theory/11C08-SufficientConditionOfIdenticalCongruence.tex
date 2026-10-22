@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SufficientConditionOfIdenticalCongruence}
+\pmcreated{2013-03-22 18:56:03}
+\pmmodified{2013-03-22 18:56:03}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{sufficient condition of identical congruence}
+\pmrecord{8}{41788}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11C08}
+\pmclassification{msc}{11A07}
+\pmrelated{Sufficient}
+\pmrelated{CongruenceOfArbitraryDegree}
+\pmrelated{PolynomialCongruence}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\textbf{Theorem.}\, Let\, $f(X) := a_nX^n+\ldots+a_1X+a_0$\, be a polynomial in $X$ with integer coefficients $a_i$ and $m$ a positive integer.\, If the congruence
+\begin{align}
+f(x) \;\equiv\; 0 \pmod{m}
+\end{align}
+is satisfied by $m$ successive integers $x$, then it is satisfied by all integers $x$, in other words it is an identical congruence.\\
+
+
+\emph{Proof.}\, There is an integer $x_0$ such that (1) is satisfied by
+$$x \;:=\; x_0\!+\!1,\,x_0\!+\!2,\,\ldots,\,x_0\!+\!m.$$
+But these values form a complete residue system modulo $m$.\, Thus, if $x$ is an arbitrary integer, one has
+$$x \;\equiv\; x_0\!+\!r \pmod{m} \quad\mbox{where}\;\; 1\leqq r \leqq m.$$
+This implies
+$$a_ix^i \;\equiv\; a_i(x_0\!+\!r)^i \pmod{m} \quad\mbox{for}\;\; i = 0,\,1,\,\ldots,\,n$$
+and consequently
+$$\underbrace{\sum_{i=0}^na_ix^i}_{f(x)} \;\equiv\; \sum_{i=0}^na_i(x_0\!+\!r)^i \;=\; f(x_0\!+\!r) \;\equiv\; 0 
+\pmod{m}.$$
+Accordingly, (1) is true for any integer $x$, Q.E.D.\\
+
+\textbf{Note.}\, Though the congruence (1) is identical, it need not be a question of a formal congruence
+\begin{align}
+f(X) \;\underline{\equiv}\; 0 \pmod{m},
+\end{align}
+i.e. all coefficients $a_i$ need not be congruent to 0 modulo $m$.
+
+
+
+%%%%%
+%%%%%
+\end{document}

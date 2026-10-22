@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MobiusFunction}
+\pmcreated{2013-03-22 11:47:03}
+\pmmodified{2013-03-22 11:47:03}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{M\"obius function}
+\pmrecord{11}{30253}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmclassification{msc}{55-00}
+\pmclassification{msc}{55-01}
+\pmsynonym{Moebius function}{MobiusFunction}
+%\pmkeywords{number theory}
+\pmrelated{SquareFreeNumber}
+\pmrelated{SumOfFracmunn}
+\pmrelated{MoebiusInversionFormula}
+\pmrelated{ConvolutionMethod}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The {\em M\"obius function} of number theory is the function $\mu:\mathbb{Z}^+\to\{-1,0,1\}$ defined by
+\[
+\mu (n) = 
+\begin{cases}
+1, &\text{if $n=1$}\\
+0, &\text{if $p^2 | n$ for some prime $p$} \\
+(-1)^r, &\text{if $n = p_1 p_2 \cdots p_r$, where the $p_i$ are distinct primes.}
+\end{cases}
+\]
+
+In other words, $\mu (n) = 0$ if $n$ is not a square-free integer, while $\mu (n) = (-1)^r$ if $n$ is square-free with $r$ prime factors. The function $\mu$ is a multiplicative function, and obeys the identity
+\[
+\sum_{d | n} \mu(d) = 
+\begin{cases}
+1 & \text{if $n = 1$}\\
+0 & \text{if $n > 1$}
+\end{cases}
+\]
+where $d$ runs through the positive divisors of $n$.
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

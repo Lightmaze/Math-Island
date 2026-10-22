@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PolynomialEquationWithAlgebraicCoefficients}
+\pmcreated{2013-03-22 19:07:37}
+\pmmodified{2013-03-22 19:07:37}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{polynomial equation with algebraic coefficients}
+\pmrecord{10}{42022}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmsynonym{monic equation with algebraic coefficients}{PolynomialEquationWithAlgebraicCoefficients}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+If $\alpha_1,\,\ldots,\,\alpha_k$ are algebraic numbers [resp. algebraic integers] and 
+$$f_1(\alpha_1,\,\ldots,\,\alpha_k),\;\ldots,\;f_n(\alpha_1,\,\ldots,\,\alpha_k)$$ 
+polynomials in $\alpha_1,\,\ldots,\,\alpha_k$ with rational [resp. integer] coefficients, then all complex roots of the equation
+\begin{align}
+x^n+f_1(\alpha_1,\,\ldots,\,\alpha_k)x^{n-1}+\ldots+f_n(\alpha_1,\,\ldots,\,\alpha_k) \;=\; 0
+\end{align}
+are algebraic numbers [resp. algebraic integers].\\
+
+
+\emph{Proof.}\, Let the minimal polynomial $x^m+a_1x^{m-1}+\ldots+a_m$ of $\alpha_1$ over $\mathbb{Z}$ have the \PMlinkname{zeros}{ZeroOfAFunction}
+$$\alpha_1^{(1)} = \alpha_1,\; \alpha_1^{(2)},\; \ldots,\; \alpha_1^{(m)}$$
+and denote by\, $F(x;\,\alpha_1,\,\alpha_2,\,\ldots,\,\alpha_k)$\, the left hand side of the equation (1).\, Consider the equation
+\begin{align}
+G(x;\,\alpha_2,\,\ldots,\,\alpha_k) 
+\;:=\; \prod_{i=1}^m F(x;\,\alpha_1^{(i)},\,\alpha_2,\,\ldots,\,\alpha_k) \;=\; 0.
+\end{align}
+Here, the coefficients of the polynomial $G$ are polynomials in the numbers
+$$\alpha_1^{(1)},\; \alpha_1^{(2)},\; \ldots,\; \alpha_1^{(m)},\; \alpha_2,\; \ldots,\; \alpha_k$$
+with rational [resp. integer] coefficients.\, Thus the coefficients of $G$ are symmetric polynomials $g_j$ in the numbers $\alpha_1^{(i)}$:
+$$G \;=\; \sum_jg_jx^j$$
+By the fundamental theorem of symmetric polynomials, the coefficients $g_j$ of $G$ are polynomials in 
+$\alpha_2,\,\ldots,\,\alpha_k$ with rational [resp. integer] coefficients.\, Consequently, $G$ has the form
+$$G \;=\; x^h+a_1'(\alpha_2,\,\ldots,\,\alpha_k)x^{h-1}+\ldots+a_h'(\alpha_2,\,\ldots,\,\alpha_k)$$
+where the coefficients $a_i'(\alpha_2,\,\ldots,\,\alpha_k)$ are polynoms in the numbers $\alpha_j$ with rational [resp. integer] coefficients.\, As one continues similarly, removing one by one also $\alpha_2,\,\ldots,\,\alpha_k$ which go back to the rational [resp. integer] coefficients of the corresponding minimal polynomials, one shall finally arrive at an equation
+\begin{align}
+x^s+A_1x^{s-1}+\ldots+A_s \;=\; 0,
+\end{align}
+among the roots of which there are the roots of (1); the coefficients $A_\nu$ do no more explicitely depend on the algebraic numbers $\alpha_1,\,\ldots,\,\alpha_k$ but are rational numbers [resp. integers].\\
+Accordingly, the roots of (1) are algebraic numbers [resp. algebraic integers], Q.E.D.
+
+%%%%%
+%%%%%
+\end{document}

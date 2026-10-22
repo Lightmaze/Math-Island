@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrimeHarmonicSeriesDivergesChebyshevsProof}
+\pmcreated{2013-03-22 16:23:48}
+\pmmodified{2013-03-22 16:23:48}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{prime harmonic series diverges - Chebyshev's proof}
+\pmrecord{9}{38544}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\textbf{Theorem}. $\sum_{p\text{ prime}}\frac{1}{p}$ diverges.
+
+\textbf{Proof.} (Chebyshev, 1880)
+\newline
+Consider the product
+\[\prod_{p\leq n} \left(1-\frac{1}{p}\right)^{-1}\]
+Since $\left(1-\frac{1}{p}\right)^{-1}=1+\frac{1}{p}+\frac{1}{p^2}+\cdots$, we have
+\[\prod_{p\leq n} \left(1-\frac{1}{p}\right)^{-1}=\left(1+\frac{1}{2}+\frac{1}{2^2}+\cdots\right)\left(1+\frac{1}{3}+\frac{1}{3^2}+\cdots\right)\left(1+\frac{1}{5}+\frac{1}{5^2}+\cdots\right)\cdots\]
+So for each $m\leq n$, if we expand the above product, $\frac{1}{m}$ will be a term. Thus
+\[\prod_{p\leq n}\left(1-\frac{1}{p}\right)^{-1}\geq\sum_{x=1}^n \frac{1}{x}\]
+Taking logarithms, we have
+\[\sum_{p\leq n}-\ln\left(1-\frac{1}{p}\right)\geq\ln\sum_{x=1}^n \frac{1}{x}\]
+But $\ln(1-u)=-u-\frac{u^2}{2}-\frac{u^3}{3}-\cdots$, so
+\[-\ln\left(1-\frac{1}{p}\right)=\frac{1}{p}+\frac{1}{2p^2}+\frac{1}{3p^3}+\cdots\leq \frac{1}{p}+\frac{1}{p^2}+\frac{1}{p^3}+\cdots\leq \frac{2}{p}\]
+Hence
+\[\sum_{p\leq n} \frac{2}{p}\geq \sum_{p\leq n}\left(-\ln\left(1-\frac{1}{p}\right)\right)\geq \ln\sum_{x=1}^{n}\frac{1}{x}\]
+and thus
+\[\sum_{p\leq n}\frac{1}{p}\geq \frac{1}{2}\ln\sum_{x=1}^{n}\frac{1}{x}\]
+But the latter series diverges, and the result follows.
+
+%%%%%
+%%%%%
+\end{document}

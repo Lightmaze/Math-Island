@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SphericalMetric}
+\pmcreated{2013-03-22 14:18:41}
+\pmmodified{2013-03-22 14:18:41}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{spherical metric}
+\pmrecord{6}{35775}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+\pmclassification{msc}{30A99}
+\pmdefines{spherical length}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\newtheorem*{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\begin{document}
+Suppose that $\hat{\mathbb{C}} := {\mathbb{C}} \cup \{ \infty \}$ is the extended complex plane (the Riemann sphere).
+
+\begin{defn}
+Suppose $\gamma \colon [0,1] \to \hat{\mathbb{C}}$ is a path in $\hat{\mathbb{C}}$.
+The {\em spherical length} of $\gamma$ is defined as
+\begin{equation*}
+\ell (\gamma) :=
+2 \int_\gamma \frac{\lvert dz \rvert}{1+\lvert z \rvert^2}
+=
+2 \int_0^1 \frac{\lvert \gamma'(t) \rvert}{1+\lvert \gamma(t) \rvert^2} dt.
+\end{equation*}
+\end{defn}
+
+\begin{defn}
+Let $z_1, z_2 \in \hat{\mathbb{C}}$, and let $\Gamma$ be the set of all paths
+in $\hat{\mathbb{C}}$ from $z_1$ to $z_2$, then the distance from
+$z_1$ to $z_2$ in the {\em spherical metric} is defined as
+\begin{equation*}
+\sigma(z_1,z_2) := \inf_{\gamma \in \Gamma} \ell(\gamma) .
+\end{equation*} 
+\end{defn}
+
+More intuitivelly this is the shortest distance to travel from $z_1$ to
+$z_2$ if we think of these points as being on the Riemann sphere, and we can
+only travel on the Riemann sphere itself (we cannot ``drill'' a straight line
+from $z_1$ to $z_2$).
+
+\begin{thebibliography}{9}
+\bibitem{Gamelin:complex}
+Theodore~B.\@ Gamelin.
+{\em \PMlinkescapetext{Complex Analysis}}.
+Springer-Verlag, New York, New York, 2001.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

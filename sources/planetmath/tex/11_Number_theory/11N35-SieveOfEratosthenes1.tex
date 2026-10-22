@@ -1,0 +1,119 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SieveOfEratosthenes1}
+\pmcreated{2013-03-22 14:07:40}
+\pmmodified{2013-03-22 14:07:40}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{sieve of Eratosthenes}
+\pmrecord{10}{35535}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N35}
+\pmrelated{PrincipleOfInclusionExclusion}
+\pmrelated{BrunsPureSieve}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+%%%\usepackage{xypic}
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\begin{document}
+\PMlinkescapeword{order}
+\PMlinkescapeword{term}
+\PMlinkescapeword{estimate}
+
+The \emph{sieve of Eratosthenes} is the number-theoretic version of the
+principle of inclusion-exclusion. In the typical application of
+the sieve of Eratosthenes one is concerned with estimating the
+number of elements of a set $\mathcal{A}$ that are not divisible
+by any of the primes in the set $\mathcal{P}$.
+
+\PMlinkname{M\"obius inversion formula}{MobiusInversionFormula} can be written as
+\begin{equation}\label{eq:mobius}
+\sum_{\substack{d\mid n\\d\mid P}}\mu(d)=\sum_{d\mid \gcd(n,P)}
+\mu(d)=\begin{cases}1,&\text{if }\gcd(n,P)=1,\\0,&\text{if
+}\gcd(n,P)>1.\end{cases}
+\end{equation}
+
+If we set $P=\prod_{p\in\mathcal{P}} p$ then \eqref{eq:mobius} is
+the \PMlinkname{characteristic function}{CharacteristicFunction} of the set of numbers that are not
+divisible by any of the primes in $\mathcal{P}$. If we set $A_d$
+to be the number of elements of $A$ that are divisible by $d$,
+then the number of elements of $A$ that are not divisible by any
+primes in $\mathcal{P}$ can be expressed as
+\begin{equation}\label{eq:sieve}
+\sum_{n\in\mathcal{A}}\sum_{\substack{d\mid n\\d\mid
+P}}\mu(d)=\sum_{d\mid
+P}\mu(d)\sum_{\substack{n\in\mathcal{A}\\d\mid n}}1=\sum_{d\mid
+P}\mu(d)A_d.
+\end{equation}
+
+\emph{Example.} To establish an upper bound on the number of primes
+less than $x$ we set $\mathcal{A}=\{y,y+1,\dotsc,x\}$ and $P=\{p :
+p \text{ is a prime less than }y\}$. Then \eqref{eq:sieve} counts
+the number of integers between $y$ and $x$ that are not divisible
+by any prime less than $y$. Hence the number of primes not
+exceeding $x$ is
+\begin{align*}
+\pi(x)&\leq \sum_{d\mid P}\mu(d) \bigl((x-y)/d+O(1)\bigr)\\
+      &\leq x\sum_{d\mid P}\frac{\mu(d)}{d}+O(\abs{P})\\
+      &= x\prod_{p\leq y} (1-1/p)+O(2^y).
+\end{align*}
+By Mertens' estimate for $\prod (1-1/p)$ the main term is
+\begin{equation*}
+x\frac{e^{-\gamma}+o(1)}{\log y},
+\end{equation*}
+where $\gamma$ is Euler's constant. Setting $y=\tfrac{1}{2}\log x$
+we obtain
+\begin{equation*}
+\pi(x)\leq \bigl(e^{-\gamma}+o(1)\bigr)\frac{x}{\log\log x}.
+\end{equation*}
+The obtained bound is clearly inferior to the prime number
+theorem, but the method applies to problems that are not tractable
+by the other techniques.
+
+The error term of the order $O(2^y)$ can be significantly reduced
+by using more robust sifting procedures such as \PMlinkname{Brun's}{BrunsPureSieve} and Selberg's sieves. For detailed exposition
+of various sieve methods see monographs
+\cite{cite:greaves_sieves,cite:halberstam_richert_sieves,cite:hooley_appsievemethods}.
+
+\begin{thebibliography}{1}
+
+\bibitem{cite:greaves_sieves}
+George Greaves.
+\newblock {\em Sieves in number theory}.
+\newblock Springer, 2001.
+\newblock \PMlinkexternal{Zbl
+  1003.11044}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=1003.11044}.
+
+\bibitem{cite:halberstam_richert_sieves}
+H.~Halberstam and H.-E. Richert.
+\newblock {\em Sieve methods}, volume~4 of {\em London Mathematical Society
+  Monographs}.
+\newblock 1974.
+\newblock \PMlinkexternal{Zbl
+  0298.10026}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0298.10026}.
+
+\bibitem{cite:hooley_appsievemethods}
+C.~Hooley.
+\newblock {\em Application of sieve methods to the theory of numbers},
+  volume~70 of {\em Cambridge Tracts in Mathematics}.
+\newblock Cambridge Univ. Press, 1976.
+\newblock \PMlinkexternal{Zbl
+  0327.10044}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0327.10044}.
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

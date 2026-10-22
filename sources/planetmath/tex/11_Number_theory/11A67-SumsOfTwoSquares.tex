@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SumsOfTwoSquares}
+\pmcreated{2013-11-19 16:28:21}
+\pmmodified{2013-11-19 16:28:21}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{sums of two squares}
+\pmrecord{33}{35842}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A67}
+\pmclassification{msc}{11E25}
+\pmsynonym{Diophantus' identity}{SumsOfTwoSquares}
+\pmsynonym{Brahmagupta's identity}{SumsOfTwoSquares}
+\pmsynonym{Fibonacci's identity}{SumsOfTwoSquares}
+\pmrelated{EulerFourSquareIdentity}
+\pmrelated{TheoremsOnSumsOfSquares}
+\pmrelated{DifferenceOfSquares}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+\begin{thmplain}
+\,\, The set of the sums of two squares of integers is closed under multiplication; in fact we have the identical equation
+\begin{align}
+(a^2\!+\!b^2)(c^2\!+\!d^2) \;=\; (ac\!-\!bd)^2\!+\!(ad\!+\!bc)^2.
+\end{align}
+\end{thmplain}
+
+This was presented by Leonardo Fibonacci in 1225 (in 
+\emph{Liber quadratorum}), but was known also by Brahmagupta 
+and already by Diophantus of Alexandria (III book of his 
+\emph{Arithmetica}).
+
+The proof of the equation may utilize Gaussian integers as follows:
+\begin{align*}
+   (a^2\!+\!b^2)(c^2\!+\!d^2) &\;=\; 
+    (a\!+\!ib)(a\!-\!ib)(c\!+\!id)(c\!-\!id)\\
+&\;=\;(a\!+\!ib)(c\!+\!id)(a\!-\!ib)(c\!-\!id)\\
+&\;=\;[(ac\!-\!bd)\!+\!i(ad\!+\!bc)][(ac\!-\!bd)\!-\!i(ad\!+\!bc)]\\
+&\;=\;(ac\!-\!bd)^2\!+\!(ad\!+\!bc)^2
+\end{align*}\\
+
+
+\textbf{Note 1.}\, The equation (1) is the special case\, $n = 2$\, 
+of Lagrange's identity.\\
+
+\textbf{Note 2.}\, Similarly as (1), one can derive the identity
+\begin{align}
+(a^2\!+\!b^2)(c^2\!+\!d^2) \;=\; (ac\!+\!bd)^2\!+\!(ad\!-\!bc)^2.
+\end{align}
+Thus in most cases, we can get two different nontrivial sum forms 
+(i.e. without a zero addend) for a given product of two sums of 
+squares.\, For example, the product
+$$65 = 5\!\cdot\!13 = (2^2\!+\!1^2)(3^2\!+\!2^2)$$
+attains the two forms  $4^2\!+\!7^2$ and $8^2\!+\!1^2$.
+
+
+%%%%%
+%%%%%
+\end{document}

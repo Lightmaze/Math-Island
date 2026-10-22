@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SumOffracmunn}
+\pmcreated{2013-03-22 14:25:46}
+\pmmodified{2013-03-22 14:25:46}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{sum of $\frac{\mu(n)}{n}$}
+\pmrecord{13}{35938}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{MoebiusFunction}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The following result holds:
+
+\[ \sum_{n=1}^{\infty} \frac{\mu(n)}{n} = 0 \]
+
+where $\mu(n)$ is the \PMlinkname{M\"obius function}{MoebiusFunction}.
+
+{\bf Proof:}\\
+Let $\sum_{n=1}^{\infty} \frac{\mu(n)}{n} = \alpha$.  Assume $\alpha \neq 0$.
+
+For $\operatorname{Re}(s) > 1$ we have the Euler product expansion
+
+\[ \frac{1}{\zeta(s)} = \sum_{n=1}^\infty \frac{\mu(n)}{n^s} \]
+
+where $\zeta(s)$ is the Riemann zeta function.  
+
+We recall the following properties of the Riemann zeta function (which can be found in the PlanetMath entry \PMlinkname{Riemann Zeta Function}{RiemannZetaFunction}).
+\begin{itemize}
+\item $\zeta(s)$ is analytic except at the point $s=1$ where it has a simple pole with residue $1$.
+\item $\zeta(s)$ has no zeroes in the region $\operatorname{Re}(s) \geq 1$.  
+\item The function $(s-1) \zeta(s)$ is analytic and nonzero for $\operatorname{Re}(s) \geq 1$.
+\item Therefore, the function $\frac{1}{\zeta(s)}$ is analytic for $\operatorname{Re}(s) \geq 1$.
+\end{itemize}
+
+Further, as a corollary of the proof of the prime number theorem, we also know that this sum, $\sum_{n=1}^\infty \frac{\mu(n)}{n^s}$ converges to $\frac{1}{\zeta(s)}$ for $\operatorname{Re}(s) \geq 1$; in particular, it converges \emph{at} $s=1$).
+
+But then
+ \[ \zeta(1) = \frac{1}{\sum_{n=1}^\infty \frac{\mu(n)}{n}} = \frac{1}{\alpha} \]
+
+So $\zeta(1)=\frac{1}{\alpha}$, but this is a contradiction since $\zeta$ has a simple pole at $s=1$.  Therefore $\alpha = 0$.
+%%%%%
+%%%%%
+\end{document}

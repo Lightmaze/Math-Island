@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClosedPoint}
+\pmcreated{2013-03-22 16:22:24}
+\pmmodified{2013-03-22 16:22:24}
+\pmowner{jocaps}{12118}
+\pmmodifier{jocaps}{12118}
+\pmtitle{closed point}
+\pmrecord{9}{38512}
+\pmprivacy{1}
+\pmauthor{jocaps}{12118}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A05}
+%\pmkeywords{generization}
+%\pmkeywords{specialization}
+%\pmkeywords{generic points}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $X$ be a topological space and suppose that $x\in X$. If $\{x\}=\overline{\{x\}}$ then we say that $x$ is a 
+\emph{closed point}.  In other words, $x$ is closed if $\lbrace x\rbrace$ is a closed set.
+
+For example, the real line $\mathbb{R}$ equipped with the usual metric topology, every point is a closed point.
+
+More generally, if a topological space is \PMlinkname{$T_1$}{T1}, then every point in it is closed.  If we remove the condition of being $T_1$, then the property fails, as in the case of the Sierpinski space $X=\lbrace x,y\rbrace$, whose open sets are $\varnothing$, $X$, and $\lbrace x \rbrace$.  The closure of $\lbrace x\rbrace$ is $X$, not $\lbrace x\rbrace$.
+%%%%%
+%%%%%
+\end{document}

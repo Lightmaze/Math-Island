@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DemloNumber}
+\pmcreated{2013-03-22 16:22:01}
+\pmmodified{2013-03-22 16:22:01}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Demlo number}
+\pmrecord{5}{38504}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{wonderful Demlo number}{DemloNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given base $b$, a number of the form $({{b^n - 1} \over {b - 1}})^2$ for $n > 0$ (that is, the square of a repunit) is a {\em Demlo number}, sometimes called a {\em wonderful Demlo number}.
+
+The Demlo numbers for $n < b$ are also palindromic numbers, and specifically of the form $$nb^{n - 1} + \sum_{i = 1}^{n - 1} (ib^{2n - i} + ib^{i - 1}),$$ that is, the most significant digits are the first $n$ digits of base $b$ in order and the least significant digits are the first $n$ digits of base $b$ backwards.
+%%%%%
+%%%%%
+\end{document}

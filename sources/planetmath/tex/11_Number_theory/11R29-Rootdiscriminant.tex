@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Rootdiscriminant}
+\pmcreated{2013-03-22 15:05:44}
+\pmmodified{2013-03-22 15:05:44}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{root-discriminant}
+\pmrecord{5}{36824}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R29}
+\pmsynonym{root discriminant}{Rootdiscriminant}
+%\pmkeywords{discriminant}
+%\pmkeywords{root discriminant}
+\pmrelated{ExistenceOfHilbertClassField}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\rd}{\operatorname{rd}}
+\begin{document}
+\begin{defn}
+Let $K$ be a number field, let $d_K$ be its discriminant and let $n=[K:\Rats]$ be the degree over $\Rats$. The quantity:
+$$|\sqrt[n]{d_K}|$$
+is called the {\bf root-discriminant} of $K$ and it is usually denoted by $\operatorname{rd}_K$.
+\end{defn}
+
+The following lemma is one of the motivations for the previous definition:
+
+\begin{lemma}
+Let $E/F$ be an extension of number fields which is unramified at all finite primes. Then $\rd_E=\rd_F$. In particular, the Hilbert class field of a number field has the same root-discriminant as the number field.
+\end{lemma}
+
+\begin{proof}
+Notice that the relative discriminant ideal (or different) for $E/F$ is the ring of integers in $F$. Therefore we have:
+$$|d_E|=|d_F|^{[E:F]}$$
+The results follows by taking $[E:\Rats]$-th roots on both sides of the previous equation.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

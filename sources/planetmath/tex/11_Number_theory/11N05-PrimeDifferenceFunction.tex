@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrimeDifferenceFunction}
+\pmcreated{2013-03-22 12:49:16}
+\pmmodified{2013-03-22 12:49:16}
+\pmowner{XJamRastafire}{349}
+\pmmodifier{XJamRastafire}{349}
+\pmtitle{prime difference function}
+\pmrecord{6}{33143}
+\pmprivacy{1}
+\pmauthor{XJamRastafire}{349}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N05}
+\pmclassification{msc}{11A25}
+\pmclassification{msc}{11A41}
+%\pmkeywords{number theory}
+%\pmkeywords{arithmetic function}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The {\it prime difference function} is an arithmetic function for any positive integer $n$, denoted as $d_{n}$ and gives the difference between two consecutive primes $p_{n}$ and $p_{n+1}$:
+
+$$ d_{n} \equiv p_{n+1} - p_{n} \; . $$
+
+For example:
+\begin{itemize}
+\item $d_{1} = p_{2} - p_{1} = 3 - 2 = 1$, 
+\item $d_{10} = p_{11} - p_{10} = 31 - 29 = 2$, 
+\item $d_{100} = p_{101} - p_{100} = 547 - 541 = 6$, 
+\item $d_{1000} = p_{1001} - p_{1000} = 7927 - 7919 = 8$, 
+\item $d_{10000} = p_{10001} - p_{10000} = 104743 - 104729 = 14$ and so forth.
+\end{itemize}
+
+The first few values of $d_{n}$ for $n = 1, 2, 3, \ldots $ are 
+$1, 2, 2, 4, 2, 4, 2, 4, 6, 2, 6, 4, 2, 4, 6, 6, 2, 6, 4, 2, \ldots $
+(\PMlinkexternal{OEIS A001223}{http://www.research.att.com/~njas/sequences/eisA.cgi?Anum=001223}).
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AnyNonzeroIntegerIsQuadraticResidue}
+\pmcreated{2013-03-22 18:01:03}
+\pmmodified{2013-03-22 18:01:03}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{any nonzero integer is quadratic residue}
+\pmrecord{6}{40533}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A15}
+\pmrelated{FundamentalTheoremOfArithmetic}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\textbf{Theorem.}\, For every nonzero integer $a$ there exists an odd prime number $p$ such that $a$ is a quadratic residue modulo $p$.
+
+
+{\em Proof.}\, $1^\circ.$\; $a = 2$.\; We see that\, $3^2 \equiv 2 \pmod7$\, and $7 \nmid 2$,\, whence 2 is a quadratic residue modulo $7$.\\
+$2^\circ.$\; $2 \mid a$\, but\, $a \neq 2$.\; The number\, $1^2-a = 1-a$\, (which is odd and $\neq \pm1$) has an odd prime factor $p$ which does not divide $a$.\, Thus $a$ is a quadratic residue modulo $p$.\\
+$3^\circ.$\; $a = 3$.\; We state that\, $4^2-3 = 13 \equiv 0 \pmod{13}$\, and\, $13 \nmid 3$.\, Therefore 3 is a quadratic residue modulo 13.\\
+$4^\circ.$\; $a = 5$.\; We see that\, $4^2-5 = 11 \equiv 0 \pmod{11}$\, and\, $11 \nmid 5$, i.e. 5 is a quadratic residue modulo 11.\\
+$5^\circ.$\; $2 \nmid a$\, but\, $a \neq 3$,\, $a \neq 5$.\; Now the number\, $2^2-a = 4-a$\, (which is odd and $\neq \pm1$) has an odd prime factor $p$.\, Moreover, $p \nmid a$\, since\, $p \nmid 4$.\, Accordingly, $a$ is a quadratic residue modulo $p$.
+
+%%%%%
+%%%%%
+\end{document}

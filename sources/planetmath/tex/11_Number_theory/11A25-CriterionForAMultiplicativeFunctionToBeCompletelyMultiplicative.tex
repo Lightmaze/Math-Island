@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CriterionForAMultiplicativeFunctionToBeCompletelyMultiplicative}
+\pmcreated{2013-03-22 15:58:44}
+\pmmodified{2013-03-22 15:58:44}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{criterion for a multiplicative function to be completely multiplicative}
+\pmrecord{9}{37995}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{FormulaForTheConvolutionInverseOfACompletelyMultiplicativeFunction}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+\begin{document}
+\begin{thm*}
+Let $f$ be a multiplicative function with convolution inverse $g$.  Then $f$ is completely multiplicative if and only if $g(p^k)=0$ for all primes $p$ and for all $k \in \mathbb{N}$ with $k>1$.
+\end{thm*}
+
+\begin{proof}
+Note first that, since $f(1)=1$ and $f*g=\varepsilon$, where $\varepsilon$ denotes the convolution identity function, then $g(1)=1$.  Let $p$ be any prime.  Then
+
+$$0=\varepsilon(p)=(f*g)(p)=f(1)g(p)+f(p)g(1)=g(p)+f(p).$$
+
+Thus, $g(p)=-f(p)$.
+
+Assume that $f$ is completely multiplicative.  The statement about $g$ will be proven by induction on $k$.  Note that:
+
+\begin{center}
+$\begin{array}{ll}
+0 & =\varepsilon(p^2) \\
+& =(f*g)(p^2) \\
+& =f(1)g(p^2)+f(p)g(p)+f(p^2)g(1) \\
+& =g(p^2)+f(p)(-f(p))+(f(p))^2 \\
+& =g(p^2) \end{array}$
+\end{center}
+
+Let $m \in \mathbb{N}$ with $m>2$ such that, for all $k \in \mathbb{N}$ with $1<k<m$, $g(p^k)=0$.  Then:
+
+\begin{center}
+$\begin{array}{ll}
+0 & =\varepsilon(p^m) \\
+& =(f*g)(p^m) \\
+& =f(1)g(p^m)+f(p^{m-1})g(p)+f(p^m)g(1) \\
+& =g(p^m)+(f(p))^{m-1}(-f(p))+(f(p))^m \\
+& =g(p^m) \end{array}$
+\end{center}
+
+Conversely, assume that $g(p^k)=0$ for all $k \in \mathbb{N}$ with $k>1$.  The statement $f(p^k)=(f(p))^k$ will be proven by induction on $k$.  The statement is obvious for $k=1$.  Let $m \in \mathbb{N}$ such that $f(p^{m-1})=(f(p))^{m-1}$.  Then:
+
+\begin{center}
+$\begin{array}{ll}
+0 & =\varepsilon(p^m) \\
+& =(f*g)(p^m) \\
+& =f(p^{m-1})g(p)+f(p^m)g(1) \\
+& =(f(p))^{m-1}(-f(p))+f(p^m) \\
+& =-(f(p))^m+f(p^m) \end{array}$
+\end{center}
+
+Thus, $f(p^m)=(f(p))^m$.  It follows that $f$ is completely multiplicative.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

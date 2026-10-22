@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EvenCode}
+\pmcreated{2013-03-22 15:15:42}
+\pmmodified{2013-03-22 15:15:42}
+\pmowner{GrafZahl}{9234}
+\pmmodifier{GrafZahl}{9234}
+\pmtitle{even code}
+\pmrecord{4}{37047}
+\pmprivacy{1}
+\pmauthor{GrafZahl}{9234}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94B05}
+%\pmkeywords{code}
+%\pmkeywords{even}
+%\pmkeywords{doubly even}
+%\pmkeywords{strictly even}
+\pmrelated{LinearCode}
+\pmdefines{doubly-even code}
+\pmdefines{strictly even code}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Prod}{\prod\limits}
+\newcommand{\Sum}{\sum\limits}
+\newcommand{\mbb}{\mathbb}
+\newcommand{\mbf}{\mathbf}
+\newcommand{\mc}{\mathcal}
+\newcommand{\ol}{\overline}
+
+% Math Operators/functions
+\DeclareMathOperator{\Frob}{Frob}
+\DeclareMathOperator{\cwe}{cwe}
+\DeclareMathOperator{\we}{we}
+\DeclareMathOperator{\wt}{wt}
+\begin{document}
+A binary code is called \emph{even} if the Hamming weight of all its
+codewords is even. Furthermore, a binary code is called
+\emph{doubly-even} if the Hamming weight of all its codewords is
+divisible by $4$. An even code which is not doubly-even is said to be
+\emph{strictly even}.
+
+Examples of doubly-even codes are the extended binary Hamming code of
+block length $8$ and the extended binary Golay code of block length
+$24$. These two codes are, in addition, self-dual.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,108 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ErIsIrrationalForRinmathbbQsetminus0}
+\pmcreated{2013-03-22 15:07:46}
+\pmmodified{2013-03-22 15:07:46}
+\pmowner{Cosmin}{8605}
+\pmmodifier{Cosmin}{8605}
+\pmtitle{$e^r$ is irrational for $r\in\mathbb{Q}\setminus\{0\}$}
+\pmrecord{12}{36872}
+\pmprivacy{1}
+\pmauthor{Cosmin}{8605}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11J72}
+\pmsynonym{$e^r$ is irrational for non-zero rational r}{ErIsIrrationalForRinmathbbQsetminus0}
+\pmsynonym{irrationality of the exponential function on $\mathbb{Q}$}{ErIsIrrationalForRinmathbbQsetminus0}
+%\pmkeywords{e}
+%\pmkeywords{e irrational}
+%\pmkeywords{e^r}
+%\pmkeywords{rational}
+%\pmkeywords{irrational}
+%\pmkeywords{irrational exponential}
+\pmrelated{Irrational}
+\pmrelated{EIsIrrationalProof}
+\pmrelated{EIsIrrational}
+\pmrelated{EIsTranscendental}
+
+\endmetadata
+
+% This is Cosmin's PlanetMath preamble.
+
+% Packages
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+%%%\usepackage{xypic}
+
+% Theorem Environments
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lem}{Lemma}
+\newtheorem*{cor}{Corollary}
+
+% New Commands
+  %Sets
+    \newcommand{\bbP}{\mathbb{P}}
+    \newcommand{\bbN}{\mathbb{N}}
+    \newcommand{\bbZ}{\mathbb{Z}}
+    \newcommand{\bbQ}{\mathbb{Q}}
+    \newcommand{\bbR}{\mathbb{R}}
+    \newcommand{\bbC}{\mathbb{C}}
+    \newcommand{\bbK}{\mathbb{K}}
+    \newcommand{\bbB}{\mathbb{B}}
+    \newcommand{\bbS}{\mathbb{S}}
+    \newcommand{\bbA}{\mathbb{A}}
+    \newcommand{\bbT}{\mathbb{T}}
+  %Script and Cal Letters
+    \newcommand{\scP}{\mathscr{P}}
+    \newcommand{\scF}{\mathscr{F}}
+    \newcommand{\scC}{\mathscr{C}}
+    \newcommand{\scL}{\mathscr{L}}
+    \newcommand{\caR}{\mathcal{R}}
+    \newcommand{\caP}{\mathcal{P}}
+    \newcommand{\caM}{\mathcal{M}}
+    \newcommand{\caS}{\mathcal{S}}
+    \newcommand{\caT}{\mathcal{T}}
+    \newcommand{\caU}{\mathcal{U}}
+    \newcommand{\caX}{\mathcal{X}}
+    \newcommand{\caY}{\mathcal{Y}}
+    \newcommand{\caZ}{\mathcal{Z}}
+  %Other Commands
+    \newcommand{\vect}[1]{\boldsymbol{#1}}
+\begin{document}
+\PMlinkescapeword{observation}
+\PMlinkescapeword{order}
+\PMlinkescapeword{times}
+\PMlinkescapeword{simple}
+We here present a proof of the following theorem:
+\begin{thm} \( e^r \) is irrational for all \( r\in\bbQ\setminus\{0\} \) \end{thm}
+To begin with, note that it is sufficient to show that \( e^u \) is irrational for any \PMlinkname{positive integer}{NaturalNumber}\footnote{In this entry, \( \bbN := \{1,2,3,\dotsc\} \) and \(\bbN_0 := \bbN \cup \{0\}\).} \( u \) (for if \( e^r = e^{\frac{u}{v}} \) were rational, so would \(( e^{\frac{u}{v}})^v = e^u \)). Next, we look at some simple properties of polynomial \( \displaystyle f_n(x) := \frac{x^n (1-x)^n}{n!} \): 
+\begin{itemize}
+\item \( \displaystyle f_n(x)=\frac{1}{n!}\sum_{i=n}^{2n} c_i x^i \), with \( c_i \in \bbZ \) for all \( i \). 
+\item \(f_n^{(k)}(0)\) and \(f_n^{(k)}(1)\) are integers for all \( k\in\bbN_0 \): as \( 0 \) is a \PMlinkname{root}{Root} of order \( n \), \( f_n^{(k)}(0)=0 \) unless \( n\leq k\leq 2n \), in which case \( f_n^{(k)}(0)=\frac{k!}{n!} c_k \), an integer. Since \( f_n^{(k)}(x)=(-1)^k f_n^{(k)}(1-x) \), the same is true for \( f_n^{(k)}(1) \).
+\item For all \( 0<x<1 \) we have \( 0<f_n(x)<\frac{1}{n!} \). 
+\end{itemize}
+Now we can readily prove the theorem:
+\begin{proof}
+Assume that \( e^u=\frac{a}{b} \) for some \( (a,b)\in\bbN^2 \) and let
+\[ F_n(x) := \sum_{k=0}^\infty (-1)^k u^{2n-k} f_n^{(k)}(x), \] 
+which is actually a finite sum since \( f_n^{(k)}(x)=0 \) for all \( k>2n \). Differentiating \( F_n(x) \) yields \( F_n'(x)= u^{2n+1} f_n(x) - u F_n(x) \) and thus:
+\[ \frac{d}{dx}\left[e^{ux} F_n(x)\right] = ue^{ux} F_n(x) + e^{ux} F'_n(x) = u^{2n+1} e^{ux} f_n(x). \]
+Now consider the sequence
+\[ (w_n)_{n\in\bbN} := b\int_0^1 u^{2n+1}e^{ux}f_n(x)\,dx = b\left[ e^{ux} F_n(x) \right]^1_0 = a F_n(1) - b F_n(0). \]
+Given the remarks on \( f_n(x) \), \( w_n \) should be an integer for all \( n\in\bbN \), yet it is clear that \( w_n < b u^{2n+1}\frac{1}{n!} = \frac{a}{n!} u^{2n+1} \) and so \( \lim\limits_{n\to\infty}w_n = 0 \), a contradiction.
+\end{proof}
+
+The result could also easily have been obtained by starting with \( w_n \) and integrating by parts \( 2n \) times. Note also that much stronger statements are known, such as ``\( e^a \) is transcendental for all \( a\in\bbA\setminus\{0\} \)''\footnote{\(\bbA\) denotes the set of algebraic numbers.}. We conclude this entry with the following evident corollary:
+\begin{cor} For all \( r\in\bbQ^{+},\: \log r\) is irrational. \end{cor}
+
+\begin{thebibliography}{2}
+\bibitem{AZ} {\sc M. Aigner \& G. M. Ziegler}: \emph{Proofs from THE BOOK}, 3\(^\mathrm{rd}\) edition (2004), Springer-Verlag, 30--31.
+\bibitem{HW} {\sc G. H. Hardy \& E. M. Wright}: \emph{An Introduction to the Theory of Numbers}, 5\(^\mathrm{th}\) edition (1979), Oxford University Press, 46--47.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

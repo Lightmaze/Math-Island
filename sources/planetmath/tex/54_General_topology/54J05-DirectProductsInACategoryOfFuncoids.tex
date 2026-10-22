@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DirectProductsInACategoryOfFuncoids}
+\pmcreated{2013-09-12 19:40:35}
+\pmmodified{2013-09-12 19:40:35}
+\pmowner{porton}{9363}
+\pmmodifier{porton}{9363}
+\pmtitle{Direct products in a category of funcoids}
+\pmrecord{11}{87329}
+\pmprivacy{1}
+\pmauthor{porton}{9363}
+\pmtype{Definition}
+\pmcomment{most of the problem is now sovled}
+\pmclassification{msc}{54J05}
+\pmclassification{msc}{54A05}
+\pmclassification{msc}{54D99}
+\pmclassification{msc}{54E05}
+\pmclassification{msc}{54E17}
+\pmclassification{msc}{54E99}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%\usepackage{xypic}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+ADDED: I've proved that subatomic product is the categorical product.
+
+There are defined (\href{http://www.mathematics21.org/algebraic-general-topology.html}{see my book}) several kinds of product of (any possibly infinite number) funcoids:
+
+\begin{enumerate}
+\item cross-composition product
+\item subatomic product
+\item displaced product
+\end{enumerate}
+
+There is one more kind of product, for which it is not proved that the product of funcoids are (pointfree) funcoids:
+
+$$\left\langle f_1 \times f_2 \right\rangle x = \bigsqcup \left\{ \left\langle
+f_1 \right\rangle X \times^{\mathsf{\operatorname{FCD}}} \left\langle f_2
+\right\rangle X \hspace{1em} | \hspace{1em} X \in \operatorname{atoms} x \right\}.$$
+
+It is considered natural by analogy with the category {\bf Top} of topological spaces to consider this category:
+
+\begin{itemize}
+\item Objects are endofuncoids on small sets.
+\item Morphisms between a endofuncoids $\mu$ and $\nu$ are continuous (that is corresponding to a continuous funcoid) functions from the object of $\mu$ to the object of $\nu$.
+\item Composition is induced by composition of functions.
+\end{itemize}
+
+It is trivial to show that the above is really a category.
+
+The product of functions is the same as in {\bf Set}.
+\end{document}

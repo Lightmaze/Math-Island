@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MinkowskisConstant}
+\pmcreated{2013-03-22 15:05:33}
+\pmmodified{2013-03-22 15:05:33}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Minkowski's constant}
+\pmrecord{4}{36819}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Corollary}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11H06}
+\pmclassification{msc}{11R29}
+%\pmkeywords{ideal class group}
+%\pmkeywords{discriminant}
+\pmrelated{IdealClass}
+\pmrelated{StirlingsApproximation}
+\pmrelated{DiscriminantOfANumberField}
+\pmrelated{ClassNumbersAndDiscriminantsTopicsOnClassGroups}
+\pmrelated{ProofOfMinkowskisBound}
+\pmdefines{Minkowski's theorem on ideal classes}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+The following is a corollary to the famous Minkowski's theorem on lattices and convex regions. It was also found by Minkowski and sometimes also called Minkowski's theorem.
+
+\begin{thm}[Minkowski's Theorem]
+\label{thm1}
+Let $K$ be a number field and let $D_K$ be its discriminant. Let $n=r_1+2r_2$ be the degree of $K$ over $\Rats$, where $r_1$ and $r_2$ are the number of real and complex embeddings, respectively. The class group of $K$ is denoted by $\Cl(K)$. In any ideal class $C\in \Cl(K)$, there exists an ideal $\mathfrak{A}\in C$ such that:
+$$|{\bf N}(\mathfrak{A})| \leq M_K \sqrt{|D_K|}$$
+where ${\bf N}(\mathfrak{A})$ denotes the absolute norm of $\mathfrak{A}$ and 
+$$M_K=\frac{n!}{n^n} \left(\frac{4}{\pi}\right)^{r_2}.$$
+\end{thm}
+
+\begin{defn}
+The constant $M_K$, as in the theorem, is usually called the Minkowski's constant.
+\end{defn}
+
+In the applications, one uses Stirling's formula to find approximations of Minkowski's constant. The following is an immediate corollary of Theorem \ref{thm1}.
+
+\begin{cor}
+Let $K$ be an arbitrary number field. Then the absolute value of the discriminant of $K$, $D_K$, is greater than $1$, i.e. $|D_K|>1$. In particular, there is at least one rational prime $p\in \Ints$ which ramifies in $K$. 
+\end{cor}
+
+See the entry \PMlinkname{on discriminants}{DiscriminantOfANumberField} for the relationship between $D_K$ and the ramification of primes.
+%%%%%
+%%%%%
+\end{document}

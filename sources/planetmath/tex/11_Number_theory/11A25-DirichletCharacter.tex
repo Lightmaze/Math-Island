@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DirichletCharacter}
+\pmcreated{2013-03-22 13:22:31}
+\pmmodified{2013-03-22 13:22:31}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Dirichlet character}
+\pmrecord{10}{33906}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{CharacterOfAFiniteGroup}
+\pmdefines{trivial character}
+\pmdefines{primitive character}
+\pmdefines{conductor}
+\pmdefines{induced character}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+%\usepackage{psfrag}
+%\usepackage{graphicx}
+%\usepackage{amsthm}
+%%%\usepackage{xypic}
+\newcommand*{\legsym}{\genfrac{(}{)}{}{}}
+\begin{document}
+\PMlinkescapeword{induced}
+\PMlinkescapeword{primitive}
+
+A \emph{Dirichlet character} modulo $m$ is a group homomorphism from $\left(\frac{\mathbb{Z}}{m\mathbb{Z}}\right)^*$ to $\mathbb{C^*}$. Dirichlet characters are usually denoted by the Greek letter $\chi$. The function \begin{equation*}
+\gamma(n)=\begin{cases}
+\chi(n\bmod m),&\text{if }\gcd(n,m)=1,\\
+0,&\text{if }\gcd(n,m)>1. \end{cases}
+\end{equation*}
+is also referred to as a Dirichlet character.
+The Dirichlet characters modulo $m$ form a group if one defines $\chi\chi'$ to be the function which takes $a\in\left(\frac{\mathbb{Z}}{m\mathbb{Z}}\right)^*$ to $\chi(a)\chi'(a)$.  It turns out that this resulting group is isomorphic to $\left(\frac{\mathbb{Z}}{m\mathbb{Z}}\right)^*$.  The trivial character is given by $\chi(a)=1$ for all $a\in\left(\frac{\mathbb{Z}}{m\mathbb{Z}}\right)^*$, and it acts as the identity element for the group.  
+A character $\chi$ modulo $m$ is said to be \emph{induced} by a character $\chi'$ modulo $m'$ if $m'\mid m$ and $\chi(n)=\chi'(n\bmod m')$. A character which is not induced by any other character is called \emph{primitive}.
+%A character is said to be primitive if it does not arise as the composite
+%\[
+%\left(\frac{\mathbb{Z}}{m\mathbb{Z}}\right)^* \rightarrow %\left(\frac{\mathbb{Z}}{m'\mathbb{Z}}\right)^* \rightarrow \mathbb{C^*},
+%\]
+%for any proper divisor $m'\mid m$, where the first map is the natural mapping %and the second map is a character mod $m'$.  
+If $\chi$ is non-primitive, the $\gcd$ of all such $m'$ is called the conductor of $\chi$.
+
+\emph{Examples:}
+\begin{itemize}
+\item Legendre symbol $\legsym{n}{p}$ is a Dirichlet character modulo $p$ for any odd prime $p$. More generally, Jacobi symbol $\legsym{n}{m}$ is a Dirichlet character modulo $m$.
+\item The character modulo $4$ given by $\chi(1)=1$ and $\chi(3)=-1$ is a primitive character modulo $4$. The only other character modulo $4$ is the trivial character.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

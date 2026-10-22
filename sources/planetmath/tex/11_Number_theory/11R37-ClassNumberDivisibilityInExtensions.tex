@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClassNumberDivisibilityInExtensions}
+\pmcreated{2013-03-22 15:04:17}
+\pmmodified{2013-03-22 15:04:17}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{class number divisibility in extensions}
+\pmrecord{9}{36792}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R37}
+\pmclassification{msc}{11R32}
+\pmclassification{msc}{11R29}
+%\pmkeywords{divisibility}
+%\pmkeywords{class number}
+%\pmkeywords{tower of number fields}
+\pmrelated{IdealClass}
+\pmrelated{ExistenceOfHilbertClassField}
+\pmrelated{CompositumOfAGaloisExtensionAndAnotherExtensionIsGalois}
+\pmrelated{DecompositionGroup}
+\pmrelated{ExtensionsWithoutUnramifiedSubextensionsAndClassNumberDivisibility}
+\pmrelated{ClassNumbersAndDiscriminantsTopicsOnClassGroups}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\begin{document}
+Throughout this entry we will use the following corollary to the existence of the Hilbert class field (see the parent entry, unramified extensions and class number divisibility for details of the proof).
+
+\begin{cor}
+Let $K$ be a number field, $h_K$ is its class number and let $p$ be a prime. Then $K$ has an everywhere unramified Galois extension of degree $p$ if and only if $h_K$ is divisible by $p$.
+\end{cor}
+
+In this entry we are concerned about the divisibility properties of class numbers of number fields in extensions. 
+
+\begin{thm}
+Let $F/K$ be a Galois extension of number fields, let $h_F$ and $h_K$ be their respective class numbers and let $p$ be a prime number such that $p$ does not divide $[F:K]$, the degree of the extension. Then, if $p$ divides $h_K$, the class number of $F$, $h_F$, is also divisible by $p$. 
+\end{thm}
+
+\begin{proof}
+Let $F$, $K$ and $p$ be as in the statement of the theorem. Assume that $p| h_K$. Thus, by the corollary above, there exists an unramified Galois extension field $E$ of $K$ of degree $p$. Notice that the fact that $p$ does not divide the degree of the extension $F/K$ implies that $F\cap E=K$. In particular, the compositum $FE$ is a Galois extension of $F$ and $$\Gal(FE/F)\cong \Gal(E/E\cap F)\cong \Gal(E/K).$$
+Thus, the extension $FE/F$ is of degree $p$, Galois, and therefore abelian. By the corollary above, in order to prove the theorem it suffices to show that the extension $FE/F$ is unramified. Suppose for a contradiction that $\mathcal{Q}_F$ is a prime ideal which ramifies in the extension $FE/F$. Let $\mathcal{Q}_{EF}$ be a prime lying above $\mathcal{Q}_F$ and let $\mathcal{Q}_K$ be a prime of $K$ such that $\mathcal{Q}_F$ lies above it. Similarly, let $\mathcal{Q}_E$ be a prime of $E$ lying above $\mathcal{Q}_K$ and such that the prime $\mathcal{Q}_{EF}$ lies above $\mathcal{Q}_E$. For an arbitrary extension $A/B$, the ramification index of a prime $\mathcal{Q}_A$ is denoted by $e(\mathcal{Q}_B|\mathcal{Q}_A)$. Then, by the multiplicativity of the ramification index in towers, we have:
+$$e(\mathcal{Q}_{EF}|\mathcal{Q}_K)=e(\mathcal{Q}_{EF}|\mathcal{Q}_F)\cdot e(\mathcal{Q}_{F}|\mathcal{Q}_K)=e(\mathcal{Q}_{EF}|\mathcal{Q}_E)\cdot e(\mathcal{Q}_{E}|\mathcal{Q}_K)$$
+Since we assumed that $\mathcal{Q}_F$ is ramified in $EF/F$, and the degree of the extension is $p$, we must have $e(\mathcal{Q}_{EF}|\mathcal{Q}_F)=p$. Therefore, by the equality above, $p$ divides  $e(\mathcal{Q}_{EF}|\mathcal{Q}_E)\cdot e(\mathcal{Q}_{E}|\mathcal{Q}_K)$. Notice that the extension $E/K$ is everywhere unramified, therefore $e(\mathcal{Q}_E|\mathcal{Q}_K)=1$. Also, $[EF:E]=[F:K]$ which, by hypothesis, is relatively prime to $p$. Thus $e(\mathcal{Q}_{EF}|\mathcal{Q}_E)$ is also relatively prime to $p$, and so, $p$ is not a divisor of  $e(\mathcal{Q}_{EF}|\mathcal{Q}_E)\cdot e(\mathcal{Q}_{E}|\mathcal{Q}_K)$, which leads to the desired contradiction, finishing the proof of the theorem.
+\end{proof}
+
+Also, read the entry  extensions without unramified subextensions and class number divisibility  for a similar and more general result.
+%%%%%
+%%%%%
+\end{document}

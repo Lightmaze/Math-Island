@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BernoulliNumber}
+\pmcreated{2013-03-22 11:45:58}
+\pmmodified{2013-03-22 11:45:58}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Bernoulli number}
+\pmrecord{14}{30219}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B68}
+\pmclassification{msc}{49J24}
+\pmclassification{msc}{49J22}
+\pmclassification{msc}{49J20}
+\pmclassification{msc}{49J15}
+%\pmkeywords{number theory}
+\pmrelated{GeneralizedBernoulliNumber}
+\pmrelated{BernoulliPolynomials}
+\pmrelated{SumOfKthPowersOfTheFirstNPositiveIntegers}
+\pmrelated{EulerMaclaurinSummationFormula}
+\pmrelated{ValuesOfTheRiemannZetaFunctionInTermsOfBernoulliNumbers}
+\pmrelated{TaylorSeriesViaDivision}
+\pmrelated{BernoulliPolynomialsAndNumbers}
+\pmrelated{EulerNumbers2}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%\usepackage{graphicx}
+%%%%%\usepackage{xypic}
+\begin{document}
+Let $B_r$ be the $r$th Bernoulli polynomial. Then the $r$th {\bf Bernoulli number} is
+\[ 
+B_r := B_r(0). 
+\]
+
+This means, in particular, that the Bernoulli numbers are given by an exponential generating function in the following way:
+\[
+\sum_{r=0}^{\infty} B_r \frac{y^r}{r!} = \frac{y}{e^y-1} 
+\]
+and, in fact, the Bernoulli numbers are usually defined as the coefficients that appear in such expansion.
+
+Observe that this generating function can be rewritten:
+\[
+\frac{y}{e^y-1} = \frac{y}{2}\frac{e^y+1}{e^y-1} - \frac{y}{2} = (y/2)(\operatorname{tanh}(y/2) -1).
+\]
+ Since $\operatorname{tanh}$ is an odd function, one can see that $B_{2r+1}=0$ for $r \geq 1$. Numerically, $B_0 = 1, B_1 = -\frac{1}{2}, B_2 = \frac{1}{6}, B_4 = -\frac{1}{30}, \cdots$
+
+These combinatorial numbers occur in a number of contexts; the most elementary is perhaps that they occur in the formulas for the \PMlinkname{sum of the $r$th powers of the first $n$ positive integers}{SumOfKthPowersOfTheFirstNPositiveIntegers}.  They also occur in the Maclaurin expansion for the tangent function and in the Euler-Maclaurin summation formula.
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

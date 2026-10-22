@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UniquenessConjectureForMarkovNumbers}
+\pmcreated{2013-03-22 17:26:16}
+\pmmodified{2013-03-22 17:26:16}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{uniqueness conjecture for Markov numbers}
+\pmrecord{5}{39817}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11J06}
+\pmsynonym{unicity conjecture for Markov numbers}{UniquenessConjectureForMarkovNumbers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Conjecture. Given a Markov number $z > 1$, there are several other Markov numbers $x$ and $y$ such that $x^2 + y^2 + z^2 = 3xyz$, but there is only set of values of $x$ and $y$ satisfying the inequality $z > y \geq x$.
+
+The conjecture is easy enough to check for small values. For example, for $z = 5$, we could even test $x$ and $y$ we know not to be Markov numbers with minimum increase in computational overhead. Trying the triples in order: (1, 1, 5), (1, 2, 5), (1, 3, 5), (1, 4, 5), (2, 1, 5), ... (4, 4, 5) against $15xy - (x^2 + y^2 + 25)$ we obtain the sequence $-12$, 0, 10, 18, 0, 27, 52, 75, 10, 52, 92, 130, 18, 75, 130, 183. It doesn't take significantly larger Markov numbers to show the need for a general proof of uniqueness. Many attempted proofs have been submitted, but Richard Guy dismisses them all as seemingly faulty.
+
+A divide-and-conquer approach to the problem has yielded encouraging results, however. Baragar proved the uniqueness of prime Markov numbers $p$ as well as semiprimes $2p$. Schmutz then proved the uniqueness of Markov numbers of the forms $p^n$ and $2p^n$. Ying Zhang used these results to extend this to $4p^n$ and $8p^n$.
+
+\begin{thebibliography}{2}
+\bibitem{rg} R. K. Guy, {\it Unsolved Problems in Number Theory} New York: Springer-Verlag 2004: D12
+\bibitem{yz} Ying Zhang, ``Congruence and Uniqueness of Certain Markov Numbers'' {\it Acta Arithmetica} {\bf 128} 3 (2007): 297
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

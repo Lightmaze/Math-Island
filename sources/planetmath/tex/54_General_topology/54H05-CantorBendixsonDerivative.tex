@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CantorBendixsonDerivative}
+\pmcreated{2013-03-22 15:01:37}
+\pmmodified{2013-03-22 15:01:37}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{Cantor-Bendixson derivative}
+\pmrecord{9}{36736}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54H05}
+\pmclassification{msc}{03E15}
+\pmsynonym{set derivative}{CantorBendixsonDerivative}
+\pmrelated{DerivedSet}
+\pmdefines{Cantor-Bendixson rank}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\def\sse{\subseteq}
+\def\spse{\supseteq}
+\def\bigtimes{\mathop{\mbox{\Huge $\times$}}}
+\def\impl{\Rightarrow}
+\begin{document}
+\PMlinkescapeword{order}
+%
+Let $A$ be a subset of a topological space $X$. Its \emph{Cantor-Bendixson
+derivative} $A'$ is defined as the set of accumulation points of $A$. In
+other words
+\[
+  A' = \{ x\in X \mid x\in \overline{A\setminus \{x\}} \}.
+\]
+Through transfinite induction, the Cantor-Bendixson derivative can be
+defined to any order $\alpha$, where $\alpha$ is an arbitrary ordinal.
+Let $A^{(0)} = A$.  If $\alpha$ is a successor ordinal, then
+$A^{(\alpha)} = \left(A^{(\alpha-1)}\right)'$. If $\lambda$ is a limit
+ordinal, then $A^{(\lambda)} = \bigcap_{\alpha<\lambda} A^{(\alpha)}$.
+The \emph{Cantor-Bendixson rank} of the set $A$ is the least ordinal
+$\alpha$ such that $A^{(\alpha)} = A^{(\alpha+1)}$. Note that $A' = A$
+implies that $A$ is a perfect set.
+
+Some basic properties of the Cantor-Bendixson derivative include
+\begin{enumerate}
+\item $(A\cup B)' = A'\cup B'$,
+\item $(\bigcup_{i\in I} A_i)' \spse \bigcup_{i\in I} A_i'$,
+\item $(\bigcap_{i\in I} A_i)' \sse \bigcap_{i\in I} A_i'$,
+\item $(A\setminus B)' \spse A' \setminus B'$,
+\item $A\sse B \impl A' \sse B'$,
+\item $\overline{A} = A \cup A'$,
+\item $\overline{A'} = A'$.
+\end{enumerate}
+The last property requires some justification. Obviously, $A'\sse
+\overline{A'}$. Suppose $a\in \overline{A'}$, then every neighborhood of
+$a$ contains some points of $A'$ distinct from $a$. But by definition of
+$A'$, each such neighborhood must also contain some points of $A$. This
+implies that $a$ is an accumulation point of $A$, that is $a\in A'$.
+Therefore $\overline{A'}\sse A'$ and we have $\overline{A'}=A'$.
+
+Finally, from the definition of the Cantor-Bendixson rank and the above
+properties, if $A$ has Cantor-Bendixson rank $\alpha$, the sets
+\[
+  A^{(1)} \supset A^{(2)} \supset \cdots \supset A^{(\alpha)}
+\]
+form a strictly decreasing chain of closed sets.
+%%%%%
+%%%%%
+\end{document}

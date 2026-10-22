@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SuranyisTheorem}
+\pmcreated{2013-03-22 13:43:00}
+\pmmodified{2013-03-22 13:43:00}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Suranyi's theorem}
+\pmrecord{10}{34398}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A99}
+%\pmkeywords{Erdos sum squares}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Suranyi's theorem states that every integer $k$ can be expressed as the following sum:
+$$ k=\pm 1^2 \pm 2^2 \pm \cdots \pm m^2 $$ 
+for some $m \in \mathbb{Z}^+$.\\
+We prove this by induction, taking the first four whole numbers as our \PMlinkescapetext{base} cases:
+$$ 0 = 1^2 + 2^2 - 3^2 + 4^2 - 5^2 - 6^2 + 7^2 $$
+$$ 1 = 1^2 $$
+$$ 2 = -1^2 - 2^2 - 3^2 + 4^2 $$
+$$ 3 = -1^2 + 2^2$$
+\\Now it suffices to prove that if the theorem is true for $k$ then
+it is also true for $k+4$.
+\\As
+$$ (m+1)^2 - (m+2)^2 - (m+3)^2 + (m+4)^2 = 4 $$
+it's simple to finish the proof:
+\\if $ k=\pm 1^2 \pm \cdots \pm m^2 $ then
+$$ (k+4)=\pm 1^2 \pm \cdots \pm m^2 + (m+1)^2 - (m+2)^2 - (m+3)^2 + (m+4)^2$$
+and we are done.
+%%%%%
+%%%%%
+\end{document}

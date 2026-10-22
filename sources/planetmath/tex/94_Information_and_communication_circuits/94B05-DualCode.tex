@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DualCode}
+\pmcreated{2013-03-22 15:13:29}
+\pmmodified{2013-03-22 15:13:29}
+\pmowner{GrafZahl}{9234}
+\pmmodifier{GrafZahl}{9234}
+\pmtitle{dual code}
+\pmrecord{6}{36989}
+\pmprivacy{1}
+\pmauthor{GrafZahl}{9234}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94B05}
+%\pmkeywords{linear code}
+%\pmkeywords{orthogonal complement}
+\pmrelated{LinearCode}
+\pmrelated{OrthogonalComplement}
+\pmdefines{self-dual}
+\pmdefines{self-orthogonal}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Prod}{\prod\limits}
+\newcommand{\Sum}{\sum\limits}
+\newcommand{\mbb}{\mathbb}
+\newcommand{\mbf}{\mathbf}
+\newcommand{\mc}{\mathcal}
+\newcommand{\ol}{\overline}
+
+% Math Operators/functions
+\DeclareMathOperator{\Frob}{Frob}
+\DeclareMathOperator{\cwe}{cwe}
+\DeclareMathOperator{\we}{we}
+\DeclareMathOperator{\wt}{wt}
+\begin{document}
+\PMlinkescapeword{self-dual}
+Let $C$ be a linear code of block length $n$ over the finite field
+$\mbb{F}_q$. Then the set
+\begin{equation*}
+C^\perp:=\{d\in\mbb{F}_q^n\mid c\cdot d=0\text{ for all }c\in C\}
+\end{equation*}
+is the \emph{dual code} of $C$. Here, $c\cdot d$ denotes either the
+standard dot product or the Hermitian dot product.
+
+This definition is reminiscent of orthogonal complements of \PMlinkid{finite
+dimensional}{5398} vector spaces over the real or complex numbers. Indeed,
+$C^\perp$ is also a linear code and it is true that if $k$ is the
+\PMlinkid{dimension}{5398} of $C$, then the \PMlinkescapetext{dimension} of
+$C^\perp$ is $n-k$. It is, however, \textbf{not} necessarily true that
+$C\cap C^\perp=\{0\}$. For example, if $C$ is the binary code of block
+length $2$ \PMlinkid{spanned by}{806} the codeword $(1,1)$ then $(1,1)\cdot(1,1)=0$,
+that is, $(1,1)\in C^\perp$. In fact, $C$ equals $C^\perp$ in this
+case. In general, if $C=C^\perp$, $C$ is called
+\emph{self-dual}. Furthermore $C$ is called \emph{self-orthogonal} if
+$C\subseteq C^\perp$.
+
+Famous examples of self-dual codes are the extended binary Hamming
+code of block length $8$ and the extended binary Golay code of block
+length $24$.
+%%%%%
+%%%%%
+\end{document}

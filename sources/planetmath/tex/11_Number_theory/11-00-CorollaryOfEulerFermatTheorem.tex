@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CorollaryOfEulerFermatTheorem}
+\pmcreated{2013-03-22 14:23:14}
+\pmmodified{2013-03-22 14:23:14}
+\pmowner{kamala}{5486}
+\pmmodifier{kamala}{5486}
+\pmtitle{corollary of Euler-Fermat theorem}
+\pmrecord{9}{35882}
+\pmprivacy{1}
+\pmauthor{kamala}{5486}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Corollary of Euler-Fermat theorem (F. Smarandache):
+\newline Let $a, m \in \mathbb{N}$, $m \neq 0$, and $\phi$ be the Euler totient function. Then:
+$$a^{\phi(m_s)+s} \equiv a^s \pmod{m}$$
+where $s$ and $m_s$ depend on $a$ and $m$, also $s$ is one more than the number of steps in the algorithm, while $m_s$ is a divisor of $m$, and they are both obtained from the following integer algorithm:
+
+Step (0):
+\newline calculate the gcd of $a$ and $m$ and denote it by $d_0$;
+\newline therefore $d_0=(a,m)$, and also denote $m_0=m/d_0$;
+\newline if $d_0 \neq 1$ go to the next step, otherwise stop;
+
+Step (1):
+\newline calculate the gcd of $d_0$ and $m_0$ and denote it by $d_1$;
+\newline therefore $d_1=(d_0,m_0)$, and also denote $m_1=m_0/d_1$;
+\newline if $d_1 \neq 1$ go to the next step, otherwise stop;
+
+$ \ldots \ldots \ldots \ldots \ldots \ldots \ldots $
+
+Step (s-1):
+\newline calculate the gcd of $d_{s-2}$ and $m_{s-2}$ and denote it by $d_{s-1}$;
+\newline therefore $d_{s-1}=(d_{s-2},m_{s-2})$, and also denote $m_{s-1}=m_{s-2}/d_{s-1}$;
+\newline if $d_{s-1} \neq 1$ go to the next step, otherwise stop;
+
+Step (s):
+\newline calculate the gcd of $d_{s-1}$ and $m_{s-1}$ and denote it by $d_{s}$;
+\newline therefore $d_{s}=(d_{s-1},m_{s-1})$, and also denote $m_{s}=m_{s-1}/d_{s}$;
+\newline eventually one arrives at a gcd $d_{s} = 1$, stop the algorithm.
+
+The algorithm ends when the gcd=1.  Actually at each step the gcd decreases: from the maximum gcd=(a,m) at step (0) to the minimum gcd=1 at step (s).  The algorithm is finite because the first gcd of (a,m) is finite and at each step one gets a smaller gcd.
+
+For the particular case when $(a,m)=1$ one has $s=0$ (hence the algorithm finishes at step (0)) and $m_s=m$, which is Euler-Fermat theorem.
+
+\begin{thebibliography}{9}
+\bibitem{smarandache} Florentin Smarandache, {\em A Generalization of Euler Theorem}, Bulet. Univ. Brasov, Series C, Vol. XXIII, 7-12, 1981;
+\PMlinkexternal{online article in arXiv}{http://xxx.lanl.gov/pdf/math.GM/0610607}.
+\bibitem{smarandache2} Florentin Smarandache, {\em Collected Papers}, Vol. I, 184-191 (in French), Tempus, Bucharest, 1996; 
+\PMlinkexternal{online book}{http://www.gallup.unm.edu/~smarandache/CP1.pdf}.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

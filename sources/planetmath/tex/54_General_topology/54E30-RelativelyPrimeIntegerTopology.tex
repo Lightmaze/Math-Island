@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RelativelyPrimeIntegerTopology}
+\pmcreated{2013-03-22 14:42:07}
+\pmmodified{2013-03-22 14:42:07}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{relatively prime integer topology}
+\pmrecord{7}{36314}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E30}
+\pmdefines{prime integer topology}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Let $X$ be the set of strictly positive integers.  The \emph{relatively prime integer topology} on $X$ is the topology determined by a basis consisting of the sets 
+\begin{align*}
+U(a,b)=\{ax+b\mid x\in X\}
+\end{align*}
+for any $a$ and $b$ are relatively prime integers.  That this does indeed form a basis is found in \PMlinkname{this entry.}{HausdorffSpaceNotCompletelyHausdorff}
+
+Equipped with this topology, $X$ is \PMlinkname{$T_0$}{T0Space}, \PMlinkname{$T_1$}{T1Space},and \PMlinkname{$T_2$}{T2Space}, but satisfies none of the higher separation axioms (and hence meet very few compactness criteria).
+
+We can define a coarser topology on $X$ by considering the subbasis of the above basis consisting of all $U(a,b)$ with $a$ being a prime.  This is called the \emph{prime integer topology} on $\Z^+$.
+
+\begin{thebibliography}{9}
+\bibitem{steen} L.A. Steen, J.A.Seebach, Jr.,
+\emph{Counterexamples in topology},
+Holt, Rinehart and Winston, Inc., 1970.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

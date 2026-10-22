@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AsymptoticEstimatesForRealvaluedNonnegativeMultiplicativeFunctions}
+\pmcreated{2013-03-22 16:08:42}
+\pmmodified{2013-03-22 16:08:42}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{asymptotic estimates for real-valued nonnegative multiplicative functions}
+\pmrecord{11}{38223}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N37}
+\pmrelated{AsymptoticEstimate}
+\pmrelated{DisplaystyleSum_nLeXTaunaO_axlogX2a1ForAGe0}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{cor*}{Corollary}
+
+\begin{document}
+Note that, within this entry, $p$ always refers to a prime, $k$, $m$, and $n$ always refer to positive integers, and $\log$ always refers to the natural logarithm.
+
+\begin{thm*}
+Let $f$ be a real-valued nonnegative multiplicative function such that the two following conditions are satisfied:
+
+\begin{enumerate}
+\item There exists $A \ge 0$ such that, for every $y \ge 0$, $\displaystyle \sum_{p \le y} f(p) \log p \le Ay$.
+\item There exists $B \ge 0$ such that $\displaystyle \sum_p \sum_{k \ge 2} \frac{f(p^k)\log(p^k)}{p^k} \le B$.
+\end{enumerate}
+
+Then for all $x>1$, $\displaystyle \sum_{n \le x} f(n) \le (A+B+1) \frac{x}{\log x} \sum_{n \le x} \frac{f(n)}{n}$.
+\end{thm*}
+
+\begin{proof}
+\begin{center}
+$\begin{array}{ll}
+\displaystyle \log x \sum_{n \le x} f(n) & \displaystyle =\sum_{n \le x} f(n)(\log x-\log n+\log n) \\
+\\
+& \displaystyle =\sum_{n \le x} f(n) \log\left(\frac{x}{n}\right)+\sum_{n \le x} f(n)\log n \\
+\\
+& \displaystyle \le \sum_{n \le x} f(n) \left(\frac{x}{n}\right)+\sum_{n \le x} f(n) \sum_{p^k \Vert n} \log (p^k) \\
+\\
+& \displaystyle \le x\sum_{n \le x} \frac{f(n)}{n}+\sum_{p^k \le x} \log(p^k) \sum_{n \le x \text{ and }p^k \Vert n} f(n) \\
+\\
+& \displaystyle \le x\sum_{n \le x} \frac{f(n)}{n}+\sum_{p^k \le x} \log(p^k) \sum_{n \le x \text{ and }p^k \Vert n} f(p^k)f\left(\frac{n}{p^k}\right) \\
+\\
+& \displaystyle \le x\sum_{n \le x} \frac{f(n)}{n}+\sum_{p^k \le x} \log(p^k) \sum_{m \le \frac{x}{p^k}} f(p^k)f(m) \\
+\\
+& \displaystyle \le x\sum_{n \le x} \frac{f(n)}{n}+\sum_{p \le x} f(p)\log p \sum_{m \le \frac{x}{p}} f(m)+\sum_{p \le x} \sum_{k \ge 2} f(p^k) \log(p^k) \frac{x}{p^k} \sum_{m \le \frac{x}{p^k}} \frac{f(m)}{m} \\
+\\
+& \displaystyle \le x\sum_{n \le x} \frac{f(n)}{n}+\sum_{m \le x} f(m) \sum_{p \le \frac{x}{m}} f(p)\log p+x\sum_{m \le x} \frac{f(m)}{m} \sum_{p \le x} \sum_{k \ge 2} \frac{f(p^k)\log(p^k)}{p^k} \\
+\\
+& \displaystyle \le x\sum_{n \le x} \frac{f(n)}{n}+\sum_{m \le x} f(m) \left( \frac{Ax}{m} \right)+x\sum_{m \le x} \frac{f(m)}{m} B \\
+\\
+& \displaystyle \le x\sum_{n \le x} \frac{f(n)}{n}+Ax\sum_{n \le x} \frac{f(n)}{n}+Bx \sum_{n \le x} \frac{f(n)}{n} \\
+\\
+& \displaystyle \le (A+B+1)x\sum_{n \le x} \frac{f(n)}{n} \end{array}$
+\end{center}
+
+Dividing the inequality $\displaystyle \log x \sum_{n \le x} f(n) \le (A+B+1)x\sum_{n \le x} \frac{f(n)}{n}$ by $\log x$ yields the desired result.
+\end{proof}
+
+The theorem has an obvious corollary:
+
+\begin{cor*}
+If $f$ \PMlinkescapetext{satisfies} the conditions of the theorem, then for all $x>1$, $\displaystyle \sum_{n \le x} f(n)=O\left(\frac{x}{\log x} \sum_{n \le x} \frac{f(n)}{n}\right)$.
+\end{cor*}
+%%%%%
+%%%%%
+\end{document}

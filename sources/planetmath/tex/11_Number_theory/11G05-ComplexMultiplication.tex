@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ComplexMultiplication}
+\pmcreated{2013-03-22 13:41:35}
+\pmmodified{2013-03-22 13:41:35}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{complex multiplication}
+\pmrecord{15}{34367}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11G05}
+%\pmkeywords{complex multiplication}
+%\pmkeywords{elliptic curve}
+%\pmkeywords{endomorphism}
+\pmrelated{EllipticCurve}
+\pmrelated{KroneckerWeberTheorem}
+\pmrelated{OrderInAnAlgebra}
+\pmrelated{ArithmeticOfEllipticCurves}
+\pmdefines{complex multiplication}
+\pmdefines{endomorphism ring}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $E$ be an elliptic curve. The {\it endomorphism ring} of $E$,
+denoted $\operatorname{End}(E)$, is the set of all regular maps $\phi \colon E
+\to E$ such that $\phi(O)=O$, where $O \in E$ is the
+identity element for the group structure of $E$. Note that this is
+indeed a ring under addition ($(\phi + \psi)(P)=\phi(P) +
+\psi(P)$) and composition of maps.
+
+The following theorem implies that every endomorphism is also a
+group endomorphism:
+\begin{thm}
+Let $E_1, E_2$ be elliptic curves, and let $\phi \colon E_1
+\to E_2$ be a regular map such that
+$\phi(O_{E_1})=O_{E_2}$. Then $\phi$ is also a group homomorphism,
+i.e. $$\forall P,Q \in E_1,\ \phi(P +_{E_1}
+Q)=\phi(P)+_{E_2}\phi(Q).$$
+\end{thm}
+[Proof: See $\cite{silverman}$, Theorem 4.8, page 75]
+\\
+
+If $\operatorname{End}(E)$ is isomorphic (as a ring) to an \PMlinkname{order}{OrderInAnAlgebra} $R$ in a quadratic imaginary
+field $K$ then we say that the elliptic curve E has {\it complex
+multiplication} by $K$ (or complex multiplication by $R$).
+
+{\it Note}: $\operatorname{End}(E)$ always contains a subring isomorphic to
+$\mathbb{Z}$, formed by the {\it multiplication by n} maps:
+$$[n]\colon E \to E,\quad [n]P=n\cdot P$$
+and, in general, these are all the maps in the endomorphism ring of $E$.
+
+{\bf Example}: Fix $d\in \mathbb{Z}$. Let $E$ be the elliptic
+curve defined by
+$$y^2=x^3-dx$$
+then this curve has complex multiplication by $\mathbb{Q}(i)$
+(more concretely by $\mathbb{Z}(i)$). Besides the multiplication
+by $n$ maps, $\operatorname{End}(E)$ contains a genuine new element:
+$$[i]\colon E \to E,\quad [i](x,y)=(-x,iy)$$
+(the name {\it complex multiplication} comes from the fact that we
+are ``multiplying'' the points in the curve by a complex number, $i$
+in this case).
+
+\begin{thebibliography}{8}
+\bibitem{milne} James Milne, {\em Elliptic Curves}, online course notes. \PMlinkexternal{http://www.jmilne.org/math/CourseNotes/math679.html}{http://www.jmilne.org/math/CourseNotes/math679.html}
+\bibitem{silverman} Joseph H. Silverman, {\em The Arithmetic of Elliptic Curves}. Springer-Verlag, New York, 1986.
+\bibitem{silverman2} Joseph H. Silverman, {\em Advanced Topics in
+the Arithmetic of Elliptic Curves}. Springer-Verlag, New York,
+1994.
+\bibitem{shimura} Goro Shimura, {\em Introduction to the
+Arithmetic Theory of Automorphic Functions}. Princeton University
+Press, Princeton, New Jersey, 1971.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

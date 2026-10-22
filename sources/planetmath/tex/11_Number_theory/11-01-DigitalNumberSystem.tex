@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DigitalNumberSystem}
+\pmcreated{2013-03-22 12:57:12}
+\pmmodified{2013-03-22 12:57:12}
+\pmowner{akrowne}{2}
+\pmmodifier{akrowne}{2}
+\pmtitle{digital number system}
+\pmrecord{9}{33313}
+\pmprivacy{1}
+\pmauthor{akrowne}{2}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-01}
+\pmrelated{DecimalExpansion}
+\pmdefines{base}
+\pmdefines{numerical base}
+\pmdefines{digital base}
+\pmdefines{positional systems}
+\pmdefines{positional number systems}
+\pmdefines{place systems}
+\pmdefines{digit}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+%\usepackage{psfrag}
+%\usepackage{graphicx}
+%%%\usepackage{xypic}
+\begin{document}
+\PMlinkescapeword{representation}
+
+\section{Digital System}
+
+Most\footnote{but not all-- see Roman numerals for an example of a baseless number system.} written number systems are built upon the concept of a \emph{digital system} (or \emph{positional system}) for their functioning and conveying of quantitative meaning.  In these systems, meaning is derived from two things: symbols and positions.  A particular symbol in a specific place is called a \emph{digit}.  
+
+The representation of a value in a digital system follows the schema:
+
+$$ \ldots s_2 s_1 s_0 . s_{-1} s_{-2} s_{-3} \ldots $$
+
+Where each $s_i$ is some symbol that has a quantitative value (a digit).  Places to the left of the point ($.$) are worth whole units, and places to the right are worth fractional units.  It is the \emph{base} that tells us how much of a fraction or how many whole units.  Once a base $b$ is chosen, the value of a number $s_2 s_1 s_0 . s_{-1} s_{-2} s_{-3}$ would be calculated like:
+
+$$ s_2 s_1 s_0 . s_{-1} s_{-2} s_{-3} = s_2 \cdot b^{2} + s_1 \cdot b^{1} + s_0 \cdot b^{0} + s_{-1} \cdot b^{-1} + s_{-2} \cdot b^{-2} + s_{-3} \cdot b^{-3} $$
+
+In our now-standard, Arabic-derived decimal system, the base $b$ is equal to 10.  Other very common (and useful) systems are binary, hexadecimal, and octal, having $b=2$, $b=16$, and $b=8$ respectively \footnote{These are generic systems which are capable of representing any number.  By contrast, our system of written time is a curious hybrid of bases (60, 60, and then 10 from there on) and has a fixed number of whole places and a different number of symbols (24) in the highest place, making it capable only of representing the same discrete, finite set of values over and over again.}.
+
+Each $s_i$ is a member of an alphabet of symbols which must have $b$ members.  Intuitively this makes sense: when we try to represent the number which follows ``9'' in the decimal system, we know it must be ``10'', since there is no symbol after ``9.''  Hence, position as well as symbol conveys the meaning, and base tells us how much a unit in each position is worth.
+
+\section{Remark}
+
+Curiously, though one would think that the choice of base leads to merely a different way of rendering the same information, there are instances where things are variously provable or proven in some bases, but not others. For instance, there exists a non-recursive formula for the $n$th \textbf{binary} digit of $\pi$, but not for decimal-- one still must calculate all of the $n-1$ preceding decimal digits of $\pi$ to get the $n$th (see \PMlinkexternal{this paper}{http://www.nersc.gov/~dhbailey/dhbpapers/digits.pdf}).
+%%%%%
+%%%%%
+\end{document}

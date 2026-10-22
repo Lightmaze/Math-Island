@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UniformSpace}
+\pmcreated{2013-03-22 12:46:26}
+\pmmodified{2013-03-22 12:46:26}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{uniform space}
+\pmrecord{12}{33085}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E15}
+\pmdefines{uniform structure}
+\pmdefines{uniformity}
+\pmdefines{entourage}
+\pmdefines{$V$-close}
+\pmdefines{vicinity}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A \emph{uniform structure} (or \emph{uniformity}) on a set $X$ is a non empty set $\mathcal{U}$ of subsets of $X \times X$ which satisfies the following axioms:
+\begin{enumerate}
+\item Every subset of $X\times X$ which contains a set of $\mathcal{U}$ belongs to $\mathcal{U}$.
+\item Every finite intersection of sets of $\mathcal{U}$ belongs to $\mathcal{U}$.
+\item Every set of $\mathcal{U}$ is a reflexive relation on $X$ (i.e. contains the diagonal).
+\item If $V$ belongs to $\mathcal{U}$, then $V' = \{(y,x): (x,y) \in V\}$ belongs to $\mathcal{U}$.
+\item If $V$ belongs to $\mathcal{U}$, then exists $V'$ in $\mathcal{U}$ such that, whenever $(x,y),(y,z) \in V'$, then $(x,z) \in V$ (i.e. $V'\circ V'\subseteq V$).
+\end{enumerate}
+
+The sets of $\mathcal{U}$ are called \emph{entourages} or \emph{vicinities}. The set $X$ together with the uniform structure $\mathcal{U}$ is called a \emph{uniform space}.
+
+If $V$ is an entourage, then for any $(x,y)\in V$ we say that $x$ and $y$ are \emph{$V$-close}.
+
+Every uniform space can be considered a topological space with a natural topology induced by uniform structure. The uniformity, however, provides in general a richer structure, which formalize the concept of relative closeness: in a uniform space we can say that $x$ is close to $y$ as $z$ is to $w$, which makes no sense in a topological space. It follows that uniform spaces are the most natural environment for uniformly continuous functions and Cauchy sequences, in which these concepts are naturally involved.
+
+Examples of uniform spaces are metric spaces, topological groups, and topological vector spaces.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{OpenSetInmathbbRnContainsAnOpenRectangle}
+\pmcreated{2013-03-22 14:07:46}
+\pmmodified{2013-03-22 14:07:46}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{open set in $\mathbb{R}^n$ contains an open rectangle}
+\pmrecord{5}{35537}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+\pmrelated{Interval}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+% The below lines should work as the command
+% \renewcommand{\bibname}{References}
+% without creating havoc when rendering an entry in 
+% the page-image mode.
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+\begin{document}
+{\bf Theorem} Suppose $\sR^n$ is
+ equipped with the usual topology induced by the open balls of the
+ Euclidean metric.
+ Then, if $U$ is a non-empty open set in $\sR^n$, there
+ exist real numbers $a_i, b_i$ for $i=1,\ldots, n$ such that
+ $a_i<b_i$ and $[a_1,b_1]\times \cdots \times [a_n, b_n]$ is a subset of $U$.
+ 
+ {\bf Proof.} 
+ Since $U$ is non-empty, there exists some point $x$
+ in $U$. Further, since $U$ is a topological space, $x$ is contained in
+ some open set. Since the topology has a basis consisting of
+ open balls, there exists a $y\in U$ and $\varepsilon >0$ such that $x$
+ is contained in the open ball $B(y,\varepsilon)$.
+ Let us now set $a_i=y_i - \frac{\varepsilon}{2\sqrt{n}}$ and
+ $b_i=y_i + \frac{\varepsilon}{2\sqrt{n}}$
+ for all $i=1,\ldots, n$.
+ Then $D=[a_1,b_1]\times \cdots \times [a_n, b_n]$ can be
+ parametrized as
+ $$D=\{y+(\lambda_1,\ldots, \lambda_n) \frac{\varepsilon}{2\sqrt{n}} \mid \lambda_i\in[-1,1]\,\mbox{for all}\, i=1,\ldots, n\}.$$
+ For an arbitrary point in $D$, we have
+ \begin{eqnarray*}
+ |y+(\lambda_1,\ldots, \lambda_n) \frac{\varepsilon}{2\sqrt{n}}-y| &=& |(\lambda_1,\ldots, \lambda_n) \frac{\varepsilon}{2\sqrt{n}}| \\
+ &=& \frac{\varepsilon}{2\sqrt{n}} \sqrt{\lambda_1^2 + \cdots + \lambda_n^2} \\
+ &\le& \frac{\varepsilon}{2} < \varepsilon,
+ \end{eqnarray*}
+ so $D\subset B(y,\epsilon)\subset U$, and the claim follows. $\Box$
+%%%%%
+%%%%%
+\end{document}

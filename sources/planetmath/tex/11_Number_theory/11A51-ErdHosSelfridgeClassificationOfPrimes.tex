@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ErdHosSelfridgeClassificationOfPrimes}
+\pmcreated{2013-03-22 16:05:02}
+\pmmodified{2013-03-22 16:05:02}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Erd\H{o}s-Selfridge classification of primes}
+\pmrecord{5}{38143}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmsynonym{Erdos-Selfridge classification of primes}{ErdHosSelfridgeClassificationOfPrimes}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Paul Erd\H{o}s and John Selfridge classified primes $p$ thus: If the largest prime factor of $p + 1$ is 2 or 3, then $p$ is in class 1+. Otherwise, assign to $c$ the class of the largest prime factor of $p + 1$, then $p$ is in class $(c + 1)+$. Class 1+ primes are of the form $2^i3^j - 1$ for $i > -1$ and $j > -1$.
+
+According to this scheme, $p < 200$ are sorted thus:
+
+Class 1+: 2, 3, 5, 7, 11, 17, 23, 31, 47, 53, 71, 107, 127, 191 ( listed in A005105 of Sloane's OEIS)
+
+Class 2+: 13, 19, 29, 41, 43, 59, 61, 67, 79, 83, 89, 97, 101, 109, 131, 137, 139, 149, 167, 179, 197, 199 (A005106)
+
+Class 3+: 37, 103, 113, 151, 157, 163, 173, 181, 193 (A005107)
+
+Class 4+: 73
+
+A005113 lists the smallest prime of class $n+$.
+
+Clearly, all Mersenne primes are class 1+. The known Fermat primes show slightly more variety: 257 is class 3+ while 65537 is class 4+.
+
+\begin{thebibliography}{1}
+\bibitem{rg} R. K. Guy, {\it Unsolved Problems in Number Theory}. New York: Springer-Verlag (2004)
+\end{thebibliography}
+
+
+%%%%%
+%%%%%
+\end{document}

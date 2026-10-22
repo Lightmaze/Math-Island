@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Development}
+\pmcreated{2013-03-22 14:49:49}
+\pmmodified{2013-03-22 14:49:49}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{development}
+\pmrecord{6}{36495}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D20}
+\pmdefines{developable}
+\pmdefines{nested development}
+\pmdefines{Vickery's theorem}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Let $X$ be a topological space.  A \emph{development} for $X$ is a countable collection $F_1, F_2, \ldots$ of open coverings of $X$ such that for any closed subset $C$ of $X$ and any point $p$ in the complement of $C$, there exists a cover $F_j$ such that no element of $F_j$ which contains $p$ intersects $C$.  A space with a development is called \emph{developable}.
+
+A development $F_1, F_2,\ldots$ such that $F_i\subset F_{i+1}$ for all $i$ is called a \emph{nested development}.  A theorem from Vickery states that every developable space in fact has a nested development.
+
+\begin{thebibliography}{9}
+\bibitem{a}
+Steen, Lynn Arthur and Seebach, J. Arthur, \emph{Counterexamples in Topology}, Dover Books, 1995.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

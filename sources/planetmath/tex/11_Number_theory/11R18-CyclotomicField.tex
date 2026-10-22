@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CyclotomicField}
+\pmcreated{2013-03-22 17:10:25}
+\pmmodified{2013-03-22 17:10:25}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{cyclotomic field}
+\pmrecord{9}{39486}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R18}
+\pmclassification{msc}{11-00}
+\pmsynonym{cyclotomic number field}{CyclotomicField}
+\pmrelated{CyclotomicExtension}
+\pmrelated{CyclotomicPolynomial}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pstricks}
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\begin{document}
+A \emph{cyclotomic field} (or \emph{cyclotomic number field}) is a cyclotomic extension of $\mathbb{Q}$.  These are all of the form $\mathbb{Q}(\omega_n)$, where $\omega_n$ is a \PMlinkname{primitive $n$th root of unity}{PrimitiveNthRootOfUnity}.
+
+The ring of integers of a cyclotomic field always has a \PMlinkname{power basis over $\mathbb{Z}$}{PowerBasisOverMathbbZ}.  Specifically, the ring of integers of $\mathbb{Q}(\omega_n)$ is $\mathbb{Z}[\omega_n]$.
+
+Given a \PMlinkescapetext{primitive $n$th root of unity} $\omega_n$, its minimal polynomial over $\mathbb{Q}$ is the cyclotomic polynomial $\Phi_n(x)$.  Thus, $[\mathbb{Q}(\omega_n)\!:\!\mathbb{Q}]=\varphi(n)$, where $\varphi$ denotes the Euler phi function.
+
+If $n$ is odd, then $\mathbb{Q}(\omega_{2n})=\mathbb{Q}(\omega_n)$.  There are many ways to prove this, but the following is a relatively short proof:  Since $\omega_n={\omega_{2n}}^2\in \mathbb{Q}(\omega_{2n})$, we have that $\mathbb{Q}(\omega_n)\subseteq\mathbb{Q}(\omega_{2n})$.  We also have that $[\mathbb{Q}(\omega_{2n})\!:\!\mathbb{Q}]=\varphi(2n)=\varphi(2)\varphi(n)=\varphi(n)=[\mathbb{Q}(\omega_n)\!:\!\mathbb{Q}]$.  Thus, $[\mathbb{Q}(\omega_{2n})\!:\!\mathbb{Q}(\omega_n)]=1$.  It follows that $\mathbb{Q}(\omega_{2n})=\mathbb{Q}(\omega_n)$.
+
+\textbf{Note.}\, If $n$ is a positive integer and $m$ is an integer such that $\gcd(m,n)=1$, then\, $\omega_n$\, and\, ${\omega_n}^m$\, are \PMlinkescapetext{primitive $n$th roots of unity and generate} the same cyclotomic field.
+%%%%%
+%%%%%
+\end{document}

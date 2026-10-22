@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RiemannvarpiFunction}
+\pmcreated{2013-03-22 13:24:12}
+\pmmodified{2013-03-22 13:24:12}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{Riemann $\varpi$  function}
+\pmrecord{12}{33945}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11M06}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The Riemann $\varpi$ function is used in the proof of the analytic continuation for the Riemann Xi function to the whole complex plane. It is defined as:
+
+\[
+\varpi(x) = \sum_{n=1}^{\infty} e^{-n^2 \pi x}
+\]
+
+This function is a special case of a \PMlinkname{Jacobi $\vartheta$ function}{JacobiVarthetaFunctions}:
+\[
+\varpi (x) = \vartheta_3 ( 0 | i x)
+\]
+
+As such the $\varpi$ function satisfies a functional equation, which a special case of \PMlinkname{Jacobi's Identity for the $\vartheta$ function}{JacobisIdentityForVarthetaFunctions}.
+%%%%%
+%%%%%
+\end{document}

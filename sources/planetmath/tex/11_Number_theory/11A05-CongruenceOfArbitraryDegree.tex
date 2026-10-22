@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CongruenceOfArbitraryDegree}
+\pmcreated{2013-03-22 18:52:29}
+\pmmodified{2013-03-22 18:52:29}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{congruence of arbitrary degree}
+\pmrecord{10}{41722}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmclassification{msc}{11A07}
+\pmrelated{SufficientConditionOfPolynomialCongruence}
+\pmrelated{APolynomialOfDegreeNOverAFieldHasAtMostNRoots}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\textbf{Theorem.}\; A congruence of $n$th degree and modulo a prime number has at most $n$ incongruent roots.\\
+
+\emph{Proof.}\, In the case \,$n = 1$,\, the assertion turns out from the entry linear congruence.\, We make the induction hypothesis, that the assertion is true for congruences of degree less than $n$.\, 
+
+We suppose now that the congruence
+\begin{align}
+f(x) \;:=\; a_nx^n+a_{n-1}x^{n-1}+\ldots+a_0 \;\equiv\; 0 \pmod{p},
+\end{align}
+where\, $p \nmid a_n$,\, has at least $n$ incongruent roots $x_1,\,x_2,\,\ldots,\,x_n$.\, Form the congruence
+\begin{align}
+f(x) \;\equiv\; a_n(x-x_1)(x-x_2)\cdots(x-x_n) \pmod{p}.
+\end{align}
+Both sides have the same term $a_nx^n$ of the highest degree, whence they may be cancelled from the congruence and the degree of (2) has a lower degree than $n$.\, Because (2), however, clearly has $n$ incongruent roots 
+$x_1,\,x_2,\,\ldots,\,x_n$,\, it must by the induction hypothesis be simplifiable to the form\, $0 \equiv 0 \pmod{p}$\, and thus be an identical congruence.
+
+Now, if the congruence (1) had an additional incongruent root $x_{n+1}$, i.e.\, $P(x_{n+1}) \equiv 0 \pmod{p}$, then the identical congruence (2) would imply
+$$a_n(x_{n+1}-x_1)(x_{n+1}-x_2)\cdots(x_{n+1}-x_n) \;\equiv\; 0 \pmod{p}.$$
+Yet, this is impossible, since no one of the \PMlinkname{factors}{Product} of the left hand side is divisible by $p$.\, This settles the induction proof.\\
+
+Cf. \PMlinkexternal{SpringerLink}{http://eom.springer.de/c/c024860.htm}.\\
+
+\textbf{Example.}\, When\, $f(x) := x^5\!+\!x\!+\!1 \equiv 0 \pmod{7}$,\, we have\\
+$f(0) \equiv 1 \pmod{7}$,\\
+$f(1) \equiv 3 \pmod{7}$,\\
+$f(2) \equiv 32+2+1 \equiv 0 \pmod{7}$,\\
+$f(3) \equiv 27\cdot9+3+1 \equiv -1\cdot2+4 \equiv 2 \pmod{7}$,\\
+$f(4) \equiv (-3)^5+4+1 \equiv +2+5 \equiv 0 \pmod{7}$,\\
+$f(5) \equiv (-2)^5+5+1 \equiv -32+6 \equiv -26 \equiv 2 \pmod{7}$,\\
+$f(6) \equiv (-1)^5+6+1 \equiv 6 \pmod{7}$.\\
+Thus only the representants 2 and 4 of a complete residue system modulo 7 (see conditional congruences) are roots of the given congruense.\, A congruence needs not have the maximal amount of incongruent roots mentionned in the theorem.
+
+
+
+
+
+
+\begin{thebibliography}{9}
+\bibitem{K.V.} {\sc K. V\"ais\"al\"a}: {\em Lukuteorian ja korkeamman algebran alkeet}.\, Tiedekirjasto No. 17.\quad  Kustannusosakeyhti\"o Otava, Helsinki (1950).
+\end{thebibliography}
+
+
+
+%%%%%
+%%%%%
+\end{document}

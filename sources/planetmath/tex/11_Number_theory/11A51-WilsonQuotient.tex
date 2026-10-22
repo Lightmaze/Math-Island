@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WilsonQuotient}
+\pmcreated{2013-03-22 17:57:47}
+\pmmodified{2013-03-22 17:57:47}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Wilson quotient}
+\pmrecord{6}{40468}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The {\em Wilson quotient} $W_n$ for a given positive integer $n$ is the rational number $\displaystyle \frac{\Gamma(n) + 1}{n}$, where $\Gamma(x)$ is Euler's Gamma function (since we're dealing with integer inputs here, in effect this is merely a quicker way to write $(n - 1)!$).
+
+From Wilson's theorem it follows that the Wilson quotient is an integer only if $n$ is not composite. When $n$ is composite, the numerator of the Wilson quotient is $(n - 1)! + 1$ and the denominator is $n$. For example, if $n = 7$ we have numerator 721 with denominator 7, and since these have 7 as their greatest common divisor, in lowest terms the Wilson quotient  of 7 is 103 (with 1 as tacit numerator). But for $n = 8$ we have $$W_8 = \frac{5041}{8}.$$
+
+\begin{thebibliography}{1}
+\bibitem{rc} R. Crandall \& C. Pomerance, {\it Prime Numbers: A Computational Perspective}. New York: Springer (2001): 29.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

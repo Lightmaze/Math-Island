@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExistenceOfHilbertClassField}
+\pmcreated{2013-03-22 12:36:45}
+\pmmodified{2013-03-22 12:36:45}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{existence of Hilbert class field}
+\pmrecord{16}{32870}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R32}
+\pmclassification{msc}{11R29}
+\pmclassification{msc}{11R37}
+\pmrelated{IdealClass}
+\pmrelated{Group}
+\pmrelated{NumberField}
+\pmrelated{ClassNumberDivisibilityInExtensions}
+\pmrelated{RootDiscriminant}
+\pmrelated{ExtensionsWithoutUnramifiedSubextensionsAndClassNumberDivisibility}
+\pmrelated{ClassNumbersAndDiscriminantsTopicsOnClassGroups}
+\pmdefines{Hilbert class field}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\rai}[1]{\mathcal{O}_{#1}}
+\begin{document}
+Let $K$ be a number field.  There exists a finite extension $E$ of $K$ with the following properties:
+  \begin{enumerate}
+  \item $[E:K]=h_K$, where $h_K$ is the class number of $K$.
+  \item $E$ is Galois over $K$.
+  \item The ideal class group of $K$ is isomorphic to the Galois group of
+        $E$ over $K$.
+  \item Every ideal of $\rai{K}$ is a principal ideal of the ring extension $\rai{E}$.
+  \item Every prime ideal ${\cal P}$ of $\rai{K}$ decomposes into the product of
+        $\frac{h_K}{f}$ prime ideals in $\rai{E}$, where $f$ is the \PMlinkname{order}{Order}
+        of $[{\cal P}]$ in the ideal class group of $\rai{E}$.
+  \end{enumerate}
+There is a unique field $E$ satisfying the above five properties, and it is known as the {\em Hilbert class field} of $K$.
+
+The field $E$ may also be characterized as the \PMlinkname{maximal abelian unramified}{AbelianExtension} extension of $K$.  Note that in this context, the term `unramified' is meant not only for the finite places (the classical ideal theoretic \PMlinkescapetext{ interpretation}) but also for the infinite places.  That is, every real embedding of $K$ extends to a real embedding of $E$.  As an example of why this is necessary, consider some real quadratic field.
+%%%%%
+%%%%%
+\end{document}

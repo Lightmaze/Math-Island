@@ -1,0 +1,159 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ApproximatingAlgebraicNumbersWithLinearRecurrences}
+\pmcreated{2013-03-22 16:53:03}
+\pmmodified{2013-03-22 16:53:03}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{approximating algebraic numbers with linear recurrences}
+\pmrecord{16}{39138}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B37}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Linear recurrences can be used to obtain rational approximations for real
+algebraic numbers.  Suppose that $\rho$ is the root of a polynomial
+$p(x) = \sum_{k=0}^n c_k x^k$ with rational coefficients $c_k$ and 
+further assume that the roots of $p$ are distinct and that all the
+other roots of $p$ are strictly smaller in absolute value than $\rho$.
+
+Consider the recursion
+\[
+ \sum_{k=0}^n c_k a_{m+k} = 0.
+\]
+As discussed in the parent entry, the solution of this recurrence
+is
+\[
+ a_m = \sum_{k=1}^n b_k r_k^m,
+\]
+where $r_1, \ldots, r_n$ are the roots of $p$ --- let us agree that
+$r_1 = \rho$ --- and the $b_k$'s are determined by the initial conditions
+of the recurrence.  If $b_1 \neq 0$, we have
+\[
+ {a_{m+1} \over a_m} = 
+ {b_1 \rho^{m+1} + \sum_{k=2}^n b_k r_k^{m+1} \over 
+  b_1 \rho^m + \sum_{k=1}^n b_k r_k^m} =
+ \rho {1 + \sum_{k=2}^n \left( {b_k \over b_1} \right) 
+                  \left( {r_k \over \rho} \right)^{m+1} \over 
+       1 + \sum_{k=2}^n \left( {b_k \over b_1} \right) 
+                        \left( {r_k \over \rho} \right)^m}.
+\]
+Because $|\frac{r_k}{\rho}| < 1$ when $k > 1$, we have $\lim_{m \to \infty}
+(r_k / \rho)^m = 0$, and hence
+\[
+ \lim_{m \to \infty} {a_{m+1} \over a_m} = \rho.
+\]
+
+To illustrate this method, we will compute the square root of two.  Now,
+we cannot use the equation $x^2 - 2 = 0$ because it has two roots,
+$+\sqrt{2}$ and $-\sqrt{2}$, which are equal in absolute value.  So what
+we shall do instead is to use the equation $(x - 1)^2 = 2$, or $x^2 - 2 x
+- 3 = 0$, whose roots are $1 - \sqrt{2}$ and $1 + \sqrt{2}$.  Since
+$|1 + \sqrt{2}| > |1 - \sqrt{2}|$, we can use our method to approximate
+the larger of these roots, namely $1 + \sqrt{2}$; to approximate $\sqrt{2}$,
+we subtract $1$ from our answer.  The recursion we should use is
+\[
+ a_{m+2} - 2 a_{m+1} - a_m = 0
+\]
+or, moving terms around,
+\[
+ a_{m+2} = 2 a_{m+1} + a_m.
+\]
+If we choose $b_1 = - b_2 = 1/(2 \sqrt{2})$, then we have
+\begin{align*}
+ a_0 &= b_1 \left( 1 + \sqrt{2} \right )^0 +
+       b_2 \left( 1 - \sqrt{2} \right )^0 = b_1 + b_2 = 0 \\
+ a_1 &= b_1 \left( 1 + \sqrt{2} \right )^1 +
+        b_2 \left( 1 - \sqrt{2} \right )^1 =
+        b_1 + b_2 + (b_1 - b_2) \sqrt{2} = 1.
+\end{align*}
+Starting with these values, we obtain the following sequence:
+\begin{align*}
+ a_0 &= 0 \\
+ a_1 &= 1 \\
+ a_2 &= 2 \\
+ a_3 &= 5 \\
+ a_4 &= 12 \\
+ a_5 &= 29 \\
+ a_6 &= 70 \\
+ a_7 &= 169 \\
+ a_8 &= 408 \\
+ a_9 &= 985 \\
+ a_{10} &= 2738 \\
+ a_{11} &= 5741 \\
+ a_{12} &= 13860
+\end{align*}
+Therefore, as our approximations to $\sqrt{2}$, we have
+\[
+ 1, \frac{3}{2}, \frac{7}{5}, \frac{17}{12}, \frac{41}{29}, 
+ \frac{99}{70}, \frac{239}{169}, \frac{577}{408},
+ \frac{1753}{985}, \frac{3003}{2738}, \frac{8119}{5741}.
+\]
+
+By making suitable transformations, one can compute all the roots
+of a polynomial using this technique.  A way to do this is to start
+with a rational number $h$ which is closer to the desired root than 
+to the other roots, then make a change of variable $x = 1 / (y + h)$.
+
+As an example, we shall examine the roots of $x^3 + 9 x + 1$.  
+Approximating the polynomial by leaving off the constant term, we
+guess that the roots are close to $0$, $+3i$, and $-3i$.  Since the
+two complex roots are conjugates, it suffices to find one of them.
+
+To look for the root near $0$, we make the change of variable $x = 
+1 / y$ to obtain $y^3 + 9 y^2 + 1 = 0$, which gives the recursion
+$a_{k+3} + 9 a_{k+2} + a_k = 0$.  Picking some initial values, this
+recursion gives us the sequence
+\[
+0, 0, 1, -9, 81, -738, 6723, -61236, 557766, -5090401, \ldots,
+\]
+whence we obtain the approximations
+\[
+-\frac{1}{9}, -\frac{1}{9}, -\frac{81}{738}, -\frac{738}{6723},
+-\frac{6723}{61236}, -\frac{61236}{557766}, 
+-\frac{557766}{5090401}, \ldots.
+\]
+
+To look for the root near $3i$, we make the change of variable
+$x = 1 / (y + 3 i)$ to obtain $y^3 + (9 + 9 i) y^2 + (-27 + 54 i) y
++ 82 - 27 i = 0$, which gives the recursion
+\[
+ a_{k+3} + (9 + 9 i) a_{k+2} + (-27 + 54 i) a_{k+1} + 
+           (82 - 27 i) a_k = 0.
+\]
+Picking some initial values, this
+recursion gives us the sequence
+\[
+ 0,\, 0,\, 1,\, - 9 - 9 i,\, 27 + 108 i,\, -82 - 945 i,\, 
+ - 225 + 11196 i,\, 44415 - 127953 i, \ldots,
+\]
+%%%%%
+%%%%%
+\end{document}

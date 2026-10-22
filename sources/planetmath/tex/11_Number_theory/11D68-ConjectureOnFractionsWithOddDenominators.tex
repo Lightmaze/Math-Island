@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConjectureOnFractionsWithOddDenominators}
+\pmcreated{2013-03-22 12:48:34}
+\pmmodified{2013-03-22 12:48:34}
+\pmowner{drini}{3}
+\pmmodifier{drini}{3}
+\pmtitle{conjecture on fractions with odd denominators}
+\pmrecord{9}{33128}
+\pmprivacy{1}
+\pmauthor{drini}{3}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D68}
+\pmclassification{msc}{11A67}
+\pmrelated{SierpinskiErdosEgyptianFractionConjecture}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\Prob}[2]{\mathbb{P}_{#1}\left\{#2\right\}}
+\newcommand{\Expect}{\mathbb{E}}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+
+
+%%%%%% END OF SAVED PREAMBLE %%%%%%
+
+\newtheorem{conjecture}{Conjecture}
+\begin{document}
+Egyptian fractions raise many open problems; this is one of the most famous of them.
+
+Suppose we wish to write fractions as sums of distinct unit fractions \emph{with odd denominators}.  Obviously, every such sum will have a reduced representation with an odd denominator.
+
+For instance, the greedy algorithm applied to $\frac{2}{7}$ gives $\frac{1}{4}+\frac{1}{28}$, but we may also write $\frac{2}{7}$ as $\frac{1}{7}+\frac{1}{9}+\frac{1}{35}+\frac{1}{315}$.
+
+It is known that we can we represent \emph{every} rational number with odd denominator as a sum of distinct unit fractions with odd denominators.
+
+However it is not known whether the \PMlinkname{greedy algorithm}{AnyRationalNumberIsASumOfUnitFractions} works when limited to odd denominators.  
+
+\begin{conjecture}
+For any fraction $0\le \frac{a}{2k+1} < 1$ with odd denominator, if we repeatedly subtract the largest unit fraction with odd denominator that is smaller than our fraction, we will eventually reach 0.
+\end{conjecture}
+%%%%%
+%%%%%
+\end{document}

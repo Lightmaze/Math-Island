@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FormulaForSequencesSatisfyingSecondOrderRecurrenceRelations}
+\pmcreated{2013-03-22 17:51:43}
+\pmmodified{2013-03-22 17:51:43}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{formula for sequences satisfying second order recurrence relations}
+\pmrecord{7}{40339}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B37}
+\pmclassification{msc}{03D20}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pstricks}
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+\begin{document}
+\PMlinkescapeword{term}
+\PMlinkescapeword{terms}
+
+\begin{thm*}
+Let $\{s_n\}$ be a sequence such that there exist constants $A,B\in\mathbb{C}$ with $s_1=As_0$ and, for all positive integers $n$,
+\[
+s_{n+1}=As_n+Bs_{n-1}.
+\]
+Then for all nonnegative integers $n$, we have
+\[
+s_n=s_0\sum_{k=0}^{\lfloor\frac{n}{2}\rfloor} \binom{n-k}{k} B^k A^{n-2k},
+\]
+where $\lfloor\cdot\rfloor$ denotes the floor function and $\binom{a}{r}$ denotes the binomial coefficient.
+\end{thm*}
+
+\begin{proof}
+This will be proven by induction.  Due to the presence of $\lfloor\frac{n}{2}\rfloor$, odd $n$ and even $n$ should be considered separately.  Thus, there are two base steps:
+\begin{itemize}
+\item If $n=0$, then
+\[
+s_0=s_0\sum_{k=0}^0 \binom{0-k}{k} B^k A^{0-2k}.
+\]
+\item If $n=1$, then
+\[
+s_1=As_0=s_0\sum_{k=0}^0 \binom{1-k}{k} B^k A^{1-2k}.
+\]
+\end{itemize}
+
+Now assume that the theorem holds for all nonnegative integers less than or equal to some positive integer $n$.  We must show that the theorem holds for $n+1$.
+
+Recall that
+\[
+s_{n+1}=As_n+Bs_{n-1}.
+\]
+We can use the induction hypothesis on $s_n$ and $s_{n-1}$:
+\begin{align*}
+s_{n+1} & =As_0\sum_{k=0}^{\lfloor\frac{n}{2}\rfloor} \binom{n-k}{k} B^k A^{n-2k} +Bs_0\sum_{k=0}^{\lfloor\frac{n-1}{2}\rfloor} \binom{n-1-k}{k} B^k A^{n-1-2k} \\
+& =s_0\left( \sum_{k=0}^{\lfloor\frac{n}{2}\rfloor} \binom{n-k}{k} B^k A^{n+1-2k}
++\sum_{k=0}^{\lfloor\frac{n-1}{2}\rfloor} \binom{n-1-k}{k} B^{k+1} A^{n-1-2k} \right) \\
+& =s_0\left( A^{n+1}+\sum_{k=1}^{\lfloor\frac{n}{2}\rfloor} \binom{n-k}{k} B^k A^{n+1-2k}
++\sum_{k=1}^{\lfloor\frac{n+1}{2}\rfloor} \binom{n-k}{k-1} B^k A^{n+1-2k} \right)
+\end{align*}
+
+First assume that $n$ is odd.  Then the first of the two summations has $\lfloor\frac{n}{2}\rfloor=\frac{n-1}{2}$ terms and the second summation has $\lfloor\frac{n+1}{2}\rfloor=\frac{n+1}{2}$ terms.  Therefore, we must split off the $k=\frac{n+1}{2}$ term from the second summation before combining the two summations:
+\begin{align*}
+s_{n+1} & =s_0\left( A^{n+1}+\sum_{k=1}^{\lfloor\frac{n}{2}\rfloor} \binom{n-k}{k} B^k A^{n+1-2k}
++\sum_{k=1}^{\lfloor\frac{n}{2}\rfloor} \binom{n-k}{k-1} B^k A^{n+1-2k} +B^{\frac{n+1}{2}} \right) \\
+& =s_0\left( A^{n+1}+\sum_{k=1}^{\lfloor\frac{n}{2}\rfloor} \left[ \binom{n-k}{k}+\binom{n-k}{k-1} \right] B^k A^{n+1-2k} +B^{\frac{n+1}{2}} \right) \\
+& =s_0\left( A^{n+1}+\sum_{k=1}^{\lfloor\frac{n}{2}\rfloor} \binom{n+1-k}{k} B^k A^{n+1-2k} +B^{\frac{n+1}{2}} \right) \\
+& =s_0\sum_{k=0}^{\lfloor\frac{n+1}{2}\rfloor} \binom{n+1-k}{k} B^k A^{n+1-2k}
+\end{align*}
+
+Now assume that $n$ is even.  Then the two summations have the same number of terms and can be combined as is:
+\begin{align*}
+s_{n+1} & =s_0\left( A^{n+1}+\sum_{k=1}^{\lfloor\frac{n+1}{2}\rfloor} \left[ \binom{n-k}{k}+\binom{n-k}{k-1} \right] B^k A^{n+1-2k} \right) \\
+& =s_0\sum_{k=0}^{\lfloor\frac{n+1}{2}\rfloor} \binom{n+1-k}{k} B^k A^{n+1-2k}
+\end{align*}
+
+Hence, the theorem holds for all nonnegative integers $n$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

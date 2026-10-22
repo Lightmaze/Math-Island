@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FourierCoefficients}
+\pmcreated{2013-03-22 13:57:07}
+\pmmodified{2013-03-22 13:57:07}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Fourier coefficients}
+\pmrecord{19}{34716}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11F30}
+\pmrelated{GeneralizedRiemannLebesgueLemma}
+\pmrelated{FourierSeriesOfFunctionOfBoundedVariation}
+\pmrelated{DirichletConditions}
+\pmdefines{Fourier series}
+\pmdefines{trigonometric series}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $\mathbb{T}^n=\mathbb{R}^n/(2\pi\mathbb{Z})^n$ be the $n$-dimensional torus, let $\{\phi_k(x)\}_{k\in\mathbb{Z}^n}$ be an orthonormal basis for $L^2(\mathbb{T}^n)$, and suppose that $f(x)\in L^2(\mathbb{T}^n)$.
+
+We can expand $f$ as a Fourier series
+
+\begin{align*}
+\sum_{k\in\mathbb{Z}^n}\hat{f}(k)\phi_k,
+\end{align*}
+
+and we call the numbers $\hat{f}(k)$ the \emph{Fourier coefficients} of $f$ with respect to the given basis.  In particular, the Fourier series for $f$ converges to $f$ in the $L^2$ norm.
+
+The most basic incarnation of this is finding the Fourier coefficients of a Riemann integrable function with respect to the orthonormal basis given by the trigonometric functions:
+
+Let $f$ be a Riemann integrable function from $[-\pi,\pi]$ to $\mathbb{R}$. Then the numbers
+\begin{align*}
+a_0 &= \frac{1}{2\pi}\int_{-\pi}^{\pi}f(x)dx,\\
+a_n &= \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\cos(nx)dx,\\
+b_n &= \frac{1}{\pi}\int_{-\pi}^{\pi}f(x)\sin(nx)dx.
+\end{align*}
+are called the Fourier coefficients of the function $f.$
+
+The above can be repeated for a Lebesgue-integrable function $f$ if we use the Lebesgue integral in place of the Riemann integral.  This is the usual setting for modern Fourier analysis.
+
+The trigonometric series 
+$$ a_0 + \sum_{n=1}^{\infty}(a_n\cos(nx)+b_n\sin(nx))$$ is called the trigonometric series of the function $f$, or Fourier series of the function $f.$
+%%%%%
+%%%%%
+\end{document}

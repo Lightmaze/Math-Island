@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FiniteComplementTopology}
+\pmcreated{2013-03-22 14:37:54}
+\pmmodified{2013-03-22 14:37:54}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{finite complement topology}
+\pmrecord{8}{36213}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A05}
+\pmsynonym{cofinite topology}{FiniteComplementTopology}
+\pmrelated{CofiniteTopology}
+\pmrelated{CofiniteAndCocountableTopology}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Let $X$ be a set.  We can define the \emph{finite complement topology} on $X$ by declaring a subset $U\subset X$ to be open if $X\backslash U$ is finite, or if $U$ is all of $X$ or the empty set.  Note that this is equivalent to defining a topology by defining the closed sets in $X$ to be all finite sets (and $X$ itself).
+
+If $X$ is finite, the finite complement topology on $X$ is clearly the discrete topology, as the complement of \emph{any} subset is finite.
+
+If $X$ is countably infinite (or larger), the finite complement topology gives a standard example of a space that is not Hausdorff (each open set must contain all but finitely many points, so any two open sets must intersect).
+
+In general, the finite complement topology on an infinite set satisfies strong compactness conditions (compact, \PMlinkname{$\sigma$-compact}{SigmaCompact}, sequentially compact, etc.) since each open set in a cover contains "almost all'' of the points of $X$.  On the other hand, the finite complement topology fails all but the simplest of separation axioms since, as above, $X$ is hyperconnected under this topology.
+
+The finite complement topology is the coarsest T1-topology on a given set.
+%%%%%
+%%%%%
+\end{document}

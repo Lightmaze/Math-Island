@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KyneaNumber}
+\pmcreated{2013-03-22 16:13:13}
+\pmmodified{2013-03-22 16:13:13}
+\pmowner{Mravinci}{12996}
+\pmmodifier{Mravinci}{12996}
+\pmtitle{Kynea number}
+\pmrecord{4}{38318}
+\pmprivacy{1}
+\pmauthor{Mravinci}{12996}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given $n$, compute $4^n + 2^{n + 1} - 1$ or $(2^n + 1)^2 - 2$ or $$4^n + \sum_{i = 0}^n 2^i.$$ Any of these formulas gives the \emph{Kynea number} for $n$.
+
+The first few Kynea numbers are 7, 23, 79, 287, 1087, 4223, 16639, 66047, 263167, 1050623, 4198399, 16785407, 67125247 (listed in A093069 of Sloane's OEIS). Every third Kynea number is divisible by 7, thus prime Kynea numbers can't have $n = 3x + 2$ (except of course for $n = 2$. The largest Kynea number known to be prime is $(2^{281621} + 1)^2 - 2$, found by Cletus Emmanuel in November of 2005, using k-Sieve from Phil Comody and OpenPFGW.
+%%%%%
+%%%%%
+\end{document}

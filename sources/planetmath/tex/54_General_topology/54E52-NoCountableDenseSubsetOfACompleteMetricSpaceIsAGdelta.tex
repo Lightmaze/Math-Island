@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NoCountableDenseSubsetOfACompleteMetricSpaceIsAGdelta}
+\pmcreated{2013-03-22 14:59:06}
+\pmmodified{2013-03-22 14:59:06}
+\pmowner{gumau}{3545}
+\pmmodifier{gumau}{3545}
+\pmtitle{no countable dense subset of a complete metric space is a $G_\delta$}
+\pmrecord{8}{36689}
+\pmprivacy{1}
+\pmauthor{gumau}{3545}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E52}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $(X,d)$ be a complete metric space with no isolated points, and let $D\subset X$ be a countable dense set. Then $D$ is not a
+\PMlinkname{$G_\delta$ set}{G_deltaSet}.
+
+\textbf{Proof}
+
+First, we will prove that $D$ is first category. Then, supposing that $D$ is a $G_\delta$, we will conclude that $X - D$ must be first category. But then so must be $X$, which is absurd because $X$ is complete.  
+
+1) $D$ is a first category set:
+
+By hypothesis $D=\left\{ {x_i } \right\}_{i\in N}$. Let's see that each singleton is nowhere dense if $X$ has no isolated points:
+
+$\overline {\left\{ {x_i } \right\}} =\left\{ {x_i } \right\}$ (trivially). Suppose that $\left\{{x_i } \right\}^o=\left\{ {x_i } \right\}$. Then there is a ball aisolating the point. Absurd ($X$ has no isolated points). Then $\left\{ {x_i }\right\}^o=\emptyset$ and we have that $\left( {\overline {\left\{ {x_i } \right\}} }\right)^o=\emptyset$ so every singleton is nowhere dense and $D$ is of first category because it is a countable union of nowhere dense sets.
+
+2) Suppose $D$ is a $G_\delta$, that is, $D=\bigcap\limits_{i=1}^\infty {U_i }$ such that every $U$ is open. As $D$ is dense, then each $U$ is dense, because $D\subset U_i \Rightarrow \overline D =X\subset \overline {U_i } \quad \forall i$. But then 
+$X-D=X-\bigcap\limits_{i=1}^\infty {U_i } =\bigcup\limits_{i=1}^\infty {(X-U_i)
+}$ and $\left( {\overline {X-U_i } } \right)^o=\left( {X-U_i ^o}
+\right)^o=\left( {X-U_i } \right)^o=X-\overline {U_i } =\emptyset $
+
+which implies that $X-D$ is of first category. Then $D\bigcup {(X-D)} = X $ is of first category. Absurd, because $X$ is complete.
+%%%%%
+%%%%%
+\end{document}

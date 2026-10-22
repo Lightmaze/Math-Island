@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ValuesOfTheRiemannZetaFunctionInTermsOfBernoulliNumbers}
+\pmcreated{2013-03-22 15:12:07}
+\pmmodified{2013-03-22 15:12:07}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{values of the Riemann zeta function in terms of Bernoulli numbers}
+\pmrecord{7}{36960}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11M99}
+\pmrelated{BernoulliNumber}
+\pmrelated{ValueOfTheRiemannZetaFunctionAtS2}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+\newtheorem*{rem}{Remark}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+\begin{thm}
+Let $k$ be an even integer and let $B_k$ be the $k$th Bernoulli number. Let $\zeta(s)$ be the Riemann zeta function. Then:
+$$\zeta(k)=\frac{2^{k-1}|B_k|\pi^k}{k!}$$
+Moreover, by using the \PMlinkname{functional equation}{RiemannZetaFunction}
+, one calculates for all $n\geq 1$:
+$$\zeta(1-n)=\frac{(-1)^{n+1}B_n}{n}$$
+which shows that $\zeta(1-n)=0$ for $n\geq 3$ odd. For $k\geq 2$ even, one has:
+$$\zeta(1-k)=-\frac{B_k}{k}.$$
+\end{thm}
+\begin{rem}
+The zeroes of the zeta function shown above, $\zeta(1-n)=0$ for $n\geq 3$ odd, are usually called the {\it trivial} zeroes of the Riemann zeta function, while the {\it non-trivial} zeroes are those in the critical strip. 
+\end{rem}
+%%%%%
+%%%%%
+\end{document}

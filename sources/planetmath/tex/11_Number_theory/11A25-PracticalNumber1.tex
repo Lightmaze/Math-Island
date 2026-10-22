@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PracticalNumber1}
+\pmcreated{2013-03-22 18:07:03}
+\pmmodified{2013-03-22 18:07:03}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{practical number}
+\pmrecord{5}{40664}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{ImpracticalNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The second definition of a {\em practical number} is: a positive integer $n$ such that each smaller integer $m$ can be represented as a sum of distinct proper divisors $d_i$ of $n$ (for $1 < i < \tau(n)$, with $\tau(n)$ being the divisor function; 1 is not considered a proper divisor for this application). The first few are 6, 12, 18, 20, 24, 28, 30, 36, 40, 42, 48, 54, 56, 60, 66, 72, 78, 80, 84, 88, 90, 96, 100, etc., listed in A007620 of Sloane's OEIS.
+
+For example, 12 is practical. It has for divisors 1, 2, 3, 4, 6 and 12, but only 2, 3, 4 and 6 are considered proper divisors here. The sum can consist of a single summand, so we need only concern ourselves with numbers less than 12 that are not divisors of 12. We verify that indeed 2 + 3 = 5, 3 + 4 = 7, 2 + 6 = 8, 3 + 6 = 9, 4 + 6 = 10 and 2 + 3 + 6 = 11.
+
+Under this definition, the powers of 2 are not practical numbers. Representing odd numbers smaller than a power of 2 requires using 1 in the sums of divisors.
+%%%%%
+%%%%%
+\end{document}

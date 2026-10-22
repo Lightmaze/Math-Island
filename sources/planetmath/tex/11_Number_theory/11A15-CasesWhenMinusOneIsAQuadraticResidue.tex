@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CasesWhenMinusOneIsAQuadraticResidue}
+\pmcreated{2013-03-22 16:18:10}
+\pmmodified{2013-03-22 16:18:10}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{cases when minus one is a quadratic residue}
+\pmrecord{6}{38424}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A15}
+\pmrelated{EulersCriterion}
+\pmrelated{ValuesOfTheLegendreSymbol}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+\begin{thm}
+Let $p$ be an odd prime. Then $-1$ is a quadratic residue modulo $p$ if and only if $p\equiv 1 \mod 4$.
+\end{thm}
+\begin{proof}
+Let $p$ be an odd prime. Notice that $p$ is congruent to either $1$ or $3$ modulo $4$. By the definition of the Legendre symbol, we need to verify that 
+$\displaystyle \left(\frac{-1}{p}\right) = 1$ if and only if $p\equiv 1 \mod 4$. By Euler's criterion $$\left(\frac{-1}{p}\right)\equiv (-1)^{(p-1)/2} \mod p.$$
+Finally, note that the integer $\displaystyle \frac{p-1}{2}$ is even if $p\equiv 1 \mod 4$ and odd if $p\equiv 3 \mod 4$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

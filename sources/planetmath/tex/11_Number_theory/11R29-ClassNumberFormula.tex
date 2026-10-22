@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClassNumberFormula}
+\pmcreated{2013-03-22 13:54:37}
+\pmmodified{2013-03-22 13:54:37}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{class number formula}
+\pmrecord{5}{34664}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R29}
+\pmclassification{msc}{11R42}
+%\pmkeywords{class number}
+%\pmkeywords{Dedekind zeta function}
+\pmrelated{FunctionalEquationOfTheRiemannZetaFunction}
+\pmrelated{DedekindZetaFunction}
+\pmrelated{IdealClass}
+\pmrelated{Regulator}
+\pmrelated{Discriminant}
+\pmrelated{NumberField}
+\pmrelated{ClassNumbersAndDiscriminantsTopicsOnClassGroups}
+\pmdefines{class number formula}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+Let $K$ be a number field with $[K:\Rats]=n=r_1+2r_2$, where $r_1$
+denotes the number of real embeddings of $K$, and $2r_2$ is the
+number of complex embeddings of $K$. Let
+$$\zeta_K(s)$$
+be the Dedekind zeta function of $K$. Also define the following
+invariants:
+\begin{enumerate}
+\item $h_K$ is the class number, the number of elements in the
+ideal class group of $K$.
+
+\item $\operatorname{Reg}_K$ is the regulator of $K$.
+
+\item $\omega_K$ is the number of roots of unity contained in $K$.
+
+\item $D_K$ is the discriminant of the extension $K/\Rats$.
+\end{enumerate}
+
+Then:
+
+\begin{thm}[Class Number Formula]
+The Dedekind zeta function of $K$, $\zeta_K(s)$ converges
+absolutely for $\Re(s)>1$ and extends to a meromorphic function
+defined for $\Re(s)>1-\frac{1}{n}$ with only one simple pole at
+$s=1$. Moreover:
+$$\lim_{s\to 1}
+(s-1)\zeta_K(s)=\frac{2^{r_1}\cdot(2\pi)^{r_2}\cdot h_K\cdot
+\operatorname{Reg}_K}{\omega_K \cdot \sqrt{\mid D_K \mid}}$$
+\end{thm}
+
+Note: This is the most general ``class number formula''. In
+particular cases, for example when $K$ is a cyclotomic extension
+of $\Rats$, there are particular and more refined class number formulas.
+%%%%%
+%%%%%
+\end{document}

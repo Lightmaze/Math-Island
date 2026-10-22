@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GeneralizationOfAPseudometric}
+\pmcreated{2013-03-22 16:43:06}
+\pmmodified{2013-03-22 16:43:06}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{generalization of a pseudometric}
+\pmrecord{6}{38936}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+\pmsynonym{semipseudometric}{GeneralizationOfAPseudometric}
+\pmsynonym{quasipseudometric}{GeneralizationOfAPseudometric}
+\pmsynonym{semipseudometric space}{GeneralizationOfAPseudometric}
+\pmsynonym{quasipseudometric space}{GeneralizationOfAPseudometric}
+\pmrelated{semimetric}
+\pmrelated{quasimetric}
+\pmrelated{GeneralizationOfAUniformity}
+\pmdefines{semi-pseudometric space}
+\pmdefines{quasi-pseudometric space}
+\pmdefines{semi-pseudometric}
+\pmdefines{quasi-pseudometric}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+
+\begin{document}
+Let $X$ be a set.  Let $d:X\times X \to \mathbb{R}$ be a function with the property that $d(x,y)\ge 0$ for all $x,y\in X$.  Then $d$ is a
+\begin{enumerate}
+\item \emph{semi-pseudometric} if $d(x,y)=d(y,x)$ for all $x,y\in X$,
+\item \emph{quasi-pseudometric} if $d(x,z)\le d(x,y)+d(y,z)$ for all $x,y,z\in X$.
+\end{enumerate}
+
+$X$ equipped with a function $d$ described above is called a \emph{semi-pseudometric space} or a \emph{quasi-pseudometric} space, depending on whether $d$ is a semi-pseudometric or a quasi-pseudometric.  A pseudometric is the same as a semi-pseudometric that is a quasi-pseudometric at the same time.
+
+If $d$ satisfies the property that $d(x,y)=0$ implies $x=y$, then $d$ is called a \emph{semi-metric} if $d$ is a semi-pseudometric, or a \emph{quasi-metric} if $d$ is a quasi-pseudometric.
+
+%%%%%
+%%%%%
+\end{document}

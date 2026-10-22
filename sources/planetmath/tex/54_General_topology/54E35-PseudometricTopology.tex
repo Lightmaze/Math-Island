@@ -1,0 +1,139 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PseudometricTopology}
+\pmcreated{2013-03-22 14:40:47}
+\pmmodified{2013-03-22 14:40:47}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{pseudometric topology}
+\pmrecord{7}{36284}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+\pmdefines{pseudometrizable}
+\pmdefines{pseudometric topology}
+\pmdefines{pseudo-metric}
+\pmdefines{pseudometrizable topological space}
+\pmdefines{pseudo-metrizable topological space}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+Let $(X,d)$ be a pseudometric space. As in a metric space, we define
+$$
+  B_\varepsilon(x)=\{ y\in X\mid d(x,y)<\varepsilon \}.
+$$
+for $x\in X$, $\varepsilon>0$.
+  
+In the below, we show that the collection of sets 
+$$ 
+\mathscr{B}= \{ B_\varepsilon(x)\mid \varepsilon>0, x\in X\}
+$$
+form a base for a topology for $X$. We call this topology
+the \PMlinkescapetext{\emph{pseudometric topology}} on $X$ 
+induced by $d$. Also,
+a topological space $X$ is a \emph{pseudometrizable topological space}
+if there exists a pseudometric $d$ on $X$ whose
+pseudometric topology coincides with the given topology 
+for $X$ \cite{kelley, willard}. 
+
+
+\begin{prop} 
+$\mathscr{B}$ is a base for a topology.
+\end{prop}
+
+
+\begin{proof} We shall use the  \PMlinkid{this result}{5845}
+to prove that $\mathscr{B}$ is a base.
+
+First, as $d(x,x)=0$ for all $x\in X$, it follows 
+   that $\mathscr{B}$ is a cover. 
+Second, suppose $B_1,B_2\in \mathscr{B}$ and $z\in B_1\cap B_2$. 
+We claim that there exists a $B_3\in \mathscr{B}$ such that 
+\begin{eqnarray}
+\label{ii} 
+  z&\in& B_3\subseteq B_1\cap B_2.
+\end{eqnarray}
+By definition, $B_1 = B_{\varepsilon_1}(x_1)$ 
+   and $B_2 = B_{\varepsilon_2}(x_2)$ for some $x_1,x_2\in X$
+and $\varepsilon_1,\varepsilon_2>0$. Then
+$$
+  d(x_1, z)<\varepsilon_1, \quad   d(x_2, z)<\varepsilon_2.
+$$
+Now we can define $\delta = \min\{ \varepsilon_1-d(x_1, z), \varepsilon_2-d(x_2, z)\}>0$, and put
+$$
+  B_3 = B_\delta(z).
+$$
+If $y\in B_3$, then for $k=1,2$, we have by the triangle inequality
+\begin{eqnarray*}
+d(x_k,y) &\le & d(x_k, z) + d(z,y) \\
+         &< & d(x_k, z) + \delta \\
+         &\le & \varepsilon_k,
+\end{eqnarray*}
+so $B_3\subseteq B_k$ and condition \ref{ii} holds. 
+\end{proof}
+
+\subsubsection*{Remark}
+In the proof, we have not used the fact that $d$ is 
+symmetric. Therefore, we have, in fact, also shown that any 
+quasimetric induces a topology.
+ 
+\begin{thebibliography}{9}
+\bibitem{kelley} J.L. Kelley, \emph{General Topology},
+D. van Nostrand Company, Inc., 1955.
+\bibitem{willard} S. Willard, \emph{General Topology},
+Addison-Wesley, Publishing Company, 1970.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

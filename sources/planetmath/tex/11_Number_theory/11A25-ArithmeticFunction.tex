@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ArithmeticFunction}
+\pmcreated{2013-03-22 13:50:49}
+\pmmodified{2013-03-22 13:50:49}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{arithmetic function}
+\pmrecord{10}{34584}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{ConvolutionInversesForArithmeticFunctions}
+\pmrelated{PropertyOfCompletelyMultiplicativeFunctions}
+\pmrelated{DivisorSumOfAnArithmeticFunction}
+\pmdefines{Dirichlet convolution}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+An \emph{arithmetic function} is a function $f:\Z^+\ra\mathbb{C}$ from the positive integers to the complex numbers.
+
+Any algebraic function over $\Z^+$, as well as transcendental functions such as $\sin(n\pi)$ and $e^{n\pi i}$ with $n\in \Z^+$ are arithmetic functions.
+
+There are two noteworthy operations on the set of arithmetic functions:
+
+If $f$ and $g$ are two arithmetic functions, the \emph{sum} of $f$ and $g$, denoted $f+g$, is given by 
+\begin{align*}
+(f+g)(n)=f(n)+g(n),
+\end{align*}
+and the \emph{Dirichlet convolution} of $f$ and $g$, denoted by $f*g$, is given by
+\begin{align*}
+(f*g)(n)=\sum_{d|n}f(d)g\left(\frac{n}{d}\right).
+\end{align*}
+
+The set of arithmetic functions, equipped with these two binary operations, forms a commutative ring with unity.  The 0 of the ring is the function $f$ such that $f(n)=0$ for any positive integer $n$.  The 1 of the ring is the function $f$ with $f(1)=1$ and  $f(n)=0$ for any $n>1$, and the units of the ring are those arithmetic function $f$ such that $f(1)\neq 0$.
+
+Note that giving a sequence $\{a_n\}$ of complex numbers is equivalent to giving an arithmetic function by associating $a_n$ with $f(n)$.
+%%%%%
+%%%%%
+\end{document}

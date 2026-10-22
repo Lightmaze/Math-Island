@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SmithNumber}
+\pmcreated{2013-03-22 16:19:32}
+\pmmodified{2013-03-22 16:19:32}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{Smith number}
+\pmrecord{4}{38454}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em Smith number} is a number which in a given base, the sum of its digits is equal to the sum of the digits in its factorization. (In the case of numbers that are not square-free, the factorization is written without exponents, writing the repeated factor as many times as needed). For example, 202 is a Smith number, since 2 + 0 + 2 = 4, and its factorization is $2 \times 101$, and 2 + 1 + 0 + 1 = 4.
+
+Prime numbers are not considered, since it is obvious that all of them satisfy the condition given above.
+
+In base 10, the first few Smith numbers are
+
+4, 22, 27, 58, 85, 94, 121, 166, 202, 265, 274, 319, 346, 355, 378, 382, 391, 438, 454, 483 (sequence A006753 in the OEIS).
+
+There are infinitely many Smith numbers that are also palindromic numbers.
+
+Smith numbers were named by Albert Wilansky of Lehigh University for his brother-in-law Harold Smith whose phone number (493-7775) was the first noticed Smith number.
+
+Smith numbers can be constructed from factored repunits. The largest known Smith number is (as of 2005) $9 \times R_{1031} \times (10^{4594} + 3 \times 10^{2297} + 1)^{1476} \times 10^{3913210}$ where $R_{1031} = 2^{1032} - 1$.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ParasiticNumber}
+\pmcreated{2013-03-22 16:22:17}
+\pmmodified{2013-03-22 16:22:17}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{parasitic number}
+\pmrecord{4}{38510}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{left-transposable integer}{ParasiticNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given a base $b$ integer $n$ with $k$ digits $d_1, \ldots, d_k$ (with $d_1$ being the least significant digit), and an integer $1 < m < b$, if it is the case that $$m(\sum_{i = 1}^k d_ib^{i - 1}) = d_1b^{k - 1} + (\sum_{i = 2}^k d_ib^{i - 2}),$$ then $n$ is called an $m$-{\em parasitic number} or $m$-{\em left-transposable number}.
+
+If one takes an $m$-parasitic number, concatenates copies of its digits in order whatever number of times one wants, the resulting new number will also be $m$-parasitic.
+%%%%%
+%%%%%
+\end{document}

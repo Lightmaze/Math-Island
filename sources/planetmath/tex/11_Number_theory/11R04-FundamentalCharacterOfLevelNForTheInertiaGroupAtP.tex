@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FundamentalCharacterOfLevelNForTheInertiaGroupAtP}
+\pmcreated{2013-03-22 15:36:26}
+\pmmodified{2013-03-22 15:36:26}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{fundamental character of level $n$ for the inertia group at $p$}
+\pmrecord{4}{37525}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmclassification{msc}{11R32}
+\pmclassification{msc}{11R34}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\newcommand{\F}{\mathbb{F}}
+\begin{document}
+Let $p>2$ be a prime, fix algebraic closures $\overline{\Rats}$ and $\overline{\Rats_p}$, and fix an embedding of $\overline{\Rats}\hookrightarrow \overline{\Rats_p}$. This embedding corresponds with an inclusion of the absolute Galois groups:
+$$\Gal(\overline{\Rats_p}/\Rats_p)\hookrightarrow \Gal(\overline{\Rats}/\Rats), \quad \sigma \mapsto \sigma|_{\overline{\Rats}}.$$
+Let $I_p$ be the inertia subgroup of $\Gal(\overline{\Rats_p}/\Rats_p)$ which we regard as a subgroup of $\Gal(\overline{\Rats}/\Rats)$ via the injection above (for more information on the inertia subgroup at $p$, $I_p$, see the entry on Galois representations). Let $\F_{p^n}$ be the finite field of $p^n$ elements. The purpose of this entry is to define $\F_{p^n}$-valued characters $\Psi_n$, for every $n\geq 1$:
+$$\Psi_n : I_p \longrightarrow \F_{p^n}^\times \cong \Ints/(p^n-1)\Ints$$
+which we will refer to as the fundamental character of level $n$ of $I_p$.
+
+\begin{defn}
+Let $\chi_p:\Gal(\overline{\Rats}/\Rats)\to \Ints_p^\times$ be the $p$-adic cyclotomic character and let $\overline{\chi_p}$ be the reduction of $\chi_p$ modulo $p$. The fundamental character of level $1$ is $\Psi_1=\overline{\chi_p}|_{I_p}$, i.e. $\Psi_1$ is the restriction of the $p$-adic cyclotomic character $\chi_p$ to $I_p$, composed with reduction modulo $p$.
+\end{defn}
+
+Next, we define the fundamental characters in more generality. Let $K_n/\Rats_p$ be the unique unramified field extension of degree $n$ (it is unique by local field theory). The residue field of $K_n$ is the field $k_n=\F_{p^n}$ (because $k$ must be an extension of degree $n$ of $\F_p$).
+
+\begin{lemma}
+The field $K_n$ contains all $(p^n-1)$th roots of unity.
+\end{lemma}
+\begin{proof}
+Clearly, the polynomial $x^{p^n-1}-1=0$ has $p^n-1$ distinct roots in $k_n=\F_{p^n}$. Using Hensel's lemma, one can check that each root in $k_n$ lifts to an element of $K_n$.
+\end{proof}
+
+Let $K_n'=K_n((-p)^{\frac{1}{p^n-1}})$. By the lemma, the $(p^n-1)$th roots of unity are contained in $K_n$. Therefore, the extension $K_n'/K_n$ is Galois. Moreover, by Kummer theory one has:
+$$\Gal(K_n'/K_n)=k_n^\times=\F_{p^n}^\times.$$
+Notice that the fact that $K_n/\Rats_p$ is unramified implies that the inertia group $I_p$ injects into $\Gal(\overline{\Rats_p}/K_n)\hookrightarrow \Gal(\overline{\Rats_p}/\Rats_p)$. Therefore there is a map:
+\begin{eqnarray} 
+\label{psi} I_p \hookrightarrow \Gal(\overline{\Rats_p}/K_n)\to \Gal(K_n'/K_n) \to \F_{p^n}^\times
+\end{eqnarray}
+where the second map is simply given by restriction to $K_n'$.
+
+\begin{defn}
+The fundamental character of level $n\geq 1$ is the map $\Psi_n : I_p \to \F_{p^n}^\times$ given by Eq. (\ref{psi}).
+\end{defn}
+
+Note from the author: I would like to thank Eknath Ghate for explaining this to me.
+%%%%%
+%%%%%
+\end{document}

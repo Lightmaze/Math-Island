@@ -1,0 +1,102 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ZolotarevsLemma}
+\pmcreated{2013-03-22 13:28:25}
+\pmmodified{2013-03-22 13:28:25}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Zolotarev's lemma}
+\pmrecord{15}{34043}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A15}
+%\pmkeywords{reciprocity}
+\pmrelated{GaussLemma}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\newtheorem{Lemma}{Lemma}
+\newcommand{\legsym}[2]{\left(\frac{#1}{#2}\right)}
+\newcommand{\Zn}[1]{\mathbb{Z}_{#1}}
+\newcommand{\Zpstar}{\mathbb{Z}_p^*}
+\begin{document}
+\PMlinkescapeword{size}
+\PMlinkescapeword{evidently}
+We will identify the ring $\mathbb{Z}_n$
+of integers modulo $n$, with the set $\{0,1,\ldots n-1\}$.
+
+\begin{Lemma}[Zolotarev] For any prime number $p$ and
+any $m\in\Zpstar$, the Legendre symbol $\legsym{m}{p}$ is equal
+to the \PMlinkname{signature}{SignatureOfAPermutation} of the permutation $\tau_m:x\mapsto mx$ of $\Zpstar$.
+\end{Lemma}
+\begin{proof}
+We write $\epsilon(\sigma)$ for the signature of any permutation $\sigma$. If $\sigma$ is a circular permutation on a set of $k$ elements, then $\epsilon(\sigma)=(-1)^{k-1}$.  Let $i$ be the order of $m$ in $\Zpstar$. Then the permutation $\tau_m$ consists of $(p-1)/i$ orbits, each of size $i$, whence
+$$\epsilon(\tau_m)=(-1)^{(i-1)(p-1)/i}$$
+If $i$ is even, then
+$$m^{(p-1)/2}=m^{\frac{i}{2}\frac{p-1}{i}}=(-1)^{\frac{p-1}{i}}=\epsilon(\tau_m)$$
+And if $i$ is odd, then $2i$ divides $p-1$, so
+$$m^{(p-1)/2}=m^{i\frac{p-1}{2i}}=1=\epsilon(\tau_m).$$
+In both cases, the lemma follows from Euler's criterion.
+\end{proof}
+
+Lemma 1 extends easily from the Legendre symbol to the Jacobi symbol $\left(\frac{m}{n}\right)$ for odd $n$.  The following is Zolotarev's penetrating proof of the quadratic reciprocity law, using Lemma 1.
+
+\begin{Lemma} Let $\lambda$ be the permutation of the set
+$$A_{mn}=\{0,1,\ldots,m-1\}\times \{0,1,\ldots,n-1\}$$
+which maps the $k$th element of the sequence
+$$(0,0)(0,1)\ldots(0,n-1)(1,0)\ldots(1,n-1)(2,0)\ldots(m-1,n-1),$$
+to the $k$th element of the sequence
+$$(0,0)(1,0)\ldots(m-1,0)(0,1)\ldots(m-1,1)(0,2)\ldots(m-1,n-1),$$
+for every $k$ from $1$ to $mn$. Then
+$$\epsilon(\lambda)=(-1)^{m(m-1)n(n-1)/4}$$
+and if $m$ and $n$ are both odd,
+$$\epsilon(\lambda)=(-1)^{(m-1)(n-1)/4}.$$
+\end{Lemma}
+\begin{proof}
+We will use the fact that the signature of a permutation of
+a finite totally ordered set is determined by the number of
+inversions of that permutation.
+The sequence $(0,0),(0,1)\ldots$
+defines on $A_{mn}$ a total order $\le$
+in which the relation $(i,j)<(i',j')$ means
+$$i<i'\text{ or }(i=i'\text{ and }j<j').$$
+But $\lambda(i',j')<\lambda(i,j)$ means
+$$j'<j\text{ or }(j'=j\text{ and }i'<i).$$
+The only pairs $((i,j),(i',j'))$ that get inverted are, therefore,
+the ones with $i<i'$ and $j>j'$.
+There are indeed $\binom{m}{2}\binom{n}{2}$
+such pairs, proving the first formula, and the second follows easily.
+\end{proof}
+
+And finally, we proceed to prove quadratic reciprocity.  Let $p$ and $q$ be distinct odd primes. Denote by $\pi$ the
+canonical ring isomorphism $\Zn{pq}\to\Zn{p}\times\Zn{q}$.
+Define two permutations $\alpha$ and $\beta$ of $\Zn{p}\times\Zn{q}$ by
+$\alpha(x,y)=(qx+y,y)$ and $\beta(x,y)=(x,x+py).$  Finally, define a map $\lambda:\Zn{pq}\to\Zn{pq}$ by $\lambda(x+qy)=px+y$
+for $x\in\{0,1,\ldots q-1\}$ and $y\in\{0,1,\ldots p-1\}$.
+Evidently $\lambda$ is a permutation.
+
+Note that we have $\pi(qx+y)=(qx+y,y)$ and $\pi(x+py)=(x,x+py)$, so
+therefore
+$$\pi\circ\lambda\circ\pi^{-1}\circ\alpha=\beta.$$
+
+Let us compare the signatures of the two sides.  The permutation $m\mapsto qx+y$ is the composition of $m\mapsto qx$ and $m\mapsto m+y$. The latter has signature $1$, whence by Lemma 1, $$\epsilon(\alpha)=\legsym{q}{p}^q=\legsym{q}{p}$$
+and similarly $$\epsilon(\beta)=\legsym{p}{q}^p=\legsym{p}{q}.$$
+
+By Lemma 2,
+$$\epsilon(\pi\circ\lambda\circ\pi^{-1})=(-1)^{(p-1)(q-1)/4}.$$
+Thus $$(-1)^{(p-1)(q-1)/4}\legsym{q}{p}=\legsym{p}{q}$$
+which is the quadratic reciprocity law.
+
+\textbf{Reference}
+
+G. Zolotarev, Nouvelle d\'emonstration de la loi de r\'eciprocit\'e de Legendre,
+Nouv. Ann. Math (2), 11 (1872), 354-362
+%%%%%
+%%%%%
+\end{document}

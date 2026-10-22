@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProbabilisticMetricSpace}
+\pmcreated{2013-03-22 16:49:38}
+\pmmodified{2013-03-22 16:49:38}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{probabilistic metric space}
+\pmrecord{12}{39066}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E70}
+\pmdefines{distance distribution function}
+\pmdefines{triangle function}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\begin{document}
+Recall that a metric space is a set $X$ equipped with a \emph{distance function} $d:X\times X\to [0,\infty)$, such that 
+\begin{enumerate}
+\item $d(a,b)=0$ iff $a=b$,
+\item $d(a,b)=d(b,a)$, and
+\item $d(a,c)\le d(a,b)+d(b,c)$.
+\end{enumerate}
+In some real life situations, distance between two points may not be definite.  When this happens, the distance function $d$ may be replaced by a more general function $F$ which takes any pair of points $(a,b)$ to a distribution function $F_{(a,b)}$.  Before precisely describing how this works, we first look at the properties of these $F_{(a,b)}$ should have, and how one translates the triangle inequality in this more general setting.
+
+\textbf{distance distribution functions}.  Since we are dealing with the distance between $a$ and $b$, the distribution function $F_{(a,b)}$ must have the property that $F_{(a,b)}(0)=0$.  Any distribution function $F$ such that $F(0)=0$ is called a \emph{distance distribution function}.  The set of all distance distribution functions is denoted by $\Delta^+$.  For example, for any $r\ge 0$, the step functions defined by 
+\begin{eqnarray*}
+e_r(x) &=& \left\{ \begin {array}{ll}
+0 & \mbox{when}\,\, x\le r, \\
+1 & \mbox{otherwise} \\ \end{array} \right.
+\end{eqnarray*}
+are distance distribution functions.
+
+In addition to $F_{(a,b)}$ being a distance distribution function, we need that $F_{(a,b)}=e_0$ iff $a=b$ and $F_{(a,b)}=F_{(b,a)}$.  These two conditions correspond to the first two conditions on $d$.
+
+\textbf{triangle functions}.  Finally, we need to generalize the binary operation $+$ so it works on the set of distance distribution functions.  Clearly, ordinary addition won't work as the sum of two distribution functions is no longer a distribution function.  \v{S}erstnev developed what is called a \emph{triangle function} that will do the trick.  
+
+First, partial order $\Delta^+$ by $F\le G$ iff $F(x)\le G(x)$ for all $x\in \mathbb{R}$.  It is not hard to see that $e_x\le e_y$ iff $y\le x$ and that $e_0$ is the top element of $\Delta^+$.  From the poset $\Delta^+$, call a binary operator $\tau$ on $\Delta^+$ a \emph{triangle function} if $\tau$ turns $\Delta^+$ into a \PMlinkname{partially ordered}{PartiallyOrderedGroup} commutative monoid with $e_0$ serving as the identity element.  Spelling this out, for any $F,G,H\in \Delta^+$, we have
+\begin{itemize}
+\item $F\tau G = G\tau F$,
+\item $(F\tau G)\tau H = F \tau (G\tau H)$,
+\item $F\tau e_0 = e_0 \tau F = F$, and
+\item if $G\le H$, then $F\tau G\le F\tau H$,
+\end{itemize}
+where $F\tau G$ means $\tau(F,G)$.  For example, $F\tau G=F\cdot G$, $F\tau G=\min(F,G)$ are two triangle functions.  In fact, since $F\tau G\le F\tau e_0=F$ and $F\tau G\le G$ similarly, we have $F\tau G\le \min(F,G)$ for any triangle function $\tau$.
+
+With this, we are ready for our main definition:
+
+\textbf{Definition}.  A \emph{probabilistic metric space} is a (non-empty) set $X$, equipped with a function $F:X\times X\to \Delta^+$, where $\Delta^+$ is the set of distance distribution functions on which a triangle function $\tau$ is defined, such that
+\begin{enumerate}
+\item $F_{(a,b)}=e_0$ iff $a=b$, where $F_{(a,b)}:=F(a,b)$,
+\item $F_{(a,b)}=F_{(b,a)}$, and 
+\item $F_{(a,c)}\ge F_{(a,b)}\tau F_{(b,c)}$.
+\end{enumerate}
+
+Given a metric space $(X,d)$, if we can find a triangle function $\tau$ such that $e_x\tau e_y= e_{x+y}$, then $(X,F)$ with $F_{(a,b)}:=e_{d(a,b)}$ is a probabilistic metric space.
+
+\begin{thebibliography}{9}
+\bibitem{ss} B. Schweizer, A. Sklar, \emph{Probabilistic Metric Spaces}, Elsevier Science Publishing Company, (1983).
+\bibitem{s} A. N. \v{S}erstnev, \emph{Random normed spaces: problems of completeness}, Kazan. Gos. Univ. U\v{c}en. Zap. 122, 3-20, (1962).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

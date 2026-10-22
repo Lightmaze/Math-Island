@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IfAnIsIrrationalThenaIsIrrational}
+\pmcreated{2013-03-22 14:18:50}
+\pmmodified{2013-03-22 14:18:50}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{if $a^n$ is irrational then ${a}$ is irrational}
+\pmrecord{13}{35779}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11J82}
+\pmclassification{msc}{11J72}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\newtheorem*{thm*}{Theorem}
+\begin{document}
+\begin{thm*}
+If $a$ be a real number and $n$ is an integer such that $a^n$ is irrational, then $a$ is irrational.
+\end{thm*}
+
+\begin{proof}
+We show this by way of contrapositive.  In other words, we show that, if $a$ is rational, then $a^n$ is rational.
+
+Let $a$ be rational.  Then there exist integers $b$ and $c$ with $c\neq 0$ such that $\displaystyle a=\frac{b}{c}$.  Thus, $\displaystyle a^n=\frac{b^n}{c^n}$, which is a rational number.
+\end{proof}
+
+Note that the converse is not true.  For example, $\sqrt{2}$ is irrational and $\left(\sqrt{2}\right)^2=2$ is rational.
+%%%%%
+%%%%%
+\end{document}

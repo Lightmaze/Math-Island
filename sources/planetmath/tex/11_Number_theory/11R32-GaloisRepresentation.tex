@@ -1,0 +1,165 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GaloisRepresentation}
+\pmcreated{2013-03-22 13:28:21}
+\pmmodified{2013-03-22 13:28:21}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Galois representation}
+\pmrecord{18}{34042}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R32}
+\pmclassification{msc}{11R04}
+\pmclassification{msc}{11R34}
+\pmrelated{InverseLimit}
+\pmdefines{tame inertia group}
+\pmdefines{wild inertia group}
+\pmdefines{tame inertia degree}
+\pmdefines{wild inertia degree}
+\pmdefines{discrete module}
+\pmdefines{Tate module}
+\pmdefines{cyclotomic representation}
+\pmdefines{Galois cohomology}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\ab}{\mathrm{ab}}
+\newcommand{\Aut}{\mathrm{Aut}}
+\newcommand{\bbC}{\mathbb{C}}
+\newcommand{\bbF}{\mathbb{F}}
+\newcommand{\bbN}{\mathbb{N}}
+\newcommand{\bbQ}{\mathbb{Q}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbZ}{\mathbb{Z}}
+\newcommand{\calO}{\mathcal{O}}
+\newcommand{\cn}{\colon}
+\newcommand{\End}{\mathrm{End}}
+\newcommand{\fkm}{\mathfrak{m}}
+\newcommand{\fkp}{\mathfrak{p}}
+\newcommand{\Gal}{\mathrm{Gal}}
+\newcommand{\GL}{\mathrm{GL}}
+\newcommand{\Hom}{\mathrm{Hom}}
+\newcommand{\ov}[1]{\overline{#1}}
+\newcommand{\ur}{\mathrm{ur}}
+\newcommand{\vp}{\varphi}
+\newcommand{\wh}[1]{\widehat{#1}}
+\newcommand{\wt}[1]{\widetilde{#1}}
+\newcommand{\smashedleftarrow}{\setbox0=\hbox{$\longleftarrow$}\ht0=1pt\box0}
+\newcommand{\smashedrightarrow}{\setbox0=\hbox{$\longrightarrow$}\ht0=1pt\box0}
+\newcommand{\lisom}{\buildrel{\hskip+0.04cm\sim}\over{\smashedleftarrow}}
+\newcommand{\risom}{\buildrel{\hskip-0.04cm\sim}\over{\smashedrightarrow}}
+\newcommand{\liminv}{\mathop{\lim_{\longleftarrow}}}
+\newcommand{\liminj}{\mathop{\lim_{\longrightarrow}}}
+\begin{document}
+In general, let $K$ be any field.  Write $\ov{K}$ for a separable closure of $K$, and $G_K$ for the absolute Galois group $\Gal(\ov{K}/K)$ of $K$.  Let $A$ be a (Hausdorff) Abelian topological group.  Then an ($A$-valued) Galois representation for $K$ is a continuous homomorphism
+\[
+\rho \cn G_K \to \Aut(A),
+\]
+where we endow $G_K$ with the Krull topology, and where $\Aut(A)$ is the group of continuous automorphisms of $A$, endowed with the compact-open topology.  One calls $A$ the representation space for $\rho$.
+
+The simplest case is where $A = \bbC^n$, the group of $n \times 1$ column vectors with complex entries.  Then $\Aut(\bbC^n) = \GL_n(\bbC)$, and we have what is usually called a complex representation of degree $n$.  In the same manner, letting $A = F^n$, with $F$ any field (such as $\bbR$ or a finite field $\bbF_q$) we obtain the usual definition of a degree $n$ representation over $F$.\\
+
+There is an alternate definition which we should also mention.  Write $\bbZ[G_K]$ for the group ring of $G_K$ with coefficients in $\bbZ$.  Then a Galois representation for $K$ is simply a continuous $\bbZ[G_K]$-module $A$ (i.e. the action of $G_K$ on $A$ is given by a continuous homomorphism $\rho$).  In other words, all the information in a representation $\rho$ is preserved in considering the representation space $A$ as a continuous $\bbZ[G_K]$-module.  The equivalence of these two definitions is as described in the entry for the group algebra.
+
+When $A$ is complete, the continuity requirement is equivalent to the action of $\bbZ[G_K]$ on $A$ naturally extending to a $\bbZ[\![G_K]\!]$-module structure on $A$.  The notation $\bbZ[\![G_K]\!]$ denotes the completed group ring:
+\[
+\bbZ[\![G]\!] = \liminv_H \bbZ[G/H],
+\]
+where $G$ is any profinite group, and $H$ ranges over all normal subgroups of finite index.\\
+
+A notation we will be using often is the following.  Suppose $G$ is a group, $\rho \cn G \to \Aut(A)$ is a representation and $H \subseteq G$ a subgroup.  Then we let
+\[
+A^H = \{a \in A \mid \rho(h)a = a,\ \mathrm{for\ all\ }h \in H\},
+\]
+the subgroup of $A$ fixed pointwise by $H$.\\
+
+Given a Galois representation $\rho$, let $G_0 = \ker \rho$.  By the fundamental theorem of infinite Galois theory, since $G_0$ is a closed normal subgroup of $G_K$, it corresponds to a certain normal subfield of $\ov{K}$.  Naturally, this is the fixed field of $G_0$, and we denote it by $K(\rho)$.  (The notation becomes better justified after we view some examples.)  Notice that since $\rho$ is trivial on $G_0 = \Gal(\ov{K}/K(\rho))$, it factors through a representation
+\[
+\wt{\rho} \cn \Gal(K(\rho)/K) \to \Aut(A),
+\]
+which is faithful.  This property characterizes $K(\rho)$.
+
+In the case $A = \bbR^n$ or $A = \bbC^n$, the so-called ``no small subgroups'' argument implies that the image of $G_K$ is finite.
+
+For a first application of definition, we say that $\rho$ is discrete if for all $a \in A$, the stabilizer of $a$ in $G_K$ is open in $G_K$.  This is the case when $A$ is given the discrete topology, such as when $A$ is finite and Hausdorff.  The stabilizer of any $a \in A$ fixes a {\it finite} extension of $K$, which we denote by $K(a)$.  One has that $K(\rho)$ is the union of all the $K(a)$.
+
+As a second application, suppose that the image $\rho(G_K)$ is Abelian.  Then the quotient $G_K/G_0$ is Abelian, so $G_0$ contains the commutator subgroup of $G_K$, which means that $K(\rho)$ is contained in $K^\ab$, the maximal Abelian extension of $K$.  This is the case when $\rho$ is a character, i.e. a $1$-dimensional representation over some (commutative unital) ring,
+\[
+\rho \cn G_K \to \GL_1(A) = A^\times.
+\]
+
+\ \\
+
+Associated to any field $K$ are two basic Galois representations, namely those with representation spaces $A = L$ and $A = L^\times$, for any normal intermediate field $K \subseteq L \subseteq \ov{K}$, with the usual action of the Galois group on them.  Both of these representations are discrete.  The additive representation is rather simple if $L/K$ is finite:  by the normal basis theorem, it is merely a permutation representation on the normal basis.  Also, if $L = \ov{K}$ and $x \in \ov{K}$, then $K(x)$, the field obtained by adjoining $x$ to $K$, agrees with the fixed field of the stabilizer of $x$ in $G_K$.  This motivates the notation ``$K(a)$'' introduced above.
+
+By contrast, in general, $L^\times$ can become a rather complicated object.  To look at just a piece of the representation $L^\times$, assume that $L$ contains the group $\mu_m$ of $m$-th roots of unity, where $m$ is prime to the characteristic of $K$.  Then we let $A = \mu_m$.  It is possible to choose an isomorphism of Abelian groups $\mu_m \cong \bbZ/m$, and it follows that our representation is $\rho \cn G_K \to (\bbZ/m)^\times$.  Now assume that $m$ has the form $p^n$, where $p$ is a prime not equal to the characteristic, and set $A_n = \mu_{p^n}$.  This gives a sequence of representations $\rho_n \cn G_K \to (\bbZ/p^n)^\times$, which are compatible with the natural maps $(\bbZ/p^{n+1})^\times \to (\bbZ/p^n)^\times$.  This compatibility allows us to glue them together into a big representation
+\[
+\rho \cn G_K \to \Aut(T_p\mathbb{G}_m) \cong \bbZ_p^\times,
+\]
+called the $p$-adic cyclotomic representation of $K$.  This representation is often not discrete.  The notation $T_p\mathbb{G}_m$ will be explained below.
+
+This example may be generalized as follows.  Let $B$ be an Abelian algebraic group defined over $K$.  For each integer $n$, let $B_n = B(\ov{K})[p^n]$ be the set of $\ov{K}$-rational points whose order divides $p^n$.  Then we define the $p$-adic Tate module of $B$ via
+\[
+T_pB = \liminv_n B_n.
+\]
+It acquires a natural Galois action from the ones on the $B_n$.  The two most commonly treated examples of this are the cases $B = \mathbb{G}_m$ (the multiplicative group, giving the cyclotomic representation above) and $B = E$, an elliptic curve defined over $K$.\\
+
+
+The last thing which we shall mention about generalities is that to any Galois representation $\rho \cn G_K \to \Aut(A)$, one may associate the Galois cohomology groups $H^n(K,\rho)$, more commonly written $H^n(K,A)$, which are defined to be the group cohomology of $G_K$ (computed with continuous cochains) with coefficients in $A$.\\
+
+
+Galois representations play a fundamental role in algebraic number theory, as many objects and properties related to global fields and local fields may be determined by certain Galois representations and their properties.  We shall describe the local case first, and then the global case.\\
+
+
+Let $K$ be a local field, by which we mean the fraction field of a complete DVR with finite residue field.  We write $v_K$ for the normalized valuation, $\calO_K$ for the associated DVR, $\fkm_K$ for the maximal ideal of $\calO_K$, $k_K = \calO_K/\fkm_K$ for the residue field, and $\ell$ for the characteristic of $k_K$.
+
+Let $L/K$ be a finite Galois extension, and define $v_L$, $\calO_L$, $\fkm_L$, and $k_L$ accordingly.  There is a natural surjection $\Gal(L/K) \to \Gal(k_L/k_K)$.  We call the kernel of this map the inertia group, and write it $I(L/K) = \ker(\Gal(L/K) \to \Gal(k_L/k_K))$.  Further, the $p$-Sylow subgroup of $I(L/K)$ is normal, and we call it the wild ramification group, and denote it by $W(L/K)$.  One calls $I/W$ the tame ramification group.
+
+It happens that the formation of these group is compatible with extensions $L'/L/K$, in that we have surjections $I(L'/K) \to I(L/K)$ and $W(L'/K) \to W(L/K)$.  This lets us define $W_K \subset I_K \subset G_K$ to be the inverse limits of the subgroups $W(L/K) \subseteq I(L/K) \subseteq \Gal(L/K)$, $L$ as usual ranging over all finite Galois extensions of $K$ in $\ov{K}$.
+
+Let $\rho$ be a Galois representation for $K$ with representation space $A$.  We say that $\rho$ is unramified if the inertia group $I_K$ acts trivially on $A$, or in other words $I_K \subseteq \ker \rho$ or $A^{I_K} = A$.  Otherwise we say it is ramified.  Similarly, we say that $\rho$ is (at most) tamely ramified if the wild ramification group acts trivially, or $W_K \subseteq \ker \rho$, or $A^{W_K} = A$; and if not we say it is wildly ramified.
+
+We let $K_\ur = \ov{K}^{I_K}$ be the maximal unramified extension of $K$, and $K_\mathrm{tame} = \ov{K}^{W_K}$ be the maximal tamely ramified extension of $K$.
+
+Unramified or tamely ramified extensions are usually much easier to study than wildly ramified extensions.  In the unramified case, it results from the fact that $G_K/I_K \cong G_{k(K)} \cong \wh{\bbZ}$ is pro-cyclic.  Thus an unramified representation is completely determined by the action of $\rho(\sigma)$ for a topological generator $\sigma$ of $G_K/I_K$.  (Such a $\sigma$ is often called a Frobenius element.)
+
+Given a finite extension $L/K$, one defines the inertia degree $f_{L/K} = [k_L:k_K]$ and the ramification degree $e_{L/K} = [v_L(L^\times):v_L(K^\times)]$ as usual.  Then in the Galois case one may recover them as $f_{L/K} = [\Gal(L/K):I(L/K)]$ and $e_{L/K} = \#I(L/K)$.  The tame inertia degree, which is the non-$p$-part of $e_{L/K}$, is equal to $[I(L/K):W(L/K)]$, while the wild inertia degree, which is the $p$-part of $e_{L/K}$, is equal to $\#W(L/K)$.
+
+One finds that the inertia and ramification properties of $L/K$ may be computed from the ramification properties of the Galois representation $\calO_L$.\\
+
+
+We now turn to global fields.  We shall only treat the number field case.  Thus we let $K$ be a finite extension of $\bbQ$, and write $\calO_K$ for its ring of integers.  For each place $v$ of $K$, write $K_v$ for the completion of $K$ with respect to $v$.  When $v$ is a finite place, we write simply $v$ for its associated normalized valuation, $\calO_v$ for $\calO_{K_v}$, $\fkm_v$ for $\fkm_{K_v}$, $k_v$ for $k_{K_v}$, and $\ell(v)$ for the characteristic of $k_v$.
+
+For each place $v$, fix an algebraic closure $\ov{K}_v$ of $K_v$.  Furthermore, choose an embedding $\ov{K} \hookrightarrow \ov{K}_v$.  This choice is equivalent to choosing an extension of $v$ to all of $\ov{K}^\times$, and to choosing an embedding $G_{K_v} \hookrightarrow G_K$.  We denote the image of this last embedding by $G_v \subset G_K$; it is called a decomposition group at $v$.  Sitting inside $G_v$ are two groups, $I_v$ and $W_v$, corresponding to the inertia and wild ramification subgroups $I_{K_v}$ and $W_{K_v}$ of $G_{K_v}$; we call the images $I_v$ and $W_v$ the inertia group at $v$ and the wild ramification group at $v$, respectively.
+
+For a Galois representation $\rho \cn G_K \to \Aut(A)$ and a place $v$, it is profitable to consider the restricted representation $\rho_v = \rho|_{G_v}$.  One calls $\rho$ a global representation, and $\rho_v$ a local representation.  We say that $\rho$ is ramified or tamely ramified (or not) at $v$ if $\rho_v$ is (or isn't).  The Tchebotarev density theorem implies that the corresponding Frobenius elements $\sigma_v \in G_v$ are dense in $G_K$, so that the union of the $G_v$ is dense in $G_K$.  Therefore, it is reasonable to try to reduce questions about $\rho$ to questions about all the $\rho_v$ independently.  This is a manifestation of Hasse's local-to-global principle.
+
+Given a global Galois representation with representation space $\bbZ_p^n$ which is unramified at all but finitely many places $v$, it is a goal of number theory to prove that it arises naturally in arithmetic geometry (namely, as a subrepresentation of an \'etale cohomology group of a motive), and also to prove that it arises from an automorphic form.  This can only be shown in certain special cases.
+%%%%%
+%%%%%
+\end{document}

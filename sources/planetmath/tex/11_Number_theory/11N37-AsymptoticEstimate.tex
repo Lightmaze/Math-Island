@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AsymptoticEstimate}
+\pmcreated{2013-03-22 16:00:01}
+\pmmodified{2013-03-22 16:00:01}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{asymptotic estimate}
+\pmrecord{13}{38027}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N37}
+\pmrelated{AsymptoticEstimatesForRealValuedNonnegativeMultiplicativeFunctions}
+\pmrelated{DisplaystyleYOmeganOleftFracxlogXy12YRightFor1LeY2}
+\pmrelated{DisplaystyleXlog2xOleftsum_nLeX2OmeganRight}
+\pmrelated{DisplaystyleSum_nLeXYomeganO_yxlogXy1ForYGe0}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\PMlinkescapephrase{characteristic function}
+
+An \emph{asymptotic estimate} is an \PMlinkescapetext{estimate} that involves the use of $O$, $o$, or $\sim$.  These are all defined in the entry Landau notation.  Examples of asymptotic \PMlinkescapetext{estimates} are:
+
+\begin{center}
+\begin{tabular}{rll}
+$\displaystyle \sum_{n \le x} \mu^2(n)$ & $\displaystyle = \frac{6}{\pi^2}x+O(\sqrt{x})$ & (see convolution method for more details) \\
+$\displaystyle \pi(x)$ & $\displaystyle \sim \frac{x}{\log x}$ & (see prime number theorem for more details) \end{tabular}
+\end{center}
+
+Unless otherwise specified, asymptotic \PMlinkescapetext{estimates} are typically valid for $x \to \infty$.  An example of an asymptotic \PMlinkescapetext{estimate} that is different from those above in this aspect is
+\[
+\cos x=1-\frac{x^2}{2}+O(x^4) \text{ for } |x|<1.
+\]
+Note that the above \PMlinkescapetext{estimate} would be undesirable for $x \to \infty$, as the \PMlinkescapetext{error} would be larger than the \PMlinkescapetext{estimate}.  Such is not the case for $|x|<1$, though.
+
+Tools that are useful for obtaining asymptotic \PMlinkescapetext{estimates} include:
+\begin{itemize}
+\item the Euler-Maclaurin summation formula
+\item Abel's lemma
+\item the \PMlinkname{convolution method}{ConvolutionMethod}
+\item the Dirichlet hyperbola method
+\end{itemize}
+
+If $A \subseteq \mathbb{N}$, then an asymptotic \PMlinkescapetext{estimate} for $\displaystyle \sum_{n \le x} \chi_A(x)$, where $\chi_A$ denotes the \PMlinkname{characteristic function}{CharacteristicFunction} of $A$, enables one to determine the asymptotic density of $A$ using the \PMlinkescapetext{formula}
+\[
+\lim_{x \to \infty} \frac{1}{x} \sum_{n \le x} \chi_A(x)
+\]
+provided the limit exists.  The upper asymptotic density of $A$ and the lower asymptotic density of $A$ can be computed in a \PMlinkescapetext{similar} manner using $\limsup$ and $\liminf$, respectively.  (See \PMlinkname{asymptotic density}{AsymptoticDensity} for more details.)
+
+For example, $\mu^2$ is the characteristic function of the squarefree natural numbers.  Using the asymptotic \PMlinkescapetext{estimate} above yields the asymptotic density of the squarefree natural numbers:
+
+\begin{center}
+$\begin{array}{ll}
+\displaystyle \lim_{x \to \infty} \frac{1}{x} \sum_{n \le x} \mu^2(n) & \displaystyle =\lim_{x \to \infty} \frac{1}{x} \left( \frac{6}{\pi^2}x+O(\sqrt{x}) \right) \\
+\\
+& \displaystyle =\lim_{x \to \infty} \frac{6}{\pi^2}+O \left( \frac{\sqrt{x}}{x} \right) \\
+\\
+& \displaystyle =\frac{6}{\pi^2} \end{array}$
+\end{center}
+%%%%%
+%%%%%
+\end{document}

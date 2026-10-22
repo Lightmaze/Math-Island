@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CalculatingTheJacobiSymbol}
+\pmcreated{2013-03-22 14:55:05}
+\pmmodified{2013-03-22 14:55:05}
+\pmowner{mathwizard}{128}
+\pmmodifier{mathwizard}{128}
+\pmtitle{calculating the Jacobi symbol}
+\pmrecord{4}{36604}
+\pmprivacy{1}
+\pmauthor{mathwizard}{128}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A07}
+\pmclassification{msc}{11A15}
+\pmclassification{msc}{11Y99}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+To calculate the Jacobi symbol $\left(\frac{a}{m}\right)$ for positive integers $a,m$, $m$ odd, we apply the quadratic reciprocity law and the fact that
+$$\left(\frac{a}{m}\right)=\left(\frac{b}{m}\right)$$
+if $a\equiv b\mod m$. So if $\gcd(a,m)=1$ (otherwise the Jacobi symbol is $0$) and $a>m$ choose $b\equiv a\mod m$ with $b<m$. Then $\left(\frac{a}{m}\right)=\left(\frac{b}{m}\right)$. To apply the quadratic reciprocity law, which basically allows us to exchange $b$ and $m$, we need to make $b$ odd if it is even. Writing $b=2^sc$ with odd $c$ does the trick since
+$$\left(\frac{b}{m}\right)=\left(\frac{2}{m}\right)^s\left(\frac{c}{m}\right).$$
+Using the fact that 
+\begin{equation}\label{eq:suppl}
+\left(\frac{2}{m}\right)=(-1)^\frac{m^2-1}{8}
+\end{equation}
+we compute $\left(\frac{2}{m}\right)$ to be $1$ if $m\equiv\pm 1\mod 8$ and $-1$ if $m\equiv\pm 3\mod 8$.
+Now we apply the quadratic reciprocity law:
+$$\left(\frac{c}{m}\right)=(-1)^\frac{(c-1)(m-1)}{4}\left(\frac{m}{c}\right).$$
+The factor $(-1)^\frac{(c-1)(m-1)}{4}$ is equal to $-1$ if $c,m\equiv 3\mod 4$ and $1$ if at least one of the numbers $c,m$ is congruent to $1$ modulo $4$. At this point we can start thw whole procedure over again for $\left(\frac{m}{c}\right)$. Eventually we can apply the equation $\left(\frac{-1}{m}\right)=(-1)^\frac{m-1}{2}$, which is equal to $1$ if $m\equiv 1\mod 4$ and $-1$ otherwise.
+
+\textbf{Example:} We try to calculate $\left(\frac{107}{23}\right)$. Since $\gcd(107,23)=1$ and $107\equiv15\mod23$ we find $\left(\frac{107}{23}\right)=\left(\frac{15}{23}\right)$. Since both $15$ and $23$ are congruent $3$ modulo $4$ we have 
+$$\left(\frac{15}{23}\right)=-\left(\frac{23}{15}\right)=-\left(\frac{8}{15}\right)=-\left(\frac{2}{15}\right).$$ 
+This can be evaluated using equation (\ref{eq:suppl}) and we find
+$$\left(\frac{107}{23}\right)=-1.$$
+%%%%%
+%%%%%
+\end{document}

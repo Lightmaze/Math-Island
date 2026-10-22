@@ -1,0 +1,41 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MangoldtFunction}
+\pmcreated{2013-03-22 11:47:06}
+\pmmodified{2013-03-22 11:47:06}
+\pmowner{KimJ}{5}
+\pmmodifier{KimJ}{5}
+\pmtitle{Mangoldt function}
+\pmrecord{10}{30256}
+\pmprivacy{1}
+\pmauthor{KimJ}{5}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmclassification{msc}{18E30}
+\pmclassification{msc}{81-00}
+\pmsynonym{von Mangoldt function}{MangoldtFunction}
+%\pmkeywords{number theory}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%%\usepackage{xypic}
+\begin{document}
+The Mangoldt function $\Lambda$ is defined by
+\[ \Lambda (n) = 
+\begin{cases}
+\ln p, &\text{if $n=p^k$, where $p$ is a prime and $k$ is a natural number $\geq 1$}\\
+0, &\text{otherwise}
+\end{cases}
+\]
+
+The Moebius Inversion Formula leads to the identity $\Lambda (n) = \sum_{d|n} \mu (n/d) \ln d = - \sum_{d|n} \mu (d) \ln d$.
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

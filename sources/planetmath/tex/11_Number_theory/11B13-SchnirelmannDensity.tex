@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SchnirelmannDensity}
+\pmcreated{2013-03-22 13:19:36}
+\pmmodified{2013-03-22 13:19:36}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Schnirelmann density}
+\pmrecord{9}{33838}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B13}
+\pmclassification{msc}{11B05}
+\pmsynonym{Shnirel'man density}{SchnirelmannDensity}
+\pmsynonym{Shnirelman density}{SchnirelmannDensity}
+\pmrelated{Basis2}
+\pmrelated{EssentialComponent}
+\pmrelated{MannsTheorem}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $A$ be a subset of $\mathbb{Z}$, and let $A(n)$ be number of elements of $A$ in $[1,n]$. \emph{\PMlinkescapetext{Schnirelmann density}} of $A$ is
+\begin{equation*}
+\sigma A = \inf_n \frac{A(n)}{n}.
+\end{equation*}
+
+\PMlinkescapetext{Schnirelmann density} has the following properties:
+\begin{enumerate}
+\item $A(n)\geq n \sigma A$ for all $n$.
+\item $\sigma A=1$ if and only if $\mathbb{N}\subseteq A$
+\item if $1$ does not belong to $A$, then $\sigma A=0$.
+\end{enumerate}
+
+Schnirelmann proved that if $0 \in A \cap B$ then
+\begin{equation*}
+\sigma(A+B)\geq \sigma A + \sigma B - \sigma A \cdot \sigma B
+\end{equation*}
+and also if $\sigma A + \sigma B \geq 1$, then $\sigma (A+B)=1$. From these he deduced that if $\sigma A>0$ then $A$ is an additive basis.
+%%%%%
+%%%%%
+\end{document}

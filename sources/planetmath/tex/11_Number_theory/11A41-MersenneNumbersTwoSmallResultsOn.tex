@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MersenneNumbersTwoSmallResultsOn}
+\pmcreated{2013-03-22 15:07:53}
+\pmmodified{2013-03-22 15:07:53}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{Mersenne numbers, two small results on}
+\pmrecord{12}{36874}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+%\pmkeywords{Mersenne number}
+%\pmkeywords{prime factor}
+%\pmkeywords{coprime}
+\pmrelated{MersenneNumbers}
+
+\endmetadata
+
+% This is Cosmin's PlanetMath preamble.
+
+% Packages
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+%%%\usepackage{xypic}
+
+% Theorem Environments
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lem}{Lemma}
+\newtheorem*{cor}{Corollary}
+
+% New Commands
+  %Sets
+    \newcommand{\bbP}{\mathbb{P}}
+    \newcommand{\bbN}{\mathbb{N}}
+    \newcommand{\bbZ}{\mathbb{Z}}
+    \newcommand{\bbQ}{\mathbb{Q}}
+    \newcommand{\bbR}{\mathbb{R}}
+    \newcommand{\bbC}{\mathbb{C}}
+    \newcommand{\bbK}{\mathbb{K}}
+    \newcommand{\bbB}{\mathbb{B}}
+    \newcommand{\bbS}{\mathbb{S}}
+    \newcommand{\bbA}{\mathbb{A}}
+    \newcommand{\bbT}{\mathbb{T}}
+  %Script and Cal Letters
+    \newcommand{\scP}{\mathscr{P}}
+    \newcommand{\scF}{\mathscr{F}}
+    \newcommand{\scC}{\mathscr{C}}
+    \newcommand{\scL}{\mathscr{L}}
+    \newcommand{\scS}{\mathscr{S}}
+    \newcommand{\caA}{\mathcal{A}}
+    \newcommand{\caB}{\mathcal{B}}
+    \newcommand{\caC}{\mathcal{C}}
+    \newcommand{\caD}{\mathcal{D}}
+    \newcommand{\caE}{\mathcal{E}}
+    \newcommand{\caF}{\mathcal{F}}
+    \newcommand{\caR}{\mathcal{R}}
+    \newcommand{\caP}{\mathcal{P}}
+    \newcommand{\caM}{\mathcal{M}}
+    \newcommand{\caS}{\mathcal{S}}
+    \newcommand{\caH}{\mathcal{H}}
+    \newcommand{\caT}{\mathcal{T}}
+    \newcommand{\caU}{\mathcal{U}}
+    \newcommand{\caX}{\mathcal{X}}
+    \newcommand{\caY}{\mathcal{Y}}
+    \newcommand{\caZ}{\mathcal{Z}}
+  %Other Commands
+    \newcommand{\vect}[1]{\boldsymbol{#1}}
+    \renewcommand{\geq}{\geqslant}
+    \renewcommand{\leq}{\leqslant}
+    \renewcommand{\div}{\!\mid\!}
+\begin{document}
+\PMlinkescapeword{simple}
+\PMlinkescapeword{gcd}
+\PMlinkescapeword{infinity}
+\PMlinkescapeword{odd}
+\PMlinkescapeword{order}
+This entry presents two simple results on Mersenne numbers\footnote{In this entry, the Mersenne numbers are indexed by the primes.}, namely that any two Mersenne numbers are relatively prime and that any prime dividing a Mersenne number \(M_p\) is greater than \(p\). We prove something slightly stronger for both these results:
+\begin{thm} If \(q\) is a prime such that \(q\div M_p\), then \(p \div (q-1)\). \end{thm}
+\begin{proof}
+By definition of \(q\), we have \(2^p \equiv 1 \pmod q\). Since \(p\) is prime, this implies that \(2\) has order \(p\) in the multiplicative group \(\bbZ_q\mathbin{\setminus}\{0\}\) and, by Lagrange's Theorem, it divides the order of this \PMlinkname{group}{Group}, which is \(q-1\).
+\end{proof}
+\begin{thm} If \(m\) and \(n\) are relatively prime positive integers, then \(2^m-1\) and \(2^n-1\) are also relatively prime. \end{thm}
+\begin{proof}
+Let \(d := \gcd(2^n-1,2^m-1)\). Since \(d\) is odd, \(2\) is a unit in \(\bbZ_d\) and, since \(2^n \equiv 1 \pmod d\) and \(2^m \equiv 1 \pmod d\), the order of \(2\) divides both \(m\) and \(n\): it is \(1\). Thus \(2 \equiv 1 \pmod d\) and \(d=1\).
+\end{proof}
+Note that these two facts can be easily converted into proofs of the infinity of primes: indeed, the first one constructs a prime bigger than any prime \(p\) and the second easily implies that, if there were finitely many primes, every \(M_p\) (since there would be as many Mersenne numbers as primes) is a prime power, which is clearly false (consider \(M_{11} = 23\cdot89\)).
+%%%%%
+%%%%%
+\end{document}

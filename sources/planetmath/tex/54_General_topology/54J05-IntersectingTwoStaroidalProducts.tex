@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IntersectingTwoStaroidalProducts}
+\pmcreated{2013-03-22 19:50:13}
+\pmmodified{2013-03-22 19:50:13}
+\pmowner{porton}{9363}
+\pmmodifier{porton}{9363}
+\pmtitle{Intersecting two staroidal products}
+\pmrecord{3}{87302}
+\pmprivacy{1}
+\pmauthor{porton}{9363}
+\pmtype{Conjecture}
+\pmclassification{msc}{54J05}
+\pmclassification{msc}{54A05}
+\pmclassification{msc}{54D99}
+\pmclassification{msc}{54E05}
+\pmclassification{msc}{54E17}
+\pmclassification{msc}{54E99}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%\usepackage{xypic}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Prerequisites: \href{http://www.mathematics21.org/algebraic-general-topology.html}{Algebraic General Topology}.
+
+{\bf Conjecture.} $\prod^{\operatorname{Strd}}a \not\asymp \prod^{\operatorname{Strd}}b \Leftrightarrow b\in\prod^{\operatorname{Strd}}a \Leftrightarrow a\in\prod^{\operatorname{Strd}}b \Leftrightarrow \forall i\in n: a_i\not\asymp b_i$ for every $n$-indexed families $a$ and $b$ of filters on powersets.
+
+The above conjecture has the below consequence (see my book for not so long proof).
+
+{\bf Conjecture.} Let $f$ is a staroid on powersets and $a\in \prod_{i\in\operatorname{arity}f}\operatorname{Src}f_i$, $b\in \prod_{i\in\operatorname{arity}f}\operatorname{Dst}f_i$. Then
+\[ \prod^{\operatorname{Strd}}a \left[ \prod^{(C)}f \right] \prod^{\operatorname{Strd}}b \Leftrightarrow
+\forall i\in n: a_i[f_i]b_i. \]
+\end{document}

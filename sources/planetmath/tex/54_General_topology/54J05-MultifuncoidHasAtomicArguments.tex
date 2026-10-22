@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MultifuncoidHasAtomicArguments}
+\pmcreated{2014-12-14 21:09:54}
+\pmmodified{2014-12-14 21:09:54}
+\pmowner{porton}{9363}
+\pmmodifier{porton}{9363}
+\pmtitle{Multifuncoid has atomic arguments}
+\pmrecord{2}{87299}
+\pmprivacy{1}
+\pmauthor{porton}{9363}
+\pmtype{Conjecture}
+\pmclassification{msc}{54J05}
+\pmclassification{msc}{54A05}
+\pmclassification{msc}{54D99}
+\pmclassification{msc}{54E05}
+\pmclassification{msc}{54E17}
+\pmclassification{msc}{54E99}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%\usepackage{xypic}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A counter-example against this conjecture have been found.
+See \href{http://www.mathematics21.org/algebraic-general-topology.html}{Algebraic General Topology}.
+
+Prerequisites: \href{http://www.mathematics21.org/algebraic-general-topology.html}{Algebraic General Topology}.
+
+{\bf Conjecture.} $L \in \mathrel{\left[ f \right]} \Rightarrow \mathrel{\left[ f \right]} \cap \prod_{i \in \operatorname{dom} \mathfrak{A}} \operatorname{atoms} L_i \neq \emptyset$ for every pre-multifuncoid $f$ of the form whose elements are atomic posets.
+
+A weaker conjecture: It is true for forms whose elements are powersets.
+
+The following is an attempted (partial) proof:
+
+If $\operatorname{arity} f = 0$ our theorem is trivial, so let $\operatorname{arity} f \neq 0$. Let $\sqsubseteq$ is a well-ordering of $\operatorname{arity} f$ with greatest element $m$.
+
+Let $\Phi$ is a function which maps non-least elements of posets into atoms under these elements and least elements into themselves. (Note that $\Phi$ is defined on least elements only for completeness, $\Phi$ is never taken on a least element in the proof below.) {\color{brown} [TODO: Fix the ''universal set'' paradox here.]}
+
+Define a transfinite sequence $a$ by transfinite induction with the formula $ a_c = \Phi \left\langle f \right\rangle_c  \left( a|_{X \left( c \right) \setminus \left\{ c \right\}} \cup L|_{\left( \operatorname{arity} f \right) \setminus X \left( c \right)} \right)$.
+
+Let $b_c = a|_{X \left( c \right) \setminus \left\{ c \right\}} \cup L|_{\left( \operatorname{arity} f \right) \setminus X \left( c \right)}$. Then $a_c = \Phi \left\langle f \right\rangle_c b_c$.
+
+Let us prove by transfinite induction $a_c \in \operatorname{atoms} L_c .$ $a_c = \Phi \left\langle f \right\rangle_c L|_{\left( \operatorname{arity} f \right) \setminus \left\{ c \right\}} \sqsubseteq \left\langle f \right\rangle_c L|_{\left( \operatorname{arity} f \right) \setminus \left\{ c \right\}}$. Thus $a_c \sqsubseteq L_c$. [TODO: Is it true for pre-multifuncoids?]
+
+The only thing remained to prove is that $\left\langle f \right\rangle_c b_c \neq 0$
+
+that is $\langle f \rangle _ c  ( a|_{ X ( c ) \setminus \{ c \} } \cup L|_{( \operatorname{arity} f ) \setminus X ( c )} ) \neq 0$ that is $y \not\asymp \left\langle f \right\rangle_c b_c$.
+\end{document}

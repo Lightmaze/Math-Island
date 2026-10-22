@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DualOfStoneRepresentationTheorem}
+\pmcreated{2013-03-22 19:08:38}
+\pmmodified{2013-03-22 19:08:38}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{dual of Stone representation theorem}
+\pmrecord{12}{42045}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D99}
+\pmclassification{msc}{06E99}
+\pmclassification{msc}{03G05}
+\pmrelated{BooleanSpace}
+\pmrelated{HomeomorphismBetweenBooleanSpaces}
+\pmdefines{dual space}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{lem}{Lemma}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+The Stone representation theorem characterizes a Boolean algebra as a field of sets in a topological space.  There is also a dual to this famous theorem that characterizes a Boolean space as a topological space constructed from a Boolean algebra.
+
+\begin{thm} Let $X$ be a Boolean space.  Then there is a Boolean algebra $B$ such that $X$ is homeomorphic to $B^*$, the \PMlinkname{dual space}{DualSpaceOfABooleanAlgebra} of $B$. \end{thm}
+
+\begin{proof}
+The choice for $B$ is clear: it is the set of clopen sets in $X$ which, via the set theoretic operations of intersection, union, and complement, is a Boolean algebra.  
+
+Next, define a function $f:X \to B^*$ by $$f(x):=\lbrace U \in B \mid x\notin U\rbrace.$$
+Our ultimate goal is to prove that $f$ is the desired homeomorphism.  We break down the proof of this into several stages:
+
+\begin{lem} $f$ is well-defined. \end{lem}
+\begin{proof} The key is to show that $f(x)$ is a prime ideal in $B^*$ for any $x\in X$.  To see this, first note that if $U,V\in f(x)$, then so is $U\cup V \in f(x)$, and if $W$ is any clopen set of $X$, then $U\cap W\in f(x)$ too.  Finally, suppose that $U\cap V\in f(x)$.  Then $x\in X-(U\cap V)=(X-U)\cup (X-V)$, which means that $x\notin U$ or $x\notin V$, which is the same as saying that $U\in f(x)$ or $V\in f(x)$.  Hence $f(x)$ is a prime ideal, or a maximal ideal, since $B$ is Boolean.  \end{proof}
+
+\begin{lem} $f$ is injective. \end{lem}
+\begin{proof} Suppose $x\ne y$, we want to show that $f(x)\ne f(y)$.  Since $X$ is Hausdorff, there are disjoint open sets $U,V$ such that $x\in U$ and $y\in V$.  Since $X$ is also totally disconnected, $U$ and $V$ are unions of clopen sets.  Hence we may as well assume that $U,V$ clopen.  This then implies that $U\in f(y)$ and $V\in f(x)$.  Since $U\ne V$, $f(x)\ne f(y)$.  \end{proof}
+
+\begin{lem} $f$ is surjective. \end{lem}
+\begin{proof} Pick any maximal ideal $I$ of $B^*$.  We want to find an $x\in X$ such that $f(x)=I$.  If no such $x$ exists, then for every $x\in X$, there is some clopen set $U\in I$ such that $x\in U$.  This implies that $\bigcup I = X$.  Since $X$ is compact, $X=\bigcup J$ for some finite set $J\subseteq I$.  Since $I$ is an ideal, and $X$ is a finite join of elements of $I$, we see that $X\in I$.  But this would mean that $I=B^*$, contradicting the fact that $I$ is a maximal, hence a proper ideal of $B^*$.  \end{proof}
+
+\begin{lem} $f$ and $f^{-1}$ are continuous. \end{lem}
+\begin{proof}  We use a fact about continuous functions between two Boolean spaces: 
+\begin{quote}
+a bijection is a homeomorphism iff it maps clopen sets to clopen sets (proof \PMlinkname{here}{HomeomorphismBetweenBooleanSpaces}).
+\end{quote}
+So suppose that $U$ is clopen in $X$, we want to prove that $f(U)$ is clopen in $B^*$.  In other words, there is an element $V\in B$ (so that $V$ is clopen in $X$) such that $$f(U)=M(V)=\lbrace M\in B^* \mid V\notin M\rbrace.$$  This is because every clopen set in $B^*$ has the form $M(V)$ for some $V\in B^*$ (see the lemma in \PMlinkname{this entry}{StoneRepresentationTheorem}).  Now, $f(U)= \lbrace f(x)\mid x\in U\rbrace = \lbrace f(x)\mid U\notin f(x)\rbrace = \lbrace M\mid U\notin M\rbrace$, the last equality is based on the fact that $f$ is a bijection.  Thus by setting $V=U$ completes the proof of the lemma.
+\end{proof}
+Therefore, $f$ is a homemorphism, and the proof of theorem is complete.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

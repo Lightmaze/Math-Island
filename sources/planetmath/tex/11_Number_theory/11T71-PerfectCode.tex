@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PerfectCode}
+\pmcreated{2013-03-22 14:23:43}
+\pmmodified{2013-03-22 14:23:43}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{perfect code}
+\pmrecord{5}{35892}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11T71}
+\pmdefines{packing radius}
+\pmdefines{covering radius}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Let $C$ be a \PMlinkname{linear}{LinearCode} $(n,k,d)$-code over $\mb{F}_q$.
+
+The \emph{packing radius} of $C$ is defined to be the value
+\begin{align*}
+\rho(C)=\frac{d-1}{2}.
+\end{align*}
+
+The \emph{covering radius} of $C$ is
+\begin{align*}
+r(C)=\max_x\min_c \delta(x,c)
+\end{align*}
+with $x\in \mb{F}_q^n$ and $c\in C$, and where $\delta$ denotes the Hamming distance on $\mb{F}_q^n$.
+
+The \PMlinkname{code}{Code} $C$ is said to be \emph{perfect} if $r(C)=\rho(C)$.
+
+The list of \PMlinkescapetext{classes} of linear perfect codes is very short, including only trivial codes, Hamming codes (i.e. $\rho=1$), and the binary and ternary \PMlinkname{Golay}{BinaryGolayCode} codes.
+%%%%%
+%%%%%
+\end{document}

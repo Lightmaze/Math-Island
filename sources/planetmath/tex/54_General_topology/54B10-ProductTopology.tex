@@ -1,0 +1,151 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProductTopology}
+\pmcreated{2013-03-22 12:47:09}
+\pmmodified{2013-03-22 12:47:09}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{product topology}
+\pmrecord{38}{33100}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B10}
+\pmsynonym{Tychonoff product topology}{ProductTopology}
+\pmrelated{BoxTopology}
+\pmrelated{GeneralizedCartesianProduct}
+\pmrelated{ASpaceMathnormalXIsHausdorffIfAndOnlyIfDeltaXIsClosed}
+\pmrelated{InitialTopology}
+\pmdefines{product}
+
+\endmetadata
+
+\def\T{{\mathcal T}}
+\def\closure{\overline}
+
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\PMlinkescapeword{component}
+\PMlinkescapeword{components}
+\PMlinkescapeword{continuous}
+\PMlinkescapeword{equivalent}
+\PMlinkescapeword{induced}
+\PMlinkescapeword{restricted}
+\PMlinkescapeword{term}
+\PMlinkescapeword{terms}
+\PMlinkescapeword{theorem}
+\PMlinkescapeword{top}
+\PMlinkescapeword{tychonoff}
+
+\section*{Definition}
+
+Let $((X_\alpha,\T_\alpha))_{\alpha\in A}$
+be a family of topological spaces, and let $Y$ be the 
+\PMlinkname{Cartesian product}{GeneralizedCartesianProduct} 
+of the sets $X_\alpha$, that is
+\[
+  Y = \prod_{\alpha\in A} X_\alpha.
+\]
+Recall that an element $y\in Y$ is a function
+$y\colon A\to \bigcup_{\alpha\in A} X_\alpha$ 
+such that $y(\alpha) \in X_\alpha$ for each $\alpha \in A$,
+and that for each $\alpha\in A$
+the projection map $\pi_\alpha\colon Y\to X_\alpha$
+is defined by $\pi_\alpha(y) = y(\alpha)$ for each $y\in Y$.
+
+The (\emph{Tychonoff}) \emph{product topology} $\T$ for $Y$
+is defined to be the initial topology with respect to the projection maps;
+that is,
+$\T$ is the smallest topology such that each $\pi_\alpha$ is \PMlinkname{continuous}{Continuous}.
+
+\section*{Subbase}
+
+If $U\subseteq X_\alpha$ is open,
+then $\pi_\alpha^{-1}(U)$ is an open set in $Y$.
+Note that this is the set of all elements of $Y$ 
+in which the $\alpha$ component is restricted to $U$
+and all other components are unrestricted.
+The open sets of $Y$ are the unions of finite intersections of such sets.
+That is,
+\[
+  \{\, \pi_\alpha^{-1}(U) \mid \alpha\in A\hbox{ and }U\in\T_\alpha \,\}
+\]
+is a subbase for the topology on $Y$.
+
+\section*{Theorems}
+
+The following theorems assume the product topology on
+$\prod_{\alpha\in A}X_\alpha$.
+Notation is as above.
+
+\begin{theorem}
+Let $Z$ be a topological space
+and let $f\colon Z\to\prod_{\alpha\in A}X_\alpha$ be a function.
+Then $f$ is continuous if and only if $\pi_\alpha\circ f$ is continuous
+for each $\alpha\in A$.
+\end{theorem}
+
+\begin{theorem}
+The product topology on $\prod_{\alpha\in A}X_\alpha$
+is the topology induced by the subbase
+\[
+  \{ \pi_\alpha^{-1}(U)\mid \alpha\in A\mbox{ and }U\in \T_\alpha \}.
+\]
+\end{theorem}
+
+\begin{theorem}
+The product topology on $\prod_{\alpha\in A}X_\alpha$
+is the topology induced by the base
+\[
+  \biggl\{ \bigcap_{\alpha\in F} \pi_\alpha^{-1}(U_\alpha)
+  \,\biggm|\,
+  F\mbox{ is a finite subset of }A
+  \mbox{ and }U_\alpha\in\T_\alpha\mbox{ for each }\alpha\in F\biggr\}.
+\]
+\end{theorem}
+
+\begin{theorem}
+A net $(x_i)_{i \in I}$ in $\prod_{\alpha\in A}X_{\alpha}$ converges to $x$ if and only if each coordinate $(x_i^{\alpha})_{i \in I}$ converges to $x^{\alpha}$ in $X_{\alpha}$.
+\end{theorem}
+
+\begin{theorem}
+Each projection map $\pi_\alpha\colon\prod_{\alpha\in A}X_\alpha\to X_\alpha$
+is continuous and \PMlinkname{open}{OpenMapping}.
+\end{theorem}
+
+\begin{theorem}
+For each $\alpha\in A$, let $A_\alpha\subseteq X_\alpha$.
+Then
+\[
+  \closure{\prod_{\alpha\in A}A_\alpha}=\prod_{\alpha\in A}\closure{A_\alpha}.
+\]
+In particular, any product of closed sets is closed.
+\end{theorem}
+
+\begin{theorem}
+{\PMlinkescapetext{\rm} (Tychonoff's Theorem)}
+If each $X_\alpha$ is compact, then $\prod_{\alpha\in A}X_\alpha$ is compact.
+\end{theorem}
+
+\section*{Comparison with box topology}
+
+There is another well-known way to topologize $Y$, namely the box topology.
+The product topology is a subset of the box topology;
+if $A$ is finite, then the two topologies are the same.
+
+The product topology is generally more useful than the box topology.
+The main reason for this can be expressed in terms of category theory:
+the product topology is the topology of the
+\PMlinkname{direct categorical product}{CategoricalDirectProduct} 
+in the category \textbf{Top} (see Theorem 1 above).
+
+\begin{thebibliography}{9}
+\bibitem{kelley} J.~L.~Kelley, \emph{General Topology},
+ D.~van Nostrand Company, Inc., 1955.
+\bibitem{munkres} J.~Munkres, \emph{Topology} (2nd edition),
+ Prentice Hall, 1999.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

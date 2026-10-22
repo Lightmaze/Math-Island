@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FundamentalUnits}
+\pmcreated{2014-11-24 16:38:36}
+\pmmodified{2014-11-24 16:38:36}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{fundamental units}
+\pmrecord{22}{36080}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R27}
+\pmclassification{msc}{11R04}
+%\pmkeywords{Dirichlet's unit theorem}
+\pmrelated{NumberField}
+\pmrelated{AlgebraicInteger}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The ring $R$ of algebraic integers of any algebraic number 
+field contains a finite set 
+$H = \{\eta_1,\, \eta_2,\, \ldots,\, \eta_t\}$ of so-called 
+{\em fundamental units} such that every unit $\varepsilon$ of 
+$R$ is a \PMlinkname{power}{GeneralAssociativity} product of 
+these, multiplied by a root of unity:
+   $$\varepsilon = \zeta\!\cdot\!\eta_1^{k_1}\eta_2^{k_2}\ldots\eta_t^{k_t}$$
+Conversely, every such element $\varepsilon$ of the field is a 
+unit of $R$.
+
+Examples:\, units of quadratic fields,\, \PMlinkname{units of certain cubic fields}{UnitsOfRealCubicFieldsWithExactlyOneRealEmbedding}
+
+
+For some algebraic number fields, such as all imaginary 
+quadratic fields, the set $H$ may be empty ($t = 0$).\, In the 
+case of a single fundamental unit ($t = 1$), which occurs e.g. 
+in all 
+\PMlinkname{real quadratic fields}{ImaginaryQuadraticField}, 
+there are two alternative units 
+$\eta$ and its conjugate $\overline{\eta}$ which one can use as 
+fundamental unit; then we can speak of {\em the} uniquely 
+determined fundamental unit $\eta_1$ which is greater than 1.
+%%%%%
+%%%%%
+\end{document}

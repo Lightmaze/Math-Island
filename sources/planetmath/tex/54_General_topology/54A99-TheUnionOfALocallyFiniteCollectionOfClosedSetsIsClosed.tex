@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheUnionOfALocallyFiniteCollectionOfClosedSetsIsClosed}
+\pmcreated{2013-03-22 16:14:45}
+\pmmodified{2013-03-22 16:14:45}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{the union of a locally finite collection of closed sets is closed}
+\pmrecord{10}{38349}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A99}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{amsthm}
+\newtheorem*{thm*}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{meet}
+\PMlinkescapeword{meets}
+\PMlinkescapeword{open}
+
+The union of a collection of closed subsets of a topological space need not,
+of course, be closed. However, we do have the following result:
+
+\begin{thm*}
+The union of a locally finite collection of closed subsets
+of a topological space is itself closed.
+\end{thm*}
+
+\begin{proof}
+Let $\cal S$ be a locally finite collection of closed subsets
+of a topological space $X$, and put $Y=\cup\cal S$.
+Let $x\in X\setminus Y$.
+By local finiteness there is an open neighbourhood $U$ of $x$
+that meets only finitely many members of $\cal S$,
+say $A_1,\dots,A_n$.
+So $U\setminus Y=U\setminus\bigcup_{i=1}^n A_i$, which is open.
+Thus $U\setminus Y$ is an open neighbourhood of $x$ that does not meet $Y$.
+It follows that $Y$ is closed.
+\end{proof}
+
+One use for this result can be found in the entry on gluing together continuous functions.
+%%%%%
+%%%%%
+\end{document}

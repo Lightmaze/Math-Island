@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MangoldtSummatoryFunctionIsOx}
+\pmcreated{2013-03-22 17:42:59}
+\pmmodified{2013-03-22 17:42:59}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{Mangoldt summatory function is $O(x)$}
+\pmrecord{5}{40161}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{thm}{Theorem}
+
+\begin{document}
+\begin{thm} $\psi(x)=O(x)$, in other \PMlinkescapetext{words}, $\frac{\psi(x)}{x}$ is bounded.
+\end{thm}
+\textbf{Proof. }
+\[\psi(x)=\sum_1^x \Lambda(n)=
+\sum_{\substack{p\text{ prime}\\p\leq x}}\lfloor \log_p x\rfloor \ln p=
+\sum_{\substack{p\text{ prime}\\p\leq x}}\left\lfloor\frac{\ln x}{\ln p}\right\rfloor\ln p=
+\sum_{\substack{p\text{ prime}\\p\leq \sqrt{x}}}\left\lfloor\frac{\ln x}{\ln p}\right\rfloor\ln p +
+   \sum_{\substack{p\text{ prime}\\\sqrt{x}<p\leq x}}\ln p\]
+since $1\leq \frac{\ln x}{\ln p}<2$ if $p>\sqrt{x}$.
+Continuing, we have
+\[\sum_{\substack{p\text{ prime}\\p\leq \sqrt{x}}}\left\lfloor\frac{\ln x}{\ln p}\right\rfloor\ln p +
+   \sum_{\substack{p\text{ prime}\\\sqrt{x}<p\leq x}}\ln p \leq
+\sqrt{x}\ln x+\pi(x)\ln x\leq\sqrt{x}\ln x+8x\ln 2=O(x)
+\]
+Note that $\pi(x)\ln x\leq 8x\ln 2$ by Chebyshev's \PMlinkname{bounds on $\pi(x)$}{BoundsOnPin}.
+%%%%%
+%%%%%
+\end{document}

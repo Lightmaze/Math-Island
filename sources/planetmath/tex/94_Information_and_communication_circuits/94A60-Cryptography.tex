@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Cryptography}
+\pmcreated{2013-03-22 15:49:07}
+\pmmodified{2013-03-22 15:49:07}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{cryptography}
+\pmrecord{10}{37784}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94A60}
+\pmsynonym{cleartext}{Cryptography}
+\pmsynonym{cyphertext}{Cryptography}
+\pmsynonym{cryptotext}{Cryptography}
+\pmdefines{plaintext}
+\pmdefines{ciphertext}
+\pmdefines{message space}
+\pmdefines{cyphertext space}
+\pmdefines{key space}
+\pmdefines{key}
+\pmdefines{key pair}
+\pmdefines{encryption function}
+\pmdefines{decryption function}
+\pmdefines{cryptosystem}
+\pmdefines{cryptanalysis}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Cryptography is the science of encoding and decoding messages so that they are only understood by intended senders and recipients.
+
+Informally, the basic ingredients in cryptography consist of 
+\begin{enumerate}
+\item An alphabet $\Sigma$.  A word over $\Sigma$ is called a \emph{plaintext} or \emph{cleartext}.  The set $M:=\Sigma^*$ of all plaintexts is called the \emph{message space}.
+\item An alphabet $\Delta$.  A word over $\Delta$ is called a \emph{ciphertext} or \emph{cryptotext}.  The set $C:=\Delta^*$ of all ciphertexts is called the \emph{ciphertext space}.
+\item A set $K$ called the key space, such that each $k\in K$, called a \emph{key}, determines functions $e_k: M\to C$ and $d_k:C\to M$ called \emph{encryption function} and \emph{decryption function} respectively.  It is generally required that $d_k\circ e_k = 1_M$ (and usually $e_k\circ d_k=1_C$ so that $e_k$ and $d_k$ are inverses of one another).  The pair $(e_k,d_k)$ is usually called a \emph{key pair}.
+\end{enumerate}
+The triple $(M,C,K)$ is called a \emph{cryptosystem}.
+
+Given a cryptosystem, one generally wants both $e_k$ and $d_k$ to be easily computable, so that encryption by the sender and decryption by the intended receiver can be done effortlessly.  For example, if $A$ were to send $B$ an encrypted message, $A$ needs to be able to \emph{easily} encrypt a plaintext $u$ into a ciphertext $v=e_k(u)$.  Upon receiving $v$, the intended receiver $B$ needs to be able to \emph{easily} decrypt $v$ into plaintext $u=d_k(v)$.  On the other hand, one also wants the task of recovering the plaintext from the ciphertext very difficult, or intractible, without knowing the decryption functions $d_k$.  For example, if an eavesdropper $C$ ever gets hold of $v$, he/she will have a very hard time recovering $u$ without knowing $d_k$, sometimes even in the presence of knowing $e_k$.
+
+Here, the adjectives ``easy'', ``difficult'', ``intractible'' are measured in terms of the complexity involved in the computations.  For example, ``easy'' could mean that the time involved in the computations depends linearly on the length of the input $u$ (hopefully with a small coefficient), whereas ``difficult'' could mean the dependence be exponential instead.  A function $f$ such that it is easy to compute $f(u)$ given $u$ but very hard to find $u$ given $f(u)$ is usually called a \emph{one-way function}.  For example, $f(m,n)=mn$ where $m,n$ are primes, is one-way, or nearly so.  It is easy to multiply, but very hard to factor, particularly when both $m$ and $n$ are large.
+
+The study of cryptogrpahy thus can be loosely broken up into two main branches: the construction of a good cryptosystem (meaning that the encryption functions should be one-way, and the decryption functions should be easy to compute), and the breaking of a ciphertext in some given setting (for example, where the encryption functions are known).  The latter of the two branches is also known as \emph{cryptanalysis}.
+
+The mathematics behind cryptography involves a variety of disciplines, of which the main ones are information theory, formal languages, computational complexity, probability theory, and number theory.
+
+Cryptographic methods range from simple additive ciphers to sophisticated public key encryption systems, first introduced by Diffie and Hellman in the mid 1970's.
+%%%%%
+%%%%%
+\end{document}

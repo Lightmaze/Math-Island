@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProductOfPathConnectedSpacesIsPathConnected}
+\pmcreated{2013-03-22 18:31:02}
+\pmmodified{2013-03-22 18:31:02}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{product of path connected spaces is path connected}
+\pmrecord{4}{41204}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\textbf{Proposition}. Let $X$ and $Y$ be topological spaces. Then $X\times Y$ is path connected if and only if both $X$ and $Y$ are path connected.
+
+\textit{Proof}. ''$\Leftarrow$'' Assume that $X$ and $Y$ are path connected and let $(x_1,y_1), (x_2,y_2)\in X\times Y$ be arbitrary points. Since $X$ is path connected, then there exists a continous map $$\sigma:\mathrm{I}\to X$$ such that $$\sigma(0)=x_1\ \ \mathrm{and}\ \ \sigma(1)=x_{2}.$$ Analogously there exists a continous map $$\tau:\mathrm{I}\to Y$$ such that $$\tau(0)=y_1\ \ \mathrm{and}\ \ \tau(1)=y_{2}.$$ Then we have an induced map $$\sigma\times\tau:\mathrm{I}\to X\times Y$$ defined by the formula: $$( \sigma\times\tau )(t)=(\sigma(t),\tau(t)),$$
+which is continous path from $(x_1,y_1)$ to $(x_2,y_2)$.
+
+''$\Rightarrow$'' On the other hand assume that $X\times Y$ is path connected. Let $x_1,x_2\in X$ and $y_0\in Y$. Then there exists a path $$\sigma:\mathrm{I}\to X\times Y$$
+such that $$\sigma(0)=(x_1,y_0)\ \ \mathrm{and}\ \ \sigma(1)=(x_1,y_0).$$ We also have the projection map $\pi: X\times Y\to X$ such that $\pi(x,y)=x$. Thus we have a map $$\tau:\mathrm{I}\to X$$ defined by the formula $$\tau(t)=\pi(\sigma(t)).$$
+This is a continous path from $x_1$ to $x_2$, therefore $X$ is path connected. Analogously $Y$ is path connected. $\square$
+
+%%%%%
+%%%%%
+\end{document}

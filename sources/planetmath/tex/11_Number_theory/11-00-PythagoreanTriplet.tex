@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PythagoreanTriplet}
+\pmcreated{2013-03-22 11:43:48}
+\pmmodified{2013-03-22 11:43:48}
+\pmowner{drini}{3}
+\pmmodifier{drini}{3}
+\pmtitle{Pythagorean triplet}
+\pmrecord{23}{30138}
+\pmprivacy{1}
+\pmauthor{drini}{3}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmclassification{msc}{01A20}
+\pmclassification{msc}{11A05}
+\pmclassification{msc}{11-03}
+\pmclassification{msc}{11-01}
+\pmclassification{msc}{51M05}
+\pmclassification{msc}{51M04}
+\pmclassification{msc}{51-03}
+\pmclassification{msc}{51-01}
+\pmclassification{msc}{01-01}
+\pmclassification{msc}{55-00}
+\pmclassification{msc}{55-01}
+\pmsynonym{Pythagorean triple}{PythagoreanTriplet}
+%\pmkeywords{Triangle}
+%\pmkeywords{Pythagoras}
+%\pmkeywords{Geometry}
+\pmrelated{PythagorasTheorem}
+\pmrelated{IncircleRadiusDeterminedByPythagoreanTriple}
+\pmrelated{ContraharmonicMeansAndPythagoreanHypotenuses}
+\pmrelated{PythagoreanHypotenusesAsContraharmonicMeans}
+\pmdefines{seed number}
+\pmdefines{primitive Pythagorean triple}
+\pmdefines{primitive Pythagorean triplet}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%%%%%\usepackage{xypic}
+
+\begin{document}
+A \emph{Pythagorean triplet} is a set $\{a, b, c\}$ of three positive 
+integers such that
+\[ 
+   a^2 + b^2 = c^2.  
+\]
+
+That is, $\{a, b, c\}$ is a Pythagorean triplet if there exists a
+right triangle whose sides have lengths $a$, $b$, and $c$,
+respectively.  For example, $\{3, 4, 5\}$ is a Pythagorean triplet.
+Given one Pythagorean triplet $\{a, b, c\}$, we can produce another by
+multiplying $a$, $b$, and $c$ by the same factor $k$.  It follows that
+there are countably many Pythagorean triplets.
+
+\subsubsection*{Primitive Pythagorean triplets}
+
+A Pythagorean triplet is \emph{primitive} if its elements are
+coprimes.  All primitive Pythagorean triplets are given by
+\begin{align}
+\begin{cases}
+a = 2mn,\\
+b = m^2\!-\!n^2,\\
+c = m^2\!+\!n^2,
+\end{cases}
+\end{align}
+
+where the \emph{seed numbers} $m$ and $n$ are any two coprime positive
+integers, one odd and one even, such tht $m > n$.\, If one presumes of the positive integers $m$ and $n$ only that\, $m > n$, one obtains also many non-primitive triplets, but not e.g. $(6,\,8,\,10)$.\, For getting all, one needs to multiply the right hand sides of (1) by an additional integer parametre $q$.
+
+\textbf{Note 1.}\, Among the primitive Pythagorean triples, the odd cathetus $a$ may attain all odd values except 1 (set e.g.\, $m := n\!+\!1$) and the even cathetus $b$ all values divisible by 4 (set\, $n := 1$).\\
+
+\textbf{Note 2.}\, In the primitive triples, the hypothenuses $c$ are always odd.\, All possible Pythagorean hypotenuses are contraharmonic means of two different integers (and conversely).\\
+
+\textbf{Note 3.}\, N.B. that any triplet (1) is obtained from the square of a Gaussian integer $(m\!+\!in)^2$ as its real part, imaginary part and absolute value.\\
+
+\textbf{Note 4.}\, The equations (1) imply that the sum of a cathetus and the hypotenuse is always a perfect square or a double perfect square.\\
+
+\textbf{Note 5.}\, One can form the sequence (cf. Sloane's \PMlinkexternal{A100686}{http://www.research.att.com/~njas/sequences/?q=A100686&language=english&go=Search})
+\[
+  1,\,2,\,3,\,4,\,7,\,24,\,527,\,336,\,164833,\,354144,\,...
+\]
+taking first the seed numbers 1 and 2 which give the legs 3 and 4,
+taking these as new seed numbers which give the legs 7 and 24, and
+so on.
+
+% related: PythagoreanTriplesAndRationalPointsOnAUnitHyperbola
+
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

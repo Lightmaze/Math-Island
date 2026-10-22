@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CyclicPermutation}
+\pmcreated{2013-03-22 17:33:54}
+\pmmodified{2013-03-22 17:33:54}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{cyclic permutation}
+\pmrecord{13}{39974}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94B15}
+\pmclassification{msc}{20B99}
+\pmclassification{msc}{03-00}
+\pmclassification{msc}{05A05}
+\pmclassification{msc}{11Z05}
+\pmclassification{msc}{94A60}
+\pmsynonym{Caesar cipher}{CyclicPermutation}
+\pmrelated{CyclicCode}
+\pmrelated{SubgroupsWithCoprimeOrders}
+\pmdefines{Caesar shift cipher}
+\pmdefines{cyclic conjugate}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+Let $A=\lbrace a_0,a_1,\ldots, a_{n-1}\rbrace$ be a finite set indexed by $i=0,\ldots, n-1$.  A \emph{cyclic permutation} on $A$ is a permutation $\pi$ on $A$ such that, for some integer $k$, $$\pi(a_i)=a_{(i+k)\!\!\!\!\!\! \pmod n},$$
+where $a\!\!\pmod b:= a - \lfloor a/b \rfloor b$, the remainder of $a$ when divided by $b$, and $\lfloor \cdot \rfloor$ is the floor function.
+
+For example, if $A=\lbrace 1,2,\ldots,m\rbrace$ such that $a_i=i+1$.  Then a cyclic permutation $\pi$ on $A$ has the form
+\begin{eqnarray*}
+\pi(1) &=& r \\
+\pi(2) &=& r+1 \\
+&\vdots & \\
+\pi(m-r+1) &=& m \\
+\pi(m-r+2) &=& 1 \\
+&\vdots & \\
+\pi(m) &=& r-1.
+\end{eqnarray*}
+
+In the usual permutation notation, it looks like 
+$$\pi=\left( \begin{array}{ccccccc}
+1 & 2 & \cdots & m-r+1 & m-r+2 & \cdots & m \\
+r & r+1 & \cdots & m & 1 & \cdots & r-1 \end{array} \right)$$
+
+\textbf{Remark}.  For every finite set of cardinality $n$, there are $n$ cyclic permutations.  Each non-trivial cyclic permutation has order $n$.  Furthermore, if $n$ is a prime number, the set of cyclic permutations forms a cyclic group.
+
+\subsubsection*{Cyclic permutations on words}
+
+Given a word $w=a_1a_2\cdots a_n$ on a set $\Sigma$ (may or may not be finite), a \emph{cyclic conjugate} of $w$ is a word $v$ derived from $w$ based on a cyclic permutation.  In other words, $v=\pi(a_1)\pi(a_2)\cdots \pi(a_n)$ for some cyclic permutation $\pi$ on $\lbrace a_1,\ldots, a_n\rbrace$.  Equivalently, $v$ and $w$ are cyclic conjugates of one another iff $w=st$ and $v=ts$ for some words $s,t$.
+
+For example, the cyclic conjugates of the word $ababa$ over $\lbrace a,b\rbrace$ are $$baba^2,\quad aba^2b,\quad ba^2ba,\quad a^2bab,\quad\mbox{and itself}.$$
+Strictly speaking, $\pi$ is a cyclic permutation on the \emph{multiset} $A=\lbrace a_1,\ldots, a_n\rbrace$, which can be thought of as a cyclic permutation on the set $A'=\lbrace (1,a_1),\ldots, (n,a_n)\rbrace$.  Furthermore, $\pi$ can be extended to a function on $A^*$: for every word $w=a_{\phi(1)}\cdots a_{\phi(m)}$, $\pi(w):=\pi(a_{\phi(1)})\cdots \pi(a_{\phi(m)})$, where $\phi$ is a permutation on $A$.
+
+Given any word $w=a_1a_2\cdots a_n$ on $\Sigma$, two cyclic permutations $\pi_1,\pi_2$ on $\lbrace a_1,\ldots, a_n\rbrace$ are said to be the \emph{same} if $\pi_1(w)=\pi_2(w)$.  For example, with the word $abab$, then the cyclic permutation $$\left( \begin{array}{cccc}
+1 & 2 & 3 & 4 \\
+3 & 4 & 1 & 2 \end{array} \right)$$ is the same as the identity permutation.  There is a one-to-one correspondence between the set of all cyclic conjugates of $w$ and the set of all \emph{distinct} cyclic permutations on $\lbrace a_0,a_1,\ldots, a_n\rbrace$.
+
+\textbf{Remarks}.
+\begin{itemize}
+\item
+In a group $G$, if two elements $u,v$ are cyclic conjugates of one another, then they are conjugates: for if $u=st$ and $v=ts$, then $v=t(st)t^{-1}=tut^{-1}$.
+\item
+Cyclic permutations were used as a ciphering scheme by Julius Caesar.  Given an alphabet with letters, say $a,b,c, \ldots,x,y,z$, messages in letters are encoded so that each letter is shifted by three places.  For example, the name 
+\begin{center} ``Julius Caesar'' becomes ``Mxolxv Fdhvdu''.\end{center} A ciphering scheme based on cyclic permutations is therefore also known as a \emph{Caesar shift cipher}.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

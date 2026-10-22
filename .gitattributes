@@ -1,0 +1,7 @@
+# Preserve byte-level provenance: do not normalize archived source files.
+* -text
+*.png binary
+*.pdf binary
+*.gz binary
+*.zip binary
+

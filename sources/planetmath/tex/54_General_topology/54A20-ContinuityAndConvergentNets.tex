@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ContinuityAndConvergentNets}
+\pmcreated{2013-03-22 18:37:53}
+\pmmodified{2013-03-22 18:37:53}
+\pmowner{azdbacks4234}{14155}
+\pmmodifier{azdbacks4234}{14155}
+\pmtitle{continuity and convergent nets}
+\pmrecord{5}{41369}
+\pmprivacy{1}
+\pmauthor{azdbacks4234}{14155}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A20}
+%\pmkeywords{net}
+%\pmkeywords{directed set}
+%\pmkeywords{continuous function}
+%\pmkeywords{convergence}
+\pmrelated{Net}
+\pmrelated{Continuous}
+
+\endmetadata
+
+%packages
+\usepackage{amsmath,mathrsfs,amsfonts,amsthm}
+%theorem environments
+\theoremstyle{plain}
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{lem*}{Lemma}
+\newtheorem*{cor*}{Corollary}
+\newtheorem*{prop*}{Proposition}
+%delimiters
+\newcommand{\set}[1]{\{#1\}}
+\newcommand{\medset}[1]{\big\{#1\big\}}
+\newcommand{\bigset}[1]{\bigg\{#1\bigg\}}
+\newcommand{\Bigset}[1]{\Bigg\{#1\Bigg\}}
+\newcommand{\abs}[1]{\vert#1\vert}
+\newcommand{\medabs}[1]{\big\vert#1\big\vert}
+\newcommand{\bigabs}[1]{\bigg\vert#1\bigg\vert}
+\newcommand{\Bigabs}[1]{\Bigg\vert#1\Bigg\vert}
+\newcommand{\norm}[1]{\Vert#1\Vert}
+\newcommand{\mednorm}[1]{\big\Vert#1\big\Vert}
+\newcommand{\bignorm}[1]{\bigg\Vert#1\bigg\Vert}
+\newcommand{\Bignorm}[1]{\Bigg\Vert#1\Bigg\Vert}
+\newcommand{\vbrack}[1]{\langle#1\rangle}
+\newcommand{\medvbrack}[1]{\big\langle#1\big\rangle}
+\newcommand{\bigvbrack}[1]{\bigg\langle#1\bigg\rangle}
+\newcommand{\Bigvbrack}[1]{\Bigg\langle#1\Bigg\rangle}
+\newcommand{\sbrack}[1]{[#1]}
+\newcommand{\medsbrack}[1]{\big[#1\big]}
+\newcommand{\bigsbrack}[1]{\bigg[#1\bigg]}
+\newcommand{\Bigsbrack}[1]{\Bigg[#1\Bigg]}
+%operators
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\Tor}{Tor}
+\DeclareMathOperator{\Ext}{Ext}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Inn}{Inn}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Mat}{Mat}
+\DeclareMathOperator{\Gal}{Gal}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\SO}{SO}
+\DeclareMathOperator{\ann}{ann}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\Char}{char}
+\DeclareMathOperator{\Spec}{Spec}
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\Ind}{Ind}
+\DeclareMathOperator{\vol}{vol}
+
+\begin{document}
+\begin{thm*}
+Let $X$ and $Y$ be topological spaces. A function $f:X\rightarrow Y$ is continuous at a point $x\in X$ if and only if for each net $(x_\alpha)_{\alpha\in A}$ in $X$ converging to $x$, the net $(f(x_\alpha))_{\alpha\in A}$ converges to $f(x)$.
+\end{thm*}
+\begin{proof}
+If $f$ is continuous, $(x_\alpha)_{\alpha\in A}$ converges to $x$, and $V$ is an open neighborhood of $f(x)$ in $Y$, then $f^{-1}(V)$ is an open neighborhood of $x$ in $X$, so there exists $\alpha_0\in A$ such that $x_\alpha\in f^{-1}(V)$ for $\alpha\geq\alpha_0$. It follows that $f(x_\alpha)\in V$ for $\alpha\geq\alpha_0$, hence that $f(x_\alpha)\rightarrow f(x)$. Conversely, suppose there exists a net $(x_\alpha)_{\alpha\in A}$ in $X$ converging to $x$ such that $(f(x_\alpha))_{\alpha\in A}$ does not converge to $f(x)$, so that, for some open subset $V$ of $Y$ containing $f(x)$ and every $\alpha_0\in A$, there exists $\alpha\geq\alpha_0\in A$ such that $f(x_{\alpha})\notin V$, hence such that $x_\alpha\notin f^{-1}(V)$; as $x_\alpha\rightarrow x$ by hypothesis, this implies that $f^{-1}(V)$ cannot be a neighborhood of $x$, and thus that $f$ fails to be continuous at $x$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

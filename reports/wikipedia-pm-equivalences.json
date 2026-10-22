@@ -1,0 +1,57 @@
+{
+  "equivalences": {
+    "wikipedia:Modular_form": "pm:ModularForm",
+    "wikipedia:Motivic_cohomology": "pm:MotivicCohomology"
+  },
+  "reviews": [
+    {
+      "wikipedia_id": "wikipedia:Modular_form",
+      "planetmath_id": "pm:ModularForm",
+      "decision": "merge",
+      "reason": "Same modular-form subject: upper-half-plane functions with modular transformation law and cusp regularity. Topic identity only; source mathematical correctness not certified.",
+      "wikipedia_source_url": "https://en.wikipedia.org/wiki/Modular_form",
+      "wikipedia_source_sha256": "00485a487a73c3eb4c8fd4d049105bb5693c3386953b346db56b2a17f7726584",
+      "planetmath_source_url": "https://github.com/planetmath/11_Number_theory/blob/master/11F11-ModularForm.tex",
+      "planetmath_source_sha256": "76bdab4a740250f22f92fad3c667da6b09e88cf95a953c6356b87cedc1629b0f",
+      "review": "PM original TeX body and Wikipedia extracted introduction read by atlas_semantics; identity decision is not mathematical verification."
+    },
+    {
+      "wikipedia_id": "wikipedia:Motivic_cohomology",
+      "planetmath_id": "pm:MotivicCohomology",
+      "decision": "merge",
+      "reason": "Both discuss motivic cohomology of schemes, higher Chow groups and motivic complexes. PM MotivicCohomology1 largely duplicates this body and is separately resolved by the PM deduplication map.",
+      "wikipedia_source_url": "https://en.wikipedia.org/wiki/Motivic_cohomology",
+      "wikipedia_source_sha256": "bf5edf71fadb60b3458d717137a246640d7738065cb820e4125e90be747f07eb",
+      "planetmath_source_url": "https://github.com/planetmath/57_Manifolds_and_cell_complexes/blob/master/57M07-MotivicCohomology.tex",
+      "planetmath_source_sha256": "a1cc90884bad12de7196ce0bf4cb39aa9c7f5d44c7e1f6dbb62c05092163372c",
+      "review": "PM original TeX body and Wikipedia extracted introduction read by atlas_semantics; identity decision is not mathematical verification."
+    },
+    {
+      "wikipedia_id": "wikipedia:Random_matrix_theory",
+      "planetmath_id": "pm:RandomVector",
+      "decision": "retain_distinct",
+      "reason": "PM article primarily defines random vectors and additionally defines finite random matrices. Wikipedia article is Random matrix and develops matrix ensembles and spectral theory. Containment of a definition is not identity of these whole subject records.",
+      "wikipedia_source_url": "https://en.wikipedia.org/wiki/Random_matrix",
+      "wikipedia_source_sha256": "7b139c224a2234da7877257b698d734dc959ca268989de55d3575158e9e4c0d5",
+      "planetmath_source_url": "https://github.com/planetmath/62_Statistics/blob/master/62H99-RandomVector.tex",
+      "planetmath_source_sha256": "4376337689c21890176515c5b54da51137fed4b6988f5ef8819eec4c05885915",
+      "review": "PM original TeX body and Wikipedia extracted introduction read by atlas_semantics; identity decision is not mathematical verification."
+    },
+    {
+      "wikipedia_id": "wikipedia:Type_theory",
+      "planetmath_id": "pm:RussellsTheoryOfTypes",
+      "decision": "retain_distinct",
+      "reason": "PM is chiefly Russell ramified/simple type theory, despite alias type theory and a concluding modern-variants paragraph. Wikipedia is a broader field including Martin-Lof dependent type theory. An alias alone must not collapse the general subject into this historical subsystem.",
+      "wikipedia_source_url": "https://en.wikipedia.org/wiki/Type_theory",
+      "wikipedia_source_sha256": "fa6178d8d5438f03daf53478d94c2549d3c789609b5cb22efb06199e51522c46",
+      "planetmath_source_url": "https://github.com/planetmath/03_Mathematical_logic_and_foundations/blob/master/03B15-RussellsTheoryOfTypes.tex",
+      "planetmath_source_sha256": "848de1a534dc747b5d434fc9ca9cd528ecfe654028a6d30d5342b890cb291c61",
+      "review": "PM original TeX body and Wikipedia extracted introduction read by atlas_semantics; identity decision is not mathematical verification."
+    }
+  ],
+  "notes": [
+    "Checked title/alias/defined-term exact matches across all 50 Wikipedia nodes against PlanetMath; only four candidate pairs arose (motivic had two PM variants).",
+    "No additional identity merges from the 20 new endpoint pages were warranted.",
+    "Radical ideal and Algebraic set were bound to explicitly defined concepts in existing PM articles; those Wikipedia pages were not added."
+  ]
+}

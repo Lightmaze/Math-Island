@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MillerRabinPrimeTest}
+\pmcreated{2013-03-22 14:54:18}
+\pmmodified{2013-03-22 14:54:18}
+\pmowner{mathwizard}{128}
+\pmmodifier{mathwizard}{128}
+\pmtitle{Miller-Rabin prime test}
+\pmrecord{9}{36589}
+\pmprivacy{1}
+\pmauthor{mathwizard}{128}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11Y11}
+\pmsynonym{Rabin prime test}{MillerRabinPrimeTest}
+\pmrelated{SolovayStrassenTest}
+\pmrelated{FermatCompositenessTest}
+\pmdefines{strong pseudoprime}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{theorem}{Theorem}
+\begin{document}
+The Miller-Rabin prime test is a probabilistic test based on the following
+\begin{theorem}
+Let $N\geq 3$ be an odd number and $N-1=2^tn$, $n$ odd. If and only if for every $a\in\mathbb{Z}$ with $\gcd(a,N)=1$ we have
+\begin{subequations}\label{eq:cond}
+\begin{gather}
+a^n\equiv 1\quad\text{mod }N\qquad\text{or}\\
+a^{2^sn}\equiv-1\quad\text{mod }N
+\end{gather}
+\end{subequations}
+for some $s\in\{0,\dots,t-1\}$, then $N$ is prime. If $N$ is not prime, then let $A$ be the set of all $a$ satisfying the above conditions. We have
+$$\text{Card}(A)\leq\frac{1}{4}\varphi(N),$$
+where $\varphi$ is Euler's Phi-function.
+\end{theorem}
+A composite number $N$ satisfying conditions (\ref{eq:cond}) for some $a\in\mathbb{Z}$ is called a \textit{strong \PMlinkescapetext{pseudoprime}} in the basis $a$. Note that this theorem states that there are no such things as Carmichael numbers for strong pseudoprimes (i.e. composite numbers that are strong pseudoprimes for all values of $a$).
+From this theorem we can construct the following algorithm:
+\begin{enumerate}
+\item Choose a random $2\leq a\leq N-1$.
+\item If $\gcd(a,N)\neq 1$, we have a non-trivial divisor of $N$, so $N$ is not prime.
+\item If $\gcd(a,N)=1$, check if the conditions (\ref{eq:cond}) are satisfied. If not, $N$ is not prime, otherwise the probability that $N$ is not prime is less than $\frac{1}{4}$.
+\end{enumerate}
+In general the probability, that the test falsely reports $N$ as a prime is far less than $\frac{1}{4}$. Of course the algorithm can be applied several times in order to reduce the probability, that $N$ is not a prime but reported as one.
+
+When comparing this test with the related Solovay-Strassen test one sees that this test is superior is several ways:
+\begin{itemize}
+\item There is no need to calculate the Jacobi symbol.
+\item The amount of \textit{false witnesses}, i.e. numbers $a$ that report $N$ as a prime when it is not, is at most $\frac{N}{4}$ instead of $\frac{N}{2}$.
+\item One can even show that $N$ which passes Miller-Rabin for some $a$ also passes Solovay-Strassen for that $a$, so Miller-Rabin is always better.
+\end{itemize}
+Note that when the test returns that $N$ is composite, then this is indeed the case, so it is really a compositeness test rather than a test for primality.
+%%%%%
+%%%%%
+\end{document}

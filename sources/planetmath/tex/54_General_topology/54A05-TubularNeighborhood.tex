@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TubularNeighborhood}
+\pmcreated{2013-03-22 17:13:53}
+\pmmodified{2013-03-22 17:13:53}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{tubular neighborhood}
+\pmrecord{8}{39559}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A05}
+\pmsynonym{tubular neighbourhood}{TubularNeighborhood}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+In mathematics, a {\em tubular neighborhood} of a submanifold of a smooth manifold is an open set around it resembling the normal bundle.
+
+The idea behind a tubular neighborhood can be explained in a simple example. Consider a smooth curve in the plane without self-intersections. On each point on the curve draw a line perpendicular to the curve. Unless the curve is straight, these lines will intersect among themselves in a rather complicated fashion. However, if one looks only in a narrow band around the curve, the portions of the lines in that band will not intersect, and will cover the entire band without gaps. This band is the tubular neighborhood.
+
+In general, let $M'$ be a submanifold of a manifold $M$, and let $N$ be the normal bundle of $M'$ in $M$ ($M'$ will play the role of the curve, and $M$ will be like the plane containing the curve). Consider the map
+
+$i : N_0 \to M'$
+ 
+which establishes a bijective correspondence between the zero section $N_0$ of $N$ and the submanifold $M'$ of $M$. The mapping $i$ maps the curve (blue in the following diagram) at the bottom to the blue curve on top, and each of the infinite lines on the bottom, to each of the finite lines (they can also be curves) on top.
+
+\begin{center}
+\includegraphics{Tubular_neighborhood2}
+\end{center}
+
+An extension $j$ of this map to the entire normal bundle $N$ with values in $M$ such that $j(N)$ is an open set in $M$ and $j$ is a homeomorphism between $N$ and $j(N)$ is called a tubular neighbourhood.
+
+Often times one calls the open set $T = j(N)$, rather than $j$ itself, a tubular neighbourhood of $M'$, it is assumed implicitly that the homeomorphism $j$ mapping $N$ to $T$ exists.
+
+The following schematic illustration of the normal bundle $N$, with the zero section $N_0$ in blue. The transformation $j$ maps $N_0$ to the curve $M'$, and $N$ to the tubular neighborhood of $M'$.
+
+\begin{center}
+\includegraphics{Tubular_neighborhood3}
+\end{center}
+
+\begin{thebibliography}{2}
+\bibitem{rb} Raoul Bott \& Loring W. Tu {\it Differential forms in algebraic topology}. Berlin: Springer-Verlag. (1982)  
+\bibitem{wo} Waldyr Muniz Oliva {\it Geometric Mechanics}. Berlin: Springer. (1982)
+\end{thebibliography}
+
+{\it This entry was adapted from the Wikipedia article \PMlinkexternal{Tubular neighborhood}{http://en.wikipedia.org/wiki/Tubular_neighborhood} as of June 10, 2007.}
+
+\begin{center}
+\includegraphics{Tubular_neighborhood}
+\end{center}
+
+{\it These diagrams were created by Oleg Alexandrov and released to the public domain by him.}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PropertiesOfRiemannXiFunction}
+\pmcreated{2013-03-22 19:35:25}
+\pmmodified{2013-03-22 19:35:25}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{properties of Riemann xi function}
+\pmrecord{7}{42579}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11M06}
+\pmrelated{RobinsTheorem}
+\pmrelated{ExtraordinaryNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+The Riemann xi function, defined by 
+\begin{align*}
+\xi(s) \;:=\; \frac{s}{2}(s\!-\!1)\pi^{-\frac{s}{2}}\Gamma\!\left(\frac{s}{2}\right)\zeta(s),
+\end{align*}
+is an entire function having as zeros the nonreal zeros of the Riemann zeta function $\zeta$ and only them.
+
+The modulus of the xi function is strictly increasing along every horizontal half-line lying
+in any open right half-plane that contains no xi zeros.\, As well, the modulus decreases strictly along
+every horizontal half-line in any zero-free, open left half-plane.
+
+Taking into account the functional equation
+$$\xi(1\!-\!s) \;=\; \xi(s)$$
+it follows the reformulation of the Riemann hypothesis:\\
+
+\textbf{Theorem.}\, The following three statements are equivalent.
+
+(i). If $t$ is any fixed real number, then $|\xi(\sigma\!+\!it)|$ is increasing for\, $\frac{1}{2} < \sigma < \infty$.
+
+(ii). If $t$ is any fixed real number, then $|\xi(\sigma\!+\!it)|$ is decreasing for\, $-\infty < \sigma < \frac{1}{2}$.
+
+(iii). The Riemann hypothesis is true.
+
+\begin{thebibliography}{8}
+\bibitem{SD}{\sc Jonathan Sondow \& Christian Dumitrescu}: A monotonicity property Riemann's xi function and a reformulation of the Riemann Hypothesis. -- {\it Periodica Mathematica Hungarica} \textbf{60} (2010) 37--40.  Also available \PMlinkexternal{here}{http://arxiv.org/ftp/arxiv/papers/1005/1005.1104.pdf}.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SturdyNumber}
+\pmcreated{2013-03-22 19:08:07}
+\pmmodified{2013-03-22 19:08:07}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{sturdy number}
+\pmrecord{4}{42032}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A \emph{sturdy number} is a positive integer $n$ having a given binary weight (number of on bits, or instances of the digit 1 in its binary representation) such that no multiple $mn$ (with $m$ being any positive integer) has a lesser binary weight. For example, 10 is written 1010 in binary; it has two on bits; any multiple of 10 has at least two on bits.
+
+All powers of two corresponding to positive integer exponents are sturdy numbers, since its representation can only have one on bit (the one corresponding to the appropriate power of two), and multiplying by another power of two gives yet another power of two, while multiplying by any other integer gives a number with at least two on bits.
+
+Likewise we can verify that integers having two on bits are also sturdy numbers, since none of its multiples can be a power of two and therefore any multiple must also have at least two on bits.
+
+A125121 in Sloane's OEIS gives the following list of the first sixty-eight sturdy numbers: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 15, 16, 17, 18, 20, 21, 24, 28, 30, 31, 32, 33, 34, 35, 36, 40, 42, 45, 48, 49, 51, 56, 60, 62, 63, 64, 65, 66, 68, 69, 70, 72, 73, 75, 80, 84, 85, 89, 90, 93, 96, 98, 102, 105, 112, 120, 124, 126, 127, 128, 129, 130, 132, 133, 135, 136. However, these were computed with the assumption that it was only necessary to test up to $m = 14 \times 10^7$.
+%%%%%
+%%%%%
+\end{document}

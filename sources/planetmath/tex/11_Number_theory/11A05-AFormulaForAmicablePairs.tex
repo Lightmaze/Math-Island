@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AFormulaForAmicablePairs}
+\pmcreated{2013-03-22 15:52:45}
+\pmmodified{2013-03-22 15:52:45}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{a formula for amicable pairs}
+\pmrecord{6}{37876}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmrelated{ThabitNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem*{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+The following formula is due to Thabit ibn Qurra (836-901), a mathematician who worked in Baghdad's ``House of Wisdom'' translating Greek and Syrian works (such as Apollonius's ``Conics'' or works of Euclid and Archimedes). As he translated the texts, ibn Qurra produced a mathematical body of his own.
+
+\begin{thm}
+Let $n\geq 1$ be a natural number and suppose that the numbers 
+$$3\cdot 2^n -1, \quad 3\cdot 2^{n-1}-1 \quad \text{ and } \quad 9\cdot 2^{2n-1}-1$$
+are all prime. Then the numbers:
+$$2^n(3\cdot 2^n-1)(3\cdot 2^{n-1}-1)\quad \text{ and } \quad 2^n(9\cdot 2^{2n-1}-1)$$
+are amicable numbers.
+\end{thm}
+
+\begin{exa}
+When $n=2$ one has:
+$$3\cdot 2^2 -1=11, \quad 3\cdot 2^{2-1}-1=5 \quad \text{ and } \quad 9\cdot 2^{4-1}-1=71$$
+which are all primes. Thus, the numbers:
+$$2^2(3\cdot 2^2-1)(3\cdot 2^{2-1}-1)=220\quad \text{ and } \quad 2^2(9\cdot 2^{4-1}-1)=284$$
+form an amicable pair. In fact, this is the smallest amicable pair. For $n=4$ one obtains the amicable pair $17296$ and $18416$.
+\end{exa}
+%%%%%
+%%%%%
+\end{document}

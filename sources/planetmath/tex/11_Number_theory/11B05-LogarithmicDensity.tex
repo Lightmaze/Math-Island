@@ -1,0 +1,116 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LogarithmicDensity}
+\pmcreated{2013-03-22 15:31:54}
+\pmmodified{2013-03-22 15:31:54}
+\pmowner{kompik}{10588}
+\pmmodifier{kompik}{10588}
+\pmtitle{logarithmic density}
+\pmrecord{6}{37421}
+\pmprivacy{1}
+\pmauthor{kompik}{10588}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B05}
+\pmrelated{InequalityOfLogarithmicAndAsymptoticDensity}
+\pmdefines{upper logarithmic density}
+\pmdefines{lower logarithmic density}
+
+\endmetadata
+
+% this is the default PlanetMath preamble. as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+\usepackage{bbm}
+\newcommand{\Z}{\mathbbmss{Z}}
+\newcommand{\C}{\mathbbmss{C}}
+\newcommand{\R}{\mathbbmss{R}}
+\newcommand{\Q}{\mathbbmss{Q}}
+\newcommand{\N}[0]{\mathbb{N}}
+
+\newcommand*{\abs}[1]{| #1 |}
+
+\newcommand{\Map}[3]{#1:#2\to#3}
+\newcommand{\Emb}[3]{#1:#2\hookrightarrow#3}
+\newcommand{\Mor}[3]{#2\overset{#1}\to#3}
+
+\newcommand{\Cat}[1]{\mathcal{#1}}
+\newcommand{\Kat}[1]{\mathbf{#1}}
+\newcommand{\Func}[3]{\Map{#1}{\Cat{#2}}{\Cat{#3}}}
+\newcommand{\Funk}[3]{\Map{#1}{\Kat{#2}}{\Kat{#3}}}
+
+\newcommand{\vp}{\varphi}
+\newcommand{\ve}{\varepsilon}
+
+\newcommand{\Invimg}[2]{\inv{#1}(#2)}
+\newcommand{\Img}[2]{#1[#2]}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\limti}[1]{\lim\limits_{#1\to\infty}}
+\begin{document}
+For any $A\subseteq\N$ we denote $S(n):=\sum\limits_{k=1}^n \frac 1k$. The values
+$$\ol \delta(A)=\liminf_{n\to\infty} \frac{\sum\limits_{k\in A; k\leq n} \frac 1k}{S(n)} \qquad \ul \delta(A) = \limsup_{n\to\infty}
+\frac{\sum\limits_{k\in A; k\leq n} \frac 1k}{S(n)}$$ are called
+\emph{lower} and \emph{upper logarithmic density} of $A$. If
+$\ol\delta(A)=\ul\delta(A)$ we denote this value by $\delta(A)$
+and call it the \emph{logarithmic density} of $A$.
+
+Logarithmic density can be equivalently defined as follows: If the limit
+$$\delta(A)=\limti n \frac{\sum\limits_{k\in A; k\leq n} \frac 1k}{S(n)},$$
+exists, then it is called logarithmic density of $A$.
+
+By the well-known \PMlinkescapetext{formula} $\gamma = \limti n S(n) - \ln n$
+defining Euler's constant, we can see that the denominator in the
+above definitions can be replaced by $\ln n$.
+
+\begin{thebibliography}{1}
+
+\bibitem{kolibiar}
+M.~Kolibiar, A.~Leg\'e\v{n}, T.~\v{S}al\'at, and \v{S}. Zn\'am.
+\newblock {\em Algebra a pr\'\i buzn\'e discipl\'\i ny}.
+\newblock Alfa, Bratislava, 1992. (in Slovak)
+
+\bibitem{ostmann}
+H.~H. Ostmann.
+\newblock {\em Additive {Z}ahlentheorie {I}}.
+\newblock Springer-Verlag, Berlin-G\"ottingen-Heidelberg, 1956.
+
+\bibitem{steuding}
+J.~Steuding.
+\newblock \PMlinkexternal{Probabilistic number theory}{http://www.math.uni-frankfurt.de/~steuding/steuding/prob.pdf}.
+
+\bibitem{tenenbaum}
+G.~Tenenbaum.
+\newblock {\em {Introduction to analytic and probabilistic number theory}}.
+\newblock {Cambridge Univ. Press}, Cambridge, 1995.
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CorollaryOfKummersTheorem}
+\pmcreated{2013-03-22 13:23:07}
+\pmmodified{2013-03-22 13:23:07}
+\pmowner{Thomas Heye}{1234}
+\pmmodifier{Thomas Heye}{1234}
+\pmtitle{corollary of Kummer's theorem}
+\pmrecord{7}{33921}
+\pmprivacy{1}
+\pmauthor{Thomas Heye}{1234}
+\pmtype{Corollary}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+As shown in Kummer's theorem, the power of a prime number $p$ dividing
+$\binom{n}{m}, n \ge m \in \mathbb{N}$, was the total number of carries when
+adding $m$ and $n-m$ in base $p$. We'll give a recurrence relation for the carry
+indicator.
+
+Given integers $n \ge m \ge 0$ and a prime number $p$, let $n_i, m_i, r_i$ be
+the $i$-th digit of $n,m$, and $r:=n-m$, respectively.
+
+Define $c_{-1} =0$, and
+\begin{displaymath}
+c_i =\begin{cases}
+1 & \text{if $m_i +r_i \ge p$,}\\
+0 & \text{otherwise}
+\end{cases}
+\end{displaymath}
+for each $i\ge 0$ up to the number of digits of $n$.
+
+For each $i \ge 0$ we have
+\begin{displaymath}
+n_i =m_i +r_i +c_{i-1} -p.c_i.
+\end{displaymath}
+Starting with the $i$-th digit of $n$, we multiply with increasing powers of $p$
+to get
+\begin{displaymath}
+\sum_{k=i}^d n_kp^{k-i} =\left(\sum_{k=i}^d p^{k-i}(m_k +r_k)\right)
++\sum_{k=i}^d \left(p^{k-1-(i-1)}c_{k-1} -p^{k-(i-1)}c_k\right).
+\end{displaymath}
+The last sum in the above equation leaves only the values for indices $i$ and
+$d$, and we get
+\begin{equation}
+\label{L1}
+\left\lfloor \frac{n}{p^i}\right\rfloor =\left\lfloor \frac{m}{p^i}\right\rfloor
++\left\lfloor \frac{r}{p^i}\right\rfloor +c_{i-1}
+\end{equation}
+for all $i \ge 0$.
+%%%%%
+%%%%%
+\end{document}

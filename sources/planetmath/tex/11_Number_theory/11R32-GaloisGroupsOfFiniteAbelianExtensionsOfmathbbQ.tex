@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GaloisGroupsOfFiniteAbelianExtensionsOfmathbbQ}
+\pmcreated{2013-03-22 16:18:40}
+\pmmodified{2013-03-22 16:18:40}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{Galois groups of finite abelian extensions of $\mathbb{Q}$}
+\pmrecord{11}{38434}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R32}
+\pmclassification{msc}{11N13}
+\pmclassification{msc}{11R20}
+\pmclassification{msc}{12F10}
+\pmrelated{AbelianNumberField}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{order}
+
+\begin{thm*}
+Let $G$ be a finite abelian group with $|G|>1$.  Then there exist infinitely many number fields $K$ with $K/\mathbb{Q}$ Galois and $\operatorname{Gal}(K/\mathbb{Q}) \cong G$.
+\end{thm*}
+
+\begin{proof}
+This will first be proven for $G$ cyclic.
+
+Let $|G|=n$.  By Dirichlet's theorem on primes in arithmetic progressions, there exists a prime $p$ with $p \equiv 1 \operatorname{mod} n$.  Let $\zeta_p$ denote a \PMlinkescapetext{primitive} $p^{\text{th}}$ root of unity.  Let $L=\mathbb{Q}(\zeta_p)$.  Then $L/\mathbb{Q}$ is Galois with $\operatorname{Gal}(L/\mathbb{Q})$ cyclic of \PMlinkname{order}{OrderGroup} $p-1$.  Since $n$ divides $p-1$, there exists a subgroup $H$ of $\operatorname{Gal}(L/\mathbb{Q})$ such that $\displaystyle |H|=\frac{p-1}{n}$.  Since $\operatorname{Gal}(L/\mathbb{Q})$ is cyclic, it is abelian, and $H$ is a normal subgroup of $\operatorname{Gal}(L/\mathbb{Q})$.  Let $K=L^H$, the subfield of $L$ \PMlinkname{fixed}{FixedField} by $H$.  Then $K/\mathbb{Q}$ is Galois with $\operatorname{Gal}(K/\mathbb{Q})$ cyclic of order $n$.  Thus, $\operatorname{Gal}(K/\mathbb{Q}) \cong G$.
+
+Let $p$ and $q$ be distinct primes with $p \equiv 1 \operatorname{mod} n$ and $q \equiv 1 \operatorname{mod} n$.  Then there exist subfields $K_1$ and $K_2$ of $\mathbb{Q}(\zeta_p)$ and $\mathbb{Q}(\zeta_q)$, respectively, such that $\operatorname{Gal}(K_1/\mathbb{Q}) \cong G$ and $\operatorname{Gal}(K_2/\mathbb{Q}) \cong G$.  Note that $K_1 \cap K_2=\mathbb{Q}$ since $\mathbb{Q} \subseteq K_1 \cap K_2 \subseteq \mathbb{Q}(\zeta_p) \cap \mathbb{Q}(\zeta_q)=\mathbb{Q}$.  Thus, $K_1 \neq K_2$.  Therefore, for every prime $p$ with $p \equiv 1 \operatorname{mod} n$, there exists a distinct number field $K$ such that $K/\mathbb{Q}$ is Galois and $\operatorname{Gal}(K/\mathbb{Q}) \cong G$.  The theorem in the cyclic case follows from using the full \PMlinkescapetext{force} of Dirichlet's theorem on primes in arithmetic progressions:  There exist infinitely many primes $p$ with $p \equiv 1 \operatorname{mod} n$.
+
+The general case follows immediately from the above \PMlinkescapetext{argument}, the \PMlinkname{fundamental theorem of finite abelian groups}{FundamentalTheoremOfFinitelyGeneratedAbelianGroups}, and a theorem regarding the Galois group of the compositum of two Galois extensions.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KummersLemma}
+\pmcreated{2013-03-22 15:55:21}
+\pmmodified{2013-03-22 15:55:21}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Kummer's lemma}
+\pmrecord{6}{37929}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11F80}
+\pmclassification{msc}{14H52}
+\pmclassification{msc}{11D41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+The following result is a key ingredient in the proof of Fermat's last theorem for regular primes. More concretely, the lemma is needed to show the so-called second case of Fermat, i.e. $x^p+y^p=z^p$ does not have any non-trivial solutions in $\Ints$ with $p>2$ a regular prime and $p|xyz$. It is due to Ernst Kummer, thus the name.
+
+\begin{thm}[Kummer's Lemma]
+Let $p>2$ be a prime, let $\zeta_p$ be a primitive $p$th root of unity and let $K=\Rats(\zeta_p)$ be the corresponding cyclotomic field. Let $E$ be the group of algebraic units of the ring of integers $\mathcal{O}_K$. Suppose that $p$ is a regular prime. If a unit $\epsilon\in E$ is congruent modulo $p$ to a rational integer, then $\epsilon$ is the $p$th power of another unit also $E$.
+\end{thm}
+
+For a proof, see \cite{wash}, Theorem 5.36. The reader may also be interested in generalizations due to \cite{wash2} and \cite{ozaki}.
+
+\begin{thebibliography}{Washington 1992}
+\bibitem[Ozaki 1997]{ozaki} Ozaki, M., {\em Kummer's lemma for $\Ints_p$-extensions over totally real number fields},  Acta Arith.  81  (1997),  no. 1, 37--44.
+
+\bibitem[Washington]{wash} Washington L. C., {\em Introduction to Cyclotomic
+Fields}, Second Edition, Springer-Verlag, New York.
+
+\bibitem[Washington 1992]{wash2} Washington, L. C., {\em Kummer's lemma for prime power cyclotomic fields},  J. Number Theory  40  (1992),  no. 2, 165--173.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

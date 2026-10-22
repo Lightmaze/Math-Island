@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AlgebraicNumbersAreCountable}
+\pmcreated{2013-03-22 15:13:47}
+\pmmodified{2013-03-22 15:13:47}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{algebraic numbers are countable}
+\pmrecord{14}{36999}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmclassification{msc}{03E10}
+\pmsynonym{algebraic numbers may be set in a sequence}{AlgebraicNumbersAreCountable}
+\pmrelated{HeightOfAnAlgebraicNumber2}
+\pmrelated{ProofOfTheExistenceOfTranscendentalNumbers}
+\pmrelated{A_nAreCountableSoIsA_1XXA_nIfA_1}
+\pmrelated{ExamplesOfCountableSets}
+\pmrelated{FieldOfAlgebraicNumbers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+\begin{thmplain}
+The set of (a) all algebraic numbers, (b) the real algebraic numbers is countable.
+\end{thmplain}
+
+{\em Proof.}\, Let's consider the algebraic equations
+\begin{align}
+                 P(x) \;=\; 0
+\end{align}
+where 
+     $$P(x) \;:=\; a_0x^n\!+\!a_1x^{n-1}\!+\!\ldots\!+\!a_{n-1}x\!+\!a_n$$
+is an \PMlinkname{irreducible}{IrreduciblePolynomial2} and primitive polynomial with integer coefficients $a_j$ and\, $a_0 > 0$.\, Each algebraic number \PMlinkescapetext{satisfies} exactly one such equation (see the minimal polynomial).\, For every integer\, $N = 2,\,3,\,4,\,\ldots$\, there exists a finite number of equations (1) such that
+     $$n\!+\!a_0\!+\!|a_1|\!+\ldots+\!|a_n| \;=\; N$$
+(e.g. if\, $N = 3$,\, then one has the equations\, $x\!-\!1 = 0$\, and\, 
+$x\!+\!1 = 0$) and thus only a finite set of algebraic numbers as the \PMlinkescapetext{roots} of these equations.\, These algebraic numbers may be ordered to a \PMlinkname{finite sequence}{OrderedTuplet} $S_N$ using a \PMlinkescapetext{fixed ordering} system, for example by the magnitude of the real part and the imaginary part.\, When one forms the concatenated sequence
+        $$S_2,\,S_3,\,S_4,\,\ldots$$
+it comprises all algebraic numbers in a countable setting, which defines a bijection from the set onto $\mathbb{Z}_+$.
+
+\begin{thebibliography}{9}
+\bibitem{EK}{\sc E. Kamke:} {\em Mengenlehre}.\, Sammlung G\"oschen: Band 999/999a.\, -- Walter de Gruyter \& Co., Berlin (1962).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

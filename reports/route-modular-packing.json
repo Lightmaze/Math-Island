@@ -1,0 +1,37 @@
+{
+  "found": true,
+  "hops": 1,
+  "meaning": "Shortest unweighted reading itinerary in the selected source graph, not a chain of implications. Reverse traversal explicitly marked.",
+  "steps": [
+    {
+      "source": {
+        "id": "pm:ModularForm",
+        "label": "modular form",
+        "label_zh": "模形式",
+        "domain": "数论与算术",
+        "kind": "concept",
+        "x": 2.29926712,
+        "y": -1.398075491,
+        "degree": 47,
+        "source_url": "https://github.com/planetmath/11_Number_theory/blob/master/11F11-ModularForm.tex",
+        "source_quality_issue_count": 0
+      },
+      "target": {
+        "id": "wikipedia:Sphere_packing",
+        "label": "Sphere packing",
+        "label_zh": "球堆积",
+        "domain": "几何与拓扑",
+        "kind": "problem",
+        "x": -0.978205475,
+        "y": 1.363867025,
+        "degree": 18,
+        "source_url": "https://en.wikipedia.org/wiki/Sphere_packing",
+        "source_quality_issue_count": 0
+      },
+      "relation": "literature_bridge",
+      "in_recorded_direction": true,
+      "evidence_url": "https://arxiv.org/abs/1603.04246",
+      "locator": "bridge:002"
+    }
+  ]
+}

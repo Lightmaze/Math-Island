@@ -1,0 +1,72 @@
+[
+  {
+    "canonical_name": "00IsPossibleAndHasAnAnswer",
+    "title": "0/0 is possible and has an answer",
+    "source_url": "https://github.com/planetmath/26_Real_functions/blob/master/26A24-00IsPossibleAndHasAnAnswer.tex",
+    "source_sha256": "9718b0e672e25c8cfddb20e63ffd7f194fd3ca23b20ade44eaa4a901298d9bb1",
+    "body": "\nSo, I am happy to tell you that I have solved 0/0 by means of utilizing set theory.\r\nSet Theory is a part of math dealing with sets of objects.\r\nWe all know that \r\n1*0=0\r\n2*0=0\r\n...\r\n30000*0=0\r\nSo that means that\r\nSince P(R) is the whole set of real numbers\r\nP(R)*0=0\r\nMeaning to say, 0 divided by 0 is R, or the entire set of real numbers.\r\nThat is my solution to this mysterious expression that was yet to be solved.\n"
+  },
+  {
+    "canonical_name": "MyFirstTest1",
+    "title": "My first Test",
+    "source_url": "https://github.com/planetmath/40_Sequences_series_summability/blob/master/40A05-MyFirstTest1.tex",
+    "source_sha256": "9ff80be09501e04010045a01204270fa8113868d250feb36d44e88fc9d8bf2cd",
+    "body": "\n\\documentclass{article}\n\\begin{document}\nThe solution to\n\\[\\sqrt{x} = 5\\]\nis\n\\[x=25.\\]\n"
+  },
+  {
+    "canonical_name": "PlanetMathFontSandbox",
+    "title": "PlanetMath font sandbox",
+    "source_url": "https://github.com/planetmath/00_General/blob/master/00A99-PlanetMathFontSandbox.tex",
+    "source_sha256": "b08018b84baa69c3d61c4270d9bf26a12fab7d0739f5200d0711276f84e1cfb9",
+    "body": "\nLet the definition of a failure, in the context of Riemann Hypothesis, be a non-root. Let $s_0$ be a non-root. Then $s = \\psi (s_0) = s_0 + k\\times\\\\psi(s_0))$ is a failure function since $\\zeta(\\Psi(s_0)$ generates infinitely many failures. Here k belongs to $\\mathbb{N}.$\n\nProof: There is no loss of generality in takining $k = 1$. By Taylor's theorem $\\zeta(s_0 + \\zeta(s_0)) = e^{\\zeta(s_0)} - 1$ since, by asumption, $\\zeta(s_0)$ is not equal to $0$.\n\n\nPoli\\~nac's formula is $$\\prod_{i = 1}^{\\pi(n)} {p_i}^{\\displaystyle \\sum_{j = 1}^{\\log_{p_i} n} \\lfloor \\frac{n}{{p_i}^j} \\rfloor},$$\n\nIch ziemlich mu\\ss{} hab eine Wiener Str\\\"udel!\n\n``God made the integers, and all the rest is the work of man.''\\\\\n\\rightline{ --- Leopold Kronecker}\n\n``A mathematician is a device for turning coffee into theorems.''\\\\\n\\rightline{ --- Pal Erd\\H{o}s}\n\n``Mathematics possesses not only truth, but supreme beauty --- a beauty cold and austere, like that of sculpture.''\\\\\n\\rightline{ --- Bertrand Russell}\n\n``Mathematics may be defined as the subject in which we never know what we are talking about, nor whether what we are saying is true.''\\\\\n\\rightline{ --- Bertrand Russell}\n\n``As far as the laws of mathematics refer to reality, they are not certain, and as far as they are certain, they do not refer to reality.''\\\\\n\\rightline{ --- Albert Einstein}\n\n``I had a feeling once about Mathematics, that I saw it all --- Depth beyond depth was revealed to me --- the Byss and Abyss. I saw, as one might see the transit of Venus or even the Lord Mayor's Show, a quantity passing through infinity and changing its sign from plus to minus. I saw exactly why it happened and why the tergiversation was inevitable: and how the one step involved all the others. It was like politics. But it was after dinner and I let it go!''\\\\\n\\rightline{ --- Winston Churchill}\n\n``Math, my dear boy, is nothing more than the lesbian sister of biology.''\\\\\n\\rightline{ --- Peter Griffin, {\\it Family Guy}, ``When You Wish Upon A Weinstein''}\n\n``How about we fire up the old Segway and find a nice quiet field to do long division in? I mean, a nice quiet field {\\em in which to} do long division. Sorry, sorry, everybody.''\\\\\n\\rightline{ --- Neil Goldman, {\\it Family Guy}, ``8 Simple Rules for Buying My Teenage Daughter''}\n\nConsider $\\sqrt{1+\\sqrt{1+\\sqrt{1+\\sqrt{1+\\sqrt{1+\\ldots}}}}}$, etc., in \\TeX{} as \\verb'$\\sqrt{1+\\sqrt{1+\\sqrt{1+\\sqrt{1+\\sqrt{1+\\ldots}}}}}$'.\n\nIn \\TeX{} and \\LaTeX{} we may write $3^{4/7}$ or $3^{4 \\div 7}$ or preferably, $3^{\\frac{4}{7}}$.\n\nStanley Skewes in 1933 gave the lower bound $e^{e^{e^{79}}}$, approximately $10^{{10}^{{10}^{34}}}$.\n\nWolfgang Berg moved to the States in 1934, and Wac\\l{}aw Sierpi\\'nski followed in 1938.\n\n$\\mathbb{A} \\mathbb{B} \\mathbb{C} \\mathbb{D} \\mathbb{E} \\mathbb{F} \\mathbb{G} \\mathbb{H} \\mathbb{I} \\mathbb{J} \\mathbb{K} \\mathbb{L} \\mathbb{M} \\mathbb{N} \\mathbb{O} \\mathbb{P} \\mathbb{Q} \\mathbb{R} \\mathbb{S} \\mathbb{T} \\mathbb{U} \\mathbb{V} \\mathbb{W} \\mathbb{X} \\mathbb{Y} \\mathbb{Z}$\n\n$(1 + i)(1 - i)$ or $(1 + \\mathbb{i})(1 - \\mathbb{i})$\n\nStanis\\l{}aw Ha\\v{c}ek on the properties of $\\hat{x}\\bar{y}$\n\nStanis{\\l}aw Ha\\v{c}ek on the properties of $\\hat{x}\\bar{y}$\n\n{\\O}ystein Ore or \\O{}ystein Ore\n\n$3 * 4$, $f * g$, $f \\ast g$\n\n$\\sqrt[3]{27} = 3$\n\n\n\\begin{flushleft}\n\\texttt{\n(defun factorial) (n) \\\\\n\\ \\ \\ (cond ((= n 0) 1) \\\\\n\\ \\ \\ \\ \\ \\ \\ \\ \\ (t (* n (factorial (- n 1))))))}\n\\end{flushleft}\n\n% from a post by Algeboy\n$a \\not\\vert b$ or $a\\nmid b$\n\nbrocard's CONJECTURE and subAnalytic set\n\n\\begin{flushleft}\n\\texttt{\n\\#include <planetMath.h> \\\\\nwhile flag == True \\{ \\\\\n\\quad value = oper1 \\% oper2; \\\\\n\\quad counter++; \\\\\n\\}}\n\\end{flushleft}\n\n\\begin{verbatim}\nwhile flag == True {\n  value = oper1 % oper2;\n  counter++;\n}\n\\end{verbatim}\n\n$\\gcd(25,50)$\n\n or \n\n% $\\GCD(25,50)$ uppercase is wrong\n\nAlso, $$\\sum_{i = 0}^4 {8 \\choose i} = 163.$$\n%%%%%\n%%%%%\n"
+  },
+  {
+    "canonical_name": "PlanetMathGraphicsSandbox",
+    "title": "PlanetMath graphics sandbox",
+    "source_url": "https://github.com/planetmath/51_Geometry/blob/master/51-00-PlanetMathGraphicsSandbox.tex",
+    "source_sha256": "ea179276415e82b9137089bb7187363e1e367e2194b371c83721c5630bb9a7dd",
+    "body": "\n$$\n\\xymatrix{\n1 & 2 \\ar@{-}[d] & 3 \\ar@{-}[r] \\ar@{-}[d] \\ar@{-}[dr] & 4 & 5 \\ar@{-}[r] & 6 \\ar@{-}[d] \\\\\n& 7 & 8 & 9 & 10 \\ar@{-}[r] & 12\n}\n$$\n\nSome text, yada, yada, yada. $10\\spadesuit~A\\clubsuit~J\\heartsuit$\n% Then $x = y + 1$ holds.\n\nSilver rectangle with a horizontal line plopped down somewhere.\n\n\\begin{pspicture*}(-1,-1)(15.142135623730950488,11)\n\\psset{unit=0.5cm}\n\\pspolygon(0,0)(14.142135623730950488,0)(14.142135623730950488,10)(0,10)\n\\psline[linestyle=dotted](10,0)(10,10)\n\\psline[linestyle=dotted](0,5)(15,5)\n\\end{pspicture*}\n\nA Collatz tree of height 12.\n\\[\\xymatrix{\n96\\ar[d] & 17\\ar[dr] & 104\\ar[d] & 106\\ar[d] & 640\\ar[d] & 672\\ar[d] & 113\\ar[dr] & 680\\ar[d] & 682\\ar[d] & 4096\\ar[d] \\\\\n48\\ar[d] & & 52\\ar[d] & 53\\ar[dr] & 320\\ar[d] & 336\\ar[d] & & 340\\ar[d] & 341\\ar[dr] & 2048\\ar[d] \\\\\n24\\ar[d] & & 26\\ar[d] & & 160\\ar[d] & 168\\ar[d] & & 170\\ar[d] & & 1024\\ar[d] \\\\\n12\\ar[d] & & 13\\ar[drr] & & 80\\ar[d] & 84\\ar[d] & & 85\\ar[drr] & & 512\\ar[d] \\\\\n6\\ar[d] & & & & 40\\ar[d] & 42\\ar[d] & & & & 256\\ar[d] \\\\\n3\\ar[drrrr] & & & & 20\\ar[d] & 21\\ar[drrrr] & & & & 128\\ar[d] \\\\\n& & & & 10\\ar[d] & & & & & 64\\ar[d] \\\\\n& & & & 5\\ar[drrrrr] & & & & & 32\\ar[d] \\\\\n& & & & & & & & & 16\\ar[d] \\\\\n& & & & & & & & & 8\\ar[d] \\\\\n& & & & & & & & & 4\\ar[d] \\\\\n& & & & & & & & & 2\\ar[d] \\\\\n& & & & & & & & & 1\n}\\]\n\n\nSuppose $K$ and $J$ are both the trefoil knot.\n\nBy one choice of segment deletion and reattachment, $K\\#J$ is the quatrefoil knot.\n%\\quatrefoil source in quatrefoil.tex (also defined in header of this file)\n\\begin{center}\n\\begin{figure}[here]\n\\includegraphics{quatrefoil.epsi}\n\\caption{$K\\#J$ is the quatrefoil knot}\n\\end{figure}\n\\end{center}\n%%%%%\n%%%%%\n"
+  },
+  {
+    "canonical_name": "TestCollaboration12341",
+    "title": "test collaboration  1234",
+    "source_url": "https://github.com/planetmath/40_Sequences_series_summability/blob/master/40A05-TestCollaboration12341.tex",
+    "source_sha256": "599920a37ac6b581af154726ca540ff057762af1460c14dd01f758d28fbfd30a",
+    "body": "\n\\documentclass{article}\n\n\\begin{document}\n\ntest test\n\nsentence 2!\n\nsentence 3!\n\n"
+  },
+  {
+    "canonical_name": "TestNewcommandAndNestedLists",
+    "title": "test newcommand and nested lists",
+    "source_url": "https://github.com/planetmath/26_Real_functions/blob/master/26D99-TestNewcommandAndNestedLists.tex",
+    "source_sha256": "23ebc771932a492c2987d3c952a05aed4564bcc7fffa47ce9fe5ec5f60bb8683",
+    "body": "\n\\renewcommand{\\labelenumi}{\\Roman{enumi}.}\n\\renewcommand{\\labelenumii}{\\Roman{enumi}. \\alph{enumii}}\n\n\\noindent Here's my list:\n\n\\begin{enumerate}\n\\item Item 1.\n\\begin{enumerate}\n\\item List 2, Item 1\n\\item List 2, Item 2\n\\end{enumerate}\n\\item Item 2.\n\\item Item 3.\n\\end{enumerate}\n%%%%%\n%%%%%\n"
+  },
+  {
+    "canonical_name": "TopologicalGroupobsolete",
+    "title": "topological group (obsolete)",
+    "source_url": "https://github.com/planetmath/22_Topological_groups_Lie_groups/blob/master/22A05-TopologicalGroupobsolete.tex",
+    "source_sha256": "ce5deffb2a93a74cfd93c3758e2942739e1ad7e34bcd88aba068d90e3ccd2f50",
+    "body": "\n\\PMlinkescapeword{inverse}\n\\PMlinkescapeword{operation}\n\n{\\it This entry is obsolete, having been superseded by \\PMlinkname{a new entry}{TopologicalGroup2}. It is being retained for a short while because of the attached thread.}\n\nA \\emph{topological group} is a triple $(G,\\cdot,\\mathcal{T})$ where $(G,\\cdot)$ is a group and $\\mathcal{T}$ is a topology on $G$ such that under $\\mathcal{T}$, the group operation $(x,y)\\mapsto x\\cdot y$ is continuous with respect to the product topology on $G\\times G$ and the inverse map $x\\mapsto x^{-1}$ is continuous on $G$.\n\nMany authors require that the topology be Hausdorff.\n%%%%%\n%%%%%\n%%%%%\n"
+  },
+  {
+    "canonical_name": "DifferenceEquations1",
+    "title": "difference equations",
+    "source_url": "https://github.com/planetmath/40_Sequences_series_summability/blob/master/40A05-DifferenceEquations1.tex",
+    "source_sha256": "08e47808bf2154e4f333858af7072c124bfc6a7d71c054cceff4dcb708a23eb2",
+    "body": "\n\ndifference equations.\n%%%%%\n"
+  },
+  {
+    "canonical_name": "GeneralisationOfEulerFermatTheorem",
+    "title": "generalisation of Euler--Fermat theorem",
+    "source_url": "https://github.com/planetmath/20_Group_theory_and_generalizations/blob/master/20-01-GeneralisationOfEulerFermatTheorem.tex",
+    "source_sha256": "10e83f55dab4a7383a2db7c0d0a0a268703487ea1064c8011692de542e06bd2c",
+    "body": "\n\\\n\n%%%%%\n%%%%%\n"
+  },
+  {
+    "canonical_name": "QHoldingBay47",
+    "title": "Q holding bay 47",
+    "source_url": "https://github.com/planetmath/00_General/blob/master/00A99-QHoldingBay47.tex",
+    "source_sha256": "f4f845f2de800f868f563d785150ad66ff5620c6253755de7a7969e686a81d6f",
+    "body": "\nThe holding bay is now empty.\n%%%%%\n%%%%%\n"
+  }
+]

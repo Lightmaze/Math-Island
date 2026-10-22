@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UniquenessOfMoebiusFunction}
+\pmcreated{2013-03-22 14:17:25}
+\pmmodified{2013-03-22 14:17:25}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{uniqueness of Moebius function}
+\pmrecord{6}{35745}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\newcommand{\Nstar}{\mathbb{N}^{*}}
+\begin{document}
+\PMlinkescapeword{proposition} \PMlinkescapeword{clearly}
+\PMlinkescapeword{fix} \PMlinkescapeword{connection}
+
+Here is a sample result for the function, essentially classifying its uniqueness :
+
+\noindent
+\textbf{Proposition 1:} $\mu$ is the unique mapping $\Nstar\to\Z$ such that
+\begin{eqnarray}
+\mu(1)&=&1 \\
+\sum_{d|n}\mu(d)&=&0\textrm{ for all }n>1
+\end{eqnarray}
+
+\noindent
+\textbf{Proof:} By induction, there can only be one function with these
+properties. $\mu$ clearly satisfies (1), so take some $n>1$. Let $p$ be
+some prime factor of $n$, and let $m$ be the product of all the prime
+factors of $n$.
+\begin{eqnarray*}
+\sum_{d|n}\mu(d)&=&\sum_{d|m}\mu(d) \\
+&=&\sum_{\substack{d|m\\p\nmid d}}\mu(d) +\sum_{\substack{d|m\\p\mid d}}\mu(d) \\
+&=&\sum_{d|m/p}\mu(d)-\sum_{d|m/p}\mu(d) \\
+&=&0
+\end{eqnarray*}
+%%%%%
+%%%%%
+\end{document}

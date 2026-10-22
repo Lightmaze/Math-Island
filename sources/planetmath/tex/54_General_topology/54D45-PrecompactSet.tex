@@ -1,0 +1,104 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrecompactSet}
+\pmcreated{2013-03-22 14:39:59}
+\pmmodified{2013-03-22 14:39:59}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{precompact set}
+\pmrecord{12}{36264}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D45}
+\pmsynonym{precompact}{PrecompactSet}
+\pmsynonym{relatively compact}{PrecompactSet}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{defn} A subset in a topological space is 
+\emph{precompact} if its closure is compact \cite{lee}.
+\end{defn}
+
+For metric spaces, we have the following theorem due to Hausdorff
+\cite{cristescu}.
+
+{\bf Theorem} Suppose $K$ is a set in a complete metric space $X$.
+Then $K$ relatively compact if and only if for any $\varepsilon>0$
+there is a finite \PMlinkname{$\varepsilon$-net}{VarepsilonNet} for $K$.
+
+\subsubsection*{Examples}
+\begin{enumerate}
+\item In $\sR^n$ every point has a precompact neighborhood.
+\item On a manifold, every point has a precompact neighborhood. 
+This follows from the previous example, since a homeomorphism 
+commutes with the closure operator, and since the continuous image
+of a compact set is compact. 
+\end{enumerate}
+
+\subsubsection*{Notes}
+A synonym is \emph{relatively compact} \cite{cristescu, kreyszig}.
+
+Some authors (notably Bourbaki see \cite{bour}) use precompact differently -  as a synonym for \PMlinkname{totally bounded}{TotallyBounded} (in the generality of topological groups). ``Relatively compact'' is then used to mean ``precompact ''as it is defined here
+\begin{thebibliography}{9}
+\bibitem{lee} J.M. Lee, \emph{Introduction to Smooth Manifolds},
+Graduate Texts in Mathematics series, 218,
+Springer-Verlag, 2002.
+\bibitem{cristescu} R. Cristescu, \emph{Topological vector spaces},
+Noordhoff International Publishing, 1977.
+\bibitem{kreyszig} E. Kreyszig,
+\emph{Introductory Functional Analysis With Applications},
+John Wiley \& Sons, 1978.
+\bibitem{bour} N. Bourbaki, \emph{Topological Vector Spaces} Springer-Verlag, 1981
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

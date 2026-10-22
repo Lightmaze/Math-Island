@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EquivalentFormulationOfTheTubeLemma}
+\pmcreated{2013-03-22 19:15:18}
+\pmmodified{2013-03-22 19:15:18}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{equivalent formulation of the tube lemma}
+\pmrecord{4}{42181}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D30}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let us recall the thesis of the tube lemma. Assume, that $X$ and $Y$ are topological spaces.
+
+\textbf{(TL)} If $U\subseteq X\times Y$ is open (in product topology) and if $x\in X$ is such that $x\times Y\subseteq U$, then there exists an open neighbourhood $V\subseteq X$ of $x$ such that $V\times Y\subseteq U$.
+
+We wish to give a relation between (TL) and the the following thesis, concering closed projections:
+
+\textbf{(CP)} The projection $\pi:X\times Y\to X$ given by $\pi(x,y)=x$ is a closed map.
+
+The following theorem relates these two statements:
+
+\textbf{Theorem.} (TL) is equivalent to (CP).
+
+\textit{Proof.} ,,$\Rightarrow$'' Let $F\subseteq X\times Y$ be a closed set and let $U=(X\times Y)\backslash F$ be its open complement. We will show, that $\pi(F)$ is closed, by showing that $V=X\backslash\pi(F)$ is open. So assume, that $x\in V$. Obviously 
+$$\big(\pi^{-1}(x)=x\times Y\big)\cap F=\emptyset.$$
+Therefore $x\times Y\subseteq U$ and by (TL) there exists open neighbourhood $V'\subseteq X$ of $x$ such that $V'\times Y\subseteq U$. It easily follows, that $V'\subseteq V$ and it is open, so (since $x$ was chosen arbitrary) $V$ is open.
+
+,,$\Leftarrow$'' Let $U\subseteq X\times Y$ be an open subset such that $x\times Y\subseteq U$ for some $x\in X$. Let $F=(X\times Y)\backslash U$. Then $F$ is closed and by (CP) we have that $\pi(F)\subseteq X$ is closed. Also $x\not\in\pi(F)$ and thus $V=X\backslash\pi(F)$ is an open neighbourhood of $x$. It can be easily checked, that $V\times Y\subseteq U$, which completes the proof. $\square$
+
+\textbf{Remark.} The theorem doesn't state that any of statements is true. It is well known (see tha parent object), that if both $X$ and $Y$ are Hausdorff with $Y$ compact, then both are true. On the other hand, for example for $X=Y=\mathbb{R}$, where $\mathbb{R}$ denotes reals with standard topology, they are both false. For example consider 
+$$F=\{(x,y)\in\mathbb{R}^2\ |\ xy=1\}.$$
+Of course $F$ is closed, but $\pi(F)=\mathbb{R}\backslash\{0\}$ is not closed, so the (CP) is false.
+%%%%%
+%%%%%
+\end{document}

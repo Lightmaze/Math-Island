@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CarmichaelFunction}
+\pmcreated{2013-03-22 17:13:47}
+\pmmodified{2013-03-22 17:13:47}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Carmichael function}
+\pmrecord{6}{39557}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmsynonym{least universal exponent function}{CarmichaelFunction}
+\pmsynonym{reduced totient function}{CarmichaelFunction}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The value of the {\em Carmichael function} (or {\em universal exponent function} or {\em reduced totient function}) $\psi(n)$ (or $\lambda(n)$) for a given positive integer $n$ is the smallest exponent $m$ such that for any $k$ coprime to $n$ the congruence $k^m \equiv 1 \mod n$ is always true.
+
+When $n$ is a prime or a square of a prime, the equality $\psi(n) = \phi(n)$ holds (where $\phi(n)$ is Euler's totient function).
+
+For powers of 2 greater than 4, $$\psi(2^a) = \frac{\phi(2^a)}{2}$$ (with $a > 2$).
+
+For all other positive integers the value of Carmichael's function is the least common multiple of all the dividing primes raised to the appropriate powers (e.g., to calculate $\psi(504)$ we'd reckon $\psi(2^3)$, $\psi(3^2)$ and $\psi(7)$ and find the LCM of these).
+
+Sequence A002322 in Sloane's OEIS gives values of $\psi(n)$ for $0 < n < 82$.
+
+So, for example, $\psi(16) = 4$. This means that any odd number raised to the fourth power is one more than a multiple of 16. If we take a few small odd numbers in order and raise them to the fourth power, we get the sequence 1, 81, 625, 2401, 6561, 14641, 28561, 50625, 83521, 130321, 194481. Subtracting 1 from each of these and dividing by 16 we get the integers 0, 5, 39, 150, 410, 915, 1785, 3164, 5220, 8145, 12155.
+
+Of course from Fermat's little theorem we can deduce that $\phi(n)$ will give us an exponent to which we can raise any number coprime to $n$ and get a number satisfying the congruence. $\psi(n)$ often gives us a smaller exponent than $\phi(n)$ for composite $n$ that are not squares of primes. Among the first thousand positive integers, this is true 86\% of the time. Sequence A104194 gives $\phi(n) - \psi(n)$ for $0 < n < 91$; it has many instances of 0.
+
+In Sloane and Plouffe's book {\it The Encyclopedia of Integer Sequences} the authors use the Greek letter $\psi$ for this function, the OEIS follows this custom but acknowledges the widespread use of $\lambda$. In Mathematica, the function is a built-in function, \verb=CarmichaelLambda[n]=, so naturally Mathworld also uses $\lambda$, and so does Wikipedia.
+
+\begin{thebibliography}{3}
+\bibitem{gp} G. P. Lowecke, {\it The Lore of Prime Numbers}. New York: Vantage Press (1982): 81 - 82
+\bibitem{hg} H. Griffin, {\it Elementary Theory of Numbers}. New York: McGraw-Hill (1954): 50
+\bibitem{ns} N. Sloane \& S. Plouffe {\it The Encyclopedia of Integer Sequences} New York: Academic Press (1995): N0110
+\bibitem{iv} I. Vardi, {\it Computational Recreations in Mathematica}. Redwood City: Addison-Wesley (1991): 226 
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

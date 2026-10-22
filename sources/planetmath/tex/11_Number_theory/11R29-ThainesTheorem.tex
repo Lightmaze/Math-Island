@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ThainesTheorem}
+\pmcreated{2013-03-22 14:12:34}
+\pmmodified{2013-03-22 14:12:34}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Thaine's theorem}
+\pmrecord{6}{35643}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R29}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{theorem}{Theorem}
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Let $F/\Q$ be a totally real abelian number field.  By the Kronecker-Weber theorem, there exists an $m$ such that $F\subset \Q(\zeta_m)$. Let $G$ be the Galois group of the extension $F/Q$.  Let $\mc{O}_F^\times$ denote the group of units in the ring of integers of $F$, let $C$ be the subgroup of $\mc{O}_F^\times$ consisting of units $\eta$ of the form 
+\begin{align*}
+\eta=\pm N_{\Q(\zeta_m)/F}\left(\prod_{a\in(\Z/m\Z)^\times}(\zeta_m^a-1)^{b_a}\right)
+\end{align*}
+for some collection of $b_a\in\Z$.  (Here, $N$ denotes the norm operator and $\zeta_m$ is a primitive $m$-th root of unity.)  Finally, let $A$ denote the ideal class group of $F$.
+
+\begin{theorem}[Thaine]
+Suppose $p$ is a rational prime not dividing the degree $[F:\Q]$ and suppose $\theta\in\Z[G]$ annihilates the Sylow $p$-subgroup of $E/C'$.  Then $2\theta$ annihilates the Sylow $p$-subgroup of $A$.
+\end{theorem}
+
+This is one of the most sophisticated results concerning the annihilators of an ideal class group.  It is a direct, but more complicated, version of Stickelberger's theorem, applied to totally real fields (for which Stickelberger's theorem gives no information).
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MixedFraction}
+\pmcreated{2013-03-22 19:18:57}
+\pmmodified{2013-03-22 19:18:57}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{mixed fraction}
+\pmrecord{9}{42253}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-01}
+\pmsynonym{mixed number}{MixedFraction}
+\pmrelated{RationalNumber}
+\pmrelated{LongDivision}
+\pmrelated{EuclideanNumberField}
+\pmrelated{PartialFractionsOfExpressions}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+Any improper fraction $\frac{a}{b}$ can be uniquely written as a sum of an integer $q$ and a proper fraction $\frac{r}{b}$:
+\begin{align}
+\frac{a}{b} \;=\; q\!+\!\frac{r}{b}
+\end{align}
+The decomposition (1) is guaranteed by the division algorithm for integers.\, The sum form is called \emph{mixed fraction} or \emph{mixed number}.\\
+
+For explicitly given integers $q$, $r$, $b$, the mixed fraction is usually written without the plus sign, for example
+$$\frac{9}{2} \;=\; 4\frac{1}{2}.$$
+
+Given an improper fraction of the positive integers $a$ and $b$, their division gives the incomplete quotient $q$ and the remainder $r$; then the mixed fraction can be gotten by (1).\\
+
+On the other hand, if one wants to convert e.g. $8\frac{11}{15}$ into an improper fraction, one needs first to convert the integer part 8 into fifteenths, obtaining
+$$8 \;=\; \frac{8\!\cdot\!15}{15} \;=\; \frac{120}{15},$$
+this fraction is added to the ready fifteenths $\frac{11}{15}$; the total amount of fifteenths is $\frac{131}{15}$; thus one has
+$$8\frac{11}{15} \;=\; \frac{131}{15}.$$\\
+
+\textbf{Note.}\, A minus sign in front of a mixed fraction belongs not only for the integer part but also for the fractional part, i.e. for example\, $-2\frac{1}{4} \,=\, -2\!-\!\frac{1}{4}$.\\
+
+The rational expressions, i.e. denoted quotients of polynomials, have \PMlinkescapetext{presentation forms} analogous to mixed fractions.\, E.g., if the degree of the polynomial $A(x)$ is at least equal to the degree of $B(x)$, we have
+\begin{align}
+\frac{A(x)}{B(x)} \;=\; Q(x)\!+\!\frac{R(x)}{B(x)}.
+\end{align}
+Here the degree of the remainder polynomial $R(x)$ is less than the degree of the numerator polynomial $B(x)$, an arithmetic fact that has been well documented for over 4,000 years. Fibonacci in the Liber Abaci used mixed fraction arithmetic in 1202 AD. Archimedes Calculus included mixed fractions to record the area of a parabola. Egyptian scribes in 1650 BCE also used this class of mixed fraction arithmetic. One scribe, Ahmes scaled a volume unit in multiples of 64 so that a quotient recorded 1/64 units and a remainder recorded 1/320 units. 
+
+%%%%%
+%%%%%
+\end{document}

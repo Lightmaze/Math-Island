@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CorollaryOfBezoutsLemma}
+\pmcreated{2013-03-22 14:48:16}
+\pmmodified{2013-03-22 14:48:16}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{corollary of B\'ezout's lemma}
+\pmrecord{15}{36459}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmsynonym{Euclid's lemma}{CorollaryOfBezoutsLemma}
+\pmsynonym{product divisible but factor coprime}{CorollaryOfBezoutsLemma}
+%\pmkeywords{divisibility}
+\pmrelated{GreatestCommonDivisor}
+\pmrelated{DivisibilityInRings}
+\pmrelated{DivisibilityByProduct}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need
+
+% define commands here
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+\begin{thmplain}
+\;If \,$\gcd(a,\,c) = 1$\, and \,$c|ab$, \,then \,$c|b$.
+\end{thmplain}
+{\em Proof.} \,\PMlinkname{B\'ezout's lemma}{BezoutsLemma} gives the integers $x$ and $y$ such that 
+\,$xa+yc = 1$. \,This implies that \,$xab+ybc = b$, \,and because here the both summands are divisible by $c$, so also the sum, i.e. $b$, is divisible by $c$ .
+
+\textbf{Note.} \,A similar theorem holds in all \PMlinkname{B\'ezout domains}{BezoutDomain}, also in {\em B\'ezout rings}.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KummersTheorem}
+\pmcreated{2013-03-22 13:22:37}
+\pmmodified{2013-03-22 13:22:37}
+\pmowner{Thomas Heye}{1234}
+\pmmodifier{Thomas Heye}{1234}
+\pmtitle{Kummer's theorem}
+\pmrecord{14}{33909}
+\pmprivacy{1}
+\pmauthor{Thomas Heye}{1234}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Given integers $n \ge m \ge 0$ and a prime number $p$, then the power of $p$
+dividing $\binom{n}{m}$ is equal to the number of carries when adding $m$ and
+$n -m$ in base $p$.
+\begin{proof}
+For the proof we can allow \PMlinkescapeword{representations} of numbers in base $p$ with leading
+zeros. So let
+\begin{eqnarray*}
+n_dn_{d-1}\cdots n_0 & := n, \\
+m_dm_{d-1}\cdots m_0 & := m,
+\end{eqnarray*}
+all in base $p$. We set $r=n-m$ and denote the $p$-adic representation of $r$
+with $r_dr_{d-1}\cdots r_0$.
+
+We define $c_{-1} =0$, and for each $0 \le j \le d$
+\begin{equation}
+c_j =\begin{cases}
+1 & \text{for $m_j +r_j \ge p$} \\
+0 &\text{otherwise.}
+\end{cases}
+\end{equation}
+
+Finally, we introduce $\delta_p(n)$ as the sum of digits in the $p$-adic
+\PMlinkescapeword{representation} of $n$. Then it follows that the power of $p$ dividing $\binom{n}{m}$ is
+\[\frac{\delta_p(m) +\delta_p(r) -\delta_p(n)}{p-1}.\]
+For each $j \ge 0$, we have
+\[n_j =m_j +r_j +c_{j-1} -p.c_j.\]
+Then
+\begin{eqnarray*}
+\delta_p(m) +\delta_p(r) -\delta_p(n) &=\sum_{k=0}^d \left(m_k +r_k -n_k\right)
+\\
+&=\sum_{k=0}^d \left((p-1)c_j\right)
+&+\sum_{k=0}^d \left(c_j
+-c_{j-1}\right) \\
+&=\sum_{k=0}^d (p-1)c_j&+c_d -c_{-1}
+\end{eqnarray*}
+This gives us
+\[\frac{\delta_p(m) +\delta_p(r) -\delta_p(n)}{p-1} =\sum_{k=0}^d c_k,\]
+the total number of carries.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

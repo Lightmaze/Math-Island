@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LandsbergSchaarRelation}
+\pmcreated{2013-03-22 13:23:20}
+\pmmodified{2013-03-22 13:23:20}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Landsberg-Schaar relation}
+\pmrecord{8}{33926}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11L05}
+\pmsynonym{Schaar's identity}{LandsbergSchaarRelation}
+\pmrelated{RiemannThetaFunction}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+\PMlinkescapeword{series} \PMlinkescapeword{integrals}
+\PMlinkescapeword{one way} \PMlinkescapeword{functions}
+\PMlinkescapeword{arithmetic} \PMlinkescapeword{theory}
+\PMlinkescapeword{identity} \PMlinkescapeword{formula}
+\PMlinkescapeword{states}
+The Landsberg-Schaar relation states that for any positive integers $p$
+and $q$: \begin{equation}
+\frac{1}{\sqrt{p}}\sum_{n=0}^{p-1}\exp\left(\frac{2\pi in^2q}{p}\right)=
+\frac{e^{\pi i/4}}{\sqrt{2q}}\sum_{n=0}^{2q-1}\exp\left(-\frac{\pi in^2p}{2q}\right)
+\end{equation}
+Although both sides of (1) are mere finite sums,
+no one has yet found a proof which uses no infinite
+limiting process. One way to prove it is to put
+$\tau=2iq/p+\epsilon$, where $\epsilon>0$, in
+this identity due to Jacobi:
+\begin{equation}
+\sum_{n=-\infty}^{+\infty}e^{-\pi n^2\tau}=\frac{1}{\sqrt{\tau}}
+\sum_{n=-\infty}^{+\infty}e^{-\pi n^2/\tau}
+\end{equation}
+\noindent
+and let $\epsilon\to 0$. The details can be found \PMlinkname{here}{ProofOfJacobisIdentityForVarthetaFunctions}. The identity (2) is a basic one in the theory of
+theta functions. It is sometimes called the functional equation for the Riemann theta function. See e.g. [2 VII.6.2].
+
+If we just let $q=1$ in the Landsberg-Schaar identity, it reduces to a formula
+for the quadratic Gauss sum mod $p$; notice that $p$ need not be prime.
+
+\textbf{References:}
+
+\noindent
+[1] H. Dym and H.P. McKean. \emph{Fourier Series and Integrals}. Academic Press, 1972.
+
+\noindent
+[2] J.-P. Serre. \emph{A Course in Arithmetic}. Springer, 1970.
+%%%%%
+%%%%%
+\end{document}

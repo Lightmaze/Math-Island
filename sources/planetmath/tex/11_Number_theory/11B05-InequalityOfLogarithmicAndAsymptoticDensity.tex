@@ -1,0 +1,241 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{InequalityOfLogarithmicAndAsymptoticDensity}
+\pmcreated{2014-03-24 9:16:11}
+\pmmodified{2014-03-24 9:16:11}
+\pmowner{kompik}{10588}
+\pmmodifier{kompik}{10588}
+\pmtitle{inequality of logarithmic and asymptotic density}
+\pmrecord{8}{37424}
+\pmprivacy{1}
+\pmauthor{kompik}{10588}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B05}
+\pmrelated{AsymptoticDensity}
+\pmrelated{LogarithmicDensity}
+
+\endmetadata
+
+% this is the default PlanetMath preamble. as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+\newcommand{\N}[0]{\mathbb{N}}
+
+\usepackage{bbm}
+\newcommand{\Z}{\mathbbmss{Z}}
+\newcommand{\C}{\mathbbmss{C}}
+\newcommand{\R}{\mathbbmss{R}}
+\newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+\newcommand{\Map}[3]{#1:#2\to#3}
+\newcommand{\Emb}[3]{#1:#2\hookrightarrow#3}
+\newcommand{\Mor}[3]{#2\overset{#1}\to#3}
+
+\newcommand{\Cat}[1]{\mathcal{#1}}
+\newcommand{\Kat}[1]{\mathbf{#1}}
+\newcommand{\Func}[3]{\Map{#1}{\Cat{#2}}{\Cat{#3}}}
+\newcommand{\Funk}[3]{\Map{#1}{\Kat{#2}}{\Kat{#3}}}
+
+\newcommand{\vp}{\varphi}
+\newcommand{\ve}{\varepsilon}
+
+\newcommand{\Invimg}[2]{\inv{#1}(#2)}
+\newcommand{\Img}[2]{#1[#2]}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\limti}[1]{\lim\limits_{#1\to\infty}}
+
+%fonts
+\newcommand{\mc}{\mathcal}
+
+%shortcuts
+\newcommand{\Ob}{\mathrm{Ob}}
+\newcommand{\Hom}{\mathrm{hom}}
+\newcommand{\homs}[2]{\mathrm{hom(}{#1},{#2}\mathrm )}
+\newcommand{\Eq}{\mathrm{Eq}}
+\newcommand{\Coeq}{\mathrm{Coeq}}
+
+%theorems
+\newtheorem{THM}{Theorem}
+\newtheorem{DEF}{Definition}
+\newtheorem{PROP}{Proposition}
+\newtheorem{LM}{Lemma}
+\newtheorem{COR}{Corollary}
+\newtheorem{EXA}{Example}
+
+%categories
+\newcommand{\Top}{\Kat{Top}}
+\newcommand{\Haus}{\Kat{Haus}}
+\newcommand{\Set}{\Kat{Set}}
+
+%diagrams
+\newcommand{\UnimorCD}[6]{
+\xymatrix{ {#1} \ar[r]^{#2} \ar[rd]_{#4}& {#3} \ar@{-->}[d]^{#5} \\
+& {#6} } }
+
+\newcommand{\RovnostrCD}[6]{
+\xymatrix@C=10pt@R=17pt{
+& {#1} \ar[ld]_{#2} \ar[rd]^{#3} \\
+{#4} \ar[rr]_{#5} && {#6} } }
+
+\newcommand{\RovnostrCDii}[6]{
+\xymatrix@C=10pt@R=17pt{
+{#1} \ar[rr]^{#2} \ar[rd]_{#4}&& {#3} \ar[ld]^{#5} \\
+& {#6} } }
+
+\newcommand{\RovnostrCDiiop}[6]{
+\xymatrix@C=10pt@R=17pt{
+{#1}  && {#3} \ar[ll]_{#2}  \\
+& {#6} \ar[lu]^{#4} \ar[ru]_{#5} } }
+
+\newcommand{\StvorecCD}[8]{
+\xymatrix{
+{#1} \ar[r]^{#2} \ar[d]_{#4} & {#3} \ar[d]^{#5} \\
+{#6} \ar[r]_{#7} & {#8}
+}
+}
+
+\newcommand{\TriangCD}[6]{
+\xymatrix{ {#1} \ar[r]^{#2} \ar[rd]_{#4}&
+{#3} \ar[d]^{#5} \\
+& {#6} } }
+\begin{document}
+For any $A\subseteq\N$ we denote
+$A(n):=\abs{A\cap\{1,2,\ldots,n\}}$ and $S(n):=\sum\limits_{k=1}^n
+\frac 1k$.
+
+Recall that the values
+$$\ul d(A)=\liminf_{n\to\infty} \frac{A(n)}n \qquad \ol d(A) = \limsup_{n\to\infty} \frac{A(n)}n$$
+are called lower and upper asymptotic density of $A$.
+
+The values
+$$\ul \delta(A)=\liminf_{n\to\infty} \frac{\sum\limits_{k\in A; k\leq n} \frac 1k}{S(n)} \qquad \ol \delta(A) = \limsup_{n\to\infty}
+\frac{\sum\limits_{k\in A; k\leq n} \frac 1k}{S(n)}$$ are called
+lower and upper logarithmic density of $A$.
+
+We have $S(n)\sim \ln n$ (we use the Landau notation). This
+follows from the fact that $\limti n S(n)-\ln n=\gamma$ is Euler's
+constant. Therefore we can use $\ln n$ instead of $S(n)$ in the
+definition of logarithmic density as well.
+
+The sum in the definition of logarithmic density can be rewritten
+using Iverson's convention as $\sum_{k=1}^n \frac 1k [k\in A]$.
+(This means that we only add elements fulfilling the condition
+$k\in A$. This notation is introduced in \cite[p.24]{knuth}.)
+
+\begin{THM}
+For any subset $A\subseteq\N$ 
+$$\ul d(A) \leq \ul \delta (A) \leq \ol \delta(A) \leq \ol d(A)$$
+holds.
+\end{THM}
+
+\begin{proof}
+We first observe that
+\begin{gather*}
+\frac 1k [k\in A]=\frac{A(k)-A(k-1)}k,\\
+D(n):=\sum_{k=1}^n \frac 1k [k\in A] = \frac{A(n)}n+
+\sum_{k=1}^{n-1} \frac{A(k)}{k(k+1)}
+\end{gather*}
+There exists an $n_0\in\N$ such that for each $n\geq n_0$ it holds
+$\ul d(A)-\ve \leq \frac{A(n)}n \leq \ol d(A) + \ve$.
+
+We denote $C:=1+S(n_0)$. For $n\geq n_0$ we get
+\begin{gather*}
+D(n) \leq C + \sum_{k=n_0}^{n-1} \frac{A(k)}k\cdot \frac 1{k+1}
+\leq C + (\ol d(A)+\ve) \sum_{k=n_0}^{n-1} \frac 1{k+1} \sim (\ol
+d(A)+\ve) \ln n,\\
+\ol\delta(A)=\limsup_{n\to\infty} \frac{D(n)}{\ln n} \leq \ol
+d(A)+\ve.
+\end{gather*}
+This inequality holds for any $\ve>0$, thus $\ol\delta(A)\leq \ol
+d(A)$.
+
+For the proof of the inequality for lower densities we put
+$C':=\sum_{k=1}^{n_0-1} \frac{A(k)}{k(k+1)}-(\ul d(A)-\ve)S(n_0)$.
+We get
+\begin{multline*}
+D(n)\geq C' + (\ul d(A)-\ve)S(n_0) + (\ul d(A)-\ve) \sum_{k=n_0}^n
+\frac1{k+1} =\\ C'+(\ul d(A)-\ve)S(n) \sim (\ul d(A)-\ve)\ln n
+\end{multline*}
+and this implies $\ul\delta(A)\geq\ul d(A)$.
+\end{proof}
+
+For the proof using Abel's partial summation see \cite{steuding}
+or \cite{tenenbaum}.
+
+\begin{COR}
+If a set has asymptotic density, then it has logarithmic density,
+too.
+\end{COR}
+
+A well-known example of a set having logarithmic density but not
+having asymptotic density is the set of all numbers with the first
+digit equal to 1.
+
+It can be moreover proved, that for any real numbers $0\leq\ul
+\alpha\leq\ul \beta\leq \ol \beta \leq \ol \alpha \leq 1$ there
+exists a set $A\subseteq\N$ such that $\ul d(A)=\ul\alpha$,
+$\ul\delta(A)=\ul\beta$, $\ol\delta(A)=\ol\beta$ and $\ol
+d(A)=\ol\alpha$ (see \cite{misik}).
+
+\begin{thebibliography}{1}
+
+\bibitem{knuth}
+R.~L. Graham, D.~E. Knuth, and O.~Patashnik.
+\newblock {\em {Concrete mathematics. A foundation for computer science.}}
+\newblock {Addison-Wesley}, 1989.
+
+\bibitem{misik}
+L.~Mi\v{s}{\'\i}k.
+\newblock {Sets of positive integers with prescribed values of densities.}
+\newblock {\em Mathematica Slovaca}, 52(3):289--296, 2002.
+
+\bibitem{ostmann}
+H.~H. Ostmann.
+\newblock {\em Additive {Z}ahlentheorie {I}}.
+\newblock Springer-Verlag, Berlin-G\"ottingen-Heidelberg, 1956.
+
+\bibitem{steuding}
+J.~Steuding.
+\newblock \PMlinkexternal{Probabilistic number theory.}{http://www.math.uni-frankfurt.de/\~{}steuding/steuding/prob.pdf}
+
+\bibitem{tenenbaum}
+G.~Tenenbaum.
+\newblock {\em {Introduction to analytic and probabilistic number theory}}.
+\newblock {Cambridge Univ. Press}, Cambridge, 1995.
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

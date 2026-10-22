@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Stalk}
+\pmcreated{2013-03-22 12:37:15}
+\pmmodified{2013-03-22 12:37:15}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{stalk}
+\pmrecord{9}{32881}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B40}
+\pmclassification{msc}{14F05}
+\pmclassification{msc}{18F20}
+\pmrelated{Sheaf}
+\pmrelated{LocalRing}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\dlim}{\,\underset{U \ni p}{\underset{\longrightarrow}{\lim}}\,}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\lra}{\longrightarrow}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\D}{\mathcal{D}}
+\DeclareMathOperator{\res}{res}
+\begin{document}
+Let $F$ be a presheaf over a topological space $X$ with values in an abelian category $\A$, and suppose direct limits exist in $\A$. For any point $p \in X$, the {\em stalk} $F_p$ of $F$ at $p$ is defined to be the object in $\A$ which is the direct limit of the objects $F(U)$ over the directed set of all open sets $U \subset X$ containing $p$, with respect to the restriction morphisms of $F$. In other words,
+$$
+F_p := \dlim F(U)
+$$
+If $\A$ is a category consisting of sets, the stalk $F_p$ can be viewed as the set of all germs of sections of $F$ at the point $p$. That is, the set $F_p$ consists of all the equivalence classes of ordered pairs $(U,s)$ where $p \in U$ and $s \in F(U)$, under the equivalence relation $(U,s) \sim (V,t)$ if there exists a neighborhood $W \subset U \cap V$ of $p$ such that $\res_{U,W} s = \res_{V,W} t$.
+
+By universal properties of direct limit, a morphism $\phi: F \lra G$ of presheaves over $X$ induces a morphism $\phi_p: F_p \lra G_p$ on each stalk $F_p$ of $F$. Stalks are most useful in the context of sheaves, since they encapsulate all of the local data of the sheaf at the point $p$ (recall that sheaves are basically defined as presheaves which have the property of being completely characterized by their local behavior). Indeed, in many of the standard examples of sheaves that take values in rings (such as the sheaf $\D_X$ of smooth functions, or the sheaf $\O_X$ of regular functions), the ring $F_p$ is a local ring, and much of geometry is devoted to the study of sheaves whose stalks are local rings (so-called ``locally ringed spaces''). 
+
+We mention here a few illustrations of how stalks accurately reflect the local behavior of a sheaf; all of these are drawn from~\cite{hartshorne}.
+
+\begin{itemize}
+\item A morphism of sheaves $\phi: F \lra G$ over $X$ is an isomorphism if and only if the induced morphism $\phi_p$ is an isomorphism on each stalk.
+\item A sequence $F \lra G \lra H$ of morphisms of sheaves over $X$ is an exact sequence at $G$ if and only if the induced morphism $F_p \lra G_p \lra H_p$ is exact at each stalk $G_p$.
+\item The sheafification $F'$ of a presheaf $F$ has stalk equal to $F_p$ at every point $p$.
+\end{itemize}
+\begin{thebibliography}{9}
+\bibitem{hartshorne}{Robin Hartshorne, {\em Algebraic Geometry}, Springer--Verlag New York Inc., 1977 (GTM {\bf 52}).}
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

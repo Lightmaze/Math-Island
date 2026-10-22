@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SubspaceOfASubspace}
+\pmcreated{2013-03-22 15:17:53}
+\pmmodified{2013-03-22 15:17:53}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{subspace of a subspace}
+\pmrecord{5}{37096}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\F}{\mathbbmss{F}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{thm} Suppose $X\subseteq Y \subseteq Z$ are sets and $Z$ is a
+topological space with topology $\tau_Z$.
+Let $\tau_{Y,Z}$ be the subspace topology in $Y$ given by $\tau_Z$,
+and let $\tau_{X,Y,Z}$ be the subspace topology in $X$ given by
+$\tau_{Y,Z}$, and let $\tau_{X,Z}$ be the subspace topology in $X$
+given by $\tau_Z$. Then $\tau_{X,Z}=\tau_{X,Y,Z}$.
+\end{thm}
+
+\begin{proof}
+Let $U_X\in\tau_{X,Z}$, then there is by the definition of the subspace
+topology an open set $U_Z\in\tau_Z$ such that $U_X=U_Z\cap X$. Now
+$U_Z\cap Y\in\tau_{Y,Z}$ and therefore $U_Z\cap Y\cap
+X\in\tau_{X,Y,Z}$. But since $X\subseteq Y$, we have $U_Z\cap Y\cap
+X=U_Z\cap X=U_X$, so $U_X\in\tau_{X,Y,Z}$ and thus
+$\tau_{X,Z}\subseteq\tau_{X,Y,Z}$.
+
+To show the reverse inclusion, take an open set
+$U_X\in\tau_{X,Y,Z}$. Then there is an open set $U_Y\in\tau_{Y,Z}$
+such that $U_X=U_Y\cap X$. Furthermore, there is an open set
+$U_Z\in\tau_Z$ such that $U_Y=U_Z\cap Y$. Since $X\subseteq Y$, we
+have
+\begin{equation*}
+U_Z\cap X=U_Z\cap Y\cap X=U_Y\cap X=U_X,
+\end{equation*}
+so $U_X\in\tau_{X,Z}$ and thus $\tau_{X,Y,Z}\subseteq\tau_{X,Z}$.
+
+Together, both inclusions yield the equality $\tau_{X,Z}=\tau_{X,Y,Z}$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

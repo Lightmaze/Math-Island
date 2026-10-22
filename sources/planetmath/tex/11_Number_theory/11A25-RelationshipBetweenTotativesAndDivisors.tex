@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RelationshipBetweenTotativesAndDivisors}
+\pmcreated{2013-03-22 17:09:15}
+\pmmodified{2013-03-22 17:09:15}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{relationship between totatives and divisors}
+\pmrecord{15}{39463}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pstricks}
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem{thm*}{Theorem}
+
+\begin{document}
+\begin{thm*}
+Let $n$ be a positive integer and define the sets $I_n$, $D_n$, and $T_n$ as follows:
+
+\begin{itemize}
+\item $I_n=\{ m \in \mathbb{Z}: 1 \le m \le n \}$
+\item $D_n=\{ d \in I_n: d>1$ and $d|n \}$
+\item $T_n=\{ t \in I_n: t$ is a totative of $n \}$
+\end{itemize}
+
+Then $D_n \cup T_n=I_n$ if and only if $n=1$, $n=4$, or $n$ is prime.
+\end{thm*}
+
+\begin{proof}
+
+\vspace{2mm}
+
+Necessity:
+
+If $n=1$, then $D_n=\emptyset$ and $T_n=\{1\}$.  Thus, $D_n \cup T_n=I_n$.
+
+If $n=4$, then $D_n=\{2,4\}$ and $T_n=\{1,3\}$.  Thus, $D_n \cup T_n=I_n$.
+
+If $n$ is prime, then $D_n=\{ n \}$ and $T_n=I_n \setminus \{ n \}$.  Thus, $D_n \cup T_n=I_n$.
+
+Sufficiency:
+
+This will be proven by considering its contrapositive.
+
+Suppose first that $n$ is a power of $2$.  Then $n \ge 8$.  Thus, $6 \in I_n$.  On the other hand, $6$ is neither a totative of $n$ (since $\gcd(6,n)=2$) nor a divisor of $n$ (since $n$ is a power of $2$).  Hence, $D_n \cup T_n \neq I_n$.
+
+Now suppose that $n$ is even and is not a power of $2$.  Let $k$ be a positive integer such that $2^k$ exactly divides $n$.  Since $n$ is not a power of $2$, it must be the case that $n=2^kr$ for some odd integer $r \ge 3$.  Thus, $n=2^kr>2^{k+1}$.  Therefore, $2^{k+1} \in I_n$.  On the other hand, $2^{k+1}$ is neither a totative of $n$ (since $n$ is even) nor a divisor of $n$ (since $2^k$ exactly divides $n$).  Hence, $D_n \cup T_n \neq I_n$.
+
+Finally, suppose that $n$ is odd.  Let $p$ be the smallest prime divisor of $n$.  Since $n$ is not prime, it must be the case that $n=ps$ for some odd integer $s \ge 3$.  Thus, $n=ps>2p$.  Therefore, $2p \in I_n$.  On the other hand, $2p$ is neither a totative of $n$ (since $\gcd(2p,n)=p$) nor a divisor of $n$ (since $n$ is odd).  Hence, $D_n \cup T_n \neq I_n$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

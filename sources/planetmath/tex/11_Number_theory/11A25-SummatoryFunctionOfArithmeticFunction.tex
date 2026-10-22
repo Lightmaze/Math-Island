@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SummatoryFunctionOfArithmeticFunction}
+\pmcreated{2013-03-22 19:31:53}
+\pmmodified{2013-03-22 19:31:53}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{summatory function of arithmetic function}
+\pmrecord{7}{42508}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmsynonym{summatory function}{SummatoryFunctionOfArithmeticFunction}
+%\pmkeywords{Dirichlet convolution}
+\pmrelated{EulerPhifunction}
+\pmrelated{PrimeClass}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\textbf{Definition.}\, The \emph{summatory function} $F$ of an arithmetic function $f$ is the Dirichlet convolution of $F$ and the constant function 1, i.e. 
+$$F(n) \;=:\; \sum_{d\,\mid\,n}f(d)$$
+where $d$ runs the positive divisors of the integer $n$.
+
+It may be proved that the summatory function of a multiplicative function is multiplicative.\\
+
+\textbf{Theorem.}\, The summatory function of the Euler phi function is the identity function:
+$$\sum_{d\,\mid\,n}\varphi(d) \;=\; \sum_{d\,\mid\,n}\varphi\left(\frac{n}{d}\right) \;=\; n 
+\quad \mbox{for all }\, n \in \mathbb{Z}_+.$$
+
+\emph{Proof.}\, The first equality follows from the fact that any positive divisor of
+$n$ is got from $n/d$ where $d$ is a divisor of $n$.
+Further, let\, $1 \le m \le n$\, where\, $\gcd(m,\,n) = d$.\, Then\, $\gcd(m/d,\,n/d) = 1$\, and\,
+$1 \le m/d \le n/d$.\, This defines a bijection between the prime classes modulo $n/d$ and such values of $m$ in $\{1,\,2,\,\ldots,\,n\!-\!1\}$ for which\, $\gcd(m,\,n) = d$.\, The number of the latters $\varphi(n/d)$.
+Furthermore, the only $m$ with\, $1 \le m \le n$\, and\, $\gcd(m,\,n) = n$ is\, $m := n$,\, and\, $\varphi(n/n) = \varphi(1)$, by definition.\, Summing then over all possible values $d$ yields the second equality.
+
+\begin{thebibliography}{8}
+\bibitem{H}{\sc Peter Hackman}: {\em Elementary number theory}.\, HHH productions, Link\"oping (2009).
+\end{thebibliography} 
+
+%%%%%
+%%%%%
+\end{document}

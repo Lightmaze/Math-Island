@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EquivalenceOfFormClassGroupAndClassGroup}
+\pmcreated{2013-03-22 16:56:27}
+\pmmodified{2013-03-22 16:56:27}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{equivalence of form class group and class group}
+\pmrecord{5}{39208}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11E12}
+\pmclassification{msc}{11E16}
+\pmclassification{msc}{11R29}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\newcommand{\Alg}{\mathcal{O}}
+\newcommand{\ol}{\overline}
+\newcommand{\Leg}[2]{\left(\frac{#1}{#2}\right)}
+%
+%% \theoremstyle{plain} %% This is the default
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{ax}{Axiom}
+
+\theoremstyle{definition}
+\begin{document}
+There are only a finite number of reduced primitive positive integral binary quadratic forms of a given negative \PMlinkid{discriminant}{IntegralBinaryQuadraticForms} $\Delta$. Given $\Delta$, call this number $h_{\Delta}$, the \emph{form \PMlinkescapetext{class number} of $\Delta$}.
+
+Thus, for example, since there is only one reduced form of discriminant $-163$, we have that $h_{-163}=1$.
+
+It turns out that the set of reduced forms of a given negative discriminant can be turned into an abelian group, called the \emph{\PMlinkescapetext{form class group}}, $\mathcal{C}_{\Delta}$, by defining a ``multiplication'' on forms that is based on generalizations of identities such as
+\[(2x^2+2xy+3y^2)(2z^2+2zw+3w^2)=(2xz+xw+yz+3yw)^2+5(xw+yz)^2\]
+where all of these forms have discriminant $-20$.
+
+Now, given an algebraic extension $K$ of $\Rats$, ideal classes of $\Alg_K$ also form an abelian group, called the \emph{\PMlinkid{ideal class group}{IdealClass}} of $K$, $\mathcal{C}_K$. The order of $\mathcal{C}_K$ is called the \emph{class number} of $K$ and is denoted $h_K$. See the ideal class entry for more detail.
+
+For an algebraic extension $K/\Rats$, one also defines the \PMlinkid{discriminant}{DiscriminantOfANumberField} of the extension, $d_K$. For quadratic extensions $K=\Rats[\sqrt{n}]$, where $n$ is assumed squarefree, the discriminant can be explicitly computed to be
+\[
+d_K=\begin{cases} 4n& \text{if }n\equiv 2,3\pmod 4\\
+n& \text{if }n\equiv 1\pmod 4
+\end{cases}
+\]
+
+For imaginary quadratic extensions, the form class group and the class group turn out to be the same!
+
+\begin{thm} \label{thm:one}Let $K=\Rats(\sqrt{n}), n<0$ squarefree, be a quadratic extension. Then $\mathcal{C}_K$, the class group of $K$, is isomorphic to the group of reduced forms of discriminant $d_K$, $\mathcal{C}_{d_K}$.
+\end{thm}
+
+One can in fact exhibit an explicit correspondence $\mathcal{C}_{d_K}\to \mathcal{C}_K$:
+\[ax^2+bxy+cy^2\mapsto(a,\frac{b+\sqrt{d_K}}{2})\]
+Note in particular that the simplest, or principal, form of discriminant $d_K$ ($x^2-d_Ky^2$ or $x^2+xy+\frac{1-d_K}{4}y^2$) maps to the ideal $(1)=\Alg_K$; these forms are the identities in $\mathcal{C}_{d_K}$. Showing that the map is 1-1 and onto is not difficult; showing that it is a group isomorphism is more difficult but nevertheless essentially amounts to a computation.
+
+This theorem allows us to simply compute at least the size of the class group for quadratic extensions $K$ by computing the number of reduced forms of discriminant $d_K$. For example, suppose $K=\Rats(\sqrt{-23})$. Since $-23\equiv 1\pod 4$, $\Alg_K=\Ints[\frac{1+\sqrt{-23}}{2}]$ and $d_K=-23$.
+
+What are the forms of discriminant $-23$? $\lvert b\rvert\leq a\leq \sqrt{\frac{23}{3}}<\sqrt{8}<3$, and $b$ is odd, so $b=\pm 1$. $4ac-b^2=23$, so $ac=6$. We thus get three reduced forms:
+\begin{center}
+\begin{tabular}{c l}
+$(1,1,6)$&\\
+$(2,1,3)$&\\
+$(2,-1,3)$&\mbox{\small reduced since $\lvert b\rvert\neq a, a\neq c$}
+\end{tabular}
+\end{center}
+Note that $(1,-1,6)$ is not reduced, since $b<0$ but $\lvert b\rvert=a$.
+
+So we know that the order of the class group $\mathcal{C}_K$ is $3$, so $\mathcal{C}_K\cong \Ints/3\Ints$.
+
+We can use the explicit correspondence above to find representatives of the three elements of the class group using the map from forms to ideals.
+\begin{align*}
+(1,1,6)&\rightarrow \left(1,\frac{1+\sqrt{-23}}{2}\right)=(1)\\
+(2,1,3)&\rightarrow \left(2,\frac{1+\sqrt{-23}}{2}\right)\\
+(2,-1,3)&\rightarrow \left(2,\frac{-1+\sqrt{-23}}{2}\right)
+\end{align*}
+
+In fact, a more general form of Theorem \ref{thm:one} is true. If $K$ is an algebraic number field, $A\subset \Alg_K$, then $A$ is not a Dedekind domain unless $A=\Alg_K$. But even in this case, if one considers only those ideals that are invertible in $A$, one can define a group structure in a similar way; this is once again called the class group of $A$. In the case that $K$ is a quadratic extension, these subrings of $\Alg_K$ are called \emph{orders} of $K$.
+
+It is the case that each discriminant $\Delta<0, \Delta\equiv 0,1\pmod 4$ corresponds to a unique order in a quadratic extension of $\Rats$. Specifically,
+\begin{thm} Let $\Delta<0, \Delta\equiv 0,1\pmod 4$. Write $\Delta=m^2\Delta'$ where $\Delta'$ is squarefree. Let $K=\Rats(\sqrt{\Delta'})$. Then
+\[
+\Alg_{\Delta}=\begin{cases}\Ints\left[\frac{m}{2}\sqrt{\Delta'}\right], \Delta'\equiv 2,3\pmod 4\\
+\Ints\left[m\frac{1+\sqrt{\Delta'}}{2}\right], \Delta'\equiv 1\pmod 4
+\end{cases}\]
+is a subring of $\Alg_K$, and $\mathcal{C}_{\Delta}\cong \mathcal{C}_{\Alg_{\Delta}}$.
+(Note that if $\Delta'\equiv 2,3\pmod 4$, then $m$ must be even. For otherwise, $m^2\equiv 1\pmod 4$ and thus $\Delta\equiv 2,3\pmod 4$, which is impossible. Thus $m/2$ is an integer in this case)
+\end{thm}
+
+This reduces to the first theorem in the event that $\Delta=d_K$.
+
+Thus there is a $1-1$ correspondence between discriminants $\Delta<0$ and orders of quadratic fields; in particular, the ring of algebraic integers of any quadratic field corresponds to the forms of discriminant equal to the discriminant of the field.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PythagoreanTriangle}
+\pmcreated{2013-11-23 11:53:13}
+\pmmodified{2013-11-23 11:53:13}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Pythagorean triangle}
+\pmrecord{15}{87608}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Result}
+\pmclassification{msc}{11D09}
+\pmclassification{msc}{51M05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%\usepackage{xypic}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The side lengths of any right triangle satisfy the equation of the Pythagorean theorem, 
+but if they are integers then the triangle is a {\it Pythagorean triangle}.
+
+The side lengths are said to form a Pythagorean triple.\, They are always different 
+integers, the smallest of them being at least 3.\\
+
+Any Pythagorean triangle has the property that the hypotenuse is 
+the contraharmonic mean 
+\begin{align}
+c \;=\; \frac{u^2\!+\!v^2}{u\!+\!v}
+\end{align}
+and one cathetus is the harmonic mean 
+\begin{align}
+h \;=\; \frac{2uv}{u\!+\!v}
+\end{align}
+of a certain pair of distinct positive integers $u$, $v$; the
+other cathetus is simply $|u\!-\!v|$.\\
+
+If there is given the value of $c$ as the length of the 
+hypotenuse and a compatible value\, $h$ as the length of one 
+cathetus, the pair of equations (1) and (2) does not determine 
+the numbers $u$ and $v$ uniquely (cf. the Proposition 4 in the 
+entry integer contraharmonic means).\, For example, if\, 
+$c = 61$\, and\, $h = 11$, then the equations give for\, 
+$(u, v)$\, either\, $(6,\,66)$\, or\, $(55,\,66)$.\\
+
+
+As for the hypotenuse and (1), the proof is found in [1] and also 
+in the PlanetMath article contraharmonic means and Pythagorean 
+hypotenuses.\, The contraharmonic and the harmonic mean of two 
+integers are simultaneously integers (see 
+\PMlinkname{this article}{IntegerHarmonicMeans}).\, The above 
+claim concerning the catheti of the Pythagorean triangle is 
+evident from the identity
+$$\left(\frac{2uv}{u\!+\!v}\right)^2\!+\!\left|u\!-\!v\right|^2 
+\;=\; \left(\frac{u^2\!+\!v^2}{u\!+\!v}\right)^2.$$\\
+
+
+If the catheti of a Pythagorean triangle are $a$ and $b$,
+then the values of the parameters $u$ and $v$ determined by 
+the equations (1) and (2) are
+\begin{align}
+\frac{c\!+\!b\!\pm\!a}{2}
+\end{align}
+as one instantly sees by substituting them into the equations.
+
+
+\begin{thebibliography}{8}
+\bibitem{K}{\sc J. Pahikkala}: ``On contraharmonic mean and Pythagorean triples''.\, -- \emph{Elemente der Mathematik} \textbf{65}:2 (2010).
+\end{thebibliography}
+
+
+
+
+\end{document}

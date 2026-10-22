@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PadicCyclotomicCharacter}
+\pmcreated{2013-03-22 15:36:16}
+\pmmodified{2013-03-22 15:36:16}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{$p$-adic cyclotomic character}
+\pmrecord{6}{37521}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R34}
+\pmclassification{msc}{11R32}
+\pmclassification{msc}{11R04}
+\pmsynonym{$p$-adic cyclotomic Galois representation}{PadicCyclotomicCharacter}
+\pmsynonym{cyclotomic character}{PadicCyclotomicCharacter}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+Let $G_{\Rats}=\Gal(\overline{\Rats}/\Rats)$ be the absolute Galois group of $\Rats$. The purpose of this entry is to define, for every prime $p$, a Galois representation:
+
+$$\chi_p : G_{\Rats} \longrightarrow \Ints_p^\times$$
+
+where $\Ints_p^\times$ is the group of units of $\Ints_p$, the $p$-adic integers. $\chi_p$ is a $\Ints_p^\times$ valued character, usually called the {\it cyclotomic character} of $G_{\Rats}$, or the $p$-adic cyclotomic Galois representation of $G_{\Rats}$. Here is the construction:
+
+For each $n\geq 1$, let $\zeta_{p^n}$ be a primitive $p^n$-th root of unity and let $K_n=\Rats(\zeta_{p^n})$ be the corresponding cyclotomic extension of $\Rats$.  By the basic theory of cyclotomic extensions, we know that 
+
+$$\Gal(K_n/\Rats)\cong (\Ints/p^n\Ints)^\times.$$
+
+Moreover, the restriction map $\Gal(K_{n+1}/\Rats)\to \Gal(K_n/\Rats)$ is given by reduction modulo $p^n$ from $(\Ints/p^{n+1}\Ints)^\times$ to $(\Ints/p^n\Ints)^\times$.
+
+Therefore, for each $n$ we can construct a representation:
+$$\chi_{p,n} : G_{\Rats} \to \Gal(K_n/\Rats) \to (\Ints/p^n\Ints)^\times$$
+where the first map is simply restriction to $K_n$ and the second map is an isomorphism. By the remarks above, the representations $\chi_{p,n}$ are coherent in a strong sense, i.e.
+
+$$\chi_{p,n+1}(\sigma) \equiv \chi_{p,n}(\sigma) \mod p^n.$$
+
+Therefore, one can construct a ``big'' Galois representation:
+$$\chi_p : G_{\Rats} \longrightarrow \Ints_p^\times$$
+by requiring $\chi(\sigma) \equiv \chi_{p,n}(\sigma) \mod p^n$, for every $n\geq 1$. 
+
+One can rephrase the above definition as follows. Let $\sigma\in G_{\Rats}$. We need to define a group homomorphism $\chi_p:G_{\Rats} \to \Ints_p^\times$, so we need to first define $\chi_p(\sigma)$ and then check that it is a homomorphism. By the theory, $\sigma(\zeta_{p^n})$ is another primitive $p^n$-th root of unity, thus 
+$$\sigma(\zeta_{p^n})=\zeta_{p^n}^{t_n}$$
+for some integer $1\leq t_n \leq p^n-1$ with $\gcd(t_n,p)=1$ (so $t_n$ is a unit modulo $p^n$). Moreover, 
+$$\sigma(\zeta_{p^{n-1}})=\sigma(\zeta_{p^{n}}^p)=\zeta_{p^n}^{pt_n}=\zeta_{p^{n-1}}^{t_n}$$
+Therefore, $t_n \equiv t_{n-1}$ modulo $p^{n-1}$. Thus, we may define:
+$$\chi_p(\sigma) = \varprojlim t_n \in \Ints_p$$
+and as we have shown, $\chi_p(\sigma)$ is a unit of $\Ints_p$. Finally, the reader should check that $\chi_p$ is a group homomorphism.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SparselyTotientNumber}
+\pmcreated{2013-03-22 16:48:59}
+\pmmodified{2013-03-22 16:48:59}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{sparsely totient number}
+\pmrecord{4}{39053}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em sparsely totient number} is the largest integer with a given totient. That is, given an sparsely totient number $n$, the inequality $\phi(m) > \phi(n)$ (with $\phi(x)$ being Euler's totient function) is true for any $m > n$. For example, $\phi(12) = 4$. We can then verify that $\phi(13) = 12$, $\phi(14) = 6$ and $\phi(15) = 8$. Accepting as true that the inequality $\phi(n) > \sqrt{n}$ holds for all $n > 6$, we don't need to check any larger numbers to confirm that 12 is the largest integer with 4 as its totient.
+
+The first few sparsely totient numbers are 2, 6, 12, 18, 30, 42, 60, 66, 90, 120, 126, 150, 210, 240, 270, 330, 420, 462, 510, 630, 660, 690, 840, 870, etc., listed in A036913 of Sloane's OEIS.
+
+All sparsely totient numbers are even. In 1986, Masser and Shiu proved that the $i$th primorial multiplied by the $i$th prime (for $i > 1$, thus: 18, 150, 1470, 25410, 390390, etc.) is a sparsely totient number.
+
+\begin{thebibliography}{2}
+\bibitem{rb} Roger C. Baker \& Glyn Harman, ``Sparsely totient numbers,'' {\it Annales de la faculte des sciences de Toulouse Ser. 6} {\bf 5} no. 2 (1996): 183 - 190
+\bibitem{dm} D. W. Masser \& P. Shiu, ``On sparsely totient numbers,'' {\it Pacific J. Math.} {\bf 121}, no. 2 (1986): 407 - 426. 
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

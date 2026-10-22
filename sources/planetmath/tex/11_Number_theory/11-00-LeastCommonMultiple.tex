@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LeastCommonMultiple}
+\pmcreated{2015-05-06 19:07:25}
+\pmmodified{2015-05-06 19:07:25}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{least common multiple}
+\pmrecord{32}{35723}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmsynonym{least common dividend}{LeastCommonMultiple}
+\pmsynonym{lcm}{LeastCommonMultiple}
+\pmrelated{Divisibility}
+\pmrelated{PruferRing}
+\pmrelated{SumOfIdeals}
+\pmrelated{IdealOfElementsWithFiniteOrder}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+\DeclareMathOperator{\lcm}{lcm}
+\begin{document}
+If $a$ and $b$ are two positive integers, then their {\it least 
+common multiple}, denoted by 
+$$\mathrm{lcm}\!(a,\,b),$$
+is the positive 
+integer $f$ satisfying the conditions
+\begin{itemize}
+  \item $a\mid f$ and $b\mid f$,
+  \item if $a\mid c$ and $b\mid c$, then $f\mid c$.
+\end{itemize}
+
+\textbf{Note:} \, The definition can be generalized for several 
+numbers. \,The positive {lcm of positive integers is 
+uniquely determined. (Its negative satisfies the same two 
+conditions.)
+
+\subsection*{Properties}
+
+\begin{enumerate} 
+  \item If\, $a = \prod_{i=1}^{m}p_i^{\alpha_i}$\, and\, 
+  $b = \prod_{i=1}^{m}p_i^{\beta_i}$\, are the prime factor 
+  \PMlinkescapetext{presentations} of the positive integers $a$ and $b$ ($\alpha_{i} \geqq 0$, \,$\beta_{i} \geqq 0$ \,$\forall i$), then 
+        $$\mathrm{lcm}\!(a,\,b)= 
+        \prod_{i=1}^{m}p_i^{\max\{\alpha_i,\,\beta_i\}}.$$ 
+This can be generalized for lcm of several numbers.
+  \item  Because the greatest common divisor has the expression\, 
+  $\gcd(a,\,b) = \prod_{i=1}^{m}p_i^{\min\{\alpha_i,\,\beta_i\}}$, we see that  
+  $$\gcd(a,\,b)\cdot \mathrm{lcm}\!(a,\,b) = ab.$$
+This formula is sensible only for two integers; it can not be 
+generalized for several numbers, i.e., for example,
+       $$\gcd(a,\,b,\,c)\cdot \mathrm{lcm}(a,\,b,\,c) \neq abc.$$
+  \item The preceding formula may be presented in 
+  \PMlinkescapetext{terms} of ideals of $\mathbb{Z}$; we may 
+  replace the integers with the corresponding principal ideals.\, 
+  The formula acquires the form
+      $$((a)+(b))((a)\cap(b)) = (a)(b).$$
+  \item The recent formula is valid also for other than principal ideals and even in so general systems as the Pr\"ufer rings; in fact, it could be taken as defining property of these rings: \, Let $R$ be a commutative ring with non-zero unity. \,$R$ is a Pr\"ufer ring iff {\em Jensen's formula}
+ $$(\mathfrak{a}+\mathfrak{b})(\mathfrak{a}\cap\mathfrak{b}) = \mathfrak{ab}$$
+is true for all ideals $\mathfrak{a}$ and $\mathfrak{b}$ of $R$, with at least one of them having \PMlinkname{non-zero-divisors}{ZeroDivisor}.
+\end{enumerate}
+
+\begin{thebibliography}{9}
+\bibitem{Larsen & McCarthy} M. Larsen and P. McCarthy: {\em Multiplicative theory of ideals}. Academic Press. New York (1971).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

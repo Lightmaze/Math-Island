@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EllipticCurveDiscreteLogarithmProblem}
+\pmcreated{2013-03-22 13:46:01}
+\pmmodified{2013-03-22 13:46:01}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{elliptic curve discrete logarithm problem}
+\pmrecord{7}{34471}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94A60}
+\pmsynonym{elliptic curve discrete log problem}{EllipticCurveDiscreteLogarithmProblem}
+\pmrelated{DiffieHellmanKeyExchange}
+\pmrelated{ArithmeticOfEllipticCurves}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The elliptic curve discrete logarithm problem is the cornerstone of much of present-day elliptic curve cryptography.  It relies on the natural group law on a non-singular elliptic curve which allows one to add points on the curve together.  Given an elliptic curve $E$ over a finite field $F$, a point on that curve, $P$, and another point you know to be an integer multiple of that point, $Q$, the ``problem'' is to find the integer $n$ such that $nP=Q$.
+
+The problem is computationally difficult unless the curve has a ``bad'' number of points over the given field, where the term ``bad'' encompasses various collections of numbers of points which make the elliptic curve discrete logarithm problem breakable.  For example, if the number of points on $E$ over $F$ is the same as the number of elements of $F$, then the curve is vulnerable to attack.  It is because of these issues that point-counting on elliptic curves is such a hot topic in elliptic curve cryptography.
+
+For an introduction to point-counting, reference Schoof's algorithm.
+%%%%%
+%%%%%
+\end{document}

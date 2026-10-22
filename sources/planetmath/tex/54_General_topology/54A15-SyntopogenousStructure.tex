@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SyntopogenousStructure}
+\pmcreated{2013-03-22 16:57:40}
+\pmmodified{2013-03-22 16:57:40}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{syntopogenous structure}
+\pmrecord{7}{39232}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A15}
+\pmdefines{topogenous order}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\begin{document}
+In the early part of the 20th century, topological spaces were invented to capture the essence of the idea of continuity.  At around the same time, other competing ideas had emerged, resulting in a variety of other ``similar'' types of spaces: uniform spaces and proximity spaces are the two prominent examples.  These abstractions have led mathematicians to even further abstractions, in an attempt to combine all these concepts into a single construct.  One such result is so-called a \emph{syntopogenous structure}.
+
+Before formally defining what a syntopogenous structure is, let us look at some of the commonalities among the three types of spaces that led to this ``generalized'' structure.  Specifically, in all three types of sapces, we can define a transitive relation on the space such that the relation satisfies some features that are common in all three cases:
+
+Let $X$ be a space and $A,B\subseteq X$, we define $A\le B$ iff
+\begin{itemize}  
+\item (topological) 
+$A\subseteq B^{\circ}$, the interior of $B$.
+\item (uniform)
+$U[A]\subseteq B$ for some entourage $U$.  $U[A]$ is a uniform neighborhood of $A$.
+\item (proximity)
+$A\delta' (X-B)$, where $\delta$ is the proximity relation, and $\delta'$ is its complement.
+\end{itemize}
+
+In all three cases, the relation is transitive.  Furthermore, we have the following:
+\begin{enumerate}
+\item $\varnothing\le \varnothing$,
+\item $X\le X$,
+\item if $A\le B$, then $A\subseteq B$,
+\item if $A\le B$ and $C\le D$, then $A\cap C\le B\cap D$,
+\item if $A\le B$ and $C\le D$, then $A\cup C\le B\cup D$,
+\item if $A\subseteq B\le C\subseteq D$, then $A\le D$.
+\end{enumerate}
+
+\textbf{Definition}.  Let $X$ be a set.  A \emph{topogenous order} $\le$ on $X$ is a binary relation on $P(X)$, the powerset of $X$, satisfying the six properties above.
+
+By properties 2 and 6, we see that a topogenous order is a transitive antisymmetric relation.
+
+We are now ready for the main definition.
+
+\textbf{Definition}.  A \emph{syntopogenous structure} consists of a set $X$ and a collection $\mathscr{S}$ of topogenous orders on $X$ such that:
+\begin{itemize}
+\item if $R_1,R_2\in \mathscr{S}$, then there is $R\in \mathscr{S}$ such that $R_1 \cap R_2 \subseteq R$,
+\item for any $R \in \mathscr{S}$, then there is $S\in \mathscr{S}$ such that $R \subseteq S\circ S$.
+\end{itemize}
+
+\textbf{Remark}.  The two defining conditions of a syntopogenous structure $(X,\mathscr{S})$ are equivalent to the following, given subsets $A,B$ of $X$:
+\begin{itemize}
+\item for any $\le_1,\le_2\in \mathscr{S}$, there is a $\le\in \mathscr{S}$ such that $A\le_1 B$ and $A\le_2 B$ imply $A\le B$,
+\item for any $\le_1\in \mathscr{S}$ with $A\le_1 B$, there is a $\le_2\in\mathscr{S}$ such that $A\le_2 C\le_2 B$ for some subset $C$ of $X$.
+\end{itemize}
+
+\begin{thebibliography}{9}
+\bibitem{ac} A. Cs\'asz\'ar, \emph{Foundations of General Topology},
+Macmillan, New York, 1963.
+\bibitem{nw} S.A. Naimpally, B.D. Warrack, \emph{Proximity Spaces}, Cambridge University Press, 1970.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

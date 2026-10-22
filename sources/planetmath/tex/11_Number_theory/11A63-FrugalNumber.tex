@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FrugalNumber}
+\pmcreated{2013-03-22 16:41:15}
+\pmmodified{2013-03-22 16:41:15}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{frugal number}
+\pmrecord{4}{38898}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{economical number}{FrugalNumber}
+\pmrelated{EquidigitalNumber}
+\pmrelated{ExtravagantNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em frugal number} or {\em economical number} $n$ is an integer with a base $b$ representation of $k$ digits for which the prime factorization uses fewer than $k$ digits (with repeated prime factors grouped with exponents and the digits of those exponents counted whenever greater than 1). The first few frugal numbers in base 10 are 125, 128, 243, 256, 343, 512, 625, 729, 1024, 1029, 1215, 1250, 1280, 1331, 1369, 1458, 1536, 1681, 1701, 1715, 1792, 1849, 1875, etc. (listed in A046759 of Sloane's OEIS). For example, 128 is frugal in base 10 because it is written with three digits, while its factorization of $2^7$ uses just two digits. 128 also happens to be frugal in binary. If we regard 1 as not prime, then 1 is a frugal number in all positional bases (for example, Mathematica returns its factorization as an empty set).
+
+\begin{thebibliography}{1}
+\bibitem{dd} D. Darling, ``Economical number'' in {\it The Universal Book of Mathematics: From Abracadabra To Zeno's paradoxes}. Hoboken, New Jersey: Wiley (2004)
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

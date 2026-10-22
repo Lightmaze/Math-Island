@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SumproductNumber}
+\pmcreated{2013-03-22 15:46:50}
+\pmmodified{2013-03-22 15:46:50}
+\pmowner{Mravinci}{12996}
+\pmmodifier{Mravinci}{12996}
+\pmtitle{sum-product number}
+\pmrecord{8}{37738}
+\pmprivacy{1}
+\pmauthor{Mravinci}{12996}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{sum product number}{SumproductNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A \emph{sum-product number} is an integer $n$ that in a given base satisfies the equality
+
+$$n = \sum_{i = 1}^m d_i \prod_{i = 1}^m d_i$$
+
+where $d_i$ is a digit of $n$, and $m$ is the number of digits of $n$. This means a test of whether the sum of the digits of $n$ times the product of the digits of $n$ is equal to $n$.
+
+For example, the number 128 in base 7 is a sum-product number since
+
+$$242_7 = (2 + 4 + 2)(2 \cdot 4 \cdot 2)$$
+
+All sum-product numbers are Harshad numbers, too.
+
+0 and 1 are sum-product numbers in any positional base. The proof that the set of sum-product numbers in base 2 is finite is elementary enough not to inspire claims of authorship. The proof that the set of sum-product numbers in base 10 is finite (specifically, 0, 1, 135 and 144) is more involved but within the realm of basic algebra, and it points the way to a formulation of the proof that number of sum-product numbers in any base is finite.
+%%%%%
+%%%%%
+\end{document}

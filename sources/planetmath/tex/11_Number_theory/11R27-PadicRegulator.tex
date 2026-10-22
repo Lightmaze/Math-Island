@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PadicRegulator}
+\pmcreated{2013-03-22 14:14:13}
+\pmmodified{2013-03-22 14:14:13}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{$p$-adic regulator}
+\pmrecord{5}{35679}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R27}
+\pmrelated{PAdicExponentialAndPAdicLogarithm}
+\pmdefines{$p$-adic logarithm}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Let $K$, $n$, $r_1$, $r_2$, $\{\varepsilon_n,\ldots,\varepsilon_{r-1}\}$, and $||\cdot||_i$ be as in the entry regulator, but with $K$ taken to be a CM field.
+
+Define the $p$-adic logarithm $\log_p: \mb{C}_p^\times\ra \mb{C}_p$ by
+\begin{align*}
+\log_p(x)=-\sum_{k=1}^\infty \frac{(1-x)^k}{k}
+\end{align*}
+
+Let $A_{K,p}$ be the $(r-1)\times (r-1)$ matrix with general entry given by $a_{i,j}=\log_p ||\varepsilon_j||_i$.  The absolute value of the determinant of this matrix is again independent of your choice of basis for the units and of the ordering of the embeddings.  This value is called the \emph{$p$-adic regulator of $K$,} and is denoted by $R_{p,K}$, or $R_p(K)$.
+
+\begin{thebibliography}{9}
+\bibitem{wash} L. C. Washington, {\em Introduction to Cyclotomic Fields},
+Springer-Verlag, New York.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

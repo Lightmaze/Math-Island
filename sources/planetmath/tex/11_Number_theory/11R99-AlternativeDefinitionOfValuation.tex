@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AlternativeDefinitionOfValuation}
+\pmcreated{2013-03-22 14:55:47}
+\pmmodified{2013-03-22 14:55:47}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{alternative definition of valuation}
+\pmrecord{7}{36618}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R99}
+\pmclassification{msc}{12J20}
+\pmclassification{msc}{13A18}
+\pmclassification{msc}{13F30}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+One may use a slightly different version of the third criterion to define a slightly more general definition of valuation.
+
+A \emph{valuation} on a field $\mathbb{K}$ is a map $| \cdot | \colon \mathbb{K} \to \mathbb{R}$ such that
+\begin{enumerate}
+\item $|x| = 0$ if an only if $x = 0$
+\item $|xy| = |x| \, |y|$
+\item $|x + y| \le C \max \{ |x|, |y| \}$
+\end{enumerate}
+The quantity $C$ which appears in the third criterion is a positive real number which is known as the \PMlinkescapetext{\emph{constant of the valuation}}.
+
+There is some flexibility in the choice of the constant $C$ in this definition --- one can replace $C$ by a larger number $C'$.  To deal with this ambiguity, one defines the \PMlinkescapetext{\emph{norm}} of the valuation as
+ $$\inf \{ C \mid (\forall x) (\forall y) \> |x + y| < C \max \{ |x|, |y| \} \}$$
+
+The relation of this definition to the usual one is the following.  On the one hand, if $| \cdot |$ satisfies the usual definition, then
+ $$|x + y| \le |x| + |y| \le 2 \max \{ |x|, |y| \}$$
+so a valuation in the old sense is a valuation in the new sense with constant 2.
+
+On the other hand, suppose that $| \cdot |$ satisfies the alternative definition with constant $C < 2$.  Then we have the following result.
+
+\textbf{Theorem}  If $| \cdot |$ is a valuation according to the definition of this entry with constant $C \le 2$, then $| \cdot |$ satisfies the identity
+ $$| x + y | \le |x| + |y|.$$
+
+The proof of this assertion is given in a supplement to this entry.
+
+The foregoing discussion shows that the new definition is more general than the old definition precisely when $C > 2$.  However, this extra generalty is not as great as it might seem at first sight.  As is obvious from examining the definition, if $| \cdot |$ is a valuation, then so is $| \cdot |^p$ for any power $p > 0$.  Furthermore, if the valuation has constant $C$, then valuation $| \cdot |^p$ has constant $C^p$.  Therefore, given any valuation $| \cdot |$ in the sense of this entry, there will exist a number $p$ such that $| \cdot |^p$ is a valuation in the sense of the parent entry.  Moreover, given the fact that two valuations which are powers of each other are equivalent, one sees that the extra generality is not that interesting since the new valuations are equivalent to the old valuations.
+%%%%%
+%%%%%
+\end{document}

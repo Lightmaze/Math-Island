@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PositiveMultipleOfAnAbundantNumberIsAbundant}
+\pmcreated{2013-03-22 16:17:07}
+\pmmodified{2013-03-22 16:17:07}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{positive multiple of an abundant number is abundant}
+\pmrecord{13}{38400}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmrelated{TheoremOnMultiplesOfAbundantNumbers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Theorem.} A positive multiple of an abundant number is abundant. \\
+\emph{Proof.} Let $n$ be abundant and $m >0$ be an integer. We have to show
+that $\sigma (mn) > 2mn$,  where $\sigma(n)$ is the sum of the positive divisors of $n$.
+ Let $d_1, \ldots,  d_k$ be the positive divisors of $n$. Then
+certainly $md_1, \ldots, md_k$ are distinct divisors of $mn$. The result is
+clear if $m=1$, so assume $m>1$. Then
+\begin{eqnarray*}
+\sigma(mn) &>& 1+ \sum_{i=1}^k md_i \\
+&>& m \sum_{i=1}^k d_i \\
+&>& m(2n) \\
+&=& 2mn.
+\end{eqnarray*}
+
+As a corollary, the positive abundant numbers form a semigroup.
+
+
+ 
+%%%%%
+%%%%%
+\end{document}

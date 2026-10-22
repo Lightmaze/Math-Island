@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{QuotientRuleForArithmeticDerivative}
+\pmcreated{2013-03-22 17:04:44}
+\pmmodified{2013-03-22 17:04:44}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{quotient rule for arithmetic derivative}
+\pmrecord{4}{39372}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11Z05}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm}{Theorem}
+\begin{document}
+\begin{thm}
+If the notion of arithmetic derivative is extended to rational numbers, then we have that, for every $a,b \in \mathbb{Z}$ with $b \neq 0$:
+
+$$\left(\frac{a}{b}\right)'=\frac{a'b-b'a}{b^2}$$
+\end{thm}
+
+\begin{proof}
+
+Note that
+
+\begin{center}
+\begin{tabular}{rl}
+$a'$ & $= \displaystyle \left( b \cdot \frac{a}{b} \right)'$ \\
+& \\
+& $= \displaystyle b \cdot \left( \frac{a}{b} \right)' +b' \cdot \frac{a}{b}$ by the Leibniz rule.
+\end{tabular}
+\end{center}
+
+Thus,
+
+\begin{center}
+$\begin{array}{rl}
+\displaystyle b \cdot \left( \frac{a}{b} \right)' & = \displaystyle a'-b' \cdot \frac{a}{b} \\
+& \\
+& = \displaystyle \frac{a'b-b'a}{b}. \end{array}$
+\end{center}
+
+It follows that
+
+$$\left(\frac{a}{b}\right)'=\frac{a'b-b'a}{b^2}.$$
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

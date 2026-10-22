@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MapleImplementationOfBerlekampMasseyAlgorithm}
+\pmcreated{2013-03-22 15:35:27}
+\pmmodified{2013-03-22 15:35:27}
+\pmowner{daveagp}{6096}
+\pmmodifier{daveagp}{6096}
+\pmtitle{maple implementation of Berlekamp-Massey algorithm}
+\pmrecord{6}{37502}
+\pmprivacy{1}
+\pmauthor{daveagp}{6096}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B37}
+\pmclassification{msc}{15A03}
+%\pmkeywords{rational reconstruction}
+%\pmkeywords{stream ciphers}
+%\pmkeywords{linear recurrent}
+\pmrelated{BerlekampMasseyAlgorithm}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+\begin{verbatim}
+\PMlinkescapetext{
+>
+# Maple code for the Berlekamp-Massey algorithm
+# Adapted from www.cs.wisc.edu/~cs435-1/bermas.m
+# Transliteration of 
+#   Massey, "Shift-Register Synthesis and BCH Decoding,"
+#   IEEE Trans. Inform. Theory, 15(1):122-127, 1969.
+# Input: P, either 0 or a prime
+#           If P>0 then we work over the field K = Z/Z[P] (mod P)
+#           else we work over the field K = Q (rationals)
+#        N, a positive integer
+#        s, a list of >= 2*N terms in K
+#        x, a formal variable
+# Returns: Unique monic annihilator of minimum degree, over K[x].
+
+ BM := proc(s, N, P, x)
+   local C,B,T,L,k,i,n,d,b,safemod;
+   ASSERT(nops(s) = 2*N);
+   safemod := (exp, P) -> `if`(P=0, exp, exp mod P);
+   B := 1;
+   C := 1;
+   L := 0;
+   k := 1;
+   b := 1;
+   for n from 0 to 2*N-1 do
+     d := s[n+1];
+     for i from 1 to L do
+       d := safemod(d + coeff(C,x^i)*s[n-i+1], P);
+     od;
+     if d=0 then k := k+1 fi;
+     if (d <> 0 and 2*L > n) then
+       C := safemod(expand(C - d*x^k*B/b), P);
+       k := k+1;
+     fi;
+     if (d <> 0 and 2*L <= n) then
+       T := C;
+       C := safemod(expand(C - d*x^k*B/b), P);
+       B := T;
+       L := n+1-L;
+       k := 1;
+       b := d;
+     fi;
+   od;
+   return C;
+ end:
+}
+\end{verbatim}
+
+The following test demonstrates usage and verifies that this works:
+
+\begin{verbatim}
+\PMlinkescapetext{
+> P := 103:
+  d := 4:
+  num := 21+83*x+90*x^2+4*x^3: # degree < d
+  den := 1+11*x+23*x^2+58*x^3+69*x^4: # monic, degree <= d
+  f := series(num/den, x=0, 2*d) mod P:
+  s := [seq(coeff(f, x, i), i=0..2*d-1)]:
+  BM(s, d, P, x);}
+\end{verbatim}
+$$1 + 11x + 23x^2 + 58x^3+69x^4$$
+The annihilator is the same as denominator, as we expect.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SomeStructuresOnmathbbRn}
+\pmcreated{2013-03-22 14:03:47}
+\pmmodified{2013-03-22 14:03:47}
+\pmowner{drini}{3}
+\pmmodifier{drini}{3}
+\pmtitle{some structures on $\mathbb{R}^n$}
+\pmrecord{10}{35419}
+\pmprivacy{1}
+\pmauthor{drini}{3}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+\pmclassification{msc}{53A99}
+
+\endmetadata
+
+\usepackage{graphicx}
+%%%\usepackage{xypic} 
+\usepackage{bbm}
+\newcommand{\sZ}{\mathbbmss{Z}}
+\newcommand{\sC}{\mathbbmss{C}}
+\newcommand{\sR}{\mathbbmss{R}}
+\newcommand{\sQ}{\mathbbmss{Q}}
+\newcommand{\mathbb}[1]{\mathbbmss{#1}}
+\newcommand{\figura}[1]{\begin{center}\includegraphics{#1}\end{center}}
+\newcommand{\figuraex}[2]{\begin{center}\includegraphics[#2]{#1}\end{center}}
+\begin{document}
+Let $n\in \{1,2,\ldots\}$. Then, as a set, $\sR^n$ is the $n$-fold Cartesian 
+product of the real numbers. 
+
+\subsubsection{Vector space structure of $\sR^n$}
+If $u=(u_1, \ldots, u_n)$ and 
+$v=(v_1, \ldots, v_n)$ are points in $\sR^n$, we define their sum
+as
+$$ u+v=(u_1+v_1, \ldots, u_n+v_n).$$
+Also, if $\lambda$ is a scalar (real number), then scalar multiplication
+is defined as 
+$$ \lambda \cdot u = (\lambda u_1, \ldots, \lambda u_n).$$
+With these operations, $\sR^n$ becomes a vector space (over $\sR$) with dimension $n$.
+In other words, with this structure, we can talk about, vectors, lines, subspaces of different dimension. 
+
+
+\subsubsection{Inner product for $\sR^n$}
+For $u$ and $v$ as above, we define the inner product as
+$$ \langle u,v \rangle = u_1 v_1 + \cdots + u_n v_n.$$
+With this product, $\sR^n$ is called an Euclidean space. 
+
+We have also an induced norm $\left\Vert u \right\Vert =  \sqrt{\langle u,u \rangle}$, which gives
+$\sR^n$ the structure of a normed space (and thus metric space).
+This inner product let us talk about length, angle between vectors, orthogonal vectors.
+
+\subsubsection{Topology for $\sR^n$}
+The usual topology for $\sR^n$ is the topology induced by the metric
+$$d(x,y) = \Vert x-y\Vert.$$
+As a basis for the topology induced by the above norm, one can take
+ open balls $B(x,r)=\{ y\in \sR^n \mid \left\Vert x-y \right\Vert < r\}$ where $r>0$
+and $x\in\sR^n$.
+
+
+Properties of the topological space $\sR^n$ are:
+\begin{enumerate}
+\item $\sR^n$ is second countable, i.e.,  $\sR^n$ has  a countable basis.
+\item (Heine-Borel theorem) 
+A set in $\sR^n$ is compact if and only if it is closed and bounded. 
+\item Since $\sR^n$ is a metric space, $\sR^n$ is a Hausdorff space. 
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

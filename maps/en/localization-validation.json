@@ -1,0 +1,276 @@
+{
+  "language": "en",
+  "status": "passed",
+  "nodes_sha256": "4f146b824e4cce0f3b8e47e1c756557124c5075288fdf8cd7db0145a879abce1",
+  "edges_sha256": "ffc436ae4c1c8f35caf8127e347cd4547b1c24178389904fb0e40efc922a4fe4",
+  "bridges_sha256": "294eb2e6671dce5632536051331593b6f5f74d73797993cfb97cbf7c5d409b33",
+  "english_navigation_rows": 21741,
+  "all_original_navigation_fields_equal_to_chinese": true,
+  "source_quality_flagged_nodes": 16,
+  "chinese_output_and_input_files_unchanged": 38,
+  "preserved_file_hashes": {
+    "maps/domain-02.png": "52feed134b292464b4379179234f0371f89e0509f5aa0a715add4a2f538afea7",
+    "maps/render-manifest.json": "a6f0a3bac3ee9f8165e7458ec28c3d1a5a81b9c6f28f441448dd9ed256e3128a",
+    "maps/domain-06.png": "0d68fc1691054f34177b223c5804dbcf4e14fdb6e79d1b5c7e605f2e2f8a5f11",
+    "maps/domain-08.png": "f7de2fbb731759e2da8feddf50a37c37c60facd3f3a60af619b92226787732d9",
+    "maps/domain-09.svg": "47a1a24e42aff153855547b4c2d3bca9119b0e02583c8efecc156ee0398b4ab6",
+    "maps/domain-04.svg": "d0b7b849f48d3e9e0338ab6c74aa980c09f2f2b88f4b0709b14b0281c15cf16b",
+    "maps/读图说明.txt": "8ea1cb04c32a6040eaebce2852bc1133ddc4b9d0c28edff4d390d3800384a5d4",
+    "maps/mathematical-archipelago-bridges.pdf": "a9b1f491d87a7fc970fa2c62c298537121e31dfd59307c1df8a9807ff4bf8846",
+    "maps/domain-08.svg": "63af32544e17ae0134179c325b88c284e697276840724e9be472921c36d4b36f",
+    "maps/domain-12.png": "8a04a0252a59fe15564203b9246821eb2d4438e96b84f54b224e522120397d12",
+    "maps/source-quality-findings.json": "f8d1d867d4ea2921ea47ad8b6f3bc2163126a9e0996c7ef42e37c4c8226ce0c3",
+    "maps/domain-10.svg": "167e0b88adafcf5bcfd59b835b944914c057be877a4280f0863e2eb49f30f548",
+    "maps/domain-12.svg": "cb7cb4bf3bbf3cc3436fd4c1ba7def69413a23bb779827b707bcc73d488a8e92",
+    "maps/domain-11.svg": "924ae01952ed04e2e8ff432f44cb6fff1775f68a4cb594932c3c8efbe1afac57",
+    "maps/mathematical-archipelago-domain-atlas.pdf": "59cc245f621937ace5e74f5f406d79aba3b423057dee709814f19276b7778efe",
+    "maps/domain-07.png": "3c00aa421cedaaf98732783147321a3cdfb74d50172aca286ad0fc2b07636e1a",
+    "maps/mathematical-archipelago-bridges.png": "a8fb0f47b6570a0d65e19a8dcef4df29803e995796cab7440e112739bf89cf2d",
+    "maps/domain-03.png": "ac0c87a3a4e361824308baaa2436c6861cf380aad08fe0d79df5ce553e84b3d2",
+    "maps/mathematical-archipelago-overview.pdf": "a8fab4e30bea69ab7e07b466b739e98095a4cbeae2ebaf0ec1070a70f04baf04",
+    "maps/domain-02.svg": "cd1745d08aaae917661dcaef99495d5b33fdd0056a2a3e5b2a50656ee76ac97a",
+    "maps/domain-01.svg": "e5bed417a676dc9af90b6024f47af8799d6991c2379581fe535e698b408293e3",
+    "maps/domain-06.svg": "3000207cd332c5712dc6ed7679c397f299acf213399e493c974aac7400fe0ce1",
+    "maps/domain-05.png": "d62aeac6f42404ccc226f6e4ff8f809e29eb5a5a3da8237b0e1456457cc76935",
+    "maps/mathematical-archipelago-overview.png": "cf851daf48f3b8e444dbc9318d58782fb0ed61ebaa7edac92766a90af029099e",
+    "maps/domain-04.png": "d27555c4e7628af4136ef77176907196dc5bbe58379de8f77a8e55a8fdf67859",
+    "maps/mathematical-archipelago-bridges.svg": "06e5c5e36f252a573cb069fee34754d2d856d10700a0303aecd4cd8fd1c7f913",
+    "maps/domain-05.svg": "a4289cc7868c0e735904d9cc2f2a048700e008672f86d579b0f49ee1377c41aa",
+    "maps/domain-01.png": "a17c3fbef9a91db3673c763482861f7cbcbc365d2f3d508eab4ef3eb9b594701",
+    "maps/navigation-index.csv": "bce4174a0c87ba667891062c01bf9581c71d3b9970edc735fea03f232698a387",
+    "maps/domain-07.svg": "d846980a5701d8d1feb44f0923114db12976a982724d4129e2e2c2725793732d",
+    "maps/domain-11.png": "e816e836844e4643c38c7f49835d75a0bb89dcfec1cf143bb28299c9e85c8eea",
+    "maps/domain-03.svg": "6b7e01a5c54c3458050fa039ba11672e72dd853eb774fbeb5301f43d90d16d83",
+    "maps/domain-09.png": "854fd8c20df5cf60eaf07e093f23bf05f71a7243c145a0a0034e0a666dca2fae",
+    "maps/mathematical-archipelago-overview.svg": "da38a79eb575fe75c573e90b035cb1f98865bcc7a6c6be53b42442678b3f46ec",
+    "maps/domain-10.png": "2a83cff9b0aea6dfda457db74f3705ab925b44de384c76a27e2761f42d0f6197",
+    "data/nodes.jsonl": "4f146b824e4cce0f3b8e47e1c756557124c5075288fdf8cd7db0145a879abce1",
+    "data/edges.csv": "ffc436ae4c1c8f35caf8127e347cd4547b1c24178389904fb0e40efc922a4fe4",
+    "data/bridges.csv": "294eb2e6671dce5632536051331593b6f5f74d73797993cfb97cbf7c5d409b33"
+  },
+  "actual_svg_counts": {
+    "domain-01.svg": {
+      "anchored_node_groups": {
+        "islands-00": 9693
+      },
+      "anchored_node_count": 9693,
+      "background_marker_count": 0,
+      "documented_route_count": 0,
+      "sha256": "b68b283ce734c683148076cffa14356d9dd2b644eea812a52c492791062b15b9"
+    },
+    "domain-02.svg": {
+      "anchored_node_groups": {
+        "islands-01": 2530
+      },
+      "anchored_node_count": 2530,
+      "background_marker_count": 0,
+      "documented_route_count": 0,
+      "sha256": "0b010cd4d9c0ac19e742214d0f0251158a0522d19cb02f9cf4cdb52e081bc618"
+    },
+    "domain-03.svg": {
+      "anchored_node_groups": {
+        "islands-02": 2292
+      },
+      "anchored_node_count": 2292,
+      "background_marker_count": 0,
+      "documented_route_count": 0,
+      "sha256": "a4cebc8b1f99eb81f6ddb5283f8f1f2bf2dc1e82a7961e085bc6ebf0728355ce"
+    },
+    "domain-04.svg": {
+      "anchored_node_groups": {
+        "islands-03": 1759
+      },
+      "anchored_node_count": 1759,
+      "background_marker_count": 0,
+      "documented_route_count": 0,
+      "sha256": "03e7d565ab319431d14cc61099847783dfc35c9e74e0c5bcfc496ad442f54c65"
+    },
+    "domain-05.svg": {
+      "anchored_node_groups": {
+        "islands-04": 1551
+      },
+      "anchored_node_count": 1551,
+      "background_marker_count": 0,
+      "documented_route_count": 0,
+      "sha256": "31035cf0188dd5520547b3f262072daac95c0a7149812ca1096ec1ec0c316abf"
+    },
+    "domain-06.svg": {
+      "anchored_node_groups": {
+        "islands-05": 1420
+      },
+      "anchored_node_count": 1420,
+      "background_marker_count": 0,
+      "documented_route_count": 0,
+      "sha256": "37eb48d7bf5582356308821b5d11851df41d60efa1fd86152ec02770b1930561"
+    },
+    "domain-07.svg": {
+      "anchored_node_groups": {
+        "islands-06": 825
+      },
+      "anchored_node_count": 825,
+      "background_marker_count": 0,
+      "documented_route_count": 0,
+      "sha256": "52cdb8688275b961c236b343d0ead27ab4344a21e7dd4e1bd61864231c75c750"
+    },
+    "domain-08.svg": {
+      "anchored_node_groups": {
+        "islands-07": 707
+      },
+      "anchored_node_count": 707,
+      "background_marker_count": 0,
+      "documented_route_count": 0,
+      "sha256": "4cea5029a35566e857e427a3d63697207e0a106af78cab90509f78543301b336"
+    },
+    "domain-09.svg": {
+      "anchored_node_groups": {
+        "islands-08": 587
+      },
+      "anchored_node_count": 587,
+      "background_marker_count": 0,
+      "documented_route_count": 0,
+      "sha256": "339e3d876d5964601da49d5a650c4031f4e0ca4903b6829c03716f694c034d91"
+    },
+    "domain-10.svg": {
+      "anchored_node_groups": {
+        "islands-09": 259
+      },
+      "anchored_node_count": 259,
+      "background_marker_count": 0,
+      "documented_route_count": 0,
+      "sha256": "df85af50375c78f61f0090e1745fcea595b94ff1b0276397370bfc764330d535"
+    },
+    "domain-11.svg": {
+      "anchored_node_groups": {
+        "islands-10": 66
+      },
+      "anchored_node_count": 66,
+      "background_marker_count": 0,
+      "documented_route_count": 0,
+      "sha256": "37c22a4fbdfc650119e85f26f98aa6fa11689f548692576dfa26d4731fa3a02c"
+    },
+    "domain-12.svg": {
+      "anchored_node_groups": {
+        "islands-11": 52
+      },
+      "anchored_node_count": 52,
+      "background_marker_count": 0,
+      "documented_route_count": 0,
+      "sha256": "0a3df8a01f56d91fee3abc285e2ee2b652c53b19084906054d42c811ef34aa80"
+    },
+    "mathematical-archipelago-bridges.svg": {
+      "anchored_node_groups": {
+        "islands-04": 12,
+        "islands-05": 8,
+        "islands-06": 4,
+        "islands-07": 5,
+        "islands-08": 9,
+        "islands-09": 3
+      },
+      "anchored_node_count": 41,
+      "background_marker_count": 21741,
+      "documented_route_count": 21,
+      "sha256": "ccec65fb41f40c73b63a865905913ebdee94855cc611fd9154863ba0d67d0b24"
+    },
+    "mathematical-archipelago-overview.svg": {
+      "anchored_node_groups": {
+        "islands-00": 9693,
+        "islands-01": 2530,
+        "islands-02": 2292,
+        "islands-03": 1759,
+        "islands-04": 1551,
+        "islands-05": 1420,
+        "islands-06": 825,
+        "islands-07": 707,
+        "islands-08": 587,
+        "islands-09": 259,
+        "islands-10": 66,
+        "islands-11": 52
+      },
+      "anchored_node_count": 21741,
+      "background_marker_count": 0,
+      "documented_route_count": 0,
+      "sha256": "2d878ab6a25c69e5a6f9df117b66587dc9eeab8298b0462dee633371b01a53e9"
+    }
+  },
+  "svg_text_checks": [
+    {
+      "file": "domain-01.svg",
+      "sha256": "b68b283ce734c683148076cffa14356d9dd2b644eea812a52c492791062b15b9",
+      "visible_untranslated_chinese_strings": 0
+    },
+    {
+      "file": "domain-02.svg",
+      "sha256": "0b010cd4d9c0ac19e742214d0f0251158a0522d19cb02f9cf4cdb52e081bc618",
+      "visible_untranslated_chinese_strings": 0
+    },
+    {
+      "file": "domain-03.svg",
+      "sha256": "a4cebc8b1f99eb81f6ddb5283f8f1f2bf2dc1e82a7961e085bc6ebf0728355ce",
+      "visible_untranslated_chinese_strings": 0
+    },
+    {
+      "file": "domain-04.svg",
+      "sha256": "03e7d565ab319431d14cc61099847783dfc35c9e74e0c5bcfc496ad442f54c65",
+      "visible_untranslated_chinese_strings": 0
+    },
+    {
+      "file": "domain-05.svg",
+      "sha256": "31035cf0188dd5520547b3f262072daac95c0a7149812ca1096ec1ec0c316abf",
+      "visible_untranslated_chinese_strings": 0
+    },
+    {
+      "file": "domain-06.svg",
+      "sha256": "37eb48d7bf5582356308821b5d11851df41d60efa1fd86152ec02770b1930561",
+      "visible_untranslated_chinese_strings": 0
+    },
+    {
+      "file": "domain-07.svg",
+      "sha256": "52cdb8688275b961c236b343d0ead27ab4344a21e7dd4e1bd61864231c75c750",
+      "visible_untranslated_chinese_strings": 0
+    },
+    {
+      "file": "domain-08.svg",
+      "sha256": "4cea5029a35566e857e427a3d63697207e0a106af78cab90509f78543301b336",
+      "visible_untranslated_chinese_strings": 0
+    },
+    {
+      "file": "domain-09.svg",
+      "sha256": "339e3d876d5964601da49d5a650c4031f4e0ca4903b6829c03716f694c034d91",
+      "visible_untranslated_chinese_strings": 0
+    },
+    {
+      "file": "domain-10.svg",
+      "sha256": "df85af50375c78f61f0090e1745fcea595b94ff1b0276397370bfc764330d535",
+      "visible_untranslated_chinese_strings": 0
+    },
+    {
+      "file": "domain-11.svg",
+      "sha256": "37c22a4fbdfc650119e85f26f98aa6fa11689f548692576dfa26d4731fa3a02c",
+      "visible_untranslated_chinese_strings": 0
+    },
+    {
+      "file": "domain-12.svg",
+      "sha256": "0a3df8a01f56d91fee3abc285e2ee2b652c53b19084906054d42c811ef34aa80",
+      "visible_untranslated_chinese_strings": 0
+    },
+    {
+      "file": "mathematical-archipelago-bridges.svg",
+      "sha256": "ccec65fb41f40c73b63a865905913ebdee94855cc611fd9154863ba0d67d0b24",
+      "visible_untranslated_chinese_strings": 0
+    },
+    {
+      "file": "mathematical-archipelago-overview.svg",
+      "sha256": "2d878ab6a25c69e5a6f9df117b66587dc9eeab8298b0462dee633371b01a53e9",
+      "visible_untranslated_chinese_strings": 0
+    }
+  ],
+  "pdf_domain_atlas_pages_checked_with_pdfinfo": 12,
+  "images_visually_reviewed": [
+    "mathematical-archipelago-overview.png",
+    "mathematical-archipelago-bridges.png"
+  ],
+  "english_chart_text": "Titles, region names, legend, footnotes, bridge labels and source-quality hover notices translated. Original audit evidence is preserved in its recorded language.",
+  "offline_reproduction": "python scripts/render_atlas.py --language en --out maps/en",
+  "original_data_records_mutated": false,
+  "original_chinese_outputs_mutated": false
+}

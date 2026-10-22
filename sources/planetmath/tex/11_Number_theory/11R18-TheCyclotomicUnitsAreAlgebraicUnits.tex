@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheCyclotomicUnitsAreAlgebraicUnits}
+\pmcreated{2013-03-22 14:13:17}
+\pmmodified{2013-03-22 14:13:17}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{the cyclotomic units are algebraic units}
+\pmrecord{4}{35657}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R18}
+\pmrelated{AlgebraicInteger}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+Let $L=\Rats(\zeta_m)$ be a cyclotomic extension of $\Rats$ with $m$ chosen to be minimal and let $\mathcal{O}_L$ be the ring of integers ($=\Ints(\zeta_m)$), recall that \emph{the cyclotomic units} are the elements of the form
+\begin{align*}
+\eta=\frac{\zeta^r-1}{\zeta^s-1}
+\end{align*}
+with $r$ and $s$ relatively prime to $m$ (where $\zeta=\zeta_m$). Here we prove that these elements are indeed algebraic units, i.e. $\eta \in \mathcal{O}_L^\times$.
+
+\begin{lemma}
+The cyclotomic units are algebraic units. 
+\end{lemma}
+\begin{proof}
+In order to prove the lemma, we will check that both $\eta$ and $\eta^{-1}$ are algebraic integers, thus $\eta$ is a unit. Notice that it suffices to prove that $\eta$ is an algebraic integer, because the rest follows from interchanging the role of $r$ and $s$.
+
+Let $r,s\in \Ints$ be relatively prime to $m$, thus $r \mod m, s\mod m$ are units in $\Ints/m\Ints$ and we can find an integer $a$ such that:
+$$a\cdot s \equiv r \mod m$$ 
+Note also that it follows that $\zeta^r=\zeta^{as}$. Moreover, using the equality of polynomials:
+$$x^{as}-1=(x^s-1)\cdot(x^{s(a-1)}+x^{s(a-2)}+\ldots+x^s+1)$$
+we get:
+\begin{eqnarray*}
+\eta &=& \frac{\zeta^r-1}{\zeta^s-1}=\frac{\zeta^{as}-1}{\zeta^s-1}\\
+&=& \frac{(\zeta^s-1)\cdot(\zeta^{s(a-1)}+\zeta^{s(a-2)}+\ldots+\zeta^s+1)}{\zeta^s-1}\\
+&=& \zeta^{s(a-1)}+\zeta^{s(a-2)}+\ldots+\zeta^s+1 \in \mathcal{O}_L=\Ints[\zeta]
+\end{eqnarray*}
+Hence the result.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

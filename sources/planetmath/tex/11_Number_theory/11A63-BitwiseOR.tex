@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BitwiseOR}
+\pmcreated{2013-03-22 17:02:48}
+\pmmodified{2013-03-22 17:02:48}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{bitwise OR}
+\pmrecord{4}{39336}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmrelated{BitwiseAND}
+\pmrelated{BitwiseXOR}
+\pmrelated{BitwiseNOT}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\em Bitwise OR} is a bit-level operation on two binary values which indicates which bits are set in either value. For each position $i$, if the bit $d_i$ in either value is 1, then $d_i$ of the result is 1, otherwise it's 0. For example, given 50 and 163 in two unsigned bytes, a bitwise OR returns 179.
+
+\begin{tabular}{|r|c|c|c|c|c|c|c|c|}
+   & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 0 \\
+OR & 1 & 0 & 1 & 0 & 0 & 0 & 1 & 1 \\
+ = & 1 & 0 & 1 & 1 & 0 & 0 & 1 & 1 \\
+\end{tabular}
+
+In most high-level programming languages that offer bitwise OR, the usual operator is a single pipe line (|), not to be confused with a double pipe line (||) which performs a Boolean OR, returning a True or False value.
+
+The Windows Calculator offers bitwise OR in scientific calculator mode, while the Mac OS X Calculator offers it in programmer mode.
+%%%%%
+%%%%%
+\end{document}

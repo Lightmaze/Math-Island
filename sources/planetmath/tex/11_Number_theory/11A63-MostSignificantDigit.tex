@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MostSignificantDigit}
+\pmcreated{2013-03-22 16:52:20}
+\pmmodified{2013-03-22 16:52:20}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{most significant digit}
+\pmrecord{4}{39122}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The {\em most significant digit} of a number $n$ written in a given positional base $b$ is the digit in the most significant place value, and has to be in the range $-1 < d_k < b$. In the case of an integer, the most significant digit is the $b^k$'s place value, where $k$ is the total number of digits, or $k = \lfloor log_{b} n \rfloor$.
+
+In an array of digits $k$ long meant for mathematical manipulation, it might be convenient to index the least significant digit with index 1 or 0, and the more significant digits with larger integers. (This enables the calculation of the value of a given digit as $d_ib^i$  rather than $d_ib^{k - i}$.) For an array of digits meant for text string manipulation, however, the most significant digit might be placed at position 0 or 1 (for example, by Mathematica's IntegerDigits function).
+
+In binary, the most significant digit is often called the {\em most significant bit}.
+%%%%%
+%%%%%
+\end{document}

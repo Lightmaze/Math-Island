@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClosedComplexPlane}
+\pmcreated{2013-03-22 17:37:48}
+\pmmodified{2013-03-22 17:37:48}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{closed complex plane}
+\pmrecord{5}{40051}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+\pmclassification{msc}{30-00}
+\pmsynonym{extended complex plane}{ClosedComplexPlane}
+\pmrelated{RiemannSphere}
+\pmrelated{StereographicProjection}
+\pmrelated{RegularAtInfinity}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+The complex plane $\mathbb{C}$, i.e. the set of the complex numbers $z$ satisfying
+$$|z| < \infty,$$
+is open but not closed, since it doesn't contain the accumulation points of all sets of complex numbers, for example of the set $\{1,\,2,\,3,\,\ldots\}$.\, One can \PMlinkescapetext{supplement} $\mathbb{C}$ to the {\em closed complex plane} $\mathbb{C}\cup\{\infty\}$ by adding to $\mathbb{C}$ the infinite point $\infty$ which \PMlinkescapetext{represents} the lacking accumulation points.  One settles that\, $|\infty| = \infty$,\, where the latter $\infty$ means the real infinity.
+
+The resulting space is the one-point compactification of $\mathbb{C}$. The open sets are the open sets in $\mathbb{C}$ together with sets containing $\infty$ whose complement is compact in $\mathbb{C}$. Conceptually, one thinks of the additional open sets as those open sets ``around $\infty$''.
+
+The one-point compactification of $\mathbb{C}$ is also the complex projective line $\mathbb{CP}^1$, as well as the Riemann sphere.
+
+%%%%%
+%%%%%
+\end{document}

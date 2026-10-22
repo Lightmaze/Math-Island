@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KroneckerWeberTheorem}
+\pmcreated{2013-03-22 13:52:41}
+\pmmodified{2013-03-22 13:52:41}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Kronecker-Weber theorem}
+\pmrecord{6}{34620}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R20}
+\pmclassification{msc}{11R37}
+\pmclassification{msc}{11R18}
+\pmrelated{ComplexMultiplication}
+\pmrelated{AbelianExtension}
+\pmrelated{PrimeIdealDecompositionInCyclotomicExtensionsOfMathbbQ}
+\pmrelated{NumberField}
+\pmrelated{CyclotomicExtension}
+\pmrelated{ArithmeticOfEllipticCurves}
+\pmdefines{abelian extensions of quadratic imaginary number fields}
+\pmdefines{Weber function}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+The following theorem classifies the possible \PMlinkid{abelian extensions}{AbelianExtension}
+of $\Rats$.
+
+\begin{thm}[Kronecker-Weber Theorem]
+Let $L/\Rats$ be a finite \PMlinkid{abelian extension}{AbelianExtension}, then $L$ is contained
+in a cyclotomic extension, i.e. there is a root of unity $\zeta$
+such that $L \subseteq \Rats(\zeta)$.
+\end{thm}
+
+In a similar fashion to this result, the theory of elliptic curves
+with complex multiplication provides a classification of \PMlinkid{abelian
+extensions}{AbelianExtension} of quadratic imaginary number fields:
+
+\begin{thm}
+Let $K$ be a quadratic imaginary number field with ring of
+integers $\mathcal{O}_K$. Let $E$ be an elliptic curve with
+complex multiplication by $\mathcal{O}_K$ and let $j(E)$ be the
+$j$-invariant of $E$. Then:
+\begin{enumerate}
+\item $K(j(E))$ is the Hilbert class field of $K$.
+
+\item If $j(E)\neq 0,1728$ then the maximal \PMlinkid{abelian extension}{AbelianExtension} of
+$K$ is given by:
+$$K^{ab}=K(j(E),h(E_{\operatorname{torsion}}))$$
+where $h(E_{\operatorname{torsion}})$ is the set of
+$x$-coordinates of all the torsion points of $E$.
+\end{enumerate}
+\end{thm}
+
+Note: The map $h\colon E \to \Complex$ is called a \emph{Weber
+function} for $E$. We can define a Weber function for the cases
+$j(E)=0,1728$ so the theorem holds true for those two cases as
+well. Assume $E\colon y^2=x^3+Ax+B$, then:
+$$ h(P)=
+\begin{cases}
+x(P) ,\text{ if $j(E)\neq 0, 1728$};\\
+x^2(P) ,\text{ if $j(E)=1728$};\\
+x^3(P) ,\text{ if $j(E)=0$}.
+\end{cases}
+$$
+
+\begin{thebibliography}{9}
+\bibitem{lang} S. Lang, {\em Algebraic Number Theory}, Springer-Verlag, New York.
+\bibitem{silverman} Joseph H. Silverman, {\em Advanced Topics in the Arithmetic of Elliptic Curves}. Springer-Verlag, New
+York.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

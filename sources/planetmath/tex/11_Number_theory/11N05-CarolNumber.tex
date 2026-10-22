@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CarolNumber}
+\pmcreated{2013-03-22 16:13:10}
+\pmmodified{2013-03-22 16:13:10}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Carol number}
+\pmrecord{5}{38317}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given $n$, compute $4^n - 2^{n + 1} - 1$ or $(2^n - 1)^2 - 2$ or $(2^{2n} - 1) - 2^{n + 1}$ or $$\sum_{\substack{i \ne n + 1\\i = 0}}^{2n} 2^i.$$ Any of these formulas gives the \emph{Carol number} for $n$. Regardless of how they're computed, these numbers are almost repunits in binary, needing only the addition of $2^{n + 1}$ to become so.
+
+The first few Carol numbers are 7, 47, 223, 959, 3967, 16127, 65023, 261119, 1046527, 4190207, 16769023 (listed in A093112 of Sloane's OEIS). Every third Carol number is divisible by 7, thus prime Carol numbers can't have $n = 3x + 2$ (except of course for $n = 2$. The largest Carol number known to be prime is $(2^{248949} - 1)^2 - 2$, found by Japke Rosink using MultiSieve and OpenPFGW in March 2006.
+%%%%%
+%%%%%
+\end{document}

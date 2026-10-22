@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SuperperfectNumber}
+\pmcreated{2013-03-22 17:03:38}
+\pmmodified{2013-03-22 17:03:38}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{superperfect number}
+\pmrecord{5}{39352}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A $k$-{\em superperfect number} $n$ is an integer such that $\sigma^k(n) = 2n$, where $\sigma^k(x)$ is the iterated sum of divisors function. For example, 16 is 2-superperfect since its divisors add up to 31, and in turn the divisors of 31 add up to 32, which is twice 16.
+
+At first Suryanarayana only considered 2-superperfect numbers. It is easy to prove that numbers of the form $2^{p - 1}$ are 2-superperfect only if $2^p - 1$ is a Mersenne prime. The existence of odd 2-superperfect numbers appears as unlikely as that of regular odd perfect numbers.
+
+Later, Dieter Bode generalized the concept for any $k$ and proved that when $k > 2$ there are no even $k$-superperfect numbers. Others have further generalized the concept to $(k, m)$-superperfect numbers satisifying the equality $\sigma^k(n) = mn$, and Weisstein programs a Mathematica command to default to $m = 2$ when the third argument is omitted. For example, 8, 21, and 512 are (2, 3)-superperfect, since the second iteration of the sum of divisors function gives thrice them, 24, 63, and 1536 respectively.
+
+Not to be confused with hyperperfect numbers, which satisfy a different equality involving the sum of divisors function.
+
+\begin{thebibliography}{3}
+\bibitem{rg} R. K. Guy, {\it Unsolved Problems in Number Theory} New York: Springer-Verlag 2004: B9
+\bibitem{ds} D. Suryanarayana, ``Super perfect numbers'' {\it Elem. Math.} {\bf 24} (1969): 16 - 17
+\bibitem{ew} E. Weisstein, ``\PMlinkexternal{Superperfect number}{http://mathworld.wolfram.com/SuperperfectNumber.html}'' {\it Mathworld}
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

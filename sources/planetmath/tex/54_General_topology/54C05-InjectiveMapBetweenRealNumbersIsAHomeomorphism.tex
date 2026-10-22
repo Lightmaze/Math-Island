@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{InjectiveMapBetweenRealNumbersIsAHomeomorphism}
+\pmcreated{2013-03-22 18:53:58}
+\pmmodified{2013-03-22 18:53:58}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{injective map between real numbers is a homeomorphism}
+\pmrecord{4}{41747}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\textbf{Lemma.} Assume that $I$ is an open interval and $f:I\to\mathbb{R}$ is an injective, continuous map. Then $f(I)\subseteq\mathbb{R}$ is an open subset.
+
+\textit{Proof.} Since $f$ is injective, then of course $f$ is monotonic. Without loss of generality, we may assume that $f$ is increasing. Let $y=f(x)\in f(I)$. Since $I$ is open, then there are $\alpha,\beta\in I$ such that $\alpha<x<\beta$. Therefore $f(\alpha)<y<f(\beta)$ and (because continuous functions are Darboux functions) for any $y'\in \big(f(\alpha),f(\beta)\big)$ there exists $x'\in I$ such that $f(x')=y'$. This shows that $\big(f(\alpha),f(\beta)\big)$ is an open neighbourhood of $y$ contained in $f(I)$ and therefore (since $y$ was arbitrary) $f(I)$ is open. $\square$
+
+\textbf{Proposition.} Assume that $I$ is an open interval and $f:I\to\mathbb{R}$ is an injective, continuous map. Then $f$ is a homeomorphism onto image.
+
+\textit{Proof.} Of course, it is enough to show that $f$ is an open map. But if $U\subseteq I$ is open, then there are disjoint, open intervals $I_{\alpha}$ such that $$U=\bigcup_{\alpha} I_{\alpha}.$$ Therefore we obtain continuous, injective maps $f_{\alpha}:I_{\alpha}\to\mathbb{R}$ which are restrictions of $f$ to $I_{\alpha}$. By lemma we have that $f_{\alpha}(I_{\alpha})$ is open and therefore
+$$f(U)=f\bigg(\bigcup_{\alpha}I_{\alpha}\bigg)=\bigcup_{\alpha}f(I_{\alpha})=\bigcup_{\alpha}f_{\alpha}(I_{\alpha})$$
+is open. This shows that $f$ is a homeomorphism onto image. $\square$
+%%%%%
+%%%%%
+\end{document}

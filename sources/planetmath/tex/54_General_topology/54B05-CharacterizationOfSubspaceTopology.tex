@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CharacterizationOfSubspaceTopology}
+\pmcreated{2013-03-22 15:40:32}
+\pmmodified{2013-03-22 15:40:32}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{characterization of subspace topology}
+\pmrecord{6}{37616}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B05}
+%\pmkeywords{subspace}
+%\pmkeywords{weak topology}
+%\pmkeywords{universal property}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem*{theorem*}{Theorem}
+\begin{document}
+\PMlinkescapeword{completes}
+\begin{theorem*}
+Let $X$ be a topological space and $Y\subset X$ any subset.  The subspace topology on $Y$ is the weakest topology making the inclusion map continuous.
+\end{theorem*}
+
+\begin{proof}
+Let $\mathcal{S}$ denote the subspace topology on $Y$ and $j\colon Y\hookrightarrow X$ denote the inclusion map.
+
+Suppose $\{\mathcal{T}_{\alpha}\mid\alpha\in J\}$ is a family of topologies on $Y$ such that each inclusion map $j_{\alpha}\colon(Y,\mathcal{T}_{\alpha})\hookrightarrow X$ is continuous.  Let $\mathcal{T}$ be the intersection $\bigcap_{\alpha\in J}\mathcal{T}_{\alpha}$.  Observe that $\mathcal{T}$ is also a topology on $Y$.  Let $U$ be open in $X$.  By continuity of $j_{\alpha}$, the set $j_{\alpha}^{-1}(U)=j^{-1}(U)$ is open in each $\mathcal{T}_{\alpha}$; consequently, $j^{-1}(U)$ is also in $\mathcal{T}$.   This shows that there is a weakest topology on $Y$ making inclusion continuous.
+
+We claim that any topology strictly weaker than $\mathcal{S}$ fails to make the inclusion map continuous.  To see this, suppose $\mathcal{S}_0\subsetneq\mathcal{S}$ is a topology on $Y$.  Let $V$ be a set open in $\mathcal{S}$ but not in $\mathcal{S}_0$.  By the definition of subspace topology, $V=U\cap Y$ for some open set $U$ in $X$.  But $j^{-1}(U)=V$, which was specifically chosen not to be in $\mathcal{S_0}$.  Hence $\mathcal{S_0}$ does not make the inclusion map continuous.  This completes the proof.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

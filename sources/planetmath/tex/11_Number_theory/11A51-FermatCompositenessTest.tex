@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FermatCompositenessTest}
+\pmcreated{2013-03-22 13:17:36}
+\pmmodified{2013-03-22 13:17:36}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Fermat compositeness test}
+\pmrecord{15}{33781}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+%\pmkeywords{primality}
+%\pmkeywords{prime}
+%\pmkeywords{composite}
+%\pmkeywords{number theory}
+\pmrelated{MillerRabinPrimeTest}
+\pmdefines{pseudoprime}
+\pmdefines{witness}
+\pmdefines{Carmichael numbers}
+
+\endmetadata
+
+% We include the normal PlanetMath packages
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% and ``amsthm'' for neatly the proof enviroment.
+\usepackage{amsthm}
+
+% Finnally, we just need to provide a definition for \nequiv
+\newcommand{\nequiv}{\not\equiv}
+\begin{document}
+The \emph{Fermat compositeness test} is a primality test based on the observation that by Fermat's little theorem if $b^{n-1} \nequiv 1\pmod n$ and $b\nequiv 0\pmod n$, then $n$ is composite. The Fermat compositeness test consists of checking whether $b^{n-1} \equiv 1\pmod n$ for a handful of values of $b$. If a $b$ with $b^{n-1} \nequiv 1\pmod n$ is found, then $n$ is composite. 
+
+A value of $b$ for which $b^{n-1} \nequiv 1\pmod n$ is called a \emph{witness} to $n$'s compositeness. If $b^{n-1} \equiv 1\pmod n$, then $n$ is said to be \emph{pseudoprime} base $b$.
+
+It can be proven that most composite numbers can be shown to be composite by testing only a few values of $b$. However, there are infinitely many composite numbers that are pseudoprime in every base. These are \emph{Carmichael numbers} (see OEIS sequence \PMlinkexternal{A002997}{http://www.research.att.com/cgi-bin/access.cgi/as/njas/sequences/eisA.cgi?Anum=A002997} for a list of first few Carmichael numbers).
+%%%%%
+%%%%%
+\end{document}

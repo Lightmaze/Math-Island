@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WallSunSunPrime}
+\pmcreated{2013-03-22 18:04:18}
+\pmmodified{2013-03-22 18:04:18}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Wall-Sun-Sun prime}
+\pmrecord{4}{40605}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmsynonym{Fibonacci Wieferich prime}{WallSunSunPrime}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em Wall-Sun-Sun prime} is a prime number $p > 5$ such that $p^2 | F_{p - \left(\frac{p}{5}\right)}$, with $F_n$ being the $n$th Fibonacci number and $\left(\frac{p}{5}\right)$ being a Legendre symbol. The prime $p$ always divides $F_{p - \left(\frac{p}{5}\right)}$, but no case is known for the square of a prime $p^2$ also dividing that.
+
+The search for these primes started in the 1990s as Donald Dines Wall, Zhi-Hong Sun and Zhi-Wei Sun searched for counterexamples to Fermat's last theorem. But Andrew Wiles's proof does not rule out the existence of these primes: if Fermat's last theorem was false and there existed a prime exponent $p$ such that $x^p + y^p = z^p$, the square of such a prime would also divide $F_{p - \left(\frac{p}{5}\right)}$, but with Fermat's last theorem being true, the existence of a Wall-Sun-Sun prime would not present a contradiction.
+
+As of 2005, the lower bound was $3.2 \times 10^{12}$, given by McIntosh.
+
+\begin{thebibliography}{1}
+\bibitem{rccp} Richard Crandall \& Carl Pomerance, {\it Prime Numbers: A Computational Perspective}, 2nd Edition. New York: Springer (2005): 32
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

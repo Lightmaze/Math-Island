@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{StonevCechCompactification}
+\pmcreated{2013-03-22 14:37:38}
+\pmmodified{2013-03-22 14:37:38}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{Stone-\v{C}ech compactification}
+\pmrecord{10}{36207}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D30}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Stone-\v Cech compactification is a technique for embedding a Tychonoff topological space in a compact Hausdorff space.
+
+Let $X$ be a Tychonoff space and let $C$ be the space of all continuous functions from $X$ to the closed interval $[0,1]$.  To each element $x \in X$, we may associate the evaluation functional $e_x \colon C \to [0,1]$ defined by $e_x (f) = f(x)$.  In this way, $X$ may be identified with a set of functionals.
+
+The space $[0,1]^C$ of \emph{all} functionals from $C$ to $[0,1]$ may be endowed with the Tychonoff product topology.  Tychonoff's theorem asserts that, in this topology, $[0,1]^C$ is a compact Hausdorff space.  The closure in this topology of the subset of $[0,1]^C$ which was identified with $X$ via evaluation functionals is $\beta X$, the Stone-\v Cech compactification of $X$.
+Being a closed subset of a compact Hausdorff space, $\beta X$ is itself a compact Hausdorff space.
+
+This construction has the wonderful property that, for any compact Hausdorff space $Y$, every continuous function $f \colon X \to Y$ may be extended to a \emph{unique} continuous function $\beta f \colon \beta X \to Y$.
+%%%%%
+%%%%%
+\end{document}

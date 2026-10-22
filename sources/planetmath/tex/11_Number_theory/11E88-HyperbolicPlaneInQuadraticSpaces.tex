@@ -1,0 +1,182 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HyperbolicPlaneInQuadraticSpaces}
+\pmcreated{2013-03-22 15:41:47}
+\pmmodified{2013-03-22 15:41:47}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{hyperbolic plane in quadratic spaces}
+\pmrecord{9}{37640}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11E88}
+\pmclassification{msc}{15A63}
+\pmdefines{hyperbolic plane}
+\pmdefines{hyperbolic space}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% define commands here
+\begin{document}
+A \PMlinkname{non-singular}{NonDegenerateQuadraticForm} isotropic quadratic space $\mathcal{H}$ of dimension
+2 (over a field) is called a \emph{hyperbolic plane}.  In other
+words, $\mathcal{H}$ is a 2-dimensional vector space over a field
+equipped with a quadratic form $Q$ such that there exists a non-zero
+vector $v$ with $Q(v)=0$.
+
+\textbf{Examples}.  Fix the ground field to be $\mathbb{R}$, and
+$\mathbb{R}^2$ be the two-dimensional vector space over $\mathbb{R}$
+with the standard basis $(0,1)$ and $(1,0)$.
+\begin{enumerate}
+\item Let $Q_1(x,y)=xy$.  Then $Q_1(a,0)=Q_1(0,b)=0$ for all $a,b\in\mathbb{R}$.  $(\mathbb{R}^2,Q_1)$ is a hyperbolic
+plane.  When $Q_1$ is written in matrix form, we have
+\begin{center}$Q_1(x,y) =
+\begin{pmatrix}x & y\end{pmatrix}
+\begin{pmatrix}
+0 & \frac{1}{2} \\
+\frac{1}{2} & 0
+\end{pmatrix}
+\begin{pmatrix}x \\ y\end{pmatrix}=
+\begin{pmatrix}x & y\end{pmatrix}
+M(Q_1)
+\begin{pmatrix}x \\ y\end{pmatrix}.$
+\end{center}
+\item Let $Q_2(r,s)=r^2-s^2$.  Then $Q_2(a,a)=0$ for all $a\in\mathbb{R}$.  $(\mathbb{R}^2,Q_2)$ is a hyperbolic
+plane.  As above, $Q_2$ can be written in matrix form:
+\begin{center}$Q_1(x,y) =
+\begin{pmatrix}x & y\end{pmatrix}
+\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}
+\begin{pmatrix}x \\ y\end{pmatrix}=
+\begin{pmatrix}x & y\end{pmatrix}
+M(Q_2)
+\begin{pmatrix}x \\ y\end{pmatrix}.$
+\end{center}
+\end{enumerate}
+
+From the above examples, we see that the name ``hyperbolic plane''
+comes from the fact that the associated quadratic form resembles the
+equation of a hyperbola in a two-dimensional Euclidean plane.
+
+It's not hard to see that the two examples above are equivalent
+quadratic forms.  To transform from the first form to the second,
+for instance, follow the linear substitutions $x=r-s$ and $y=r+s$,
+or in matrix form:
+\begin{center}$
+\begin{pmatrix}
+1 & 1 \\
+-1 & 1
+\end{pmatrix}
+M(Q_1)
+\begin{pmatrix}
+1 & -1 \\
+1 & 1
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & 1 \\
+-1 & 1
+\end{pmatrix}
+\begin{pmatrix}
+0 & \frac{1}{2} \\
+\frac{1}{2} & 0
+\end{pmatrix}
+\begin{pmatrix}
+1 & -1 \\
+1 & 1
+\end{pmatrix}
+=\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}=
+M(Q_2).$
+\end{center}
+
+In fact, we have the following
+
+\textbf{Proposition}.  Any two hyperbolic planes over a field $k$ of
+characteristic not 2 are isometric quadratic spaces.
+\begin{proof}  From the first example above, we see that the quadratic space with the quadratic form $xy$ is a hyperbolic plane.  Conversely, if we can show that any hyperbolic plane $\mathcal{H}$ is isometric the example (with the ground field switched from $\mathbb{R}$ to $k$), we are done.
+
+Pick a non-zero vector $u\in\mathcal{H}$ and suppose it is
+isotropic: $Q(u)=0$.  Pick another vector $v\in\mathcal{H}$ so
+$\lbrace u,v\rbrace$ forms a basis for $\mathcal{H}$.  Let $B$ be
+the symmetric bilinear form associated with $Q$.  If $B(u,v)=0$,
+then for any $w\in\mathcal{H}$ with $w=\alpha u+\beta v$, $B(u,w)=
+\alpha B(u,u)+\beta B(u,v)=0$, contradicting the fact that
+$\mathcal{H}$ is non-singular.  So $B(u,v)\neq 0$.  By dividing $v$
+by $B(u,v)$, we may assume that $B(u,v)=1$.
+
+Suppose $\alpha=B(v,v)$.  Then the matrix associated with the quadratic form $Q$ corresponding to the basis $\mathfrak{b}=\lbrace u,v\rbrace$ is  
+\begin{center}$M_{\mathfrak{b}}(Q)=
+\begin{pmatrix}
+0 & 1 \\
+1 & \alpha
+\end{pmatrix}.$
+\end{center}
+
+If $\alpha=0$ then we are done, since $M_{\mathfrak{b}}(Q)$ is equivalent to $M_{\mathfrak{b}}(Q_1)$ via the isometry $T:\mathcal{H}\to\mathcal{H}$ given by 
+\begin{center}$T=
+\begin{pmatrix}
+\frac{1}{2} & 0 \\
+0 & 1
+\end{pmatrix}\mbox{, so that }
+T^t
+\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}T=
+\begin{pmatrix}
+0 & \frac{1}{2} \\
+\frac{1}{2} & 0
+\end{pmatrix}.$
+\end{center}
+
+If $\alpha\neq 0$, then the trick is to replace $v$ with an isotropic vector $w$ so that the bottom right cell is also 0.  Let $w=-\frac{\alpha}{2}u+v$.  It's easy to verify that $Q(w)=0$.  As a result, the isometry $S$ required has the matrix form
+\begin{center}$S=
+\begin{pmatrix}
+1 & -\frac{\alpha}{2} \\
+0 & 1
+\end{pmatrix}\mbox{, so that }
+S^t
+\begin{pmatrix}
+0 & 1 \\
+1 & \alpha
+\end{pmatrix}S=
+\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}.$
+\end{center}
+\end{proof}
+
+Thus we may speak of the hyperbolic plane over a field without any ambiguity, and we may identify the hyperbolic plane with either of the two quadratic forms $xy$ or $x^2-y^2$.  Its notation, corresponding to the second of the forms, is $\langle 1\rangle \bot\langle-1\rangle$, or simply $\langle 1,-1\rangle$.
+
+A \emph{hyperbolic space} is a finite dimensional orthogonal direct sum of hyperbolic planes.  It is always even dimensional and has the notation 
+$\langle 1,-1,1,-1,\ldots,1,-1\rangle$ or simply $n\langle 1\rangle\bot n\langle -1\rangle$, where $2n$ is the dimensional of the hyperbolic space.
+
+\textbf{Remarks.}  
+\begin{itemize}
+\item The notion of the hyperbolic plane encountered in the theory of quadratic forms is different from the ``hyperbolic plane'', a 2-dimensional space of constant negative curvature (Euclidean signature) that is commonly used in differential geometry, and in non-Euclidean geometry.
+\item Instead of being associated with a quadratic form, a hyperbolic plane is sometimes defined in terms of an alternating form.  In any case, the two definitions of a hyperbolic plane coincide if the ground field has characteristic 2.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

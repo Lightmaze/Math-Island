@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UnramifiedExtensionsAndClassNumberDivisibility}
+\pmcreated{2013-03-22 15:02:59}
+\pmmodified{2013-03-22 15:02:59}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{unramified extensions and class number divisibility}
+\pmrecord{5}{36765}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Corollary}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R37}
+\pmclassification{msc}{11R32}
+\pmclassification{msc}{11R29}
+%\pmkeywords{class number divisibility}
+\pmrelated{IdealClass}
+\pmrelated{PExtension}
+\pmrelated{Ramify}
+\pmrelated{ClassNumbersAndDiscriminantsTopicsOnClassGroups}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+The following is a corollary of the existence of the Hilbert class field.
+
+\begin{cor}
+Let $K$ be a number field, $h_K$ is its class number and let $p$ be a prime. Then $K$ has an everywhere unramified Galois extension of degree $p$ if and only if $h_K$ is divisible by $p$.
+\end{cor}
+
+\begin{proof}
+Let $K$ be a number field and let $H$ be the Hilbert class field of $K$. Then:
+$$|\operatorname{Gal}(H/K)|=[H:K]=h_K.$$
+Let $p$ be a prime number. Suppose that there exists a Galois extension $F/K$, such that $[F:K]=p$ and $F/K$ is everywhere unramified. Notice that any Galois extension of prime degree is abelian (because any group of prime degree $p$ is abelian, isomorphic to $\Ints/p\Ints$). Since $H$ is the maximal abelian unramified extension of $K$ the following inclusions occur:
+$$K \subsetneq F\subseteq H$$
+Moreover, 
+$$h_K=[H:K]=[H:F]\cdot[F:K]=[H:F]\cdot p.$$
+Therefore $p$ divides $h_K$.\\
+
+Next we prove the remaining direction. Suppose that $p$ divides $h_K=|\operatorname{Gal}(H/K)|$. Since $G=\operatorname{Gal}(H/K)$ is an abelian group (isomorphic to the class group of $K$) there exists a normal subgroup $J$ of $G$ such that $|G/J|=p$. Let $F=H^J$ be the fixed field by the subgroup $J$, which is, by the main theorem of Galois theory, a Galois extension of $K$. This field satisfies $[F:K]=p$ and, since $F$ is included in $H$, the extension $F/K$ is abelian and everywhere unramified, as claimed.    
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

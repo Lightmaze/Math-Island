@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{JacobiSymbol}
+\pmcreated{2013-03-22 12:36:26}
+\pmmodified{2013-03-22 12:36:26}
+\pmowner{mathwizard}{128}
+\pmmodifier{mathwizard}{128}
+\pmtitle{Jacobi symbol}
+\pmrecord{9}{32863}
+\pmprivacy{1}
+\pmauthor{mathwizard}{128}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A07}
+\pmclassification{msc}{11A15}
+\pmrelated{LegendreSymbol}
+\pmrelated{KroneckerSymbol}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The {\bf Jacobi symbol} is a generalization of the Legendre symbol to all odd positive integers.
+
+Let $n$ be an odd positive integer, with prime factorization ${p_1}^{e_1} \cdots {p_k}^{e_k}$.  Let $a \geq 0$ be an integer.  The {\em Jacobi symbol}  $\left(\frac{a}{n}\right)$ is defined to be
+\[ \left(\frac{a}{n}\right) = \prod_{i=1}^k \left(\frac{a}{p_i}\right)^{e_i} \]
+where $\left(\frac{a}{p_i}\right)$ is the Legendre symbol of $a$ and $p_i$.
+
+A further generalization of the Legendre symbol, due to Kronecker, is the Kronecker symbol.
+%%%%%
+%%%%%
+\end{document}

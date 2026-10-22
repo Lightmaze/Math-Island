@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MianChowlaSequence}
+\pmcreated{2013-03-22 16:27:49}
+\pmmodified{2013-03-22 16:27:49}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Mian-Chowla sequence}
+\pmrecord{6}{38622}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B13}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\PMlinkescapeword{length}
+
+The {\em Mian-Chowla sequence} is a $B_2$ sequence with $a_1 = 1$ and $a_n$ for $n > 2$ being the smallest integer such that each pairwise sum $a_i + a_j$ is distinct, where $0 < i < (n + 1)$ and likewise for $j$, that is, $1 \le i \le j \le n$. The case $i = j$ is always considered.
+
+At the beginning, with $a_1$, there is only one pairwise sum, 2. $a_2$ can be 2 since the pairwise sums then are 2, 3 and 4. $a_3$ can't be 3 because then there would be the pairwise sums 1 + 3 = 2 + 2 = 4. Thus $a_3 = 4$. The sequence, listed in A005282 of Sloane's OEIS, continues 8, 13, 21, 31, 45, 66, 81, 97, 123, 148, 182, 204, 252, 290, 361, 401, 475, ... If we define $a_1 = 0$, the resulting sequence is the same except each term is one less.
+
+Rachel Lewis noticed that $$\sum_{i = 1}^\infty \frac{1}{a_i} \equiv 2.1585$$, a constant listed in Finch's book.
+
+One way to calculate the Mian-Chowla sequence in Mathematica is thus:
+
+\begin{verbatim}
+a = Table[1, {40}];
+n = 2;
+test = 1;
+While[n < 41,
+      mcFlag = False;
+      While[Not[mcFlag], 
+            test++;
+            a[[n]] = test;
+            pairSums = Flatten[Table[a[[i]] + a[[j]], {i, n}, {j, i, n}]];
+            mcFlag = TrueQ[Length[pairSums] == Length[Union[pairSums]]]
+      ];
+      n++
+];
+a
+\end{verbatim}
+
+\begin{thebibliography}{5}
+\bibitem{sf} S. R. Finch, {\it Mathematical Constants}, Cambridge (2003): Section 2.20.2
+\bibitem{rg} R. K. Guy {\it Unsolved Problems in Number Theory}, New York: Springer (2003)
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

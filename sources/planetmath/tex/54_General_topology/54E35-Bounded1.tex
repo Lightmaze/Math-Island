@@ -1,0 +1,43 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Bounded1}
+\pmcreated{2013-03-22 14:00:00}
+\pmmodified{2013-03-22 14:00:00}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{bounded}
+\pmrecord{11}{34826}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+\pmrelated{EuclideanDistance}
+\pmrelated{MetricSpace}
+\pmdefines{bounded interval}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+
+\begin{document}
+\PMlinkescapeword{between}
+\PMlinkescapeword{equivalent}
+
+Let $X$ be a subset of $\R$. We say that $X$ is bounded when there exists a real number $M$ such that $|x|<M$ for all $x\in X$. When $X$ is an interval, we speak of a bounded interval.
+
+This can be generalized first to $\R^n$. We say  that $X\subseteq \R^n$ is bounded if there is a real number $M$ such that $\Vert x\Vert<M$ for all $x\in X$ and $\Vert\cdot\Vert$ is the Euclidean distance between $x$ and $y$.
+
+This condition is equivalent to the statement: There is a real number $T$ such that $\Vert x-y\Vert<T$ for all $x,y\in X$.
+
+A further generalization to any metric space $V$ says that $X\subseteq V$ is bounded when there is a real number $M$ such that $d(x,y)<M$ for all $x,y\in X$, where $d$ is the metric on $V$.
+%%%%%
+%%%%%
+\end{document}

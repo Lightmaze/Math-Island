@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CompositionOfMultiplicativeFunctions}
+\pmcreated{2013-03-22 16:09:50}
+\pmmodified{2013-03-22 16:09:50}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{composition of multiplicative functions}
+\pmrecord{6}{38247}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+
+\begin{document}
+\begin{thm*}
+If $f$ is a completely multiplicative function and $g$ is a multiplicative function, then $f \circ g$ is a multiplicative function.
+\end{thm*}
+
+\begin{proof}
+First note that $(f \circ g)(1)=f(g(1))=f(1)=1$ since both $f$ and $g$ are multiplicative.
+
+Let $a$ and $b$ be relatively prime positive integers.  Then
+
+\begin{center}
+\begin{tabular}{ll}
+$(f \circ g)(ab)$ & $=f(g(ab))$ \\
+& $=f(g(a)\cdot g(b))$ since $g$ is multiplicative \\
+& $=f(g(a))f(g(b))$ since $f$ is completely multiplicative \\
+& $=(f \circ g)(a)(f \circ g)(b)$. \end{tabular}
+\end{center}
+\end{proof}
+
+Note that the assumption that $f$ is \emph{completely} multiplicative (as opposed to merely multiplicative) is essential in proving that $f \circ g$ is multiplicative.  For instance, $\tau \circ \tau$, where $\tau$ denotes the divisor function, is not multiplicative:
+
+$$(\tau \circ \tau)(2 \cdot 3)=(\tau \circ \tau)(6)=\tau(\tau(6))=\tau(4)=3$$
+
+$$(\tau \circ \tau)(2) \cdot (\tau \circ \tau)(3)=\tau(\tau(2)) \cdot \tau(\tau(3))=\tau(2) \cdot \tau(2)=2\cdot 2=4$$
+%%%%%
+%%%%%
+\end{document}

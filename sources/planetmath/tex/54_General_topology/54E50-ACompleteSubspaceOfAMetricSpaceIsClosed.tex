@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ACompleteSubspaceOfAMetricSpaceIsClosed}
+\pmcreated{2013-03-22 16:31:29}
+\pmmodified{2013-03-22 16:31:29}
+\pmowner{ehremo}{15714}
+\pmmodifier{ehremo}{15714}
+\pmtitle{a complete subspace of a metric space is closed}
+\pmrecord{5}{38704}
+\pmprivacy{1}
+\pmauthor{ehremo}{15714}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E50}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $X$ be a metric space, and let $Y$ be a complete subspace of $X$. Then $Y$ is closed.
+
+{\bf Proof}
+
+Let $x \in \overline Y$ be a point in the closure of $Y$. Then by the definition of closure, from each ball $B(x, \frac 1 n)$ centered in $x$, we can select a point $y_n \in Y$. This is clearly a Cauchy sequence in $Y$, and its limit is $x$, hence by the completeness of $Y$, $x \in Y$ and thus $Y = \overline Y$.
+%%%%%
+%%%%%
+\end{document}

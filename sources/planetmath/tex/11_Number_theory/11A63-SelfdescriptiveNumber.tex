@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SelfdescriptiveNumber}
+\pmcreated{2013-03-22 15:53:27}
+\pmmodified{2013-03-22 15:53:27}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{self-descriptive number}
+\pmrecord{9}{37892}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{self descriptive number}{SelfdescriptiveNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em self-descriptive number} $n$ in base $b$ is an integer such that each base $b$ digit $$d_x = \sum_{d_i = x} 1$$ where each $d_i$ is a digit of $n$, $i$ is a very simple, standard iterator operating in the range $-1 < i < b$, and $x$ is a position of a digit; thus $n$ ``describes'' itself.
+
+For example, the integer 6210001000 written in base 10. It has six instances of the digit 0, two instances of the digit 1, a single instance of the digit 2, a single instance of the digit 6 and no instances of any other base 10 digits. 
+
+Base 4 might be the only base with two self-descriptive numbers, $1210_4$ and $2020_4$. From base 7 onwards, every base $b$ has at least one self-descriptive number of the form $(b - 4)^{b - 1} + 2b^{b - 2} + b^{b - 3} + b^4$. It has been proven that 6210001000 is the only self-descriptive number in base 10, but it's not known if any higher bases have any self-descriptive numbers of any other form.
+
+Sequence A108551 of the OEIS lists self-descriptive numbers from quartal to hexadecimal.
+%%%%%
+%%%%%
+\end{document}

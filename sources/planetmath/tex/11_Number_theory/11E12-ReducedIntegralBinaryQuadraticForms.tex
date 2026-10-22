@@ -1,0 +1,174 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ReducedIntegralBinaryQuadraticForms}
+\pmcreated{2013-03-22 19:18:52}
+\pmmodified{2013-03-22 19:18:52}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{reduced integral binary quadratic forms}
+\pmrecord{4}{42252}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11E12}
+\pmclassification{msc}{11E16}
+\pmrelated{integralbinaryquadraticforms}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\BQ}{\mathbb{Q}}
+\newcommand{\BR}{\mathbb{R}}
+\newcommand{\BZ}{\mathbb{Z}}
+\newcommand{\Leg}[2]{\left(\frac{#1}{#2}\right)}
+
+%% \theoremstyle{plain} %% This is the default
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{ax}{Axiom}
+\newtheorem{defn}{Definition}
+\begin{document}
+\begin{defn} A \emph{positive} binary form is one where $F(x,y)\geq 0\  \forall x,y\in\BZ $. 
+\end{defn}
+This article deals only with positive integral binary quadratic forms (i.e. those with negative discriminant and with $a>0$). Some but not all of this theory applies to forms with positive discriminant.
+
+\begin{prop}
+If $F$ is positive, then $a>0$. If $\Delta(F)<0$ and either $a>0$ or $c>0$, then $F$ is positive.
+\end{prop}
+\begin{proof}
+If $F$ is positive, then $F(1,0)=a$, so $a>0$.
+\newline
+If $\Delta(F)<0$, then $4aF(x,y) = (2ax+by)^2-\Delta y^2 \geq 0$. Thus if $a>0$, then $F(x,y)\geq 0$. The proof for the case $c>0$ is identical.
+\end{proof}
+
+\begin{defn}A primitive positive form $ax^2+bxy+cy^2$ is \emph{reduced} if
+	\[|b|\leq a\leq c\text{, and }b\geq 0\text{ if either }|b|=a\text{ or }a=c
+\]
+This is equivalent to saying that $-a\leq b\leq a\leq c$ and that $b$ can be negative only if $a<c$ or $-a<b$. Thus $(3,-2,4)$ is reduced, but $(3,-2,3)$ is not.
+\end{defn}
+
+It turns out that each proper equivalence class of primitive positive forms contains a single reduced form, and thus we can understand how many classes there are of a given discriminant by studying only the reduced forms.
+
+\begin{thm} If $F$ is a primitive positive reduced form with discriminant $\Delta\neq -3$, $F(x,y)=ax^2+bxy+cy^2$, then the minimum value assumed by $F$ if $x,y$ are not both zero is $a$. If $a<c$, then this value is assumed only for $(x,y)=(\pm1,0)$; if $a=c$; it is assumed for $(x,y)=(\pm 1,0)$ and $(x,y)=(0,\pm 1)$.
+\end{thm}
+\begin{proof}
+Since $|b|\leq a\leq c$, it follows that
+\[F(x,y)\geq (a-|b|+c)\min(x^2,y^2)\]
+Thus, $F(x,y)\geq a-|b|+c$ whenever $xy\neq 0$, while if $x$ or $y$ is zero, then $F(x,y)\geq a$. So $a$ is clearly the smallest nonzero value of $F$.
+
+If $a<c$, then $F(x,y)\geq a+(c-|b|)>a$ if $xy\neq 0$, and $F(0,y)\geq c>a$ for $y\neq 0$, so $F$ achieves its minimum only at $(x,y)=(\pm 1,0)$.
+
+If $a=c$, then $|b|\neq a$ since otherwise $F$ is not reduced (we cannot have $a=c=1, b=\pm 1$ else we have a form of discriminant $-3$). Thus again $c-|b|>0$ and thus $F(x,y)>a$ if $xy\neq 0$, so in this case the result follows as well.
+\end{proof}
+Note that the reduced form of discriminant $-3$, $x^2+xy+y^2$, also achieves its minimum value at $(1,-1),(-1,1)$.
+
+\begin{thm} If $F,G$ are primitive positive reduced forms with $F\sim G$, then $F=G$.
+\end{thm}
+\begin{proof}
+We take the cases $\Delta\neq -3$ and $\Delta=-3$ separately.
+
+First assume $\Delta\neq -3$ so we can apply the above theorem.
+
+Since $F\sim G$, we can write $G(x,y)=F(\alpha x+\beta y,\gamma x+\delta y)$ with $\alpha\delta-\beta\gamma=1$. Suppose $F=ax^2+bxy+cy^2, G=a'x^2+b'xy+c'y^2$. Now, $F$ and $G$ have the same minimum value, so $a=a'$. 
+
+If $a<c$, then $F$ achieves its minimum only at $(pm 1,0)$, so $a=a'=G(1,0)=F(\alpha,\gamma)$ and thus $\alpha=\pm 1, \gamma=0$. So $G(x,y)=F(\pm x+ry,\pm y)$ and thus $b'=b+2ra$. Since $G$ is also reduced, $b=b'$ and thus $c=c'$ and $F=G$.
+
+If instead $a=c$, then instead of concluding that $\alpha=\pm 1$ we can only conclude that $\alpha=\pm 1$ or $\gamma=\pm 1$. If $\alpha=\pm 1$, the argument carries through as above. If $\gamma=\pm 1$, then $\alpha=0, \beta=\mp 1$, so $G(x,y)=F(\mp y,\pm x+ry)$ and thus $b'=\pm 2cr-b$. Thus $b'=-b$. But then $c=c'$ since the discriminants are equal, and thus both $b,b'\geq 0$. So $b=b'=0$ and we are done.
+
+Finally, in the case $\Delta=-3$, we see that for any such reduced form, $3=4ac-b^2\geq 4a^2-a^2=3a^2$, so $a=1, b=\pm 1, c=1$. Thus $b=1$ since otherwise the form is not reduced. So the only reduced form of discriminant $-3$ is in fact $x^2+xy+y^2$.
+\end{proof}
+\begin{thm}\label{thm:unique}
+Every primitive positive form is properly equivalent to a unique reduced form.
+\end{thm}
+\begin{proof}
+We just proved uniqueness, so we must show existence. Note that I used a different method of proof in class that relied on ``infinite descent'' to get the result in the first paragraph below; the method here is just as good but provides less insight into how to actually reduce a form.
+
+We first show that any such form is properly equivalent to some form satisfying $|b|\leq a\leq c$. Among all forms properly equivalent to the given one, choose $F(x,y)=ax^2+bxy+cy^2$ such that $|b|$ is as small as possible (there may be multiple such forms; choose one of them). If $|b|>a$, then
+	\[G(x,y)=F(x+my,y)=ax^2+(2am+b)xy+c' y^2
+\]
+is properly equivalent to $F$, and we can choose $m$ so that $|2am+b|<|b|$, contradicting our choice of minimal $|b|$. So $|b|\leq a$; similarly, $|b|\leq c$. Finally, if $a>c$, simply interchange $a$ and $c$ (by applying the proper equivalence $(x,y)\mapsto(-y,x)$) to get the required form.
+
+To finish the proof, we show that if $F(x,y)=ax^2+bxy+cy^2$, where $|b|\leq a\leq c$, then $F$ is properly equivalent to a reduced form. The form is already reduced unless $b<0$ and either $a=-b$ or $a=c$. But in these cases, the form $G(x,y)=ax^2-bxy+cy^2$ is reduced, so it suffices to show that $F$ and $G$ are properly equivalent. If $a=-b$, then $(x,y)\mapsto(x+y,y)$ takes $ax^2-axy+cy^2$ to $ax^2+axy+cy^2$, while if $a=c$, then $(x,y)\mapsto(-y,x)$ takes $ax^2+bxy+ay^2$ to $ax^2-bxy+ay^2$.
+\end{proof}
+
+Let's see how to reduce $82x^2+51xy+8y^2$ to $x^2+xy+6y^2$:
+\begin{center}
+\begin{tabular}{l|l|l}
+Form & Transformation&Result\\
+	\hline
+$82x^2+51xy+8y^2$ & $(x,y)\mapsto(-y,x)$&$8x^2-51xy+82y^2$\\[3pt]
+$8x^2-51xy+82y^2$ & $(x,y)\mapsto(x+3y,y)$&$8(x+3y)^2-51(x+3y)y+82y^2=$\\
+&&$8x^2+48xy+72y^2-51xy-153y^2+82y^2=$\\
+&&$8x^2-3xy+y^2$\\[3pt]
+$8x^2-3xy+y^2$ & $(x,y)\mapsto(-y,x)$ &$x^2+3xy+8y^2$\\[3pt]
+$x^2+3xy+8y^2$ & $(x,y)\mapsto(x-y,y)$&$(x-y)^2+3(x-y)y+8y^2=x^2+xy+6y^2$\\[3pt]
+$x^2+xy+6y^2$&&
+\end{tabular}
+\end{center}
+
+\begin{thm} If $F(x,y)=ax^2+bxy+cy^2$ is a positive reduced form with $\Delta<0$, then $a\leq \sqrt{\frac{|\Delta|}{3}}$.
+\end{thm}
+
+\begin{proof}
+$-\Delta = 4ac - b^2 \geq 4a^2-a^2$ since the form is reduced. So $-\Delta \geq 3a^2$, and the result follows.
+\end{proof}
+
+\begin{defn} If $\Delta<0$, then \emph{$h(\Delta)$} is the number of classes of primitive positive forms of discriminant $\Delta$.
+\end{defn}
+
+\begin{cor} If $\Delta<0$, then $h(\Delta)$ is finite, and $h(\Delta)$ is equal to the number of primitive positive reduced forms of discriminant $\Delta$.\label{cor:finite}
+\end{cor}
+
+\begin{proof}
+Essentially obvious. Since every positive form is properly equivalent to a (unique) reduced form, $h(\Delta)$ is clearly equal to the number of positive reduced forms of discriminant $\Delta$. But given a reduced form of discriminant $\Delta$, there are only finitely many choices for $a>0$, by the proposition. This constrains us to finitely many choices for $b$, since $-a<b\leq a$. $a$ and $b$ determine $c$ since $\Delta$ is fixed.
+\end{proof}
+
+\textbf{Examples}:
+$\Delta=-4$: $b^2-4ac=-4 \Rightarrow b$ even, $|b|\leq |a|\leq \sqrt{\frac{4}{3}} \Rightarrow b=0$. So $(1,0,1)$, corresponding to $x^2+y^2$, is the only reduced form of discriminant $-4$. Note that this provides another proof that primes $\equiv 1\pod 4$ are representable as the sum of two squares, since all such primes have $\Leg{-4}{p}=\Leg{-1}{p}=1$ and thus are representable by this quadratic form.
+
+$\Delta=-23$: $b^2-4ac=-23 \Rightarrow b$ odd, $|b|\leq a \leq \sqrt{\frac{23}{3}} \Rightarrow b=\pm 1$. So $ac=6, a<c$. This gives us
+\begin{center}
+\begin{tabular}{c l}
+$(1,\phantom{-}1,6)$&\\
+$(1,-1,6)$&\mbox{\small not reduced since $|b|=a,b<0$; properly equivalent to $(1,1,6)$ via $(x,y)\mapsto (x+y,y)$}\\
+$(2,\phantom{-}1,3)$&\\
+$(2,-1,3)$&\mbox{\small reduced since $b|\neq a, a\neq c$}
+\end{tabular}
+\end{center}
+There are three equivalence classes of positive reduced forms with discriminant $-23$.
+
+$\Delta=-55$: $4ac-b^2=55$, so $b$ is odd, $|b|\leq \sqrt{\frac{55}{3}} \Rightarrow |b|=1,\pm 3$. So $ac=14\text{ or }16, a\leq c$. So the forms are
+\begin{center}
+\begin{tabular}{c l}
+$(1,\phantom{-}1,14)$&\\
+$(1,-1,14)$&\mbox{\small not reduced since $|b|=a,b<0$, properly equivalent to $(1,1,14)$ via $(x,y)\mapsto (x+y,y)$}\\
+$(2,\phantom{-}1,\phantom{1}7)$&\\
+$(2,-1,\phantom{1}7)$&\mbox{\small reduced since $|b|\neq a, a\neq c$}\\
+$(4,\phantom{-}3,\phantom{1}4)$&\\
+$(4,-3,\phantom{1}4)$&\mbox{\small not reduced since $a=c,b<0$, equivalent to $(4,3,4)$ via $(x,y)\mapsto(-y,x)$}
+\end{tabular}
+\end{center}
+There are four classes of forms of discriminant $-55$.
+
+$\Delta=-163$: $b^2-4ac=-163 \Rightarrow b$ odd, $|b|\leq |a|\leq \sqrt{\frac{163}{3}} \cong \sqrt{55}$. So $b=\pm 1, \pm 3,\pm 5,\pm 7$, and $ac=\frac{b^2+163}{4}$, so $ac=41,43,45,47$. Since $a<c$, we must have $a=1$; thus $b=\pm 1$ and thus we get only $(1,\pm 1,41)$. But $(1,-1,41)$ is properly equivalent to $(1,1,41)$ via $(x,y)\mapsto(x+y,y)$, so there is only one equivalence class of positive reduced forms with discriminant $-163$.
+%%%%%
+%%%%%
+\end{document}

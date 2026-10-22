@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WaringsProblem}
+\pmcreated{2013-03-22 13:19:46}
+\pmmodified{2013-03-22 13:19:46}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Waring's problem}
+\pmrecord{13}{33841}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11P05}
+\pmclassification{msc}{11B13}
+\pmrelated{LagrangesFourSquareTheorem}
+\pmrelated{Basis2}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+Waring asked whether it is possible to represent every natural number as a sum of \PMlinkname{bounded}{BoundedInterval} number of nonnegative $k$'th powers, that is, whether the set $\{\,n^k \mid n \in \mathbb{Z_+}\,\}$ is an \PMlinkname{additive basis}{Basis2}. He was led to this conjecture by \PMlinkname{Lagrange's theorem}{LagrangesFourSquareTheorem} which asserted that every natural number can be represented as a sum of four squares. 
+
+Hilbert \cite{cite:hilbert_waring} was the first to prove the conjecture for all $k$. In his paper he did not give an explicit bound on $g(k)$, the number of powers needed, but later it was proved that 
+\begin{equation*}
+g(k)=2^k+\left\lfloor\left(\frac{3}{2}\right)^k\right\rfloor-2
+\end{equation*}
+except possibly finitely many exceptional $k$, none of which are known.
+
+Wooley\cite{cite:wooley_waring}, improving the result of Vinogradov\cite{cite:vinogradov_waringG}, proved that the number of $k$'th powers needed to represent all \emph{sufficiently large} integers is
+\begin{equation*}
+G(k)\leq k (\ln k + \ln \ln k + O(1)).
+\end{equation*}
+
+\begin{thebibliography}{1}
+
+\bibitem{cite:hilbert_waring}
+David Hilbert.
+\newblock Beweis f{\"u}r {D}arstellbarkeit der ganzen {Z}ahlen durch eine feste
+  {A}nzahl $n$-ter {P}otenzen ({W}aringsches {P}roblem).
+\newblock {\em Math. Ann.}, pages 281--300, 1909.
+\newblock Available electronically from
+  \PMlinkexternal{GDZ}{http://gdz.sub.uni-goettingen.de/en/index.html}.
+  %\url{http://gdz.sub.uni-goettingen.de/en/index.html}.
+
+\bibitem{cite:vaughan_circlemethod}
+Robert~C. Vaughan.
+\newblock {\em The Hardy-Littlewood method}.
+\newblock Cambridge University Press, 1981.
+\newblock \PMlinkexternal{Zbl 0868.11046}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0868.11046}.
+
+\bibitem{cite:vinogradov_waringG}
+I.~M. Vinogradov.
+\newblock On an upper bound for {$G(n)$}.
+\newblock {\em Izv. Akad. Nauk SSSR. Ser. Mat.}, 23:637--642, 1959.
+\newblock \PMlinkexternal{Zbl 0089.02703}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0089.02703}.
+%\newblock \PMlinkexternal{MR 22
+%  \#699}{http://www.ams.org/mathscinet-getitem?mr=0109814}.
+
+
+\bibitem{cite:wooley_waring}
+Trevor~D. Wooley.
+\newblock Large improvements in Waring's problem.
+\newblock {\em Ann. Math}, 135(1):131--164, 1992.
+\newblock \PMlinkexternal{Zbl 0754.11026}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0754.11026}.
+\newblock \PMlinkexternal{Available online}{http://links.jstor.org/sici?sici=0003-486X\%28199201\%292\%3A135\%3A1\%3C131\%3ALIIWP\%3E2.0.CO\%3B2-O} at \PMlinkexternal{JSTOR}{http://www.jstor.org}.
+
+
+\end{thebibliography}
+%
+%\bibitem{cite:hilbert_waring}
+%David Hilbert.
+%\newblock Beweis f{\"u}r {D}arstellbarkeit der ganzen {Z}ahlen durch eine feste
+%  {A}nzahl $n$-ter {P}otenzen ({W}aringsches {P}roblem).
+%\newblock {\em Math. Ann.}, pages 281--300, 1909.
+%\newblock Available electronically from
+%  \url{http://gdz.sub.uni-goettingen.de/en/index.html}.
+%
+%%%%%
+%%%%%
+\end{document}

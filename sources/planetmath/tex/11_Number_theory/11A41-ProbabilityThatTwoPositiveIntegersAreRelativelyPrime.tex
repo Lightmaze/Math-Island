@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProbabilityThatTwoPositiveIntegersAreRelativelyPrime}
+\pmcreated{2013-03-22 14:56:08}
+\pmmodified{2013-03-22 14:56:08}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{probability that two positive integers are relatively prime}
+\pmrecord{21}{36625}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmclassification{msc}{11A05}
+\pmclassification{msc}{11A51}
+%\pmkeywords{Divisibility}
+%\pmkeywords{Probability}
+%\pmkeywords{Pi}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+\PMlinkescapeword{event}
+\PMlinkescapeword{language}
+The probability that two positive integers chosen randomly are 
+relatively prime is 
+\[
+\frac{6}{\pi^{2}} = 0.60792710185\dots.
+\]
+
+At first glance this ``naked'' result is beautiful, but no 
+suitable definition is there: there isn't a probability space 
+defined. Indeed, the word ``probability'' here is an abuse of
+language.
+So, now, let's write the mathematical statement.
+
+For each $n\in\mathbb{Z}^+$, let $S_n$ be the set $\{1,2,\dots,n\}\times\{1,2,\dots,n\}$ and define
+$\Sigma_n$ to be the powerset of $S_n$.  Define 
+$\mu\colon\Sigma_n\to\mathbb{R}$ by $\mu(E)=|E|/|S_n|$.  This makes
+$(S_n,\Sigma_n,\mu)$ into a probability space.
+
+We wish to consider the event of some $(x,y)\in S_n$ also being 
+in the set
+$A_n=\{(a,b)\in S_n\colon\gcd(a,b)=1\}$.
+The probability of this event is 
+\[
+P((x,y)\in A_n)=\int_{S_n} \chi_{A_n} \,d\mu=\frac{|A_n|}{|S_n|}.
+\]
+Our statement is thus the following.  For each $n\in\mathbb{Z}^+$,
+select random integers $x_n$ and $y_n$ with $1\le x_n, y_n\le n$.
+Then the limit $\lim_{n\to\infty}P((x_n,y_n)\in A_n)$ exists and
+\[
+\lim_{n\to\infty}P((x_n,y_n)\in A_n)=\frac{6}{\pi^2}.
+\]
+In other words, as $n$ gets large, the fraction of $|S_n|$ consisting of relatively prime pairs of positive integers tends to $6/\pi^2$.
+
+\begin{thebibliography}{9}
+\bibitem{book} Challenging Mathematical Problems with Elementary Solutions, A.M. Yaglom and I.M. Yaglom, Vol. 1, Holden-Day, 1964. (See Problems 92 and 93)
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

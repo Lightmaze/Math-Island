@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IdealClassesFormAnAbelianGroup}
+\pmcreated{2013-03-22 12:49:40}
+\pmmodified{2013-03-22 12:49:40}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{ideal classes form an abelian group}
+\pmrecord{13}{33151}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmclassification{msc}{11R29}
+\pmrelated{NumberField}
+\pmrelated{ClassNumbersAndDiscriminantsTopicsOnClassGroups}
+\pmrelated{FractionalIdealOfCommutativeRing}
+\pmdefines{ideal class group}
+\pmdefines{class number}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $K$ be a number field, and let $\cal C$ be the set of ideal classes of $K$, with multiplication $\cdot$ defined by \[ [\mathfrak{a}] \cdot [\mathfrak{b}]=[\mathfrak{a} \mathfrak{b}] \]
+where $\mathfrak{a}, \mathfrak{b}$ are ideals of ${\cal{O}}_K$.
+
+We shall check the group properties:
+
+\begin{enumerate}
+\item Associativity: $[\mathfrak{a}] \cdot ([\mathfrak{b}] \cdot [\mathfrak{c}])=
+                      [\mathfrak{a}] \cdot [\mathfrak{b}\mathfrak{c}]=
+                      [\mathfrak{a}(\mathfrak{b}\mathfrak{c})]=
+                      [\mathfrak{a}\mathfrak{b}\mathfrak{c}]=
+                      [(\mathfrak{a}\mathfrak{b})\mathfrak{c}]=
+                      [\mathfrak{a}\mathfrak{b}] \cdot [\mathfrak{c}]=
+                      ([\mathfrak{a}] \cdot [\mathfrak{b}]) \cdot [\mathfrak{c}]$
+\item Identity element: $[ {\cal{O}}_K ] \cdot [\mathfrak{b}]=
+[\mathfrak{b}]=[\mathfrak{b}] \cdot [ {\cal{O}}_K ]$.
+\item Inverses: Consider $[\mathfrak{b}]$.  Let $b$ be an integer in $\mathfrak{b}$.  Then
+         $\mathfrak{b} \supseteq (b)$, so there exists $\mathfrak{c}$
+         such that $\mathfrak{b}\mathfrak{c}=(b)$.\\
+         Then the ideal class $[\mathfrak{b}] \cdot [\mathfrak{c}] = [(b)]=[ {\cal{O}}_K ]$.
+\end{enumerate}
+Then ${\cal C}$ is a group under the operation $\cdot$.
+
+It is abelian since $[\mathfrak{a}][\mathfrak{b}]=[\mathfrak{a}\mathfrak{b}]=
+[\mathfrak{b}\mathfrak{a}]=[\mathfrak{b}][\mathfrak{a}]$.
+
+This is group is called the \emph{ideal class group} of $K$.  The ideal class group is one of the principal objects of algebraic number theory.  In particular, for an arbitrary number field $K$, very little is known about the size of this group, called the \emph{class number} of $K$. See the analytic class number formula.
+%%%%%
+%%%%%
+\end{document}

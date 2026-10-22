@@ -1,0 +1,130 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FormulaeForZetaInTheCriticalStrip}
+\pmcreated{2013-03-22 13:28:14}
+\pmmodified{2013-03-22 13:28:14}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{formulae for zeta in the critical strip}
+\pmrecord{11}{34040}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11M99}
+\pmrelated{CriticalStrip}
+\pmrelated{ValueOfTheRiemannZetaFunctionAtS0}
+\pmrelated{AnalyticContinuationOfRiemannZeta}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+\PMlinkescapeword{theory}
+\PMlinkescapeword{terms}
+\PMlinkescapeword{formula}
+\PMlinkescapeword{simple}
+\PMlinkescapeword{one way} %Gawd.
+Let us use the traditional notation $s=\sigma+it$ for the complex variable,
+where $\sigma$ and $t$ are real numbers.
+
+\begin{eqnarray}
+\zeta(s)&=&
+\frac{1}{1-2^{1-s}}\sum_{n=1}^\infty (-1)^{n+1}n^{-s}
+\qquad\sigma>0
+\label{eq:one}
+\\
+\zeta(s)&=&
+\frac{1}{s-1}+1-s\int_1^\infty \frac{x-[x]}{x^{s+1}}dx
+\qquad\sigma>0
+\label{eq:two}
+\\
+\zeta(s)&=&
+\frac{1}{s-1}+\frac{1}{2}-s\int_1^\infty \frac{((x))}{x^{s+1}}dx
+\quad\sigma>-1
+\label{eq:three}
+\end{eqnarray}
+where $[x]$ denotes the largest integer $\le x$,
+and $((x))$ denotes $x-[x]-\frac{1}{2}$.
+
+We will prove \eqref{eq:two} and \eqref{eq:three} with the help of this
+useful lemma:
+
+\textbf{Lemma:} For integers $u$ and $v$ such that $0<u<v$:
+\begin{equation*}
+\sum_{n=u+1}^v n^{-s} =
+  -s\int_u^v \frac{x-[x]}{x^{s+1}}dx
+  +\frac{v^{1-s}-u^{1-s}}{1-s}
+\end{equation*}
+
+\textbf{Proof:} If we can prove the special case $v=u+1$, namely
+\begin{equation}
+(u+1)^{-s} = -s\int_u^{u+1} \frac{x-[x]}{x^{s+1}}dx
++\frac{(u+1)^{1-s}-u^{1-s}}{1-s}
+\label{eq:four}
+\end{equation}
+then the lemma will follow by summing a finite sequence of cases of
+\eqref{eq:four}.
+The integral in \eqref{eq:four} is
+\begin{eqnarray*}
+\int_0^1 \frac{tdt}{(u+t)^{s+1}}
+     &=& \int_0^1 (u+t)^{-s}dt - \int_0^1 u(u+t)^{-s-1}dt \\
+     &=& \frac{(u+1)^{1-s}-u^{1-s}}{1-s}
+         +\frac{u\left[(u+1)^{-s}-u^{-s}\right]}{s}
+\end{eqnarray*}
+so the right side of \eqref{eq:four} is
+$$\frac{-s}{1-s}\left[(u+1)^{1-s}-u^{1-s}\right]
+         -u\left[(u+1)^{-s}-u^{-s}\right]
+         -\frac{u^{1-s}}{1-s} +\frac{(u+1)^{1-s}}{1-s}
+$$
+$$=(u+1)^{-s}\left[\frac{-s(u+1)}{1-s}-u+\frac{u+1}{1-s}\right]
++u^{-s}\left[\frac{us}{1-s}+u-\frac{u}{1-s}\right]
+$$
+$$=(u+1)^{-s}\cdot 1+u^{-s}\cdot 0
+$$
+and the lemma is proved.
+
+Now take $u=1$ and let $v\to \infty$ in the lemma, showing that
+\eqref{eq:two} holds for $\sigma>1$.
+By the principle of analytic continuation, if
+the integral in \eqref{eq:two} is analytic for $\sigma>0$,
+then \eqref{eq:two} holds for $\sigma>0$.
+But $x-[x]$ is bounded, so the integral converges
+uniformly on $\sigma\ge\epsilon$ for any $\epsilon>0$, and the claim
+\eqref{eq:two} follows.
+
+We have
+\begin{equation*}
+\frac{1}{2}s\int_1^\infty x^{-1-s}dx=\frac{1}{2}
+\end{equation*}
+Adding and subtracting this quantity from \eqref{eq:two},
+we get \eqref{eq:three} for $\sigma>0$.
+We need to show that
+$$\int_1^\infty \frac{((x))}{x^{s+1}}dx$$
+is analytic on $\sigma>-1$. Write
+$$f(y)=\int_1^y ((x))dx$$
+and integrate by parts:
+$$\int_1^\infty \frac{((x))}{x^{s+1}}dx
+=\lim_{x\to\infty}f(x)x^{-1-s} - f(1)x^{-1-1}+(s+1)
+\int_1^\infty\frac{f(x)}{x^{s+2}}dx
+$$
+The first two terms on the right are zero, and the integral
+converges for $\sigma>-1$ because $f$ is bounded.
+
+\textbf{Remarks:}
+We will prove \eqref{eq:one} in a later version of this entry.
+
+Using formula \eqref{eq:three}, one can verify Riemann's
+functional equation in the strip $-1<\sigma<2$.
+By analytic continuation, it follows that the functional
+equation holds everywhere.
+One way to prove it in the strip is to decompose the
+sawtooth function $((x))$ into a Fourier series, and
+do a termwise integration.
+But the proof gets rather technical, because that
+series does not converge uniformly.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AConnectedAndLocallyPathConnectedSpaceIsPathConnected}
+\pmcreated{2013-03-22 16:50:43}
+\pmmodified{2013-03-22 16:50:43}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{a connected and locally path connected space is path connected}
+\pmrecord{6}{39090}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Theorem. A connected, locally path connected topological space is path connected.
+
+Proof. Let $X$ be the space and fix $p \in X$. Let $C$ be the set of all points in  
+$X$ that can be joined to $p$ by a path. $C$ is nonempty so it is enough to show that $C$ is both closed and open. 
+
+To show first that $C$ is open: Let $c$ be in $C$ and choose an open path connected neighborhood $U$ of $c$. If $u \in U$ we can find a path joining $u$ to $c$ and then join that path to a path from $p$ to $c$. Hence $u$ is in $C$.
+
+To show that $C$ is closed: Let $c$ be in $\overline{C} $ and choose an open path connected neighborhood $U$ of $c$. Then $C \cap U \neq \varnothing$. Choose $q \in C \cap U$. Then $c$ can be joined to $q$ by a path and $q$  can be joined to $p$ by a path, so by addition of paths, $p$ can be joined to $c$ by a path, that is, $c \in C$.
+
+%%%%%
+%%%%%
+\end{document}

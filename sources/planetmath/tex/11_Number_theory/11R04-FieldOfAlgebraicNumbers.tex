@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FieldOfAlgebraicNumbers}
+\pmcreated{2015-11-18 14:30:41}
+\pmmodified{2015-11-18 14:30:41}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{field of algebraic numbers}
+\pmrecord{14}{42024}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmrelated{AlgebraicSumAndProduct}
+\pmrelated{SubfieldCriterion}
+\pmrelated{AlgebraicNumbersAreCountable}
+\pmrelated{RingWithoutIrreducibles}
+\pmrelated{AllAlgebraicNumbersInASequence}
+\pmdefines{ring of algebraic integers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+As special cases of the theorem of the parent 
+``\PMlinkname{polynomial equation with algebraic coefficients}{polynomialequationwithalgebraiccoefficients}'' of this entry, one obtains the 
+
+\textbf{Corollary.}\, If $\alpha$ and $\beta$ are algebraic numbers, then also $\alpha\!+\!\beta$, $\alpha\!-\!\beta$, 
+$\alpha\beta$ and $\displaystyle\frac{\alpha}{\beta}$ (provided\, $\beta \neq 0$) are algebraic numbers.\; If $\alpha$ and $\beta$ are algebraic integers, then also $\alpha\!+\!\beta$, $\alpha\!-\!\beta$ and
+$\alpha\beta$ are algebraic integers.\\
+
+The case of $\displaystyle\frac{\alpha}{\beta}$ needs an additional consideration:\, If 
+$x^m+b_1x^{m-1}+\ldots+b_{m-1}x+b_m$ is the minimal polynomial of $\beta$, the equation 
+\,$\beta^m+b_1\beta^{m-1}+\ldots+b_{m-1}\beta+b_m = 0$\, implies
+$$\left(\frac{1}{\beta}\right)^m\!+\frac{b_{m-1}}{b_m}\!\left(\frac{1}{\beta}\right)^{m-1}\!+\ldots+
+\frac{b_1}{b_m}\!\cdot\!\frac{1}{\beta}+\frac{1}{b_m} \;=\; 0.$$
+Hence $\displaystyle\frac{1}{\beta}$ is an algebraic number, and therefore also 
+$\displaystyle\alpha\!\cdot\!\frac{1}{\beta}$.\\
+
+
+
+It follows from the corollary that the set of all algebraic numbers is a field and the set of all algebraic integers is a ring (an integral domain, too).\, Moreover, the mentioned theorem implies that the \emph{field of algebraic numbers} is algebraically closed and the \emph{ring of algebraic integers} integrally closed.\, The field of algebraic numbers, which is sometimes denoted by $\mathbb{A}$, contains for example the complex numbers obtained from rational numbers by using arithmetic operations and taking \PMlinkid{roots}{5667} (these numbers form a subfield of $\mathbb{A}$).
+%%%%%
+%%%%%
+\end{document}

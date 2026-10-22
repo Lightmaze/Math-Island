@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ResultOnQuadraticResidues}
+\pmcreated{2013-03-22 16:08:09}
+\pmmodified{2013-03-22 16:08:09}
+\pmowner{gilbert_51126}{14238}
+\pmmodifier{gilbert_51126}{14238}
+\pmtitle{result on quadratic residues}
+\pmrecord{25}{38207}
+\pmprivacy{1}
+\pmauthor{gilbert_51126}{14238}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\textbf{Theorem.}
+Let $p$ be an odd prime. Then $-3$ is a quadratic residue modulo $p$ if and only if $p \equiv 1\pmod{3}$.
+
+\emph{Proof.}
+Preliminary to the proof, we remark first that $-1$ is a quadratic residue modulo $p$, where $p$ is an odd prime, if and only if $p \equiv 1\pmod{4}$.
+
+If $p \equiv 1\pmod{4}$ then
+\[\left(\frac{-3}{p}\right) = \left(\frac{-1}{p}\right)\left(\frac{3}{p}\right) = \left(\frac{p}{3}\right).\]
+Now if $p \equiv 3\pmod{4}$, then 
+\[ \left(\frac{-3}{p}\right) = \left(\frac{-1}{p}\right)\left(\frac{3}{p}\right) = (-1)(-1)\left(\frac{p}{3}\right) = \left(\frac{p}{3}\right).\] 
+Thus, $\displaystyle \left(\frac{-3}{p}\right) = \left(\frac{p}{3}\right)$, and $\displaystyle \left(\frac{p}{3}\right)=1$ if and only if $p \equiv 1\pmod{3}$. $\Box$
+
+
+ 
+%%%%%
+%%%%%
+\end{document}

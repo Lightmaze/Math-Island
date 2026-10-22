@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FermatQuotient}
+\pmcreated{2013-03-22 19:34:22}
+\pmmodified{2013-03-22 19:34:22}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Fermat quotient}
+\pmrecord{12}{42559}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmclassification{msc}{11A41}
+\pmdefines{Lerch's formula}
+\pmdefines{Fermat--Wilson quotient}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{forms}
+
+If $a$ is an integer not divisible by a positive prime $p$, then Fermat's little theorem (a.k.a. Fermat's theorem) guarantees that the difference $a^{p-1}\!-\!1$ is divisible by $p$.\, The integer
+$$q_p(a) \;:=\; \frac{a^{p-1}\!-\!1}{p}$$
+is called the {\it Fermat quotient of $a$ modulo $p$}.\, Compare it with the Wilson quotient $w_p$, which is similarly related to Wilson's theorem.\\
+
+{\it Lerch's formula}
+$$\sum_{a=1}^{p-1}q_p(a) \;\equiv\; w_p \;\, \pmod p$$
+for an odd prime $p$ connects the Fermat quotients and the Wilson quotient.\\
+
+
+If $p$ is a positive prime but not a Wilson prime, and $w_p$ is its Wilson quotient, then the expression
+$$q_p(w_p) \;=\; \frac{w_p^{p-1}\!-\!1}{p}$$
+is called the {\it Fermat--Wilson quotient} of $p$.\, Sondow proves in [1] that the greatest common divisor of all Fermat--Wilson quotients is 24.
+
+
+\begin{thebibliography}{8}
+\bibitem{JS}{\sc Jonathan Sondow}:\, \emph{Lerch Quotients, Lerch Primes,
+Fermat--Wilson Quotients, and the Wieferich-non-Wilson Primes 2, 3, 14771}. Available at \PMlinkexternal{arXiv}{http://arxiv.org/pdf/1110.3113v3.pdf}.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

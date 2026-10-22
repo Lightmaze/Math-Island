@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FormalCongruence}
+\pmcreated{2013-03-22 14:23:50}
+\pmmodified{2013-03-22 14:23:50}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{formal congruence}
+\pmrecord{32}{35894}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A07}
+\pmclassification{msc}{11C08}
+\pmsynonym{polynomial congruence}{FormalCongruence}
+%\pmkeywords{congruence}
+%\pmkeywords{congruent}
+\pmrelated{CongruenceRelationOnAnAlgebraicSystem}
+\pmrelated{APolynomialOfDegreeNOverAFieldHasAtMostNRoots}
+\pmrelated{IdealDecompositionInDedekindDomain}
+\pmrelated{ExampleOfGcd}
+\pmrelated{FermatsLittleTheorem}
+\pmrelated{WilsonsTheorem}
+\pmrelated{FreshmansDream}
+\pmrelated{UsingPrimitiveRootsAndIndexToSolveCongruences}
+\pmrelated{SufficientConditio}
+\pmdefines{formally congruent}
+\pmdefines{identical congruence}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $m$ be a positive integer.\, Two polynomials \,$f(X_1,\,X_2,\,\ldots,\,X_n)$\, and\, $g(X_1,\,X_2,\,\ldots,\,X_n)$\, with integer coefficients are said to be \emph{formally congruent} modulo $m$, denoted
+\begin{align}
+f(X_1,\,X_2,\,\ldots,\,X_n) \;\underline{\equiv}\; g(X_1,\,X_2,\,\ldots,\,X_n) \pmod{m},
+\end{align}
+iff all coefficients of the difference polynomial\, $f\!-\!g$\, are divisible by $m$.\\
+
+\textbf{Remark 1.}\, The formal congruence of polynomials is an equivalence relation in the set\, 
+$\mathbb{Z}[X_1,\,X_2,\,\ldots,\,X_n]$.\\
+
+\textbf{Remark 2.}\, The formal congruence (1) implies that all integers substituted for the variables satisfy it, in other words, one can speak of an \emph{identical congruence}.\, However, there are identical congruences that are not formal congruences; e.g.
+$$X^{p} \;\equiv\; X \pmod{p}$$
+where $p$ is a positive prime.\\
+
+\textbf{Examples}
+\begin{enumerate}
+
+ \item $(X\!+\!Y)^p \;\underline{\equiv}\; X^p\!+\!Y^p \pmod{p}$\, when $p$ is a positive prime number.\, This result is easily proved with the binomial theorem (cp. the freshman's dream) and may be by induction generalized to
+   $$(X_1\!+\!X_2\!+\ldots+\!X_n)^p \;\underline{\equiv}\; X_1^p\!+\!X_2^p\!+\ldots+\!X_n^p \pmod{p}.$$
+If one substitutes in this formal congruence 1 for all $X_1$, $X_2$, \ldots, $X_n$, one obtains the congruence
+           $$n^p \;\equiv\; n \pmod p;$$
+\PMlinkescapetext{similar} substitution of $-1$ shows that the last congruence is valid also for negative integers $n$.\, If it is supposed that $p$ is not factor of $n$, we have got the Fermat's little theorem.
+
+ \item Let $p$ be a positive prime number.\, It is possible that the $n^\mathrm{th}$ degree congruence
+   $$P(x) \;:=\; a_0x^n\!+\!a_1x^{n-1}\!+\ldots+\!a_n \;\equiv\; 0 \pmod{p},$$
+where\, $a_i \in \mathbb{Z} \,\, \forall i$\, and\, $p \nmid a_0$,\, has $n$ modulo $p$ incongruent roots\, $x = x_1,\,x_2,\,\ldots,\,x_n$.\, We then have the formal congruence
+  $$P(x) \;\underline{\equiv}\; a_0(x\!-\!x_1)(x\!-\!x_2)\cdots(x\!-\!x_n) \pmod{p}.$$
+Especially, we have
+  $$x^{p-1}\!-\!1 \;\underline{\equiv}\; (x\!-\!1)(x\!-\!2)\cdots(x\!-\!p\!+\!1) \pmod{p},$$
+because Fermat's little theorem guarantees the roots\, $x = 1,\,2,\,\ldots,\,p\!-\!1$\, for the congruence\, 
+$x^{p-1}\!-\!1 \equiv 0 \pmod{p}$.\, If the value\, $x = 0$\, is substituted in the previous formal congruence, it gives
+  $$-1 \equiv (-1)^{p-1}(p\!-\!1)! \pmod{p}$$
+or 
+  $$(p\!-\!1)! \;\equiv\; -1 \pmod{p},$$
+which is half of Wilson's theorem.\, The reverse part of this theorem follows from the last congruence so that if $p$ were not prime, then the number $-1$ would be divisible by any proper divisor of $p$.
+\end{enumerate}
+
+\begin{thebibliography}{8}
+\bibitem{FS}{\sc F. St\"owener}: ``Simultanbeweis des Fermatschen und Wilsonschen Satzes''.\, -- \emph{Elemente der Mathematik} \textbf{30} (1975).
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

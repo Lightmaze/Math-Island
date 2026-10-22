@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SinglyEvenNumber}
+\pmcreated{2013-03-22 17:42:24}
+\pmmodified{2013-03-22 17:42:24}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{singly even number}
+\pmrecord{10}{40150}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmclassification{msc}{11A63}
+\pmrelated{DoublyEvenNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em singly even number} is an even number divisible by 2 but by no greater power of two. If $n$ is a singly even number, it satisfies the congruence $n \equiv 2 \mod 4$. The first few positive singly even numbers are 2, 6, 10, 14, 18, 22, 26, 30, listed in A016825 of Sloane's OEIS.
+
+In the binary representation of a positive singly even number, the bit immediately to the left of the least significant bit is 1 (the least significant bit itself is of course 0). Thus a single 1-bit right shift is enough to change the parity to odd. These properties obviously also hold true when representing negative numbers in binary by prefixing the absolute value with a minus sign. As it turns out, all this  also holds true in two's complement. Independently of binary representation, we can say that the \PMlinkname{$p$-adic valuation}{PAdicValuation} of a singly even number with $p = 2$ is $\frac{1}{2}$.
+
+With only one exception, all singly even numbers are composite. In representing a singly even number $n$ as $$\prod_{i = 1}^{\pi(n)} {p_i}^{a_i},$$ with $p_i$ being the $i$th prime number, $a_1 = 1$, all other other $a_i$ may have any nonnegative integer value.
+
+If $n$ is singly even, then the value of $\tau(n)$ (the divisor function) is even. In fact, $\tau(n) = 2\tau(\frac{n}{2})$. This is because if the divisors of $\frac{n}{2}$ are $1, d_2, d_3, \ldots , d_{\tau(\frac{n}{2}) - 1}, \frac{n}{2}$, then the divisors of $n$ include all these as well as $2, 2d_2, 2d_3, \ldots , 2d_{\tau(\frac{n}{2}) - 1}, n$. (Singly even numbers therefore have an equal amount of odd divisors as they do even divisors). From this it is easy to deduce the relationship of the values of the sum of divisors function $\sigma(x)$ for $n$ and $\frac{n}{2}$ is $\sigma(n) = 3\sigma(\frac{n}{2})$. Because $\phi(2) = 1$ ($\phi(n)$ being Euler's totient function) it is also easy to see that for $n$ a singly even number it is the case that $\phi(n) = \phi(\frac{n}{2})$.
+
+Whereas $(-1)^n = 1$ whether $n$ is singly or doubly even, with the imaginary unit $i$ it is the case that $i^n = -1$ only when $n$ is singly even.
+
+Prepending a 0 to the sequence of singly even numbers gives a continued fraction related to the natural log base $e$ thus: $$\frac{e - 1}{e + 1} = 0 + \frac{1}{2 + \frac{1}{6 + \frac{1}{10 + \frac{1}{14 + \ldots}}}}$$
+
+The multiplicative encodings of both Pascal's triangle and Losanitsch's triangle consist entirely of singly even numbers.
+
+Singly even numbers also have applications in chemistry. To list just two: the maximum number of electrons in an atomic subshell is a singly even number; the number of polyacenes in a carbon nanotube is also a singly even number. % but more on this at PlanetPhysics ;-)
+
+\begin{thebibliography}{1}
+\bibitem{il} I. Lukovits \& D. Janezic, ``Enumeration of conjugated circuits in nanotubes'', {\it J. Chem. Inf. Comput. Sci.}, {\bf 44} (2004): 410 - 414
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

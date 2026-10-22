@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrimalityTesting}
+\pmcreated{2013-03-22 17:45:37}
+\pmmodified{2013-03-22 17:45:37}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{primality testing}
+\pmrecord{7}{40213}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\em Primality testing} is the evaluation of an integer to determine its primality, to see whether it is prime or composite without actually factoring it. Primality testing is often accomplished using congruences, such as from Fermat's little theorem, but there are also other methods.
+
+With small numbers, it is practical to use integer factorization to determine primality; this is not the case for larger numbers with a large least prime factor. For larger numbers, such as most Mersenne numbers, there are special primality tests which in the case of a composite input return only False without giving any idea as to any of the factors. In the case of the Mersenne numbers, the Lucas-Lehmer primality test is quite effective. For numbers of no particular special form, sophisticated elliptic curve tests can be used.
+
+For practical purposes, primality testing might further have to be limited to answering whether a given number is a probable prime which could turn out to be a pseudoprime to a given base with further testing. In Mathematica, the primality function is \verb=PrimeQ[n]=, which uses the strong Miller-Rabin primality test, which is thought to be infallible even for large numbers which Mathematica would not be able to factor.
+
+In 2002, Agrawal, Kayal and Saxena published an algorithm they claim performs primality testing in polynomial time. Soon after mathematicians such as Carl Pomerance looked at the Agrawal, Kayal and Saxena paper and said it appears to be correct. By 2004, their paper was accepted as correct, confirming the long-held belief that primality testing is a P-problem.
+
+\begin{thebibliography}{2}
+\bibitem{ma} Manindra Agrawal, Neeraj Kayal \& Nitin Saxena, ``PRIMES is in P'', {\it Annals of Math.} {\bf 160} (2004): 781 â€“ 793
+\bibitem{ew} Eric Weisstein, ``Primality Testing Is Easy'' {\it MathWorld News}, August 7, 2002
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

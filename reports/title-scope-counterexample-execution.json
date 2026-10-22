@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "literal_source_algorithm_target_distance": 4,
+  "true_target_distance": -3,
+  "no_negative_cycle": true,
+  "strongly_connected": true,
+  "scope": "One exact counterexample to omitted applicability conditions; not kernel certification."
+}

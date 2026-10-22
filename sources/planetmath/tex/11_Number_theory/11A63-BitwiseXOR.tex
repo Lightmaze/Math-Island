@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BitwiseXOR}
+\pmcreated{2013-03-22 17:02:52}
+\pmmodified{2013-03-22 17:02:52}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{bitwise XOR}
+\pmrecord{4}{39337}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmrelated{BitwiseAND}
+\pmrelated{BitwiseOR}
+\pmrelated{BitwiseNOT}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\em Bitwise XOR} or {\em bitwise exclusive OR} is a bit-level operation on two binary values which indicates which bits are set in only one value. For each position $i$, if the bit $d_i$ in one value is 1 and the other is 0, then $d_i$ of the result is 1, otherwise it's 0. If both input $d_i$ are 1, the output $d_i$ is 0. then For example, given 50 and 163 in two unsigned bytes, a bitwise XOR returns 145.
+
+\begin{tabular}{|r|c|c|c|c|c|c|c|c|}
+    & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 0 \\
+XOR & 1 & 0 & 1 & 0 & 0 & 0 & 1 & 1 \\
+  = & 1 & 0 & 0 & 1 & 0 & 0 & 0 & 1 \\
+\end{tabular}
+
+Given a Mersenne number of the form $2^k - 1$ (where $k$ is the bit size of the data type in use, e.g., 8 for bytes, 16 for words, 32 for double words, etc.) and some smaller integer $n$, XORing that Mersenne number with $n$ has the same effect as performing a bitwise NOT on $n$. Or, given $m$ and $n$, XORing them has the same effect as $m - n$ (subject to some caveats about the sign bit, or if the values are unsigned, the effect is then the same as $|m - n|$). XORing two values that are the same gives 0.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{X4y4z2HasNoSolutionsInPositiveIntegers}
+\pmcreated{2013-03-22 17:05:04}
+\pmmodified{2013-03-22 17:05:04}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{$x^4-y^4=z^2$ has no solutions in positive integers}
+\pmrecord{7}{39377}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D41}
+\pmclassification{msc}{14H52}
+\pmclassification{msc}{11F80}
+\pmrelated{ExampleOfFermatsLastTheorem}
+\pmrelated{IncircleRadiusDeterminedByPythagoreanTriple}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}{Corollary}
+\begin{document}
+We know (see example of Fermat's Last Theorem) that the sum of two fourth powers can never be a square unless all are zero. This article shows that the difference of two fourth powers can never be a square unless at least one of the numbers is zero. Fermat proved this fact as part of his proof that the area of a right triangle with integral sides is never a square; see the corollary below. The proof of the main theorem is a great example of the method of infinite descent.
+
+\begin{thm}
+\[x^4-y^4=z^2\]
+has no solutions in positive integers.
+\end{thm}
+\begin{proof}
+Suppose the equation has a solution in positive integers, and choose a solution that minimizes $x^2+y^2$. Note that $x,y$, and $z$ are pairwise coprime, since otherwise we could divide out by their common divisor to get a smaller solution. Thus
+\[z^2 + (y^2)^2 = (x^2)^2\]
+so that $z, y^2, x^2$ form a pythagorean triple. There are thus positive integers $p,q$ of opposite parity (and coprime since $x, y$, and $z$ are) such that $x^2 = p^2+q^2$ and either $y^2 = p^2-q^2$ or $y^2 = 2pq$.
+
+Factoring the original equation, we get
+\[(x^2-y^2)(x^2+y^2)=z^2\]
+If $y^2 = p^2-q^2$, then $(xy)^2 = p^4-q^4$, and clearly $p^2+q^2 = x^2 < x^2+y^2$, so we have found a solution smaller than the assumed minimal solution.
+
+Assume therefore that $y^2 = 2pq$. Now, $x^2 = p^2+q^2$; we may assume by relabeling if necessary that $q$ is even and $p$ odd. Then $p, q, x$ are pairwise coprime and form a pythagorean triple; thus there are $P>Q>0$ of opposite parity and coprime such that 
+\[
+  q = 2PQ,\quad p=P^2-Q^2,\quad x=P^2+Q^2
+\]
+Then
+\[
+  PQ(P^2-Q^2) = \frac{1}{2}pq = \frac{y^2}{4}
+\]
+is a square; it follows that $P, Q$, and $P^2-Q^2$ are all (nonzero) squares since they are pairwise coprime. Write
+\[
+  P = R^2,\quad Q=S^2,\quad P^2-Q^2=T^2
+\]
+for positive integers $R,S,T$. Then $T^2=R^4-S^4$, and
+\[
+  R^2+S^2 = P+Q < (P+Q)(PQ)(P-Q) = \frac{1}{2}pq = \frac{y^2}{4}\leq y^2 < x^2+y^2
+\]
+We have thus found a smaller solution in positive integers, contradicting the hypothesis.
+\end{proof}
+
+\begin{cor}
+No right triangle with integral sides has area that is an integral square.
+\end{cor}
+\begin{proof}
+Suppose $x,y,z$ is a right triangle with $z$ the hypotenuse, and let $d=\gcd(x,y,z)$. Either $x/d$ or $y/d$ is even; by relabeling if necessary, assume $x/d$ is even. Then we can choose relatively prime integers $p,q$ with $p>q$ and of opposite parity such that
+\begin{gather*}
+x=(2pq)d\\
+y=(p^2-q^2)d\\
+z=(p^2+q^2)d
+\end{gather*}
+
+If the triangle's area is to be a square, then
+\[\frac{1}{2}xy=pq(p^2-q^2)d^2\]
+must be a square, and thus $pq(p^2-q^2)$ must be a square. Since $p$ and $q$ are coprime, it follows that $p$, $q$, and $p^2-q^2$ are all squares, and thus that $p^2-q^2$ is the difference of two fourth powers. But then
+\[\frac{\frac{1}{2}xy}{pqd^2}=p^2-q^2\]
+must also be a square. Since both $p$ and $q$ are squares, this is impossible by the theorem.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

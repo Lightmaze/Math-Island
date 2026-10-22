@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DiscreteLogarithm}
+\pmcreated{2013-03-22 14:54:27}
+\pmmodified{2013-03-22 14:54:27}
+\pmowner{mathwizard}{128}
+\pmmodifier{mathwizard}{128}
+\pmtitle{discrete logarithm}
+\pmrecord{7}{36592}
+\pmprivacy{1}
+\pmauthor{mathwizard}{128}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A15}
+\pmsynonym{index}{DiscreteLogarithm}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $p$ be a prime. We know that the group $G:=(\mathbb{Z}/p\mathbb{Z})^*$ is cyclic. Let $g$ be a primitive root of $G$, i.e. $G=\{1,g,g^2,\dots,g^{p-2}\}$.
+For a number $x\in G$ we want to know the unique number $0\leq n\leq p-2$ with
+$$x=g^n.$$
+This number $n$ is called the \textit{discrete logarithm} or \textit{index} of $x$ to the basis $g$ and is denoted as $\operatorname{ind}_g(x)$. For $x,y\in G$ it satisfies the following properties:
+\begin{align*}
+\operatorname{ind}_g(xy)&=\operatorname{ind}_g(x)+\operatorname{ind}_g(y);\\
+\operatorname{ind}_g(x^{-1})&=-\operatorname{ind}_g(x);\\
+\operatorname{ind}_g(x^k)&=k\cdot\operatorname{ind}_g(x).
+\end{align*}
+Furthermore, for a pair $g,h$ of distinct primitive roots, we also have, for any $x\in G$:
+\begin{align*}
+\operatorname{ind}_h(x)&=\operatorname{ind}_h(g)\cdot \operatorname{ind}_g(x);\\
+1 &=\operatorname{ind}_g(h)\cdot \operatorname{ind}_h(g);\\
+\operatorname{ind}_g(-1)&=\frac{p-1}{2}.
+\end{align*}
+It is a difficult problem to compute the discrete logarithm, while powering is very easy. Therefore this is of some interest to cryptography.
+%%%%%
+%%%%%
+\end{document}

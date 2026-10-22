@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CondensationPoint}
+\pmcreated{2013-03-22 16:40:45}
+\pmmodified{2013-03-22 16:40:45}
+\pmowner{sauravbhaumik}{15615}
+\pmmodifier{sauravbhaumik}{15615}
+\pmtitle{condensation point}
+\pmrecord{9}{38887}
+\pmprivacy{1}
+\pmauthor{sauravbhaumik}{15615}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $X$ be a topological space and $A\subset X$. A point $x\in X$ is called a {\em condensation point} of $A$ if every open neighbourhood of $x$ contains \emph{uncountably} many points of $A$.
+
+For example, if $X=\mathbb R$ and $A$ any subset, then any accumulation point of $A$ is automatically a condensation point. But if $X=\mathbb Q$ and $A$ any subset, then $A$ does not have any condensation points at all. 
+
+We have further classifications of {\em condensation point} where the topological space is an ordered field. Namely,
+\begin{enumerate}
+\item {\em unilateral condensation point:} $x$ is a condensation point of $A$ and there is a positive $\epsilon$ with either $(x-\epsilon,x)\cap A$ countable or $(x,x+\epsilon)\cap A$ countable.
+\item {\em bilateral condensation point:} For all $\epsilon>0$, we have both $(x-\epsilon,x)\cap A$ and $(x,x+\epsilon)\cap A$ uncountable.
+
+
+If $\kappa$ is any cardinal (i.e. an ordinal which is the least among all ordinals of the same cardinality as itself), then a $\kappa$-condensation point can be defined similarly. 
+\end{enumerate}
+
+%%%%%
+%%%%%
+\end{document}

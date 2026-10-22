@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Cembedding}
+\pmcreated{2013-03-22 16:57:37}
+\pmmodified{2013-03-22 16:57:37}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{$C$-embedding}
+\pmrecord{6}{39231}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C45}
+\pmsynonym{C-embedded}{Cembedding}
+\pmsynonym{C embedded}{Cembedding}
+\pmsynonym{C*-embedded}{Cembedding}
+\pmsynonym{C* embedded}{Cembedding}
+\pmdefines{$C$-embedded}
+\pmdefines{$C^*$-embedded}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\begin{document}
+Let $X$ be a topological space, and $C(X)$ the ring of continuous functions on $X$.  A subspace $A\subseteq X$ is said to be \emph{$C$-embedded} (in $X$) if every function in $C(A)$ can be extended to a function in $C(X)$.  More precisely, for every real-valued continuous function $f:A\to \mathbb{R}$, there is a real-valued continuous function $g:X\to \mathbb{R}$ such that $g(x)=f(x)$ for all $x\in A$.
+
+If $A\subseteq X$ is $C$-embedded, $f\mapsto g$ (defined above) is an embedding of $C(A)$ into $C(X)$ by axiom of choice, and hence the nomenclature.
+
+Similarly, one may define \emph{$C^*$-embedding} on subspaces of a topological space.  Recall that for a topological space $X$, $C^*(X)$ is the ring of bounded continuous functions on $X$.  A subspace $A\subseteq X$ is said to be \emph{$C^*$-embedded} (in $X$) if every $f\in C^*(A)$ can be extended to some $g\in C^*(X)$.
+
+\textbf{Remarks}.  Let $A$ be a subspace of $X$.
+\begin{enumerate}
+\item 
+If $A$ is $C$-embedded in $X$, and $A\subseteq Y\subseteq X$, then $A$ is $C$-embedded in $Y$.  This is also true for $C^*$-embeddedness.
+\item
+If $A$ is $C$-embedded, then $A$ is $C^*$-embedded: for if $f$ is a bounded continuous function on $A$, say $-n\le f\le n$, and $g$ is its continuous extension on $X$, then $-n\vee (g\wedge n)$ is a bounded continuous extension of $f$ on $X$.
+\item
+The converse, however, is not true in general.  A necessary and sufficient condition that a $C^*$-embedded set $A$ is $C$-embedded is: 
+\begin{center}
+if a zero set is disjoint from $A$, the it is completely separated from $A$.  
+\end{center}
+Since any pair of disjoint zero sets are completely separated, we have that if $A$ is a $C^*$-embedded zero set, then $A$ is $C$-embedded.
+\end{enumerate}
+
+\begin{thebibliography}{7}
+\bibitem{gj} L. Gillman, M. Jerison: {\em Rings of Continuous Functions}, Van Nostrand, (1960).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

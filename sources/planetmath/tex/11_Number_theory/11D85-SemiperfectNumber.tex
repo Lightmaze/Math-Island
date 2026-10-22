@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SemiperfectNumber}
+\pmcreated{2013-03-22 16:18:33}
+\pmmodified{2013-03-22 16:18:33}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{semiperfect number}
+\pmrecord{5}{38432}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D85}
+\pmsynonym{pseudoperfect number}{SemiperfectNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given an integer $n$ and the subsets of its proper divisors $d_i|n$ and $d_i < n$ (thus $0 < i < \tau(n)$ where $\tau$ is the divisor function), is there at least one subset whose elements add up to $n$? If yes, then $n$ is a \emph{semiperfect number} or \emph{pseudoperfect number}.
+
+Since the complete set of proper divisors is also technically considered a subset, then a fully perfect number is also a semiperfect number. Perhaps just as obviously, no deficient number can be semiperfect; thus all semiperfect numbers are either abundant numbers or perfect numbers.
+
+If the abundance $a(n)$ happens to be a divisor of $n$, then the divisor subset that excludes $a(n)$ is the obvious choice, but some semiperfect numbers are so in more than one way: 12 for example can be expressed as 1 + 2 + 3 + 6 but also as 2 + 4 + 6.
+
+Just as a multiple of an abundant number is another abundant number, so is the multiple of a semiperfect number another semiperfect number.
+
+The first few semiperfect numbers that are not multiples of perfect numbers are 20, 40, 80,  88. A005835 of Sloane's OEIS lists all the semiperfect numbers less than 265 and provides a simple means of reckoning them, by counting the number of partitions of $n$ into distinct divisors and culling those that have more than 1.
+
+All primary pseudoperfect numbers (except 2) are also semiperfect. An abundant number that is not semiperfect is a weird number.
+%%%%%
+%%%%%
+\end{document}

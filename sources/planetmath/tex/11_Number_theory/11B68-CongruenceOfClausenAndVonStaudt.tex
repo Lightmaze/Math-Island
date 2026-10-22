@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CongruenceOfClausenAndVonStaudt}
+\pmcreated{2013-03-22 15:11:58}
+\pmmodified{2013-03-22 15:11:58}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{congruence of Clausen and von Staudt}
+\pmrecord{4}{36957}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B68}
+\pmsynonym{Staudt-Clausen theorem}{CongruenceOfClausenAndVonStaudt}
+\pmsynonym{von Staudt-Clausen theorem}{CongruenceOfClausenAndVonStaudt}
+%\pmkeywords{Bernoulli number}
+%\pmkeywords{congruence}
+\pmrelated{KummersCongruence}
+\pmrelated{OddBernoulliNumbersAreZero}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+Let $B_k$ denote the $k$th Bernoulli number:
+$$B_0=1,\quad B_1=-\frac{1}{2},\quad B_2=\frac{1}{6},\quad B_3=0,\quad B_4=-\frac{1}{30},\ldots$$
+In fact, $B_k=0$ for all odd $k\geq 3$, so we will only consider $B_k$ for even $k$. The following is a well-known congruence, due to Thomas Clausen and Karl von Staudt.
+
+\begin{thm}[Congruence of Clausen and von Staudt]
+
+For an even integer $k\geq 2$,
+
+$$B_k \equiv -\sum_{p \text{ prime},\ (p-1)|k} \frac{1}{p} \mod \Ints$$
+where the sum is over all primes $p$ such that $(p-1)$ divides $k$. In other words, there exists an integer $n_k$ such that 
+$$B_k=n_k -\sum_{p \text{ prime},\ (p-1)|k} \frac{1}{p}.$$
+\end{thm}
+
+For example:
+$$B_2=\frac{1}{6}=1-\frac{1}{2}-\frac{1}{3}, \quad B_4=-\frac{1}{30}=1-\frac{1}{2}-\frac{1}{3}-\frac{1}{5}.$$
+Sometimes the theorem is stated in this alternative form:
+
+\begin{cor}
+For an even integer $k\geq 2$ and any prime $p$ the product $pB_k$ is $p$-integral, that is, $pB_k$ is a rational number $t/s$ (in lowest terms) such that $p$ does not divide $s$. Moreover:
+$$pB_k \equiv \begin{cases}
+-1 \mod p, \text{ if $(p-1)$ divides $k$;}\\
+0 \mod p, \text{ if $(p-1)$ does not divide $k$}.
+\end{cases}$$ 
+\end{cor}
+%%%%%
+%%%%%
+\end{document}

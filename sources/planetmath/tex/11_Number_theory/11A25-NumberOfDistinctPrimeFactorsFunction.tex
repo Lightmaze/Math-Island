@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NumberOfDistinctPrimeFactorsFunction}
+\pmcreated{2013-03-22 16:06:52}
+\pmmodified{2013-03-22 16:06:52}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{number of distinct prime factors function}
+\pmrecord{9}{38180}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{NumberOfNondistinctPrimeFactorsFunction}
+\pmrelated{2omeganLeTaunLe2Omegan}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The {\em number of distinct prime factors function} $\omega(n)$ counts how many distinct prime factors $n$ has. Expressing $n$ as $$n = \prod_{i = 1}^k {p_i}^{a_i},$$ where the $p_i$ are distinct primes, there being $k$ of them, and  the $a_i$ are positive integers (not necessarily distinct), then $\omega(n) = k$.
+
+Obviously for a prime $p$ it follows that $\omega(p) = 1$. When $n$ is a squarefree number, then $\Omega(n) = \omega(n)$, where $\Omega(n)$ is the \PMlinkname{number of (nondistinct) prime factors function}{NumberOfNondistinctPrimeFactorsFunction}. Otherwise, $\Omega(n) > \omega(n)$.
+
+$\omega(n)$ is an additive function, and it can be used to define a multiplicative function like the M\"obius function $\mu(n) = (-1)^{\omega(n)}$ (as long as $n$ is squarefree).
+%%%%%
+%%%%%
+\end{document}

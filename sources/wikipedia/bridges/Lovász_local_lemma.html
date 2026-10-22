@@ -1,0 +1,2464 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available skin-thumbsize-clientpref-standard skin-underline-clientpref-browser" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Lovász local lemma - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available skin-thumbsize-clientpref-standard skin-underline-clientpref-browser";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"a3596574-d039-4d5b-8f9c-a10a8f2d386b","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Lovász_local_lemma","wgTitle":"Lovász local lemma","wgCurRevisionId":1285525974,"wgRevisionId":1285525974,"wgArticleId":2211763,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","Theorems in probability theory","Combinatorics","Lemmas"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Lovász_local_lemma","wgRelevantArticleId":2211763,"wgTempUserName":null,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}},"namespaces":[0,4]},"wgConfirmEditCaptchaNeededForGenericEdit":"hcaptcha","wgConfirmEditForceShowCaptcha":false,"wgConfirmEditHCaptchaSiteKey":"5d0c670e-a5f4-4258-ad16-1f42792c9c62","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgMediaViewerDesktopVue":false,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgParsoidHtmlVersion":"2.8.0","parsermigration-parsoid":true,"wgPageAssessments":{"Mathematics":{"class":"C","importance":"Unknown"},"Project-independent assessment":{"class":"C","importance":""}},"wgTestKitchenUserExperiments":{"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[]},"wgEditSubmitButtonLabelPublish":true,"wgVisualEditorPageIsDisambiguation":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgULSLanguageSelectorV2Enabled":true,"wgWikibaseItemId":"Q831721","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"wgCheckUserClientHintsInEditRequest":true,"wgPersonalDashboardMenuVisible":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.math.styles":"ready","ext.cite.parsoid.styles":"ready","ext.cite.styles":"ready","mediawiki.skinning.content.parsoid":"ready","ext.wikimediamessages.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.math.polyfills","ext.cite.ux-enhancements","ext.scribunto.logs","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.testKitchen","ext.wikimediaCustomizations.discordSurvey","ext.wikimediaCustomizations.donorAccountCreation","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","wikibase.databox.fromWikidata","ext.checkUser.clientHints","ext.quicksurveys.init","ext.readerExperiments/preferredSources"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.parsoid.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cmediawiki.skinning.content.parsoid%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.47.0-wmf.24">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Lovász local lemma - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="discord:component-embed" type="application/json" href="https://en.wikipedia.org/w/rest.php/discord/v0-internal/discord-preview?title=Lov%C3%A1sz+local+lemma&amp;db=enwiki&amp;lang=en">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Lov%C3%A1sz_local_lemma">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Lovász_local_lemma rootpage-Lovász_local_lemma skin-vector-2022 action-view">
+<div id="mw-aria-live-region" class="mw-aria-live-region" aria-live="polite"></div><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"   >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin" aria-label="Move Main menu to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin" aria-label="Hide Main menu">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/enwiki-25.svg" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg" style="width: 8.75em; height: 1.375em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en-25.svg" width="140" height="11" style="width: 8.75em; height: 0.6875em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="none" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"   >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Lov%C3%A1sz+local+lemma" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Lov%C3%A1sz+local+lemma" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out vector-user-links-dropdown--collapsible"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"   >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span class="vector-icon mw-ui-icon-heart mw-ui-icon-wikimedia-heart cdx-button__icon"></span>
+
+<span>Donate</span></a>
+</li>
+<li id="pt-createaccount" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Lov%C3%A1sz+local+lemma" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
+
+<span>Create account</span></a>
+</li>
+<li id="pt-login" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Lov%C3%A1sz+local+lemma" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn cdx-button__icon"></span>
+
+<span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	data-pinned-container-id="vector-toc-pinned-container"
+	data-unpinned-container-id="vector-toc-unpinned-container"
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin" aria-label="Move Contents to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin" aria-label="Hide Contents">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Statements_of_the_lemma_(symmetric_version)"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Statements_of_the_lemma_(symmetric_version)">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Statements of the lemma (symmetric version)</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Statements_of_the_lemma_(symmetric_version)-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Asymmetric_Lovász_local_lemma"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Asymmetric_Lovász_local_lemma">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Asymmetric Lovász local lemma</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Asymmetric_Lovász_local_lemma-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Constructive_versus_non-constructive"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Constructive_versus_non-constructive">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Constructive versus non-constructive</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Constructive_versus_non-constructive-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Non-constructive_proof"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Non-constructive_proof">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Non-constructive proof</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Non-constructive_proof-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Example"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Example">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>Example</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Example-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>See also</span>
+			</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Notes"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Notes">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">7</span>
+				<span>Notes</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Notes-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">8</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"   >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span lang="en" dir="ltr"><span class="mw-page-title-main">Lovász local lemma</span></span></h1>
+			
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector"  aria-label="8 languages" aria-description="Go to an article in another language. Available in 8 languages"  >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-8" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">8 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-de mw-list-item"><a href="https://de.wikipedia.org/wiki/Lov%C3%A1sz-Local-Lemma" title="Lovász-Local-Lemma – German" lang="de" hreflang="de" data-title="Lovász-Local-Lemma" data-language-autonym="Deutsch" data-language-local-name="German" class="interlanguage-link-target"><span>Deutsch</span></a></li><li class="interlanguage-link interwiki-es mw-list-item"><a href="https://es.wikipedia.org/wiki/Lema_local_de_Lov%C3%A1sz" title="Lema local de Lovász – Spanish" lang="es" hreflang="es" data-title="Lema local de Lovász" data-language-autonym="Español" data-language-local-name="Spanish" class="interlanguage-link-target"><span>Español</span></a></li><li class="interlanguage-link interwiki-fa mw-list-item"><a href="https://fa.wikipedia.org/wiki/%D9%84%D9%85_%D9%84%D9%88%D9%88%D8%A7%D8%B3" title="لم لوواس – Persian" lang="fa" hreflang="fa" data-title="لم لوواس" data-language-autonym="فارسی" data-language-local-name="Persian" class="interlanguage-link-target"><span>فارسی</span></a></li><li class="interlanguage-link interwiki-fr mw-list-item"><a href="https://fr.wikipedia.org/wiki/Lemme_local_de_Lov%C3%A1sz" title="Lemme local de Lovász – French" lang="fr" hreflang="fr" data-title="Lemme local de Lovász" data-language-autonym="Français" data-language-local-name="French" class="interlanguage-link-target"><span>Français</span></a></li><li class="interlanguage-link interwiki-he mw-list-item"><a href="https://he.wikipedia.org/wiki/%D7%9C%D7%9E%D7%AA_%D7%94%D7%9E%D7%A7%D7%95%D7%9E%D7%99%D7%95%D7%AA_%D7%A9%D7%9C_%D7%9C%D7%95%D7%91%D7%90%D7%A1" title="למת המקומיות של לובאס – Hebrew" lang="he" hreflang="he" data-title="למת המקומיות של לובאס" data-language-autonym="עברית" data-language-local-name="Hebrew" class="interlanguage-link-target"><span>עברית</span></a></li><li class="interlanguage-link interwiki-hu mw-list-item"><a href="https://hu.wikipedia.org/wiki/Lov%C3%A1sz-f%C3%A9le_lok%C3%A1lis_lemma" title="Lovász-féle lokális lemma – Hungarian" lang="hu" hreflang="hu" data-title="Lovász-féle lokális lemma" data-language-autonym="Magyar" data-language-local-name="Hungarian" class="interlanguage-link-target"><span>Magyar</span></a></li><li class="interlanguage-link interwiki-pl mw-list-item"><a href="https://pl.wikipedia.org/wiki/Lokalny_lemat_Lov%C3%A1sza" title="Lokalny lemat Lovásza – Polish" lang="pl" hreflang="pl" data-title="Lokalny lemat Lovásza" data-language-autonym="Polski" data-language-local-name="Polish" class="interlanguage-link-target"><span>Polski</span></a></li><li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%9B%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D0%BB%D0%B5%D0%BC%D0%BC%D0%B0_%D0%9B%D0%BE%D0%B2%D0%B0%D1%81%D0%B0" title="Локальная лемма Ловаса – Russian" lang="ru" hreflang="ru" data-title="Локальная лемма Ловаса" data-language-autonym="Русский" data-language-local-name="Russian" class="interlanguage-link-target"><span>Русский</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q831721#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-nstab-main" class="selected mw-list-item vector-tab-noicon"><a data-mw-interface  href="/wiki/Lov%C3%A1sz_local_lemma" title="View the content page [c]" accesskey="c" class=""><span>Article</span></a>
+</li>
+<li id="ca-talk" class="mw-list-item vector-tab-noicon"><a data-mw-interface  href="/wiki/Talk:Lov%C3%A1sz_local_lemma" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t" class=""><span>Talk</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"    >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+			    
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-view" class="selected mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/wiki/Lov%C3%A1sz_local_lemma" class=""><span>Read</span></a>
+</li>
+<li id="ca-edit" class="mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;action=edit" title="Edit this page [e]" accesskey="e" class=""><span>Edit</span></a>
+</li>
+<li id="ca-history" class="mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;action=history" title="Past revisions of this page [h]" accesskey="h" class=""><span>View history</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+			</nav>
+
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"   >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-verticalEllipsis mw-ui-icon-wikimedia-verticalEllipsis cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin" aria-label="Move Tools to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin" aria-label="Hide Tools">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-view-more" class="selected mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/wiki/Lov%C3%A1sz_local_lemma" class=""><span class="vector-icon mw-ui-icon-eye mw-ui-icon-wikimedia-eye cdx-button__icon"></span>
+
+<span>Read</span></a>
+</li>
+<li id="ca-edit-more" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;action=edit" title="Edit this page [e]" accesskey="e" class=""><span class="vector-icon mw-ui-icon-edit mw-ui-icon-wikimedia-edit cdx-button__icon"></span>
+
+<span>Edit</span></a>
+</li>
+<li id="ca-history-more" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;action=history" title="Past revisions of this page [h]" accesskey="h" class=""><span class="vector-icon mw-ui-icon-history mw-ui-icon-wikimedia-history cdx-button__icon"></span>
+
+<span>View history</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Lov%C3%A1sz_local_lemma" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Lov%C3%A1sz_local_lemma" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;oldid=1285525974" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Lov%C3%A1sz_local_lemma&amp;id=1285525974&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FLov%25C3%25A1sz_local_lemma"><span>Get shortened URL</span></a></li><li id="parsermigration-switch-to-legacy" class="mw-list-item"><a href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;useparsoid=0"><span>Switch to legacy parser</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Lov%C3%A1sz_local_lemma&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q831721" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin" aria-label="Move Appearance to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin" aria-label="Hide Appearance">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+						<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+						
+					</div>
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr" data-mw-parsoid-version="0.24.0.0-alpha26" data-mw-html-version="2.8.0"><section data-mw-section-id="0" id="mwAQ"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none" about="#mwt1" typeof="mw:Transclusion" id="mwAg" data-mw='{"parts":[{"template":{"target":{"wt":"Short description","href":"./Template:Short_description"},"params":{"1":{"wt":"Probability theorem on no events occurring"}},"i":0}}]}'>Probability theorem on no events occurring</div><span class="mw-empty-elt" about="#mwt1"><link rel="mw:PageProp/Category" href="./Category:Articles_with_short_description"/><link rel="mw:PageProp/Category" href="./Category:Short_description_is_different_from_Wikidata"/></span>
+<p id="mwAw">In <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Probability_theory" title="Probability theory" id="mwBA">probability theory</a>, if a large number of events are all <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Statistical_independence" title="Statistical independence" class="mw-redirect" id="mwBQ">independent</a> of one another and each has probability less than 1, then there is a positive (possibly small) probability that none of the events will occur. The <b id="mwBg">Lovász local lemma</b> allows a slight relaxation of the independence condition: As long as the events are "mostly" independent from one another and aren't individually too likely, then there will still be a positive probability that none of them occurs. This lemma is most commonly used in the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Probabilistic_method" title="Probabilistic method" id="mwBw">probabilistic method</a>, in particular to give <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Nonconstructive_proof" title="Nonconstructive proof" class="mw-redirect" id="mwCA">existence proofs</a>.</p>
+
+<p id="mwCQ">There are several different versions of the lemma.  The simplest and most frequently used is the symmetric version given below. A weaker version was proved in 1975 by <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/László_Lovász" title="László Lovász" id="mwCg">László Lovász</a> and <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Paul_Erdős" title="Paul Erdős" id="mwCw">Paul Erdős</a> in the article <i id="mwDA">Problems and results on 3-chromatic hypergraphs and some related questions</i>. For other versions, see <a rel="mw:WikiLink" href="#CITEREFAlonSpencer2000" about="#mwt2" typeof="mw:Transclusion" class="mw-selflink-fragment" id="mwDQ" data-mw='{"parts":[{"template":{"target":{"wt":"harvtxt","href":"./Template:Harvtxt"},"params":{"1":{"wt":"Alon"},"2":{"wt":"Spencer"},"3":{"wt":"2000"}},"i":0}}]}'>Alon <span typeof="mw:Entity">&amp;</span> Spencer (2000)</a>. In 2020, Robin Moser and <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Gábor_Tardos" title="Gábor Tardos" id="mwDg">Gábor Tardos</a> received the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Gödel_Prize" title="Gödel Prize" id="mwDw">Gödel Prize</a> for their algorithmic version of the Lovász Local Lemma, which uses <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Entropy_compression" title="Entropy compression" id="mwEA">entropy compression</a> to provide an efficient <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Randomized_algorithm" title="Randomized algorithm" id="mwEQ">randomized algorithm</a> for finding an outcome in which none of the events occurs.<sup about="#mwt5" class="mw-ref reference" id="cite_ref-1" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-1"}}'><a href="#cite_note-1" id="mwEg"><span class="mw-reflink-text" id="mwEw"><span class="cite-bracket" id="mwFA">[</span>1<span class="cite-bracket" id="mwFQ">]</span></span></a></sup><sup about="#mwt8" class="mw-ref reference" id="cite_ref-2" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-2"}}'><a href="#cite_note-2" id="mwFg"><span class="mw-reflink-text" id="mwFw"><span class="cite-bracket" id="mwGA">[</span>2<span class="cite-bracket" id="mwGQ">]</span></span></a></sup></p>
+
+<meta property="mw:PageProp/toc" id="mwGg" data-mw='{"autoGenerated":true}'/></section><section data-mw-section-id="1" id="mwGw" aria-labelledby="Statements_of_the_lemma_(symmetric_version)"><div class="mw-heading mw-heading2"><h2 id="Statements_of_the_lemma_(symmetric_version)"><span id="Statements_of_the_lemma_.28symmetric_version.29" typeof="mw:FallbackId"></span>Statements of the lemma (symmetric version)</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;action=edit&amp;section=1" title="Edit section: Statements of the lemma (symmetric version)"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwHA">Let <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt9" id="mwHQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"A_1, A_2,\\dots, A_k"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle A_{1},A_{2},\dots ,A_{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>…<!-- … --></mo>
+        <mo>,</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A_{1},A_{2},\dots ,A_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/05b9c45adf220679a96878d07ea84ed1cd78ba6e" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:14.639ex; height:2.509ex;" alt="{\displaystyle A_{1},A_{2},\dots ,A_{k}}"/></span> be a sequence of events such that each event occurs with probability at most <i id="mwHg">p</i> and such that each event is independent of all the other events except for at most <i id="mwHw">d</i> of them.</p>
+
+<blockquote id="mwIA"><p id="mwIQ"><b id="mwIg">Lemma I</b> (Lovász and Erdős 1973; published 1975) If </p>
+<dl id="mwIw"><dd id="mwJA"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt10" id="mwJQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"4 p d \\le 1"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle 4pd\leq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mn>4</mn>
+        <mi>p</mi>
+        <mi>d</mi>
+        <mo>≤<!-- ≤ --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 4pd\leq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3d641bf2d9ee03a0d94cccb2cf3c9b2a3bb544f3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:7.809ex; height:2.509ex;" alt="{\displaystyle 4pd\leq 1}"/></span></dd></dl><p id="mwJg">
+then there is a nonzero probability that none of the events occurs.</p></blockquote>
+
+<blockquote id="mwJw"><p id="mwKA"><b id="mwKQ">Lemma II</b> (Lovász 1977; published by <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Joel_Spencer" title="Joel Spencer" id="mwKg">Joel Spencer</a><sup about="#mwt13" class="mw-ref reference" id="cite_ref-3" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-3"}}'><a href="#cite_note-3" id="mwKw"><span class="mw-reflink-text" id="mwLA"><span class="cite-bracket" id="mwLQ">[</span>3<span class="cite-bracket" id="mwLg">]</span></span></a></sup>) If</p>
+<dl id="mwLw"><dd id="mwMA"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt14" id="mwMQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"e p (d+1) \\le 1,"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle ep(d+1)\leq 1,}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>e</mi>
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>d</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>≤<!-- ≤ --></mo>
+        <mn>1</mn>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ep(d+1)\leq 1,}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/683940cb400e8e27c8972b1bb8ce134cf81680e4" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:14.189ex; height:2.843ex;" alt="{\displaystyle ep(d+1)\leq 1,}"/></span></dd></dl><p id="mwMg">
+where <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/E_(mathematical_constant)" title="E (mathematical constant)" id="mwMw"><i id="mwNA">e</i></a> = 2.718... is the base of natural logarithms, then there is a nonzero probability that none of the events occurs.</p></blockquote>
+
+<p id="mwNQ">Lemma II today is usually referred to as "Lovász local lemma".</p>
+
+<blockquote id="mwNg"><p id="mwNw"><b id="mwOA">Lemma III</b> (Shearer 1985<sup about="#mwt17" class="mw-ref reference" id="cite_ref-4" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-4"}}'><a href="#cite_note-4" id="mwOQ"><span class="mw-reflink-text" id="mwOg"><span class="cite-bracket" id="mwOw">[</span>4<span class="cite-bracket" id="mwPA">]</span></span></a></sup>) If </p>
+<dl id="mwPQ"><dd id="mwPg"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt18" id="mwPw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\begin{cases} p &lt; \\frac{(d-1)^{d-1}}{d^d} &amp; d > 1\\\\ p &lt; \\tfrac{1}{2} &amp; d = 1 \\end{cases}"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle {\begin{cases}p&lt;{\frac {(d-1)^{d-1}}{d^{d}}}&amp;d>1\\p&lt;{\tfrac {1}{2}}&amp;d=1\end{cases}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mo>{</mo>
+            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+              <mtr>
+                <mtd>
+                  <mi>p</mi>
+                  <mo>&lt;</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mfrac>
+                      <mrow>
+                        <mo stretchy="false">(</mo>
+                        <mi>d</mi>
+                        <mo>−<!-- − --></mo>
+                        <mn>1</mn>
+                        <msup>
+                          <mo stretchy="false">)</mo>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>d</mi>
+                            <mo>−<!-- − --></mo>
+                            <mn>1</mn>
+                          </mrow>
+                        </msup>
+                      </mrow>
+                      <msup>
+                        <mi>d</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>d</mi>
+                        </mrow>
+                      </msup>
+                    </mfrac>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mi>d</mi>
+                  <mo>></mo>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mi>p</mi>
+                  <mo>&lt;</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mstyle displaystyle="false" scriptlevel="0">
+                      <mfrac>
+                        <mn>1</mn>
+                        <mn>2</mn>
+                      </mfrac>
+                    </mstyle>
+                  </mrow>
+                </mtd>
+                <mtd>
+                  <mi>d</mi>
+                  <mo>=</mo>
+                  <mn>1</mn>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo fence="true" stretchy="true" symmetric="true"></mo>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{cases}p&lt;{\frac {(d-1)^{d-1}}{d^{d}}}&amp;d>1\\p&lt;{\tfrac {1}{2}}&amp;d=1\end{cases}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4eb23c5f8d0fd85ec43359e09f207ec8973585cf" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -3.671ex; width:22.528ex; height:8.509ex;" alt="{\displaystyle {\begin{cases}p&lt;{\frac {(d-1)^{d-1}}{d^{d}}}&amp;d>1\\p&lt;{\tfrac {1}{2}}&amp;d=1\end{cases}}}"/></span></dd></dl><p id="mwQA">
+then there is a nonzero probability that none of the events occurs.</p></blockquote>
+
+<p id="mwQQ">The threshold in Lemma III is optimal and it implies that the bound </p>
+<dl id="mwQg"><dd id="mwQw"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt19" id="mwRA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" epd \\le 1"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle epd\leq 1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>e</mi>
+        <mi>p</mi>
+        <mi>d</mi>
+        <mo>≤<!-- ≤ --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle epd\leq 1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/88c066f7f593f2786959a8fbb9b1d6ccbe49f0d8" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:7.73ex; height:2.509ex;" alt="{\displaystyle epd\leq 1}"/></span></dd></dl>
+<p id="mwRQ">is also sufficient.</p>
+
+</section><section data-mw-section-id="2" id="mwRg" aria-labelledby="Asymmetric_Lovász_local_lemma"><div class="mw-heading mw-heading2"><h2 id="Asymmetric_Lovász_local_lemma"><span id="Asymmetric_Lov.C3.A1sz_local_lemma" typeof="mw:FallbackId"></span>Asymmetric Lovász local lemma</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;action=edit&amp;section=2" title="Edit section: Asymmetric Lovász local lemma"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwRw">A statement of the asymmetric version (which allows for events with different probability bounds) is as follows:</p>
+
+<blockquote id="mwSA"><p id="mwSQ"><b id="mwSg">Lemma (asymmetric version)</b>. Let <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt20" id="mwSw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" \\mathcal{A} = \\{ A_1, \\ldots, A_n \\}"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle {\mathcal {A}}=\{A_{1},\ldots ,A_{n}\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">A</mi>
+          </mrow>
+        </mrow>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>…<!-- … --></mo>
+        <mo>,</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {A}}=\{A_{1},\ldots ,A_{n}\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3941892d953ac641a4a43c2c96a106ec40382cea" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:18.264ex; height:2.843ex;" alt="{\displaystyle {\mathcal {A}}=\{A_{1},\ldots ,A_{n}\}}"/></span> be a finite set of events in the probability space<span typeof="mw:Entity" id="mwTA"> </span>Ω. For <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt21" id="mwTQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" A \\in \\mathcal{A} "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle A\in {\mathcal {A}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+        <mo>∈<!-- ∈ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">A</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A\in {\mathcal {A}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d6e69647797be244cf2ebc28ecd61fafba8790c1" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:6.487ex; height:2.343ex;" alt="{\displaystyle A\in {\mathcal {A}}}"/></span> let <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt22" id="mwTg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" \\Gamma(A)"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \Gamma (A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Γ<!-- Γ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Gamma (A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/952cbb389798c3f70d7fba02c4b867da78d3d24d" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:5.005ex; height:2.843ex;" alt="{\displaystyle \Gamma (A)}"/></span> denote the neighbours of <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt23" id="mwTw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"A"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="{\displaystyle A}"/></span> in the dependency graph (In the dependency graph, event <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt24" id="mwUA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"A"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="{\displaystyle A}"/></span> is not adjacent to events which are mutually independent). If there exists an assignment of reals <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt25" id="mwUQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"x : \\mathcal{A} \\to [0,1) "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle x:{\mathcal {A}}\to [0,1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>:</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">A</mi>
+          </mrow>
+        </mrow>
+        <mo stretchy="false">→<!-- → --></mo>
+        <mo stretchy="false">[</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x:{\mathcal {A}}\to [0,1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8028ed52bb02f9dc6e76945a520108cbdcc5abf7" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:13.695ex; height:2.843ex;" alt="{\displaystyle x:{\mathcal {A}}\to [0,1)}"/></span> to the events such that</p>
+
+<dl id="mwUg"><dd id="mwUw"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt26" id="mwVA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" \\forall A \\in \\mathcal{A} : \\Pr(A) \\leq x(A) \\prod_{B \\in \\Gamma(A)} (1-x(B)) "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \forall A\in {\mathcal {A}}:\Pr(A)\leq x(A)\prod _{B\in \Gamma (A)}(1-x(B))}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀<!-- ∀ --></mi>
+        <mi>A</mi>
+        <mo>∈<!-- ∈ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">A</mi>
+          </mrow>
+        </mrow>
+        <mo>:</mo>
+        <mo movablelimits="true" form="prefix">Pr</mo>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>≤<!-- ≤ --></mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <munder>
+          <mo>∏<!-- ∏ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+            <mo>∈<!-- ∈ --></mo>
+            <mi mathvariant="normal">Γ<!-- Γ --></mi>
+            <mo stretchy="false">(</mo>
+            <mi>A</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </munder>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>−<!-- − --></mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall A\in {\mathcal {A}}:\Pr(A)\leq x(A)\prod _{B\in \Gamma (A)}(1-x(B))}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9ed1d8b214ee8e18c2313e8a139fe2decfcae4f9" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -3.505ex; width:40.729ex; height:6.009ex;" alt="{\displaystyle \forall A\in {\mathcal {A}}:\Pr(A)\leq x(A)\prod _{B\in \Gamma (A)}(1-x(B))}"/></span></dd></dl>
+
+<p id="mwVQ">then the probability of avoiding all events in <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt27" id="mwVg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" \\mathcal{A} "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle {\mathcal {A}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">A</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {A}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/280ae03440942ab348c2ca9b8db6b56ffa9618f8" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.903ex; height:2.343ex;" alt="{\displaystyle {\mathcal {A}}}"/></span> is positive, in particular</p>
+
+<dl id="mwVw"><dd id="mwWA"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt28" id="mwWQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" \\Pr\\left(\\overline{A_1} \\wedge \\cdots \\wedge \\overline{A_n} \\right) \\geq \\prod_{i\\in \\{1,\\cdot\\cdot\\cdot,n\\}} (1-x(A_i)). "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \Pr \left({\overline {A_{1}}}\wedge \cdots \wedge {\overline {A_{n}}}\right)\geq \prod _{i\in \{1,\cdot \cdot \cdot ,n\}}(1-x(A_{i})).}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">Pr</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>1</mn>
+                  </mrow>
+                </msub>
+                <mo accent="false">¯<!-- ¯ --></mo>
+              </mover>
+            </mrow>
+            <mo>∧<!-- ∧ --></mo>
+            <mo>⋯<!-- ⋯ --></mo>
+            <mo>∧<!-- ∧ --></mo>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mover>
+                <msub>
+                  <mi>A</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>n</mi>
+                  </mrow>
+                </msub>
+                <mo accent="false">¯<!-- ¯ --></mo>
+              </mover>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>≥<!-- ≥ --></mo>
+        <munder>
+          <mo>∏<!-- ∏ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+            <mo>∈<!-- ∈ --></mo>
+            <mo fence="false" stretchy="false">{</mo>
+            <mn>1</mn>
+            <mo>,</mo>
+            <mo>⋅<!-- ⋅ --></mo>
+            <mo>⋅<!-- ⋅ --></mo>
+            <mo>⋅<!-- ⋅ --></mo>
+            <mo>,</mo>
+            <mi>n</mi>
+            <mo fence="false" stretchy="false">}</mo>
+          </mrow>
+        </munder>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>−<!-- − --></mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Pr \left({\overline {A_{1}}}\wedge \cdots \wedge {\overline {A_{n}}}\right)\geq \prod _{i\in \{1,\cdot \cdot \cdot ,n\}}(1-x(A_{i})).}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/aaafe8699a7ac1036caef9540da50db0247d63f3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -3.505ex; width:42.176ex; height:6.509ex;" alt="{\displaystyle \Pr \left({\overline {A_{1}}}\wedge \cdots \wedge {\overline {A_{n}}}\right)\geq \prod _{i\in \{1,\cdot \cdot \cdot ,n\}}(1-x(A_{i})).}"/></span></dd></dl></blockquote>
+
+<p id="mwWg">The symmetric version follows immediately from the asymmetric version by setting</p>
+
+<dl id="mwWw"><dd id="mwXA"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt29" id="mwXQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" \\forall A \\in \\mathcal{A} : x(A) = \\frac{1}{d+1}"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \forall A\in {\mathcal {A}}:x(A)={\frac {1}{d+1}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">∀<!-- ∀ --></mi>
+        <mi>A</mi>
+        <mo>∈<!-- ∈ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">A</mi>
+          </mrow>
+        </mrow>
+        <mo>:</mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mi>d</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \forall A\in {\mathcal {A}}:x(A)={\frac {1}{d+1}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbd5078ddb387668d81ff13bc8b7d27adb016416" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.171ex; width:23.752ex; height:5.509ex;" alt="{\displaystyle \forall A\in {\mathcal {A}}:x(A)={\frac {1}{d+1}}}"/></span></dd></dl>
+
+<p id="mwXg">to get the sufficient condition</p>
+
+<dl id="mwXw"><dd id="mwYA"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt30" id="mwYQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" p \\leq \\frac{1}{d+1} \\cdot \\frac{1}{e} "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle p\leq {\frac {1}{d+1}}\cdot {\frac {1}{e}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>p</mi>
+        <mo>≤<!-- ≤ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mrow>
+              <mi>d</mi>
+              <mo>+</mo>
+              <mn>1</mn>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>⋅<!-- ⋅ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>e</mi>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle p\leq {\frac {1}{d+1}}\cdot {\frac {1}{e}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/23c6d516951388a4b7704b5a4efdf8a5d505d7eb" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.171ex; margin-left: -0.089ex; width:14.09ex; height:5.509ex;" alt="{\displaystyle p\leq {\frac {1}{d+1}}\cdot {\frac {1}{e}}}"/></span></dd></dl>
+
+<p id="mwYg">since</p>
+
+<dl id="mwYw"><dd id="mwZA"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt31" id="mwZQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\frac{1}{e} \\leq \\left (1 - \\frac{1}{d+1} \\right)^d."}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle {\frac {1}{e}}\leq \left(1-{\frac {1}{d+1}}\right)^{d}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mn>1</mn>
+            <mi>e</mi>
+          </mfrac>
+        </mrow>
+        <mo>≤<!-- ≤ --></mo>
+        <msup>
+          <mrow>
+            <mo>(</mo>
+            <mrow>
+              <mn>1</mn>
+              <mo>−<!-- − --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mfrac>
+                  <mn>1</mn>
+                  <mrow>
+                    <mi>d</mi>
+                    <mo>+</mo>
+                    <mn>1</mn>
+                  </mrow>
+                </mfrac>
+              </mrow>
+            </mrow>
+            <mo>)</mo>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>d</mi>
+          </mrow>
+        </msup>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\frac {1}{e}}\leq \left(1-{\frac {1}{d+1}}\right)^{d}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1c37c193421b9b91045e5774d31662ed70845d96" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.505ex; width:20.315ex; height:6.676ex;" alt="{\displaystyle {\frac {1}{e}}\leq \left(1-{\frac {1}{d+1}}\right)^{d}.}"/></span></dd></dl>
+
+</section><section data-mw-section-id="3" id="mwZg" aria-labelledby="Constructive_versus_non-constructive"><div class="mw-heading mw-heading2"><h2 id="Constructive_versus_non-constructive">Constructive versus non-constructive</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;action=edit&amp;section=3" title="Edit section: Constructive versus non-constructive"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwZw">As is often the case with probabilistic arguments, this theorem is <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Nonconstructive_proof" title="Nonconstructive proof" class="mw-redirect" id="mwaA">nonconstructive</a> and gives no method of determining an explicit element of the probability space in which no event occurs. However, algorithmic versions of the local lemma with stronger preconditions are also known (Beck 1991; Czumaj and Scheideler 2000).  More recently, a <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Algorithmic_Lovász_local_lemma" title="Algorithmic Lovász local lemma" id="mwaQ">constructive version of the local lemma</a> was given by <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Robin_Moser?action=edit&amp;redlink=1" title="Robin Moser (page does not exist)" class="new" typeof="mw:LocalizedAttrs" id="mwag" data-mw-i18n='{"title":{"lang":"x-page","key":"red-link-title","params":["Robin Moser"]}}'>Robin Moser</a> and <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Gábor_Tardos" title="Gábor Tardos" id="mwaw">Gábor Tardos</a> requiring no stronger preconditions.</p>
+
+</section><section data-mw-section-id="4" id="mwbA" aria-labelledby="Non-constructive_proof"><div class="mw-heading mw-heading2"><h2 id="Non-constructive_proof">Non-constructive proof</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;action=edit&amp;section=4" title="Edit section: Non-constructive proof"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwbQ">We prove the asymmetric version of the lemma, from which the symmetric version can be derived. By using the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Principle_of_mathematical_induction" title="Principle of mathematical induction" class="mw-redirect" id="mwbg">principle of mathematical induction</a> we prove that for all <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt32" id="mwbw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"A"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="{\displaystyle A}"/></span> in <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt33" id="mwcA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\mathcal{A}"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle {\mathcal {A}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">A</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {A}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/280ae03440942ab348c2ca9b8db6b56ffa9618f8" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.903ex; height:2.343ex;" alt="{\displaystyle {\mathcal {A}}}"/></span> and all subsets <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt34" id="mwcQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"S"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle S}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4611d85173cd3b508e67077d4a1252c9c05abca2" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.499ex; height:2.176ex;" alt="{\displaystyle S}"/></span> of <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt35" id="mwcg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\mathcal{A}"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle {\mathcal {A}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">A</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {A}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/280ae03440942ab348c2ca9b8db6b56ffa9618f8" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.903ex; height:2.343ex;" alt="{\displaystyle {\mathcal {A}}}"/></span> that do not include <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt36" id="mwcw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"A"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="{\displaystyle A}"/></span>, <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt37" id="mwdA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" \\Pr\\left(A\\mid\\bigwedge_{B \\in S}\\overline{B}\\right)\\leq x(A)"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \Pr \left(A\mid \bigwedge _{B\in S}{\overline {B}}\right)\leq x(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">Pr</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>A</mi>
+            <mo>∣<!-- ∣ --></mo>
+            <munder>
+              <mo>⋀<!-- ⋀ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>B</mi>
+                <mo>∈<!-- ∈ --></mo>
+                <mi>S</mi>
+              </mrow>
+            </munder>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mover>
+                <mi>B</mi>
+                <mo accent="false">¯<!-- ¯ --></mo>
+              </mover>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>≤<!-- ≤ --></mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Pr \left(A\mid \bigwedge _{B\in S}{\overline {B}}\right)\leq x(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4a21e0c909e09aca98025de09e451e6173baf5d1" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -3.171ex; width:23.893ex; height:7.509ex;" alt="{\displaystyle \Pr \left(A\mid \bigwedge _{B\in S}{\overline {B}}\right)\leq x(A)}"/></span>. The induction here is applied on the size (cardinality) of the set <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt38" id="mwdQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" S "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle S}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4611d85173cd3b508e67077d4a1252c9c05abca2" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.499ex; height:2.176ex;" alt="{\displaystyle S}"/></span>. For base case <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt39" id="mwdg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"S=\\emptyset"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle S=\emptyset }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+        <mo>=</mo>
+        <mi mathvariant="normal">∅<!-- ∅ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S=\emptyset }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6a7c38be46a9b3fe15e5893edc24def5ba893e5e" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.505ex; width:5.76ex; height:2.509ex;" alt="{\displaystyle S=\emptyset }"/></span> the statement obviously holds since <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt40" id="mwdw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" \\Pr(A_i) \\leq x\\left(A_i\\right) "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \Pr(A_{i})\leq x\left(A_{i}\right)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">Pr</mo>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>A</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>i</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>≤<!-- ≤ --></mo>
+        <mi>x</mi>
+        <mrow>
+          <mo>(</mo>
+          <msub>
+            <mi>A</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>i</mi>
+            </mrow>
+          </msub>
+          <mo>)</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Pr(A_{i})\leq x\left(A_{i}\right)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d5cd29fb0f4d5c1c6815ab8c769715d3e81bed54" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:16.014ex; height:2.843ex;" alt="{\displaystyle \Pr(A_{i})\leq x\left(A_{i}\right)}"/></span>. We need to show that the inequality holds for any subset of <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt41" id="mweA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\mathcal{A} "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle {\mathcal {A}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi class="MJX-tex-caligraphic" mathvariant="script">A</mi>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {A}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/280ae03440942ab348c2ca9b8db6b56ffa9618f8" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.903ex; height:2.343ex;" alt="{\displaystyle {\mathcal {A}}}"/></span> of a certain <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Cardinality" title="Cardinality" id="mweQ">cardinality</a> given that it holds for all subsets of a lower cardinality.</p>
+
+<p id="mweg">Let <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt42" id="mwew" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"S_1 = S\\cap \\Gamma(A), S_2 = S \\setminus S_1"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle S_{1}=S\cap \Gamma (A),S_{2}=S\setminus S_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>S</mi>
+        <mo>∩<!-- ∩ --></mo>
+        <mi mathvariant="normal">Γ<!-- Γ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>S</mi>
+        <mo class="MJX-variant">∖<!-- ∖ --></mo>
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{1}=S\cap \Gamma (A),S_{2}=S\setminus S_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e720c3e3daca2dce61d7ce89b2d175943f85973e" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:27.449ex; height:2.843ex;" alt="{\displaystyle S_{1}=S\cap \Gamma (A),S_{2}=S\setminus S_{1}}"/></span>. We have from <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Bayes'_theorem" title="Bayes' theorem" id="mwfA">Bayes' theorem</a></p>
+
+<dl id="mwfQ"><dd id="mwfg"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt43" id="mwfw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\Pr\\left(A\\mid\\bigwedge_{B\\in S} \\overline{B}\\right) = \\frac{\\Pr\\left(A\\wedge\\bigwedge_{B\\in S_{1}} \\overline{B}\\mid \\bigwedge_{B\\in S_2} \\overline{B}\\right)}{\\Pr\\left(\\bigwedge_{B\\in S_1}\\overline{B}\\mid\\bigwedge_{B\\in S_2} \\overline{B} \\right)}.  "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \Pr \left(A\mid \bigwedge _{B\in S}{\overline {B}}\right)={\frac {\Pr \left(A\wedge \bigwedge _{B\in S_{1}}{\overline {B}}\mid \bigwedge _{B\in S_{2}}{\overline {B}}\right)}{\Pr \left(\bigwedge _{B\in S_{1}}{\overline {B}}\mid \bigwedge _{B\in S_{2}}{\overline {B}}\right)}}.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">Pr</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>A</mi>
+            <mo>∣<!-- ∣ --></mo>
+            <munder>
+              <mo>⋀<!-- ⋀ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>B</mi>
+                <mo>∈<!-- ∈ --></mo>
+                <mi>S</mi>
+              </mrow>
+            </munder>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mover>
+                <mi>B</mi>
+                <mo accent="false">¯<!-- ¯ --></mo>
+              </mover>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow>
+              <mo movablelimits="true" form="prefix">Pr</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <mi>A</mi>
+                  <mo>∧<!-- ∧ --></mo>
+                  <munder>
+                    <mo>⋀<!-- ⋀ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>B</mi>
+                      <mo>∈<!-- ∈ --></mo>
+                      <msub>
+                        <mi>S</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>1</mn>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </munder>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mover>
+                      <mi>B</mi>
+                      <mo accent="false">¯<!-- ¯ --></mo>
+                    </mover>
+                  </mrow>
+                  <mo>∣<!-- ∣ --></mo>
+                  <munder>
+                    <mo>⋀<!-- ⋀ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>B</mi>
+                      <mo>∈<!-- ∈ --></mo>
+                      <msub>
+                        <mi>S</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </munder>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mover>
+                      <mi>B</mi>
+                      <mo accent="false">¯<!-- ¯ --></mo>
+                    </mover>
+                  </mrow>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+            <mrow>
+              <mo movablelimits="true" form="prefix">Pr</mo>
+              <mrow>
+                <mo>(</mo>
+                <mrow>
+                  <munder>
+                    <mo>⋀<!-- ⋀ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>B</mi>
+                      <mo>∈<!-- ∈ --></mo>
+                      <msub>
+                        <mi>S</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>1</mn>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </munder>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mover>
+                      <mi>B</mi>
+                      <mo accent="false">¯<!-- ¯ --></mo>
+                    </mover>
+                  </mrow>
+                  <mo>∣<!-- ∣ --></mo>
+                  <munder>
+                    <mo>⋀<!-- ⋀ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mi>B</mi>
+                      <mo>∈<!-- ∈ --></mo>
+                      <msub>
+                        <mi>S</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mn>2</mn>
+                        </mrow>
+                      </msub>
+                    </mrow>
+                  </munder>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mover>
+                      <mi>B</mi>
+                      <mo accent="false">¯<!-- ¯ --></mo>
+                    </mover>
+                  </mrow>
+                </mrow>
+                <mo>)</mo>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>.</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Pr \left(A\mid \bigwedge _{B\in S}{\overline {B}}\right)={\frac {\Pr \left(A\wedge \bigwedge _{B\in S_{1}}{\overline {B}}\mid \bigwedge _{B\in S_{2}}{\overline {B}}\right)}{\Pr \left(\bigwedge _{B\in S_{1}}{\overline {B}}\mid \bigwedge _{B\in S_{2}}{\overline {B}}\right)}}.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ec676196c97c917fb59b2b74f5acae2976e06d16" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -4.505ex; width:49.648ex; height:10.176ex;" alt="{\displaystyle \Pr \left(A\mid \bigwedge _{B\in S}{\overline {B}}\right)={\frac {\Pr \left(A\wedge \bigwedge _{B\in S_{1}}{\overline {B}}\mid \bigwedge _{B\in S_{2}}{\overline {B}}\right)}{\Pr \left(\bigwedge _{B\in S_{1}}{\overline {B}}\mid \bigwedge _{B\in S_{2}}{\overline {B}}\right)}}.}"/></span></dd></dl>
+
+<p id="mwgA">We bound the numerator and denominator of the above expression separately. For this, let <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt44" id="mwgQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" S_1=\\{B_{j1},B_{j2},\\ldots,B_{jl}\\} "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle S_{1}=\{B_{j1},B_{j2},\ldots ,B_{jl}\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo fence="false" stretchy="false">{</mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>…<!-- … --></mo>
+        <mo>,</mo>
+        <msub>
+          <mi>B</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mi>l</mi>
+          </mrow>
+        </msub>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{1}=\{B_{j1},B_{j2},\ldots ,B_{jl}\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2103ec6ba5d7d85ef04760f77027fd7f1f49c424" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:24.27ex; height:3.009ex;" alt="{\displaystyle S_{1}=\{B_{j1},B_{j2},\ldots ,B_{jl}\}}"/></span>. First, exploiting the fact that <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt45" id="mwgg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"A"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle A}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>A</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle A}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7daff47fa58cdfd29dc333def748ff5fa4c923e3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.743ex; height:2.176ex;" alt="{\displaystyle A}"/></span> does not depend upon any event in <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt46" id="mwgw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" S_2 "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle S_{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>S</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S_{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1143e284d5f25cef778ab482edf6617a523ddd9f" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.479ex; height:2.509ex;" alt="{\displaystyle S_{2}}"/></span>.</p>
+
+<dl id="mwhA"><dd id="mwhQ"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt47" id="mwhg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" \\text{Numerator} \\leq \\Pr\\left(A\\mid\\bigwedge_{B\\in S_2} \\overline{B}\\right) = \\Pr(A) \\leq x(A) \\prod_{B\\in\\Gamma(A)}(1-x(B)). \\qquad (1) "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle {\text{Numerator}}\leq \Pr \left(A\mid \bigwedge _{B\in S_{2}}{\overline {B}}\right)=\Pr(A)\leq x(A)\prod _{B\in \Gamma (A)}(1-x(B)).\qquad (1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtext>Numerator</mtext>
+        </mrow>
+        <mo>≤<!-- ≤ --></mo>
+        <mo movablelimits="true" form="prefix">Pr</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>A</mi>
+            <mo>∣<!-- ∣ --></mo>
+            <munder>
+              <mo>⋀<!-- ⋀ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>B</mi>
+                <mo>∈<!-- ∈ --></mo>
+                <msub>
+                  <mi>S</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mn>2</mn>
+                  </mrow>
+                </msub>
+              </mrow>
+            </munder>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mover>
+                <mi>B</mi>
+                <mo accent="false">¯<!-- ¯ --></mo>
+              </mover>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>=</mo>
+        <mo movablelimits="true" form="prefix">Pr</mo>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <mo>≤<!-- ≤ --></mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <munder>
+          <mo>∏<!-- ∏ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+            <mo>∈<!-- ∈ --></mo>
+            <mi mathvariant="normal">Γ<!-- Γ --></mi>
+            <mo stretchy="false">(</mo>
+            <mi>A</mi>
+            <mo stretchy="false">)</mo>
+          </mrow>
+        </munder>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>−<!-- − --></mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>.</mo>
+        <mspace width="2em"></mspace>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\text{Numerator}}\leq \Pr \left(A\mid \bigwedge _{B\in S_{2}}{\overline {B}}\right)=\Pr(A)\leq x(A)\prod _{B\in \Gamma (A)}(1-x(B)).\qquad (1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fe0a0c5c8d23b12cfd14bf7631b7d1723db41e7a" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -3.505ex; width:73.609ex; height:7.843ex;" alt="{\displaystyle {\text{Numerator}}\leq \Pr \left(A\mid \bigwedge _{B\in S_{2}}{\overline {B}}\right)=\Pr(A)\leq x(A)\prod _{B\in \Gamma (A)}(1-x(B)).\qquad (1)}"/></span></dd></dl>
+
+<p id="mwhw">Expanding the denominator by using Bayes' theorem and then using the inductive assumption, we get</p>
+
+<dl id="mwiA"><dd id="mwiQ"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt48" id="mwig" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\n\\begin{align}\n&amp; \\text{Denominator} \\\\\n= {} &amp; \\Pr\\left(\\overline{B}_{j1}\\mid\\bigwedge_{t=2}^l \\overline{B}_{jt}\\wedge\\bigwedge_{B\\in S_2} \\overline{B} \\right)\\cdot \\Pr\\left(\\overline{B}_{j2}\\mid\\bigwedge_{t=3}^l\\overline{B}_{jt}\\wedge\\bigwedge_{B\\in S_2} \\overline{B} \\right)\\cdots \\Pr\\left(\\overline{B}_{jl}\\mid\\bigwedge_{B\\in S_2} \\overline{B} \\right) \\geq \\prod_{B\\in S_1} (1-x(B)) \\qquad (2)\n\\end{align}\n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle {\begin{aligned}&amp;{\text{Denominator}}\\={}&amp;\Pr \left({\overline {B}}_{j1}\mid \bigwedge _{t=2}^{l}{\overline {B}}_{jt}\wedge \bigwedge _{B\in S_{2}}{\overline {B}}\right)\cdot \Pr \left({\overline {B}}_{j2}\mid \bigwedge _{t=3}^{l}{\overline {B}}_{jt}\wedge \bigwedge _{B\in S_{2}}{\overline {B}}\right)\cdots \Pr \left({\overline {B}}_{jl}\mid \bigwedge _{B\in S_{2}}{\overline {B}}\right)\geq \prod _{B\in S_{1}}(1-x(B))\qquad (2)\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mtext>Denominator</mtext>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo movablelimits="true" form="prefix">Pr</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msub>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mover>
+                          <mi>B</mi>
+                          <mo accent="false">¯<!-- ¯ --></mo>
+                        </mover>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>j</mi>
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo>∣<!-- ∣ --></mo>
+                    <munderover>
+                      <mo>⋀<!-- ⋀ --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>t</mi>
+                        <mo>=</mo>
+                        <mn>2</mn>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>l</mi>
+                      </mrow>
+                    </munderover>
+                    <msub>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mover>
+                          <mi>B</mi>
+                          <mo accent="false">¯<!-- ¯ --></mo>
+                        </mover>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>j</mi>
+                        <mi>t</mi>
+                      </mrow>
+                    </msub>
+                    <mo>∧<!-- ∧ --></mo>
+                    <munder>
+                      <mo>⋀<!-- ⋀ --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>B</mi>
+                        <mo>∈<!-- ∈ --></mo>
+                        <msub>
+                          <mi>S</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </munder>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mover>
+                        <mi>B</mi>
+                        <mo accent="false">¯<!-- ¯ --></mo>
+                      </mover>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>⋅<!-- ⋅ --></mo>
+                <mo movablelimits="true" form="prefix">Pr</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msub>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mover>
+                          <mi>B</mi>
+                          <mo accent="false">¯<!-- ¯ --></mo>
+                        </mover>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>j</mi>
+                        <mn>2</mn>
+                      </mrow>
+                    </msub>
+                    <mo>∣<!-- ∣ --></mo>
+                    <munderover>
+                      <mo>⋀<!-- ⋀ --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>t</mi>
+                        <mo>=</mo>
+                        <mn>3</mn>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>l</mi>
+                      </mrow>
+                    </munderover>
+                    <msub>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mover>
+                          <mi>B</mi>
+                          <mo accent="false">¯<!-- ¯ --></mo>
+                        </mover>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>j</mi>
+                        <mi>t</mi>
+                      </mrow>
+                    </msub>
+                    <mo>∧<!-- ∧ --></mo>
+                    <munder>
+                      <mo>⋀<!-- ⋀ --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>B</mi>
+                        <mo>∈<!-- ∈ --></mo>
+                        <msub>
+                          <mi>S</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </munder>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mover>
+                        <mi>B</mi>
+                        <mo accent="false">¯<!-- ¯ --></mo>
+                      </mover>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>⋯<!-- ⋯ --></mo>
+                <mo movablelimits="true" form="prefix">Pr</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <msub>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mover>
+                          <mi>B</mi>
+                          <mo accent="false">¯<!-- ¯ --></mo>
+                        </mover>
+                      </mrow>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>j</mi>
+                        <mi>l</mi>
+                      </mrow>
+                    </msub>
+                    <mo>∣<!-- ∣ --></mo>
+                    <munder>
+                      <mo>⋀<!-- ⋀ --></mo>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>B</mi>
+                        <mo>∈<!-- ∈ --></mo>
+                        <msub>
+                          <mi>S</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                    </munder>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mover>
+                        <mi>B</mi>
+                        <mo accent="false">¯<!-- ¯ --></mo>
+                      </mover>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>≥<!-- ≥ --></mo>
+                <munder>
+                  <mo>∏<!-- ∏ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>B</mi>
+                    <mo>∈<!-- ∈ --></mo>
+                    <msub>
+                      <mi>S</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                </munder>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo>−<!-- − --></mo>
+                <mi>x</mi>
+                <mo stretchy="false">(</mo>
+                <mi>B</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">)</mo>
+                <mspace width="2em"></mspace>
+                <mo stretchy="false">(</mo>
+                <mn>2</mn>
+                <mo stretchy="false">)</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}&amp;{\text{Denominator}}\\={}&amp;\Pr \left({\overline {B}}_{j1}\mid \bigwedge _{t=2}^{l}{\overline {B}}_{jt}\wedge \bigwedge _{B\in S_{2}}{\overline {B}}\right)\cdot \Pr \left({\overline {B}}_{j2}\mid \bigwedge _{t=3}^{l}{\overline {B}}_{jt}\wedge \bigwedge _{B\in S_{2}}{\overline {B}}\right)\cdots \Pr \left({\overline {B}}_{jl}\mid \bigwedge _{B\in S_{2}}{\overline {B}}\right)\geq \prod _{B\in S_{1}}(1-x(B))\qquad (2)\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f6c0ead825695a3634a7fc1f947d586d1c2100ab" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -4.538ex; margin-bottom: -0.3ex; width:107.821ex; height:10.843ex;" alt="{\displaystyle {\begin{aligned}&amp;{\text{Denominator}}\\={}&amp;\Pr \left({\overline {B}}_{j1}\mid \bigwedge _{t=2}^{l}{\overline {B}}_{jt}\wedge \bigwedge _{B\in S_{2}}{\overline {B}}\right)\cdot \Pr \left({\overline {B}}_{j2}\mid \bigwedge _{t=3}^{l}{\overline {B}}_{jt}\wedge \bigwedge _{B\in S_{2}}{\overline {B}}\right)\cdots \Pr \left({\overline {B}}_{jl}\mid \bigwedge _{B\in S_{2}}{\overline {B}}\right)\geq \prod _{B\in S_{1}}(1-x(B))\qquad (2)\end{aligned}}}"/></span></dd></dl>
+
+<p id="mwiw">The inductive assumption can be applied here since each event is conditioned on lesser number of other events, i.e. on a subset of cardinality less than <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt49" id="mwjA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"|S|"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle |S|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>S</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |S|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/28d901e98a035ff4c0e37fe6dd8e750ece6c1f0b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:2.793ex; height:2.843ex;" alt="{\displaystyle |S|}"/></span>. From (1) and (2), we get</p>
+
+<dl id="mwjQ"><dd id="mwjg"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt50" id="mwjw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" \\Pr\\left(A\\mid\\bigwedge_{B\\in S} \\overline{B}\\right) \\leq x(A)\\prod_{B\\in \\Gamma(A)-S_1}(1-x(B)) \\leq x(A)  "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \Pr \left(A\mid \bigwedge _{B\in S}{\overline {B}}\right)\leq x(A)\prod _{B\in \Gamma (A)-S_{1}}(1-x(B))\leq x(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">Pr</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mi>A</mi>
+            <mo>∣<!-- ∣ --></mo>
+            <munder>
+              <mo>⋀<!-- ⋀ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>B</mi>
+                <mo>∈<!-- ∈ --></mo>
+                <mi>S</mi>
+              </mrow>
+            </munder>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mover>
+                <mi>B</mi>
+                <mo accent="false">¯<!-- ¯ --></mo>
+              </mover>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>≤<!-- ≤ --></mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+        <munder>
+          <mo>∏<!-- ∏ --></mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+            <mo>∈<!-- ∈ --></mo>
+            <mi mathvariant="normal">Γ<!-- Γ --></mi>
+            <mo stretchy="false">(</mo>
+            <mi>A</mi>
+            <mo stretchy="false">)</mo>
+            <mo>−<!-- − --></mo>
+            <msub>
+              <mi>S</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </munder>
+        <mo stretchy="false">(</mo>
+        <mn>1</mn>
+        <mo>−<!-- − --></mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>≤<!-- ≤ --></mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Pr \left(A\mid \bigwedge _{B\in S}{\overline {B}}\right)\leq x(A)\prod _{B\in \Gamma (A)-S_{1}}(1-x(B))\leq x(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b8e9cfbcdd51d11358f640d6041aea6ff265b2d8" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -3.505ex; width:51.977ex; height:7.843ex;" alt="{\displaystyle \Pr \left(A\mid \bigwedge _{B\in S}{\overline {B}}\right)\leq x(A)\prod _{B\in \Gamma (A)-S_{1}}(1-x(B))\leq x(A)}"/></span></dd></dl>
+
+<p id="mwkA">Since the value of <i id="mwkQ">x</i> is always in <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt51" id="mwkg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"[0,1)"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle [0,1)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">[</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle [0,1)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0f99b30b4451167959e97802252ad13b87af5505" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:4.91ex; height:2.843ex;" alt="{\displaystyle [0,1)}"/></span>. Note that we have essentially proved <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt52" id="mwkw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" \\Pr\\left(\\overline{A}\\mid\\bigwedge_{B\\in S} \\overline{B}\\right) \\geq 1-x(A) "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \Pr \left({\overline {A}}\mid \bigwedge _{B\in S}{\overline {B}}\right)\geq 1-x(A)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo movablelimits="true" form="prefix">Pr</mo>
+        <mrow>
+          <mo>(</mo>
+          <mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mover>
+                <mi>A</mi>
+                <mo accent="false">¯<!-- ¯ --></mo>
+              </mover>
+            </mrow>
+            <mo>∣<!-- ∣ --></mo>
+            <munder>
+              <mo>⋀<!-- ⋀ --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>B</mi>
+                <mo>∈<!-- ∈ --></mo>
+                <mi>S</mi>
+              </mrow>
+            </munder>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mover>
+                <mi>B</mi>
+                <mo accent="false">¯<!-- ¯ --></mo>
+              </mover>
+            </mrow>
+          </mrow>
+          <mo>)</mo>
+        </mrow>
+        <mo>≥<!-- ≥ --></mo>
+        <mn>1</mn>
+        <mo>−<!-- − --></mo>
+        <mi>x</mi>
+        <mo stretchy="false">(</mo>
+        <mi>A</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Pr \left({\overline {A}}\mid \bigwedge _{B\in S}{\overline {B}}\right)\geq 1-x(A)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/130c9930fca27ecee0d68ba8248b5d37a3cf1e98" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -3.171ex; width:28.011ex; height:7.509ex;" alt="{\displaystyle \Pr \left({\overline {A}}\mid \bigwedge _{B\in S}{\overline {B}}\right)\geq 1-x(A)}"/></span>. To get the desired probability, we write it in terms of conditional probabilities applying Bayes' theorem repeatedly. Hence,</p>
+
+<dl id="mwlA"><dd id="mwlQ"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt53" id="mwlg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\n\\begin{align}\n&amp; \\Pr\\left(\\overline{A_1} \\wedge \\cdots \\wedge \\overline{A_n} \\right) \\\\\n= {} &amp; \\Pr\\left(\\overline{A_1}\\mid\\overline{A_{2}}\\wedge \\cdots \\overline{A_n}\\right)\\cdot\\Pr\\left(\\overline{A_2}\\mid\\overline{A_3}\\wedge \\cdots \\overline{A_n}\\right) \\cdots \\Pr\\left(\\overline{A_n}\\right) \\\\\n\\geq {} &amp; \\prod_{A\\in\\mathcal{A}}(1-x(A)),\n\\end{align}\n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle {\begin{aligned}&amp;\Pr \left({\overline {A_{1}}}\wedge \cdots \wedge {\overline {A_{n}}}\right)\\={}&amp;\Pr \left({\overline {A_{1}}}\mid {\overline {A_{2}}}\wedge \cdots {\overline {A_{n}}}\right)\cdot \Pr \left({\overline {A_{2}}}\mid {\overline {A_{3}}}\wedge \cdots {\overline {A_{n}}}\right)\cdots \Pr \left({\overline {A_{n}}}\right)\\\geq {}&amp;\prod _{A\in {\mathcal {A}}}(1-x(A)),\end{aligned}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mtable columnalign="right left right left right left right left right left right left" rowspacing="3pt" columnspacing="0em 2em 0em 2em 0em 2em 0em 2em 0em 2em 0em" displaystyle="true">
+            <mtr>
+              <mtd></mtd>
+              <mtd>
+                <mi></mi>
+                <mo movablelimits="true" form="prefix">Pr</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mover>
+                        <msub>
+                          <mi>A</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                        <mo accent="false">¯<!-- ¯ --></mo>
+                      </mover>
+                    </mrow>
+                    <mo>∧<!-- ∧ --></mo>
+                    <mo>⋯<!-- ⋯ --></mo>
+                    <mo>∧<!-- ∧ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mover>
+                        <msub>
+                          <mi>A</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>n</mi>
+                          </mrow>
+                        </msub>
+                        <mo accent="false">¯<!-- ¯ --></mo>
+                      </mover>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mo>=</mo>
+                <mrow class="MJX-TeXAtom-ORD">
+
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <mo movablelimits="true" form="prefix">Pr</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mover>
+                        <msub>
+                          <mi>A</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>1</mn>
+                          </mrow>
+                        </msub>
+                        <mo accent="false">¯<!-- ¯ --></mo>
+                      </mover>
+                    </mrow>
+                    <mo>∣<!-- ∣ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mover>
+                        <msub>
+                          <mi>A</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo accent="false">¯<!-- ¯ --></mo>
+                      </mover>
+                    </mrow>
+                    <mo>∧<!-- ∧ --></mo>
+                    <mo>⋯<!-- ⋯ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mover>
+                        <msub>
+                          <mi>A</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>n</mi>
+                          </mrow>
+                        </msub>
+                        <mo accent="false">¯<!-- ¯ --></mo>
+                      </mover>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>⋅<!-- ⋅ --></mo>
+                <mo movablelimits="true" form="prefix">Pr</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mover>
+                        <msub>
+                          <mi>A</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>2</mn>
+                          </mrow>
+                        </msub>
+                        <mo accent="false">¯<!-- ¯ --></mo>
+                      </mover>
+                    </mrow>
+                    <mo>∣<!-- ∣ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mover>
+                        <msub>
+                          <mi>A</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mn>3</mn>
+                          </mrow>
+                        </msub>
+                        <mo accent="false">¯<!-- ¯ --></mo>
+                      </mover>
+                    </mrow>
+                    <mo>∧<!-- ∧ --></mo>
+                    <mo>⋯<!-- ⋯ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mover>
+                        <msub>
+                          <mi>A</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>n</mi>
+                          </mrow>
+                        </msub>
+                        <mo accent="false">¯<!-- ¯ --></mo>
+                      </mover>
+                    </mrow>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+                <mo>⋯<!-- ⋯ --></mo>
+                <mo movablelimits="true" form="prefix">Pr</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mover>
+                      <msub>
+                        <mi>A</mi>
+                        <mrow class="MJX-TeXAtom-ORD">
+                          <mi>n</mi>
+                        </mrow>
+                      </msub>
+                      <mo accent="false">¯<!-- ¯ --></mo>
+                    </mover>
+                  </mrow>
+                  <mo>)</mo>
+                </mrow>
+              </mtd>
+            </mtr>
+            <mtr>
+              <mtd>
+                <mo>≥<!-- ≥ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+
+                </mrow>
+              </mtd>
+              <mtd>
+                <mi></mi>
+                <munder>
+                  <mo>∏<!-- ∏ --></mo>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>A</mi>
+                    <mo>∈<!-- ∈ --></mo>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi class="MJX-tex-caligraphic" mathvariant="script">A</mi>
+                      </mrow>
+                    </mrow>
+                  </mrow>
+                </munder>
+                <mo stretchy="false">(</mo>
+                <mn>1</mn>
+                <mo>−<!-- − --></mo>
+                <mi>x</mi>
+                <mo stretchy="false">(</mo>
+                <mi>A</mi>
+                <mo stretchy="false">)</mo>
+                <mo stretchy="false">)</mo>
+                <mo>,</mo>
+              </mtd>
+            </mtr>
+          </mtable>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\begin{aligned}&amp;\Pr \left({\overline {A_{1}}}\wedge \cdots \wedge {\overline {A_{n}}}\right)\\={}&amp;\Pr \left({\overline {A_{1}}}\mid {\overline {A_{2}}}\wedge \cdots {\overline {A_{n}}}\right)\cdot \Pr \left({\overline {A_{2}}}\mid {\overline {A_{3}}}\wedge \cdots {\overline {A_{n}}}\right)\cdots \Pr \left({\overline {A_{n}}}\right)\\\geq {}&amp;\prod _{A\in {\mathcal {A}}}(1-x(A)),\end{aligned}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3eca954a2364b1a871b6983cb8a1374ebeaedb01" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -6.878ex; margin-bottom: -0.293ex; width:61.879ex; height:15.509ex;" alt="{\displaystyle {\begin{aligned}&amp;\Pr \left({\overline {A_{1}}}\wedge \cdots \wedge {\overline {A_{n}}}\right)\\={}&amp;\Pr \left({\overline {A_{1}}}\mid {\overline {A_{2}}}\wedge \cdots {\overline {A_{n}}}\right)\cdot \Pr \left({\overline {A_{2}}}\mid {\overline {A_{3}}}\wedge \cdots {\overline {A_{n}}}\right)\cdots \Pr \left({\overline {A_{n}}}\right)\\\geq {}&amp;\prod _{A\in {\mathcal {A}}}(1-x(A)),\end{aligned}}}"/></span></dd></dl>
+
+<p id="mwlw">which is what we had intended to prove.</p>
+
+</section><section data-mw-section-id="5" id="mwmA" aria-labelledby="Example"><div class="mw-heading mw-heading2"><h2 id="Example">Example</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;action=edit&amp;section=5" title="Edit section: Example"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwmQ">Suppose 11<i id="mwmg">n</i> points are placed around a circle and colored with <i id="mwmw">n</i> different colors in such a way that each color is applied to exactly 11 points.  In any such coloring, there must be a set of <i id="mwnA">n</i> points containing one point of each color but not containing any pair of adjacent points.</p>
+
+<p id="mwnQ">To see this, imagine picking a point of each color randomly, with all points equally likely (i.e., having probability 1/11) to be chosen.  The 11<i id="mwng">n</i> different events we want to avoid correspond to the 11<i id="mwnw">n</i> pairs of adjacent points on the circle.  For each pair our chance of picking both points in that pair is at most 1/121 (exactly 1/121 if the two points are of different colors, otherwise 0), so we will take <i id="mwoA">p = 1/121</i>.</p>
+
+<p id="mwoQ">Whether a given pair (<i id="mwog">a</i>,<span typeof="mw:Entity" id="mwow"> </span><i id="mwpA">b</i>) of points is chosen depends only on what happens in the colors of <i id="mwpQ">a</i> and <i id="mwpg">b</i>, and not at all on whether any other collection of points in the other <i id="mwpw">n</i><span typeof="mw:Entity" id="mwqA"> </span>−<span typeof="mw:Entity" id="mwqQ"> </span>2 colors are chosen.  This implies the event "<i id="mwqg">a</i> and <i id="mwqw">b</i> are both chosen" is dependent only on those pairs of adjacent points which share a color either with <i id="mwrA">a</i> or with <i id="mwrQ">b</i>.</p>
+
+<p id="mwrg">There are 11 points on the circle sharing a color with <i id="mwrw">a</i> (including <i id="mwsA">a</i> itself), each of which is involved with 2 pairs.  This means there are 21 pairs other than (<i id="mwsQ">a</i>,<span typeof="mw:Entity" id="mwsg"> </span><i id="mwsw">b</i>) which include the same color as <i id="mwtA">a</i>, and the same holds true for <i id="mwtQ">b</i>.  The worst that can happen is that these two sets are disjoint, so we can take <i id="mwtg">d</i><span typeof="mw:Entity" id="mwtw"> </span>=<span typeof="mw:Entity" id="mwuA"> </span>42 in the lemma.  This gives</p>
+
+<dl id="mwuQ"><dd id="mwug"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt54" id="mwuw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":" e p (d+1) \\approx 0.966&lt;1."}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle ep(d+1)\approx 0.966&lt;1.}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>e</mi>
+        <mi>p</mi>
+        <mo stretchy="false">(</mo>
+        <mi>d</mi>
+        <mo>+</mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>≈<!-- ≈ --></mo>
+        <mn>0.966</mn>
+        <mo>&lt;</mo>
+        <mn>1.</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle ep(d+1)\approx 0.966&lt;1.}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/66c9c47799bf2febf5643e9262debd308964f3fc" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:22.584ex; height:2.843ex;" alt="{\displaystyle ep(d+1)\approx 0.966&lt;1.}"/></span></dd></dl>
+
+<p id="mwvA">By the local lemma, there is a positive probability that none of the bad events occur, meaning that our set contains no pair of adjacent points. This implies that a set satisfying our conditions must exist.</p>
+
+</section><section data-mw-section-id="6" id="mwvQ" aria-labelledby="See_also"><div class="mw-heading mw-heading2"><h2 id="See_also">See also</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;action=edit&amp;section=6" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+
+<ul id="mwvg"><li id="mwvw"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Shearer's_inequality" title="Shearer's inequality" id="mwwA">Shearer's inequality</a></li></ul>
+
+</section><section data-mw-section-id="7" id="mwwQ" aria-labelledby="Notes"><div class="mw-heading mw-heading2"><h2 id="Notes">Notes</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;action=edit&amp;section=7" title="Edit section: Notes"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<span class="mw-empty-elt" about="#mwt55" typeof="mw:Transclusion" id="mwwg" data-mw='{"parts":[{"template":{"target":{"wt":"reflist","href":"./Template:Reflist"},"params":{},"i":0}}]}'><style data-mw-deduplicate="TemplateStyles:r1327269900" typeof="mw:Extension/templatestyles" about="#mwt56" data-mw='{"name":"templatestyles","attrs":{"src":"Reflist/styles.css"}}'>.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}body.skin-vector-2022 .mw-parser-output .reflist-columns-2{column-width:27em}body.skin-vector-2022 .mw-parser-output .reflist-columns-3{column-width:22.5em}.mw-parser-output .references[data-mw-group=upper-alpha]{list-style-type:upper-alpha}.mw-parser-output .references[data-mw-group=upper-roman]{list-style-type:upper-roman}.mw-parser-output .references[data-mw-group=lower-alpha]{list-style-type:lower-alpha}.mw-parser-output .references[data-mw-group=lower-greek]{list-style-type:lower-greek}.mw-parser-output .references[data-mw-group=lower-roman]{list-style-type:lower-roman}.mw-parser-output div.reflist-liststyle-upper-alpha .references{list-style-type:upper-alpha}.mw-parser-output div.reflist-liststyle-upper-roman .references{list-style-type:upper-roman}.mw-parser-output div.reflist-liststyle-lower-alpha .references{list-style-type:lower-alpha}.mw-parser-output div.reflist-liststyle-lower-greek .references{list-style-type:lower-greek}.mw-parser-output div.reflist-liststyle-lower-roman .references{list-style-type:lower-roman}</style></span><div about="#mwt55" id="mwww">
+<div class="mw-references-wrap" typeof="mw:Extension/references" about="#mwt57" id="mwxA" data-mw='{"name":"references","attrs":{"group":"","responsive":"1"},"body":{"extsrc":""}}'><ol class="mw-references references" id="mwxQ"><li about="#cite_note-1" id="cite_note-1" data-mw-footnote-number="1"><span class="mw-cite-backlink" id="mwxg"><a href="#cite_ref-1" rel="mw:referencedBy" id="mwxw"><span class="mw-linkback-text" id="mwyA">↑</span></a></span> <span id="mw-reference-text-cite_note-1" class="mw-reference-text reference-text"><style data-mw-deduplicate="TemplateStyles:r1333433106" typeof="mw:Extension/templatestyles mw:Transclusion" about="#mwt3" id="mwyQ" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"Cite web","href":"./Template:Cite_web"},"params":{"url":{"wt":"https://ethz.ch/en/the-eth-zurich/portrait/aktuelle-ehrungen-und-preise/2020/04/former-doctoral-student-robin-moser-d-infk-receives-prestigious-goedel-prize.html"},"title":{"wt":"Former doctoral student Robin Moser receives prestigious Gödel Prize"},"website":{"wt":"ethz.ch"},"date":{"wt":"6 April 2020"},"language":{"wt":"en"},"access-date":{"wt":"2020-04-20"}},"i":0}}]}'>.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite class="citation web cs1" about="#mwt3" id="mwyg"><a rel="mw:ExtLink nofollow" href="https://ethz.ch/en/the-eth-zurich/portrait/aktuelle-ehrungen-und-preise/2020/04/former-doctoral-student-robin-moser-d-infk-receives-prestigious-goedel-prize.html" class="external text" id="mwyw">"Former doctoral student Robin Moser receives prestigious Gödel Prize"</a>. <i id="mwzA">ethz.ch</i>. 6 April 2020<span class="reference-accessdate" id="mwzQ">. Retrieved <span class="nowrap" id="mwzg">2020-04-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=ethz.ch&amp;rft.atitle=Former+doctoral+student+Robin+Moser+receives+prestigious+G%C3%B6del+Prize&amp;rft.date=2020-04-06&amp;rft_id=https%3A%2F%2Fethz.ch%2Fen%2Fthe-eth-zurich%2Fportrait%2Faktuelle-ehrungen-und-preise%2F2020%2F04%2Fformer-doctoral-student-robin-moser-d-infk-receives-prestigious-goedel-prize.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALov%C3%A1sz+local+lemma" class="Z3988" about="#mwt3" id="mwzw"></span></span></li>
+<li about="#cite_note-2" id="cite_note-2" data-mw-footnote-number="2"><span class="mw-cite-backlink" id="mw0A"><a href="#cite_ref-2" rel="mw:referencedBy" id="mw0Q"><span class="mw-linkback-text" id="mw0g">↑</span></a></span> <span id="mw-reference-text-cite_note-2" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt6" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw0w" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"Cite web","href":"./Template:Cite_web"},"params":{"url":{"wt":"https://sigact.org/prizes/g%C3%B6del.html"},"title":{"wt":"ACM SIGACT - Gödel Prize"},"website":{"wt":"sigact.org"},"access-date":{"wt":"2020-04-20"}},"i":0}}]}'/><cite class="citation web cs1" about="#mwt6" id="mw1A"><a rel="mw:ExtLink nofollow" href="https://sigact.org/prizes/g%C3%B6del.html" class="external text" id="mw1Q">"ACM SIGACT - Gödel Prize"</a>. <i id="mw1g">sigact.org</i><span class="reference-accessdate" id="mw1w">. Retrieved <span class="nowrap" id="mw2A">2020-04-20</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=unknown&amp;rft.jtitle=sigact.org&amp;rft.atitle=ACM+SIGACT+-+G%C3%B6del+Prize&amp;rft_id=https%3A%2F%2Fsigact.org%2Fprizes%2Fg%25C3%25B6del.html&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALov%C3%A1sz+local+lemma" class="Z3988" about="#mwt6" id="mw2Q"></span></span></li>
+<li about="#cite_note-3" id="cite_note-3" data-mw-footnote-number="3"><span class="mw-cite-backlink" id="mw2g"><a href="#cite_ref-3" rel="mw:referencedBy" id="mw2w"><span class="mw-linkback-text" id="mw3A">↑</span></a></span> <span id="mw-reference-text-cite_note-3" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt11" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw3Q" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite journal ","href":"./Template:Cite_journal"},"params":{"last1":{"wt":"Spencer"},"first1":{"wt":"J."},"year":{"wt":"1977"},"title":{"wt":"Asymptotic lower bounds for Ramsey functions"},"journal":{"wt":"Discrete Mathematics"},"volume":{"wt":"20"},"pages":{"wt":"69–76"},"doi":{"wt":"10.1016/0012-365x(77)90044-9"},"doi-access":{"wt":"free"}},"i":0}}]}'/><cite id="CITEREFSpencer1977" class="citation journal cs1" about="#mwt11">Spencer, J. (1977). <a rel="mw:ExtLink nofollow" href="https://doi.org/10.1016%2F0012-365x%2877%2990044-9" class="external text" id="mw3g">"Asymptotic lower bounds for Ramsey functions"</a>. <i id="mw3w">Discrete Mathematics</i>. <b id="mw4A">20</b>: <span class="nowrap" id="mw4Q">69–</span>76. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mw4g">doi</a>:<span class="id-lock-free" title="Freely accessible" id="mw4w"><a rel="mw:ExtLink nofollow" href="https://doi.org/10.1016%2F0012-365x%2877%2990044-9" class="external text" id="mw5A">10.1016/0012-365x(77)90044-9</a></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Discrete+Mathematics&amp;rft.atitle=Asymptotic+lower+bounds+for+Ramsey+functions&amp;rft.volume=20&amp;rft.pages=69-76&amp;rft.date=1977&amp;rft_id=info%3Adoi%2F10.1016%2F0012-365x%2877%2990044-9&amp;rft.aulast=Spencer&amp;rft.aufirst=J.&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1016%252F0012-365x%252877%252990044-9&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALov%C3%A1sz+local+lemma" class="Z3988" about="#mwt11" id="mw5Q"></span></span></li>
+<li about="#cite_note-4" id="cite_note-4" data-mw-footnote-number="4"><span class="mw-cite-backlink" id="mw5g"><a href="#cite_ref-4" rel="mw:referencedBy" id="mw5w"><span class="mw-linkback-text" id="mw6A">↑</span></a></span> <span id="mw-reference-text-cite_note-4" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt15" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw6Q" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite journal ","href":"./Template:Cite_journal"},"params":{"last1":{"wt":"Shearer"},"first1":{"wt":"J"},"year":{"wt":"1985"},"title":{"wt":"On a problem of Spencer"},"journal":{"wt":"Combinatorica"},"volume":{"wt":"5"},"issue":{"wt":"3"},"pages":{"wt":"241–245"},"doi":{"wt":"10.1007/BF02579368"}},"i":0}}]}'/><cite id="CITEREFShearer1985" class="citation journal cs1" about="#mwt15">Shearer, J (1985). "On a problem of Spencer". <i id="mw6g">Combinatorica</i>. <b id="mw6w">5</b> (3): <span class="nowrap" id="mw7A">241–</span>245. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mw7Q">doi</a>:<a rel="mw:ExtLink nofollow" href="https://doi.org/10.1007%2FBF02579368" class="external text" id="mw7g">10.1007/BF02579368</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Combinatorica&amp;rft.atitle=On+a+problem+of+Spencer&amp;rft.volume=5&amp;rft.issue=3&amp;rft.pages=241-245&amp;rft.date=1985&amp;rft_id=info%3Adoi%2F10.1007%2FBF02579368&amp;rft.aulast=Shearer&amp;rft.aufirst=J&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALov%C3%A1sz+local+lemma" class="Z3988" about="#mwt15" id="mw7w"></span></span></li>
+</ol></div></div>
+
+</section><section data-mw-section-id="8" id="mw8A" aria-labelledby="References"><div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;action=edit&amp;section=8" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul id="mw8Q"><li id="mw8g"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt58" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw8w" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite book\n ","href":"./Template:Cite_book"},"params":{"last1":{"wt":"Alon"},"first1":{"wt":"Noga"},"author1-link":{"wt":"Noga Alon"},"last2":{"wt":"Spencer"},"first2":{"wt":"Joel H."},"author2-link":{"wt":"Joel H. Spencer"},"edition":{"wt":"2nd"},"isbn":{"wt":"0-471-37046-0"},"location":{"wt":"New York"},"publisher":{"wt":"Wiley-Interscience"},"title":{"wt":"The probabilistic method"},"year":{"wt":"2000"}},"i":0}}]}'/><cite id="CITEREFAlonSpencer2000" class="citation book cs1" about="#mwt58"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Noga_Alon" title="Noga Alon">Alon, Noga</a>; <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Joel_H._Spencer" title="Joel H. Spencer" class="mw-redirect">Spencer, Joel H.</a> (2000). <i>The probabilistic method</i> (2nd<span typeof="mw:Entity"> </span>ed.). New York: Wiley-Interscience. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISBN_(identifier)" title="ISBN (identifier)" class="mw-redirect">ISBN</a><span typeof="mw:Entity"> </span><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Special:BookSources/0-471-37046-0" title="Special:BookSources/0-471-37046-0"><bdi>0-471-37046-0</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=The+probabilistic+method&amp;rft.place=New+York&amp;rft.edition=2nd&amp;rft.pub=Wiley-Interscience&amp;rft.date=2000&amp;rft.isbn=0-471-37046-0&amp;rft.aulast=Alon&amp;rft.aufirst=Noga&amp;rft.au=Spencer%2C+Joel+H.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALov%C3%A1sz+local+lemma" class="Z3988" about="#mwt58" id="mw9A"></span></li>
+<li id="mw9Q"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt60" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw9g" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite journal\n  ","href":"./Template:Cite_journal"},"params":{"doi":{"wt":"10.1002/rsa.3240020402"},"author":{"wt":"[[Jozsef Beck|Beck, J]]."},"title":{"wt":"An algorithmic approach to the Lovász local lemma, I"},"journal":{"wt":"Random Structures and Algorithms"},"volume":{"wt":"2"},"issue":{"wt":"4"},"pages":{"wt":"343–365"},"year":{"wt":"1991"}},"i":0}}]}'/><cite id="CITEREFBeck,_J.1991" class="citation journal cs1" about="#mwt60"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Jozsef_Beck" title="Jozsef Beck" class="mw-redirect">Beck, J</a>. (1991). "An algorithmic approach to the Lovász local lemma, I". <i>Random Structures and Algorithms</i>. <b>2</b> (4): <span class="nowrap">343–</span>365. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect">doi</a>:<a rel="mw:ExtLink nofollow" href="https://doi.org/10.1002%2Frsa.3240020402" class="external text">10.1002/rsa.3240020402</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Random+Structures+and+Algorithms&amp;rft.atitle=An+algorithmic+approach+to+the+Lov%C3%A1sz+local+lemma%2C+I&amp;rft.volume=2&amp;rft.issue=4&amp;rft.pages=343-365&amp;rft.date=1991&amp;rft_id=info%3Adoi%2F10.1002%2Frsa.3240020402&amp;rft.au=Beck%2C+J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALov%C3%A1sz+local+lemma" class="Z3988" about="#mwt60" id="mw9w"></span></li>
+<li id="mw-A"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt62" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw-Q" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite journal\n  ","href":"./Template:Cite_journal"},"params":{"title":{"wt":"Coloring nonuniform hypergraphs: A new algorithmic approach to the general Lovász local lemma"},"author1":{"wt":"Czumaj, Artur"},"author2":{"wt":"Scheideler, Christian"},"journal":{"wt":"Random Structures &amp; Algorithms"},"year":{"wt":"2000"},"volume":{"wt":"17"},"issue":{"wt":"3–4"},"pages":{"wt":"213–237"},"doi":{"wt":"10.1002/1098-2418(200010/12)17:3/4&lt;213::AID-RSA3>3.0.CO;2-Y"}},"i":0}}]}'/><cite id="CITEREFCzumaj,_ArturScheideler,_Christian2000" class="citation journal cs1" about="#mwt62">Czumaj, Artur; Scheideler, Christian (2000). "Coloring nonuniform hypergraphs: A new algorithmic approach to the general Lovász local lemma". <i>Random Structures &amp; Algorithms</i>. <b>17</b> (<span class="nowrap">3–</span>4): <span class="nowrap">213–</span>237. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect">doi</a>:<a rel="mw:ExtLink nofollow" href="https://doi.org/10.1002%2F1098-2418%28200010%2F12%2917%3A3%2F4%3C213%3A%3AAID-RSA3%3E3.0.CO%3B2-Y" class="external text">10.1002/1098-2418(200010/12)17:3/4<span typeof="mw:Entity">&lt;</span>213::AID-RSA3<span typeof="mw:Entity">></span>3.0.CO<span typeof="mw:Entity">;</span>2-Y</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Random+Structures+%26+Algorithms&amp;rft.atitle=Coloring+nonuniform+hypergraphs%3A+A+new+algorithmic+approach+to+the+general+Lov%C3%A1sz+local+lemma&amp;rft.volume=17&amp;rft.issue=%3Cspan+class%3D%22nowrap%22%3E3%E2%80%93%3C%2Fspan%3E4&amp;rft.pages=213-237&amp;rft.date=2000&amp;rft_id=info%3Adoi%2F10.1002%2F1098-2418%28200010%2F12%2917%3A3%2F4%3C213%3A%3AAID-RSA3%3E3.0.CO%3B2-Y&amp;rft.au=Czumaj%2C+Artur&amp;rft.au=Scheideler%2C+Christian&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALov%C3%A1sz+local+lemma" class="Z3988" about="#mwt62" id="mw-g"></span></li>
+<li id="mw-w"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt64" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw_A" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite conference\n  ","href":"./Template:Cite_conference"},"params":{"author1":{"wt":"[[Paul Erdős|Erdős, Paul]]"},"author2":{"wt":"[[László Lovász|Lovász, László]]"},"title":{"wt":"Problems and results on 3-chromatic hypergraphs and some related questions"},"editor":{"wt":"A. Hajnal"},"editor2":{"wt":"R. Rado"},"editor3":{"wt":"V. T. Sós"},"book-title":{"wt":"Infinite and Finite Sets (to Paul Erdős on his 60th birthday)"},"volume":{"wt":"II"},"pages":{"wt":"609–627"},"publisher":{"wt":"North-Holland"},"year":{"wt":"1975"},"url":{"wt":"http://www.cs.elte.hu/~lovasz/scans/LocalLem.pdf"}},"i":0}}]}'/><cite id="CITEREFErdős,_PaulLovász,_László1975" class="citation conference cs1" about="#mwt64"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Paul_Erdős" title="Paul Erdős">Erdős, Paul</a>; <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/László_Lovász" title="László Lovász">Lovász, László</a> (1975). <a rel="mw:ExtLink nofollow" href="http://www.cs.elte.hu/~lovasz/scans/LocalLem.pdf" class="external text">"Problems and results on 3-chromatic hypergraphs and some related questions"</a> <span class="cs1-format">(PDF)</span>. In A. Hajnal; R. Rado; V. T. Sós (eds.). <i>Infinite and Finite Sets (to Paul Erdős on his 60th birthday)</i>. Vol.<span typeof="mw:Entity"> </span>II. North-Holland. pp.<span typeof="mw:Entity"> </span><span class="nowrap">609–</span>627.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=conference&amp;rft.atitle=Problems+and+results+on+3-chromatic+hypergraphs+and+some+related+questions&amp;rft.btitle=Infinite+and+Finite+Sets+%28to+Paul+Erd%C5%91s+on+his+60th+birthday%29&amp;rft.pages=609-627&amp;rft.pub=North-Holland&amp;rft.date=1975&amp;rft.au=Erd%C5%91s%2C+Paul&amp;rft.au=Lov%C3%A1sz%2C+L%C3%A1szl%C3%B3&amp;rft_id=http%3A%2F%2Fwww.cs.elte.hu%2F~lovasz%2Fscans%2FLocalLem.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALov%C3%A1sz+local+lemma" class="Z3988" about="#mwt64" id="mw_Q"></span></li>
+<li id="mw_g"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt66" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw_w" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite arXiv\n  ","href":"./Template:Cite_arXiv"},"params":{"author":{"wt":"Moser, Robin A."},"title":{"wt":"A constructive proof of the Lovasz Local Lemma"},"eprint":{"wt":"0810.4812"},"class":{"wt":"cs.DS"},"year":{"wt":"2008"}},"i":0}}]}'/><cite id="CITEREFMoser,_Robin_A.2008" class="citation arxiv cs1" about="#mwt66">Moser, Robin A. (2008). "A constructive proof of the Lovasz Local Lemma". <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ArXiv_(identifier)" title="ArXiv (identifier)" class="mw-redirect">arXiv</a>:<span class="id-lock-free" title="Freely accessible"><a rel="mw:ExtLink nofollow" href="https://arxiv.org/abs/0810.4812" class="external text">0810.4812</a></span> [<a rel="mw:ExtLink nofollow" href="https://arxiv.org/archive/cs.DS" class="external text">cs.DS</a>].</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=preprint&amp;rft.jtitle=arXiv&amp;rft.atitle=A+constructive+proof+of+the+Lovasz+Local+Lemma&amp;rft.date=2008&amp;rft_id=info%3Aarxiv%2F0810.4812&amp;rft.au=Moser%2C+Robin+A.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3ALov%C3%A1sz+local+lemma" class="Z3988" about="#mwt66" id="mwAQA"></span></li></ul>
+
+<span about="#mwt68" typeof="mw:Transclusion" id="mwAQE" data-mw='{"parts":[{"template":{"target":{"wt":"DEFAULTSORT:Lovasz local lemma","function":"defaultsort"},"params":{},"i":0}}]}'></span>
+<link rel="mw:PageProp/Category" href="./Category:Theorems_in_probability_theory" id="mwAQI"/>
+<link rel="mw:PageProp/Category" href="./Category:Combinatorics" id="mwAQM"/>
+<link rel="mw:PageProp/Category" href="./Category:Lemmas" id="mwAQQ"/></section>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.eqiad.main‐67c8cb7f6b‐bnlcb
+Cached time: 20261011232545
+Cache expiry: 2592000
+Cache expiry source: Module:Citation/CS1 (os.date(%Y))
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc, use‐parsoid]
+CPU time usage: 0.856 seconds
+Real time usage: 2.021 seconds
+Preprocessor visited node count: 714/1000000
+Revision size: 11973/2097152 bytes
+Post‐expand include size: 17593/2097152 bytes
+Template argument size: 654/2097152 bytes
+Highest expansion depth: 9/100
+Expensive parser function count: 1/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 23273/5000000 bytes
+Lua time usage: 0.190/10.000 seconds
+Lua memory usage: 6567300/52428800 bytes
+Number of Wikibase entities loaded: 0/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1721.389      1 -total
+  7.14%  122.987      1 Template:Short_description
+  5.29%   91.089      2 Template:Cite_web
+  4.53%   77.894      2 Template:Pagetype
+  2.61%   44.864      1 Template:Harvtxt
+  2.29%   39.463      4 Template:Cite_journal
+  1.50%   25.746      3 Template:Main_other
+  1.31%   22.468      1 Template:SDcat
+  0.70%   11.978      1 Template:Cite_conference
+  0.63%   10.858      1 Template:Cite_book
+-->
+
+<!-- Render ID 1534a718-c5cb-11f1-9447-23b172c7c4c7 -->
+
+<!-- Saved in parser cache with key enwiki:parsoid-pcache:2211763:|#|:idhash:useParsoid=1 and timestamp 20261011232545 and revision id 1285525974. Rendering was triggered because: page_view
+ -->
+
+<!-- Parsoid 0.24.0.0-alpha26 -->
+</div><!--
+Post‐processing cache key enwiki:postproc‐parsoid‐pcache:2211763:|#|:idhash:injectTOC=0!postproc=1!skin=vector‐2022!useParsoid=1!visibleLinks=single, generated at 20261011232545
+--><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Lovász_local_lemma&amp;oldid=1285525974">https://en.wikipedia.org/w/index.php?title=Lovász_local_lemma&amp;oldid=1285525974</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw-interface=""><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Theorems_in_probability_theory" title="Category:Theorems in probability theory">Theorems in probability theory</a></li><li><a href="/wiki/Category:Combinatorics" title="Category:Combinatorics">Combinatorics</a></li><li><a href="/wiki/Category:Lemmas" title="Category:Lemmas">Lemmas</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			<footer id="footer" class="mw-footer" >
+				<ul id="footer-info" class="mw-portlet mw-portlet-footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 14 April 2025, at 06:34<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-renderedwith">Page was rendered with <a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid" class="extiw" title="mw:Special:MyLanguage/Parsoid">Parsoid</a>.</li>
+	<li id="footer-info-copyright">Text is available under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">Creative Commons Attribution-ShareAlike 4.0 License</a>;
+additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy" class="extiw" title="foundation:Special:MyLanguage/Policy:Privacy policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+				<ul id="footer-places" class="mw-portlet mw-portlet-footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-legal-safety-contacts"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information">Legal &amp; safety contacts</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.wikipedia.org/w/index.php?title=Lov%C3%A1sz_local_lemma&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+				<ul id="footer-icons" class="mw-portlet mw-portlet-footer-icons noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+			</footer>
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"   >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span lang="en" dir="ltr"><span class="mw-page-title-main">Lovász local lemma</span></span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock cdx-button__icon"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language cdx-button__icon"></span>
+
+<span>8 languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive cdx-button__icon"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.log.warn("This page is using the deprecated ResourceLoader module \"mediawiki.skinning.content.parsoid\".\n[1.47] Skins already provide these styles. Do not add this module.");mw.config.set({"wgHostname":"mw-web.codfw.main-6f964fbff4-jcg9d","wgBackendResponseTime":108,"wgPageParseReport":{"limitreport":{"cputime":"0.856","walltime":"2.021","ppvisitednodes":{"value":714,"limit":1000000},"revisionsize":{"value":11973,"limit":2097152},"postexpandincludesize":{"value":17593,"limit":2097152},"templateargumentsize":{"value":654,"limit":2097152},"expansiondepth":{"value":9,"limit":100},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":23273,"limit":5000000},"entityaccesscount":{"value":0,"limit":500},"timingprofile":["100.00% 1721.389      1 -total","  7.14%  122.987      1 Template:Short_description","  5.29%   91.089      2 Template:Cite_web","  4.53%   77.894      2 Template:Pagetype","  2.61%   44.864      1 Template:Harvtxt","  2.29%   39.463      4 Template:Cite_journal","  1.50%   25.746      3 Template:Main_other","  1.31%   22.468      1 Template:SDcat","  0.70%   11.978      1 Template:Cite_conference","  0.63%   10.858      1 Template:Cite_book"]},"scribunto":{"limitreport-timeusage":{"value":"0.190","limit":"10.000"},"limitreport-memusage":{"value":6567300,"limit":52428800},"limitreport-logs":"anchor_id_list = table#1 {\n    [\"CITEREFAlonSpencer2000\"] = 1,\n    [\"CITEREFBeck,_J.1991\"] = 1,\n    [\"CITEREFCzumaj,_ArturScheideler,_Christian2000\"] = 1,\n    [\"CITEREFErdős,_PaulLovász,_László1975\"] = 1,\n    [\"CITEREFMoser,_Robin_A.2008\"] = 1,\n    [\"CITEREFShearer1985\"] = 1,\n    [\"CITEREFSpencer1977\"] = 1,\n}\ntemplate_list = table#1 {\n    [\"Cite arXiv\"] = 1,\n    [\"Cite book\"] = 1,\n    [\"Cite conference\"] = 1,\n    [\"Cite journal\"] = 4,\n    [\"Cite web\"] = 2,\n    [\"DEFAULTSORT:Lovasz local lemma\"] = 1,\n    [\"Harvtxt\"] = 1,\n    [\"Reflist\"] = 1,\n    [\"Short description\"] = 1,\n}\narticle_whitelist = table#1 {\n}\nciteref_patterns = table#1 {\n}\n"},"cachereport":{"origin":"mw-web.eqiad.main-67c8cb7f6b-bnlcb","timestamp":"20261011232545","ttl":2592000,"transientcontent":false,"expiry-source":"Module:Citation/CS1 (os.date(%Y))"}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Lov\u00e1sz local lemma","url":"https:\/\/en.wikipedia.org\/wiki\/Lov%C3%A1sz_local_lemma","sameAs":"http:\/\/www.wikidata.org\/entity\/Q831721","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q831721","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2005-07-11T09:47:22Z","dateModified":"2025-04-14T06:34:36Z","headline":"lemma proving that a set of events with limited dependence has positive probability of all happening together"}</script>
+</body>
+</html>

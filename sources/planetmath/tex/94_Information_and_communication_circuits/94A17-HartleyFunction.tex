@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HartleyFunction}
+\pmcreated{2013-03-22 14:31:41}
+\pmmodified{2013-03-22 14:31:41}
+\pmowner{kshum}{5987}
+\pmmodifier{kshum}{5987}
+\pmtitle{Hartley function}
+\pmrecord{15}{36070}
+\pmprivacy{1}
+\pmauthor{kshum}{5987}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94A17}
+\pmrelated{ShannonsTheoremEntropy}
+\pmrelated{EntropyOfAPartition}
+\pmdefines{Hartley entropy}
+\pmdefines{Hartley information}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+{\bf Definition}
+
+The {\it Hartley function} is a \PMlinkescapetext{measure} of uncertainty, introduced by Hartley in 1928. If we pick a sample from a finite set $A$ uniformly at random, the \PMlinkescapetext{information} revealed after we know the \PMlinkescapetext{outcome} is given by the Hartley function
+\[
+  H(A) := \log_b(|A|).
+\]
+If the base of the logarithm is 2, then the uncertainty is
+measured in bits. If it is the natural logarithm, then the \PMlinkescapetext{unit} is nats. It is also known as the Hartley entropy. 
+
+\bigskip
+
+{\bf Remark:}
+
+ The Hartley function is a special case of Shannon's entropy. Each element  in the sample space $A$ is associated with probability $p=1/|A|$. For an element $\omega\in A$, the Hartley \PMlinkescapetext{information} of the event $\{\omega\}$ is $-\log(p)=\log(|A|)$, which is constant over $\omega\in A$. The average \PMlinkescapetext{information} over the whole sample space is thus also equal to $\log(|A|)$.
+
+\bigskip
+
+{\bf Characterization}
+
+The Hartley function only depends on the number of elements in a
+set, and hence can be viewed as a function on natural numbers.
+R\'enyi showed that the Hartley function in base 2 is the only
+function mapping natural numbers to real numbers that
+\PMlinkescapetext{satisfies}
+\begin{enumerate}
+\item $H(mn) = H(m)+H(n)$ \ \ \ (\PMlinkescapetext{additivity}),
+
+\item $H(m) \leq H(m+1)$ \ \ \ (monotonicity), and
+
+\item $H(2)=1$ \ \ \ (normalization).
+\end{enumerate}
+
+Condition 1 says that the uncertainty of the Cartesian product of
+two finite sets $A$ and $B$ is the sum of uncertainties of $A$ and
+$B$. Condition 2 says that a larger set has larger uncertainty.
+%%%%%
+%%%%%
+\end{document}

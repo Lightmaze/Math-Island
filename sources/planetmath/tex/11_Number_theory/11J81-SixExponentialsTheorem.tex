@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SixExponentialsTheorem}
+\pmcreated{2013-03-22 13:40:48}
+\pmmodified{2013-03-22 13:40:48}
+\pmowner{Kevin OBryant}{1315}
+\pmmodifier{Kevin OBryant}{1315}
+\pmtitle{six exponentials theorem}
+\pmrecord{5}{34348}
+\pmprivacy{1}
+\pmauthor{Kevin OBryant}{1315}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11J81}
+\pmsynonym{6 exponentials}{SixExponentialsTheorem}
+%\pmkeywords{transcendental numbers}
+\pmrelated{FourExponentialsConjecture}
+\pmdefines{linear independence}
+
+\endmetadata
+
+    \usepackage{amsmath,amssymb,amsthm}
+    \newcommand{\Q}{{\mathbb Q}}
+    \newenvironment{namedtheorem}[1]{\medskip \noindent {\bf #1:}\begin{em}}{\end{em}\medskip}
+\begin{document}
+Complex numbers $x_1, x_2, \ldots, x_n$ are $\Q$-linearly independent if the only rational numbers
+$r_1,r_2,\dots, r_n$ with
+    $$r_1 x_1 + r_2 x_2 + \cdots + r_n x_n = 0$$
+are $r_1=r_2=\cdots=r_n =0$.
+
+\begin{namedtheorem}{Six Exponentials Theorem}
+If $x_1,x_2,x_3$ are $\Q$-linearly independent, and $y_1,y_2$ are also $\Q$-linearly independent, then at
+least one of the six numbers $\exp( x_i y_j)$ is transcendental.
+\end{namedtheorem}
+
+This is weaker than the Four Exponentials Conjecture.
+
+\begin{namedtheorem}{Four Exponentials Conjecture}
+Given four complex numbers $x_1,x_2,y_1,y_2$, either $x_1/x_2$ or $y_1/y_2$ is rational, or one of the four
+numbers $\exp(x_i y_j)$ is transcendental.
+\end{namedtheorem}
+
+For the history of the six exponentials theorem, we quote briefly from \cite[p. 15]{Wal2000}:
+\begin{quote}
+The six exponentials theorem occurs for the first time in a paper by L. Alaoglu and P. Erd\H{o}s
+\cite{AEr1944}, when these authors try to prove Ramanujan's assertion that the quotient of two consecutive
+{\em superior highly composite numbers} is a prime, they need to know that if $x$ is a real number such that
+$p_1^x$ and $p_2^x$ are both rational numbers, with $p_1$ and $p_2$ distinct prime numbers, then $x$ is an
+integer. However, this statement (special case of the four exponentials conjecture) is yet unproven. They
+quote C. L. Siegel and claim that $x$ indeed is an integer if one assumes $p_i^x$ to be rational for {\em
+three} distinct primes $p_i$. This is just a special case of the six exponentials theorem. They deduce that
+the quotient of two consecutive superior highly composite numbers is either a prime, or else a product of two
+primes.
+
+The six exponentials theorem can be deduced from a very general result of Th. Schneider \cite{Sch1949}. The
+four exponentials conjecture is equivalent to the first of the eight problems at the end of Schneider's book
+\cite{Sch1957}. An explicit statement of the six exponentials theorem, together with a proof, has been
+published independently and at about the same time by S. Lang \cite[Chapter 2]{Lan1966} and K. Ramachandra
+\cite[Chapter 2]{Ram1968}. They both formulated the four exponentials conjecture explicitly.
+\end{quote}
+
+
+
+\begin{thebibliography}{9}
+    \bibitem[1]{AEr1944} L. Alaoglu\ and\ P. Erd\"os, {\em On highly composite and similar numbers}.
+        Trans. Amer. Math. Soc.
+        {\bf 56} (1944), 448--469. Available online at
+        \PMlinkexternal{www.jstor.org}{
+        http://links.jstor.org/sici?sici=0002-9947\%28194411\%2956\%3A3\%3C448\%3AOHCASN\%3E2.0.CO\%3B2-S}.
+    \bibitem[2]{Lan1966} S. Lang, {\em Introduction to transcendental numbers},
+        Addison-Wesley Publishing Co.,
+        Reading, Mass., 1966.
+    \bibitem[3]{Ram1968} K. Ramachandra,
+        {\em Contributions to the theory of transcendental numbers. I, II.}
+        Acta Arith. 14 (1967/68), 65-72;
+        ibid. {\bf 14} (1967/1968), 73--88.
+    \bibitem[4]{Sch1949} Schneider, Theodor,
+        {\em Ein Satz \"{u}ber ganzwertige Funktionen als Prinzip f\"{u}r Transzendenzbeweise}.
+         (German) Math. Ann. 121, (1949). 131--140.
+    \bibitem[5]{Sch1957} Schneider, Theodor
+        {\em Einf\"{u}hrung in die transzendenten Zahlen}.
+        (German) Springer-Verlag, Berlin-G\"{o}ttingen-Heidelberg, 1957. v+150 pp.
+    \bibitem[6]{Wal2000} Waldschmidt, Michel, {\em Diophantine approximation on linear algebraic groups.
+        Transcendence
+        properties of the exponential function in several variables}. Grundlehren der Mathematischen
+        Wissenschaften
+        [Fundamental Principles of Mathematical Sciences], 326. Springer-Verlag, Berlin, 2000. xxiv+633 pp.
+        ISBN 3-540-66785-7.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

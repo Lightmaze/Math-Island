@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FactorsOfNAndXn1}
+\pmcreated{2013-03-22 16:35:05}
+\pmmodified{2013-03-22 16:35:05}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{factors of $n$ and $x^n-1$}
+\pmrecord{7}{38776}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R60}
+\pmclassification{msc}{11C08}
+\pmclassification{msc}{11R18}
+\pmrelated{PrimeFactorsOfXn1}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{root}
+
+
+Let $n$ be a positive integer.\, Then the binomial\, $x^n\!-\!1$\, has as many \PMlinkname{prime factors}{PrimeFactorsOfXn1} with integer coefficients as the integer $n$ has positive divisors, both numbers thus being \PMlinkname{$\tau(n)$}{TauFunction}.
+
+{\em Proof.}\, If\, $\Phi_d(x)$ generally means the $d$th cyclotomic polynomial
+$$\Phi_d(x) := (x-\zeta_1)(x-\zeta_2)\ldots(x-\zeta_{\varphi(d)}),$$
+where the $\zeta_j$s are the primitive $d$th roots of unity, then the equation
+           $$\prod_{d|n,\,\,d>0}\!\Phi_d(x) = x^n\!-\!1$$
+is true, because each $n$th root of unity is also a \PMlinkname{primitive}{RootOfUnity} $d$th root of unity for one and only one positive divisor of $n$.\, The cyclotomic factor polynomials $\Phi_d(x)$ have integer coefficients and are \PMlinkname{irreducible}{IrreduciblePolynomial2}.\, Thus the number of them is same as the number $\tau(n)$ of positive divisors of $n$.
+
+For illustrating the proof, let\, $n = 6$ (divisors 1, 2, 3, 6); think the sixth roots of unity:\, $\zeta^0$, $\zeta^1$, $\zeta^2$, $\zeta^3$, $\zeta^4$, $\zeta^5$
+(where\, $\zeta = e^{i\pi/3} = \frac{1+i\sqrt{3}}{2}$).\, From them, $\zeta^0 = 1$\, is the primitive 1st root, $\zeta^3$ the primitive 2nd root, $\zeta^2$ and $\zeta^4$ the primitive 3rd roots, $\zeta^1$ and $\zeta^5$ the primitive 6th roots of unity.
+
+
+%%%%%
+%%%%%
+\end{document}

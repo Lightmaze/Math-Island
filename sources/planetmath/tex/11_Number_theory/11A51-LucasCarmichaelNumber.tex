@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LucasCarmichaelNumber}
+\pmcreated{2013-03-22 17:41:14}
+\pmmodified{2013-03-22 17:41:14}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Lucas-Carmichael number}
+\pmrecord{6}{40127}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given an odd squarefree integer $n$ (that is, one with factorization $\displaystyle n = \prod_{i = 1}^{\omega(n)} p_i$, with $\omega(n)$ being the number of distinct prime factors function, and all $p_i > 2$) if it the case that each $p_i + 1$ is a divisor of $n + 1$, then $n$ is called a {\em Lucas-Carmichael number}.
+
+For example, 935 has three prime factors, 5, 11, 17. Adding one to each of these we get 6, 12, 18, and these three numbers are all divisors of 936. Therefore, 935 is a Lucas-Carmichael number.
+
+The first few Lucas-Carmichael numbers are 399, 935, 2015, 2915, 4991, 5719, 7055, 8855. These are listed in A006972 of Sloane's OEIS.
+
+Not to be confused with Carmichael numbers, the absolute~Fermat~pseudoprimes.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrimaryPseudoperfectNumber}
+\pmcreated{2013-03-22 16:17:40}
+\pmmodified{2013-03-22 16:17:40}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{primary pseudoperfect number}
+\pmrecord{6}{38413}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D85}
+\pmrelated{GiugaNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given an integer $n$ with $\omega(n)$ distinct prime factors $p_i$ (where $\omega$ is number of distinct prime factors function), if the equality $$\frac1n + \sum_{i = 1}^{\omega(n)} \frac1{p_i} = 1$$ holds true, then $n$ is a \emph{primary pseudoperfect number}. Equivalently, $$1 + \sum_{i = 1}^{\omega(n)} \frac{n}{p_i} = n$$ if $n$ is a primary pseudoperfect number.
+
+The first few primary pseudoperfect numbers are 2, 6, 42, 1806, 47058, 2214502422, 52495396602, 8490421583559688410706771261086, the first four of these being each one less than the first four terms of Sylvester's sequence; these are listed in A054377 of Sloane's OEIS. Presently it's not known whether there are any odd primary pseudoperfect numbers.
+
+%%%%%
+%%%%%
+\end{document}

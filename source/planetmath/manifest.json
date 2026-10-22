@@ -1,0 +1,1081 @@
+{
+  "source": "official PlanetMath GitHub MSC repositories",
+  "acquisition_method": "GitHub connector discovered repositories; official bulk archives downloaded through inherited HTTPS proxy because connector cannot bulk-download 63 archives.",
+  "repository_count": 63,
+  "archives": [
+    {
+      "repository": "planetmath/00_General",
+      "archive_url": "https://codeload.github.com/planetmath/00_General/tar.gz/refs/heads/master",
+      "archive_file": "00_General.tar.gz",
+      "archive_sha256": "f091e376a46874051c55bd3e803a35312d34cecb57e4f349965f0072d9aa2fbb",
+      "archive_bytes": 24327804,
+      "repository_pushed_at": "2018-03-10T21:03:16Z",
+      "retrieved_at": "2026-10-22T09:22:25.888765+00:00",
+      "licenses": [
+        {
+          "path": "00_General-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 128
+    },
+    {
+      "repository": "planetmath/01_History_and_biography",
+      "archive_url": "https://codeload.github.com/planetmath/01_History_and_biography/tar.gz/refs/heads/master",
+      "archive_file": "01_History_and_biography.tar.gz",
+      "archive_sha256": "a564a3a377eaec919428c9d939464460e2716775a8dc5d9d6eacea8eb6e5093c",
+      "archive_bytes": 58530901,
+      "repository_pushed_at": "2018-03-10T21:09:36Z",
+      "retrieved_at": "2026-10-22T09:22:28.010180+00:00",
+      "licenses": [
+        {
+          "path": "01_History_and_biography-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 296
+    },
+    {
+      "repository": "planetmath/03_Mathematical_logic_and_foundations",
+      "archive_url": "https://codeload.github.com/planetmath/03_Mathematical_logic_and_foundations/tar.gz/refs/heads/master",
+      "archive_file": "03_Mathematical_logic_and_foundations.tar.gz",
+      "archive_sha256": "c4c87e3f8579ad8982d4ab781a9f65ec8f410ba65085a6fe40fddb07081e762f",
+      "archive_bytes": 168004169,
+      "repository_pushed_at": "2024-01-24T08:32:32Z",
+      "retrieved_at": "2026-10-22T09:22:33.461368+00:00",
+      "licenses": [
+        {
+          "path": "03_Mathematical_logic_and_foundations-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 906
+    },
+    {
+      "repository": "planetmath/05_Combinatorics",
+      "archive_url": "https://codeload.github.com/planetmath/05_Combinatorics/tar.gz/refs/heads/master",
+      "archive_file": "05_Combinatorics.tar.gz",
+      "archive_sha256": "50234c1a354d043a9bd8160f185c96b5bfe88b9080747ceb7b1eb2841fda710c",
+      "archive_bytes": 52032952,
+      "repository_pushed_at": "2023-05-03T13:21:32Z",
+      "retrieved_at": "2026-10-22T09:22:27.332196+00:00",
+      "licenses": [
+        {
+          "path": "05_Combinatorics-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 276
+    },
+    {
+      "repository": "planetmath/06_Order_lattices_ordered_algebraic_structures",
+      "archive_url": "https://codeload.github.com/planetmath/06_Order_lattices_ordered_algebraic_structures/tar.gz/refs/heads/master",
+      "archive_file": "06_Order_lattices_ordered_algebraic_structures.tar.gz",
+      "archive_sha256": "12870a3c1193f5012a47cb52c3f71c9408d846dc662d1e3260bd9f794e8ae298",
+      "archive_bytes": 38331467,
+      "repository_pushed_at": "2018-03-10T21:11:59Z",
+      "retrieved_at": "2026-10-22T09:22:26.760543+00:00",
+      "licenses": [
+        {
+          "path": "06_Order_lattices_ordered_algebraic_structures-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 188
+    },
+    {
+      "repository": "planetmath/08_General_algebraic_systems",
+      "archive_url": "https://codeload.github.com/planetmath/08_General_algebraic_systems/tar.gz/refs/heads/master",
+      "archive_file": "08_General_algebraic_systems.tar.gz",
+      "archive_sha256": "862f736a51ea06266cea8b160fc0bfebf0a75744c34c90fccf1426030a580233",
+      "archive_bytes": 12813879,
+      "repository_pushed_at": "2022-06-24T02:59:34Z",
+      "retrieved_at": "2026-10-22T09:22:25.710156+00:00",
+      "licenses": [
+        {
+          "path": "08_General_algebraic_systems-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 61
+    },
+    {
+      "repository": "planetmath/11_Number_theory",
+      "archive_url": "https://codeload.github.com/planetmath/11_Number_theory/tar.gz/refs/heads/master",
+      "archive_file": "11_Number_theory.tar.gz",
+      "archive_sha256": "b0ff2c8fe109b9cb199d52aed1cf759c1c7f8612de6e2b376cc8a1ed7ede11b3",
+      "archive_bytes": 10294803,
+      "repository_pushed_at": "2023-06-26T12:09:40Z",
+      "retrieved_at": "2026-10-22T09:22:27.318896+00:00",
+      "licenses": [
+        {
+          "path": "11_Number_theory-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 1071
+    },
+    {
+      "repository": "planetmath/12_Field_theory_and_polynomials",
+      "archive_url": "https://codeload.github.com/planetmath/12_Field_theory_and_polynomials/tar.gz/refs/heads/master",
+      "archive_file": "12_Field_theory_and_polynomials.tar.gz",
+      "archive_sha256": "381229714cbf18a1ef669bd27637ffe45e350642d432723e7191cd8acf41c940",
+      "archive_bytes": 52466463,
+      "repository_pushed_at": "2018-03-10T20:14:08Z",
+      "retrieved_at": "2026-10-22T09:22:28.956773+00:00",
+      "licenses": [
+        {
+          "path": "12_Field_theory_and_polynomials-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 226
+    },
+    {
+      "repository": "planetmath/13_Commutative_rings_and_algebras",
+      "archive_url": "https://codeload.github.com/planetmath/13_Commutative_rings_and_algebras/tar.gz/refs/heads/master",
+      "archive_file": "13_Commutative_rings_and_algebras.tar.gz",
+      "archive_sha256": "5de7c17465c4c30371a93191dd17fa48c806f5bce5ae9e36cdef5f76215f036b",
+      "archive_bytes": 67375119,
+      "repository_pushed_at": "2018-03-10T21:12:03Z",
+      "retrieved_at": "2026-10-22T09:22:29.906134+00:00",
+      "licenses": [
+        {
+          "path": "13_Commutative_rings_and_algebras-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 295
+    },
+    {
+      "repository": "planetmath/14_Algebraic_geometry",
+      "archive_url": "https://codeload.github.com/planetmath/14_Algebraic_geometry/tar.gz/refs/heads/master",
+      "archive_file": "14_Algebraic_geometry.tar.gz",
+      "archive_sha256": "a71b0bb5386de846408ef340bc1a2c8577ac6238c18f8eaf54304e7e83620751",
+      "archive_bytes": 35123054,
+      "repository_pushed_at": "2018-03-10T20:14:04Z",
+      "retrieved_at": "2026-10-22T09:22:28.941016+00:00",
+      "licenses": [
+        {
+          "path": "14_Algebraic_geometry-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 164
+    },
+    {
+      "repository": "planetmath/15_Linear_and_multilinear_algebra_matrix_theory",
+      "archive_url": "https://codeload.github.com/planetmath/15_Linear_and_multilinear_algebra_matrix_theory/tar.gz/refs/heads/master",
+      "archive_file": "15_Linear_and_multilinear_algebra_matrix_theory.tar.gz",
+      "archive_sha256": "f8fab3b62f1b630865ed30552681d2f299a75ef79f5247cbd22c4e1afb9fddbd",
+      "archive_bytes": 90740511,
+      "repository_pushed_at": "2018-05-03T19:26:28Z",
+      "retrieved_at": "2026-10-22T09:22:32.642104+00:00",
+      "licenses": [
+        {
+          "path": "15_Linear_and_multilinear_algebra_matrix_theory-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 422
+    },
+    {
+      "repository": "planetmath/16_Associative_rings_and_algebras",
+      "archive_url": "https://codeload.github.com/planetmath/16_Associative_rings_and_algebras/tar.gz/refs/heads/master",
+      "archive_file": "16_Associative_rings_and_algebras.tar.gz",
+      "archive_sha256": "b3810123b9956cf999658b034947904ae21ac639927fc6362c9821a756803056",
+      "archive_bytes": 60673823,
+      "repository_pushed_at": "2024-02-19T17:53:55Z",
+      "retrieved_at": "2026-10-22T09:22:32.031386+00:00",
+      "licenses": [
+        {
+          "path": "16_Associative_rings_and_algebras-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 272
+    },
+    {
+      "repository": "planetmath/17_Nonassociative_rings_and_algebras",
+      "archive_url": "https://codeload.github.com/planetmath/17_Nonassociative_rings_and_algebras/tar.gz/refs/heads/master",
+      "archive_file": "17_Nonassociative_rings_and_algebras.tar.gz",
+      "archive_sha256": "668cb357fdac1ae0ec065d2f56888c2ac175b05eae064c40a68dd4a5804a417b",
+      "archive_bytes": 18574514,
+      "repository_pushed_at": "2018-03-10T20:14:13Z",
+      "retrieved_at": "2026-10-22T09:22:30.059583+00:00",
+      "licenses": [
+        {
+          "path": "17_Nonassociative_rings_and_algebras-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 85
+    },
+    {
+      "repository": "planetmath/18_Category_theory_homological_algebra",
+      "archive_url": "https://codeload.github.com/planetmath/18_Category_theory_homological_algebra/tar.gz/refs/heads/master",
+      "archive_file": "18_Category_theory_homological_algebra.tar.gz",
+      "archive_sha256": "8d7ad0fd6fea4524d2f6fb55200789c34d1621da6efd91d7d6e5bf4558c35039",
+      "archive_bytes": 49123874,
+      "repository_pushed_at": "2018-03-03T16:57:14Z",
+      "retrieved_at": "2026-10-22T09:22:32.379962+00:00",
+      "licenses": [
+        {
+          "path": "18_Category_theory_homological_algebra-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 313
+    },
+    {
+      "repository": "planetmath/19_K-theory",
+      "archive_url": "https://codeload.github.com/planetmath/19_K-theory/tar.gz/refs/heads/master",
+      "archive_file": "19_K-theory.tar.gz",
+      "archive_sha256": "08f5ab0f7c69f274dc0e097de2370418bef007e96315bef80865af6c621a0484",
+      "archive_bytes": 2210494,
+      "repository_pushed_at": "2018-03-10T20:14:13Z",
+      "retrieved_at": "2026-10-22T09:22:29.996439+00:00",
+      "licenses": [
+        {
+          "path": "19_K-theory-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 9
+    },
+    {
+      "repository": "planetmath/20_Group_theory_and_generalizations",
+      "archive_url": "https://codeload.github.com/planetmath/20_Group_theory_and_generalizations/tar.gz/refs/heads/master",
+      "archive_file": "20_Group_theory_and_generalizations.tar.gz",
+      "archive_sha256": "c04d37a08b84cc164b9bcb828007ea5e2005871386790047c3986357cba6f12e",
+      "archive_bytes": 108109524,
+      "repository_pushed_at": "2020-04-19T18:59:09Z",
+      "retrieved_at": "2026-10-22T09:22:34.452917+00:00",
+      "licenses": [
+        {
+          "path": "20_Group_theory_and_generalizations-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 500
+    },
+    {
+      "repository": "planetmath/22_Topological_groups_Lie_groups",
+      "archive_url": "https://codeload.github.com/planetmath/22_Topological_groups_Lie_groups/tar.gz/refs/heads/master",
+      "archive_file": "22_Topological_groups_Lie_groups.tar.gz",
+      "archive_sha256": "bbf7a0598babb2af016ccbc44904bdf56f46a63c9353ef69448dfc9e842186d6",
+      "archive_bytes": 10727171,
+      "repository_pushed_at": "2018-03-10T20:14:20Z",
+      "retrieved_at": "2026-10-22T09:22:32.555956+00:00",
+      "licenses": [
+        {
+          "path": "22_Topological_groups_Lie_groups-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 48
+    },
+    {
+      "repository": "planetmath/26_Real_functions",
+      "archive_url": "https://codeload.github.com/planetmath/26_Real_functions/tar.gz/refs/heads/master",
+      "archive_file": "26_Real_functions.tar.gz",
+      "archive_sha256": "ce9e28610121d21df711ba5709ca5da58f59d64ff49248ab1d2b8e98261800c1",
+      "archive_bytes": 101744087,
+      "repository_pushed_at": "2018-03-10T20:14:22Z",
+      "retrieved_at": "2026-10-22T09:22:50.678036+00:00",
+      "licenses": [
+        {
+          "path": "26_Real_functions-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 483
+    },
+    {
+      "repository": "planetmath/28_Measure_and_integration",
+      "archive_url": "https://codeload.github.com/planetmath/28_Measure_and_integration/tar.gz/refs/heads/master",
+      "archive_file": "28_Measure_and_integration.tar.gz",
+      "archive_sha256": "621e78547fe4209bcbecd3e4f581d64ae1c9984fbb96edac73b0bda0216b3c3f",
+      "archive_bytes": 40741004,
+      "repository_pushed_at": "2018-03-10T20:14:23Z",
+      "retrieved_at": "2026-10-22T09:22:38.975567+00:00",
+      "licenses": [
+        {
+          "path": "28_Measure_and_integration-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 187
+    },
+    {
+      "repository": "planetmath/30_Functions_of_a_complex_variable",
+      "archive_url": "https://codeload.github.com/planetmath/30_Functions_of_a_complex_variable/tar.gz/refs/heads/master",
+      "archive_file": "30_Functions_of_a_complex_variable.tar.gz",
+      "archive_sha256": "89e630dada134187192d529798a1dbfdce06168514676fcd8f2e6a068cb66fa5",
+      "archive_bytes": 43486578,
+      "repository_pushed_at": "2022-11-02T23:29:15Z",
+      "retrieved_at": "2026-10-22T09:22:39.412900+00:00",
+      "licenses": [
+        {
+          "path": "30_Functions_of_a_complex_variable-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 266
+    },
+    {
+      "repository": "planetmath/31_Potential_theory",
+      "archive_url": "https://codeload.github.com/planetmath/31_Potential_theory/tar.gz/refs/heads/master",
+      "archive_file": "31_Potential_theory.tar.gz",
+      "archive_sha256": "e03080e433fd70f523277bfd0295774c581985ad9a37663e0e5552ffc574cce4",
+      "archive_bytes": 23594392,
+      "repository_pushed_at": "2018-03-10T20:14:28Z",
+      "retrieved_at": "2026-10-22T09:22:36.355269+00:00",
+      "licenses": [
+        {
+          "path": "31_Potential_theory-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 18
+    },
+    {
+      "repository": "planetmath/32_Several_complex_variables_and_analytic_spaces",
+      "archive_url": "https://codeload.github.com/planetmath/32_Several_complex_variables_and_analytic_spaces/tar.gz/refs/heads/master",
+      "archive_file": "32_Several_complex_variables_and_analytic_spaces.tar.gz",
+      "archive_sha256": "bf17c43bbcc2877ffa0bbd9bf0ddf93fe890e2f8cfc1ab70d7df8c098cbf026f",
+      "archive_bytes": 40589439,
+      "repository_pushed_at": "2018-03-10T20:14:28Z",
+      "retrieved_at": "2026-10-22T09:22:40.554443+00:00",
+      "licenses": [
+        {
+          "path": "32_Several_complex_variables_and_analytic_spaces-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 87
+    },
+    {
+      "repository": "planetmath/33_Special_functions",
+      "archive_url": "https://codeload.github.com/planetmath/33_Special_functions/tar.gz/refs/heads/master",
+      "archive_file": "33_Special_functions.tar.gz",
+      "archive_sha256": "f98cea37cab44e3e0eb2226054a8242279f946091fa05ed8a80afbc47e7dceef",
+      "archive_bytes": 36436446,
+      "repository_pushed_at": "2018-03-10T20:14:30Z",
+      "retrieved_at": "2026-10-22T09:22:40.853050+00:00",
+      "licenses": [
+        {
+          "path": "33_Special_functions-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 73
+    },
+    {
+      "repository": "planetmath/34_Ordinary_differential_equations",
+      "archive_url": "https://codeload.github.com/planetmath/34_Ordinary_differential_equations/tar.gz/refs/heads/master",
+      "archive_file": "34_Ordinary_differential_equations.tar.gz",
+      "archive_sha256": "94ebc80ac41b8f5b1a950881e231219af84c66abe68e3011f79f1f08b25cc9c6",
+      "archive_bytes": 20441848,
+      "repository_pushed_at": "2018-03-10T20:14:33Z",
+      "retrieved_at": "2026-10-22T09:22:40.165220+00:00",
+      "licenses": [
+        {
+          "path": "34_Ordinary_differential_equations-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 103
+    },
+    {
+      "repository": "planetmath/35_Partial_differential_equations",
+      "archive_url": "https://codeload.github.com/planetmath/35_Partial_differential_equations/tar.gz/refs/heads/master",
+      "archive_file": "35_Partial_differential_equations.tar.gz",
+      "archive_sha256": "2777a6f467dcc5716cdac4be5c41156f19f6ac2e25f15fc21faba7614927a5e9",
+      "archive_bytes": 8303878,
+      "repository_pushed_at": "2018-03-10T20:14:33Z",
+      "retrieved_at": "2026-10-22T09:22:40.864368+00:00",
+      "licenses": [
+        {
+          "path": "35_Partial_differential_equations-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 37
+    },
+    {
+      "repository": "planetmath/37_Dynamical_systems_and_ergodic_theory",
+      "archive_url": "https://codeload.github.com/planetmath/37_Dynamical_systems_and_ergodic_theory/tar.gz/refs/heads/master",
+      "archive_file": "37_Dynamical_systems_and_ergodic_theory.tar.gz",
+      "archive_sha256": "c2c38496952eb56b9eb52d71ed6561e618736b8957bd1868bfced9a438c6fc3a",
+      "archive_bytes": 13552636,
+      "repository_pushed_at": "2018-03-10T20:14:34Z",
+      "retrieved_at": "2026-10-22T09:22:42.007535+00:00",
+      "licenses": [
+        {
+          "path": "37_Dynamical_systems_and_ergodic_theory-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 64
+    },
+    {
+      "repository": "planetmath/39_Difference_and_functional_equations",
+      "archive_url": "https://codeload.github.com/planetmath/39_Difference_and_functional_equations/tar.gz/refs/heads/master",
+      "archive_file": "39_Difference_and_functional_equations.tar.gz",
+      "archive_sha256": "38dbafd72223d68f9e2c35d270395b367d6e278fed30af2552bcfa7b005bbaea",
+      "archive_bytes": 2952883,
+      "repository_pushed_at": "2018-03-10T20:14:35Z",
+      "retrieved_at": "2026-10-22T09:22:40.943076+00:00",
+      "licenses": [
+        {
+          "path": "39_Difference_and_functional_equations-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 14
+    },
+    {
+      "repository": "planetmath/40_Sequences_series_summability",
+      "archive_url": "https://codeload.github.com/planetmath/40_Sequences_series_summability/tar.gz/refs/heads/master",
+      "archive_file": "40_Sequences_series_summability.tar.gz",
+      "archive_sha256": "ac33a3eeb12638ae2737f5ae5b82a54cf9f26cf5df0773e9755ac6f7c31fa5f0",
+      "archive_bytes": 37389836,
+      "repository_pushed_at": "2023-08-14T13:57:34Z",
+      "retrieved_at": "2026-10-22T09:22:47.434502+00:00",
+      "licenses": [
+        {
+          "path": "40_Sequences_series_summability-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 228
+    },
+    {
+      "repository": "planetmath/41_Approximations_and_expansions",
+      "archive_url": "https://codeload.github.com/planetmath/41_Approximations_and_expansions/tar.gz/refs/heads/master",
+      "archive_file": "41_Approximations_and_expansions.tar.gz",
+      "archive_sha256": "50b1d07308a131aba103f94861f7600da0bc8519af48c1cfed2e303216c3c894",
+      "archive_bytes": 7238821,
+      "repository_pushed_at": "2018-03-10T20:14:39Z",
+      "retrieved_at": "2026-10-22T09:22:42.495024+00:00",
+      "licenses": [
+        {
+          "path": "41_Approximations_and_expansions-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 34
+    },
+    {
+      "repository": "planetmath/42_Fourier_analysis",
+      "archive_url": "https://codeload.github.com/planetmath/42_Fourier_analysis/tar.gz/refs/heads/master",
+      "archive_file": "42_Fourier_analysis.tar.gz",
+      "archive_sha256": "b633a8d1b4b41ac7b55a72629fd2a1505329f3184f27da0afb45b7b3891bbe24",
+      "archive_bytes": 8008470,
+      "repository_pushed_at": "2018-03-10T20:14:39Z",
+      "retrieved_at": "2026-10-22T09:22:42.676925+00:00",
+      "licenses": [
+        {
+          "path": "42_Fourier_analysis-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 38
+    },
+    {
+      "repository": "planetmath/43_Abstract_harmonic_analysis",
+      "archive_url": "https://codeload.github.com/planetmath/43_Abstract_harmonic_analysis/tar.gz/refs/heads/master",
+      "archive_file": "43_Abstract_harmonic_analysis.tar.gz",
+      "archive_sha256": "657028b6b3c00d6d3bbf3d40f3d1a45d4e01212493127d72285540fc1aed5c5e",
+      "archive_bytes": 2502579,
+      "repository_pushed_at": "2018-03-10T20:14:40Z",
+      "retrieved_at": "2026-10-22T09:22:41.414454+00:00",
+      "licenses": [
+        {
+          "path": "43_Abstract_harmonic_analysis-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 12
+    },
+    {
+      "repository": "planetmath/44_Integral_transforms_operational_calculus",
+      "archive_url": "https://codeload.github.com/planetmath/44_Integral_transforms_operational_calculus/tar.gz/refs/heads/master",
+      "archive_file": "44_Integral_transforms_operational_calculus.tar.gz",
+      "archive_sha256": "09aea1bae7058e87a6235e73a41416cee0fbc710be6d8e15fa3b35cb2d7ea1b3",
+      "archive_bytes": 7896673,
+      "repository_pushed_at": "2023-01-21T18:49:32Z",
+      "retrieved_at": "2026-10-22T09:22:43.578642+00:00",
+      "licenses": [
+        {
+          "path": "44_Integral_transforms_operational_calculus-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 36
+    },
+    {
+      "repository": "planetmath/45_Integral_equations",
+      "archive_url": "https://codeload.github.com/planetmath/45_Integral_equations/tar.gz/refs/heads/master",
+      "archive_file": "45_Integral_equations.tar.gz",
+      "archive_sha256": "c090d84bfc870dc01261f4f6cedc0b79d82b53e31a0154902da386f1a76b4558",
+      "archive_bytes": 33741,
+      "repository_pushed_at": "2018-03-10T20:14:44Z",
+      "retrieved_at": "2026-10-22T09:22:42.533022+00:00",
+      "licenses": [
+        {
+          "path": "45_Integral_equations-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 4
+    },
+    {
+      "repository": "planetmath/46_Functional_analysis",
+      "archive_url": "https://codeload.github.com/planetmath/46_Functional_analysis/tar.gz/refs/heads/master",
+      "archive_file": "46_Functional_analysis.tar.gz",
+      "archive_sha256": "a0168d504ba1bca5d4ad226cbb19116b4d90e9a44c1ad6d04c0b994e4936a2ba",
+      "archive_bytes": 53603673,
+      "repository_pushed_at": "2018-03-10T20:14:49Z",
+      "retrieved_at": "2026-10-22T09:22:51.078068+00:00",
+      "licenses": [
+        {
+          "path": "46_Functional_analysis-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 248
+    },
+    {
+      "repository": "planetmath/47_Operator_theory",
+      "archive_url": "https://codeload.github.com/planetmath/47_Operator_theory/tar.gz/refs/heads/master",
+      "archive_file": "47_Operator_theory.tar.gz",
+      "archive_sha256": "944403d9633172cc75a284f870207d9669bb18936233c7c605ed6f2858b514f9",
+      "archive_bytes": 16285711,
+      "repository_pushed_at": "2018-03-10T20:14:48Z",
+      "retrieved_at": "2026-10-22T09:22:46.279394+00:00",
+      "licenses": [
+        {
+          "path": "47_Operator_theory-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 74
+    },
+    {
+      "repository": "planetmath/49_Calculus_of_variations_and_optimal_control_optimization",
+      "archive_url": "https://codeload.github.com/planetmath/49_Calculus_of_variations_and_optimal_control_optimization/tar.gz/refs/heads/master",
+      "archive_file": "49_Calculus_of_variations_and_optimal_control_optimization.tar.gz",
+      "archive_sha256": "d4f33c787f6c16b8301dc60e94347bc685f9d8661bb91b708bd690bade0505c4",
+      "archive_bytes": 4028396,
+      "repository_pushed_at": "2018-03-10T20:14:50Z",
+      "retrieved_at": "2026-10-22T09:22:44.495773+00:00",
+      "licenses": [
+        {
+          "path": "49_Calculus_of_variations_and_optimal_control_optimization-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 19
+    },
+    {
+      "repository": "planetmath/51_Geometry",
+      "archive_url": "https://codeload.github.com/planetmath/51_Geometry/tar.gz/refs/heads/master",
+      "archive_file": "51_Geometry.tar.gz",
+      "archive_sha256": "e60e42390491bda130ae9677ab2c7cb2f0a20eb376727e458769677268a51786",
+      "archive_bytes": 51805403,
+      "repository_pushed_at": "2018-03-10T20:14:54Z",
+      "retrieved_at": "2026-10-22T09:22:51.551495+00:00",
+      "licenses": [
+        {
+          "path": "51_Geometry-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 486
+    },
+    {
+      "repository": "planetmath/52_Convex_and_discrete_geometry",
+      "archive_url": "https://codeload.github.com/planetmath/52_Convex_and_discrete_geometry/tar.gz/refs/heads/master",
+      "archive_file": "52_Convex_and_discrete_geometry.tar.gz",
+      "archive_sha256": "2180584f9c66fcec07a13e7f0307995d7552d6d08b57f1630a0e10d929a4b85b",
+      "archive_bytes": 8514323,
+      "repository_pushed_at": "2018-03-10T20:14:54Z",
+      "retrieved_at": "2026-10-22T09:22:47.283963+00:00",
+      "licenses": [
+        {
+          "path": "52_Convex_and_discrete_geometry-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 36
+    },
+    {
+      "repository": "planetmath/53_Differential_geometry",
+      "archive_url": "https://codeload.github.com/planetmath/53_Differential_geometry/tar.gz/refs/heads/master",
+      "archive_file": "53_Differential_geometry.tar.gz",
+      "archive_sha256": "c70e20d2e5abdc51a90e4aab4ff455a9bab568a058a21d354d74f350484ca3a3",
+      "archive_bytes": 36778130,
+      "repository_pushed_at": "2018-03-10T20:14:55Z",
+      "retrieved_at": "2026-10-22T09:22:52.096770+00:00",
+      "licenses": [
+        {
+          "path": "53_Differential_geometry-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 191
+    },
+    {
+      "repository": "planetmath/54_General_topology",
+      "archive_url": "https://codeload.github.com/planetmath/54_General_topology/tar.gz/refs/heads/master",
+      "archive_file": "54_General_topology.tar.gz",
+      "archive_sha256": "15ff74f1e6157db8bda41aa0dbc9209bdfde5c153b6780a1fcbd335f3c6efffe",
+      "archive_bytes": 104838184,
+      "repository_pushed_at": "2021-11-02T21:49:32Z",
+      "retrieved_at": "2026-10-22T09:23:01.681262+00:00",
+      "licenses": [
+        {
+          "path": "54_General_topology-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 483
+    },
+    {
+      "repository": "planetmath/55_Algebraic_topology",
+      "archive_url": "https://codeload.github.com/planetmath/55_Algebraic_topology/tar.gz/refs/heads/master",
+      "archive_file": "55_Algebraic_topology.tar.gz",
+      "archive_sha256": "5a39a7d4f434da57a1f86d11e5f745277cf304d8dfd68c629415a7ba58c61634",
+      "archive_bytes": 26127587,
+      "repository_pushed_at": "2018-03-10T20:14:59Z",
+      "retrieved_at": "2026-10-22T09:22:51.744566+00:00",
+      "licenses": [
+        {
+          "path": "55_Algebraic_topology-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 141
+    },
+    {
+      "repository": "planetmath/57_Manifolds_and_cell_complexes",
+      "archive_url": "https://codeload.github.com/planetmath/57_Manifolds_and_cell_complexes/tar.gz/refs/heads/master",
+      "archive_file": "57_Manifolds_and_cell_complexes.tar.gz",
+      "archive_sha256": "6caa2afdfdeddb2046713430b989994bf0bae799d07d4da9f407c41a4685bdc6",
+      "archive_bytes": 13391358,
+      "repository_pushed_at": "2018-03-10T20:14:59Z",
+      "retrieved_at": "2026-10-22T09:22:53.131018+00:00",
+      "licenses": [
+        {
+          "path": "57_Manifolds_and_cell_complexes-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 68
+    },
+    {
+      "repository": "planetmath/58_Global_analysis_analysis_on_manifolds",
+      "archive_url": "https://codeload.github.com/planetmath/58_Global_analysis_analysis_on_manifolds/tar.gz/refs/heads/master",
+      "archive_file": "58_Global_analysis_analysis_on_manifolds.tar.gz",
+      "archive_sha256": "9367c9e0e83edfa277272bccc9ca886e1215d7d2436d6407bea1b48158874f3b",
+      "archive_bytes": 6095212,
+      "repository_pushed_at": "2018-03-10T20:15:00Z",
+      "retrieved_at": "2026-10-22T09:22:52.594839+00:00",
+      "licenses": [
+        {
+          "path": "58_Global_analysis_analysis_on_manifolds-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 28
+    },
+    {
+      "repository": "planetmath/60_Probability_theory_and_stochastic_processes",
+      "archive_url": "https://codeload.github.com/planetmath/60_Probability_theory_and_stochastic_processes/tar.gz/refs/heads/master",
+      "archive_file": "60_Probability_theory_and_stochastic_processes.tar.gz",
+      "archive_sha256": "e3add161592116f794e2610f2bccaca375d77a578d93065ccfb75ec31da29f4a",
+      "archive_bytes": 36929940,
+      "repository_pushed_at": "2021-07-23T17:19:41Z",
+      "retrieved_at": "2026-10-22T09:22:57.481868+00:00",
+      "licenses": [
+        {
+          "path": "60_Probability_theory_and_stochastic_processes-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 221
+    },
+    {
+      "repository": "planetmath/62_Statistics",
+      "archive_url": "https://codeload.github.com/planetmath/62_Statistics/tar.gz/refs/heads/master",
+      "archive_file": "62_Statistics.tar.gz",
+      "archive_sha256": "151d1748eeb36c19dcf7815edf9c20ae3a1ba9692ffa3b297ae397c6ed8af1b9",
+      "archive_bytes": 18925932,
+      "repository_pushed_at": "2018-03-10T20:15:09Z",
+      "retrieved_at": "2026-10-22T09:22:54.974694+00:00",
+      "licenses": [
+        {
+          "path": "62_Statistics-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 90
+    },
+    {
+      "repository": "planetmath/65_Numerical_analysis",
+      "archive_url": "https://codeload.github.com/planetmath/65_Numerical_analysis/tar.gz/refs/heads/master",
+      "archive_file": "65_Numerical_analysis.tar.gz",
+      "archive_sha256": "3e32cb47243656957d5f2ee20736da66e59c5c682b29a52b551fd68dcb674184",
+      "archive_bytes": 10475790,
+      "repository_pushed_at": "2018-03-10T20:15:09Z",
+      "retrieved_at": "2026-10-22T09:22:54.195697+00:00",
+      "licenses": [
+        {
+          "path": "65_Numerical_analysis-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 47
+    },
+    {
+      "repository": "planetmath/68_Computer_science",
+      "archive_url": "https://codeload.github.com/planetmath/68_Computer_science/tar.gz/refs/heads/master",
+      "archive_file": "68_Computer_science.tar.gz",
+      "archive_sha256": "90a5010ccad9502251d8de8fc6a69a8498c245a00b2ff3d5d841be5daefad64f",
+      "archive_bytes": 44375347,
+      "repository_pushed_at": "2024-02-05T10:11:41Z",
+      "retrieved_at": "2026-10-22T09:22:58.898444+00:00",
+      "licenses": [
+        {
+          "path": "68_Computer_science-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 199
+    },
+    {
+      "repository": "planetmath/70_Mechanics_of_particles_and_systems",
+      "archive_url": "https://codeload.github.com/planetmath/70_Mechanics_of_particles_and_systems/tar.gz/refs/heads/master",
+      "archive_file": "70_Mechanics_of_particles_and_systems.tar.gz",
+      "archive_sha256": "c0c16dc18207f38decd9cf6c1b187e76526e549c7f9721fe794599c899e15950",
+      "archive_bytes": 1545167,
+      "repository_pushed_at": "2018-03-10T20:15:11Z",
+      "retrieved_at": "2026-10-22T09:22:53.566028+00:00",
+      "licenses": [
+        {
+          "path": "70_Mechanics_of_particles_and_systems-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 6
+    },
+    {
+      "repository": "planetmath/74_Mechanics_of_deformable_solids",
+      "archive_url": "https://codeload.github.com/planetmath/74_Mechanics_of_deformable_solids/tar.gz/refs/heads/master",
+      "archive_file": "74_Mechanics_of_deformable_solids.tar.gz",
+      "archive_sha256": "7b07199ae4c05b1aed8296326e1e7ee9cbd7ec36498a633636d5b93bf9a598a3",
+      "archive_bytes": 8769,
+      "repository_pushed_at": "2018-03-03T16:44:37Z",
+      "retrieved_at": "2026-10-22T09:22:54.032464+00:00",
+      "licenses": [
+        {
+          "path": "74_Mechanics_of_deformable_solids-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 0
+    },
+    {
+      "repository": "planetmath/76_Fluid_mechanics",
+      "archive_url": "https://codeload.github.com/planetmath/76_Fluid_mechanics/tar.gz/refs/heads/master",
+      "archive_file": "76_Fluid_mechanics.tar.gz",
+      "archive_sha256": "34d233333e840333e4ac0f944d1c4c3560af82775c443819bef18168b0f1c726",
+      "archive_bytes": 8758,
+      "repository_pushed_at": "2018-03-03T16:44:33Z",
+      "retrieved_at": "2026-10-22T09:22:54.266703+00:00",
+      "licenses": [
+        {
+          "path": "76_Fluid_mechanics-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 0
+    },
+    {
+      "repository": "planetmath/78_Optics_electromagnetic_theory",
+      "archive_url": "https://codeload.github.com/planetmath/78_Optics_electromagnetic_theory/tar.gz/refs/heads/master",
+      "archive_file": "78_Optics_electromagnetic_theory.tar.gz",
+      "archive_sha256": "5bc833473ff8a5d241f3f6a1fa93eeb3c6d7b1f841cfe3c61ec5068fcb84dfcc",
+      "archive_bytes": 504054,
+      "repository_pushed_at": "2018-03-10T20:15:14Z",
+      "retrieved_at": "2026-10-22T09:22:54.928824+00:00",
+      "licenses": [
+        {
+          "path": "78_Optics_electromagnetic_theory-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 2
+    },
+    {
+      "repository": "planetmath/80_Classical_thermodynamics_heat_transfer",
+      "archive_url": "https://codeload.github.com/planetmath/80_Classical_thermodynamics_heat_transfer/tar.gz/refs/heads/master",
+      "archive_file": "80_Classical_thermodynamics_heat_transfer.tar.gz",
+      "archive_sha256": "50170a63c3053e1b24a1592df94c93d1d3a99b56cfee5373ba75647669391756",
+      "archive_bytes": 8774,
+      "repository_pushed_at": "2018-03-03T16:44:23Z",
+      "retrieved_at": "2026-10-22T09:22:54.745301+00:00",
+      "licenses": [
+        {
+          "path": "80_Classical_thermodynamics_heat_transfer-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 0
+    },
+    {
+      "repository": "planetmath/81_Quantum_theory",
+      "archive_url": "https://codeload.github.com/planetmath/81_Quantum_theory/tar.gz/refs/heads/master",
+      "archive_file": "81_Quantum_theory.tar.gz",
+      "archive_sha256": "202dcf5870542ed39356a85de4e615ac182dfed49dfdb4d19790036a1c942c72",
+      "archive_bytes": 8013526,
+      "repository_pushed_at": "2018-03-10T20:15:15Z",
+      "retrieved_at": "2026-10-22T09:22:56.535966+00:00",
+      "licenses": [
+        {
+          "path": "81_Quantum_theory-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 51
+    },
+    {
+      "repository": "planetmath/82_Statistical_mechanics_structure_of_matter",
+      "archive_url": "https://codeload.github.com/planetmath/82_Statistical_mechanics_structure_of_matter/tar.gz/refs/heads/master",
+      "archive_file": "82_Statistical_mechanics_structure_of_matter.tar.gz",
+      "archive_sha256": "663f5f374d01c82ba8b913246979cddd76f94c8f4b5398996d2ed09364e1b819",
+      "archive_bytes": 279213,
+      "repository_pushed_at": "2018-03-03T16:43:42Z",
+      "retrieved_at": "2026-10-22T09:22:55.622794+00:00",
+      "licenses": [
+        {
+          "path": "82_Statistical_mechanics_structure_of_matter-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 1
+    },
+    {
+      "repository": "planetmath/83_Relativity_and_gravitational_theory",
+      "archive_url": "https://codeload.github.com/planetmath/83_Relativity_and_gravitational_theory/tar.gz/refs/heads/master",
+      "archive_file": "83_Relativity_and_gravitational_theory.tar.gz",
+      "archive_sha256": "344c6b260f0b072baae9414623a8af08a0f7e25d9d677b3cfe0f4f1d32150db1",
+      "archive_bytes": 531871,
+      "repository_pushed_at": "2018-03-10T20:15:16Z",
+      "retrieved_at": "2026-10-22T09:22:55.682424+00:00",
+      "licenses": [
+        {
+          "path": "83_Relativity_and_gravitational_theory-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 5
+    },
+    {
+      "repository": "planetmath/85_Astronomy_and_astrophysics",
+      "archive_url": "https://codeload.github.com/planetmath/85_Astronomy_and_astrophysics/tar.gz/refs/heads/master",
+      "archive_file": "85_Astronomy_and_astrophysics.tar.gz",
+      "archive_sha256": "888e8fc5347f79ff0858755f447614f3c0f526eafaf85889650e6a8297324804",
+      "archive_bytes": 270735,
+      "repository_pushed_at": "2018-03-10T20:15:16Z",
+      "retrieved_at": "2026-10-22T09:22:55.984873+00:00",
+      "licenses": [
+        {
+          "path": "85_Astronomy_and_astrophysics-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 1
+    },
+    {
+      "repository": "planetmath/86_Geophysics",
+      "archive_url": "https://codeload.github.com/planetmath/86_Geophysics/tar.gz/refs/heads/master",
+      "archive_file": "86_Geophysics.tar.gz",
+      "archive_sha256": "9629c8f2f10ea0571fbb6d2c3859257689763a87f7d357363e69572d1058ec59",
+      "archive_bytes": 504136,
+      "repository_pushed_at": "2018-03-10T20:15:19Z",
+      "retrieved_at": "2026-10-22T09:22:56.049771+00:00",
+      "licenses": [
+        {
+          "path": "86_Geophysics-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 3
+    },
+    {
+      "repository": "planetmath/90_Operations_research_mathematical_programming",
+      "archive_url": "https://codeload.github.com/planetmath/90_Operations_research_mathematical_programming/tar.gz/refs/heads/master",
+      "archive_file": "90_Operations_research_mathematical_programming.tar.gz",
+      "archive_sha256": "96f74963be2684f0f20a316d7c9728cc7a5ce6f81364091257bc28e32aaebb47",
+      "archive_bytes": 1003228,
+      "repository_pushed_at": "2018-03-10T20:15:20Z",
+      "retrieved_at": "2026-10-22T09:22:56.957697+00:00",
+      "licenses": [
+        {
+          "path": "90_Operations_research_mathematical_programming-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 7
+    },
+    {
+      "repository": "planetmath/91_Game_theory_economics_social_and_behavioral_sciences",
+      "archive_url": "https://codeload.github.com/planetmath/91_Game_theory_economics_social_and_behavioral_sciences/tar.gz/refs/heads/master",
+      "archive_file": "91_Game_theory_economics_social_and_behavioral_sciences.tar.gz",
+      "archive_sha256": "19c054db062a01dc655d72ec7015f55f5498dff75ffc29d95c1b767a7762f272",
+      "archive_bytes": 8565561,
+      "repository_pushed_at": "2018-03-10T20:15:21Z",
+      "retrieved_at": "2026-10-22T09:22:58.999812+00:00",
+      "licenses": [
+        {
+          "path": "91_Game_theory_economics_social_and_behavioral_sciences-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 37
+    },
+    {
+      "repository": "planetmath/92_Biology_and_other_natural_sciences",
+      "archive_url": "https://codeload.github.com/planetmath/92_Biology_and_other_natural_sciences/tar.gz/refs/heads/master",
+      "archive_file": "92_Biology_and_other_natural_sciences.tar.gz",
+      "archive_sha256": "56b94e3cf41a80bed9099cca1d2c5f041ec28de55c6fe1c3c778dbb0ea734060",
+      "archive_bytes": 1625424,
+      "repository_pushed_at": "2018-03-10T20:15:21Z",
+      "retrieved_at": "2026-10-22T09:22:57.021940+00:00",
+      "licenses": [
+        {
+          "path": "92_Biology_and_other_natural_sciences-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 12
+    },
+    {
+      "repository": "planetmath/93_Systems_theory_control",
+      "archive_url": "https://codeload.github.com/planetmath/93_Systems_theory_control/tar.gz/refs/heads/master",
+      "archive_file": "93_Systems_theory_control.tar.gz",
+      "archive_sha256": "8e20b0e842197775b92f438a6c759b58fab8cf82d1a1f57064e29e61567eedeb",
+      "archive_bytes": 3180760,
+      "repository_pushed_at": "2018-03-10T20:15:24Z",
+      "retrieved_at": "2026-10-22T09:22:57.167873+00:00",
+      "licenses": [
+        {
+          "path": "93_Systems_theory_control-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 14
+    },
+    {
+      "repository": "planetmath/94_Information_and_communication_circuits",
+      "archive_url": "https://codeload.github.com/planetmath/94_Information_and_communication_circuits/tar.gz/refs/heads/master",
+      "archive_file": "94_Information_and_communication_circuits.tar.gz",
+      "archive_sha256": "f009e3d6cf4d33e74d120979d4133f58bb9c4aa3f6c48deb5d23dd2c673dc68c",
+      "archive_bytes": 8095077,
+      "repository_pushed_at": "2018-03-10T20:15:25Z",
+      "retrieved_at": "2026-10-22T09:22:58.210325+00:00",
+      "licenses": [
+        {
+          "path": "94_Information_and_communication_circuits-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 38
+    },
+    {
+      "repository": "planetmath/97_Mathematics_education",
+      "archive_url": "https://codeload.github.com/planetmath/97_Mathematics_education/tar.gz/refs/heads/master",
+      "archive_file": "97_Mathematics_education.tar.gz",
+      "archive_sha256": "9e73db6ef6ae69c3587124925f6b2cf237df5e958190e360afd5acbbaf4c34f1",
+      "archive_bytes": 5112333,
+      "repository_pushed_at": "2022-11-30T07:21:34Z",
+      "retrieved_at": "2026-10-22T09:22:58.098210+00:00",
+      "licenses": [
+        {
+          "path": "97_Mathematics_education-master/LICENSE",
+          "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+          "cc_by_sa_3_0": true
+        }
+      ],
+      "records_count": 25
+    }
+  ],
+  "failures": [],
+  "raw_record_count": 9477,
+  "records_sha256": "3428427fec0c46453e28af398d670ef0de7256567d03417035ab454546f3c16a"
+}

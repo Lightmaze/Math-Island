@@ -1,0 +1,365 @@
+{
+  "auditor": "/root/atlas_audit",
+  "nodes_sha256": "4f146b824e4cce0f3b8e47e1c756557124c5075288fdf8cd7db0145a879abce1",
+  "sample_count": 36,
+  "original_cohort_retained": 33,
+  "replacement_count": 3,
+  "replacements": [
+    {
+      "initial_id": "pm:InteriorPointOfSetInTopologicalSpace",
+      "replacement_id": "pm:PerfectRuler",
+      "domain": "逻辑与基础"
+    },
+    {
+      "initial_id": "pm:OnLineEncyclopediaOfIntegerSequences",
+      "replacement_id": "pm:SemanticPropertiesOfSubstitutability",
+      "domain": "逻辑与基础"
+    },
+    {
+      "initial_id": "pm:CWcomplexApproximationOfQuantumStateSpacesInQAT",
+      "replacement_id": "pm:SchrodingerOperator",
+      "domain": "数学物理与应用"
+    }
+  ],
+  "source_identity_pass": true,
+  "checks": [
+    {
+      "id": "pm:SpaceOfRapidlyDecreasingFunctions",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "stacks:06VC",
+      "source_checks": {
+        "source_hash_matches": true,
+        "tag_label_matches": true,
+        "source_unique_statement": true,
+        "statement_matches_extraction": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:LatticeOfIdeals",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:SubdirectProductOfRings",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "stacks:09GC",
+      "source_checks": {
+        "source_hash_matches": true,
+        "tag_label_matches": true,
+        "source_unique_statement": true,
+        "statement_matches_extraction": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:RareNumbers",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "stacks:035H",
+      "source_checks": {
+        "source_hash_matches": true,
+        "tag_label_matches": true,
+        "source_unique_statement": true,
+        "statement_matches_extraction": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:TheBestScoreInTheWorstCaseOfAMemoryGameIs2N1",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:TDistribution",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "stacks:07A1",
+      "source_checks": {
+        "source_hash_matches": true,
+        "tag_label_matches": true,
+        "source_unique_statement": true,
+        "statement_matches_extraction": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:MatrixConditionNumberIsGreaterOrEqualTo1",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:IncreasingdecreasingmonotoneFunction",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:NapoleonsTheorem",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:HomomorphismOfLanguages",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:SimplicialCategory",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "stacks:00UQ",
+      "source_checks": {
+        "source_hash_matches": true,
+        "tag_label_matches": true,
+        "source_unique_statement": true,
+        "statement_matches_extraction": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:AdditiveFormOfHilbertsTheorem90",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "stacks:068A",
+      "source_checks": {
+        "source_hash_matches": true,
+        "tag_label_matches": true,
+        "source_unique_statement": true,
+        "statement_matches_extraction": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:LieSuperalgebra",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:NoncentralChisquaredRandomVariable",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "stacks:06YU",
+      "source_checks": {
+        "source_hash_matches": true,
+        "tag_label_matches": true,
+        "source_unique_statement": true,
+        "statement_matches_extraction": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:Eigenvector",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:GloballyAttractingFixedPoint",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:VitaliCovering",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:ChromaticNumberAndGirth",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:BasalUnits",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "stacks:052J",
+      "source_checks": {
+        "source_hash_matches": true,
+        "tag_label_matches": true,
+        "source_unique_statement": true,
+        "statement_matches_extraction": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:PollardsrhoAlgorithm",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "stacks:0DWZ",
+      "source_checks": {
+        "source_hash_matches": true,
+        "tag_label_matches": true,
+        "source_unique_statement": true,
+        "statement_matches_extraction": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:CanonicalCorrelation",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "stacks:0GYQ",
+      "source_checks": {
+        "source_hash_matches": true,
+        "tag_label_matches": true,
+        "source_unique_statement": true,
+        "statement_matches_extraction": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:NewtonAndCotesFormulas",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:CompletenessTheoremForPropositionalLogic",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:PerfectRuler",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:SemanticPropertiesOfSubstitutability",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    },
+    {
+      "id": "pm:SchrodingerOperator",
+      "source_checks": {
+        "source_hash_matches": true,
+        "canonical_name_present": true,
+        "source_type_present": true
+      },
+      "pass": true
+    }
+  ],
+  "initial_content_findings": 13,
+  "replacement_content_findings": 2,
+  "content_math_all_pass": false,
+  "interpretation": "Source-identity match is separate from mathematical-source quality. See audit-content-findings.json; no automatic theorem certification."
+}

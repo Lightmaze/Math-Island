@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available skin-thumbsize-clientpref-standard skin-underline-clientpref-browser" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Shannon capacity of a graph - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available skin-thumbsize-clientpref-standard skin-underline-clientpref-browser";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"3549bd70-d5f7-40cd-850a-e1c55fda1e2a","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Shannon_capacity_of_a_graph","wgTitle":"Shannon capacity of a graph","wgCurRevisionId":1377677202,"wgRevisionId":1377677202,"wgArticleId":39932177,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description is different from Wikidata","CS1: long volume value","Graph invariants","Information theory"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Shannon_capacity_of_a_graph","wgRelevantArticleId":39932177,"wgTempUserName":null,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}},"namespaces":[0,4]},"wgConfirmEditCaptchaNeededForGenericEdit":"hcaptcha","wgConfirmEditForceShowCaptcha":false,"wgConfirmEditHCaptchaSiteKey":"5d0c670e-a5f4-4258-ad16-1f42792c9c62","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgMediaViewerDesktopVue":false,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgParsoidHtmlVersion":"2.8.0","parsermigration-parsoid":true,"wgPageAssessments":{"Mathematics":{"class":"C","importance":"Low"},"Project-independent assessment":{"class":"C","importance":""}},"wgTestKitchenUserExperiments":{"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[]},"wgEditSubmitButtonLabelPublish":true,"wgVisualEditorPageIsDisambiguation":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgULSLanguageSelectorV2Enabled":true,"wgWikibaseItemId":"Q17105770","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"wgCheckUserClientHintsInEditRequest":true,"wgPersonalDashboardMenuVisible":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.math.styles":"ready","ext.cite.parsoid.styles":"ready","ext.cite.styles":"ready","mediawiki.skinning.content.parsoid":"ready","ext.wikimediamessages.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.math.polyfills","ext.cite.ux-enhancements","mediawiki.page.media","ext.scribunto.logs","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.testKitchen","ext.wikimediaCustomizations.discordSurvey","ext.wikimediaCustomizations.donorAccountCreation","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","wikibase.databox.fromWikidata","ext.checkUser.clientHints","ext.quicksurveys.init","ext.readerExperiments/preferredSources"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.parsoid.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cmediawiki.skinning.content.parsoid%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.47.0-wmf.24">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Shannon capacity of a graph - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//thumb.wikimedia.org">
+<link rel="discord:component-embed" type="application/json" href="https://en.wikipedia.org/w/rest.php/discord/v0-internal/discord-preview?title=Shannon+capacity+of+a+graph&amp;db=enwiki&amp;lang=en">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Shannon_capacity_of_a_graph">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Shannon_capacity_of_a_graph rootpage-Shannon_capacity_of_a_graph skin-vector-2022 action-view">
+<div id="mw-aria-live-region" class="mw-aria-live-region" aria-live="polite"></div><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"   >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin" aria-label="Move Main menu to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin" aria-label="Hide Main menu">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/enwiki-25.svg" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg" style="width: 8.75em; height: 1.375em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en-25.svg" width="140" height="11" style="width: 8.75em; height: 0.6875em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="none" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"   >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Shannon+capacity+of+a+graph" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Shannon+capacity+of+a+graph" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out vector-user-links-dropdown--collapsible"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"   >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span class="vector-icon mw-ui-icon-heart mw-ui-icon-wikimedia-heart cdx-button__icon"></span>
+
+<span>Donate</span></a>
+</li>
+<li id="pt-createaccount" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Shannon+capacity+of+a+graph" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
+
+<span>Create account</span></a>
+</li>
+<li id="pt-login" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Shannon+capacity+of+a+graph" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn cdx-button__icon"></span>
+
+<span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	data-pinned-container-id="vector-toc-pinned-container"
+	data-unpinned-container-id="vector-toc-unpinned-container"
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin" aria-label="Move Contents to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin" aria-label="Hide Contents">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Graph_models_of_communication_channels"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Graph_models_of_communication_channels">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Graph models of communication channels</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Graph_models_of_communication_channels-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Relation_to_independent_sets"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Relation_to_independent_sets">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Relation to independent sets</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Relation_to_independent_sets-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Computational_complexity"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Computational_complexity">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Computational complexity</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Computational_complexity-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Upper_bounds"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Upper_bounds">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Upper bounds</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Upper_bounds-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Upper bounds subsection</span>
+			</button>
+		
+		<ul id="toc-Upper_bounds-sublist" class="vector-toc-list">
+			<li id="toc-Lovász_number"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Lovász_number">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">4.1</span>
+					<span>Lovász number</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Lovász_number-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Haemers&#039;_bound"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Haemers&#039;_bound">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">4.2</span>
+					<span>Haemers' bound</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Haemers&#039;_bound-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"   >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span lang="en" dir="ltr"><span class="mw-page-title-main">Shannon capacity of a graph</span></span></h1>
+			
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector"  aria-label="1 language" aria-description="Go to an article in another language. Available in 1 language"  >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-1" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">1 language</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ru mw-list-item"><a href="https://ru.wikipedia.org/wiki/%D0%81%D0%BC%D0%BA%D0%BE%D1%81%D1%82%D1%8C_%D0%A8%D0%B5%D0%BD%D0%BD%D0%BE%D0%BD%D0%B0" title="Ёмкость Шеннона – Russian" lang="ru" hreflang="ru" data-title="Ёмкость Шеннона" data-language-autonym="Русский" data-language-local-name="Russian" class="interlanguage-link-target"><span>Русский</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q17105770#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-nstab-main" class="selected mw-list-item vector-tab-noicon"><a data-mw-interface  href="/wiki/Shannon_capacity_of_a_graph" title="View the content page [c]" accesskey="c" class=""><span>Article</span></a>
+</li>
+<li id="ca-talk" class="mw-list-item vector-tab-noicon"><a data-mw-interface  href="/wiki/Talk:Shannon_capacity_of_a_graph" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t" class=""><span>Talk</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"    >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+			    
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-view" class="selected mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/wiki/Shannon_capacity_of_a_graph" class=""><span>Read</span></a>
+</li>
+<li id="ca-edit" class="mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;action=edit" title="Edit this page [e]" accesskey="e" class=""><span>Edit</span></a>
+</li>
+<li id="ca-history" class="mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;action=history" title="Past revisions of this page [h]" accesskey="h" class=""><span>View history</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+			</nav>
+
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"   >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-verticalEllipsis mw-ui-icon-wikimedia-verticalEllipsis cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin" aria-label="Move Tools to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin" aria-label="Hide Tools">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-view-more" class="selected mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/wiki/Shannon_capacity_of_a_graph" class=""><span class="vector-icon mw-ui-icon-eye mw-ui-icon-wikimedia-eye cdx-button__icon"></span>
+
+<span>Read</span></a>
+</li>
+<li id="ca-edit-more" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;action=edit" title="Edit this page [e]" accesskey="e" class=""><span class="vector-icon mw-ui-icon-edit mw-ui-icon-wikimedia-edit cdx-button__icon"></span>
+
+<span>Edit</span></a>
+</li>
+<li id="ca-history-more" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;action=history" title="Past revisions of this page [h]" accesskey="h" class=""><span class="vector-icon mw-ui-icon-history mw-ui-icon-wikimedia-history cdx-button__icon"></span>
+
+<span>View history</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Shannon_capacity_of_a_graph" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Shannon_capacity_of_a_graph" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;oldid=1377677202" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Shannon_capacity_of_a_graph&amp;id=1377677202&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FShannon_capacity_of_a_graph"><span>Get shortened URL</span></a></li><li id="parsermigration-switch-to-legacy" class="mw-list-item"><a href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;useparsoid=0"><span>Switch to legacy parser</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Shannon_capacity_of_a_graph&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q17105770" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin" aria-label="Move Appearance to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin" aria-label="Hide Appearance">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+						<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+						
+					</div>
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr" data-mw-parsoid-version="0.24.0.0-alpha26" data-mw-html-version="2.8.0"><section data-mw-section-id="0" id="mwAQ"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none" about="#mwt1" typeof="mw:Transclusion" id="mwAg" data-mw='{"parts":[{"template":{"target":{"wt":"Short description","href":"./Template:Short_description"},"params":{"1":{"wt":"Measure of capacity of a communications channel defined from a graph"}},"i":0}}]}'>Measure of capacity of a communications channel defined from a graph</div><span class="mw-empty-elt" about="#mwt1"><link rel="mw:PageProp/Category" href="./Category:Articles_with_short_description"/><link rel="mw:PageProp/Category" href="./Category:Short_description_is_different_from_Wikidata"/></span>
+<p id="mwAw">In <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Graph_theory" title="Graph theory" id="mwBA">graph theory</a>, the <b id="mwBQ">Shannon capacity of a graph</b> is a <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Graph_invariant" title="Graph invariant" class="mw-redirect" id="mwBg">graph invariant</a> defined from the number of <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Independent_set_(graph_theory)" title="Independent set (graph theory)" id="mwBw">independent sets</a> of <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Strong_graph_product" title="Strong graph product" class="mw-redirect" id="mwCA">strong graph products</a>. It is named after American mathematician <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Claude_Shannon" title="Claude Shannon" id="mwCQ">Claude Shannon</a>. It measures the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Channel_capacity" title="Channel capacity" id="mwCg">Shannon capacity</a> of a <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Communications_channel" title="Communications channel" class="mw-redirect" id="mwCw">communications channel</a> defined from the graph, and is upper bounded by the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Lovász_number" title="Lovász number" id="mwDA">Lovász number</a>, which can be computed in <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Polynomial_time" title="Polynomial time" class="mw-redirect" id="mwDQ">polynomial time</a>. However, the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Computational_complexity_theory" title="Computational complexity theory" id="mwDg">computational complexity</a> of the Shannon capacity itself remains unknown.</p>
+
+<meta property="mw:PageProp/toc" id="mwDw" data-mw='{"autoGenerated":true}'/></section><section data-mw-section-id="1" id="mwEA" aria-labelledby="Graph_models_of_communication_channels"><div class="mw-heading mw-heading2"><h2 id="Graph_models_of_communication_channels">Graph models of communication channels</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;action=edit&amp;section=1" title="Edit section: Graph models of communication channels"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<figure typeof="mw:File/Thumb" id="mwEQ"><a href="https://en.wikipedia.org/wiki/File:Cycle_graph_C5.png" class="mw-file-description" id="mwEg"><img resource="https://en.wikipedia.org/wiki/File:Cycle_graph_C5.png" src="//thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Cycle_graph_C5.png/250px-Cycle_graph_C5.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail" decoding="async" loading="lazy" srcset="//upload.wikimedia.org/wikipedia/commons/b/b5/Cycle_graph_C5.png?utm_source=en.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail_unscaled 2x" data-file-width="371" data-file-height="371" data-file-type="bitmap" height="240" width="240" class="mw-file-element" id="mwEw"/></a><figcaption id="mwFA">A five-vertex cycle, modeling a set of five values that can be transmitted across a noisy communications channel and the pairs of values that can be confused with each other</figcaption></figure>
+
+<p id="mwFQ">The Shannon capacity models the amount of information that can be transmitted across a <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Noise_(electronics)" title="Noise (electronics)" id="mwFg">noisy</a> communication channel in which certain signal values can be confused with each other. In this application, the <b id="mwFw">confusion graph</b><sup about="#mwt4" class="mw-ref reference" id="cite_ref-1" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-1"}}'><a href="#cite_note-1" id="mwGA"><span class="mw-reflink-text" id="mwGQ"><span class="cite-bracket" id="mwGg">[</span>1<span class="cite-bracket" id="mwGw">]</span></span></a></sup> or <b id="mwHA">confusability graph</b> describes the pairs of values that can be confused. For instance, suppose that a communications channel has five discrete signal values, any one of which can be transmitted in a single time step. These values may be modeled mathematically as the five numbers 0, 1, 2, 3, or 4 in <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Modular_arithmetic" title="Modular arithmetic" id="mwHQ">modular arithmetic</a> modulo<span typeof="mw:Entity" id="mwHg"> </span>5. However, suppose that when a value <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt5" id="mwHw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"i"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle i}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>i</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/add78d8608ad86e54951b8c8bd6c8d8416533d20" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:0.802ex; height:2.176ex;" alt="{\displaystyle i}"/></span> is sent across the channel, the value that is received is <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt6" id="mwIA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"i+\\xi"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle i+\xi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>i</mi>
+        <mo>+</mo>
+        <mi>ξ<!-- ξ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle i+\xi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6d76d400ca87c6596bcf256beb98d3e88268a113" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:4.673ex; height:2.509ex;" alt="{\displaystyle i+\xi }"/></span> (mod 5) where <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt7" id="mwIQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\xi"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \xi }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>ξ<!-- ξ --></mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \xi }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e0b461aaf61091abd5d2c808931c48b8ff9647db" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:1.03ex; height:2.509ex;" alt="{\displaystyle \xi }"/></span> represents the noise on the channel and may be any <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Real_number" title="Real number" id="mwIg">real number</a> in the open interval from <span typeof="mw:Entity" id="mwIw">−</span>1 to 1. Thus, if the recipient receives a value such as 3.6, it is impossible to determine whether it was originally transmitted as a<span typeof="mw:Entity" id="mwJA"> </span>3 or as a<span typeof="mw:Entity" id="mwJQ"> </span>4; the two values 3 and 4 can be confused with each other. This situation can be modeled by a graph, a <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Cycle_graph" title="Cycle graph" id="mwJg">cycle</a> <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt8" id="mwJw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"C_5"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle C_{5}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C_{5}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6d93b495ef896a93e1183aa55f53d32daa538738" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.716ex; height:2.509ex;" alt="{\displaystyle C_{5}}"/></span> of length<span typeof="mw:Entity" id="mwKA"> </span>5, in which the vertices correspond to the five values that can be transmitted and the edges of the graph represent values that can be confused with each other.</p>
+
+<p id="mwKQ">For this example, it is possible to choose two values that can be transmitted in each time step without ambiguity, for instance, the values 1 and 3. These values are far enough apart that they can't be confused with each other: when the recipient receives a value <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt9" id="mwKg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"x"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="{\displaystyle x}"/></span> between 0 and 2, it can deduce that the value that was sent must have been 1, and when the recipient receives a value <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt10" id="mwKw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"x"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="{\displaystyle x}"/></span> in between 2 and 4, it can deduce that the value that was sent must have been 3. In this way, in <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt11" id="mwLA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="{\displaystyle n}"/></span> steps of communication, the sender can communicate up to <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt12" id="mwLQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"2^n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle 2^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8226f30650ee4fe4e640c6d2798127e80e9c160d" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.381ex; height:2.343ex;" alt="{\displaystyle 2^{n}}"/></span> different messages. Two is the maximum number of values that the recipient can distinguish from each other: every subset of three or more of the values 0, 1, 2, 3, 4 includes at least one pair that can be confused with each other. Even though the channel has five values that can be sent per time step, effectively only two of them can be used with this coding scheme.</p>
+
+<p id="mwLg">However, more complicated coding schemes allow a greater amount of information to be sent across the same channel, by using codewords of length greater than one. For instance, suppose that in two consecutive steps the sender transmits one of the five code words "11", "23", "35", "54", or "42". (Here, the quotation marks indicate that these words should be interpreted as <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/String_(computer_science)" title="String (computer science)" id="mwLw">strings</a> of symbols, not as decimal numbers.) Each pair of these code words includes at least one position where its values differ by two or more modulo<span typeof="mw:Entity" id="mwMA"> </span>5; for instance, "11" and "23" differ by two in their second position, while "23" and "42" differ by two in their first position. Therefore, a recipient of one of these code words will always be able to determine unambiguously which one was sent: no two of these code words can be confused with each other. By using this method, in <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt13" id="mwMQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="{\displaystyle n}"/></span> steps of communication, the sender can communicate up to <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt14" id="mwMg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"5^{n/2}"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle 5^{n/2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>5</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 5^{n/2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4ac4a216bfe73d477e512f85fceb1c46c2595336" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:4.025ex; height:2.843ex;" alt="{\displaystyle 5^{n/2}}"/></span> messages, significantly more than the <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt15" id="mwMw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"2^n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle 2^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle 2^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/8226f30650ee4fe4e640c6d2798127e80e9c160d" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.381ex; height:2.343ex;" alt="{\displaystyle 2^{n}}"/></span> that could be transmitted with the simpler one-digit code. The effective number of values that can be transmitted per unit time step is <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt16" id="mwNA" data-mw='{"name":"math","attrs":{"display":"inline"},"body":{"extsrc":"(5^{n/2})^{1/n}=\\sqrt5"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\textstyle (5^{n/2})^{1/n}={\sqrt {5}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="false" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msup>
+          <mn>5</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mn>5</mn>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\textstyle (5^{n/2})^{1/n}={\sqrt {5}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e83204df6366422169f0ec4c35997e2eec95351d" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:14.893ex; height:3.176ex;" alt="{\textstyle (5^{n/2})^{1/n}={\sqrt {5}}}"/></span>.
+In graph-theoretic terms, this means that the Shannon capacity of the 5-cycle is at least <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt20" id="mwNQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\sqrt5"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle {\sqrt {5}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mn>5</mn>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {5}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b78ccdb7e18e02d4fc567c66aac99bf524acb5f" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:3.098ex; height:2.843ex;" alt="{\displaystyle {\sqrt {5}}}"/></span>. As <a rel="mw:WikiLink" href="#CITEREFLovász1979" about="#mwt17" typeof="mw:Transclusion" class="mw-selflink-fragment" id="mwNg" data-mw='{"parts":[{"template":{"target":{"wt":"harvtxt","href":"./Template:Harvtxt"},"params":{"1":{"wt":"Lovász"},"2":{"wt":"1979"}},"i":0}}]}'>Lovász (1979)</a> showed, this bound is tight: it is not possible to find a more complicated system of code words that allows even more different messages to be sent in the same amount of time, so the Shannon capacity of the 5-cycle is <span class="nowrap" about="#mwt18" typeof="mw:Transclusion" id="mwNw" data-mw='{"parts":[{"template":{"target":{"wt":"nowrap","href":"./Template:Nowrap"},"params":{"1":{"wt":"exactly &lt;math>\\sqrt5&lt;/math>."}},"i":0}}]}'>exactly <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt19" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\sqrt5"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle {\sqrt {5}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mn>5</mn>
+          </msqrt>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\sqrt {5}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b78ccdb7e18e02d4fc567c66aac99bf524acb5f" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:3.098ex; height:2.843ex;" alt="{\displaystyle {\sqrt {5}}}"/></span>.</span></p>
+
+</section><section data-mw-section-id="2" id="mwOA" aria-labelledby="Relation_to_independent_sets"><div class="mw-heading mw-heading2"><h2 id="Relation_to_independent_sets">Relation to independent sets</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;action=edit&amp;section=2" title="Edit section: Relation to independent sets"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwOQ">If a graph <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt21" id="mwOg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"G"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle G}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>G</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle G}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5f3c8921a3b352de45446a6789b104458c9f90b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.827ex; height:2.176ex;" alt="{\displaystyle G}"/></span> represents a set of symbols and the pairs of symbols that can be confused with each other, then a subset <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt22" id="mwOw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"S"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle S}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4611d85173cd3b508e67077d4a1252c9c05abca2" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.499ex; height:2.176ex;" alt="{\displaystyle S}"/></span> of symbols avoids all confusable pairs if and only if <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt23" id="mwPA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"S"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle S}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>S</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle S}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4611d85173cd3b508e67077d4a1252c9c05abca2" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.499ex; height:2.176ex;" alt="{\displaystyle S}"/></span> is an <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Independent_set_(graph_theory)" title="Independent set (graph theory)" id="mwPQ">independent set</a> in the graph, a subset of vertices that does not include both endpoints of any edge. The maximum possible size of a subset of the symbols that can all be distinguished from each other is the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Independence_number" title="Independence number" class="mw-redirect" id="mwPg">independence number</a> <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt24" id="mwPw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\alpha(G)"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \alpha (G)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>α<!-- α --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>G</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha (G)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/25ce36129a5579a8d511f2f27096a6ff4fb6d6fe" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:5.124ex; height:2.843ex;" alt="{\displaystyle \alpha (G)}"/></span> of the graph, the size of its <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Maximum_independent_set" title="Maximum independent set" class="mw-redirect" id="mwQA">maximum independent set</a>. For instance, '<span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt25" id="mwQQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\alpha(C_5)=2"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \alpha (C_{5})=2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>α<!-- α --></mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha (C_{5})=2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e5a27c3b2be9c9273884a2e9531ba3609e1143c2" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:10.274ex; height:2.843ex;" alt="{\displaystyle \alpha (C_{5})=2}"/></span>: the 5-cycle has independent sets of two vertices, but not larger.</p>
+
+<p id="mwQg">For codewords of longer lengths, one can use independent sets in larger graphs to describe the sets of codewords that can be transmitted without confusion. For instance, for the same example of five symbols whose confusion graph is <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt26" id="mwQw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"C_5"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle C_{5}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>5</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C_{5}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6d93b495ef896a93e1183aa55f53d32daa538738" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.716ex; height:2.509ex;" alt="{\displaystyle C_{5}}"/></span>, there are 25 strings of length two that can be used in a length-2 coding scheme. These strings may be represented by the vertices of a graph with 25 vertices. In this graph, each vertex has eight neighbors, the eight strings that it can be confused with. A subset of length-two strings forms a code with no possible confusion if and only if it corresponds to an independent set of this graph. The set of code words {"11", "23", "35", "54", "42"} forms one of these independent sets, of maximum size.</p>
+
+<p id="mwRA">If <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt27" id="mwRQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"G"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle G}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>G</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle G}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5f3c8921a3b352de45446a6789b104458c9f90b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.827ex; height:2.176ex;" alt="{\displaystyle G}"/></span> is a graph representing the signals and confusable pairs of a channel, then the graph representing the length-two codewords and their confusable pairs is <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt28" id="mwRg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"G \\boxtimes G"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle G\boxtimes G}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>G</mi>
+        <mo>⊠<!-- ⊠ --></mo>
+        <mi>G</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle G\boxtimes G}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/1d5be8bcbf86392f3ad6add857fa1224b1489f5a" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:6.494ex; height:2.176ex;" alt="{\displaystyle G\boxtimes G}"/></span>, where the symbol <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt29" id="mwRw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\boxtimes"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \boxtimes }">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo>⊠<!-- ⊠ --></mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \boxtimes }</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0cfc27ef694886c0b78697df1cd69558cdf53eff" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.808ex; height:2.176ex;" alt="{\displaystyle \boxtimes }"/></span> represents the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Strong_product_of_graphs" title="Strong product of graphs" id="mwSA">strong product of graphs</a>. This is a graph that has a vertex for each pair <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt30" id="mwSQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"(u,v)"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle (u,v)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <mi>u</mi>
+        <mo>,</mo>
+        <mi>v</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (u,v)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eadf12294edccd7a29c99cfc1765e4a14bf47e58" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:5.301ex; height:2.843ex;" alt="{\displaystyle (u,v)}"/></span> of a vertex in the first argument of the product and a vertex in the second argument of the product. Two distinct pairs <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt31" id="mwSg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"(u_1,v_1)"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle (u_{1},v_{1})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (u_{1},v_{1})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fa499a535728ffcc85e77bf25f6b0e8c10501643" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:7.409ex; height:2.843ex;" alt="{\displaystyle (u_{1},v_{1})}"/></span> and <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt32" id="mwSw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"(u_2,v_2)"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle (u_{2},v_{2})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle (u_{2},v_{2})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e15b75c1deec0d30a8be8bb57e386e8dd113b886" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:7.409ex; height:2.843ex;" alt="{\displaystyle (u_{2},v_{2})}"/></span> are adjacent in the strong product if and only if <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt33" id="mwTA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"u_1"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle u_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/69b0c788a124a32684f109737f7cfab7611d6a58" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.384ex; height:2.009ex;" alt="{\displaystyle u_{1}}"/></span> and <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt34" id="mwTQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"u_2"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle u_{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u_{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b2b5855eefa1e5c167320e2fb16e432c4931b166" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.384ex; height:2.009ex;" alt="{\displaystyle u_{2}}"/></span> are identical or adjacent, and <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt35" id="mwTg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"v_1"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle v_{1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/98d33f5d498d528bd8c10edc8ac8c34347f32b3a" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.182ex; height:2.009ex;" alt="{\displaystyle v_{1}}"/></span> and <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt36" id="mwTw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"v_2"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle v_{2}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>v</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle v_{2}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/eb04c423c2cb809c30cac725befa14ffbf4c85f3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.182ex; height:2.009ex;" alt="{\displaystyle v_{2}}"/></span> are identical or adjacent. More generally, the codewords of length<span typeof="mw:Entity" id="mwUA"> </span><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt37" id="mwUQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"k"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3c9a2c7b599b37105512c5d570edc034056dd40" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.211ex; height:2.176ex;" alt="{\displaystyle k}"/></span> can be represented by the graph <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt38" id="mwUg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"G_k"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle G_{k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>G</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle G_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4d8034a8094aa6549db10b01a1e8f73bb57ac39f" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.915ex; height:2.509ex;" alt="{\displaystyle G_{k}}"/></span>, the <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt39" id="mwUw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"k"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3c9a2c7b599b37105512c5d570edc034056dd40" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.211ex; height:2.176ex;" alt="{\displaystyle k}"/></span>-fold strong product of <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt40" id="mwVA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"G"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle G}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>G</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle G}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5f3c8921a3b352de45446a6789b104458c9f90b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.827ex; height:2.176ex;" alt="{\displaystyle G}"/></span> with itself, and the maximum number of codewords of this length that can be transmitted without confusion is given by the independence number <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt41" id="mwVQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\alpha(G_k)"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \alpha (G_{k})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>α<!-- α --></mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>G</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha (G_{k})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/75cb0410eb740af7791d8c847d00cca0416673fa" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:6.212ex; height:2.843ex;" alt="{\displaystyle \alpha (G_{k})}"/></span>. The effective number of signals transmitted per unit time step is the <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt42" id="mwVg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"k"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3c9a2c7b599b37105512c5d570edc034056dd40" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.211ex; height:2.176ex;" alt="{\displaystyle k}"/></span>th root of this number, <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt43" id="mwVw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\alpha(G_k)^{1/k}"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \alpha (G_{k})^{1/k}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>α<!-- α --></mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>G</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mo stretchy="false">)</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo>/</mo>
+            </mrow>
+            <mi>k</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \alpha (G_{k})^{1/k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0b28f5daf0587c7b113fa86b924d0b648b9e9748" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:8.945ex; height:3.343ex;" alt="{\displaystyle \alpha (G_{k})^{1/k}}"/></span>.</p>
+
+<p id="mwWA">Using these concepts, the Shannon capacity may be defined as</p>
+<dl id="mwWQ"><dd id="mwWg"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt44" id="mwWw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\n \\Theta(G)\n = \\sup_k \\sqrt[k]{\\alpha(G_k)}\n = \\lim_{k \\rightarrow \\infty} \\sqrt[k]{\\alpha(G_k)},\n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \Theta (G)=\sup _{k}{\sqrt[{k}]{\alpha (G_{k})}}=\lim _{k\rightarrow \infty }{\sqrt[{k}]{\alpha (G_{k})}},}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Θ<!-- Θ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>G</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">sup</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mroot>
+            <mrow>
+              <mi>α<!-- α --></mi>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>G</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>k</mi>
+            </mrow>
+          </mroot>
+        </mrow>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">lim</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+            <mo stretchy="false">→<!-- → --></mo>
+            <mi mathvariant="normal">∞<!-- ∞ --></mi>
+          </mrow>
+        </munder>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mroot>
+            <mrow>
+              <mi>α<!-- α --></mi>
+              <mo stretchy="false">(</mo>
+              <msub>
+                <mi>G</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msub>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mi>k</mi>
+            </mrow>
+          </mroot>
+        </mrow>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Theta (G)=\sup _{k}{\sqrt[{k}]{\alpha (G_{k})}}=\lim _{k\rightarrow \infty }{\sqrt[{k}]{\alpha (G_{k})}},}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6f5dad78ffbdb851cfd76e652c4639be57cf9e63" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.505ex; width:37.778ex; height:5.509ex;" alt="{\displaystyle \Theta (G)=\sup _{k}{\sqrt[{k}]{\alpha (G_{k})}}=\lim _{k\rightarrow \infty }{\sqrt[{k}]{\alpha (G_{k})}},}"/></span></dd></dl>
+<p id="mwXA">the limit (as <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt45" id="mwXQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"k"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle k}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>k</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle k}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c3c9a2c7b599b37105512c5d570edc034056dd40" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.211ex; height:2.176ex;" alt="{\displaystyle k}"/></span> becomes arbitrarily large) of the effective number of signals per time step of arbitrarily long confusion-free codes.</p>
+
+</section><section data-mw-section-id="3" id="mwXg" aria-labelledby="Computational_complexity"><div class="mw-heading mw-heading2"><h2 id="Computational_complexity">Computational complexity</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;action=edit&amp;section=3" title="Edit section: Computational complexity"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<span class="mw-empty-elt" about="#mwt46" typeof="mw:Transclusion" id="mwXw" data-mw='{"parts":[{"template":{"target":{"wt":"unsolved","href":"./Template:Unsolved"},"params":{"1":{"wt":"mathematics"},"2":{"wt":"What is the Shannon capacity of a 7-cycle?"}},"i":0}}]}'><style data-mw-deduplicate="TemplateStyles:r1379568824" typeof="mw:Extension/templatestyles" about="#mwt47" data-mw='{"name":"templatestyles","attrs":{"src":"Unsolved/styles.css"}}'>.mw-parser-output .unsolved{margin:0.5em 0 1em;border:1px solid var(--border-color-base,#a2a9b1);padding:0.35em 0.35em 0.35em 2.2em;background-color:var(--background-color-interactive-subtle);background-image:url("https://upload.wikimedia.org/wikipedia/commons/2/26/Question%2C_Web_Fundamentals.svg");background-position:top 50%left 0.35em;background-size:1.5em;background-repeat:no-repeat}@media(min-width:640px){.mw-parser-output .unsolved{clear:right;float:right;max-width:25%;margin-left:1em}}.mw-parser-output .unsolved-label{font-weight:bold}.mw-parser-output .unsolved-body{margin:0.35em;font-style:italic}.mw-parser-output .unsolved-more{font-size:85%}</style></span><div role="note" aria-labelledby="unsolved-label-mathematics" class="unsolved" about="#mwt46" id="mwYA">
+<div><span class="unsolved-label" id="unsolved-label-mathematics">Unsolved problem in mathematics</span></div>
+<div class="unsolved-body">What is the Shannon capacity of a 7-cycle?</div>
+
+<div class="unsolved-more"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/List_of_unsolved_problems_in_mathematics" title="List of unsolved problems in mathematics">More unsolved problems in mathematics</a></div>
+</div>
+<p id="mwYQ">The <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Computational_complexity_theory" title="Computational complexity theory" id="mwYg">computational complexity</a> of the Shannon capacity is unknown, and even the value of the Shannon capacity for certain small graphs such as <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt48" id="mwYw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"C_7"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle C_{7}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>C</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>7</mn>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C_{7}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b27bdfd1ad862ca5afbce50e9441bfa87d40e514" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:2.716ex; height:2.509ex;" alt="{\displaystyle C_{7}}"/></span> (a <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Cycle_graph" title="Cycle graph" id="mwZA">cycle graph</a> of seven vertices) remains unknown.<sup about="#mwt51" class="mw-ref reference" id="cite_ref-2" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-2"}}'><a href="#cite_note-2" id="mwZQ"><span class="mw-reflink-text" id="mwZg"><span class="cite-bracket" id="mwZw">[</span>2<span class="cite-bracket" id="mwaA">]</span></span></a></sup><sup about="#mwt54" class="mw-ref reference" id="cite_ref-3" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-3"}}'><a href="#cite_note-3" id="mwaQ"><span class="mw-reflink-text" id="mwag"><span class="cite-bracket" id="mwaw">[</span>3<span class="cite-bracket" id="mwbA">]</span></span></a></sup></p>
+
+<p id="mwbQ">A natural approach to this problem would be to compute a finite number of powers of the given graph <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt55" id="mwbg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"G"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle G}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>G</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle G}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5f3c8921a3b352de45446a6789b104458c9f90b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.827ex; height:2.176ex;" alt="{\displaystyle G}"/></span> , find their independence numbers, and infer from these numbers some information about the limiting behavior of the sequence from which the Shannon capacity is defined. However (even ignoring the computational difficulty of computing the independence numbers of these graphs, an <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/NP-hard" title="NP-hard" class="mw-redirect" id="mwbw">NP-hard</a> problem) the unpredictable behavior of the sequence of independence numbers of powers of <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt56" id="mwcA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"G"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle G}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>G</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle G}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f5f3c8921a3b352de45446a6789b104458c9f90b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.827ex; height:2.176ex;" alt="{\displaystyle G}"/></span> implies that this approach cannot be used to accurately approximate the Shannon capacity.<sup about="#mwt59" class="mw-ref reference" id="cite_ref-4" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-4"}}'><a href="#cite_note-4" id="mwcQ"><span class="mw-reflink-text" id="mwcg"><span class="cite-bracket" id="mwcw">[</span>4<span class="cite-bracket" id="mwdA">]</span></span></a></sup></p>
+
+</section><section data-mw-section-id="4" id="mwdQ" aria-labelledby="Upper_bounds"><div class="mw-heading mw-heading2"><h2 id="Upper_bounds">Upper bounds</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;action=edit&amp;section=4" title="Edit section: Upper bounds"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwdg">In part because the Shannon capacity is difficult to compute, researchers have looked for other graph invariants that are easy to compute and that provide bounds on the Shannon capacity.</p>
+
+<section data-mw-section-id="5" id="mwdw" aria-labelledby="Lovász_number"><div class="mw-heading mw-heading3"><h3 id="Lovász_number"><span id="Lov.C3.A1sz_number" typeof="mw:FallbackId"></span>Lovász number</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;action=edit&amp;section=5" title="Edit section: Lovász number"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mweA">The <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Lovász_number" title="Lovász number" id="mweQ">Lovász number</a> <span about="#mwt60" typeof="mw:Transclusion" id="mweg" data-mw='{"parts":[{"template":{"target":{"wt":"not a typo","href":"./Template:Not_a_typo"},"params":{"1":{"wt":"ϑ"}},"i":0}}]}'>ϑ</span>(<i id="mwew">G</i>) is a different graph invariant, that can be computed numerically to high accuracy in <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Polynomial_time" title="Polynomial time" class="mw-redirect" id="mwfA">polynomial time</a> by an <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Algorithm" title="Algorithm" id="mwfQ">algorithm</a> based on the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Ellipsoid_method" title="Ellipsoid method" id="mwfg">ellipsoid method</a>. The Shannon capacity of a graph <i id="mwfw">G</i> is bounded from below by α(<i id="mwgA">G</i>), and from above by <span about="#mwt61" typeof="mw:Transclusion" id="mwgQ" data-mw='{"parts":[{"template":{"target":{"wt":"not a typo","href":"./Template:Not_a_typo"},"params":{"1":{"wt":"ϑ"}},"i":0}}]}'>ϑ</span>(<i id="mwgg">G</i>).<sup about="#mwt66" class="mw-ref reference" id="cite_ref-l79_5-0" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"l79"},"body":{"id":"mw-reference-text-cite_note-l79-5"}}'><a href="#cite_note-l79-5" id="mwgw"><span class="mw-reflink-text" id="mwhA"><span class="cite-bracket" id="mwhQ">[</span>5<span class="cite-bracket" id="mwhg">]</span></span></a></sup> In some cases, <span about="#mwt62" typeof="mw:Transclusion" id="mwhw" data-mw='{"parts":[{"template":{"target":{"wt":"not a typo","href":"./Template:Not_a_typo"},"params":{"1":{"wt":"ϑ"}},"i":0}}]}'>ϑ</span>(<i id="mwiA">G</i>) and the Shannon capacity coincide; for instance, for the graph of a <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Pentagon" title="Pentagon" id="mwiQ">pentagon</a>, both are equal to <span class="nowrap" about="#mwt63" typeof="mw:Transclusion" id="mwig" data-mw='{"parts":[{"template":{"target":{"wt":"sqrt","href":"./Template:Sqrt"},"params":{"1":{"wt":"5"}},"i":0}}]}'><span typeof="mw:Entity">√</span><span style="border-top:1px solid; padding:0 0.1em;">5</span></span>. However, there exist other graphs for which the Shannon capacity and the Lovász number differ.<sup about="#mwt69" class="mw-ref reference" id="cite_ref-h79_6-0" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"h79"},"body":{"id":"mw-reference-text-cite_note-h79-6"}}'><a href="#cite_note-h79-6" id="mwiw"><span class="mw-reflink-text" id="mwjA"><span class="cite-bracket" id="mwjQ">[</span>6<span class="cite-bracket" id="mwjg">]</span></span></a></sup></p>
+
+</section><section data-mw-section-id="6" id="mwjw" aria-labelledby="Haemers'_bound"><div class="mw-heading mw-heading3"><h3 id="Haemers'_bound"><span id="Haemers.27_bound" typeof="mw:FallbackId"></span>Haemers' bound</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;action=edit&amp;section=6" title="Edit section: Haemers' bound"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwkA">Haemers provided another upper bound on the Shannon capacity, which is sometimes better than Lovász bound:<sup about="#mwt72" class="mw-ref reference" id="cite_ref-7" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-7"}}'><a href="#cite_note-7" id="mwkQ"><span class="mw-reflink-text" id="mwkg"><span class="cite-bracket" id="mwkw">[</span>7<span class="cite-bracket" id="mwlA">]</span></span></a></sup></p>
+<dl id="mwlQ"><dd id="mwlg"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt73" id="mwlw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\n \\Theta(G) \\leq R(G) = \\min_{B} \\operatorname{rank}(B),\n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \Theta (G)\leq R(G)=\min _{B}\operatorname {rank} (B),}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi mathvariant="normal">Θ<!-- Θ --></mi>
+        <mo stretchy="false">(</mo>
+        <mi>G</mi>
+        <mo stretchy="false">)</mo>
+        <mo>≤<!-- ≤ --></mo>
+        <mi>R</mi>
+        <mo stretchy="false">(</mo>
+        <mi>G</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <munder>
+          <mo movablelimits="true" form="prefix">min</mo>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>B</mi>
+          </mrow>
+        </munder>
+        <mi>rank</mi>
+        <mo>⁡<!-- ⁡ --></mo>
+        <mo stretchy="false">(</mo>
+        <mi>B</mi>
+        <mo stretchy="false">)</mo>
+        <mo>,</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \Theta (G)\leq R(G)=\min _{B}\operatorname {rank} (B),}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0d5ab0cc0cfd630a50dabbaa3fbedaedb347191b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.005ex; width:30.118ex; height:4.009ex;" alt="{\displaystyle \Theta (G)\leq R(G)=\min _{B}\operatorname {rank} (B),}"/></span></dd></dl>
+<p id="mwmA">where <i id="mwmQ">B</i> is an <i id="mwmg">n</i><span typeof="mw:Entity" id="mwmw"> </span>×<span typeof="mw:Entity" id="mwnA"> </span><i id="mwnQ">n</i> matrix over some <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Field_(mathematics)" title="Field (mathematics)" id="mwng">field</a>, such that <i id="mwnw">b<sub id="mwoA">ii</sub></i><span typeof="mw:Entity" id="mwoQ"> </span>≠<span typeof="mw:Entity" id="mwog"> </span>0 and <i id="mwow">b<sub id="mwpA">ij</sub></i><span typeof="mw:Entity" id="mwpQ"> </span>=<span typeof="mw:Entity" id="mwpg"> </span>0 if vertices <i id="mwpw">i</i> and <i id="mwqA">j</i> are not adjacent.</p>
+
+</section></section><section data-mw-section-id="7" id="mwqQ" aria-labelledby="References"><div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Shannon_capacity_of_a_graph&amp;action=edit&amp;section=7" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<span class="mw-empty-elt" about="#mwt74" typeof="mw:Transclusion" id="mwqg" data-mw='{"parts":[{"template":{"target":{"wt":"reflist","href":"./Template:Reflist"},"params":{},"i":0}}]}'><style data-mw-deduplicate="TemplateStyles:r1327269900" typeof="mw:Extension/templatestyles" about="#mwt75" data-mw='{"name":"templatestyles","attrs":{"src":"Reflist/styles.css"}}'>.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}body.skin-vector-2022 .mw-parser-output .reflist-columns-2{column-width:27em}body.skin-vector-2022 .mw-parser-output .reflist-columns-3{column-width:22.5em}.mw-parser-output .references[data-mw-group=upper-alpha]{list-style-type:upper-alpha}.mw-parser-output .references[data-mw-group=upper-roman]{list-style-type:upper-roman}.mw-parser-output .references[data-mw-group=lower-alpha]{list-style-type:lower-alpha}.mw-parser-output .references[data-mw-group=lower-greek]{list-style-type:lower-greek}.mw-parser-output .references[data-mw-group=lower-roman]{list-style-type:lower-roman}.mw-parser-output div.reflist-liststyle-upper-alpha .references{list-style-type:upper-alpha}.mw-parser-output div.reflist-liststyle-upper-roman .references{list-style-type:upper-roman}.mw-parser-output div.reflist-liststyle-lower-alpha .references{list-style-type:lower-alpha}.mw-parser-output div.reflist-liststyle-lower-greek .references{list-style-type:lower-greek}.mw-parser-output div.reflist-liststyle-lower-roman .references{list-style-type:lower-roman}</style></span><div about="#mwt74" id="mwqw">
+<div class="mw-references-wrap" typeof="mw:Extension/references" about="#mwt76" id="mwrA" data-mw='{"name":"references","attrs":{"group":"","responsive":"1"},"body":{"extsrc":""}}'><ol class="mw-references references" id="mwrQ"><li about="#cite_note-1" id="cite_note-1" data-mw-footnote-number="1"><span class="mw-cite-backlink" id="mwrg"><a href="#cite_ref-1" rel="mw:referencedBy" id="mwrw"><span class="mw-linkback-text" id="mwsA">↑</span></a></span> <span id="mw-reference-text-cite_note-1" class="mw-reference-text reference-text"><style data-mw-deduplicate="TemplateStyles:r1333433106" typeof="mw:Extension/templatestyles mw:Transclusion" about="#mwt2" id="mwsQ" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite book ","href":"./Template:Cite_book"},"params":{"title":{"wt":"Introduction to Combinatorics"},"volume":{"wt":"78"},"series":{"wt":"Discrete Mathematics and Optimization"},"first":{"wt":"Martin J."},"last":{"wt":"Erickson"},"edition":{"wt":"2nd"},"publisher":{"wt":"John Wiley &amp; Sons"},"year":{"wt":"2014"},"page":{"wt":"134"},"isbn":{"wt":"978-1118640210"}},"i":0}}]}'>.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite id="CITEREFErickson2014" class="citation book cs1" about="#mwt2">Erickson, Martin J. (2014). <i id="mwsg">Introduction to Combinatorics</i>. Discrete Mathematics and Optimization. Vol.<span typeof="mw:Entity" id="mwsw"> </span>78 (2nd<span typeof="mw:Entity" id="mwtA"> </span>ed.). John Wiley &amp; Sons. p.<span typeof="mw:Entity" id="mwtQ"> </span>134. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISBN_(identifier)" title="ISBN (identifier)" class="mw-redirect" id="mwtg">ISBN</a><span typeof="mw:Entity" id="mwtw"> </span><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Special:BookSources/978-1118640210" title="Special:BookSources/978-1118640210" id="mwuA"><bdi id="mwuQ">978-1118640210</bdi></a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Introduction+to+Combinatorics&amp;rft.series=Discrete+Mathematics+and+Optimization&amp;rft.pages=134&amp;rft.edition=2nd&amp;rft.pub=John+Wiley+%26+Sons&amp;rft.date=2014&amp;rft.isbn=978-1118640210&amp;rft.aulast=Erickson&amp;rft.aufirst=Martin+J.&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShannon+capacity+of+a+graph" class="Z3988" about="#mwt2" id="mwug"></span></span></li>
+<li about="#cite_note-2" id="cite_note-2" data-mw-footnote-number="2"><span class="mw-cite-backlink" id="mwuw"><a href="#cite_ref-2" rel="mw:referencedBy" id="mwvA"><span class="mw-linkback-text" id="mwvQ">↑</span></a></span> <span id="mw-reference-text-cite_note-2" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt49" typeof="mw:Extension/templatestyles mw:Transclusion" id="mwvg" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"citation","href":"./Template:Citation"},"params":{"title":{"wt":"Rough problems"},"work":{"wt":"Gödel&apos;s Lost Letter and P=NP"},"first":{"wt":"Kenneth W."},"last":{"wt":"Regan"},"date":{"wt":"July 10, 2013"},"url":{"wt":"http://rjlipton.wordpress.com/2013/07/10/rough-problems/"}},"i":0}}]}'/><cite id="CITEREFRegan2013" class="citation cs2" about="#mwt49">Regan, Kenneth W. (July 10, 2013), <a rel="mw:ExtLink nofollow" href="http://rjlipton.wordpress.com/2013/07/10/rough-problems/" class="external text" id="mwvw">"Rough problems"</a>, <i id="mwwA">Gödel's Lost Letter and P=NP</i></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=G%C3%B6del%27s+Lost+Letter+and+P%3DNP&amp;rft.atitle=Rough+problems&amp;rft.date=2013-07-10&amp;rft.aulast=Regan&amp;rft.aufirst=Kenneth+W.&amp;rft_id=http%3A%2F%2Frjlipton.wordpress.com%2F2013%2F07%2F10%2Frough-problems%2F&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShannon+capacity+of+a+graph" class="Z3988" about="#mwt49" id="mwwQ"></span>.</span></li>
+<li about="#cite_note-3" id="cite_note-3" data-mw-footnote-number="3"><span class="mw-cite-backlink" id="mwwg"><a href="#cite_ref-3" rel="mw:referencedBy" id="mwww"><span class="mw-linkback-text" id="mwxA">↑</span></a></span> <span id="mw-reference-text-cite_note-3" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt52" typeof="mw:Extension/templatestyles mw:Transclusion" id="mwxQ" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"citation","href":"./Template:Citation"},"params":{"url":{"wt":"http://www.openproblemgarden.org/op/shannon_capacity_of_the_seven_cycle"},"title":{"wt":"Shannon capacity of the seven-cycle"},"work":{"wt":"Open Problem Garden"},"date":{"wt":"February 19, 2009"},"author":{"wt":"tchow"}},"i":0}}]}'/><cite id="CITEREFtchow2009" class="citation cs2" about="#mwt52">tchow (February 19, 2009), <a rel="mw:ExtLink nofollow" href="http://www.openproblemgarden.org/op/shannon_capacity_of_the_seven_cycle" class="external text" id="mwxg">"Shannon capacity of the seven-cycle"</a>, <i id="mwxw">Open Problem Garden</i></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Open+Problem+Garden&amp;rft.atitle=Shannon+capacity+of+the+seven-cycle&amp;rft.date=2009-02-19&amp;rft.au=tchow&amp;rft_id=http%3A%2F%2Fwww.openproblemgarden.org%2Fop%2Fshannon_capacity_of_the_seven_cycle&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShannon+capacity+of+a+graph" class="Z3988" about="#mwt52" id="mwyA"></span>.</span></li>
+<li about="#cite_note-4" id="cite_note-4" data-mw-footnote-number="4"><span class="mw-cite-backlink" id="mwyQ"><a href="#cite_ref-4" rel="mw:referencedBy" id="mwyg"><span class="mw-linkback-text" id="mwyw">↑</span></a></span> <span id="mw-reference-text-cite_note-4" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt57" typeof="mw:Extension/templatestyles mw:Transclusion" id="mwzA" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"citation","href":"./Template:Citation"},"params":{"title":{"wt":"The Shannon capacity of a graph and the independence numbers of its powers"},"arxiv":{"wt":"cs/0608021"},"first1":{"wt":"Noga"},"last1":{"wt":"Alon"},"author1-link":{"wt":"Noga Alon"},"first2":{"wt":"Eyal"},"last2":{"wt":"Lubetzky"},"journal":{"wt":"IEEE Transactions on Information Theory"},"volume":{"wt":"52"},"year":{"wt":"2006"},"issue":{"wt":"5"},"pages":{"wt":"2172–2176"},"doi":{"wt":"10.1109/tit.2006.872856"},"bibcode":{"wt":"2006ITIT...52.2172A"},"s2cid":{"wt":"889"}},"i":0}}]}'/><cite id="CITEREFAlonLubetzky2006" class="citation cs2" about="#mwt57"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Noga_Alon" title="Noga Alon" id="mwzQ">Alon, Noga</a>; Lubetzky, Eyal (2006), "The Shannon capacity of a graph and the independence numbers of its powers", <i id="mwzg">IEEE Transactions on Information Theory</i>, <b id="mwzw">52</b> (5): <span class="nowrap" id="mw0A">2172–</span>2176, <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ArXiv_(identifier)" title="ArXiv (identifier)" class="mw-redirect" id="mw0Q">arXiv</a>:<span class="id-lock-free" title="Freely accessible" id="mw0g"><a rel="mw:ExtLink nofollow" href="https://arxiv.org/abs/cs/0608021" class="external text" id="mw0w">cs/0608021</a></span>, <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Bibcode_(identifier)" title="Bibcode (identifier)" class="mw-redirect" id="mw1A">Bibcode</a>:<a rel="mw:ExtLink nofollow" href="https://ui.adsabs.harvard.edu/abs/2006ITIT...52.2172A" class="external text" id="mw1Q">2006ITIT...52.2172A</a>, <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mw1g">doi</a>:<a rel="mw:ExtLink nofollow" href="https://doi.org/10.1109%2Ftit.2006.872856" class="external text" id="mw1w">10.1109/tit.2006.872856</a>, <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/S2CID_(identifier)" title="S2CID (identifier)" class="mw-redirect" id="mw2A">S2CID</a><span typeof="mw:Entity" id="mw2Q"> </span><a rel="mw:ExtLink nofollow" href="https://api.semanticscholar.org/CorpusID:889" class="external text" id="mw2g">889</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+Information+Theory&amp;rft.atitle=The+Shannon+capacity+of+a+graph+and+the+independence+numbers+of+its+powers&amp;rft.volume=52&amp;rft.issue=5&amp;rft.pages=2172-2176&amp;rft.date=2006&amp;rft_id=info%3Aarxiv%2Fcs%2F0608021&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A889%23id-name%3DS2CID&amp;rft_id=info%3Adoi%2F10.1109%2Ftit.2006.872856&amp;rft_id=info%3Abibcode%2F2006ITIT...52.2172A&amp;rft.aulast=Alon&amp;rft.aufirst=Noga&amp;rft.au=Lubetzky%2C+Eyal&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShannon+capacity+of+a+graph" class="Z3988" about="#mwt57" id="mw2w"></span>.</span></li>
+<li about="#cite_note-l79-5" id="cite_note-l79-5" data-mw-footnote-number="5"><span class="mw-cite-backlink" id="mw3A"><a href="#cite_ref-l79_5-0" rel="mw:referencedBy" id="mw3Q"><span class="mw-linkback-text" id="mw3g">↑</span></a></span> <span id="mw-reference-text-cite_note-l79-5" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt64" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw3w" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"citation ","href":"./Template:Citation"},"params":{"first":{"wt":"László"},"last":{"wt":"Lovász"},"authorlink":{"wt":"László Lovász"},"title":{"wt":"On the Shannon Capacity of a Graph"},"journal":{"wt":"[[IEEE Transactions on Information Theory]]"},"volume":{"wt":"IT-25"},"issue":{"wt":"1"},"year":{"wt":"1979"},"pages":{"wt":"1–7"},"zbl":{"wt":"0395.94021"},"doi":{"wt":"10.1109/TIT.1979.1055985"},"bibcode":{"wt":"1979ITIT...25T5985L"}},"i":0}}]}'/><cite id="CITEREFLovász1979" class="citation cs2 cs1-prop-long-vol" about="#mwt64"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/László_Lovász" title="László Lovász" id="mw4A">Lovász, László</a> (1979), "On the Shannon Capacity of a Graph", <i id="mw4Q"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/IEEE_Transactions_on_Information_Theory" title="IEEE Transactions on Information Theory" id="mw4g">IEEE Transactions on Information Theory</a></i>, IT-25 (1): <span class="nowrap" id="mw4w">1–</span>7, <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Bibcode_(identifier)" title="Bibcode (identifier)" class="mw-redirect" id="mw5A">Bibcode</a>:<a rel="mw:ExtLink nofollow" href="https://ui.adsabs.harvard.edu/abs/1979ITIT...25T5985L" class="external text" id="mw5Q">1979ITIT...25T5985L</a>, <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mw5g">doi</a>:<a rel="mw:ExtLink nofollow" href="https://doi.org/10.1109%2FTIT.1979.1055985" class="external text" id="mw5w">10.1109/TIT.1979.1055985</a>, <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Zbl_(identifier)" title="Zbl (identifier)" class="mw-redirect" id="mw6A">Zbl</a><span typeof="mw:Entity" id="mw6Q"> </span><a rel="mw:ExtLink nofollow" href="https://zbmath.org/?format=complete&amp;q=an:0395.94021" class="external text" id="mw6g">0395.94021</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+Information+Theory&amp;rft.atitle=On+the+Shannon+Capacity+of+a+Graph&amp;rft.volume=IT-25&amp;rft.issue=1&amp;rft.pages=1-7&amp;rft.date=1979&amp;rft_id=https%3A%2F%2Fzbmath.org%2F%3Fformat%3Dcomplete%26q%3Dan%3A0395.94021%23id-name%3DZbl&amp;rft_id=info%3Adoi%2F10.1109%2FTIT.1979.1055985&amp;rft_id=info%3Abibcode%2F1979ITIT...25T5985L&amp;rft.aulast=Lov%C3%A1sz&amp;rft.aufirst=L%C3%A1szl%C3%B3&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShannon+capacity+of+a+graph" class="Z3988" about="#mwt64" id="mw6w"></span><link rel="mw:PageProp/Category" href="./Category:CS1:_long_volume_value" about="#mwt64" id="mw7A"/>.</span></li>
+<li about="#cite_note-h79-6" id="cite_note-h79-6" data-mw-footnote-number="6"><span class="mw-cite-backlink" id="mw7Q"><a href="#cite_ref-h79_6-0" rel="mw:referencedBy" id="mw7g"><span class="mw-linkback-text" id="mw7w">↑</span></a></span> <span id="mw-reference-text-cite_note-h79-6" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt67" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw8A" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"citation ","href":"./Template:Citation"},"params":{"first":{"wt":"Willem H."},"last":{"wt":"Haemers"},"title":{"wt":"On Some Problems of Lovász Concerning the Shannon Capacity of a Graph"},"journal":{"wt":"IEEE Transactions on Information Theory"},"volume":{"wt":"25"},"pages":{"wt":"231–232"},"year":{"wt":"1979"},"issue":{"wt":"2"},"url":{"wt":"https://www.researchgate.net/publication/3083183"},"doi":{"wt":"10.1109/tit.1979.1056027"},"zbl":{"wt":"0402.94029"}},"i":0}}]}'/><cite id="CITEREFHaemers1979" class="citation cs2" about="#mwt67">Haemers, Willem H. (1979), <a rel="mw:ExtLink nofollow" href="https://www.researchgate.net/publication/3083183" class="external text" id="mw8Q">"On Some Problems of Lovász Concerning the Shannon Capacity of a Graph"</a>, <i id="mw8g">IEEE Transactions on Information Theory</i>, <b id="mw8w">25</b> (2): <span class="nowrap" id="mw9A">231–</span>232, <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mw9Q">doi</a>:<a rel="mw:ExtLink nofollow" href="https://doi.org/10.1109%2Ftit.1979.1056027" class="external text" id="mw9g">10.1109/tit.1979.1056027</a>, <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Zbl_(identifier)" title="Zbl (identifier)" class="mw-redirect" id="mw9w">Zbl</a><span typeof="mw:Entity" id="mw-A"> </span><a rel="mw:ExtLink nofollow" href="https://zbmath.org/?format=complete&amp;q=an:0402.94029" class="external text" id="mw-Q">0402.94029</a></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=IEEE+Transactions+on+Information+Theory&amp;rft.atitle=On+Some+Problems+of+Lov%C3%A1sz+Concerning+the+Shannon+Capacity+of+a+Graph&amp;rft.volume=25&amp;rft.issue=2&amp;rft.pages=231-232&amp;rft.date=1979&amp;rft_id=https%3A%2F%2Fzbmath.org%2F%3Fformat%3Dcomplete%26q%3Dan%3A0402.94029%23id-name%3DZbl&amp;rft_id=info%3Adoi%2F10.1109%2Ftit.1979.1056027&amp;rft.aulast=Haemers&amp;rft.aufirst=Willem+H.&amp;rft_id=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F3083183&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShannon+capacity+of+a+graph" class="Z3988" about="#mwt67" id="mw-g"></span>.</span></li>
+<li about="#cite_note-7" id="cite_note-7" data-mw-footnote-number="7"><span class="mw-cite-backlink" id="mw-w"><a href="#cite_ref-7" rel="mw:referencedBy" id="mw_A"><span class="mw-linkback-text" id="mw_Q">↑</span></a></span> <span id="mw-reference-text-cite_note-7" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt70" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw_g" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"citation ","href":"./Template:Citation"},"params":{"first":{"wt":"Willem H."},"last":{"wt":"Haemers"},"title":{"wt":"An upper bound for the Shannon capacity of a graph"},"journal":{"wt":"Colloquia Mathematica Societatis János Bolyai"},"volume":{"wt":"25"},"pages":{"wt":"267–272"},"year":{"wt":"1978"},"url":{"wt":"https://pure.uvt.nl/portal/files/997000/UPPER___.PDF"},"access-date":{"wt":"2014-08-16"},"archive-date":{"wt":"2016-03-04"},"archive-url":{"wt":"https://web.archive.org/web/20160304054537/https://pure.uvt.nl/portal/files/997000/UPPER___.PDF"},"url-status":{"wt":"dead"}},"i":0}}]}'/><cite id="CITEREFHaemers1978" class="citation cs2" about="#mwt70">Haemers, Willem H. (1978), <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20160304054537/https://pure.uvt.nl/portal/files/997000/UPPER___.PDF" class="external text" id="mw_w">"An upper bound for the Shannon capacity of a graph"</a> <span class="cs1-format" id="mwAQA">(PDF)</span>, <i id="mwAQE">Colloquia Mathematica Societatis János Bolyai</i>, <b id="mwAQI">25</b>: <span class="nowrap" id="mwAQM">267–</span>272, archived from <a rel="mw:ExtLink nofollow" href="https://pure.uvt.nl/portal/files/997000/UPPER___.PDF" class="external text" id="mwAQQ">the original</a> <span class="cs1-format" id="mwAQU">(PDF)</span> on 2016-03-04<span class="reference-accessdate" id="mwAQY">, retrieved <span class="nowrap" id="mwAQc">2014-08-16</span></span></cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Colloquia+Mathematica+Societatis+J%C3%A1nos+Bolyai&amp;rft.atitle=An+upper+bound+for+the+Shannon+capacity+of+a+graph&amp;rft.volume=25&amp;rft.pages=267-272&amp;rft.date=1978&amp;rft.aulast=Haemers&amp;rft.aufirst=Willem+H.&amp;rft_id=https%3A%2F%2Fpure.uvt.nl%2Fportal%2Ffiles%2F997000%2FUPPER___.PDF&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AShannon+capacity+of+a+graph" class="Z3988" about="#mwt70" id="mwAQg"></span>. The definition here corrects a typo in this paper.</span></li>
+</ol></div></div>
+
+<link rel="mw:PageProp/Category" href="./Category:Graph_invariants" id="mwAQk"/>
+<link rel="mw:PageProp/Category" href="./Category:Information_theory" id="mwAQo"/></section>
+<!-- 
+NewPP limit report
+Parsed by mw‐api‐int.eqiad.canary‐7965475575‐qcxrq
+Cached time: 20261012011945
+Cache expiry: 2592000
+Cache expiry source: Module:Citation/CS1 (os.date(%Y))
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc, use‐parsoid]
+CPU time usage: 0.543 seconds
+Real time usage: 1.612 seconds
+Preprocessor visited node count: 756/1000000
+Revision size: 12315/2097152 bytes
+Post‐expand include size: 16241/2097152 bytes
+Template argument size: 954/2097152 bytes
+Highest expansion depth: 8/100
+Expensive parser function count: 1/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 19658/5000000 bytes
+Lua time usage: 0.116/10.000 seconds
+Lua memory usage: 7050546/52428800 bytes
+Number of Wikibase entities loaded: 0/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1451.507      1 -total
+  5.03%   72.968      1 Template:Short_description
+  4.21%   61.044      1 Template:Cite_book
+  2.91%   42.233      2 Template:Pagetype
+  2.74%   39.832      1 Template:Harvtxt
+  2.06%   29.837      6 Template:Citation
+  1.30%   18.865      3 Template:Main_other
+  1.11%   16.105      1 Template:SDcat
+  0.26%    3.803      3 Template:Not_a_typo
+  0.22%    3.136      1 Template:Reflist
+-->
+
+<!-- Render ID 0229dbd8-c5db-11f1-bb6b-1bfc60d0af69 -->
+
+<!-- Saved in parser cache with key enwiki:parsoid-pcache:39932177:|#|:idhash:useParsoid=1 and timestamp 20261012011945 and revision id 1377677202. Rendering was triggered because: MediaWiki\Rest\Handler\Helper\HtmlOutputRendererHelper::getParserOutput
+ -->
+
+<!-- Parsoid 0.24.0.0-alpha26 -->
+</div><!--
+Post‐processing cache key enwiki:postproc‐parsoid‐pcache:39932177:|#|:idhash:injectTOC=0!postproc=1!skin=vector‐2022!useParsoid=1!visibleLinks=single, generated at 20261012040211
+--><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Shannon_capacity_of_a_graph&amp;oldid=1377677202">https://en.wikipedia.org/w/index.php?title=Shannon_capacity_of_a_graph&amp;oldid=1377677202</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw-interface=""><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Graph_invariants" title="Category:Graph invariants">Graph invariants</a></li><li><a href="/wiki/Category:Information_theory" title="Category:Information theory">Information theory</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_is_different_from_Wikidata" title="Category:Short description is different from Wikidata">Short description is different from Wikidata</a></li><li><a href="/wiki/Category:CS1:_long_volume_value" title="Category:CS1: long volume value">CS1: long volume value</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			<footer id="footer" class="mw-footer" >
+				<ul id="footer-info" class="mw-portlet mw-portlet-footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 30 September 2026, at 14:25<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-renderedwith">Page was rendered with <a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid" class="extiw" title="mw:Special:MyLanguage/Parsoid">Parsoid</a>.</li>
+	<li id="footer-info-copyright">Text is available under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">Creative Commons Attribution-ShareAlike 4.0 License</a>;
+additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy" class="extiw" title="foundation:Special:MyLanguage/Policy:Privacy policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+				<ul id="footer-places" class="mw-portlet mw-portlet-footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-legal-safety-contacts"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information">Legal &amp; safety contacts</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.wikipedia.org/w/index.php?title=Shannon_capacity_of_a_graph&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+				<ul id="footer-icons" class="mw-portlet mw-portlet-footer-icons noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+			</footer>
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"   >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span lang="en" dir="ltr"><span class="mw-page-title-main">Shannon capacity of a graph</span></span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock cdx-button__icon"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language cdx-button__icon"></span>
+
+<span>1 language</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive cdx-button__icon"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.log.warn("This page is using the deprecated ResourceLoader module \"mediawiki.skinning.content.parsoid\".\n[1.47] Skins already provide these styles. Do not add this module.");mw.config.set({"wgHostname":"mw-web.codfw.canary-7797569746-2s7zj","wgBackendResponseTime":100,"wgPageParseReport":{"limitreport":{"cputime":"0.543","walltime":"1.612","ppvisitednodes":{"value":756,"limit":1000000},"revisionsize":{"value":12315,"limit":2097152},"postexpandincludesize":{"value":16241,"limit":2097152},"templateargumentsize":{"value":954,"limit":2097152},"expansiondepth":{"value":8,"limit":100},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":19658,"limit":5000000},"entityaccesscount":{"value":0,"limit":500},"timingprofile":["100.00% 1451.507      1 -total","  5.03%   72.968      1 Template:Short_description","  4.21%   61.044      1 Template:Cite_book","  2.91%   42.233      2 Template:Pagetype","  2.74%   39.832      1 Template:Harvtxt","  2.06%   29.837      6 Template:Citation","  1.30%   18.865      3 Template:Main_other","  1.11%   16.105      1 Template:SDcat","  0.26%    3.803      3 Template:Not_a_typo","  0.22%    3.136      1 Template:Reflist"]},"scribunto":{"limitreport-timeusage":{"value":"0.116","limit":"10.000"},"limitreport-memusage":{"value":7050546,"limit":52428800},"limitreport-logs":"anchor_id_list = table#1 {\n    [\"CITEREFAlonLubetzky2006\"] = 1,\n    [\"CITEREFErickson2014\"] = 1,\n    [\"CITEREFHaemers1978\"] = 1,\n    [\"CITEREFHaemers1979\"] = 1,\n    [\"CITEREFLovász1979\"] = 1,\n    [\"CITEREFRegan2013\"] = 1,\n    [\"CITEREFtchow2009\"] = 1,\n}\ntemplate_list = table#1 {\n    [\"Citation\"] = 6,\n    [\"Cite book\"] = 1,\n    [\"Harvtxt\"] = 1,\n    [\"Not a typo\"] = 3,\n    [\"Nowrap\"] = 1,\n    [\"Reflist\"] = 1,\n    [\"Short description\"] = 1,\n    [\"Sqrt\"] = 1,\n    [\"Unsolved\"] = 1,\n}\narticle_whitelist = table#1 {\n}\nciteref_patterns = table#1 {\n}\n"},"cachereport":{"origin":"mw-api-int.eqiad.canary-7965475575-qcxrq","timestamp":"20261012011945","ttl":2592000,"transientcontent":false,"expiry-source":"Module:Citation/CS1 (os.date(%Y))"}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Shannon capacity of a graph","url":"https:\/\/en.wikipedia.org\/wiki\/Shannon_capacity_of_a_graph","sameAs":"http:\/\/www.wikidata.org\/entity\/Q17105770","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q17105770","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2013-07-11T06:53:02Z","dateModified":"2026-09-30T14:25:05Z","headline":"graph property"}</script>
+</body>
+</html>

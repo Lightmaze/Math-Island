@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AlgebraicSumAndProduct}
+\pmcreated{2013-03-22 15:28:03}
+\pmmodified{2013-03-22 15:28:03}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{algebraic sum and product}
+\pmrecord{8}{37320}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R32}
+\pmclassification{msc}{11R04}
+\pmclassification{msc}{13B05}
+\pmsynonym{sum and product algebraic}{AlgebraicSumAndProduct}
+\pmrelated{FiniteExtension}
+\pmrelated{TheoryOfAlgebraicNumbers}
+\pmrelated{FieldOfAlgebraicNumbers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+Let $\alpha,\,\beta$ be two elements of an extension field of a given field $K$.\,  Both these elements are algebraic over $K$ if and only if both $\alpha\!+\!\beta$ and $\alpha\beta$ are algebraic over $K$.
+
+{\em Proof.}\, Assume first that $\alpha$ and $\beta$ are algebraic.\, Because
+$$[K(\alpha,\,\beta):K] = [K(\alpha,\,\beta):K(\alpha)]\,[K(\alpha):K]$$
+and both \PMlinkescapetext{factors} here are \PMlinkname{finite}{ExtendedRealNumbers}, then $[K(\alpha,\,\beta):K]$ is finite.\, So we have a finite field extension $K(\alpha,\,\beta)/K$ which thus is also algebraic, and therefore the elements $\alpha\!+\!\beta$ and $\alpha\beta$ of $K(\alpha,\,\beta)$ are algebraic over $K$.\, Secondly suppose that $\alpha\!+\!\beta$ and $\alpha\beta$ are algebraic over $K$.\, The elements $\alpha$ and $\beta$ are the roots of the quadratic equation\, $x^2-(\alpha\!+\!\beta)x+\alpha\beta = 0$\, (cf. properties of quadratic equation) with the coefficients in $K(\alpha\!+\!\beta,\,\alpha\beta)$.\, Thus
+$$[K(\alpha,\,\beta):K] = 
+[K(\alpha,\,\beta):K(\alpha\!+\!\beta,\,\alpha\beta)]\,
+[K(\alpha\!+\!\beta,\,\alpha\beta):K] \leqq 2 
+[K(\alpha\!+\!\beta,\,\alpha\beta):K].$$
+Since\, $[K(\alpha\!+\!\beta,\,\alpha\beta):K]$\, is finite,\, then also\, $[K(\alpha,\,\beta):K]$ is, and in the \PMlinkname{finite extension}{FiniteExtension}\, $K(\alpha,\,\beta)/K$\, the elements $\alpha$ and $\beta$ must be algebraic over $K$.
+%%%%%
+%%%%%
+\end{document}

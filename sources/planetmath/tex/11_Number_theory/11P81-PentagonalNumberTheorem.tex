@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PentagonalNumberTheorem}
+\pmcreated{2013-03-22 13:57:51}
+\pmmodified{2013-03-22 13:57:51}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{pentagonal number theorem}
+\pmrecord{7}{34733}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11P81}
+\pmclassification{msc}{14K25}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+\PMlinkescapeword{name}
+\PMlinkescapeword{theory}
+\PMlinkescapeword{connection}
+\PMlinkescapeword{maps}
+\PMlinkescapeword{fix}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Nplus}{\mathbb{N}^+}
+\newcommand{\gbar}{\overline{g}}
+\textbf{Theorem :}
+\begin{equation} \label{eq:a}
+\prod_{k=1}^{\infty}(1-x^k)=\sum_{n=-\infty}^{\infty}(-1)^nx^{n(3n+1)/2}
+\end{equation}
+where the two sides are regarded as formal power series over $\Z$.
+
+\textbf{Proof: }For $n\ge 0$, denote by $f(n)$ the coefficient of
+$x^n$ in the product on the left, i.e. write
+$$\prod_{k=1}^{\infty}(1-x^k)=\sum_{n=0}^{\infty}f(n)x^n\;.$$
+By this definition, we have for all $n$
+$$f(n)=e(n)-d(n)$$
+where $e(n)$ (resp. $d(n)$) is the number of partitions of $n$ as
+a sum of an even (resp. odd) number of distinct summands.
+To fix the notation, let $P(n)$ be set of pairs $(s,g)$ where $s$ is
+a natural number $>0$ and $g$ is a decreasing mapping
+$\{1,2,\ldots,s\}\to\Nplus$ such that $\sum_xg(x)=n$.
+The cardinal of $P(n)$ is thus $f(n)$, and $P(n)$ is the union of
+these two disjoint sets:
+$$E(n)=\{(s,g)\in P(n)\mid s\text{ is even}\},$$
+$$D(n)=\{(s,g)\in P(n)\mid s\text{ is odd}\}.$$
+
+Now on the right side of \eqref{eq:a} we have
+$$1+\sum_{n=1}^{\infty}(-1)^nx^{n(3n+1)/2}+
+     \sum_{n=1}^{\infty}(-1)^nx^{n(3n-1)/2}\;.$$
+Therefore what we want to prove is
+\begin{eqnarray}
+\label{eq:special}
+e(n)&=&d(n)+(-1)^m\qquad\text{if }n=m(3m\pm 1)/2\text{ for some }m \\
+\label{eq:normal}
+e(n)&=&d(n)\qquad\text{otherwise.}
+\end{eqnarray}
+For $m\ge 1$ we have
+\begin{eqnarray}
+\label{eq:highpent}
+m(3m+1)/2 &=& 2m+(2m-1)+\ldots+(m+1) \\
+\label{eq:lowpent}
+m(3m-1)/2 &=& (2m-1)+(2m-2)+\ldots+m
+\end{eqnarray}
+Take some $(s,g)\in P(n)$, and suppose first that $n$ is not
+of the form~\eqref{eq:highpent} nor~\eqref{eq:lowpent}.
+Since $g$ is decreasing, there is a unique integer
+$k\in[1,s]$ such that
+\begin{align*}
+g(j)&=g(1)-j+1\qquad\text{for }j\in[1,k],
+g(j)&<g(1)-j+1\qquad\text{for }j\in[k+1,s].
+\end{align*}
+If $g(s)\le k$, define $\gbar\colon [1,s-1]\to\Nplus$ by
+$$\gbar(x)=
+\begin{cases}
+g(x)+1, &\text{if }x\in[1,g(s)], \\
+g(x),   &\text{if }x\in[g(s)+1,s-1].
+\end{cases}$$
+If $g(s)>k$, define $\gbar\colon [1,s+1]\to\Nplus$ by
+$$\gbar(x)=
+\begin{cases}
+g(x)-1, &\text{if }x\in[1,k], \\
+g(x),   &\text{if }x\in[k+1,s],\\
+k,      &\text{ if }x=s+1.
+\end{cases}$$
+In both cases, $\gbar$ is decreasing and $\sum_x\gbar(x)=n$.
+The mapping $g\to\gbar$ maps takes an element having odd $s$
+to an element having even $s$, and vice versa.
+Finally, the reader can verify that $\overline{\overline{g}}=g$.
+Thus we have constructed a bijection $E(n)\to D(n)$,
+proving \eqref{eq:normal}.
+
+Now suppose that $n=m(3m+1)/2$ for some (perforce unique) $m$.
+The above construction still yields a bijection between
+$E(n)$ and $D(n)$ excluding (from one set or the other) the single
+element $(m,g_0)$:
+$$g_0(x)=2m+1-x\qquad\text{for }x\in[1,m]$$
+as in \eqref{eq:highpent}.
+Likewise if $n=m(3m-1)/2$, only this element $(m,g_1)$ is excluded:
+$$g_1(x)=2m-x\qquad\text{for }x\in[1,m]$$
+as in \eqref{eq:lowpent}.
+In both cases we deduce \eqref{eq:special}, completing the proof.
+
+\textbf{Remarks: }The name of the theorem derives from the fact that
+the exponents $n(3n+1)/2$ are the generalized pentagonal numbers.
+
+The theorem was discovered and proved by Euler around 1750.
+This was one of the first results about what are now called theta
+functions, and was also one of the earliest applications of
+the formalism of generating functions.
+
+The above proof is due to F. Franklin,
+(\emph{Comptes Rendus de l'Acad. des Sciences},
+\textbf{92}, 1881, pp. 448-450).
+%%%%%
+%%%%%
+\end{document}

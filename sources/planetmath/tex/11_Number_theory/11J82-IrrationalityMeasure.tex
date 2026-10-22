@@ -1,0 +1,119 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IrrationalityMeasure}
+\pmcreated{2013-03-22 14:12:22}
+\pmmodified{2013-03-22 14:12:22}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{irrationality measure}
+\pmrecord{8}{35639}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11J82}
+\pmrelated{DirichletsApproximationTheorem}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $\alpha\not\in\mathbb Q$. 
+Let $$M(\alpha)=\{\mu>0 \mid \exists q_0=q_0(\alpha,
+\mu)>0
+\mbox{ such that }
+\left|\alpha-\frac pq\right|>\frac1{q^\mu} \quad
+\forall p,q\in\mathbb Z, q>q_0\}.$$
+The irrationality measure of $\alpha$,
+denoted by $\mu(\alpha)$, is defined by
+$$\mu(\alpha)=\inf M(\alpha).$$
+
+If $M(\alpha)=\emptyset$, we set $\mu(\alpha)=\infty$.
+
+This definition is (loosely) a measure of the extent to which $\alpha$ can be approximated by rational numbers.  Of course, by the fact that $\mathbb{Q}$ is dense in $\mathbb{R}$, we can make arbitrarily good approximations to real numbers by rationals.  Thus this definition was made to represent a stronger statement:  it is the ability of rational numbers to approximate $\alpha$ given a fixed growth bound on the denominators of those rational numbers.
+
+By the Dirichlet's Lemma, $\mu(\alpha)\ge 2$.
+Roth \cite{Roth955,Roth955b} 
+proved in 1955 that
+$\mu(\alpha)=2$ for every algebraic real number. 
+It is well known also 
+that $\mu(e)=2$. For almost all real numbers
+the irrationality measure is 2.
+However, for special constants, only some upper bounds
+are known:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+Constant & Upper bound & Reference \\ \hline 
+$\pi$ & 8.0161 & Hata (1993) \cite{hata}\\ 
+$\pi/\sqrt3$ & 4.6016 & Hata (1993) \cite{hata}\\
+$e$ & 2 &  Davis (1978) \cite{davis978} \\
+$\pi^2$ & 5.4413 & Rhin and Viola (1996) \cite{RhinViol996}\\ 
+$\log2$ & 3.8914 & Rukhadze (1987) \cite{rukh}, Hata (1990) \cite{hata990}\\ 
+$\zeta(3)$ & 5.5139 &  Rhin and Viola (2001) \cite{RhinViol001}\\  \hline
+\end{tabular}
+\end{center}
+
+It is worth noting that the last column of the above table is simply a list of references, not a collection of discoverers.  For example that fact that the irrationality measure of $e$ is 2 was known to Euler.
+
+\begin{thebibliography}{9}
+
+\bibitem{davis978}
+Davis, C.S., \textit{`Rational approximations to $e$'},
+J. Austral. Math. Soc. Ser. A \textbf{25} (1978), 497--502.
+
+\bibitem{hata990}
+Hata, M. \textit{`Legendre Type Polynomials and Irrationality Measures'}, J. reine angew. Math. \textbf{407}, 99--125, 1990.
+
+\bibitem{hata}
+Hata, M.,
+\textit{`Rational approximations to $\pi$ and some other numbers'},
+Acta Arith. \textbf{63}, 335--349 (1993).
+
+\bibitem{RhinViol996}
+Rhin, G. and Viola, C. {\em `On a permutation group related to  
+zeta(2)}', 
+Acta Arith. {\bf 77} (1996),
+23--56.
+
+\bibitem{RhinViol001}
+Rhin, G. and Viola, C. \textit{`The group structure for $\zeta(3)$'}, 
+Acta Arith. {\bf 97} (2001), 269--293.
+
+\bibitem{Roth955}
+Roth, K.F., \textit{`Rational Approximations to Algebraic Numbers'},
+Mathematika {\bf 2} (1955), 1--20. 
+
+\bibitem{Roth955b}
+Roth, K.F. \textit{`Corrigendum to 
+'Rational Approximations to Algebraic Numbers''}
+Mathematika {\bf 2} (1955), 168. 
+
+\bibitem{rukh}
+Rukhadze, E.A. \textit{`A Lower Bound for the Rational Approximation of  by Rational Numbers'} Vestnik Moskov Univ. Ser. I Math. Mekh., \textbf{6} (1987), 25-29 and 97. 
+
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

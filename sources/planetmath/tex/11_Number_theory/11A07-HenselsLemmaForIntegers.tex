@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HenselsLemmaForIntegers}
+\pmcreated{2013-04-08 19:35:26}
+\pmmodified{2013-04-08 19:35:26}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Hensel's lemma for integers}
+\pmrecord{7}{87337}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmclassification{msc}{11A07}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%\usepackage{xypic}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $f(x)$ be a polynomial with integer coefficients, $p$ a prime number, and $n$ a positive integer.\, Assume that an integer $a$ (and naturally its whole residue class modulo $p^n$) satisfies the congruence
+\begin{align}
+f(x) \;\equiv\; 0 \;\; \pmod{p^n}.
+\end{align}
+The solution\, $x = a$\, of (1) may be refined in its residue class modulo $p^n$ to a solution\, $x = a\!+\!rp^n$\, of the congruence
+\begin{align}
+f(x) \;\equiv\; 0 \;\; \pmod{p^{n+1}}.
+\end{align}
+This refinement is unique modulo $p^{n+1}$ iff\, $f'(a) \not\equiv 0\, \pmod{p}$.\\
+
+{\it Proof.}\; Now we have\, $f(a) = sp^n$.\, We have to find an $r$ such that
+$$f(a\!+\!rp^n) \;\equiv\; 0 \;\; \pmod{p^{n+1}}.$$
+The short Taylor theorem requires that
+$$f(a\!+\!rp^n) \;\equiv\; f(a)+rf'(a)p^n \;\; 
+\pmod{r^2p^{2n}}$$
+where\, $2n \ge n\!+\!1$, whence this congruence can be simplified to
+$$sp^n+rf'(a)p^n \;\equiv\; 0 \;\; \pmod{p^{n+1}}.$$
+Thus the integer $r$ must satisfy the linear congruence
+$$s+rf'(a) \;\equiv\; 0 \;\; \pmod{p}.$$
+When\, $f'(a) \not\equiv 0$,\, this congruence has a unique solution modulo $p$ (see linear congruence); thus we have the refinement\, 
+$a' = a\!+\!rp^n$\, which is unique modulo $p^{n+1}$.
+
+When\, $f'(a) \equiv 0$\, and\, $s \not\equiv 0 \; \pmod{p}$,\, the congruence evidently is impossible.
+
+In the case\, $f'(a) \equiv s \equiv 0 \; \pmod{p}$\, the congruence (2) is identically true in the residue class of $a$ modulo $p^n$. \qquad \Box
+
+
+
+
+\begin{thebibliography}{8}
+\bibitem{hack}{\sc Peter Hackman}: {\em Elementary Number Theory}. HHH Productions, Link\"oping (2009).
+\end{thebibliography} 
+\end{document}

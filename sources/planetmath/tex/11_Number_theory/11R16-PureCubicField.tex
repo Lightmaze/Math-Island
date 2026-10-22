@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PureCubicField}
+\pmcreated{2013-03-22 16:02:19}
+\pmmodified{2013-03-22 16:02:19}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{pure cubic field}
+\pmrecord{14}{38088}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R16}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\sl pure cubic field\/} is an extension of $\mathbb{Q}$ of the form $\mathbb{Q}(\sqrt[3]{n})$ for some $n \in \mathbb{Z}$ such that $\sqrt[3]{n} \notin \mathbb{Q}$.  If $n<0$, then $\sqrt[3]{n}=\sqrt[3]{-|n|}=-\sqrt[3]{|n|}$, causing $\mathbb{Q}(\sqrt[3]{n})=\mathbb{Q}(\sqrt[3]{|n|})$.  Thus, without loss of generality, it may be assumed that $n>1$.
+
+Note that no pure cubic field is \PMlinkname{Galois}{GaloisExtension} over $\mathbb{Q}$.  For if $n \in \mathbb{Z}$ is cubefree with $|n| \neq 1$, then $x^3-n$ is its minimal polynomial over $\mathbb{Q}$.  This polynomial factors as $(x-\sqrt[3]{n})(x^2+x\sqrt[3]{n}+\sqrt[3]{n^2})$ over $K=\mathbb{Q}(\sqrt[3]{|n|})$.  The \PMlinkname{discriminant}{PolynomialDiscriminant} of $x^2+x\sqrt[3]{n}+\sqrt[3]{n^2}$ is $\left( \sqrt[3]{n} \right)^2-4(1)\left( \sqrt[3]{n^2} \right)=\sqrt[3]{n^2}-4\sqrt[3]{n^2}=-3\sqrt[3]{n^2}$.  Since the \PMlinkescapetext{discriminant} of $x^2+x\sqrt[3]{n}+\sqrt[3]{n^2}$ is negative, it does not factor in $\mathbb{R}$.  Note that $K \subseteq \mathbb{R}$.  Thus, $x^3-n$ has a \PMlinkname{root}{Root} in $K$ but does not split completely in $K$.
+
+Note also that pure cubic fields are real cubic fields with exactly one real embedding.  Thus, a possible method of determining all of the units of pure cubic fields is outlined in the entry regarding units of real cubic fields with exactly one real embedding.
+%%%%%
+%%%%%
+\end{document}

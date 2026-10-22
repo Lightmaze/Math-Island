@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EulerNumbers}
+\pmcreated{2014-12-02 17:43:40}
+\pmmodified{2014-12-02 17:43:40}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Euler numbers}
+\pmrecord{11}{42002}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B68}
+\pmrelated{GudermannianFunction}
+\pmrelated{BernoulliNumber}
+\pmrelated{InverseGudermannianFunction}
+\pmrelated{HermiteNumbers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{index}
+
+\emph{Euler numbers} $E_n$ have the generating function $\displaystyle\frac{1}{\cosh{x}}$ such that
+$$\frac{1}{\cosh{x}} \;=:\; \sum_{n=0}^\infty\frac{E_n}{n!}\,x^n.$$
+They are integers but have no \PMlinkescapetext{simple} expression for calculating them.\, Their only \PMlinkescapetext{regularities} are that the numbers with odd \PMlinkname{index}{IndexingSet} are all 0 and that 
+$$\mbox{sgn}(E_{2m}) \;=\; (-1)^m \qquad \mbox{for} \quad m = 0,\,1,\,2,\,\ldots$$
+The Euler number have intimate relation to the Bernoulli numbers.\, The first Euler numbers with even index are
+$$E_0 = 1,\quad E_2 = -1,\quad E_4 = 5,\quad E_6 = -61,
+\quad E_8 = 1385,\quad E_{10} = -50521.$$
+
+\begin{itemize}
+
+\item One can by hand determine Euler numbers by performing the 
+division of 1 by the Taylor series of hyperbolic cosine 
+(cf. Taylor series via division and Taylor series of hyperbolic 
+functions).\, 
+Since\, $\cosh{ix} = \cos{x}$,\, the division $1:\cos{x}$ 
+correspondingly gives only terms with plus sign, i.e. it shows the 
+absolute values of the Euler numbers.\\
+
+\item The Euler numbers may also be obtained by using the Euler polynomials $E_n(x)$:
+$$E_n \;=\; 2^nE_n\!\!\left(\!\frac{1}{2}\!\right)$$
+
+\item If the Euler numbers $E_k$ are denoted as symbolic powers $E^k$, then one may write the equation
+$$(E\!+\!1)^n+(E\!-\!1)^n \;=\; 0,$$
+which can be used as a recurrence relation for computing the values of the even-indexed Euler numbers.\, Cf. the Leibniz rule for derivatives of product $fg$.
+
+\end{itemize}
+
+
+
+%%%%%
+%%%%%
+\end{document}

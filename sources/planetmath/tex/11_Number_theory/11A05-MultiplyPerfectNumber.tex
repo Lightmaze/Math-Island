@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MultiplyPerfectNumber}
+\pmcreated{2013-03-22 17:47:58}
+\pmmodified{2013-03-22 17:47:58}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{multiply perfect number}
+\pmrecord{5}{40261}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmsynonym{multiperfect number}{MultiplyPerfectNumber}
+\pmsynonym{pluperfect number}{MultiplyPerfectNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em multiply perfect number} $n$ for a given $k$ is an integer such that $\sigma(n) = kn$, where $\sigma(x)$ is the sum of divisors function. $n$ is then called $k$-perfect. For example, 120 is 3-perfect since its divisors (1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 20, 24, 30, 40, 60, 120) add up to 360, which is thrice 120. Numbers that are 2-perfect are by default called perfect numbers.
+
+The 3-perfect numbers are listed in A005820 of Sloane's OEIS; A027687 lists 4-perfect numbers; etc. The first $k$-perfect number for $k > 1$ are listed in A007539.
+
+As of 2007, more than 5000 multiply perfect numbers were known. The Multiply Perfect Numbers webpage, hosted by Bielefeld University, provides an ASCII text file database giving the name of the discoverer, ``abundancy'' (the value of $k$ for the particular $n$), some of the prime factors and the value of $\log \log n$.
+
+\begin{thebibliography}{3}
+\bibitem{abeiler} A. H. Beiler, {\it Recreations in the Theory of Numbers}. New York (1964): 22.
+\bibitem{abrown} A. L. Brown, ``Multiperfect numbers'' {\it Scripta Math.} {\bf 20} (1954): 103 - 106
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheCategoryOfT0AlexandroffSpacesIsEquivalentToTheCategoryOfPosets}
+\pmcreated{2013-03-22 18:46:04}
+\pmmodified{2013-03-22 18:46:04}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{the category of T0 Alexandroff spaces is equivalent to the category of posets}
+\pmrecord{8}{41549}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $\mathcal{AT}$ be the category of all $\mathrm{T}_{0}$, Alexandroff spaces and continuous maps between them. Furthermore let $\mathcal{POSET}$ be the category of all posets and order preserving maps.
+
+\textbf{Theorem.} The categories $\mathcal{AT}$ and $\mathcal{POSET}$ are equivalent.
+
+\textit{Proof.} Consider two functors:
+$$T:\mathcal{AT}\to\mathcal{POSET};$$
+$$S:\mathcal{POSET}\to \mathcal{AT},$$
+such that $T(X,\tau)=(X,\leq)$, where $\leq$ is an induced partial order on an Alexandroff space and $T(f)=f$ for continuous map. Analogously, let $S(X,\leq)=(X,\tau)$, where $\tau$ is an induced Alexandroff topology on a poset and $S(f)=f$ for order preserving maps. One can easily show that $T$ and $S$ are well defined. Furthermore, it is easy to verify that equalities $T\circ S=1_{\mathcal{POSET}}$ and $S\circ T=1_{\mathcal{AT}}$ hold, which completes the proof. $\square$
+
+\textbf{Remark.} Of course every finite topological space is Alexandroff, thus we have very nice ,,interpretation'' of finite $\mathrm{T}_{0}$ spaces - finite posets (since functors $T$ and $S$ do not change set-theoretic properties of underlying sets such as finitness).
+%%%%%
+%%%%%
+\end{document}

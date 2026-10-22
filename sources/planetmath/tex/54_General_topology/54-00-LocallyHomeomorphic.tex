@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LocallyHomeomorphic}
+\pmcreated{2013-03-22 15:14:34}
+\pmmodified{2013-03-22 15:14:34}
+\pmowner{GrafZahl}{9234}
+\pmmodifier{GrafZahl}{9234}
+\pmtitle{locally homeomorphic}
+\pmrecord{4}{37020}
+\pmprivacy{1}
+\pmauthor{GrafZahl}{9234}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+\pmsynonym{local homeomorphy}{LocallyHomeomorphic}
+\pmrelated{LocallyEuclidean}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Prod}{\prod\limits}
+\newcommand{\Sum}{\sum\limits}
+\newcommand{\mbb}{\mathbb}
+\newcommand{\mbf}{\mathbf}
+\newcommand{\mc}{\mathcal}
+\newcommand{\ol}{\overline}
+
+% Math Operators/functions
+\DeclareMathOperator{\Frob}{Frob}
+\DeclareMathOperator{\cwe}{cwe}
+\DeclareMathOperator{\we}{we}
+\DeclareMathOperator{\wt}{wt}
+\begin{document}
+Let $X$ and $Y$ be topological spaces. Then $X$ is \emph{locally
+  homeomorphic} to $Y$, if for every $x\in X$ there is a neighbourhood
+  $U\subseteq X$ of $x$ and an \PMlinkid{open set}{380} $V\subseteq Y$, such that $U$
+  and $V$ with their respective subspace topology are homeomorphic.
+
+\subsubsection*{Examples}
+\begin{itemize}
+\item Let $X=\{1\}$ and $Y=\{2,3\}$ be discrete spaces with one resp.\
+  two elements. Since $X$ and $Y$ have different cardinalities,
+  they cannot be homeomorphic. They are, however, locally homeomorphic
+  to each other.
+\item Again, let $X=\{1\}$ be a discrete space with one element, but
+  now let $Y=\{2,3\}$ the space with topology
+  $\{\emptyset,\{2\},Y\}$. Then $X$ is still locally homeomorphic to
+  $Y$, but $Y$ is not locally homeomorphic to $X$, since the smallest
+  neighbourhood of $3$ already has more elements than $X$.
+\item Now, let $X$ be as in the previous examples, and $Y=\{2,3\}$
+  be \PMlinkid{indiscrete}{3120}. Then neither $X$ is locally homeomorphic to $Y$ nor
+  the other way round.
+\item Non-trivial examples arise with locally Euclidean spaces,
+  especially manifolds.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

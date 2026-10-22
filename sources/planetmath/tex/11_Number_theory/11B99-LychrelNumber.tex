@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LychrelNumber}
+\pmcreated{2013-03-22 12:57:09}
+\pmmodified{2013-03-22 12:57:09}
+\pmowner{akrowne}{2}
+\pmmodifier{akrowne}{2}
+\pmtitle{Lychrel number}
+\pmrecord{10}{33312}
+\pmprivacy{1}
+\pmauthor{akrowne}{2}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B99}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+%\usepackage{psfrag}
+%\usepackage{graphicx}
+%%%\usepackage{xypic}
+\begin{document}
+\PMlinkescapeword{range} \PMlinkescapeword{ranges}
+A \emph{Lychrel number} is a number which never yields a palindrome in the iterative process of adding to itself a copy of itself with digits reversed.  For example, if we start with the number 983 we get:
+
+\begin{itemize}
+\item $983+389 = 1372$
+\item $1372+2731 = 4103$
+\item $4103+3014 = 7117$
+\end{itemize}
+
+So in 3 steps we get a palindrome, hence 983 is not a Lychrel number.  
+
+In fact, it is not known if there exist any Lychrel numbers in base 10 (numbers colloquially called ``Lychrel numbers'' in base 10 are in fact just \emph{Lychrel candidates}).  However, in base 2 for example, there have been numbers proven to be Lychrel numbers\footnote{\cite{walker} informs us that Ronald Sprague has proved that the number 10110, for example, is a Lychrel number is base 2.}.  The first Lychrel candidate is 196:
+
+\begin{itemize}
+\item $196+691 = 887$
+\item $887+788 = 1675$
+\item $1675+5761 = 7436$
+\item $7436+6347 = 13783$
+\item $13783+38731 = 52514$
+\item $52514+41525 = 94039$
+\item $94039+93049 = 187088$
+\item $187088+880781 = 1067869$
+\item $\ldots$
+\end{itemize}
+
+This has been followed out to millions of digits, with no palindrome found in the sequence.
+
+The following table gives the number of Lychrel candidates found within ascending ranges:
+
+\begin{center}
+\begin{tabular}{cc}
+Range & Possible Lychrels \\
+\hline
+0 - 100 & 0 \\
+100 - 1,000 & 2 \\
+1,000 - 10,000 & 3 \\
+10,000 - 100,000 & 69 \\
+100,000 - 1,000,000 & 99 \\
+10,000,000 - 100,000,000 & 1728 \\
+100,000,000 - 1,000,000,000 & 29,813 \\
+\end{tabular}
+\end{center}
+
+\begin{thebibliography}{9}
+
+\bibitem{vl} Wade VanLandingham, \PMlinkexternal{196 And Other Lychrel Numbers}{http://www.p196.org/}
+\bibitem{walker} John Walker, \PMlinkexternal{Three Years of Computing}{http://www.fourmilab.ch/documents/threeyears/threeyears.html}
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

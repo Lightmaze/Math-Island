@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{0ne1AsRealNumbers}
+\pmcreated{2013-03-22 15:23:15}
+\pmmodified{2013-03-22 15:23:15}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{$0\ne 1$ as real numbers}
+\pmrecord{11}{37218}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C30}
+\pmclassification{msc}{26-00}
+\pmclassification{msc}{12D99}
+\pmrelated{DecimalExpansion}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem*{theorem*}{Theorem}
+\begin{document}
+\begin{theorem*}
+The real numbers 0 and 1 are distinct.
+\end{theorem*}
+
+There are four relatively common ways of constructing the real numbers.  One can start with the natural numbers and augment it by adding solutions to particular classes of equations, ultimately considering either equivalence classes of Cauchy sequences of rational numbers or Dedekind cuts of rational numbers.  One can instead define the real numbers to be the unique (up to isomorphism) ordered field with the least upper bound property.  Finally, one can characterise the real numbers as equivalence classes of possibly infinite strings over the alphabet\, $\{0,1,2,3,4,5,6,7,8,9,.\}$\, satisfying certain conditions.  We offer a proof for each characterisation.
+
+\begin{proof}[Cauchy sequences]
+This construction proceeds by starting with a standard model of Peano arithmetic, the natural numbers $\mathbb{N}$, extending to $\mathbb{Z}$ by adding additive inverses, extending to $\mathbb{Q}$ by taking the field of fractions of $\mathbb{Z}$, and finally defining $\mathbb{R}$ to be the set of equivalence classes of Cauchy sequences in $\mathbb{Q}$ for an appropriately defined equivalence relation.
+
+There is a natural embedding\, $i\!:\mathbb{N}\to\mathbb{R}$\, defined by sending a given number $x$ to the equivalence class of the constant sequence $(x,\,x,\,\dots)$.\, Since $i$ is injective and $0$ and $1$ are elements of $\mathbb{N}$, to prove that\, $0\ne 1$\, in $\mathbb{R}$ we need only show that\, $0\ne 1$\, in $\mathbb{N}$.
+
+The name $1$ is a label for the successor $S0$ of $0$ in $\mathbb{N}$.  One of the axioms of Peano arithmetic states that $0$ is not the successor of any number.  Therefore\, $0\ne S0$\, in $\mathbb{N}$, and so\, $0\ne 1$\, in $\mathbb{R}$.
+\end{proof}
+
+\begin{proof}[Dedekind cuts]
+This construction agrees with the previous one up to constructing the rationals $\mathbb{Q}$.  Then $\mathbb{R}$ is defined to be the set of all Dedekind cuts on $\mathbb{Q}$.  Letting $x_{\mathbb{Q}}$ represent the name of an element of $\mathbb{Q}$ and $x_{\mathbb{R}}$ represent the name of an element of $\mathbb{R}$, we define
+\begin{align*}
+0_{\mathbb{R}} &= \{x\in\mathbb{Q} | x < 0_{\mathbb{Q}} \} \\
+1_{\mathbb{R}} &= \{x\in\mathbb{Q} | x < 1_{\mathbb{Q}} \}
+\end{align*}
+The proof that $0_{\mathbb{Q}}\ne 1_{\mathbb{Q}}$ is similar to the previous proof.  Observe that
+$0_{\mathbb{Q}} < 1_{\mathbb{Q}}$.  Since no number is less than itself, it follows that $0_{\mathbb{Q}}\notin 0_{\mathbb{R}}$ but
+$0_{\mathbb{Q}}\in 1_{\mathbb{R}}$.  Thus these Dedekind cuts are not equal.
+\end{proof}
+
+\begin{proof}[Ordered field with least upper bound property]
+Here the fact that $0\ne 1$ is a consequence of the field axiom requiring $0$ and $1$ to be distinct.
+\end{proof}
+
+\begin{proof}[Decimal strings]
+If one defines
+\begin{align*}
+0 &= \overline{(0, 0, 0, 0, \dots)} \\
+1 &= \overline{(1, 0, 0, 0, \dots)}
+\end{align*}
+then since neither defining string ends with a tail of 9s and the strings differ in one position, their equivalence classes are distinct.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

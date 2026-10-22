@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ChebyshevFunctions}
+\pmcreated{2013-03-22 13:50:15}
+\pmmodified{2013-03-22 13:50:15}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{Chebyshev functions}
+\pmrecord{11}{34573}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmrelated{MangoldtSummatoryFunction}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\begin{document}
+There are two different functions which are collectively known as the \emph{Chebyshev functions}:
+
+\begin{align*}
+\vartheta(x)=\sum_{p\leq x}\log p.
+\end{align*}
+where the notation used indicates the summation over all positive primes $p$ less than or equal to $x$, and
+\begin{align*}
+\psi(x)=\sum_{p\leq x}k\log p,
+\end{align*}
+where the same summation notation is used and $k$ denotes the unique integer such that $p^k\leq x$ but $p^{k+1}>x$.  Heuristically, the first of these two functions \PMlinkescapetext{measures} the number of primes less than $x$ and the second does the same, but weighting each prime in accordance with their logarithmic relationship to $x$.
+
+Many innocuous results in number \PMlinkescapetext{theory} owe their proof to a relatively \PMlinkescapetext{simple} analysis of the asymptotics of one or both of these functions.  For example, the fact that for any $n$, we have
+\begin{align*}
+\prod_{p\leq n}p<4^n
+\end{align*}
+is equivalent to the statement that $\vartheta(x)<x\log 4$.
+
+A somewhat less innocuous result is that the prime number theorem (i.e., that $\pi(x)\sim \frac{x}{\log x}$) is equivalent to the statement that $\vartheta(x)\sim x$, which in turn, is equivalent to the statement that $\psi(x)\sim x$.
+
+\begin{thebibliography}{9}
+\bibitem{IR} Ireland, Kenneth and Rosen, Michael.  A Classical Introduction to Modern Number Theory.  Springer, 1998.
+
+\bibitem{Na} Nathanson, Melvyn B.  Elementary Methods in Number Theory.  Springer, 2000.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

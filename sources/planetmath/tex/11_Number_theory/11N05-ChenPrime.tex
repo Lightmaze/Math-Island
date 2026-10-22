@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ChenPrime}
+\pmcreated{2013-03-22 16:04:19}
+\pmmodified{2013-03-22 16:04:19}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Chen prime}
+\pmrecord{6}{38128}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+If for a prime number $p$ it holds that $p + 2$ is either a prime or a semiprime, then $p$ is called a {\em Chen prime}. The name was assigned by Ben Green and Terrence Tao in recognition of Chen's theorem that every sufficiently large even number can be written as the sum of a prime and a semiprime. To give two examples of Chen primes: 41 is a Chen prime since 43 is also a prime, but 43 is itself not a Chen prime because 45 has one factor too many to be a semiprime; 47 is a Chen prime since 49, the square of a prime, is a semiprime.
+
+Chen Jingrun proved that there are infinitely many Chen primes, which could turn out to be a step towards proving the twin prime conjecture. Just looking at say, $p < 100$, it would appear that there are more Chen primes than non-Chen primes. (The former are listed in A109611 of Sloane's OEIS, the latter in A102540). However, counting up to 17107, there are 986 Chen primes and 986 non-Chen; after that, the density of Chen primes gradually thins.
+
+In 2005, Green and Tao proved that there are infinitely many Chen primes in arithmetic progression. Jens Kruse Andersen and friends found this example, in which each prime has more than 3000 base 10 digits each: $((3850324118 + 892819689n)2411\# + 1)(4787\# + 1) - 2$ where $-1 < n < 3$ and $p\#$ is a primorial.
+
+Rudolf Ondrejka constructed this magic square using only Chen primes:
+
+$$\begin{bmatrix}
+ 17 & 89 & 71 \\
+ 113 & 59 & 5 \\
+ 47 & 29 & 101 \\
+\end{bmatrix}$$
+
+The magic constant is 177.
+
+\begin{thebibliography}{2}
+\bibitem{jc} J. Chen, ``On the Representation of a Large Even Integer as the Sum of a Prime and the Product of at Most Two Primes" {\it Sci. Sinica} {\bf 16}, pp. 157 - 176 (1973)
+\bibitem{bg} B. Green and T. Tao, ``Restriction theory of the Selberg sieve, with applications", pp. 5, 14, 18 - 19, 21 (2005)
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

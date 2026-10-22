@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CyclicNumber}
+\pmcreated{2013-03-22 16:46:18}
+\pmmodified{2013-03-22 16:46:18}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{cyclic number}
+\pmrecord{5}{39000}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em cyclic number} $n$ is an integer which in a given base $b$ maintains the same digits after repeated multiplications. For example, twice 142857 is 285714; thrice is 428571; four times is 571428; etc. Cyclic numbers are tied to the full reptend primes $p$ thus: $$n = \frac{b^{p - 1} - 1}{p}.$$ From this it follows that the base $b$ representation of the number $np$ consists of $p - 1$ instances of the digit $b - 1$. For $mn$ with $m > p$ the multiples gradually begin to exhibit greater variety in their digits, with the occasional number nearly full of digits $b - 1$.
+
+In base 10, the first few cyclic numbers are 142857, 588235294117647, 52631578947368421, 434782608695652173913, 344827586206896551724137931, 212765957446808510638297872340425531914893617, etc.
+
+There are no cyclic numbers in factorial base or primorial base because not every digit can occupy every significant position. For example, take the multiples of 142857 in factorial base: 34222111, 70444300, 115012011, 151234200, 185501311, 232024100, 266251211. The digit 4 can only occur to the left of $d_3$.
+
+Confusingly, Sloane's OEIS uses this term to refer to the full reptend primes instead of the cyclic numbers they generate.
+%%%%%
+%%%%%
+\end{document}

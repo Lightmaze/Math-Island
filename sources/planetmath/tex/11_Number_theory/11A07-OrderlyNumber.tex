@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{OrderlyNumber}
+\pmcreated{2013-03-22 19:05:28}
+\pmmodified{2013-03-22 19:05:28}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{orderly number}
+\pmrecord{4}{41981}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A07}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+An {\em orderly number} is an integer $n$ such that there exists at least one other integer $k$ such that each divisor of $n$ from 1 to $d_{\tau(n)}$ (with $\tau(n)$ being the number of divisors function) satisfies the congruences $d_i \equiv 1 \mod k$, $d_i \equiv 2 \mod k$ through $d_i \equiv \tau(n) \mod k$. For example, 20 is an orderly number, with $k = 7$, since it has six divisors, 1, 2, 4, 5, 10, 20, and we can verify that
+
+$$1 \equiv 1 \mod 7$$
+$$2 \equiv 2 \mod 7$$
+$$10 \equiv 3 \mod 7$$
+$$4 \equiv 4 \mod 7$$
+$$5 \equiv 5 \mod 7$$
+$$20 \equiv 6 \mod 7$$
+
+The orderly numbers less than 100 are 1, 2, 5, 7, 8, 9, 11, 12, 13, 17, 19, 20, 23, 27, 29, 31, 37, 38, 41, 43, 47, 52, 53, 57, 58, 59, 61, 67, 68, 71, 72, 73, 76, 79, 83, 87, 89, 97, listed in A167408 of Neil Sloane's OEIS. With the exception of 3, all prime numbers are orderly.
+%%%%%
+%%%%%
+\end{document}

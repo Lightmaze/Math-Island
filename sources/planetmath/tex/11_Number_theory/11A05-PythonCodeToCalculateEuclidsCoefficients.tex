@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PythonCodeToCalculateEuclidsCoefficients}
+\pmcreated{2013-03-22 15:15:31}
+\pmmodified{2013-03-22 15:15:31}
+\pmowner{drini}{3}
+\pmmodifier{drini}{3}
+\pmtitle{Python code to calculate Euclid's coefficients}
+\pmrecord{7}{37043}
+\pmprivacy{1}
+\pmauthor{drini}{3}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+
+\endmetadata
+
+\usepackage{graphicx}
+%%%\usepackage{xypic} 
+\usepackage{bbm}
+\newcommand{\Z}{\mathbbmss{Z}}
+\newcommand{\C}{\mathbbmss{C}}
+\newcommand{\R}{\mathbbmss{R}}
+\newcommand{\Q}{\mathbbmss{Q}}
+\newcommand{\mathbb}[1]{\mathbbmss{#1}}
+\newcommand{\figura}[1]{\begin{center}\includegraphics{#1}\end{center}}
+\newcommand{\figuraex}[2]{\begin{center}\includegraphics[#2]{#1}\end{center}}
+\newtheorem{dfn}{Definition}
+\begin{document}
+\textbf{Python code for calculating Euclid's coefficients}
+
+\begin{verbatim}
+\PMlinkescapetext{
+def ExtGCD(x,y):
+  m,n=x,y
+  b,d=0,1
+  p,t=1,0
+  while (m!=0):
+    q = n//m  # yes, //
+    n,m=m,n-q*m
+    d,b=b,d-q*b
+    t,p=p,t-q*p
+  return (t*x+d*y,t,d)
+
+print ExtGCD(523,541) # Example from the parent entry
+}
+\end{verbatim}
+
+and it displays
+
+\begin{verbatim}
+\PMlinkescapetext{
+>>> (1, 30, -29)
+}
+\end{verbatim}
+since 
+\[
+1=tx +dy = 30\cdot523-29\cdot541
+\]
+%%%%%
+%%%%%
+\end{document}

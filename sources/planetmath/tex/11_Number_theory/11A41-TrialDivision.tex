@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TrialDivision}
+\pmcreated{2013-03-22 16:39:00}
+\pmmodified{2013-03-22 16:39:00}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{trial division}
+\pmrecord{7}{38854}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Factoring by {\em trial division} is an algorithm where a given integer $n$ is tested for divisibility by each prime $p_i$ in order until all its factors are discovered. It is the easiest algorithm to understand and the simplest to implement, but not always the most efficient.
+
+Depending on the implementation, the algorithm can be provided with a list of primes. If, for example, the implementation is to be limited to 16-bit unsigned integers, it might make sense to provide a list of the primes up to 257. Otherwise, the list of primes could be gathered on the fly, or a performance penalty could be accepted by allowing certain ``could-be primes''.
+
+Call the trial division algorithm with an integer $n$.
+
+\begin{enumerate}
+\item Initialize $i = 1$, length of factor list to 0, (if used) all exponents to 1, prime flag to true, test cap to $\sqrt{n}$, test remainder $m$ to equal $n$.
+\item Test if $\frac{m}{p_i}$ is an integer. If it is, reset $m = \frac{m}{p_i}$, set prime flag to false and test if $p_i$ will divide again. As many times as indicated, add $p_i$ to the list of factors, or add it once to the list of factors and increment the appropriate exponent accordingly. Increment once the length of the factor list.
+\item Increment $i$ and see if $p_i < \sqrt{n}$. Also check that $m > 1$. If both of these conditions are true, repeat the previous step.
+\item If prime flag is true, place $n$ in the first spot of the factor list and set factor list length to 1.
+\item Return the factor list (and if applicable, the exponent list). It might or might not be a good idea to expose the prime flag to the calling function.
+\end{enumerate}
+
+For example, $n = 32851$. Clearly 2 doesn't divide evenly, a human can tell on sight. Since it's a small number, the digit sum test for 3 is applied quickly enough, and it returns false. We don't need to try 5, though a computer does. Then, dividing by 7, we get the integer 4693, but 7 doesn't divide again. Neither does 11. 4693 divided by 13 gives us 361. If this was a recursive implementation, it would recognize that 361 is 19 squared. Ergo, the factorization is $32851 = 7 \cdot 13 \cdot 19^2$.
+
+To give another example: given $n = 1411041$, trial division would take 196 divisions. The second division would find 3 is a factor, the third would confirm 3's exponent is 1, and it would take almost a couple hundred more divisions to get to 1187 and the certainty that 470347 must be a prime and the factors are hence 3 and 470347. Of course, with numbers of this size, a computer can perform hundreds of divisions in the blink of an eye.
+
+Let's try 522611488293. This number is almost ``unfair'' to an implementation lacking a list of primes provided beforehand, or even an implementation that remembers the primes it has tried. The second factor, 370373, ends a prime gap of 110 consecutive composites. It's enough to slow down a computer implementation of trial division, even one that actually wastes time trying on such composites as 370263, 370267, 370269, etc. but not by much.
+
+This last example, 4393547637856664251490043044051018234292171475232959, is an example of what not to even try to factor with trial division. Its square root is more than $6 \cdot 10^{25}$, and the logarithmic integral tells us there might be about $10^{24}$ primes to test divide in trying to factor this number.
+
+The speed of the algorithm depends perhaps more in the size of the smallest prime factor than it does on the size of $n$. For example, PrimeFan's Integer Factorer (a Javascript implementation) takes 2 to 3 seconds to factor 2432902008176640000 (which is 20!), but fails to give an answer for 2432902008176639999 before Internet Explorer asks the user if they want to abort the script. Henry Bottomley's Javascript implementation handles factorials better than PrimeFan's (responding to 20! instantaneously), but still freezes on $20! - 1$.
+
+\subsection{External links}
+\PMlinkexternal{Henry Bottomley's Prime Factors Calculator}{http://www.btinternet.com/~se16/js/factor.htm}
+
+\PMlinkexternal{PrimeFan's Number Factorer}{http://www.geocities.com/primefan/Factorer.html}
+%%%%%
+%%%%%
+\end{document}

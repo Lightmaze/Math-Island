@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClosedSetInASubspace}
+\pmcreated{2013-03-22 15:33:32}
+\pmmodified{2013-03-22 15:33:32}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{closed set in a subspace}
+\pmrecord{9}{37460}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B05}
+
+\endmetadata
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\F}{\mathbbmss{F}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\PMlinkescapeword{closed}
+\PMlinkescapeword{open}
+\PMlinkescapeword{theorem}
+
+% This is written from scratch with no external references.
+% These kind of results seem to be needed to prove
+%   http://planetmath.org/encyclopedia/ClosedSubsetsOfACompactSetAreCompact.html
+% using the FIP.
+
+In the following, let $X$ be a topological space. 
+
+\begin{thm}
+Suppose $Y\subseteq X$ is equipped with the subspace topology,
+and $A\subseteq Y$.
+Then $A$ is \PMlinkname{closed}{ClosedSet} in $Y$ if and only if
+$A=Y\cap J$ for some closed set $J\subseteq X$.
+\end{thm}
+
+\begin{proof} 
+If $A$ is closed in $Y$,
+then $Y\setminus A$ is \PMlinkname{open}{OpenSet} in $Y$, 
+and by the definition of the subspace topology,
+$Y\setminus A = Y\cap U$ for some open $U\subseteq X$. 
+Using \PMlinkname{properties of the set difference}{SetDifference}, 
+we obtain
+\begin{eqnarray*}
+  A &=& Y\setminus (Y\setminus A) \\
+    &=& Y\setminus(Y\cap U) \\
+    &=& Y\setminus U \\
+    &=& Y\cap U^\complement.
+\end{eqnarray*}
+On the other hand, if $A=Y\cap J$ for some closed $J\subseteq X$,
+then $Y\setminus A = Y\setminus(Y\cap J) = Y\cap J^\complement$,
+and so $Y\setminus A$ is open in $Y$,
+and therefore $A$ is closed in $Y$.
+\end{proof}
+
+\begin{thm}
+Suppose $X$ is a topological space, $C\subseteq X$ 
+is a closed set equipped with the subspace topology, 
+and $A\subseteq C$ is closed in $C$. 
+Then $A$ is closed in $X$. 
+\end{thm}
+
+\begin{proof} This follows from the previous theorem:
+since $A$ is closed in $C$, 
+we have $A = C\cap J$ for some closed set $J\subseteq X$,
+and $A$ is closed in $X$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

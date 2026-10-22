@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RamanujansFormulaForPi}
+\pmcreated{2013-03-22 15:53:41}
+\pmmodified{2013-03-22 15:53:41}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Ramanujan's formula for pi}
+\pmrecord{7}{37896}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmclassification{msc}{51-00}
+\pmrelated{CyclometricFunctions}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+Around $1910$, Ramanujan proved the following formula:
+
+\begin{thm}
+The following series converges and the sum equals $\frac{1}{\pi}$:
+$$\frac{1}{\pi}=\frac{2\sqrt{2}}{9801}\sum_{n=0}^\infty \frac{(4n)!(1103+26390n)}{(n!)^4396^{4n}}.$$
+\end{thm} 
+
+Needless to say, the convergence is extremely fast. For example, if we only use the term $n=0$ we obtain the following approximation:
+$$\pi \approx \frac{9801}{2\cdot 1103\cdot \sqrt{2}}=3.14159273001\ldots$$
+and the error is (in absolute value) equal to $0.0000000764235\ldots$ In $1985$, William Gosper used this formula to calculate the first 17 million digits of $\pi$. 
+
+Another similar formula can be easily obtained from the power series of $\arctan x$. Although the convergence is good, it is not as impressive as in Ramanujan's formula:
+
+$$\pi=2\sqrt{3}\sum_{n=0}^\infty \frac{(-1)^n}{(2n+1)3^n}.$$ 
+%%%%%
+%%%%%
+\end{document}

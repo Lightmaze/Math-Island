@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProximalNeighborhood}
+\pmcreated{2013-03-22 16:58:25}
+\pmmodified{2013-03-22 16:58:25}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{proximal neighborhood}
+\pmrecord{7}{39250}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E05}
+\pmsynonym{proximity neighborhood}{ProximalNeighborhood}
+\pmsynonym{$\delta$-neighborhood}{ProximalNeighborhood}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+Let $X$ be a set and $P(X)$ its power set.  Let $\ll$ be a binary relation on $P(X)$ satisfying the
+
+following conditions, for any $A,B\subseteq X$:
+\begin{enumerate}
+\item $X\ll X$,
+\item $A\ll B$ implies $A\subseteq B$,
+\item $A\ll B$ and $C\ll D$ imply $A\cap C\ll B\cap D$,
+\item $A\ll B$ implies $B'\ll A'$ ($'$ is the complement operator)
+\item $A\subseteq B\ll C\subseteq D$, then $A\ll D$, and
+\item if $A\ll B$, then there is $C\subseteq X$, such that $A\ll C\ll B$.
+\end{enumerate}
+By 1 and 4, it is easy to see that $\varnothing\ll \varnothing$.  Also, 3 and 4 show that $A\cup C\ll B\cup D$ whenever $A\ll B$ and $C\ll D$.  So $\ll$ is a topogenous order, which means $\ll$ is transitive and anti-symmetric.  Under this order relation, we say that $B$ is a \emph{proximal neighborhood} of $A$ if $A\ll B$.
+
+The reason why we call $B$ a ``proximal'' neighborhood is due to the following:
+
+\begin{thm} Let $X$ be a set.  The following are true.
+\begin{itemize}  
+\item Let $\ll$ be defined as above.  Define a new relation $\delta$ on $P(X)$: $A\delta'B'$ iff $A\ll B$.  Then $\delta$ so defined is a proximity relation, turning $X$ into a proximity space.
+\item Conversely, let $(X,\delta)$ is a proximity space.  Define a new relation $\ll$ on $P(X)$: $A\ll B$ iff $A\delta'B'$.  Then $\ll$ satisfies the six properties above.
+\end{itemize}
+\end{thm}
+\begin{proof}
+Suppose first that $X$ and $\ll$ are defined as above.  We will verify the individual nearness relation axioms of $\delta$ by proving their contrapositives in each case, except the last axiom:
+\begin{enumerate}
+\item if $A\delta'B$, then $A\ll B'$, or $A\subseteq B'$, so $A\cap B=\varnothing$;
+\item suppose either $A=\varnothing$ or $B=\varnothing$.  In either case, $A\ll B'$, which means $A\delta' B$;
+\item if $A\delta' B$, then $A\ll B'$, so $B''\ll A'$, or $B\ll A'$, or $B\delta' A$;
+\item if $A_1\delta' B$ and $A_2\delta' B$, then $A_1\ll B$ and $A_2\ll B$, so $(A_1\cup A_2)\ll B$, or $(A_1\cup A_2)\delta' B$;
+\item if $A\delta' B$, then $A\ll B'$.  So there is $D\subseteq X$ with $A\ll D$ and $D\ll B'$.  Let $C=D'$.  Then $A\ll C'$ and $C'\ll B'$, or $A\delta' C$ and $C'\delta' B$.
+\end{enumerate}
+
+Next, suppose $(X,\delta)$ is a proximity space.  We now verify the six properties of $\ll$ above.
+\begin{enumerate}
+\item since $X\delta' \varnothing$, $X\ll \varnothing'$, or $X\ll X$; 
+\item suppose $A\delta' B'$, then if $x\in A$, we have $x\delta'B'$, implying $x\cap B'=\varnothing$, or $x\in B$;
+\item if $A\ll B$ and $C\ll D$, then $A\delta' B'$ and $C\delta' D'$, which means $A\delta' (B'\cup D')$ and $C\delta' (B'\cup D')$, which together imply $(A\cap C)\delta' (B'\cup D')$, or $(A\cap C)\delta (B\cap D)'$, or $A\cap C\ll B\cap D$;
+\item if $A\ll B$, then $A\delta' B'$, so $B'\delta' A$ (as $\delta$ is symmetric, so is its complement), which is the same as $B'\delta' A''$, or $B'\ll A'$;
+\item if $A\delta D'$, then $B\delta C'$ (since $A\subseteq B$ and $D'\subseteq C'$), so $B\ll' C$, a contradiction;
+\item if $A\ll B$, then $A\delta'B'$, so there is $D\subseteq X$ with $A\delta'D$ and $D'\delta'B'$.  Define $C=D'$, then $A\ll C$ and $C\ll B$, as desired.
+\end{enumerate}
+This completes the proof.
+\end{proof}
+
+Because of the above, we see that a proximity space can be equivalently defined using the proximal neighborhood concept.  To emphasize its relationship with $\delta$, a proximal neighborhood is also called a $\delta$-neighbhorhood.
+
+Furthermore, we have 
+\begin{thm}
+if $B$ is a proximal neighborhood of $A$ in a proximity space $(X,\delta)$, then $B$ is a (topological) neighborhood of $A$ under the topology $\tau(\delta)$ induced by the proximity relation $\delta$.  In other words, if $A\ll B$, then $A\subseteq B^{\circ}$ and $A^c\subseteq B$, where $^{\circ}$ and $^c$ denote the interior and closure operators.
+\end{thm}
+\begin{proof}
+Since $A\delta'B'$, then $x\delta'B'$ whenever $x\in A$, which is the contrapositive of the statement: $x\in A'$ whenever $x\delta B'$, which is equivalent to $B'^c\subseteq A'$, or $A\subseteq B^{\circ}$.  Furthermore, if $x\notin B$, then $x\in B'$.  But $A\delta'B'$ b assumption.  This implies $x\delta' A$, which means $x\notin A^c$.  Therefore $A^c\subseteq B$.
+\end{proof}
+\textbf{Remark}.  However, not every $\tau(\delta)$-neighborhood is a $\delta$-neighborhood.
+%%%%%
+%%%%%
+\end{document}

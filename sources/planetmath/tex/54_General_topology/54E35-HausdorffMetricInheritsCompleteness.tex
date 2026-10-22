@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HausdorffMetricInheritsCompleteness}
+\pmcreated{2013-03-22 14:08:51}
+\pmmodified{2013-03-22 14:08:51}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{Hausdorff metric inherits completeness}
+\pmrecord{8}{35563}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+%\pmkeywords{Hausdorff}
+%\pmkeywords{complete}
+\pmrelated{Complete}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{Theorem}{Theorem}
+\begin{document}
+\PMlinkescapeword{induced}
+\begin{Theorem}
+If $(X,d)$ is a complete metric space, then the Hausdorff metric induced by $d$ is also complete.
+%If $(X,d)$ is complete, then so is $(\mathcal{F},d_H)$, where $\mathcal{F}$
+%is the family of nonempty closed and bounded subsets of $X$ and $d_H$ is the
+%Hausdorff metric.
+\end{Theorem}
+
+\begin{proof}
+Suppose $(A_n)$ is a Cauchy sequence with respect to the Hausdorff metric.  By selecting a subsequence if necessary, we may assume that $A_n$ and $A_{n+1}$ are within $2^{-n}$ of each other, that is, that $A_n\subset K(A_{n+1},2^{-n})$ and $A_{n+1}\subset K(A_n, 2^{-n})$.
+%Let us denote the Hausdorff metric by $d_H$.
+%Suppose $(A_n)$ be a Cauchy sequence of nonempty, closed and bounded subsets of %$X$. 
+%By selecting a subsequence if
+%necessary, we may assume that $d_H(A_n,A_{n+1})<2^{-n}$ for all $n$.
+Now for any natural number $N$, there is a sequence $(x_n)_{n\ge N}$ in $X$
+such that $x_n\in A_n$ and $d(x_n,x_{n+1})<2^{-n}$.  Any such sequence is Cauchy 
+with respect to $d$ and thus converges to some $x\in X$.  By applying the triangle inequality, we see that for any $n\ge N$, $d(x_n,x)<2^{-n+1}$.
+%We claim that for any natural number $N$, there is a sequence
+%$(d_n)_{n\ge N}$ in $X$ such that $x_n\in A_n$ and $d(x_n,x_{n+1})<2^{-n}$.
+%We do this by applying the fact that $A_n\subset K(A_{n+1},2^{-n})$ for
+%each $n$.  But any such sequence is Cauchy in $X$ and thus converges to some
+%$x\in X$.  By applying the triangle inequality, we see that for any $n\ge N$,
+%$d(x_n,x)<2^{-n+1}$.
+
+Define $A$ to be the set of all $x$ such that $x$ is the limit of a sequence
+$(x_n)_{n\ge 0}$ with $x_n\in A_n$ and $d(x_n,x_{n+1})<2^{-n}$.  
+Then $A$ is nonempty.  
+%The above
+%claim implies that $A$ is nonempty.  
+Furthermore, for any $n$, if $x\in A$,
+then there is some $x_n\in A_n$ such that $d(x_n,x)<2^{-n+1}$, and so
+$A\subset K(A_n,2^{-n+1})$.  Consequently, the set $\overline{A}$ is
+nonempty, closed and bounded.
+
+Suppose $\epsilon>0$.  Thus $\epsilon>2^{-N}>0$ for some $N$.  Let $n\ge N+1$.
+Then by applying the claim in the first paragraph, we have that for any
+$x_n\in A_n$, there is some $x\in X$ with $d(x_n,x)<2^{-n+1}$.  Hence
+$A_n\subset K(\overline{A},2^{-n+1})$.  
+Hence the sequence $(A_n)$ converges to $A$ in the Hausdorff metric.
+\end{proof}
+
+This proof is based on a sketch given in an exercise in~\cite{Mu}.
+An exercise for the reader: is the set $A$ constructed above closed?
+
+\begin{thebibliography}{9}
+\bibitem{Mu}J. Munkres, \emph{Topology} (2nd edition), Prentice Hall, 1999.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,199 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Pollardsrho}
+\pmcreated{2013-03-22 12:34:58}
+\pmmodified{2013-03-22 12:34:58}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{Pollard's $\rho$}
+\pmrecord{12}{32832}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmclassification{msc}{11Y05}
+\pmsynonym{Pollard rho}{Pollardsrho}
+\pmrelated{CryptographyAndNumberTheory}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\PMlinkescapeword{difference}
+\PMlinkescapeword{even}
+\PMlinkescapeword{generate}
+\PMlinkescapeword{length}
+\PMlinkescapeword{loop}
+\PMlinkescapeword{part}
+\PMlinkescapeword{place}
+\PMlinkescapeword{point}
+\PMlinkescapeword{restrictions}
+\PMlinkescapeword{time}
+
+\emph{Pollard's $\rho$ method} is an algorithm for factoring numbers, better than trial and error for larger numbers. 
+
+Let $n$ a non prime number and $d$ a non trivial factor.  The actual value of the factors are unknown at this stage, and Pollard's $\rho$ provides a way to find them. We do know, however, than $d$ is not larger than $n$. In fact, we know at least one of the factors must hold $d\leq \sqrt{n}$, so we assume this condition. 
+
+So, how does this help?  If you start picking numbers at random
+(keeping your numbers greater or equal to zero and strictly less
+than $n$), then the only time you will get $a \equiv b \mod n$ is
+when $a$ and $b$ are identical.  However, since $d$ is smaller than
+$n$, there is a good chance that $a \equiv b \mod d$ sometimes when
+$a \neq b$.
+
+Well, if $a \equiv b \mod d$, that means that $(a-b)$ is a multiple of
+$d$.  Since $n$ is also a multiple of $d$, the greatest common
+divisor of $(a-b)$ and $n$ is a positive, integer multiple of $d$.
+We can keep picking numbers randomly until the greatest common
+divisor of $n$ and the difference of two of our random numbers is
+greater than one.  Then, we can divide $n$ by whatever this greatest
+common divisor turned out to be.  In doing so, we have broken down
+$n$ into two factors.  If we suspect that the factors may be
+composite, we can continue trying to break them down further by
+doing the algorithm again on each half.
+
+The amazing thing here is that through all of this, we just knew
+there had to be some divisor of $n$.  We were able to use properties
+of that divisor to our advantage \emph{before} we even knew what the
+divisor was!
+
+This is at the heart of Pollard's rho method.  Pick a random number
+$a$.  Pick another random number $b$.  See if the greatest common
+divisor of $(a-b)$ and $n$ is greater than one.  If not, pick
+another random number $c$.  Now, check the greatest common divisor
+of $(c-b)$ and $n$.  If that is not greater than one, check the
+greatest common divisor of $(c-a)$ and $n$.  If that doesn't work,
+pick another random number $d$.  Check $(d-c)$, $(d-b)$, and $(d-a)$.
+Continue in this way until you find a factor.
+
+As you can see from the above paragraph, this could get quite
+cumbersome quite quickly.  By the $k$-th iteration, you will have
+to do $(k-1)$ greatest common divisor checks.  Fortunately, there
+is way around that.  By structuring the way in which you pick
+``random'' numbers, you can avoid this buildup.
+
+We use an appropiate polynomial $f(x)$ to generate pseudorandom numbers. Because we're only concerned with numbers from
+zero up to (but not including) $n$, we will take all of the values
+of $f(x)$ modulo $n$.  We start with some $x_1$.  We then pick our
+numbers by taking $x_{k+1} = ( f(x_k) \mod n )$.
+
+Now, say for example we get to some point $k$ where $x_k \equiv
+x_j \mod d$ with $k < j$.  Then, because of the way that modulo
+arithmetic works, $f(x_k)$ will be congruent to $f(x_j)$ modulo
+$d$.  So, once we hit upon $x_k$ and $x_j$, then each element in
+the sequence starting with $x_k$ will be congruent modulo $d$ to
+the corresponding element in the sequence starting at $x_j$.  Thus,
+once the sequence gets to $x_k$ it has looped back upon itself to
+match up with $x_j$ (when considering them modulo $d$).
+
+This looping is what gives the $\rho$ method its name.  If you go back
+through (once you determine $d$) and look at the sequence of random
+numbers that you used (looking at them modulo $d$), you will see
+that they start off just going along by themselves for a bit.
+Then, they start to come back upon themselves.  They don't typically
+loop the whole way back to the first number of your sequence.  So,
+they have a bit of a tail and a loop---just like the Greek letter
+rho ($\rho$).
+
+Before we see why that looping helps, we will first speak to why
+it has to happen.  When we consider a number modulo $d$, we are
+only considering the numbers greater than or equal to zero and
+strictly less than $d$.  This is a very finite set of numbers.
+Your random sequence cannot possibly go on for more than $d$ numbers
+without having some number repeat modulo $d$.  And, if the function
+$f(x)$ is well-chosen, you can probably loop back a great deal
+sooner.
+
+The looping helps because it means that we can get away without
+accumulating the number of greatest common divisor steps we need
+to perform with each new random number.  In fact, it makes it so
+that we only need to do one greatest common divisor check for every
+second random number that we pick.
+
+Now, why is that? Let's assume that the loop is of length $t$ and
+starts at the $j$-th random number.  Say that we are on the $k$-th
+element of our random sequence.  Furthermore, say that $k$ is
+greater than or equal to $j$ and $t$ divides $k$.  Because $k$ is
+greater than $j$ we know it is inside the looping part of the
+$\rho$.  We also know that if $t$ divides $k$, then $t$ also divides
+$2k$.  What this means is that $x_{2k}$ and $x_k$ will be congruent
+modulo $d$ because they correspond to the same point on the loop.
+Because they are congruent modulo $d$, their difference is a multiple
+of $d$.  So, if we check the greatest common divisor of $(x_k-x_{k/2})$
+with $n$ every time we get to an even $k$, we will find some factor
+of $n$ without having to do $k-1$ greatest common divisor calculations
+every time we come up with a new random number.  Instead, we only
+have to do one greatest common divisor calculation for every second
+random number.
+
+The only open question is what to use for a polynomial
+$f(x)$ to get some random numbers which don't have too
+many choices modulo $d$.  Since we don't usually know
+much about $d$, we really can't tailor the polynomial
+too much.  A typical choice of polynomial is 
+$$f(x) = x^2 + a$$ where $a$ is
+some constant which isn't congruent to $0$ or $-2$
+modulo $n$.  If you don't place those restrictions on
+$a$, then you will end up degenerating into the sequence
+$\{ 1, 1, 1, 1, ... \}$ as soon as you hit upon some $x$
+which is congruent to either $1$ or $-1$ modulo
+$n$.
+
+Let's use the algorithm now to factor our number $16843009$.  We
+will use the sequence $x_1=1$ with $x_{n+1} = ( 1024x_n^2 + 32767
+\mod n )$.  [ I also tried it with the very basic polynomial $f(x)
+= x^2 + 1$, but that one went 80 rounds before stopping so I didn't
+include the table here.]
+
+\begin{center}
+\begin{tabular}{ccc}
+$k$ & $x_k$ & $\gcd( n, x_k - x_{k/2} )$ \\
+\hline \\
+1 & 1 & \\
+2 & 33791 & 1 \\
+3 & 10832340 & \\
+4 & 12473782 & 1 \\
+5 & 4239855 & \\
+6 & 309274 & $n$ \\
+7 & 11965503 & \\
+8 & 15903688 & 1 \\
+9 & 3345998 & \\
+10 & 2476108 & $n$ \\
+11 & 11948879 & \\
+12 & 9350010 & 1 \\
+13 & 4540646 & \\
+14 & 858249 & $n$ \\
+15 & 14246641 & \\
+16 & 4073290 & $n$ \\
+17 & 4451768 & \\
+18 & 14770419 & 257 \\
+\end{tabular}
+\end{center}
+and so we have discovered the factor $257$. 
+
+Let's try to factor again with a different random number schema.
+We will use the sequence $x_1=1$ with $x_{n+1} = ( 2048x_n^2 +
+32767 \mod n )$.
+
+\begin{center}
+\begin{tabular}{ccc}
+$k$ & $x_k$ & $\gcd( n, x_k - x_{k/2} )$ \\
+\hline \\
+1 & 1 & \\
+2 & 34815 & 1 \\
+3 & 9016138 & \\
+4 & 4752700 & 1 \\
+5 & 1678844 & \\
+6 & 14535213 & 257 \\
+\end{tabular}
+\end{center}
+Again, the factor $257$ shows up.
+
+Pollard's $\rho$ can also be applied to other finite groups besides integers,  providing one of the best known methods to computing discrete logarithms on arbitrary groups.
+%%%%%
+%%%%%
+\end{document}

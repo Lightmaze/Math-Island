@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LiouvilleApproximationTheorem}
+\pmcreated{2013-03-22 11:45:45}
+\pmmodified{2013-03-22 11:45:45}
+\pmowner{KimJ}{5}
+\pmmodifier{KimJ}{5}
+\pmtitle{Liouville approximation theorem}
+\pmrecord{13}{30211}
+\pmprivacy{1}
+\pmauthor{KimJ}{5}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11J68}
+\pmclassification{msc}{46-01}
+\pmclassification{msc}{46N40}
+%\pmkeywords{number theory}
+\pmrelated{ExampleOfTranscendentalNumber}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%%\usepackage{xypic}
+\begin{document}
+Given $\alpha$, a real algebraic number of degree $n \neq 1$, there is a constant $c = c( \alpha ) > 0$ such that for all rational numbers $p/q, (p,q)=1$, the inequality
+\[ \left| \alpha - \frac{p}{q} \right| > \frac{c(\alpha )}{q^n} \] holds.
+
+Many mathematicians have worked at strengthening this theorem:
+\begin{itemize}
+\item Thue: If $\alpha$ is an algebraic number of degree $n \geq 3$, then there is a constant $c_0 = c_0( \alpha , \epsilon ) > 0$ such that for all rational numbers $p/q$, the inequality
+\[ \left| \alpha - \frac{p}{q} \right| > c_0 q^{-1- \epsilon - n/2} \] holds.
+
+\item Siegel: If $\alpha$ is an algebraic number of degree $n \geq 2$, then there is a constant $c_1 = c_1( \alpha , \epsilon ) > 0$ such that for all rational numbers $p/q$, the inequality
+\[ \left| \alpha - \frac{p}{q} \right| > c_1 q^{- \lambda}, \qquad \lambda = {\min}_{t=1,\ldots ,n} \left( \frac{n}{t+1} + t \right) + \epsilon \] holds.
+
+\item Dyson: If $\alpha$ is an algebraic number of degree $n > 3$, then there is a constant $c_2 = c_2( \alpha , \epsilon ) > 0$ such that for all rational numbers $p/q$ with $q > c_2$, the inequality
+\[ \left| \alpha - \frac{p}{q} \right| > q^{- \sqrt{2n}- \epsilon } \] holds.
+
+\item Roth: If $\alpha$ is an irrational algebraic number and $\epsilon > 0$, then there is a constant $c_3 = c_3( \alpha , \epsilon ) > 0$ such that for all rational numbers $p/q$, the inequality
+\[ \left| \alpha - \frac{p}{q} \right| > c_3 q^{-2 - \epsilon } \] holds.
+
+\end{itemize}
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BeattySequence}
+\pmcreated{2013-03-22 13:37:23}
+\pmmodified{2013-03-22 13:37:23}
+\pmowner{Kevin OBryant}{1315}
+\pmmodifier{Kevin OBryant}{1315}
+\pmtitle{Beatty sequence}
+\pmrecord{12}{34259}
+\pmprivacy{1}
+\pmauthor{Kevin OBryant}{1315}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B83}
+\pmrelated{BeattysTheorem}
+\pmrelated{FraenkelsPartitionTheorem}
+\pmrelated{DataStream}
+\pmrelated{WideraInterlaceAndDeinterlace}
+
+\endmetadata
+
+    \usepackage{amsmath,amssymb,amsthm}
+\usepackage{url,hyperref}
+
+    \newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+    \newcommand{\ceiling}[1]{\left\lceil #1 \right\rceil}
+\begin{document}
+\PMlinkescapeword{density}
+\PMlinkescapeword{type}
+
+The integer sequence
+    $$ {\cal B}(\alpha,\alpha^\prime) := \left( \floor{\frac{n-\alpha^\prime}{\alpha}} \right)_{n=1}^\infty $$
+is called the Beatty sequence with density $\alpha$, slope $\frac{1}{\alpha}$, offset $\alpha^\prime$, and
+$y$-intercept $\frac{-\alpha^\prime}{\alpha}$.
+
+Sometimes a sequence of the above type is called a {\em floor} Beatty sequence, and denoted ${\cal
+B}^{(f)}(\alpha,\alpha^\prime)$, while an integer sequence
+    $$ {\cal B}^{(c)}(\alpha,\alpha^\prime) :=
+        \left( \ceiling{\frac{n-\alpha^\prime}{\alpha}} \right)_{n=1}^\infty $$
+is called a {\em ceiling} Beatty sequence.
+
+{\bf References}
+\begin{description}
+\item[ [1] ] M. Lothaire, \PMlinkescapetext{\em Algebraic combinatorics on words}, vol. 90, Cambridge University Press, Cambridge, 2002, ISBN 0-521-81220-8, available online at \url{http://www-igm.univ-mlv.fr/~berstel/Lothaire}. A collective work by Jean Berstel, Dominique Perrin, Patrice Seebold, Julien Cassaigne, Aldo De Luca, Steffano Varricchio,
+            Alain Lascoux, Bernard Leclerc, Jean-Yves Thibon, Veronique
+            Bruyere, Christiane Frougny, Filippo Mignosi, Antonio Restivo,
+            Christophe Reutenauer, Dominique Foata, Guo-Niu Han, Jacques
+            Desarmenien, Volker Diekert, Tero Harju, Juhani Karhumaki and
+            Wojciech Plandowski;
+            With a preface by Berstel and Perrin. \PMlinkexternal{{\bf MR 1905123}}{http://www.ams.org/mathscinet-getitem?mr=1905123}
+\end{description}
+
+%
+%\begin{bibdiv}
+%\begin{biblist}
+%\bib{MR1905123}{book}{
+%    author={Lothaire, M.},
+%     title={Algebraic combinatorics on words},
+%    series={Encyclopedia of Mathematics and its Applications},
+%    volume={90},
+%      note={Available online at
+%             \PMlinkexternal{www-igm.univ-mlv.fr/~berstel/Lothaire}
+%{http://www-igm.univ-mlv.fr/~berstel/Lothaire/} A collective work by Jean 
+%Berstel, Dominique Perrin, Patrice
+%            Seebold, Julien Cassaigne, Aldo De Luca, Steffano Varricchio,
+%            Alain Lascoux, Bernard Leclerc, Jean-Yves Thibon, Veronique
+%            Bruyere, Christiane Frougny, Filippo Mignosi, Antonio Restivo,
+%            Christophe Reutenauer, Dominique Foata, Guo-Niu Han, Jacques
+%            Desarmenien, Volker Diekert, Tero Harju, Juhani Karhumaki and
+%            Wojciech Plandowski;
+%            With a preface by Berstel and Perrin},
+% publisher={Cambridge University Press},
+%     place={Cambridge},
+%      date={2002},
+%     pages={xiv+504},
+%      isbn={0-521-81220-8},
+%    review={{\bf MR1905123}},
+%}
+%\end{biblist}
+%\end{bibdiv}
+%%%%%
+%%%%%
+\end{document}

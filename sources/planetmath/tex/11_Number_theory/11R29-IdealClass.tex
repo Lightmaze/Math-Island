@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IdealClass}
+\pmcreated{2013-03-22 12:36:42}
+\pmmodified{2013-03-22 12:36:42}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{ideal class}
+\pmrecord{22}{32869}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R29}
+\pmsynonym{ideal classes}{IdealClass}
+\pmrelated{ExistenceOfHilbertClassField}
+\pmrelated{FractionalIdeal}
+\pmrelated{NumberField}
+\pmrelated{UnramifiedExtensionsAndClassNumberDivisibility}
+\pmrelated{ClassNumberDivisibilityInExtensions}
+\pmrelated{PushDownTheoremOnClassNumbers}
+\pmrelated{MinkowskisConstant}
+\pmrelated{ExtensionsWithoutUnramifiedSubextensionsAndClassNumberDivis}
+\pmdefines{class number}
+\pmdefines{ideal class group}
+\pmdefines{class group}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $K$ be a number field.  Let $\mathfrak{a}$ and $\mathfrak{b}$ be ideals in $\mathcal{O}_{K}$ (the ring of algebraic integers of $K$).  Define a relation $\sim$ on the ideals of $\mathcal{O}_{K}$ in the following way: write $\mathfrak{a} \sim \mathfrak{b}$ if there exist nonzero elements $\alpha$ and $\beta$ of $\mathcal{O}_K$ such that $(\alpha)\mathfrak{a}=(\beta)\mathfrak{b}$.
+
+The relation $\sim$ is an equivalence relation, and the equivalence classes under $\sim$ are known as {\em ideal classes}.
+
+The number of equivalence classes, denoted by $h$ or $h_K$, is called the {\em class number} of $K$.
+
+Note that the set of ideals of any ring $R$ forms an abelian semigroup with the product of ideals as the semigroup operation.  By replacing ideals by ideal classes, it is possible to define a group on the ideal classes of $\mathcal{O}_{K}$ in the following way.
+
+Let $\mathfrak{a}$, $\mathfrak{b}$ be ideals of $\mathcal{O}_{K}$.  Denote the ideal classes of which $\mathfrak{a}$ and $\mathfrak{b}$ are representatives by $[\mathfrak{a}]$ and $[\mathfrak{b}]$ respectively.  Then define $\cdot$ by \[ [\mathfrak{a}] \cdot [\mathfrak{b}]=[\mathfrak{a} \mathfrak{b}] \]
+
+Let ${\cal C} = \{ [\mathfrak{a}] \mid \mathfrak{a} \neq (0), \mathfrak{a} \text{ an ideal of } \mathcal{O}_{K} \}$.
+With the above definition of multiplication, $\cal C$ is an abelian group, called the {\em ideal class group} (or frequently just the \emph{class group}) of $K$.
+
+Note that the ideal class group of $K$ is simply the quotient group of the ideal group of $K$ by the subgroup of principal fractional ideals.
+%%%%%
+%%%%%
+\end{document}

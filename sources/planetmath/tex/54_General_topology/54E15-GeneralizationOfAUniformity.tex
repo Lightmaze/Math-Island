@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GeneralizationOfAUniformity}
+\pmcreated{2013-03-22 16:43:09}
+\pmmodified{2013-03-22 16:43:09}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{generalization of a uniformity}
+\pmrecord{5}{38937}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E15}
+\pmsynonym{semiuniformity}{GeneralizationOfAUniformity}
+\pmsynonym{quasiuniformity}{GeneralizationOfAUniformity}
+\pmsynonym{semiuniform space}{GeneralizationOfAUniformity}
+\pmsynonym{quasiuniform space}{GeneralizationOfAUniformity}
+\pmsynonym{semi-uniform}{GeneralizationOfAUniformity}
+\pmsynonym{quasi-uniform}{GeneralizationOfAUniformity}
+\pmsynonym{semiuniform}{GeneralizationOfAUniformity}
+\pmsynonym{quasiuniform}{GeneralizationOfAUniformity}
+\pmrelated{GeneralizationOfAPseudometric}
+\pmdefines{semi-uniformity}
+\pmdefines{quasi-uniformity}
+\pmdefines{semi-uniform space}
+\pmdefines{quasi-uniform space}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+
+\begin{document}
+Let $X$ be a set.  Let $\mathcal{U}$ be a family of subsets of $X\times X$ such that $\mathcal{U}$ is a filter, and that every element of $\mathcal{U}$ contains the diagonal relation $\Delta$ (reflexive).  Consider the following possible ``axioms'':
+\begin{enumerate}
+\item for every $U\in \mathcal{U}$, $U^{-1}\in \mathcal{U}$
+\item for every $U\in \mathcal{U}$, there is $V\in \mathcal{U}$ such that $V\circ V\in U$,
+\end{enumerate}
+
+where $U^{-1}$ is defined as the \PMlinkname{inverse relation}{OperationsOnRelations} of $U$, and $\circ$ is the \PMlinkname{composition of relations}{OperationsOnRelations}.  If $\mathcal{U}$ satisfies Axiom 1, then $\mathcal{U}$ is called a \emph{semi-uniformity}.  If $\mathcal{U}$ satisfies Axiom 2, then $\mathcal{U}$ is called a \emph{quasi-uniformity}.  The underlying set $X$ equipped with $\mathcal{U}$ is called a \emph{semi-uniform space} or a \emph{quasi-uniform space} according to whether $\mathcal{U}$ is a semi-uniformity or a quasi-uniformity.
+
+A semi-pseudometric space is a semi-uniform space.  A quasi-pseudometric space is a quasi-uniform space.
+
+A uniformity is one that satisfies both axioms, which is equivalent to saying that it is both a semi-uniformity and a quasi-uniformity.
+
+\begin{thebibliography}{9}
+\bibitem{wp} W. Page, \emph{Topological Uniform Structures}, Wiley, New York 1978.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NormalOrder}
+\pmcreated{2013-03-22 12:36:23}
+\pmmodified{2013-03-22 12:36:23}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{normal order}
+\pmrecord{5}{32862}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B05}
+\pmdefines{average order}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $f(n)$ and $F(n)$ be functions from $\mathbb{Z}^{+} \rightarrow \mathbb{R}$.  We say that $f(n)$ has {\em normal order} $F(n)$ if for each $\epsilon>0$ the
+set
+\[ A(\epsilon)=\{n \in \mathbb{Z}^{+} :
+     (1-\epsilon)F(n)<f(n)<(1+\epsilon)F(n) \} \]
+has the property that $\underline{d}(A(\epsilon))=1$.
+Equivalently, if $B(\epsilon)=\mathbb{Z}^{+} \backslash A(\epsilon)$, then
+ $\underline{d}(B(\epsilon))=0$.  (Note that $\underline{d}(X)$ denotes the lower asymptotic density of $X$).
+
+We say that $f$ has {\em average order} $F$ if
+\[ \sum_{j=1}^n f(j) \sim \sum_{j=1}^n F(j) \]
+%%%%%
+%%%%%
+\end{document}

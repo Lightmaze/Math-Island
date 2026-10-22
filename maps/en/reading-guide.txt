@@ -1,0 +1,78 @@
+MATHEMATICAL ARCHIPELAGO — ENGLISH EDITION
+
+This edition uses the same frozen data, entry IDs and two-dimensional coordinates
+as the Chinese edition: 21,741 mathematical entries, 46,812 recorded relations,
+12 subject regions and 21 documented bridges. Translation changes display text,
+not the data or mathematical claims.
+
+START HERE
+
+mathematical-archipelago-overview.pdf / .svg / .png
+  The overview retains every entry. SVG and PDF support zooming; PNG is a preview.
+  SVG points link to their source and show their original entry name on hover.
+  Only selected names and 16,000 navigation lines appear, to keep the map legible.
+  The complete graph remains in the data tables at the repository root.
+
+mathematical-archipelago-bridges.pdf / .svg / .png
+  This chart highlights 21 bridges documented in the literature and bound to real
+  endpoints. B01–B21 correspond to bridge:001–bridge:021. These curves are not
+  implication arrows. Consult reports/math-bridges.json at the repository root
+  for the precise relationship, assumptions and sources; captions are summaries.
+
+mathematical-archipelago-domain-atlas.pdf
+  The 12-page atlas retains all nodes in each region and expands more labels.
+  Separate domain-01 through domain-12 SVG and PNG files contain the same pages.
+  Click visible text labels to visit their sources.
+
+LOCATE AN ENTRY
+
+Search navigation-index.csv by label or ID. grid_cell gives an A1–F6 reference
+on the overview, and domain_sheet selects the region detail. The CSV also records
+kind, source_id, source_url, verification_status and the original coordinates.
+domain preserves the original data field; domain_display supplies its English
+display name. node_jsonl_line locates the full record in data/nodes.jsonl at the
+repository root. IDs and source names are not translated or regenerated.
+
+READ THE SYMBOLS
+
+Colors indicate subject groups in this source collection. Point size represents
+a bounded logarithm of graph degree, not mathematical importance, difficulty,
+originality or truth. Thin lines are recorded relations; a reference does not by
+itself establish a proof dependency or a valid transfer of a mathematical tool.
+
+The outer rings contain real entries without a recorded link to another entry
+inside the same region. They may have cross-region links, or their sources may
+simply supply little link information. The rings are a deterministic display
+arrangement, not evidence of mathematical isolation. No edges are fabricated.
+
+The layout is a navigation aid. Its distances, directions and region areas are
+not mathematical metrics. This finite collection has source-coverage biases,
+including substantial coverage of algebraic geometry; blank space does not show
+that a branch or connection is absent from mathematics.
+
+SOURCE QUALITY
+
+Red rings identify 16 entries with registered source-quality findings. The index
+contains source_quality_issue_count and source_quality_findings_json; the file
+source-quality-findings.json gathers those records, corrections or conditions,
+and evidence. Original audit descriptions are retained verbatim, including their
+original language, to preserve provenance. English SVG hover notices identify
+flagged entries. The existence of a source is not a proof of its correctness.
+The graph has not undergone a proof-level audit of every entry.
+
+REPRODUCE THIS EDITION
+
+From a clone with the repository's Python dependencies installed, run:
+
+  python scripts/render_atlas.py --language en --out maps/en
+
+The command reads local frozen inputs and needs no network service or frontend.
+The script resolves its default inputs relative to its location in the clone.
+--language defaults to zh; the default output for English is maps/en, preserving
+the Chinese output directory. The renderer never changes the input records.
+
+render-manifest.json records locale en, relative input paths, input hashes,
+display translations, the rendering command and actual SVG node/route counts.
+Each islands-XX SVG group contains one linked path per rendered entry. The bridge
+chart separately retains all background points and 21 identified route groups.
+The layout, node IDs and source hashes remain identical between editions.

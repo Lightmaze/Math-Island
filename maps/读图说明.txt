@@ -1,0 +1,50 @@
+数学群岛：二维航海图读法
+
+1. 打开 mathematical-archipelago-overview.pdf 或 .svg 查看总图。
+   SVG 是可缩放矢量文件。每个节点保留原始条目链接，悬停显示原名；
+   点击节点或已经展开的文字可打开来源。PNG 用于快速预览。
+
+2. 总图每一点对应输入数据中的一个不同条目 ID，所有节点均绘出。
+   总图没有给所有点同时加文字，以免遮蔽点与连接；这不表示省略了条目。
+   颜色对应主题分区，点大小是有上限的图连接度，不代表数学价值或难度。
+   分区外缘环收纳该区内部尚未记录到链接的真实条目：它们可能有跨区
+   链接，也可能只是来源中的链接信息不足，不能据此认定为数学孤岛。
+   外缘环采用确定性的排布以便看清全部点，不生成虚构的联系。
+
+3. 用 navigation-index.csv 按条目名或 ID 检索。
+   grid_cell 给出总图 A1–F6 参考格；domain_sheet 给出分区详图编号。
+   mathematical-archipelago-domain-atlas.pdf 将全部分区图合并为一本图册。
+   分区详图保留该区全部点，并展开更多可点击名称。
+   索引中的 kind、source_id、verification_status 可用于筛选；
+   source_quality_issue_count 和 source_quality_findings_json 保留已发现的
+   源文本问题。node_jsonl_line 指向 data/nodes.jsonl 的完整节点记录。
+   图中红圈标出登记了源文本问题的条目，鼠标悬停也会提示；
+   source-quality-findings.json 汇集问题、修正条件及核查证据。
+
+4. 若存在 mathematical-archipelago-bridges.pdf，它单独展示已经匹配到
+   真实端点的文献桥梁。桥梁编号对应报告，不把候选联系混作已知结果。
+   曲线仅连端点，既不是蕴含箭头，也不自动表示某定理依赖另一条目。
+   本版显示编号 B01–B21 对应桥梁记录 bridge:001–bridge:021；精确映射
+   保存在 render-manifest.json 的 bridges.display_id_mapping 中。
+
+5. 数据关系、已知数学桥梁与待证明的关系是不同证据层次。
+   普通地图细线仅按数据中的 relation 字段解释；出处链接本身不能证明
+   一条数学命题，更不能证明工具可以无条件迁移。
+   跨域桥的具体条件、机制与来源应查阅桥梁报告。
+
+6. 所有位置来自输入布局，二维距离、方位、区域面积都不是数学度量。
+   本图是有限来源集合的索引，不能由空白处推出某种工具或联系不存在。
+   总图仅显示一部分连线以保持可读性，完整关系保留在数据表中。
+
+可复现渲染命令（在 math-atlas 目录中）：
+  python scripts/render_atlas.py --nodes data/nodes.jsonl --edges data/edges.csv
+
+输入要求：
+  nodes.jsonl: id, label, domain, x, y, source_url。
+  edges.csv: source, target, relation。
+  可选 bridges.csv: source, target, bridge_id, label, status。
+  桥梁 status 必须为 known_in_literature、documented 或 known。
+
+render-manifest.json 记录输入摘要、各区点数、所画连线、标签清单与参数。
+SVG 中每组节点使用 islands-XX ID，组内每个 <a><path/></a> 是一个节点，
+可独立检查实际画出的节点数；没有随机生成、复制或下采样数学条目。

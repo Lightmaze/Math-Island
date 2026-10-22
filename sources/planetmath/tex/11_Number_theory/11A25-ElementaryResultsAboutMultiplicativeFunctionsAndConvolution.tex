@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ElementaryResultsAboutMultiplicativeFunctionsAndConvolution}
+\pmcreated{2013-03-22 16:07:37}
+\pmmodified{2013-03-22 16:07:37}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{elementary results about multiplicative functions and convolution}
+\pmrecord{16}{38197}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{ConvolutionInversesForArithmeticFunctions}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+\newtheorem{lem}{Lemma}
+\newtheorem*{cor*}{Corollary}
+\begin{document}
+\PMlinkescapeword{convolution}
+
+One of the most important elementary results about multiplicative functions and \PMlinkname{convolution}{DirichletConvolution} is:
+
+\begin{thm*}
+If $f$, $g$, and $h$ are arithmetic functions with $f*g=h$ and at least two of them are multiplicative, then all of them are multiplicative.
+\end{thm*}
+
+The above theorem will be proven in two separate parts.
+
+\begin{lem}
+If $f$ and $g$ are multiplicative, then so is $f*g$.
+\end{lem}
+
+\begin{proof}
+Note that $\displaystyle (f*g)(1)=f(1)g(1)=1 \cdot 1=1$ since $f$ and $g$ are multiplicative.
+
+Let $a,b \in \mathbb{N}$ with $\gcd(a,b)=1$.  Then any divisor $d$ of $ab$ can be uniquely factored as $d=d_1d_2$, where $d_1$ divides $a$ and $d_2$ divides $b$.  When a divisor $d$ of $ab$ is factored in this manner, the fact that $\gcd(a,b)=1$ implies that $\gcd(d_1,d_2)=1$ and $\displaystyle \gcd \left( \frac{a}{d_1}, \frac{b}{d_2} \right)=1$.  Thus,
+
+\begin{center}
+\begin{tabular}{ll}
+$(f*g)(ab)$ & $\displaystyle =\sum_{d|ab} f(d) g\left( \frac{ab}{d} \right)$ \\
+& $\displaystyle =\sum_{\substack{d_1|a \\ d_2|b}} f(d_1d_2) g\left( \frac{ab}{d_1d_2} \right)$ \\
+& $\displaystyle =\sum_{\substack{d_1|a \\ d_2|b}} f(d_1)f(d_2) g\left( \frac{a}{d_1} \right) g\left( \frac{b}{d_2} \right)$ \\
+& $\displaystyle =\left( \sum_{d_1|a} f(d_1) g\left( \frac{a}{d_1} \right) \right) \left( \sum_{d_2|b} f(d_2) g\left( \frac{b}{d_2} \right) \right)$ \\
+& $\displaystyle =(f*g)(a)(f*g)(b)$. \end{tabular}
+\end{center}
+\end{proof}
+
+\begin{lem}
+If $f$ is an arithmetic function and $g$ and $h$ are multiplicative functions with $f*g=h$, then $f$ is multiplicative.
+\end{lem}
+
+\begin{proof}
+Let $a,b \in \mathbb{N}$ with $\gcd(a,b)=1$.  Induction will be used on $ab$ to establish that $f(ab)=f(a)f(b)$.
+
+If $ab=1$, then $a=b=1$.  Note that $f(1)=f(1) \cdot 1=f(1)g(1)=(f*g)(1)=h(1)=1$.  Thus, $f(ab)=f(1)=1=1 \cdot 1=f(a)f(b)$.
+
+Now let $ab$ be an arbitrary natural number.  The induction hypothesis yields that, if $d_1$ divides $a$, $d_2$ divides $b$, and $d_1d_2<ab$, then $f(d_1d_2)=f(d_1)f(d_2)$.  Thus,
+
+\begin{center}
+$\begin{array}{ll}
+h(a)h(b) & =h(ab) \\
+\\
+& =(f*g)(ab) \\
+\\
+& \displaystyle =\sum_{d|ab} f(d)g\left( \frac{ab}{d} \right) \\
+\\
+& \displaystyle =f(ab)g(1)+\sum_{\substack{d|ab \\ d<ab}} f(d)g\left( \frac{ab}{d} \right) \\
+\\
+& \displaystyle =f(ab)\cdot 1+\sum_{\substack{d_1|a \\ d_2|b \\ d_1d_2<ab}} f(d_1d_2)g\left( \frac{ab}{d_1d_2} \right) \\
+\\
+& \displaystyle =f(ab)+\sum_{\substack{d_1|a \\ d_2|b \\ d_1d_2<ab}} f(d_1)f(d_2)g\left( \frac{a}{d_1} \right) g\left( \frac{b}{d_2} \right) \\
+\\
+& \displaystyle =f(ab)-f(a)f(b)g(1)g(1)+\sum_{\substack{d_1|a \\ d_2|b}} f(d_1)f(d_2)g\left( \frac{a}{d_1} \right) g\left( \frac{b}{d_2} \right) \\
+\\
+& \displaystyle =f(ab)-f(a)f(b)\cdot 1 \cdot 1+\left( \sum_{d_1|a} f(d_1)g\left( \frac{a}{d_1} \right) \right) \left( \sum_{d_2|b} f(d_2)g\left( \frac{b}{d_2} \right) \right) \\
+\\
+& =f(ab)-f(a)f(b)+(f*g)(a)(f*g)(b) \\
+\\
+& =f(ab)-f(a)f(b)+h(a)h(b). \end{array}$
+\end{center}
+
+It follows that $f(ab)=f(a)f(b)$.
+\end{proof}
+
+The theorem follows from these two lemmas and the fact that convolution is commutative.
+
+The theorem has an obvious corollary.
+
+\begin{cor*}
+If $f$ is multiplicative, then so is its convolution inverse.
+\end{cor*}
+
+\begin{proof}
+Let $f$ be multiplicative.  Since $f(1) \neq 0$, $f$ has a convolution inverse $f^{-1}$.  (See convolution inverses for arithmetic functions for more details.)  Since $f*f^{-1}=\varepsilon$, where $\varepsilon$ denotes the convolution identity function, and both $f$ and $\varepsilon$ are multiplicative, the theorem yields that $f^{-1}$ is multiplicative.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

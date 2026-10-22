@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LuckyNumber}
+\pmcreated{2013-03-22 16:55:28}
+\pmmodified{2013-03-22 16:55:28}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{lucky number}
+\pmrecord{4}{39187}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em lucky number} is an integer that remains after a sieving process similar to a sieving process for prime numbers. The first few lucky numbers are 1, 3, 7, 9, 13, 15, 21, 25, 31, 33, 37, 43, 49, 51, 63, 67, 69, 73, 75, 79, 87, 93, 99, etc., listed in A000959 of Sloane's OEIS. There are infinitely many lucky numbers. These numbers share some properties with prime numbers, mostly in regards to distribution. \PMlinkname{Stanis\l{}aw Ulam}{StanislawUlam} was the first to study these numbers.
+
+The sieve process for the lucky numbers begins with a list of odd positive integers from 1 to whatever limit one wishes (let's say 49). We circle 1 and 3 and cross out every third number that remains (counting from the beginning): $$1, 3, \not{5}, 7, 9, \not{11}, 13, 15, \not{17}, 19, \ldots$$ Then we circle the number next to the one that we last circled and cross out every $x$th term as indicated by the number we just circled, in this case, 7, starting the count from the beginning but not counting numbers that have already been struck out: $$1, 3, \not{5}, 7, 9, \not{11}, 13, 15, \not{17}, \not{19}, \ldots$$ This step is repeated until every number in our list has been either circled or crossed out. The numbers that remain are ``lucky'' because they survived the process without ever being struck.
+
+The ``lucky number theorem'' is almost the same as the prime number theorem.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SunsConjectureOnSumsOfPrimesAndTriangularNumbers}
+\pmcreated{2013-03-22 18:03:45}
+\pmmodified{2013-03-22 18:03:45}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Sun's conjecture on sums of primes and triangular numbers}
+\pmrecord{5}{40594}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Conjecture}. (Zhi-Wei Sun) Any positive integer $n \neq 216$ is either a prime number $p_i$, a triangular number $T_j$ or the sum of a prime number and a triangular number $p_i + T_j$.
+
+For example, 47 = 37 + 10; 37 is a prime number and 10 is a triangular number. (There are other solutions).
+
+Although there are infinitely many triangular numbers, they are spaced farther apart as their indexes get larger. But no matter how large $T_j$ might be, the next higher triangular number is always $j + 1$ away. To put it algebraically, $T_{j + 1} = T_j + (j + 1)$, with $T_1 = 1$ (or $T_0 = 0$ if one likes). It is also true that there are infinitely many prime numbers, but the distance between one prime and the next is not as neatly predictable as it is for the triangular numbers; there is no known simple formula that takes $n$ as its sole argument and gives the $n$th prime as its output. There could very well be a record-setting prime gap that is immediately followed by a prime quadruplet, but that's another conjecture altogether. The point is that the larger $n$ is the less likely it is to be a prime or a triangular number. From this line of reasoning, it would be easy to jump to the conclusion that it is also less likely to be the sum of a prime and a triangular number.
+
+That would be hasty. In contrast to the decreasing likelyhood of primality or triangularity, for larger $n$ the value of $\pi(n)$ (the prime counting function) increases, as does $\tau(n)$ (the triangular number counting function, here represented by that much overloaded Greek letter). Thus there is a greater likelihood that one of the values of $n - p_i$ (for $0 < i < \pi(n)$) will be a triangular number, or that one of the values of $n - T_j$ (for $0 < j < \tau(n)$) will be a prime number. For most numbers less than 512, there is more than one representation as the sum of a prime and a triangular number.
+
+There are many theorems and conjectures in additive number theory in the mold of ``Every sufficiently large number is the sum of two or three numbers of a specific kind,'' with the word ``sufficiently large'' indicating a greater than inequality. For example, every even $n > 46$ is the sum of two abundant numbers. So, besides involving numbers of two different kinds rather than two or three of the same kind, this conjecture is also unusual in that it gives a negated equality rather than a greater than inequality.
+
+Sun has checked it for $n$ below 17000000. He admits 0 as a triangular number and almost tacitly 0 as a prime number. The conjecture has been stated the differently here so as to not identify 0 as a prime number. In the range 1 to 512, only in the cases of 2 and 61 is it necessary to accept 0 as a triangular number. The differences $216 - T_j$ are: 6, 26, 45, 63, 80, 96, 111, 125, 138, 150, 161, 171, 180, 188, 195, 201, 206, 210, 213, 215; a list that includes some semiprimes.
+
+\begin{thebibliography}{1}
+\bibitem{zs} Zhi-Wei Sun, ``On Sums of Primes and Triangular Numbers'' ArXiv preprint, 10 April (2008): 2, Conjecture 1.2
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

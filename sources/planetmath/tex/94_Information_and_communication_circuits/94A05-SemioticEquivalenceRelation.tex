@@ -1,0 +1,223 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SemioticEquivalenceRelation}
+\pmcreated{2013-10-28 23:54:03}
+\pmmodified{2013-10-28 23:54:03}
+\pmowner{Jon Awbrey}{15246}
+\pmmodifier{Jon Awbrey}{15246}
+\pmtitle{semiotic equivalence relation}
+\pmrecord{27}{40370}
+\pmprivacy{1}
+\pmauthor{Jon Awbrey}{15246}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94A05}
+\pmclassification{msc}{03G15}
+\pmclassification{msc}{03E20}
+\pmclassification{msc}{03B42}
+\pmclassification{msc}{03B10}
+\pmclassification{msc}{94A15}
+\pmsynonym{semiotic congruence}{SemioticEquivalenceRelation}
+\pmrelated{RelationTheory}
+\pmrelated{SignRelation}
+\pmrelated{TriadicRelation}
+\pmdefines{semiotic equation}
+\pmdefines{semiotic equivalence}
+\pmdefines{semiotic equivalence class}
+\pmdefines{semiotic partition}
+
+\endmetadata
+
+% This is the default PlanetMath preamble.
+% as your knowledge of TeX increases, you
+% will probably want to edit this, but it
+% should be fine as is for beginners.
+
+% Almost certainly you want these:
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% Used for TeXing text within EPS files:
+
+\usepackage{psfrag}
+
+% Need this for including graphics (\includegraphics):
+
+\usepackage{graphicx}
+
+% For neatly defining theorems and propositions:
+
+%\usepackage{amsthm}
+
+% Making logically defined graphics:
+
+%%%\usepackage{xypic}
+
+% There are many more packages, add them here as you need them.
+
+% define commands here
+
+\begin{document}
+\textit{\textbf{Note.}  The intended forms of the Tables are visible only in the Page Image view.}
+
+A \textbf{semiotic equivalence relation} (SER) is a type of equivalence relation that arises in the analysis of sign relations.  Any equivalence relation is closely associated with a corresponding set of equivalence classes that partition the underlying set of elements, commonly called the \textit{domain} or the \textit{space} of the relation.  In the case of a SER, the equivalence classes are called \textbf{semiotic equivalence classes} (SEC's) and the partition is called a \textbf{semiotic partition} (SEP).
+
+\tableofcontents
+
+\section{Examples}
+
+Tables 1 and 2 list the triples of two finite relations, $L_{\mathrm{A}}$ and $L_{\mathrm{B}}$, that are introduced in the entries on triadic relations and sign relations as examples of both those concepts.
+
+\begin{quote}\begin{tabular}{|c|c|c|p{2cm}|c|c|c|}
+\multicolumn{3}{c}{Table 1.  Sign Relation $L_{\mathrm{A}}$} &
+\multicolumn{1}{c}{~} &
+\multicolumn{3}{c}{Table 2.  Sign Relation $L_{\mathrm{B}}$} \\
+\cline{1-3}\cline{5-7}
+Object & Sign & Interpretant & & Object & Sign & Interpretant \\
+\cline{1-3}\cline{5-7}
+$\mathrm{A}$ & $\mathrm{``A"}$ & $\mathrm{``A"}$ &&
+$\mathrm{A}$ & $\mathrm{``A"}$ & $\mathrm{``A"}$ \\
+\cline{1-3}\cline{5-7}
+$\mathrm{A}$ & $\mathrm{``A"}$ & $\mathrm{``i"}$ &&
+$\mathrm{A}$ & $\mathrm{``A"}$ & $\mathrm{``u"}$ \\
+\cline{1-3}\cline{5-7}
+$\mathrm{A}$ & $\mathrm{``i"}$ & $\mathrm{``A"}$ &&
+$\mathrm{A}$ & $\mathrm{``u"}$ & $\mathrm{``A"}$ \\
+\cline{1-3}\cline{5-7}
+$\mathrm{A}$ & $\mathrm{``i"}$ & $\mathrm{``i"}$ &&
+$\mathrm{A}$ & $\mathrm{``u"}$ & $\mathrm{``u"}$ \\
+\cline{1-3}\cline{5-7}
+$\mathrm{B}$ & $\mathrm{``B"}$ & $\mathrm{``B"}$ &&
+$\mathrm{B}$ & $\mathrm{``B"}$ & $\mathrm{``B"}$ \\
+\cline{1-3}\cline{5-7}
+$\mathrm{B}$ & $\mathrm{``B"}$ & $\mathrm{``u"}$ &&
+$\mathrm{B}$ & $\mathrm{``B"}$ & $\mathrm{``i"}$ \\
+\cline{1-3}\cline{5-7}
+$\mathrm{B}$ & $\mathrm{``u"}$ & $\mathrm{``B"}$ &&
+$\mathrm{B}$ & $\mathrm{``i"}$ & $\mathrm{``B"}$ \\
+\cline{1-3}\cline{5-7}
+$\mathrm{B}$ & $\mathrm{``u"}$ & $\mathrm{``u"}$ &&
+$\mathrm{B}$ & $\mathrm{``i"}$ & $\mathrm{``i"}$ \\
+\cline{1-3}\cline{5-7}
+\end{tabular}\end{quote}
+
+The sign relations $L_{\mathrm{A}}$ and $L_{\mathrm{B}}$ have many interesting properties that are not possessed by sign relations in general.  Some of these properties have to do with the relation between signs and their interpretant signs, as reflected in the projections of the sign relations $L_{\mathrm{A}}$ and $L_{\mathrm{B}}$ on the $SI$-plane, notated as $\operatorname{proj}_{SI}L_{\mathrm{A}}$ and $\operatorname{proj}_{SI}L_{\mathrm{B}}$, respectively.  The dyadic relations on $S \times I$ that are induced by these projections are also referred to as \textit{\PMlinkname{connotative components}{Connotation}} of the corresponding sign relations, notated as $\operatorname{Con}(L_{\mathrm{A}})$ and $\operatorname{Con}(L_{\mathrm{B}})$, respectively.  The discussion of these properties is made a little easier by using the following abbreviations.
+
+\begin{itemize}
+\item
+$\mathrm{A}_{SI} := \operatorname{Con}(L_{\mathrm{A}}) := \operatorname{proj}_{SI}L_{\mathrm{A}}.$
+\item
+$\mathrm{B}_{SI} := \operatorname{Con}(L_{\mathrm{B}}) := \operatorname{proj}_{SI}L_{\mathrm{B}}.$
+\end{itemize}
+
+Tables 3 and 4 exhibit the connotative components of $L_{\mathrm{A}}$ and $L_{\mathrm{B}}$, respectively.
+
+\begin{quote}\begin{tabular}{|c|c|p{2cm}|c|c|}
+\multicolumn{2}{c}{Table 3.  $\mathrm{A}_{SI}$} &
+\multicolumn{1}{c}{~} &
+\multicolumn{2}{c}{Table 4.  $\mathrm{B}_{SI}$} \\
+\cline{1-2}\cline{4-5}
+Sign & Interpretant & & Sign & Interpretant \\
+\cline{1-2}\cline{4-5}
+$\mathrm{``A"}$ & $\mathrm{``A"}$ &&
+$\mathrm{``A"}$ & $\mathrm{``A"}$ \\
+\cline{1-2}\cline{4-5}
+$\mathrm{``A"}$ & $\mathrm{``i"}$ &&
+$\mathrm{``A"}$ & $\mathrm{``u"}$ \\
+\cline{1-2}\cline{4-5}
+$\mathrm{``i"}$ & $\mathrm{``A"}$ &&
+$\mathrm{``u"}$ & $\mathrm{``A"}$ \\
+\cline{1-2}\cline{4-5}
+$\mathrm{``i"}$ & $\mathrm{``i"}$ &&
+$\mathrm{``u"}$ & $\mathrm{``u"}$ \\
+\cline{1-2}\cline{4-5}
+$\mathrm{``B"}$ & $\mathrm{``B"}$ &&
+$\mathrm{``B"}$ & $\mathrm{``B"}$ \\
+\cline{1-2}\cline{4-5}
+$\mathrm{``B"}$ & $\mathrm{``u"}$ &&
+$\mathrm{``B"}$ & $\mathrm{``i"}$ \\
+\cline{1-2}\cline{4-5}
+$\mathrm{``u"}$ & $\mathrm{``B"}$ &&
+$\mathrm{``i"}$ & $\mathrm{``B"}$ \\
+\cline{1-2}\cline{4-5}
+$\mathrm{``u"}$ & $\mathrm{``u"}$ &&
+$\mathrm{``i"}$ & $\mathrm{``i"}$ \\
+\cline{1-2}\cline{4-5}
+\end{tabular}\end{quote}
+
+One nice property possessed by the sign relations $L_{\mathrm{A}}$ and $L_{\mathrm{B}}$ is that their connotative components $\mathrm{A}_{SI}$ and $\mathrm{B}_{SI}$ constitute a pair of equivalence relations on their common syntactic domain $S = I$.  It is convenient to refer to such a structure as a \textit{semiotic equivalence relation} (SER) since it equates signs that mean the same thing to some interpreter.  Each of the SER's, $\mathrm{A}_{SI}, \mathrm{B}_{SI} \subseteq S \times I \cong S \times S$ partitions the whole collection of signs into \textit{semiotic equivalence classes} (SEC's).  This makes for a strong form of representation in that the structure of the participants' common object domain $\{ \mathrm{A}, \mathrm{B} \}$ is reflected or reconstructed, part for part, in the structure of each of their \textit{semiotic partitions} (SEP's) of the syntactic domain $\{ \mathrm{``A"}, \mathrm{``B"}, \mathrm{``i"}, \mathrm{``u"}, \}$.  But it needs to be noted that the semiotic partitions for $\mathrm{A}$ and $\mathrm{B}$ are not the same, indeed, they are orthogonal to each other.  This makes it difficult to interpret either one of the partitions or equivalence relations on the syntactic domain as corresponding to any sort of objective structure or invariant reality, independent of the individual interpreter's point of view (POV).
+
+Information about the different patterns of semiotic equivalence induced by the interpreters $\mathrm{A}$ and $\mathrm{B}$ is summarized in Tables 5 and 6.  The form of these Tables should suffice to explain what is meant by saying that the SEP's for $\mathrm{A}$ and $\mathrm{B}$ are orthogonal to each other.
+
+\begin{quote}\begin{tabular}{|p{5mm}cp{5mm}p{5mm}cp{5mm}|p{1cm}|p{5mm}cp{5mm}|p{5mm}cp{5mm}|}
+\multicolumn{6}{c}{Table 5.  SEP for $\mathrm{A}$} &
+\multicolumn{1}{c}{~} &
+\multicolumn{6}{c}{Table 6.  SEP for $\mathrm{B}$} \\
+\cline{1-6}\cline{8-13}
+& $\mathrm{``A"}$ &&& $\mathrm{``i"}$ &&&& $\mathrm{``A"}$ &&& $\mathrm{``i"}$ & \\
+\cline{1-6}
+& $\mathrm{``u"}$ &&& $\mathrm{``B"}$ &&&& $\mathrm{``u"}$ &&& $\mathrm{``B"}$ & \\
+\cline{1-6}\cline{8-13}
+\end{tabular}\end{quote}
+
+\section{Notation}
+
+A few items of notation are useful in discussing equivalence relations in general and semiotic equivalence relations in particular.
+
+As a general consideration, if $E$ is an equivalence relation on a set $X$, then every element $x$ of $X$ belongs to a unique equivalence class under $E$ called ``the equivalence class of $x$ under $E$".  Convention provides the \textit{square bracket notation} for denoting this equivalence class, either in the subscripted form $[x]_E$ or in the simpler form $[x]$ when the subscript $E$ is understood.  A statement that the elements $x$ and $y$ are equivalent under $E$ is called an \textit{equation} and can be expressed in numerous ways, for example, any of the following equivalent statements:
+
+\begin{itemize}
+\item
+$(x, y) \in E$
+\item
+$x \in [y]_E$
+\item
+$y \in [x]_E$
+\item
+$[x]_E = [y]_E$
+\item
+$x =_E y$
+\end{itemize}
+
+Thus we have the following definitions:
+
+\begin{itemize}
+\item
+$[x]_E := \{ y \in X : (x, y) \in E \}.$
+\item
+$x =_E y \iff (x, y) \in E.$
+\end{itemize}
+
+In the application to sign relations it is useful to extend the square bracket notation in the following ways.  If $L$ is a sign relation whose connotative component or syntactic projection $L_{SI}$ is an equivalence relation on $S$, let $[s]_L$ be the equivalence class of $s$ under $L_{SI}$.  That is to say, $[s]_L := [s]_{L_{SI}}$.  A statement that the signs $x$ and $y$ are equivalent under a semiotic equivalence relation $L_{SI}$ is called a \textit{semiotic equation} (SEQ) and can be written in either of the forms, $[x]_L = [y]_L$ or $x =_L y$.
+
+In many situations there is one further adaptation of the square bracket notation that can be useful.  Namely, when there is known to exist a particular triple $(o, s, i) \in L$, it is permissible to let $[o]_L := [s]_L$.  These modifications are designed to make the notation for semiotic equivalence classes harmonize as well as possible with the frequent use of similar devices for the denotations of signs and expressions.
+
+The SER for interpreter $\mathrm{A}$ yields the following semiotic equations:
+
+\begin{tabular}{lclc}
+& $[\mathrm{``A"}]_{\mathrm{A}}$ & $=$ & $[\mathrm{``i"}]_{\mathrm{A}}$ \\
+& $[\mathrm{``B"}]_{\mathrm{A}}$ & $=$ & $[\mathrm{``u"}]_{\mathrm{A}}$ \\
+or \\
+& $\mathrm{``A"}$ & $=_{\mathrm{A}}$ & $\mathrm{``i"}$ \\
+& $\mathrm{``B"}$ & $=_{\mathrm{A}}$ & $\mathrm{``u"}$ \\
+\end{tabular}
+
+and the semiotic partition:  $\{ \{ \mathrm{``A"}, \mathrm{``i"} \}, \{ \mathrm{``B"}, \mathrm{``u"} \} \}.$
+
+The SER for interpreter $\mathrm{B}$ yields the following semiotic equations:
+
+\begin{tabular}{lclc}
+& $[\mathrm{``A"}]_{\mathrm{B}}$ & $=$ & $[\mathrm{``u"}]_{\mathrm{B}}$ \\
+& $[\mathrm{``B"}]_{\mathrm{B}}$ & $=$ & $[\mathrm{``i"}]_{\mathrm{B}}$ \\
+or \\
+& $\mathrm{``A"}$ & $=_{\mathrm{B}}$ & $\mathrm{``u"}$ \\
+& $\mathrm{``B"}$ & $=_{\mathrm{B}}$ & $\mathrm{``i"}$ \\
+\end{tabular}
+
+and the semiotic partition:  $\{ \{ \mathrm{``A"}, \mathrm{``u"} \}, \{ \mathrm{``B"}, \mathrm{``i"} \} \}.$
+
+%%%%%
+%%%%%
+\end{document}

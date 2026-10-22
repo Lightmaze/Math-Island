@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProuhetThueMorseSequence}
+\pmcreated{2013-03-22 14:27:17}
+\pmmodified{2013-03-22 14:27:17}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{Prouhet-Thue-Morse sequence}
+\pmrecord{24}{35973}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B85}
+\pmclassification{msc}{68R15}
+\pmsynonym{Thue-Morse sequence}{ProuhetThueMorseSequence}
+\pmrelated{ProuhetThueMorseConstant}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The {\em Prouhet-Thue-Morse sequence} is a binary sequence which begins as follows:
+
+\[ 0, 1, 1, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, \ldots \]
+
+The $n$th term is defined to be the number of $1$s in the binary expansion of $n$, modulo 2.  That is, $t_n = 0$ if the number of $1$s in the binary expansion of $n$ is even, and $t_n = 1$ if it is odd.
+
+The sequence satisfies the following recurrence relation, with $t_0=0$:
+\[ \begin{array}{ccc} t_{2n} &=& t_n \\
+                      t_{2n+1} &=& 1 - t_n \end{array} \]
+
+The Prouhet-Thue-Morse sequence is an automatic sequence.  It has been shown to be 
+\PMlinkescapetext{cube-free} 
+(no three consecutive identical blocks)  and overlap-free 
+i.e no sub-block of the form $awawa$, where $a \in \{0,1\}$, when viewed as a word of infinite length over the binary alphabet $\{0,1\}$.
+
+\subsubsection*{Generating function}
+
+The generating function $T(x)=\sum_{n=0}^{\infty} t_nx^n$ for the sequence satisfies the relation
+
+\[ T(x) = T(x^2)(1-x) + \frac{x}{1-x^2} \]
+
+\subsubsection*{History}
+
+The Thue-Morse sequence was independently discovered by P. Prouhet, Axel Thue, and Marston Morse, and has since been rediscovered by many others.
+
+\subsubsection*{References}
+\begin{itemize}
+\item Allouche, J.-P.; Shallit, J. O.  \PMlinkexternal{The ubiquitous Prouhet-Thue-Morse Sequence}{http://www.cs.uwaterloo.ca/~shallit/Papers/ubiq.ps} [postscript]
+\item 
+Sloane, N. J. A.  { \it Sequence A010060}, \PMlinkexternal{The On-Line Encyclopedia of Integer Sequences}{http://www.research.att.com/~njas/sequences/}.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

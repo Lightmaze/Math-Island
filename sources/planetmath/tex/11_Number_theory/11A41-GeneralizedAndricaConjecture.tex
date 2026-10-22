@@ -1,0 +1,108 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GeneralizedAndricaConjecture}
+\pmcreated{2013-03-22 17:17:34}
+\pmmodified{2013-03-22 17:17:34}
+\pmowner{dankomed}{17058}
+\pmmodifier{dankomed}{17058}
+\pmtitle{generalized Andrica conjecture}
+\pmrecord{32}{39636}
+\pmprivacy{1}
+\pmauthor{dankomed}{17058}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmrelated{FlorentinSmarandache}
+\pmrelated{SmarandacheFunction}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The \emph{Andrica function} $A_{n}\equiv\sqrt{p_{n+1}}-\sqrt{p_{n}}$, where $p_n$ is the n$^{\text{th}}$ prime number
+can be plotted with mathematical software and for large $n$ it seems that $1\gg A_{n}$, however
+the \emph{Andrica conjecture} $1>A_{n}$ has not been yet proven and
+remains an open problem.
+
+Similarly one can consider the \emph{generalized Andrica function}
+$A_{G}(x,n)\equiv p_{n+1}^{x}-p_{n}^{x}$ and plot it for $x\in\mathbb{R}$.
+
+It is clear that $ A_{G}(0,n)=0$.
+
+For $x<0$, $A_{G}(x,n)$ is negative, and if $x\rightarrow-\infty$ then $A_{G}(x,n)\rightarrow-\infty$.
+
+For $x>0$, $A_{G}(x,n)$ is positive, and if $x\rightarrow+\infty$ then $A_{G}(x,n)\rightarrow+\infty$.
+
+Therefore if one considers the \emph{generalized Andrica equation}
+$A_{G}(x,n)=1$ and solves for $x$ then solutions for each $n$ will occur
+for $x>0$. What is more it is easily provable that the biggest solution of generalized Andrica equation $x_{\max}=1$
+occurs for $n=1$, and for $n>1$ it is always the case that each solution of generalized Andrica equation $x_n<1$
+because the minimal difference between two consequtive primes is at
+best 2 for \emph{twin primes}. However the value of the smallest solution of generalized Andrica equation 
+$x_{\min}$ at the present time remains unknown and its existence is unproven.
+
+The existence of minimal solution $x_{\min}$ of the generalized Andrica equation is still unproven. However according to the \emph{generalized Andrica conjecture} proposed by Florentin Smarandache the value of $x_{\min}$, also known as the \emph{Smarandache constant}, is  $x_{\min}\approx0.5671481302\ldots$ and occurs for $n=30$. If stated as an inequality the generalized Andrica conjecture states:
+
+$p _ {n+1} ^ x - p_ n ^ x < 1$ for $x < 0.567148 \ldots$
+
+Numerical plots for the first $2\times10^{11}$ primes show that the solutions $x_n$ of $A_{G}(x,n)=1$ tend to be confined in the interval $(0.9,1)$ and according to generalized Andrica conjecture one hopes that this behavior remains true as $n\rightarrow\infty$.
+
+The following plots of $A_G(x,n)$ were created with \emph{Wolfram's Mathematica 5.2}, the function plot range was cut off at $A_G(x,n)=1$, so the edge of the plateau is visualizing the exact solutions $x_n$ of the equation $A_G(x,n)=1$.
+
+\includegraphics{200} \includegraphics[scale=.86]{200b}
+
+Plots for the first 200 primes. This plot most clearly visualizes the putative minimal solution $x_{\min}$ known also as the Smarandache constant, which seems to occur for $n=30$.
+
+\includegraphics{10-3} \includegraphics[scale=.86]{10-3b}
+
+Plots for the first 1000 primes.
+
+\includegraphics{2x10-3} \includegraphics[scale=.86]{2x10-3b}
+
+Plots for the first $2 \times 10^3$ primes.
+
+\includegraphics{2x10-4} \includegraphics[scale=.86]{2x10-4b}
+
+Plots for the first $2 \times 10^4$ primes.
+
+\includegraphics{2x10-5} \includegraphics[scale=.86]{2x10-5b}
+
+Plots for the first $2 \times 10^5$ primes.
+
+\includegraphics{2x10-6} \includegraphics{2x10-6b}
+
+Plots for the first $2 \times 10^6$ primes.
+
+\includegraphics{2x10-9} \includegraphics{2x10-9b}
+
+Plots for the first $2 \times 10^9$ primes.
+
+\includegraphics{2x10-11} \includegraphics{2x10-11b}
+
+Plots for the first $2 \times 10^{11}$ primes.
+
+
+%%%%%
+%%%%%
+\end{document}

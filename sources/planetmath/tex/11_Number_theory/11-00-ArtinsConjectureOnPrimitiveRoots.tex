@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ArtinsConjectureOnPrimitiveRoots}
+\pmcreated{2013-03-22 16:21:04}
+\pmmodified{2013-03-22 16:21:04}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Artin's conjecture on primitive roots}
+\pmrecord{5}{38485}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmsynonym{Artin's conjecture}{ArtinsConjectureOnPrimitiveRoots}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem*{conj}{Artin's Conjecture}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+Let $m$ be a number in the list $2,4,p^k$ or $2p^k$ for some $k\geq 1$. Then we know that $m$ has a primitive root, but finding one can be a rather challenging problem (theoretically and computationally). 
+
+Gauss conjectured that the number $10$ is a primitive root for infinitely many primes $p$. Much later, in $1927$, Emil Artin made the following conjecture:
+
+\begin{conj}
+Let $n$ be an integer not equal to $-1$ or a square. Then $n$ is a primitive root for infinitely many primes $p$.
+\end{conj} 
+
+However, up to now, nobody has been able to show that a single integer $n$ is a primitive root for infinitely many primes. It can be shown that the number $3$ is a primitive root for every Fermat prime but, unfortunately, the existence of infinitely many Fermat primes is far from obvious, and in fact it is quite dubious (only five Fermat primes are known!).
+%%%%%
+%%%%%
+\end{document}

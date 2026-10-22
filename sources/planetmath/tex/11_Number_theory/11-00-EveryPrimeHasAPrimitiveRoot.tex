@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EveryPrimeHasAPrimitiveRoot}
+\pmcreated{2013-03-22 16:20:41}
+\pmmodified{2013-03-22 16:20:41}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{every prime has a primitive root}
+\pmrecord{6}{38477}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmrelated{APolynomialOfDegreeNOverAFieldHasAtMostNRoots}
+\pmrelated{ExistenceOfPrimitiveRootsForPowersOfAnOddPrime}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem*{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem*{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\lcm}{\operatorname{lcm}}
+\begin{document}
+\PMlinkescapeword{universal} \PMlinkescapeword{exponent} Let $p$ be a prime. Recall that an integer $g$ is said to be a primitive root for $p$ (or more concretely for $(\Ints/p\Ints)^\times$) if the multiplicative order of $g$ modulo $p$ is $\phi(p)=p-1$. In other words, $g$ is a generator of the cyclic group $(\Ints/p\Ints)^\times$, i.e.
+$$(\Ints/p\Ints)^\times =\{1,2,3,\ldots,p-1\}= \{ 1, g, g^2,\ldots,g^{p-2}\}.$$
+Before we go into the proof of the main theorem, we define the term ``least universal exponent'' and prove a lemma.
+\begin{defn}
+Let $N>2$ be a natural number. We say that $n$ is the {\bf least universal exponent} for $\Ints/N\Ints$ if $a^n\equiv 1\mod N$ for all $a\in (\Ints/N\Ints)^\times$ and $n$ is the least positive integer with this property.  
+\end{defn}
+It follows from Euler's theorem that the least universal exponent $n$ of $\Ints/N\Ints$ is less or equal to the value of Euler's phi function $\phi(n)$, and in fact, the least universal exponent should divide $\phi(n)$.  
+\begin{lemma}
+Let $p$ be a prime and let $n$ be the least universal exponent of $\Ints/p\Ints$. Then there is a number $a\in (\Ints/p\Ints)^\times$ whose order is precisely $n$.
+\end{lemma}
+\begin{proof} In this proof we will use the properties of the multiplicative order of an integer. We shall prove that (a) the least universal exponent is the least common multiple of all the orders of all the elements of $(\Ints/N\Ints)^\times$, and (b) there is an element whose order is exactly the least common multiple. In order to show (a) and (b), it suffices to show that if $a$ and $b$ have orders $\ord(a)=h$ and $\ord(b)=k$ then there is an element $c$ whose order is $\ord(c)=\lcm(h,k)$. This is clear: if $q$ is a prime and $q^i$ divides $h=\ord(a)$ then, there is an element whose order is $p^i$ (namely $a^{h/q^i}$ has such order); and if $h'=\ord(c)$ and $k'=\ord(d)$ are relatively prime then $\ord(cd)=h'k'$. Finally, suppose that $\lcm(h,k)=q_1^{i_1}\cdots q_t^{i_t}$, for some distinct primes $q_1,\ldots, q_t$ and positive integers $i_1,\ldots,i_t$. Then, each $q_j^{i_j}$ divides either $h$ or $k$ and there is an element $c_j$ of order exactly $q_j^{i_j}$. Thus, the element $c=c_1\cdots c_t$ has exact order $\lcm(h,k)$.
+\end{proof}
+
+\begin{thm}
+Every prime $p$ has a primitive root.
+\end{thm}
+
+The following proof is due to Legendre.
+
+\begin{proof}
+If $p=2$ then $g=1$ is a primitive root. Let us assume that $p>2$ is prime and let $n$ be the least universal exponent for $p$, i.e. $n$ is the smallest positive integer such that $x^n\equiv 1 \mod p$, for all non-zero $x\in \Ints/p\Ints$. Notice that, in particular by the Lemma, there is some element $g\in \Ints/p\Ints$ such that $g^n\equiv 1$ but $g^m\neq 1 \mod p$ for any $m<n$, i.e. the multiplicative order of $g$ is precisely $n$. Also, notice that by Fermat's little theorem, $n\leq p-1$.
+
+Now, the polynomial $f(x)=x^n-1$ has at most $n$ roots over the field $\Ints/p\Ints$ (see \PMlinkid{this entry}{APolynomialOfDegreeNOverAFieldHasAtMostNRoots}), and $f(x)\equiv 0 \mod p$ for all non-zero $x \mod p$. Thus $n\geq p-1$. Hence, $n=p-1$ and $g$ is of exact order $p-1$, therefore $g$ is a primitive root.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

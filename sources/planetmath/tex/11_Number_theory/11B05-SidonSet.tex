@@ -1,0 +1,123 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SidonSet}
+\pmcreated{2013-03-22 13:59:40}
+\pmmodified{2013-03-22 13:59:40}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Sidon set}
+\pmrecord{12}{34771}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B05}
+\pmclassification{msc}{11B34}
+\pmsynonym{Sidon sequence}{SidonSet}
+%\pmkeywords{difference set}
+\pmrelated{ErdHosTuranConjecture}
+\pmdefines{$B_h[g]$ set}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+
+\newcommand*{\abs}[1]{\left\lvert#1\right\rvert}
+\begin{document}
+A set of natural numbers is called a \emph{Sidon set} if all
+pairwise sums of its elements are distinct. Equivalently, the equation
+$a+b=c+d$ has only the trivial solution $\{a,b\}=\{c,d\}$ in
+elements of the set.
+
+Sidon sets are a special case of so-called $B_h[g]$ sets. A set $A$
+is called a $B_h[g]$ set if for every $n\in \mathbb{N}$ the equation
+$n=a_1+\dotsc+a_h$ has at most $g$ different solutions with
+$a_1\leq \dotsb\leq a_h$ being elements of $A$. The Sidon sets are
+$B_2[1]$ sets.
+
+Define $F_h(n,g)$ as the size of the largest $B_h[g]$ set
+contained in the interval $[1,n]$. Whereas it is known that
+$F_2(n,1)=n^{1/2}+O(n^{5/16})$\cite[p.~85]{cite:halberstam_sequences},
+no asymptotical results are known for $g>1$ or $h>2$
+\cite{cite:green_bhg}.
+
+Every finite set has a rather large $B_h[1]$ subset. Koml\'os,
+Sulyok, and
+Szemer\'edi\cite{cite:komlos_szem_sulyok_linearsubsets} proved
+that in every $n$-element set there is a $B_h[1]$ subset of size at
+least $cF_h(n,1)$ for $c=\tfrac{1}{8}(2h)^{-6}$. For Sidon sets
+Abbott\cite{cite:abbott_sidonsubsets} improved that to $c=2/25$.
+It is not known whether one can take $c=1$.
+
+The infinite $B_h[g]$ sets are understood even worse. Erd\H{o}s
+\cite[p.~89]{cite:halberstam_sequences} proved that for every
+infinite Sidon set $A$ we have $\liminf_{n\to\infty}(n/\log
+n)^{-1/2} \abs{A\cap [1,n]}<C$ for some constant $C$. On the other
+hand, for a long time no example of a set for which $\abs{A\cap
+[1,n]}>n^{1/3+\epsilon}$ for some $\epsilon>0$ was known. Only
+recently Ruzsa\cite{cite:ruzsa_densesidon} used an extremely
+clever construction to prove the existence of a set $A$ for which
+$\abs{A\cap [1,n]}>n^{\sqrt{2}-1-\epsilon}$ for every 
+$\epsilon>0$ and for all sufficiently large $n$.
+
+For an excellent survey of Sidon sets see
+\cite{cite:obryant_sidon}.
+
+\begin{thebibliography}{1}
+
+\bibitem{cite:abbott_sidonsubsets}
+Harvey~Leslie Abbott.
+\newblock Sidon sets.
+\newblock {\em Canad. Math. Bull.}, 33(3):335--341, 1990.
+\newblock \PMlinkexternal{Zbl 0715.11004}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0715.11004}.
+
+\bibitem{cite:green_bhg}
+Ben Green.
+\newblock {$B_h[g]$} sets: The current state of affairs.
+\newblock \PMlinkexternal{http://www.dpmms.cam.ac.uk/~bjg23/papers/bhgbounds.dvi}{http://www.dpmms.cam.ac.uk/~bjg23/papers/bhgbounds.dvi}, 2000.
+
+\bibitem{cite:halberstam_sequences}
+Heini Halberstam and Klaus~Friedrich Roth.
+\newblock {\em Sequences}.
+\newblock Springer-Verlag, second edition, 1983.
+\newblock \PMlinkexternal{Zbl 0498.10001}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0498.10001}.
+
+\bibitem{cite:komlos_szem_sulyok_linearsubsets}
+J{\'a}nos Koml{\'o}s, Miklos Sulyok, and Endre Szemer{\'e}di.
+\newblock Linear problems in combinatorial number theory.
+\newblock {\em Acta Math. Acad. Sci. Hung.}, 26:113--121, 1975.
+\newblock \PMlinkexternal{Zbl 0303.10058}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0303.10058}.
+
+\bibitem{cite:obryant_sidon}
+Kevin O'Bryant.
+\newblock A complete annotated bibliography of work related to {Sidon}
+  sequences.
+\newblock {\em Electronic Journal of Combinatorics}.
+\newblock
+\PMlinkexternal{http://arxiv.org/abs/math.NT/0407117}{http://arxiv.org/abs/math.NT/0407117}.
+
+\bibitem{cite:ruzsa_densesidon}
+Imre Ruzsa.
+\newblock An infinite {Sidon} sequence.
+\newblock {\em J.\ Number Theory}, 68(1):63--71, 1998.
+\newblock Available at \PMlinkexternal{http://www.math-inst.hu/~ruzsa/cikkek.html}{http://www.math-inst.hu/~ruzsa/cikkek.html}.
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

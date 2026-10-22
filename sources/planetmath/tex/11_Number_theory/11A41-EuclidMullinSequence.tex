@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EuclidMullinSequence}
+\pmcreated{2013-03-22 17:37:41}
+\pmmodified{2013-03-22 17:37:41}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Euclid-Mullin sequence}
+\pmrecord{6}{40049}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The {\em Euclid-Mullin sequence} is a sequence of prime numbers starting with 2 in which each prime afterwards is the least prime factor of one more than the product of the previous terms. Or, to put it algebraically, $a_1 = 2$ and $a_n$ for $n > 1$ is the smallest prime dividing $$1 + \prod_{i = 1}^{n - 1} a_i.$$ (Actually, $a_1$ can be set to 3, 7 or 43, resulting in a sequence that is exactly the same except for the order of its first four terms).
+
+So, the product of 2 is 2, and one more than that is 3, which is prime. 2 times 3 is 6, and one more than 6 is 7, which is also prime. The product of 2, 3 and 7 is 42, just below the prime 43. The product of 2, 3, 7 and 43, however, is composite, namely $1807 = 13 \times 139$, and thus 13 is the next term of the sequence. The sequence continues 53, 5, 6221671, 38709183810571, 139, 2801, 11, 17, 5471, 52662739, etc., and is listed in A000945 of Sloane's OEIS. (The first four terms of this sequence are the same as Sylvester's sequence).
+
+It follows from Euclid's proof that there are infinitely many prime numbers that the Euclid-Mullin sequence does not contain any repeated terms. What is not known, however, is whether this sequence contains all the primes, as it is clear that very small primes can follow much larger primes. 31 is the smallest prime whose membership in this sequence is in question, but only the first 43 terms are known as of 2007. To find the 44th term, many are working on factoring 
+2784908410762794071887414394815651793559267258537102016323316
+20642982062389901741890579963524423782637435949041666525000702723914662388812510
+545494307250950777886431051612811386531.
+
+\begin{thebibliography}{2}
+\bibitem{rg} R. K. Guy \& R. Nowakowski, ``Discovering primes with Euclid,'' {\it Delta} {\bf 5} (1975): 49 - 63
+\bibitem{am} A. A. Mullin, ``Recursive function theory,'' {\it Bull. Amer. Math. Soc.} {\bf 69} (1963): 737
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

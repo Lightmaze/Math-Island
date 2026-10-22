@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GlobalVersusLocalContinuity}
+\pmcreated{2013-03-22 19:09:07}
+\pmmodified{2013-03-22 19:09:07}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{global versus local continuity}
+\pmrecord{4}{42056}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C05}
+\pmclassification{msc}{26A15}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+In this entry, we establish a very basic fact about continuity:
+
+\begin{prop} A function $f:X\to Y$ between two topological spaces is continuous iff it is continuous at every point $x\in X$. \end{prop}
+\begin{proof}
+Suppose first that $f$ is continuous, and $x\in X$.  Let $f(x)\in V$ be an open set in $Y$.  We want to find an open set $x\in U$ in $X$ such that $f(U)\subseteq V$.  Well, let $U=f^{-1}(V)$.  So $U$ is open since $f$ is continuous, and $x\in U$.  Furthermore, $f(U) = f(f^{-1}(V))=V$.
+
+On the other hand, if $f$ is not continuous at $x \in X$.  Then there is an open set $f(x)\in V$ in $Y$ such that no open sets $x\in U$ in $X$ have the property 
+\begin{equation}
+f(U)\subseteq V.
+\end{equation}  
+Let $W=f^{-1}(V)$.  If $W$ is open, then $W$ has the property $(1)$ above, a contradiction.  Since $W$ is not open, $f$ is not continuous.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

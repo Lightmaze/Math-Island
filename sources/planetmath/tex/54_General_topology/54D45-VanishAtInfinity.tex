@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{VanishAtInfinity}
+\pmcreated{2013-03-22 17:50:57}
+\pmmodified{2013-03-22 17:50:57}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{vanish at infinity}
+\pmrecord{6}{40321}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D45}
+\pmclassification{msc}{54C35}
+\pmsynonym{zero at infinity}{VanishAtInfinity}
+\pmsynonym{vanishes at infinity}{VanishAtInfinity}
+\pmrelated{RegularAtInfinity}
+\pmrelated{ApplicationsOfUrysohnsLemmaToLocallyCompactHausdorffSpaces}
+\pmdefines{$C_0$}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $X$ be a locally compact space. A function $f:X \longrightarrow \mathbb{C}$ is said to \emph{vanish at infinity} if, for every $\epsilon > 0$, there is a compact set $K \subseteq X$ such that $|f(x)|<\epsilon$ for every $x \in X-K$, where $\|\cdot\|$ denotes the standard \PMlinkname{norm}{Norm2} on $\mathbb{C}$. 
+
+If $X$ is non-compact, let $X \cup \{\infty\}$ be the one-point compactification of $X$. The above definition can be rephrased as:  The extension of $f$ to $X \cup \{\infty\}$ satisfying $f(\infty)=0$ is continuous at the point $\infty$.
+
+The set of continuous functions $X \longrightarrow \mathbb{C}$ that vanish at infinity is an algebra over the complex field and is usually denoted by $C_0(X)$.
+
+\subsubsection{Remarks}
+\begin{itemize}
+\item When $X$ is compact, all functions $X \longrightarrow \mathbb{C}$ vanish at infinity.  Hence, $C_0(X) = C(X)$.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

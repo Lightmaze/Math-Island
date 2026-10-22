@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SelfNumber}
+\pmcreated{2013-03-22 15:56:15}
+\pmmodified{2013-03-22 15:56:15}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{self number}
+\pmrecord{6}{37946}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{Columbian number}{SelfNumber}
+\pmsynonym{Colombian number}{SelfNumber}
+\pmsynonym{self-number}{SelfNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+An integer $n$ that in a given base $b$ lacks a digitaddition generator.
+
+Consider, for example, the integer 41 in base 10. It can be expressed as 34 + 3 + 4. For 42, however, there is no such digitaddition, hence it is a self number.
+
+If $2|b$, all odd $n < b$ will be self numbers.
+
+Though self numbers form a small proportion of most ranges of $2b$ consecutive integers, there are infinitely many of them: The recurrence relation $S_i = (b - 2)b^{i - 1} + S_{i - 1} + (b - 2)$ (with $S_1 = b - 1$ if $2|b$ and $S_1 = b - 2$ otherwise) will give an incomplete though infinite list of self numbers.
+
+Reference
+
+Kaprekar, D. R. {\em The Mathematics of New Self-Numbers}. Devaiali, 1963: 19 - 20
+%%%%%
+%%%%%
+\end{document}

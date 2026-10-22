@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrimeIdealDecompositionInCyclotomicExtensionsOfmathbbQ}
+\pmcreated{2013-03-22 13:53:49}
+\pmmodified{2013-03-22 13:53:49}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{prime ideal decomposition in cyclotomic extensions of $\mathbb{Q}$}
+\pmrecord{5}{34644}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R18}
+%\pmkeywords{cyclotomic}
+%\pmkeywords{prime ideal}
+%\pmkeywords{decomposition}
+\pmrelated{PrimeIdealDecompositionInQuadraticExtensionsOfMathbbQ}
+\pmrelated{CalculatingTheSplittingOfPrimes}
+\pmrelated{KroneckerWeberTheorem}
+\pmrelated{ExamplesOfPrimeIdealDecompositionInNumberFields}
+\pmrelated{SplittingAndRamificationInNumberFieldsAndGaloisExtensions}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+Let $q\in\Ints$ be a prime greater than $2$, let $\zeta_q=e^{2\pi
+i/q}$ and write $L=\Rats(\zeta_q)$ for the cyclotomic extension.
+The ring of integers of $L$ is $\mathcal{O}_L=\Ints[\zeta_q]$. The
+discriminant of $L/\Rats$ is:
+$$D_{L/\Rats}=\pm q^{q-2}$$
+and it is $+$ exactly when $q-1\equiv 0,1\ \operatorname{mod}\ 4$.
+
+\begin{prop}
+$\sqrt{\pm q}\in \Rats(\zeta_q)$, with $+$ exactly when $q-1\equiv
+0,1\ \operatorname{mod}\ 4$.
+\end{prop}
+\begin{proof}
+It can be proved that:
+$$D_{L/\Rats}=\pm q^{q-2}=\prod_{1\leq i < j \leq
+q-1}(\zeta_q^i-\zeta_q^j)^2$$ Taking square roots we obtain
+$$q^{\frac{q-3}{2}}\sqrt{\pm q}=\prod_{1\leq i < j \leq
+q-1}(\zeta_q^i-\zeta_q^j)\in \Rats(\zeta_q)$$ Hence the result
+holds (and the sign depends on whether $q-1\equiv 0,1\
+\operatorname{mod}\ 4$).
+\end{proof}
+
+Let $K=\Rats(\sqrt{\pm q})$ with the corresponding sign. Thus, by
+the proposition we have a tower of fields:
+$\xymatrix{
+ & L=\Rats(\zeta_q) \ar@{-}[d]\\
+ & K \ar@{-}[d]\\
+ & \Rats}$
+
+For a prime ideal $p\Ints$ the decomposition in the quadratic
+extension $K/\Rats$ is well-known (see \PMlinkexternal{this entry}{http://planetmath.org/encyclopedia/PrimeIdealDecompositionInQuadraticExtensionsOfMathbbQ.html}). The next theorem
+characterizes the decomposition in the extension $L/\Rats$:
+
+\begin{thm}
+Let $p\in\Ints$ be a prime.
+\begin{enumerate}
+\item If $p=q$, $q\mathcal{O}_L=\left(1-\zeta_q\right)^{q-1}$. In
+other words, the prime $q$ is totally ramified in $L$.
+
+\item If $p\neq q$ then $p\Ints$ splits into $(q-1)/f$ distinct
+primes in $\mathcal{O}_L$, where $f$ is the order of $p\
+\operatorname{mod}\ q$ (i.e. $p^f\equiv 1\ \operatorname{mod}\ q$,
+and for all $1< n<f, p^n\neq 1\ \operatorname{mod}\ q$).
+\end{enumerate}
+\end{thm}
+
+\begin{thebibliography}{9}
+\bibitem{marcus} Daniel A.Marcus, {\em Number Fields}. Springer, New York.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

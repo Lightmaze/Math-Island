@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EveryPositiveIntegerGreaterThan30HasAtLeastOneCompositeTotative}
+\pmcreated{2013-03-22 16:58:19}
+\pmmodified{2013-03-22 16:58:19}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{every positive integer greater than 30 has at least one composite totative}
+\pmrecord{7}{39247}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{SmallIntegersThatAreOrMightBeTheLargestOfTheirKind}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem*{proposition*}{Proposition}
+\begin{document}
+\begin{proposition*}
+Every positive integer greater than 30 has at least one composite
+totative.
+\end{proposition*}
+
+\begin{proof}
+Suppose we are given a positive integer $n$ which is greater than 30.
+Let $p$ be the smallest prime number which does not divide $n$.  Hence
+$\gcd(n,p^2) = 1$.  If $n\le 50$, then $p < 7$, so $p^2 \le 25 < n$.
+But if $n>50$ and $p\le 7$, then $p^2 < 50 < n$.  In either case we
+get that $p^2$ is a composite totative of $n$.
+
+So now suppose $p > 7$.  Then $p = p_k$ for some $k>4$.  To complete
+the proof, it is enough to show that $p^2$ is strictly smaller than
+the primorial $(k-1)\# = p_1 p_2\cdots p_{k-1}$, which by assumption
+divides $n$.  For then we would have $\gcd(n, p^2) = 1$ and $p^2 < n$,
+showing that $p^2$ is a composite totative of $n$.
+
+We now prove by induction that for any $k>4$, the inequality $p_k^2 <
+(k-1)\#$ holds.  For the base case $k=5$ we need to verify that
+\[
+p_5^2 = 121 < 210 = 4\#.
+\]
+Now suppose $p_k^2 < (k-1)\#$ for some $k>4$.  By Bertrand's
+postulate, $p_{k+1} < 2p_k$, so applying the induction assumption, we
+get that
+\[
+p_{k+1}^2 < 4p_k^2 < 4(k-1)\#.
+\]
+But $4 < k < p_k$, so $p_{k+1}^2 < k\#$ as desired.
+\end{proof}
+
+\PMlinkescapeword{argument}
+\PMlinkescapeword{base}
+\PMlinkescapeword{complete}
+%%%%%
+%%%%%
+\end{document}

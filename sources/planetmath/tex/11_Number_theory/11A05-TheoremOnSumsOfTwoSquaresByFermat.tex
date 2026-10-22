@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheoremOnSumsOfTwoSquaresByFermat}
+\pmcreated{2014-10-25 17:44:02}
+\pmmodified{2014-10-25 17:44:02}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{theorem on sums of two squares by Fermat}
+\pmrecord{13}{87625}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmclassification{msc}{11A05}
+\pmclassification{msc}{11A41}
+\pmclassification{msc}{11A67}
+\pmclassification{msc}{11E25}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%\usepackage{xypic}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Suppose that an odd prime number $p$ can be written as the sum
+$$p \;=\; a^2\!+\!b^2$$
+where $a$ and $b$ are integers.\, Then they have to be coprime.\, 
+We will show that $p$ is of the form $4n\!+\!1$.
+
+Since\, $p \nmid b$,\, the congruence
+$$bb_1 \;\equiv\; 1 \pmod p$$
+has a solution $b_1$, whence
+$$0 \;\equiv\; pb_1^2 \;=\; (ab_1)^2\!+\!(bb_1)^2 \;\equiv\; (ab_1)^2\!+\!1 \pmod p,$$
+and thus
+$$(ab_1)^2 \;\equiv\; -1 \pmod p.$$
+Consequently, the Legendre symbol $\left(\frac{-1}{p}\right)$ is $+1$, i.e.
+$$(-1)^{\frac{p-1}{2}} \;=\; 1.$$
+Therefore, we must have
+\begin{align}
+p \;=\; 4n\!+\!1
+\end{align}
+where $n$ is a positive integer.  \\
+
+
+Euler has first proved the following theorem presented by 
+Fermat and containing also the converse of the above claim.
+
+\textbf{Theorem 
+(\PMlinkname{Thue's lemma}{ThuesLemma}).}\, An odd prime $p$ is 
+uniquely expressible as sum of two squares of integers if and 
+only if it satisfies (1) with an integer value of $n$.\\
+
+The theorem implies easily the 
+
+\textbf{Corollary.}\, If all odd prime factors of a positive 
+integer are congruent to 1 modulo 4 then the integer is a sum
+of two squares. (Cf. the proof of the parent article and the article 
+``\PMlinkname{prime factors of Pythagorean hypotenuses}{primefactorsofpythagoreanhypotenuses}''.)
+
+
+
+\end{document}

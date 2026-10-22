@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FiniteIntersectionProperty}
+\pmcreated{2013-03-22 13:34:05}
+\pmmodified{2013-03-22 13:34:05}
+\pmowner{azdbacks4234}{14155}
+\pmmodifier{azdbacks4234}{14155}
+\pmtitle{finite intersection property}
+\pmrecord{17}{34178}
+\pmprivacy{1}
+\pmauthor{azdbacks4234}{14155}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D30}
+\pmsynonym{finite intersection condition}{FiniteIntersectionProperty}
+\pmsynonym{f.i.c.}{FiniteIntersectionProperty}
+\pmsynonym{f.i.p.}{FiniteIntersectionProperty}
+%\pmkeywords{compact}
+%\pmkeywords{intersection}
+%\pmkeywords{finite}
+\pmrelated{Compact}
+\pmrelated{Intersection}
+\pmrelated{Finite}
+\pmdefines{finite intersection property}
+
+\endmetadata
+
+%%packages
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+%%theorem environments
+\theoremstyle{plain}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{corollary*}{Corollary}
+\newtheorem*{proposition*}{Proposition}
+%math operators and commands
+\newcommand{\set}[1]{\{#1\}}
+\newcommand{\medset}[1]{\left\{#1\right\}}
+\newcommand{\bigset}[1]{\bigg\{#1\bigg\}}
+\newcommand{\abs}[1]{\vert#1\vert}
+\newcommand{\medabs}[1]{\left\vert#1\right\vert}
+\newcommand{\bigabs}[1]{\bigg\vert#1\bigg\vert}
+\newcommand{\norm}[1]{\Vert#1\Vert}
+\newcommand{\mednorm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\bignorm}[1]{\bigg\Vert#1\bigg\Vert}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Inn}{Inn}
+\DeclareMathOperator{\supp}{supp}
+
+\begin{document}
+A collection $\mathcal{A}=\set{A_\alpha}_{\alpha\in I}$ of subsets of a set $X$ is said to have the \emph{finite intersection property}, abbreviated f.i.p., if every finite subcollection $\set{A_1,A_2,\ldots,A_n}$ of $\mathcal{A}$ satisifes $\bigcap_{i=1}^nA_i\neq\emptyset$. 
+
+The finite intersection property is most often used to give the following \PMlinkid{equivalent}{3769} condition for the \PMlinkid{compactness}{503} of a topological space (a proof of which may be found \PMlinkid{here}{4181}):
+
+\begin{proposition*}
+A topological space $X$ is compact if and only if for every collection $\mathcal{C}=\set{C_\alpha}_{\alpha\in J}$ of closed subsets of $X$ having the finite intersection property, $\bigcap_{\alpha\in J}C_\alpha\neq\emptyset$.
+\end{proposition*}
+
+An important special case of the preceding \PMlinkescapeword{proposition} is that in which $\mathcal{C}$ is a countable collection of non-empty nested sets, i.e., when we have
+\begin{equation*}
+C_1\supset C_2\supset C_3\supset\cdots\text{.}
+\end{equation*}
+In this case, $\mathcal{C}$ automatically has the finite intersection property, and if each $C_i$ is a closed subset of a compact topological space, then, by the proposition, $\bigcap_{i=1}^\infty C_i\neq\emptyset$.
+
+The f.i.p. characterization of \PMlinkescapetext{compactness} may be used to prove a general result on the uncountability of certain compact Hausdorff spaces, and is also used in a proof of Tychonoff's Theorem.
+
+
+\begin{thebibliography}{1}
+\bibitem{Munkres}
+J. Munkres, \emph{Topology}, 2nd ed. Prentice Hall, 1975.
+\end{thebibliography}
+
+
+ 
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrimitiveRoot}
+\pmcreated{2013-03-22 16:04:33}
+\pmmodified{2013-03-22 16:04:33}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{primitive root}
+\pmrecord{12}{38133}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmsynonym{primitive root modulo n}{PrimitiveRoot}
+\pmsynonym{primitive element}{PrimitiveRoot}
+\pmrelated{MultiplicativeOrderOfAnIntegerModuloM}
+\pmrelated{PrimeResidueClass}
+\pmrelated{UsingPrimitiveRootsAndIndexToSolveCongruences}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given any positive integer $n$, the group of units $U(\mathbb{Z}/n\mathbb{Z})$ of the ring $\mathbb{Z}/n\mathbb{Z}$ is a cyclic group iff $n$ is 4, $p^m$ or $2p^m$ for any odd positive prime $p$ and any non-negative integer $m$.\, A \emph{primitive root} is a generator of this group of units when it is cyclic.
+
+Equivalently, one can define the integer $r$ to be a {\em primitive root modulo} $n$, if the numbers $r^0,\,r^1,\,\ldots,\,r^{n-2}$ form a reduced residue system modulo $n$.
+
+For example, 2 is a primitive root modulo 5, since
+$1,\; 2,\; 2^2 = 4,\; 2^3 = 8 \equiv 3 \pmod{5}$
+are all with 5 coprime positive integers less than 5.\\
+
+The generalized Riemann hypothesis implies that every prime number $p$ has a primitive root below $70(\ln p)^2$.
+
+\begin{thebibliography}{8}
+Wikipedia, ``Primitive root modulo n''
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

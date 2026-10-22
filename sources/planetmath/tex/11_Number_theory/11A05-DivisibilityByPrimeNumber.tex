@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DivisibilityByPrimeNumber}
+\pmcreated{2013-03-22 14:48:18}
+\pmmodified{2013-03-22 14:48:18}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{divisibility by prime number}
+\pmrecord{18}{36460}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmsynonym{divisibility by prime}{DivisibilityByPrimeNumber}
+\pmrelated{PrimeElement}
+\pmrelated{DivisibilityInRings}
+\pmrelated{EulerPhiAtAProduct}
+\pmrelated{RepresentantsOfQuadraticResidues}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+\begin{thmplain}
+ \,Let $a$ and $b$ be integers and $p$ any prime number. \,Then we have:
+\begin{align}
+       p \mid ab \quad \Leftrightarrow \quad p \mid a\; \lor\; p \mid b
+\end{align}
+\end{thmplain}
+{\em Proof.}  Suppose that\, $p \mid ab$.\,  Then either\; $p \mid a$\; or\; $p \nmid a$.\, In the latter case we have\, $\gcd(a,\,p) = 1$,\, and therefore the corollary of B\'ezout's lemma gives the result\, $p \mid b$.\,  Conversely, if\; $p \mid a$\; or\; $p \mid b$,\, then for example\, $a = mp$\, for some integer $m$; this implies that\, $ab = mb\cdot p$,\, i.e.\, $p \mid ab$.\\
+
+\textbf{Remark 1.}  The theorem means, that if a product is divisible by a prime number, then at least one of the factor is divisibe by the prime number.  Also conversely.\\
+
+\textbf{Remark 2.}  The condition (1) is expressed in \PMlinkescapetext{terms} of principal ideals as
+\begin{align}
+      (ab)\subseteq (p) \quad \Leftrightarrow \quad 
+          (a)\subseteq (p)\, \lor\, (b)\subseteq (p).
+\end{align}
+Here, $(p)$ is a prime ideal of $\mathbb{Z}$.
+%%%%%
+%%%%%
+\end{document}

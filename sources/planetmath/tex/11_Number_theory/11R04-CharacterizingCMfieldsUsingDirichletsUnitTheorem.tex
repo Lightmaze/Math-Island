@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CharacterizingCMfieldsUsingDirichletsUnitTheorem}
+\pmcreated{2013-03-22 17:57:26}
+\pmmodified{2013-03-22 17:57:26}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{characterizing CM-fields using Dirichlet's unit theorem}
+\pmrecord{4}{40457}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmclassification{msc}{11R27}
+\pmclassification{msc}{12D99}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{thm}{Theorem}
+\newcommand{\Alg}{\mathcal{O}}
+\newcommand{\UK}{\Alg_K^{\star}}
+\newcommand{\UF}{\Alg_F^{\star}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Ints}{\mathbb{Z}}
+\begin{document}
+If $K$ is a number field, $\Alg_K$ is the ring of algebraic integers in $K$, and $\UK$ is the (multiplicative) group of units in $\Alg_K$. Dirichlet's unit theorem gives the structure of the unit group. We can use that theorem to characterize CM-fields:
+
+\begin{thm} Let $\Rats\subset F\subset K$ be nontrivial extensions of number fields. Then $K$ is a CM-field, with $F$ its totally real subfield, if and only if $\UK/\UF$ is finite.
+\end{thm}
+
+We use the notation of the article on Dirichlet's unit theorem, where $r$ (and $r_F, r_K$) is used to count real embeddings and $s$ (as well as $s_F, s_K$) to count complex embeddings, and we write $\mu(F)$ or $\mu(K)$ for the group of roots of unity in $\UF$ or $\UK$.
+
+\textbf{Proof. }
+\newline
+Write $n=[F:\Rats],\ m=[K:F]>1$.
+
+($\Rightarrow$): If $K/F$ is CM, then since $F$ is totally real, $r_F = n,\  s_F = 0$. Hence by Dirichlet's unit theorem, $\UF\cong \mu(F)\times \Ints^{n-1}$. Since $K/F$ is a complex quadratic extension, $[K:\Rats]=2n$ and all its embeddings are complex. Thus $r_K=0,\  2s_K = 2n$. Hence $\UK \cong \mu(K) \times \Ints^{n-1}$ as well. Clearly $\UF\subset \UK$, and since they have the same \PMlinkname{rank}{FreeModule}, their quotient is torsion and thus finite.
+
+($\Leftarrow$): Since $\UK/\UF$ is finite, the ranks of these groups are equal and thus $r_F+s_F=r_K+s_K$ again by Dirichlet's unit theorem.
+
+Now,
+\begin{align}
+r_K+2s_K&=mn=m(r_F+2s_F)\\
+r_K+s_K&\phantom{=mn\ }=r_F+s_F\ ;
+\end{align}
+subtracting (2) from (1), we get
+\begin{equation}s_K = (m-1)(r_F+2s_F)+s_F \geq (m-1)n\end{equation}
+and thus $mn = r_K+2s_K \geq r_K+2(m-1)n$ so that $0\leq r_K\leq n(2-m)$. Thus $m\leq 2$, and since $K$ is a nontrivial extension, we must have $m=2$ so that $K/F$ is quadratic and $r_K=0$ (since $n(2-m)=0$).
+
+Finally, by (3), we then have $s_K = r_F+3s_F$; (2) says that $s_K = r_F+s_F$, and thus $s_F=0$. It follows that $F$ is totally real and, since $r_K=0$, $K$ must be an imaginary quadratic extension of $F$.
+%%%%%
+%%%%%
+\end{document}

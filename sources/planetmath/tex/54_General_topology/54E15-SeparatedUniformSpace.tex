@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SeparatedUniformSpace}
+\pmcreated{2013-03-22 16:42:34}
+\pmmodified{2013-03-22 16:42:34}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{separated uniform space}
+\pmrecord{5}{38925}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E15}
+\pmsynonym{separating}{SeparatedUniformSpace}
+\pmsynonym{Hausdorff uniform space}{SeparatedUniformSpace}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+
+\begin{document}
+\PMlinkescapeword{separated}
+\PMlinkescapeword{separation axiom}
+
+Let $X$ be a uniform space with uniformity $\mathcal{U}$.  $X$ is said to be \emph{separated} or \emph{Hausdorff} if it satisfies the following \emph{separation axiom}:
+$$\bigcap \mathcal{U}=\Delta,$$
+where $\Delta$ is the diagonal relation on $X$ and $\bigcap \mathcal{U}$ is the intersection of all elements (entourages) in $\mathcal{U}$.  Since $\Delta\subseteq \bigcap \mathcal{U}$, the separation axiom says that the only elements that belong to every entourage of $\mathcal{U}$ are precisely the diagonal elements $(x,x)$.  Equivalently, if $x\ne y$, then there is an entourage $U$ such that $(x,y)\notin U$.
+
+The reason for calling $X$ separated has to do with the following assertion:
+\begin{quote}
+$X$ is separated iff $X$ is a Hausdorff space under the topology $T_{\mathcal{U}}$ \PMlinkname{induced by}{TopologyInducedByAUniformStructure} $\mathcal{U}$.
+\end{quote}
+
+Recall that $T_{\mathcal{U}}=\lbrace A\subseteq X\mid \mbox{for each }x\in A\mbox{, there is }U\in \mathcal{U}\mbox{, such that }U[x]\subseteq A\rbrace$, where $U[x]$ is some uniform neighborhood of $x$ where, under $T_{\mathcal{U}}$, $U[x]$ is also a neighborhood of $x$.  To say that $X$ is Hausdorff under $T_{\mathcal{U}}$ is the same as saying every pair of distinct points in $X$ have disjoint uniform neighborhoods.
+
+\begin{proof}
+$(\Rightarrow)$.  Suppose $X$ is separated and $x,y\in X$ are distinct.  Then $(x,y)\notin U$ for some $U\in \mathcal{U}$.  Pick $V\in \mathcal{U}$ with $V\circ V\subseteq U$.  Set $W=V\cap V^{-1}$, then $W$ is symmetric and $W\subseteq V$.  Furthermore, $W\circ W\subseteq V\circ V\subseteq U$.  If $z\in W[x]\cap W[y]$, then $(x,z),(y,z)\in W$.  Since $W$ is symmetric, $(z,y)\in W$, so $(x,y)=(x,z)\circ (z,y)\in W\circ W\subseteq U$, which is a contradiction.
+
+$(\Leftarrow)$.  Suppose $X$ is Hausdorff under $T_{\mathcal{U}}$ and $(x,y)\in U$ for every $U\in \mathcal{U}$ for some $x,y\in X$.  If $x\ne y$, then there are $V[x]\cap W[y]=\varnothing$ for some $V,W\in \mathcal{U}$.  Since $(x,y)\in V$ by assumption, $y\in V[x]$.  But $y\in W[y]$, contradicting the disjointness of $V[x]$ and $W[y]$.  Therefore $x=y$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

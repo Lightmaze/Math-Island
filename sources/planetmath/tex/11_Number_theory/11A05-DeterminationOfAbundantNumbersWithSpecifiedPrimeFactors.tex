@@ -1,0 +1,155 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DeterminationOfAbundantNumbersWithSpecifiedPrimeFactors}
+\pmcreated{2013-03-22 16:47:41}
+\pmmodified{2013-03-22 16:47:41}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{determination of abundant numbers with specified prime factors}
+\pmrecord{12}{39028}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\begin{document}
+The formula for sums of factors may be used to
+find all abundant numbers with a specified set
+of prime factors or that no such numbers 
+exist.  To accomplish this, we first do a 
+little algebraic manipulation to our formula.
+
+\begin{thm}
+A number $n$ whose factorization
+into prime numbers is $\prod_{i=1}^k p_i^{m_1}$
+is abundant if and only if
+\[
+\prod_{i=1}^k
+\left( {
+1 - p_i^{-m_i - 1}  \over
+1 - p_i^{-1}
+} \right)
+> 2.
+\]
+\end{thm}
+
+\begin{proof}
+By definition $n$ is abundant, if the sum of
+the proper divisors of $n$ is greater than $n$.  
+Using our formula, this is equivalent to the condition
+\[
+\prod_{i=1}^k
+\left( {
+p_i^{m_i + 1} - 1 \over p_i - 1
+} \right) >
+2 \prod_{i=1}^k p_i^{m_i}.
+\]
+Dividing the $k$-th term in the product on
+the left-hand side by the $k$-th term on the
+right-hand side,
+\[
+{1 \over p_i^{m_i}}
+{p_i^{m_i + 1} - 1 \over p_i - 1} =
+{p_i^{-m_i - 1} \over p_i^{-1}}
+{p_i - p_i^{-m_i} \over p_i - 1} =
+{1 - p_i^{-m_i - 1} \over 1 - p_i^{-1}},
+\]
+so the condition becomes
+\[
+\prod_{i=1}^k
+\left( {
+1 - p_i^{-m_i - 1} \over 1 - p_i^{-1}
+} \right)
+> 2
+\]
+\end{proof}
+
+Note that each of the terms in the product is bigger than 1.
+Furthemore, the $k$-th term is bounded by
+\[
+{1 \over 1 - p_i^{-1}} = 
+{p_i \over p_i - 1}.
+\]
+This means that it is only possible to have an abundant
+number whose prime factors are $\{p_i \mid 1 \le i \le k\}$
+if
+\[
+\prod_{i=1}^k
+\left( {p_i \over p_i - 1} \right)
+> 2.
+\]
+As it turns out, the convers also holds, so we have a 
+nice criterion for determining when a set of prime
+numbers happens to be the set of prime divisors of 
+an abundant number.
+
+\begin{thm}
+A finite set $S$ of prime numbers is the set of
+prime divisors of an abundant number if and only if
+\[
+\prod_{p \in S} \left( {p \over p - 1} \right) > 2.
+\]
+\end{thm}
+
+\begin{proof}
+As described above, if $S$ is a set of prime factors
+of an abundant number, then we may bound each term 
+in the inequality of the previous theorem to obtain
+the inequality in the current theorem.  Assume, then
+that $S$ is a finite set of prime numbers which
+satisfies said inequality.  Then, by continuity,
+there must exist a real number $\epsilon > 0$ such
+that
+\[
+\prod_{p \in S} 
+\left( {p \over p - 1} - x \right) 
+> 2
+\]
+whenver $0 < x < \epsilon$.  Since $\lim_{k \to \infty} 
+n^{-k} = 0$ when $n > 1$, we can, for every $p \in S$, 
+find an $m(p)$ such that
+\[
+{p^{m(p)} \over p - 1} < \epsilon.
+\]
+Hence, 
+\[
+\prod_{p \in S}
+\left( {p \over p - 1} - 
+{p^{m(p)} \over p - 1} \right) =
+\prod_{p \in S}
+\left( {1 - p^{-m(p)-1} \over 1 - p^{-1}} \right) > 2
+\]
+so, by the previous theorem, $\prod_{p \in S} p^{m(p)}$
+is an abundant number.
+\end{proof}
+
+
+%%%%%
+%%%%%
+\end{document}

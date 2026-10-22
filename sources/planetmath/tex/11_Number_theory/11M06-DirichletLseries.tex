@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DirichletLseries}
+\pmcreated{2013-03-22 13:22:28}
+\pmmodified{2013-03-22 13:22:28}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Dirichlet L-series}
+\pmrecord{14}{33905}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11M06}
+\pmsynonym{Dirichlet L-function}{DirichletLseries}
+\pmrelated{LSeriesOfAnEllipticCurve}
+\pmrelated{DirichletSeries}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The \emph{Dirichlet L-series} associated to a Dirichlet character $\chi$ is the series 
+\begin{equation}
+L(\chi,s)=\sum_{n=1}^\infty \frac{\chi(n)}{n^s}.
+\end{equation}
+It converges absolutely and uniformly in the domain $\Re(s) \geq 1 + \delta$ for any positive $\delta$, and admits the Euler product identity
+\begin{equation}
+L(\chi,s)=\prod_p \frac{1}{1-\chi(p)p^{-s}}
+\end{equation}
+where the product is over all primes $p$, by virtue of the multiplicativity of $\chi$.  In the case where $\chi=\chi_0$ is the trivial character mod m, we have
+\begin{equation}
+L(\chi_0,s)=\zeta(s)\prod_{p|m} (1-p^{-s}),
+\end{equation}
+where $\zeta(s)$ is the Riemann Zeta function.  If $\chi$ is non-primitive, and $C_\chi$ is the conductor of $\chi$, we have
+\begin{equation}
+L(\chi,s)=L(\chi\prime,s)\prod_{p|m\atop p\nmid C_\chi}(1-\chi(p)p^{-s}),
+\end{equation}
+where $\chi\prime$ is the primitive character which induces $\chi$.  For non-trivial, primitive characters $\chi$ mod m, $L(\chi,s)$ admits an analytic continuation to all of $\mathbb{C}$ and satsfies the symmetric functional equation
+\begin{equation}
+L(\chi,s)\left(\frac{m}{\pi}\right)^{s/2}\Gamma\left(\frac{s+e_\chi}{2}\right)=\frac{g_1(\chi)}{i^{e_\chi}\sqrt{m}}L(\chi^{-1},1-s)\left(\frac{m}{\pi}\right)^{\frac{1-s}{2}}\Gamma\left(\frac{1-s+e_\chi}{2}\right).
+\end{equation}
+Here, $e_\chi\in \{0,1\}$ is defined by $\chi(-1)=(-1)^{e_\chi}\chi(1)$, $\Gamma$ is the gamma function, and $g_1(\chi)$ is a Gauss sum.
+(3),(4), and (5) combined show that $L(\chi,s)$ admits a meromorphic continuation to all of $\mathbb{C}$ for all Dirichlet characters $\chi$, and an analytic one for non-trivial $\chi$.
+Again assuming that $\chi$ is non-trivial and primitive character mod m, if $k$ is a positive integer, we have
+\begin{equation}
+L(\chi,1-k)=-\frac{B_{k,\chi}}{k},
+\end{equation}
+where $B_{k,\chi}$ is a generalized Bernoulli number.  By (5), taking into account the poles of $\Gamma$, we get for $k$ positive, $k \equiv e_\chi$ mod 2,
+\begin{equation}
+L(\chi,k)=(-1)^{1+\frac{k-e_\chi}{2}}\frac{g_1(\chi)}{2i^{e_\chi}}\left(\frac{2\pi}{m}\right)^k\frac{B_{k,\chi^{-1}}}{k!}.
+\end{equation}
+This series was first investigated by Dirichlet (for whom they were named), who used the non-vanishing of $L(\chi,1)$ for non-trivial $\chi$ to prove his famous Dirichlet's theorem on primes in arithmetic progression.  This is probably the first instance of using complex analysis to prove a purely number theoretic result.
+%%%%%
+%%%%%
+\end{document}

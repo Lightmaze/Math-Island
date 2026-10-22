@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HermitianDotProductfiniteFields}
+\pmcreated{2013-03-22 15:13:26}
+\pmmodified{2013-03-22 15:13:26}
+\pmowner{GrafZahl}{9234}
+\pmmodifier{GrafZahl}{9234}
+\pmtitle{Hermitian dot product (finite fields)}
+\pmrecord{7}{36988}
+\pmprivacy{1}
+\pmauthor{GrafZahl}{9234}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11E39}
+\pmclassification{msc}{12E20}
+\pmsynonym{Hermitian dot product}{HermitianDotProductfiniteFields}
+%\pmkeywords{inner product}
+\pmrelated{FiniteField}
+\pmdefines{conjugate (finite fields)}
+\pmdefines{conjugation (finite fields)}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Prod}{\prod\limits}
+\newcommand{\Sum}{\sum\limits}
+\newcommand{\mbb}{\mathbb}
+\newcommand{\mbf}{\mathbf}
+\newcommand{\mc}{\mathcal}
+\newcommand{\ol}{\overline}
+
+% Math Operators/functions
+\DeclareMathOperator{\Frob}{Frob}
+\DeclareMathOperator{\cwe}{cwe}
+\DeclareMathOperator{\we}{we}
+\DeclareMathOperator{\wt}{wt}
+\begin{document}
+Let $q$ be an \PMlinkid{even}{4703} \PMlinkid{prime}{438} power (in particular, $q$ is a square) and
+$\mbb{F}_q$ the finite field with $q$ elements. Then
+$\mbb{F}_{\sqrt{q}}$ is a subfield of $\mbb{F}_q$. The
+\emph{\PMlinkescapetext{conjugate}} $\ol{k}$ of an element $k\in\mbb{F}_q$ is defined by
+the
+$\sqrt{q}$-th power Frobenius map
+\begin{equation*}
+\ol{k}:=\Frob_{\sqrt{q}}(k)=k^{\sqrt{q}}.
+\end{equation*}
+
+The \PMlinkescapetext{conjugate} has properties similar to the complex conjugate. Let
+$k_1,k_2\in\mbb{F}_q$, then
+\begin{enumerate}
+\item $\ol{k_1+k_2}=\ol{k_1}+\ol{k_2}$,
+\item $\ol{k_1k_2}=\ol{k_1}\,\ol{k_2}$,
+\item $\ol{\ol{k_1}}=k_1$.
+\end{enumerate}
+Properties 1 and 2 hold because the Frobenius map is a
+\PMlinkid{homomorphism}{1011}.
+Property 3 holds because of the identity $k^q=k$ which
+holds for any $k$ in any finite field with $q$ elements.
+See also \emph{\PMlinkid{finite field}{2893}}.
+
+Now let $\mbb{F}_q^n$ be the $n$-dimensional vector space over
+$\mbb{F}_q$, then the \emph{Hermitian dot product} of two vectors
+$(u_1,\ldots,u_n),(v_1,\ldots,v_n)\in\mbb{F}_q^n$ is
+\begin{equation*}
+(u_1,\ldots,u_n)\cdot(v_1,\ldots,v_n):=\Sum_{i=1}^nu_i\ol{v_i}.
+\end{equation*}
+
+Again, this kind of Hermitian dot product has properties similar to
+Hermitian inner products on complex vector spaces. Let
+$k_1,k_2\in\mbb{F}_q$ and $v_1,v_2,v,,w\in\mbb{F}_q^n$, then
+\begin{enumerate}
+\item $(k_1v_1+k_2v_2)\cdot w=k_1(v_1\cdot w)+k_2(v_2\cdot w)$
+  (linearity)
+\item $v\cdot w=\ol{w\cdot v}$
+\item $v\cdot v\in\mbb{F}_{\sqrt{q}}$
+\end{enumerate}
+Property 3 follows since $\sqrt{q}+1$ divides $q-1$ (see \emph{\PMlinkid{finite field}{2893}}).
+%%%%%
+%%%%%
+\end{document}

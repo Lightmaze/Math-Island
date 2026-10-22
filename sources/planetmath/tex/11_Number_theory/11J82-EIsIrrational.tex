@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EIsIrrational}
+\pmcreated{2013-03-22 12:33:02}
+\pmmodified{2013-03-22 12:33:02}
+\pmowner{mathwizard}{128}
+\pmmodifier{mathwizard}{128}
+\pmtitle{e is irrational}
+\pmrecord{13}{32795}
+\pmprivacy{1}
+\pmauthor{mathwizard}{128}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11J82}
+\pmclassification{msc}{11J72}
+\pmrelated{ErIsIrrationalForRinmathbbQsetminus0}
+\pmrelated{NaturalLogBase}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+From the Taylor series for $e^x$ we know the following equation:
+\begin{equation}
+e=\sum_{k=0}^{\infty}\frac{1}{k!}.
+\end{equation}
+Now let us assume that $e$ is rational. This would \PMlinkescapetext{mean} there are two natural numbers $a$ and $b$, such that:
+$$e=\frac{a}{b}.$$
+This yields:
+$$b!e\in\mathbb{N}.$$
+Now we can write $e$ using (1):
+$$b!e=b!\sum_{k=0}^{\infty}\frac{1}{k!}.$$
+This can also be written:
+$$b!e=\sum_{k=0}^{b}\frac{b!}{k!}+\sum_{k=b+1}^{\infty}\frac{b!}{k!}.$$
+The first sum is obviously a natural number, and thus
+$$\sum_{k=b+1}^{\infty}\frac{b!}{k!}$$
+must also be \PMlinkescapetext{natural}. Now we see:
+$$\sum_{k=b+1}^{\infty}\frac{b!}{k!}=\frac{1}{b+1}+\frac{1}{(b+1)(b+2)}+...<
+\sum_{k=1}^{\infty}\left(\frac{1}{b+1}\right)^k=\frac{1}{b}.$$
+Since $\frac{1}{b}\leq 1$ we conclude:
+$$0<\sum_{k=b+1}^{\infty}\frac{b!}{k!}<1.$$
+We have also seen that this is an integer, but there is no integer between 0 and 1. So there cannot exist two natural numbers $a$ and $b$ such that $e=\frac{a}{b}$, so $e$ is irrational.
+%%%%%
+%%%%%
+\end{document}

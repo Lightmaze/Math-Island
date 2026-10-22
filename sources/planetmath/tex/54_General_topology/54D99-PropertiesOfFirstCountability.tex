@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PropertiesOfFirstCountability}
+\pmcreated{2013-03-22 19:09:26}
+\pmmodified{2013-03-22 19:09:26}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{properties of first countability}
+\pmrecord{11}{42061}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D99}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}{Corollary}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+\begin{prop} Let $X$ be a first countable topological space and $x\in X$.  Then $x\in \overline{A}$ iff there is a sequence $(x_i)$ in $A$ that converges to $x$. \end{prop}
+\begin{proof}  One side is true for all topological spaces: if $(x_i)$ is in $A$ converging $x$, then for any open set $U$ of $x$, there is some $i$ such that $x_i\in U$, whence $U\cap A\ne \varnothing$.  As a result, $x\in \overline{A}$.
+
+Conversely, suppose $x\in \overline{A}$.  Let $\lbrace B_i\mid i=1,2,\ldots\rbrace$ be a neighborhood base around $x$.  We may as well assume each $B_i$ open.  Next, let $$N_n:=B_1\cap B_2\cap \cdots \cap B_n,$$ then we obtain a set of nested open sets containing $x$: $$N_1\supseteq N_2 \supseteq \cdots.$$  Since each $N_i$ is open, its intersection with $A$ is non-empty.  So we may choose $x_i\in N_i\cap A$.  We want to show that $(x_i)$ converges to $x$.  First notice tat for any fixed $j$, $x_i\in N_j$ for all $i\ge j$.  Pick any open set $U$ containing $x$.  Then $N_j\subseteq B_j\subseteq U$.  Hence $x_i\in U$ for all $i\ge j$.
+\end{proof}
+
+From this, we can prove the following corollaries (assuming all spaces involved are first countable):
+\begin{cor} $C$ is closed iff every sequence $(x_i)$ in $C$ that converges to $x$ implies that $x\in C$. \end{cor}
+\begin{proof}  First, assume $(x_i)$ is in a closed set $C$ converging to $x$.  Then $x\in \overline{C}$ by the proposition above.  As $C$ is closed, we have $x\in \overline{C}=C$.  
+
+Conversely, pick any $x\in \overline{C}$.  By the proposition above, there is a sequence $(x_i)$ in $C$ converging to $x$.  By assumption $x\in C$.  So $\overline{C}\subseteq C$, which means that $C$ is closed.
+\end{proof}
+
+\begin{cor} $U$ is open iff every sequence $(x_i)$ that converges to $x \in U$ is eventually in $U$.  \end{cor}
+\begin{proof}  First, suppose $U$ is open and $(x_i)$ converges to $x\in U$.  If  none of $x_i$ is in $U$, then all of $x_i$ is in its complement $X-U$, which is closed.  Then by the proposition, $x$ must be in the closure of $X-U$, which is just $X-U$, contradicting the assumption that $x\in U$.  Hence $x_i\in U$ for some $i$.
+
+Conversely, assume the right hand side statement.  Suppose $x\notin U^{\circ}=X-\overline{X-U}$.  Then $x\in \overline{X-U}$.  By the proposition, there is a sequence $(x_i)$ in $X-U$ converging to $x$.  If $x\in U$, then by assumption, $(x_i)$ is eventually in $U$, which means $x_i\in U$ for some $i$, contradicting the earlier statement that $(x_i)$ is in $X-U$.  Therefore, $x\notin U$, which implies that $U\subseteq U^{\circ}$, or $U$ is open.
+\end{proof}
+
+\begin{cor} A function $f:X\to Y$ is continuous iff it preserves converging sequences. \end{cor}
+\begin{proof}  Suppose first that $f$ is continuous, and $(x_i)$ in $X$ converging to $x$.  We want to show that $(f(x_i))$ converges to $f(x)$.  Let $V$ be an open set containing $f(x)$.  So $f^{-1}(V)$ is open containing $x$, which implies that there is some $j$ such that $x_i\in f^{-1}(V)$ for all $i\ge j$, or $f(x_i)\in V$ for all $i\ge j$, which means that $(f(x_i))\to f(x)$.
+
+Conversely, suppose $f$ preserves converging sequences and $C$ a closed set in $Y$.  We want to show that $D:=f^{-1}(C)$ is closed.  Suppose $(x_i)$ is a sequence in $D$ converging to $x$.  Then $(f(x_i))$ converges to $f(x)$.  Since $(f(x_i))$ is in $C$ and $C$ is closed, $f(x)\in C$ by the first corollary above.  So $x\in f^{-1}(C)=D$ too.  Hence $D$ is closed, again by the same corollary.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

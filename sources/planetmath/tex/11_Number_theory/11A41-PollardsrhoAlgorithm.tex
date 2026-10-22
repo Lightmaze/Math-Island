@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PollardsrhoAlgorithm}
+\pmcreated{2013-03-22 16:44:22}
+\pmmodified{2013-03-22 16:44:22}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Pollard's $\rho$ algorithm}
+\pmrecord{5}{38962}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmsynonym{Pollard $\rho$ algorithm}{PollardsrhoAlgorithm}
+\pmsynonym{Pollard's rho algorithm}{PollardsrhoAlgorithm}
+\pmsynonym{Pollard rho algorithm}{PollardsrhoAlgorithm}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\em Pollard's $\rho$ algorithm} is an integer factorization algorithm devised by John Pollard in 1975 to take advantage of Floyd's cycle-finding algorithm and pseudorandom number generation. Theoretically, trial division always returns a result (though of course in practice the computing engine's resources could be exhausted or the user might not to be around to care for the result). Pollard's $\rho$ algorithm, on the other hand, was designed from the outset to cope with the possibility of failure to return a result.
+
+It can be left up to the implementer to choose a function $f(x)$ with a finite set of values that can be guaranteed to become cyclic quickly enough after few iterations. Crandall and Pomerance recommend $f(x) = x^2 + a \mod n$, where $n$ is the number to be factored and $a$ is a pseudorandom number chosen based on $n$.
+
+Choose a function $f(x)$ per the given requirements and call Pollard's $\rho$ algorithm with  $n$ a positive integer.
+
+\begin{enumerate}
+\item Choose random $a$ and $b$ from the ranges $1 < a < (n - 3)$ and $0 < b < (n - 1)$ and set $c = a$ and $d = b$.
+\item Set $g = 1$.
+\item While $g == 1$ and allowed number of iterations not exceeded, iterate $c = f(c)$ once and $d = f(d)$ twice and compute $g = GCD(c - d, n)$. The implementer may choose to take the absolute value of $c - d$, though some implementations of GCD don't mind being given negative arguments.
+\item If $g > 1$, it is a factor of $n$. Otherwise, the algorithm has failed.
+\end{enumerate}
+
+Take for example, $n = 42$. Suppose our dice give us $a = 12$ and $b = 37$. I promise I didn't choose these values consciously, but it happens that 37 does not change when input to $f(x) = x^2 + 12 \mod 42$! 12 will change however, giving a sequence that continues 0, 20, 13. At 13, we find that $37 - 13 = 24$, and computing $GCD(24, 42)$ gives up 6, which is not a prime, but is easily enough taken care of by trial division. The factorization is therefore $42 = 2 \cdot 3 \cdot 7$.
+
+To date, the most well-known success of this algorithm was when Pollard and Richard Brent factored 115792089237316195423570985008687907853269984665640564039457584007913129639937 (the eighth Fermat number) in less than two hours, which was an impressive feat in 1975 for a UNIVAC 1100/42. Today, Mathematica running on a Dell with Windows XP factors that number in about 12 seconds (Mathematica's \verb=FactorInteger= function has always used Pollard's $\rho$ algorithm as one of the algorithms it uses).
+%%%%%
+%%%%%
+\end{document}

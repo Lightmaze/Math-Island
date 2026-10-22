@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{InjectiveImagesOfBaireSpace}
+\pmcreated{2013-03-22 18:47:12}
+\pmmodified{2013-03-22 18:47:12}
+\pmowner{gel}{22282}
+\pmmodifier{gel}{22282}
+\pmtitle{injective images of Baire space}
+\pmrecord{6}{41582}
+\pmprivacy{1}
+\pmauthor{gel}{22282}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E50}
+%\pmkeywords{Polish space}
+\pmrelated{BaireSpaceIsUniversalForPolishSpaces}
+\pmrelated{SpacesHomeomorphicToBaireSpace}
+
+\endmetadata
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{corollary*}{Corollary}
+\newtheorem*{definition*}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+
+\begin{document}
+Every uncountable Polish space is, up to a countable subset, an injective image of Baire space $\mathcal{N}$.
+
+\begin{theorem*}
+Let $X$ be an uncountable Polish space. Then, there is a one-to-one and continuous function $f\colon\mathcal{N}\rightarrow X$ such that $X\setminus f(\mathcal{N})$ is countable.
+\end{theorem*}
+
+Although the inverse $f^{-1}\colon f(\mathcal{N})\rightarrow \mathcal{N}$ will not generally be continuous, it is at least Borel measurable. It can be shown that this is true for all one-to-one and continuous functions between Polish spaces, although here it follows directly from \PMlinkname{the construction of $f$}{ProofOfInjectiveImagesOfBaireSpace}.
+
+%%%%%
+%%%%%
+\end{document}

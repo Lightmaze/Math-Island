@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{APropertyOfPolynomials}
+\pmcreated{2013-03-22 19:34:45}
+\pmmodified{2013-03-22 19:34:45}
+\pmowner{akdevaraj}{13230}
+\pmmodifier{akdevaraj}{13230}
+\pmtitle{A property of polynomials}
+\pmrecord{17}{42566}
+\pmprivacy{1}
+\pmauthor{akdevaraj}{13230}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11C08}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+$A   PROPERTY  OF  POLYNOMIALS$
+  
+Let  $ f(x)$ \hspace{.5 in}\ be  a  polynomial  in  $x$  where  $x$$  and  the  coefficients $ $ a) are integers , $ b) $\hspace{.5in}\,$ x $ is  a  square  matrix and $k$\hspace[.5in}\ is a natural  number.$
+$ The property:$  $ f(x + k*f(x)) is  congruent   to  $0$ mod $f(x)$.
+$Proof: $ $\hspace{.5in}$$\hspace{.5in}\$\hspace{.5in}\ There  is  no loss  of  generality in taking $ k  = 1$.$ By  Taylor's  theorem  we  get $ $
+
+f(x + f(x))  =  f(x)  +  f(x)f'(x)  +  (f(x)^2)/2f''(x)  +  (f(x)^3)/3!f'''(x)....
+                  =  f(x){1  +  f'(x)   +  f(x)/2*f''(x)  +  f(x)^2/3!..}$
+i.e. $ f(x + f(x)) $ is  congruent  to 0 (mod( f(x))).
+
+%%%%%
+%%%%%
+\end{document}

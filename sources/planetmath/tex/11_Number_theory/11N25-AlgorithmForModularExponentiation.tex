@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AlgorithmForModularExponentiation}
+\pmcreated{2013-03-22 18:09:11}
+\pmmodified{2013-03-22 18:09:11}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{algorithm for modular exponentiation}
+\pmrecord{4}{40709}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N25}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Whereas even for fairly small bases and exponents the results can be too large for calculation with pencil and paper or even with a calculator, there is a fairly simple algorithm to solve for $x$ in the congruence $a^b \equiv x \mod c$.
+
+\begin{enumerate}
+\item Assign $x = 1$, $y = a$ and $z = b$.
+\item If $z$ is even, then halve $z$ and reassign $y$ to its square, then reassign $y$ to its remainder modulo $c$. But if $z$ is odd, decrement $z$ by 1, and reassign to $x$ its product times $y$, and then reassign $x$ to its remainder modulo $c$.
+\item Test if $z = 0$. If not, repeat the previous step.
+\item Return $x$.
+\end{enumerate}
+
+For example, solve $179^{12} = x \mod 13$. At the first step we have $x = 1$, $y = 179$ and $z = 12$.
+
+At the second step, since $z$ is even, we reassign $z = 6$ and square 179, which is 32041, and that is 9 modulo 13.
+
+$z$ is not zero yet, so we go back to the second step, and $z$ is still even, so we halve it to 3. The square of 9 is 81, which is just 3 over 78, the nearest multiple of 13, so now $y = 3$.
+
+On the third iteration of the second step $z$ is now odd, so we decrease it to 2 and multiply $x$ (which is still 1 right now) by $y$, which is now 3, so now $x = 3$.
+
+On the next iteration of the second step $z$ is again even, but with it being 2 either halving it or decrementing sets $z = 1$, though of course we gon on with the halving branch of the algorithm: $y$ is still 3, and its square 9 is less than 13.
+
+Now on the las iteration of the second step, $z$ is odd so we decrement it down to 0. $x$ is 3 (set back on the third iteration of the second step) and 3 times 9 is 27, which is 1 more than twice 13, so now $x = 1$.
+
+Since $z$ is now 0, our answer should be in $x$, which is 1. As we know that 13 is a prime number and 179 is coprime to 13, by Fermat's little theorem we know the answer must be 1.
+
+In this run of the algorithm four squaring operations were necessary as well as various additions and subtractions, but all this could have easily been accomplished easily either with pencil or paper or with the help of a basic calculator with only a 10-digit display. To actually raise 179 to the 12th power with the necessary accuracy on paper would have required eleven multiplications with plenty of opportunity for errors to creep into the calculation. With Mathematica it is a snap to verify that the answer is 1082022699327332498100696241, and that 83232515332871730623130480 goes into  1082022699327332498100696240 thirteen times, but there are much larger numbers still which would be beyond Mathematica's range to exponentiate yet which the remainders could easily be obtained with this algorithm.
+
+\begin{thebibliography}{1}
+\bibitem{he} Harold M. Edwards, {\it Higher Arithmetic: An Algorithmic Introduction to Number Theory}. Providence: American Mathematical Society (2008): 37
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

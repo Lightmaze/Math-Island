@@ -1,0 +1,125 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RayClassField}
+\pmcreated{2013-03-22 13:54:01}
+\pmmodified{2013-03-22 13:54:01}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{ray class field}
+\pmrecord{5}{34648}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R37}
+\pmsynonym{conductor}{RayClassField}
+%\pmkeywords{abelian extension}
+%\pmkeywords{ray class}
+%\pmkeywords{class field}
+\pmrelated{ArtinMap}
+\pmrelated{ExistenceOfHilbertClassField}
+\pmrelated{NumberField}
+\pmrelated{AnExactSequenceForRayClassGroups}
+\pmdefines{conductor of an extension}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+\begin{prop}
+Let $L/K$ be a finite abelian extension of number fields, and let
+$\mathcal{O}_K$ be the ring of integers of $K$. There exists an
+integral ideal $\mathcal{C}\subset \mathcal{O}_K$, divisible by
+precisely the prime ideals of $K$ that ramify in $L$, such that
+$$\left((\alpha),L/K\right)=1,\quad \forall \alpha \in K^{\ast},\
+\alpha\equiv1\ \operatorname{mod}\ \mathcal{C}
+$$ where
+$\left((\alpha),L/K\right)$ is the Artin map.
+\end{prop}
+
+\begin{defn}
+The \emph{conductor} of a finite abelian extension $L/K$ is the
+largest ideal $\mathcal{C}_{L/K}\subset \mathcal{O}_K$ satisfying
+the above properties.
+\end{defn}
+
+Note that there is a ``largest ideal'' with this condition because
+if proposition 1 is true for $\mathcal{C}_1,\mathcal{C}_2$ then it
+is also true for $\mathcal{C}_1+\mathcal{C}_2$.
+
+\begin{defn}
+Let $\mathcal{I}$ be an integral ideal of $K$. A \emph{ray class
+field} of $K$ (modulo $\mathcal{I}$) is a finite abelian extension
+$K_{\mathcal{I}}/K$ with the property that for any other finite
+abelian extension $L/K$ with conductor $\mathcal{C}_{L/K}$,
+$$\mathcal{C}_{L/K} \mid \mathcal{I}\Rightarrow
+L\subset K_{\mathcal{I}}$$
+\end{defn}
+
+Note: It can be proved that there is a unique ray class field with
+a given conductor. In words, the ray class field is the biggest
+abelian extension of $K$ with a given conductor (although the
+conductor of $K_{\mathcal{I}}$ does not necessarily equal
+$\mathcal{I}$ !, see example $2$).
+
+{\bf Remark}: Let $\mathfrak{p}$ be a prime of $K$ unramified in $L$, and let $\mathfrak{P}$ be a prime above $\mathfrak{p}$. Then $(\mathfrak{p},L/K)=1$ if and only if the extension of residue fields is of degree 1
+$$[\mathcal{O}_L/\mathfrak{P}\colon \mathcal{O}_K/\mathfrak{p}]=1$$
+if and only if $\mathfrak{p}$ splits completely in $L$. Thus we obtain a characterization of the ray class field of conductor $\mathcal{C}$ as the abelian extension of $K$ such that a prime of $K$ splits completely if and only if it is of the form
+$$(\alpha),\quad \alpha \in K^{\ast},\
+\alpha\equiv1\ \operatorname{mod}\ \mathcal{C}$$
+
+{\bf Examples}:
+\begin{enumerate}
+\item The ray class field of $\Rats$ of conductor $N\Ints$ is the
+$N^{th}$-cyclotomic extension of $\Rats$. More concretely, let
+$\zeta_N$ be a primitive $N^{th}$ root of unity. Then
+$$\Rats_{N\Ints}=\Rats(\zeta_N)$$
+
+\item $$\Rats(i)_{(2)}=\Rats(i)$$ so the conductor of
+$\Rats(i)_{(2)}/\Rats$ is $(1)$.
+
+\item $K_{(1)}$, the ray class field of conductor $(1)$, is the
+maximal abelian extension of $K$ which is unramified everywhere.
+It is, in fact, the Hilbert class field of $K$.
+\end{enumerate}
+
+\begin{thebibliography}{9}
+\bibitem{tate} Artin/Tate, {\em Class Field Theory}. W.A.Benjamin Inc., New York.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

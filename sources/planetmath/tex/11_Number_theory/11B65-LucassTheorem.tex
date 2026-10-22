@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LucassTheorem}
+\pmcreated{2013-03-22 13:17:31}
+\pmmodified{2013-03-22 13:17:31}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Lucas's theorem}
+\pmrecord{6}{33779}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B65}
+%\pmkeywords{binomial coefficient}
+%\pmkeywords{congruence}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $m,n \in \mathbb{N}-\{0\}$ be two natural numbers . If $p$ is a prime number and :
+$$ m = a_k p^k + a_{k-1} p^{k-1} + \cdots + a_1 p + a_0 , n = b_k p^k + b_{k-1} p^{k-1} + \cdots + b_1 p + b_0$$ are the base-p expansions of $m$ and $n$ , then the following congruence is true :
+$$ {m \choose n} \equiv {a_0 \choose b_0} {a_1 \choose b_1} \cdots {a_k \choose b_k} (\verb|mod p|)$$
+Note : the binomial coefficient is defined in the usual way , namely :
+$$ {x \choose y} = \frac{x!}{y!(x-y)!} $$ if $x \geq y$ and $0$ otherwise (of course , x and y are natural numbers).
+%%%%%
+%%%%%
+\end{document}

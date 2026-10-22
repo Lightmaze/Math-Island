@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UniquenessOfDigitalRepresentation}
+\pmcreated{2013-03-22 18:52:16}
+\pmmodified{2013-03-22 18:52:16}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{uniqueness of digital representation}
+\pmrecord{15}{41718}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmclassification{msc}{11A05}
+\pmsynonym{uniqueness of decimal representation}{UniquenessOfDigitalRepresentation}
+\pmsynonym{digital representation of integer}{UniquenessOfDigitalRepresentation}
+%\pmkeywords{digital representation}
+\pmrelated{UnambiguityOfFactorialBaseRepresentation}
+\pmrelated{UniquenessOfFourierExpansion}
+\pmrelated{UniquenessOfLaurentExpansion}
+\pmrelated{ZeckendorfsTheorem}
+\pmrelated{RepresentationOfRealNumbers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\textbf{Theorem.}\, Let the positive integer $b$ be the base of a \PMlinkid{positional digital system}{3313}.\, Every positive integer $a$ may be represented uniquely in the form
+\begin{align}
+a \;=\; s_nb^n+s_{n-1}b^{n-1}+\ldots+s_1b+s_0,
+\end{align}
+where the integers $s_i$ satisfy\; $0 \leqq s_i \leqq b\!-\!1$\; and\, $s_n \neq 0$.\\
+
+The theorem means that the integer $a$ may be represented e.g. in the \PMlinkid{decimal system}{9839} in the form
+$$s_n\,s_{n-1}\ldots s_1\,s_0$$
+in one and only one way.\\
+
+\emph{Proof.}\, Let $b^n$ be the highest integer power of $b$ not exceeding $a$.\, By the division algorithm for integers, we obtain in succession
+\begin{align*}
+&a \;\;\,=\; s_nb^n+r_1 \qquad     &(0 < s_n < b, \quad 0 \leqq r_1 < b^n),\\
+&r_1 \,\;=\; s_{n-1}b^{n-1}+r_2  &(0 \leqq s_{n-1} < b, \quad 0 \leqq r_2 < b^{n-1}),\\
+&r_2 \,\;=\; s_{n-2}b^{n-2}+r_3  &(0 \leqq s_{n-2} < b, \quad 0 \leqq r_3 < b^{n-2}),\\
+    &\qquad \vdots\\
+&r_{n-2} \;=\; s_2b^2+r_{n-1} &(0 \leqq s_2 < b, \quad 0 \leqq r_{n-1} < b^2),\\
+&r_{n-1} \;=\; s_1b+s_0       &(0 \leqq s_1 < b, \quad 0 \leqq s_0 < b).\\
+\end{align*}
+Adding these equations yields the equation (1) with\, $0\leqq s_i \leqq b\!-\!1$,\, $s_n \neq 0$.
+
+For showing the uniqueness of (1) we suppose also another \PMlinkescapetext{representation}
+$$a \;=\; t_mb^m+t_{m-1}b^{m-1}+\ldots+t_1b+t_0$$
+with\, $0 \leqq t_i \leqq s\!-\!1$,\, $b_m \neq 0$.\, The equality
+\begin{align}
+s_nb^n+s_{n-1}b^{n-1}+\ldots+s_1b+s_0 \;=\; t_mb^m+t_{m-1}b^{m-1}+\ldots+t_1b+t_0
+\end{align}
+immediately implies
+$$s_0 \;\equiv\; t_0 \pmod b, \quad \mbox{i.e.} \quad b \mid s_0\!-\!t_0.$$
+Since now\, $|s_0\!-\!t_0| \leqq b\!-\!1$,\, we infer that\, $s_0\!-\!t_0 = 0$\, and thus\, 
+$t_0 = s_0$.\, Consequently, we can then infer from (2) that\, $s_1b \equiv t_1b \pmod {b^2}$, whence\, 
+$s_1 \equiv t_1 \pmod b$,\, and as before,\, $t_1 = s_1$.\, We may continue in \PMlinkescapetext{similar} manner and see that always\,
+$t_i = s_i$, whence also\, $m = n$.\, Accordingly, the both \PMlinkescapetext{representations} are identical. Q.E.D.\\
+
+\textbf{Remark.}\, There is the following generalisation of the theorem.\, --- If we have an infinite sequence 
+\,$b_1,\,b_2,\,\ldots$\, of integers greater than 1, then $a$ may be represented uniquely in the form
+$$a \;=\; \sum_{i=0}^n s_ib_1b_2\cdots b_i$$
+where the integers $s_i$ satisfy\, $0 \leqq s_i < b_{i+1}$\, and\, $s_n \neq 0$.\, Cf. the factorial base.
+%%%%%
+%%%%%
+\end{document}

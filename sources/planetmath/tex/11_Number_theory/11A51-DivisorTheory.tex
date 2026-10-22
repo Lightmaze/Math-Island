@@ -1,0 +1,103 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DivisorTheory}
+\pmcreated{2013-03-22 17:59:03}
+\pmmodified{2013-03-22 17:59:03}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{divisor theory}
+\pmrecord{17}{40494}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmclassification{msc}{13A05}
+%\pmkeywords{prime factorization}
+\pmrelated{UniqueFactorizationAndIdealsInRingOfIntegers}
+\pmrelated{IdealDecompositionInDedekindDomain}
+\pmrelated{EisensteinCriterionInTermsOfDivisorTheory}
+\pmrelated{DivisorsInBaseFieldAndFiniteExtensionField}
+\pmrelated{ExponentOfField}
+\pmrelated{ExponentValuation2}
+\pmrelated{DedekindDomainsWithFinitelyManyPrimesArePIDs}
+\pmdefines{divisor}
+\pmdefines{prime divisor}
+\pmdefines{principal divisor}
+\pmdefines{unit divisor}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+ \usepackage[T2A]{fontenc}
+ \usepackage[russian, english]{babel}
+
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+\subsection{Divisibility in a monoid}
+
+In a commutative monoid $\mathfrak{D}$, one can speak of {\em divisibility}: its element $\mathfrak{a}$ is divisible by its element $\mathfrak{b}$, iff \,$\mathfrak{a = bc}$\, where\, $\mathfrak{c} \in \mathfrak{D}$.\, An element $\mathfrak{p}$ of $\mathfrak{D}$, distinct from the unity $\mathfrak{e}$ of $\mathfrak{D}$, is called a {\em prime element} of $\mathfrak{D}$, when $\mathfrak{p}$ is divisible only by itself and $\mathfrak{e}$.\, The monoid $\mathfrak{D}$ has a {\em unique prime factorisation}, if every element $\mathfrak{a}$ of $\mathfrak{D}$ can be presented as a finite product \,$\mathfrak{a = p}_1\mathfrak{p}_2\cdots\mathfrak{p}_r$\, of prime elements and this \PMlinkescapetext{presentation} is unique up to the \PMlinkescapetext{order of the prime factors} $\mathfrak{p}_i$; then we may say that $\mathfrak{D}$ is a free monoid on the set of its prime elements.
+
+If the monoid $\mathfrak{D}$ has a unique prime factorisation, $\mathfrak{e}$ is divisible only by itself.\, Two elements of $\mathfrak{D}$ have always a greatest common factor.\, If a product $\mathfrak{ab}$  is divisible by a prime element $\mathfrak{p}$, then at least one of $\mathfrak{a}$ and $\mathfrak{b}$ is divisible by $\mathfrak{p}$.
+
+\subsection{Divisor theory of an integral domain}
+
+Let $\mathcal{O}$ be an integral domain and $\mathcal{O}^*$ the set of its non-zero elements; this set forms a commutative monoid (with identity 1) with respect to the multiplication of $\mathcal{O}$.\, We say that the integral domain $\mathcal{O}$ has a {\em divisor theory}, if there is a commutative monoid $\mathfrak{D}$ with unique prime factorisation and a homomorphism \, $\alpha \mapsto (\alpha)$\, from the monoid $\mathcal{O}^*$ into the monoid $\mathfrak{D}$, such that the following three properties are true:
+\begin{enumerate}
+\item A \PMlinkname{divisibility}{DivisibilityInRings} $\alpha \mid \beta$ in $\mathcal{O}^*$ is valid iff the divisibility $(\alpha) \mid (\beta)$ is valid in $\mathfrak{D}$.
+\item If the elements $\alpha$ and $\beta$ of $\mathcal{O}^*$ are divisible by an element $\mathfrak{c}$ of $\mathfrak{D}$, then also $\alpha\pm\beta$ are divisible by $\mathfrak{c}$\, (``$\mathfrak{c} \mid \alpha$''\, means that\, $\mathfrak{c} \mid (\alpha)$;\, in \PMlinkescapetext{addition}, 0 is divisible by every element of $\mathfrak{D}$).
+\item If\, $\{\alpha\in\mathcal{O}\,\vdots\;\, \mathfrak{a} \mid \alpha\} = \{\beta\in\mathcal{O}\,\vdots\;\, \mathfrak{b} \mid \beta\}$,\; then\, $\mathfrak{a = b}$.\\
+\end{enumerate}
+A divisor theory of $\mathcal{O}$ is denoted by\; $\mathcal{O}^* \to \mathfrak{D}$.\, The elements of $\mathfrak{D}$ are called {\em divisors} and especially the divisors of the form $(\alpha)$, where\, $\alpha\in\mathcal{O}^*$, {\em principal divisors}.\, The prime elements of $\mathfrak{D}$ are {\em prime divisors}.
+
+By 1, it is easily seen that two principal divisors $(\alpha)$ and $(\beta)$ are equal iff the elements $\alpha$ and $\beta$ are associates of each other.\, Especially, the units of $\mathcal{O}$ determine the {\em unit divisor} $\mathfrak{e}$.
+
+
+\subsection{Uniqueness theorems}
+
+\textbf{Theorem 1.}\, An integral domain $\mathcal{O}$ has at most one divisor theory.\, In other words, for any pair of divisor theories\, $\mathcal{O}^* \to \mathfrak{D}$\, and\, $\mathcal{O}^* \to \mathfrak{D}'$, there is an isomorphism \,$\varphi\!:\, \mathfrak{D} \to \mathfrak{D}'$\, such that\, $\varphi((\alpha)) = (\alpha)'$\, always when the principal divisors\, $(\alpha)\in\mathfrak{D}$\, and\, $(\alpha)'\in\mathfrak{D}'$\,  correspond to the same element $\alpha$ of $\mathcal{O}^*$.\\
+
+\textbf{Theorem 2.}\, An integral domain $\mathcal{O}$ is a \PMlinkname{unique factorisation domain}{UFD} if and only if $\mathcal{O}$
+has a divisor theory\, $\mathcal{O}^* \to \mathfrak{D}$\, in which all divisors are principal divisors.\\
+
+\textbf{Theorem 3.}\, If the divisor theory\, $\mathcal{O}^* \to \mathfrak{D}$\, comprises only a finite number of prime divisors, then $\mathcal{O}$ is a unique factorisation domain.\\
+
+
+The proofs of those theorems are found in [1], which is available also in Russian (original), English and French.
+
+\begin{thebibliography}{9}
+\bibitem{BS}{\sc S. Borewicz \& I. Safarevic}: {\em Zahlentheorie}.\, Birkh\"auser Verlag. Basel und Stuttgart (1966).
+\bibitem{MMP} \CYRM. \CYRM. \CYRP\cyro\cyrs\cyrt\cyrn\cyri\cyrk\cyro\cyrv: 
+{\em \CYRV\cyrv\cyre\cyrd\cyre\cyrn\cyri\cyre\, \cyrv\, \cyrt\cyre\cyro\cyrr\cyri\cyryu\, \cyra\cyrl\cyrg\cyre\cyrb\cyrr\cyra\cyri\cyrch\cyre\cyrs\cyrk\cyri\cyrh \,
+\cyrch\cyri\cyrs\cyre\cyrl}. \,\CYRI\cyrz\cyrd\cyra\cyrt\cyre\cyrl\cyrsftsn\cyrs\cyrt\cyrv\cyro \,
+``\CYRN\cyra\cyru\cyrk\cyra''. \CYRM\cyro\cyrs\cyrk\cyrv\cyra \,(1982).
+\end{thebibliography}
+
+
+
+
+%%%%%
+%%%%%
+\end{document}

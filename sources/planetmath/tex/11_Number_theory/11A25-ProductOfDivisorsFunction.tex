@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProductOfDivisorsFunction}
+\pmcreated{2013-03-22 18:55:45}
+\pmmodified{2013-03-22 18:55:45}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{product of divisors function}
+\pmrecord{7}{41782}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmsynonym{divisor product}{ProductOfDivisorsFunction}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+The product of all positive divisors of a nonzero integer $n$ is equal $\sqrt{n^{\tau(n)}}$, where tau function $\tau(n)$ expresses the number of the positive divisors of $n$.\\
+
+\emph{Proof.}\, Let\, $t = \tau(n)$\, and the positive divisors of $n$ be\, 
+$a_1 < a_2 < \ldots < a_t.$
+
+If $n$ is not a square of an integer, $t$ is even (see \PMlinkid{parity of $\tau$ function}{11781}), whence
+\begin{align*}
+\begin{cases}
+ a_1a_t \;=\; n\\
+ a_2a_{t-1} \;=\; n\\
+ \quad\cdots\\
+ a_{\frac{t}{2}}a_{\frac{t+2}{2}} \;=\; n.
+\end{cases}
+\end{align*}
+Thus
+$$\prod_{d \mid n}d \;=\; a_1a_2\cdots a_t \;=\; n^{\frac{t}{2}}.$$
+If $n$ is a square of an integer, $t$ is odd, and we have
+\begin{align*}
+\begin{cases}
+ a_1a_t \;=\; n\\
+ a_2a_{t-1} \;=\; n\\
+ \quad\cdots\\
+ a_{\frac{t-1}{2}}a_{\frac{t+3}{2}} \;=\; n\\
+ \;\;a_{\frac{t+1}{2}} \;=\; n^{\frac{1}{2}}.
+\end{cases}
+\end{align*}
+In this case we obtain a \PMlinkescapetext{similar} result:
+$$\prod_{d \mid n}d \;=\; a_1a_2\cdots a_t \;=\; n^{\frac{t-1}{2}+\frac{1}{2}} \;=\; n^{\frac{t}{2}}$$\\
+
+\textbf{Note.}\, The absolute value of the product of all divisors is $n^{\tau(n)}.$
+
+
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HausdorffPropertyIsHereditary}
+\pmcreated{2013-03-22 15:22:27}
+\pmmodified{2013-03-22 15:22:27}
+\pmowner{georgiosl}{7242}
+\pmmodifier{georgiosl}{7242}
+\pmtitle{Hausdorff property is hereditary}
+\pmrecord{8}{37202}
+\pmprivacy{1}
+\pmauthor{georgiosl}{7242}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D10}
+
+\endmetadata
+
+% this is the default PlanetMath preamble. as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+\usepackage{bbm}
+\newcommand{\Z}{\mathbbmss{Z}}
+\newcommand{\C}{\mathbbmss{C}}
+\newcommand{\R}{\mathbbmss{R}}
+\newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{thm}A subspace of a Hausdorff space is Hausdorff.
+\end{thm}
+
+\begin{proof}
+Let $ X$ be a Hausdorff space , and let $ Y$ be a subspace of $ X$. Let $y_1,y_2 \in Y$ where $y_1\neq y_2$.
+Since $X$ is Hausdorff, there are disjoint neighborhoods $U_1$ of $y_1$ and $U_2$ of $y_2$ $\in X$. Then
+$U_1 \cap Y$ is a neighborhood of $y_1$ in $Y$ and $U_2 \cap Y$ is a neighborhood of $y_2$ in $Y$, and $U_1 \cap Y$ and $U_2 \cap Y$ are disjoint. 
+Therefore, $Y$ is Hausdorff.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

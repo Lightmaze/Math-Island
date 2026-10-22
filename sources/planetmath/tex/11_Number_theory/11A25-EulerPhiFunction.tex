@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EulerPhiFunction}
+\pmcreated{2013-03-22 11:45:11}
+\pmmodified{2013-03-22 11:45:11}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{Euler phi function}
+\pmrecord{19}{30196}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmclassification{msc}{11-00}
+\pmclassification{msc}{14F35}
+\pmclassification{msc}{14H30}
+\pmclassification{msc}{20F34}
+\pmsynonym{Euler totient function}{EulerPhiFunction}
+\pmsynonym{Euler $\varphi$ function}{EulerPhiFunction}
+\pmsynonym{Euler $\phi$ function}{EulerPhiFunction}
+%\pmkeywords{number theory}
+\pmrelated{ProofThatEulerPhiIsAMultiplicativeFunction}
+\pmrelated{ValuesOfNForWhichVarphintaun}
+\pmrelated{PrimeResidueClass}
+\pmrelated{EulerPhiAtAProduct}
+\pmrelated{SummatoryFunctionOfArithmeticFunction}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%%\usepackage{xypic}
+\begin{document}
+For any positive integer $n$, $\varphi(n)$ is the number of positive integers less than or equal to $n$ which are coprime to $n$.  The function $\varphi$ is known as the \emph{\PMlinkescapetext{Euler} $\varphi$ function}.  This function may also be denoted by $\phi$.
+
+Among the most useful \PMlinkescapetext{properties} of $\varphi$ are the facts that it is multiplicative (meaning if $\gcd(a,b)=1$, then $\varphi(ab)=\varphi(a)\varphi(b)$) and that $\varphi(p^k)=p^{k-1}(p-1)$ for any prime $p$ and any positive integer $k$. These two facts combined give a numeric computation of $\varphi$ for all positive integers:
+\begin{align}
+\label{varphi}
+\varphi(n) & =n \prod_{p|n} \left( 1-\frac{1}{p} \right).
+\end{align}
+For example, 
+\begin{align*}
+\varphi (2000) & = 2000 \prod_{p|2000} \left(1-\frac{1}{p} \right) \\
+& = 2000 \left( 1 - \frac{1}{2} \right) \left( 1 - \frac{1}{5} \right) \\
+& = 2000 \left( \frac{1}{2} \right) \left( \frac{4}{5} \right) \\
+& = \frac{8000}{10} \\
+& = 800.
+\end{align*}
+
+From equation (\ref{varphi}), it is clear that $\varphi(n)\le n$ for any positive integer $n$ with equality holding exactly when $n=1$.  This is because
+\[
+\prod_{p|n} \left( 1-\frac{1}{p} \right) \le 1,
+\]
+with equality holding exactly when $n=1$.
+
+Another important fact about the \PMlinkescapetext{Euler} $\varphi$ function is that
+\[
+\sum_{d|n} \varphi(d)=n,
+\]
+where the sum extends over all positive divisors of $n$.  Also, by definition, $\varphi(n)$ is the number of units in the ring $\mathbb{Z}/n\mathbb{Z}$ of integers modulo $n$.
+
+The sequence $\{\varphi(n)\}$ appears in the OEIS as sequence \PMlinkexternal{A000010}{http://www.research.att.com/~njas/sequences/A000010}.
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

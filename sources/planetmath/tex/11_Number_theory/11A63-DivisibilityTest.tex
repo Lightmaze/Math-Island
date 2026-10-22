@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DivisibilityTest}
+\pmcreated{2013-03-22 15:59:58}
+\pmmodified{2013-03-22 15:59:58}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{divisibility test}
+\pmrecord{6}{38026}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{divisibility rule}{DivisibilityTest}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A means of determining whether $m|n$ without actually having to calculate $n \over m$. Most divisibility tests exploit some characteristic of the multiples of $m$ in a given base $b$.
+
+For example, suppose that for some reason you wanted to determine whether 24709898213 is divisible by 11 but didn't have access to (or didn't want to use) a calculator or computer. You don't need to know the result or the remainder (if applicable).
+
+The most obvious way to make the determination is by actually dividing 24709898213 by 11. This could take ten subtractions and at least six multiplication table look-ups (even if one has memorized the multiplication table, it still counts as an operation). The answer is 2246354383 and there is no remainder, meaning that 24709898213 is in fact divisible by 11.
+
+If on the other hand you add up the odd place digits (2 + 7 + 9 + 9 + 2 + 3) and subtract the sum of the even place digits (4 + 0 + 8 + 8 + 1), you get the answer 11, meaning that 24709898213 is in fact divisible by 11; this result was obtained having needed just two additions and one subtraction. This is the well-known base 10 divisibility test by 11, which is that an integer $n$ is divisible by 11 if the difference between the sum of the odd-placed digits and the even-placed digits is also a multiple of 11.
+
+A few other well-known divisibility tests in base 10 are:
+
+$n$ is divisible by 2 if the least significant digit is 0, 2, 4, 6 or 8.
+
+$n$ is divisible by 3 if it has digital root 3, 6 or 9.
+
+$n$ is divisible by 5 if the least significant digit is 0 or 5.
+
+$n$ is divisible by 9 if it has digital root 9.
+
+$n$ is divisible by 10 if the least significant digit is 0.
+
+From this it can be generalized to other bases: that if $2|b$ then the least significant digit of the number has to be even for the number as a whole to also be even; that if the digital root of $n$ is $b - 1$ then $(b - 1)|n$; that $b^x|n$ if the $x$ least significant digits of $n$ are all zeroes; and that $(b + 1)|n$ if the difference of the odd placed digits and the even place digits of $n$ is a multiple of $b + 1$.
+
+For some semiprimes $pq$ it might still be advantageous to perform two divisibility tests (one for $p$ and then one for $q$) than to calculate $n \over {pq}$.
+
+Divisibility tests are usually more useful for humans than for computers, and then only for sufficiently small numbers. For example, a computer might be able to divide 10000! + 11 by 11 in an immediate-feeling .032 seconds, but it might take .094 seconds just to figure out what the base 10 digits of 10000! + 11 are. However, the divisibility tests in binary might be useful for certain programming problems.
+%%%%%
+%%%%%
+\end{document}

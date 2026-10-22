@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ACompactMetricSpaceIsSecondCountable}
+\pmcreated{2013-03-22 17:00:49}
+\pmmodified{2013-03-22 17:00:49}
+\pmowner{azdbacks4234}{14155}
+\pmmodifier{azdbacks4234}{14155}
+\pmtitle{a compact metric space is second countable}
+\pmrecord{17}{39296}
+\pmprivacy{1}
+\pmauthor{azdbacks4234}{14155}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D70}
+%\pmkeywords{compact}
+%\pmkeywords{metric space}
+%\pmkeywords{metrizable}
+%\pmkeywords{open ball}
+%\pmkeywords{basis}
+%\pmkeywords{open cover}
+%\pmkeywords{countable}
+\pmrelated{MetricSpace}
+\pmrelated{Compact}
+\pmrelated{Lindelof}
+\pmrelated{Ball}
+\pmrelated{basisTopologicalSpace}
+\pmrelated{Cover}
+\pmrelated{BasisTopologicalSpace}
+
+\endmetadata
+
+%%packages
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+%%theorem environments
+\theoremstyle{plain}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{corollary*}{Corollary}
+\newtheorem*{proposition*}{Proposition}
+%math operators and commands
+\newcommand{\set}[1]{\{#1\}}
+\newcommand{\medset}[1]{\left\{#1\right\}}
+\newcommand{\bigset}[1]{\bigg\{#1\bigg\}}
+\newcommand{\abs}[1]{\vert#1\vert}
+\newcommand{\medabs}[1]{\left\vert#1\right\vert}
+\newcommand{\bigabs}[1]{\bigg\vert#1\bigg\vert}
+\newcommand{\norm}[1]{\Vert#1\Vert}
+\newcommand{\mednorm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\bignorm}[1]{\bigg\Vert#1\bigg\Vert}
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\End}{End}
+\DeclareMathOperator{\Inn}{Inn}
+\DeclareMathOperator{\supp}{supp}
+
+\begin{document}
+\begin{proposition*}
+Every compact metric space is second countable.
+\end{proposition*}
+\begin{proof}
+Let $(X,d)$ be a compact metric space, and for each $n\in\mathbb{Z}^+$ define $\mathcal{A}_n=\{B(x,1/n):x\in X\}$, where $B(x,1/n)$ denotes the open ball centered about $x$ of \PMlinkid{radius}{1296} $1/n$. Each such collection is an open cover of the compact space $X$, so for each $n\in\mathbb{Z}^+$ there exists a finite collection $\mathcal{B}_n\subseteq\mathcal{A}_n$ that \PMlinkescapetext{covers} $X$. Put $\mathcal{B}=\bigcup_{n=1}^\infty\mathcal{B}_n$. Being a countable union of finite sets, it follows that $\mathcal{B}$ is countable; we assert that it forms a basis for the metric topology on $X$. The first property of a basis is satisfied trivially, as each set $\mathcal{B}_n$ is an open cover of $X$. For the second property, let $x,x_1,x_2\in X$, $n_1,n_2\in\mathbb{Z}^+$, and suppose $x\in B(x_1,1/n_1)\cap B(x_2,1/n_2)$. Because the sets $B(x_1,1/n_1)$ and $B(x_2,1/n_2)$ are open in the metric topology on $X$, their intersection is also open, so there exists $\epsilon>0$ such that $B(x,\epsilon)\subseteq B(x_1,1/n_1)\cap B(x_2,1/n_2)$. Select $N\in\mathbb{Z}^+$ such that $1/N<\epsilon$. There must exist $x_3\in X$ such that $x\in B(x_3,1/2N)$ (since $\mathcal{B}_{2N}$ is an open cover of $X$). To see that $B(x_3,1/2N)\subseteq B(x_1,1/n_1)\cap B(x_2,1/n_2)$, let $y\in B(x_3,1/2N)$. Then we have
+\begin{equation}
+d(x,y)\leq d(x,x_3)+d(x_3,y)<\dfrac{1}{2N}+\dfrac{1}{2N}=\dfrac{1}{N}<\epsilon\text{,}
+\end{equation} 
+so that $y\in B(x,\epsilon)$, from which it follows that $y\in B(x_1,1/n_1)\cap B(x_2,1/n_2)$, hence that $B(x_3,1/2N)\subseteq B(x_1,1/n_1)\cap B(x_2,1/n_2)$. Thus the countable collection $\mathcal{B}$ forms a basis for a topology on $X$; the verification that the topology \PMlinkescapetext{induced} by $\mathcal{B}$ is in fact the metric topology follows by an \PMlinkescapetext{argument similar} to that used to verify the second property of a basis, and completes the proof that $X$ is second countable.
+\end{proof}\
+It is worth nothing that, because a countable union of countable sets is countable, it would have been sufficient to assume that $(X,d)$ was a Lindel\"{o}f space.
+%%%%%
+%%%%%
+\end{document}

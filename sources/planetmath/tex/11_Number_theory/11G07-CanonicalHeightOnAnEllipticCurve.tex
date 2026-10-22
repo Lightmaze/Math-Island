@@ -1,0 +1,105 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CanonicalHeightOnAnEllipticCurve}
+\pmcreated{2013-03-22 16:23:20}
+\pmmodified{2013-03-22 16:23:20}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{canonical height on an elliptic curve}
+\pmrecord{6}{38534}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11G07}
+\pmclassification{msc}{11G05}
+\pmclassification{msc}{14H52}
+\pmsynonym{Neron-Tate height}{CanonicalHeightOnAnEllipticCurve}
+\pmrelated{HeightFunction}
+\pmrelated{RegulatorOfAnEllipticCurve}
+\pmdefines{canonical height}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem*{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+Let $E/\Rats$ be an elliptic curve. It is often useful to have a notion of {\it height} of a point, in order to talk about the arithmetic complexity of a point $P$ in $E(\Rats)$. For this, one defines height functions. For example, in $\Rats$ one can define a height by 
+$$H(p/q)=max(|p|,|q|).$$
+Following the example of $\Rats$, one may define a height on $E/\Rats$ by
+$$h_x(P)=\begin{cases}
+\log H(x(P)) & \text{if } P\neq O\\
+0 & \text{if } P=O.
+\end{cases}
+$$
+In fact, given any even function $f:E(\Rats)\to \Reals$ on $E(\Rats)$ (i.e. $f(P)=f(-P)$ for any $P\in E(\Rats)$) one can define a height by:
+$$h_f(P)=\log H(f(P)).$$
+However, one can refine this definition so that the height function satisfies some very nice properties (see below).
+
+\begin{defn}
+Let $\Rats$ be a number field and let $E$ be an elliptic curve defined over $\Rats$. The canonical height (or N\'eron-Tate height) on $E/\Rats$, denoted by $\hat{h}$, is the function on $E(\Rats)$ (with real values) defined by:
+$$\hat{h}(P)=\frac{1}{\deg f} \lim_{N\to \infty} \frac{h_f([2^N]P)}{4^N}$$
+for any even function $f:E(\Rats)\to \Reals$.
+\end{defn}
+
+The fact that the definition does not depend on the choice of even function $f$ is due to J. Tate. In particular, one can simply choose $f$ to be the $x$-function, whose degree is $2$. The canonical height satisfies the following properties:
+
+\begin{thm}
+Let $E/\Rats$ and let $\hat{h}$ be the canonical height on $E$. Then:
+\begin{enumerate}
+\item The height $\hat{h}$ satisfies the parallelogram law:
+$$\hat{h}(P+Q)+\hat{h}(P-Q)=2\hat{h}(P)+2\hat{h}(Q)$$
+for all $P,Q \in E(\overline{\Rats})$.
+
+\item For all $m\in \Ints$ and all $P\in E(\overline{\Rats})$:
+$$\hat{h}([m]P)=m^2\hat{h}(P).$$
+
+\item The height $\hat{h}$ is even and the pairing:
+$$\langle \cdot, \cdot \rangle : E(\overline{\Rats})\times E(\overline{\Rats}) \to \Reals,\quad \langle P,Q \rangle = \hat{h}(P+Q)-\hat{h}(P)-\hat{h}(Q)$$
+is bilinear (usually called the N\'eron-Tate pairing on $E/\Rats$).
+
+\item For all $P\in E(\overline{\Rats})$ one has $\hat{h}(P)\geq 0$ and $\hat{h}(P)=0$ if and only if $P$ is a torsion point.
+\end{enumerate}
+\end{thm}
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PurelyPeriodicContinuedFractions}
+\pmcreated{2013-03-22 18:04:44}
+\pmmodified{2013-03-22 18:04:44}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{purely periodic continued fractions}
+\pmrecord{6}{40615}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11Y65}
+\pmclassification{msc}{11A55}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\newcommand{\Abs}[1]{\left\lvert #1 \right\rvert}
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{ax}{Axiom}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\begin{document}
+We know that periodic continued fractions represent quadratic irrationals; this article characterizes purely periodic continued fractions. We will use freely the results on convergents to a continued fraction.
+
+\begin{thm} (Galois) A quadratic irrational $t$ is represented by a purely periodic simple continued fraction if and only if $t>1$ and its conjugate $s$ under the transformation $\sqrt{d}\mapsto -\sqrt{d}$ satisfies $-1<s<0$.
+\end{thm}
+
+\begin{proof} Suppose first that $t$ is represented by a purely periodic continued fraction
+\[t=[\overline{a_0,a_1,\ldots,a_{r-1}}].\]
+Note that $a_0\geq 1$ since it appears again in the continued fraction. Thus $t>1$. The $r^{\mathrm{th}}$ complete convergent is again $t$, so that we have
+\[t = \frac{p_{r-2}+tp_{r-1}}{q_{r-2}+tq_{r-1}}\]
+so that 
+\[q_{r-1}t^2 + (q_{r-2}-p_{r-1})t - p_{r-2}=0\]
+Consider the polynomial $f(x) = q_{r-1}x^2 + (q_{r-2}-p_{r-1})x - p_{r-2}$. $f(t)=0$, so the other root of $f(x)$ is the conjugate $s$ of $t$. But $f(-1) = (p_{r-1}-p_{r-2})+(q_{r-1}-q_{r-2})>0$ since the $p_i$ and the $q_i$ are both strictly increasing sequences, while $f(0) = -p_{r-2}<0$. Thus $s$ lies between $-1$ and $0$ and we are done.
+
+Now suppose that $t>1$ and $-1<s<0$, and let the continued fraction for $t$ be $[a_0,a_1,\ldots]$. Let $t_n$ be the $n^{\mathrm{th}}$ complete convergent of $t$, and $s_n = \overline{t_n}$. Thus $s_0=s$. Then
+\[t=t_0 = a_0 + \frac{1}{t_1}\]
+so that
+\[s_0 = \overline{t_0} = a_0+\frac{1}{\overline{t_1}} = a_0+\frac{1}{s_1}\]
+and thus
+\[\frac{1}{s_1} = -a_0 + s_0 < -a_0 \leq -1\]
+so that $-1 < s_1 < 0$. Inductively, we have $-1 < s_n = \overline{t_n} < 0$ for all $n\geq 0$. Suppose now that the continued fraction for $t$ is not purely periodic, but rather has the form
+\[t = [a_0,a_1,\ldots,a_{k-1},\overline{a_k,a_{k+1},\ldots,a_{k+j-1}}]\]
+for $k\geq 1$. Then $t_k = t_{k+j}$ and so
+\[t_{k-1}-t_{k+j-1} = \left(a_{k-1}+\frac{1}{t_k}\right) - \left(a_{k+j-1}+\frac{1}{t_{k+j}}\right) = a_{k-1}-a_{k+j-1}\]
+But $a_{k-1}\neq a_{k+j-1}$, otherwise $a_{k-1}$ would have been the first element of the repeating period. Thus $t_{k-1}-t_{k+j-1}$ is a nonzero integer and thus $s_{k-1}-s_{k+j-1}$ is as well. But $-1<s_{k-1}-s_{k+j-1}<1$, which is a contradiction. Thus $k=0$ and the continued fraction is purely periodic.
+\end{proof}
+
+\begin{thebibliography}{10}
+\bibitem{bib:rockett}
+A.M.~Rockett~\& P.~Sz\"usz, \emph{Continued Fractions}, World Scientific Publishing, 1992.
+\end{thebibliography}
+
+
+
+
+%%%%%
+%%%%%
+\end{document}

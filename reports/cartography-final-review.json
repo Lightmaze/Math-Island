@@ -1,0 +1,32 @@
+{
+  "reviewer": "/root/atlas_cartography",
+  "status": "completed",
+  "final_input_nodes_sha256": "4f146b824e4cce0f3b8e47e1c756557124c5075288fdf8cd7db0145a879abce1",
+  "final_input_edges_sha256": "ffc436ae4c1c8f35caf8127e347cd4547b1c24178389904fb0e40efc922a4fe4",
+  "observed_svg_count": 14,
+  "all_node_markers_verified": 21741,
+  "bridge_curves_verified": 21,
+  "domain_atlas_pages_verified_by_pdfinfo": 12,
+  "quality_flagged_nodes": 16,
+  "navigation_rows": 21741,
+  "images_visually_inspected": {
+    "maps/mathematical-archipelago-overview.png": "cf851daf48f3b8e444dbc9318d58782fb0ed61ebaa7edac92766a90af029099e",
+    "maps/mathematical-archipelago-bridges.png": "a8fb0f47b6570a0d65e19a8dcef4df29803e995796cab7440e112739bf89cf2d",
+    "maps/domain-08.png": "f7de2fbb731759e2da8feddf50a37c37c60facd3f3a60af619b92226787732d9",
+    "maps/domain-11.png": "e816e836844e4643c38c7f49835d75a0bb89dcfec1cf143bb28299c9e85c8eea"
+  },
+  "observations": [
+    "总图12海域轮廓与中文域名可辨；所有节点保留，60标签选取而非条目下采样。",
+    "21桥以B01–B21显示并与桥目录对应；弧线中点标号按Arc3控制点公式放置，标签避让。",
+    "逻辑与基础详图已移除人物/机构/史料背景条目，保留数学工具与问题。",
+    "数学物理详图显示Leslie model并保留源问题红圈；原坏source_title留在数据中。",
+    "索引的计数、源质量字段和完整节点行号与冻结输入一致。"
+  ],
+  "limits": [
+    "二维位置与外缘环是制图安排；非数学距离或逻辑独立性。",
+    "源关系和文献桥梁不等于自动证明；本次图形核验不是全库数学内容正确性审计。"
+  ],
+  "prior_findings": "reports/cartographic-label-review.json",
+  "counterexample_execution": "reports/cartographic-source-counterexamples.json",
+  "maps_frozen_after_this_review": true
+}

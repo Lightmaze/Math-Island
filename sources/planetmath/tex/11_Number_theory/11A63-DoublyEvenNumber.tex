@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DoublyEvenNumber}
+\pmcreated{2013-03-22 18:09:38}
+\pmmodified{2013-03-22 18:09:38}
+\pmowner{1and2and4}{20899}
+\pmmodifier{1and2and4}{20899}
+\pmtitle{doubly even number}
+\pmrecord{5}{40718}
+\pmprivacy{1}
+\pmauthor{1and2and4}{20899}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmclassification{msc}{11A51}
+\pmrelated{SinglyEvenNumber}
+\pmrelated{FactorsWithMinusSign}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em doubly even number} is an even number divisible by 4 and sometimes greater powers of two. If $n$ is a doubly even number, it satisfies the congruence $n \equiv 0 \mod 4$. The first few positive doubly even numbers are 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, listed in A008586 of Sloane's OEIS.
+
+In the binary representation of a positive doubly even number, the two least significant bits are always both 0. Thus it takes at least a 2-bit right shift to change the parity of a doubly even number to odd. These properties obviously also hold true when representing negative numbers in binary by prefixing the absolute value with a minus sign. As it turns out, all this also holds true in two's complement. Independently of binary representation, we can say that the \PMlinkname{$p$-adic valuation}{PAdicValuation} of a doubly even number $n$ with $p = 2$ is always $\frac{1}{4}$ or less.
+
+All doubly even numbers are composite. In representing a doubly even number $n$ as $$\prod_{i = 1}^{\pi(n)} {p_i}^{a_i},$$ with $p_i$ being the $i$th prime number, $a_1 > 1$, all other other $a_i$ may have any nonnegative integer value.
+
+If $n$ is doubly even, then the value of $\tau(n)$ (the divisor function) is even except when all the nonzero $a_i$ in the factorization are greater than 1. % In fact, $\tau(n) = 2\tau(\frac{n}{2})$. This is because if the divisors of $\frac{n}{2}$ are $1, d_2, d_3, \ldots , d_{\tau(\frac{n}{2}) - 1}, \frac{n}{2}$, then the divisors of $n$ include all these as well as $2, 2d_2, 2d_3, \ldots , 2d_{\tau(\frac{n}{2}) - 1}, n$. (Singly even numbers therefore have an equal amount of odd divisors as they do even divisors). From this it is easy to deduce the relationship of the values of the sum of divisors function $\sigma(x)$ for $n$ and $\frac{n}{2}$ is $\sigma(n) = 3\sigma(\frac{n}{2})$. Because $\phi(2) = 1$ ($\phi(n)$ being Euler's totient function) it is also easy to see that for $n$ a singly even number it is the case that $\phi(n) = \phi(\frac{n}{2})$.
+
+Whereas $(-1)^n = 1$ whether $n$ is singly or doubly even, with the imaginary unit $i$ it is the case that $i^n = 1$ only when $n$ is doubly even.
+
+% \begin{thebibliography}{1}
+% \bibitem{il} I. Lukovits \& D. Janezic, ``Enumeration of conjugated circuits in nanotubes'', {\it J. Chem. Inf. Comput. Sci.}, {\bf 44} (2004): 410 - 414
+% \end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PepinsTheorem}
+\pmcreated{2013-03-22 18:53:09}
+\pmmodified{2013-03-22 18:53:09}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{P\'epin's theorem}
+\pmrecord{4}{41734}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmsynonym{Pepin's theorem}{PepinsTheorem}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Theorem} (P\'epin). A Fermat number $F_n = 2^{2^n} + 1$ is prime only if $$3^{\frac{F_n - 1}{2}} \equiv -1 \mod F_n.$$ In other words, if 3 raised to the largest power of two not greater than the Fermat number leaves as a remainder the next higher power of two when divided by that Fermat number (since $F_n - 1 = 2^{2^n}$), then that Fermat number is a Fermat prime.
+
+For example, $17 = 2^{2^2} + 1$ is a Fermat prime, and we can see that $3^8 = 6561$, which leaves a remainder of 16 when divided by 17. The smallest Fermat number not to be a prime is 4294967297, as it is the product of 641 and 6700417, and $3^{2147483648}$ divided by 4294967297 leaves a remainder of 10324303 rather than 4294967296.
+%%%%%
+%%%%%
+\end{document}

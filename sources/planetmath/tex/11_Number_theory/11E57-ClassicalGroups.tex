@@ -1,0 +1,257 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClassicalGroups}
+\pmcreated{2013-03-22 15:50:13}
+\pmmodified{2013-03-22 15:50:13}
+\pmowner{Algeboy}{12884}
+\pmmodifier{Algeboy}{12884}
+\pmtitle{classical groups}
+\pmrecord{23}{37812}
+\pmprivacy{1}
+\pmauthor{Algeboy}{12884}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11E57}
+\pmsynonym{linear algebraic groups}{ClassicalGroups}
+\pmrelated{SemilinearTransformation}
+\pmrelated{PolaritiesAndForms}
+\pmrelated{SesquilinearFormsOverGeneralFields}
+\pmdefines{classical group}
+\pmdefines{isometry}
+
+\endmetadata
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+%%\usepackage{xypic}
+
+%-----------------------------------------------------
+
+%       Standard theoremlike environments.
+
+%       Stolen directly from AMSLaTeX sample
+
+%-----------------------------------------------------
+
+%% \theoremstyle{plain} %% This is the default
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{coro}[thm]{Corollary}
+
+\newtheorem{lem}[thm]{Lemma}
+
+\newtheorem{lemma}[thm]{Lemma}
+
+\newtheorem{prop}[thm]{Proposition}
+
+\newtheorem{conjecture}[thm]{Conjecture}
+
+\newtheorem{conj}[thm]{Conjecture}
+
+\newtheorem{defn}[thm]{Definition}
+
+\newtheorem{remark}[thm]{Remark}
+
+\newtheorem{ex}[thm]{Example}
+
+
+
+%\countstyle[equation]{thm}
+
+
+
+%--------------------------------------------------
+
+%       Item references.
+
+%--------------------------------------------------
+
+
+\newcommand{\exref}[1]{Example-\ref{#1}}
+
+\newcommand{\thmref}[1]{Theorem-\ref{#1}}
+
+\newcommand{\defref}[1]{Definition-\ref{#1}}
+
+\newcommand{\eqnref}[1]{(\ref{#1})}
+
+\newcommand{\secref}[1]{Section-\ref{#1}}
+
+\newcommand{\lemref}[1]{Lemma-\ref{#1}}
+
+\newcommand{\propref}[1]{Prop\-o\-si\-tion-\ref{#1}}
+
+\newcommand{\corref}[1]{Cor\-ol\-lary-\ref{#1}}
+
+\newcommand{\figref}[1]{Fig\-ure-\ref{#1}}
+
+\newcommand{\conjref}[1]{Conjecture-\ref{#1}}
+
+
+% Normal subgroup or equal.
+
+\providecommand{\normaleq}{\unlhd}
+
+% Normal subgroup.
+
+\providecommand{\normal}{\lhd}
+
+\providecommand{\rnormal}{\rhd}
+% Divides, does not divide.
+
+\providecommand{\divides}{\mid}
+
+\providecommand{\ndivides}{\nmid}
+
+
+\providecommand{\union}{\cup}
+
+\providecommand{\bigunion}{\bigcup}
+
+\providecommand{\intersect}{\cap}
+
+\providecommand{\bigintersect}{\bigcap}
+\begin{document}
+\section{Classical Groups}
+
+It is commonplace to express the classical groups with explicit matrices; however, the theory and classification of classical groups can benefit from a basis free consideration.
+
+Given a finite dimensional vector space $V$ over any field $k$, the set of all linear transformations on $V$ is denoted $GL(V)$ and called the \emph{general linear group}.  We now define several significant related groups of $GL(V)$.
+
+\begin{thm}[Birkhoff-von Neumann]\label{thm:class}
+Given a reflexive non-degenerate sesquilinear form $b:V\times V\rightarrow k$, then 
+up to a constant $b$ is one of the following:
+\begin{itemize}
+\item Alternating: that is $b(v,v)=0$.
+\item Hermitian: so $b(v,w)=b(w,v)^{\sigma}$ where $\sigma$ is a field
+automorphism of $k$ of order $2$.
+\item Symmetric: so $b(v,w)=b(w,v)$.
+\end{itemize}
+\end{thm}
+(Refer to \cite[Theorem 7.1]{Taylor} and \cite[Chapter V]{GW}.)
+We prefer the definition $b(v,v)=0$ over $b(v,w)=-b(w,v)$ so that we can accommodate the fields of characteristic 2.  In all other characteristics these two properties are equivalent.
+
+In keeping with tradition for group theory, we let $GL(V)$ act on the vector space $V$ on the right hand side.  This means given $v\in V$ and $f\in GL(V)$, 
+$vf$ corresponds the vector in $V$ which $f$ sends $v$ to.  If one thinks of $f$ as a matrix this requires $v$ to be a row vector.  It is also common to consider $f$ as a function and use the notation $f(v)$.   
+
+\begin{defn}
+Given a reflexive non-degenerate sesquilinear form $b:V\times V\rightarrow k$
+we define
+\[Isom(b)=\{f\in GL(V):b(vf,wf)=b(v,w), v,w\in V\}.\]
+This is called the isometry group of $b$ in $GL(V)$.
+\end{defn}
+
+\begin{prop}
+$Isom(b)$ is a subgroup of $GL(V)$.
+\end{prop}
+\begin{proof}
+Given $f,g\in Isom(b)$, $v,w\in V$ then 
+\[ b(v(fg),w(fg))=b((vf)g,(wf)g)=b(vf,wf)=b(v,w).\]
+Hence $fg\in Isom(b)$.  Clearly $1\in Isom(b)$ as well.  Finally, 
+\[ b(vf^{-1},wf^{-1})=b((vf^{-1})f,(wf^{-1})f)=b(v,w).\]
+So $f^{-1}\in Isom(b)$ and $Isom(b)$ is a subgroup of $GL(V)$.
+\end{proof}
+
+
+ Now if we return to Theorem \ref{thm:class} we find that there are only three isometry group types, as there are only three types of reflexive non-degenerate sesquilinear forms.  These receive the well-known names:
+\begin{itemize}
+\item Symplectic group $Sp(V, b)$ if $b$ is alternating.
+\item Unitary group $U(V,b)$ if $b$ is hermitian.
+\item Orthogonal group $O(V,b)$ if $b$ is symmetric.
+\end{itemize}
+
+A vector space $V$ equipped with a reflexive non-degenerated sesquilinear form $b$ is also given the designation symplectic, unitary, and orthogonal based on the classification of the form.
+
+Because symplectic spaces have a standard hyperbolic basis it follows every symplectic group over a vector space of the same dimension is isometric, meaning isomorphic as vector spaces but with an isomorphism which respects the forms.  Thus we can write $Sp(V)$ instead of $Sp(V,b)$.  For unitary and orthogonal groups more care is required.
+
+\begin{defn}
+A \emph{classical group} is any one of the family of groups derived from these three and the general linear group.  
+\end{defn}
+
+\section{Classical Groups as Matrices}
+
+When expressing these groups with matrices it becomes necessary to establish the bilinear forms with matrices.  Given any $n\times n$-matrix $B$ over some field $k$, and row vectors $v,w\in k^n$ we have a reflexive bilinear form defined by
+\[ b(v,w)=vBw^t.\]
+Whence $b$ is non-degenerate if and only if $\det B\neq 0$.
+
+The most common example is the identity matrix $B=I_n$.  For then
+\[b(v,w)=vw^t\]
+is the usual dot product, only perhaps without the positive definite axiom which makes sense only for ordered fields like the rationals $\mathbb{Q}$ and reals 
+$\mathbb{R}$.
+
+The isometry group of $I$ is nothing more than the invertible matrices $A$ where
+\[AIA^t=I;\qquad AA^t=I.\]
+Thus it is common for $O(n)$ to denote the orthogonal group over $\mathbb{R}$ and be given by
+\[ O(n)=\{A\in GL(n):AA^t=I\}.\]
+
+For symplectic groups the form is the typical $J=\begin{bmatrix} 0 & I\\ -I & 0\end{bmatrix}$ matrix found in the definition of symplectic matrices.
+Hence the isometry condition for an alternating form
+\[b(vA,wA)=vAJA^t w^t=vJw^t=b(v,w)\]
+show that $AJA^t=J$.  Thus it is common to define 
+\[Sp(2m)=\{A\in GL(2m): AJA^t=J\}.\]
+Thus the symplectic matrices form a group of isometries.
+
+
+\section{Special subgroups}
+
+The commutator of $GL(V)$ is the special linear group $SL(V)$ composed of all invertible linear transformations of determinant 1.  Given a reflexive non-degenerate sesquilinear form $b$ on $V$, we can create the groups 
+\[SIsom(V,b)=Isom(V,b)\intersect SL(V).\]
+These get the names
+\[Sp(V),\quad SU(V,b), \textnormal{ and } SO(V,b).\]
+Notice that $Sp(V)\leq SL(V)$ so we do not require a new name.
+
+\section{Projective groups}
+
+The projective geometry of a vector space $V$, denoted $PG(V)$ is its lattice of subspaces.  Clearly invertible linear maps act on the projective geometry because they send points (1-dimensional subspaces) to points, and lines (2-dimensional subspaces) to lines, and in general $m$-dimensional subspaces to other $m$-dimensional subspaces.  
+
+However, the scalar transformations, i.e.: those $f\in GL(V)$ such that $vf=v\lambda$ for some fixed $\lambda\in k$, do not move any of the subspaces of $V$ -- they fix $PG(V)$.  Therefore when we consider the action of $GL(V)$ on $PG(V)$ we factor out the kernel of the action -- that is the scalar transforms (matrices.)  We denote this group by $PGL(V)$.  Because scalar matrices commute with all other, and not other matrices do, we notice this is the same as factoring by the center $Z(GL(V))$.
+
+Immediately this gives rise the projective versions of each of the classical groups: Let $Z=Z(GL(V))$ -- the set of scalar transformations (a group isomorphic to $k^\times$.)
+\begin{itemize}
+\item $PGL(V)=GL(V)/Z$, $PSL(V)=SL(V)/(Z\intersect SL(V))$
+\item $PSp(V)=Sp(V)/(Z\intersect Sp(V))$
+\item $PU(V)=U(V,b)/(Z\intersect U(V,b))$, $PSU(V,b)=SU(V,b)/(Z\intersect SU(V,b))$
+\item $PO(V)=O(V,b)/(Z\intersect O(V,b))$, $PSO(V,b)=SO(V,b)/(Z\intersect SO(V,b))$
+\end{itemize}
+
+Most of the time the projective special isometry groups are simple groups.
+The exceptions arise for small dimensional vector spaces and/or small fields, or with the orthogonal groups.
+
+
+\bibliographystyle{amsplain}
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+\href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{10}
+
+
+\bibitem{GW}
+Gruenberg, K. W. and Weir, A.J.
+\emph{Linear Geometry 2nd Ed.} (English)
+[B] Graduate Texts in Mathematics. 49. New York - Heidelberg - Berlin: Springer-Verlag. (1977), pp. x-198.
+
+\bibitem{Ka}
+Kantor, W. M.
+\emph{Lectures notes on Classical Groups}.
+
+\bibitem{Taylor}
+Taylor, Donald E.
+\emph{The geometry of the classical groups}
+Sigma Series in Pure Mathematics. 9.
+Heldermann Verlag, Berlin, xii+229, (1992), ISBN 3-88538-009-9.
+
+\end{thebibliography}
+
+
+%%%%%
+%%%%%
+\end{document}

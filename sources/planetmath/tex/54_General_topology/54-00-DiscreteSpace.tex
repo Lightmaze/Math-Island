@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DiscreteSpace}
+\pmcreated{2013-03-22 12:29:56}
+\pmmodified{2013-03-22 12:29:56}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{discrete space}
+\pmrecord{17}{32726}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+\pmsynonym{discrete topological space}{DiscreteSpace}
+\pmrelated{Discrete2}
+\pmdefines{discrete subspace}
+\pmdefines{discrete topology}
+\pmdefines{discrete space}
+\pmdefines{discrete subset}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+\PMlinkescapeword{satisfies}
+\PMlinkescapeword{induced}
+\PMlinkescapeword{equivalent}
+The \emph{discrete topology} on a set $X$ is the topology given by
+the power set of $X$. That is, every subset of $X$ is open in the discrete topology.  A space equipped with the discrete topology is called a \emph{discrete space}.
+
+The discrete topology is the \PMlinkid{finest}{3290} topology one can give to a set.  Any set with the discrete topology is metrizable by defining $d(x,y)=1$ for any $x,y\in X$ with $x\neq y$, and $d(x,x)=0$ for any $x\in X$.
+
+The following conditions are equivalent:
+\begin{enumerate}
+\item $X$ is a discrete space. 
+\item 
+Every singleton in $X$ is an open set.
+\item 
+Every subset of $X$ containing $x$ is a neighborhood of $x$.
+\end{enumerate}
+
+Note that any bijection between discrete spaces is trivially a homeomorphism.
+
+\subsubsection*{Discrete Subspaces}If $Y$ is a subset of $X$, and the subspace topology on $Y$ is discrete, then $Y$ is called a \emph{discrete subspace} or \emph{discrete subset} of $X$.
+
+Suppose $X$ is a topological space and $Y$ is a subset of $X$. Then $Y$ is a  discrete subspace if and only if, for any $y\in Y$, there is an open $S\subset X$ such that \[S\cap Y=\{y\}.\] 
+
+\subsubsection*{Examples}
+\begin{enumerate}
+\item
+$\mathbb{Z}$, as a metric space with the standard distance metric $d(m,n)=|m-n|$, has the discrete topology.
+\item
+$\mathbb{Z}$, as a subspace of $\mathbb{R}$ or $\mathbb{C}$ with the usual topology, is discrete.  But $\mathbb{Z}$, as a subspace of $\mathbb{R}$ or $\mathbb{C}$ with the trivial topology, is not discrete.
+\item
+$\mathbb{Q}$, as a subspace of $\mathbb{R}$ with the usual topology, is not discrete: any open set containing $q\in \mathbb{Q}$ contains the intersection $U=B(q,\epsilon)\cap \mathbb{Q}$ of an open ball around $q$ with the rationals.  By the Archimedean property, there's a rational number between $q$ and $q+\epsilon$ in $U$.  So $U$ can't contain just $q$: singletons can't be open.
+\item
+The set of unit fractions $F=\{1/n \mid n\in \mathbb{N}\}$, as a subspace of $\mathbb{R}$ with the usual topology, is discrete.  But $F\cup\{0\}$ is not, since any open set containing $0$ contains some unit fraction.
+\item
+The product of two discrete spaces is discrete under the product topology.  The product of an infinite number of discrete spaces is discrete under the box topology, but if an infinite number of the spaces have more than one element, it is not discrete under the product topology.
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

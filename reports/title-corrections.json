@@ -1,0 +1,28 @@
+{
+  "corrections": [
+    {
+      "id": "pm:TheHistoryToGettingSettledToCompleteReviews",
+      "source_title": "The History to Getting Settled To Complete Reviews",
+      "label": "Leslie model",
+      "label_zh": "莱斯利种群模型",
+      "kind": "concept",
+      "source_file": "sources/planetmath/tex/92_Biology_and_other_natural_sciences/92D25-TheHistoryToGettingSettledToCompleteReviews.tex",
+      "source_sha256": "1997b9aaea412ea75a491c0b0c2e21347478d06fb4fb3a5dc3ec6d1a9e762bed",
+      "reviewer": "/root",
+      "reason": "The source title does not describe the source body. The first body paragraph explicitly names this mathematical subject. Display title corrected; original ID and original title retained.",
+      "read_scope": "source body excerpt including definition/algorithm; no whole-source mathematical certification"
+    },
+    {
+      "id": "pm:TheRealHistoryOfGettingSettledToAccomplishStudies",
+      "source_title": "The Real History of Getting Settled To Accomplish Studies",
+      "label": "Dijkstra's algorithm",
+      "label_zh": "迪杰斯特拉算法",
+      "kind": "method",
+      "source_file": "sources/planetmath/tex/05_Combinatorics/05C85-TheRealHistoryOfGettingSettledToAccomplishStudies.tex",
+      "source_sha256": "63b7dd1944a79d8959cb496b11dd127b1dae146776ee735a33c7ce0365eadc8f",
+      "reviewer": "/root",
+      "reason": "The source title does not describe the source body. The first body paragraph explicitly names this mathematical subject. Display title corrected; original ID and original title retained.",
+      "read_scope": "source body excerpt including definition/algorithm; no whole-source mathematical certification"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PeriodicContinuedFractionsRepresentQuadraticIrrationals}
+\pmcreated{2013-03-22 18:04:40}
+\pmmodified{2013-03-22 18:04:40}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{periodic continued fractions represent quadratic irrationals}
+\pmrecord{9}{40614}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11Y65}
+\pmclassification{msc}{11A55}
+\pmdefines{periodic continued fraction}
+\pmdefines{purely periodic}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\newcommand{\Abs}[1]{\left\lvert #1 \right\rvert}
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{ax}{Axiom}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+
+\begin{document}
+This article shows that infinite simple continued fractions that are eventually periodic correspond precisely to quadratic irrationals.
+
+Throughout, we will freely use results on convergents to a continued fraction; see that article for details.
+
+\begin{defn} A \emph{periodic simple continued fraction} is a simple continued fraction 
+\[[a_0,a_1,a_2,\ldots]\]
+such that for some $k\geq 0$ there is $m>0$ such that whenever $r \geq k$, we have $a_r = a_{r+m}$. Informally, a periodic continued fraction is one that eventually repeats. A \emph{purely periodic} simple continued fraction is one for which $k=0$; that is, one whose repeating period starts with the initial element.
+\end{defn}
+
+If
+\[[a_0,a_1,\ldots,a_{k-1},a_k,\ldots,a_{k+j-1},a_k,\ldots,a_{k+j-1},a_k,\ldots]\]
+is a periodic continued fraction, we write it as \[[a_0,a_1,\ldots,a_{k-1},\overline{a_k,\ldots,a_{k+j-1}}].\]
+
+\begin{thm} If
+\[\alpha = [a_0,a_1,\ldots,a_r,\overline{b_1,\ldots,b_t}]\]
+is a periodic simple continued fraction, then $\alpha$ is a quadratic irrational $p+q\sqrt{d}$ for $p,q$ rational and $d$ squarefree. Conversely, every such quadratic irrational is represented by such a continued fraction.
+\end{thm}
+\begin{proof}
+The forward direction is pretty straightforward. Given such a continued fraction, let $\beta$ be the $(r+1)^{\mathrm{st}}$ complete convergent, i.e.
+\[\beta = [\overline{b_1,\ldots,b_t}]\]
+Note first that $\beta$ must be irrational since the continued fraction for any rational number terminates. Then the article on convergents to a continued fraction shows that
+\[\beta = \frac{\beta p_t + p_{t-1}}{\beta q_t+q_{t-1}}\]
+where the $p_i,q_i$ are the convergents to the continued fraction for $\beta$. Thus
+\[q_t\beta^2+(q_{t-1}-p_t)\beta - p_{t-1}=0\]
+and thus $\beta$ is irrational and satisfies a quadratic equation so is a quadratic irrational. A simple computation then shows that $\alpha$ is as well.
+
+In the other direction, suppose that $\alpha$ is a quadratic irrational satisfying
+\[a\alpha^2+b\alpha+c=0\]
+and with continued fraction representation
+\[\alpha = [a_0,a_1,\ldots]\]
+Then for any $n>0$, we have
+\[\alpha = \frac{t_np_{n-1}+p_{n-2}}{t_nq_{n-1}+q_{n-2}}\]
+where the $t_i$ are the complete convergents of the continued fraction, so that from the quadratic equation we have
+\[A_nt_n^2 + B_n t_n +C_n=0\]
+where
+\begin{gather*}
+A_n = ap_{n-1}^2 + bp_{n-1}q_{n-1}+cq_{n-1}^2\\
+B_n = 2ap_{n-1}p_{n-2}+b(p_{n-1}q_{n-2}+p_{n-2}q_{n-1})+2cq_{n-1}q_{n-2}\\
+C_n = ap_{n-2}^2 + bp_{n-2}q_{n-2}+cq_{n-2}^2 = A_{n-1}
+\end{gather*}
+Note that $A_n\neq 0$ for each $n>0$ since otherwise
+\[ap_{n-1}^2 + bp_{n-1}q_{n-1}+cq_{n-1}^2=0\]
+so that
+\[a\left(\frac{p_{n-1}}{q_{n-1}}\right)^2 + b\frac{p_{n-1}}{q_{n-1}} + c = 0\]
+and the quadratic equation would have a rational root, contradicting the fact that $\alpha$ is irrational.
+
+The remainder of the proof is an elaborate computation that shows we can bound each of $A_n, B_n, C_n$ independent of $n$. Assuming that, it follows that there are only a finite number of possibilities for the triples $(A_n, B_n, C_n)$, so we can choose $n_1, n_2, n_3$ such that
+\[(A_{n_1},B_{n_1},C_{n_1}) = (A_{n_2},B_{n_2},C_{n_2}) = (A_{n_3},B_{n_3},C_{n_3})\]
+Then each of $t_{n_1},t_{n_2},t_{n_3}$ is a root of (say)
+\[A_{n_1}t^2 + B_{n_1}t+C_{n_1}\]
+so that two of them must be equal. But then $t_{n_1}=t_{n_2}$ (say), and
+\begin{gather*}
+t_{n_1} = [a_{n_1},a_{n_1+1},\ldots]\\
+t_{n_2} = [a_{n_2},a_{n_2+1},\ldots]
+\end{gather*}
+and the continued fraction is periodic.
+
+We proceed to find the bounds. We know that
+\[\Abs{\alpha-\frac{p_{n-1}}{q_{n-1}}} < \frac{1}{q_{n-1}^2}\]
+so that
+\[\alpha-\frac{p_{n-1}}{q_{n-1}} = \frac{\epsilon}{q_{n-1}^2}\]
+for some $\epsilon$ (depending on $n$) with $\Abs{\epsilon}<1$. Thus
+\begin{align*}
+A_n &= ap_{n-1}^2 + bp_{n-1}q_{n-1}+cq_{n-1}^2 \\
+&= a\left(\alpha q_{n-1}+\frac{\epsilon}{q_{n-1}}\right)^2 + bq_{n-1}\left(\alpha q_{n-1}+\frac{\epsilon}{q_{n-1}}\right) + cq_{n-1}^2\\
+&= (a\alpha^2+b\alpha+c)q_{n-1}^2 + 2a\alpha \epsilon + a\frac{\epsilon^2}{q_{n-1}^2}+b\epsilon\\
+&= 2a\alpha \epsilon + a\frac{\epsilon^2}{q_{n-1}^2}+b\epsilon
+\end{align*}
+so that
+\[\Abs{A_n} = \Abs{2a\alpha \epsilon + a\frac{\epsilon^2}{q_{n-1}^2}+b\epsilon} < 2\Abs{a\alpha}+\Abs{a}+\Abs{b}\]
+and thus also 
+\[\Abs{C_n} < 2\Abs{a\alpha}+\Abs{a}+\Abs{b}\]
+It remains to bound $B_n$. But
+\[B_n^2-4A_nC_n = (2A_nt_n+B_n)^2\]
+Substituting the values of $A_n, B_n$ on the right, and using the fact that
+\[t_n = -\frac{p_{n-2}-xq_{n-2}}{p_{n-1}-xq_{n-1}}\]
+we get after a computation
+\begin{align*}
+\sqrt{B_n^2-4A_nC_n} &= (p_{n-1}q_{n-2}-p_{n-2}q_{n-1})\frac{2axp_{n-1}+bp_{n-1}+bxq_{n-1}+2cq_{n-1}}{p_{n-1}-xq_{n-1}}\\
+&= \pm\frac{(2ax+b)p_{n-1}+(2ax^2+2bx+2c)q_{n-1}-(2ax^2+bx)q_{n-1}}{p_{n-1}-xq_{n-1}}\\
+&= \pm\frac{(p_{n-1}-xq_{n-1})(2ax+b)}{p_{n-1}-xq_{n-1}} = \pm (2ax+b)
+\end{align*}
+so that
+\[B_n^2-4A_nC_n = (2ax+b)^2 = b^2-4ac\]
+Thus
+\[B_n^2 \leq 4\Abs{A_nC_n}+\Abs{b^2-4ac} < 4(2\Abs{a\alpha}+\Abs{a}+\Abs{b})^2 + \Abs{b^2-4ac}\]
+and we have thus bounded all of $A_n, B_n, C_n$ independent of $n$.
+\end{proof}
+
+\begin{thebibliography}{10}
+\bibitem{bib:hardy}
+G.H.~Hardy~\& E.M.~Wright, \emph{An Introduction to the Theory of Numbers}, Fifth Edition, Oxford Science Publications, 1979.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PublicKeyCryptography}
+\pmcreated{2013-03-22 15:12:38}
+\pmmodified{2013-03-22 15:12:38}
+\pmowner{aoh45}{5079}
+\pmmodifier{aoh45}{5079}
+\pmtitle{public key cryptography}
+\pmrecord{4}{36971}
+\pmprivacy{1}
+\pmauthor{aoh45}{5079}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94A60}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% making logically defined graphics
+%%%\usepackage{xypic}
+\begin{document}
+\PMlinkescapeword{scheme}
+\PMlinkescapeword{time}
+\PMlinkescapeword{schemes}
+\PMlinkescapeword{information}
+\PMlinkescapeword{length}
+The basic idea behind public key cryptography, is that a user can publish (for instance on the internet) all the information needed to send them an encypted message, but for this information to be insufficient to decrypt the message in \emph{reasonable time}. In general, this time requirement is taken to \PMlinkescapetext{mean} that, if the public key has length $n$ (over a particular alphabet), then the message cannot be decrypted in time $\le p(n)$ for any polynomial $p$.
+
+The information published to all users is called the \emph{public key}, and the additional information needed to decrypt a message is a users \emph{private key}.
+
+Public key cryptography was first conceived by James Ellis in 1969, and a workable scheme was developed in 1973. This was kept secret however, and it was not until 1978 that two schemes were announced publicly. These were the \emph{Merkle-Hellman} scheme, and the \emph{RSA} scheme.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FermatMethod}
+\pmcreated{2013-03-22 16:39:03}
+\pmmodified{2013-03-22 16:39:03}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Fermat method}
+\pmrecord{6}{38855}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmsynonym{Fermat's method}{FermatMethod}
+\pmsynonym{Fermat factorization method}{FermatMethod}
+\pmsynonym{Fermat's factorization method}{FermatMethod}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The {\em Fermat method} is a factorization algorithm for odd integers that tries to represent them as the difference of two square numbers.
+
+Call the Fermat method algorithm with an integer $n = 2x + 1$.
+
+\begin{enumerate}
+\item Initialize the iterator $i = \lceil \sqrt{n} \rceil$ and test cap at $\sqrt{i^2 - n}$.
+\item Compute $j = \sqrt{i^2 - n}$.
+\item Test if $j$ is an integer. If it is, break out of subroutine and return $i - j$.
+\item Increment iterator $i$ once. If $i < \frac{n + 9}{6}$, go to step 2.
+\item Return $n$.
+\end{enumerate}
+
+For example, $n = 221$. The square root is approximately 15, so that's what we set our iterator's initial state to. The test cap is 39.
+
+At $i = 15$, we find that $\sqrt{15^2 - 221} = 2$, clearly an integer.
+
+Then, $15 - 2 = 13$ and $15 + 2 = 17$. By multiplication, we verify that $221 = 13 \cdot 17$, indeed. By trial division, this would have taken 15 test divisions.
+
+However, there are integers for which trial division performs much better than the Fermat method, such as numbers of the form $3p$ where $p$ is an odd prime greater than 3.
+
+\begin{thebibliography}{1}
+\bibitem{rc} R. Crandall \& C. Pomerance, {\it Prime Numbers: A Computational Perspective}, Springer, NY, 2001: 5.1
+\end{thebibliography}
+
+
+%%%%%
+%%%%%
+\end{document}

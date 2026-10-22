@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IdealNorm}
+\pmcreated{2013-03-22 15:43:23}
+\pmmodified{2013-03-22 15:43:23}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{ideal norm}
+\pmrecord{17}{37672}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmsynonym{norm of an ideal}{IdealNorm}
+\pmsynonym{norm of ideal}{IdealNorm}
+%\pmkeywords{residue class}
+%\pmkeywords{congruence}
+\pmrelated{NormAndTraceOfAlgebraicNumber}
+\pmrelated{Congruences}
+\pmrelated{MultiplicativeCongruence}
+\pmrelated{BasisOfIdealInAlgebraicNumberField}
+\pmrelated{IdealClassGroupIsFinite}
+\pmrelated{RationalIntegersInIdeals}
+\pmdefines{congruence modulo an ideal}
+\pmdefines{congruent modulo the ideal}
+\pmdefines{residue classes modulo the ideal}
+\pmdefines{absolute norm of ideal}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\def\N{\mathrm{N}}
+\begin{document}
+Let $\alpha$ and $\beta$ be algebraic integers in an algebraic number field $K$ and $\mathfrak{m}$ a non-zero ideal in the ring of integers of $K$.\, We say that $\alpha$ and $\beta$ are {\em congruent modulo the ideal} $\mathfrak{m}$ in the case that\, $\alpha\!-\!\beta \in \mathfrak{m}$.\, This is denoted by
+    $$\alpha \equiv \beta \pmod{\mathfrak{m}}.$$
+This congruence relation \PMlinkescapetext{divides} the ring of integers of $K$ into equivalence classes, which are called the {\em residue classes modulo the ideal} $\mathfrak{m}$.
+
+\textbf{Definition.}\, Let $K$ be an algebraic number field and\, $\mathfrak{a}$\, a non-zero ideal in $K$.\, The {\em absolute norm of ideal} $\mathfrak{a}$ means the number of all residue classes modulo $\mathfrak{a}$.
+
+\textbf{Remark.}\, The \PMlinkescapetext{norm} of any ideal $\mathfrak{a}$ of $K$ is finite --- it has the expression
+  $$\N(\mathfrak{a}) = \sqrt{\frac{\Delta(\mathfrak{a})}{d}}$$
+where $\Delta(\mathfrak{a})$ is the discriminant of the ideal and $d$ the fundamental number of the field.
+
+\PMlinkescapetext{\textbf{Some properties}}
+\begin{itemize}
+\item $\N(\mathfrak{ab}) 
+  = \N(\mathfrak{a})\!\cdot\!\N(\mathfrak{b})$ 
+\item $\N(\mathfrak{a}) = 1 \quad\Leftrightarrow\quad \mathfrak{a} = (1)$
+\item $\N((\alpha)) = |\N(\alpha)|$
+\item $\N(\mathfrak{a}) \in \mathfrak{a}$
+\item If $\N(\mathfrak{p})$ is a rational prime, then $\mathfrak{p}$ is a prime ideal.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

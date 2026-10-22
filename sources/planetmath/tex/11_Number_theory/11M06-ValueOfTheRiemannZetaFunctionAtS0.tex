@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ValueOfTheRiemannZetaFunctionAtS0}
+\pmcreated{2013-03-22 16:07:17}
+\pmmodified{2013-03-22 16:07:17}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{value of the Riemann zeta function at $s=0$}
+\pmrecord{20}{38190}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11M06}
+\pmrelated{CriticalStrip}
+\pmrelated{FormulaeForZetaInTheCriticalStrip}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+\begin{document}
+\begin{thm*}
+Let $\zeta$ denote the meromorphic extension of the Riemann zeta function to the \PMlinkescapetext{entire} complex plane.  Then $\displaystyle \zeta(0)=\frac{-1}{2}$.
+\end{thm*}
+
+\begin{proof}
+Recall that one of the \PMlinkescapetext{formulas} for the Riemann zeta function in the critical strip is given by
+
+$$\zeta(s)=\frac{1}{s-1}+1-s\int_1^{\infty} \frac{x-[x]}{x^{s+1}} \,dx,$$
+
+where $[x]$ denotes the integer part of $x$.
+
+Also recall the functional equation
+
+$$\zeta(s) = 2^s \pi^{s-1} \sin \frac{\pi s}{2} \Gamma(1-s) \zeta(1-s),$$
+
+where $\Gamma$ denotes the gamma function.
+
+The only \PMlinkname{pole}{Pole} of $\zeta$ occurs at $s=1$.  Therefore, $\zeta$ is analytic, and thus continuous, at $s=0$.
+
+Let $\displaystyle \lim_{s \to 0^+}$ denote the limit as $s$ approaches $0$ along any path contained in the region $\operatorname{Re}(s)>0$.  Thus:
+
+\begin{center}
+\begin{tabular}{ll}
+$\zeta(0)$ & $=\displaystyle \lim_{s \to 0^+} \zeta(s)$ \\
+\\
+& $=\displaystyle \lim_{s \to 0^+} 2^s \pi^{s-1} \sin \frac{\pi s}{2} \Gamma(1-s) \zeta(1-s)$ \\
+\\
+& $=\displaystyle \lim_{s \to 0^+} 2^s \pi^{s-1} \left( \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} \left( \frac{\pi s}{2} \right)^{2n+1} \right) \Gamma(1-s) \left( \frac{1}{(1-s)-1}+1-(1-s) \int_1^{\infty} \frac{x-[x]}{x^{(1-s)+1}} \, dx \right)$ \\
+\\
+& $=\displaystyle \lim_{s \to 0^+} 2^s \pi^{s-1} \left( \frac{\pi s}{2} \right) \left( \sum_{n=0}^{\infty} \frac{(-1)^n}{(2n+1)!} \left( \frac{\pi s}{2} \right)^{2n} \right) \Gamma(1-s) \left( \frac{1}{-s}+1-(1-s) \int_1^{\infty} \frac{x-[x]}{x^{2-s}} \, dx \right)$ \\
+\\
+& $=\displaystyle \lim_{s \to 0^+} 2^s \pi^{s-1} \left( \frac{\pi}{2} \right) \left( 1+\sum_{n=1}^{\infty} \frac{(-1)^n}{(2n+1)!} \left( \frac{\pi s}{2} \right)^{2n} \right) \Gamma(1-s) s \left( \frac{-1}{s}+1-(1-s) \int_1^{\infty} \frac{x-[x]}{x^{2-s}} \, dx \right)$ \\
+\\
+& $=\displaystyle \lim_{s \to 0^+} 2^{s-1} \pi^s \left( 1+\sum_{n=1}^{\infty} \frac{(-1)^n}{(2n+1)!} \left( \frac{\pi s}{2} \right)^{2n} \right) \Gamma(1-s) \left( -1+s-s(1-s) \int_1^{\infty} \frac{x-[x]}{x^{2-s}} \, dx \right)$ \\
+\\
+& $=\displaystyle \left( \lim_{s \to 0^+} 2^{s-1} \pi^s \Gamma(1-s) \left( -1+s-s(1-s) \int_1^{\infty} \frac{x-[x]}{x^{2-s}} \, dx \right) \right) \left( \lim_{s \to 0^+} 1+\sum_{n=1}^{\infty} \frac{(-1)^n}{(2n+1)!} \left( \frac{\pi s}{2} \right)^{2n} \right)$ \\
+\\
+& $=\displaystyle \left( 2^{0-1} \pi^0 \Gamma(1-0) \left( -1+0-0(1-0) \int_1^{\infty} \frac{x-[x]}{x^{2-0}} \, dx \right) \right) \left(1+\sum_{n=1}^{\infty} \frac{(-1)^n}{(2n+1)!} \left( \frac{\pi \cdot 0}{2} \right)^{2n} \right)$ \\
+\\
+& $=\displaystyle \left( \frac{1}{2} \cdot 1 \cdot \Gamma(1) \cdot (-1+0-0) \right) \left( 1+\sum_{n=1}^{\infty} 0 \right)$ \\
+& $=\displaystyle \frac{-1}{2}$. \end{tabular}
+\end{center}
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

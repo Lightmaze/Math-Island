@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CompletelyHausdorff}
+\pmcreated{2013-03-22 14:16:03}
+\pmmodified{2013-03-22 14:16:03}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{completely Hausdorff}
+\pmrecord{15}{35717}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D10}
+\pmsynonym{completely Hausdorff space}{CompletelyHausdorff}
+\pmsynonym{$T_{2\frac{1}{2}}$}{CompletelyHausdorff}
+\pmsynonym{Urysohn space}{CompletelyHausdorff}
+\pmrelated{HausdorffSpaceNotCompletelyHausdorff}
+
+\endmetadata
+
+\usepackage{graphicx}
+%%%\usepackage{xypic} 
+\usepackage{bbm}
+\newcommand{\Z}{\mathbbmss{Z}}
+\newcommand{\C}{\mathbbmss{C}}
+\newcommand{\R}{\mathbbmss{R}}
+\newcommand{\Q}{\mathbbmss{Q}}
+\newcommand{\mathbb}[1]{\mathbbmss{#1}}
+\newcommand{\figura}[1]{\begin{center}\includegraphics{#1}\end{center}}
+\newcommand{\figuraex}[2]{\begin{center}\includegraphics[#2]{#1}\end{center}}
+\newtheorem{dfn}{Definition}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{defn} \cite{steen}
+Let $(X,\tau)$ be a topological space. 
+Suppose that for any two different points $x,y\in X, x\neq y$, 
+we can find two disjoint neighborhoods 
+\[U_x,V_y\in \tau,\qquad x\in U_x, y\in Y_y\] such that their 
+closures are also disjoint: 
+\[\overline{U_x}\cap \overline{V_y}=\emptyset.\]
+Then we say that $(X,\tau)$ is a 
+\emph{completely Hausdorff space} or a \emph{$T_{2\frac12}$ space}. 
+\end{defn}
+
+\subsubsection*{Notes}
+A synonym for functionally Hausdorff space is 
+   \emph{Urysohn space} \cite{steen}. 
+Unfortunately, the definition of completely Hausdorff and $T_{2\frac12}$ 
+are not as standard as one would like since. For example, the
+term completely Hausdorff space is also used to mean 
+a functionally Hausdorff space (e.g. \cite{willard}).
+Nevertheless, in the present convention, we have the implication:
+\[
+  \mbox{functionally Hausdorff}
+    \Rightarrow
+  \mbox{completely Hausdorff}
+    \Rightarrow 
+  T_2=\mbox{Hausdorff},
+\]
+which suggests why the $T_{2\frac12}$ name have been used to 
+denote both completely Hausdorff spaces and functionally Hausdorff spaces.
+
+\begin{thebibliography}{9}
+\bibitem{steen} L.A. Steen, J.A.Seebach, Jr.,
+\emph{Counterexamples in topology},
+Holt, Rinehart and Winston, Inc., 1970.
+\bibitem{willard} S. Willard, \emph{General Topology},
+Addison-Wesley Publishing Company, 1970.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

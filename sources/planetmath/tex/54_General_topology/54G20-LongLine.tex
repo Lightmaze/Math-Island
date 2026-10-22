@@ -1,0 +1,140 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LongLine}
+\pmcreated{2013-03-22 13:29:40}
+\pmmodified{2013-03-22 13:29:40}
+\pmowner{Dr_Absentius}{537}
+\pmmodifier{Dr_Absentius}{537}
+\pmtitle{long line}
+\pmrecord{17}{34069}
+\pmprivacy{1}
+\pmauthor{Dr_Absentius}{537}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54G20}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+%---------------------  Greek letters, etc ------------------------- 
+
+\newcommand{\CA}{\mathcal{A}}
+\newcommand{\CC}{\mathcal{C}}
+\newcommand{\CM}{\mathcal{M}}
+\newcommand{\CP}{\mathcal{P}}
+\newcommand{\CS}{\mathcal{S}}
+\newcommand{\BC}{\mathbb{C}}
+\newcommand{\BN}{\mathbb{N}}
+\newcommand{\BR}{\mathbb{R}}
+\newcommand{\BZ}{\mathbb{Z}}
+\newcommand{\FF}{\mathfrak{F}}
+\newcommand{\FL}{\mathfrak{L}}
+\newcommand{\FM}{\mathfrak{M}}
+\newcommand{\Ga}{\alpha}
+\newcommand{\Gb}{\beta}
+\newcommand{\Gg}{\gamma}
+\newcommand{\GG}{\Gamma}
+\newcommand{\Gd}{\delta}
+\newcommand{\GD}{\Delta}
+\newcommand{\Ge}{\varepsilon}
+\newcommand{\Gz}{\zeta}
+\newcommand{\Gh}{\eta}
+\newcommand{\Gq}{\theta}
+\newcommand{\GQ}{\Theta}
+\newcommand{\Gi}{\iota}
+\newcommand{\Gk}{\kappa}
+\newcommand{\Gl}{\lambda}
+\newcommand{\GL}{\Lamda}
+\newcommand{\Gm}{\mu}
+\newcommand{\Gn}{\nu}
+\newcommand{\Gx}{\xi}
+\newcommand{\GX}{\Xi}
+\newcommand{\Gp}{\pi}
+\newcommand{\GP}{\Pi}
+\newcommand{\Gr}{\rho}
+\newcommand{\Gs}{\sigma}
+\newcommand{\GS}{\Sigma}
+\newcommand{\Gt}{\tau}
+\newcommand{\Gu}{\upsilon}
+\newcommand{\GU}{\Upsilon}
+\newcommand{\Gf}{\varphi}
+\newcommand{\GF}{\Phi}
+\newcommand{\Gc}{\chi}
+\newcommand{\Gy}{\psi}
+\newcommand{\GY}{\Psi}
+\newcommand{\Gw}{\omega}
+\newcommand{\GW}{\Omega}
+\newcommand{\Gee}{\epsilon}
+\newcommand{\Gpp}{\varpi}
+\newcommand{\Grr}{\varrho}
+\newcommand{\Gff}{\phi}
+\newcommand{\Gss}{\varsigma}
+
+\def\co{\colon\thinspace}
+\begin{document}
+\PMlinkescapeword{induced}
+The \emph{long line} is a non-paracompact Hausdorff $1$-dimensional manifold
+ constructed as
+follows. Let $\GW$ be the first uncountable ordinal (viewed as an ordinal space) and consider the set 
+$$L:=\GW\times [0,1)$$
+endowed with the order topology induced by the 
+lexicographical order, that is the order defined by 
+$$(\Ga_1,t_1) < (\Ga_2,t_2) \iff \Ga_1<\Ga_2 \quad\text{or}\quad
+(\Ga_1=\Ga_2 \quad\text{and}\quad t_1<t_2)\,.$$
+Intuitively $L$ is obtained by ``filling the gaps'' between consecutive
+ordinals in $\GW$ with intervals, much the same way that 
+nonnegative  reals are 
+obtained by filling the gaps between consecutive natural numbers with intervals. 
+
+Some of the  properties of the long line:
+\begin{itemize}
+\item $L$ is a chain.
+
+\item $L$ is not compact; in fact $L$ is not Lindel\"of.
+
+Indeed $\left\{\,[\,0,\Ga):\Ga<\GW\right\}$ is an open cover of $L$ that has no
+countable subcovering. To see this notice that 
+$$\bigcup\left\{\, [\,0,\Ga_x):x\in X\right\}=\left[\,0,\sup\{\Ga_x:x\in X\}\right)\,$$
+ and since the supremum of a countable
+collection of countable ordinals is a countable ordinal such a union can
+ never be $[\,0,\GW)$.
+
+ \item However, $L$ is sequentially compact.
+
+Indeed every sequence has a convergent subsequence. To see this notice that
+given a sequence $a:=(a_n)$ of elements of $L$ there is an ordinal $\Ga$ such
+that all the terms of  $a$ are in the subset $[\,0,\Ga\,]$. Such a subset is
+compact since it is homeomorphic to $[\,0,1\,]$.
+
+\item $L$ therefore is not metrizable.
+
+\item $L$ is a $1$--dimensional locally Euclidean
+
+\item $L$ therefore is not paracompact.
+
+\item $L$ is first countable.
+
+\item $L$ is not separable.
+
+\item All homotopy groups of $L$ are trivial.
+
+\item However, $L$ is not contractible.
+ 
+\end{itemize}
+
+\section*{Variants}
+There are several variations of the above construction.
+
+\begin{itemize}
+\item Instead of $[\,0,\GW)$ one can use $(0,\GW)$ or $[\,0,\GW\,]$. The latter (obtained by adding a single point to $L$) is compact.
+
+\item One can consider the ``double'' of the above construction. That is the
+  space obtained by gluing two copies of $L$ along $0$. The resulting open
+  manifold is not homeomorphic to $L\setminus \{0\}$.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

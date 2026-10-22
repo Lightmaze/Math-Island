@@ -1,0 +1,1254 @@
+{
+  "method": "Cross-domain missing recorded links with at least 2 common undirected reference neighbors; hub degree capped at 150; excludes Stacks statement units.",
+  "not_a_truth_or_novelty_score": true,
+  "total_candidates": 641,
+  "candidates": [
+    {
+      "source": "pm:ModularForm",
+      "target": "wikipedia:Monstrous_moonshine",
+      "source_label": "modular form",
+      "target_label": "Monstrous moonshine",
+      "source_domain": "数论与算术",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:GeneratingSetOfAGroup",
+        "pm:Holomorphic",
+        "pm:Jinvariant",
+        "pm:LeechLattice",
+        "pm:Torus",
+        "pm:UpperHalfPlane"
+      ],
+      "adamic_adar_score": 3.019233,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Distribution",
+      "target": "pm:ProbabilityDistributionFunction",
+      "source_label": "distribution",
+      "target_label": "probability distribution function",
+      "source_domain": "分析与微分方程",
+      "target_domain": "概率与统计",
+      "common_reference_neighbors": [
+        "pm:AreaUnderGaussianCurve",
+        "pm:DensityFunction",
+        "pm:DiscreteDensityFunction",
+        "pm:DistributionFunction",
+        "pm:Measure"
+      ],
+      "adamic_adar_score": 2.812608,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:HomotopyDoubleGroupoidOfAHausdorffSpace",
+      "target": "pm:WeakHomotopyAdditionLemma",
+      "source_label": "homotopy double groupoid of a Hausdorff space",
+      "target_label": "weak homotopy addition lemma",
+      "source_domain": "几何与拓扑",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:CubicallyThinHomotopy",
+        "pm:HomotopyAdditionLemmaAndCorollary",
+        "pm:ThinDoubleTrack",
+        "pm:ThinEquivalenceRelation"
+      ],
+      "adamic_adar_score": 2.774244,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "wikipedia:Topological_quantum_field_theory",
+      "target": "wikipedia:Vertex_operator_algebra",
+      "source_label": "Topological quantum field theory",
+      "target_label": "Vertex operator algebra",
+      "source_domain": "几何与拓扑",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:CommutativeRing",
+        "pm:ComplexAnalyticManifold",
+        "pm:HilbertSpace",
+        "pm:KahlerManifold",
+        "pm:LieGroup",
+        "pm:VectorSpace"
+      ],
+      "adamic_adar_score": 2.761357,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:ArithmeticgeometricharmonicMeansInequality",
+      "target": "pm:Rootmeansquare",
+      "source_label": "arithmetic-geometric-harmonic means inequality",
+      "target_label": "root-mean-square",
+      "source_domain": "逻辑与基础",
+      "target_domain": "分析与微分方程",
+      "common_reference_neighbors": [
+        "pm:ArithmeticMean",
+        "pm:GeneralMeansInequality",
+        "pm:GeometricMean",
+        "pm:HarmonicMean",
+        "pm:PowerMean",
+        "pm:WeightedPowerMean"
+      ],
+      "adamic_adar_score": 2.753829,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:ModularForm",
+      "target": "wikipedia:Étale_cohomology",
+      "source_label": "modular form",
+      "target_label": "Étale cohomology",
+      "source_domain": "数论与算术",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:AbelianVariety",
+        "pm:FermatsLastTheorem",
+        "pm:WeilConjectures"
+      ],
+      "adamic_adar_score": 2.301377,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:BorelMeasure",
+      "target": "pm:CategoryOfBorelSpaces",
+      "source_label": "Borel measure",
+      "target_label": "category of Borel spaces",
+      "source_domain": "概率与统计",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:BorelGroupoid",
+        "pm:BorelGspace",
+        "pm:BorelMorphism",
+        "pm:BorelSpace"
+      ],
+      "adamic_adar_score": 2.211688,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:BorelGroupoid",
+      "target": "pm:BorelMorphism",
+      "source_label": "Borel groupoid",
+      "target_label": "Borel morphism",
+      "source_domain": "几何与拓扑",
+      "target_domain": "概率与统计",
+      "common_reference_neighbors": [
+        "pm:BorelMeasure",
+        "pm:BorelSpace",
+        "pm:CategoryOfBorelSpaces",
+        "pm:MeasurableFunction"
+      ],
+      "adamic_adar_score": 2.150439,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:ModularForm",
+      "target": "wikipedia:Vertex_operator_algebra",
+      "source_label": "modular form",
+      "target_label": "Vertex operator algebra",
+      "source_domain": "数论与算术",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:Jinvariant",
+        "pm:LeechLattice",
+        "pm:LieGroup",
+        "pm:UnimodularLattice"
+      ],
+      "adamic_adar_score": 2.09166,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Filter",
+      "target": "pm:LatticeIdeal",
+      "source_label": "filter",
+      "target_label": "lattice ideal",
+      "source_domain": "逻辑与基础",
+      "target_domain": "离散与计算",
+      "common_reference_neighbors": [
+        "pm:LatticeFilter",
+        "pm:OrderIdeal",
+        "pm:UpperSet"
+      ],
+      "adamic_adar_score": 1.900793,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Ideal",
+      "target": "pm:Ring",
+      "source_label": "ideal",
+      "target_label": "ring",
+      "source_domain": "几何与拓扑",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:CharacterizationOfField",
+        "pm:Saturated",
+        "pm:Subring"
+      ],
+      "adamic_adar_score": 1.900793,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:DivisibilityInRings",
+      "target": "pm:GreatestCommonDivisor",
+      "source_label": "divisibility in rings",
+      "target_label": "greatest common divisor",
+      "source_domain": "代数与结构",
+      "target_domain": "数论与算术",
+      "common_reference_neighbors": [
+        "pm:CorollaryOfBezoutsLemma",
+        "pm:ExistenceAndUniquenessOfTheGcdOfTwoIntegers",
+        "pm:GcdDomain"
+      ],
+      "adamic_adar_score": 1.864005,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "wikipedia:Monstrous_moonshine",
+      "target": "wikipedia:Topological_quantum_field_theory",
+      "source_label": "Monstrous moonshine",
+      "target_label": "Topological quantum field theory",
+      "source_domain": "代数与结构",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:CountablyInfinite",
+        "pm:HilbertSpace",
+        "pm:Holomorphic",
+        "pm:VectorSpace"
+      ],
+      "adamic_adar_score": 1.841162,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Angle",
+      "target": "pm:Sohcahtoa",
+      "source_label": "angle",
+      "target_label": "sohcahtoa",
+      "source_domain": "几何与拓扑",
+      "target_domain": "逻辑与基础",
+      "common_reference_neighbors": [
+        "pm:Adjacent",
+        "pm:Opposite"
+      ],
+      "adamic_adar_score": 1.820478,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Compact",
+      "target": "pm:TopologicalSpace",
+      "source_label": "compact",
+      "target_label": "topological space",
+      "source_domain": "几何与拓扑",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:DinisTheorem",
+        "pm:HeineBorelTheorem"
+      ],
+      "adamic_adar_score": 1.820478,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:DeBruijnErdHosTheorem",
+      "target": "pm:FinitePlane",
+      "source_label": "De Bruijn–Erd\\H{o}s theorem",
+      "target_label": "finite plane",
+      "source_domain": "离散与计算",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:LinearSpace",
+        "pm:NearlinearSpace"
+      ],
+      "adamic_adar_score": 1.820478,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:HurwitzsTheorem",
+      "target": "pm:JacobsonsTheoremOnCompositionAlgebras",
+      "source_label": "Hurwitz's theorem",
+      "target_label": "Jacobson's theorem on composition algebras",
+      "source_domain": "分析与微分方程",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:CompositionAlgebraOverAlgebaicallyClosedFields",
+        "pm:CompositionAlgebrasOverFiniteFields"
+      ],
+      "adamic_adar_score": 1.820478,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Derivative",
+      "target": "pm:FixedPointsOfNormalFunctions",
+      "source_label": "derivative",
+      "target_label": "fixed points of normal functions",
+      "source_domain": "分析与微分方程",
+      "target_domain": "逻辑与基础",
+      "common_reference_neighbors": [
+        "pm:DirectionalDerivative",
+        "pm:NewtonsMethod",
+        "pm:SumRule"
+      ],
+      "adamic_adar_score": 1.793356,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Curve",
+      "target": "pm:Torsion",
+      "source_label": "curve",
+      "target_label": "torsion",
+      "source_domain": "几何与拓扑",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:ExpressionsForCurvatureAndTorsion",
+        "pm:SerretFrenetEquations",
+        "pm:SpaceCurve"
+      ],
+      "adamic_adar_score": 1.776977,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Complex",
+      "target": "pm:CubeRoot",
+      "source_label": "complex",
+      "target_label": "cube root",
+      "source_domain": "代数与结构",
+      "target_domain": "数论与算术",
+      "common_reference_neighbors": [
+        "pm:ComplexNumber",
+        "pm:NthRoot",
+        "pm:RealNumber",
+        "pm:SquareRoot"
+      ],
+      "adamic_adar_score": 1.686892,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:KleeneStar",
+      "target": "pm:RegularLanguage",
+      "source_label": "Kleene star",
+      "target_label": "regular language",
+      "source_domain": "代数与结构",
+      "target_domain": "离散与计算",
+      "common_reference_neighbors": [
+        "pm:KleeneAlgebra",
+        "pm:Language",
+        "pm:RegularExpression"
+      ],
+      "adamic_adar_score": 1.681888,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:DirichletSeries",
+      "target": "wikipedia:Langlands_program",
+      "source_label": "Dirichlet series",
+      "target_label": "Langlands program",
+      "source_domain": "分析与微分方程",
+      "target_domain": "数论与算术",
+      "common_reference_neighbors": [
+        "pm:DirichletLseries",
+        "pm:RiemannZetaFunction",
+        "wikipedia:Modularity_theorem"
+      ],
+      "adamic_adar_score": 1.665625,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "wikipedia:Homotopy_theory",
+      "target": "wikipedia:Langlands_program",
+      "source_label": "Homotopy theory",
+      "target_label": "Langlands program",
+      "source_domain": "几何与拓扑",
+      "target_domain": "数论与算术",
+      "common_reference_neighbors": [
+        "pm:AbelianGroup",
+        "pm:Functor",
+        "pm:StructureHomomorphism"
+      ],
+      "adamic_adar_score": 1.632465,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:CriticalStrip",
+      "target": "pm:Pole",
+      "source_label": "critical strip",
+      "target_label": "pole",
+      "source_domain": "数论与算术",
+      "target_domain": "分析与微分方程",
+      "common_reference_neighbors": [
+        "pm:RiemannZetaFunctionHasNoZerosOnReS01",
+        "pm:ValueOfTheRiemannZetaFunctionAtS0"
+      ],
+      "adamic_adar_score": 1.631587,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Graph",
+      "target": "pm:Path",
+      "source_label": "graph",
+      "target_label": "path",
+      "source_domain": "离散与计算",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:DistanceinAGraph",
+        "pm:SimplePath"
+      ],
+      "adamic_adar_score": 1.631587,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:InverseLimit",
+      "target": "wikipedia:Étale_cohomology",
+      "source_label": "inverse limit",
+      "target_label": "Étale cohomology",
+      "source_domain": "代数与结构",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:GaloisRepresentation",
+        "pm:PadicIntegers"
+      ],
+      "adamic_adar_score": 1.631587,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:RationalNumber",
+      "target": "pm:RealNumber",
+      "source_label": "rational number",
+      "target_label": "real number",
+      "source_domain": "代数与结构",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:CubeRoot",
+        "pm:NthRoot",
+        "pm:SquareRoot",
+        "wikipedia:Langlands_program"
+      ],
+      "adamic_adar_score": 1.620875,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:MotivicCohomology",
+      "target": "wikipedia:Langlands_program",
+      "source_label": "motivic cohomology",
+      "target_label": "Langlands program",
+      "source_domain": "几何与拓扑",
+      "target_domain": "数论与算术",
+      "common_reference_neighbors": [
+        "pm:DerivedCategory",
+        "pm:Holomorphic",
+        "pm:VectorBundle"
+      ],
+      "adamic_adar_score": 1.569317,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:CubicallyThinHomotopy",
+      "target": "pm:ThinEquivalenceRelation",
+      "source_label": "cubically thin homotopy",
+      "target_label": "thin equivalence relation",
+      "source_domain": "几何与拓扑",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:HomotopyAdditionLemmaAndCorollary",
+        "pm:HomotopyDoubleGroupoidOfAHausdorffSpace",
+        "pm:WeakHomotopyAdditionLemma"
+      ],
+      "adamic_adar_score": 1.557353,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:ModularForm",
+      "target": "wikipedia:Topological_quantum_field_theory",
+      "source_label": "modular form",
+      "target_label": "Topological quantum field theory",
+      "source_domain": "数论与算术",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:HaarMeasure",
+        "pm:Holomorphic",
+        "pm:LieGroup"
+      ],
+      "adamic_adar_score": 1.545513,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:CorollaryOfBezoutsLemma",
+      "target": "pm:GcdDomain",
+      "source_label": "corollary of Bézout's lemma",
+      "target_label": "gcd domain",
+      "source_domain": "数论与算术",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:BezoutDomain",
+        "pm:DivisibilityInRings",
+        "pm:GreatestCommonDivisor"
+      ],
+      "adamic_adar_score": 1.540119,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:ChainComplex",
+      "target": "pm:TangentialCauchyRiemannComplexOfSmoothForms",
+      "source_label": "chain complex",
+      "target_label": "tangential Cauchy-Riemann complex of smooth forms",
+      "source_domain": "代数与结构",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:CategoricalSequence",
+        "pm:CohomologicalComplexOfTopologicalVectorSpaces",
+        "pm:HomologicalComplexOfTopologicalVectorSpaces"
+      ],
+      "adamic_adar_score": 1.532402,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:NumberField",
+      "target": "pm:SplittingAndRamificationInNumberFieldsAndGaloisExtensions",
+      "source_label": "number field",
+      "target_label": "splitting and ramification in number fields and Galois extensions",
+      "source_domain": "数论与算术",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:PrimeIdealDecompositionInQuadraticExtensionsOfmathbbQ",
+        "pm:RamificationIndex"
+      ],
+      "adamic_adar_score": 1.531574,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "wikipedia:Polynomial_interpolation",
+      "target": "wikipedia:Rough_path",
+      "source_label": "Polynomial interpolation",
+      "target_label": "Rough path",
+      "source_domain": "分析与微分方程",
+      "target_domain": "概率与统计",
+      "common_reference_neighbors": [
+        "pm:Continuous",
+        "pm:Polynomial",
+        "pm:TaylorsTheorem"
+      ],
+      "adamic_adar_score": 1.479194,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:DiscreteFourierTransform",
+      "target": "wikipedia:Sphere_packing",
+      "source_label": "discrete Fourier transform",
+      "target_label": "Sphere packing",
+      "source_domain": "数值与优化",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:FourierTransform",
+        "pm:LaplaceTransform"
+      ],
+      "adamic_adar_score": 1.46835,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "wikipedia:Mirror_symmetry_(string_theory)",
+      "target": "wikipedia:Vertex_operator_algebra",
+      "source_label": "Mirror symmetry (string theory)",
+      "target_label": "Vertex operator algebra",
+      "source_domain": "几何与拓扑",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:ComplexAnalyticManifold",
+        "pm:Supersymmetry"
+      ],
+      "adamic_adar_score": 1.46835,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:ComplexExponentialFunction",
+      "target": "pm:UnitHyperbola",
+      "source_label": "complex exponential function",
+      "target_label": "unit hyperbola",
+      "source_domain": "分析与微分方程",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:AdditionFormula",
+        "pm:AdditionFormulas"
+      ],
+      "adamic_adar_score": 1.442695,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:DefinitionsInTrigonometry",
+      "target": "pm:UnitHyperbola",
+      "source_label": "definitions in trigonometry",
+      "target_label": "unit hyperbola",
+      "source_domain": "分析与微分方程",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:AdditionFormula",
+        "pm:AdditionFormulas"
+      ],
+      "adamic_adar_score": 1.442695,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Groupoid",
+      "target": "pm:GroupoidRepresentation",
+      "source_label": "groupoid",
+      "target_label": "groupoid representation",
+      "source_domain": "代数与结构",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:GroupoidAction",
+        "pm:LieGroupoid"
+      ],
+      "adamic_adar_score": 1.442695,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Sheaf",
+      "target": "pm:Site",
+      "source_label": "sheaf",
+      "target_label": "site",
+      "source_domain": "几何与拓扑",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:Sheaf1",
+        "pm:Sheafification1"
+      ],
+      "adamic_adar_score": 1.442695,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:TangentialCauchyRiemannComplexOfSmoothForms",
+      "target": "pm:TotallyRealSubmanifold",
+      "source_label": "tangential Cauchy-Riemann complex of smooth forms",
+      "target_label": "totally real submanifold",
+      "source_domain": "几何与拓扑",
+      "target_domain": "分析与微分方程",
+      "common_reference_neighbors": [
+        "pm:CRSubmanifold",
+        "pm:GenericManifold"
+      ],
+      "adamic_adar_score": 1.442695,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:BorelGspace",
+      "target": "pm:BorelMorphism",
+      "source_label": "Borel G-space",
+      "target_label": "Borel morphism",
+      "source_domain": "代数与结构",
+      "target_domain": "概率与统计",
+      "common_reference_neighbors": [
+        "pm:BorelMeasure",
+        "pm:BorelSpace",
+        "pm:CategoryOfBorelSpaces"
+      ],
+      "adamic_adar_score": 1.429091,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Congruence",
+      "target": "pm:GeometricCongruence",
+      "source_label": "congruence",
+      "target_label": "geometric congruence",
+      "source_domain": "代数与结构",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:NormalOfPlane",
+        "pm:TriangleSolving"
+      ],
+      "adamic_adar_score": 1.424138,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:ModularForm",
+      "target": "wikipedia:Spectral_graph_theory",
+      "source_label": "modular form",
+      "target_label": "Spectral graph theory",
+      "source_domain": "数论与算术",
+      "target_domain": "离散与计算",
+      "common_reference_neighbors": [
+        "pm:GraphIsomorphism",
+        "pm:Isospectral"
+      ],
+      "adamic_adar_score": 1.424138,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Eigenvalue",
+      "target": "wikipedia:Random_matrix_theory",
+      "source_label": "eigenvalue",
+      "target_label": "Random matrix",
+      "source_domain": "代数与结构",
+      "target_domain": "概率与统计",
+      "common_reference_neighbors": [
+        "pm:SpectralValuesClassification",
+        "wikipedia:Expander_graph",
+        "wikipedia:Restricted_isometry_property"
+      ],
+      "adamic_adar_score": 1.411632,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:MinimalNegationOperator",
+      "target": "pm:ZerothOrderLogic",
+      "source_label": "minimal negation operator",
+      "target_label": "zeroth order logic",
+      "source_domain": "代数与结构",
+      "target_domain": "逻辑与基础",
+      "common_reference_neighbors": [
+        "pm:DifferentialLogic",
+        "pm:DifferentialPropositionalCalculus",
+        "pm:PropositionalCalculus"
+      ],
+      "adamic_adar_score": 1.394835,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:BorelGroupoid",
+      "target": "pm:Category",
+      "source_label": "Borel groupoid",
+      "target_label": "category",
+      "source_domain": "几何与拓扑",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:CategoryOfBorelGroupoids",
+        "pm:CategoryOfBorelSpaces"
+      ],
+      "adamic_adar_score": 1.391138,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Group",
+      "target": "pm:GroupRepresentation",
+      "source_label": "group",
+      "target_label": "group representation",
+      "source_domain": "几何与拓扑",
+      "target_domain": "代数与结构",
+      "common_reference_neighbors": [
+        "pm:GeneralLinearGroup",
+        "pm:Gmodule"
+      ],
+      "adamic_adar_score": 1.391138,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:MinimalAndMaximalNumber",
+      "target": "pm:OrderOfSixMeans",
+      "source_label": "minimal and maximal number",
+      "target_label": "order of six means",
+      "source_domain": "分析与微分方程",
+      "target_domain": "离散与计算",
+      "common_reference_neighbors": [
+        "pm:LehmerMean",
+        "pm:Mean"
+      ],
+      "adamic_adar_score": 1.391138,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    },
+    {
+      "source": "pm:Nilradical",
+      "target": "pm:RadicalOfAnIdeal",
+      "source_label": "nilradical",
+      "target_label": "radical of an ideal",
+      "source_domain": "代数与结构",
+      "target_domain": "几何与拓扑",
+      "common_reference_neighbors": [
+        "pm:JacobsonRadical",
+        "pm:PrimeRadical"
+      ],
+      "adamic_adar_score": 1.391138,
+      "status": "unreviewed_navigation_candidate",
+      "proposition": null,
+      "novelty": "not_searched",
+      "mathematical_connection": "not_established",
+      "required_actions": [
+        "read_shared_sources",
+        "identify_transferable_structure",
+        "state_domain_and_assumptions",
+        "search_prior_literature",
+        "formulate_and_test_a_precise_claim"
+      ]
+    }
+  ]
+}

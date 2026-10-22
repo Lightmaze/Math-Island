@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LinearFormulasForPythagoreanTriples}
+\pmcreated{2014-12-22 21:59:51}
+\pmmodified{2014-12-22 21:59:51}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{linear formulas for Pythagorean triples}
+\pmrecord{13}{42140}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmrelated{DerivationOfPythagoreanTriples}
+\pmrelated{ContraharmonicMeansAndPythagoreanHypotenuses}
+\pmrelated{DeterminingIntegerContraharmonicMeans}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+\usepackage{pstricks}
+\usepackage{pst-plot}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+It is easy to see that the equation
+\begin{align}
+a^2\!+\!b^2 \;=\; c^2
+\end{align}
+of the \PMlinkname{Pythagorean theorem}{PythagorasTheorem} is 
+\PMlinkname{equivalent}{Equivalent3} with
+\begin{align}
+(a\!+\!b\!-\!c)^2 \;=\; 2(c\!-\!a)(c\!-\!b).
+\end{align}
+
+
+
+\begin{center}
+\begin{pspicture}(-1,-1)(9,9.5)
+\pspolygon(0,0)(8,0)(8,8)(0,8)
+\psline(0,6.5)(6.5,6.5)(6.5,0)
+\psline(3.5,8)(3.5,3.5)(8,3.5)
+\rput(3.4,-0.2){$a$}
+\rput(-0.2,3.4){$a$}
+\rput(-0.5,7.2){$c\!-\!a$}
+\rput(5.7,8.3){$b$}
+\rput(8.3,5.5){$b$}
+\rput(7.2,-0.2){$c\!-\!a$}
+\rput(8.5,1.7){$c\!-\!b$}
+\rput(5,3.15){$a\!+\!b\!-\!c$}
+\rput(2.6,4.85){$a\!+\!b\!-\!c$}
+\rput(1.67,8.3){$c\!-\!b$}
+\end{pspicture}
+\end{center}
+
+When\, $(a,\,b,\,c)$\, is a Pythagorean triple, i.e. $a$, $b$, $c$ 
+are positive integers, $a\!+\!b\!-\!c$ must be an even positive 
+integer which we denote by $2r$.\, We get from (2) the equation
+$$(c\!-\!a)(c\!-\!b) \;=\; 2r^2,$$
+whose \PMlinkname{factors}{Product} on the left hand side we denote 
+by $t$ and $s$.\, Thus we have the linear equation system
+\begin{align*}
+\begin{cases}
+a\!+\!b\!-\!c \;=\; 2r, \\
+c\!-\!a \;=\; t, \\
+c\!-\!b \;=\; s. \\
+\end{cases}
+\end{align*}
+Its solution is
+\begin{align}
+\begin{cases}
+a \;=\; 2r\!+\!s, \\
+b \;=\; 2r\!+\!t, \\
+c \;=\; 2r\!+\!s\!+\!t.
+\end{cases}
+\end{align}
+Here, $r$ is an arbitrary positive integer, $s$ and $t$ are two 
+positive integers whose product is $2r^2$.\, It's clear that then 
+(3) produces all Pythagorean triples.
+
+\begin{thebibliography}{8}
+\bibitem{ES}{\sc Egon Scheffold}: ``Ein Bild der pythagoreischen 
+Zahlentripel''.\, -- \emph{Elemente der Mathematik} \textbf{50} 
+(1995).
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

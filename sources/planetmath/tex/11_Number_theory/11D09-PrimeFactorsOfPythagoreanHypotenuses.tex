@@ -1,0 +1,115 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrimeFactorsOfPythagoreanHypotenuses}
+\pmcreated{2014-01-31 10:48:20}
+\pmmodified{2014-01-31 10:48:20}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{prime factors of Pythagorean hypotenuses}
+\pmrecord{12}{87626}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmclassification{msc}{11D09}
+\pmclassification{msc}{51M05}
+\pmclassification{msc}{11E25}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%\usepackage{xypic}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The possible hypotenuses of the 
+\PMlinkname{Pythagorean triangles}{PythagoreanTriangle} form the
+infinite sequence
+$$5,\,10,\,13,\,15,\,17,\,20,\,25,\,26,\,29,\,30,\,34,\,35,\,
+37,\,39,\,40,\,41,\,45,\,\ldots$$
+the mark of which is 
+\PMlinkexternal{A009003}{http://oeis.org/search?q=a009003&language=english&go=Search} in the corpus of the integer 
+sequences of \PMlinkexternal{OEIS}{http://oeis.org/}.\, This sequence has the subsequence A002144
+$$5,\,13,\,17,\,29,\,37,\,41,\,53,\,61,\,73,\,89,\,97,\,
+101,\,109,\,113,\,137,\,\ldots$$
+of the odd Pythagorean primes.\\
+
+
+Generally, the hypotenuse $c$ of a Pythagorean triangle 
+(Pythagorean triple) may be characterised by being the 
+contraharmonic mean 
+$$c \;=\; \frac{u^2\!+\!v^2}{u\!+\!v}$$
+of some two different integers $u$ and $v$ (as has been shown 
+in the parent entry), but also by the
+
+\textbf{Theorem.}\, A positive integer $c$ is the length of the 
+hypotenuse of a Pythagorean triangle if and only if at least 
+one of the prime factors of $c$ is of the form $4n\!+\!1$.\\
+
+
+\textbf{Lemma 1.}\, All prime factors of the hypotenuse $c$ in 
+a primitive Pythagorean triple are of the form $4n\!+\!1$.  
+
+This can be proved here by making the antithesis that there 
+exists a prime $4n\!-\!1$ dividing $c$.\, Then also
+$$4n\!-\!1 \mid c^2 \;=\; a^2\!+\!b^2 
+\;=\; (a\!+\!ib)(a\!-\!ib)$$
+where $a$ and $b$ are the catheti in the triple.\, But $4n\!-\!1$ 
+is prime also in the ring $\mathbb{Z}[i]$ of the Gaussian 
+integers, whence it must divide at least one of the factors 
+$a\!+\!ib$ and $a\!-\!ib$.\, Apparently, that would imply that 
+$4n\!-\!1$ divides both $a$ and $b$.\, This means that the 
+triple $(a, b, c)$ were not primitive, whence 
+the antithesis is wrong and the lemma true.\, $\Box$\\
+
+Also the converse is true in the following form:
+
+\textbf{Lemma 2.}\, If all prime factors of a positive integer 
+$c$ are of the form $4n\!+\!1$, then $c$ is the hypotenuse in 
+a Pythagorean triple.\, (Especially, any prime $4n\!+\!1$ is 
+found as the hypotenuse in a primitive Pythagorean triple.)
+
+{\it Proof}.\, For proving this, one can start from Fermat{'}s 
+theorem, by which the prime numbers of such form are sums of 
+two squares (see the 
+\PMlinkexternal{Theorem on sums of two squares by Fermat}
+{http://en.wikipedia.org/wiki/Proofs_of_Fermat's_theorem_on_sums_of_two_squares}).\, 
+Since the sums of two squares form a set closed under 
+multiplication, now also the product $c$ is a sum of two 
+squares, and similarly is $c^2$, i.e. $c$ is the hypotenuse 
+in a Pythagorean triple.\, $\Box$\\
+
+{\it Proof of the Theorem.}\, Suppose that $c$ is the 
+hypotenuse of a Pythagorean triple $(a, b, c)$; dividing the 
+triple members by their greatest common factor we get a 
+primitive triple $(a'\!, b'\!, c')$ where\; $c'\mid\;c$.\; By 
+Lemma 1, the prime factors of $c'$, being also prime factors of 
+$c$, are of the form $4n\!+\!1$.
+
+On the contrary, let's suppose that a prime factor $p$ of\, 
+$c = pd$\, is of the form $4n\!+\!1$.\, Then Lemma 2 guarantees 
+a Pythagorean triple $(r, s, p)$, whence also $(rd, sd, c)$ is 
+Pythagorean and $c$ thus a hypotenuse.\, $\Box$\\
+
+
+
+
+\end{document}

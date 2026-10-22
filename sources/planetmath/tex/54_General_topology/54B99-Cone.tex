@@ -1,0 +1,120 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Cone}
+\pmcreated{2013-03-22 13:25:20}
+\pmmodified{2013-03-22 13:25:20}
+\pmowner{antonio}{1116}
+\pmmodifier{antonio}{1116}
+\pmtitle{cone}
+\pmrecord{7}{33974}
+\pmprivacy{1}
+\pmauthor{antonio}{1116}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B99}
+\pmrelated{Suspension}
+\pmrelated{Join3}
+\pmdefines{reduced cone}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\setlength{\oddsidemargin}{.25in}
+%\setlength{\evensidemargin}{.25in}
+%\setlength{\textwidth}{6in}
+%\setlength{\topmargin}{-0.4in}
+%\setlength{\textheight}{8.5in}
+\newenvironment{hwsols}[4]{\noindent{\sc\large Math #1 --  Solutions to Homework #2\\#3\\{\footnotesize by~#4}}\bigskip\\}{}
+\newenvironment{bookprob}[2]{\noindent{\sl Section #1, Problem #2}\\}{\bigskip}
+
+\newcommand{\probpart}[1]{\noindent{{\bf #1}}}
+\newcommand{\vecu}{\mathbf{u}}  % Vector u
+\newcommand{\vech}{\mathbf{h}}  % Vector h
+\newcommand{\vecy}{\mathbf{y}}  % Vector y
+\newcommand{\vecx}{\mathbf{x}}  % Vector x
+\newcommand{\vecz}{\mathbf{z}}  % Vector z
+\newcommand{\vecv}{\mathbf{v}}  % Vector v
+\newcommand{\vecp}{\mathbf{p}}  % Vector p
+\newcommand{\vecw}{\mathbf{w}}  % Vector w
+\newcommand{\veca}{\mathbf{a}}  % Vector a
+\newcommand{\vecb}{\mathbf{b}}  % Vector b
+\newcommand{\vect}{\mathbf{t}}  % Vector t
+\newcommand{\vecn}{\mathbf{n}}  % Vector n
+\newcommand{\covA}{\mathcal{A}} % Open cover A
+\newcommand{\covB}{\mathcal{B}} % Open cover B
+\newcommand{\orig}{\mathbf{0}}  % Vector origin
+\newcommand{\limv}[2]{\lim\limits_{#1\rightarrow #2}}
+\newcommand{\eb}{\mathbf{e}}    % Standard basis
+\newcommand{\comp}{\circ}       % Function composition
+\newcommand{\reals}{{\mathbb R}}        % The reals
+\newcommand{\integs}{{\mathbb Z}}        % The integers
+\newcommand{\setc}[2]{\left\{#1:\: #2\right\}}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\cycle}[1]{\left(#1\right)}
+\newcommand{\tuple}[1]{\left(#1\right)}
+\newcommand{\Partial}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\PartialSl}[2]{\partial #1/\partial #2}
+\newcommand{\funcsig}[2]{#1\rightarrow #2}
+\newcommand{\funcdef}[3]{#1:\funcsig{#2}{#3}}
+\newcommand{\supp}{\mathop{\mathrm{Supp}}} % Support of a function
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}} % Sign function
+\newcommand{\tr}[1]{#1^\mathrm{tr}} % Transpose of a matrix
+\newcommand{\inprod}[2]{\left<#1,#2\right>} % Inner product
+\newcommand{\dall}[2]{d{#1}_1\wedge\cdots\wedge d{#1}_{#2}} % dx_1 ^ ... ^ dk_k
+\newenvironment{smallbmatrix}{\left[\begin{smallmatrix}}{\end{smallmatrix}\right]}
+\newcommand{\maps}[2]{\mathop{\mathrm{Maps}}\left(#1,#2\right)}
+\newcommand{\intoc}[2]{\left(#1,#2\right]}
+\newcommand{\intco}[2]{\left[#1,#2\right)}
+\newcommand{\intoo}[2]{\left(#1,#2\right)}
+\newcommand{\intcc}[2]{\left[#1,#2\right]}
+\newcommand{\transv}{\pitchfork}
+\newcommand{\pair}[2]{\left\langle#1,#2\right\rangle}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\sqnorm}[1]{\left\|#1\right\|^2}
+\newcommand{\bdry}{\partial}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\tensor}{\otimes}
+\newcommand{\bigtensor}{\bigotimes}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\coker}{\operatorname{im}}
+\newcommand{\map}{\operatorname{Map}}
+\newcommand{\crit}{\operatorname{Crit}}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{dthm}{Desired Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{dcor}[thm]{Desired Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{defn}{Definition}
+\newcommand{\FIXME}[1]{\textsl{[#1\/]}\typeout{[FIXME remaining]}}
+\newcommand{\FIXNOTE}[1]{\footnote{\FIXME{#1}}}
+\newcommand{\FIXCITE}{{\textbf [CITE]}}
+\newcommand{\cross}{\times}
+\newcommand{\del}{\nabla}
+\newcommand{\homeo}{\cong}
+\newcommand{\codim}{\operatorname{codim}}
+\begin{document}
+Given a topological space $X$, the {\em cone on $X$} (sometimes denoted by $CX$) is the quotient space $X\cross [0,1]/X\cross\set{0}.$ Note that there is a natural inclusion $X\hookrightarrow CX$ which sends $x$ to $(x,1).$ 
+
+If $(X,x_0)$ is a based topological space, there is a similar {\em reduced cone} construction, given by $X\cross [0,1] / (X\cross\set{0})\cup(\set{x_0}\cross[0,1]).$ With this definition, the natural inclusion $x\mapsto (x,1)$ becomes a based map, where we take $(x_0,0)$ to be the basepoint of the reduced cone.
+%%%%%
+%%%%%
+\end{document}

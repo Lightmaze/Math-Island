@@ -1,0 +1,39 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SmoothNumber}
+\pmcreated{2013-03-22 13:20:25}
+\pmmodified{2013-03-22 13:20:25}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{smooth number}
+\pmrecord{5}{33855}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmrelated{RoughNumber}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+\begin{document}
+A $k$-{\em smooth number} $n$ is an integer such that its prime divisors are less than $k$. For example, 14824161510814728 is 7-smooth since its prime factors are just 2 and 3 (and thus its divisors are all either powers of those two primes or multiples of 6).
+
+For small $k$, the number of smooth numbers less than a given $x$ can be estimated with the formula $$\frac{1}{\pi(k)!} \prod_{i = 1}^{\pi(k)} \frac{\log x}{\log p_i},$$ where $\pi(x)$ is the prime counting function and $p_i$ is the $i$th prime.
+
+Smooth numbers have many applications, such as the many classic factorization algorithms which specifically call for smooth numbers in their initialization steps, as well as fast Fourier transform algorithms that also require smooth numbers.
+%%%%%
+%%%%%
+\end{document}

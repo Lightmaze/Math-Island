@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TopologicalConditionForASetToBeUncountable}
+\pmcreated{2013-03-22 16:15:15}
+\pmmodified{2013-03-22 16:15:15}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{topological condition for a set to be uncountable}
+\pmrecord{15}{38360}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D10}
+\pmclassification{msc}{54A25}
+\pmclassification{msc}{54D30}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{corollary*}{Corollary}
+\begin{document}
+\PMlinkescapeword{property}
+\PMlinkescapeword{associates}
+\PMlinkescapeword{associate}
+\PMlinkescapeword{open}
+\PMlinkescapeword{implies}
+\PMlinkescapeword{length}
+\PMlinkescapeword{prefix}
+
+\begin{theorem*}
+A nonempty compact Hausdorff space with no isolated points is uncountable.
+\end{theorem*}
+
+\begin{proof}
+Let $X$ be a nonempty compact Hausdorff space with no isolated points.  
+To each finite $0,1$-sequence $\alpha$ associate a point $x_{\alpha}$ and an open neighbourhood $U_{\alpha}$ as follows.  First, since $X$ is nonempty, let $x_0$ be a point of $X$.  Second, since $x_0$ is not isolated, let $x_1$ be another point of $X$.  The fact that $X$ is Hausdorff implies that $x_0$ and $x_1$ can be separated by open sets.  So let $U_0$ and $U_1$ be disjoint open neighborhoods of $x_0$ and $x_1$ respectively.
+
+Now suppose for induction that $x_{\alpha}$ and a neighbourhood $U_{\alpha}$ of $x_{\alpha}$ have been constructed for all $\alpha$ of length less than $n$. A $0,1$-sequence of length $n$ has the form $(\alpha,0)$ or $(\alpha,1)$ for some $\alpha$ of length $n-1$.  Define $x_{(\alpha,0)}=x_{\alpha}$.  Since $x_{(\alpha,0)}$ is not isolated, there is a point in $U_{\alpha}$ besides $x_{(\alpha,0)}$; call that point $x_{(\alpha,1)}$.  Now apply the Hausdorff property to find disjoint open neighbourhoods $U_{(\alpha,0)}$ and $U_{(\alpha,1)}$ of $x_{(\alpha,0)}$ and $x_{(\alpha,1)}$ respectively.  The neighbourhoods $U_{(\alpha,0)}$ and $U_{(\alpha,1)}$ can be chosen to be proper subsets of $U_{\alpha}$.  Proceed by induction to find an $x_{\alpha}\in U_{\alpha}$ for each finite $0,1$-sequence $\alpha$.
+
+\begin{figure}[hh]
+\begin{centering}  
+\includegraphics[scale=1.2]{picking_points.eps}
+\caption{The induction step: separating points in $U_{\alpha}$.}
+\end{centering}
+\end{figure}
+
+Now define a function $f\colon 2^{\omega}\to X$ as follows.  If $\alpha$ is
+eventually zero, put $f(\alpha)=x_{\alpha}$.  Otherwise, consider the sequence
+$(x_{(\alpha_0)},x_{(\alpha_0,\alpha_1)},x_{(\alpha_0,\alpha_1,\alpha_2)},\dots)$ of points in $X$.  Since $X$ is compact and Hausdorff, it is closed and limit point compact, so the sequence has a limit point in $X$.  Let $f(\alpha)$ be such a limit point.  Observe that for each finite prefix $(\alpha_0,\dots,\alpha_n)$ of $\alpha$, the point $f(\alpha)$ is in $U_{(\alpha_0,\dots,\alpha_n)}$.
+
+\begin{figure}[hh]
+\begin{centering}  
+\includegraphics[scale=0.65]{limit_point.eps}
+\caption{Defining $f(\alpha)$ as a limit point of the $x_{(\alpha_0,\dots,\alpha_n)}$.}
+\end{centering}
+\end{figure}
+
+Suppose $\alpha$ and $\beta$ are distinct sequences in $2^{\omega}$.  Let $n$ be the first position where $\alpha_n\ne\beta_n$.  Then $f(\alpha)\in U_{(\alpha_0,\dots,\alpha_n)}$ and $f(\beta)\in U_{(\beta_0,\dots,\beta_n)}$, and by construction $U_{(\alpha_0,\dots,\alpha_n)}$ and $U_{(\beta_0,\dots,\beta_n)}$ are disjoint.  Hence $f(\alpha)\ne f(\beta)$, implying that $f$ is an injective function.  Since the set $2^{\omega}$ is uncountable and $f$ is an injective function from $2^{\omega}$ into $X$, $X$ is also uncountable.
+\end{proof}
+
+\begin{corollary*}
+The set $[0,1]$ is uncountable.
+\end{corollary*}
+\begin{proof}
+Being closed and bounded, $[0,1]$ is compact by the Heine-Borel Theorem; because $[0,1]$ is a 
+subspace of the Hausdorff space $\mathbb{R}$, it too is Hausdorff; finally, since $[0,1]$ has no isolated points, the preceding theorem implies that it is uncountable.
+\end{proof}
+
+
+%%%%%
+%%%%%
+\end{document}

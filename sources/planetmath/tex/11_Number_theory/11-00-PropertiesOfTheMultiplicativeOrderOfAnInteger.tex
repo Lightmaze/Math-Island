@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PropertiesOfTheMultiplicativeOrderOfAnInteger}
+\pmcreated{2013-03-22 16:20:44}
+\pmmodified{2013-03-22 16:20:44}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{properties of the multiplicative order of an integer}
+\pmrecord{4}{38478}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmclassification{msc}{13M05}
+\pmclassification{msc}{13-00}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem*{defn}{Definition}
+\newtheorem*{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\newcommand{\ord}{\operatorname{ord}}
+\begin{document}
+\begin{defn}
+Let $m>1$ be an integer and let $a$ be another integer relatively prime to $m$. The order of $a$ modulo $m$ (or the multiplicative order of $a \mod m$) is the smallest positive integer $n$ such that $a^n\equiv 1 \mod m$. The order is sometimes denoted by $\operatorname{ord} a$ or $\operatorname{ord}_m a$.
+\end{defn}
+
+\begin{prop}
+Let $m$ be a positive integer and suppose that $(a,m)=1$.
+\begin{enumerate}
+\item $a^s\equiv 1 \mod m$ if and only if $\ord a$ divides $s$. In particular, $\ord a$ divides $\phi(m)$, where $\phi$ is the Euler phi function.
+
+\item $a^s\equiv a^t \mod m$ if and only if $s\equiv t \mod \ord a$.
+
+\item If $\ord a =d$ then $\displaystyle \ord a^k =\frac{d}{\gcd(k,d)}$ for any $k\geq 1$.
+
+\item If $\ord a =d$ and $e$ is a positive divisor of $d$ then $a^{d/e}$ has exact order $e$. 
+
+\item Suppose $\ord a=h$ and $\ord b = k$ with $\gcd(h,k)=1$. Then $\ord (ab)=hk$.
+\end{enumerate}
+\end{prop}
+%%%%%
+%%%%%
+\end{document}

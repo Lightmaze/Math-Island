@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DeficientNumber}
+\pmcreated{2013-03-22 15:52:18}
+\pmmodified{2013-03-22 15:52:18}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{deficient number}
+\pmrecord{5}{37868}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmsynonym{defective number}{DeficientNumber}
+\pmrelated{AmicableNumbers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A {\em deficient number} is an integer $n$ such that its proper divisors add up to less than itself, or all its divisors add up to less than twice itself. For example, 26. Its proper divisors are 1, 2 and 13, which add up to 16, which is 10 short of 26. Or if we also add 26, the divisors add up to 42, which is 10 short of 52.
+
+All prime numbers are deficient, since 1 is their only proper divisor. With $\sigma(n)$ being the sum of divisors function, we can write that for a prime number $p$ it is always the case that $\sigma(p) = p + 1$. Thanks to Euclid's proof of the infinitude of primes, it is also proven that there are infinitely many deficient numbers.
+
+An integer power of two ($2^x$ for $x > 0$) is always deficient, since its proper divisors add up to $2^x - 1$.
+
+Given a pair of amicable numbers, the greater of the two is deficient and its proper divisors add up to the smaller of the two, while the lesser of the two is an abundant number with its proper divisors adding up to the larger of the two.
+%%%%%
+%%%%%
+\end{document}

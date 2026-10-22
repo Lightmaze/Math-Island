@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{varepsilonnet}
+\pmcreated{2013-03-22 13:37:54}
+\pmmodified{2013-03-22 13:37:54}
+\pmowner{Koro}{127}
+\pmmodifier{Koro}{127}
+\pmtitle{$\varepsilon$-net}
+\pmrecord{4}{34280}
+\pmprivacy{1}
+\pmauthor{Koro}{127}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+\pmrelated{Cover}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+{\bf Definition}
+Suppose $X$ is a metric space with a metric $d$, and suppose
+$S$ is a subset of $X$. Let $\varepsilon$ be a positive real number.
+A subset $N\subset S$ is an $\varepsilon$\emph{-net
+for $S$} if, for all $x\in S$, there is an $y\in N$,
+such that $d(x,y)<\varepsilon$.
+
+For any $\varepsilon>0$ and $S\subset X$, the set $S$ is trivially an 
+$\varepsilon$-net for itself. 
+
+{\bf Theorem} 
+Suppose $X$ is a metric space with a metric $d$, and suppose
+$S$ is a subset of $X$. Let $\varepsilon$ be a positive real number.
+Then $N$ is an $\varepsilon$-net for $S$, if and only if
+$$\{ B_\varepsilon(y) \mid y\in N \}$$
+is a cover for $S$. (Here $B_\varepsilon(x)$ is
+the open ball with center $x$ and radius $\varepsilon$.)
+
+\emph{Proof.} Suppose $N$ is an $\varepsilon$-net for $S$. 
+If $x\in S$, there is an $y\in N$ such that $x\in B_\varepsilon(y)$. 
+Thus, $x$ is covered by some set in $\{ B_\varepsilon(x) \mid x\in N \}$.
+Conversely, suppose $\{ B_\varepsilon(y) \mid y\in N \}$ is
+a cover for $S$, and suppose $x\in S$. By assumption,
+there is an $y\in N$, such that $x\in B_\varepsilon(y)$.
+Hence $d(x,y)<\varepsilon$ with $y\in N$.
+$\Box$
+
+{\bf Example}
+In $X=\mathbb{R}^2$ with the usual
+Cartesian metric, the set
+$$ N = \{(a,b) \mid a,b\in \mathbb{Z}Â \}$$
+is an $\varepsilon$-net for $X$ assuming that
+$\varepsilon> \sqrt{2}/2$. $\Box$
+
+The above definition and example can be found in \cite{bachman}, page 64-65.
+
+\begin{thebibliography}{9}
+\bibitem{bachman}
+G. Bachman, L. Narici,
+\emph{Functional analysis},
+Academic Press, 1966.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CunninghamChain}
+\pmcreated{2013-03-22 16:04:22}
+\pmmodified{2013-03-22 16:04:22}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Cunningham chain}
+\pmrecord{4}{38129}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Consider the sequence of primes 2, 5, 11, 23, 47. Each is twice the previous one plus 1.
+
+When, in a sequence of primes $p_1, \ldots p_k$ each $p_n = 2p_{n - 1} + 1$ for $1 < n \le k$ (or alternatively, each $p_n = {{p_{n - 1} - 1} \over 2}$ for $0 < n < k$), the sequence is called a {\em Cunningham chain of the first kind}. In a Cunningham chain of the first kind, all primes except the largest are Sophie Germain primes, while all primes except the smallest are safe primes. The primes in a Cunningham chain are related to the Mersenne numbers thus: $p_n \equiv 2^n - 1 \mod 2^n$, where $n$ is the prime's position in the Cunningham chain (except in the case of the chain starting with 2, which is a special case).
+
+In a {\em Cunningham chain of the second kind}, the relation among primes is $2p_{n - 1} - 1$. An example of a Cunningham chain of the second kind is 1531, 3061, 6121, 12241, 24481.
+
+It is strongly believed that there are infinitely many Cunningham chains of either kind, but this remains to be proven.
+
+External links
+
+\PMlinkexternal{PrimeFan's listing of Cunningham chains}{http://www.geocities.com/primefan/CunninghamChains.html}
+%%%%%
+%%%%%
+\end{document}

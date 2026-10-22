@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{nchooseRIsAnInteger}
+\pmcreated{2013-03-22 15:02:01}
+\pmmodified{2013-03-22 15:02:01}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{${n\choose r}$ is an integer}
+\pmrecord{6}{36744}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B65}
+\pmclassification{msc}{05A10}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{thm} For $n\ge r \ge 0$, the binomial coefficient
+$$
+  {n \choose r}
+$$
+is an integer.
+\end{thm}
+
+\begin{proof} The proof is by induction on $n$. For $n=0$, the
+claim is clear. Thus, suppose the claim holds for $n\ge 1$. 
+For $r=1,\ldots, n$, Pascal's rule gives
+$$
+  {n +1 \choose r} = {n\choose r} + {n\choose r-1}.
+$$
+That is,  ${n +1 \choose 1}, \ldots, {n+1 \choose n}$ are 
+  integers. 
+Since
+$$
+  {n +1\choose 0} = 1, \quad   {n +1\choose n+1} = 1
+$$
+the proof is complete. 
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

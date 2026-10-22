@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AsymptoticDensity}
+\pmcreated{2013-03-22 12:36:20}
+\pmmodified{2013-03-22 12:36:20}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{asymptotic density}
+\pmrecord{7}{32861}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B05}
+\pmsynonym{upper density}{AsymptoticDensity}
+\pmsynonym{lower density}{AsymptoticDensity}
+\pmsynonym{natural density}{AsymptoticDensity}
+\pmsynonym{arithmetic density}{AsymptoticDensity}
+\pmrelated{InequalityOfLogarithmicAndAsymptoticDensity}
+\pmdefines{upper asymptotic density}
+\pmdefines{lower asymptotic density}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+\begin{document}
+Let $A$ be a subset of $\mathbb{Z}^{+}$.  For any $n \in \mathbb{Z}^{+}$ put
+$A(n)=\{1,2,\ldots,n\} \cap A$.
+
+Define the {\em upper asymptotic density} $\overline{d}(A)$ of $A$ by
+
+$$ \overline{d}(A) = \limsup_{n \rightarrow \infty} \frac{|A(n)|}{n} $$
+
+$\overline{d}(A)$ is also known simply as the {\em upper density} of
+$A$.\\
+Similarly, we define $\underline{d}(A)$, the {\em lower asymptotic density} of
+$A$, by
+\[ \underline{d}(A) = \liminf_{n \rightarrow \infty} \frac{ |A(n)| }{n} \]
+We say $A$ has {\em asymptotic density} $d(A)$ if
+$\underline{d}(A)=\overline{d}(A)$, in which case we put
+$d(A)=\overline{d}(A)$.
+%%%%%
+%%%%%
+\end{document}

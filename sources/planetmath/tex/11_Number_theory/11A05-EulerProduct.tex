@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EulerProduct}
+\pmcreated{2013-03-22 14:10:58}
+\pmmodified{2013-03-22 14:10:58}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Euler product}
+\pmrecord{8}{35609}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmclassification{msc}{11A51}
+%\pmkeywords{infinitude of primes}
+\pmrelated{MultiplicativeFunction}
+\pmrelated{RiemannZetaFunction}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+If $f$ is a multiplicative function, then
+\begin{equation}\label{eq:euler_prod}
+\sum_{n=1}^\infty f(n)=
+\prod_{p\text{ is prime}}(1+f(p)+f(p^2)+\dotsb)
+\end{equation}
+provided the sum on the left converges absolutely. The product
+on the right is called the \emph{Euler product} for the sum on the
+left.
+
+\begin{proof}[Proof of \eqref{eq:euler_prod}]
+Expand partial products on right of \eqref{eq:euler_prod} to
+obtain by fundamental theorem of arithmetic
+\begin{align*}
+\prod_{p<y}(1+f(p)+f(p^2)+\dotsb)&=
+\sum_{k_1}f(p_1^{k_1})\sum_{k_2}f(p_2^{k_2}) \dotsb\sum_{k_t}f(p_t^{k_t})\\
+&=\sum_{k_1,k_2,\dotsc,k_t} f(p_1^{k_1})f(p_2^{k_2})\dotsb f(p_t^{k_t})\\
+&=\sum_{k_1,k_2,\dotsc,k_t} f(p_1^{k_1}p_2^{k_2}\dotsb p_t^{k_t})\\
+&=\sum_{P_+(n)<y} f(n)
+\end{align*}
+where $p_1,p_2,\dotsc,p_t$ are all the primes between $1$ and $y$, and $P_+(n)$ denotes the largest prime factor of $n$. Since
+every natural number less than $y$ has no factors exceeding $y$ we have
+that
+\begin{equation*} \abs{\sum_{n=1}^\infty f(n)-\sum_{P_+(n)<y}
+f(n)}\leq\sum_{n=y}^\infty \abs{f(n)}
+\end{equation*}
+which tends to zero as $y\to \infty$.
+\end{proof}
+
+\section*{Examples}
+\begin{itemize}
+\item If the function $f$ is defined on prime powers by
+$f(p^k)=1/p^k$ for all $p<x$ and $f(p^k)=0$ for all $p\geq x$,
+then \PMlinkescapetext{Euler's product formula} allows one to estimate $\prod_{p<x}
+(1+1/(p-1))$
+\begin{equation*}
+\prod_{p<x} \left(1+\frac{1}{p-1}\right) =\prod_{p<x}
+\left(1+\frac{1}{p}+\frac{1}{p^2}+\dotsb\right)=\sum_{P_+(n)<x}
+\frac{1}{n}>\sum_{n<x}\frac{1}{n}>\ln x.
+\end{equation*}
+One of the consequences of this formula is that there are
+infinitely many primes.
+
+\item The Riemann zeta function is defined by the means of the
+series
+\begin{equation*}
+\zeta(s)=\sum_{n=1}^\infty n^{-s}\qquad\text{for $\Re s>1$}.
+\end{equation*}
+Since the series converges absolutely, the Euler product for the zeta function is
+\begin{equation*}
+\zeta(s)=\prod_{p}\frac{1}{1-p^{-s}}\qquad\text{for $\Re s>1$}.
+\end{equation*}
+If we set $s=2$, then on the one hand $\zeta(s)=\sum_n 1/n^2$ is
+$\pi^2/6$ (proof is
+\PMlinkname{here}{ValueOfTheRiemannZetaFunctionAtS2}), an
+irrational number, and on the other hand $\zeta(2)$ is a product of rational functions of primes. This yields yet another proof of infinitude of
+primes.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

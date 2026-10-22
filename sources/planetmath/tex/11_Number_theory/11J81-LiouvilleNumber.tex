@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LiouvilleNumber}
+\pmcreated{2013-03-22 17:18:32}
+\pmmodified{2013-03-22 17:18:32}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Liouville number}
+\pmrecord{6}{39657}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11J81}
+\pmdefines{Liouville's constant}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em Liouville number} is an irrational number $l$ such that for any integer $n > 0$ there is a pair of integers $j$ and $k$ such that the inequality $$0 < |l - \frac{j}{k}| < \frac{1}{k^n}$$ holds. All Liouville numbers are transcendental numbers, but not all transcendental numbers are Liouville numbers. The first example given by Joseph Liouville was a number of the form $$\sum_{i = 1}^\infty \frac{1}{b^{i!}},$$ with an integer $b > 1$, specifically $b = 10$ (the resulting number is now called {\em Liouville's constant} and is listed in A012245 of Sloane's OEIS). In base $b$, a number of this form has a representation beginning 0.110001000000000000000001000... where the $i$th instance of the digit 1 is separated from the previous by $i! - (i - 1)! - 1$ instances of the digit 0.
+
+The set of Liouville numbers is small in measure, having measure 0; in the measure-theoretic setting almost all numbers are not Liouville numbers. However, the set of Liouville numbers is topologically big, as it is residual and in the topological setting almost all numbers are Liouville numbers.
+%%%%%
+%%%%%
+\end{document}

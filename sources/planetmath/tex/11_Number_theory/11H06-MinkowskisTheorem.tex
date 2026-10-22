@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MinkowskisTheorem}
+\pmcreated{2013-03-22 13:51:42}
+\pmmodified{2013-03-22 13:51:42}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Minkowski's theorem}
+\pmrecord{8}{34601}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11H06}
+\pmsynonym{Minkowski's theorem on convex bodies}{MinkowskisTheorem}
+%\pmkeywords{Minkowski}
+%\pmkeywords{convex}
+\pmrelated{LatticeInMathbbRn}
+\pmrelated{ProofOfMinkowskisBound}
+\pmdefines{Minkowski's theorem}
+\pmdefines{fundamental parallelogram}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+Let $\mathcal{L} \in \mathbb{R}^2$ be a lattice in the sense of
+number theory, i.e. a 2-dimensional free group over ${\mathbb{Z}}$
+which generates $\mathbb{R}^2$ over $\mathbb{R}$. Let $w_1,w_2$ be
+generators of the lattice $\mathcal{L}$. A set $\mathcal{F}$ of
+the form
+$$\mathcal{F}=\{(x,y)\in\mathbb{R}^2: (x,y)=\alpha w_1+\beta w_2,\quad 0\leq \alpha < 1,\quad 0\leq \beta <1 \}$$
+is usually called a \emph{fundamental domain} or \emph{fundamental parallelogram} for the lattice $\mathcal{L}$.
+
+\begin{thm}[Minkowski's Theorem]
+Let $\mathcal{L}$ be an arbitrary lattice in $\mathbb{R}^2$ and
+let $\Delta$ be the area of a fundamental parallelogram. Any
+convex region $\mathfrak{K}$ symmetrical about the origin and of
+area greater than $4\Delta$ contains points of the lattice
+$\mathcal{L}$ other than the origin.
+\end{thm}
+
+More generally, there is the following $n$-dimensional analogue.
+
+\begin{thm}
+Let $\mathcal{L}$ be an arbitrary lattice in $\mathbb{R}^n$ and
+let $\Delta$ be the area of a fundamental parallelopiped. Any
+convex region $\mathfrak{K}$ symmetrical about the origin and of
+volume greater than $2^n\Delta$ contains points of the lattice
+$\mathcal{L}$ other than the origin.
+\end{thm}
+%%%%%
+%%%%%
+\end{document}

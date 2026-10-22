@@ -1,0 +1,145 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Hexacode}
+\pmcreated{2013-03-22 18:43:08}
+\pmmodified{2013-03-22 18:43:08}
+\pmowner{monster}{22721}
+\pmmodifier{monster}{22721}
+\pmtitle{hexacode}
+\pmrecord{15}{41485}
+\pmprivacy{1}
+\pmauthor{monster}{22721}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94B05}
+\pmrelated{MiracleOctadGenerator}
+\pmrelated{BinaryGolayCode}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\w}{\omega}
+\newcommand{\W}{\overline{\omega}}
+\newcommand{\cw}[6]{#1#2\,\,#3#4\,\,#5#6}
+\begin{document}
+\PMlinkescapeword{shape}
+\PMlinkescapeword{sign}
+\PMlinkescapeword{digits}
+\PMlinkescapeword{complete}
+\PMlinkescapeword{properties}
+\PMlinkescapeword{separated}
+\PMlinkescapeword{block}
+\PMlinkescapeword{blocks}
+\PMlinkescapeword{property}
+\PMlinkescapeword{solution}
+
+The hexacode is a 3-dimensional linear code of \PMlinkname{length}{LinearCode} 6, defined over the field $\F_4$, all of whose codewords have weight 0, 4, or 6.  It is uniquely determined by these properties, up to \PMlinkname{monomial linear transformations}{MonomialMatrix} and \PMlinkescapetext{conjugation} in $\F_4$.  The hexacode is crucial to the construction of the extended binary Golay code via Curtis' Miracle Octad Generator.  The exposition below follows (\cite{splag}, Chapter 11).  Another \PMlinkescapetext{reference} for the hexacode is (\cite{sporadic}, Chapter 4).
+
+\section{Construction of the hexacode}
+There are several constructions of the hexacode, all leading to the same result.  In the following, we write the elements of $\mathbb{F}_4$ as $\{0,1,\w,\W\}$ where $\omega$ is a cube root of unity.  We write elements of the hexacode as elements of $\mathbb{F}_4^6$, separated into three \PMlinkescapetext{blocks} of two.
+
+1. The span of the elements $$\begin{array}{c}
+\cw{\w}{\W}{\w}{\W}{\w}{\W}\\ 
+\cw{\w}{\W}{\W}{\w}{\W}{\w}\\
+\cw{\W}{\w}{\w}{\W}{\W}{\w}\\
+\cw{\W}{\w}{\W}{\w}{\w}{\W}
+\end{array}$$
+
+2. The elements of $\F_4^6$ of the form $$(a, b, c, \phi(1), \phi(\w), \phi(\W))$$ where $a, b, c \in \F_4$ and $\phi(x) = ax^2+bx+c$.
+
+3. The elements $\cw{a}{b}{c}{d}{e}{f}$ of $\F_4^6$ which satisfy the three rules
+$$\begin{array}{c}
+a+b = c+d = e+f = s\\
+a+c+e = a+d+f = b+c+f = b+d+e = \w s\\
+b+d+f = b+c+e = a+d+e = a+c+f = \W s
+\end{array}$$
+Here $s$ is called the \emph{\PMlinkescapetext{slope}} of the codeword.
+
+An element of the hexacode is called a \emph{hexacodeword}.
+
+\section{Justification of a hexacodeword}
+
+It is not difficult to show that all of the above constructions give the same 3-dimensional linear code of \PMlinkescapetext{length} 6.  However, it is somewhat tedious to use one of above constructions to determine whether a given element of $\F_4^6$ is in the hexacode.  Instead, it is possible to show that an element of $\F_4^6$ is a hexacodeword if and only if it satisfies the \emph{shape} and \emph{sign} rules below.  Using these rules, one can (with some practice) quickly distinguish hexacodewords from non-hexacodewords.
+
+The shape rule says that, up to permutations of the three blocks and flips of the elements within a block, every hexacodeword has one of the shapes $$\begin{array}{c}
+\cw{0}{0}{0}{0}{0}{0}\\
+\cw{0}{0}{a}{a}{a}{a}\\
+\cw{0}{a}{0}{a}{b}{c}\\
+\cw{b}{c}{b}{c}{b}{c}\\
+\cw{a}{a}{b}{b}{c}{c}
+\end{array}$$ where $a,b,c$ are $1,\w,\W$ in some \PMlinkescapetext{order}.
+
+The sign rule says that in every hexacodeword, either:
+\begin{itemize}
+\item{all 3 blocks have sign 0, or}
+\item{the product of the signs of the three blocks is positive.}
+\end{itemize}
+The sign of a block is determined as follows:
+\begin{itemize}
+\item{+ for $0a$ or $ab$ where $b = a\w$}
+\item{- for $a0$ or $ab$ where $b = a\W$}
+\item{0 for $00$ or $aa$}
+\end{itemize}
+where $a \ne 0$.
+
+For example,
+\begin{itemize}
+\item{$\cw{0}{0}{1}{1}{\w}{\w}$ and $\cw{0}{1}{0}{\w}{1}{\W}$ are not hexacodewords because they fail the shape rule.}
+\item{$\cw{0}{1}{0}{1}{\w}{\W}$ satisfies the shape rule, and the signs are +\,+\,+, so it is a hexacodeword.}
+\item{$\cw{1}{\w}{\w}{1}{1}{\w}$ satisfies the shape rule, and the signs are +\,-\,+, so it is not a hexacodeword.}
+\item{$\cw{0}{0}{1}{1}{1}{1}$ satisfies the shape rule, and the signs are 0\,0\,0, so it is a hexacodeword.}
+\item{$\cw{\w}{0}{\w}{0}{\W}{1}$ satisfies the shape rule, and the signs are -\,-\,+, so it is a hexacodeword.}
+\end{itemize}
+
+\section{Completion of a partial hexacodeword}
+
+The hexacode has the property that the following two problems always have a unique solution.
+
+1. (3-problem) Given values in any 3 of the 6 positions, complete it to a full hexacodeword.
+
+2. (5-problem) Given values in any 5 of the 6 positions, complete it to a full hexacodeword \emph{after possibly changing one of the given values}.
+
+Conway says that the best method for solving these is to simply "guess the correct answer, then justify it" (using the shape and sign rules), though he also does give systematic algorithms for solving them.
+
+Examples of 3-problems:
+$$\begin{array}{c}
+\cw{0}{1}{1}{?}{?}{?} \rightarrow \cw{0}{1}{1}{0}{\W}{\w}\\
+\cw{?}{?}{1}{\W}{?}{0} \rightarrow \cw{0}{\w}{1}{\W}{\w}{0}\\
+\cw{1}{?}{\w}{\w}{?}{?} \rightarrow \cw{1}{1}{\w}{\w}{\W}{\W}
+\end{array}$$
+
+Examples of 5-problems:
+$$\begin{array}{c}
+\cw{0}{0}{1}{1}{\w}{?} \rightarrow \cw{0}{0}{1}{1}{1}{1} \mbox{ (position 5 changed)}\\
+\cw{0}{?}{1}{\W}{\w}{\W} \rightarrow \cw{0}{\w}{1}{\W}{\w}{0} \mbox{ (position 6 changed) }\\
+\cw{1}{\w}{?}{1}{1}{\w} \rightarrow \cw{1}{\w}{\W}{1}{1}{\w} \mbox{ (no position changed) }
+\end{array}$$
+
+\begin{thebibliography}{9}
+\bibitem{splag} J. H. Conway and N. J. A. Sloane. Sphere Packings, Lattices, and Groups.  Springer-Verlag, 1999.
+\bibitem{sporadic} Robert L. Griess, Jr.  Twelve Sporadic Groups.  Springer-Verlag, 1998.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

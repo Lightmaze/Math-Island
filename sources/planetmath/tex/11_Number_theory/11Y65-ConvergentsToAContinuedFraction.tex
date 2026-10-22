@@ -1,0 +1,171 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConvergentsToAContinuedFraction}
+\pmcreated{2013-03-22 18:04:20}
+\pmmodified{2013-03-22 18:04:20}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{convergents to a continued fraction}
+\pmrecord{8}{40606}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11Y65}
+\pmclassification{msc}{11J70}
+\pmclassification{msc}{11A55}
+\pmdefines{convergent}
+\pmdefines{complete convergent}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{ax}{Axiom}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\newcommand{\Abs}[1]{\left\lvert #1 \right\rvert}
+
+\begin{document}
+\PMlinkescapeword{complete}
+\PMlinkescapeword{connection}
+\PMlinkescapeword{convergent}
+\textbf{Definition. }The $n^{\mathrm{th}}$ \emph{convergent} to a continued fraction $[a_0,a_1,a_2,a_3,\ldots]$ is the value of the fraction obtained by cutting off the fraction after $a_n$, i.e. the value of $[a_0,a_1,\ldots,a_n]$.
+
+Write
+\begin{align*}
+p_0&=a_0 & p_1 &= a_0 a_1+1\\
+q_0 &= 1 & q_1 &= a_1
+\end{align*}
+so that
+\begin{gather*}
+[a_0]=a_0 =\frac{p_0}{q_0}\\
+[a_0,a_1]=a_0+\frac{1}{a_1} = \frac{a_0a_1+1}{a_1}=\frac{p_1}{q_1}
+\end{gather*}
+For $n>1$, define
+\begin{align} \label{pq}
+p_n &= a_n p_{n-1}+p_{n-2}\\
+q_n &= a_n q_{n-1}+q_{n-2}\notag
+\end{align}
+
+\begin{thm} The $n^{\mathrm{th}}$ convergent to $[a_0,a_1,a_2,a_3,\ldots]$ is given by
+\[[a_0,\ldots,a_{n-1},a_n]=\frac{p_n}{q_n}\]
+where $p_n, q_n$ are defined as above.
+\end{thm}
+\begin{proof} Induction. For $n>1$,
+\begin{align*}[a_0,\ldots,a_{n-1},a_n] &=[a_0,\ldots,a_{n-1}+\frac{1}{a_n}]\\
+&=\frac{\left(a_{n-1}+\frac{1}{a_n}\right)p_{n-2}+p_{n-3}}{\left(a_{n-1}+\frac{1}{a_n}\right)q_{n-2}+q_{n-3}}\\
+&=\frac{a_n(a_{n-1}p_{n-2}+p_{n-3})+p_{n-2}}{a_n(a_{n-1}q_{n-2}+q_{n-3})+q_{n-2}}\\
+&=\frac{a_n p_{n-1}+p_{n-2}}{a_n q_{n-1}+q_{n-2}}\\
+&=\frac{p_n}{q_n}
+\end{align*}
+\end{proof}
+
+\begin{thm} For $n\geq 1$, the numbers $\frac{p_{n-1}}{q_{n-1}}$ and $\frac{p_n}{q_n}$ are a Farey pair; in fact,
+\begin{equation}\label{pnqnm1}p_nq_{n-1}-p_{n-1}q_n=(-1)^{n-1}\end{equation}
+and thus
+\begin{equation}\label{pnqn}\frac{p_n}{q_n}-\frac{p_{n-1}}{q_{n-1}}=\frac{(-1)^{n-1}}{q_{n-1}q_n}\end{equation}
+\end{thm}
+\begin{proof}
+This is again a simple induction. The statement is true for $n=1$. For $n>1$, we have
+\begin{align*}
+p_nq_{n-1}-p_{n-1}q_n &=(a_n p_{n-1}+p_{n-2})q_{n-1} - p_{n-1}(a_n q_{n-1}+q_{n-2}) \\
+&= p_{n-2}q_{n-1} - p_{n-1}q_{n-2} = -(-1)^{n-2} = (-1)^{n-1}
+\end{align*}
+\end{proof}
+
+Note that if $[a_0,a_1,\ldots]$ is a simple continued fraction, then the above theorem implies that $\gcd(p_n,q_n)=1$, since any common factor of $p_n$ and $q_n$ must divide $(-1)^n$.
+
+\begin{thm} For $n\geq 2$,
+\begin{gather}
+\label{pnqnm2}p_nq_{n-2}-p_{n-2}q_n=(-1)^n a_n\\
+\label{pnqn2}\frac{p_n}{q_n}-\frac{p_{n-2}}{q_{n-2}}=\frac{(-1)^na_n}{q_{n-2}q_n}
+\end{gather}
+\end{thm}
+\begin{proof} Similar to the proof of the above theorem.
+\end{proof}
+
+\begin{thm} If $[a_0,a_1,\ldots]$ is a simple continued fraction, then $q_n\geq n$ and, for $n>3$, $q_n>n$.
+\end{thm}
+\begin{proof} This follows directly from the iterative definition for the $q_i$ and the fact that the $a_i$ are positive integers.
+\end{proof}
+
+These results easily imply the following important convergence theorem:
+\begin{thm} For any continued fraction, the even convergents $p_{2n}/q_{2n}$ are strictly monotonically increasing, and the odd convergents $p_{2n+1}/q_{2n+1}$ are strictly monotonically decreasing. In addition, every odd convergent is greater than each even convergent. If the continued fraction is simple, then the limit of the odd convergents is equal to the limit of the even convergents, and thus the continued fraction has a well-defined value equal to their common limit.
+\end{thm}
+\begin{proof} This is basically obvious from the previous observations. Write $c_n$ for the $n^{\mathrm{th}}$ convergent, i.e.
+\[c_n=\frac{p_n}{q_n}\]
+Each $q_i$ is positive, so
+\[c_n-c_{n-2}=\frac{(-1)^na_n}{q_nq_{n-2}}\]
+is positive for $n$ even and negative for $n$ odd. This proves the observations about monotonicity. Also,
+\[c_n-c_{n-1}=\frac{(-1)^{n-1}}{q_nq_{n-1}}\]
+is positive for $n$ odd, so that
+\begin{equation}\label{xgtr}c_{2n+1}>c_{2n}\end{equation}
+Now, if for some $j,k$ we had $c_{2j+1}\leq c_{2k}$, then $j\neq k$ by \eqref{xgtr}. If $k<j$, then since the even convergents increase, $c_{2j+1}\leq c_{2k}<c_{2j}$, while if $j<k$, then since the odd convergents decrease, $c_{2k+1}<c_{2j+1}<c_2k$. In either case, this contradicts \eqref{xgtr}.
+
+As to the statement about simple continued fractions, it is clear that the even (odd) convergents converge since they form a monotonically increasing (decreasing) sequence that is bounded below (above). But
+\[\left\lvert\frac{p_{2n}}{q_{2n}}-\frac{p_{2n-1}}{q_{2n-1}}\right\rvert=\frac{1}{q_{2n}q_{2n-1}}\leq \frac{1}{2n(2n-1)}\to 0\]
+and thus the limits are identical.
+\end{proof}
+
+Next we prove the following theorem regarding the connection between the ``tail'' of a continued fraction, its convergents, and its value:
+\begin{thm} If $x=[a_0,a_1,\ldots]$ is a simple continued fraction, write $t_n=[a_n,a_{n+1},\ldots]$ for $n\geq 0$ (the $n^{\mathrm{th}}$ \emph{complete convergent}). Then
+\[x = \frac{p_{n-2}+t_np_{n-1}}{q_{n-2}+t_nq_{n-1}}\]
+\end{thm}
+\begin{proof} This is another simple proof by induction. Note that
+\[t_n = [a_n,a_{n+1},\ldots] = a_n+\frac{1}{t_{n+1}}\]
+so that
+\[t_{n+1} = \frac{1}{t_n-a_n}\]
+Then
+\[
+\frac{t_{n+1}p_n+p_{n-1}}{t_{n+1}q_n+q_{n-1}} = \frac{\frac{1}{t_n-a_n}p_n+p_{n-1}}{\frac{1}{t_n-a_n}q_n+q_{n-1}} = \frac{\frac{1}{t_n-a_n}(a_np_{n-1}+p_{n-2})+p_{n-1}}{\frac{1}{t_n-a_n}(a_nq_{n-1}+q_{n-2})+q_{n-1}}
+= \frac{t_np_{n-1}+p_{n-2}}{t_nq_{n-1}+q_{n-2}} = x
+\]
+\end{proof}
+
+Finally, we derive a bound on how well the convergents approximate the value of the continued fraction:
+\begin{thm} If $x=[a_0,a_1,\ldots]$ is a simple continued fraction, then
+\[\Abs{x-\frac{p_n}{q_n}} < \frac{1}{q_n^2}\]
+\end{thm}
+\begin{proof}
+\begin{align*}
+x-\frac{p_n}{q_n} &= \frac{p_{n-1}+t_{n+1}p_n}{q_{n-1}+t_{n+1}q_n}-\frac{p_n}{q_n} \\
+&= \frac{q_np_{n-1}+t_{n+1}p_nq_n - p_nq_{n-1}-t_{n+1}p_nq_n}{q_n(q_{n-1}+t_{n+1}q_n)} = \frac{q_np_{n-1} - p_nq_{n-1}}{q_n(q_{n-1}+t_{n+1}q_n)}\\
+&= \frac{(-1)^n}{q_n(q_{n-1}+t_{n+1}q_n)}
+\end{align*}
+But $t_{n+1}>a_{n+1}$, so that $q_{n-1}+t_{n+1}q_n > q_{n-1}+a_{n+1}q_n = q_{n+1}$ and thus
+\[\Abs{x-\frac{p_n}{q_n}} = \frac{1}{q_n(q_{n-1}+t_{n+1}q_n)} < \frac{1}{q_nq_{n+1}} < \frac{1}{q_n^2}\]
+since the $q_i$ are strictly increasing.
+\end{proof}
+
+\begin{thebibliography}{10}
+\bibitem{bib:hardy}
+G.H.~Hardy~\& E.M.~Wright, \emph{An Introduction to the Theory of Numbers}, Fifth Edition, Oxford Science Publications, 1979.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

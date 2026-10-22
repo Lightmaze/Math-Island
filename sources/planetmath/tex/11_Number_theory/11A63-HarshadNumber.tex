@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HarshadNumber}
+\pmcreated{2013-03-22 15:47:04}
+\pmmodified{2013-03-22 15:47:04}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Harshad number}
+\pmrecord{5}{37742}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{Niven number}{HarshadNumber}
+\pmdefines{Harshad number}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Consider the integer 1729. Adding up its digits, $$1 + 7 + 2 + 9 = 19$$ and $${{1729} \over {19}} = 91.$$
+
+When an integer is divisible by the sum of its digits, it's called a {\em Harshad number} or {\em Niven number}. That is, given m is the number of digits of n and d is an integer of n,
+
+$${\sum_{i = 1}^m d_i}|n$$
+
+All 1-digit numbers and the base number itself are Harshad numbers. 1, 2, 4 and 6 are always Harshad numbers regardless of the base.
+
+It is possible for an integer to be divisible by its digital root and yet not be a Harshad number because it doesn't divide its first digit sum evenly (for example, 38 in base 10 has digital root 2 but is not divisible by 3 + 8 = 11). The reverse is also possible (for example, 195 is divisible by 1 + 9 + 5 = 15, but not by its digital root 4).
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ThePropertyThatCompactSetsInASpaceAreClosedLiesStrictlyBetweenT1AndT2}
+\pmcreated{2013-03-22 17:38:59}
+\pmmodified{2013-03-22 17:38:59}
+\pmowner{dfeuer}{18434}
+\pmmodifier{dfeuer}{18434}
+\pmtitle{The property that compact sets in a space are closed lies strictly between T1 and T2}
+\pmrecord{5}{40082}
+\pmprivacy{1}
+\pmauthor{dfeuer}{18434}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D30}
+\pmclassification{msc}{54D10}
+%\pmkeywords{separation axiom}
+%\pmkeywords{T1}
+%\pmkeywords{T2}
+%\pmkeywords{Hausdorff}
+%\pmkeywords{compactness}
+%\pmkeywords{compact}
+\pmrelated{T1Space}
+\pmrelated{T2Space}
+\pmrelated{Compact}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+If a topological space is Hausdorff ($T_2$), then every compact subset of that space is closed.  If every compact subset of a space is closed, then (since singletons are always compact) then the space is accessible ($T_1$).  There are spaces that are $T_1$ and have compact sets that are not closed, and there are spaces in which compact sets are always closed but that are not $T_2$.
+
+Let $X$ be an infinite set with the finite complement topology.  Singletons are finite, and therefore closed, so $X$ is $T_1$.  Let $S \subset X$, and let $\mathbb{F}$ be an open cover of $S$.  Let $F \in \mathbb{F}$.  Then $X\setminus F$ is finite.  Choosing a member of $\mathbb{F}$ for each remaining element of $S$ shows that $\mathbb{F}$ has a finite subcover.  Thus, every subset of $X$ is compact.  An infinite subset of $X$ will then be compact, but not closed.
+
+Let $Y$ be an uncountable set with the countable complement topology.  No two open sets are disjoint, so $Y$ is not Hausdorff.  Let $C$ be a compact subset of $Y$.  I shall show that $C$ is finite.  Suppose $C$ is infinite, and let $S$ be an infinite sequence in $C$ without any repetitions.  For any natural number $n$, let $U_n$ be all the elements of $C$ except for all the $S_k$, where $k>n$.  Then $U_n$ is open for each $n$, and $\{U_n \mid n \in \mathbb{N}\}$ covers $C$, but has no finite subset that covers $C$, contradicting the fact that $C$ is compact.  This contradiction arose by assuming a compact subset of $Y$ was infinite, all compact subsets of $Y$ are finite.  $Y$ is $T_1$ (singleton sets are countable), so all compact subsets of $Y$ are closed.
+
+These examples were suggested by the person known as Polytope on EFNet's math channel.
+%%%%%
+%%%%%
+\end{document}

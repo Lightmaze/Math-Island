@@ -1,0 +1,105 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Period}
+\pmcreated{2013-03-22 13:55:43}
+\pmmodified{2013-03-22 13:55:43}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{period}
+\pmrecord{11}{34687}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11F67}
+\pmdefines{period representation}
+\pmdefines{algebraic domain}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{Exam}{Example}
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+A real number $x$ is a \emph{period} if it is expressible as the integral of an \PMlinkescapetext{algebraic function} (with algebraic coefficients) over an algebraic domain, and this integral is absolutely convergent. This \PMlinkescapetext{representation} is called the number's \emph{period representation}.  An \emph{algebraic domain} is a subset of $\R^n$ given by \PMlinkescapetext{polynomial} inequalities with algebraic coefficients. A complex number is defined to be a period if both its real and imaginary parts are.  The set of all complex periods is denoted by $\mc{P}$.
+
+\section{Examples}
+
+\begin{Exam}
+The transcendental number $\pi$ is a period since we can write 
+\begin{align*}
+\pi=\int\limits_{x^2+y^2\leq1}~dx~dy.
+\end{align*}
+\end{Exam}
+
+\begin{Exam}
+Any algebraic number $\alpha$ is a period since we use the somewhat \PMlinkescapetext{natural} definition that integration over a 0-dimensional space is taken to mean evaluation:
+\begin{align*}
+\alpha=\int_{\{\alpha\}}x
+\end{align*}
+\end{Exam}
+
+\begin{Exam}
+The logarithms of algebraic numbers are periods:
+\begin{align*}
+\log\alpha=\int_1^\alpha\frac{1}{x}~dx
+\end{align*}
+\end{Exam}
+
+\section{Non-periods}
+
+It is by no means trivial to find complex non-periods, though their existence is clear by a counting argument:  The set of complex numbers is uncountable, whereas the set of periods is countable, as there are only countably many algebraic domains to choose and countably many algebraic functions over which to integrate.
+
+\section{Inclusion}
+
+With the existence of a non-period, we have the following chain of set inclusions:
+
+\begin{align*}
+\Z\subsetneq \Q\subsetneq\ol{\Q}\subsetneq\mc{P}\subsetneq\C,
+\end{align*}
+
+where $\ol{\Q}$ denotes the set of algebraic numbers.  The periods promise to prove an interesting and important set of numbers in that nebulous \PMlinkescapetext{region} between $\ol{\Q}$ and $\C$.
+
+\section{References}
+
+Kontsevich and Zagier.  \emph{Periods}.  2001.  Available on line at \url{http://www.ihes.fr/PREPRINTS/M01/M01-22.ps.gz}.
+%%%%%
+%%%%%
+\end{document}

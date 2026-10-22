@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrimePyramid}
+\pmcreated{2013-03-22 17:00:03}
+\pmmodified{2013-03-22 17:00:03}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{prime pyramid}
+\pmrecord{4}{39283}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em prime pyramid} is a triangular arrangement of numbers in which each row $n$ has the integers from 1 to $n$ but in an order such that the sum of any two consecutive terms in a row is a prime number. The first number must be 1, and the last number is usually required to be $n$, all the numbers in between are in whatever order fulfills the requirement for prime sums. Unlike other triangular arrangements of numbers like Pascal's triangle or Losanitsch's triangle, the contents of a given row are not determined by those of the previous row. However, if it happens that one has calculated row $n - 1$ and that $2n - 1$ is a prime number, one could just copy the previous row and add $n$ at the end. Here is a prime pyramid reckoned that way:
+
+\[
+\begin{array}{cccccccccccccccccc}
+& & & & & & & & & 1 & & & & & & & &\\
+& & & & & & & & 1 & & 2 & & & & & & &\\
+& & & & & & & 1 & & 2 & & 3 & & & & & &\\
+& & & & & & 1 & & 2 & & 3 & & 4 & & & & &\\
+& & & & & 1 & & 4 & & 3 & & 2 & & 5 & & & &\\
+& & & & 1 & & 4 & & 3 & & 2 & & 5 & & 6 & & &\\
+& & & 1 & & 4 & & 3 & & 2 & & 5 & & 6 & & 7 & &\\
+& & 1 & & 4 & & 7 & & 6 & & 5 & & 2 & & 3 & & 8 &\\
+& & & & &\vdots & & & & \vdots & & & & \vdots& & & & \\
+\end{array}
+\]
+
+Often row 1 just contains an asterisk or some other non-numerical symbol, but since the idea of adding two numbers in row 1 is moot, here row 1 just contains a 1 per analogy to the following rows and to other triangular arrangements of numbers. % Certain other values of the pyramid given above coincide with Pascal's triangle, but this is most likely a coincidence than anything else
+
+\begin{thebibliography}{2}
+\bibitem{rg} R. K. Guy, {\it Unsolved Problems in Number Theory} New York: Springer-Verlag 2004: C1
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

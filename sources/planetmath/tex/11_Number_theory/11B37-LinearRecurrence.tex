@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LinearRecurrence}
+\pmcreated{2013-03-22 16:52:29}
+\pmmodified{2013-03-22 16:52:29}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{linear recurrence}
+\pmrecord{8}{39125}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B37}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A sequence $x_0, x_1, \ldots,$ is said to satisfy a \emph{general linear recurrence} if there are constants $a_{n,i}$ and $f_n$ such that
+$$
+x_n = \sum_{i=1}^n a_{n,i} x_{n-i} + f_n
+$$
+The sequence $\{f_n\}$ is called the \emph{non-homogeneous part}
+of the recurrence. 
+
+If $f_n = 0$ for all $n$ then the recurrence is said to be \emph{homogeneous}.
+
+
+In this case if $x$ and $x'$ are two solutions to the recurrence,
+and $A$ and $B$ are constants, then $Ax +Bx'$ are also solutions.
+
+If $a_{n,i} = a_i$ for all $i$ then the recurrence is called
+a \emph{linear recurrence with constant coefficients}. Such a recurrence
+with $a_{n,i} = 0$ for all $i>k$ and $a_k \ne 0$ is said to be of 
+\emph{finite order} and the smallest such integer $k$ is called the
+\emph{order} of the recurrence. If no such $k$ exists, the recurrence is
+said to be of \emph{infinite order}.
+
+For example, the Fibonacci sequence is a linear recurrence with constant coefficients and order 2.
+
+Now suppose that $x=\{x_n\}$ satisfies a homogeneous linear recurrence of 
+finite order $k$. The polynomial 
+$F_x = u^k - a_1u^{k-1} - \ldots - a_k$ is called the \emph{companion polynomial}
+of $x$. 
+If we assume that the coefficients $a_i$ come from a field $K$ we can
+write 
+$$
+F_x = (u-u_1)^{e_1} \cdots (u-u_t)^{e_t}
+$$ 
+where $u_1, \ldots , u_t$ are the distinct roots of $F_x$ in some
+splitting field of $F_x$ containing $K$ and $e_1, \ldots , e_t$ are
+positive integers. 
+A theorem about such recurrence relations is that
+$$
+x_n = \sum_{i=1}^t g_i(n){u_i}^n
+$$ 
+for some polynomials $g_i$ in $K[X]$ where $deg(g_i) <e_i$.
+
+Now suppose further that all $K=\mathbb{C}$ and 
+
+let $U$ be the largest value of the $|u_i|$.
+
+It follows that if $U>1$ then 
+$$
+|x_n| \le CU^n 
+$$
+for some constant $C$. 
+
+
+(to be continued)
+
+ 
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DistanceToASet}
+\pmcreated{2013-03-22 13:38:37}
+\pmmodified{2013-03-22 13:38:37}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{distance to a set}
+\pmrecord{4}{34294}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $X$ be a metric space with a metric $d$. If $A$ is a non-empty
+subset of $X$ and $x\in X$, then the \emph{distance from $x$ to $A$}
+\cite{kelley} is defined as
+$$ d(x,A) := \inf_{a\in A} d(x,a).$$
+We also write $d(x,A)=d(A,x)$.
+
+Suppose that $x,y$ are points in $X$, and $A\subset X$ is non-empty.
+Then we have the following triangle inequality
+\begin{eqnarray*}
+d(x,A) &=& \inf_{a\in A} d(x,a) \\
+        &\le& d(x,y) + \inf_{a\in A} d(y,a) \\
+        &=& d(x,y) + d(y,A).
+\end{eqnarray*}
+
+If $X$ is only a pseudo-metric space, then the above definition
+and triangle-inequality also hold.
+
+\begin{thebibliography}{9}
+ \bibitem{kelley}
+ J.L. Kelley,
+ \emph{General Topology},
+ D. van Nostrand Company, Inc., 1955.
+ \end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ScientificNotation}
+\pmcreated{2013-03-22 16:39:13}
+\pmmodified{2013-03-22 16:39:13}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{scientific notation}
+\pmrecord{5}{38858}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\em Scientific notation} is a manner of expressing real numbers in base 10 which provides a more compact way of writing very large or very small numbers without needing too many zeroes. To put it algebraically, a real $x$ is expressed as $b \times 10^a$, where $b$ is a rational real number with a limited number of decimal places, and $a$ is an integer.
+
+For example, 474200000000000000000000000000000000000000001701 is written as $4.742 \times 10^{47}$ in scientific notation, while the reciprocal of that number is written as $2.10881 \times 10^{-48}$ in scientific notation. The number multiplied by the power of 10 is called the {\em mantissa}. It is customary to choose the mantissa $b$ to be in the range $0 \le |b| < 10$ so as to enable easier comparison of values. For example, it is clear from looking at the exponents alone, that of the numbers $3.1403 \times 10^{97}$ and $-4.58990321 \times 10^{1729}$, the latter has the greater absolute value.
+
+It is understood that some loss of precision is acceptable for the application at hand; that it is not necessary to know the least significant digit, or even hundreds of digits besides the few most significant to be put in the mantissa. This would be unacceptable in most applications of number theory, but it is adequate and even necessary for many applications in scientific fields such as physics, biology, seismography, etc.
+
+Most scientific calculators support scientific notation, with the 10 tacit and possibly the letter ``E'' (for exponent). Hardware calculators might be limited to exponents $-100 < a < 100$. Software calculators are usually not subject to this limitation.
+%%%%%
+%%%%%
+\end{document}

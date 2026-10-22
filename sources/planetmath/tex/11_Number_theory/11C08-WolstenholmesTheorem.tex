@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WolstenholmesTheorem}
+\pmcreated{2013-03-22 19:14:06}
+\pmmodified{2013-03-22 19:14:06}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Wolstenholme's theorem}
+\pmrecord{10}{42159}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11C08}
+\pmclassification{msc}{11A07}
+\pmrelated{HarmonicNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+We want to show first that the harmonic number
+$$H_n \;=:\; 1+\frac{1}{2}+\frac{1}{3}+\ldots+\frac{1}{n}\, \;=\; \int_0^1\frac{1\!-\!x^n}{1\!-\!x}\,dx$$
+is never an integer ($n > 1$).
+
+Denote by $p$ the greatest prime number not exceeding $n$.\, By Bertrand's postulate there is a prime $q$ with\, 
+$p < q < 2p$.\, Therefore we have\, $n < 2p$.\, If $H_n$ were an integer, then the sum
+$$n!H_n \;=\; \sum_{i=1}^n\frac{n!}{i}$$
+had to be divisible by $p$.\, However its addend $\displaystyle\frac{n!}{p}$ is not divisible by $p$ but all other addends are, whence the sum cannot be divisible by $p$.\, The contradictory situation means that $H_n$ is not integer when\, $n > 1$.\\
+
+
+\textbf{Theorem (Wolstenholme).}\, If $p$ is a prime number greater than 3, then the numerator of the harmonic number
+$$H_{p-1} \;=\; 1+\frac{1}{2}+\frac{1}{3}+\ldots+\frac{1}{p-1}$$
+is always divisible by $p^2$.\\
+
+\emph{Proof.}\, Consider the polynomial
+$$f(x) \;=:\; (x\!-\!1)(x\!-\!2)\cdots(x\!-\!p\!+\!1).$$
+One has
+\begin{align}
+f(0) \;=\; (p\!-\!1)! \;=\; f(p)
+\end{align}
+and
+\begin{align}
+f(x) \;=\; x^{p-1}+a_1x^{p-2}+a_2x^{p-3}+\ldots+a_{p-2}x+(p\!-1\!)!
+\end{align}
+where $a_1,\,a_2,\,\ldots,\,a_{p-2}$ are integers.\, Because $1,\,2,\,\ldots,\,p\!-\!1$ form a set of all modulo $p$ incongruent roots of the \PMlinkname{Fermat's congruence}{FermatsTheorem} \,$x^{p-1} \equiv 1 \pmod{p}$,\, one may write the identical congruence
+\begin{align}
+x^{p-1}\!-\!1 \;\equiv\; x^{p-1}+a_1x^{p-2}+a_2x^{p-3}+\ldots+a_{p-2}x+(p\!-1\!)! \pmod{p}.
+\end{align}
+It may be written by Wilson's theorem \,$(p\!-1\!)! \equiv -1 \pmod{p}$\, as
+\begin{align}
+a_1x^{p-2}+a_2x^{p-3}+\ldots+a_{p-2}x \;\equiv\; 0 \pmod{p},
+\end{align}
+being thus true for any integer $x$.\, From (4) one can successively infer that $p$ divides all coefficients $a_i$, i.e. that (4) actually is a formal congruence.
+
+For the derivative of the polynomial $f(x)$ one has
+$$f'(x) \;=\; (x\!-\!2)\cdots(x\!-\!p\!+\!1)+\ldots+(x\!-\!1)\cdots(x\!-\!p\!+\!2)$$
+and thus
+\begin{align}
+f'(0) \;=\; -2\cdot3\cdots(p\!-\!1)-\ldots-1\cdot2\cdots(p\!-\!2).
+\end{align}
+The Taylor series (Taylor polynomial) of $f(x)$ coincides with $f(x)$:
+$$f(x) \;=\; f(0)+\frac{f'(0)}{1!}x+\frac{f''(0)}{2!}x^2+\ldots+\frac{f^{(p-1)}(0)}{(p\!-\!1)!}x^{p-1}$$
+By (1), this equation implies
+\begin{align}
+0 \;=\; f'(0)+\frac{f''(0)}{2}p+\ldots+\frac{f^{(p-1)}(0)}{(p\!-\!1)!}p^{p-2}
+\end{align}
+Since\, $p \mid a_{p-3} = \frac{f''(0)}{2}$,\, one has\, $p \mid f''(0)$.\, It then follows by (6) that\, $p^2 \mid f'(0)$.\, And since (5) divided by $-(p\!-\!1)!$ gives
+$$1+\frac{1}{2}+\frac{1}{3}+\ldots+\frac{1}{p-1} \;=\; -\frac{f'(0)}{(p\!-\!1)!},$$
+the assertion has been proved.
+
+\begin{thebibliography}{8}
+\bibitem{K}{\sc L. Kuipers}: ``Der Wolstenholmesche Satz''.\, -- \emph{Elemente der Mathematik} \textbf{35} (1980).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

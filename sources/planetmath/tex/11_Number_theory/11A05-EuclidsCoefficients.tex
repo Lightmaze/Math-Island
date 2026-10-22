@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EuclidsCoefficients}
+\pmcreated{2013-03-22 15:15:20}
+\pmmodified{2013-03-22 15:15:20}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Euclid's coefficients}
+\pmrecord{16}{37038}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmclassification{msc}{03-04}
+%\pmkeywords{integers}
+%\pmkeywords{gcd}
+\pmrelated{BezoutsLemma}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+The following program is based on Euclid's algorithm and it determines {\em Euclid's coefficients} $t$ and $d$ of the integers $x$ and $y$.
+
+INPUT $x$, $y$ \quad  (positive integers)\\
+$m := x$, \quad  $n := y$\\
+$b := 0$, \quad  $d := 1$\\
+$p := 1$, \quad  $t := 0$\\
+WHILE \, $m \neq 0$ \, DO\\
+BEGIN\\
+$q := n$ DIV $m$ \quad (integer division)\\
+$h := m$, \quad  $m := n-qm$, \quad  $n := h$\\
+$h := b$, \quad  $b := d-qb$, \quad  $d := h$\\
+$h := p$, \quad  $p := t-qp$, \quad  $t := h$\\
+END\\
+WRITE  \,\,--- The gcd of the numbers $x$ and $y$ is\,\, $n = tx+dy$.
+
+\textbf{Remark.} \,The values of $t$ and $d$ produced by the program have the absolute values as close each other as possible (Proof = ?). \,They differ very often only by 1 when $x$ and $y$ are two successive prime numbers, e.g.
+     $$1 \,=\, 30\cdot523-29\cdot541.$$
+
+%%%%%
+%%%%%
+\end{document}

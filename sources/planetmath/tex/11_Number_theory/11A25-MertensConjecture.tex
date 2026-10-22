@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MertensConjecture}
+\pmcreated{2013-03-22 16:04:25}
+\pmmodified{2013-03-22 16:04:25}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Mertens conjecture}
+\pmrecord{10}{38130}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmsynonym{Mertens' conjecture}{MertensConjecture}
+\pmsynonym{Mertens's conjecture}{MertensConjecture}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Franz Mertens conjectured that $\left| M(n) \right| < \sqrt {n}$ where the Mertens function is defined as $$M(n) = \sum_{i = 1}^n \mu(i),$$ and $\mu$ is the M\"obius function.
+
+However, Herman J. J. te Riele and Andrew Odlyzko have proven that there exist counterexamples beyond $10^{13}$, but have yet to find one specific counterexample.
+
+The Mertens conjecture is related to the Riemann hypothesis, since $$M(x) = O(x^\frac12)$$ is another way of stating the Riemann hypothesis.
+
+Given the Dirichlet series of the reciprocal of the Riemann zeta function, we find that $$\frac{1}{\zeta(s)} = \sum_{n=1}^\infty \frac{\mu(n)}{n^s}$$ is true for $\Re(s) > 1$. Rewriting as Stieltjes integral, $$\frac{1}{\zeta(s)} = \int_0^{\infty} x^{-s}dM$$ suggests this Mellin transform: $$\frac{1}{s \zeta(s)} = \left\{ \mathcal{M} M \right\}(-s)
+= \int_0^\infty x^{-s} M(x) \frac{dx}{x}.$$ Then it follows that $$M(x) = \frac{1}{2 \pi i} \int_{\sigma-is}^{\sigma+is} \frac{x^s}{s \zeta(s)} ds$$ for $\frac{1}{2} < \sigma < 2$.
+
+\begin{thebibliography}{7}
+\bibitem{gh} G. H. Hardy and S. Ramanujan, {\it Twelve Lectures on Subjects Suggested by His Life and Work} 3rd ed. New York: Chelsea, p. 64 (1999)
+\bibitem{ao} A. M. Odlyzko and H. J. J. te Riele, ``Disproof of the Mertens Conjecture." {\it J. reine angew. Math.} {\bf 357}, pp. 138 - 160 (1985)
+
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

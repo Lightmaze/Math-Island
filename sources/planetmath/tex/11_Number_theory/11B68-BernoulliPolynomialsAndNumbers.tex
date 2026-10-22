@@ -1,0 +1,104 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BernoulliPolynomialsAndNumbers}
+\pmcreated{2013-03-22 17:58:43}
+\pmmodified{2013-03-22 17:58:43}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Bernoulli polynomials and numbers}
+\pmrecord{13}{40487}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B68}
+\pmsynonym{Bernoulli numbers and polynomials}{BernoulliPolynomialsAndNumbers}
+\pmrelated{BernoulliNumber}
+\pmrelated{CoefficientsOfBernoulliPolynomials}
+\pmrelated{TaylorSeriesViaDivision}
+\pmrelated{ReferenceRelatedToBernoulliPolynomialsAndNumbers}
+\pmrelated{EulerPolynomial}
+\pmdefines{Bernoulli polynomial}
+\pmdefines{Bernoulli number}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+% \usepackage[utf8]{inputenc}
+ \usepackage{amsthm}
+ \usepackage[T2A]{fontenc}
+ \usepackage[russian, english]{babel}
+
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+For\, $n = 0,\,1,\,2,\,\ldots$,\, the {\em Bernoulli polynomial} may be defined as the uniquely determined polynomial $b_n(x)$ satisfying
+\begin{align}
+\int_x^{x+1}\!b_n(t)\,dt \;=\; x^n.
+\end{align}
+
+The constant term of $b_n(x)$ is the $n^{\mathrm{th}}$ {\em Bernoulli number} $B_n$.
+
+The Bernoulli polynomial is often denoted also $B_n(x)$.\\
+
+
+The uniqueness of the solution $b_n(x)$ in (1) is justificated by the 
+
+\textbf{Lemma.}\, For any polynomial $f(x)$, there exists a unique polynomial $g(x)$ with the same degree satisfying
+\begin{align}
+\int_x^{x+1}\!g(t)\,dt \;=\; f(x).
+\end{align}
+
+{\em Proof.}\, For every\, $n = 0,\,1,\,2,\,\ldots$,\, the polynomial
+$$g_n(x) \;=:\; \int_x^{x+1}\!t^n\,dt \;=\; \frac{(x\!+\!1)^{n+1}-x^{n+1}}{n\!+\!1}$$
+is monic and its degree is $n$.\, If the coefficient of $x^n$ in $f(x)$ is $a_0$, then the difference $f(x)\!-\!a_0g_n(x)$ is a polynomial of degree $n\!-\!1$.\, Correspondingly we obtain $f(x)-a_0g_n(x)-a_1g_{n-1}(x)$ having the degree $n\!-\!2$ and so on.\, Finally we see that 
+$$f(x)-a_0g_n(x)-a_1g_{n-1}(x)-\ldots-a_ng_0(x)$$
+must be the zero polynomial.\, Therefore
+\begin{align*}
+f(x) & \;=\; a_0g_n(x)+a_1g_{n-1}(x)+\ldots+a_ng_0(x)\\
+     & \;=\; \sum_{i=0}^na_ig_{n-i}(x)\\
+     & \;=\; \sum_{i=0}^na_i\int_x^{x+1}t^{n-i}\,dt\\
+     & \;=\; \int_x^{x+1}\sum_{i=0}^na_it^{n-i}\,dt
+\end{align*}
+whence we have\, $\displaystyle g(x) = \sum_{i=0}^na_ix^{n-i}$.\\
+
+The proof implies also that the coefficients of $g(x)$ are rational, if the coefficients of $f(x)$ are such.\, So we know that all Bernoulli polynomials have only rational coefficients.\\
+
+
+The relation (1) implies easily, that the Bernoulli polynomials form an Appell sequence.
+
+
+\begin{thebibliography}{7}
+\bibitem{MMP} \CYRM. \CYRM. \CYRP\cyro\cyrs\cyrt\cyrn\cyri\cyrk\cyro\cyrv: 
+{\em \CYRV\cyrv\cyre\cyrd\cyre\cyrn\cyri\cyre\, \cyrv\, \cyrt\cyre\cyro\cyrr\cyri\cyryu\, \cyra\cyrl\cyrg\cyre\cyrb\cyrr\cyra\cyri\cyrch\cyre\cyrs\cyrk\cyri\cyrh \,
+\cyrch\cyri\cyrs\cyre\cyrl}. \,\CYRI\cyrz\cyrd\cyra\cyrt\cyre\cyrl\cyrsftsn\cyrs\cyrt\cyrv\cyro \,
+``\CYRN\cyra\cyru\cyrk\cyra''. \CYRM\cyro\cyrs\cyrk\cyrv\cyra \,(1982).
+\end{thebibliography}
+
+English translation:
+
+M. M. Postnikov: \emph{Introduction to algebraic number theory}. Science Publs (``Nauka'').
+Moscow (1982).
+%%%%%
+%%%%%
+\end{document}

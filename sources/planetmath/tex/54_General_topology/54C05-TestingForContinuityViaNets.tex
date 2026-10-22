@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TestingForContinuityViaNets}
+\pmcreated{2013-03-22 19:08:58}
+\pmmodified{2013-03-22 19:08:58}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{testing for continuity via nets}
+\pmrecord{7}{42053}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C05}
+\pmclassification{msc}{26A15}
+\pmrelated{Net}
+\pmrelated{FirstCountable}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+\begin{prop}  Let $X,Y$ be topological spaces and $f:X\to Y$.  Then the following are equivalent: 
+\begin{enumerate}
+\item $f$ is continuous;
+\item If $(x_i)$ is a net in $X$ converging to $x$, then $(f(x_i))$ is a net in $Y$ converging to $f(x)$.
+\item Whenever two nets $(x_i)$ and $(y_j)$ in $X$ converge to the same point, then $(f(x_i))$ and $(f(y_j))$
+converge to the same point in $Y$.
+\end{enumerate}
+\end{prop}
+\begin{proof}
+$(1)\Leftrightarrow (2)$.  Let $A$ be the (directed) index set for $i$.  Suppose $f(x)\in U$ is open in $Y$.  Then $x\in f^{-1}(U)$ is open in $X$ since $f$ is continuous.  By assumption, $(x_i)$ is a net, so there is $b \in A$ such that $x_j \in f^{-1}(U)$ for all $j\ge b$.  This means that $f(x_j)\in U$ for all $i\ge b$, so $(f(x_i))$ is a net too.
+
+Conversely, suppose $f$ is not continuous, say, at a point $x\in X$.  Then there is an open set $V$ containing $f(x)$ such that $f^{-1}(V)$ does not contain any open set containing $x$.  Let $A$ be the set of all open sets containing $x$.  Then under reverse inclusion, $A$ is a directed set (if $U_1,U_2\in A$, then $U_1\cap U_2\in A$).  Define a relation $R\subseteq A\times X$ as follows: $$(U,x)\in R \qquad\mbox{iff}\qquad x\in U-f^{-1}(V).$$  Then for each $U\in A$, there is an $x\in X$ such that $(U,x)\in R$, since $U\not\subseteq f^{-1}(V)$.  By the axiom of choice, we get a function $d\subseteq R$ from $A$ to $X$.  Write $d(U):=x_U$.  Since $A$ is directed, $(x_U)$ is a net.  In addition, $(x_U)$ converges to $x$ (just pick any $U\in A$, then for any $W\ge U$, we have $x \in W$ by the definition of $A$).  However, $(f(x_U))$ does not converge to $f(x)$, since $x_U\notin f^{-1}(V)$ for any $U\in A$.
+
+$(2)\Leftrightarrow (3)$.  Suppose nets $(x_i)$ and $(y_j)$ both converge to $z\in X$.  Then, by assumption, $(f(x_i))$ and $(f(y_j))$ are nets converging to $f(z)\in Y$.
+
+Conversely, suppose $(x_i)$ converges to $x$, and $i$ is indexed by a directed set $A$.  Define a net $(y_i)$ such that $y_i=x$ for all $i\in A$.  Then $(y_i)=(x)$ clearly converges to $x$.  Hence both $(f(x_i))$ and $(f(y_i))$ converge to the same point in $Y$.  But $(f(y_i))=(f(x))$ converges to $f(x)$, we see that $(f(x_i))$ converges to $f(x)$ as well.
+\end{proof}
+
+\textbf{Remark}.  In particular, if $X,Y$ are first countable, we may replace nets by sequences in the proposition.  In other words, $f$ is continuous iff it preserves converging sequences.
+%%%%%
+%%%%%
+\end{document}

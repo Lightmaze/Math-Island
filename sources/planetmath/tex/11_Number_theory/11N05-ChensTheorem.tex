@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ChensTheorem}
+\pmcreated{2013-03-22 16:19:39}
+\pmmodified{2013-03-22 16:19:39}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Chen's theorem}
+\pmrecord{9}{38456}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Theorem. Every sufficiently large even integer $n$ can be expressed as the sum of two primes $p + q$, or the sum of a prime and a semiprime $p + qr$, where $p$, $q$ and $r$ are all distinct primes. ``Sufficiently large'' could mean $n > 60$. For example, 62 can be represented as $p + qr$ in seven different ways: $5 + 3 \times 19$, $7 + 5 \times 11$, $11 + 3 \times 17$, etc.
+
+This theorem was proven by Chen Jingrun in 1966 but had to delay publishing his results until 1973 because of political problems in his native China. Chen's proof has been considered ``a highly technical application of sieving methods.'' (Eisenstein et al, 2004) Ross simplified Chen's proof almost a decade later. Still, a summary of the proof can run for dozens of pages. A much shorter, but excessively broad summary that can fit in here goes something like this: reduction to sieving, estimation of sieving functions, search for upper bounds using the Jurkat-Richert theorem, using a bilinear form inequality, and joining together of all these results to create a function that counts the number of representations of a given number as either $p + q$ or $p + qr$, and showing that that function always returns a positive integer when the given number is sufficiently large.
+
+The Zumkeller-Lebl conjecture, an attempt to generalize Chen's theorem to odd numbers, and unproven as of 2008, states that sufficiently large integers, be they even or odd, can also be represented as $p + qr$. To represent odd numbers this way, only one of the primes can be 2 (or both $q = r = 2$). Levy's conjecture, which applies only to odd numbers, has $q = 2$ and $p$ and $r$ both odd primes.
+
+Sequence A100952 of Sloane's OEIS lists the known twenty-one small integers that can't be expressed as specified by the theorem.
+
+\begin{thebibliography}{9}
+\bibitem{jc} J. R. Chen, ``On the representation of a larger even integer as the sum of a prime and the product of at most two primes,'' {\it Sci. Sinica} {\bf 16} (1973), 157 - 176. 
+\bibitem{ee} E. Eisenstein, L. Jain, A. Felix, ``A summary of the proof of Chen's theorem''. Ann Arbor: University of Michigan (2004)
+\bibitem{pr} P. M. Ross, ``On Chen's theorem that each large even number has the form $(p_1 + p_2)$ or $(p_1 + p_2p_3)$,'' {\it J. London Math. Soc.} {\bf 10} (1975), 500 - 506
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

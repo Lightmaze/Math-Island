@@ -1,0 +1,103 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClosedSubsetsOfACompactSetAreCompact}
+\pmcreated{2013-03-22 13:55:56}
+\pmmodified{2013-03-22 13:55:56}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{closed subsets of a compact set are compact}
+\pmrecord{16}{34691}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D30}
+\pmrelated{AClosedSetInACompactSpaceIsCompact}
+\pmrelated{ACompactSetInAHausdorffSpaceIsClosed}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\F}{\mathbbmss{F}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{thm}
+Suppose $X$ is a topological space.  If $K$ is a compact subset of $X$, $C$ is a closed set in $X$, and $C \subseteq K$, then $C$ is a compact set in $X$.
+\end{thm}
+
+The below proof follows \PMlinkname{e.g.}{Eg}~\cite{jameson}.  A proof based on the finite intersection property is given in \cite{singer}.
+
+\begin{proof}
+Let $I$ be an indexing set and $F=\{ V_\alpha \mid \alpha \in I\}$ be an arbitrary open cover for $C$. Since $X\setminus C$ is open, it follows that $F$ together with $X\setminus C$ is an open cover for $K$. Thus, $K$ can be covered by a finite number of sets, say, $V_1, \ldots, V_N$ from $F$ together with possibly $X\setminus C$. Since $C\subset K$, $V_1, \ldots, V_N$ cover $C$, and it follows that $C$ is compact.
+\end{proof}
+
+% Note: This proof was written from scratch with no reference to [4].
+The following proof uses the \PMlinkname{finite intersection property}{ASpaceIsCompactIfAndOnlyIfTheSpaceHasTheFiniteIntersectionProperty}.
+
+\begin{proof}
+Let $I$ be an indexing set and $\{A_{\alpha}\}_{\alpha \in I}$ be a collection of $X$-closed sets contained in $C$ such that, for any finite $J \subseteq I$, $\displaystyle \bigcap_{\alpha \in J} A_{\alpha}$ is not empty.  Recall that, for every $\alpha \in I$, $A_{\alpha} \subseteq C\subseteq K$.  Thus, for every $\alpha \in I$, $A_{\alpha}= K\cap A_{\alpha}$.  Therefore, $\{A_{\alpha}\}_{\alpha \in I}$ are $K$-closed subsets of $K$ (see \PMlinkname{this page}{ClosedSetInASubspace}) such that, for any finite $J \subseteq I$, $\displaystyle \bigcap_{\alpha \in J} A_{\alpha}$ is not empty.  As $K$ is compact, $\displaystyle \bigcap_{\alpha \in I} A_{\alpha}$ is not empty (again, by \PMlinkname{this result}{ASpaceIsCompactIfAndOnlyIfTheSpaceHasTheFiniteIntersectionProperty}).
+This proves the claim.
+\end{proof}
+
+\begin{thebibliography}{9}
+ \bibitem{kelley}
+ J.L.~Kelley, \emph{General Topology}, D.~van Nostrand Company, Inc., 1955.
+\bibitem{lang}
+ S.~Lang, \emph{Analysis II},
+ Addison-Wesley Publishing Company Inc., 1969.
+ \bibitem{jameson} G.J.~Jameson, \emph{Topology and Normed Spaces},
+ Chapman and Hall, 1974.
+ \bibitem{singer}
+ I.M.~Singer, J.A.~Thorpe,
+ \emph{Lecture Notes on Elementary Topology and Geometry},
+ Springer-Verlag, 1967.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

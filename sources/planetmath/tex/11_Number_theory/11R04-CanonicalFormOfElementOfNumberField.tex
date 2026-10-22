@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CanonicalFormOfElementOfNumberField}
+\pmcreated{2013-03-22 19:08:00}
+\pmmodified{2013-03-22 19:08:00}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{canonical form of element of number field}
+\pmrecord{17}{42029}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmrelated{Canonical}
+\pmrelated{SimpleFieldExtension}
+\pmrelated{CanonicalBasis}
+\pmrelated{IntegralBasis}
+\pmdefines{canonical form}
+\pmdefines{canonical form in number field}
+\pmdefines{canonical polynomial}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{canonical}
+
+\textbf{Theorem.}\, Let $\vartheta$ be an algebraic number of \PMlinkname{degree}{DegreeOfAnAlgebraicNumber} $n$.\, Any element $\alpha$ of the algebraic number field $\mathbb{Q}(\vartheta)$ may be uniquely expressed in the \emph{canonical form}
+\begin{align}
+\alpha \;=\; c_0+c_1\vartheta+c_2\vartheta^2+\ldots+c_{n-1}\vartheta^{n-1}
+\end{align}
+where the numbers $c_i$ are rational.\\
+
+\emph{Proof.}\, We start from the fact that $\mathbb{Q}(\vartheta)$ consists of all expressions formed of $\vartheta$ and rational numbers using arithmetic operations (no \PMlinkname{divisor}{Division} must vanish); such expressions lead always to the form
+\begin{align}
+\alpha \;=\; \frac{a(\vartheta)}{b(\vartheta)}
+\end{align}
+where the numerator and the denominator are polynomials in $\vartheta$ with rational coefficients (which can, in fact, be chosen integers).
+
+So, let $\alpha$ in (2) an arbitrary element of the field $\mathbb{Q}(\vartheta)$.\, Denote by $f(x)$ the minimal polynomial of $\vartheta$ over $\mathbb{Q}$.\, Since\, $b(\vartheta) \neq 0$,\, the polynomial $f(x)$ does not \PMlinkname{divide}{DivisibilityInRings} $b(x)$, and since $f(x)$ is \PMlinkname{irreducible}{IrreduciblePolynomial2}, the \PMlinkname{greatest common divisor}{PolynomialRingOverFieldIsEuclideanDomain} of $f(x)$ and $b(x)$ is a constant polynomial, which can be normed to 1.\, Thus there exist the polynomials $\varphi(x)$ and $\psi(x)$ of the ring $\mathbb{Q}[x]$ such that
+$$\varphi(x)f(x)+\psi(x)b(x) \;\equiv\; 1.$$
+Especially
+$$\varphi(\vartheta)\underbrace{f(\vartheta)}_{=\, 0}+\psi(\vartheta)b(\vartheta) \;=\; 1,$$
+whence
+$$\frac{1}{b(\vartheta)} \;=\; \psi(\vartheta)$$
+and consequently
+$$\alpha \;=\; \frac{a(\vartheta)}{b(\vartheta)} \;=\; a(\vartheta)\psi(\vartheta) \;:=\; \psi_1(\vartheta).$$
+Hence, $\alpha$ is a polynomial in $\vartheta$ with rational coefficients.
+
+Let now
+$$\psi_1(x) \;=\; q(x)f(x)+r(x) \qquad \textrm{with  }\mbox{deg}(r) < \mbox{deg}(f) = n.$$
+Denote
+$$r(x) \;:=\; c_0+c_1x+\ldots+c_{n-1}x^{n-1}\; \in \mathbb{Q}[x].$$
+It follows that 
+$$\alpha \;=\; r(\vartheta) \;=\; c_0+c_1\vartheta+\ldots+c_{n-1}\vartheta^{n-1},$$
+whence (1) is true.
+
+Suppose that we had also
+$$\alpha \;=\; s(\vartheta) \;=\; d_0+d_1\vartheta+\ldots+d_{n-1}\vartheta^{n-1}$$
+with every $d_i$ rational.\, This implies that
+$$(c_{n-1}-d_{n-1})\vartheta^{n-1}+\ldots+(c_1-d_1)\vartheta+(c_0-d_0) \;=\; 0,$$
+i.e. that $\vartheta$ satisfies the equation
+$$(c_{n-1}-d_{n-1})x^{n-1}+\ldots+(c_1-d_1)x+(c_0-d_0) \;=\; 0$$
+with rational coefficients and degree less than $n$.\, Because the degree of $\vartheta$ is $n$, it is possible only if all differences $c_i\!-\!d_i$ vanish.\, Thus
+$$d_0 \;=\; c_0, \quad d_1 \;=\; c_1, \quad\ldots, \quad d_{n-1} \;=\; c_{n-1},$$
+i.e. the \PMlinkescapetext{presentation} (1) is unique.\\
+
+\textbf{Note 1.}\, The polynomial $c_0+c_1x+\ldots+c_{n-1}x^{n-1}$ is called the \emph{canonical polynomial} of the algebraic number $\alpha$ with respect to the \PMlinkname{primitive element}{SimpleFieldExtension} $\vartheta$. \\
+
+\textbf{Note 2.}\, The theorem allows to denote the field $\mathbb{Q}(\vartheta)$ similarly as polynomial rings: 
+$\mathbb{Q}[\vartheta]$. \\
+
+\textbf{Note 3.}\, When allowed, unlike in (1), higher powers of the primitive element $\vartheta$ (whose minimal polynomial is $x^n+a_1x^{n-1}+\ldots+a_n$), one may unlimitedly write different sum \PMlinkescapetext{representations} of $\alpha$, e.g.
+\begin{align*}
+\alpha & \;=\; (c_0+c_1\vartheta+\ldots+c_{n-1}\vartheta^{n-1})
++(\vartheta^n+a_1\vartheta^{n-1}+\ldots+a_n) \\
+       &\;=\; (c_0\!+\!a_n)+\ldots+(c_{n-1}\!+\!a_1)\vartheta^{n-1}+\vartheta^n.
+\end{align*}
+
+
+
+
+%%%%%
+%%%%%
+\end{document}

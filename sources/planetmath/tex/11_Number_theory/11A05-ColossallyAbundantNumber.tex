@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ColossallyAbundantNumber}
+\pmcreated{2013-03-22 17:37:52}
+\pmmodified{2013-03-22 17:37:52}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{colossally abundant number}
+\pmrecord{4}{40052}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+An integer $n$ is a {\em colossally abundant number} if there is an exponent $\epsilon > 1$ such that the sum of divisors of $n$ divided by $n$ raised to that exponent is greater than or equal to the sum of divisors of any other integer $k > 1$ divided by $k$ raised to that same exponent. That is, $$\frac{\sigma(n)}{n^\epsilon} \geq \frac{\sigma(k)}{k^\epsilon},$$ with $\sigma(n)$ being the sum of divisors function.
+
+The first few colossally abundant numbers are 1, 2, 6, 12, 60, 120, 360, 2520, 5040, 55440, 720720, 1441440, 4324320. The index of a colossally abundant number is equal to the number of its nondistinct prime factors, that is to say that for the $i$th colossally abundant number $c_i$ the equality $i = \Omega(c_i)$ is true.
+%%%%%
+%%%%%
+\end{document}

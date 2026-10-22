@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PerfectPower}
+\pmcreated{2013-03-22 19:15:51}
+\pmmodified{2013-03-22 19:15:51}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{perfect power}
+\pmrecord{11}{42194}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D61}
+\pmclassification{msc}{11D45}
+\pmclassification{msc}{11B83}
+\pmsynonym{Pillai's conjecture}{PerfectPower}
+\pmrelated{PerfectSquare}
+\pmrelated{LimitInferior}
+\pmrelated{DoubleSeries}
+\pmrelated{SolutionsOfXyYx}
+\pmrelated{MarshallHallsConjecture}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{conjecture}
+
+The power $m^n$ is called a \emph{perfect power} if $m$ and $n$ are integers both greater than 1.  The perfect powers form the ascending order sequence (cf. Sloane's \PMlinkexternal{A001597}{http://oeis.org/classic/A001597})
+\begin{align}
+4,\,8,\,9,\,16,\,25,\,27,\,32,\,36,\,49,\,64,\,81,\,100,\,121,\,125,\,\ldots,
+\end{align}
+i.e.
+$$2^2,\;2^3,\,3^2,\;2^4 = 4^2,\;5^2,\;3^3,\;2^5,\,6^2,\;7^2,\;2^6 = 4^3 = 8^2,\;3^4 = 9^2,\;10^2,\;11^2,\;5^3,\;\ldots$$
+S. S. Pillai has conjectured in 1945, that if the $i^{\mathrm{th}}$ member of the sequence (1) is denoted by $a_i$, then 
+\begin{align}
+\liminf_{i\to\infty}(a_{i+1}\!-\!a_i) \;=\; \infty.
+\end{align}
+This does not necessarily \PMlinkescapetext{mean} that one had\, $\lim_{i\to\infty}(a_{i+1}\!-\!a_i) = \infty$,\, since there may always exist little differences $a_{i+1}\!-\!a_i$ arbitrarily far from the begin of the sequence (1).\\
+
+The equation (2) is \PMlinkname{equivalent}{Equivalent3} to the
+
+\textbf{Pillai's conjecture.}\, For any \PMlinkescapetext{fixed} positive integer $k$, the Diophantine equation
+                                        $$x^m\!-\!y^n \;=\; k$$
+has only a finite number of  solutions \,$(x,\,y,\,m,\,n)$\, where the integers $x,\,y,\,m,\,n$ all are greater than 1. \\
+
+Pillai's conjecture generalises the Catalan's conjecture ($k = 1$) in which the number of solutions is 1.\\
+
+
+The series formed by the inverse numbers of the perfect powers converges absolutely, and its sum may be calculated easily:
+\begin{align*}
+\sum_{m,n=2}^\infty\frac{1}{m^n} &\;=\; \sum_{m=2}^\infty\sum_{n=2}^\infty\frac{1}{m^n}\\
+&\;=\; \sum_{m=2}^\infty\sum_{n=2}^\infty\frac{1}{m^2}\!\cdot\!\frac{1}{m^{n-2}}\\
+&\;=\; \sum_{m=2}^\infty\frac{1}{m^2}\sum_{n=2}^\infty\frac{1}{m^{n-2}}\\
+&\;=\; \sum_{m=2}^\infty\frac{1}{m^2}\sum_{n=0}^\infty\left(\frac{1}{m}\right)^{\!n}\\
+&\;=\; \sum_{m=2}^\infty\frac{1}{m^2}\!\cdot\!\frac{1}{1\!-\!\frac{1}{m}}\\
+&\;=\; \sum_{m=2}^\infty\frac{1}{m(m\!-\!1)}\\
+&\;=\; \sum_{m=2}^\infty\left(\frac{1}{m\!-\!1}-\frac{1}{m}\right)
+\end{align*}
+The sum of this \PMlinkname{telescoping series}{TelescopingSum} is equal to 1.
+
+
+
+\begin{thebibliography}{8}
+\bibitem{P}{\sc S. S. Pillai}:\, On $a^x\!-\!b^y = c$.\; -- \emph{J. Indian math. Soc.} \textbf{2} (1936).
+\end{thebibliography}
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%
+%%%%%
+\end{document}

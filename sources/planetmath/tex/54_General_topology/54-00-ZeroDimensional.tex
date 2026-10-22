@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ZeroDimensional}
+\pmcreated{2013-03-22 14:41:05}
+\pmmodified{2013-03-22 14:41:05}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{zero dimensional}
+\pmrecord{9}{36291}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+\pmsynonym{zero-dimensional}{ZeroDimensional}
+\pmrelated{SeparationAxioms}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{defn} \cite{steen, willard}
+Suppose $X$ is a topological space. If $X$ has a basis consising of
+clopen sets, then $X$ is said to be \PMlinkescapetext{\emph{zero dimensional}}. 
+\end{defn}
+
+Examples of zero-dimensional spaces are: the set $\mathbb{Q}$ of rational numbers (with subspace topology induced from the usual metric topology on $\mathbb{R}$, the set of real numbers), the Cantor space, as well as the Sorgenfrey line.
+
+The concepts of zero-dimentionality and total disconnectedness are closely related.  Indeed, every zero-dimentional \PMlinkname{$T_1$ space}{T1Space} is totally disconnected.  Furthermore, if a topological space is locally compact and Hausdorff, then the notions of zero-dimentionality and total disconnectedness are equivalent.
+
+
+\begin{thebibliography}{9}
+\bibitem{steen} L.A. Steen, J.A.Seebach, Jr.,
+\emph{Counterexamples in topology},
+Holt, Rinehart and Winston, Inc., 1970.
+\bibitem{willard} S. Willard, \emph{General Topology},
+Addison-Wesley, Publishing Company, 1970.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

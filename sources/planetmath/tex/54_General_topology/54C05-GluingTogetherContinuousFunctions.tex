@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GluingTogetherContinuousFunctions}
+\pmcreated{2013-03-22 15:17:20}
+\pmmodified{2013-03-22 15:17:20}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{gluing together continuous functions}
+\pmrecord{16}{37081}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C05}
+
+\endmetadata
+
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\def\R{\mathbb{R}}
+\newtheorem{thm}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{closed}
+\PMlinkescapephrase{closed sets}
+\PMlinkescapeword{domains}
+\PMlinkescapeword{intersect}
+\PMlinkescapeword{necessary}
+\PMlinkescapeword{obvious}
+\PMlinkescapeword{open}
+\PMlinkescapephrase{open set}
+\PMlinkescapephrase{open sets}
+\PMlinkescapephrase{open subset}
+\PMlinkescapeword{restriction}
+\PMlinkescapeword{sufficient}
+\PMlinkescapeword{theorem}
+\PMlinkescapeword{theorems}
+\PMlinkescapeword{union}
+
+\section*{Introduction}
+
+Suppose we have a collection $\cal S$ of subsets of a topological space $X$,
+and for each $A\in\cal S$ we have a continuous function $f_A\colon A\to Y$,
+where $Y$ is another topological space.
+If the functions $f_A$ agree wherever their domains intersect,
+then we can glue them together in the obvious way to form a new function
+$f\colon\cup{\cal S}\to Y$.
+The theorems in this entry
+give some sufficient conditions for $f$ to be continuous.
+
+\section*{Theorems}
+
+\begin{thm}
+Let $X$ and $Y$ be topological spaces,
+let $\cal S$ be a locally finite collection of \PMlinkname{closed subsets}{ClosedSet} of $X$,
+and let $f\colon\cup{\cal S}\to Y$ be a function
+such that the \PMlinkname{restriction}{RestrictionOfAFunction} $f|_A$
+is continuous for all $A\in\cal S$.
+Then $f$ is continuous.
+\end{thm}
+
+\begin{thm}
+Let $X$ and $Y$ be topological spaces,
+let $\cal S$ be a collection of \PMlinkname{open subsets}{OpenSet} of $X$,
+and let $f\colon\cup{\cal S}\to Y$ be a function
+such that the restriction $f|_A$ is continuous for all $A\in\cal S$.
+Then $f$ is continuous.
+\end{thm}
+
+\section*{Notes}
+
+Note that the theorem for closed subsets
+requires the collection to be locally finite.
+To see that this is condition cannot be omitted,
+notice that any function $f\colon\R\to\R$
+restricts to a continuous function on each singleton,
+yet need not be continuous itself.
+
+\section*{Proofs}
+
+The two theorems are proved in essentially in the same way,
+but for the first theorem we need to make use of the fact that
+the union of a locally finite collection of closed sets is closed.
+
+{\bf Proof of Theorem 1.}
+Let $C$ be a closed subset of $Y$.
+Then $f^{-1}(C)=\bigcup_{A\in\cal S}(A\cap f^{-1}(C))
+=\bigcup_{A\in\cal S}(f|_A)^{-1}(C)$.
+By continuity, each $(f|_A)^{-1}(C)$ is closed in $A$.
+But by assumption each $A$ is closed in $X$,
+so it follows that each $(f|_A)^{-1}(C)$ is closed in $X$.
+Thus $f^{-1}(C)$ is the union of a locally finite collection of closed sets,
+and is therefore closed in $X$, and so closed in $\cup\cal S$.
+So $f$ is continuous.
+\qed
+
+{\bf Proof of Theorem 2.}
+Let $U$ be an open subset of $Y$.
+Then $f^{-1}(U)=\bigcup_{A\in\cal S}(A\cap f^{-1}(U))
+=\bigcup_{A\in\cal S}(f|_A)^{-1}(U)$.
+By continuity, each $(f|_A)^{-1}(U)$ is open in $A$.
+But by assumption each $A$ is open in $X$,
+so it follows that each $(f|_A)^{-1}(U)$ is open in $X$.
+Thus $f^{-1}(U)$ is the union of a collection of open sets,
+and is therefore open in $X$, and so open in $\cup\cal S$.
+So $f$ is continuous.
+\qed
+%%%%%
+%%%%%
+\end{document}

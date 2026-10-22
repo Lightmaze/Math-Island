@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SafePrime}
+\pmcreated{2013-03-22 15:49:31}
+\pmmodified{2013-03-22 15:49:31}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{safe prime}
+\pmrecord{7}{37792}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Given a prime $q$, if ${{q - 1} \over 2} = p$, where $p$ is another prime number, then $q$ is a {\em safe prime}. It follows that $q - 1 = 2p$ (and thus a semiprime) and $p$ is a Sophie Germain prime.
+
+Every safe prime matches to a Sophie Germain prime this way, and some safe primes are Sophie Germain primes themselves too, matching to yet another safe prime. A set of primes linked in this way is called a Cunningham chain of the first kind. For example, 2, 5, 11, 23, 47. With Pocklington's criterion, one can prove the primality of a safe prime if one has first proven the primality of its matching Sophie Germain prime.
+
+The first few safe primes are 5, 7, 11, 23, 47, 59, 83, 107, 167, 179, 227, ... These are listed in A005385 of Sloane's OEIS. As of 2010, the largest known safe prime is $183027 \times 2^{265441} - 1$.
+
+Safe primes have been used in various methods of cryptography, but the safety of their use depends not just on these mathematical properties but also on their being large enough that their multiples can't be factored in a reasonable period of time by contemporary computers.
+
+\subsection{External links}
+
+\PMlinkexternal{Information on the largest known Sophie Germain prime}{http://primes.utm.edu/primes/page.php?id=92223} from the Prime Pages.
+%%%%%
+%%%%%
+\end{document}

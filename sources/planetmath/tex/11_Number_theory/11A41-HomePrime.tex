@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HomePrime}
+\pmcreated{2013-03-22 19:20:36}
+\pmmodified{2013-03-22 19:20:36}
+\pmowner{Kausthub}{26471}
+\pmmodifier{Kausthub}{26471}
+\pmtitle{Home prime}
+\pmrecord{4}{42292}
+\pmprivacy{1}
+\pmauthor{Kausthub}{26471}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The home prime of a number is found by repeated concatenation of its prime factors until a prime number is obtained. For example, the home prime of 9 is 311 since 9 = 3*3 giving 33 which is composite; 33 = 3*11 giving 311 which is a prime number. So, the home prime of n for n = 2, 3, 4 ... are 2, 3, 211, 5, 23, 7, 3331113965338635107, 311, 733, 11, 233 ... (Sequence A037274 of OEIS). The number of steps needed to obtain the home prime of n for n = 2, 3, 4 ... are 0, 0, 2, 0, 1, 0, 13, 2, 4, 0, 1, 0, 5, 4, 4, 0, 1 ... (Sequence A037273 of OEIS). It is believed that every number has a homeprime. The smallest number whose homeprime is not known is 49.
+It is checked upto 109-th step and all resultant concatenations are composite. Similarly, the first few numbers whose homeprime is not known are 77, 49, 146, 246, 312, 320 ... At least 50 concatenations of all these numbers are verified.
+%%%%%
+%%%%%
+\end{document}

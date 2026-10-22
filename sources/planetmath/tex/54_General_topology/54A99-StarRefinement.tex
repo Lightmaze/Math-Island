@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{StarRefinement}
+\pmcreated{2013-03-22 16:44:13}
+\pmmodified{2013-03-22 16:44:13}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{star refinement}
+\pmrecord{7}{38959}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A99}
+\pmdefines{star}
+\pmdefines{star refine}
+\pmdefines{barycentric refinement}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\begin{document}
+Let $X$ be a set and $\mathscr{C}=\lbrace C_i\mid i\in I\rbrace$ be a cover of $X$ (we assume $C_i$ and $X$ are all subsets of some universe).  Let $A\subseteq X$.  The \emph{star} of $A$ (with respect to the cover $\mathscr{C}$) is defined as
+$$\star(A,\mathscr{C}):=\bigcup \lbrace C_i\in \mathscr{C} \mid C_i\cap A\neq \varnothing \rbrace.$$
+When $A$ is a singleton, we write $\star(x,\mathscr{C})=\star(\lbrace x\rbrace, \mathscr{C})$.  
+
+\textbf{Properties of $\star$}
+\begin{enumerate}
+\item $A\subseteq \star(A,\mathscr{C})$.
+\item If $A\subseteq B$, then $\star(A,\mathscr{C})\subseteq \star(B,\mathscr{C})$.
+\item For any cover $\mathscr{C}$ of $X$, the sets $\mathscr{C}^{\star}:=\lbrace \star(C_i,\mathscr{C}) \mid C_i\in \mathscr{C}\rbrace$ and $\mathscr{C}^b:=\lbrace \star(x,\mathscr{C})\mid x\in X\rbrace$ are both covers of $X$.
+\item $\mathscr{C}\preceq \mathscr{C}^b \preceq \mathscr{C}^{\star}$ ($\preceq$ denotes cover refinement).
+\end{enumerate}
+
+\textbf{Definitions}.  Let $\mathscr{C},\mathscr{D}$ be two covers of $X$.  If $\mathscr{C}^{\star} \preceq \mathscr{D}$, then we say that $\mathscr{C}$ is a \emph{star refinement} of $\mathscr{D}$, denoted by $\mathscr{C} \preceq^{\star} \mathscr{D}$.  If $\mathscr{C}^b \preceq \mathscr{D}$, then we say that $\mathscr{C}$ is a \emph{barycentric refinement} of $\mathscr{D}$, denoted by $\mathscr{C} \preceq^b \mathscr{D}$.
+
+\textbf{Remark}.  By property 4 above, it is easy to see that 
+$\mathscr{C} \preceq^{\star}\mathscr{D}\Rightarrow \mathscr{C} \preceq^b\mathscr{D}\Rightarrow \mathscr{C} \preceq \mathscr{D}$.
+
+\begin{thebibliography}{9}
+\bibitem{willard} S. Willard, \emph{General Topology},
+Addison-Wesley, Publishing Company, 1970.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

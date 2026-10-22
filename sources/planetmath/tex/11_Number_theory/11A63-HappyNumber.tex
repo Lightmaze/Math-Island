@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HappyNumber}
+\pmcreated{2013-03-22 16:19:56}
+\pmmodified{2013-03-22 16:19:56}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{happy number}
+\pmrecord{4}{38462}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given a base $b$ integer $$n = \sum_{i = 1}^k d_ib^{i - 1}$$ where $d_1$ is the least significant digit and $d_k$ is the most significant, and the function $$f(m) = \sum_{i = 1}^k {d_i}^2,$$ if computing $f(n)$ and iterating that function on the result eventually leads to a fixed point of 1, then $n$ is said to be a {\em happy number} in base $b$.
+
+For $b = 2$ and $b = 4$, all numbers are happy numbers. All standard positional bases have happy numbers.
+%%%%%
+%%%%%
+\end{document}

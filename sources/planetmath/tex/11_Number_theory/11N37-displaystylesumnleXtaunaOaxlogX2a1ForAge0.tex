@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{displaystylesumnleXtaunaOaxlogX2a1ForAge0}
+\pmcreated{2013-03-22 16:09:53}
+\pmmodified{2013-03-22 16:09:53}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{$\displaystyle \sum_{n \le x} (\tau(n))^a=O_a(x(\log x)^{2^a-1})$ for $a \ge 0$}
+\pmrecord{15}{38248}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N37}
+\pmrelated{AsymptoticEstimatesForRealValuedNonnegativeMultiplicativeFunctions}
+\pmrelated{DisplaystyleYOmeganOleftFracxlogXy12YRightFor1LeY2}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+
+\begin{document}
+Within this entry, $\tau$ refers to the divisor function, $\lfloor \, \cdot \, \rfloor$ refers to the floor function, $\log$ refers to the natural logarithm, $p$ refers to a prime, and $k$ and $n$ refer to positive integers.
+
+\begin{thm*}
+For $a \ge 0$, $\displaystyle \sum_{n \le x} (\tau(n))^a=O_a(x(\log x)^{2^a-1})$.
+\end{thm*}
+
+The $O_a$ indicates that the constant implied by the definition of $O$ depends on $a$.  (See Landau notation for more details.)
+
+\begin{proof}
+Let $a \ge 0$.  Since $(\tau)^a=\hbox{id}^a\circ \tau$, $\hbox{id}$ is completely multiplicative, and $\tau$ is multiplicative, $(\tau)^a$ is multiplicative.  (See composition of multiplicative functions for more details.)
+
+For any $y \ge 0$,
+
+\begin{center}
+\begin{tabular}{ll}
+$\displaystyle \sum_{p \le y} (\tau(p))^a \log p$ & $\displaystyle =\sum_{p \le y} 2^a \log p$ \\
+& $\displaystyle =2^a\sum_{p \le y} \log p$ \\
+& $\displaystyle \le 2^ay\log 4$ by \PMlinkname{this theorem}{UpperBoundOnVarthetan}. \end{tabular}
+\end{center}
+
+Also,
+
+\begin{center}
+\begin{tabular}{ll}
+$\displaystyle \sum_p \sum_{k \ge 2} \frac{(\tau(p^k))^a}{p^k} \log(p^k)$ & $\displaystyle = \sum_p \sum_{k \ge 2} \frac{(k+1)^a}{p^k} \cdot k\log p$ \\
+& $\displaystyle \le \sum_p \log p \sum_{k \ge 2} \frac{(k+1)^{a+1}}{p^k}$ \\
+& $\displaystyle \le \sum_p \frac{\log p}{p^2} \sum_{k \ge 2} \frac{(2k)^{a+1}}{p^{k-2}}$ \\
+& $\displaystyle \le 2^{a+1} \sum_p \frac{1}{p^{\frac{3}{2}}} \sum_{k \ge 2} \frac{k^{a+1}}{2^{k-2}}$ \\
+& $\displaystyle \le 2^{a+3} \zeta\left( \frac{3}{2} \right) \sum_{k \ge 2} \frac{k^{a+1}}{2^k}$, where $\zeta$ denotes the Riemann zeta function. \end{tabular}
+\end{center}
+
+Since
+
+\begin{center}
+$\begin{array}{ll}
+\displaystyle \lim_{k \to \infty} \left| \frac{\left(\frac{(k+1)^{a+1}}{2^{k+1}} \right)}{\left(\frac{k^{a+1}}{2^k}\right)} \right| & \displaystyle = \lim_{k \to \infty} \left| \frac{(k+1)^{a+1}2^k}{k^{a+1}2^{k+1}} \right| \\
+\\
+& \displaystyle = \lim_{k \to \infty} \left(\frac{1}{2}\right)\left(\frac{k+1}{k}\right)^{a+1} \\
+\\
+& \displaystyle = \frac{1}{2} \left( \lim_{k \to \infty} \frac{k+1}{k} \right)^{a+1} \\
+\\
+& \displaystyle = \frac{1}{2}, \end{array}$
+\end{center}
+
+$\displaystyle \sum_{k \ge 2} \frac{k^{a+1}}{2^k}$ converges by the ratio test.  Thus, by \PMlinkname{this theorem}{AsymptoticEstimatesForRealValuedNonnegativeMultiplicativeFunctions}, $\displaystyle \sum_{n \le x} (\tau(n))^a=O_a\left(\frac{x}{\log x}\sum_{n \le x} \frac{(\tau(n))^a}{n}\right)$.  Therefore,
+
+\begin{center}
+\begin{tabular}{ll}
+$\displaystyle \sum_{n \le x} (\tau(n))^a$ & $\displaystyle =O_a\left(\frac{x}{\log x}\sum_{n \le x} \frac{(\tau(n))^a}{n}\right)$ \\
+& $\displaystyle =O_a\left(\frac{x}{\log x}\prod_{p \le x}\left( 1+\sum_{k=1}^{\left\lfloor \frac{\log x}{\log p} \right\rfloor } \frac{(\tau(p^k))^a}{p^k} \right) \right)$ \\
+& $\displaystyle =O_a\left(\frac{x}{\log x} \left( \exp \left( \sum_{p \le x} \sum_{k=1}^{\left\lfloor \frac{\log x}{\log p} \right\rfloor } \frac{(k+1)^a}{p^k} \right) \right) \right)$ \\
+& $\displaystyle =O_a\left(\frac{x}{\log x} \left( \exp \left( \sum_{p \le x} \sum_{k=1}^{\left\lfloor \frac{\log x}{\log p} \right\rfloor } \frac{(2k)^a}{p^k} \right) \right) \right)$ \\
+& $\displaystyle =O_a\left(\frac{x}{\log x} \left( \exp \left( 2^a \sum_{p \le x} \sum_{k=1}^{\left\lfloor \frac{\log x}{\log p} \right\rfloor } \frac{k^a}{p^k} \right) \right) \right)$ \\
+& $\displaystyle =O_a\left(\frac{x}{\log x}(\exp(2^a(\log \log x+O_a(1)))) \right)$ \\
+& $\displaystyle =O_a\left(\frac{x}{\log x}(\exp(\log(\log x)^{2^a})) \right)$ \\
+& $\displaystyle =O_a\left(\frac{x}{\log x}(\log x)^{2^a} \right)$ \\
+& $\displaystyle =O_a(x(\log x)^{2^a-1})$. \end{tabular}
+\end{center}
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

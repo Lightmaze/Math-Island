@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GraphTheoremsForTopologicalSpaces}
+\pmcreated{2013-03-22 19:15:09}
+\pmmodified{2013-03-22 19:15:09}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{graph theorems for topological spaces}
+\pmrecord{7}{42178}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C05}
+\pmclassification{msc}{26A15}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+We wish to show the relation between continuous maps and their graphs is closer that it may look. Recall, that if $f:X\to Y$ is a function between sets, then the set $\Gamma(f)=\{(x,f(x))\in X\times Y\}$ is called \textit{the graph of $f$}.
+
+\textbf{Proposition 1.} If $f:X\to Y$ is a continuous map between topological spaces such that $Y$ is Hausdorff, then the graph $\Gamma(f)$ is a closed subset of $X\times Y$ in product topology.
+
+\textit{Proof.} Indeed, we will show, that $Z=(X\times Y)\backslash\Gamma(f)$ is open. Let $(x,y)\in Z$. Then $f(x)\neq y$ and thus (since $Y$ is Hausdorff) there exist open subsetes $V_1, V_2\subseteq Y$ such that $f(x)\in V_1$, $y\in V_2$ and $V_1\cap V_2=\emptyset$. Since $f$ is continuous, then $U=f^{-1}(V_1)$ is open in $X$.
+
+Note, that the condition $V_1\cap V_2=\emptyset$ implies, that  $f(U)\cap V_2=\emptyset$. Therefore $U\times V_2$ is a subset of $Z$. On the other hand this subset is open (since it is a product of two open sets) in product topology and $(x,y)\in U\times V_2$. This shows, that every point in $Z$ belongs to $Z$ together with a small neighbourhood, which completes the proof. $\square$
+
+Unfortunetly, the converse of this theorem is not true as we will see later. Nevertheless we can achieve similar result, if we assume a bit more about spaces:
+
+\textbf{Proposition 2.} Let $f:X\to Y$ be a function, where $X,Y$ are Hausdorff spaces with $Y$ compact. If $\Gamma(f)$ is a closed subset of $X\times Y$ in product topology, then $f$ is continuous.
+
+\textit{Proof.} Let $F\subseteq Y$ be a closed set. We will show that $f^{-1}(F)$ is also closed. Consider projections 
+$$\pi_Y:X\times Y\to Y; \ \ \pi_X:X\times Y\to X.$$
+They are both continuous and thus $\pi_Y^{-1}(F)$ is closed in $X\times Y$. Since $\Gamma(f)$ is also closed, then
+$$Z=\pi_Y^{-1}(F)\cap\Gamma(f)$$
+is closed in $X\times Y$. It is well known, that since $Y$ is compact, then $\pi_X$ is a closed map (this is easily seen to be equivalent to \textit{the tube lemma}). Furthermore it is easy to see, that $\pi_X(Z)=f^{-1}(F)$ and the proof is complete. $\square$
+
+\textbf{Counterexample.} Let $\mathbb{R}$ denote the set of reals (with standard topology). Consider function $f:\mathbb{R}\to\mathbb{R}$ given by $f(x)=1/x$ and $f(0)=0$. It is obvious, that $f$ is discontinuous at $x=0$, but also it can be easily checked, that $\Gamma(f)$ is closed in $\mathbb{R}^2$. Note, that $\mathbb{R}$ is not compact.
+%%%%%
+%%%%%
+\end{document}

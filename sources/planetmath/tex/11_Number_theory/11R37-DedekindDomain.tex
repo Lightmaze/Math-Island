@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DedekindDomain}
+\pmcreated{2013-03-22 12:36:06}
+\pmmodified{2013-03-22 12:36:06}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Dedekind domain}
+\pmrecord{16}{32854}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R37}
+\pmclassification{msc}{11R04}
+%\pmkeywords{Noetherian}
+%\pmkeywords{finitely generated}
+\pmrelated{IntegralClosure}
+\pmrelated{PruferDomain}
+\pmrelated{MultiplicationRing}
+\pmrelated{PrimeIdealFactorizationIsUnique}
+\pmrelated{EquivalentCharacterizationsOfDedekindDomains}
+\pmrelated{ProofThatADomainIsDedekindIfItsIdealsAreInvertible}
+\pmrelated{ProofThatADomainIsDedekindIfItsIdealsAreProductsOfPrimes}
+\pmrelated{ProofThatADomai}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A {\em Dedekind domain} is a commutative integral domain $R$ for which:
+  \begin{itemize}
+  \item Every ideal in $R$ is finitely generated.
+  \item Every nonzero prime ideal is a maximal ideal.
+  \item The domain $R$ is integrally closed in its field of fractions.
+  \end{itemize}
+
+It is worth noting that the second clause above implies that the maximal length of a strictly increasing chain of prime ideals is 1, so the Krull dimension of any Dedekind domain is at most 1.  In particular, the affine ring of an algebraic set is a Dedekind domain if and only if the set is normal, irreducible, and 1-dimensional.
+
+Every Dedekind domain is a noetherian ring.
+
+If $K$ is a number field, then $\mathcal{O}_K$, the ring of algebraic integers of $K$, is a Dedekind domain.
+%%%%%
+%%%%%
+\end{document}

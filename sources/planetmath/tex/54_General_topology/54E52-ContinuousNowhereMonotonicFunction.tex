@@ -1,0 +1,133 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ContinuousNowhereMonotonicFunction}
+\pmcreated{2013-03-22 14:59:08}
+\pmmodified{2013-03-22 14:59:08}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{continuous nowhere monotonic function}
+\pmrecord{19}{36690}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E52}
+\pmdefines{van der Waerden function}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+\usepackage{graphicx}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\begin{document}
+Let $f$ be a real-valued continuous function defined on the unit interval $[0,1]$.  It seems intuitively clear that $f$ should be monotonic on some subinterval $I$ of $[0,1]$.  Most of the concrete examples seem to support this.  A counterexample is termed \emph{nowhere monotonic}, meaning that the function is not monotonic in any subinterval of $[0,1]$.  Surprisingly, nowhere monotonic functions do exist:
+\begin{prop}
+There exists a real-valued continuous function defined on $[0,1]$ that is nowhere monotonic.
+\end{prop}
+
+A sketch of the proof goes as follows:
+\begin{enumerate}
+\item Let $X$ be the set of all continuous real-valued functions on [0,1]. Then $X$ is a complete metric space given the sup norm.  Clearly $X$ is non-empty.
+\item
+Given any subinterval $I$ of $[0,1]$, the subset $P(I)\subseteq X$ consisting of all non-decreasing functions, the subset $Q(I)\subseteq X$ consisting of all non-increasing functions, and hence their union $M(I)$, are closed.
+\item
+Furthermore, $M(I)$ is nowhere dense.
+\item
+Let $S$ be the set of all rational intervals in $[0,1]$ (a rational interval is an interval whose endpoints are rational numbers). Then $S$ is countably infinite. Take the union $M$ of all $M(I)$, where $I$ ranges over $S$.
+\item
+If $f$ is monotone on some interval $J$ in $[0,1]$, then $f$ is monotone on some rational interval $I\subseteq J$. If the theorem is false, then every continuous function is monotone on some rational interval, which means $M=X$.
+\item
+However, $M$ is a countable union of nowhere dense sets and $X$ is a non-empty complete metric space. By Baire Category Theorem, this can not happen. Therefore, $M\subset X$ strictly and there exists a continuous nowhere monotone real-valued function defined on $[0,1]$.
+\end{enumerate}
+
+\subsubsection*{Example : van der Waerden function}  The above shows the existence of such a function.  Here is an actual example of a nowhere monotonic continuous function, called the {\bf van der Waerden function}. This function, which we designate by $f$, is given by a series
+\begin{displaymath}
+f(x) = \sum_{k=0}^{\infty} f_k(x)
+\end{displaymath}
+where the functions $f_k$ are defined by
+\begin{displaymath}
+f_0(x) = 
+\begin{cases}
+x, & \text{if}\;\; 0 \leq x \leq \frac{1}{2} \\
+-x +1,\quad & \text{if}\;\; \frac{1}{2} \leq x \leq 1
+\end{cases} \quad\quad \text{and} \quad\quad f_k(x) = \frac{1}{2^k}f_0(2^kx)
+\end{displaymath}
+
+where each $f_k(x)$ is defined on $[0,2^{-k}]$.  Since $f_k$ agrees on the endpoints, we can extend the its domain to the entire unit interval by periodic extension (so that the graph of $f_k(x)$ has the shape of a sawtooth).
+
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.6]{graf1} \includegraphics[scale=0.6]{graf2} \includegraphics[scale=0.6]{graf4}
+\caption{The graphics of $f_0$ (left), $f_1$ (middle) and $f_2$ (right).}
+\end{centering}
+\end{figure}
+
+$\quad\;$
+
+\begin{figure}
+\begin{centering}
+\includegraphics[scale=0.7]{graf3}
+\caption{The graphic of the van der Waerden function (the dashed lines are the graphics of each $f_k$).}
+\end{centering}
+\end{figure}
+
+ - It is easy to check that each $f_k$ is continuous. Using the Weierstrass M-test we can also see that the series converges uniformly, and therefore conclude that $f$ itself is a continuous function (it is the uniform limit of continuous functions).
+
+ - We now prove that $f$ is nowhere monotonic: 
+
+The set $\{\frac{L}{2^k} : k \in \mathbb{N}, \;0< L < 2^k\}$ is dense in $[0,1]$. Given any interval $I\subset [0,1]$ we can then find a point of the form $\frac{L}{2^k}$ in its interior.
+
+It is easily seen that $f_j(\frac{L}{2^k})=0$ for $j \geq k$.
+
+For any integer $j>k$, consider the points $a_j :=\frac{2^{j-k}L-1}{2^j}$ and $b_j := \frac{2^{j-k}L+1}{2^j}$. The points $a_j$ (resp. $b_j$) are just the points on the left (resp. on the right) of $\frac{L}{2^k}$ when we divide the unit interval in segments of size $\frac{1}{2^j}$.
+
+A direct calculation would show that
+\begin{displaymath}
+\begin{cases}
+f_s(a_j)=0, & s\geq j \\
+f_s(a_j)=\frac{1}{2^j}, & j> s \geq k \\
+f_s(a_j)= f_s(\frac{L}{2^k}) \pm \frac{1}{2^j},\;\;\; & k > s \geq 0
+\end{cases}
+\end{displaymath}
+and similarly for $b_j$.
+
+Evaluating $f$ in the points $a_j$ and $b_j$ we obtain
+\begin{eqnarray*}
+f(a_j) & = & \sum_{s =0}^{\infty}f_s(a_j) \\
+& = & \sum_{s =0}^{j-1}f_s(a_j) \\
+& = & \sum_{s =0}^{k-1}f_s(a_j) + \sum_{s =k}^{j-1}f_s(a_j) \\
+& = & \sum_{s =0}^{k-1}f_s(\frac{L}{2^k}) + \sum_{s =0}^{k-1}(\pm \frac{1}{2^j}) + \frac{j-k}{2^j} \\
+& = & f(\frac{L}{2^k}) + \sum_{s =0}^{k-1}(\pm \frac{1}{2^j}) + \frac{j-k}{2^j}
+\end{eqnarray*}
+and similarly for $f(b_j)$.
+
+The least value we can obtain is $\displaystyle f(a_j) = f(\frac{L}{2^k}) -  \frac{k}{2^j} + \frac{j-k}{2^j}= f(\frac{L}{2^k})+ \frac{j-2k}{2^j}$, and even in this extreme case we can still choose $j$ large enough so that $a_j \in I$ and $j > 2k$.
+
+For this appropriate $j$ we see that $f(a_j)> f(\frac{L}{2^k})$, and similarly $f(b_j) > f(\frac{L}{2^k})$.
+
+Recall that $a_j < \frac{L}{2^k} < b_j$. We conclude that $f$ is not monotonic in $I$, and hence it is nowhere monotonic.
+
+\textbf{Remark}.  The van der Waerden function turns out to be nowhere differentiable as well.
+%%%%%
+%%%%%
+\end{document}

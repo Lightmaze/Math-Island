@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NewtonGirardFormulaForSymmetricPolynomials}
+\pmcreated{2013-03-22 15:32:40}
+\pmmodified{2013-03-22 15:32:40}
+\pmowner{kschalm}{9486}
+\pmmodifier{kschalm}{9486}
+\pmtitle{Newton-Girard formula for symmetric polynomials}
+\pmrecord{5}{37441}
+\pmprivacy{1}
+\pmauthor{kschalm}{9486}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11C08}
+\pmrelated{WaringsFormula}
+\pmrelated{ElementarySymmetricPolynomialInTermsOfPowerSums}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $E_k$ be the elementary symmetric polynomials in $n$ variables and $S_k$ be defined by 
+\[ S_k(x_1, ... , x_n) = \sum_{i=1}^n{x_i^k}. \]
+
+Then the $S_k$ and $E_k$ are related as follows:
+\begin{align*}
+S_1 &= E_1 \\
+S_2 &= S_1 E_1 - 2E_2 \\
+S_3 &= S_2 E_1 - S_1 E_2 + 3E_3\\
+ &\vdots \\
+S_k &= -\left(\sum_{j=1}^{k-1} {(-1)^j S_{k-j} E_j} \right) - (-1)^k k E_k 
+\end{align*}
+
+%or even more succinctly as
+
+%\[ \sum_{j=0}^{k} {(-1)^j S_{k-j} E_j} = 0, \text{     }  1 \leq n \leq k \]
+
+By applying these formulas recursively, $S_k$ can be expressed solely in terms of the $E_k$, which is often desirable. For example, since $S_1 = E_1$, $S_2 = E_1^2 - 2E_2$, and then $S_3 = (E_1^2-2E_2)E_1 - E_1 E_2 + 3E_3 = E_1^3 - 3E_1 E_2 + 3E_3$, and so on.
+
+Note that $E_0 = 1$ and  $E_k=0$ for $k > n$.
+%%%%%
+%%%%%
+\end{document}

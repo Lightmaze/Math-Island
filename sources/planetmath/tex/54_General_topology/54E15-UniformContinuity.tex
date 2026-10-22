@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UniformContinuity}
+\pmcreated{2013-03-22 16:43:15}
+\pmmodified{2013-03-22 16:43:15}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{uniform continuity}
+\pmrecord{7}{38941}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E15}
+\pmrelated{UniformlyContinuous}
+\pmrelated{UniformContinuityOverLocallyCompactQuantumGroupoids}
+\pmdefines{uniformly continuous}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\begin{document}
+In this entry, we extend the usual definition of a uniformly continuous function between metric spaces to arbitrary uniform spaces.
+
+Let $(X,\mathcal{U}),(Y,\mathcal{V})$ be uniform spaces (the second component is the uniformity on the first component).  A function $f:X\to Y$ is said to be \emph{uniformly continuous} if for any $V\in\mathcal{V}$ there is a $U\in \mathcal{U}$ such that for all $x\in X$, $U[x]\subseteq f^{-1}(V[f(x)])$.
+
+Sometimes it is useful to use an alternative but equivalent version of uniform continuity of a function:
+\begin{prop}
+Suppose $f:X\to Y$ is a function and $g:X\times X \to Y\times Y$ is defined by $g(x_1,x_2)=(f(x_1), f(x_2))$.  Then $f$ is uniformly continuous iff for any $V\in \mathcal{V}$, there is a $U\in \mathcal{U}$ such that $U\subseteq g^{-1}(V)$.
+\end{prop}
+\begin{proof}  Suppose $f$ is uniformly continuous.  Pick any $V\in \mathcal{V}$.  Then $U\in \mathcal{U}$ exists with $U[x]\subseteq f^{-1}(V[f(x)])$ for all $x\in X$.  If $(a,b)\in U$, then $b\in U[a]\subseteq f^{-1}(V[f(a)])$, or $f(b)\subseteq V[f(a)]$, or $g(a,b)=(f(a),f(b))\in V$.  The converse is straightforward.
+\end{proof}
+
+\textbf{Remark}.  Note that we could have picked $U$ so the inclusion becomes an equality.
+
+\begin{prop}.  If $f:X\to Y$ is uniformly continuous, then it is continuous under the uniform topologies of $X$ and $Y$.\end{prop}
+\begin{proof}
+Let $A$ be open in $Y$ and set $B=f^{-1}(A)$.  Pick any $x\in B$.  Then $y=f(x)$ has a uniform neighborhood $V[y]\subseteq A$.  By the uniform continuity of $f$, there is an entourage $U\in \mathcal{U}$ with $x\in U[x]\subseteq f^{-1}(V[y])\subseteq f^{-1}(A)=B$.
+\end{proof}
+
+\textbf{Remark}.  The converse is not true, even in metric spaces.
+%%%%%
+%%%%%
+\end{document}

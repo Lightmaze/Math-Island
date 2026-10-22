@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ValuationRingOfAField}
+\pmcreated{2013-03-22 19:03:25}
+\pmmodified{2013-03-22 19:03:25}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{valuation ring of a field}
+\pmrecord{4}{41937}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R99}
+\pmclassification{msc}{12J20}
+\pmclassification{msc}{13A18}
+\pmclassification{msc}{13F30}
+%\pmkeywords{valuation}
+%\pmkeywords{discrete}
+\pmrelated{HenselianField}
+\pmrelated{RingOfExponent}
+\pmdefines{valuation ring}
+\pmdefines{discrete valuation}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Abs}[1]{\left\lvert #1\right\rvert}
+\newcommand{\BQ}{\mathbb{Q}}
+\newcommand{\BR}{\mathbb{R}}
+\newcommand{\BZ}{\mathbb{Z}}
+\newcommand{\BN}{\mathbb{N}}
+\newcommand{\suchthat}{\ \mid\ }
+\newcommand{\smm}{\mathfrak{m}}
+\newcommand{\U}[1]{{#1}^*}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{defn}{Definition}
+\begin{document}
+In this article, $K$ is a field with a nontrivial nonarchimedean absolute value (valuation) $\Abs\cdot$ and $\U{K}$ its multiplicative group of units (nonzero elements).
+
+\begin{prop} ~
+\newline
+\begin{enumerate} \item $A=_{df}\{x\in K\suchthat \Abs x\leq 1\}$ is a ring, called the \emph{valuation ring} of $(K,\Abs{\cdot})$,
+\item $\smm =_{df}\{x\in K\suchthat \Abs x < 1\}$ is the unique maximal ideal of $A$, and $\U{A}=\{x\in K\suchthat \Abs x =1\}$,
+\item $K$ is the fraction field of $A$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof} For (1), note that $1\in A$, that $x,y\in A\Rightarrow \Abs x\leq 1, \Abs y \leq 1\Rightarrow\Abs{xy} \leq 1\Rightarrow xy\in A$, and that $x,y\in A\Rightarrow \Abs{x-y}\leq\max(\Abs x,\Abs {-y})\leq 1\Rightarrow x-y\in A$.
+
+For (2), it is obvious that $\smm+\smm\subset\smm$ and that $\smm A\subset\smm$ so that $\smm$ is an ideal. Clearly $A-\smm = \{x\in K\suchthat \Abs x = 1\}$ which is obviously $\U{A}$ and the result follows from general considerations regarding units in a local ring.
+
+Finally, to prove (3), choose some $x\in K$ with $\Abs x < 1$ (to do this, choose any $z$ whose valuation is not $1$; then either $z$ or $z^{-1}$ will suffice). Given $y\in\U{K}$, there is some $n$ such that $\Abs y\cdot\Abs{x}^n<1$, so that $yx^n\in A$ and thus
+\[\frac{yx^n}{x^n}= y\]
+is in the fraction field of $A$.
+\end{proof}
+
+We say that the absolute value $\Abs{\cdot}$ is \emph{discrete} if $\Abs{\U{K}}$ is a discrete subgroup of $\BR_{>0}$. Note that $\BR_{>0}\cong (\BR,+)$ via $\log$, so discrete subgroups are isomorphic to $\BZ$ (are a lattice in $\BR$), and thus a discrete absolute value is of the form $\Abs{\U{K}} = \alpha^{\BZ}$ for some $\alpha\geq 1$, and $\alpha=1$ corresponds to the trivial absolute value.
+
+\begin{prop} In the notation of the preceding theorem, TFAE:
+\begin{enumerate}
+\item $A$ is principal
+\item $\Abs\cdot$ is discrete
+\item $A$ is Noetherian
+\end{enumerate}
+If any of these hold, $A$ is a discrete valuation ring (DVR).
+\end{prop}
+\begin{proof} ($1 \Rightarrow 2$): If $A$ is principal, then $\smm=(\pi)$ with $\Abs{\pi} < 1$. Since $A$ is a UFD, any element $x\in A-\{0\}$ can be written uniquely as $x=u\pi^n$ for $u\in\U{A}, n\geq 0$, and then $\Abs x = \Abs u \cdot \Abs{\pi}^n = \Abs{\pi}^n$. Thus $\Abs{A-\{0\}} = \Abs{\pi}^{\BN}$ and $\Abs{\U{K}} = \Abs{\pi}^{\BZ}$ so that $\Abs \cdot$ is discrete.
+
+($2 \Rightarrow 1$): If the absolute value is discrete, we may choose $\pi\in \U{K}$ with $\Abs{\pi}<1$ but with the largest possible absolute value strictly less than $1$. Then for $x\in\smm$, we have $\Abs x < 1$, so $\Abs x\leq \Abs{\pi}$ and thus $\displaystyle \Abs{\frac{x}{\pi}}\leq 1$ so that $\displaystyle \frac{x}{\pi}\in A$. It follows that $x\in \pi A = (\pi)$, so $A$ is principal.
+
+Clearly principal implies Noetherian, so it suffices to prove that $3\Rightarrow 2$: if $\Abs\cdot$ is not discrete, then $A$ is not Noetherian. But if the absolute value is not discrete, we can choose a convergent sequence of absolute values and, using the fact that the valuations form an additive subgroup of $\BR$, we can find a convergent sequence $(r_n)$ with $r_{n+1}>r_n$, $\lim r_n=1$, and a sequence of elements of $A$ with $\Abs{x_n} = r_n$. Now consider $I_n=\{x\in A, \Abs x\leq r_n\}$. Then
+\[I_1\subset\cdots\subset I_n\subset I_{n+1}\subset\cdots\]
+and $x_{n+1}\in I_{n+1}\backslash I_n$, so that $A$ is not Noetherian.
+
+The fact that $A$ is a DVR follows trivially if any of these conditions holds.
+\end{proof}
+
+%%%%%
+%%%%%
+\end{document}

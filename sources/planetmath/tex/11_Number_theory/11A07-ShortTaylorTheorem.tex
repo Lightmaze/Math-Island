@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ShortTaylorTheorem}
+\pmcreated{2013-04-01 13:19:12}
+\pmmodified{2013-04-01 13:19:12}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{short Taylor theorem}
+\pmrecord{1}{}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmclassification{msc}{11A07}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%\usepackage{xypic}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+If $f(x)$ is a polynomial with integer coefficients and $x_0$ and $h$ integers, then the congruence
+\begin{align}
+f(x_0\!+\!h) \;\equiv\; f(x_0)+f'(x_0)h \;\; \pmod{h^2}
+\end{align}
+is in force.
+
+
+{\it Proof.}\; Because of the linear properties of (1) we can confine us to the monomials\, $f(x) := x^n$.\, Then\, $f'(x) = nx^{n-1}$.\,  By the binomial theorem we have
+\begin{align}
+(x_0\!+\!h)^n \;=\; x_0^n\!+\!nx_0^{n-1}h+h^2P(x_0)
+\end{align}
+where $P(x_0)$ is a polynomial in $x_0$ with integer coefficients.\, The equality (2) may be written as the asserted congruence (1).
+\end{document}

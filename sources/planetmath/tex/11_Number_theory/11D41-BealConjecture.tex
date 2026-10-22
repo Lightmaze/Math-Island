@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BealConjecture}
+\pmcreated{2013-03-22 13:16:53}
+\pmmodified{2013-03-22 13:16:53}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Beal conjecture}
+\pmrecord{16}{33765}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D41}
+\pmsynonym{Beal's conjecture}{BealConjecture}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+The Beal conjecture \PMlinkescapetext{states}:
+
+Let $A,B,C,x,y,z$ be nonzero integers such that $x$, $y$, and $z$ are all
+$\ge 3$, and \begin{equation}A^x+B^y=C^z\end{equation}
+Then $A$, $B$, and $C$ (or any two of them) are not relatively prime.
+
+It is clear that the famous statement known as Fermat's Last Theorem
+would follow from this stronger claim.
+
+Solutions of equation (1) are not very scarce. One parametric solution is
+$$[a(a^m + b^m)]^m + [b(a^m + b^m)]^m = (a^m + b^m)^{m+1}$$
+for $m\ge 3$, and $a,b$ such that the \PMlinkescapetext{terms} are nonzero.
+But computerized searching brings
+forth quite a few additional solutions, such as:
+
+\begin{align*}
+3^3 + 6^3 &= 3^5 \\
+3^9 + 54^3 &= 3^{11} \\
+3^6 + 18^3 &= 3^8 \\
+7^6 + 7^7 &= 98^3 \\
+27^4 + 162^3 &= 9^7 \\
+211^3 + 3165^3 &= 422^4 \\
+386^3 + 4825^3 &= 579^4 \\
+307^3 + 614^4 &= 5219^3 \\
+5400^3 + 90^4 &= 630^4 \\
+217^3 + 5642^3 &= 651^4 \\
+271^3 + 813^4 &= 7588^3 \\
+602^3 + 903^4 &= 8729^3 \\
+624^3 + 14352^3 &= 312^5 \\
+1862^3 + 57722^3 &= 3724^4 \\
+2246^3 + 4492^4 &= 74118^3 \\
+1838^3 + 97414^3 &= 5514^4
+\end{align*}
+Mysteriously, the summands have a common factor $>1$ in each instance.
+
+Dan Vanderkam has verified the Beal conjecture for all values of all six variables up to 1000, and he provides source code for anyone who wants to repeat the verification for himself. A 64-bit machine is required. See http://www.owlnet.rice.edu/~danvk/beal.html
+
+This conjecture is ``wanted in Texas, dead or alive''. For the details,
+plus some additional \PMlinkescapetext{links}, see
+\PMlinkexternal{Mauldin}{http://www.math.unt.edu/~mauldin/beal.html}.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EulerPseudoprime}
+\pmcreated{2013-03-22 16:49:48}
+\pmmodified{2013-03-22 16:49:48}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Euler pseudoprime}
+\pmrecord{5}{39070}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmsynonym{Euler-Jacobi pseudoprime}{EulerPseudoprime}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\PMlinkescapeword{regular}
+\PMlinkescapeword{pseudoprime}
+\PMlinkescapeword{pseudoprimes}
+
+An {\em Euler pseudoprime} $p$ to a base $b$ is a composite number for which the congruence $$b^{\frac{p - 1}{2}} \equiv \left(\frac{b}{p}\right) \mod p$$ holds true, where $\left(\frac{a}{n}\right)$ is the Jacobi symbol.
+
+For example, given $b = 2$, our Jacobi symbol $\left(\frac{2}{p}\right)$ with $p$ odd will be either 1 or $-1$. Then, for $p = 561$, the Jacobi symbol is 1. Next, we see that 2 raised to the 280th is 1942668892225729070919461906823518906642406839052139521251812409738904285205208498176, which is one more than 561 times 3462867900580622229802962400754935662464183313818430519165441015577369492344400175. Hence 561 is an Euler pseudoprime. The next few Euler pseudoprimes to base 2 are 1105, 1729, 1905, 2047, 2465, 4033, 4681 (see A047713 in Sloane's OEIS). An Euler pseudoprime is sometimes called an {\em Euler-Jacobi pseudoprime}, to distinguish it from a \PMlinkname{pseudoprime}{PseudoprimeP} for which the congruence can be either to 1 or $-1$ regardless of the Jacobi symbol (341 is then an Euler pseudoprime under this relaxed definition). Both terms are also sometimes used alone with 2 as the implied base.
+
+If a composite number is an Euler pseudoprime to a given base, it is also a regular pseudoprime to that base, but not all regular pseudoprimes to that base are also Euler pseudoprimes to it.
+
+\begin{thebibliography}{2}
+\bibitem{rc} R. Crandall \& C. Pomerance, {\it Prime Numbers: A Computational Perspective}, Springer, NY, 2001: 5.1
+\bibitem{bf} B. Fine \& G. Rosenberger, {\it Number Theory: An Introduction via the Distribution of the Primes} Boston: Birkh\"auser, 2007: Definition 5.3.1.4
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

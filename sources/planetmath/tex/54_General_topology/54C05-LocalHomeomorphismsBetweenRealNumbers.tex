@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LocalHomeomorphismsBetweenRealNumbers}
+\pmcreated{2013-03-22 18:53:50}
+\pmmodified{2013-03-22 18:53:50}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{local homeomorphisms between real numbers}
+\pmrecord{5}{41744}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\textbf{Proposition.} Let $I$ be an open interval and $f:I\to\mathbb{R}$ be a continuous map. Then $f$ is a local homeomorphism if and only if $f$ is a homeomorphism onto image.
+
+\textit{Proof.} ,,$\Leftarrow$'' If $f$ is a homeomorphism onto image, then (in particular) $f$ is monotonic and continuous, thus $f(I)$ is open in $\mathbb{R}$ (please, see \PMlinkname{this entry}{InjectiveMapBetweenRealNumbersIsAHomeomorphism} for more details). It is easy to see that therefore $f$ is a local homeomorphism.
+
+,,$\Rightarrow$'' Assume that $f$ is not a homeomorphism onto image. It is well known, that this implies that $f$ is not injective (please, see \PMlinkname{this entry}{InjectiveMapBetweenRealNumbersIsAHomeomorphism} for more details). Let $x,y\in I$ be such that $x<y$ and $f(x)=f(y)$. Then there exists $c\in I$ such that $x<c<y$ and $c$ is a local maximum of $f$. Thus (since $f$ is a Darboux function) for any $\varepsilon>0$ there are points $x_{\varepsilon}, y_{\varepsilon}\in(c-\varepsilon,c+\varepsilon)$ such that $f(x_{\varepsilon})=f(y_{\varepsilon})$. This obviously implies that $f$ cannot be locally inverted around $c$. $\square$
+%%%%%
+%%%%%
+\end{document}

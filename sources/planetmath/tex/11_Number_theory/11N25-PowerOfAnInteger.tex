@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PowerOfAnInteger}
+\pmcreated{2013-03-22 14:22:17}
+\pmmodified{2013-03-22 14:22:17}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{power of an integer}
+\pmrecord{18}{35858}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N25}
+\pmsynonym{power}{PowerOfAnInteger}
+%\pmkeywords{integer}
+%\pmkeywords{power}
+%\pmkeywords{radical of an integer}
+\pmrelated{RadicalOfAnInteger}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $n$ be a non zero integer of absolute value not equal to one. The \emph{power} of $n$, written $P(n)$ is defined by :
+ \[P(n)=\frac{\log{|n|}}{\log{\operatorname{rad}(n)}}.\]
+where $\operatorname{rad}(n)$ is the radical of the integer $n$.\footnote{Since $|n| \neq 1$, we have $\operatorname{rad}(n) \neq 1$ also, so the denominator will not be equal to zero}
+
+If $n = m^k$, then $P(n) = k P(m)$; in particular, if $n$ is a prime power, $n = p^k$, then $P(n) = k$.  This observation explains why the term ``power'' is used
+for this concept.  At the same time, it is worth pointing out that, in general,
+the power of an integer will not itself be an integer.  For instance,
+ \[P(12) = {\log 12 \over \log \operatorname{rad} (12)} = {\log 12 \over \log 6} = 1.3868\ldots \]
+
+Note that it doesn't matter what base one uses to compute the logarithm (as long as one uses the same base to compute the logarithm on the numerator and in the denominator!) because, upon changing base, both numerator and denominator will be multiplied by the same factor.
+
+%%%%%
+%%%%%
+\end{document}

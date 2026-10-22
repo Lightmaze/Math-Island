@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EulerPhiAtAProduct}
+\pmcreated{2014-02-18 14:02:24}
+\pmmodified{2014-02-18 14:02:24}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Euler phi at a product}
+\pmrecord{6}{41779}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmclassification{msc}{11-00}
+\pmrelated{EulerPhifunction}
+\pmrelated{DivisibilityByPrimeNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+If the positive greatest common divisor of the integers $a$ and 
+$b$ is $d$, then
+$$\varphi(ab) \;=\; \frac{\varphi(a)\,\varphi(b)\,d}{\varphi(d)}.$$\\
+
+
+\emph{Proof.}\, Using the positive prime factors $p$, the right hand side of the asserted equation is 
+\begin{align*}
+\frac{d\cdot a\prod_{p\mid a}\frac{p-1}{p}\cdot b\prod_{p\mid b}\frac{p-1}{p}}{d\prod_{p\mid a,\,p\mid b}\frac{p-1}{p}}
+& \;=\; 
+\frac{ab\prod_{p\mid a,\,p\nmid b}\frac{p-1}{p}\cdot\prod_{p\mid a,\,p\mid b}\frac{p-1}{p}\cdot\prod_{p\mid b,\,p\nmid a}\frac{p-1}{p}\cdot\prod_{p\mid b,\,p\mid a}\frac{p-1}{p}}{\prod_{p\mid a,\,p\mid b}\frac{p-1}{p}}\\
+& \;=\; ab\prod_{p \mid a\;\lor\;p \mid b}\frac{p\!-\!1}{p} \;=\; ab\prod_{p \mid ab}\frac{p\!-\!1}{p}
+\;=\; \varphi(ab),
+\end{align*}
+Q.E.D.
+%%%%%
+%%%%%
+\end{document}

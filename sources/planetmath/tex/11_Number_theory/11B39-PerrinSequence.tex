@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PerrinSequence}
+\pmcreated{2013-03-22 16:05:19}
+\pmmodified{2013-03-22 16:05:19}
+\pmowner{Mravinci}{12996}
+\pmmodifier{Mravinci}{12996}
+\pmtitle{Perrin sequence}
+\pmrecord{5}{38149}
+\pmprivacy{1}
+\pmauthor{Mravinci}{12996}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B39}
+\pmdefines{Perrin number}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Construct a recurrence relation with initial terms $a_0 = 3$, $a_1 = 0$, $a_2 = 2$ and $a_n = a_{n - 3} + a_{n - 2}$ for $n > 2$. The first few terms of the sequence defined by this recurrence relation are: 3, 0, 2, 3, 2, 5, 5, 7, 10, 12, 17, 22, 29, 39, 51, 68, 90, 119, 158, 209, 277, 367 (listed in A001608 of Sloane's OEIS). This is the {\em Perrin sequence}, sometimes called the {\em Ondrej Such sequence}. Its generating function is $$G(a(n);x)=\frac{3-x^2}{1-x^2-x^3}.$$ A number in the Perrin sequence is called a \emph{Perrin number}.
+
+It has been observed that if $n|a_n$, then $n$ is a prime number, at least among the first hundred thousand integers or so. However, the square of 521 passes this test.
+
+The $n$th Perrin number asymptotically matches the $n$th power of the plastic constant.
+
+\begin{thebibliography}{1}
+\bibitem{wa} W. W. Adams and D. Shanks, ``Strong primality tests that are not sufficient" {\it Math. Comp.} {\bf 39}, pp. 255 - 300 (1982)
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ContraharmonicMeansAndPythagoreanHypotenuses}
+\pmcreated{2013-11-03 21:13:57}
+\pmmodified{2013-11-03 21:13:57}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{contraharmonic means and Pythagorean hypotenuses}
+\pmrecord{24}{41259}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D09}
+\pmclassification{msc}{11D45}
+\pmclassification{msc}{11Z05}
+\pmclassification{msc}{11A05}
+\pmsynonym{contraharmonic integers}{ContraharmonicMeansAndPythagoreanHypotenuses}
+\pmsynonym{Pythagorean hypotenuses are contraharmonic means}{ContraharmonicMeansAndPythagoreanHypotenuses}
+\pmrelated{FirstPrimitivePythagoreanTriplets}
+\pmrelated{ProofOfPythagoreanTriplet2}
+\pmrelated{SquareOfSum}
+\pmrelated{PythagoreanTriple}
+\pmrelated{DerivationOfPythagoreanTriples}
+\pmrelated{LinearFormulasForPythagoreanTriples}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+One can see that all values of $c$ in the table of the \PMlinkname{parent entry}{IntegerContraharmonicMeans} are hypotenuses in a right triangle with integer \PMlinkname{sides}{Triangle}.\, E.g., 41 is the contraharmonic mean of 5 and 45;\; $9^2\!+\!40^2 \;=\; 41^2$.\\
+
+\textbf{Theorem.}\; Any integer contraharmonic mean of two different positive integers is the hypotenuse of a Pythagorean triple.\, Conversely, any hypotenuse of a Pythagorean triple is contraharmonic mean of two different positive integers.
+
+{\em Proof.}\, $1^\circ.$\, Let the integer $c$ be the contraharmonic mean 
+                 $$c \;=\; \frac{u^2\!+\!v^2}{u\!+\!v}$$
+of the positive integers $u$ and $v$ with\, $u > v$.\, Then\; $u\!+\!v \,\mid\, u^2\!+\!v^2 \,=\, (u\!+\!v)^2-2uv$,\,
+whence 
+$$u\!+\!v \,\mid\, 2uv,$$
+and we have the positive integers
+$$a \;=:\; u\!-\!v \;=\; \frac{u^2\!-\!v^2}{u\!+\!v}, \quad b \;=:\; \frac{2uv}{u\!+\!v}$$
+satisfying
+$$a^2\!+\!b^2 \;=\; \frac{(u^2\!-\!v^2)^2\!+\!(2uv)^2}{(u\!+\!v)^2} 
+= \frac{u^4\!-\!2u^2v^2+v^4\!+\!4u^2v^2}{(u\!+\!v)^2}  
+= \frac{u^4\!+\!2u^2v^2\!+\!v^4}{(u\!+\!v)^2} = \frac{(u^2\!+\!v^2)^2}{(u\!+\!v)^2} \;=\; c^2.\\$$
+
+$2^\circ.$\, Suppose that $c$ is the hypotenuse of the Pythagorean triple \,$(a,\,b,\,c)$,\, whence\, 
+$c^2 = a^2\!+\!b^2$.\, Let us consider the rational numbers
+\begin{align}
+u =: \frac{c\!+\!b\!+\!a}{2}, \quad v =: \frac{c\!+\!b\!-\!a}{2}.
+\end{align}
+If the triple is \PMlinkname{primitive}{PythagoreanTriple}, then two of the integers $a,\,b,\,c$ are odd and one of them is even; if not, then similarly or all of $a,\,b,\,c$ are even.\, Therefore, $c\!+\!b\!\pm\!a$ are always even and accordingly $u$ and $v$ positive integers.\, We see also that\, $u\!+\!v = c\!+\!b$.\, Now we obtain
+\begin{align*}
+u^2\!+\!v^2\; & =\;  \frac{c^2\!+\!b^2\!+\!a^2\!+\!2ab\!+\!2bc\!+\!2ca\!+\!c^2\!+\!b^2\!+\!a^2\!-\!2ab\!+\!2bc\!-\!2ca}{4}\\
+              & =\; \frac{2c^2\!+\!2(a^2\!+\!b^2)\!+\!4bc}{4} = \frac{4c^2\!+\!4bc}{4} = c(c\!+\!b)\\
+              & =\; c(u\!+\!v).
+\end{align*}
+Thus, $c$ is the contraharmonic mean $\displaystyle\frac{u^2\!+\!v^2}{u\!+\!v}$ of the different integers $u$ and $v$. (N.B.:\, When the values of $a$ and $b$ in (1) are changed, another value of $v$ is obtained.\, Cf. the Proposition 4 in the 
+\PMlinkname{parent entry}{IntegerContraharmonicMeans}.)
+
+\begin{thebibliography}{8}
+\bibitem{K}{\sc J. Pahikkala}: ``On contraharmonic mean and Pythagorean triples''.\, -- \emph{Elemente der Mathematik} \textbf{65}:2 (2010).
+\end{thebibliography}
+
+
+
+%%%%%
+%%%%%
+\end{document}

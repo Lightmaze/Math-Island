@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CofiniteAndCocountableTopologies}
+\pmcreated{2013-03-22 13:03:30}
+\pmmodified{2013-03-22 13:03:30}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{cofinite and cocountable topologies}
+\pmrecord{21}{33464}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B99}
+\pmrelated{FiniteComplementTopology}
+\pmdefines{cofinite topology}
+\pmdefines{cocountable topology}
+\pmdefines{cofinite}
+\pmdefines{cocountable}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\def\emptyset{\varnothing}
+\begin{document}
+\PMlinkescapeword{words}
+
+The \emph{cofinite topology} on a set $X$
+is defined to be the topology $\mathcal{T}$ where
+\[
+  \mathcal{T} = \{A \subseteq X \mid
+  X \setminus A \hbox{ is finite, or } A=\emptyset\}.
+\]
+In other words, the closed sets in the cofinite topology are $X$ and the finite subsets of $X$.
+
+Analogously, the \emph{cocountable topology} on $X$
+is defined to be the topology
+in which the closed sets are $X$ and the countable subsets of $X$.
+
+The cofinite topology on $X$ is the coarsest \PMlinkname{$T_1$ topology}{T1Space} on $X$.
+
+The cofinite topology on a finite set $X$ is the discrete topology.
+Similarly, the cocountable topology on a countable set $X$ is the discrete topology.
+
+A set $X$ together with the cofinite topology forms a compact topological space.
+%%%%%
+%%%%%
+\end{document}

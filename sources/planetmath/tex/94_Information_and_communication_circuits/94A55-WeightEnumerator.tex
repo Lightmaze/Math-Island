@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WeightEnumerator}
+\pmcreated{2013-03-22 15:13:23}
+\pmmodified{2013-03-22 15:13:23}
+\pmowner{GrafZahl}{9234}
+\pmmodifier{GrafZahl}{9234}
+\pmtitle{weight enumerator}
+\pmrecord{4}{36987}
+\pmprivacy{1}
+\pmauthor{GrafZahl}{9234}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94A55}
+\pmclassification{msc}{94B05}
+\pmsynonym{Hamming weight enumerator}{WeightEnumerator}
+%\pmkeywords{code}
+%\pmkeywords{linear code}
+%\pmkeywords{Hamming}
+\pmrelated{KleeneStar}
+\pmrelated{LinearCode}
+\pmdefines{complete weight enumerator}
+\pmdefines{weight distribution}
+\pmdefines{Hamming weight distribution}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Prod}{\prod\limits}
+\newcommand{\Sum}{\sum\limits}
+\newcommand{\mbb}{\mathbb}
+\newcommand{\mbf}{\mathbf}
+\newcommand{\mc}{\mathcal}
+
+% Math Operators/functions
+\DeclareMathOperator{\cwe}{cwe}
+\DeclareMathOperator{\we}{we}
+\DeclareMathOperator{\wt}{wt}
+\begin{document}
+Let $A$ be an alphabet and $C$ a finite subset of $A^*$.
+Then the \emph{complete weight enumerator} of $C$, denoted by
+$\cwe_C$, is the polynomial in $|A|$ indeterminates $X_a$ labeled by
+the letters of $a\in A$ with integer coefficients defined by
+\begin{equation*}
+\cwe_C((X_a)_{a\in A}):=\Sum_{c\in C}\Prod_{a\in A}X_a^{\wt_a(c)},
+\end{equation*}
+where $\wt_a(c)$ is the $a$-weight of the string $c$.
+
+If $A$ is an abelian group, one defines the \emph{Hamming weight
+  enumerator} of $C$, denoted by $\we_C$, as a polynomial in only two
+  indeterminates $X$ and $Y$:
+\begin{equation*}
+\we_C(X,Y):=\cwe_C((X_a)_{a\in A})\vert_{\begin{array}{l}\scriptstyle X_0=X\\\scriptstyle X_a=Y\text{ if
+  }a\neq 0\end{array}},
+\end{equation*}
+that is one distinguishes only between zero and the non-zero letters
+of the strings in $C$.
+
+If $C$ is a code of block length $n$, then both $\cwe_C$ and $\we_C$
+are \PMlinkid{homogeneous of degree}{6577} $n$. Therefore, one can set $Y=1$ in $\we_C$
+in this case without losing information. The resulting polynomial can
+be uniquely rewritten in the form
+\begin{equation*}
+\we_C(X,1)=\Sum_{i=0}^nA_iX^{n-i},
+\end{equation*}
+the sequence $A_0,\ldots A_n$ defining the \emph{Hamming weight
+  distribution}. Analogously, one can define more general weight
+  distributions by setting all but one indeterminate in
+  $\cwe_C((X_a)_{a\in A})$ equal to one.
+
+\subsubsection*{Examples}
+\begin{itemize}
+\item Let $C$ be the ternary (that is $A=\mbb{F}_3=\{0,1,2\}$) linear
+  code of block length $4$ \PMlinkescapetext{spanned by} the vectors $(1,1,1,1)$, $(1,1,0,0)$
+  and $(1,0,1,0)$. Then
+\begin{equation*}
+\cwe_C(X_0,X_1,X_2)=X_0^4+4X_0^2X_1^2+4X_0^2X_1X_2+4X_0^2X_2^2+4X_0X_1^2X_2+4X_0X_1X_2^2+X_1^4+4X_1^2X_2^2+X_2^4
+\end{equation*}
+and
+\begin{equation*}
+\we_C(X,Y)=X^4+12X^2Y^2+8XY^3+6Y^4
+\end{equation*}
+and the Hamming weight distribution is $1,0,12,8,6$.
+\item The Hamming weight enumerator of the full binary code of length
+  $n$, $\mbb{F}_2^n$, is simply given by
+  $\we_{\mbb{F}_2^n}(X,Y)=(X+Y)^n$, and the Hamming weight
+  distribution is the $n$-th \PMlinkescapetext{row} of Pascal's triangle.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

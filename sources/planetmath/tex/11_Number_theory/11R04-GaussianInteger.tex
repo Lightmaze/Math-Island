@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GaussianInteger}
+\pmcreated{2013-03-22 11:45:32}
+\pmmodified{2013-03-22 11:45:32}
+\pmowner{Daume}{40}
+\pmmodifier{Daume}{40}
+\pmtitle{Gaussian integer}
+\pmrecord{11}{30207}
+\pmprivacy{1}
+\pmauthor{Daume}{40}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmclassification{msc}{55-00}
+\pmclassification{msc}{55U05}
+\pmclassification{msc}{32M10}
+\pmclassification{msc}{32C11}
+\pmclassification{msc}{14-02}
+\pmclassification{msc}{18-00}
+%\pmkeywords{number theory}
+\pmrelated{EisensteinIntegers}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\G}{\mathbb{Z}[i]}
+\PMlinkescapeword{principal}
+A complex number of the form $a+bi$, where $a,b\in\mathbb{Z}$, is called
+a Gaussian integer.
+
+It is easy to see that the set $S$ of all Gaussian integers is a subring
+of $\mathbb{C}$; specifically, $S$ is the smallest subring containing
+$\{1,i\}$, whence $S=\G$.
+
+$\G$ is a Euclidean ring, hence a principal ring, hence a
+unique factorization domain.
+
+There are four units (i.e. invertible elements)
+in the ring $\G$, namely $\pm 1$ and $\pm i$.
+Up to multiplication by units, the primes in $\G$ are
+\begin{itemize}
+\item ordinary prime numbers $\equiv 3\mod 4$
+\item elements of the form $a\pm bi$ where $a^2+b^2$ is an ordinary
+prime $\equiv 1\mod 4$ (see Thue's lemma)
+\item the element $1+i$.
+\end{itemize}
+
+Using the ring of Gaussian integers, it is not hard to show, for example,
+that the Diophantine equation $x^2+1=y^3$ has no solutions $(x,y)\in\Z\times\Z$
+except $(0,1)$.
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

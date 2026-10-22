@@ -1,0 +1,15 @@
+{
+  "pm:Bounded1": "pm:Bounded",
+  "pm:ConjugacyClass1": "pm:ConjugacyClass",
+  "pm:Eigenvalue1": "pm:Eigenvalue",
+  "pm:FunctorCategory1": "pm:FunctorCategory",
+  "pm:MotivicCohomology1": "pm:MotivicCohomology",
+  "pm:SymmetricGroup": "pm:SymmetricGroup1",
+  "pm:ZeroIdeal1": "pm:ZeroIdeal",
+  "pm:CarmichalNumber5611": "pm:CarmichalNumber561",
+  "pm:GrothendieckCategoryTheorems1": "pm:GrothendieckCategoryTheorems",
+  "pm:GrothendieckCategoryTheorems12": "pm:GrothendieckCategoryTheorems",
+  "pm:GrothendieckCategoryTheorems123": "pm:GrothendieckCategoryTheorems",
+  "wikipedia:Motivic_cohomology": "pm:MotivicCohomology",
+  "wikipedia:Modular_form": "pm:ModularForm"
+}

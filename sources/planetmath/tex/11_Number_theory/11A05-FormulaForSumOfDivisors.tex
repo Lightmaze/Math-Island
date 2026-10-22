@@ -1,0 +1,131 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FormulaForSumOfDivisors}
+\pmcreated{2013-03-22 16:47:35}
+\pmmodified{2013-03-22 16:47:35}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{formula for sum of divisors}
+\pmrecord{14}{39026}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{Definition}{def}
+\begin{document}
+\PMlinkescapeword{multiplicities} \PMlinkescapeword{multiplicity} 
+If one knows the factorization of a number,
+one can compute the sum of the positive divisors of
+that number without having to write down
+all the divisors of that number.  To do 
+this, one can use a formula which is obtained
+by summing a geometric series.\\
+
+\begin{thm}
+Suppose that $n$ is a positive integer whose factorization
+into prime factors is $\prod_{i=1}^k p_i^{m_i}$,
+where the $p_i$'s are distinct primes and the
+multiplicities $m_i$ are all at least $1$.  Then
+the sum of the divisors of $n$ equals
+\[
+\prod_{i=1}^k
+{p_i^{m_i + 1} - 1 \over p_i - 1}
+\]
+and the sum of the proper divisors of $n$ equals
+\[
+\prod_{i=1}^k
+{p_i^{m_i + 1} - 1 \over p_i - 1} -
+\prod_{i=1}^k p_i^{m_i}.
+\]
+\end{thm}
+
+\begin{proof}
+A number will divide $n$ if and only if prime
+factors are also prime factors of $n$ and
+their multiplicity is less than to or equal
+to their multiplicities in $n$.  In other
+words, a divisors $n$ can be expressed
+as $\prod_{i=1}^k p_i^{\mu_i}$ where $0 \le
+\mu_i \le m_i$.  Then the sum over all divisors
+becomes the sum over all possible choices
+for the $\mu_i$'s:
+\[
+\sum_{d \mid n} d =
+\sum_{0 \le \mu_i \le m_i}
+\prod_{i=1}^k p_i^{\mu_i}
+\]
+This sum may be expressed as a multiple 
+sum like so:
+\[
+\sum_{\mu_1 = 0}^{m_1} 
+\sum_{\mu_2 = 0}^{m_2} \cdots
+\sum_{\mu_k = 0}^{m_k}
+\prod_{i=1}^k p_i^{\mu_i}
+\]
+This sum of products may be factored into
+a product of sums:
+\[
+\prod_{i=1}^k
+\left( 
+\sum_{\mu_i = 0}^{m_i}
+p_i^{\mu_i}
+\right)
+\]
+Each of these sums is a geometric series;
+hence we may use the formula for sum of a
+geometric series to conclude
+\[
+\sum_{d \mid n} d =
+\prod_{i=1}^k
+{p_i^{m_i + 1} - 1 \over p_i - 1}.
+\]
+If we want only proper divisors, we should
+not include $n$ in the sum, so we obtain
+the formula for proper divisors by subtracting
+$n$ from our formula.\\
+\end{proof}
+
+As an illustration, let us compute the sum
+of the divisors of $1800$.  The factorization
+of our number is $2^3 \cdot 3^2 \cdot 5^2$.
+Therefore, the sum of its divisors equals
+\[
+\left( {2^4 - 1} \over {2 - 1} \right)
+\left( {3^3 - 1} \over {3 - 1} \right)
+\left( {5^3 - 1} \over {5 - 1} \right) =
+{15 \cdot 26 \cdot 124 \over 2 \cdot 4} =
+6045.
+\]
+The sum of the proper divisors equals
+$6045 - 1800 = 4245$,\, so we see that
+$1800$ is an abundant number.
+%%%%%
+%%%%%
+\end{document}

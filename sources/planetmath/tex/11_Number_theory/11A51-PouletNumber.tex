@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PouletNumber}
+\pmcreated{2013-03-22 18:11:12}
+\pmmodified{2013-03-22 18:11:12}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{Poulet number}
+\pmrecord{6}{40759}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmsynonym{Sarrus number}{PouletNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em Poulet number} or {\em Sarrus number} is a composite integer $n$ such that $2^n \equiv 2 \mod n$. In other words, a base 2 pseudoprime (thus a Poulet number that satisfies the congruence for other bases is a Carmichael number). The first few Poulet numbers are 341, 561, 645, 1105, 1387, 1729, 1905, listed in A001567 of Sloane's OEIS. 
+
+For example, 561 is a Poulet number, since $2^{561} - 2$ is 75479248496430827044831091619765377
+81833842440832880856752412600491248324784297704172253450355317535082936750061527
+689799541169259849585265122868502865392087298790653950 and that's divisible by 561. The number 561 is not prime, it has the prime factors 3, 11, and 17.
+
+Poulet numbers are counterexamples to the Chinese hypothesis.
+
+\begin{thebibliography}{1}
+\bibitem{dl} Derrick Henry Lehmer, ``Errata for Poulet's table,'' {\it Math. Comp.} {\bf 25} 25 (1971): 944 - 945.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

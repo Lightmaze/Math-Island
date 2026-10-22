@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NumerationSystem}
+\pmcreated{2013-03-22 18:57:46}
+\pmmodified{2013-03-22 18:57:46}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{numeration system}
+\pmrecord{8}{41821}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A67}
+\pmsynonym{numeral system}{NumerationSystem}
+\pmsynonym{number system}{NumerationSystem}
+\pmrelated{Base3}
+\pmdefines{base}
+\pmdefines{digit}
+\pmdefines{complete numeration system}
+\pmdefines{unambiguous numeration system}
+\pmdefines{ambiguous numeration system}
+
+\endmetadata
+
+%\usepackage[encapsulated]{CJK}
+%\usepackage{ucs}
+%\usepackage[utf8]{inputenc}
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+
+% define commands here
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+A \emph{numeration system} is a triple $N=(b,\Sigma,d)$, where $b>1$ is a positive integer, $\Sigma$ is a non-empty alphabet, and $d$ is a one-to-one function from $\Sigma$ to the set of non-negative integers $\mathbb{N}\cup \lbrace 0\rbrace$.  Order elements of $\Sigma$ so that their values are in increasing order:
+\begin{quote}
+$\Sigma=\lbrace a_1,\ldots, a_k\rbrace$, where $d(a_i)< d(a_{i+1})$ for $i=1,\ldots, k-1$.
+\end{quote}
+$b$ is called the \emph{base} of numeration system $N$, and the elements $a_1,\ldots,a_k$ the \emph{digits} of $N$.  Words over $\Sigma$ are called \emph{numeral words}.
+
+Given a numeral word $u=c_1\cdots c_m$ with $c_j\in \Sigma$, the integer non-negative $n$ is said to be \emph{represented} by $u$ if
+$$n= c_1 b^{m-1} + \cdots + c_j b^{m-j} + \cdots + c_m.$$
+An integer $n$ is said to be representable in $N$ if there is a numeral word $u$ representing $n$.
+
+\textbf{Examples}.
+\begin{itemize}
+\item The most common numeration system is the decimal system: $$D=(10,\lbrace 0,1,2,3,4,5,6,7,8,9\rbrace, d)$$ where $d(i)=i$ is the identity function.
+\item Just as common is the binary digital system: $B=(2,\lbrace 0,1\rbrace,d)$ where $d$ again is the identity function.
+\item In fact, any digital system is a numeration system $(n,\Sigma,d)$, where $\Sigma=\lbrace a_0,\ldots,a_{n-1}\rbrace$ and $d(a_i)=i$.
+\item Consider the system $B_1=(2,\lbrace 1\rbrace,d)$, where $d(1)=1$.  Since any word over $\lbrace 1\rbrace$ is just a string of $1$'s, $n$ consecutive strings of $1$ represent $1+2+\cdots +2^{n-1} = 2^{n-1}$.  We conclude that the integers representable by $N$ have the form $2^n-1$ for any positive integer $n$.
+\item Consider the system $$D_1=(10,\lbrace [0],[1],\ldots,[9],[10],[100],[1000],[10000],[10000000],[10000000000]\rbrace,d)$$ where $d([i])=i$.  It is easy to see that every integer is representable by $D_1$.  However, some integers may be represented by more than one numeral words.  For example, $$[1000]=[100][0]=[10][0][0]=[1][0][0][0].$$
+The numeration system $D_1$ is used by the Chinese.
+\item Consider the system $N=(3,\lbrace [1],[2],[4]\rbrace,d)$ where $d([i])=i$.  Then $[2][1][4][1] = 2\times 3^3 + 1\times 3^2 + 4\times 3 + 1 =  184$.  Notice that $0$ can not be represented $N$.  Also, note that $[4]=4=1\times 3+1 = [1][1]$.
+\end{itemize}
+
+A numeration system $N$ is said to be \emph{complete} if every non-negative integer has at least one representation in $N$; and \emph{unambiguous} if every non-negative integer has at most one representation in $N$.  $N$ is \emph{ambiguous} if $N$ is not unambiguous.  Every digital system is complete and unambiguous.  In the examples above, $D_1$ is complete but ambiguous; $B_1$ is unambiguous but not complete; $N$ is neither complete nor unambiguous.
+
+\textbf{Remark}.  Representation non-negative integers by a numeration system can be extended to rational numbers.  The corresponding concepts of completeness and ambiguity may be defined similarly.
+
+\begin{thebibliography}{9}
+\bibitem{as} A. Salomaa {\em Computation and Automata, Encyclopedia of Mathematics and Its Applications, Vol. 25}. Cambridge (1985).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

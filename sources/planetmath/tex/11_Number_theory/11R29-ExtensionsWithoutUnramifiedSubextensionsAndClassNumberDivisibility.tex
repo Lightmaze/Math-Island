@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExtensionsWithoutUnramifiedSubextensionsAndClassNumberDivisibility}
+\pmcreated{2013-03-22 15:07:35}
+\pmmodified{2013-03-22 15:07:35}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{extensions without unramified subextensions and class number divisibility}
+\pmrecord{4}{36866}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R29}
+\pmclassification{msc}{11R32}
+\pmclassification{msc}{11R37}
+%\pmkeywords{divisibility}
+%\pmkeywords{class number}
+%\pmkeywords{tower of number fields}
+\pmrelated{PushDownTheoremOnClassNumbers}
+\pmrelated{ClassNumberDivisibilityInExtensions}
+\pmrelated{IdealClass}
+\pmrelated{ExistenceOfHilbertClassField}
+\pmrelated{CompositumOfAGaloisExtensionAndAnotherExtensionIsGalois}
+\pmrelated{DecompositionGroup}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+\begin{thm}
+Let $F/K$ be an extension of number fields such that for any intermediate Galois extension $L/K$, with $K\subsetneq L \subsetneq F$, there is at least one finite place or infinite place which ramifies in the extension $L/K$. Then, $h_K$, the class number of $K$, divides the class number of $F$, $h_F$.
+\end{thm}
+
+First, we deduce some immediate corollaries.
+
+\begin{cor}
+Let $F/K$ be an extension of number fields which is totally ramified at some prime (or at an archimedean place). Then $h_K$ divides $h_F$. 
+\end{cor}
+\begin{proof}
+The proof is clear since there cannot be unramified subextensions. The theorem applies.
+\end{proof}
+
+\begin{cor}
+Let $F/K$ be a Galois extension of number fields such that $\Gal(F/K)$ is a non-abelian simple group. Then $h_K$ divides $h_F$.
+\end{cor}
+\begin{proof}
+In this case, there cannot be subextensions with abelian Galois group and the theorem applies.
+\end{proof}
+
+\begin{proof}[Proof of the Theorem]
+Let $H$ be the Hilbert class field of $K$. By definition, $H$ is the maximal unramified abelian extension of $K$, $\Gal(H/K)$ is isomorphic to $\Cl(K)$, the ideal class group of $K$ and $[H:K]=h_K$. Since there are no nontrivial unramified abelian subextensions of $F/K$, we have $F\cap H=K$ and so $[FH:F]=[H:K]=h_K$. One can show that the extension $FH/F$ is unramified and abelian (in fact $\Gal(FH/F)\cong \Gal(H/K)$). Therefore $FH$ is contained in $L$, the Hilbert class field of $F$. Hence:
+$$h_F=[L:F]=[L:FH]\cdot[FH:F]=[L:FH]\cdot [H:K]=[L:FH]\cdot h_K$$
+and so, $h_K$ divides $h_F$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

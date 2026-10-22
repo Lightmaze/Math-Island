@@ -1,0 +1,116 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SmarandacheFunction}
+\pmcreated{2013-03-22 17:04:15}
+\pmmodified{2013-03-22 17:04:15}
+\pmowner{dankomed}{17058}
+\pmmodifier{dankomed}{17058}
+\pmtitle{Smarandache function}
+\pmrecord{47}{39363}
+\pmprivacy{1}
+\pmauthor{dankomed}{17058}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+%\pmkeywords{Smarandache function}
+%\pmkeywords{Smarandache constants}
+\pmrelated{GeneralizedAndricaConjecture}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\title{Smarandache function}
+
+The \emph{Smarandache function} $S \colon \mathbb{Z}^+ \to \mathbb{Z}^+$ is defined as follows: $S(n)$ is the smallest integer such that $S(n)!$ is divisible by $n$. For example, the number 8 does not divide $1!$, $2!$, $3!$, but does divide $4!$. Therefore $S(8)=4$. Another study of $S(n)$ has been published by \PMlinkexternal{Aubrey J. Kempner}{http://genealogy.math.ndsu.nodak.edu/html/id.phtml?id=12376} in 1918, and later the function $S(n)$ has been rediscovered and studied by Florentin Smarandache in 1980. A profound study of this function would contribute to the study of prime numbers in accordance with the following property: if $p$ is a number greater than $4$, then $p$ is a prime if and only if $S(p)=p$. The values of $S(n)$ for $n=1,2,3, \ldots$ are given by \PMlinkname{Sloane's}{NeilSloane} OEIS \PMlinkexternal{A002034}{http://www.research.att.com/~njas/sequences/?q=A002034}.
+
+A list of sixteen \PMlinkescapetext{Smarandache constant}s denoted $s_1$ to $s_{16}$ have been defined with the use of the Smarandache function $S(n)$, and they should not be confused with \emph{the Smarandache constant}, which is the smallest solution to the generalized Andrica conjecture.
+
+The first Smarandache constant (\PMlinkname{Sloane's}{NeilSloane} OEIS \PMlinkexternal{A048799}{http://www.research.att.com/~njas/sequences/?q=A048799}) is defined as $\displaystyle s_1=\sum_{n=2}^{\infty}\left(S(n)!\right)^{-1} \approx 1.09317 \ldots$ 
+
+The second Smarandache constant $s_2$ (\PMlinkname{Sloane's}{NeilSloane} OEIS \PMlinkexternal{A048834}{http://www.research.att.com/~njas/sequences/?q=A048834}) is defined as $\displaystyle s_2=\sum_{n=2}^{\infty}\frac{S(n)}{n!}\approx 1.71400629359162 \ldots$ and it is an irrational number.
+
+The third Smarandache constant $s_3$ (\PMlinkname{Sloane's}{NeilSloane} OEIS \PMlinkexternal{A048835}{http://www.research.att.com/~njas/sequences/?q=A048835}) is defined as $\displaystyle s_3=\sum_{n=2}^{\infty}\left(\prod_{i=2}^{n}S(i)\right)^{-1}\approx 0.719960700043 \ldots$.
+
+The series $\displaystyle s_4(\alpha)=\sum_{n=2}^{\infty}n^{\alpha}\left(\prod_{i=2}^{n}S(i)\right)^{-1}$ converges for a fixed real number $\alpha \geq 1$. Since $s_4$ is a function of $\alpha$ it is not a single constant, but an infinite list of them. The values for small $\alpha$ have been computed:
+
+$s_4(1) \approx 1.72875760530223 \ldots$ (\PMlinkname{Sloane's}{NeilSloane} OEIS \PMlinkexternal{A048836}{http://www.research.att.com/~njas/sequences/?q=A048836}).
+
+$s_4(2) \approx 4.50251200619296 \ldots$ (\PMlinkname{Sloane's}{NeilSloane} OEIS \PMlinkexternal{A048837}{http://www.research.att.com/~njas/sequences/?q=A048837}).
+
+$s_4(3) \approx 13.0111441949445 \ldots$ (\PMlinkname{Sloane's}{NeilSloane} OEIS \PMlinkexternal{A048838}{http://www.research.att.com/~njas/sequences/?q=A048838}).
+
+The fifth Smarandache constant $\displaystyle s_5=\sum_{n=1}^{\infty}\frac{(-1)^{n-1}S(n)}{n!}$ converges to an irrational number.
+
+Burton in 1995 showed that the series $\displaystyle s_6=\sum_{n=2}^{\infty}\frac{S(n)}{(n+1)!}$ converges and is bounded by $0.218282<s_{6}<0.5$.
+
+Dumitrescu and Seleacu in 1996 showed that the series $\displaystyle s_7(r)=\sum_{n=r}^{\infty}\frac{S(n)}{(n+r)!}$ and $\displaystyle s_8(r)=\sum_{n=r}^{\infty}\frac{S(n)}{(n-r)!}$ converge for $r \in \mathbb{Z}^+ $.
+
+The same authors show that the series $\displaystyle s_9=\sum_{n=2}^{\infty}\left(\sum_{i=2}^{n}\frac{S(i)}{i!}\right)^{-1}$ is convergent.
+
+The series $\displaystyle s_{10}(\alpha)=\sum_{n=2}^{\infty} \left(S(n) \right)^{-\alpha} \left(S(n)!\right)^{-\frac{1}{2}}$ and $\displaystyle s_{11}(\alpha)=\sum_{n=2}^{\infty}\left(S(n)\right)^{-\alpha}\left[\left(S(n)-1\right)!\right]^{-\frac{1}{2}}$ converge for $\alpha > 1$. These two series also define an infinite list of constants.
+
+If $f:\mathbb{N} \rightarrow \mathbb{R}$ is a function satisfying the condition $\displaystyle f(t) \leq \frac{c}{t^{\alpha}d\left(t!\right)-d\left((t-1)!\right)}$, where $t$ is a positive integer, $d$ denotes the divisor function, and the given constants $\alpha >1$, $c>1$, then the series $\displaystyle s_{12}(f)= \sum_{n=1}^{\infty}f\left(S(n)\right)$ is convergent.
+
+The series $\displaystyle s_{13}=\sum_{n=1}^{\infty} \left(\prod_{k=1}^{n}S(k)!\right)^{-\frac{1}{n}}$ is convergent.
+
+The series $\displaystyle s_{14}(\alpha)=\sum_{n=1}^{\infty}\left(S(n)!\right)^{-\frac{3}{2}}\left(\log{S(n)}\right)^{-\alpha}$ is convergent for $\alpha>1$.
+
+The series $\displaystyle s_{15}=\sum_{n=1}^{\infty}\frac{2^n}{S(2^{n})!}$ is convergent.
+
+The series $\displaystyle s_{16}(\alpha)=\sum_{n=1}^{\infty}\frac{S(n)}{n^{1+\alpha}}$ is convergent for $\alpha>1$.
+
+References
+
+1. Dumitrescu C, Popescu M, Seleacu V, Tilton H (1996). The Smarandache Function in Number Theory. Erhus University Press. ISBN 1879585472.
+
+2. Ashbacher C, Popescu M (1995). An Introduction to the Smarandache Function. Erhus University Press. ISBN 1879585499.
+
+3. Tabirca S, Tabirca T, Reynolds K, Yang LT (2004). \PMlinkexternal{"Calculating Smarandache function in parallel". Parallel and Distributed Computing, 2004. Third International Symposium on Algorithms, Models and Tools for Parallel Computing on Heterogeneous Networks,: pp.79-82.}{http://dx.doi.org/10.1109/ISPDC.2004.15}
+
+4. Kempner AJ (1918). "Miscellanea". \PMlinkexternal{The American Mathematical Monthly 25: 201-210.}{http://www.jstor.org/view/00029890/di991004/99p1446d/0 }
+
+5. Mehendale DP (2005). \PMlinkexternal{The Classical Smarandache Function and a Formula for Twin Primes.}{http://arxiv.org/abs/math/0502384}
+
+6. Smarandache F (1980). "A Function in Number Theory". Analele Univ. Timisoara, Ser. St. Math. 43: 79-88.
+
+7. Smarandache F. \PMlinkexternal{Constants Involving the Smarandache Function.}{http://www.gallup.unm.edu/~smarandache/CONSTANT.TXT}
+
+8. Muller R (1990). "Editorial". \PMlinkexternal{Smarandache Function Journal 1: 1.}{http://www.gallup.unm.edu/~smarandache/SFJ1.pdf}
+
+9. Cojocaru I, Cojocaru S (1996). "The First Constant of Smarandache". \PMlinkexternal{Smarandache Notions Journal 7: 116-118.}{http://www.gallup.unm.edu/~smarandache/SNJ7.pdf}
+
+10. Cojocaru I, Cojocaru S (1996). "The Second Constant of Smarandache". \PMlinkexternal{Smarandache Notions Journal 7: 119-120.}{http://www.gallup.unm.edu/~smarandache/SNJ7.pdf}
+
+11. Cojocaru I, Cojocaru S (1996). "The Third and Fourth Constants of Smarandache". \PMlinkexternal{Smarandache Notions Journal 7: 121-126.}{http://www.gallup.unm.edu/~smarandache/SNJ7.pdf}
+
+12. Sandor J (1997). "On The Irrationality Of Certain Alternative Smarandache Series". \PMlinkexternal{Smarandache Notions Journal 8: 143-144.}{http://www.gallup.unm.edu/~smarandache/SNJ8.pdf}
+
+13. Burton E (1995). "On Some Series Involving the Smarandache Function". \PMlinkexternal{Smarandache Function Journal 6: 13-15.}{http://www.gallup.unm.edu/~smarandache/SFJ6.pdf}
+
+14. Burton E (1996). "On Some Convergent Series". \PMlinkexternal{Smarandache Notions Journal 7 (1-3): 7-9.}{http://www.gallup.unm.edu/~smarandache/SNJ7.pdf}
+
+%%%%%
+%%%%%
+\end{document}

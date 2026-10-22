@@ -1,0 +1,1752 @@
+{
+  "same_record_id_groups": [],
+  "same_label_groups": [
+    {
+      "label": "additive function",
+      "ids": [
+        "pm:AdditiveFunction",
+        "pm:AdditiveFunction1"
+      ],
+      "canonical_names": [
+        "AdditiveFunction",
+        "AdditiveFunction1"
+      ],
+      "msc": [
+        [
+          "15A04"
+        ],
+        [
+          "11A25"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A04-AdditiveFunction.tex",
+        "sources/planetmath/tex/11_Number_theory/11A25-AdditiveFunction1.tex"
+      ]
+    },
+    {
+      "label": "adjacent",
+      "ids": [
+        "pm:Adjacent",
+        "pm:Adjacent1"
+      ],
+      "canonical_names": [
+        "Adjacent",
+        "Adjacent1"
+      ],
+      "msc": [
+        [
+          "51-01"
+        ],
+        [
+          "51-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/51_Geometry/51-01-Adjacent.tex",
+        "sources/planetmath/tex/51_Geometry/51-00-Adjacent1.tex"
+      ]
+    },
+    {
+      "label": "akhmim wooden tablet",
+      "ids": [
+        "pm:AkhmimWoodenTablet",
+        "pm:AkhmimWoodenTablet1"
+      ],
+      "canonical_names": [
+        "AkhmimWoodenTablet",
+        "AkhmimWoodenTablet1"
+      ],
+      "msc": [
+        [
+          "01A16"
+        ],
+        [
+          "01A16"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/01_History_and_biography/01A16-AkhmimWoodenTablet.tex",
+        "sources/planetmath/tex/01_History_and_biography/01A16-AkhmimWoodenTablet1.tex"
+      ]
+    },
+    {
+      "label": "algebraic",
+      "ids": [
+        "pm:Algebraic",
+        "pm:Algebraic1"
+      ],
+      "canonical_names": [
+        "Algebraic",
+        "Algebraic1"
+      ],
+      "msc": [
+        [
+          "11R04",
+          "11R32",
+          "13B05"
+        ],
+        [
+          "13B02"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/13_Commutative_rings_and_algebras/13B05-Algebraic.tex",
+        "sources/planetmath/tex/13_Commutative_rings_and_algebras/13B02-Algebraic1.tex"
+      ]
+    },
+    {
+      "label": "alternative definition of category",
+      "ids": [
+        "pm:AlternativeDefinitionOfCategory",
+        "pm:AlternativeDefinitionOfCategory1"
+      ],
+      "canonical_names": [
+        "AlternativeDefinitionOfCategory",
+        "AlternativeDefinitionOfCategory1"
+      ],
+      "msc": [
+        [
+          "18A05"
+        ],
+        [
+          "18A05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18A05-AlternativeDefinitionOfCategory.tex",
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18A05-AlternativeDefinitionOfCategory1.tex"
+      ]
+    },
+    {
+      "label": "analytic set",
+      "ids": [
+        "pm:AnalyticSet",
+        "pm:AnalyticSet1"
+      ],
+      "canonical_names": [
+        "AnalyticSet",
+        "AnalyticSet1"
+      ],
+      "msc": [
+        [
+          "32A60",
+          "32C25"
+        ],
+        [
+          "28A05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/32_Several_complex_variables_and_analytic_spaces/32C25-AnalyticSet.tex",
+        "sources/planetmath/tex/28_Measure_and_integration/28A05-AnalyticSet1.tex"
+      ]
+    },
+    {
+      "label": "annulus",
+      "ids": [
+        "pm:Annulus",
+        "pm:Annulus1"
+      ],
+      "canonical_names": [
+        "Annulus",
+        "Annulus1"
+      ],
+      "msc": [
+        [
+          "51-00"
+        ],
+        [
+          "30-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/51_Geometry/51-00-Annulus.tex",
+        "sources/planetmath/tex/30_Functions_of_a_complex_variable/30-00-Annulus1.tex"
+      ]
+    },
+    {
+      "label": "baire space",
+      "ids": [
+        "pm:BaireSpace",
+        "pm:BaireSpace1"
+      ],
+      "canonical_names": [
+        "BaireSpace",
+        "BaireSpace1"
+      ],
+      "msc": [
+        [
+          "54E52"
+        ],
+        [
+          "54E50"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54E52-BaireSpace.tex",
+        "sources/planetmath/tex/54_General_topology/54E50-BaireSpace1.tex"
+      ]
+    },
+    {
+      "label": "bounded",
+      "ids": [
+        "pm:Bounded",
+        "pm:Bounded1"
+      ],
+      "canonical_names": [
+        "Bounded",
+        "Bounded1"
+      ],
+      "msc": [
+        [
+          "54E35"
+        ],
+        [
+          "54E35"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54E35-Bounded.tex",
+        "sources/planetmath/tex/54_General_topology/54E35-Bounded1.tex"
+      ]
+    },
+    {
+      "label": "carmichal number 561",
+      "ids": [
+        "pm:CarmichalNumber561",
+        "pm:CarmichalNumber5611"
+      ],
+      "canonical_names": [
+        "CarmichalNumber561",
+        "CarmichalNumber5611"
+      ],
+      "msc": [
+        [],
+        []
+      ],
+      "source_files": [
+        "sources/planetmath/tex/06_Order_lattices_ordered_algebraic_structures/06B99-CarmichalNumber5612.tex",
+        "sources/planetmath/tex/06_Order_lattices_ordered_algebraic_structures/06B99-CarmichalNumber5611.tex"
+      ]
+    },
+    {
+      "label": "centralizer",
+      "ids": [
+        "pm:Centralizer",
+        "pm:Centralizer1"
+      ],
+      "canonical_names": [
+        "Centralizer",
+        "Centralizer1"
+      ],
+      "msc": [
+        [
+          "20-00"
+        ],
+        [
+          "58E40"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20-00-Centralizer.tex",
+        "sources/planetmath/tex/58_Global_analysis_analysis_on_manifolds/58E40-Centralizer1.tex"
+      ]
+    },
+    {
+      "label": "characteristic function",
+      "ids": [
+        "pm:CharacteristicFunction",
+        "pm:CharacteristicFunction1"
+      ],
+      "canonical_names": [
+        "CharacteristicFunction",
+        "CharacteristicFunction1"
+      ],
+      "msc": [
+        [
+          "03-00",
+          "26-00",
+          "26A09",
+          "28-00"
+        ],
+        [
+          "60E10"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03-00-CharacteristicFunction.tex",
+        "sources/planetmath/tex/60_Probability_theory_and_stochastic_processes/60E10-CharacteristicFunction1.tex"
+      ]
+    },
+    {
+      "label": "chinese remainder theorem",
+      "ids": [
+        "pm:ChineseRemainderTheorem",
+        "pm:ChineseRemainderTheorem1"
+      ],
+      "canonical_names": [
+        "ChineseRemainderTheorem",
+        "ChineseRemainderTheorem1"
+      ],
+      "msc": [
+        [
+          "11D79"
+        ],
+        [
+          "11A05",
+          "11N99",
+          "13A15"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/11_Number_theory/11D79-ChineseRemainderTheorem.tex",
+        "sources/planetmath/tex/11_Number_theory/11N99-ChineseRemainderTheorem1.tex"
+      ]
+    },
+    {
+      "label": "completeness theorem for propositional logic",
+      "ids": [
+        "pm:CompletenessTheoremForPropositionalLogic",
+        "pm:CompletenessTheoremForPropositionalLogic1"
+      ],
+      "canonical_names": [
+        "CompletenessTheoremForPropositionalLogic",
+        "CompletenessTheoremForPropositionalLogic1"
+      ],
+      "msc": [
+        [
+          "03B05"
+        ],
+        [
+          "03B05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03B05-CompletenessTheoremForPropositionalLogic.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03B05-CompletenessTheoremForPropositionalLogic1.tex"
+      ]
+    },
+    {
+      "label": "cone",
+      "ids": [
+        "pm:Cone",
+        "pm:Cone1"
+      ],
+      "canonical_names": [
+        "Cone",
+        "Cone1"
+      ],
+      "msc": [
+        [
+          "54B99"
+        ],
+        [
+          "46-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54B99-Cone.tex",
+        "sources/planetmath/tex/46_Functional_analysis/46-00-Cone1.tex"
+      ]
+    },
+    {
+      "label": "congruence",
+      "ids": [
+        "pm:Congruence",
+        "pm:Congruence1",
+        "pm:Congruence12"
+      ],
+      "canonical_names": [
+        "Congruence",
+        "Congruence1",
+        "Congruence12"
+      ],
+      "msc": [
+        [
+          "11A05",
+          "11A07",
+          "18-00",
+          "18C10",
+          "18E05",
+          "55M05",
+          "92B05",
+          "92B20"
+        ],
+        [
+          "20M99"
+        ],
+        [
+          "03C05",
+          "03C07"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18C10-Congruence.tex",
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20M99-Congruence1.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03C05-Congruence12.tex"
+      ]
+    },
+    {
+      "label": "conjugacy class",
+      "ids": [
+        "pm:ConjugacyClass",
+        "pm:ConjugacyClass1"
+      ],
+      "canonical_names": [
+        "ConjugacyClass",
+        "ConjugacyClass1"
+      ],
+      "msc": [
+        [
+          "20A05"
+        ],
+        [
+          "20E45"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20A05-ConjugacyClass.tex",
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20E45-ConjugacyClass1.tex"
+      ]
+    },
+    {
+      "label": "connected sum",
+      "ids": [
+        "pm:ConnectedSum",
+        "pm:ConnectedSum1"
+      ],
+      "canonical_names": [
+        "ConnectedSum",
+        "ConnectedSum1"
+      ],
+      "msc": [
+        [
+          "57M25"
+        ],
+        [
+          "57-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/57_Manifolds_and_cell_complexes/57M25-ConnectedSum.tex",
+        "sources/planetmath/tex/57_Manifolds_and_cell_complexes/57-00-ConnectedSum1.tex"
+      ]
+    },
+    {
+      "label": "convolution",
+      "ids": [
+        "pm:Convolution",
+        "pm:Convolution1"
+      ],
+      "canonical_names": [
+        "Convolution",
+        "Convolution1"
+      ],
+      "msc": [
+        [
+          "44A35",
+          "94A12"
+        ],
+        [
+          "68Q45",
+          "68Q70",
+          "68R15"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/44_Integral_transforms_operational_calculus/44A35-Convolution.tex",
+        "sources/planetmath/tex/68_Computer_science/68Q45-Convolution1.tex"
+      ]
+    },
+    {
+      "label": "cycle",
+      "ids": [
+        "pm:Cycle",
+        "pm:Cycle1",
+        "pm:Cycle12"
+      ],
+      "canonical_names": [
+        "Cycle",
+        "Cycle1",
+        "Cycle12"
+      ],
+      "msc": [
+        [
+          "05C38"
+        ],
+        [
+          "03-00",
+          "05A05",
+          "20F55"
+        ],
+        [
+          "34A12",
+          "34C07"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/05_Combinatorics/05C38-Cycle.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03-00-Cycle1.tex",
+        "sources/planetmath/tex/34_Ordinary_differential_equations/34A12-Cycle12.tex"
+      ]
+    },
+    {
+      "label": "diameter",
+      "ids": [
+        "pm:Diameter",
+        "pm:Diameter1",
+        "pm:Diameter12"
+      ],
+      "canonical_names": [
+        "Diameter",
+        "Diameter1",
+        "Diameter12"
+      ],
+      "msc": [
+        [
+          "54-00"
+        ],
+        [
+          "51-00"
+        ],
+        [
+          "05C12"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54-00-Diameter.tex",
+        "sources/planetmath/tex/51_Geometry/51-00-Diameter1.tex",
+        "sources/planetmath/tex/05_Combinatorics/05C12-Diameter12.tex"
+      ]
+    },
+    {
+      "label": "direct image",
+      "ids": [
+        "pm:DirectImage",
+        "pm:DirectImage1"
+      ],
+      "canonical_names": [
+        "DirectImage",
+        "DirectImage1"
+      ],
+      "msc": [
+        [
+          "03E20",
+          "16W30",
+          "17B37",
+          "18-00",
+          "18D10",
+          "18D35",
+          "81-00"
+        ],
+        [
+          "54B40"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03E20-DirectImage.tex",
+        "sources/planetmath/tex/54_General_topology/54B40-DirectImage1.tex"
+      ]
+    },
+    {
+      "label": "discriminant",
+      "ids": [
+        "pm:Discriminant",
+        "pm:Discriminant1"
+      ],
+      "canonical_names": [
+        "Discriminant",
+        "Discriminant1"
+      ],
+      "msc": [
+        [
+          "12E05"
+        ],
+        [
+          "11R29"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/12_Field_theory_and_polynomials/12E05-Discriminant.tex",
+        "sources/planetmath/tex/11_Number_theory/11R29-Discriminant1.tex"
+      ]
+    },
+    {
+      "label": "distribution",
+      "ids": [
+        "pm:Distribution",
+        "pm:Distribution1"
+      ],
+      "canonical_names": [
+        "Distribution",
+        "Distribution1"
+      ],
+      "msc": [
+        [
+          "46-00",
+          "46F05"
+        ],
+        [
+          "53-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/46_Functional_analysis/46-00-Distribution.tex",
+        "sources/planetmath/tex/53_Differential_geometry/53-00-Distribution1.tex"
+      ]
+    },
+    {
+      "label": "domain",
+      "ids": [
+        "pm:Domain",
+        "pm:Domain1",
+        "pm:Domain12"
+      ],
+      "canonical_names": [
+        "Domain",
+        "Domain1",
+        "Domain12"
+      ],
+      "msc": [
+        [
+          "30-00",
+          "54A05",
+          "54E35"
+        ],
+        [
+          "03E20"
+        ],
+        [
+          "06B35"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/30_Functions_of_a_complex_variable/30-00-Domain.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03E20-Domain1.tex",
+        "sources/planetmath/tex/06_Order_lattices_ordered_algebraic_structures/06B35-Domain12.tex"
+      ]
+    },
+    {
+      "label": "eigenvalue",
+      "ids": [
+        "pm:Eigenvalue",
+        "pm:Eigenvalue1"
+      ],
+      "canonical_names": [
+        "Eigenvalue",
+        "Eigenvalue1"
+      ],
+      "msc": [
+        [
+          "15A18"
+        ],
+        [
+          "15A18"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A18-Eigenvalue.tex",
+        "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A18-Eigenvalue1.tex"
+      ]
+    },
+    {
+      "label": "exact sequence",
+      "ids": [
+        "pm:ExactSequence",
+        "pm:ExactSequence1"
+      ],
+      "canonical_names": [
+        "ExactSequence",
+        "ExactSequence1"
+      ],
+      "msc": [
+        [
+          "16-00"
+        ],
+        [
+          "18E10"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16-00-ExactSequence.tex",
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18E10-ExactSequence1.tex"
+      ]
+    },
+    {
+      "label": "filtration",
+      "ids": [
+        "pm:Filtration",
+        "pm:Filtration1"
+      ],
+      "canonical_names": [
+        "Filtration",
+        "Filtration1"
+      ],
+      "msc": [
+        [
+          "03E20"
+        ],
+        [
+          "03B45"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03E20-Filtration.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03B45-Filtration1.tex"
+      ]
+    },
+    {
+      "label": "first isomorphism theorem",
+      "ids": [
+        "pm:FirstIsomorphismTheorem",
+        "pm:FirstIsomorphismTheorem1"
+      ],
+      "canonical_names": [
+        "FirstIsomorphismTheorem",
+        "FirstIsomorphismTheorem1"
+      ],
+      "msc": [
+        [
+          "13A15",
+          "20A05"
+        ],
+        [
+          "03C07"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/13_Commutative_rings_and_algebras/13A15-FirstIsomorphismTheorem.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03C07-FirstIsomorphismTheorem1.tex"
+      ]
+    },
+    {
+      "label": "flow",
+      "ids": [
+        "pm:Flow",
+        "pm:Flow1"
+      ],
+      "canonical_names": [
+        "Flow",
+        "Flow1"
+      ],
+      "msc": [
+        [
+          "05C20",
+          "94C15"
+        ],
+        [
+          "37C10"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/05_Combinatorics/05C20-Flow.tex",
+        "sources/planetmath/tex/37_Dynamical_systems_and_ergodic_theory/37C10-Flow1.tex"
+      ]
+    },
+    {
+      "label": "frame",
+      "ids": [
+        "pm:Frame",
+        "pm:Frame1"
+      ],
+      "canonical_names": [
+        "Frame",
+        "Frame1"
+      ],
+      "msc": [
+        [
+          "15A03"
+        ],
+        [
+          "46C99"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A03-Frame.tex",
+        "sources/planetmath/tex/46_Functional_analysis/46C99-Frame1.tex"
+      ]
+    },
+    {
+      "label": "free module",
+      "ids": [
+        "pm:FreeModule",
+        "pm:FreeModule1"
+      ],
+      "canonical_names": [
+        "FreeModule",
+        "FreeModule1"
+      ],
+      "msc": [
+        [
+          "16D40"
+        ],
+        [
+          "16D40"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16D40-FreeModule.tex",
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16D40-FreeModule1.tex"
+      ]
+    },
+    {
+      "label": "functor category",
+      "ids": [
+        "pm:FunctorCategory",
+        "pm:FunctorCategory1"
+      ],
+      "canonical_names": [
+        "FunctorCategory",
+        "FunctorCategory1"
+      ],
+      "msc": [
+        [
+          "18-00",
+          "18A05",
+          "18A25"
+        ],
+        [
+          "18-00",
+          "18A25",
+          "18D05",
+          "18E05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18-00-FunctorCategory.tex",
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18E05-FunctorCategory1.tex"
+      ]
+    },
+    {
+      "label": "graph",
+      "ids": [
+        "pm:Graph",
+        "pm:Graph1"
+      ],
+      "canonical_names": [
+        "Graph",
+        "Graph1"
+      ],
+      "msc": [
+        [
+          "05C99"
+        ],
+        [
+          "03E20"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/05_Combinatorics/05C99-Graph.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03E20-Graph1.tex"
+      ]
+    },
+    {
+      "label": "grothendieck category theorems",
+      "ids": [
+        "pm:GrothendieckCategoryTheorems",
+        "pm:GrothendieckCategoryTheorems1",
+        "pm:GrothendieckCategoryTheorems12",
+        "pm:GrothendieckCategoryTheorems123"
+      ],
+      "canonical_names": [
+        "GrothendieckCategoryTheorems",
+        "GrothendieckCategoryTheorems1",
+        "GrothendieckCategoryTheorems12",
+        "GrothendieckCategoryTheorems123"
+      ],
+      "msc": [
+        [
+          "18-00"
+        ],
+        [
+          "18-00"
+        ],
+        [
+          "18-00"
+        ],
+        [
+          "18-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18-00-GrothendieckCategoryTheorems.tex",
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18-00-GrothendieckCategoryTheorems1.tex",
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18-00-GrothendieckCategoryTheorems12.tex",
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18-00-GrothendieckCategoryTheorems123.tex"
+      ]
+    },
+    {
+      "label": "harmonic function",
+      "ids": [
+        "pm:HarmonicFunction",
+        "pm:HarmonicFunction1"
+      ],
+      "canonical_names": [
+        "HarmonicFunction",
+        "HarmonicFunction1"
+      ],
+      "msc": [
+        [
+          "30F15",
+          "31A05",
+          "31B05",
+          "31C05"
+        ],
+        [
+          "05C99"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/31_Potential_theory/31C05-HarmonicFunction.tex",
+        "sources/planetmath/tex/05_Combinatorics/05C99-HarmonicFunction1.tex"
+      ]
+    },
+    {
+      "label": "homeomorphism",
+      "ids": [
+        "pm:Homeomorphism",
+        "pm:Homeomorphism1"
+      ],
+      "canonical_names": [
+        "Homeomorphism",
+        "Homeomorphism1"
+      ],
+      "msc": [
+        [
+          "54C05"
+        ],
+        [
+          "05C99"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54C05-Homeomorphism.tex",
+        "sources/planetmath/tex/05_Combinatorics/05C99-Homeomorphism1.tex"
+      ]
+    },
+    {
+      "label": "homogeneous polynomial",
+      "ids": [
+        "pm:HomogeneousPolynomial",
+        "pm:HomogeneousPolynomial1"
+      ],
+      "canonical_names": [
+        "HomogeneousPolynomial",
+        "HomogeneousPolynomial1"
+      ],
+      "msc": [
+        [
+          "12-00"
+        ],
+        [
+          "11E76",
+          "13B25",
+          "16R99",
+          "16S36"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/12_Field_theory_and_polynomials/12-00-HomogeneousPolynomial.tex",
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16R99-HomogeneousPolynomial1.tex"
+      ]
+    },
+    {
+      "label": "ideal",
+      "ids": [
+        "pm:Ideal",
+        "pm:Ideal1"
+      ],
+      "canonical_names": [
+        "Ideal",
+        "Ideal1"
+      ],
+      "msc": [
+        [
+          "11N80",
+          "13A15",
+          "14K99",
+          "16D25",
+          "54C05",
+          "54C08",
+          "54D99",
+          "54E05",
+          "54E15",
+          "54E17",
+          "54J05"
+        ],
+        [
+          "20M10",
+          "20M12"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/14_Algebraic_geometry/14K99-Ideal.tex",
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20M12-Ideal1.tex"
+      ]
+    },
+    {
+      "label": "irreducible",
+      "ids": [
+        "pm:Irreducible",
+        "pm:Irreducible1"
+      ],
+      "canonical_names": [
+        "Irreducible",
+        "Irreducible1"
+      ],
+      "msc": [
+        [
+          "13G05"
+        ],
+        [
+          "14A10",
+          "14A15",
+          "54B05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/13_Commutative_rings_and_algebras/13G05-Irreducible.tex",
+        "sources/planetmath/tex/14_Algebraic_geometry/14A15-Irreducible1.tex"
+      ]
+    },
+    {
+      "label": "irreducible component",
+      "ids": [
+        "pm:IrreducibleComponent",
+        "pm:IrreducibleComponent1"
+      ],
+      "canonical_names": [
+        "IrreducibleComponent",
+        "IrreducibleComponent1"
+      ],
+      "msc": [
+        [
+          "14A10",
+          "14A15",
+          "54B05"
+        ],
+        [
+          "32A60",
+          "32C25"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54B05-IrreducibleComponent.tex",
+        "sources/planetmath/tex/32_Several_complex_variables_and_analytic_spaces/32C25-IrreducibleComponent1.tex"
+      ]
+    },
+    {
+      "label": "join",
+      "ids": [
+        "pm:Join",
+        "pm:Join1"
+      ],
+      "canonical_names": [
+        "Join",
+        "Join1"
+      ],
+      "msc": [
+        [
+          "06A12"
+        ],
+        [
+          "54B99"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/06_Order_lattices_ordered_algebraic_structures/06A12-Join.tex",
+        "sources/planetmath/tex/54_General_topology/54B99-Join1.tex"
+      ]
+    },
+    {
+      "label": "kernel",
+      "ids": [
+        "pm:Kernel",
+        "pm:Kernel1"
+      ],
+      "canonical_names": [
+        "Kernel",
+        "Kernel1"
+      ],
+      "msc": [
+        [
+          "20A05"
+        ],
+        [
+          "03C05",
+          "03C07"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20A05-Kernel.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03C05-Kernel1.tex"
+      ]
+    },
+    {
+      "label": "kleene algebra",
+      "ids": [
+        "pm:KleeneAlgebra",
+        "pm:KleeneAlgebra1"
+      ],
+      "canonical_names": [
+        "KleeneAlgebra",
+        "KleeneAlgebra1"
+      ],
+      "msc": [
+        [
+          "20M35",
+          "68Q70"
+        ],
+        [
+          "06D30"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20M35-KleeneAlgebra.tex",
+        "sources/planetmath/tex/06_Order_lattices_ordered_algebraic_structures/06D30-KleeneAlgebra1.tex"
+      ]
+    },
+    {
+      "label": "loop",
+      "ids": [
+        "pm:Loop",
+        "pm:Loop1"
+      ],
+      "canonical_names": [
+        "Loop",
+        "Loop1"
+      ],
+      "msc": [
+        [
+          "05C99",
+          "20N05"
+        ],
+        [
+          "54-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/05_Combinatorics/05C99-Loop.tex",
+        "sources/planetmath/tex/54_General_topology/54-00-Loop1.tex"
+      ]
+    },
+    {
+      "label": "loop theorem",
+      "ids": [
+        "pm:LoopTheorem",
+        "pm:LoopTheorem12"
+      ],
+      "canonical_names": [
+        "LoopTheorem",
+        "LoopTheorem12"
+      ],
+      "msc": [
+        [
+          "57M35"
+        ],
+        []
+      ],
+      "source_files": [
+        "sources/planetmath/tex/57_Manifolds_and_cell_complexes/57M35-LoopTheorem.tex",
+        "sources/planetmath/tex/40_Sequences_series_summability/40A05-LoopTheorem12.tex"
+      ]
+    },
+    {
+      "label": "midpoint",
+      "ids": [
+        "pm:Midpoint",
+        "pm:Midpoint1"
+      ],
+      "canonical_names": [
+        "Midpoint",
+        "Midpoint1"
+      ],
+      "msc": [
+        [
+          "51-00",
+          "51M15"
+        ],
+        [
+          "51-00",
+          "51M15"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/51_Geometry/51-00-Midpoint.tex",
+        "sources/planetmath/tex/51_Geometry/51M15-Midpoint1.tex"
+      ]
+    },
+    {
+      "label": "module",
+      "ids": [
+        "pm:Module",
+        "pm:Module1"
+      ],
+      "canonical_names": [
+        "Module",
+        "Module1"
+      ],
+      "msc": [
+        [
+          "13-00",
+          "16-00",
+          "20-00",
+          "30D15",
+          "33E20",
+          "44A20"
+        ],
+        [
+          "16D10"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/13_Commutative_rings_and_algebras/13-00-Module.tex",
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16D10-Module1.tex"
+      ]
+    },
+    {
+      "label": "monic",
+      "ids": [
+        "pm:Monic",
+        "pm:Monic1"
+      ],
+      "canonical_names": [
+        "Monic",
+        "Monic1"
+      ],
+      "msc": [
+        [
+          "18-00",
+          "18A20"
+        ],
+        [
+          "12E10"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18A20-Monic.tex",
+        "sources/planetmath/tex/12_Field_theory_and_polynomials/12E10-Monic1.tex"
+      ]
+    },
+    {
+      "label": "motivic cohomology",
+      "ids": [
+        "pm:MotivicCohomology",
+        "pm:MotivicCohomology1"
+      ],
+      "canonical_names": [
+        "MotivicCohomology",
+        "MotivicCohomology1"
+      ],
+      "msc": [
+        [
+          "57M07"
+        ],
+        [
+          "14F42"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/57_Manifolds_and_cell_complexes/57M07-MotivicCohomology.tex",
+        "sources/planetmath/tex/14_Algebraic_geometry/14F42-MotivicCohomology1.tex"
+      ]
+    },
+    {
+      "label": "nilradical",
+      "ids": [
+        "pm:Nilradical",
+        "pm:Nilradical1"
+      ],
+      "canonical_names": [
+        "Nilradical",
+        "Nilradical1"
+      ],
+      "msc": [
+        [
+          "13A10"
+        ],
+        [
+          "17B05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/13_Commutative_rings_and_algebras/13A10-Nilradical.tex",
+        "sources/planetmath/tex/17_Nonassociative_rings_and_algebras/17B05-Nilradical1.tex"
+      ]
+    },
+    {
+      "label": "normal closure",
+      "ids": [
+        "pm:NormalClosure",
+        "pm:NormalClosure1"
+      ],
+      "canonical_names": [
+        "NormalClosure",
+        "NormalClosure1"
+      ],
+      "msc": [
+        [
+          "12F10"
+        ],
+        [
+          "20A05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/12_Field_theory_and_polynomials/12F10-NormalClosure.tex",
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20A05-NormalClosure1.tex"
+      ]
+    },
+    {
+      "label": "orientation",
+      "ids": [
+        "pm:Orientation",
+        "pm:Orientation1"
+      ],
+      "canonical_names": [
+        "Orientation",
+        "Orientation1"
+      ],
+      "msc": [
+        [
+          "30A99"
+        ],
+        [
+          "57N99"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/30_Functions_of_a_complex_variable/30A99-Orientation.tex",
+        "sources/planetmath/tex/57_Manifolds_and_cell_complexes/57N99-Orientation1.tex"
+      ]
+    },
+    {
+      "label": "parallelogram law",
+      "ids": [
+        "pm:ParallelogramLaw",
+        "pm:ParallelogramLaw1"
+      ],
+      "canonical_names": [
+        "ParallelogramLaw",
+        "ParallelogramLaw1"
+      ],
+      "msc": [
+        [
+          "51-00"
+        ],
+        [
+          "46C05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/51_Geometry/51-00-ParallelogramLaw.tex",
+        "sources/planetmath/tex/46_Functional_analysis/46C05-ParallelogramLaw1.tex"
+      ]
+    },
+    {
+      "label": "partition",
+      "ids": [
+        "pm:Partition",
+        "pm:Partition1"
+      ],
+      "canonical_names": [
+        "Partition",
+        "Partition1"
+      ],
+      "msc": [
+        [
+          "03-00",
+          "45D05"
+        ],
+        [
+          "26A42",
+          "28-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03-00-Partition.tex",
+        "sources/planetmath/tex/28_Measure_and_integration/28-00-Partition1.tex"
+      ]
+    },
+    {
+      "label": "path",
+      "ids": [
+        "pm:Path",
+        "pm:Path1"
+      ],
+      "canonical_names": [
+        "Path",
+        "Path1"
+      ],
+      "msc": [
+        [
+          "54D05"
+        ],
+        [
+          "05C38"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54D05-Path.tex",
+        "sources/planetmath/tex/05_Combinatorics/05C38-Path1.tex"
+      ]
+    },
+    {
+      "label": "polygon",
+      "ids": [
+        "pm:Polygon",
+        "pm:Polygon1"
+      ],
+      "canonical_names": [
+        "Polygon",
+        "Polygon1"
+      ],
+      "msc": [
+        [
+          "51-00",
+          "51G05"
+        ],
+        [
+          "51-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/51_Geometry/51-00-Polygon.tex",
+        "sources/planetmath/tex/51_Geometry/51-00-Polygon1.tex"
+      ]
+    },
+    {
+      "label": "positive semidefinite",
+      "ids": [
+        "pm:PositiveSemidefinite",
+        "pm:PositiveSemidefinite1"
+      ],
+      "canonical_names": [
+        "PositiveSemidefinite",
+        "PositiveSemidefinite1"
+      ],
+      "msc": [
+        [
+          "15A48"
+        ],
+        [
+          "12D15"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A48-PositiveSemidefinite.tex",
+        "sources/planetmath/tex/12_Field_theory_and_polynomials/12D15-PositiveSemidefinite1.tex"
+      ]
+    },
+    {
+      "label": "practical number",
+      "ids": [
+        "pm:PracticalNumber",
+        "pm:PracticalNumber1"
+      ],
+      "canonical_names": [
+        "PracticalNumber",
+        "PracticalNumber1"
+      ],
+      "msc": [
+        [
+          "11A25"
+        ],
+        [
+          "11A25"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/11_Number_theory/11A25-PracticalNumber.tex",
+        "sources/planetmath/tex/11_Number_theory/11A25-PracticalNumber1.tex"
+      ]
+    },
+    {
+      "label": "primary decomposition theorem",
+      "ids": [
+        "pm:PrimaryDecompositionTheorem",
+        "pm:PrimaryDecompositionTheorem1"
+      ],
+      "canonical_names": [
+        "PrimaryDecompositionTheorem",
+        "PrimaryDecompositionTheorem1"
+      ],
+      "msc": [
+        [
+          "15A04"
+        ],
+        [
+          "13C99"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A04-PrimaryDecompositionTheorem.tex",
+        "sources/planetmath/tex/13_Commutative_rings_and_algebras/13C99-PrimaryDecompositionTheorem1.tex"
+      ]
+    },
+    {
+      "label": "radical",
+      "ids": [
+        "pm:Radical",
+        "pm:Radical1",
+        "pm:Radical12"
+      ],
+      "canonical_names": [
+        "Radical",
+        "Radical1",
+        "Radical12"
+      ],
+      "msc": [
+        [
+          "17B05"
+        ],
+        [
+          "12F05",
+          "12F10"
+        ],
+        [
+          "00A05",
+          "12D99",
+          "30-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/17_Nonassociative_rings_and_algebras/17B05-Radical.tex",
+        "sources/planetmath/tex/12_Field_theory_and_polynomials/12F05-Radical1.tex",
+        "sources/planetmath/tex/30_Functions_of_a_complex_variable/30-00-Radical12.tex"
+      ]
+    },
+    {
+      "label": "sheaf",
+      "ids": [
+        "pm:Sheaf",
+        "pm:Sheaf1"
+      ],
+      "canonical_names": [
+        "Sheaf",
+        "Sheaf1"
+      ],
+      "msc": [
+        [
+          "14F05",
+          "18F20",
+          "54B40"
+        ],
+        [
+          "14F20",
+          "18F10",
+          "18F20"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54B40-Sheaf.tex",
+        "sources/planetmath/tex/14_Algebraic_geometry/14F20-Sheaf1.tex"
+      ]
+    },
+    {
+      "label": "sheafification",
+      "ids": [
+        "pm:Sheafification",
+        "pm:Sheafification1"
+      ],
+      "canonical_names": [
+        "Sheafification",
+        "Sheafification1"
+      ],
+      "msc": [
+        [
+          "14F05",
+          "18F20",
+          "54B40"
+        ],
+        [
+          "14F20",
+          "18F10",
+          "18F20"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18F20-Sheafification.tex",
+        "sources/planetmath/tex/14_Algebraic_geometry/14F20-Sheafification1.tex"
+      ]
+    },
+    {
+      "label": "sieve of eratosthenes",
+      "ids": [
+        "pm:SieveOfEratosthenes",
+        "pm:SieveOfEratosthenes1"
+      ],
+      "canonical_names": [
+        "SieveOfEratosthenes",
+        "SieveOfEratosthenes1"
+      ],
+      "msc": [
+        [
+          "11A41"
+        ],
+        [
+          "11N35"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/11_Number_theory/11A41-SieveOfEratosthenes.tex",
+        "sources/planetmath/tex/11_Number_theory/11N35-SieveOfEratosthenes1.tex"
+      ]
+    },
+    {
+      "label": "square",
+      "ids": [
+        "pm:Square",
+        "pm:Square1"
+      ],
+      "canonical_names": [
+        "Square",
+        "Square1"
+      ],
+      "msc": [
+        [
+          "51-00"
+        ],
+        [
+          "11-00",
+          "26-00",
+          "30-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/51_Geometry/51-00-Square.tex",
+        "sources/planetmath/tex/11_Number_theory/11-00-Square1.tex"
+      ]
+    },
+    {
+      "label": "support",
+      "ids": [
+        "pm:Support",
+        "pm:Support1",
+        "pm:Support12"
+      ],
+      "canonical_names": [
+        "Support",
+        "Support1",
+        "Support12"
+      ],
+      "msc": [
+        [
+          "13C99",
+          "16D10"
+        ],
+        [
+          "60A99",
+          "68Q30"
+        ],
+        [
+          "16S34"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16D10-Support.tex",
+        "sources/planetmath/tex/60_Probability_theory_and_stochastic_processes/60A99-Support1.tex",
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16S34-Support12.tex"
+      ]
+    },
+    {
+      "label": "symmetric group",
+      "ids": [
+        "pm:SymmetricGroup",
+        "pm:SymmetricGroup1"
+      ],
+      "canonical_names": [
+        "SymmetricGroup",
+        "SymmetricGroup1"
+      ],
+      "msc": [
+        [
+          "20B30"
+        ],
+        [
+          "20B30"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20B30-SymmetricGroup.tex",
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20B30-SymmetricGroup1.tex"
+      ]
+    },
+    {
+      "label": "trace",
+      "ids": [
+        "pm:Trace",
+        "pm:Trace1"
+      ],
+      "canonical_names": [
+        "Trace",
+        "Trace1"
+      ],
+      "msc": [
+        [
+          "15A04",
+          "15A15"
+        ],
+        [
+          "12F05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A15-Trace.tex",
+        "sources/planetmath/tex/12_Field_theory_and_polynomials/12F05-Trace1.tex"
+      ]
+    },
+    {
+      "label": "transitive",
+      "ids": [
+        "pm:Transitive",
+        "pm:Transitive1"
+      ],
+      "canonical_names": [
+        "Transitive",
+        "Transitive1"
+      ],
+      "msc": [
+        [
+          "03E20"
+        ],
+        [
+          "03B05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03E20-Transitive.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03B05-Transitive1.tex"
+      ]
+    },
+    {
+      "label": "zero ideal",
+      "ids": [
+        "pm:ZeroIdeal",
+        "pm:ZeroIdeal1"
+      ],
+      "canonical_names": [
+        "ZeroIdeal",
+        "ZeroIdeal1"
+      ],
+      "msc": [
+        [
+          "11A41",
+          "16D25"
+        ],
+        [
+          "11N80",
+          "13A15",
+          "14K99",
+          "16D25"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16D25-ZeroIdeal.tex",
+        "sources/planetmath/tex/14_Algebraic_geometry/14K99-ZeroIdeal1.tex"
+      ]
+    }
+  ],
+  "warning": "Do not auto-merge same-label canonical numeric suffixes; they frequently encode distinct mathematical meanings."
+}

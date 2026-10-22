@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ArmstrongNumber}
+\pmcreated{2013-03-22 16:04:06}
+\pmmodified{2013-03-22 16:04:06}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{Armstrong number}
+\pmrecord{4}{38123}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{narcissistic number}{ArmstrongNumber}
+\pmsynonym{plus perfect number}{ArmstrongNumber}
+\pmsynonym{perfect digital invariant}{ArmstrongNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given a base $b$ integer $$n = \sum_{i = 1}^k d_ib^{i - 1}$$ where $d_1$ is the least significant digit and $d_k$ is the most significant, if it's also the case that for some power $m$ the equality $$n = \sum_{i = 1}^k {d_i}^m$$ also holds, then $n$ is an {\em Armstrong number} or {\em narcissistic number} or {\em plus perfect number} or {\em perfect digital invariant}.
+
+In any given base $b$ there is a finite amount of Armstrong numbers, since the inequality $k(b - 1)^m > b^{k - 1}$ is false after a certain threshold.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,506 @@
+{
+  "audit_version": "1.0",
+  "auditor": "agent:/root/atlas_audit",
+  "created_at": "2026-10-22T12:58:19.691440+00:00",
+  "status": "passed_prepublication_checks",
+  "critical_blockers": [],
+  "scope": "Independent task-separated review of the local bilingual publication inventory, attribution, portability and executed offline rebuild; not legal advice, exhaustive secret detection, mathematical proof certification, remote upload verification, or external independent certification.",
+  "checks": {
+    "frozen_node_and_edge_hashes_match": true,
+    "all_selected_files_below_github_100MiB_limit": true,
+    "no_selected_symlinks": true,
+    "no_external_literature_pdfs_or_forbidden_exploration_files": true,
+    "no_known_credential_pattern_matches": true,
+    "no_runtime_absolute_workspace_paths_in_scripts": true,
+    "all_project_markdown_local_links_resolve": true,
+    "both_language_svg_inventories_match_manifests": true,
+    "all_original_manifest_source_payloads_retained": true,
+    "offline_full_pipeline_completed_after_render": true,
+    "scoped_license_and_attribution_files_present": true,
+    "lxml_audit_dependency_declared": true,
+    "stacks_archive_has_no_unsafe_members": true
+  },
+  "frozen_data_hashes": {
+    "data/nodes.jsonl": "4f146b824e4cce0f3b8e47e1c756557124c5075288fdf8cd7db0145a879abce1",
+    "data/edges.csv": "ffc436ae4c1c8f35caf8127e347cd4547b1c24178389904fb0e40efc922a4fe4",
+    "data/bridges.csv": "294eb2e6671dce5632536051331593b6f5f74d73797993cfb97cbf7c5d409b33",
+    "data/research-candidates.json": "8278659522d7215e650db11019dc187507ebb4e2b448b1be892a0d4f49c83080"
+  },
+  "inventory_snapshot": {
+    "selected_files_excluding_this_audit_and_future_release_manifest": 7311,
+    "bytes": 402131116,
+    "largest_file": {
+      "path": "data/nodes.jsonl",
+      "bytes": 36893029
+    },
+    "files_over_50MiB": [],
+    "pdfs": [
+      "maps/en/mathematical-archipelago-bridges.pdf",
+      "maps/en/mathematical-archipelago-domain-atlas.pdf",
+      "maps/en/mathematical-archipelago-overview.pdf",
+      "maps/mathematical-archipelago-bridges.pdf",
+      "maps/mathematical-archipelago-domain-atlas.pdf",
+      "maps/mathematical-archipelago-overview.pdf"
+    ],
+    "archives": [
+      "sources/stacks/source.tar.gz"
+    ],
+    "forbidden_files": [],
+    "sensitive_filename_matches": []
+  },
+  "secret_scan": {
+    "pattern_names": [
+      "github_token",
+      "aws_access_key",
+      "private_key_header",
+      "openai_key",
+      "credential_url",
+      "slack_token"
+    ],
+    "matches": [],
+    "limitation": "Known-pattern scan is not a guarantee that every possible credential representation is absent; matching secret values would not be printed."
+  },
+  "license_review": [
+    {
+      "scope": "Original Python files in scripts/",
+      "license": "MIT",
+      "evidence": [
+        "LICENSE.md",
+        "LICENSES/MIT.txt"
+      ],
+      "result": "Scoped to original code, not the dataset."
+    },
+    {
+      "scope": "Original editorial prose and cartographic design",
+      "license": "CC-BY-SA-4.0",
+      "evidence": [
+        "LICENSE.md",
+        "LICENSES/CC-BY-SA-4.0.txt"
+      ],
+      "result": "Source quotations and source-derived fields explicitly excluded from blanket relicensing."
+    },
+    {
+      "scope": "PlanetMath source texts, extracted records and quotations",
+      "license": "CC-BY-SA-3.0",
+      "evidence": [
+        "sources/planetmath/LICENSE-CC-BY-SA-3.0.txt",
+        "source/planetmath/records.jsonl",
+        "sources/planetmath/tex-manifest.json"
+      ],
+      "result": "Original TeX, per-entry authors, titles, URLs, hashes, and modification descriptions preserved."
+    },
+    {
+      "scope": "Stacks source texts and extracted statements",
+      "license": "GFDL-1.2-or-later",
+      "evidence": [
+        "sources/stacks/tex/introduction.tex:16",
+        "sources/stacks/tex/COPYING",
+        "sources/stacks/tex/CONTRIBUTORS",
+        "THIRD_PARTY_NOTICES.md"
+      ],
+      "result": "Original Copyright (C) 2005 -- 2025 Johan de Jong, no invariant sections or cover texts; transparent TeX, full contributors, distinct collection title, publisher and modification history retained."
+    },
+    {
+      "scope": "Wikipedia selected text and cached HTML",
+      "license": "CC-BY-SA-4.0",
+      "evidence": [
+        "sources/wikipedia/wikipedia-bridge-manifest.json",
+        "sources/wikipedia/README.txt",
+        "THIRD_PARTY_NOTICES.md"
+      ],
+      "result": "Fifty cached pages/sections, revision identifiers, canonical and history attribution preserved. No separate embedded-media collection is redistributed."
+    }
+  ],
+  "portability": {
+    "project_markdown_documents_checked": 12,
+    "local_markdown_links_checked": 115,
+    "unresolved_links": [],
+    "script_runtime_absolute_workspace_paths": [],
+    "historical_absolute_path_note": "reports/math-bridge-bindings.json nodes_path is an old /workspace/math-atlas snapshot locator. Runtime scripts use paths relative to __file__, and the isolated rebuild succeeds without that path. /root/agent names are audit identities, not required filesystem paths.",
+    "dependencies": "Python numerical dependencies and lxml are declared; Graphviz sfdp and Noto Sans CJK are system requirements documented separately."
+  },
+  "offline_rebuild": {
+    "method": "Copy the publication tree to a fresh /tmp directory excluding .git and caches; install a sitecustomize shim blocking Python socket connect/create_connection/connect_ex; execute the commands below using only copied source files. No acquisition scripts were invoked.",
+    "commands": [
+      {
+        "command": "python scripts/build_atlas.py",
+        "exit_code": 0,
+        "seconds": 4.78
+      },
+      {
+        "command": "python scripts/layout_atlas.py",
+        "exit_code": 0,
+        "seconds": 21.41
+      },
+      {
+        "command": "python scripts/bind_math_bridges.py",
+        "exit_code": 0,
+        "seconds": 1.63
+      },
+      {
+        "command": "python scripts/navigate.py candidates --limit 50 --save",
+        "exit_code": 0,
+        "seconds": 2.38
+      },
+      {
+        "command": "python scripts/verify_release.py",
+        "exit_code": 0,
+        "seconds": 11.41
+      },
+      {
+        "command": "python scripts/audit_atlas.py",
+        "exit_code": 1,
+        "seconds": 5.76
+      },
+      {
+        "command": "python scripts/render_atlas.py",
+        "exit_code": 0,
+        "seconds": 77.92
+      },
+      {
+        "command": "python scripts/audit_atlas.py",
+        "exit_code": 0,
+        "seconds": 6.25
+      },
+      {
+        "command": "python scripts/audit_original_samples.py",
+        "exit_code": 0,
+        "seconds": 3.16
+      },
+      {
+        "command": "python scripts/audit_wikipedia_bridges.py",
+        "exit_code": 0,
+        "seconds": 1.39
+      },
+      {
+        "command": "python scripts/audit_navigation.py",
+        "exit_code": 0,
+        "seconds": 16.68
+      }
+    ],
+    "initial_expected_failure": "An initial audit after layout but before render rejected render_manifest_does_not_bind_final_data. After the complete render, the same audit passed. This is retained as evidence that stale figures are rejected, not suppressed.",
+    "result_reports": {
+      "reports/release-verification.json": {
+        "status": "passed",
+        "node_count": 21741,
+        "edge_count": 46812
+      },
+      "reports/atlas-independent-audit.json": {
+        "structural_pass": true,
+        "node_count": 21741,
+        "edge_count": 46812
+      },
+      "reports/atlas-original-source-samples.json": {
+        "sample_size": 36
+      },
+      "reports/wikipedia-bridge-independent-audit.json": {
+        "pass": true,
+        "node_count": 50,
+        "edge_count": 52
+      },
+      "reports/navigation-independent-audit.json": {
+        "pass": true
+      }
+    },
+    "comparison": {
+      "same_node_ids": true,
+      "changed_fields": {
+        "y": 8925,
+        "x": 8051
+      },
+      "max_coordinate_absolute_difference": 0.00011009600000000397,
+      "noncoordinate_fields_identical": true
+    },
+    "rebuilt_data_hashes": {
+      "data/nodes.jsonl": "9845a8369238fdef0b6ddc829025c1b3a6208fbcc32c87a64debe4094e8c4102",
+      "data/edges.csv": "ffc436ae4c1c8f35caf8127e347cd4547b1c24178389904fb0e40efc922a4fe4",
+      "data/bridges.csv": "294eb2e6671dce5632536051331593b6f5f74d73797993cfb97cbf7c5d409b33",
+      "data/research-candidates.json": "8278659522d7215e650db11019dc187507ebb4e2b448b1be892a0d4f49c83080"
+    },
+    "replayed_script_hashes": {
+      "scripts/record_bridge_review.py": "79694aa61f4b567260e469d9f2c7aadea5ce432bfeab0fa8c1c945bbcf6f90ea",
+      "scripts/classify_planetmath_context.py": "1a60bddb6d927fa32cd4daea4022fc9a68d6d36e483e0a22e620d53f1d9651ec",
+      "scripts/check_source_counterexamples.py": "501ac6378d2825d6fe3a82b7de33a21d4385e7d9ce399c2c5a9d7fa6ab1b5564",
+      "scripts/acquire_wikipedia.py": "50393367f8bed06250f96d14d0270817b7a551ee1a4cb84b17f58ef245e49a41",
+      "scripts/audit_navigation.py": "dc7efb840bbf2e5dac86df216167e18848df1a09d015f35f4f6afc885804e4cf",
+      "scripts/bind_math_bridges.py": "aba9fbef20f1c673fd81f5e9cfb1bd989c2eb875005bc9440fdac3fdd48d113c",
+      "scripts/prepare_planetmath_release.py": "d0f5a50e66d3e89606e9482f6e3c94946e21e5339f64d59f7248752c50fb40e3",
+      "scripts/build_atlas.py": "068a79b6fca1a961e14e991165301772bb5c8b9142e6961ceff4894029fcb144",
+      "scripts/check_cartographic_findings.py": "983ffd440bbfa100cfd35348a467d35552488feb370c0fc14d42ff12b8cd2844",
+      "scripts/verify_release.py": "5b1f7a3e65e87baabf58fd120161c155be30804db454d35c75eaf4154544cbe7",
+      "scripts/render_atlas.py": "e76a45a0f7338afdc46ad433cf4b288d1925a589d645f5987272724dd4e31535",
+      "scripts/layout_atlas.py": "7548e9e0c5bc932f3e8f6304980c3118ed9e8b265cd8ac90ec8b79154f52c3f5",
+      "scripts/acquire_planetmath.py": "2af5cc006d3a5f767255faee56c2249e1c4c2e96b4f453eeef6bc57b570fc87f",
+      "scripts/write_content_findings.py": "b1ae0cd6125dc6fa36611d6a5e71ff8afaa1c8395b7bc02f715c479376826872",
+      "scripts/check_title_scope.py": "8e36f166c967ba35aef6b883e8efc8bace602816d4d7b8652907f0c8fcd75405",
+      "scripts/build_math_bridges.py": "507b6b5756b15bdf72b1f7b73455a0c9adf5f43d71431aacad8ddfd9af64f7b0",
+      "scripts/audit_original_samples.py": "063b469d82bf5b72c98bd6c3c577d9a3a937c0082f4342acc2f0659686e921c4",
+      "scripts/navigate.py": "e2d98eef0bd5be6ecf405239e1228ec5570c42e04639e7ecfc5344fb3ac9b5a9",
+      "scripts/acquire_stacks.py": "2c098b8b9edbe474653c998b229bc909cc9e9102bd22c8c6bd56604c55be7001",
+      "scripts/audit_wikipedia_bridges.py": "e6875fe933c82a2f926ae37d83b59bdc282d7281cf66585a23612e2ef0448760",
+      "scripts/audit_atlas.py": "3a31446818dcee06b71c99721a68ceffee36a093bdb5667a3c1275a706cb728e",
+      "scripts/fetch_bridge_sources.py": "188900e35bcaa935a16e204fea0e206aee56ab68083f99d6ed213884d87e6f37"
+    },
+    "coordinates_bitwise_reproducible": false,
+    "explanation": "The same environment reproduced every non-coordinate node field and edge byte exactly. Recomputed x/y differ by at most 0.00011009600000000397, so rebuilt node and figure hashes legitimately change. Frozen release identity is verified by the supplied hashes; a rebuild must regenerate both maps and manifests."
+  },
+  "bilingual_maps": {
+    "maps": {
+      "svg_count": 14,
+      "checks": [
+        {
+          "path": "maps/domain-01.svg",
+          "anchors": 9693,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/domain-02.svg",
+          "anchors": 2530,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/domain-03.svg",
+          "anchors": 2292,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/domain-04.svg",
+          "anchors": 1759,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/domain-05.svg",
+          "anchors": 1551,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/domain-06.svg",
+          "anchors": 1420,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/domain-07.svg",
+          "anchors": 825,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/domain-08.svg",
+          "anchors": 707,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/domain-09.svg",
+          "anchors": 587,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/domain-10.svg",
+          "anchors": 259,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/domain-11.svg",
+          "anchors": 66,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/domain-12.svg",
+          "anchors": 52,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/mathematical-archipelago-bridges.svg",
+          "anchors": 41,
+          "background": 21741,
+          "routes": 21,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/mathematical-archipelago-overview.svg",
+          "anchors": 21741,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        }
+      ],
+      "all_match": true,
+      "manifest_nodes_sha256": "4f146b824e4cce0f3b8e47e1c756557124c5075288fdf8cd7db0145a879abce1"
+    },
+    "maps/en": {
+      "svg_count": 14,
+      "checks": [
+        {
+          "path": "maps/en/domain-01.svg",
+          "anchors": 9693,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/en/domain-02.svg",
+          "anchors": 2530,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/en/domain-03.svg",
+          "anchors": 2292,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/en/domain-04.svg",
+          "anchors": 1759,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/en/domain-05.svg",
+          "anchors": 1551,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/en/domain-06.svg",
+          "anchors": 1420,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/en/domain-07.svg",
+          "anchors": 825,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/en/domain-08.svg",
+          "anchors": 707,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/en/domain-09.svg",
+          "anchors": 587,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/en/domain-10.svg",
+          "anchors": 259,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/en/domain-11.svg",
+          "anchors": 66,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/en/domain-12.svg",
+          "anchors": 52,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/en/mathematical-archipelago-bridges.svg",
+          "anchors": 41,
+          "background": 21741,
+          "routes": 21,
+          "matches_manifest": true
+        },
+        {
+          "path": "maps/en/mathematical-archipelago-overview.svg",
+          "anchors": 21741,
+          "background": 0,
+          "routes": 0,
+          "matches_manifest": true
+        }
+      ],
+      "all_match": true,
+      "manifest_nodes_sha256": "4f146b824e4cce0f3b8e47e1c756557124c5075288fdf8cd7db0145a879abce1"
+    }
+  },
+  "original_v1_manifest_comparison": {
+    "original_manifest_path": "reports/atlas-v1-original-manifest.json",
+    "original_manifest_sha256": "d3bacb59c0db85d4d3c2d5e12107b9baec5529666260792465b58bff6fa6d6dd",
+    "entries": 7262,
+    "missing_files": [],
+    "changed_files_in_bilingual_tree": [
+      "README.md",
+      "requirements.txt",
+      "scripts/package_release.py",
+      "scripts/render_atlas.py"
+    ],
+    "interpretation": "The original manifest is historical evidence, not a claim that the edited bilingual README, renderer, requirements or packager match v1. No original data or source payload differs. The new package receives its own manifest."
+  },
+  "reviewed_publication_files": {
+    "LICENSE.md": "e3c0e403ba8e69e209281221e1d83d6a0fade8193bd567b3339a1f6295b74ca5",
+    "THIRD_PARTY_NOTICES.md": "6500105c9ec658119c0de7bea2490a4ebaecbeaab23f239d230a9fecb9482c9c",
+    "LICENSES/MIT.txt": "81ca2b467fb9ef2b09037a57bc1bf1c34a60b4bf722a06f544bc4dcfb8d8a4ee",
+    "LICENSES/CC-BY-SA-4.0.txt": "cde7883b9050a1104f4ac19a1572aafd6e5d7323b68351aaf51fbf4beba54966",
+    "requirements.txt": "c0dccc5f2ef4391d4efe3fbcc26c09e4a7dbda63bcc558025d9ea48b55e3e057",
+    "scripts/package_release.py": "2efe2cad0e8f8ee2a90684fd4a86d63253e2bfe675f0beb2b38f8e696a6325ef",
+    "LICENSES/Noto-CJK-COPYRIGHT.txt": "849f4ea9c214fa4ac3593b770c699f387534b11ce671264c1b10d85bdcb5997b"
+  },
+  "packager_review": {
+    "explicit_output_and_version": true,
+    "default_archive_name": "Mafh-Island-v1.0.0.zip",
+    "old_archive_name_rejected": true,
+    "output_inside_repository_rejected": true,
+    "source_allowlist": true,
+    "both_svg_sets_verified_against_data": true,
+    "temporary_zip_crc_and_member_hash_verification": true,
+    "note": "Code inspected; root executes the final packager after this audit is written. No final archive hash is claimed here."
+  },
+  "remaining_release_actions": [
+    "Root must produce and verify the final bilingual ZIP/manifest after including this audit.",
+    "Root must verify the pushed repository and uploaded release asset; this agent has not pushed or uploaded anything."
+  ],
+  "original_chinese_archive_restoration": {
+    "bytes": 78400149,
+    "sha256": "b12c27898fc2ca7560bf266497d9d3e864f90494901fc4f6cfcc41c226bbc9c0",
+    "matches_original": true
+  },
+  "preserved_limitations": [
+    "21,741 source-backed entries do not mean independent theories or fully verified mathematics.",
+    "Source-quality annotations and remaining semantic-identity uncertainty are retained.",
+    "This is a mixed-license collection; keep notices and per-entry attribution with redistributions.",
+    "No new review of all 21 literature proofs or all mathematical statements was undertaken during publication."
+  ]
+}

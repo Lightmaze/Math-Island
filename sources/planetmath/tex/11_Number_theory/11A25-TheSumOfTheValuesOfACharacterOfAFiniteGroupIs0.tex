@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheSumOfTheValuesOfACharacterOfAFiniteGroupIs0}
+\pmcreated{2013-03-22 14:10:30}
+\pmmodified{2013-03-22 14:10:30}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{the sum of the values of a character of a finite group is $0$}
+\pmrecord{6}{35601}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+%\pmkeywords{sum}
+%\pmkeywords{vanishing}
+%\pmkeywords{character}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+The following is an argument that occurs in many proofs involving characters of groups. Here we use additive notation for the group $G$, however this group is not assumed to be abelian.
+
+\begin{lemma}
+Let $G$ be a finite group, and let $K$ be a field. Let $\chi\colon G\to K^{\times}$ be a character, where $K^{\times}$ denotes the multiplicative group of $K$. Then:
+$$\sum_{g\in G} \chi(g) =\begin{cases}
+\mid G \mid, \text{ if } \chi \text{ is trivial,}\\
+0_K, \text{ otherwise}
+\end{cases}$$
+where $0_K$ is the zero element in $K$, and $\mid G \mid$ is the order of the group $G$.
+\end{lemma}
+\begin{proof}
+First assume that $\chi$ is trivial, i.e. for all $g\in G$ we have $\chi(g)=1\in K$. Then the result is clear.
+
+Thus, let us assume that there exists $g_1$ in $G$ such that $\chi(g_1)=h\neq 1\in K$. Notice that for any element $g_1\in G$ the map:
+$$ G \to G,\quad g\mapsto g_1+g $$
+is clearly a bijection. Define $\mathcal{S}=\sum_{g\in G} \chi(g)\in K$. Then:
+\begin{eqnarray*}
+h\cdot\mathcal{S} &=& \chi(g_1)\cdot\mathcal{S}\\
+&=& \chi(g_1)\cdot \sum_{g\in G}\chi(g)\\
+&=& \sum_{g\in G}\chi(g_1)\cdot\chi(g)\\
+&=& \sum_{g\in G}\chi(g_1 + g),\quad (1)\\
+&=& \sum_{j\in G}\chi(j),\quad (2)\\
+&=& \mathcal{S}
+\end{eqnarray*}
+By the remark above, sums $(1)$ and $(2)$ are equal, since both run over all possible values of $\chi$ over elements of $G$. Thus, we have proved that:
+$$h\cdot \mathcal{S}=\mathcal{S}$$
+and $h\neq 1\in K$. Since $K$ is a field, it follows that $\mathcal{S}=0\in K$, as desired.
+
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

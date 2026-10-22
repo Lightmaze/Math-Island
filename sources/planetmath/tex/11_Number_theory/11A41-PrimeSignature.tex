@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrimeSignature}
+\pmcreated{2013-03-22 18:51:50}
+\pmmodified{2013-03-22 18:51:50}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{prime signature}
+\pmrecord{5}{41679}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The {\em prime signature} of an integer $n$ is the list of nonzero exponents $a_i$ from the integer factorization $$n = \prod_{i = 1}^{\infty} {p_i}^{a_i},$$ (with $p_i$ being the $i$th prime) sorted in \PMlinkname{ascending order}{AscendingOrder} but with duplicates retained. Three examples: the prime signature of 10368 is (4, 7), the prime signature of 10369 is (1), the prime signature of 10370 is (1, 1, 1, 1).
+
+The prime signature of a number is insufficient to uniquely identify it. Numbers like 34992 and 514714375 also have prime signatures of (4, 7). However, prime signatures can identify some kinds of numbers: the primes have signature (1); the squares of primes have signature (2), while other semiprimes have signature (1, 1); sphenic numbers have signature (1, 1, 1); etc. But while other kinds of numbers have different signatures among their members, some generalizations can still be made, such as that highly composite numbers have prime signatures in reverse order of the factorization as usually stated with the primes from 2 up; or that Achilles numbers don't have any 1s in their prime signature but the greatest common divisor of the numbers in the prime signature is 1.
+%%%%%
+%%%%%
+\end{document}

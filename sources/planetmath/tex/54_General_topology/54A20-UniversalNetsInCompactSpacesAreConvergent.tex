@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UniversalNetsInCompactSpacesAreConvergent}
+\pmcreated{2013-03-22 17:31:29}
+\pmmodified{2013-03-22 17:31:29}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{universal nets in compact spaces are convergent}
+\pmrecord{4}{39918}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A20}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Theorem -} A universal net $ (x_{\alpha})_{\alpha \in \mathcal{A}}$ in a compact space $ X$ is convergent.
+
+{\bf Proof :} Suppose by contradiction that $(x_{\alpha})_{\alpha \in \mathcal{A}}$ was not convergent. Then for every $x \in X$ we would find neighborhoods $U_x$ such that
+\[
+\forall_{\alpha \in \mathcal{A}}\;\;\; \exists_{\alpha \leq \alpha_0} \;\;\; x_{\alpha_0} \notin U_x
+\]
+
+The collection of all this neighborhoods cover $X$, and as $X$ is compact, a finite number
+$U_{x_1}, U_{x_2}, \dots, U_{x_n}$ also cover $X$.
+
+The net $(x_{\alpha})_{\alpha \in \mathcal{A}}$ is not eventually in $U_{x_k}$ so it must be eventually in $X-U_{x_k}$ (because it is a \PMlinkescapetext{universal} net). Therefore we can find $\alpha_k \in \mathcal{A}$ such that
+\[ \forall_{\alpha_k \leq \alpha} \;\;\; x_{\alpha} \in X-U_{x_k} \]
+
+Because we have a finite number $\alpha_1, \alpha_2 \dots, \alpha_n \in \mathcal{A}$ we can find $\gamma \in \mathcal{A}$ such that $\alpha_k \leq \gamma$ for each $1 \leq k \leq n$. 
+
+Then $x_{\gamma} \in X-U_{x_k}$ for all $k$, i.e. $x_{\gamma} \notin U_{x_k}$ for all $k$. But $U_{x_1}, U_{x_2}, \dots, U_{x_n}$ cover $X$ and thus we have a contradiction. $\square$
+%%%%%
+%%%%%
+\end{document}

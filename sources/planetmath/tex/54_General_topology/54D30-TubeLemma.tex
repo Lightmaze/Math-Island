@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TubeLemma}
+\pmcreated{2013-03-22 17:25:39}
+\pmmodified{2013-03-22 17:25:39}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{tube lemma}
+\pmrecord{7}{39802}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D30}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Tube lemma -} Let $X$ and $Y$ be topological spaces such that $Y$ is compact. If $N$ is an open set of $X \times Y$ containing a "slice" $x_0 \times Y$, then $N$ contains some "tube" $W \times Y$, where $W$ is a neighborhood of $x_0$ in $X$.
+
+{\bf Proof :} $N$ is a union of basis elements $U \times V$, with $U$ and $V$ open sets in $X$ and $Y$ respect. Since $x_0 \times Y$ is compact (it is homeomorphic to $Y$), only a finite number $U_1 \times V_1, \dots, U_n \times V_n$ of such basis elements cover $x_0 \times Y$.
+
+We may assume that each of the basis elements $U_i \times V_i$ actually intersects $x_0 \times Y$, since otherwise we could discard it from the finite collection and still have a covering of $x_0 \times Y$.
+
+Define $W:=U_1 \cap \dots \cap U_n$. The set $W$ is open and contains $x_0$ because each $U_i \times V_i$ intersects $x_0 \times Y$ by the previous remark.
+
+We now claim that $W \times Y \subseteq N$. Let $(x, y)$ be a point in $W \times Y$. The point $(x_0, y)$ is in some $U_i \times V_i$ and so $y \in V_i$. We also know that $x \in W = U_1 \cap \dots \cap U_n \subseteq U_i$.
+
+Therefore $(x, y) \in U_i \times V_i \subseteq N$ as desired. $\square$
+
+\begin{thebibliography}{9}
+\bibitem{munkres} J. Munkres, \emph{Topology} (2nd edition), Prentice Hall, 1999.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DegreeOfAlgebraicNumber}
+\pmcreated{2013-03-22 19:08:51}
+\pmmodified{2013-03-22 19:08:51}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{degree of algebraic number}
+\pmrecord{12}{42050}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmclassification{msc}{11C08}
+\pmclassification{msc}{12F05}
+\pmclassification{msc}{12E05}
+%\pmkeywords{algebraic conjugates}
+%\pmkeywords{characteristic equation}
+%\pmkeywords{degree of algebraic number field}
+\pmrelated{KConjugates}
+\pmrelated{CharacteristicPolynomialOfAlgebraicNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{irreducible} \PMlinkescapeword{degree}
+
+\textbf{Theorem.}\, The \PMlinkname{degree}{DegreeOfAnAlgebraicNumber} of any algebraic number $\alpha$ in the number field $\mathbb{Q}(\vartheta)$ divides the degree of $\vartheta$.\, The zeroes of the characteristic polynomial $g(x)$ of $\alpha$ consist of the algebraic conjugates of $\alpha$, each of which having equal multiplicity as zero of $g(x)$.
+\\
+
+\emph{Proof.}\, Let the minimal polynomial of \,$\alpha$\, be
+$$a(x) \;:=\; x^k+a_1x^{k-1}+\ldots+a_k$$
+and all zeroes of this be\, $\alpha_1 = \alpha,\,\alpha_2,\,\ldots,\,\alpha_k$.\, Denote the canonical polynomial of 
+$\alpha$ with respect to the \PMlinkname{primitive element}{SimpleFieldExtension} $\vartheta$ by $r(x)$; then 
+$$a(r(\vartheta)) \;=\; a(\alpha) \;=\; 0.$$
+If\, $a(r(x)) \;:=\; \varphi(x)$,\, then the equation
+$$\varphi(x) \;=\; 0$$
+has rational coefficients and is satisfied by $\vartheta$.\, Since the minimal polynomial $f(x)$ of $\vartheta$ is \PMlinkname{irreducible}{IrreduciblePolynomial}, it must divide $\varphi(x)$ and all algebraic conjugates\, 
+$\vartheta_1 = \vartheta,\,\vartheta_2,\,\ldots,\,\vartheta_n$ of $\vartheta$\, make $\varphi(x)$ zero.\, Hence we have
+$$a(\alpha^{(i)}) \;=\; a(r(\vartheta_i)) \;=\; 0 \quad \mbox{for}\quad i \,=\, 1,\,2,\,\ldots,\,n$$
+where the numbers $\alpha^{(i)}$ are the 
+\PMlinkname{$\mathbb{Q}(\vartheta)$-conjugates}{CharacteristicPolynomialOfAlgebraicNumber} of $\alpha$.\, Thus these 
+$\mathbb{Q}(\vartheta)$-conjugates are roots of the irreducible equation \,$a(x) = 0$, whence $a(x)$ must divide the characteristic polynomial $g(x)$.\, Let the \PMlinkname{power}{GeneralAssociativity} 
+$[a(x)]^m$ exactly divide $g(x)$, when
+$$g(x) \;=\; [a(x)]^mb(x), \quad a(x) \nmid b(x).$$
+Antithesis:\; $\mbox{deg}(b(x)) \,\geqq\, 1$ \;\; and\;\; $b(\beta) \,=\, 0$.\\
+This implies that\, $g(\beta) = 0$,\, i.e. $\beta$ is one of the numbers $\alpha^{(i)}$.\, Therefore, $\beta$ were a zero of $a(x)$ and thus $a(x) \mid b(x)$, which is impossible.\, Consequently,the antithesis is wrong, i.e. $b(x)$ is a constant, which must be 1 because $g(x)$ and $a(x)$ are monic polynomials.\, So,\, $g(x) = [a(x)]^m$.\, Since
+$$a(x) \;=\; (x\!-\!\alpha_1)(x\!-\!\alpha_2)\cdots(x\!-\!\alpha_k),$$
+it follows that
+$$g(x) \;=\; (x\!-\!\alpha_1)^m(x\!-\!\alpha_2)^m\cdots(x\!-\!\alpha_k)^m.$$
+Hence\, $km \,=\, n$\, and $k$ divides $n$, as asserted.\, Moreover, each $\alpha_j$ is a zero of order $m$ of $g(x)$, i.e. appears among the roots $\alpha^{(1)},\,\alpha^{(2)},\,\ldots,\,\alpha^{(n)}$ of the equation\, $g(x) = 0$\, $m$ times.
+
+
+
+
+%%%%%
+%%%%%
+\end{document}

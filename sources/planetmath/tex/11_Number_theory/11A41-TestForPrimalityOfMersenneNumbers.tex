@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TestForPrimalityOfMersenneNumbers}
+\pmcreated{2013-03-22 13:39:48}
+\pmmodified{2013-03-22 13:39:48}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{test for primality of Mersenne numbers}
+\pmrecord{8}{34320}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmclassification{msc}{11Y11}
+\pmclassification{msc}{11A51}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+
+%%%\usepackage{xypic}
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+Suppose $p$ is an odd prime, and define a sequence $L_n$ recursively as
+\begin{equation*}
+L_0=4,\qquad L_{n+1}=(L_n^2-2) \bmod (2^p-1).
+\end{equation*}
+The number $2^p-1$ is prime if and only if $L_{p-2}=0$.
+
+\begin{thebibliography}{1}
+
+\bibitem{knuth_art_prog:2}
+Donald~E. Knuth.
+\newblock {\em The Art of Computer Programming}, volume~2.
+\newblock Addison-Wesley, 1969.
+
+\end{thebibliography}
+
+%@BOOK{knuth_art_prog:2,
+% author     = {Donald E. Knuth},
+% title      = {The Art of Computer Programming},
+% publisher  = {Addison-Wesley},
+% year       = {1969},
+% volume     = {2}
+%}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{mathbbR2setminusCIsPathConnectedIfCIsCountable}
+\pmcreated{2013-03-22 16:09:11}
+\pmmodified{2013-03-22 16:09:11}
+\pmowner{silverfish}{6603}
+\pmmodifier{silverfish}{6603}
+\pmtitle{$\mathbb{R}^2 \setminus C$ is path connected if $C$ is countable}
+\pmrecord{5}{38234}
+\pmprivacy{1}
+\pmauthor{silverfish}{6603}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+\newtheorem{theo}{Theorem}
+\newtheorem{coro}{Corollary}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\begin{theo} Let $C$ be a countable subset of $\mathbb{R}^2$.  Then $\mathbb{R}^2\setminus C$ is path connected.\end{theo}
+
+We use $\mathbb{R}^2$ simply as an example; an analogous proof will work for any $\mathbb{R}^n, n>1$.
+
+\begin{proof}
+Fix a point $P$ not in $C$.  The strategy of the proof is to construct a path $p_x$ from any $x \in \mathbb{R}^2\setminus C$ to $P$. If we can do this then for any $d, d' \in \mathbb{R}^2\setminus C$ we may construct a path from $d$ to $d'$ by first following $p_d$ and then following $p_{d'}$ in reverse.
+
+Fix $x \in \mathbb{R}^2\setminus C$, and consider the set of all (straight) lines through $x$.  There are uncountably many of these and they meet in the single point $x$, so not all of them contain a point of $C$.  Choose one that doesn't and move along it:  your distance from $P$ takes on uncountably many values, and hence at some point this distance $r$ from $P$ is not shared by any point of $C$.  The whole of the circle with radius $r$, centre $P$, lies in $\mathbb{R}^2\setminus C$ so we may move around it freely.
+
+Consider all lines through $P$:  these all intersect this circle, and there are uncountably many of them so we may choose one, say $L$, that contains no point of $C$.  Moving around the circle until we meet $L$ and then following it inwards completes our path form $x$ to $P$.
+\end{proof} 
+
+\begin{coro} Let $f: \mathbb{R}^2 \rightarrow \mathbb{R}$ be continuous and onto.  Then $f^{-1} (0)$ is uncountable.  \end{coro}
+
+\begin{proof} Suppose that $f^{-1} (0)$ is countable.  $\mathbb{R}^2$ can be written as the disjoint union
+\[ f^{-1} (0) \cup f^{-1} ((-\infty, 0)) \cup f^{-1} ((0, \infty)) \]
+where the last two sets are open (as $f$ is continuous), non-empty (as $f$ is onto) and disjoint.  Since pathwise connected is the same as connected for Hausdorff spaces, we have that $\mathbb{R}^2 \setminus  f^{-1} (0)$ is not path connected, contradicting the theorem.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

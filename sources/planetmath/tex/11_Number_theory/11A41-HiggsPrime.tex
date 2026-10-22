@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HiggsPrime}
+\pmcreated{2013-03-22 16:43:12}
+\pmmodified{2013-03-22 16:43:12}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Higgs prime}
+\pmrecord{6}{38939}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmsynonym{Higgs' prime}{HiggsPrime}
+\pmsynonym{Higgs's prime}{HiggsPrime}
+\pmsynonym{Higg's prime}{HiggsPrime}
+\pmsynonym{Higg prime}{HiggsPrime}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em Higgs prime} is a prime number $Hp_n$ for which, given an exponent $a$, it is the case that $$\phi(Hp_n)|\prod_{i = 1}^{n - 1} {Hp_i}^a,$$ (where $\phi(x)$ is Euler's totient function) and $Hp_n > Hp_{n - 1}$.
+
+For $a = 2$, the first few Higgs primes are 2, 3, 5, 7, 11, 13, 19, 23, 29, 31, 37, 43, 47, etc., listed in A007459 of Sloane's OEIS. So, for example, 13 is a Higgs prime because the square of the product of the smaller Higgs primes is 5336100, and divided by 12 this is 444675. But 17 is not a Higgs prime because the square of the product of the smaller primes is 901800900, which leaves a remainder of 4 when divided by 16.
+
+From observation of the first few Higgs primes for squares through seventh powers, it would seem more compact to list those primes that are not Higgs primes. Observation further reveals that a Fermat prime $2^{2^n} + 1$ can't be a Higgs prime for the $a$th power if $a < 2^n$.
+
+It's not known if there are infinitely many Higgs primes for any exponent $a > 1$. The situation is quite different for $a = 1$. There are only four of them: 2, 3, 7 and 43 (a sequence suspiciously similar to Sylvester's sequence). In 1993, Burris and Lee found that about a fifth of the primes below a million are Higgs prime, and they concluded that even if the sequence of Higgs primes for squares is finite, ``a computer enumeration is not feasible.''
+
+\begin{thebibliography}{1}
+\bibitem{sb} S. Burris \& S. Lee, ``Tarski's high school identities'', {\it Amer. Math. Monthly} {\bf 100} (1993): 233
+\bibitem{ns} N. Sloane \& S. Plouffe, {\it The Encyclopedia of Integer Sequences}, New York: Academic Press (1995): M0660
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

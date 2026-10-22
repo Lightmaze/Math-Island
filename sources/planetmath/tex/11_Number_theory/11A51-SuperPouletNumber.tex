@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SuperPouletNumber}
+\pmcreated{2013-03-22 18:14:12}
+\pmmodified{2013-03-22 18:14:12}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{super-Poulet number}
+\pmrecord{4}{40825}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em super-Poulet number} $n$ is a Poulet number which besides satisfying the congruence $2^n \equiv 2 \mod n$, each of its divisors $d_i$ (for $1 < i \leq \tau(n)$) also satisfies the congruence $2^{d_i} \equiv 2 \mod d_i$.
+
+Two examples: 341 is a super-Poulet number, with its divisors being 1, 11, 31 and 341 itself. We verify that $2^{11} = 2048 = 11 \times 186 + 2$ and $2^{31} = 2147483648 = 31 \times 69273666 + 2$. 341 itself has already been checked when confirmed as a Poulet number. Now, 561 is a Poulet number but not a super-Poulet number since one of its divisors, 33, does not satisfy the congruence: $\frac{2^{33} - 2}{33} \approx 260301048.18181818 \ldots$.
+
+The first few super-Poulet numbers are 341, 1387, 2047, 2701, 3277, 4033, 4369, 4681, 5461, 7957, 8321, which are listed in A050217 of Sloane's OEIS.
+%%%%%
+%%%%%
+\end{document}

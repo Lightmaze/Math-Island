@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ResidueSystems}
+\pmcreated{2013-03-22 16:57:08}
+\pmmodified{2013-03-22 16:57:08}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{residue systems}
+\pmrecord{12}{39221}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmrelated{PrimeResidueClass}
+\pmrelated{Totative}
+\pmrelated{MathbbZ_n}
+\pmdefines{complete residue system}
+\pmdefines{reduced residue system}
+\pmdefines{least nonnegative remainder}
+\pmdefines{absolutely least remainder}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\textbf{Definition.}\, Let $m$ be a positive integer.\, A {\em complete residue system modulo $m$} is a set\, $\{a_0,\,a_1,\,\ldots,\,a_{m-1}\}$\, of integers containing one and only one representant from every residue class modulo $m$.\, Thus the numbers $a_\nu$ may be ordered such that for all $\nu = 0,\,1,\,\ldots,\,m\!-\!1$,\, they satisfy \, $a_\nu \equiv \nu \pmod{m}$.\\
+
+The {\em least nonnegative remainders} modulo $m$, i.e. the numbers
+$$0,\,1,\,\ldots,\,m\!-\!1$$
+form a complete residue system modulo $m$ (see long division).\, If $m$ is odd, then also the {\em absolutely least remainders}
+$$-\frac{m\!-\!1}{2},\,-\frac{m\!-\!3}{2},\,\ldots,\,
+-2,\,-1,\,0,\,1,\,2,\,\ldots,\,\frac{m\!-\!3}{2},\,\frac{m\!-\!1}{2}$$
+offer a complete residue system modulo $m$.\\
+
+\textbf{Theorem 1.}\, If\, $\gcd(a,\,m) = 1$\, and $b$ is an arbitrary integer, then the numbers
+$$0a\!+\!b,\,1a\!+\!b,\,2a\!+\!b,\,\ldots,\,(m\!-\!1)a\!+\!b$$
+form a complete residue system modulo $m$.\\
+
+
+One may speak also of a {\em reduced residue system modulo $m$}, which contains only one representant from each prime residue class modulo $m$.\, Such a system consists of $\varphi(m)$ integers, where $\varphi$ means the Euler's totient function.\\
+
+\textbf{Remark.}\, A set of integers forms a reduced residue system modulo $m$ if and only if\\
+$1^\circ$ it contains $\varphi(m)$ numbers,\\
+$2^\circ$ its numbers are coprime with $m$,\\
+$3^\circ$ its numbers are incongruent modulo $m$.\\
+
+
+\textbf{Theorem 2.}\, If\, $\gcd(a,\,m) = 1$\, and\, $\{k_1,\,k_2,\,\ldots,\,k_{\varphi(m)}\}$\, is a reduced residue system modulo $m$, then also the numbers
+$$k_1a,\,k_2a,\,\ldots,\,k_{\varphi(a)}a$$
+form a reduced residue system modulo $m$.\\
+
+\begin{thebibliography}{9}
+\bibitem{EK}{\sc K. V\"ais\"al\"a:} {\em Lukuteorian ja korkeamman algebran alkeet}.\, Otava, Helsinki (1950).
+\end{thebibliography}
+
+
+%%%%%
+%%%%%
+\end{document}

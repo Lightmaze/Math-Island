@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Deficiency}
+\pmcreated{2013-03-22 16:46:50}
+\pmmodified{2013-03-22 16:46:50}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{deficiency}
+\pmrecord{6}{39011}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmrelated{Abundance}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given an integer $n$ with divisors $d_1, \ldots , d_k$ (where the divisors are in ascending order and $d_1 = 1$, $d_k = n$) the difference $$2n - \left( \sum_{i = 1}^k d_i \right)$$ is the {\em deficiency} of $n$. Or if one prefers, $$n - \left( \sum_{i = 1}^{k - 1} d_i \right).$$ The deficiency is essentially the same thing as the abundance multiplied by $-1$. Thus, the deficiency is positive for deficient numbers, 0 for perfect numbers and negative for abundant numbers.
+
+For example, the divisors of 13 add up to 14, which is 12 less than 26. Therefore, 12 has an deficiency of 12. Another example: the divisors of 14 add up to 24, which is 4 less than 28. The deficiency of the first 72 integers is listed in A033879 of Sloane's OEIS.
+%%%%%
+%%%%%
+\end{document}

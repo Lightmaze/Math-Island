@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SequenceOfBoundedVariation}
+\pmcreated{2014-11-28 21:01:47}
+\pmmodified{2014-11-28 21:01:47}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{sequence of bounded variation}
+\pmrecord{7}{88202}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%\usepackage{xypic}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The sequence 
+\begin{align}
+a_1, a_2, a_3, \ldots
+\end{align}
+of complex numbers is said to be {\it of bounded variation}, iff it satisfies 
+$$\sum_{n=1}^\infty|a_n\!-\!a_{n+1}| \;<\; \infty.$$
+Cf. function of bounded variation. See also 
+\PMlinkname{contractive sequence}{ContractiveSequence}.\\
+
+\textbf{Theorem.}\, Every sequence of bounded variation is
+\PMlinkname{convergent}{ConvergentSequence}.\\
+
+{\it Proof.}\, Let's have a sequence (1) of bounded variation.\, 
+When $m < n$, we form the telescoping sum
+$$a_m-a_n = \sum_{i=m}^{n-1}(a_i-a_{i+1})$$
+from which we see that
+$$|a_m-a_n| \;\leqq\; \sum_{i=m}^{n-1}|a_i-a_{i+1}|.$$
+This inequality shows, by the Cauchy criterion for convergence of 
+series, that the sequence (1) is a Cauchy sequence and thus 
+converges. \Box\\
+
+One kind of sequences of bounded variation is formed by the 
+bounded monotonic sequences of real numbers (those sequences 
+are convergent, as is well known).\, Indeed, if (1) is a bounded 
+and e.g. monotonically nondecreasing sequence, then 
+$$a_i \leqq a_{i+1} \quad\mbox{  for each }i,$$
+whence 
+\begin{align}
+\sum_{i=1}^n|a_{i+1}-a_i| = \sum_{i=1}^n(a_{i+1}-a_i) 
+                            = a_{n+1}-a_1.
+\end{align}                            
+The boundedness of (1) thus implies that the partial sums (2) of 
+the series $\sum_{i=1}^\infty|a_{i+1}-a_i|$ with nonnegative 
+terms are bounded.\, Therefore the last series is convergent, i.e. 
+our sequence (1) is of bounded variarion.
+
+\begin{thebibliography}{8}
+\bibitem{loya}{\sc Paul Loya}: {\it Amazing and Aesthetic
+Aspects of Analysis: On the incredible infinite}.\, A Course in Undergraduate Analysis, Fall 2006.\; 
+Available in http://www.math.binghamton.edu/dennis/478.f07/EleAna.pdf
+\end{thebibliography}
+\end{document}

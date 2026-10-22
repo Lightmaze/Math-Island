@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LimitPointsOfUncountableSubsetsOfRn}
+\pmcreated{2013-03-22 19:07:57}
+\pmmodified{2013-03-22 19:07:57}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{limit points of uncountable subsets of R^n}
+\pmrecord{6}{42028}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A99}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\textbf{Proposition.} Let $\mathbb{R}^n$ be an $n$-dimensional, real normed space and let $A\subseteq \mathbb{R}^n$. If $A$ is uncountable, then there exists limit point of $A$ in $\mathbb{R}^n$.
+
+\textit{Proof.} For any $k\in\mathbb{N}$ let
+$$\mathbb{B}_{k}=\{v\in\mathbb{R}^n\ |\ ||v||\leq k\},$$
+i.e. $\mathbb{B}_k$ is a closed ball centered in $0$ with radius $k$. Assume, that for any $k$ the set 
+$$V_k=\mathbb{B}_k\cap A$$
+is finite. Then $\bigcup V_k=A$ would be at most countable. Contradiction, since $A$ is uncountable. Thus, there exists $k_0\in\mathbb{N}$ such that $V_{k_0}$ is infinite. But $V_{k_0}\subseteq\mathbb{B}_{k_0}$ and since $\mathbb{B}_{k_0}$ is compact (and $V_{k_0}$ is infinite), then there exists limit point of $V_{k_0}$ in $\mathbb{R}^n$. This completes the proof. $\square$
+
+\textbf{Corollary.} If $A\subseteq\mathbb{R}^n$ is uncountable, then there exist infinitely many limit points of $A$ in $\mathbb{R}^n$.
+
+\textit{Proof.} Assume, that there are finitely many limit points of $A$, namely $x_1,\ldots,x_k\in\mathbb{R}^n$. For $\varepsilon >0$ define
+$$A_{\varepsilon}=\{v\in\mathbb{R}^n\ |\ \forall_{i}\ ||v-x_i||>\varepsilon\}.$$
+Briefly speaking, $A_{\varepsilon}$ is a complement of a union of closed balls centered at $x_i$ with radii $\varepsilon$. Of course $A_{\varepsilon}\neq\emptyset$ since there are finitely many limit points. Let
+$$V_{\varepsilon}=A\cap A_{\varepsilon}.$$
+Assume, that $V_{\varepsilon}$ is countable for every $\varepsilon$. Then
+$$A\subseteq \bigcup_{n\in\mathbb{N}}V_{\frac{1}{n}}\cup\{x_1,\ldots,x_k\}$$
+would be at most countable (of course under assumption of Axiom of Choice). Contradiction. Thus, there is $\gamma > 0$ such that $V_{\gamma}$ is uncountable. Then (due to proposition) there is a limit point $x'\in\mathbb{R}^n$ of $V_{\gamma}$. Note, that 
+$$x'\in \overline{V_{\gamma}}\subseteq V_{\gamma'}$$
+
+for some $0 < \gamma' < \gamma $. Thus $x'$ is different from any $x_i$. Contradiction, since $x'$ is also a limit point of $A$. $\square$
+%%%%%
+%%%%%
+\end{document}

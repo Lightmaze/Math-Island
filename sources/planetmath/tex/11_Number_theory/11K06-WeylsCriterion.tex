@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WeylsCriterion}
+\pmcreated{2013-03-22 14:17:31}
+\pmmodified{2013-03-22 14:17:31}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Weyl's criterion}
+\pmrecord{7}{35747}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11K06}
+\pmclassification{msc}{11K38}
+\pmclassification{msc}{11L03}
+%\pmkeywords{uniform distribution}
+%\pmkeywords{exponential sums}
+\pmrelated{UniformlyDistributed}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
+
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+Let $\{u_n\}$ be a sequence of real numbers. Then $\{u_n\}$ is
+uniformly distributed modulo $1$ if and only if
+\begin{equation*}
+\lim_{N\to\infty} \frac{1}{N} \sum_{n=1}^N e(k u_n)=0
+\end{equation*}
+for every nonzero integer $k$, where $e(x)=\exp(2\pi i x)$.
+
+Weyl's criterion reduces the problem of uniform distribution of
+sequences to the problem of estimating certain exponential sums.
+Whereas the problem of estimating a family of exponential sums
+might seem harder at first, the exponential map has the
+multiplicative property which often makes the problem easier.
+
+\emph{Example:} If $x$ is irrational, then the sequence $\{nx\}$
+is uniformly distributed modulo $1$. Proof:
+\begin{equation*}
+\abs{\sum_{n=1}^{N} e(k n
+x)}=\abs{\frac{e(k(N+1)x)-e(kx)}{e(kx)-1}}\leq
+\frac{2}{\abs{\,e(kx)-1}}=O_k(1)
+\end{equation*}
+because the irrationality of $x$ implies $e(kx)\neq 1$.
+
+\begin{thebibliography}{1}
+
+\bibitem{cite:karatsuba_ant}
+Ð?.~Ð?. ÐšÐ°Ñ€Ð°Ñ†ÑƒÐ±Ð°.
+\newblock {\em ÐžÑ?Ð½Ð¾Ð²Ñ‹ Ð°Ð½Ð°Ð»Ð¸Ñ‚Ð¸Ñ‡ÐµÑ?ÐºÐ¾Ð¹ Ñ‚ÐµÐ¾Ñ€Ð¸Ð¸ Ñ‡Ð¸Ñ?ÐµÐ»}.
+\newblock Ð?Ð°ÑƒÐºÐ°, 1983.
+\newblock \PMlinkexternal{Zbl 0428.10019}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0428.10019}.
+\newblock For English translation see \cite{cite:karatsuba_ant_eng}.
+
+\bibitem{cite:karatsuba_ant_eng}
+A.~A. Karatsuba.
+\newblock {\em Basic analytic number theory}.
+\newblock Springer-Verlag, 1993.
+\newblock \PMlinkexternal{Zbl 0767.11001}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0767.11001}.
+%\newblock This is a translation of \cite{cite:karatsuba_ant}.
+
+\bibitem{cite:montgomery_tenlect}
+Hugh~L. Montgomery.
+\newblock {\em Ten Lectures on the Interface Between Analytic Number Theory and
+  Harmonic Analysis}, volume~84 of {\em Regional Conference Series in
+  Mathematics}.
+\newblock AMS, 1994.
+\newblock \PMlinkexternal{Zbl 0814.11001}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0814.11001}.
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

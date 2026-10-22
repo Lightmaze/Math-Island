@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PermutablePrime}
+\pmcreated{2013-03-22 16:13:42}
+\pmmodified{2013-03-22 16:13:42}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{permutable prime}
+\pmrecord{5}{38328}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{absolute prime}{PermutablePrime}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given the base $b$ representation of a prime number $p$ as $d_k, \ldots , d_1$ with $$p = \sum_{i = 1}^k d_ib^{i - 1},$$ if each possible permutation of the digits still represents a prime number in that base, then $p$ is said to be a \emph{permutable prime}. For example, in base 10, the prime 337 is a permutable prime since 373 and 733 are also prime. The known base 10 permutable primes are listed in A003459 of Sloane's OEIS.
+
+If we define $\pi_P(n)$ to count how many permutable primes there are below $n$, it is obvious that $\pi_P(b - 1) = \pi(b - 1)$, where $\pi(n)$ is the standard prime counting function.
+
+When $2 \vert b$, a search for permutable primes can safely exclude any primes whose base $b$ representation includes digits that are individually even. In a trivial sense, all repunit primes are also permutable primes. This means that in binary, the only permutable primes are repunits (that is, the Mersenne primes). Richert proved in 1951 that in the range $991 < p < 10^{175}$ the only base 10 permutable primes are repunit primes; it is conjectured that this is also true above that range.
+
+\begin{thebibliography}{1}
+\bibitem{hr} H. E. Richert, "On permutable primtall," {\it Unsolved Norsk Matematiske Tiddskrift}, {\bf 33} (1951), 50 - 54.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

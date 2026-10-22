@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheRealNumbersAreIndecomposableAsATopologicalSpace}
+\pmcreated{2013-03-22 18:30:59}
+\pmmodified{2013-03-22 18:30:59}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{the real numbers are indecomposable as a topological space}
+\pmrecord{12}{41202}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54F99}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $\mathbb{R}$ be the set of real numbers with standard topology. We wish to show that if $\mathbb{R}$ is homeomorphic to $X\times Y$ for some topological spaces $X$ and $Y$, then either $X$ is one point space or $Y$ is one point space. First let us prove a lemma:
+
+\textbf{Lemma}. Let $X$ and $Y$ be path connected topological spaces such that cardinality of both $X$ and $Y$ is at least $2$. Then for any point $(x_0,y_0)\in X\times Y$ the space $X\times Y \setminus \{(x_0,y_0)\}$ with subspace topology is path connected.
+
+\textit{Proof}. Let $x'\in X$ and $y'\in Y$ such that $x'\neq x_0$ and $y'\neq y_0$ (we assumed that such points exist). It is sufficient to show that for any point $(x_1,y_1)$ from $X\times Y \setminus \{(x_0,y_0)\}$ there exists a continous map $\sigma:\mathrm{I}\to X\times Y$ such that $\sigma(0)=(x_1,y_1)$, $\sigma(1)=(x',y')$ and $(x_0,y_0)\not\in\sigma(\mathrm{I})$.
+
+Let $(x_1,y_1)\in X\times Y \setminus \{(x_0,y_0)\}$. Therefore either $x_1\neq x_0$ or $y_1\neq y_0$. Assume that $y_1\neq y_0$ (the other case is analogous). Choose paths $\sigma:\mathrm{I}\to X$ from $x_1$ to $x'$ and $\tau:\mathrm{I}\to Y$ from $y_1$ to $y'$. Then we have induced paths:
+$$\sigma':\mathrm{I}\to X\times Y\ \ \mathrm{such}\ \mathrm{that}\ \sigma'(t)=(\sigma(t),y_1);$$
+$$\tau':\mathrm{I}\to X\times Y\ \ \mathrm{such}\ \mathrm{that}\ \tau'(t)=(x',\tau(t)).$$
+Then the path $\sigma' * \tau':\mathrm{I}\to X\times Y$ defined by the formula
+\[
+(\sigma' * \tau')(t) = \begin{cases} \sigma'(2t)  &\mathrm{when}\ \ 0\leq t\leq\frac{1}{2}\\
+\tau'(2t-1) &\mathrm{when}\ \ \frac{1}{2}\leq t\leq 1
+\end{cases}
+\]
+is a desired path. $\square$
+
+\textbf{Proposition}. If there exist topological spaces $X$ and $Y$ such that $\mathbb{R}$ is homeomorphic to $X\times Y$, then either $X$ has exactly one point or $Y$ has exactly one point.
+
+\textit{Proof}. Assume that neither $X$ nor $Y$ has exactly one point. Now $X\times Y$ is path connected since it is homeomorphic to $\mathbb{R}$, so it is well known that both $X$ and $Y$ have to be path connected (please see \PMlinkname{this entry}{ProductOfPathConnectedSpacesIsPathConnected} for more details). Therefore for any point $(x,y)\in X\times Y$ the space $X\times Y\setminus \{(x,y)\}$ is also path connected (due to lemma), but there exists a real number $r\in\mathbb{R}$ such that $X\times Y\setminus \{(x,y)\}$ is homeomorphic to $\mathbb{R}\setminus\{r\}$. Contradiction, since $\mathbb{R}\setminus\{r\}$ is not path connected. $\square$
+%%%%%
+%%%%%
+\end{document}

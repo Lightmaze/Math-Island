@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GaussSum}
+\pmcreated{2013-03-22 12:48:28}
+\pmmodified{2013-03-22 12:48:28}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{Gauss sum}
+\pmrecord{7}{33126}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11L05}
+\pmrelated{KloostermanSum}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\C}{\mathbb{C}}
+\begin{document}
+Let $p$ be a prime. Let $\chi$ be any multiplicative group character on $\Z/p\Z$ (that is, any group homomorphism of multiplicative groups $(\Z/p\Z)^\times \to \C^\times$). For any $a \in \Z/p\Z$, the complex number
+$$
+g_a(\chi) := \sum_{t \in \Z/p\Z} \chi(t) e^{2 \pi i a t/p}
+$$
+is called a {\em Gauss sum} on $\Z/p\Z$ associated to $\chi$.
+
+In general, the equation $g_a(\chi) = \chi(a^{-1}) g_1(\chi)$ (for nontrivial $a$ and $\chi$) reduces the computation of general Gauss sums to that of $g_1(\chi)$. The absolute value of $g_1(\chi)$ is always $\sqrt{p}$ as long as $\chi$ is nontrivial, and if $\chi$ is a quadratic character (that is, $\chi(t)$ is the Legendre symbol $\left(\frac{t}{p}\right)$), then the value of the Gauss sum is known to be
+$$
+g_1(\chi) =
+\begin{cases}
+\sqrt{p}, & p \equiv 1 \pmod{4}, \\
+i \sqrt{p}, & p \equiv 3 \pmod{4}.
+\end{cases}
+$$
+\begin{thebibliography}{9}
+\bibitem{ir} Kenneth Ireland \& Michael Rosen, {\em A Classical Introduction to Modern Number Theory}, Second Edition, Springer--Verlag, 1990.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

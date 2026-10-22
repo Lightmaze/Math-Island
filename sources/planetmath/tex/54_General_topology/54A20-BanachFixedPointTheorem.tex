@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BanachFixedPointTheorem}
+\pmcreated{2013-03-22 12:31:10}
+\pmmodified{2013-03-22 12:31:10}
+\pmowner{mathwizard}{128}
+\pmmodifier{mathwizard}{128}
+\pmtitle{Banach fixed point theorem}
+\pmrecord{21}{32758}
+\pmprivacy{1}
+\pmauthor{mathwizard}{128}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A20}
+\pmclassification{msc}{47H10}
+\pmclassification{msc}{54H25}
+\pmsynonym{contraction principle}{BanachFixedPointTheorem}
+\pmsynonym{contraction mapping theorem}{BanachFixedPointTheorem}
+\pmsynonym{method of successive approximations}{BanachFixedPointTheorem}
+\pmsynonym{Banach-Caccioppoli fixed point theorem}{BanachFixedPointTheorem}
+\pmrelated{FixedPoint}
+\pmdefines{contraction mapping}
+\pmdefines{contraction operator}
+
+\endmetadata
+
+\usepackage{amssymb, amsmath, amsthm, alltt, setspace}
+\newtheorem{thm}{Theorem}
+
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\theoremstyle{definition}
+\newtheorem*{rem}{Remark}
+
+\theoremstyle{definition}
+\newtheorem*{nott}{Notation}
+
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\newtheorem*{eg}{Example}
+\newtheorem*{ex}{Exercise}
+\newtheorem*{prop}{Proposition}
+
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\leftbb}{[ \! [}
+\newcommand{\rightbb}{] \! ]}
+\newcommand{\bt}{\begin{thm}}
+\newcommand{\et}{\end{thm}}
+\newcommand{\Rel}{\mathbf{R}}
+\newcommand{\er}{\thicksim}
+\newcommand{\sqle}{\sqsubseteq}
+\newcommand{\floor}[1]{\lfloor{#1}\rfloor}
+\newcommand{\ceil}[1]{\lceil{#1}\rceil}
+\begin{document}
+\PMlinkescapeword{property}
+\PMlinkescapeword{contraction}
+\PMlinkescapeword{contractions}
+
+Let $(X,d)$ be a complete metric space.  A function $T:X \to X$ is said to be a \emph{contraction mapping} if there is a \PMlinkescapeword{constant}constant $q$ with $0 \leq q < 1$ such that
+\[
+  d(Tx,Ty)\leq q\cdot d(x,y)
+\]
+for all $x,y\in X$.  Contractions have an important property.
+
+\begin{thm}[Banach \PMlinkescapetext{Fixed Point} Theorem]
+Every contraction has a unique \PMlinkid{fixed point}{2777}.
+\end{thm}
+
+There is an estimate to this fixed point that can be useful in applications.  Let $T$ be a contraction mapping on $(X,d)$ with constant $q$ and unique fixed point $x^* \in X$.  For any $x_0 \in X$, define recursively the following sequence
+\begin{eqnarray*}
+  x_1      &:=& Tx_0   \\
+  x_2      &:=& Tx_1   \\
+         &\vdots&      \\
+  x_{n+1}  &:=& Tx_n.
+\end{eqnarray*}
+The following inequality then holds:
+\[
+  d(x^*,x_n)\leq \frac{q^n}{1-q}d(x_1,x_0).
+\]
+So the sequence $(x_n)$ converges to $x^*$.  This \PMlinkescapetext{recursive} estimate is occasionally responsible for this result being known as \emph{the method of successive approximations}.
+%%%%%
+%%%%%
+\end{document}

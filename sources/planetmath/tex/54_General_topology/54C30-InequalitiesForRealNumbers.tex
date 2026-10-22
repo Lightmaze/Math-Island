@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{InequalitiesForRealNumbers}
+\pmcreated{2013-03-22 13:58:16}
+\pmmodified{2013-03-22 13:58:16}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{inequalities for real numbers}
+\pmrecord{12}{34742}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C30}
+\pmclassification{msc}{26-00}
+\pmclassification{msc}{12D99}
+\pmrelated{SummedNumeratorAndSummedDenominator}
+\pmdefines{strict inequality}
+\pmdefines{inequality}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\F}{\mathbbmss{F}}
+ \newcommand{\N}{\mathbbmss{N}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+Suppose $a$ is a real number. 
+\begin{enumerate}
+\item If $a<0$ then $a$ is a \emph{negativ{e} number}.
+\item If $a>0$ then $a$ is a \emph{positiv{e} number}.
+\item If $a\le 0$ then $a$ is a \emph{non-positiv{e} number}.
+\item If $a\ge 0$ then $a$ is a \emph{non-negativ{e} number}.
+\end{enumerate}
+The first two inequalities are also called {\bf strict inequalities}.\\
+The second two inequalities are also called {\bf loose inequalities}.
+
+\subsubsection*{Properties}
+Suppose $a$ and $b$ are real numbers.
+\begin{enumerate}
+\item If $a>b$, then $-a<-b$. If $a<b$, then $-a>-b$.
+\item If $a\ge b$, then $-a\le -b$. If $a\le b$, then $-a\ge -b$.
+\end{enumerate}
+
+\begin{lemma}\, $0<a$\, iff\, $-a<0$.
+\end{lemma}
+
+\begin{proof}  If $0<a$, then adding $-a$ on both sides of the inequality gives $-a=-a+0<-a+a=0$.\, This process can also be reversed.
+\end{proof}
+
+
+\begin{lemma} For any $a\in \R$, either $a=0$ or $0<a^2$.
+\end{lemma}
+
+\begin{proof}
+Suppose\, $a\ne 0$, then by trichotomy, we have either\, $0<a$\, or\, $a<0$, but not both.\,  If\, $0<a$,\, then\, $0=0\cdot a<a\cdot a=a^2$.\,  On the other hand, if\, $-(-a)=a<0$, then\, $0<-a$\, by the previous lemma.\,  Then repeating the previous \PMlinkescapetext{argument},\, $0 = 0\cdot(-a) < (-a)(-a)=a^2$.  
+\end{proof}
+
+Three direct consequences follow:
+\begin{cor}\, $0<1$ \end{cor}
+\begin{cor} For any $a\in \R$, $0<1+a^2$. \end{cor}
+\begin{cor} There is no real solution for $x$ in the equation $1+x^2=0$. 
+\end{cor}
+
+\subsubsection*{Inequality for a converging sequence}
+Suppose $a_0,a_1,\ldots$ is a sequence of real numbers converging to a real 
+number $a$. 
+\begin{enumerate}
+\item If $a_i < b$ or $a_i \le b$ 
+for some real number $b$ for each $i$, then $a\le b$.
+\item If $a_i > b$ or $a_i \ge b$ 
+for some real number $b$ for each $i$, then $a\ge b$.
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

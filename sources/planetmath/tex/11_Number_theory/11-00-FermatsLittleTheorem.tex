@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FermatsLittleTheorem}
+\pmcreated{2013-03-22 11:45:08}
+\pmmodified{2013-03-22 11:45:08}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{Fermat's little theorem}
+\pmrecord{13}{30195}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmclassification{msc}{16E30}
+\pmsynonym{Fermat's theorem}{FermatsLittleTheorem}
+%\pmkeywords{number theory}
+\pmrelated{EulerFermatTheorem}
+\pmrelated{ProofOfEulerFermatTheoremUsingLagrangesTheorem}
+\pmrelated{FermatsTheoremProof}
+\pmrelated{PolynomialCongruence}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%%\usepackage{xypic}
+
+\usepackage{amsthm}
+
+\newtheorem*{thm*}{Theorem}
+\begin{document}
+\begin{thm*}[Fermat's little theorem] If $a, p \in \mathbb{Z}$ with $p$ a prime and $p \nmid a$, then $$a^{p-1} \equiv 1 \pmod{p}.$$ If we take away the condition that $p\nmid a$, then we have the congruence relation $$a^p\equiv a \pmod{p}$$ instead.  \end{thm*}
+
+\textbf{Remarks}.  
+\begin{itemize}
+\item Although Fermat first noticed this property, he never actually proved it.  There are several different ways to directly prove this theorem, but it is really just a corollary of the Euler theorem.
+\item More generally, this is a statement about finite fields: if $K$ is a finite field of order $q$, then $a^{q-1}=1$ for all $0\ne a\in K$.  More succinctly, the group of units in a finite field is cyclic.  If $q$ is prime, then we have Fermat's little theorem.
+\item While it is true that $p$ prime implies the congruence relation above, the converse is false (as hypothesized by ancient Chinese mathematicians).  A well-known example of this is provided by setting $a=2$ and $p=341=11\times 31$.  It is easy to verify that $2^{341}\equiv 2 \pmod{341}$.  A positive integer $p$ satisfying $a^{p-1}\equiv 1 \pmod{p}$ is known as a pseudoprime of base $a$.  Fermat little theorem says that every prime is a pseudoprime of any base not divisible by the prime.
+\end{itemize}
+
+\begin{thebibliography}{7}
+\bibitem{hs} H. Stark, {\em An Introduction to Number Theory}. The MIT Press (1978)
+\end{thebibliography}
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

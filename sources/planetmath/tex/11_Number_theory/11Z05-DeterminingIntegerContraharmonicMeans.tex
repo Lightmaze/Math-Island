@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DeterminingIntegerContraharmonicMeans}
+\pmcreated{2013-11-19 18:13:25}
+\pmmodified{2013-11-19 18:13:25}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{determining integer contraharmonic means}
+\pmrecord{15}{42183}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11Z05}
+\pmclassification{msc}{11A05}
+\pmclassification{msc}{11D09}
+\pmclassification{msc}{11D45}
+\pmrelated{LinearFormulasForPythagoreanTriples}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+For determining effectively values $c$ of integer contraharmonic means of two positive integers $u$ and $v$ 
+($1\,<\,u\,<\,v$), it's convenient to start from the 
+\PMlinkescapetext{formula} (7) in the 
+\PMlinkname{parent entry}{IntegerContraharmonicMeans}:
+\begin{align}
+v \;=\; \frac{2u^2}{w}\!-\!u
+\end{align}
+where $w$ is any positive factor of $2u^2$ less than $u$.\, Substituting the above expression of $v$ to the defining expression 
+$$c \;=\; \frac{u^2\!+\!v^2}{u\!+\!v}$$
+of $c$, this gets the form
+\begin{align}
+c \;=\; \frac{2u^2}{w}\!-\!2u\!+\!w.
+\end{align}
+Hence one can use the formulae (1) and (2), giving in them for each desired $u$ the values $w$ of the positive factors of $2u^2$, beginning from\, $w := 1$\, and stopping before\, $w = u$.\\
+
+The \PMlinkescapetext{formula} for the integer harmonic mean, corresponding (2), is simply
+\begin{align}
+h \;=\; 2u\!-\!w.
+\end{align}
+
+
+\textbf{Example.}\, In the following table one sees for\, $u = 36$\, all possible values of the parametre $w$ and the corresponding
+values of $c$ and $h$; the pertinent values of $v$ are given, too.
+\begin{center}
+\begin{tabular}{||c||c|c|c|c|c|c|c|c|c|c|c|c|c||}
+\hline
+$w$ & $1$ & $2$ & $3$ & $4$ & $6$ & $8$ & $9$ & $12$ & $16$
+& $18$ & $24$ & $27$ & $32$\\
+\hline
+$v$ & $2556$ & $1260$ & $828$ & $612$ & $396$ & $288$ & $252$ & $180$ & $126$
+& $108$ & $72$ & $60$ & $45$\\
+\hline
+$c$ & $2521$ & $1226$ & $795$ & $580$ & $366$ & $260$ & $225$ & $156$ & $106$
+& $90$ & $60$ & $51$ & $41$\\
+\hline
+$h$ & $71$ & $70$ & $69$ & $68$ & $66$ & $64$ & $63$ & $60$ & $56$
+& $54$ & $48$ & $45$ & $40$\\
+\hline
+\end{tabular}
+\end{center}
+As one sees, the contraharmonic and the harmonic mean may differ considerably, but also the difference 1 is possible.
+
+
+\begin{thebibliography}{8}
+\bibitem{K}{\sc J. Pahikkala}: ``On contraharmonic mean and Pythagorean triples''.\, -- \emph{Elemente der Mathematik} \textbf{65}:2 (2010).
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

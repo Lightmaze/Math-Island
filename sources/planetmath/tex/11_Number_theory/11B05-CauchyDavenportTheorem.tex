@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CauchyDavenportTheorem}
+\pmcreated{2013-03-22 13:32:13}
+\pmmodified{2013-03-22 13:32:13}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Cauchy-Davenport theorem}
+\pmrecord{7}{34133}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B05}
+\pmrelated{Sumset}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+%%%\usepackage{xypic}
+\newcommand*{\abs}[1]{\left\lvert #1\right\rvert}
+\newcommand*{\integers}{\ensuremath{{\mathbb{Z}}}}
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+If $A$ and $B$ are non-empty subsets of $\integers_p$, then
+\begin{equation*}
+\abs{A+B}\geq \min(\abs{A}+\abs{B}-1, p),
+\end{equation*}
+where $A+B$ denotes the sumset of $A$ and $B$.
+
+\begin{thebibliography}{1}
+
+\bibitem{cite:nathanson_classicalbases}
+Melvyn~B. Nathanson.
+\newblock {\em Additive Number Theory: Inverse Problems and Geometry of
+  Sumsets}, volume 165 of {\em GTM}.
+\newblock Springer, 1996.
+\newblock \PMlinkexternal{Zbl 0859.11003}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0859.11003}.
+
+
+\end{thebibliography}
+
+%@BOOK{cite:nathanson_inverseprob,
+% author    = {Melvyn B. Nathanson},
+% title     = {Additive Number Theory: Inverse Problems and Geometry of Sumsets},
+% series    = {GTM},
+% volume    = 165,
+% year      = 1996,
+% publisher = {Springer}
+%}
+%%%%%
+%%%%%
+\end{document}

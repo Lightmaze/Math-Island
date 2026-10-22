@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KuratowskisEmbeddingTheorem}
+\pmcreated{2013-03-22 18:24:48}
+\pmmodified{2013-03-22 18:24:48}
+\pmowner{puuhikki}{9774}
+\pmmodifier{puuhikki}{9774}
+\pmtitle{Kuratowski's embedding theorem}
+\pmrecord{10}{41062}
+\pmprivacy{1}
+\pmauthor{puuhikki}{9774}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $X$ be a set and $\operatorname{Bou}(X,\mathbb{R})$ be the set of bounded functions $f:X\to\mathbb{R}$ with norm \,$||f||=\operatorname{sup}\{|f(x)|:\;x\in X\}$.  Kuratowski's embedding theorem states that every metric space $(X,d)$ can be embedded isometrically into the Banach space \,$E=\operatorname{Bou}(X,\,\mathbb{R})$.
+
+{\em Proof.}\,
+One can assume that $X\ne \emptyset$.  Fix a point $a_0\in X$ and for every $a\in X$ define a function $f_a:X\to\mathbb{R}$ by
+\[f_a(x)=d(x,a)-d(x,a_0).\]
+Then $|f_a(x)|\leq d(a,a_0)$ for every $x\in X$ so $f_a$ is bounded. By setting \,$\varphi :X\to E$,\, $\varphi (a)=f_a$, we have the mapping $\varphi : X\to E$.  It requires to prove that $\varphi$ is an isometry.
+
+Let $a,\,b\in X$.  As $x\in X$ we have that
+\[|f_a(x)-f_b(x)|=|d(x,a)-d(x,b)|\leq d(a,b).\]
+Therefore $||f_a-f_b||\leq d(a,b)$.  On the other hand
+\[|f_a(a)-f_b(a)|=|d(a,a)-d(a,a_0)-d(a,b)+d(a,a_0)|=d(a,b).\]
+Therefore $||\varphi (a)-\varphi (b)||=||f_a-f_b||=d(a,b)$.
+\begin{thebibliography}{9}
+\bibitem{J.V.}{\sc J. VÃ¤isÃ¤lÃ¤:} {\em Topologia II}.\, 2nd corrected issue, Limes ry., Helsinki, Finland (2005), ISBN 951-745-209-8
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

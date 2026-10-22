@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AllPositiveIntegersArePoliteNumbersExceptPowersOfTwo}
+\pmcreated{2013-03-22 18:10:02}
+\pmmodified{2013-03-22 18:10:02}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{all positive integers are polite numbers except powers of two}
+\pmrecord{7}{40728}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{PowerOfTwo}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Theorem}. All positive integers are polite numbers (that is, can be expressed as the sum of consecutive nonnegative integers in at least one way), with the exception of the even powers of two.
+
+Perhaps the most elegant way to prove this theorem is to assert that the powers of two do have ``polite representations'' and follow the logic until a contradiction is reached. But this might not answer any other questions about what forms these representations take. Looking at a table of representations, it is clear that some numbers have lots of representation, and that there are patterns to these representations. Proving this theorem, however, requires only showing that most numbers have at least one representation and the powers of two have none. The patterns observed from a table of representations can actually be used to build up a proof.
+
+Lemma 1. An odd number $n$ is always a polite number.
+
+If nothing else, there is always $n = m + (m + 1)$, with $m = \frac{n - 1}{2}$. Note that for $n = 1$, the only valid representation is 0 + 1, which, while inelegant, is technically valid because the theorem calls for sums of nonnegative numbers, as opposed to positive numbers. This takes care of all the odd numbers.
+
+But what of the even numbers? There is no ready way to generalize this to all even numbers, so perhaps we could try classifying the even numbers as singly even (or odd times 2) and doubly even.
+
+Lemma 2. Any singly even number $n \equiv 2 \mod 4$ is the sum of four consecutive integers.
+
+We rewrite $n$ as $4m + 2$. The relevant four consecutive integers are $(m - 1)$, $m$, $(m + 1)$ and $(m + 2)$. We verify that $(m - 1) + m + (m + 1) + (m + 2) = 4m - 1 + 1 + 2 = 4m + 2 = n$. Note that for $n = 2$ the consecutive integers are $-1$, 0, 1 and 2, with the first of these being a negative number.
+
+So all composite singly even numbers are taken care of by this lemma.
+
+Lemma 3. All multiples of 3 are polite, represented by the sum of three consecutive integers.
+
+Given $n = 3m$, we rewrite $2m$ as $(m - 1) + (m + 1)$. Then $(m - 1)$, $m$ and $(m + 1)$ are the consecutive integers, verified with $(m - 1) + m + (m + 1) = 2m + m = 3m = n$.
+
+The number 3 has a representation by Lemma 1, that is, 3 = 1 + 2, but Lemma 3 also gives a valid representation: 3 = 0 + 1 + 2.
+
+Lemma 4. All multiples of 5 are polite, represented by the sum of five consecutive integers.
+
+Given $n = 5m$, we rewrite $4m$ as $(m - 2) + (m - 1) + (m + 1) + (m + 2)$. Then $(m - 2)$, $(m - 1)$, $m$, $(m + 1)$ and $(m + 2)$ are the consecutive integers, verified with $(m - 2) + (m - 1) + m + (m + 1) + (m + 2) = 4m + m = 5m = n$.
+
+For the number 5, we have to fall back on Lemma 1. But for 10 and all higher multiples of 5, this lemma gives a valid representation.
+
+Obviously these last two lemmas can be generalized.
+
+Lemma 5. All composite multiples of an odd prime $p$ are the sum of $p$ consecutive integers.
+
+If $n = (m + 1) + (m + 2) + \ldots + (m + p)$ then clearly $n = mp + 1 + 2 + \ldots + p$. Ignoring $mp$ and $p$ for a moment, we can pair up each addend from 1 to $p - 1$ with another number in the range so the two of them add up to $p$: $1 + (p - 1)$, $2 + (p - 2)$, etc. Since $p - 1$ is even, no number is left out in this pairing up. Thus we have $\displaystyle \left( \frac{p - 1}{2} \right)p$. Putting the last $p$ back in we have $\displaystyle \left( \frac{p - 1}{2} + 1 \right)p = \left( \frac{p^2 - p}{2} + p \right) = \left( \frac{p^2 + p}{2} \right).$ This means that the $p$th triangular number $T_p$ is divisible by $p$. Putting $mp$ back in, it is now clear that since $\displaystyle n = mp + \left( \frac{p^2 + p}{2} \right)$, $n$ is is divisible by $p$. The smallest multiple of $p$ thus representable with a run of consecutive nonnegative integers is the $(p - 1)$th triangular number, which is the sum of the integers from 0 to $p - 1$.
+
+Since $p$ is an odd prime, it has a representation under Lemma 1. But what of $2p$ to $T_{p - 1} - p$? $2p$ is singly even, and is thus covered by Lemma 2. Any other composite multiple of $p$ between $2p$ and $p^2$ must be divisible by some other odd prime and is thus covered by this Lemma anyway. For example, the multiples of 11: the number 22 is covered by Lemma 2, 33 is covered by this Lemma using $p = 3$, and 55 is covered by this Lemma using $p = 5$. For 77, this Lemma applies with either $p = 7$ or $p = 11$.
+
+Lemma 6. Any run of $mp$ consecutive integers, with $p$ an odd prime, will add up to a multiple of $p$.
+
+Breaking up the single run of $mp$ consecutive integers into $m$ runs of $p$ consecutive integers, it is clear by the previous lemma that each of those $m$ runs add up to a multiple of $p$. Adding up $m$ multiples of $p$ gives yet another multiple of $p$.
+
+Lemma 7. A run of $2^a$ consecutive integers is divisible by $2^{a - 1}$ but not $2^a$.
+
+With $n = (m + 1) + (m + 2) + \ldots + (m + 2^a)$, the $m$s clearly add up to $2^a m$. What of the $2^a$th triangular number? We can pair up almost all the numbers 1 to $2^a - 1$ so that they add up to $2^a$: $1 + 2^a - 1$, $2 + 2^a - 2$, etc. These add up to $(2^a - 2)2^a = 2^{2a} - 2^{a + 1}$. But since $2^a$ is even and $2^a - 1$ odd, there is a number left out, specifically $\frac{2^a}{2} = 2^{a - 1}$. So we have $n = 2^a m + (2^{2a} - 2^{a + 1}) + 2^{a - 1}$. All three addends are divisible by $2^{a - 1}$ but only the first two are divisible by $2^a$.
+
+To prove the theorem now is simply a matter of putting the lemmas together.
+
+\begin{proof}
+Lemma 1 took care of proving that all odd numbers are polite. Lemma 2 took care of proving all singly even numbers are polite, with the important exception of 2, the first power of two. At this point it remains to prove whether or not all doubly even numbers are polite, but there seems no simple way to kill all the birds with one stone. So from here we'll try to prove politeness for kinds of numbers that overlap partially with those covered by the first two lemmas. Lemma 3 proves the politeness of multiples of 3 by giving the solution as a sum of three consecutive integers. Then Lemma 4 proves the politeness of multiples of 5 by giving the solution as a sum of five consecutive integers. Obviously it is impractical to try to prove this for every single odd prime, so it is far more efficient to generalize this to all odd primes without any loss of comprehesion. Thus Lemma 5 makes this generalization, and from this follows Lemma 6, which shows that any run of $p$ consecutive integers adds up to a multiple of $p$.
+
+Now we have covered the politeness of: all odd numbers, all singly even numbers except 2, and some of the doubly even numbers, namely those divisible by odd primes. So now it remains to prove or disprove the politeness of powers of two. The solution for a power of two must not be a run of $mp$ consecutive integers with $p$ an odd prime, since $2^a \nmid p$. By Lemma 7, a run of consecutive integers that add up to a multiple of $2^a$ must be $2^{a + 1}$ long. To determine the smallest number such a run of nonnegative integers would add up to, we plug $m = 0$ into the second equation for $n$ given by Lemma 7, obtaining $n = (2^{2a} - 2^{a + 1}) + 2^{a - 1}$. This means that $n > 2^a$, even when $m = 0$. Furthermore, there is no way to reduce the expression we have obtained for $n$ to a single power of two, meaning that $n$ must be divisible by some odd prime. This proves that there is no run of consecutive nonnegative integers that will add up to a power of two other than 1. It has already been proven that all other positive integers do have such a representation.
+\end{proof}
+
+Just a few quick examples: The even number 30 can be represented as the sum of four consecutive integers (6 + 7 + 8 + 9), and since it is a multiple of 3 and 5, it can be represented as the sum of three or four consecutive integers: 9 + 10 + 11 = 4 + 5 + 6 + 7 + 8. The odd number 31 can be represented as 15 + 16. We can represent some multiples of 32 as the sum of 64 consecutive positive integers; the smallest number representable thus is 2080, which leaves a remainder of 32 when divided by 64, showing that it is divisible by 32, but also by the odd primes 5 and 13.
+%%%%%
+%%%%%
+\end{document}

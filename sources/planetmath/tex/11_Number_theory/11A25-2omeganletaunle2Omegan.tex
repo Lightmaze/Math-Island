@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{2omeganletaunle2Omegan}
+\pmcreated{2013-03-22 16:07:28}
+\pmmodified{2013-03-22 16:07:28}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{$2^{\omega(n)} \le \tau(n) \le 2^{\Omega(n)}$}
+\pmrecord{14}{38194}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{NumberOfDistinctPrimeFactorsFunction}
+\pmrelated{TauFunction}
+\pmrelated{NumberOfNondistinctPrimeFactorsFunction}
+\pmrelated{DisplaystyleYOmeganOleftFracxlogXy12YRightFor1LeY2}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{cor*}{Corollary}
+\begin{document}
+Throughout this entry, $\omega$, $\tau$, and $\Omega$ denote the number of distinct prime factors function, the divisor function, and the \PMlinkname{number of (nondistinct) prime factors function}{NumberOfNondistinctPrimeFactorsFunction}, respectively.
+
+\begin{thm*}
+For any positive integer $n$, $2^{\omega(n)} \le \tau(n) \le 2^{\Omega(n)}$.
+\end{thm*}
+
+\begin{proof}
+Note that $2^{\omega(n)}$, $\tau(n)$, and $2^{\Omega(n)}$ are multiplicative.  Also note that, for any positive integer $n$, the numbers $2^{\omega(n)}$, $\tau(n)$, and $2^{\Omega(n)}$ are positive integers.  Therefore, it will suffice to prove the inequality for prime powers.
+
+Let $p$ be a prime and $k$ be a positive integer.  Thus:
+
+\begin{center}
+$\begin{array}{rl}
+\displaystyle 2^{\omega(p^k)} & =2 \\
+\\
+\tau(p^k) & =k+1 \\
+\\
+\displaystyle 2^{\Omega(p^k)} & = 2^k \end{array}$
+\end{center}
+
+Hence, $2^{\omega(p^k)} \le \tau(p^k) \le 2^{\Omega(p^k)}$.  It follows that $2^{\omega(n)} \le \tau(n) \le 2^{\Omega(n)}$.
+\end{proof}
+
+This theorem has an obvious corollary.
+
+\begin{cor*}
+For any squarefree positive integer $n$, $2^{\omega(n)}=\tau(n)=2^{\Omega(n)}$.
+\end{cor*}
+%%%%%
+%%%%%
+\end{document}

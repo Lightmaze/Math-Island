@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TopologyOfTheComplexPlane}
+\pmcreated{2013-03-22 13:38:40}
+\pmmodified{2013-03-22 13:38:40}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{topology of the complex plane}
+\pmrecord{8}{34295}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+\pmclassification{msc}{30-00}
+\pmrelated{IdentityTheorem}
+\pmrelated{PlacesOfHolomorphicFunction}
+\pmdefines{open disk}
+\pmdefines{accumulation point}
+\pmdefines{interior point}
+\pmdefines{open}
+\pmdefines{closed}
+\pmdefines{bounded}
+\pmdefines{compact}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+\begin{document}
+The usual topology for the complex plane $\sC$
+is the topology induced by the metric 
+$$d(x,\,y) := |x\!-\!y|$$
+for\, $x,\,y \in \sC$.
+Here, $|\cdot|$ is the \PMlinkname{complex modulus}{ModulusOfComplexNumber}.
+
+If we identify $\sR^2$ and $\sC$, it is clear that the above
+topology coincides with topology induced by the Euclidean metric on $\sR^2$.
+
+Some basic topological concepts for $\sC$:
+\begin{enumerate}
+\item The open balls 
+$$B_r(\zeta) \;=\; \{z\in\sC\,\vdots\; |z\!-\!\zeta| < r\}$$
+are often called \emph{open disks}.
+\item A point $\zeta$ is an \emph{accumulation point} of a subset $A$ of $\sC$, if any open disk $B_r(\zeta)$ contains at least one point of $A$ distinct from $\zeta$.
+\item A point $\zeta$ is an \emph{interior point} of the set $A$, if there exists an open disk $B_r(\zeta)$ which is contained in $A$.
+\item A set $A$ is \emph{open}, if each of its points is an interior point of $A$.
+\item A set $A$ is \emph{closed}, if all its accumulation points belong to $A$.
+\item A set $A$ is \emph{bounded}, if there is an open disk $B_r(\zeta)$ containing $A$.
+\item A set $A$ is \emph{compact}, if it is closed and bounded.
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

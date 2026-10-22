@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KolakoskiSequence}
+\pmcreated{2013-03-22 12:47:33}
+\pmmodified{2013-03-22 12:47:33}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Kolakoski sequence}
+\pmrecord{6}{33108}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11Y55}
+\pmclassification{msc}{94A55}
+\pmsynonym{Kolakowski's sequence}{KolakoskiSequence}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand{\Prob}[2]{\mathbb{P}_{#1}\left\{#2\right\}}
+\newcommand{\Expect}{\mathbb{E}}
+\newcommand{\norm}[1]{\left\|#1\right\|}
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\begin{document}
+A \emph{Kolakoski sequence} is a ``self-describing'' sequence
+$\{k_n\}_{k=0}^{\infty}$ of alternating blocks of 1's and 2's,
+given by the following rules:
+\begin{itemize}
+\item $k_0=1$.\footnote{Some sources start the sequence at $k_0=2$, instead.  This only has the effect of shifting the sequence by one position.}
+\item $k_n$ is the length of the $(n+1)$'th block.
+\end{itemize}
+
+Thus, the sequence begins 1, 2, 2, 1, 1, 2, 1, 2, 2, 1, 2, 2, 1, 1, 2, 1, ...
+
+It is conjectured that the density of 1's in the sequence is 0.5.  It is not known whether the 1's \emph{have} a density; however, it \emph{is} known that were this true, that density would be 0.5.  It is also not known whether the sequence is a strongly recurrent sequence; this too would imply density 0.5.
+
+Extensive computer experiments strongly support the conjecture.  Furthermore, if $o_n$ is the number of 1's in the first $n$ elements, then it appears that
+$o_n = 0.5n + O(\log n)$.  Note for comparison that for a \emph{random} sequence of 1's and 2's, the number of 1's in the first $n$ elements is with high probability
+$0.5n + O(\sqrt{n})$.
+
+To generate rapidly a large number of elements of the sequence, it is most efficient to build a heirarchy of generators for the sequence.  \emph{If} the conjecture is correct, then the depth of this heirarchy is only $O(\log n)$ to generate the first $n$ elements.
+
+This is \PMlinkexternal{sequence A000002}{http://www.research.att.com/cgi-bin/access.cgi/as/njas/sequences/eisA.cgi?Anum=A000002}
+in \PMlinkexternal{the Online Encyclopedia of Integer Sequences}{http://www.research.att.com/~njas/sequences/Seis.html}.
+%%%%%
+%%%%%
+\end{document}

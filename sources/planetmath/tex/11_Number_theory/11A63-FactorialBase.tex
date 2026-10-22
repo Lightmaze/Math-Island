@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FactorialBase}
+\pmcreated{2013-03-22 15:55:15}
+\pmmodified{2013-03-22 15:55:15}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{factorial base}
+\pmrecord{7}{37927}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{factoradic}{FactorialBase}
+\pmrelated{DecimalExpansion}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A positional base in which each place value instead of being a power of the base is a factorial. For example, the integer which is represented in base 10 as 47 (because $4 \cdot 10^1 + 7 \cdot 10^0$) is represented in factorial base as 1321, or $1 \cdot 4! + 3 \cdot 3! + 2 \cdot 2! + 1 \cdot 1!$.
+
+Factorial base representation has applications in combinatorics and cryptography.
+
+The factorial base representations are unambiguous as long as the maximum allowed digit for a given place value is not exceeded (e.g., the least significant digit $d_1$ can only be 0 or 1, while the most significant digit in an 7-digit factorial base number $d_7$ has to be in the range 0 to 7).
+
+With this limitation placed in the definition, and the observation that $$n! - 1 = \sum_{i = 1}^{n - 1} i!i$$ it is obvious that factorial base is unambiguous, though it has the potential to use an infinite amount of distinct digits even as the less significant place values are limited in what values they can contain.
+
+Though this is true of fractions, though in the opposite direction (the most significant fractional place values are more limited in the range of digits they can contain), factorial base has the advantage that the representation of a rational number always terminates. This is not always the case in a fixed base where the representation of a rational number could be repeating when the denominator is coprime to the base (see: factorial base representation of fractions).
+
+The Lucas-Lehmer code maps unique factorial base representations of an integer $n$ to the permutation of $n$ elements in lexicographical order.
+
+A007623 of Sloane's OEIS lists the first few integers written in factorial base, A046807 lists palindromic numbers in factorial base, A118363 lists factorial base Harshad numbers, etc.
+%%%%%
+%%%%%
+\end{document}

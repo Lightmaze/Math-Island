@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClassNumberDivisibilityInCyclicExtensions}
+\pmcreated{2013-03-22 15:07:41}
+\pmmodified{2013-03-22 15:07:41}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{class number divisibility in cyclic extensions}
+\pmrecord{4}{36868}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R29}
+\pmclassification{msc}{11R32}
+\pmclassification{msc}{11R37}
+\pmrelated{IdealClass}
+\pmrelated{ClassNumbersAndDiscriminantsTopicsOnClassGroups}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+In this entry, the class number of a number field $L$ is denoted by $h_L$.
+
+\begin{thm}
+Let $F/K$ be a cyclic Galois extension of degree $n$. Let $p$ be a prime such that $n$ is not divisible by $p$, and assume that $p$ does not divide $h_E$, the class number of any intermediate field $K\subseteq E \subsetneq F$. If $p$ divides $h_F$ then $p^f$ also divides $h_F$, where $f$ is the multiplicative order of $p$ modulo $n$.
+\end{thm}
+
+Recall that the multiplicative order of $p$ modulo $n$ is a number $f$ such that $p^f\equiv 1 \mod n$ and $p^m$ is not congruent to $1$ modulo $n$ for any $1\leq m <f$.
+
+\begin{cor}
+Let $F/K$ be a Galois extension such that $[F:K]=q$ is a prime distinct from the prime $p$. Assume that $p$ does not divide $h_K$. If $p$ divides $h_F$ then $p^f$ divides $h_F$, where $f$ is the multiplicative order of $p$ modulo $q$.
+\end{cor}
+
+Note that a Galois extension $F/K$ of prime degree has no non-trivial subextensions.
+%%%%%
+%%%%%
+\end{document}

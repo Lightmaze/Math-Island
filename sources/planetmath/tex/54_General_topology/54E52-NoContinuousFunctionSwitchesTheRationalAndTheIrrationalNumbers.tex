@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NoContinuousFunctionSwitchesTheRationalAndTheIrrationalNumbers}
+\pmcreated{2013-03-22 14:59:15}
+\pmmodified{2013-03-22 14:59:15}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{no continuous function switches the rational and the irrational numbers}
+\pmrecord{13}{36692}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E52}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\def\J{\mathbb{J}}
+\def\N{\mathbb{N}}
+\def\Q{\mathbb{Q}}
+\def\R{\mathbb{R}}
+
+\begin{document}
+Let $\J=\R\setminus\Q$ denote the irrationals.
+There is no continuous function $f\colon \R \to \R$
+such that $f(\Q)\subseteq \J$ and $f(\J)\subseteq\Q$.
+
+\textbf{Proof}
+
+Suppose there is such a function $f$.
+
+First, $\Q = \bigcup\limits_{i \in \N } {\{q_i\}}$ implies 
+\[
+  f(\Q) = \bigcup \limits_{i \in \N } {\{f(q_i)\}}.
+\]
+This is because functions preserve unions (see properties of functions).
+
+And then, $f(\Q)$ is first category, because every singleton in $\R$ is nowhere dense (because $\R$ with the Euclidean metric has no isolated points, so the interior of a singleton is empty).
+
+But $f(\J) \subseteq \Q$, so $f(\J)$ is first category too.
+Therefore $f(\R)$ is first category, as $f(\R) = f(\Q) \cup f(\J)$.
+Consequently, we have $f(\R ) = \bigcup \limits_{i \in \N } {\{z_i\}}$.
+
+But functions preserve unions in both ways, so
+
+\begin{equation}
+\R  = f^{-1}(\bigcup \limits_{i \in \N } {\{z_i\}}) = \bigcup \limits_{i \in \N } {f^{-1}(\{z_i\})}.
+\end{equation}
+
+Now, $f$ is continuous, and as $\{z_i\}$ is closed for every $i \in \N $, so is $f^{-1}(\{z_i\})$. This means that $\overline{f^{-1}(\{z_i\})} = f^{-1}(\{z_i\})$. If $\operatorname{int}(f^{-1}(\{z_i\})) \neq \varnothing$, we have that there is an open interval $(a_i, b_i) \subseteq f^{-1}(\{z_i\})$, and this implies that there is an irrational number $x_i$ and a rational number $y_i$ such that both lie in $f^{-1}(\{z_i\})$, which is not possible because this would imply that $f(x_i) = f(y_i) = z_i$, and then $f$ would map an irrational and a rational number to the same element, but by hypothesis $f(\Q)\subseteq \J $ and $f(\J)\subseteq \Q$.
+
+Then, it must be $\operatorname{int}(f^{-1}(\{z_i\})) = \varnothing$ for every $i \in \N$, and this implies that $\R$ is first category (by (1)).
+This is absurd, by the Baire Category Theorem.
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ContinuityOfCompositionOfFunctions}
+\pmcreated{2013-03-22 14:04:55}
+\pmmodified{2013-03-22 14:04:55}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{continuity of composition of functions}
+\pmrecord{7}{35443}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C05}
+\pmclassification{msc}{26A15}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sQ}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+% The below lines should work as the command
+% \renewcommand{\bibname}{References}
+% without creating havoc when rendering an entry in 
+% the page-image mode.
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+\begin{document}
+All functions in this entry are functions from $\sR$ to $\sR$. 
+
+\textbf{Example 1}
+Let $f(x)= 1$ for $x \leq 0$ and $f(x) = 0$ for $x >0$,
+let $h(x) = 0$ when $x\in \sQ$ and $1$ when $x$ is irrational,
+and let $g(x)=h(f(x))$. Then $g(x)=0$ for all $x\in \sR$, so
+ the composition of two discontinuous functions can be
+continuous.
+
+\textbf{Example 2}
+If $g(x) = h(f(x))$ is continuous for all functions $f$, then $h$ is continuous.
+Simply put $f(x)=x$. Same thing for $h$ and $f$.
+If $g(x) = h(f(x))$ is continuous for all functions $h$, then $f$ is continuous.
+Simply put $h(x)=x$.
+
+\textbf{Example 3}
+Suppose $g(x) = h(f(x))$ is continuous and $f$ is continuous. 
+Then $h$ does not need to be continuous. For a conterexample, put
+ $h(x)=0$ for all $x\neq 0$, and $h(0)=1$, and
+$f(x)=1+|x|$. Now $h(f(x))=0$ is continuous, but $h$ is not.
+
+\textbf{Example 4}
+Suppose $g(x) = h(f(x))$ is continuous and $h$ is continuous. Then $f$ does not
+need to be continuous. For a counterexample, put
+$ f(x) = 0$ for all $x\neq 0$, and $f(0)=1$, and
+$h(x)=0$ for all $x$. Now $h(f(x))=0$ is continuous, but $f$ is not.
+%%%%%
+%%%%%
+\end{document}

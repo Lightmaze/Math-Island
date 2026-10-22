@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AdditiveFunction1}
+\pmcreated{2013-03-22 16:07:03}
+\pmmodified{2013-03-22 16:07:03}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{additive function}
+\pmrecord{12}{38184}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+%\pmkeywords{number theory}
+%\pmkeywords{arithmetic function}
+\pmrelated{MultiplicativeFunction}
+\pmdefines{additive}
+\pmdefines{completely additive}
+\pmdefines{completely additive function}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+In number theory, an {\sl additive function\/} is an arithmetic function $f \colon \mathbb{N} \to \mathbb{C}$ with the property that $f(1)=0$ and, for all $a,b \in \mathbb{N}$ with $\gcd(a,b)=1$, $f(ab)=f(a)+f(b)$.
+
+An arithmetic function $f$ is said to be {\sl completely additive\/} if $f(1)=0$ and $f(ab)=f(a)+f(b)$ holds for {\sl all\/} positive integers $a$ and $b$, \PMlinkescapetext{even} when they are not relatively prime. In this case, the function is a homomorphism of monoids and, because of the fundamental theorem of arithmetic, is completely determined by its restriction to prime numbers. Every completely additive function is additive.
+
+Outside of number theory, the \PMlinkescapetext{term} additive is usually used for all functions with the property $f(a+b) = f(a)+f(b)$ for all arguments $a$ and $b$. (For instance, see the other entry titled \PMlinkname{additive function}{AdditiveFunction2}.) This entry discusses number theoretic additive functions.
+
+Additive functions cannot have convolution inverses since an arithmetic function $f$ has a convolution inverse if and only if $f(1) \neq 0$.  A proof of this equivalence is supplied \PMlinkname{here}{ConvolutionInversesForArithmeticFunctions}.
+
+The most common \PMlinkescapetext{type} of additive function in all of mathematics is the logarithm.  Other additive functions that are useful in number theory are:
+
+\begin{itemize}
+\item $\omega(n)$, the number of distinct prime factors function
+\item $\Omega(n)$, the \PMlinkname{number of (nondistinct) prime factors function}{NumberOfNondistinctPrimeFactorsFunction}
+\end{itemize}
+
+By exponentiating an additive function, a multiplicative function is obtained.  For example, the function $\displaystyle 2^{\omega(n)}$ is multiplicative.  Similarly, by exponentiating a completely additive function, a completely multiplicative function is obtained.  For example, the function $\displaystyle 2^{\Omega(n)}$ is completely multiplicative.
+%%%%%
+%%%%%
+\end{document}

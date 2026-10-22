@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ErdHosWoodsNumber}
+\pmcreated{2013-03-22 17:37:14}
+\pmmodified{2013-03-22 17:37:14}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Erd\H{o}s-Woods number}
+\pmrecord{4}{40040}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmsynonym{Erdos-Woods number}{ErdHosWoodsNumber}
+\pmsynonym{Erd\"os-Woods number}{ErdHosWoodsNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+An integer $k$ is an {\em Erd\H{o}s-Woods number} if there is an integer $n$ such that each of the consecutive integers $n + i$ for $0 < i < k$ shares at least one prime factor with either $n$ or $n + k$. In other words, if for a $k$ there is an $n$ such that each evaluation of $\gcd(n, n + i) > 1$ or $\gcd(n + k, n + i) > 1$ returns true, then $k$ is an Erd\H{o}s-Woods number.
+
+For example, one $n$ for $k = 16$ is 2184. 2184 is $2^3 \times 3 \times 7 \times 13$, while $2184 + 16 = 2200 = 2^3 \times 5^2 \times 11$. We then verify that
+
+\begin{itemize}
+\item 2185 is clearly divisible by 5 and thus shares that odd prime as a factor with 2200.
+\item 2186 is even and so shares 2 as a factor with both 2184 and 2200.
+\item 2187 is 3 more than 2184 and therefore must also be divisible by 3. In fact, it is $3^7$.
+\item 2188 is even and so shares 2 as a factor with both 2184 and 2200, suggesting we needn't look at any other even numbers in this range.
+\item 2189 is 11 less than 2200 and therefore must be divisible by 11. In base 10 we can quickly verify that 2 + 8 = 10 and 1 + 9 is also 10.
+\item 2191 is 7 more than 2184 and thus must be divisible by 7.
+\item 2193 is 9 more than 2184 and thus divisible by 3.
+\item 2195 is obviously divisible by 5.
+\item 2197 is 13 more than 2184 and thus must be divisible by 13. In fact, it is $13^3$.
+\item 2199 is 15 more than 2184 and thus divisible by 3.
+\end{itemize}
+
+Knowing one $n$ for a given $k$ one can find other $n$ by multiplying the odd prime factors of $n + k$ (just once each, let's call that product ``$q$'') and then calculating $n(jq + 1)$ with $j$ any positive integer of one's choice. To give one example: with $n = 2184$ and $j =  17$, we get another $n$, namely 2044224. The range 2044224 to 2044240 displays the same patterns of factorization as described above, except that 2044227 and 2044237 are a semiprime and a sphenic number respectively, as opposed to 2187 and 2197 which are both prime powers.
+
+Other Erd\H{o}s-Woods numbers are 22, 34, 36, 46, 56, 64, 66, 70, 76, 78, 86, 88, 92, 94, 96, 100, etc., listed in A059756 of Sloane's OEIS (the smallest odd Erd\H{o}s-Woods number is 903), while A059757 lists the smallest matching $n$ for each of those $k$.
+
+\begin{thebibliography}{2}
+\bibitem{rg} R. K. Guy, {\it Unsolved Problems in Number Theory} New York: Springer-Verlag 2004: B28
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

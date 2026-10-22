@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UrysohnsLemma}
+\pmcreated{2013-03-22 12:12:34}
+\pmmodified{2013-03-22 12:12:34}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{Urysohn's lemma}
+\pmrecord{12}{31530}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D15}
+%\pmkeywords{topology}
+\pmrelated{HowIsNormalityAndT4DefinedInBooks}
+\pmrelated{ApplicationsOfUrysohnsLemmaToLocallyCompactHausdorffSpaces}
+\pmdefines{Urysohn function}
+\pmdefines{normal space}
+\pmdefines{normal topological space}
+\pmdefines{normal}
+\pmdefines{normality}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+\PMlinkescapeword{corollary}
+
+A \emph{normal space} is a topological space $X$
+such that whenever $A$ and $B$ are disjoint closed subsets of $X$,
+then there are disjoint open subsets $U$ and $V$ of $X$
+such that $A\subseteq U$ and $B\subseteq V$.
+
+(Note that some authors include $\mathrm{T}_1$ in the definition,
+which is equivalent to requiring the space to be Hausdorff.)
+
+\emph{Urysohn's Lemma} states that $X$ is normal
+if and only if
+whenever $A$ and $B$ are disjoint closed subsets of $X$,
+then there is a continuous function $f\colon X\to[0,1]$
+such that $f(A)\subseteq\{0\}$ and $f(B)\subseteq\{1\}$.
+(Any such function is called an \emph{Urysohn function}.)
+
+A corollary of Urysohn's Lemma
+is that normal \PMlinkname{$\mathrm{T}_1$}{T1Space} spaces are completely regular.
+%%%%%
+%%%%%
+%%%%%
+\end{document}

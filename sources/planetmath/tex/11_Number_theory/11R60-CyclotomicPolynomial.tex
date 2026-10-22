@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CyclotomicPolynomial}
+\pmcreated{2013-03-22 12:36:00}
+\pmmodified{2013-03-22 12:36:00}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{cyclotomic polynomial}
+\pmrecord{14}{32852}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R60}
+\pmclassification{msc}{11R18}
+\pmclassification{msc}{11C08}
+\pmrelated{AllOnePolynomial}
+\pmrelated{FactoringAllOnePolynomialsUsingTheGroupingMethod}
+\pmrelated{CyclotomicField}
+\pmrelated{RootOfUnity}
+
+\endmetadata
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\def\Q{\mathbb{Q}}
+\def\Z{\mathbb{Z}}
+\begin{document}
+\PMlinkescapeword{primitive}
+\PMlinkescapeword{ranges}
+\PMlinkescapephrase{root of unity}
+
+\section*{Definition}
+
+For any positive integer $n$,
+the $n$-th {\em cyclotomic polynomial} $\Phi_n(x)$ is defined as
+\[
+  \Phi_n(x)=\prod_\zeta(x-\zeta),
+\]
+where $\zeta$ ranges over the
+\PMlinkname{primitive $n$-th roots of unity}{RootOfUnity}.
+
+\section*{Examples}
+
+The first few cyclotomic polynomials are as follows:
+\begin{align*}
+  \Phi_1(x)&=x-1 \\
+  \Phi_2(x)&=x+1 \\
+  \Phi_3(x)&=x^2+x+1 \\
+  \Phi_4(x)&=x^2+1 \\
+  \Phi_5(x)&=x^4+x^3+x^2+x+1 \\
+  \Phi_6(x)&=x^2-x+1 \\
+  \Phi_7(x)&=x^6+x^5+x^4+x^3+x^2+x+1 \\
+  \Phi_8(x)&=x^4+1 \\
+  \Phi_9(x)&=x^6+x^3+1 \\
+  \Phi_{10}(x)&=x^4-x^3+x^2-x+1 \\
+  \Phi_{11}(x)&=x^{10}+x^9+x^8+x^7+x^6+x^5+x^4+x^3+x^2+x+1 \\
+  \Phi_{12}(x)&=x^4-x^2+1 \\
+\end{align*}
+
+The preceding examples may give the impression that the coefficients
+are always $-1$, $0$ or $1$, but this is not true in general.
+For example,
+\begin{align*}
+\Phi_{105}(x)=\,&x^{48}+x^{47}+x^{46}-x^{43}-x^{42}-2x^{41}-x^{40}-x^{39}+x^{36}+x^{35}+x^{34} \\
+           &\phantom{x^{48}}+x^{33}+x^{32}+x^{31}-x^{28}-x^{26}-x^{24}-x^{22}-x^{20}+x^{17}+x^{16}+x^{15} \\
+           &\phantom{x^{48}}+x^{14}+x^{13}+x^{12}-x^9-x^8-2x^7-x^6-x^5+x^2+x+1 \\
+\end{align*}
+
+\section*{Properties}
+
+For every positive integer $n$,
+$\Phi_n(x)$ is an irreducible polynomial of degree $\phi(n)$ in $\Q[x]$,
+and is the minimal polynomial of each primitive $n$-th root of unity.
+Here $\phi(n)$ is Euler's phi function.
+
+%%%%%
+%%%%%
+\end{document}

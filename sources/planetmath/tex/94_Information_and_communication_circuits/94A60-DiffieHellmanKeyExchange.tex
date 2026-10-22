@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DiffieHellmanKeyExchange}
+\pmcreated{2013-03-22 13:45:58}
+\pmmodified{2013-03-22 13:45:58}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Diffie-Hellman key exchange}
+\pmrecord{6}{34470}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94A60}
+\pmrelated{EllipticCurveDiscreteLogarithmProblem}
+\pmrelated{ArithmeticOfEllipticCurves}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The Diffie-Hellman key exchange is a cryptographic protocol for symmetric key exchange.  There are various implementations of this protocol.  The following interchange between Alice and Bob demonstrates the Elliptic Curve Diffie-Hellman key exchange.
+\begin{itemize}
+\item 1)  Alice and Bob publicly agree on an elliptic curve $E$ over a large finite field $F$ and a point $P$ on that curve.
+\item 2)  Alice and Bob each privately choose large random integers, denoted $a$ and $b$.
+\item 3)  Using elliptic curve point-addition, Alice computes $aP$ on $E$ and sends it to Bob.  Bob computes $bP$ on $E$ and sends it to Alice.
+\item 4)  Both Alice and Bob can now compute the point $abP$, Alice by multipliying the received value of $bP$ by her secret number $a$, and Bob vice-versa.
+\item 5)  Alice and Bob agree that the $x$ coordinate of this point will be their shared secret value.
+\end{itemize}
+
+An evil interloper Eve observing the communications will be able to intercept only the objects $E$, $P$, $aP$, and $bP$.  She can succeed in determining the final secret value by gaining knowledge of either of the values $a$ or $b$.  Thus, the security of the exchange depends on the hardness of that problem, known as the elliptic curve discrete logarithm problem.  For large $a$ and $b$, it is a computationally ``difficult'' problem.
+
+As a side note, some care has to be taken to choose an appropriate curve $E$.  Singular curves and ones with ``bad" numbers of points on it (over the given field) have simplified solutions to the discrete log problem.
+%%%%%
+%%%%%
+\end{document}

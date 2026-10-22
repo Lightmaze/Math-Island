@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ZuckermanNumber}
+\pmcreated{2013-03-22 16:04:36}
+\pmmodified{2013-03-22 16:04:36}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{Zuckerman number}
+\pmrecord{4}{38134}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Consider the integer 384. Multiplying its digits, $$3 \times 8 \times 4 = 96$$ and $${{384} \over {96}} = 91.$$
+
+When an integer is divisible by the product of its digits, it's called a {\em Zuckerman number}. That is, given $m$ is the number of digits of $n$ and $d_x$ (for $x \le k$) is an integer of $n$,
+
+$${\prod_{i = 1}^m d_i}|n$$
+
+All 1-digit numbers and the base number itself are Zuckerman numbers.
+
+It is possible for an integer to be divisible by its multiplicative digital root and yet not be a Zuckerman number because it doesn't divide its first digit product evenly (for example, 1728 in base 10 has multiplicative digital root 2 but is not divisible by $1 \times 7 \times 2 \times 8 = 112$). The reverse is also possible (for example, 384 is divisible by 96, as shown above, but clearly not by its multiplicative digital root 0).
+
+\begin{thebibliography}{2}
+\bibitem{jt} J. J. Tattersall, {\it Elementary number theory in nine chapters}, p. 86. Cambridge: Cambridge University Press (2005)
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

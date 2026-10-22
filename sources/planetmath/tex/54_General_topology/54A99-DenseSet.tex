@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DenseSet}
+\pmcreated{2013-03-22 12:05:42}
+\pmmodified{2013-03-22 12:05:42}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{dense set}
+\pmrecord{12}{31192}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A99}
+\pmsynonym{dense subset}{DenseSet}
+\pmsynonym{everywhere dense set}{DenseSet}
+\pmsynonym{everywhere dense subset}{DenseSet}
+\pmsynonym{everywhere-dense set}{DenseSet}
+\pmsynonym{everywhere-dense subset}{DenseSet}
+\pmrelated{NowhereDense}
+\pmrelated{DenseInAPoset}
+\pmdefines{dense}
+\pmdefines{everywhere dense}
+\pmdefines{everywhere-dense}
+\pmdefines{density}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+A subset $D$ of a topological space $X$
+is said to be \emph{dense} (or \emph{everywhere dense}) in $X$
+if the closure of $D$ is equal to $X$.
+Equivalently, $D$ is dense if and only if
+$D$ intersects every nonempty open set.
+
+In the special case that $X$ is a metric space with metric $d$,
+then this can be rephrased as:
+for all $\varepsilon > 0$ and all $x\in X$
+there is $y\in D$ such that $d(x,y)<\varepsilon$.
+
+For example, both the rationals $\mathbb{Q}$
+and the irrationals $\mathbb{R} \setminus \mathbb{Q}$
+are dense in the reals $\mathbb{R}$.
+
+The least cardinality of a dense set of a topological space
+is called the \emph{density} of the space.
+It is conventional to take the density to be $\aleph_0$
+if it would otherwise be finite;
+with this convention,
+the spaces of density $\aleph_0$ are precisely the separable spaces.
+The density of a topological space $X$ is denoted $d(X)$.
+If $X$ is a Hausdorff space,
+it can be shown that $|X| \le 2^{2^{d(X)}}$.
+%%%%%
+%%%%%
+%%%%%
+\end{document}

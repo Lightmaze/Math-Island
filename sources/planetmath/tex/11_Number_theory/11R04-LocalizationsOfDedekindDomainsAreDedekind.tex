@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LocalizationsOfDedekindDomainsAreDedekind}
+\pmcreated{2013-03-22 18:35:13}
+\pmmodified{2013-03-22 18:35:13}
+\pmowner{gel}{22282}
+\pmmodifier{gel}{22282}
+\pmtitle{localizations of Dedekind domains are Dedekind}
+\pmrecord{4}{41313}
+\pmprivacy{1}
+\pmauthor{gel}{22282}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmclassification{msc}{13F05}
+\pmclassification{msc}{13H10}
+%\pmkeywords{localization}
+%\pmkeywords{Dedekind domain}
+%\pmkeywords{integral domain}
+\pmrelated{Localization}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{corollary*}{Corollary}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+
+
+\begin{document}
+If $R$ is an integral domain with field of fractions $k$ and $S\subseteq R\setminus\{0\}$ is a multiplicative set, then the localization at $S$ is given by
+\begin{equation*}
+S^{-1}R=\left\{s^{-1}x:x\in R,s\in S\right\}
+\end{equation*}
+(up to isomorphism). This is a subring of $k$, and the following theorem states that localizations of Dedekind domains are again Dedekind domains.
+
+\begin{theorem*}
+Let $R$ be a Dedekind domain and $S\subseteq R\setminus\{0\}$ be a multiplicative set. Then $S^{-1}R$ is a Dedekind domain.
+\end{theorem*}
+
+A special case of this is the localization at a prime ideal $\mathfrak{p}$, which is defined as $R_\mathfrak{p}\equiv (R\setminus\mathfrak{p})^{-1}R$, and is therefore a Dedekind domain. In fact, if $\mathfrak{p}$ is nonzero then it can be shown that $R_\mathfrak{p}$ is a discrete valuation ring.
+
+%%%%%
+%%%%%
+\end{document}

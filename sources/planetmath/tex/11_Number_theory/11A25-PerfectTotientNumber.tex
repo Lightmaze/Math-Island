@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PerfectTotientNumber}
+\pmcreated{2013-03-22 16:33:20}
+\pmmodified{2013-03-22 16:33:20}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{perfect totient number}
+\pmrecord{6}{38741}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmsynonym{totient perfect number}{PerfectTotientNumber}
+\pmrelated{IteratedTotientFunction}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+An integer $n$ is a {\em perfect totient number} if $$n = \sum_{i = 1}^{c + 1} \phi^i(n)$$, where $\phi^i(x)$ is the iterated totient function and $c$ is the integer such that $\phi^c(n) = 2$.
+
+A082897 in Sloane's OEIS lists the first few perfect totient numbers: 3, 9, 15, 27, 39, 81, 111, 183, 243, 255, 327, 363, 471, 729, 2187, 2199, 3063, 4359, 4375, etc. It can be observed that many of these are multiples of 3 (in fact, 4375 is the smallest one that is not divisible by 3) and in fact all $3^x$ for $x > 0$ are perfect totient numbers.
+
+Furthermore, $3p$ for a prime $p > 3$ is a perfect totient number if and only if $p = 4n + 1$, where $n$ itself is also a perfect totient number. Mohan and Suryanarayana showed why $3p$ can't be a perfect totient number when $p \equiv 3 \mod 4$. In regards to $3^2p$, Ianucci et al showed that if it is a perfect totient number then $p$ is a prime of one of three specific forms listen in their paper. It is not known if there are any perfect totient numbers of the form $3^xp$ for $x > 3$.
+
+\begin{thebibliography}{2}
+\bibitem{pc} Perez Cacho, ``On the sum of totients of successive orders,'' {\it Revista Matematica Hispano-Americana} {\bf 5.3} (1939): 45 - 50
+\bibitem{di} D. E. Ianucci, D. Moujie \& G. L. Cohen, ``On Perfect Totient Numbers'' {\it Journal of Integer Sequences}, {\bf 6}, 2003: 03.4.5
+\bibitem{rg} R. K. Guy, {\it Unsolved Problems in Number Theory} New York: Springer-Verlag 2004: B42
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

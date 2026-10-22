@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Ifmun1omeganThentaun2omegan}
+\pmcreated{2013-03-22 18:18:41}
+\pmmodified{2013-03-22 18:18:41}
+\pmowner{1and2and4}{20899}
+\pmmodifier{1and2and4}{20899}
+\pmtitle{if $\mu(n) = (-1)^{\omega(n)}$ then $\tau(n) = 2^{\omega(n)}$}
+\pmrecord{5}{40935}
+\pmprivacy{1}
+\pmauthor{1and2and4}{20899}
+\pmtype{Corollary}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Corollary. If $n$ is a squarefree positive integer with a given number of prime factors, then the total count of its divisors is a power of two, specifically, two raised to the number of prime factors. With $\mu$ being the M\"obius function, $\omega$ being the number of distinct prime factors function, and $\tau$ the divisor function, we can write that if $\mu(n) = (-1)^{\omega(n)}$ then $\tau(n) = 2^{\omega(n)}$.
+
+Since it is stipulated that $n$ is squarefree, the \PMlinkname{number of (nondistinct) prime factors function}{NumberOfNondistinctPrimeFactorsFunction} $\Omega$ can be used instead of $\omega$.
+
+Note that for the sake of simplicity in this particular application, 1 is not considered a prime number.
+
+\begin{proof}
+$n$ has $\omega(n)$ prime factors, which here are labelled $p_1, p_2, \ldots , p_{\omega(n)}$ (they don't necessarily have to be sorted, but it doesn't hurt). This accounts for the prime divisors of $n$, therefore $\tau(n)$ must be at least $\omega(n)$. The semiprime divisors of $n$ are $p_1 p_2, p_1 p_3, \ldots , p_1 p_{\omega(n)}, p_2 p_3, \ldots , p_2 p_{\omega(n)}, \ldots$ Basically, the number of ways to choose two prime factors from among $\omega(n)$ choices, which is the binomial coefficient $$\binom{\omega(n)}{2}.$$ Likewise, the first determination, though quite obvious, was $$\binom{\omega(n)}{1} = \omega(n).$$ The binomial coefficients can be used to determine the count of divisors with 3 prime factors, 4 prime factors, etc., all the way up to $\omega(n)$ factors, which is again obvious: $$\binom{\omega(n)}{\omega(n)} = 1.$$ This should be familiar, as these values can be looked up in Pascal's triangle.
+
+So far we've only looked at the divisors of $n$ which are the product of one or more prime numbers. But every positive integer has 1 as a divisor, and since 1 has zero prime factors, we can also use Pascal's triangle to count 1 as a divisor thus: the number of ways to choose zero prime factors from among $\omega(n)$ choices, and that's the 1 in the leftmost column of row $\omega(n)$ in Pascal's triangle. So to count the number of divisors of a squarefree number $n$ with $\omega(n)$ prime factors, it is a simple matter of adding up row $\omega(n)$ of Pascal's triangle: $$\sum_{i = 0}^{\omega(n)} \binom{\omega(n)}{i} = \sum_{i = 0}^{\omega(n)} \binom{\omega(n)}{i} 1^{\omega(n) - i}1^i = (1 + 1)^{\omega(n)} = 2^{\omega(n)},$$ exactly as the theorem stated.
+\end{proof}
+
+The consequences of the theorem are that the number 1 has one divisor: 1; a prime $p_1$ has two divisors: $1, p_1$; a semiprime has four divisors: $1, p_1, p_2, p_1 p_2$; a sphenic number has eight divisors: $1, p_1, p_2, p_3, p_1 p_2, p_2 p_3, p_1 p_2 p_3$; a number with four prime factors has sixteen divisors; and so on and so forth.
+%%%%%
+%%%%%
+\end{document}

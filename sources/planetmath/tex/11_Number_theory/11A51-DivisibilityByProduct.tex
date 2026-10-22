@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DivisibilityByProduct}
+\pmcreated{2013-03-22 14:50:37}
+\pmmodified{2013-03-22 14:50:37}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{divisibility by product}
+\pmrecord{13}{36513}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmclassification{msc}{13A05}
+%\pmkeywords{B\'ezout ring}
+\pmrelated{BezoutDomain}
+\pmrelated{ProductDivisibleButFactorCoprime}
+\pmrelated{CorollaryOfBezoutsLemma}
+\pmdefines{B\'ezout ring}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+\begin{thmplain}
+\,Let $R$ be a {\em B\'ezout ring}, i.e. a commutative ring with non-zero unity where every finitely generated ideal is a principal ideal.  If $a,\,b,\,c$ are three elements of $R$ such that $a$ and $b$ divide $c$ and\, $\gcd(a,\,b) = 1$, \,then also $ab$ divides $c$.
+\end{thmplain}
+
+{\em Proof.}  The divisibility assumptions \PMlinkescapetext{mean} that\, $c = aa_1 = bb_1$\, where $a_1$ and $b_1$ are some elements of $R$.\, Because $R$ is a B\'ezout ring, there exist such elements $x$ and $y$ of $R$ that \,$\gcd(a,\,b) = 1 = xa+yb$. This implies the equation \,$a_1 = xaa_1+yba_1 = xbb_1+yba_1$\, which shows that $a_1$ is divisible by $b$, i.e.\, $a_1 = bb_2$,\, $b_2\in R$.  Consequently,\, $c = aa_1 = abb_2$,\, or\, $ab \mid c$\; Q.E.D.
+
+\textbf{Note 1.}  The theorem may by induction be generalized for several \PMlinkname{factors}{Divisibility} of $c$.
+
+\textbf{Note 2.}  The theorem holds e.g. in all B\'ezout domains, especially in principal ideal domains, such as $\mathbb{Z}$ and polynomial rings over a field.
+%%%%%
+%%%%%
+\end{document}

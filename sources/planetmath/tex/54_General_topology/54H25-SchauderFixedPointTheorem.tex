@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SchauderFixedPointTheorem}
+\pmcreated{2013-03-22 13:45:17}
+\pmmodified{2013-03-22 13:45:17}
+\pmowner{paolini}{1187}
+\pmmodifier{paolini}{1187}
+\pmtitle{Schauder fixed point theorem}
+\pmrecord{12}{34455}
+\pmprivacy{1}
+\pmauthor{paolini}{1187}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54H25}
+\pmclassification{msc}{47H10}
+\pmclassification{msc}{46B50}
+\pmrelated{BrouwerFixedPointTheorem}
+\pmrelated{FixedPoint}
+\pmrelated{TychonoffFixedPointTheorem}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $X$ be a normed vector space, and let $K\subset X$ be a non-empty, compact, and convex set. 
+Then given any continuous mapping $f\colon K \to K$
+there exists $x\in K$ such that $f(x)=x$.
+
+Notice that the unit disc of a finite dimensional vector space is always convex and compact hence this theorem extends Brouwer Fixed Point Theorem.
+
+Notice that the space $X$ is not required to be complete, however the subset $K$ being compact, 
+is complete with respect to the metric induced by $X$.
+
+\begin{thebibliography}{9}
+\bibitem{rudin} Rudin, \emph{Functional Analysis}, Chapter 5.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

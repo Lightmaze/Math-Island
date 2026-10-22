@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheSphereIsIndecomposableAsATopologicalSpace}
+\pmcreated{2013-03-22 18:31:45}
+\pmmodified{2013-03-22 18:31:45}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{the sphere is indecomposable as a topological space}
+\pmrecord{8}{41234}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54F99}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\textbf{Proposition}. If for any topological spaces $X$ and $Y$ the $n$-dimensional sphere $\mathbb{S}^{n}$ is homeomorphic to $X\times Y$, then either $X$ has exactly one point or $Y$ has exactly one point.
+
+\textit{Proof}. Recall that the homotopy group functor is additive, i.e. $\pi_{n}(X\times Y)\simeq\pi_{n}(X)\oplus\pi_{n}(Y)$. Assume that $\mathbb{S}^{n}$ is homeomorphic to $X\times Y$. Now $\pi_{n}(\mathbb{S}^{n})\simeq\mathbb{Z}$ and thus we have:
+$$\mathbb{Z}\simeq\pi_{n}(\mathbb{S}^{n})\simeq\pi_{n}(X\times Y)\simeq\pi_{n}(X)\oplus\pi_{n}(Y).$$
+Since $\mathbb{Z}$ is an indecomposable group, then either $\pi_{n}(X)\simeq 0$ or $\pi_{n}(Y)\simeq 0$.
+
+Assume that $\pi_{n}(Y)\simeq 0$. Consider the map $p:X\times Y\to Y$ such that $p(x,y)=y$. Since $X\times Y$ is homeomorphic to $\mathbb{S}^{n}$ and $\pi_{n}(Y)\simeq 0$, then $p$ is homotopic to some constant map. Let $y_0\in Y$ and $H:\mathrm{I}\times X\times Y\to Y$ be such that 
+$$H(0,x,y)=p(x,y)=y;$$
+$$H(1,x,y)=y_0.$$
+Consider the map $F:\mathrm{I}\times X\times Y\to X\times Y$ defined by the formula
+$$F(t,x,y)=(x,H(t,x,y)).$$
+Note that $F(0,x,y)=(x,y)$ and $F(1,x,y)=(x,y_{0})$ and thus $X\times\{y_0\}$ is a deformation retract of $X\times Y$. But $X\times Y$ is a sphere and spheres do not have proper deformation retracts (please see \PMlinkname{this entry}{EveryMapIntoSphereWhichIsNotOntoIsNullhomotopic} for more details). Therefore $X\times\{y_{0}\}=X\times Y$, so $Y=\{y_{0}\}$ has exactly one point. $\square$
+%%%%%
+%%%%%
+\end{document}

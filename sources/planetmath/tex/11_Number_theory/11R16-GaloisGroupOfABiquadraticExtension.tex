@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GaloisGroupOfABiquadraticExtension}
+\pmcreated{2013-03-22 17:44:06}
+\pmmodified{2013-03-22 17:44:06}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{Galois group of a biquadratic extension}
+\pmrecord{5}{40184}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R16}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{thm}{Theorem}
+\DeclareMathOperator{\Gal}{Gal}
+
+\begin{document}
+This article proves that biquadratic extensions correspond precisely to Galois extensions with Galois group isomorphic to the Klein $4$-group $V_4$ (at least if the characteristic of the base field is not $2$). More precisely,
+
+\begin{thm} Let $F$ be a field of characteristic $\neq 2$ and $K$ a finite extension of $F$. Then the following are equivalent:
+\begin{enumerate}
+\item $K=F(\sqrt{D_1},\sqrt{D_2})$ for some $D_1,D_2\in F$ such that none of $D_1, D_2$, or $D_1D_2$ is a square in $F$.
+\item $K$ is a Galois extension of $F$ with $\Gal(K/F)\cong V_4$;
+\end{enumerate}
+\end{thm}
+
+\textbf{Proof. } Suppose first that condition (1) holds. Then $[F(\sqrt{D_1}):F]=[F(\sqrt{D_2}):F]=2$ since neither $D_1$ nor $D_2$ is a square in $F$. Now obviously \[[K:F]=[F(\sqrt{D_1},\sqrt{D_2}):F(\sqrt{D_1})][F(\sqrt{D_1}):F]\leq 4\]
+and so $[K:F(\sqrt{D_1})]\leq 2$. If $K=F(\sqrt{D_1})$, then $\sqrt{D_2}\in F(\sqrt{D_1})$, so $\sqrt{D_2}=a+b\sqrt{D_1}$ and $D_2=a^2+b^2D_1+2ab\sqrt{D_1}$. Thus $a=0$ or $b=0$. If $b=0$, then $D_2$ is a square. If $a=0$, then $D_1D_2=b^2D_1^2$ is a square. In any case, this is a contradiction. Thus $K$ is a quadratic extension of $F(\sqrt{D_1})$. So $[K:F]=4$.  But $K$ is the splitting field for $(x^2-D_1)(x^2-D_2)$, since the splitting field must contain both square roots, and the polynomial obviously splits in $K$, so $G=\Gal(K/F)$ has four elements
+\begin{center}
+\begin{tabular}{llll}
+$id$ & 
+$\sigma:\begin{cases}\sqrt{D_1}\mapsto -\sqrt{D_1}\\\sqrt{D_2}\mapsto \sqrt{D_2}\end{cases}$ &
+$\tau:\begin{cases}\sqrt{D_1}\mapsto \sqrt{D_1}\\\sqrt{D_2}\mapsto -\sqrt{D_2}\end{cases}$ &
+$\sigma\tau:\begin{cases}\sqrt{D_1}\mapsto -\sqrt{D_1}\\\sqrt{D_2}\mapsto -\sqrt{D_2}\end{cases}$
+\end{tabular}
+\end{center}
+and is thus isomorphic to $V_4$.
+
+Now assume that condition (2) holds. Since $\Gal(K/F)\cong V_4$, there must be three intermediate subfields $E_1, E_2, E_3$ between $F$ and $K$ of degree $2$ over $F$ corresponding to the three subgroups of $V_4$ of order $2$. Thus each of these is a quadratic extension. Suppose $E_1=F(\sqrt{D_1}), E_2=F(\sqrt{D_2})$ where neither $D_1$ nor $D_2$ is a square in $F$. The fact that $E_1\neq E_2$ implies as above that $D_1D_2$ is also not a square in $F$ (in fact $E_3=F(\sqrt{D_1D_2})$. Thus $E_1E_2\supsetneq E_1, E_2$, and is of degree $4$ over $F$, so $K=E_1E_2 =F(\sqrt{D_1},\sqrt{D_2})$.
+
+%%%%%
+%%%%%
+\end{document}

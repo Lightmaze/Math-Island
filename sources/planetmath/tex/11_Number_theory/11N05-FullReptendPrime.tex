@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FullReptendPrime}
+\pmcreated{2013-03-22 16:04:50}
+\pmmodified{2013-03-22 16:04:50}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{full reptend prime}
+\pmrecord{5}{38139}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N05}
+\pmsynonym{long prime}{FullReptendPrime}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+If for a prime number $p$ in a given base $b$ such that $\gcd(p, b) = 1$, the formula $$\frac{b^{p - 1} - 1}{p}$$ gives a cyclic number, then $p$ is a {\em full reptend prime} or {\em long prime}.
+
+The first few base 10 full reptend primes are given by A001913 of Sloane's OEIS: 7, 17, 19, 23, 29, 47, 59, 61, 97, 109, 113, 131, 149, 167.
+
+For example, the case $b = 10$, $p = 7$ gives the cyclic number 142857, thus, 7 is a full reptend prime.
+
+Not all values of $p$ will yield a cyclic number using this formula; for example $p = 13$ gives 076923076923. These failed cases will always contain a repetition of digits (possibly several).
+
+The known pattern to this sequence comes from algebraic number theory, specifically, this sequence is the set of primes $p$ such that 10 is a primitive root modulo $p$. A conjecture of Emil Artin on primitive roots is that this sequence contains about 37 percent of the primes.
+
+The term {\em long prime} was used by John Conway and Richard Guy in their {\it Book of Numbers}. Confusingly, Sloane's OEIS refers to these primes as "cyclic numbers."
+%%%%%
+%%%%%
+\end{document}

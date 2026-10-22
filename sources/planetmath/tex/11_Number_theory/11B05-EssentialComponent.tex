@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EssentialComponent}
+\pmcreated{2013-03-22 13:19:42}
+\pmmodified{2013-03-22 13:19:42}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{essential component}
+\pmrecord{7}{33840}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B05}
+\pmclassification{msc}{11B13}
+\pmrelated{SchnirlemannDensity}
+\pmrelated{Basis2}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+%%%\usepackage{xypic}
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+If $A$ is a set of nonnegative integers such that 
+\begin{equation}
+\sigma(A+B)>\sigma B
+\end{equation}
+for every set $B$ with Schnirelmann density $0<\sigma B<1$, then $A$ is an \emph{essential component}.
+
+Erd\H{o}s proved that every \PMlinkid{basis}{3831} is an essential component. In fact he proved that
+\begin{equation*}
+\sigma(A+B)\geq \sigma B+\frac{1}{2h}(1-\sigma B)\sigma B,
+\end{equation*}
+where $h$ denotes the \PMlinkid{order}{3831} of $A$.
+
+Pl\"unnecke improved that to
+\begin{equation*}
+\sigma(A+B)\geq \sigma B^{1-1/h}.
+\end{equation*}
+
+There are non-basic essential components. Linnik constructed non-basic essential component for which $A(n)=O(n^\epsilon)$ for every $\epsilon>0$.
+
+\begin{thebibliography}{1}
+
+\bibitem{cite:halberstam_sequences}
+Heini Halberstam and Klaus~Friedrich Roth.
+\newblock {\em Sequences}.
+\newblock Springer-Verlag, second edition, 1983.
+\newblock \PMlinkexternal{Zbl 0498.10001}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0498.10001}.
+
+\end{thebibliography}
+
+%@BOOK{cite:halberstam_sequences,
+% author    = {Heini Halberstam and Klaus Friedrich Roth},
+% title     = "Sequences",
+% publisher = {Springer-Verlag},
+% year      = {1983},
+% edition   = {Second}
+%}
+%%%%%
+%%%%%
+\end{document}

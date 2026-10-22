@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NumberOfnondistinctPrimeFactorsFunction}
+\pmcreated{2013-03-22 16:07:00}
+\pmmodified{2013-03-22 16:07:00}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{number of (nondistinct) prime factors function}
+\pmrecord{16}{38183}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{NumberOfDistinctPrimeFactorsFunction}
+\pmrelated{2omeganLeTaunLe2Omegan}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The \PMlinkescapetext{{\em number of (nondistinct) prime factors function}} $\Omega(n)$ counts with repetition how many prime factors a natural number $n$ has.  If $\displaystyle n= \prod_{j= 1}^k {p_j}^{a_j}$ where the $k$ primes $p_j$ are distinct and the $a_j$ are natural numbers, then $\displaystyle \Omega(n)=\sum_{j=1}^k a_j$.
+
+Note that, if $n$ is a squarefree number, then $\omega(n)=\Omega(n)$, where $\omega(n)$ is the number of distinct prime factors function.  Otherwise, $\omega(n)<\Omega(n)$.
+
+Note also that $\Omega(n)$ is a completely additive function and thus can be exponentiated to define a completely multiplicative function.  For example, the Liouville function can be defined as $\lambda(n) = (-1)^{\Omega(n)}$.
+
+The sequence $\{\Omega(n)\}$ appears in the OEIS as sequence \PMlinkexternal{A001222}{http://www.research.att.com/~njas/sequences/?q=A001222}.
+
+The sequence $\{2^{\Omega(n)}\}$ appears in the \PMlinkname{OEIS}{OEIS} as sequence \PMlinkexternal{A061142}{http://www.research.att.com/~njas/sequences/?q=A061142}.
+%%%%%
+%%%%%
+\end{document}

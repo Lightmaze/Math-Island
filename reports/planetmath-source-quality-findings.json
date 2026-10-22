@@ -1,0 +1,54 @@
+{
+  "scope": "Observed source problems encountered during identity audit; not a complete mathematical review of all entries.",
+  "issues": [
+    {
+      "id": "pm:SymmetricGroup",
+      "source_file": "sources/planetmath/tex/20_Group_theory_and_generalizations/20B30-SymmetricGroup.tex",
+      "source_sha256": "0e2fea88d8f9e7ca55c89f418c377047a1dab25e52de9df16398e6999196d721",
+      "issue": "Source says any 2-cycle and n-cycle generate S_n; false in general. Source also associates A_{n-1} with SL_{n-1}, whereas the usual correspondence is SL_n.",
+      "exact_counterexample": {
+        "n": 4,
+        "generators_0_based": [
+          [
+            2,
+            1,
+            0,
+            3
+          ],
+          [
+            1,
+            2,
+            3,
+            0
+          ]
+        ],
+        "generated_group_order": 8,
+        "S4_order": 24
+      },
+      "concept_identity_valid": true,
+      "whole_source_math_verified": false
+    },
+    {
+      "id": "pm:SieveOfEratosthenes",
+      "source_file": "sources/planetmath/tex/11_Number_theory/11A41-SieveOfEratosthenes.tex",
+      "source_sha256": "d8f6b40944d6df73e10e8ef3ba5a4213763e0f3ca9b1a34682f4ff30b91d81b7",
+      "issue": "Literal source procedure marks p itself composite, removing the small primes. The source also calls quadratic sieve a faster prime-listing method; quadratic sieve is an integer factorization method.",
+      "exact_counterexample": {
+        "N": 10,
+        "literal_source_output_starting_domain_at_2": [
+          5,
+          7
+        ],
+        "true_primes": [
+          2,
+          3,
+          5,
+          7
+        ]
+      },
+      "concept_identity_valid": true,
+      "whole_source_math_verified": false
+    }
+  ],
+  "recommended_action": "Keep real mathematical subjects if desired, but attach source-quality warnings; do not promote source assertions to verified facts."
+}

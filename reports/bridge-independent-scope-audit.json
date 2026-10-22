@@ -1,0 +1,22 @@
+{
+  "reviewer": "/root/atlas_audit",
+  "scope": "Endpoint binding and stated scope re-reading only; source-passage and proof reading are separately attributed to atlas_semantics.",
+  "nodes_sha256": "4f146b824e4cce0f3b8e47e1c756557124c5075288fdf8cd7db0145a879abce1",
+  "bindings_nodes_sha256": "4f146b824e4cce0f3b8e47e1c756557124c5075288fdf8cd7db0145a879abce1",
+  "checks": {
+    "bound_count": true,
+    "all_42_endpoints_exist": true,
+    "edge_count_21": true,
+    "bridge_ids_unique": true,
+    "guard_arrays_nonempty": true,
+    "receipts_21": true,
+    "no_novelty_claim": true
+  },
+  "pass": true,
+  "requested_corrections_confirmed": [
+    "Gauss-Bonnet invariant identity, not object equivalence",
+    "loopless is no self-loop, not acyclic",
+    "finite event family and shared-variable dependency graph for Moser-Tardos"
+  ],
+  "math_proofs_reverified": false
+}

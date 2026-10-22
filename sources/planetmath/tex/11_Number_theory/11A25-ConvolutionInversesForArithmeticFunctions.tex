@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConvolutionInversesForArithmeticFunctions}
+\pmcreated{2013-03-22 15:58:32}
+\pmmodified{2013-03-22 15:58:32}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{convolution inverses for arithmetic functions}
+\pmrecord{27}{37992}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{ArithmeticFunction}
+\pmrelated{MultiplicativeFunction}
+\pmrelated{ArithmeticFunctionsFormARing}
+\pmrelated{ElementaryResultsAboutMultiplicativeFunctionsAndConvolution}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+\begin{document}
+\PMlinkescapeword{convolution}
+
+\begin{thm*}
+An arithmetic function $f$ has a convolution inverse if and only if $f(1) \neq 0$.
+\end{thm*}
+
+\begin{proof}
+If $f$ has a convolution inverse $g$, then $f*g=\varepsilon$, where $\varepsilon$ denotes the convolution identity function.  Thus, $1=\varepsilon(1)=(f*g)(1)=f(1)g(1)$, and it follows that $f(1) \neq 0$.
+
+Conversely, if $f(1) \neq 0$, then an arithmetic function $g$ must be constructed such that $(f*g)(n)=\varepsilon(n)$ for all $n \in \mathbb{N}$.  This will be done by induction on $n$.
+
+Since $f(1) \neq 0$, we have that $\displaystyle \frac{1}{f(1)} \in \mathbb{C}$.  Define $\displaystyle g(1)=\frac{1}{f(1)}$.
+
+Now let $k \in \mathbb{N}$ with $k>1$ and $g(1), \dots, g(k-1)$ be such that $(f*g)(n)=\varepsilon(n)$ for all $n \in \mathbb{N}$ with $n<k.$  Define
+
+$$g(k)=-\frac{1}{f(1)}\sum_{d|k \text{ and } d<k} f \left( \frac{k}{d} \right) g(d).$$
+
+Then
+
+\begin{center}
+\begin{tabular}{ll}
+$\displaystyle (f*g)(k)$ & $\displaystyle = \sum_{d|k} f \left( \frac{k}{d} \right) g(d)$ \\
+& $\displaystyle = f(1)g(k) + \sum_{d|k \text{ and } d<k} f \left( \frac{k}{d} \right) g(d)$ \\
+& $\displaystyle = f(1) \left( -\frac{1}{f(1)}\sum_{d|k \text{ and } d<k} f \left( \frac{k}{d} \right) g(d) \right) + \sum_{d|k \text{ and } d<k} f \left( \frac{k}{d} \right) g(d)$ \\
+& $\displaystyle =0$ \\
+& $\displaystyle =\varepsilon(k).$ \end{tabular}
+\end{center}
+\end{proof}
+
+In the entry titled arithmetic functions form a ring, it is proven that convolution is associative and commutative.  Thus, $G=\{ f \colon \mathbb{N} \to \mathbb{C} \, | f(1) \neq 0 \}$ is an abelian group under convolution.  The set of all multiplicative functions is a subgroup of $G$.
+%%%%%
+%%%%%
+\end{document}

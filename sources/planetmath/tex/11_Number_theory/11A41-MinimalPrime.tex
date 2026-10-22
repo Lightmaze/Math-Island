@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MinimalPrime}
+\pmcreated{2013-03-22 16:52:23}
+\pmmodified{2013-03-22 16:52:23}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{minimal prime}
+\pmrecord{4}{39123}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmclassification{msc}{11A63}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em minimal prime} is a prime number $p$ that when written in a given base $b$, no smaller prime $q < p$ can be formed from a substring of the digits of $p$ (the digits need not be consecutive, but they must be in the same order). For example, in base 10, the prime 991 is a minimal prime because all of its possible substrings (9, 9, 1, 99, 91, 91) are either composite or not considered prime. A071062 of Sloane's OEIS lists the twenty-six base 10 minimal primes.
+
+Clearly, all primes $p < b$ are minimal primes in that base. Such primes are obviously finite, but so are those minimal primes $p > b$, per Michel Lothaire's findings. In binary, there are only exactly two minimal primes: 2 and 3, written 10 and 11 respectively. Every larger prime will have 1 as its most significant digit and possibly a 0 somewhere; the 1 and 0 can then be brought together to form 10 (2 in decimal). The exception to this are the Mersenne primes $2^q - 1$ (or binary repunits), but it is even more elegant to prove these are not minimal primes in binary: they contain all smaller Mersenne primes as substrings!
+
+\begin{thebibliography}{1}
+\bibitem{ml} M. Lothaire ``Combinatorics on words'' in {\it Encylopedia of mathematics and its applications} {\bf 17} New York: Addison-Wesley (1983): 238 - 247
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

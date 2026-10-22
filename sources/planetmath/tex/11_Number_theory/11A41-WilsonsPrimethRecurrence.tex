@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WilsonsPrimethRecurrence}
+\pmcreated{2013-03-22 16:11:51}
+\pmmodified{2013-03-22 16:11:51}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Wilson's primeth recurrence}
+\pmrecord{6}{38290}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmsynonym{Wilson's prime-th recurrence}{WilsonsPrimethRecurrence}
+\pmsynonym{primeth recurrence}{WilsonsPrimethRecurrence}
+\pmsynonym{prime-th recurrence}{WilsonsPrimethRecurrence}
+\pmsynonym{primeth sequence}{WilsonsPrimethRecurrence}
+\pmsynonym{prime-th sequence}{WilsonsPrimethRecurrence}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Define $p_x$ to be the $x$-th prime number (for example, $p_{15} = 47$). Then define the recurrence $a_0 = 1$ and $a_n = p_{a_{n - 1}}$ for $n > 0$. This is {\em Wilson's primeth recurrence} which results in the sequence 1, 2, 3, 5, 11, 31, 127, 709, 5381, 52711, 648391, 9737333, 174440041, ... (A7097 in Sloane's OEIS). Given the prime counting function $\pi(x)$, the recurrence should check out thus: $\pi(a_n) = a_{n - 1}$.
+
+It suffices to mention Euclid's proof that there are infinitely many primes to show that this recurrence is also infinite. However, the terms of this recurrence quickly become large enough to show the limitations of today's computational devices. Robert G. Wilson provided Sloane with just 15 terms. The last of those was shown to be erroneous by Paul Zimmerman, who was able to extend the known sequence by just two more terms. In 2007, David Baugh discovered two more terms.
+
+\begin{thebibliography}{1}
+\bibitem{ns} N. J. A. Sloane, ``My Favorite Integer Sequences" {\it Sequences and their Applications (Proceedings of SETA '98)}, Springer-Verlag, London, 1999, pp. 103-130.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

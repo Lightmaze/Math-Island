@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IntegerFactorization}
+\pmcreated{2013-03-22 16:39:09}
+\pmmodified{2013-03-22 16:39:09}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{integer factorization}
+\pmrecord{8}{38857}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmsynonym{prime factorization}{IntegerFactorization}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given an integer $n$, its {\em integer factorization} (or {\em prime factorization}) consists of the primes $p_i$ which multiplied together give $n$ as a result. To put it algebraically, $$n = \prod_{i = 1}^{\omega(n)} {p_i}^{a_i},$$ with each $p_i$ distinct, all $a_i > 0$ but not necessarily distinct, and $\omega(n)$ being the value of the number of distinct prime factors function. Theoretically, an integer is a product of all the prime numbers, $$n = \prod_{i = 1}^{\infty} {p_i}^{a_i},$$ with many $a_i = 0$.
+
+For example, the factorization of 32851 is $7 \times 13 \times 19 \times 19$, more usually expressed as $7 \times 13 \times 19^2$. Because of the commutative property of multiplication, it does not matter in what order the prime factors are stated in, but it is customary to give them in \PMlinkname{ascending order}{AscendingOrder}, and to group them together by the use of exponents.
+
+The factorization of a positive integer is unique (this is the fundamental theorem of arithmetic). For a negative number $n < 0$ one could take the factorization of $|n|$ and randomly give negative signs to one (or any odd number) of the prime factors. Alternatively, the factorization can be given as $-1 \cdot {p_1}^{a_1} \cdot \ldots$ (this is what Mathematica opts for).
+
+The term ``factorization'' is often used to refer to the actual process of determining the prime factors. There are several algorithms to choose from, with trial division being the simplest to implement.
+%%%%%
+%%%%%
+\end{document}

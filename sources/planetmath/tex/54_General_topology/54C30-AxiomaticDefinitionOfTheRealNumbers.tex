@@ -1,0 +1,191 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AxiomaticDefinitionOfTheRealNumbers}
+\pmcreated{2013-03-22 15:39:29}
+\pmmodified{2013-03-22 15:39:29}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{axiomatic definition of the real numbers}
+\pmrecord{17}{37591}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C30}
+\pmclassification{msc}{26-00}
+\pmclassification{msc}{12D99}
+\pmrelated{RealNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\F}{\mathbbmss{F}}
+ \newcommand{\N}{\mathbbmss{N}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\subsubsection*{Axiomatic definition of the real numbers}
+The real numbers consist of a set $\R$ together with mappings
+$+\colon \R\times \R\to \R$ and $\cdot\colon \R\times \R \to\R$ and a
+relation $< \,\subseteq \R\times\R$ satisfying
+ the following conditions:
+\begin{enumerate}
+\item $(\R,+)$ is an Abelian group:
+\begin{enumerate}
+\item For $a,b,c\in \R$, we have
+\begin{eqnarray*}
+  a+b&=&b+a, \\
+(a+b)+c&=&a+(b+c),
+\end{eqnarray*}
+\item there exists an element $0\in \R$ such that $a+0=a$ for all $a\in \R$,
+\item every $a\in \R$ has an inverse $(-a)\in\R$ such that $a+(-a)=0$. 
+\end{enumerate}
+\item $(\R\setminus\{0\}, \cdot)$ is an Abelian group: 
+\begin{enumerate}
+\item For $a,b,c\in \R$, we have
+\begin{eqnarray*}
+  a\cdot b&=&b\cdot a, \\
+(a\cdot b)\cdot c&=&a\cdot (b\cdot c),
+\end{eqnarray*}
+\item there exists an element $1\in \R\setminus\{0\}$ such that $a\cdot 1=a$ for all $a\in \R$,
+\item every $a\in \R\setminus\{0\}$ has an inverse $a^{-1}\in\R$ 
+      such that $a^{-1}\cdot a=1$. 
+\end{enumerate}
+\item The operation $\cdot$ is distributive over  $+$: If $a,b,c\in \R$, then 
+\begin{eqnarray*}
+  a\cdot (b+c)&=a\cdot b + a\cdot c, \\
+   (b+c)\cdot a&=b\cdot a + c\cdot a.
+\end{eqnarray*}
+\item $(\R,<)$ is a total order:
+\begin{enumerate}
+\item (transitivity) if $c\in\R$, $a<b$, and $b<c$, then $a<c$,
+\item (trichotomy) precisely one of the below alternatives
+hold:
+\[
+  a<b, \quad a=b, \quad b<a.
+\]
+\end{enumerate}
+For convenience we make the following notational definitions:
+$a>b$ means $b<a$, $a\le b$ means either $a<b$ or $a=b$, and $a\ge b$
+means either $b<a$ or $a=b$.
+
+\item The operations $+$ and $\cdot$ are compatible with the order $<$:
+\begin{enumerate}
+\item If $a$, $b$, $c\in\R$ and $a<b$, then $a+c<b+c$. 
+\item If $a$, $b$, $c\in\R$ with $a<b$ and $0<c$, then $ac<bc$.
+\end{enumerate}
+
+\item $\R$ has the least upper bound property: If $A\subset \R$,
+then an element $M\in \R$ is an \PMlinkescapetext{upper bound} for $A$ if
+\[
+  a<M, \mbox{ for all }\ a\in A.
+\]
+If $A$ is non-empty, we then say that $A$ is bounded from above. 
+That $\R$ has the least upper bound property means that
+if $A\subset \R$ is bounded from above, it has a least upper bound $m\in \R$. That is, 
+$A$ has an upper bound $m$ such that if $M$ is any upper bound from $M$, 
+then $m\le M$. 
+\end{enumerate}
+
+Here it should be emphasized that from the above we can not deduce that 
+a set $\R$ with operations $+,\cdot,<$ exists. To settle this question such 
+a set has to be explicitly constructed. However, this can be done in various ways, as
+discussed on \PMlinkname{this page}{RealNumber}.
+One can also show the above conditions uniquely determine the real numbers 
+(up to an isomorphism). The proof of this can be found on 
+\PMlinkname{this page}{EveryOrderedFieldWithTheLeastUpperBoundPropertyIsIsomorphicToTheRealNumbers}.
+
+
+\subsubsection*{Basic properties}
+In condensed form, the above conditions state that $\R$ is an ordered 
+field with the least upper bound property. In particular $(\R,+,\cdot)$ 
+is a ring, and $(\R\setminus\{0\},\cdot)$ is a group, and we have the following basic properties:
+
+\begin{lemma}Suppose $a,b\in \R$. 
+\begin{enumerate} 
+\item The additive inverse $(-a)$ is unique \PMlinkname{(proof)}{UniquenessOfAdditiveIdentityInARing}.
+\item The additive identity $0$ is unique \PMlinkname{(proof)}{UniquenessOfAdditiveIdentityInARing2}.
+\label{minusProperty}
+\item $(-1)\cdot a=(-a)$ \PMlinkname{(proof)}{1cdotAA}.
+\item $(-a)\cdot(-b)=a\cdot b$ \PMlinkname{(proof)}{XcdotYXcdotY}.
+\item $0\cdot a=0$ \PMlinkname{(proof)}{0cdotA0}
+\item The multiplicative inverse $a^{-1}$ is unique \PMlinkname{(proof)}{UniquenessOfInverseForGroups}.
+\item If $a,b$ are non-zero, then $(ab)^{-1}=b^{-1} a^{-1}$ \PMlinkname{(proof)}{InverseOfAProduct}.
+\end{enumerate}
+\end{lemma}
+
+
+In view of property \ref{minusProperty}, we can write simply $-a$ 
+instead of $(-1)\cdot a$ and $(-a)$.  
+
+Because of the additive inverse of a real number is unique (by property 1 above), and $(-a)+a=a+(-a)=0$, we see that the additive inverse of $-a$ is $a$, or that $-(-a)=a$.  Similarly, if $a\ne 0$, then $a^{-1}\ne 0$ (or we'll end up with $1=aa^{-1}=a0=0$), and therefore by Property 6 above, $a^{-1}$ has a unique multiplicative inverse.  Since $aa^{-1}=a^{-1}a=1$, we see that $a$ is the multiplicative inverse of $a^{-1}$.  In other words, $(a^{-1})^{-1}=a$.
+
+For $a,b\in \R$ let us also define $a-b=a+(-b)$, which is called 
+the \emph{difference} of $a$ and $b$.
+By commutativity, $a-b=-b+a$.\, It is also common to leave out the
+multiplication symbol and simply write $ab=a\cdot b$.\, Suppose\, 
+$a\in \R$\, and\, $b\in \R$\, is non-zero.\, Then \emph{$b$
+\PMlinkname{divided}{Division} by $a$} is defined as 
+$$ 
+   \frac{a}{b} = ab^{-1}.
+$$
+In consequence, if\, $a,\,b,\,c,\,d\in \R$\, and $b,\,c,\,d$ are non-zero, then 
+\begin{itemize}
+\item $ \frac{\frac{a}{b}}{\frac{c}{d}} = \frac{bd}{ac}$,
+\item $\frac{ab}{b}=a$.
+\end{itemize}
+For example, 
+$$
+ \frac{\frac{a}{b}}{\frac{c}{d}} = \frac{ab^{-1}}{cd^{-1}}=
+ab^{-1}(cd^{-1})^{-1}
+= ab^{-1} d c^{-1}=
+\frac{ad}{bc}.
+$$
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PerrinPseudoprime}
+\pmcreated{2013-03-22 16:11:33}
+\pmmodified{2013-03-22 16:11:33}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{Perrin pseudoprime}
+\pmrecord{5}{38284}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B39}
+\pmdefines{strong Perrin pseudoprime}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given the Perrin sequence, $a_0 = 3$, $a_1 = 0$, $a_2 = 2$ and $a_n = a_{n - 3} + a_{n - 2}$ for $n > 2$, if $n$ is not prime yet $n|a_n$, that number is then called a {\em Perrin pseudoprime}. The first few Perrin pseudoprimes are 271441, 904631, 16532714, 24658561, 27422714, 27664033, 46672291 (listed in A013998 of Sloane's OEIS).
+
+By itself this is not a good enough test of primality. Further requiring that $a_n \equiv 0 \mod n$ and $a_{-n} \equiv 1 \mod n$ improves the test but not enough to be preferable to actually factoring out the number. The first few {\em strong Perrin pseudoprimes} are 27664033, 46672291, 102690901, 130944133, 517697641 (listed in A018187 of Sloane's OEIS).
+
+Unlike Perrin pseudoprimes, most other \PMlinkname{pseudoprimes}{PseudoprimeP} are \PMlinkescapetext{pseudoprimes} because of a congruence relation to a given base.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClosureAxioms}
+\pmcreated{2013-03-22 13:13:44}
+\pmmodified{2013-03-22 13:13:44}
+\pmowner{Koro}{127}
+\pmmodifier{Koro}{127}
+\pmtitle{closure axioms}
+\pmrecord{9}{33697}
+\pmprivacy{1}
+\pmauthor{Koro}{127}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A05}
+\pmsynonym{Kuratowski's closure axioms}{ClosureAxioms}
+\pmsynonym{Kuratowski closure axioms}{ClosureAxioms}
+\pmrelated{Closure}
+\pmdefines{closure operator}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A \emph{closure operator} on a set $X$ is an operator which assigns a set $A^c$ to each subset $A$ of $X$, and such that the following (Kuratowski's closure axioms) hold for any subsets $A$ and $B$ of $X$:
+\begin{enumerate}
+\item $\emptyset^c = \emptyset$;
+\item $A\subset A^c$;
+\item $(A^c)^c = A^c$;
+\item $(A\cup B)^c = A^c\cup B^c.$
+\end{enumerate}
+
+The following theorem due to Kuratowski says that a closure operator characterizes a unique topology on $X$:
+
+\textbf{Theorem.} Let $c$ be a closure operator on $X$, and let $\mathcal{T} = \{X-A: A\subseteq X,\; A^c=A\}$. Then $\mathcal{T}$ is a topology on $X$, and $A^c$ is the $\mathcal{T}$-closure of $A$ for each subset $A$ of $X$.
+%%%%%
+%%%%%
+\end{document}

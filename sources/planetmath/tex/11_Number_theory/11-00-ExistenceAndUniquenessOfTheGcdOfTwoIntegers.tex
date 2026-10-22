@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExistenceAndUniquenessOfTheGcdOfTwoIntegers}
+\pmcreated{2013-03-22 16:28:44}
+\pmmodified{2013-03-22 16:28:44}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{existence and uniqueness of the gcd of two integers}
+\pmrecord{5}{38645}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+%\pmkeywords{divisor}
+%\pmkeywords{divisibility}
+%\pmkeywords{gcd}
+%\pmkeywords{greatest common divisor}
+%\pmkeywords{division algorithm}
+%\pmkeywords{well-ordering principle}
+\pmrelated{GreatestCommonDivisor}
+\pmrelated{DivisibilityInRings}
+\pmrelated{DivisionAlgorithmForIntegers}
+\pmrelated{WellOrderingPrinciple}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{plain}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lem}{Lemma}
+\newtheorem*{cor}{Corollary}
+
+
+\begin{document}
+\begin{thm}
+Given two integers, at least one different from zero, there exists a unique natural number satisfying the definition of the greatest common divisor. 
+\end{thm}
+\begin{proof}
+Let $a,b\in\mathbb{Z}$, where at least one of $a,b$ is nonzero. First we show existence. Define 
+$S=\{ma+nb:m,n\in\mathbb{Z}\text{ and }ma+nb>0\}$. Now clearly $S$ is a subset of natural numbers, and $S$ is also nonempty, for depending upon the signs of $a$ and $b$, we may take $m=n=\pm 1$ to have $ma+nb\in S$. So, by the well-ordering principle for natural numbers, $S$ has a smallest element which we denote $g$.
+Note that, by construction, $g=m_0a+n_0b$ for some $m_0,n_0\in\mathbb{Z}$. We will show that $g$ is a greatest common divisor of $a$ and $b$. Suppose first that $g\nmid a$. Then, by the division algorithm for integers, there exist unique $q,r\in\mathbb{Z}$, where $0\leq r< g$, such that $a=qg+r$. By assumption, $g\nmid a$, so we have
+\begin{equation*}
+0<r=a-qg=a-q(m_0a+n_0b)=a-qm_0a-qn_0b=(1-qm_0)a-qn_0b<g\text{.}
+\end{equation*}
+But then $r$ is an element of $S$ strictly less than $g$, contrary to assumption. Thus it must be that $g\mid a$. Similarly it can be shown that $g\mid b$. Now suppose $h\in\mathbb{N}$ is a divisor of both $a$ and $b$. Then there exist $k,l\in\mathbb{Z}$ such that $a=kh$ and $b=lh$, and we have
+\begin{equation*}
+g=m_0a+n_0b=m_0kh+n_0lh=(m_0k+n_0l)h\text{,}
+\end{equation*}
+so $h\mid g$. 
+Thus $g$ is a greatest common divisor of $a$ and $b$. To see that $g$ is unique, suppose that $g'\in\mathbb{N}$ is also a greatest common divisor of $a$ and $b$. Then we have $g'\mid g$ and $g\mid g'$, whence $g=\pm g'$, and since $g,g'>0$, $g=g'$. 
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

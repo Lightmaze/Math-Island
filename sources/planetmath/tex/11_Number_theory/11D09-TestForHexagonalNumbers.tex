@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TestForHexagonalNumbers}
+\pmcreated{2013-03-22 17:50:54}
+\pmmodified{2013-03-22 17:50:54}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{test for hexagonal numbers}
+\pmrecord{6}{40320}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D09}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given an arbitrary positive integer $n$, one can determine whether or not it is a hexagonal number by calculating $$x = \frac{1 + \sqrt{1 + 8n}}{4}.$$ If $x$ is an integer, (that is, $x \in \mathbb{Z}$), then  $n$ is a hexagonal number. If $n$ is a triangular number but not a hexagonal number, then $x = \frac{y}{2}$, with $y$ being an odd integer. In all other cases, $x$ will be an irrational number.
+
+It will suffice to work out an example of each. We choose 1729, 277770576188160 and  1900221452387519291741168640. With the exception of 1729, these numbers have been deliberately chosen so that they would be so big that in Sloane's OEIS they would be crowded out by much smaller numbers.
+
+1729 has many properties, and it is relevant here to note that is 12-gonal and 24-gonal. But is it hexagonal?
+
+\begin{align*}
+x & = \frac{1 + \sqrt{1 + 8 \times 1729}}{4} \\
+& = \frac{1 + \sqrt{13833}}{4} \\
+& = \frac{1 + 3 \sqrt{1537}}{4} \\
+& \approx 29.653443675868988254
+\end{align*}
+
+Though 1729 is a figurate number in a few different ways, hexagonal is not among them.
+
+Given $n$ set to 277770576188160, $x = \frac{23569921}{2}$. Clearly this is a rational number, but not an integer. This tells us that 277770576188160 is a triangular number but not a hexagonal number.
+
+Given 1900221452387519291741168640, our $x$ is 30823866178560, an integer. If we plug in this integer into the formula for hexagonal numbers, we should get 1900221452387519291741168640 back, confirming that this number is in fact the 30823866178560th hexagonal number.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProximitySpace}
+\pmcreated{2013-03-22 16:48:11}
+\pmmodified{2013-03-22 16:48:11}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{proximity space}
+\pmrecord{17}{39037}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E05}
+\pmsynonym{near}{ProximitySpace}
+\pmsynonym{proximity}{ProximitySpace}
+\pmsynonym{proximity relation}{ProximitySpace}
+\pmdefines{nearness relation}
+\pmdefines{separated proximity space}
+\pmdefines{discrete proximity}
+\pmdefines{indiscrete proximity}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\begin{document}
+Let $X$ be a set.  A binary relation $\delta$ on $P(X)$, the power set of $X$, is called a \emph{nearness relation} on $X$ if it satisfies the following conditions: for $A,B\in P(X)$,
+\begin{enumerate}
+\item if $A\cap B\ne \varnothing$, then $A\delta B$;
+\item if $A\delta B$, then $A\ne \varnothing$ and $B\ne \varnothing$;
+\item (symmetry) if $A\delta B$, then $B\delta A$;
+\item $(A_1\cup A_2)\delta B$ iff $A_1\delta B$ or $A_2\delta B$;
+\item $A\delta'B$ implies the existence of $C \subseteq X$ with $A\delta'C$ and $(X-C)\delta'B$, where $A\delta'B$ means $(A,B)\notin \delta$.
+\end{enumerate}
+
+If $x,y\in X$ and $A\subseteq X$, we write $x\delta A$ to mean $\lbrace x\rbrace \delta A$, and $x\delta y$ to mean $\lbrace x\rbrace \delta \lbrace y \rbrace$.
+
+When $A\delta B$, we say that $A$ is \emph{$\delta$-near}, or just \emph{near} $B$.  $\delta$ is also called a \emph{proximity relation}, or \emph{proximity} for short.  Condition 1 is equivalent to saying if $A\delta'B$, then $A\cap B=\varnothing$.  Condition 4 says that if $A$ is near $B$, then any superset of $A$ is near $B$.  Conversely, if $A$ is not near $B$, then no subset of $A$ is near $B$.  In particular, if $x\in A$ and $A\delta' B$, then $x\delta'B$.
+
+\textbf{Definition}.  A set $X$ with a proximity as defined above is called a \emph{proximity space}.
+
+For any subset $A$ of $X$, define $A^c=\lbrace x\in X\mid x\delta A\rbrace$.  Then $^c$ is a closure operator on $X$:
+\begin{proof}
+Clearly $\varnothing^c=\varnothing$.  Also $A\subseteq A^c$ for any $A\subseteq X$.  To see $A^{cc}=A^c$, assume $x\delta A^c$, we want to show that $x\delta A$.  If not, then there is $C\subseteq X$ such that $x\delta'C$ and $(X-C)\delta'A$.  The second part says that if $y\in X-C$, then $y\delta'A$, which is equivalent to $A^c \subseteq C$.  But $x\delta'C$, so $x\delta'A^c$.  Finally, $x\in (A\cup B)^c$ iff $x\delta (A\cup B)$ iff $x\delta A$ or $x\delta B$ iff $x\in A^c$ or $x\in B^c$.\end{proof}
+This turns $X$ into a topological space.  Thus any proximity space is a topological space induced by the closure operator defined above.
+
+A proximity space is said to be \emph{separated} if for any $x,y\in X$, $x\delta y$ implies $x=y$.
+
+\textbf{Examples}.  
+\begin{itemize}
+\item
+Let $(X,d)$ be a pseudometric space.  For any $x\in X$ and $A\subseteq X$, define $d(x,A):=\inf_{y\in A} d(x,y)$.  Next, for $B\subseteq X$, define $d(A,B):=\inf_{x\in A} d(x,B)$.  Finally, define $A\delta B$ iff $d(A,B)=0$.  Then $\delta$ is a proximity and $(X,d)$ is a proximity space as a result.
+\item
+\emph{discrete proximity}.  Let $X$ be a non-empty set.  For $A,B\subseteq X$, define $A\delta B$ iff $A\cap B\ne\varnothing$.  Then $\delta$ so defined is a proximity on $X$, and is called the \emph{discrete proximity} on $X$.
+\item
+\emph{indiscrete proximity}.  Again, $X$ is a non-empty set and $A,B\subseteq X$.  Define $A\delta B$ iff $A\ne \varnothing$ and $B\ne \varnothing$.  Then $\delta$ is also a proximity.  It is called the \emph{indiscrete proximity} on $X$.
+\end{itemize}
+
+\begin{thebibliography}{9}
+\bibitem{willard} S. Willard, \emph{General Topology},
+Addison-Wesley, Publishing Company, 1970.
+\bibitem{nw} S.A. Naimpally, B.D. Warrack, \emph{Proximity Spaces}, Cambridge University Press, 1970.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

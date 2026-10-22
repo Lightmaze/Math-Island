@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RegularlyOpen}
+\pmcreated{2013-03-22 12:19:43}
+\pmmodified{2013-03-22 12:19:43}
+\pmowner{drini}{3}
+\pmmodifier{drini}{3}
+\pmtitle{regularly open}
+\pmrecord{5}{31954}
+\pmprivacy{1}
+\pmauthor{drini}{3}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+
+\endmetadata
+
+%\usepackage{graphicx}
+%%%\usepackage{xypic} 
+\usepackage{bbm}
+\newcommand{\Z}{\mathbbmss{Z}}
+\newcommand{\C}{\mathbbmss{C}}
+\newcommand{\R}{\mathbbmss{R}}
+\newcommand{\Q}{\mathbbmss{Q}}
+\newcommand{\mathbb}[1]{\mathbbmss{#1}}
+\begin{document}
+Given a topological space $(X,\tau)$, a \emph{regularly open set} is an open set $A\in \tau$ such that 
+$$\mathrm{int}\, \overline{A}=A$$
+(the interior of the closure is the set itself).
+
+An example of non regularly open set on the standard topology for $\R$ is
+$A=(0,1)\cup(1,2)$ since $\mathrm{int}\overline{A}=(0,2)$.
+%%%%%
+%%%%%
+\end{document}

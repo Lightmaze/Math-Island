@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClosedSet}
+\pmcreated{2013-03-22 12:30:23}
+\pmmodified{2013-03-22 12:30:23}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{closed set}
+\pmrecord{10}{32739}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+\pmsynonym{closed subset}{ClosedSet}
+\pmdefines{closed}
+
+\endmetadata
+
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\def\R{\mathbb{R}}
+\def\emptyset{\varnothing}
+\begin{document}
+\PMlinkescapephrase{closed under}
+\PMlinkescapeword{contains}
+\PMlinkescapeword{contained}
+
+Let $(X,\tau)$ be a topological space. Then a subset $C\subseteq X$ is \emph{closed} if its complement $X\setminus C$ is open under the topology $\tau$.
+
+Examples:
+\begin{itemize}
+\item In any topological space $(X,\tau)$, the sets $X$ and $\emptyset$ are always closed.
+
+\item Consider $\R$ with the standard topology. Then $[0,1]$ is closed since its complement $(-\infty,0) \cup (1,\infty)$ is open (being the union of two open sets).
+
+\item Consider $\R$ with the lower limit topology. Then $[0,1)$ is closed since its complement $(-\infty,0)\cup[1,\infty)$ is open.
+\end{itemize}
+
+Closed subsets can also be characterized as follows:
+
+A subset $C\subseteq X$ is closed if and only if $C$ contains all of its cluster points, that is, $C'\subseteq C$.
+
+So the set $\{1,1/2,1/3,1/4,\ldots\}$ is not closed under the standard topology on $\R$ since $0$ is a cluster point not contained in the set.
+%%%%%
+%%%%%
+\end{document}

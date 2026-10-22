@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConvexityConjecture}
+\pmcreated{2013-03-22 16:45:51}
+\pmmodified{2013-03-22 16:45:51}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{convexity conjecture}
+\pmrecord{7}{38991}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmsynonym{Hardy-Littlewood convexity conjecture}{ConvexityConjecture}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Conjecture (Hardy \& Littlewood).} Given integers $x \ge y > 1$, it is never the case that $\pi(x + y) > (\pi(x) + \pi(y))$, where $\pi(x)$ is the prime counting function.
+
+For example: There are 269 primes below 1729. There are 304840 primes below 4330747. If we add up these values of the prime counting function, we get 305109. This is more than $\pi(4330747 + 1729) = 304949$.
+
+Crandall and Pomerance believe this conjecture to be false but also that any counterexample is way too large to be discovered today. If we limit ourselves to 100 for both variables, $n = \pi(x + y) - (\pi(x) + \pi(y))$ tends to fall in the range $-8 < n < 1$.
+
+\begin{thebibliography}{1}
+\bibitem{rc} R. Crandall \& C. Pomerance, {\it Prime Numbers: A Computational Perspective}, Springer, NY, 2001: 1.2.4
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SiegelsTheoremOnPrimesInArithmeticProgressions}
+\pmcreated{2013-03-22 17:58:29}
+\pmmodified{2013-03-22 17:58:29}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{Siegel's theorem on primes in arithmetic progressions}
+\pmrecord{4}{40483}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N13}
+\pmclassification{msc}{11A41}
+\pmrelated{PrimeNumberTheorem}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\DeclareMathOperator{\bigoh}{O}
+\begin{document}
+\PMlinkescapeword{states}
+\begin{defn} For $x>0$ real, $q,a$ positive integers, we define
+\[\pi(x;q,a)=\sum_{\substack{p\leq x\\p\equiv a\pmod q\\p \text{ prime}}} 1\]
+i.e. the number of primes not exceeding $x$ that are congruent to $a$ modulo $q$.
+\end{defn}
+
+Then the following holds:
+\begin{thm} (Siegel) For all $A>0$, there is some constant $c=c(A)>0$ such that
+\[\pi(x;q,a) = \frac{Li(x)}{\varphi(q)} + \bigoh\left(x\exp(-c\sqrt{\log x})\right)\]
+for every $1\leq q\leq (\log x)^A$ with $\gcd(q,a)=1$.
+\end{thm}
+
+Note that it follows from this theorem that the distribution of primes among invertible residue classes $\mod q$ does not depend on the residue class - that is, primes are evenly distributed into such classes.
+
+A form of Dirichlet's theorem on primes in arithmetic progressions states that
+\[\frac{\pi(x;q,a)}{\pi(x)} \sim \frac{1}{\varphi(q)}\]
+This follows easily from \PMlinkescapetext{Siegel's theorem} on noting that $Li(x) = \frac{x}{\log x}+\cdots$.
+%%%%%
+%%%%%
+\end{document}

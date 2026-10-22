@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DecimalExpansion}
+\pmcreated{2013-03-22 15:04:01}
+\pmmodified{2013-03-22 15:04:01}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{decimal expansion}
+\pmrecord{28}{36787}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A99}
+\pmsynonym{decadic expansion}{DecimalExpansion}
+\pmsynonym{digital expansion}{DecimalExpansion}
+\pmrelated{Base3}
+\pmrelated{ExistenceAndUniquenessOfDecimalExpansion}
+\pmrelated{0ne1AsRealNumbers}
+\pmrelated{Factoradic}
+\pmrelated{FactorialBase}
+\pmrelated{MatheRealism}
+\pmrelated{JosephLiouville}
+\pmdefines{decadic}
+\pmdefines{hexadic}
+\pmdefines{dyadic}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Every rational number $\frac{m}{n}$, where $m$ and $n$ are positive integers, has an endless \PMlinkescapetext{periodic} {\em decimal expansion} (or {\em decadic expansion} --- according to Greek).\, The decimal expansion of $\frac{m}{n}$ means the series \PMlinkescapetext{presentation}
+\begin{align}
+  \nu.\nu_1\nu_2\nu_3\ldots = \nu+10^{-1}\nu_1+10^{-2}\nu_2+10^{-3}\nu_3+\ldots
+\end{align}
+where \,$\nu = \lfloor\frac{m}{n}\rfloor$\, is the \PMlinkname{integer part}{Floor} of $\frac{m}{n}$ and the integers $\nu_j$ are the remainders of\, $\lfloor 10^j\cdot\!\frac{m}{n}\rfloor$\, when divided by 10; thus\, $0 \leqq \nu_j < 10$.
+
+We may suppose that $m$ and $n$ are coprime (if necessary, reduce the fraction).\, Then the \PMlinkescapetext{length $l$ of the period} depends only on the denominator $n$.\, In the case that\, $\gcd(n,\,10) = 1$,\, the \PMlinkescapetext{period length} is the least positive integer $l$ such that $10^l\equiv 1 \pmod{n}$ (the \PMlinkescapetext{period length} does not change if we multiply the fraction by a suitable power of 10 and then reduce all prime factors of 10 from the denominator).\, In every case, the \PMlinkescapetext{period length} is a factor of the number $\varphi(n)$, where $\varphi$ is Euler's totient function.
+
+\textbf{Examples}
+
+$\frac{1}{8} = 0.125000\ldots = 0.124999\ldots$ (one-digit \PMlinkescapetext{periods};  N.B. two possibilities),
+
+$\frac{1}{12} = 0.08333\ldots$ (one-digit per.),
+
+$\frac{1}{37} = 0.'027'027'027'\ldots$ (three-digit per.),
+
+$\frac{1}{82} = 0.0'12195'12195'12195'\ldots$ (five-digit per.), 
+
+$\frac{1}{25351} = 0.000039446\ldots$ (hundred-digit per.)
+
+The tail of infinitely many 0's (as in 0.125000\ldots) is of course usually not written out.\, Such a tail is possible only when $n$ has no other prime factors except prime factors of the base of the digit system in question. 
+
+If the tails of 0's are not accepted, then the digital expansion of every positive rational is unique (then e.g. 0.124999\ldots\, is the only \PMlinkescapetext{expansion} for $\frac{1}{8}$ in the decimal system).
+
+Completely similar results concern the digital expansions in any other positional digit system.\, Let the fraction $\frac{1}{31}$ be an example ($\varphi(31) = 30$); its \PMlinkescapetext{presentation} is
+
+in the decadic (decimal) digit system\, $\frac{1}{31} = 0.'032258064516129'\ldots_{\mathrm{ten}}$ \quad(15-digit per.),
+
+in the hexadic (senary) digit system\, $\frac{1}{51} = 0.'010545'010545'010545'\ldots_{\mathrm{six}}$ \quad(6-digit per.),
+
+in the dyadic (\PMlinkescapetext{binary}) digit system\, $\frac{1}{11111} = 0.000010000100001\ldots_{\mathrm{two}}$ \quad(5-digit per.).
+
+\textbf{Note.} \,Also any irrational number has a unique decimal expansion, but it is non-periodic; for example  \PMlinkname{Liouville's number}{ExampleOfTranscendentalNumber}
+    $$0.110001\,000000\,000000\,000001\,000000\,\ldots$$
+which is transcendental over $\mathbb{Q}$.
+%%%%%
+%%%%%
+\end{document}

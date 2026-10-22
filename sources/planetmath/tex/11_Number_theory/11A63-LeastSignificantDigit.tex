@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LeastSignificantDigit}
+\pmcreated{2013-03-22 16:21:06}
+\pmmodified{2013-03-22 16:21:06}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{least significant digit}
+\pmrecord{5}{38486}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmdefines{least significant bit}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The {\em least significant digit} of a number $n$ written in a given positional base $b$ is the digit in the least significant place value, and has to be in the range $-1 < d_1 < b$. In the case of an integer, the least significant digit is the 1's place value, usually written to the right of the $b$'s place value. In the case of a transcendental number, there is no actual least significant digit, but for computational purposes the rational approximation would have a least significant digit.
+
+In an array of digits $k$ long meant for mathematical manipulation, it might be convenient to index the least significant digit with index 1 or 0, and the more significant digits with larger integers. (This enables the calculation of the value of a given digit as $d_ib^i$  rather than $d_ib^{k - i}$.) For an array of digits meant for text string manipulation, however, the least significant digit might be placed at position $k$ (for example, by Mathematica's IntegerDigits function).
+
+In binary, the least significant digit is often called the {\em least significant bit}.
+%%%%%
+%%%%%
+\end{document}

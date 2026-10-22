@@ -1,0 +1,37 @@
+{
+  "found": true,
+  "hops": 1,
+  "meaning": "Shortest unweighted reading itinerary in the selected source graph, not a chain of implications. Reverse traversal explicitly marked.",
+  "steps": [
+    {
+      "source": {
+        "id": "pm:EllipticCurve",
+        "label": "elliptic curve",
+        "label_zh": null,
+        "domain": "数论与算术",
+        "kind": "concept",
+        "x": 2.278762009,
+        "y": -1.400951024,
+        "degree": 31,
+        "source_url": "https://github.com/planetmath/11_Number_theory/blob/master/11G07-EllipticCurve.tex",
+        "source_quality_issue_count": 0
+      },
+      "target": {
+        "id": "pm:ModularForm",
+        "label": "modular form",
+        "label_zh": "模形式",
+        "domain": "数论与算术",
+        "kind": "concept",
+        "x": 2.29926712,
+        "y": -1.398075491,
+        "degree": 47,
+        "source_url": "https://github.com/planetmath/11_Number_theory/blob/master/11F11-ModularForm.tex",
+        "source_quality_issue_count": 0
+      },
+      "relation": "literature_bridge",
+      "in_recorded_direction": true,
+      "evidence_url": "https://annals.math.princeton.edu/1995/141-3/p01",
+      "locator": "bridge:001"
+    }
+  ]
+}

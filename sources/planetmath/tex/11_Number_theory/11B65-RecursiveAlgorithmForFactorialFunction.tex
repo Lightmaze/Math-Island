@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RecursiveAlgorithmForFactorialFunction}
+\pmcreated{2013-03-22 17:26:35}
+\pmmodified{2013-03-22 17:26:35}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{recursive algorithm for factorial function}
+\pmrecord{5}{39824}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B65}
+\pmclassification{msc}{05A10}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\PMlinkescapeword{point}
+
+When it came to teaching recursion in programming languages in the 1980s and 1990s, the factorial function $n!$ was the classic example to explain the concept.
+
+Usually left unexplained, in a mathematical paper or book one might encounter an explanation for the $n!$ shorthand for this function along the lines of $$n! = \prod_{i = 1}^n i,$$ (with $0! = 1$) while a computer programming book might say something like $n! = 1 \times 2 \times \ldots \times (n - 1) \times n$ (with the same assignment for zero factorial). Either of these suggests implementation with some kind of \verb=FOR= loop.
+
+The recurrence relation $n! = (n - 1)!n$ with $n > 1$ and $1! = 1$ suggests a recursive implementation.
+
+Call the recursive factorial algorithm with an integer \verb=N=.
+
+\begin{enumerate}
+\item Test if \verb'N <= 0'. If so, return 1.
+\item If not, then call the recursive factorial algorithm with \verb=N - 1=, multiply the result by \verb=N= and return that value.
+\end{enumerate}
+
+The algorithm calls itself and some mechanism is necessary for keeping track of the state of the computation. Here's an implementation in the PASCAL programming language from Koffman's 1981 book:
+
+\begin{verbatim}
+FUNCTION FACTORIAL (N: INTEGER): INTEGER
+(* RECURSIVE COMPUTATION OF N FACTORIAL *)
+
+BEGIN
+  (* TEST FOR STOPPING STATE *)
+  IF N <= 0 THEN
+    FACTORIAL := 1
+  ELSE
+    FACTORIAL := N * FACTORIAL(N - 1)
+END; (* FACTORIAL *)
+\end{verbatim}
+
+Depending on the implementation, what would happen the first time \verb=FACTORIAL(N)= calls itself is that the memory address of the function together with $n - 1$ would be pushed on to the stack. The next time $n - 2$ would be pushed on the stack, and so on and so forth until 0 is reached. At this point, the last instance of the function returns, the next-to-last instance pops a 1 off the stack and multiplies it by 2, the next-to-next-to-last instance pops a 2 off the stack and multiplies it by 3, pushes a 6, and so on and so forth until the first instance pops $(n - 1)!$ off the stack and multiplies it by $n$.
+
+The following table illustrates a sample run starting with \verb'N = 7':
+
+\begin{tabular}{|l|r|r|}
+Action & \verb=N= & Return value \\
+Call factorial function with value & 7 & Undefined \\
+Call factorial function with value & 6 & Undefined \\
+Call factorial function with value & 5 & Undefined \\
+Call factorial function with value & 4 & Undefined \\
+Call factorial function with value & 3 & Undefined \\
+Call factorial function with value & 2 & Undefined \\
+Call factorial function with value & 1 & Undefined \\
+Call factorial function with value & 0 & \\
+Return a 1 & & 1 \\
+Multiply returned value by \verb=N= and return that & 1 & 1 \\
+Multiply returned value by \verb=N= and return that & 2 & 2 \\
+Multiply returned value by \verb=N= and return that & 3 & 6 \\
+Multiply returned value by \verb=N= and return that & 4 & 24 \\
+Multiply returned value by \verb=N= and return that & 5 & 120 \\
+Multiply returned value by \verb=N= and return that & 6 & 720 \\
+Multiply returned value by \verb=N= and return that & 7 & 5040 \\
+\end{tabular}
+
+This kind of recursion can exhaust memory (for stack space) well before any computations are performed. However, in this specific application, because factorials grow super exponetially, the bounding for integer capacity is usually far more restricting than the memory capacity. For example, using 32-bit unsigned integers and guesstimating each function call requires 16 bytes, the computation of 13! would require just 208 bytes on the stack, but the result would require 33 bits, overflowing a 32-bit unsigned integer variable. Therefore input sizes should be limited to fit within the bounds of memory and integer capacity.
+
+% 101110011001010001100110000000000 = 13! in binary
+% 123456789012345678901234567890123
+
+\begin{thebibliography}{5}
+\bibitem{ba} B. Allan, {\it Introducing Pascal}. London: Granada (1984): 56 - 57
+\bibitem{jb} J. G. P. Barnes, {\it Programming in ADA}. Wokingham: Addison-Wesley (1989): 117
+\bibitem{ah} A. I. Hollub, {The C Companion}. Englewood Cliffs: Prentice-Hall, Inc. (1987): 190 - 195
+\bibitem{rk} R. Kemp, {\it PASCAL for Students}. London: Edward Arnold (1987): 106
+\bibitem{ek} E. Koffman, {\it Problem Solving and Structured Programming in PASCAL}. Reading: Addison-Wesley Publishing Company (1981): 317
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

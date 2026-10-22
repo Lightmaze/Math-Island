@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AchillesNumber}
+\pmcreated{2013-03-22 17:10:33}
+\pmmodified{2013-03-22 17:10:33}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Achilles number}
+\pmrecord{6}{39489}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given a composite number $n$ with factorization $$\prod_{i = 1}^{\omega(n)} {p_i}^{a_i},$$ where the $p_i$ are all distinct primes, and the $a_i$ are positive integers (and also distinct, always $a_i > 1$), and $\omega(x)$ is the number of distinct prime factors function, then $n$ is a squarefull number, and if it is also the case that there is no solution to $n = x^y$ in integers (with $x \ne n$ and $y > 1$), then $n$ is called an {\em Achilles number}.
+
+So, for example, 1323, being $3^3 \times 7^2$, is divisible by the squares of both 3 and 7, but its square root is approximately 36.373, its cubic root is about 10.9779, its fourth root is about 6.031, its fifth root is about 4.21, its sixth root is 3.313, seventh root about 2.792, etc.
+
+An Achilles number has to have distinct exponents for its prime factors: with equal exponents, we can see that ${p_a}^x {p_b}^x = (p_a p_b)^x$. The reverse is often not true: for example, 144 is $2^4 \times 3^2$, yet it can be expressed as $12^2$.
+
+According to Greek legend, Achilles was a powerful, seemingly invincible warrior who fought in the Trojan War. In some versions of the story, his mother Thetis held baby Achilles by the left heel and dipped him into the Styx river, making him invulnerable to attack anywhere on his body except the one heel. Thus, Achilles was very powerful, but not perfect because of his fatal weak spot. Likewise, Achilles numbers are powerfull but they are not perfect powers.
+
+\begin{thebibliography}{2}
+\bibitem{cb} C. Bossley, B. Martinelli, N. Maffulli, \& C. Raisbeck, ``Rupture of the Achilles Tendon'' {\it J Bone Joint Surg Am.} 2000 Dec; 82 - A (12): 1804
+\bibitem{hb} H. Bottomley \& N. Sloane, Sequence A052486 in On-Line Encyclopedia of Integer Sequences
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

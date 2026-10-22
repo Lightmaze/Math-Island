@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProductTopologyAndSubspaceTopology}
+\pmcreated{2013-03-22 15:35:33}
+\pmmodified{2013-03-22 15:35:33}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{product topology and subspace topology}
+\pmrecord{6}{37504}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B10}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\F}{\mathbbmss{F}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+Let $X_\alpha$ with $\alpha\in A$ be a collection of topological spaces,
+and let $Z_\alpha\subseteq X_\alpha$ be subsets. Let
+$$
+  X=\prod_{\alpha} X_\alpha
+$$
+and
+$$
+  Z = \prod_{\alpha} Z_\alpha.
+$$
+In other words, $z\in Z$ means that $z$ is a function 
+$z\colon A\to \cup_\alpha Z_\alpha$
+such that $z(\alpha)\in Z_\alpha$ for each $\alpha$. Thus, $z\in X$ and 
+we have
+$$
+   Z\subseteq X
+$$
+as sets. 
+
+\begin{thm} The product topology of $Z$ coincides with the subspace topology induced by $X$. 
+\end{thm}
+
+\begin{proof}
+Let us denote by $\tau_X$ and $\tau_Z$ the product topologies for $X$ and $Z$, respectively. 
+Also, let 
+$$
+  \pi_{X,\alpha}\colon X\to X_\alpha, \quad   \pi_{Z,\alpha}\colon Z\to Z_\alpha
+$$
+be the canonical projections defined for $X$ and $Z$.
+The \PMlinkname{subbases}{Subbasis} for $X$ and $Z$ are given by
+\begin{eqnarray*}
+\beta_X &=& \{ \pi_{X,\alpha}^{-1}(U) : \alpha \in A, U\in \tau(X_\alpha) \}, \\
+\beta_Z &=& \{ \pi_{Z,\alpha}^{-1}(U) : \alpha \in A, U\in \tau(Z_\alpha) \}, 
+\end{eqnarray*}
+where $\tau(X_\alpha)$ is the topology of $X_\alpha$ and $\tau(Z_\alpha)$ is the
+subspace topology of $Z_\alpha\subseteq X_\alpha$. 
+The claim follows as
+$$
+  \beta_Z = \{ B\cap Z : B\in \beta_X \}.
+$$
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

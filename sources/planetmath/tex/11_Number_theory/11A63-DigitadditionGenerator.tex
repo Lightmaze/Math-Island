@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DigitadditionGenerator}
+\pmcreated{2013-03-22 15:56:12}
+\pmmodified{2013-03-22 15:56:12}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{digitaddition generator}
+\pmrecord{5}{37945}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{digit addition generator}{DigitadditionGenerator}
+\pmsynonym{digit-addition generator}{DigitadditionGenerator}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given an integer $m$ consisting of $k$ digits $d_x$ in base $b$, it follows that $$m + \sum_{i = 0}^{k - 1} d_{i + 1}b^i = n$$, another integer. Then $m$ is said to be the {\em digitaddition generator} of $n$.
+
+In a randomly chosen range of $2b$ consecutive integers, most will have a digitaddition generator and one or two might have none (such integers are called self numbers). If the range falls near a multiple of $b^2$, it might contain a few numbers with two digitaddition generators. If the range includes $0 < n < b$ and $2|b$, the $n \not\vert 2$ will lack digitaddition generators.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,152 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RationalNumbersAreRealNumbers}
+\pmcreated{2013-03-22 15:45:49}
+\pmmodified{2013-03-22 15:45:49}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{rational numbers are real numbers}
+\pmrecord{6}{37719}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C30}
+\pmclassification{msc}{26-00}
+\pmclassification{msc}{12D99}
+\pmrelated{GroundField}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\N}{\mathbbmss{N}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\F}{\mathbbmss{F}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+%\subsubsection*{Rational numbers are real numbers}
+Let us first show that the natural numbers $0,1,2,\ldots$ are 
+contained in the real numbers as constructed above. 
+Heuristically, this should be clear. We start with $0$. 
+By adding $1$ repeatedly we obtain the natural numbers
+$$
+  0, \quad 0+1, \quad (0+1)+1, \quad ((0+1)+1)+1, \ldots,
+$$
+To make this precise, let $\N$ be the natural numbers.
+(We assume that these exist. For example, all the usual constructions
+of $\R$ rely on the existence of the natural numbers.)
+Then we can define a map $f\colon \N\to \R$ as
+\begin{enumerate}
+\item $f(0)=0$, or more precisely, $f(0_\N)=0_\R$,
+\item $f(a+1)=f(a)+1$ for $a\in \N$.
+\end{enumerate}
+By induction on $a$ one can prove that
+\begin{eqnarray*}
+  f(a + b) &=&  f(a) + f(b), \\
+  f(a b)   &=&  f(a) f(b), \quad a,b\in \N
+\end{eqnarray*}
+and
+\begin{eqnarray*}
+  f(a) &\ge & 0, \ a\in \N\ \mbox{with equality only when}\ a=0.
+\end{eqnarray*}
+The last claim follows since $f(a)>0$ for $a=1,2,\ldots$ (by induction), 
+and $f(0)=0$. 
+It follows that $f$ is an injection: If $a\le b$, then $f(a)=f(b)$ implies
+that $f(a)=f(a)+f(b-a)$, so $a=b$. 
+
+To conclude, let us show that
+$f(\N)\subset\R$ satisfies the Peano axioms with zero element $f(0)$ and
+sucessor operator 
+\begin{eqnarray*}
+S\colon f(\N) &\to& f(\N) \\
+        k &\mapsto & f(f^{-1}(k)+1)
+\end{eqnarray*}
+First, as $f$ is a bijection,  $x=y$ if and only if $S(x)=S(y)$ 
+   is clear. 
+Second, if $S(k)=0$ for some $k=f(a)\in f(\N)$, then $a+1=0$; a contradiction.
+Lastly, the axiom of induction follows since $\N$ satisfies this axiom.
+We have shown that $f(\N)$ are a subset of the real numbers that
+behave as the natural numbers. 
+
+From the natural numbers, the integers and rationals can
+be defined as
+\begin{eqnarray*}
+  \Z&=& \N\cup \{-z\in \R : z\in \N\}, \\ 
+  \Q&=& \left\{ \frac{a}{b} : a\in \Z, b\in \N\setminus\{0\} \right\}.
+\end{eqnarray*}
+Mathematically, $\Z$ and $\Q$ are subrings of $\R$ that are
+ring isomorphic to the integers and rationals, respectively.
+
+\subsubsection*{Other constructions}
+The above construction follows \cite{royden}. However, there are also
+other constructions. For example, in \cite{spivak}, natural numbers in $\R$
+are defined as follows. First, a set $L\subseteq \R$ is \emph{inductiv{e}} if 
+\begin{enumerate}
+\item $0\in L$, 
+\item if $a\in L$, then $a+1\in L$.
+\end{enumerate}
+Then the natural numbers are defined as real numbers that are contained in all
+inductiv{e} sets.
+A third approach is to explicitly exhibit the natural numbers when
+constructing the real numbers. For example, in \cite{rudin}, 
+it is shown that the rational numbers form a subfield of $\R$
+using explicit Dedekind cuts. 
+
+
+\begin{thebibliography}{9}
+\bibitem{royden} H.L. Royden, 
+   \emph{Real analysis}, Prentice Hall, 1988.
+\bibitem{spivak} M. Spivak,
+   \emph{Calculus}, Publish or Perish.
+\bibitem{rudin} W. Rudin,
+   \emph{Principles of mathematical analysis},
+   McGraw-Hill, 1976.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

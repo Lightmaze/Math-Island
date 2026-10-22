@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Idele}
+\pmcreated{2013-03-22 12:39:28}
+\pmmodified{2013-03-22 12:39:28}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{id\`{e}le}
+\pmrecord{7}{32926}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R56}
+\pmrelated{Adele}
+\pmdefines{id\`{e}le group}
+\pmdefines{group of id\`{e}les}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\p}{{\mathfrak{p}}}
+\newcommand{\m}{{\mathfrak{m}}}
+\newcommand{\M}{{\mathfrak{M}}}
+\renewcommand{\P}{{\mathfrak{P}}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\renewcommand{\H}{\mathcal{H}}
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\I}{\mathbb{I}}
+\renewcommand{\c}{\mathcal{C}}
+\renewcommand{\O}{\mathcal{O}}
+\renewcommand{\o}{\mathfrak{o}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\lra}{\longrightarrow}
+\renewcommand{\div}{\mid}
+\newcommand{\res}{\operatorname{res}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\diff}{\operatorname{diff}}
+\newcommand{\incl}{\operatorname{incl}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\renewcommand{\Re}{\operatorname{Re}}
+\newcommand{\intersect}{\cap}
+\newcommand{\union}{\cup}
+\newcommand{\bigintersect}{\bigcap}
+\newcommand{\bigunion}{\bigcup}
+\newcommand{\ilim}{\,\underset{\longleftarrow}{\lim}\,}
+\begin{document}
+Let $K$ be a number field. For each finite prime $v$ of $K$, let $\o_v$ be the valuation ring of the completion $K_v$ of $K$ at $v$, and let $U_v$ be the group of units in $\o_v$. Then each group $U_v$ is a compact open subgroup of the group of units $K_v^*$ of $K_v$. The {\em id\`ele group} $\I_K$ of $K$ is defined to be the restricted direct product of the multiplicative groups $\{K_v^*\}$ with respect to the compact open subgroups $\{U_v\}$, taken over all finite primes and infinite primes $v$ of $K$.
+
+The units $K^*$ in $K$ embed into $\I_K$ via the diagonal embedding
+$$
+x \mapsto \prod_v x_v,
+$$
+where $x_v$ is the image of $x$ under the embedding $K \hookrightarrow K_v$ of $K$ into its completion $K_v$. As in the case of ad\`eles, the group $K^*$ is a discrete subgroup of the group of id\`eles $\I_K$, but unlike the case of ad\`eles, the quotient group $\I_K/K^*$ is not a compact group. It is, however, possible to define a certain subgroup of the id\`eles (the subgroup of norm 1 elements) which does have compact quotient under $K^*$.
+
+{\bf Warning:} The group $\I_K$ is a multiplicative subgroup of the ring of ad\`eles $\A_K$, but the topology on $\I_K$ is different from the subspace topology that $\I_K$ would have as a subset of $\A_K$.
+%%%%%
+%%%%%
+\end{document}

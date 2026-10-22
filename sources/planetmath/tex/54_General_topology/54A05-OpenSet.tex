@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{OpenSet}
+\pmcreated{2013-03-22 12:39:25}
+\pmmodified{2013-03-22 12:39:25}
+\pmowner{mathwizard}{128}
+\pmmodifier{mathwizard}{128}
+\pmtitle{open set}
+\pmrecord{21}{32925}
+\pmprivacy{1}
+\pmauthor{mathwizard}{128}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A05}
+\pmsynonym{open}{OpenSet}
+\pmsynonym{open subset}{OpenSet}
+\pmdefines{Hausdorff axioms}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+In a metric space $M$ a set $O$ is called an \emph{open subset} of $M$ or just \emph{open}, if for every $x\in O$ there is an open ball $S$ around $x$ such that $S\subset O$. If $d(x,y)$ is the distance from $x$ to $y$ then the open ball $B_r$ with radius $r>0$ around $x$ is given as:
+$$B_r=\{y\in M|d(x,y)<r\}.$$
+
+Using the idea of an open ball one can define a neighborhood of a point $x$. A set containing $x$ is called a neighborhood of $x$ if there is an open ball around $x$ which is a subset of the neighborhood.
+
+These neighborhoods have some properties, which can be used to define a topological space using the Hausdorff axioms for neighborhoods, by which again an open set within a topological space can be defined. In this way we drop the metric and get the more general topological space. We can define a topological space $X$ with a set of neighborhoods of $x$ called $U_x$ for every $x\in X$, which satisfy
+\begin{enumerate}
+\item $x\in U$ for every $U\in U_x$
+\item If $U\in U_x$ and $V\subset X$ and $U\subset V$ then $V\in U_x$ (every set containing a neighborhood of $x$ is a neighborhood of $x$ itself).
+\item If $U,V\in U_x$ then $U\cap V\in U_x$.
+\item For every $U\in U_x$ there is a $V\in U_x$, such that $V\subset U$ and $V\in U_p$ for every $p\in V$.
+\end{enumerate}
+
+The last point leads us back to open sets, indeed a set $O$ is called open if it is a neighborhood of every of its points. Using the properties of these open sets we arrive at the usual definition of a topological space using open sets, which is equivalent to the above definition. In this definition we look at a set $X$ and a set of subsets of $X$, which we call open sets, called $\mathcal{O}$, having the following properties:
+\begin{enumerate}
+\item $\emptyset\in\mathcal{O}$ and $X\in\mathcal{O}$.
+\item Any union of open sets is open.
+\item \PMlinkescapetext{Finite} intersections of open sets are open.
+\end{enumerate}
+
+Note that a topological space is more general than a metric space, i.e. on every metric space a topology can be defined using the open sets from the metric, yet we cannot always define a metric on a topological space such that all open sets remain open.
+
+\subsection*{Examples:}
+\begin{itemize}
+\item On the real axis the interval $I=(0,1)$ is open because for every $a\in I$ the open ball with radius $\min(a,1-a)$ is always a subset of $I$. (Using the standard metric $d(x,y)=|x-y|$.)
+\item The open ball $B_r$ around $x$ is open. Indeed, for every $y\in B_r$ the open ball with radius $r-d(x,y)$ around y is a subset of $B_r$, because for every $z$ within this ball we have: $$d(x,z)\leq d(x,y)+d(y,z)<d(x,y)+r-d(x,y)=r.$$
+So $d(x,z)<r$ and thus $z$ is in $B_r$. This holds for every $z$ in the ball around $y$ and therefore it is a subset of $B_r$
+\item A non-metric topology would be the finite complement topology on infinite sets, in which a set is called open, if its complement is finite.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

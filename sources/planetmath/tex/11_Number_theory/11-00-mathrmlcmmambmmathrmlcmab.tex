@@ -1,0 +1,38 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{mathrmlcmmambmmathrmlcmab}
+\pmcreated{2013-03-22 15:03:22}
+\pmmodified{2013-03-22 15:03:22}
+\pmowner{drini}{3}
+\pmmodifier{drini}{3}
+\pmtitle{$\mathrm{lcm}(ma,mb) =m \mathrm{lcm}(a,b)$}
+\pmrecord{12}{36774}
+\pmprivacy{1}
+\pmauthor{drini}{3}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+
+\endmetadata
+
+\newcommand{\lcm}{\,\mathrm{lcm}}
+\usepackage{amssymb}
+\begin{document}
+For simplicity, let us work only with positive integers.
+
+We want to prove that if a,b,m are integers, then
+\[
+\lcm(ma,mb) = m\lcm(a,b).
+\]
+
+First notice that any common multiple of $ma$ and $mb$ is also a multiple of $m$, so any common multiple of $ma$ and $mb$ is of the form $mk$ with some integer $k$.
+
+Now notice that if $t=\lcm(a,b)$ and $u<t$, it cannot happen that $a\mid u$ and $b\mid u$, since $t$ is the smallest number, So, when $a\nmid u$ then $ma\nmid mu$, and if $b\nmid u$ then $mb \nmid mu$. We conclude that $mu$ is \emph{not} a common multiple of $ma$ and $mb$ when $u<t$.
+
+So far, we proved that $mt = m\lcm(a,b)$ is a common multiple of $ma$ and $mb$, and previous paragraph shows that there is no smaller common multiple, therefore $m\lcm(a,b)$  is the \emph{least} common multiple of $ma$ and $mb$, in other words:
+\[
+\lcm(ma,mb) = m\lcm(a,b).
+\]
+%%%%%
+%%%%%
+\end{document}

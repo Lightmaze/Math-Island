@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FastEuclideanAlgorithm}
+\pmcreated{2013-03-22 14:28:52}
+\pmmodified{2013-03-22 14:28:52}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{fast Euclidean algorithm}
+\pmrecord{7}{36014}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmsynonym{Half-GCD Algorithm}{FastEuclideanAlgorithm}
+\pmsynonym{Lehmer's Algorithm}{FastEuclideanAlgorithm}
+%\pmkeywords{Lehmer}
+%\pmkeywords{Euclidean Algorithm}
+%\pmkeywords{GCD}
+%\pmkeywords{Donald Knuth}
+\pmrelated{EuclidsAlgorithm}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Given two polynomials of degree $n$ with coefficients from a field $K$, the straightforward Eucliean Algorithm uses $O(n^2)$ field operations to compute their greatest common divisor. The Fast Euclidean Algorithm computes the same GCD in $O(\mathsf{M}(n) \log(n))$ field operations, where $\mathsf{M}(n)$ is the time to multiply two $n$-degree polynomials; with FFT multiplication the GCD can thus be computed in time $O(n \log^2(n) \log(\log(n)))$. The algorithm can also be used to compute any particular pair of coefficients from the Extended Euclidean Algorithm, although computing every pair of coefficients would involve $O(n^2)$ outputs and so the efficiency is not as helpful when all are needed.
+
+The algorithm can be made to work over $\mathbb{Z}$ but it is very tricky. A newer version that is easier to understand was published by Damien Stehl\'e and Paul Zimmerman, ``A Binary Recursive Gcd Algorithm.''
+
+Here we sketch the algorithm over $K[x]$. The basic idea is that the quotients $q_i$ computed by the Euclidean Algorithm can usually be computed by looking at only the first few coefficients of the polynomial; for example, if
+$$A(x) = a_nx^n + a_{n-1}x^{n-1} + \ldots +a_0, \quad B(x) = b_{n-1}x^{n-1} + \ldots +b_0$$
+then
+$$quo(A(x), B(x)) =  \frac{a_n}{b_{n-1}}x+\frac{b_{n-1}a_{n-1}-a_nb_{n-2}}{b_{n-1}^2}$$
+
+With more detailed analysis, we can show that in fact a divide-and-conquer approach can be used to calculate the GCD. First, we remove the terms whose degree is $n/2$ or less from both polynomials $A$ and $B$. Then, we recursively compute their GCD and Euclidean coefficients. We then apply the Euclidean coefficients to $A$ and $B$, and recursively complete the Euclidean Algorithm. 
+
+The full algorithm, and a comprehensive runtime analysis is given in ``Modern Computer Algebra'' by von zur Gathen and Gerhard.
+%%%%%
+%%%%%
+\end{document}

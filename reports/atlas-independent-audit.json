@@ -1,0 +1,1031 @@
+{
+  "audit_version": "1.0",
+  "auditor": "/root/atlas_audit",
+  "independence": "separate_agent_shared_model_and_filesystem_not_external_certification",
+  "scope": "dataset structural invariants and fixed-seed original-source sample, not full semantic equivalence or proof validation",
+  "nodes_file": "data/nodes.jsonl",
+  "nodes_sha256": "4f146b824e4cce0f3b8e47e1c756557124c5075288fdf8cd7db0145a879abce1",
+  "edges_file": "data/edges.csv",
+  "edges_sha256": "ffc436ae4c1c8f35caf8127e347cd4547b1c24178389904fb0e40efc922a4fe4",
+  "node_count": 21741,
+  "unique_id_count": 21741,
+  "domain_counts": {
+    "几何与拓扑": 1551,
+    "分析与微分方程": 1420,
+    "逻辑与基础": 707,
+    "数学物理与应用": 66,
+    "离散与计算": 587,
+    "代数与结构": 1759,
+    "数论与算术": 825,
+    "概率与统计": 259,
+    "数值与优化": 52,
+    "范畴与同调": 2292,
+    "代数几何": 9693,
+    "交换代数": 2530
+  },
+  "kind_counts": {
+    "theorem": 14921,
+    "concept": 6319,
+    "result": 230,
+    "corollary": 54,
+    "conjecture": 55,
+    "axiom": 21,
+    "method": 106,
+    "field": 1,
+    "phenomenon": 1,
+    "object": 8,
+    "tool": 4,
+    "theory": 11,
+    "research_program": 2,
+    "invariant": 2,
+    "correspondence": 2,
+    "problem": 2,
+    "property": 1,
+    "framework": 1
+  },
+  "edge_count": 46812,
+  "edge_relation_counts": {
+    "proof_reference": 35334,
+    "encyclopedic_link": 7951,
+    "statement_reference": 2836,
+    "title_matched_link": 670,
+    "literature_bridge": 21
+  },
+  "errors": [],
+  "warnings": [
+    "normalized_label_duplicates_need_review"
+  ],
+  "duplicate_ids": [],
+  "duplicate_normalized_labels": [
+    {
+      "value": "additive function",
+      "ids": [
+        "pm:AdditiveFunction",
+        "pm:AdditiveFunction1"
+      ]
+    },
+    {
+      "value": "adjacent",
+      "ids": [
+        "pm:Adjacent",
+        "pm:Adjacent1"
+      ]
+    },
+    {
+      "value": "algebraic",
+      "ids": [
+        "pm:Algebraic",
+        "pm:Algebraic1"
+      ]
+    },
+    {
+      "value": "alternative definition of category",
+      "ids": [
+        "pm:AlternativeDefinitionOfCategory",
+        "pm:AlternativeDefinitionOfCategory1"
+      ]
+    },
+    {
+      "value": "analytic set",
+      "ids": [
+        "pm:AnalyticSet",
+        "pm:AnalyticSet1"
+      ]
+    },
+    {
+      "value": "annulus",
+      "ids": [
+        "pm:Annulus",
+        "pm:Annulus1"
+      ]
+    },
+    {
+      "value": "baire space",
+      "ids": [
+        "pm:BaireSpace",
+        "pm:BaireSpace1"
+      ]
+    },
+    {
+      "value": "centralizer",
+      "ids": [
+        "pm:Centralizer",
+        "pm:Centralizer1"
+      ]
+    },
+    {
+      "value": "characteristic function",
+      "ids": [
+        "pm:CharacteristicFunction",
+        "pm:CharacteristicFunction1"
+      ]
+    },
+    {
+      "value": "chinese remainder theorem",
+      "ids": [
+        "pm:ChineseRemainderTheorem",
+        "pm:ChineseRemainderTheorem1"
+      ]
+    },
+    {
+      "value": "completeness theorem for propositional logic",
+      "ids": [
+        "pm:CompletenessTheoremForPropositionalLogic",
+        "pm:CompletenessTheoremForPropositionalLogic1"
+      ]
+    },
+    {
+      "value": "cone",
+      "ids": [
+        "pm:Cone",
+        "pm:Cone1"
+      ]
+    },
+    {
+      "value": "congruence",
+      "ids": [
+        "pm:Congruence",
+        "pm:Congruence1",
+        "pm:Congruence12"
+      ]
+    },
+    {
+      "value": "connected sum",
+      "ids": [
+        "pm:ConnectedSum",
+        "pm:ConnectedSum1"
+      ]
+    },
+    {
+      "value": "convolution",
+      "ids": [
+        "pm:Convolution",
+        "pm:Convolution1"
+      ]
+    },
+    {
+      "value": "cycle",
+      "ids": [
+        "pm:Cycle",
+        "pm:Cycle1",
+        "pm:Cycle12"
+      ]
+    },
+    {
+      "value": "diameter",
+      "ids": [
+        "pm:Diameter",
+        "pm:Diameter1",
+        "pm:Diameter12"
+      ]
+    },
+    {
+      "value": "direct image",
+      "ids": [
+        "pm:DirectImage",
+        "pm:DirectImage1"
+      ]
+    },
+    {
+      "value": "discriminant",
+      "ids": [
+        "pm:Discriminant",
+        "pm:Discriminant1"
+      ]
+    },
+    {
+      "value": "distribution",
+      "ids": [
+        "pm:Distribution",
+        "pm:Distribution1"
+      ]
+    },
+    {
+      "value": "domain",
+      "ids": [
+        "pm:Domain",
+        "pm:Domain1",
+        "pm:Domain12"
+      ]
+    },
+    {
+      "value": "exact sequence",
+      "ids": [
+        "pm:ExactSequence",
+        "pm:ExactSequence1"
+      ]
+    },
+    {
+      "value": "filtration",
+      "ids": [
+        "pm:Filtration",
+        "pm:Filtration1"
+      ]
+    },
+    {
+      "value": "first isomorphism theorem",
+      "ids": [
+        "pm:FirstIsomorphismTheorem",
+        "pm:FirstIsomorphismTheorem1"
+      ]
+    },
+    {
+      "value": "flow",
+      "ids": [
+        "pm:Flow",
+        "pm:Flow1"
+      ]
+    },
+    {
+      "value": "frame",
+      "ids": [
+        "pm:Frame",
+        "pm:Frame1"
+      ]
+    },
+    {
+      "value": "free module",
+      "ids": [
+        "pm:FreeModule",
+        "pm:FreeModule1"
+      ]
+    },
+    {
+      "value": "graph",
+      "ids": [
+        "pm:Graph",
+        "pm:Graph1"
+      ]
+    },
+    {
+      "value": "harmonic function",
+      "ids": [
+        "pm:HarmonicFunction",
+        "pm:HarmonicFunction1"
+      ]
+    },
+    {
+      "value": "homeomorphism",
+      "ids": [
+        "pm:Homeomorphism",
+        "pm:Homeomorphism1"
+      ]
+    },
+    {
+      "value": "homogeneous polynomial",
+      "ids": [
+        "pm:HomogeneousPolynomial",
+        "pm:HomogeneousPolynomial1"
+      ]
+    },
+    {
+      "value": "ideal",
+      "ids": [
+        "pm:Ideal",
+        "pm:Ideal1"
+      ]
+    },
+    {
+      "value": "irreducible",
+      "ids": [
+        "pm:Irreducible",
+        "pm:Irreducible1"
+      ]
+    },
+    {
+      "value": "irreducible component",
+      "ids": [
+        "pm:IrreducibleComponent",
+        "pm:IrreducibleComponent1"
+      ]
+    },
+    {
+      "value": "join",
+      "ids": [
+        "pm:Join",
+        "pm:Join1"
+      ]
+    },
+    {
+      "value": "kernel",
+      "ids": [
+        "pm:Kernel",
+        "pm:Kernel1"
+      ]
+    },
+    {
+      "value": "kleene algebra",
+      "ids": [
+        "pm:KleeneAlgebra",
+        "pm:KleeneAlgebra1"
+      ]
+    },
+    {
+      "value": "loop",
+      "ids": [
+        "pm:Loop",
+        "pm:Loop1"
+      ]
+    },
+    {
+      "value": "loop theorem",
+      "ids": [
+        "pm:LoopTheorem",
+        "pm:LoopTheorem12"
+      ]
+    },
+    {
+      "value": "midpoint",
+      "ids": [
+        "pm:Midpoint",
+        "pm:Midpoint1"
+      ]
+    },
+    {
+      "value": "module",
+      "ids": [
+        "pm:Module",
+        "pm:Module1"
+      ]
+    },
+    {
+      "value": "monic",
+      "ids": [
+        "pm:Monic",
+        "pm:Monic1"
+      ]
+    },
+    {
+      "value": "nilradical",
+      "ids": [
+        "pm:Nilradical",
+        "pm:Nilradical1"
+      ]
+    },
+    {
+      "value": "normal closure",
+      "ids": [
+        "pm:NormalClosure",
+        "pm:NormalClosure1"
+      ]
+    },
+    {
+      "value": "orientation",
+      "ids": [
+        "pm:Orientation",
+        "pm:Orientation1"
+      ]
+    },
+    {
+      "value": "parallelogram law",
+      "ids": [
+        "pm:ParallelogramLaw",
+        "pm:ParallelogramLaw1"
+      ]
+    },
+    {
+      "value": "partition",
+      "ids": [
+        "pm:Partition",
+        "pm:Partition1"
+      ]
+    },
+    {
+      "value": "path",
+      "ids": [
+        "pm:Path",
+        "pm:Path1"
+      ]
+    },
+    {
+      "value": "polygon",
+      "ids": [
+        "pm:Polygon",
+        "pm:Polygon1"
+      ]
+    },
+    {
+      "value": "positive semidefinite",
+      "ids": [
+        "pm:PositiveSemidefinite",
+        "pm:PositiveSemidefinite1"
+      ]
+    },
+    {
+      "value": "practical number",
+      "ids": [
+        "pm:PracticalNumber",
+        "pm:PracticalNumber1"
+      ]
+    },
+    {
+      "value": "primary decomposition theorem",
+      "ids": [
+        "pm:PrimaryDecompositionTheorem",
+        "pm:PrimaryDecompositionTheorem1"
+      ]
+    },
+    {
+      "value": "radical",
+      "ids": [
+        "pm:Radical",
+        "pm:Radical1",
+        "pm:Radical12"
+      ]
+    },
+    {
+      "value": "sheaf",
+      "ids": [
+        "pm:Sheaf",
+        "pm:Sheaf1"
+      ]
+    },
+    {
+      "value": "sheafification",
+      "ids": [
+        "pm:Sheafification",
+        "pm:Sheafification1"
+      ]
+    },
+    {
+      "value": "sieve of eratosthenes",
+      "ids": [
+        "pm:SieveOfEratosthenes",
+        "pm:SieveOfEratosthenes1"
+      ]
+    },
+    {
+      "value": "square",
+      "ids": [
+        "pm:Square",
+        "pm:Square1"
+      ]
+    },
+    {
+      "value": "support",
+      "ids": [
+        "pm:Support",
+        "pm:Support1",
+        "pm:Support12"
+      ]
+    },
+    {
+      "value": "trace",
+      "ids": [
+        "pm:Trace",
+        "pm:Trace1"
+      ]
+    },
+    {
+      "value": "transitive",
+      "ids": [
+        "pm:Transitive",
+        "pm:Transitive1"
+      ]
+    }
+  ],
+  "shared_source_urls": [],
+  "forbidden_kinds": [],
+  "source_files_checked": 6999,
+  "source_files_missing": [],
+  "source_hash_failures": [],
+  "missing_sources": [],
+  "bad_coordinates": [],
+  "exact_duplicate_coordinate_count": 0,
+  "dangling_edge_indices": [],
+  "self_edge_count": 0,
+  "duplicate_edge_count": 0,
+  "maps": [
+    {
+      "path": "maps/domain-01.svg",
+      "sha256": "e5bed417a676dc9af90b6024f47af8799d6991c2379581fe535e698b408293e3",
+      "island_groups": {
+        "islands-00": 9693
+      },
+      "rendered_node_count": 9693
+    },
+    {
+      "path": "maps/domain-02.svg",
+      "sha256": "cd1745d08aaae917661dcaef99495d5b33fdd0056a2a3e5b2a50656ee76ac97a",
+      "island_groups": {
+        "islands-01": 2530
+      },
+      "rendered_node_count": 2530
+    },
+    {
+      "path": "maps/domain-03.svg",
+      "sha256": "6b7e01a5c54c3458050fa039ba11672e72dd853eb774fbeb5301f43d90d16d83",
+      "island_groups": {
+        "islands-02": 2292
+      },
+      "rendered_node_count": 2292
+    },
+    {
+      "path": "maps/domain-04.svg",
+      "sha256": "d0b7b849f48d3e9e0338ab6c74aa980c09f2f2b88f4b0709b14b0281c15cf16b",
+      "island_groups": {
+        "islands-03": 1759
+      },
+      "rendered_node_count": 1759
+    },
+    {
+      "path": "maps/domain-05.svg",
+      "sha256": "a4289cc7868c0e735904d9cc2f2a048700e008672f86d579b0f49ee1377c41aa",
+      "island_groups": {
+        "islands-04": 1551
+      },
+      "rendered_node_count": 1551
+    },
+    {
+      "path": "maps/domain-06.svg",
+      "sha256": "3000207cd332c5712dc6ed7679c397f299acf213399e493c974aac7400fe0ce1",
+      "island_groups": {
+        "islands-05": 1420
+      },
+      "rendered_node_count": 1420
+    },
+    {
+      "path": "maps/domain-07.svg",
+      "sha256": "d846980a5701d8d1feb44f0923114db12976a982724d4129e2e2c2725793732d",
+      "island_groups": {
+        "islands-06": 825
+      },
+      "rendered_node_count": 825
+    },
+    {
+      "path": "maps/domain-08.svg",
+      "sha256": "63af32544e17ae0134179c325b88c284e697276840724e9be472921c36d4b36f",
+      "island_groups": {
+        "islands-07": 707
+      },
+      "rendered_node_count": 707
+    },
+    {
+      "path": "maps/domain-09.svg",
+      "sha256": "47a1a24e42aff153855547b4c2d3bca9119b0e02583c8efecc156ee0398b4ab6",
+      "island_groups": {
+        "islands-08": 587
+      },
+      "rendered_node_count": 587
+    },
+    {
+      "path": "maps/domain-10.svg",
+      "sha256": "167e0b88adafcf5bcfd59b835b944914c057be877a4280f0863e2eb49f30f548",
+      "island_groups": {
+        "islands-09": 259
+      },
+      "rendered_node_count": 259
+    },
+    {
+      "path": "maps/domain-11.svg",
+      "sha256": "924ae01952ed04e2e8ff432f44cb6fff1775f68a4cb594932c3c8efbe1afac57",
+      "island_groups": {
+        "islands-10": 66
+      },
+      "rendered_node_count": 66
+    },
+    {
+      "path": "maps/domain-12.svg",
+      "sha256": "cb7cb4bf3bbf3cc3436fd4c1ba7def69413a23bb779827b707bcc73d488a8e92",
+      "island_groups": {
+        "islands-11": 52
+      },
+      "rendered_node_count": 52
+    },
+    {
+      "path": "maps/mathematical-archipelago-bridges.svg",
+      "sha256": "06e5c5e36f252a573cb069fee34754d2d856d10700a0303aecd4cd8fd1c7f913",
+      "island_groups": {
+        "islands-04": 12,
+        "islands-05": 8,
+        "islands-06": 4,
+        "islands-07": 5,
+        "islands-08": 9,
+        "islands-09": 3
+      },
+      "rendered_node_count": 41
+    },
+    {
+      "path": "maps/mathematical-archipelago-overview.svg",
+      "sha256": "da38a79eb575fe75c573e90b035cb1f98865bcc7a6c6be53b42442678b3f46ec",
+      "island_groups": {
+        "islands-00": 9693,
+        "islands-01": 2530,
+        "islands-02": 2292,
+        "islands-03": 1759,
+        "islands-04": 1551,
+        "islands-05": 1420,
+        "islands-06": 825,
+        "islands-07": 707,
+        "islands-08": 587,
+        "islands-09": 259,
+        "islands-10": 66,
+        "islands-11": 52
+      },
+      "rendered_node_count": 21741
+    }
+  ],
+  "complete_map_count": 1,
+  "render_binding_checks": {
+    "nodes_hash_matches": true,
+    "edges_hash_matches": true,
+    "node_count_matches": true,
+    "edge_count_matches": true,
+    "domain_counts_match": true,
+    "flagged_count_matches": true
+  },
+  "sampling": {
+    "seed": 20261022,
+    "algorithm": "sorted IDs within domain; independent seeded shuffling; round-robin over shuffled domains",
+    "requested": 36,
+    "actual": 36,
+    "initial_cohort_preserved_if_available": true,
+    "replacement_seed": "20261022:replacement",
+    "replacements": [
+      {
+        "initial_id": "pm:InteriorPointOfSetInTopologicalSpace",
+        "replacement_id": "pm:PerfectRuler",
+        "domain": "逻辑与基础"
+      },
+      {
+        "initial_id": "pm:OnLineEncyclopediaOfIntegerSequences",
+        "replacement_id": "pm:SemanticPropertiesOfSubstitutability",
+        "domain": "逻辑与基础"
+      },
+      {
+        "initial_id": "pm:CWcomplexApproximationOfQuantumStateSpacesInQAT",
+        "replacement_id": "pm:SchrodingerOperator",
+        "domain": "数学物理与应用"
+      }
+    ],
+    "samples": [
+      {
+        "id": "pm:SpaceOfRapidlyDecreasingFunctions",
+        "label": "space of rapidly decreasing functions",
+        "domain": "分析与微分方程",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/46_Functional_analysis/blob/master/46F05-SpaceOfRapidlyDecreasingFunctions.tex",
+        "source_file": "sources/planetmath/tex/46_Functional_analysis/46F05-SpaceOfRapidlyDecreasingFunctions.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "stacks:06VC",
+        "label": "affine big site smooth [06VC]",
+        "domain": "几何与拓扑",
+        "kind": "theorem",
+        "source_url": "https://stacks.math.columbia.edu/tag/06VC",
+        "source_file": "sources/stacks/tex/topologies.tex",
+        "source_record_id": "stacks",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:LatticeOfIdeals",
+        "label": "lattice of ideals",
+        "domain": "离散与计算",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/06_Order_lattices_ordered_algebraic_structures/blob/master/06B35-LatticeOfIdeals.tex",
+        "source_file": "sources/planetmath/tex/06_Order_lattices_ordered_algebraic_structures/06B35-LatticeOfIdeals.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:SubdirectProductOfRings",
+        "label": "subdirect product of rings",
+        "domain": "代数与结构",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/16_Associative_rings_and_algebras/blob/master/16D70-SubdirectProductOfRings.tex",
+        "source_file": "sources/planetmath/tex/16_Associative_rings_and_algebras/16D70-SubdirectProductOfRings.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "stacks:09GC",
+        "label": "algebraic [09GC]",
+        "domain": "交换代数",
+        "kind": "concept",
+        "source_url": "https://stacks.math.columbia.edu/tag/09GC",
+        "source_file": "sources/stacks/tex/fields.tex",
+        "source_record_id": "stacks",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:RareNumbers",
+        "label": "Rare numbers",
+        "domain": "数论与算术",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/11_Number_theory/blob/master/11A25-RareNumbers.tex",
+        "source_file": "sources/planetmath/tex/11_Number_theory/11A25-RareNumbers.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "stacks:035H",
+        "label": "normalization X in Y [035H]",
+        "domain": "代数几何",
+        "kind": "concept",
+        "source_url": "https://stacks.math.columbia.edu/tag/035H",
+        "source_file": "sources/stacks/tex/morphisms.tex",
+        "source_record_id": "stacks",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:TheBestScoreInTheWorstCaseOfAMemoryGameIs2N1",
+        "label": "The Best Score in the Worst Case of a Memory Game is 2N - 1",
+        "domain": "数学物理与应用",
+        "kind": "theorem",
+        "source_url": "https://github.com/planetmath/91_Game_theory_economics_social_and_behavioral_sciences/blob/master/91A99-TheBestScoreInTheWorstCaseOfAMemoryGameIs2N1.tex",
+        "source_file": "sources/planetmath/tex/91_Game_theory_economics_social_and_behavioral_sciences/91A99-TheBestScoreInTheWorstCaseOfAMemoryGameIs2N1.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:TDistribution",
+        "label": "t distribution",
+        "domain": "概率与统计",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/62_Statistics/blob/master/62A01-TDistribution.tex",
+        "source_file": "sources/planetmath/tex/62_Statistics/62A01-TDistribution.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "stacks:07A1",
+        "label": "characterize limp [07A1]",
+        "domain": "范畴与同调",
+        "kind": "theorem",
+        "source_url": "https://stacks.math.columbia.edu/tag/07A1",
+        "source_file": "sources/stacks/tex/sites-cohomology.tex",
+        "source_record_id": "stacks",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:MatrixConditionNumberIsGreaterOrEqualTo1",
+        "label": "matrix condition number is greater or equal to $1$",
+        "domain": "数值与优化",
+        "kind": "theorem",
+        "source_url": "https://github.com/planetmath/65_Numerical_analysis/blob/master/65F35-MatrixConditionNumberIsGreaterOrEqualTo1.tex",
+        "source_file": "sources/planetmath/tex/65_Numerical_analysis/65F35-MatrixConditionNumberIsGreaterOrEqualTo1.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:IncreasingdecreasingmonotoneFunction",
+        "label": "increasing/decreasing/monotone function",
+        "domain": "分析与微分方程",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/26_Real_functions/blob/master/26A06-IncreasingdecreasingmonotoneFunction.tex",
+        "source_file": "sources/planetmath/tex/26_Real_functions/26A06-IncreasingdecreasingmonotoneFunction.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:NapoleonsTheorem",
+        "label": "Napoleon's theorem",
+        "domain": "几何与拓扑",
+        "kind": "theorem",
+        "source_url": "https://github.com/planetmath/51_Geometry/blob/master/51M04-NapoleonsTheorem.tex",
+        "source_file": "sources/planetmath/tex/51_Geometry/51M04-NapoleonsTheorem.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:HomomorphismOfLanguages",
+        "label": "homomorphism of languages",
+        "domain": "离散与计算",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/68_Computer_science/blob/master/68Q45-HomomorphismOfLanguages.tex",
+        "source_file": "sources/planetmath/tex/68_Computer_science/68Q45-HomomorphismOfLanguages.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:SimplicialCategory",
+        "label": "simplicial category",
+        "domain": "代数与结构",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/18_Category_theory_homological_algebra/blob/master/18G30-SimplicialCategory.tex",
+        "source_file": "sources/planetmath/tex/18_Category_theory_homological_algebra/18G30-SimplicialCategory.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "stacks:00UQ",
+        "label": "formally etale [00UQ]",
+        "domain": "交换代数",
+        "kind": "concept",
+        "source_url": "https://stacks.math.columbia.edu/tag/00UQ",
+        "source_file": "sources/stacks/tex/algebra.tex",
+        "source_record_id": "stacks",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:AdditiveFormOfHilbertsTheorem90",
+        "label": "additive form of Hilbert's theorem 90",
+        "domain": "数论与算术",
+        "kind": "theorem",
+        "source_url": "https://github.com/planetmath/11_Number_theory/blob/master/11R32-AdditiveFormOfHilbertsTheorem90.tex",
+        "source_file": "sources/planetmath/tex/11_Number_theory/11R32-AdditiveFormOfHilbertsTheorem90.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "stacks:068A",
+        "label": "flat finite presentation perfect [068A]",
+        "domain": "代数几何",
+        "kind": "theorem",
+        "source_url": "https://stacks.math.columbia.edu/tag/068A",
+        "source_file": "sources/stacks/tex/more-morphisms.tex",
+        "source_record_id": "stacks",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:LieSuperalgebra",
+        "label": "Lie superalgebra",
+        "domain": "数学物理与应用",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/81_Quantum_theory/blob/master/81R50-LieSuperalgebra.tex",
+        "source_file": "sources/planetmath/tex/81_Quantum_theory/81R50-LieSuperalgebra.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:NoncentralChisquaredRandomVariable",
+        "label": "non-central chi-squared random variable",
+        "domain": "概率与统计",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/62_Statistics/blob/master/62E99-NoncentralChisquaredRandomVariable.tex",
+        "source_file": "sources/planetmath/tex/62_Statistics/62E99-NoncentralChisquaredRandomVariable.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "stacks:06YU",
+        "label": "derived tor [06YU]",
+        "domain": "范畴与同调",
+        "kind": "concept",
+        "source_url": "https://stacks.math.columbia.edu/tag/06YU",
+        "source_file": "sources/stacks/tex/sites-cohomology.tex",
+        "source_record_id": "stacks",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:Eigenvector",
+        "label": "eigenvector",
+        "domain": "数值与优化",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/65_Numerical_analysis/blob/master/65F15-Eigenvector.tex",
+        "source_file": "sources/planetmath/tex/65_Numerical_analysis/65F15-Eigenvector.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:GloballyAttractingFixedPoint",
+        "label": "globally attracting fixed point",
+        "domain": "分析与微分方程",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/37_Dynamical_systems_and_ergodic_theory/blob/master/37C10-GloballyAttractingFixedPoint.tex",
+        "source_file": "sources/planetmath/tex/37_Dynamical_systems_and_ergodic_theory/37C10-GloballyAttractingFixedPoint.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:VitaliCovering",
+        "label": "Vitali covering",
+        "domain": "几何与拓扑",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/54_General_topology/blob/master/54E99-VitaliCovering.tex",
+        "source_file": "sources/planetmath/tex/54_General_topology/54E99-VitaliCovering.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:ChromaticNumberAndGirth",
+        "label": "chromatic number and girth",
+        "domain": "离散与计算",
+        "kind": "theorem",
+        "source_url": "https://github.com/planetmath/05_Combinatorics/blob/master/05C15-ChromaticNumberAndGirth.tex",
+        "source_file": "sources/planetmath/tex/05_Combinatorics/05C15-ChromaticNumberAndGirth.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:BasalUnits",
+        "label": "basal units",
+        "domain": "代数与结构",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/15_Linear_and_multilinear_algebra_matrix_theory/blob/master/15A03-BasalUnits.tex",
+        "source_file": "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A03-BasalUnits.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "stacks:052J",
+        "label": "silly normal [052J]",
+        "domain": "交换代数",
+        "kind": "theorem",
+        "source_url": "https://stacks.math.columbia.edu/tag/052J",
+        "source_file": "sources/stacks/tex/algebra.tex",
+        "source_record_id": "stacks",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:PollardsrhoAlgorithm",
+        "label": "Pollard's $\\rho$ algorithm",
+        "domain": "数论与算术",
+        "kind": "method",
+        "source_url": "https://github.com/planetmath/11_Number_theory/blob/master/11A41-PollardsrhoAlgorithm.tex",
+        "source_file": "sources/planetmath/tex/11_Number_theory/11A41-PollardsrhoAlgorithm.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "stacks:0DWZ",
+        "label": "sitting in degrees [0DWZ]",
+        "domain": "代数几何",
+        "kind": "theorem",
+        "source_url": "https://stacks.math.columbia.edu/tag/0DWZ",
+        "source_file": "sources/stacks/tex/local-cohomology.tex",
+        "source_record_id": "stacks",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:CanonicalCorrelation",
+        "label": "canonical correlation",
+        "domain": "概率与统计",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/62_Statistics/blob/master/62H20-CanonicalCorrelation.tex",
+        "source_file": "sources/planetmath/tex/62_Statistics/62H20-CanonicalCorrelation.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "stacks:0GYQ",
+        "label": "ML general [0GYQ]",
+        "domain": "范畴与同调",
+        "kind": "theorem",
+        "source_url": "https://stacks.math.columbia.edu/tag/0GYQ",
+        "source_file": "sources/stacks/tex/sites-cohomology.tex",
+        "source_record_id": "stacks",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:NewtonAndCotesFormulas",
+        "label": "Newton and Cotes formulas",
+        "domain": "数值与优化",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/65_Numerical_analysis/blob/master/65D32-NewtonAndCotesFormulas.tex",
+        "source_file": "sources/planetmath/tex/65_Numerical_analysis/65D32-NewtonAndCotesFormulas.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:CompletenessTheoremForPropositionalLogic",
+        "label": "completeness theorem for propositional logic",
+        "domain": "逻辑与基础",
+        "kind": "theorem",
+        "source_url": "https://github.com/planetmath/03_Mathematical_logic_and_foundations/blob/master/03B05-CompletenessTheoremForPropositionalLogic.tex",
+        "source_file": "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03B05-CompletenessTheoremForPropositionalLogic.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:PerfectRuler",
+        "label": "perfect ruler",
+        "domain": "逻辑与基础",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/03_Mathematical_logic_and_foundations/blob/master/03E02-PerfectRuler.tex",
+        "source_file": "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03E02-PerfectRuler.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:SemanticPropertiesOfSubstitutability",
+        "label": "semantic properties of substitutability",
+        "domain": "逻辑与基础",
+        "kind": "result",
+        "source_url": "https://github.com/planetmath/03_Mathematical_logic_and_foundations/blob/master/03B10-SemanticPropertiesOfSubstitutability.tex",
+        "source_file": "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03B10-SemanticPropertiesOfSubstitutability.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      },
+      {
+        "id": "pm:SchrodingerOperator",
+        "label": "Schrödinger operator",
+        "domain": "数学物理与应用",
+        "kind": "concept",
+        "source_url": "https://github.com/planetmath/81_Quantum_theory/blob/master/81Q10-SchrodingerOperator.tex",
+        "source_file": "sources/planetmath/tex/81_Quantum_theory/81Q10-SchrodingerOperator.tex",
+        "source_record_id": "planetmath",
+        "verification": "awaiting_original_source_review"
+      }
+    ]
+  },
+  "known_source_quality_flagged_nodes": 16,
+  "content_quality_findings_file": "reports/audit-content-findings.json",
+  "source_identity_does_not_certify_math": true,
+  "structural_pass": true,
+  "semantic_uniqueness_certified": false,
+  "mathematical_correctness_certified": false,
+  "replay_command": "python scripts/audit_atlas.py --nodes data/nodes.jsonl --edges data/edges.csv --sample 36"
+}

@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IteratedTotientFunction}
+\pmcreated{2013-03-22 16:33:09}
+\pmmodified{2013-03-22 16:33:09}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{iterated totient function}
+\pmrecord{5}{38737}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{PerfectTotientNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The {\em iterated totient function} $\phi^k(n)$ is $a_k$ in the recurrence relation $a_0 = n$ and $a_i = \phi(a_{i - 1})$ for $i > 0$, where $\phi(x)$ is Euler's totient function.
+
+After enough iterations, the function eventually hits 2 followed by an infinite trail of ones. Ianucci et al define the ``class'' $c$ of $n$ as the integer such that $\phi^c(n) = 2$.
+
+When the iterated totient function is summed thus: $$\sum_{i = 1}^{c + 1} \phi^i(n)$$ it can be observed that just as $2^x$  is a quasiperfect number when it comes to adding up proper divisors, it is also ``quasiperfect'' when adding up the iterated totient function. Quite unlike regular perfect numbers, $3^x$ (which are obviously odd) are ``perfect'' when adding up the iterated totient.
+
+\begin{thebibliography}{2}
+\bibitem{di} D. E. Ianucci, D. Moujie \& G. L. Cohen, ``On Perfect Totient Numbers'' {\it Journal of Integer Sequences}, {\bf 6}, 2003: 03.4.5
+\bibitem{rg} R. K. Guy, {\it Unsolved Problems in Number Theory} New York: Springer-Verlag 2004: B42
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

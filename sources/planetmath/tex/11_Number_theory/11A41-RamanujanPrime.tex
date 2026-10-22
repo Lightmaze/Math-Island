@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RamanujanPrime}
+\pmcreated{2013-03-22 16:38:46}
+\pmmodified{2013-03-22 16:38:46}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Ramanujan prime}
+\pmrecord{8}{38850}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The $n$th {\em \PMlinkescapetext{Ramanujan} \PMlinkescapetext{prime}} $p$ is the smallest prime such that there are at least $n$ primes between $x$ and $2x$ for any $x$ such that $2x > p$. So, given the prime counting function $\pi(x)$, then for the $n$th Ramanujan prime $p$ it is always the case that $\pi(2x) - \pi(x) \ge n$ when $2x > p$. These primes arise from Srinivasa Ramanujan's proof of Bertrand's postulate. The first few are 2, 11, 17, 29, 41, 47, 59, 67, 71, 97, 101, 107, 127, listed in A104272 of Sloane's OEIS.
+
+For example, the third Ramanujan prime is 17. We can verify that there are three primes between 8.5005 and 17.001 (namely 11, 13, 17), that there are also three primes between 9 and 18 (the same as before), more than three primes between 10 and 20 (namely the prime quadruplet 11, 13, 17. 19), etc. Furthermore, we can verify that no prime smaller than 17 satisfies this condition by finding a single counterexample for the smaller primes, specifically: setting $x = 7$ we have $2x = 14$, which is greater than 2, 3, 5, 7, 11 and 13, and we verify that there are only two primes between 7 and 14 (namely 11 and 13).
+
+\begin{thebibliography}{2}
+\bibitem S. Ramanujan, ``A proof of Bertrand's postulate'' {\it J. Indian Math. Society} {\bf 11}, 1919: 181 - 182
+\bibitem J. Sondow, ``Ramanujan primes and Bertrand's postulate'' {\it Amer. Math. Monthly} {\bf 116}, 2009: 630 - 635 % TODO at the Library: review latest issue of the Monthly
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

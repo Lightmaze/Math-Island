@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HerbrandsTheorem}
+\pmcreated{2013-03-22 14:12:45}
+\pmmodified{2013-03-22 14:12:45}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Herbrand's theorem}
+\pmrecord{5}{35647}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R29}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{Theo}{Theorem}
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Let $\mb{Q}(\zeta_p)$ be a cyclotomic extension of $\Q$, with $p$ an odd prime, let $A$ be the Sylow $p$-subgroup of the ideal class group of $\mb{Q}(\zeta_p)$, and let $G$ be the Galois group of this extension.  Note that the character  group of $G$, denoted $\hat{G}$, is given by
+\begin{align*}
+\hat{G}=\{\chi^i\mid0\leq i\leq p-2\}
+\end{align*}
+
+For each $\chi\in\hat{G}$, let $\varepsilon_\chi$ denote the corresponding orthogonal idempotent of the group ring, and note that the $p$-Sylow subgroup of the ideal class group is a $\mathbb{Z}[G]$-module under the typical multiplication.  Thus, using the orthogonal idempotents, we can decompose the module $A$ via $A=\sum_{i=0}^{p-2}A_{\omega^i}\equiv\sum_{i=0}^{p-2}A_i$.
+
+Last, let $B_k$ denote the $k$th Bernoulli number.
+
+\begin{Theo}[Herbrand]
+Let $i$ be odd with $3\leq i\leq p-2$.  Then $A_i\neq 0 \iff p\mid B_{p-i}$.
+\end{Theo}
+
+Only the first direction of this theorem ($\implies$) was proved by Herbrand himself.  The converse is much more intricate, and was proved by Ken Ribet.
+%%%%%
+%%%%%
+\end{document}

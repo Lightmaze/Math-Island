@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LegendresConjecture}
+\pmcreated{2013-03-22 16:38:17}
+\pmmodified{2013-03-22 16:38:17}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Legendre's conjecture}
+\pmrecord{4}{38840}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmrelated{BrocardsConjecture}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+(Adrien-Marie Legendre) There is always a prime number between a square number and the next. To put it algebraically, given an integer $n > 0$, there is always a prime $p$ such that $n^2 < p < (n + 1)^2$. Put yet another way, $(\pi((n + 1)^2) - \pi(n^2)) > 0$, where $\pi(x)$ is the prime counting function.
+
+This conjecture was considered unprovable when it was listed in Landau's problems in 1912. Almost a hundred years later, the conjecture remains unproven even as similar conjectures (such as Bertrand's postulate) have been proven.
+
+But progress has been made. Chen Jingrun proved a slightly weaker version of the conjecture: there is either a prime $n^2 < p < (n + 1)^2$ or a semiprime $n^2 < pq < (n + 1)^2$ (where $q$ is a prime unequal to $p$). Thanks to computers, brute force searches have shown that the conjecture holds true as high as $n = 10^5$. % I look forward to updates. Mathematica confirms to ten thousand in 17 seconds, I'm still waiting for an answer on one million
+%%%%%
+%%%%%
+\end{document}

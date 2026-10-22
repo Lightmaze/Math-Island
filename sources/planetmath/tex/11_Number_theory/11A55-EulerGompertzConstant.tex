@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EulerGompertzConstant}
+\pmcreated{2013-03-22 18:49:06}
+\pmmodified{2013-03-22 18:49:06}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Euler-Gompertz constant}
+\pmrecord{7}{41620}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A55}
+\pmsynonym{Gompertz constant}{EulerGompertzConstant}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The {\em Euler-Gompertz constant} is the value of the continued fraction $$C_2 = 0 + \frac{1}{1 + \frac{1}{1 + \frac{1}{1 + \frac{2}{1 + \ldots}}}},$$ 
+
+in which after three appearances of 1 in the numerator position, follow the integers from 2 forward each given twice consecutively; the value of this constant is approximately 0.596347362323194074341078499369279376074... Finch gives two formulas for this constant: 
+
+$$C_2 = -e\textrm{Ei}(-1) = \int_1^\infty \frac{\textrm{exp}(1 - x)}{x} dx,$$ with $e$ being the natural log base and $\textrm{Ei}$ being the exponential integral. 
+
+The constant can also be expressed as a formula involving an infinite sum: $$e \left( \left( \sum_{i = 1}^\infty \frac{(-1)^{i - 1}}{i!i} \right) - \gamma \right),$$ with $\gamma$ being the Euler-Mascheroni constant.
+
+\begin{thebibliography}{1}
+\bibitem{sr} Steven R. Finch, {\it Mathematical Constants}. Cambridge: Cambridge University Press (2003): 424
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

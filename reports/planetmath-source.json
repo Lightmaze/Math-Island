@@ -1,0 +1,70 @@
+{
+  "repositories_succeeded": 63,
+  "failed": [],
+  "raw_records": 9477,
+  "unique_canonical_names": 9450,
+  "unique_record_ids": 9365,
+  "types": {
+    "Result": 236,
+    "Theorem": 1809,
+    "Feature": 258,
+    "Definition": 4721,
+    "Example": 521,
+    "Application": 45,
+    "Topic": 511,
+    "Corollary": 54,
+    "Conjecture": 55,
+    "unknown": 6,
+    "Derivation": 212,
+    "Data Structure": 37,
+    "Proof": 699,
+    "Axiom": 21,
+    "Algorithm": 98,
+    "Biography": 168,
+    "Bibliography": 26
+  },
+  "all_archives_cc_by_sa_3_0": true,
+  "raw_explicit_links": 20577,
+  "accepted_islands": 6936,
+  "rejected_or_auxiliary": 2514,
+  "canonically_merged_raw_duplicates": 27,
+  "accepted_kind_counts": {
+    "result": 231,
+    "theorem": 1789,
+    "concept": 4688,
+    "corollary": 54,
+    "conjecture": 55,
+    "axiom": 21,
+    "method": 98
+  },
+  "exclusion_counts": {
+    "source_type_not_counted_as_concept_island:Feature": 258,
+    "source_type_not_counted_as_concept_island:Example": 520,
+    "source_type_not_counted_as_concept_island:Application": 45,
+    "source_type_not_counted_as_concept_island:Topic": 510,
+    "source_type_not_counted_as_concept_island:Proof": 694,
+    "source_type_not_counted_as_concept_island:unknown": 6,
+    "source_type_not_counted_as_concept_island:Derivation": 212,
+    "source_type_not_counted_as_concept_island:Biography": 168,
+    "source_type_not_counted_as_concept_island:Data Structure": 37,
+    "source_type_not_counted_as_concept_island:Bibliography": 26,
+    "editorial_index_or_bibliographic_title": 24,
+    "empty_or_near_empty_source_body": 2,
+    "proof_title_not_independent_concept": 12
+  },
+  "entry_sha256": "7763910fb70f234802f2fe4d1cf71cf1edf9cc00515731d34283ae8d027ddb66",
+  "identity_rule": "canonical name casefold; empty pmrecord IDs never merge unrelated records",
+  "type_truth_limit": "Source pmtype and content are editorial source claims; not independently re-proved. Topic metadata may include broader expositions.",
+  "accepted_nodes_exact_canonical_explicit_edges": 8667,
+  "accepted_nodes_link_resolution_counts": {
+    "pmrelated": 7024,
+    "PMlinkname": 2089,
+    "PMlinkid": 25
+  },
+  "accepted_nodes_unresolved_links": {
+    "PMlinkname": 1014,
+    "pmrelated": 2930,
+    "PMlinkid": 185
+  },
+  "numeric_PMlinkid_warning": "Numeric PMlinkid targets do not match migrated pmrecord IDs in this snapshot; unresolved targets must not be guessed."
+}

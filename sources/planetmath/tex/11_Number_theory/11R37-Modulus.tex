@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Modulus}
+\pmcreated{2013-03-22 12:35:26}
+\pmmodified{2013-03-22 12:35:26}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{modulus}
+\pmrecord{4}{32841}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R37}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\p}{\mathfrak{p}}
+\begin{document}
+A {\em modulus} for a number field $K$ is a formal product
+$$
+\prod_{\p} \p^{n_\p}
+$$
+where
+\begin{itemize}
+\item The product is taken over all finite primes and infinite primes of $K$
+\item The exponents $n_\p$ are nonnegative integers
+\item All but finitely many of the $n_\p$ are zero
+\item For every real prime $\p$, the exponent $n_\p$ is either 0 or 1
+\item For every complex prime $\p$, the exponent $n_\p$ is 0
+\end{itemize}
+A modulus can be written as a product of its finite part
+$$
+\prod_{\p \text{ finite}} \p^{n_\p}
+$$
+and its infinite part
+$$
+\prod_{\p \text{ real}} \p^{n_\p},
+$$
+with the finite part equal to some ideal in the ring of integers $\mathcal{O}_K$ of $K$, and the infinite part equal to the product of some subcollection of the real primes of $K$.
+%%%%%
+%%%%%
+\end{document}

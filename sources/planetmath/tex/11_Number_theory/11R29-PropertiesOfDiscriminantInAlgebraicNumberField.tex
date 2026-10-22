@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PropertiesOfDiscriminantInAlgebraicNumberField}
+\pmcreated{2013-03-22 19:09:28}
+\pmmodified{2013-03-22 19:09:28}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{properties of discriminant in algebraic number field}
+\pmrecord{12}{42062}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R29}
+%\pmkeywords{discriminant}
+\pmrelated{MinimalityOfIntegralBasis}
+\pmrelated{ConditionForPowerBasis}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\textbf{Theorem 1.}\, Let $\alpha_1,\,\alpha_2,\,\ldots,\,\alpha_n$ and $\beta_1,\,\beta_2,\,\ldots,\,\beta_n$ be elements of the algebraic number field $\mathbb{Q}(\vartheta)$ of \PMlinkname{degree}{NumberField} $n$.\, If they satisfy the equations
+$$\alpha_i \;=\; \sum_{j=1}^nc_{ij}\beta_j \quad \mbox{for} \quad i \,=\, 1,\,2,\,\ldots,\,n,$$
+where all coefficients $c_{ij}$ are rational numbers, then the \PMlinkid{discriminants}{12060} are \PMlinkescapetext{connected} via the equation
+$$\Delta(\alpha_1,\,\alpha_2,\,\ldots,\,\alpha_n) 
+  \;=\; \det\!(c_{ij})^2\cdot\Delta(\beta_1,\,\beta_2,\,\ldots,\,\beta_n).$$\\
+
+As a special case one obtains the
+
+\textbf{Theorem 2.}\, If
+\begin{align}
+\alpha_i \;=\; c_{i1}+c_{i2}\vartheta+\ldots+c_{in}\vartheta^{n-1} \quad \mbox{for} \quad i \,=\, 1,\,2,\,\ldots,\,n
+\end{align}
+are the canonical forms of the elements $\alpha_i$ in $\mathbb{Q}(\vartheta)$, then 
+$$\Delta(\alpha_1,\,\alpha_2,\,\ldots,\,\alpha_n) 
+  \;=\; \det\!(c_{ij})^2\cdot\Delta(1,\,\vartheta,\,\ldots,\,\vartheta^{n-1}),$$
+where $\Delta(1,\,\vartheta,\,\ldots,\,\vartheta^{n-1})$ is a Vandermonde determinant thus
+having the product form
+\begin{align}
+\Delta(1,\,\vartheta,\,\ldots,\,\vartheta^{n-1}) 
+\;=\; \left(\prod_{1 \le i \le j}(\vartheta_j-\vartheta_i)\right)^{\!2} 
+\;=\; \prod_{1 \le i \le j}(\vartheta_i-\vartheta_j)^2
+\end{align}
+where $\vartheta_1 = \vartheta,\,\vartheta_2,\,\ldots,\,\vartheta_n$ are the algebraic conjugates of $\vartheta$.\\
+
+Since the \PMlinkescapetext{discriminant} (2) is also the polynomial discriminant of the irreducible minimal polynomial of $\vartheta$, the numbers $\vartheta_i$ are inequal.\, It follows the
+
+\textbf{Theorem 3.}\, When (1) are the canonical forms of the numbers $\alpha_i$, one has
+$$\Delta(\alpha_1,\,\alpha_2,\,\ldots,\,\alpha_n) \;=\; 0 \quad 
+\Longleftrightarrow \quad \det(c_{ij}) \;=\; 0.$$\\
+
+The powers $1,\,\vartheta,\,\ldots,\,\vartheta^{n-1}$ of the \PMlinkname{primitive element}{SimpleFieldExtension} form a \PMlinkname{basis}{Basis} of the field extension $\mathbb{Q}(\vartheta)/\mathbb{Q}$ (see the canonical form of element of number field).\, By the theorem 3 we may write the
+
+\textbf{Theorem 4.}\, The numbers $\alpha_1,\,\alpha_2,\,\ldots,\,\alpha_n$ of $\mathbb{Q}(\vartheta)$ are linearly independent over $\mathbb{Q}$ if and only if\, $\Delta(\alpha_1,\,\alpha_2,\,\ldots,\,\alpha_n) \;\neq\; 0$.\\
+
+\textbf{Theorem 5.}\quad $\displaystyle \mathbb{Q}(\alpha) = \mathbb{Q}(\vartheta)
+\;\; \Longleftrightarrow \;\; \Delta(1,\,\alpha,\,\alpha^2,\,\ldots,\,\alpha^{n-1}) \neq 0$.\; Here, the the discriminant is the \PMlinkname{discriminant of the algebraic number}{DiscriminantOfAlgebraicNumber} $\alpha$.
+  
+
+%%%%%
+%%%%%
+\end{document}

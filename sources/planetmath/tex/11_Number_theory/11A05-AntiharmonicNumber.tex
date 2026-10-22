@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AntiharmonicNumber}
+\pmcreated{2013-11-28 10:15:29}
+\pmmodified{2013-11-28 10:15:29}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{antiharmonic number}
+\pmrecord{10}{87981}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmclassification{msc}{11A05}
+\pmclassification{msc}{11A25}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%\usepackage{xypic}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The antiharmonic, a.k.a. contraharmonic mean of some set of 
+positive numbers is defined as the sum of their squares 
+divided by their sum.\, There exist positive integers $n$ 
+whose sum $\sigma_1(n)$ of all their positive divisors divides 
+the sum $\sigma_2(n)$ of the squares of those divisors.\, For 
+example, 4 is such an integer:
+$$1+2+4 \,=\, 7 \,\mid\, 21 \,=\, 1^2+2^2+4^2$$
+Such integers are called 
+{\it antiharmonic numbers} (or {\it contraharmonic numbers}), 
+since the contraharmonic mean of their positive divisors is an 
+integer.
+ 
+The antiharmonic numbers form the
+\PMlinkexternal{OEIS}{HTTP://oeis.org/} integer sequence
+\PMlinkexternal{A020487}{http://oeis.org/search?q=A020487&language=english&go=Search}:
+$$1,\,4,\,9,\,16,\,20,\,25,\,36,\,49,\,50,\,64,\,81,\,100,\,117,\,121,\,144,\,169,\,180,\,\ldots$$\\
+
+
+Using the expressions of \PMlinkname{divisor function}{DivisorFunction} 
+$\sigma_z(n)$, the condition for an 
+integer $n$ to be an antiharmonic number, is that the quotient
+$$\sigma_2(n):\sigma_1(n) 
+\;=\; \sum_{0 < d \mid n}\!d^2:\!\sum_{0 < d \mid n}\!d
+\;=\; \prod_{i=1}^k\frac{p_i^{2(m_i+1)}-1}{p_i^2-1}
+     :\prod_{i=1}^k\frac{p_i^{m_i+1}-1}{p_i-1}$$
+is an integer; here the $p_i$'s are the distinct prime divisors 
+of $n$ and $m_i$'s their multiplicities.\, The last form is 
+simplified to
+\begin{align}
+\prod_{i=1}^k\frac{p_i^{m_i+1}+1}{p_i+1}.
+\end{align}
+The OEIS sequence A020487 contains all nonzero perfect squares, 
+since in the case of such numbers the antiharmonic mean (1) of 
+the divisors has the form
+$$\prod_{i=1}^k\frac{p_i^{2m_i+1}+1}{p_i+1} \;=\;
+\prod_{i=1}^k\left(p_i^{2m_i}-p_i^{2m_i-1}-\!+\ldots-p_i+1\right)$$
+(cf. irreducibility of binomials with unity coefficients).\\
+
+
+
+
+\textbf{Note.}\, It would in a manner be legitimated to define 
+a positive integer to be an antiharmonic number (or an 
+antiharmonic integer) if it is the antiharmonic mean of two 
+distinct positive integers; see integer contraharmonic mean 
+and \PMlinkname{contraharmonic Diophantine equation}
+{ContraharmonicDiophantineEquation}.
+
+\end{document}

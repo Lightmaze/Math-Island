@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ChineseRemainderTheoremInTermsOfDivisorTheory}
+\pmcreated{2013-03-22 18:01:58}
+\pmmodified{2013-03-22 18:01:58}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Chinese remainder theorem in terms of divisor theory}
+\pmrecord{6}{40552}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmclassification{msc}{13A05}
+\pmrelated{ChineseRemainderTheorem}
+\pmrelated{ChineseRemainderTheorem2}
+\pmrelated{CongruenceInAlgebraicNumberField}
+\pmrelated{WeakApproximationTheorem}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+ \usepackage[T2A]{fontenc}
+ \usepackage[russian, english]{babel}
+
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+In a ring with a divisor theory, a congruence \,$\alpha \equiv \beta \pmod{\mathfrak{a}}$\, with respect to a divisor \PMlinkname{module}{Congruences} $\mathfrak{a}$ \PMlinkescapetext{means} that\, $\mathfrak{a} \mid \alpha\!-\!\beta$.\\
+
+
+\textbf{Theorem.}\, Let $\mathcal{O}$ be an integral domain having the divisor theory \,$\mathcal{O}^* \to \mathfrak{D}$.\, For arbitrary pairwise coprime divisors $\mathfrak{a}_1,\,\ldots,\,\mathfrak{a}_s$\, in $\mathfrak{D}$ and for arbitrary elements \,$\alpha_1,\,\ldots,\,\alpha_s$\, of the domain $\mathcal{O}$ there exists an element $\xi$ in $\mathcal{O}$ such that
+\begin{align*}
+\begin{cases}
+\xi\, \equiv\, \alpha_1 \pmod{\mathfrak{a}_1}\\
+\cdots \qquad \cdots \qquad \cdots\\
+\xi\, \equiv\, \alpha_s \pmod{\mathfrak{a}_s}
+\end{cases}
+\end{align*}
+
+
+{\em Proof.}\, Let
+$$\mathfrak{b}_i \,:=\, \prod_{j \neq i}\mathfrak{a}_j \quad (i = 1,\,\ldots,\,s).$$
+Apparently, the divisors\, $\mathfrak{b}_1,\,\ldots,\,\mathfrak{b}_s$\, are mutually coprime, whence there are in the ring $\mathcal{O}$ the elements\, $\beta_1,\,\ldots,\,\beta_s$\, divisible by\, the divisors\, $\mathfrak{b}_1,\,\ldots,\,\mathfrak{b}_s$,\, respectively, such that 
+\begin{align}
+\beta_1+\ldots+\beta_s = 1.
+\end{align}
+For every\, $i \neq j$,\, the divisor $\mathfrak{a}_i$ divides $\mathfrak{b}_j$ and therefore also the element $\beta_j$.\, Then the equation (1) implies that\, $\beta_i \equiv 1 \pmod{\mathfrak{a}_i}$ and thus the element
+$$\xi \,:=\, \alpha_1\beta_1+\ldots+\alpha_s\beta_s$$
+satisfies
+$$\xi \,\equiv\, \alpha_i\beta_i \,\equiv\, \alpha_i\! \pmod{\mathfrak{a}_i}$$
+for each\, $i = 1,\,\ldots,\,s$.\, Q.E.D.
+ 
+
+
+\begin{thebibliography}{9}
+\bibitem{MMP} \CYRM. \CYRM. \CYRP\cyro\cyrs\cyrt\cyrn\cyri\cyrk\cyro\cyrv: 
+{\em \CYRV\cyrv\cyre\cyrd\cyre\cyrn\cyri\cyre\, \cyrv\, \cyrt\cyre\cyro\cyrr\cyri\cyryu\, \cyra\cyrl\cyrg\cyre\cyrb\cyrr\cyra\cyri\cyrch\cyre\cyrs\cyrk\cyri\cyrh \,
+\cyrch\cyri\cyrs\cyre\cyrl}. \,\CYRI\cyrz\cyrd\cyra\cyrt\cyre\cyrl\cyrsftsn\cyrs\cyrt\cyrv\cyro \,
+``\CYRN\cyra\cyru\cyrk\cyra''. \CYRM\cyro\cyrs\cyrk\cyrv\cyra \,(1982).
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FriedmanNumber}
+\pmcreated{2013-03-22 15:36:45}
+\pmmodified{2013-03-22 15:36:45}
+\pmowner{aplant}{12431}
+\pmmodifier{aplant}{12431}
+\pmtitle{Friedman number}
+\pmrecord{10}{37533}
+\pmprivacy{1}
+\pmauthor{aplant}{12431}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Consider the integer 28547. In the equation $28547 = (8+5)^{4}-(7 \times 2)$ expressed in base 10, both sides use the same digits.
+
+An integer is a {\em Friedman number} if it can be put into an equation such that both sides use the same digits but the right hand side has one or more basic arithmetic operators (addition, subtraction, multiplication, division, exponentiation) interspersed. Brackets, as usual, are essential to clarify the order of operations. These numbers are named after Erich Friedman, Assoc. Professor of
+Mathematics at Stetson University. With the help of his students he has researched Friedman numbers in bases 2 through 10 and even with Roman numerals.
+
+When both sides use the digits in the same order, the number is called a "nice" or "strong" Friedman number. For example, $3125=(3 + [1 \times 2])^5$.
+
+These concepts can be transplanted into any standard positional numbering system using 0. Transplanting into the realm of Roman numerals, however, requires the addition of the extra constraint that the right hand side of the equation use at least one other operator besides addition or subtraction. 
+
+%%For example, $$XLVII = \frac{(L - X)}{(V - I)}^I$$.
+
+\subsection{Links}
+
+\PMlinkexternal{Problem of the Month, August 2000}{http://www.stetson.edu/~efriedma/mathmagic/0800.html}
+
+\PMlinkexternal{Sloane's A036057}{http://www.research.att.com/projects/OEIS?Anum=A036057}
+
+\PMlinkexternal{Sloane's A080035}{http://www.research.att.com/projects/OEIS?Anum=A080035}
+%%%%%
+%%%%%
+\end{document}

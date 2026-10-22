@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GeneralizedBinomialCoefficients}
+\pmcreated{2013-03-22 14:41:53}
+\pmmodified{2013-03-22 14:41:53}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{generalized binomial coefficients}
+\pmrecord{26}{36309}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B65}
+\pmclassification{msc}{05A10}
+\pmrelated{BinomialFormula}
+\pmrelated{GeneralPower}
+\pmrelated{BinomialFormulaForNegativeIntegerPowers}
+\pmdefines{Pascal's formula}
+\pmdefines{Vandermonde's formula}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The binomial coefficients
+\begin{align}
+    {n\choose r} = \frac{n!}{(n\!-\!r)!r!},
+\end{align}
+where $n$ is a non-negative integer and\, $r \in \{0,\,1,\,2,\,\ldots,\,n\}$,\,
+can be generalized for all integer and non-integer values of $n$ by using the \PMlinkname{reduced}{Division} form
+\begin{align}
+    {n\choose r} = \frac{n(n\!-\!1)(n\!-\!2)\ldots(n\!-\!r\!+\!1)}{r!}; 
+\end{align}
+here $r$ may be any non-negative integer.\, Then \PMlinkname{Newton's binomial series}{BinomialFormula} gets the \PMlinkescapetext{simple} form 
+\begin{align}
+    (1\!+\!z)^{\alpha} = \sum_{r = 0}^{\infty}{\alpha\choose r}z^r 
+ = 1\!+\!{\alpha\choose1}z\!+\!{\alpha\choose 2}z^2\!+\cdots
+\end{align}
+It is not hard to show that the radius of convergence of this series is 1.\, This series expansion is valid for every complex number $\alpha$ when\, $|z| < 1$,\, and it presents such a \PMlinkname{branch}{GeneralPower} of the \PMlinkname{power}{GeneralPower} $(1\!+\!z)^{\alpha}$ which gets the value 1 in the point\, $z = 0$.
+
+In the case that $\alpha$ is a non-negative integer and $r$ is great enough, one factor in the numerator of 
+\begin{align}
+{\alpha\choose r} = 
+  \frac{\alpha(\alpha\!-\!1)(\alpha\!-\!2)\ldots(\alpha\!-\!r\!+\!1)}{r!} 
+\end{align}
+vanishes, and hence the corresponding binomial coefficient ${\alpha\choose r}$ equals to zero; accordingly also all following binomial coefficients with a greater $r$ are equal to zero.\, It means that the series is left to being a finite sum, which gives the binomial theorem.
+
+For all complex values of $\alpha$, $\beta$ and non-negative integer values of $r$, $s$, the {\em Pascal's formula}
+\begin{align}
+  {\alpha\choose r}\!+\!{\alpha\choose r\!+\!1} = {{\alpha\!+\!1}\choose{r\!+\!1}}
+\end{align}
+and {\em Vandermonde's convolution}
+\begin{align}
+ \sum_{r = 0}^s{\alpha\choose r}\!{\beta\choose{s\!-\!r}} = {{\alpha\!+\!\beta}\choose s}
+\end{align}
+hold (the latter is proved by expanding the power $(1\!+\!z)^{\alpha+\beta}$ to series).\, Cf. Pascal's rule and Vandermonde identity.
+%%%%%
+%%%%%
+\end{document}

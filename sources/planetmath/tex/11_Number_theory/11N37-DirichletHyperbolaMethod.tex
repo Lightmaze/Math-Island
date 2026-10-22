@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DirichletHyperbolaMethod}
+\pmcreated{2013-03-22 15:58:27}
+\pmmodified{2013-03-22 15:58:27}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{Dirichlet hyperbola method}
+\pmrecord{14}{37990}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N37}
+\pmsynonym{hyperbola method}{DirichletHyperbolaMethod}
+\pmrelated{ConvolutionMethod}
+\pmrelated{TauFunction}
+\pmrelated{EulersConstant}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $f$, $g$, and $h$ be multiplicative functions such that $f=g*h$, where $*$ denotes the \PMlinkname{convolution}{DirichletConvolution} of $g$ and $h$. The {\sl Dirichlet hyperbola method\/} (typically shortened to {\sl hyperbola method\/}) is a way to \PMlinkescapetext{calculate} $\displaystyle \sum_{n \le x} f(n)$ by using the fact that $f=g*h$:
+
+$$\sum_{n \le x} f(n) = \sum_{n \le x} \sum_{ab=n} g(a)h(b) = \sum_{a \le \sqrt{x}} \sum_{b \le \frac{x}{a}} g(a)h(b) + \sum_{b \le \sqrt{x}} \sum_{a \le \frac{x}{b}} g(a)h(b) - \sum_{a \le \sqrt{x}} \sum_{b \le \sqrt{x}} g(a)h(b)$$
+
+Note that, since $ab=n \le x$, not both of $a$ and $b$ can be larger than $\sqrt{x}$.  The Dirichlet hyperbola method follows from this fact as well as the inclusion-exclusion principle.
+
+This method for calculating $\displaystyle \sum_{n \le x} f(n)$ is advantageous when the sums in \PMlinkescapetext{terms} of $g$ and $h$ are easier to handle and when $|g(n)-h(n)|$ is relatively small for most $n \in \mathbb{N}$.
+
+As an example, the sum $\displaystyle \sum_{n \le x} \tau(n)$ will be calculated using the Dirichlet hyperbola method.
+
+Note that $\tau=1*1$.  Thus:
+
+\begin{center}
+$\begin{array}{ll}
+\displaystyle \sum_{n \le x} \tau(n) & \displaystyle = \sum_{a \le \sqrt{x}} \sum_{b \le \frac{x}{a}} 1 + \sum_{b \le \sqrt{x}} \sum_{a \le \frac{x}{b}} 1 - \sum_{a \le \sqrt{x}} \sum_{b \le \sqrt{x}} 1 \\
+& \\
+& \displaystyle = \sum_{a \le \sqrt{x}} \left( \frac{x}{a} + O(1) \right) + \sum_{b \le \sqrt{x}} \left( \frac{x}{b} + O(1) \right) - \left( \sum_{a \le \sqrt{x}} 1 \right) \left( \sum_{b \le \sqrt{x}} 1 \right) \\
+& \\
+& \displaystyle = 2 \sum_{c \le \sqrt{x}} \left( \frac{x}{c} + O(1) \right) - \left( \sum_{c \le \sqrt{x}} 1 \right)^2 \\
+& \\
+& \displaystyle = 2x \sum_{c \le \sqrt{x}} \frac{1}{c} + O \left( \sum_{c \le \sqrt{x}} 1 \right) - (\sqrt{x}+O(1))^2 \\
+& \\
+& \displaystyle = 2x \left( \log \sqrt{x} + \gamma + O \left( \frac{1}{\sqrt{x}} \right) \right) + O(\sqrt{x}) - \left( x + O(\sqrt{x}) + O(1) \right) \\
+& \\
+& \displaystyle = 2x \left( \frac{1}{2} \log x + \gamma + O \left( \frac{1}{\sqrt{x}} \right) \right) - x + O(\sqrt{x}) \\
+& \\
+& \displaystyle = x \log x + 2 \gamma x + O \left( \frac{x}{\sqrt{x}} \right) - x + O(\sqrt{x}) \\
+& \\
+& \displaystyle = x \log x + (2 \gamma - 1)x + O(\sqrt{x}) \end{array}$
+\end{center}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MobiusStrip}
+\pmcreated{2013-03-22 12:55:28}
+\pmmodified{2013-03-22 12:55:28}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{M\"obius strip}
+\pmrecord{22}{33278}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B15}
+\pmsynonym{M\"obius band}{MobiusStrip}
+\pmrelated{KleinBottle}
+\pmrelated{Torus}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A \emph{M\"{o}bius strip} is a non-orientiable 2-dimensional surface with a 1-dimensional boundary. It can be embedded in $\mathbb{R}^3$, but only has a single \PMlinkescapetext{side}.
+
+We can parameterize the M\"{o}bius strip by
+\[
+x = r \cdot \cos{\theta}, \quad y = r \cdot \sin{\theta}, \quad z =
+(r-2)\tan{\frac{\theta}{2}}.
+\]
+The M\"{o}bius strip is therefore a subset of the solid torus.
+
+Topologically, the M\"{o}bius strip  is formed by taking a quotient space of $I^2 = [0,1] \times [0,1] \subset \mathbb{R}^2$. We do this by first letting $M$ be the partition of $I^2$ formed by the equivalence relation:
+$$(1,x) \sim (0,1-x)\quad \mbox{where} \quad 0 \leq x \leq 1,$$ and every other point in $I^2$ is only related to itself.
+
+By giving $M$ the quotient topology given by the quotient map $p: I^2 \to  M$ we obtain the M\"{o}bius strip.
+
+Schematically we can represent this identification as follows:
+
+\begin{center}
+\includegraphics[scale=0.5]{mobius-2} \\
+\tiny{Diagram 1: The identifications made on $I^2$ to make a M\"{o}bius strip. \\ We identify two opposite sides but with different orientations.}
+\end{center}
+
+Since the M\"{o}bius strip is homotopy equivalent to a circle, it has $\mathbb{Z}$\ as its fundamental group. It is not however, homeomorphic to the circle, although its boundary is.
+%%%%%
+%%%%%
+\end{document}

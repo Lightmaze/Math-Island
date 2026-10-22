@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MetasingularNumbers}
+\pmcreated{2013-06-10 20:51:40}
+\pmmodified{2013-06-10 20:51:40}
+\pmowner{porton}{9363}
+\pmmodifier{porton}{9363}
+\pmtitle{Meta-singular numbers}
+\pmrecord{10}{87334}
+\pmprivacy{1}
+\pmauthor{porton}{9363}
+\pmtype{Definition}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%\usepackage{xypic}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\em Not quite clear exposition and definition. Need to be more exact.}
+
+In \href{http://www.mathematics21.org/algebraic-general-topology.html}{my book} I defined (generalized) limit of any (e.g. non-continuous) function.
+
+But applying it, to say, a differential equation (replacing the limit in the definition of derivative with my generalized limit) does not work because the components of the equation may be of different types (for example generalized limit of a function $\mathbb{R}\rightarrow \mathbb{R}$ is \emph{not} a real number).
+
+To overcome this shortcoming I propose what I call \emph{meta-singular numbers}.
+
+[TODO: introduce the term \emph{singularity level above} for a given number system.]
+
+Let $a$ is a generalized limit. I will denote $r(a)$ such number (or generalized limit of a lower rank) that $a = \operatorname{xlim}(\{r(a)\}\times^{\mathsf{FCD}} x)$ where $x$ is a filter (that is $a$ is a limit of a constant function), if such $r(a)$ exists. I will call reduced limit repeated applying $r(\dots r(a)\dots)$ to a generalized limit $a$.
+
+This definition is for now all I know about meta-singular numbers. It's yet needed to formulate and prove some theorems.
+
+See also \href{http://www.mathematics21.org/binaries/reduced-limit.pdf}{this rough draft on my site} (in PDF format).
+\end{document}

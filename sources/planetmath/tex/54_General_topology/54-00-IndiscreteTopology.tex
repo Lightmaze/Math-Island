@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IndiscreteTopology}
+\pmcreated{2013-03-22 12:48:11}
+\pmmodified{2013-03-22 12:48:11}
+\pmowner{mathwizard}{128}
+\pmmodifier{mathwizard}{128}
+\pmtitle{indiscrete topology}
+\pmrecord{20}{33120}
+\pmprivacy{1}
+\pmauthor{mathwizard}{128}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+\pmsynonym{trivial topology}{IndiscreteTopology}
+\pmsynonym{coarse topology}{IndiscreteTopology}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+If $X$ is a set and it is endowed with a topology defined by
+
+
+$$\tau=\{X,\emptyset\} \label{eq12}$$
+then $X$ is said to have the \emph{indiscrete topology}. 
+
+ Furthermore $\tau$ is the coarsest topology a set can possess, since $\tau$
+would be a subset of any other possible topology. This topology
+gives $X$ many properties:
+\begin{itemize}
+\item Every subset of $X$ is sequentially compact.  
+\item Every function to a space with the indiscrete topology is continuous.
+\item $X$ is path connected and hence connected but is arc connected only if $X$ is uncountable or if $X$ has at most a single point. However, $X$ is both hyperconnected and ultraconnected. 
+\item If $X$ has more than one point, it is not metrizable because it is not Hausdorff. However it is pseudometrizable with the metric $d(x,y)=0$.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

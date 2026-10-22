@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IndependenceOfPadicValuations}
+\pmcreated{2013-03-22 14:12:14}
+\pmmodified{2013-03-22 14:12:14}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{independence of $p$-adic valuations}
+\pmrecord{4}{35636}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Corollary}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R99}
+\pmrelated{Valuation}
+\pmrelated{PAdicIntegers}
+\pmrelated{PAdicValuation}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+We prove the following particular case:
+
+\begin{prop}
+Let $p_1,\ldots,p_n \in \Ints$ be distinct prime numbers and let $\mid\cdot\mid_{p_i}$ be the corresponding $p$-adic valuations of $\Rats$. Let $a_1,\ldots,a_n\in \Ints$ and let $\epsilon_i$ be arbitrary positive real numbers, then there exists $y\in\Ints$ such that for all $i=1,\ldots,n$:
+$$\mid y - a_i \mid_{p_i} < \epsilon_i$$
+\end{prop}
+\begin{proof}
+Let $p$ be an arbitrary prime, and let $\epsilon$ be an arbitrary positive real number. Notice that $\Ints$ injects into $\Ints_p=\varprojlim \Ints/p^n\Ints$, the $p$-adic integers. For any $b\in \Ints$, we also write $b$ for its image in $\Ints_p$, and it can be written as a sequence $b=(b_j)$ with $b\equiv b_j \mod p^j$. Let $n=n_{p,\epsilon}\in \Nats$ be such that $p^{-n} < \epsilon$ (and thus  for any other $c\in \Ints $ such that $c\equiv b_n \mod p^n$ we have $\mid b-c \mid_p \leq p^{-n} < \epsilon$).
+
+Now, for the proof of the proposition, let $n_i=n_{p_i,\epsilon_i}$ and recall that by the Chinese Remainder Theorem we have an isomorphism:
+
+$$\prod_{i=1}^n \Ints/p_i^{n_i}\Ints \equiv \Ints/(\prod p_i^{n_i})\Ints$$
+
+Therefore we can find an element $\tilde{y}$ of $\Ints/(\prod p_i^{n_i})\Ints$ (and thus a lift $y$ of $\tilde{y}$ to $\Ints$) such that $y \equiv a_i \mod p_i^{n_i}$ for all $i=1,\ldots,n$. Hence:
+$$\mid y - a_i \mid_{p_i} < \epsilon_i$$
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

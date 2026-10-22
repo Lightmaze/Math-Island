@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UpperBoundOnvarthetan}
+\pmcreated{2013-03-22 16:09:47}
+\pmmodified{2013-03-22 16:09:47}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{upper bound on $\vartheta(n)$}
+\pmrecord{5}{38246}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem*{theorem*}{Theorem}
+\begin{document}
+\PMlinkescapeword{term}
+
+\begin{theorem*}
+Let $\vartheta(n)$ be the Chebyshev function
+\[
+\vartheta(n)=\sum_{\substack{p\le n\\p{\:\mathrm{prime}}}} \log p.
+\]
+Then $\vartheta(n)\le n\log 4$ for all $n\ge 1$.
+\end{theorem*}
+
+\begin{proof}
+By induction.
+
+The cases for $n=1$ and $n=2$ follow by inspection.
+
+For even $n>2$, the case follows immediately from the case for $n-1$ since $n$ is not prime.
+
+So let $n=2m+1$ with $m>0$ and consider $(1+1)^{2m+1}$ and its \PMlinkname{binomial expansion}{BinomialTheorem}. Since $\displaystyle {{2m+1}\choose m}={{2m+1}\choose{m+1}}$ and each term occurs exactly once, it follows that $\displaystyle {{2m+1}\choose m}\leq 4^m$. Each prime $p$ with $m+1<p\leq 2m+1$ divides ${2m+1}\choose m$, implying that their product also divides $\displaystyle {{2m+1}\choose m}$.  Hence
+\[
+\vartheta(2m+1)-\vartheta(m+1)\le\log{{2m+1}\choose m}\le m\log 4.
+\]
+By the induction hypothesis, $\vartheta(m+1)\leq(m+1)\log4$ and so $\vartheta(2m+1)\leq(2m+1)\log4$.
+\end{proof}
+
+\begin{thebibliography}{9}
+\bibitem{HW}
+G.H. Hardy, E.M. Wright, \emph{An Introduction to the Theory of Numbers}, Oxford University Press, 1938.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

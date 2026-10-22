@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WagstaffPrime}
+\pmcreated{2013-03-22 17:42:33}
+\pmmodified{2013-03-22 17:42:33}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Wagstaff prime}
+\pmrecord{4}{40153}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em Wagstaff prime} $p$ is a prime number of the form $\displaystyle \frac{2^{2n + 1} + 1}{3}$. The first few are 3, 11, 43, 683, 2731, 43691, 174763, 2796203, 715827883, etc., given in A000979 of Sloane's OEIS. The exponent of 2 in the formula given above must be an odd number for the result to be an integer in the first place, and that exponent must not be composite.
+
+Currently, the largest known Wagstaff prime, corresponding to an exponent of 42737, is approximately $4.383322622 \times 10^{12864}$. As there is no known special primality test for Wagstaff primes, Fran\c{c}ois Morain had to use elliptic curve primality proving (ECPP) over several months to prove the primality of this Wagstaff prime, finishing in August 2007.  (Morain names these primes after Samuel Wagstaff, Jr.) A000978 lists nine exponents which give probable primes.
+
+\begin{thebibliography}{1}
+\bibitem{fm} Fran\c{c}ois Morain, ``Distributed primality proving and the primality of $\frac{(2^{3539} + 1)}{3}$'' {\it Lecture Notes in Comput. Sci.} {\bf 473} (1991): 110 - 123
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AmenableNumber}
+\pmcreated{2013-03-22 16:37:02}
+\pmmodified{2013-03-22 16:37:02}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{amenable number}
+\pmrecord{5}{38815}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B34}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+An {\em amenable number} is an integer for which there exists a multiset of at least two positive integers that can be either added up or multiplied together to give the original number. To put it algebraically, for an integer $n$, there is a set of integers ${a_1, \ldots , a_k}$, for which the equalities $$n = \sum_{i = 1}^k a_i = \prod_{i = 1}^k a_i$$ hold. An elegant example is the number 6, which is an amenable number since $6 = 1 + 2 + 3 = 1 \cdot 2 \cdot 3$.
+
+All composite numbers are amenable because, even if other solutions are available, one can always make an inelegant solution by taking the prime factorization (expressed with repeated factors rather than exponents) and add as many 1s as necessary to add up to $n$. Because of the multiplicative identity, multiplying this set of integers will yield $n$ no matter how many 1s there are in the set.
+
+If we allow negative integers in the set, then all prime numbers are also amenable. Even if no other solutions are available, one can always make an inelegant solution for a prime number $p$ of ${1,\ -1,\ 1,\ -1,\ p}$. In the sum, the two positive ones are cancelled out by the two negative ones, leaving $p$, while in the product, the two negative ones cancel out the effect of their signs, leaving only the multiplicative identity to affect the final result.
+
+Amenable numbers should not be confused with amicable numbers, which are pairs of integers whose divisors add up to each other.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AdjacentFraction}
+\pmcreated{2013-03-22 12:48:23}
+\pmmodified{2013-03-22 12:48:23}
+\pmowner{XJamRastafire}{349}
+\pmmodifier{XJamRastafire}{349}
+\pmtitle{adjacent fraction}
+\pmrecord{17}{33124}
+\pmprivacy{1}
+\pmauthor{XJamRastafire}{349}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A67}
+%\pmkeywords{difference}
+%\pmkeywords{fraction}
+%\pmkeywords{successive term}
+\pmrelated{FareySequence}
+\pmrelated{UnitFraction}
+\pmrelated{ContinuedFraction}
+\pmrelated{NumeratorAndDenominatorIncreasedBySameAmount}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Two fractions $\frac{a}{b}$ and $\frac{c}{d}$, $\frac{a}{b} > \frac{c}{d}$ of the positive integers $a, b, c, d$ are {\it adjacent} if their difference is some unit fraction $\frac{1}{n}$, $n>0$ that is, if we can write:
+\begin{equation*}\frac{a}{b} - \frac{c}{d} = \frac{1}{n}.
+\end{equation*}
+
+For example the two proper fractions and unit fractions $\frac{1}{11}$ and $\frac{1}{12}$ are adjacent since: 
+\begin{equation*}
+\frac{1}{11} - \frac{1}{12} = \frac{1}{132} \; .
+\end{equation*}
+
+$\frac{1}{17}$ and $\frac{1}{19}$ are not since: 
+$$\frac{1}{17} - \frac{1}{19} = \frac{2}{323} \; . $$
+
+It is not necessary of course that fractions are both proper fractions:
+$$\frac{20}{19} - \frac{19}{19} = \frac{1}{19} \; . $$
+or unit fractions:
+$$\frac{3}{4} - \frac{2}{3} = \frac{1}{12} \; . $$
+
+All successive terms of some Farey sequence $F_{n}$ of a degree $n$ are always adjacent fractions. In the first Farey sequence $F_{1}$ of a degree 1 there are only two adjacent fractions, namely $\frac{1}{1}$ and $\frac{0}{1}$.
+
+Adjacent unit fractions can be parts of many Egyptian fractions:
+
+$$\frac{1}{70} + \frac{1}{71} = \frac{141}{4970} \; . $$
+%%%%%
+%%%%%
+\end{document}

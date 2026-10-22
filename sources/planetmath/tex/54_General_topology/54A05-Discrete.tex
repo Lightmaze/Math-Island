@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Discrete}
+\pmcreated{2013-03-22 17:56:49}
+\pmmodified{2013-03-22 17:56:49}
+\pmowner{lalberti}{18937}
+\pmmodifier{lalberti}{18937}
+\pmtitle{discrete}
+\pmrecord{8}{40445}
+\pmprivacy{1}
+\pmauthor{lalberti}{18937}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A05}
+\pmrelated{Discrete}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\R}{\mathbb{R}}
+
+\begin{document}
+This entry aims at highlighting the fact that all uses of the word \emph{discrete} in mathematics are directly related to the core concept of discrete space:
+\begin{itemize}
+\item A discrete set is a set that, endowed with the topology implied by the context, is a \PMlinkescaptetext{discrete space}. For instance for a subset of $\R^n$ and without information suggesting otherwise, the topology on the set would be assumed the usual topology induced by norms on $\R^n$.
+\item A random variable $X$ is discrete if and only if its image space is a discrete set (which by what's just been said means that the image is a discrete topological space for some topology specified by the context). The most common example by far is a random variable taking its values in a enumerated set (e.g. the values of a die, or a set of possible answers to a question in a survey).
+\item Discretization of ODEs and PDEs is the process of converting equations on functions on open sets of $\R^n$ (with boundary conditions) into equations on functions on discrete subsets of $\R^n$.
+\end{itemize}
+
+%%%%%
+%%%%%
+\end{document}

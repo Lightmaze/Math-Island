@@ -1,0 +1,963 @@
+{
+  "auditor": "/root/atlas_audit",
+  "node_count": 50,
+  "edge_count": 52,
+  "node_checks": [
+    {
+      "id": "wikipedia:Langlands_program",
+      "source_file": "sources/wikipedia/bridges/Langlands_program.html",
+      "source_sha256": "8bee4d7e6d65fe589a0d122cc5e2c19ed51f6974ecba43378e2fc4333fc87c79",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1375046757"
+    },
+    {
+      "id": "wikipedia:Modularity_theorem",
+      "source_file": "sources/wikipedia/bridges/Modularity_theorem.html",
+      "source_sha256": "fb0f13a3e9d323b6730d1a6c9447e21c5170ec20e981b61b28f59d7daa87f042",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1379046293"
+    },
+    {
+      "id": "wikipedia:Perfectoid_space",
+      "source_file": "sources/wikipedia/bridges/Perfectoid_space.html",
+      "source_sha256": "06d5d1657edf378c2d0aa8a3deb7d6cb30433bc4753c5a648de045955a3b361d",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1353719340"
+    },
+    {
+      "id": "wikipedia:Prismatic_cohomology",
+      "source_file": "sources/wikipedia/bridges/Prismatic_cohomology.html",
+      "source_sha256": "b7d5eb1f1e6162c6636cc1bcd1322a787d708455f09392c9df5b1a866d6a5e0b",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1366734585"
+    },
+    {
+      "id": "wikipedia:Étale_cohomology",
+      "source_file": "sources/wikipedia/bridges/Étale_cohomology.html",
+      "source_sha256": "60876025766961fd2a7e1e20922f7b400e1420be42d55fb645bd3be59b137a1f",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1373239782"
+    },
+    {
+      "id": "wikipedia:Motivic_cohomology",
+      "source_file": "sources/wikipedia/bridges/Motivic_cohomology.html",
+      "source_sha256": "bf5edf71fadb60b3458d717137a246640d7738065cb820e4125e90be747f07eb",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1380761532"
+    },
+    {
+      "id": "wikipedia:Geometric_Langlands_correspondence",
+      "source_file": "sources/wikipedia/bridges/Geometric_Langlands_correspondence.html",
+      "source_sha256": "3ed2e1cd5106c7a712bd2f7236895346ee071ddbf592212d17435a42846e4f2a",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1369792642"
+    },
+    {
+      "id": "wikipedia:Homotopy_type_theory",
+      "source_file": "sources/wikipedia/bridges/Homotopy_type_theory.html",
+      "source_sha256": "b19cb105e5b3306a2d7c6bce6fa145a08bd6e9eb17850f68b2a96957b68cb214",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1375294630"
+    },
+    {
+      "id": "wikipedia:Univalent_foundations",
+      "source_file": "sources/wikipedia/bridges/Univalent_foundations.html",
+      "source_sha256": "7407f68be256bfec1f425efe3f1a3bed3b7a9d187ca4f315cebb7d77f336126e",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1375325794"
+    },
+    {
+      "id": "wikipedia:Topological_quantum_field_theory",
+      "source_file": "sources/wikipedia/bridges/Topological_quantum_field_theory.html",
+      "source_sha256": "67bedc7265000b8aa67d7a84c4c9b88adc9d62acf41f768e3aa4ed5a36951da6",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1378541214"
+    },
+    {
+      "id": "wikipedia:Mirror_symmetry_(string_theory)",
+      "source_file": "sources/wikipedia/bridges/Mirror_symmetry_(string_theory).html",
+      "source_sha256": "e2c8b966cefdcfd8a997978d96f97c69794cc53bdc946632e07f4f8eca9e0d39",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1347377443"
+    },
+    {
+      "id": "wikipedia:Floer_homology",
+      "source_file": "sources/wikipedia/bridges/Floer_homology.html",
+      "source_sha256": "04d0e98ce830cdbd5e4de4d39c9968a58988531581c3bc4a2ce7962c9b01912d",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1380510089"
+    },
+    {
+      "id": "wikipedia:Monstrous_moonshine",
+      "source_file": "sources/wikipedia/bridges/Monstrous_moonshine.html",
+      "source_sha256": "068a0799e67f7ac6a51cebafb715ac31d11fe5c038658b2508b917fcfd0441a5",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1369262254"
+    },
+    {
+      "id": "wikipedia:Vertex_operator_algebra",
+      "source_file": "sources/wikipedia/bridges/Vertex_operator_algebra.html",
+      "source_sha256": "94c6d43306c16f9b1d7de2fbdb4dde9511b4dbbe0e4a52a15522763764661753",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1378920663"
+    },
+    {
+      "id": "wikipedia:Modular_form",
+      "source_file": "sources/wikipedia/bridges/Modular_form.html",
+      "source_sha256": "00485a487a73c3eb4c8fd4d049105bb5693c3386953b346db56b2a17f7726584",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1379683133"
+    },
+    {
+      "id": "wikipedia:Ramanujan_graph",
+      "source_file": "sources/wikipedia/bridges/Ramanujan_graph.html",
+      "source_sha256": "1422a3860b732d229ad14731c1550d0f3b18ce265237d71b36dafc6749c7a479",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1374875052"
+    },
+    {
+      "id": "wikipedia:Expander_graph",
+      "source_file": "sources/wikipedia/bridges/Expander_graph.html",
+      "source_sha256": "668fd14f454fa0f51ef059cc95163dd8e03b5866d80c87886c218cdbf26be0eb",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1378614164"
+    },
+    {
+      "id": "wikipedia:Spectral_graph_theory",
+      "source_file": "sources/wikipedia/bridges/Spectral_graph_theory.html",
+      "source_sha256": "50e990e53c684fbda89790c8bc2a3cd66645ee3a2728a6a5b90f51059f6c1d6a",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1366291461"
+    },
+    {
+      "id": "wikipedia:Compressed_sensing",
+      "source_file": "sources/wikipedia/bridges/Compressed_sensing.html",
+      "source_sha256": "a99bb2642f59066ebbbb5ad136437a0195506b327d593993caedbbe461e2f95b",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1380611502"
+    },
+    {
+      "id": "wikipedia:Restricted_isometry_property",
+      "source_file": "sources/wikipedia/bridges/Restricted_isometry_property.html",
+      "source_sha256": "c7390311f618b78026b2e7e86e27626af7de8c69281aaaba67577a83415a4033",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1346168624"
+    },
+    {
+      "id": "wikipedia:Random_matrix_theory",
+      "source_file": "sources/wikipedia/bridges/Random_matrix_theory.html",
+      "source_sha256": "7b139c224a2234da7877257b698d734dc959ca268989de55d3575158e9e4c0d5",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1378391057"
+    },
+    {
+      "id": "wikipedia:Free_probability",
+      "source_file": "sources/wikipedia/bridges/Free_probability.html",
+      "source_sha256": "af941cd178dcef09567612052760eff34077360456b42714e3b468b3af51861e",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1376615804"
+    },
+    {
+      "id": "wikipedia:Optimal_transport",
+      "source_file": "sources/wikipedia/bridges/Optimal_transport.html",
+      "source_sha256": "78511c1ac5d7be4f89ccbbd64ad908c27deea0db61491da71e1bd08f8074d28b",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1351524930"
+    },
+    {
+      "id": "wikipedia:Ricci_flow",
+      "source_file": "sources/wikipedia/bridges/Ricci_flow.html",
+      "source_sha256": "8e9899239774f1cb2a4018b87c4615b09ca0148f168d9b408e206fe7e8ec5687",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1380743965"
+    },
+    {
+      "id": "wikipedia:Geometric_measure_theory",
+      "source_file": "sources/wikipedia/bridges/Geometric_measure_theory.html",
+      "source_sha256": "584f800c3eae46125e0cd41e740ff24be30342dadcf8c9fee42b46583c36434f",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1376060510"
+    },
+    {
+      "id": "wikipedia:Regularity_structure",
+      "source_file": "sources/wikipedia/bridges/Regularity_structure.html",
+      "source_sha256": "64b8bb6e58d6857d2750b6295d52e5279e0cdd0d9ffc0f653d7a6fc4d5ccc5b7",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1366347093"
+    },
+    {
+      "id": "wikipedia:Rough_path",
+      "source_file": "sources/wikipedia/bridges/Rough_path.html",
+      "source_sha256": "8d57bd30e9dfbd36fbc108523dbe181afdd0142c5728b5317dce033e16aa94f4",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1345086080"
+    },
+    {
+      "id": "wikipedia:Large_sieve",
+      "source_file": "sources/wikipedia/bridges/Large_sieve.html",
+      "source_sha256": "4c8ebbba738288095e88d2fb86aef47d58a960458ff2eaeef2d53aabcb13e02e",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1308193592"
+    },
+    {
+      "id": "wikipedia:Arithmetic_combinatorics",
+      "source_file": "sources/wikipedia/bridges/Arithmetic_combinatorics.html",
+      "source_sha256": "54d7841a6ac71ee4851fbaf0d6fe3a27aeda4d7acae95b3d22560b8e46a658ad",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1378670503"
+    },
+    {
+      "id": "wikipedia:Green–Tao_theorem",
+      "source_file": "sources/wikipedia/bridges/Green–Tao_theorem.html",
+      "source_sha256": "6f335def71f739257f0136866a8cad0371e4e52067c93ab4f782b64ea0ffe5ff",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1380986208"
+    },
+    {
+      "id": "wikipedia:Sphere_packing",
+      "source_file": "sources/wikipedia/bridges/Sphere_packing.html",
+      "source_sha256": "8b9e90311f3d86ba3638fdc547707992f7f8cfc97c71318c86e9645d04300ed0",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1375259008"
+    },
+    {
+      "id": "wikipedia:Lovász_local_lemma",
+      "source_file": "sources/wikipedia/bridges/Lovász_local_lemma.html",
+      "source_sha256": "e97f37f1a0b7abe425f6950e3136fdae96c227b04ee91f900afcaab0bb592fa9",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1285525974"
+    },
+    {
+      "id": "wikipedia:Randomized_algorithm",
+      "source_file": "sources/wikipedia/bridges/Randomized_algorithm.html",
+      "source_sha256": "698027c00234d1eea1cb138f7113f2981d350e630fe9497c9d88c1f77e8c3397",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1380770229"
+    },
+    {
+      "id": "wikipedia:Ricci_curvature",
+      "source_file": "sources/wikipedia/bridges/Ricci_curvature.html",
+      "source_sha256": "0e406859c20610ed609640585348e347721a9cb8c19cb9269507dbe00b81472d",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1374480308"
+    },
+    {
+      "id": "wikipedia:Error_correction_code",
+      "source_file": "sources/wikipedia/bridges/Error_correction_code.html",
+      "source_sha256": "06b57560d2b1bef98fdcad31b79a3e80a6ee87e45e5fc64b19e43435fe7c7eea",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1362628481"
+    },
+    {
+      "id": "wikipedia:Stable_theory",
+      "source_file": "sources/wikipedia/bridges/Stable_theory.html",
+      "source_sha256": "44a81692a7e7a8d791c01d70daa002a1b9e7344c13b8dd40286f9517c418047b",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1370270287"
+    },
+    {
+      "id": "wikipedia:Szemerédi_regularity_lemma",
+      "source_file": "sources/wikipedia/bridges/Szemerédi_regularity_lemma.html",
+      "source_sha256": "473e4caaad0df91aeffcd3a87fa0b856ccce3f08030ddd24b5e857df855b2ae8",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1368655010"
+    },
+    {
+      "id": "wikipedia:Intuitionistic_logic",
+      "source_file": "sources/wikipedia/bridges/Intuitionistic_logic.html",
+      "source_sha256": "b18a604f67dbe2fdf5a8840f060161588a759a6eddf00c38750522732065c17d",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1372008844"
+    },
+    {
+      "id": "wikipedia:Type_theory",
+      "source_file": "sources/wikipedia/bridges/Type_theory.html",
+      "source_sha256": "fa6178d8d5438f03daf53478d94c2549d3c789609b5cb22efb06199e51522c46",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1375730930"
+    },
+    {
+      "id": "wikipedia:Homotopy_theory",
+      "source_file": "sources/wikipedia/bridges/Homotopy_theory.html",
+      "source_sha256": "54bd693f345ce60b1eee507dd3d6f9ce05d3ebde01f73cfe272338b501908db5",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1380684734"
+    },
+    {
+      "id": "wikipedia:Jones_polynomial",
+      "source_file": "sources/wikipedia/bridges/Jones_polynomial.html",
+      "source_sha256": "90e0013ed11d871b14d661ee7c579dc43c7658d1671341af1b7d625cb2417f41",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1374106605"
+    },
+    {
+      "id": "wikipedia:Concentration_of_measure",
+      "source_file": "sources/wikipedia/bridges/Concentration_of_measure.html",
+      "source_sha256": "19ceec2b1f8a48e9bf2b3ac1b81229063fd9c9c0544f0a5b62df895e7b4f8992",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1294813799"
+    },
+    {
+      "id": "wikipedia:Johnson–Lindenstrauss_lemma",
+      "source_file": "sources/wikipedia/bridges/Johnson–Lindenstrauss_lemma.html",
+      "source_sha256": "bf846dd786c3f923013ab186f15c5191fa60b3312602ec7d4aecb5a95809b200",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1380715096"
+    },
+    {
+      "id": "wikipedia:Polynomial_partitioning",
+      "source_file": "sources/wikipedia/bridges/Polynomial_partitioning.html",
+      "source_sha256": "b2f598b06cc4b714c6ce8bd18fbacf5b661667d92dd02ff542cd5eadc1aeefa5",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1380998454"
+    },
+    {
+      "id": "wikipedia:Semidefinite_programming",
+      "source_file": "sources/wikipedia/bridges/Semidefinite_programming.html",
+      "source_sha256": "0cb542f39bfdd6c71640fb364924c502b6395d73855dcba05b745e5105e867f9",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1371574435"
+    },
+    {
+      "id": "wikipedia:Shannon_capacity_of_a_graph",
+      "source_file": "sources/wikipedia/bridges/Shannon_capacity_of_a_graph.html",
+      "source_sha256": "347b1c8183612a9a4c8f7e21c16e595dae59b12eb9918b369a8603ac27f6cc41",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1377677202"
+    },
+    {
+      "id": "wikipedia:Polynomial_interpolation",
+      "source_file": "sources/wikipedia/bridges/Polynomial_interpolation.html",
+      "source_sha256": "c49e1822e6b85c5a8d97c16bb0db344c21fe0da68afdf1bf2e1c0c4eed6a486b",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1380968014"
+    },
+    {
+      "id": "wikipedia:Reed–Solomon_error_correction",
+      "source_file": "sources/wikipedia/bridges/Reed–Solomon_error_correction.html",
+      "source_sha256": "9971c026a731d935eb21b2853c158048f022b53e8edbc8b3442181b1621b99aa",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1380216952"
+    },
+    {
+      "id": "wikipedia:Polynomial_identity_testing",
+      "source_file": "sources/wikipedia/bridges/Polynomial_identity_testing.html",
+      "source_sha256": "51ea3f249832526be0a86c04c24e467e381383bb53663472bd22adda8538a925",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1373706122"
+    },
+    {
+      "id": "wikipedia:Sum-check_protocol",
+      "source_file": "sources/wikipedia/bridges/Sum-check_protocol.html",
+      "source_sha256": "0f61f247f6af2d60b34b14ea65a38433b20138dbd8a99a29043dd21ec97066bb",
+      "hash_matches_node_and_manifest": true,
+      "h1_matches_title": true,
+      "revision_id": "1379702740"
+    }
+  ],
+  "edge_checks": [
+    {
+      "source": "wikipedia:Langlands_program",
+      "target": "wikipedia:Geometric_Langlands_correspondence",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Geometric Langlands correspondence"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Modularity_theorem",
+      "target": "wikipedia:Langlands_program",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Langlands program",
+        "Langlands program"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Modularity_theorem",
+      "target": "wikipedia:Modular_form",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "modular forms"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Prismatic_cohomology",
+      "target": "wikipedia:Motivic_cohomology",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Motivic cohomology"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Motivic_cohomology",
+      "target": "wikipedia:Étale_cohomology",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "étale cohomology"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Homotopy_type_theory",
+      "target": "wikipedia:Homotopy_theory",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "homotopy theory"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Homotopy_type_theory",
+      "target": "wikipedia:Univalent_foundations",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "univalent foundations",
+        "Univalent foundations"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Univalent_foundations",
+      "target": "wikipedia:Homotopy_type_theory",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "homotopy type theory",
+        "HoTT"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Topological_quantum_field_theory",
+      "target": "wikipedia:Floer_homology",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Floer homology",
+        "Floer homology"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Topological_quantum_field_theory",
+      "target": "wikipedia:Jones_polynomial",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Jones–Witten theory",
+        "Jones polynomial"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Mirror_symmetry_(string_theory)",
+      "target": "wikipedia:Topological_quantum_field_theory",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "topological quantum field theory"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Floer_homology",
+      "target": "wikipedia:Topological_quantum_field_theory",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "topological quantum field theory",
+        "topological quantum field theory"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Monstrous_moonshine",
+      "target": "wikipedia:Vertex_operator_algebra",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "vertex operator algebra",
+        "vertex operator algebras",
+        "vertex operator algebra",
+        "twisted module"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Vertex_operator_algebra",
+      "target": "wikipedia:Geometric_Langlands_correspondence",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "geometric Langlands correspondence"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Vertex_operator_algebra",
+      "target": "wikipedia:Monstrous_moonshine",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "monstrous moonshine",
+        "Monstrous moonshine"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Modular_form",
+      "target": "wikipedia:Langlands_program",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Langlands program"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Modular_form",
+      "target": "wikipedia:Modularity_theorem",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "modularity theorem",
+        "modularity theorem"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Modular_form",
+      "target": "wikipedia:Sphere_packing",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "sphere packing"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Ramanujan_graph",
+      "target": "wikipedia:Error_correction_code",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "error correcting codes"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Ramanujan_graph",
+      "target": "wikipedia:Expander_graph",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "spectral expanders",
+        "expander graphs",
+        "applications",
+        "Expander graph"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Ramanujan_graph",
+      "target": "wikipedia:Random_matrix_theory",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "edge universality"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Ramanujan_graph",
+      "target": "wikipedia:Spectral_graph_theory",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "spectral graph theory",
+        "spectrum",
+        "Spectral graph theory"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Expander_graph",
+      "target": "wikipedia:Ramanujan_graph",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Ramanujan graphs",
+        "Ramanujan graphs"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Expander_graph",
+      "target": "wikipedia:Random_matrix_theory",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "edge universality"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Expander_graph",
+      "target": "wikipedia:Spectral_graph_theory",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "spectral",
+        "Spectral graph theory"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Spectral_graph_theory",
+      "target": "wikipedia:Expander_graph",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Expander graph"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Restricted_isometry_property",
+      "target": "wikipedia:Compressed_sensing",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "compressed sensing",
+        "Compressed sensing"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Restricted_isometry_property",
+      "target": "wikipedia:Johnson–Lindenstrauss_lemma",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Johnson–Lindenstrauss lemma"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Restricted_isometry_property",
+      "target": "wikipedia:Random_matrix_theory",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "random matrices"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Random_matrix_theory",
+      "target": "wikipedia:Concentration_of_measure",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "concentration of measure"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Random_matrix_theory",
+      "target": "wikipedia:Free_probability",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "free probability"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Free_probability",
+      "target": "wikipedia:Random_matrix_theory",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "random matrix theory",
+        "empirical spectral measure",
+        "Random matrix"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Ricci_flow",
+      "target": "wikipedia:Ricci_curvature",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Ricci curvature"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Arithmetic_combinatorics",
+      "target": "wikipedia:Green–Tao_theorem",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Green–Tao theorem"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Green–Tao_theorem",
+      "target": "wikipedia:Arithmetic_combinatorics",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Arithmetic combinatorics"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Sphere_packing",
+      "target": "wikipedia:Semidefinite_programming",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "semidefinite programs"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Lovász_local_lemma",
+      "target": "wikipedia:Randomized_algorithm",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "randomized algorithm"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Randomized_algorithm",
+      "target": "wikipedia:Expander_graph",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "expander graphs"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Ricci_curvature",
+      "target": "wikipedia:Optimal_transport",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "optimal transport"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Ricci_curvature",
+      "target": "wikipedia:Ricci_flow",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Ricci flow",
+        "Ricci flow",
+        "Ricci flow",
+        "convergence theorem"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Error_correction_code",
+      "target": "wikipedia:Reed–Solomon_error_correction",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Reed–Solomon coding",
+        "Reed–Solomon error correction"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Stable_theory",
+      "target": "wikipedia:Arithmetic_combinatorics",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "arithmetic combinatorics"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Szemerédi_regularity_lemma",
+      "target": "wikipedia:Stable_theory",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "stable"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Type_theory",
+      "target": "wikipedia:Homotopy_type_theory",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "homotopy type theory",
+        "homotopy type theory",
+        "Homotopy type theory",
+        "Homotopy type theory",
+        "homotopy type theory",
+        "Homotopy type theory"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Type_theory",
+      "target": "wikipedia:Intuitionistic_logic",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "intuitionistic",
+        "intuitionistic logic",
+        "intuitionistic logic"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Homotopy_theory",
+      "target": "wikipedia:Homotopy_type_theory",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Homotopy type theory"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Johnson–Lindenstrauss_lemma",
+      "target": "wikipedia:Compressed_sensing",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "compressed sensing"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Johnson–Lindenstrauss_lemma",
+      "target": "wikipedia:Concentration_of_measure",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "concentration of measure"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Johnson–Lindenstrauss_lemma",
+      "target": "wikipedia:Random_matrix_theory",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "random matrix"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Johnson–Lindenstrauss_lemma",
+      "target": "wikipedia:Restricted_isometry_property",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "Restricted isometry property"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Reed–Solomon_error_correction",
+      "target": "wikipedia:Polynomial_interpolation",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "polynomial interpolation"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    },
+    {
+      "source": "wikipedia:Polynomial_identity_testing",
+      "target": "wikipedia:Randomized_algorithm",
+      "content_link_found": true,
+      "matched_anchor_labels": [
+        "finding deterministic algorithms"
+      ],
+      "relation": "source_hyperlink",
+      "evidence_hash_matches_source": true
+    }
+  ],
+  "pass": true,
+  "scope": "All cached article/section title/hash pairs and all selected article-body hyperlinks; does not establish mathematical truth or proof dependency."
+}

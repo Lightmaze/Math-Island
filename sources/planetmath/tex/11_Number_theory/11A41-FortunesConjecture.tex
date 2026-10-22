@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FortunesConjecture}
+\pmcreated{2013-03-22 17:31:17}
+\pmmodified{2013-03-22 17:31:17}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Fortune's conjecture}
+\pmrecord{4}{39913}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+(Reo F. Fortune) For any integer $n > 0$, the difference between the primorial $$n\# = \prod_{i = 1}^{\pi(n)} p_i$$ (where $\pi(x)$ is the prime counting function and $p_i$ is the $i$th prime number) and the nearest prime number above (excluding the possible primorial prime $n\# + 1$) is always a prime number. That is, any Fortunate number is a Fortunate prime.
+
+It is obvious that since $n\#$ is divisible by each prime $p < p_{\pi(n)}$, then each $n\# + p$ will also be divisible by that same $p$ and thus not prime. If there is a prime $q > n\# + 1$ such that there is a composite number $m = q - n\#$, then $m$ would have to have at least two prime factors both of which would have to be divisible by primes greater than $p_{\pi(n)}$.
+
+Despite verification for the first thousand primorials, this conjecture remains unproven as of 2007. Disproof could require finding a composite Fortunate number. Such a number would have to be odd, and indeed not divisible by the first thousand primes. Chris Caldwell, writing for the Prime Pages, argues that by the prime number theorem, finding a composite Fortunate number is tantamount to searching for a prime gap at least $(\log n\#)^2$ long immediately following a primorial, something he considers unlikely.
+
+\begin{thebibliography}{1}
+\bibitem{sg} S. W. Golomb, ``The evidence for Fortune's conjecture,'' {\it Math. Mag.} {\bf 54} (1981): 209 - 210. MR 82i:10053 
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

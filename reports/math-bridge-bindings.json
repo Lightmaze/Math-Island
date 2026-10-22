@@ -1,0 +1,241 @@
+{
+  "schema_version": "math-atlas-bridge-bindings-1",
+  "nodes_path": "/workspace/math-atlas/data/nodes.jsonl",
+  "nodes_sha256": "4f146b824e4cce0f3b8e47e1c756557124c5075288fdf8cd7db0145a879abce1",
+  "method": "Explicit manually reviewed endpoint concept selection; no fuzzy matching; absent source records remain unbound.",
+  "bound_count": 21,
+  "missing_endpoints": [],
+  "bindings": [
+    {
+      "bridge_id": "bridge:001",
+      "status": "bound",
+      "binding_reason": "source: exact concept title; target: exact concept title; Wikipedia duplicate uses canonical PlanetMath ID",
+      "source_id": "pm:EllipticCurve",
+      "source_source_url": "https://github.com/planetmath/11_Number_theory/blob/master/11G07-EllipticCurve.tex",
+      "source_node_label": "elliptic curve",
+      "target_id": "pm:ModularForm",
+      "target_source_url": "https://github.com/planetmath/11_Number_theory/blob/master/11F11-ModularForm.tex",
+      "target_node_label": "modular form"
+    },
+    {
+      "bridge_id": "bridge:002",
+      "status": "bound",
+      "binding_reason": "source: exact concept title; Wikipedia duplicate uses canonical PlanetMath ID; target: fetched mathematical concept page",
+      "source_id": "pm:ModularForm",
+      "source_source_url": "https://github.com/planetmath/11_Number_theory/blob/master/11F11-ModularForm.tex",
+      "source_node_label": "modular form",
+      "target_id": "wikipedia:Sphere_packing",
+      "target_source_url": "https://en.wikipedia.org/wiki/Sphere_packing",
+      "target_node_label": "Sphere packing"
+    },
+    {
+      "bridge_id": "bridge:003",
+      "status": "bound",
+      "binding_reason": "source: exact concept title; target: exact concept title",
+      "source_id": "pm:HodgeTheory",
+      "source_source_url": "https://github.com/planetmath/14_Algebraic_geometry/blob/master/14N05-HodgeTheory.tex",
+      "source_node_label": "Hodge theory",
+      "target_id": "pm:Matroid",
+      "target_source_url": "https://github.com/planetmath/05_Combinatorics/blob/master/05B35-Matroid.tex",
+      "target_node_label": "matroid"
+    },
+    {
+      "bridge_id": "bridge:004",
+      "status": "bound",
+      "binding_reason": "source: fetched theorem page; target: fetched method concept; bridge specifies the Moser–Tardos subclass",
+      "source_id": "wikipedia:Lovász_local_lemma",
+      "source_source_url": "https://en.wikipedia.org/wiki/Lov%C3%A1sz_local_lemma",
+      "source_node_label": "Lovász local lemma",
+      "target_id": "wikipedia:Randomized_algorithm",
+      "target_source_url": "https://en.wikipedia.org/wiki/Randomized_algorithm",
+      "target_node_label": "Randomized algorithm"
+    },
+    {
+      "bridge_id": "bridge:005",
+      "status": "bound",
+      "binding_reason": "source: exact named theorem; accent/apostrophe spelling normalized; target: source explicitly lists prime number as synonym and defines prime integers; original TeX read",
+      "source_id": "pm:SzemeredisTheorem",
+      "source_source_url": "https://github.com/planetmath/11_Number_theory/blob/master/11B25-SzemeredisTheorem.tex",
+      "source_node_label": "Szemerédi's theorem",
+      "target_id": "pm:Prime",
+      "target_source_url": "https://github.com/planetmath/11_Number_theory/blob/master/11A41-Prime.tex",
+      "target_node_label": "prime"
+    },
+    {
+      "bridge_id": "bridge:006",
+      "status": "bound",
+      "binding_reason": "source: requested-title ID redirects to Transportation theory (mathematics); mathematics page, not shipping logistics; target: fetched mathematical curvature concept page",
+      "source_id": "wikipedia:Optimal_transport",
+      "source_source_url": "https://en.wikipedia.org/wiki/Transportation_theory_(mathematics)",
+      "source_node_label": "Transportation theory (mathematics)",
+      "target_id": "wikipedia:Ricci_curvature",
+      "target_source_url": "https://en.wikipedia.org/wiki/Ricci_curvature",
+      "target_node_label": "Ricci curvature"
+    },
+    {
+      "bridge_id": "bridge:007",
+      "status": "bound",
+      "binding_reason": "source: fetched graph concept page; target: fetched coding-theory concept page; explicit terminology alias",
+      "source_id": "wikipedia:Expander_graph",
+      "source_source_url": "https://en.wikipedia.org/wiki/Expander_graph",
+      "source_node_label": "Expander graph",
+      "target_id": "wikipedia:Error_correction_code",
+      "target_source_url": "https://en.wikipedia.org/wiki/Error_correction_code",
+      "target_node_label": "Error correction code"
+    },
+    {
+      "bridge_id": "bridge:008",
+      "status": "bound",
+      "binding_reason": "source: model-theoretic stability; explicitly corrected initial Wikipedia Stability_theory request, which concerns dynamics; target: fetched named regularity theorem page",
+      "source_id": "wikipedia:Stable_theory",
+      "source_source_url": "https://en.wikipedia.org/wiki/Stable_theory",
+      "source_node_label": "Stable theory",
+      "target_id": "wikipedia:Szemerédi_regularity_lemma",
+      "target_source_url": "https://en.wikipedia.org/wiki/Szemer%C3%A9di_regularity_lemma",
+      "target_node_label": "Szemerédi regularity lemma"
+    },
+    {
+      "bridge_id": "bridge:009",
+      "status": "bound",
+      "binding_reason": "source: fetched logical-system page; bridge restricts to matching propositional calculus; target: exact concept title; bridge restricts to typed subsystem",
+      "source_id": "wikipedia:Intuitionistic_logic",
+      "source_source_url": "https://en.wikipedia.org/wiki/Intuitionistic_logic",
+      "source_node_label": "Intuitionistic logic",
+      "target_id": "pm:LambdaCalculus",
+      "target_source_url": "https://github.com/planetmath/03_Mathematical_logic_and_foundations/blob/master/03B40-LambdaCalculus.tex",
+      "target_node_label": "lambda calculus"
+    },
+    {
+      "bridge_id": "bridge:010",
+      "status": "bound",
+      "binding_reason": "source: general type-theory page; not identified with Russell’s simple type theory; target: fetched topology theory page",
+      "source_id": "wikipedia:Type_theory",
+      "source_source_url": "https://en.wikipedia.org/wiki/Type_theory",
+      "source_node_label": "Type theory",
+      "target_id": "wikipedia:Homotopy_theory",
+      "target_source_url": "https://en.wikipedia.org/wiki/Homotopy_theory",
+      "target_node_label": "Homotopy theory"
+    },
+    {
+      "bridge_id": "bridge:011",
+      "status": "bound",
+      "binding_reason": "source: exact concept title; target: fetched named invariant page",
+      "source_id": "pm:VonNeumannAlgebra",
+      "source_source_url": "https://github.com/planetmath/46_Functional_analysis/blob/master/46C15-VonNeumannAlgebra.tex",
+      "source_node_label": "von Neumann algebra",
+      "target_id": "wikipedia:Jones_polynomial",
+      "target_source_url": "https://en.wikipedia.org/wiki/Jones_polynomial",
+      "target_node_label": "Jones polynomial"
+    },
+    {
+      "bridge_id": "bridge:012",
+      "status": "bound",
+      "binding_reason": "source: exact concept title; target: exact concept title; not etale fundamental group",
+      "source_id": "pm:CoveringSpace",
+      "source_source_url": "https://github.com/planetmath/55_Algebraic_topology/blob/master/55R05-CoveringSpace.tex",
+      "source_node_label": "covering space",
+      "target_id": "pm:FundamentalGroup",
+      "target_source_url": "https://github.com/planetmath/57_Manifolds_and_cell_complexes/blob/master/57M05-FundamentalGroup.tex",
+      "target_node_label": "fundamental group"
+    },
+    {
+      "bridge_id": "bridge:013",
+      "status": "bound",
+      "binding_reason": "source: source pmdefines radical ideal and explicitly defines I=sqrt(I); original TeX read; target: source pmdefines algebraic set and explicitly gives V(S); original TeX read",
+      "source_id": "pm:RadicalOfAnIdeal",
+      "source_source_url": "https://github.com/planetmath/14_Algebraic_geometry/blob/master/14A05-RadicalOfAnIdeal.tex",
+      "source_node_label": "radical of an ideal",
+      "target_id": "pm:AlgebraicSetsAndPolynomialIdeals",
+      "target_source_url": "https://github.com/planetmath/14_Algebraic_geometry/blob/master/14A10-AlgebraicSetsAndPolynomialIdeals.tex",
+      "target_node_label": "algebraic sets and polynomial ideals"
+    },
+    {
+      "bridge_id": "bridge:014",
+      "status": "bound",
+      "binding_reason": "source: exact concept title; target: exact concept title",
+      "source_id": "pm:GaussianCurvature",
+      "source_source_url": "https://github.com/planetmath/53_Differential_geometry/blob/master/53A05-GaussianCurvature.tex",
+      "source_node_label": "Gaussian curvature",
+      "target_id": "pm:EulerCharacteristic",
+      "target_source_url": "https://github.com/planetmath/55_Algebraic_topology/blob/master/55N99-EulerCharacteristic.tex",
+      "target_node_label": "Euler characteristic"
+    },
+    {
+      "bridge_id": "bridge:015",
+      "status": "bound",
+      "binding_reason": "source: exact concept title; target: exact PDE concept title; bridge adds potential term explicitly",
+      "source_id": "pm:BrownianMotion",
+      "source_source_url": "https://github.com/planetmath/60_Probability_theory_and_stochastic_processes/blob/master/60J65-BrownianMotion.tex",
+      "source_node_label": "Brownian motion",
+      "target_id": "pm:HeatEquation",
+      "target_source_url": "https://github.com/planetmath/35_Partial_differential_equations/blob/master/35Q99-HeatEquation.tex",
+      "target_node_label": "heat equation"
+    },
+    {
+      "bridge_id": "bridge:016",
+      "status": "bound",
+      "binding_reason": "source: fetched named matrix property page; target: fetched recovery-method page",
+      "source_id": "wikipedia:Restricted_isometry_property",
+      "source_source_url": "https://en.wikipedia.org/wiki/Restricted_isometry_property",
+      "source_node_label": "Restricted isometry property",
+      "target_id": "wikipedia:Compressed_sensing",
+      "target_source_url": "https://en.wikipedia.org/wiki/Compressed_sensing",
+      "target_node_label": "Compressed sensing"
+    },
+    {
+      "bridge_id": "bridge:017",
+      "status": "bound",
+      "binding_reason": "source: fetched probability concept page; target: fetched named embedding theorem page",
+      "source_id": "wikipedia:Concentration_of_measure",
+      "source_source_url": "https://en.wikipedia.org/wiki/Concentration_of_measure",
+      "source_node_label": "Concentration of measure",
+      "target_id": "wikipedia:Johnson–Lindenstrauss_lemma",
+      "target_source_url": "https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma",
+      "target_node_label": "Johnson–Lindenstrauss lemma"
+    },
+    {
+      "bridge_id": "bridge:018",
+      "status": "bound",
+      "binding_reason": "source: exact named theorem; dash spelling normalized; source bridge uses an adapted topological zero principle; target: fetched mathematical method page",
+      "source_id": "pm:BorsukUlamTheorem",
+      "source_source_url": "https://github.com/planetmath/54_General_topology/blob/master/54C99-BorsukUlamTheorem.tex",
+      "source_node_label": "Borsuk-Ulam theorem",
+      "target_id": "wikipedia:Polynomial_partitioning",
+      "target_source_url": "https://en.wikipedia.org/wiki/Polynomial_method_in_combinatorics#Polynomial_partitioning",
+      "target_node_label": "Polynomial partitioning"
+    },
+    {
+      "bridge_id": "bridge:019",
+      "status": "bound",
+      "binding_reason": "source: fetched optimization method page; target: fetched zero-error graph capacity page; not ordinary noisy channel capacity",
+      "source_id": "wikipedia:Semidefinite_programming",
+      "source_source_url": "https://en.wikipedia.org/wiki/Semidefinite_programming",
+      "source_node_label": "Semidefinite programming",
+      "target_id": "wikipedia:Shannon_capacity_of_a_graph",
+      "target_source_url": "https://en.wikipedia.org/wiki/Shannon_capacity_of_a_graph",
+      "target_node_label": "Shannon capacity of a graph"
+    },
+    {
+      "bridge_id": "bridge:020",
+      "status": "bound",
+      "binding_reason": "source: fetched polynomial reconstruction method page; target: fetched named code-family page",
+      "source_id": "wikipedia:Polynomial_interpolation",
+      "source_source_url": "https://en.wikipedia.org/wiki/Polynomial_interpolation",
+      "source_node_label": "Polynomial interpolation",
+      "target_id": "wikipedia:Reed–Solomon_error_correction",
+      "target_source_url": "https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction",
+      "target_node_label": "Reed–Solomon error correction"
+    },
+    {
+      "bridge_id": "bridge:021",
+      "status": "bound",
+      "binding_reason": "source: fetched algebraic randomized testing method page; target: fetched named interactive proof protocol page",
+      "source_id": "wikipedia:Polynomial_identity_testing",
+      "source_source_url": "https://en.wikipedia.org/wiki/Polynomial_identity_testing",
+      "source_node_label": "Polynomial identity testing",
+      "target_id": "wikipedia:Sum-check_protocol",
+      "target_source_url": "https://en.wikipedia.org/wiki/Sum-check_protocol",
+      "target_node_label": "Sum-check protocol"
+    }
+  ]
+}

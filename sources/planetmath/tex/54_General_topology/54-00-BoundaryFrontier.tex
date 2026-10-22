@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BoundaryFrontier}
+\pmcreated{2013-03-22 13:34:46}
+\pmmodified{2013-03-22 13:34:46}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{boundary / frontier}
+\pmrecord{17}{34200}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+\pmsynonym{boundary}{BoundaryFrontier}
+\pmsynonym{frontier}{BoundaryFrontier}
+\pmsynonym{topological boundary}{BoundaryFrontier}
+\pmrelated{ExtendedBoundary}
+\pmrelated{Interior}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\def\R{\mathbb{R}}
+\DeclareMathOperator{\bd}{bd}
+\DeclareMathOperator{\fr}{fr}
+\begin{document}
+\PMlinkescapeword{term}
+
+{\bf Definition.}
+Let $X$ be a topological space and let $A$ be a subset 
+of $X$. The \emph{boundary} (or \emph{frontier}) of $A$ is the set
+$\partial A = \overline{A}\cap \overline{X\backslash A}$,
+where the overline denotes the closure of a set.
+Instead of $\partial A$, many authors use some other notation
+such as $\bd(A)$, $\fr(A)$, $A^b$ or $\beta(A)$.
+Note that the $\partial$ symbol is also used for other meanings of `boundary'.
+
+From the definition, it follows that the boundary of any set is a closed set.
+It also follows that $\partial A = \partial(X\backslash A)$,
+and $\partial X=\varnothing=\partial\varnothing$.
+
+The term `boundary' (but not `frontier') is used in a different sense for topological manifolds: the boundary $\partial M$ of a topological $n$-manifold $M$ is the set of points in $M$ that do not have a neighbourhood homeomorphic to $\R^n$. (Some authors define topological manifolds in such a way that they necessarily have empty boundary.)
+For example, the boundary of the topological $1$-manifold $[0,1]$ is $\{0,1\}$.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,81 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AntonsCongruence}
+\pmcreated{2013-03-22 13:22:49}
+\pmmodified{2013-03-22 13:22:49}
+\pmowner{Thomas Heye}{1234}
+\pmmodifier{Thomas Heye}{1234}
+\pmtitle{Anton's congruence}
+\pmrecord{10}{33914}
+\pmprivacy{1}
+\pmauthor{Thomas Heye}{1234}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A07}
+%\pmkeywords{relative prime}
+\pmrelated{Factorial}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\pfac}[1]{\left(#1\underline{!}\right)_p}
+\begin{document}
+For every $n \in \mathbb{N}$ $\pfac{n}$ stands for the product of numbers
+between $1$ and $n$ which are not divisible by a given prime $p$. And we set
+$\pfac{0} =1$.
+
+The corollary below generalizes a result first found by Anton, Stickelberger,
+and Hensel:
+
+Let $N_0$ be the least non-negative residue of $n \pmod{p^s}$ where $p$ is a
+prime number and $n \in \mathbb{N}$. Then
+\begin{displaymath}
+\pfac{n} \equiv \left(\pm 1\right)^{\left\lfloor n/p^s
+\right\rfloor}\cdot \pfac{N_0} \pmod{p^s}.
+\end{displaymath}
+
+\begin{proof}
+We write each $r$ in the product below as $ip^s +j$ to get
+\begin{eqnarray*}
+\pfac{n} &=& \prod\limits_{\substack{1 \le r \le n\\ p^s \not\div r}} r \\ &=&\left( 
+\prod\limits_{\substack{0 \le i \le \left\lfloor n/p^s\right\rfloor -1 \\ 1 \le j < p^s \\ p^s
+\not\div j}} ip^s +j\right)\left( \prod\limits_{\substack{i=\left\lfloor
+n/p^s\right\rfloor \\ 1\le j \le N_0 \\ p^s \not\div j}} ip^s +j\right) \\
+ &\equiv& \prod\limits_{i=0}^{\left\lfloor n/p^s \right\rfloor -1}
+\prod\limits_{\substack{1 \le j < p^s \\ p^s \not\div j }} j\cdot
+	\prod\limits_{\substack{j=1 \\ p^s \not\div j}}^{N_0} j) \\
+ &\equiv&
+\pfac{p^s}^{\left\lfloor n/p^s\right\rfloor}\cdot \pfac{N_0} \pmod{p^s}.
+\end{eqnarray*}
+From Wilson's theorem for prime powers it follows that
+\begin{displaymath}
+\pfac{n} \equiv
+\begin{cases} 
+\pfac{N_0} \text{if} & p=2, s \ge 3 \\
+(-1)^{\left\lfloor n/p^s\right\rfloor}\cdot\pfac{N_0} & \text{otherwise.}
+\end{cases} \pmod{p^s}.
+\end{displaymath}
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

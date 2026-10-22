@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "checks": {
+    "over_10000_source_entries": true,
+    "unique_node_ids": true,
+    "finite_unique_coordinates": true,
+    "all_source_file_hashes_match": true,
+    "all_edge_endpoints_real": true,
+    "edge_ids_unique": true,
+    "no_synthetic_proof_certification": true,
+    "21_bridges_bound_to_final_node_snapshot": true,
+    "21_distinct_documented_bridge_records": true,
+    "candidate_missing_recorded_edges": true,
+    "candidate_cross_domain": true,
+    "candidate_shared_neighbors_real": true,
+    "candidate_no_truth_or_novelty_claim": true,
+    "search_modern_tool": true,
+    "documented_cross_field_route": true,
+    "navigation_preserves_source_quality_flag": true,
+    "unknown_island_rejected": true
+  },
+  "node_count": 21741,
+  "edge_count": 46812,
+  "unique_source_files": 6999,
+  "source_counts": {
+    "planetmath": 6841,
+    "stacks": 14852,
+    "wikipedia": 48
+  },
+  "edge_relations": {
+    "encyclopedic_link": 7951,
+    "proof_reference": 35334,
+    "statement_reference": 2836,
+    "title_matched_link": 670,
+    "literature_bridge": 21
+  },
+  "graph_components": 4020,
+  "largest_component_nodes": 13601,
+  "zero_recorded_degree": 3680,
+  "nodes_with_recorded_source_quality_issues": 16,
+  "navigation_candidates_total": 641,
+  "navigation_candidates_exported": 50,
+  "hashes": {
+    "data/nodes.jsonl": "4f146b824e4cce0f3b8e47e1c756557124c5075288fdf8cd7db0145a879abce1",
+    "data/edges.csv": "ffc436ae4c1c8f35caf8127e347cd4547b1c24178389904fb0e40efc922a4fe4",
+    "data/bridges.csv": "294eb2e6671dce5632536051331593b6f5f74d73797993cfb97cbf7c5d409b33",
+    "data/research-candidates.json": "8278659522d7215e650db11019dc187507ebb4e2b448b1be892a0d4f49c83080"
+  },
+  "limit": "These checks establish data identity, provenance, graph integrity and executable navigation. They do not verify every mathematical statement, complete entity equivalence or scientific novelty."
+}

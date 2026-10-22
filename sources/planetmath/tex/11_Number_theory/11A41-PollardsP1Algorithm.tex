@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PollardsP1Algorithm}
+\pmcreated{2013-03-22 16:43:47}
+\pmmodified{2013-03-22 16:43:47}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Pollard's $p - 1$ algorithm}
+\pmrecord{8}{38951}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmsynonym{Pollard $p - 1$ algorithm}{PollardsP1Algorithm}
+\pmsynonym{Pollard's p minus 1 algorithm}{PollardsP1Algorithm}
+\pmsynonym{Pollard p minus 1 algorithm}{PollardsP1Algorithm}
+\pmsynonym{Pollard $p - 1$ method}{PollardsP1Algorithm}
+\pmsynonym{Pollard's p minus 1 method}{PollardsP1Algorithm}
+\pmsynonym{Pollard p minus 1 method}{PollardsP1Algorithm}
+\pmsynonym{Pollard's $p - 1$ method}{PollardsP1Algorithm}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\em Pollard's $p - 1$ method} is an integer factorization algorithm devised by John Pollard in 1974 to take advantage of Fermat's little theorem. Theoretically, trial division always returns a result (though of course in practice the computing engine's resources could be exhausted or the user might not to be around to care for the result). Pollard's $p - 1$ algorithm, on the other hand, was designed from the outset to cope with the possibility of failure to return a result.
+
+Choose a test cap $B$ and call Pollard's $p - 1$ algorithm with a positive integer.
+
+\begin{enumerate}
+\item Use a simple method (such as the sieve of Eratosthenes) to find primes $p < B$, or even probable primes.
+\item Choose an integer $a$ coprime to $n$. If $n$ is odd (which can be tested easily enough by looking at the least significant bit) then one possible choice is $a = 2$. For even $n$, we could choose $\lfloor \sqrt{n} \rfloor + 1$.
+\item Find the exponent $e$ such that $p^e \le B$. Then for each $p < B$, compute $b = a^{p^e} \mod n$ and see if $1 < \gcd(b - 1, n) < n$. If that's the case, return those results of the greatest common divisor function, exit.
+\item If the GCD function consistently returned 1s, one could try a higher test cap and try again from step 1.
+\item If the GCD function consistently returned $n$ itself, this could indicate that $a$ is in fact not coprime to $n$, in which case one could try going back to step 2 to pick a different $a$.
+\item Throw a failure exception.
+\end{enumerate}
+
+For example, $n = 221$. Of course it's overkill to use the Pollard $p - 1$ algorithm on such a small number, but it helps to keep the example simple. Since the running time of the algorithm is exponential, Crandall and Pomerance suggest picking small $B$. So for this example let's pick $B = 10$, the primes are then 2, 3, 5, 7, and the exponents are 3, 2, 1, 1. Since 221 is odd, we try $a = 2$. So we see that $2^8 \mod 221 = 35$, and $\gcd(34, 221) = 17$. We also see $3^9 \mod 221 = 14$ and $\gcd(13, 221) = 13$. Multiplication immediately verifies that $13 \times 17 = 221$.
+
+As of version 5.2, Pollard's $p - 1$ algorithm is one of the methods used by Mathematica's \verb=FactorInteger= function after ferreting out small factors by trial division.
+
+\begin{thebibliography}{1}
+\bibitem{rc} R. Crandall \& C. Pomerance, {\it Prime Numbers: A Computational Perspective}, Springer, NY, 2001: 5.4.1
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GeneralizedSmarandachePalindrome}
+\pmcreated{2013-03-22 17:03:25}
+\pmmodified{2013-03-22 17:03:25}
+\pmowner{dankomed}{17058}
+\pmmodifier{dankomed}{17058}
+\pmtitle{generalized Smarandache palindrome}
+\pmrecord{7}{39348}
+\pmprivacy{1}
+\pmauthor{dankomed}{17058}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11Z05}
+%\pmkeywords{palindrome}
+%\pmkeywords{concatenated number}
+%\pmkeywords{Smarandache}
+\pmrelated{FlorentinSmarandache}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A \emph{generalized Smarandache palindrome} (GSP) is a concatenated number of the form: $a_{1}a_{2}\ldots a_{n}a_{n} \ldots a_{2}a_{1}$, for $n \geq 1$, or  $a_{1}a_{2} \ldots a_{n-1}a_{n}a_{n-1} \ldots a_{2}a_{1}$, for $n \geq 2$,  where all $a_1,a_2, \ldots ,a_n$ are positive integers of various number of digits in a given base $b$.  
+
+\textbf{Proposed Problem}
+
+Find the number of GSP of four digits that are not palindromic numbers in base 10.
+ 
+M. Khoshnevisan, Griffith University, Gold Coast, Queensland 9726, Australia.
+
+
+\textbf{Solution}
+
+Before solving the problem, let see some examples:
+
+1) 1235656312 is a GSP because we can group it as (12)(3)(56)(56)(3)(12), i.e. ABCCBA.
+
+2) The number 5675 is also a GSP because it can be written as (5)(67)(5).
+
+3) Obviously, any palindromic number is a GSP number as well.
+
+A palindromic number of four digits has the concatenated form: abba, where $a \in \{1, 2, \ldots , 9\}$ and $b \in \{0, 1, 2, \ldots , 9\}$. There are $9 \times 10=90$ palindromic numbers of four digits. For example, 1551, or 2002 are palindromic (and, of course, GSP too); yet 3753 is not palindromic but it is a GSP for 3753=3(75)3, i.e. of the form ABA; similarly 4646, for it can be organized as (46)(46), i.e. of the form CC.  
+Therefore, a SGP, different from a palindromic number, should have the concatenated forms: 
+1) ABA, where $A \in \{1, 2, \ldots , 9\}$ and $B \in \{00, 01, 02, 03, \ldots , 99\} - \{00, 11, 22, 33, \ldots , 99\}$;
+2) or CC, where $C \in \{10, 11, 12, \ldots , 99\} - \{ 11, 22, 33, \ldots , 99\}$.
+In the first case, one has $9 \times (100-10)=9 \times 90=810$.  In the second case, one has $90-9=81$.
+Total: $810+81=891$ GSP numbers of four digits which are not palindromic.
+
+\textbf{References}
+
+1. Charles Ashbacher, Lori Neirynck, \PMlinkexternal{The Density of Generalized Smarandache Palindromes, Journal of Recreational Mathematics, Vol. 33 (2),  2006}{www.gallup.unm.edu/~smarandache/GeneralizedPalindromes.htm}
+
+2. G. Gregory, \PMlinkexternal{Generalized Smarandache Palindromes}{http://www.gallup.unm.edu/~smarandache/GSP.htm}
+
+3. M. Khoshnevisan, "Generalized Smarandache Palindrome", Mathematics Magazine, Aurora, Canada, 10/2003.
+
+4. M. Khoshnevisan, Proposed Problem $\sharp$1062 (on Generalized Smarandache Palindrome), The $\Pi$ME Epsilon, USA, Vol. 11, No. 9, p. 501, Fall 2003.
+
+5. Mark Evans, Mike Pinter, Carl Libis, Solutions to Problem $\sharp$1062 (on Generalized Smarandache Palindrome), The $\Pi$ME Epsilon, Vol. 12, No. 1, 54-55, Fall 2004.
+
+6. N. Sloane, \PMlinkexternal{Encyclopedia of Integers, Sequence A082461}{http://www.research.att.com/cgi-bin/access.cgi/as/njas/sequences/eisA.cgi?Anum=A082461}
+
+7. F. Smarandache, \PMlinkexternal{Sequences of Numbers Involved in Unsolved Problems, Hexis, 1990, 2006}{http://www.gallup.unm.edu/~smarandache/Sequences-book.pdf}
+
+%%%%%
+%%%%%
+\end{document}

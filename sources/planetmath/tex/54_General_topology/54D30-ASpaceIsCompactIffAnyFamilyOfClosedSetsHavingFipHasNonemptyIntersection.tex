@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ASpaceIsCompactIffAnyFamilyOfClosedSetsHavingFipHasNonemptyIntersection}
+\pmcreated{2013-03-22 13:34:10}
+\pmmodified{2013-03-22 13:34:10}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{a space is compact iff any family of closed sets having fip has non-empty intersection}
+\pmrecord{20}{34181}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D30}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+{\bf Theorem. }
+A topological space is compact if and only if any collection of its closed sets having the finite intersection property has non-empty intersection.
+
+The above theorem is essentially
+the definition of a compact space rewritten using de Morgan's laws.
+The usual definition of a compact space is based on open sets and 
+unions. The above characterization, on the other hand, is written 
+using closed sets and intersections. 
+
+\emph{Proof.} Suppose $X$ is compact, i.e., any collection of open subsets
+that cover $X$ has a finite collection that also cover $X$. Further, suppose
+$\{F_i\}_{i\in I}$ is an arbitrary collection of closed subsets
+with the finite intersection property. We claim that $\cap_{i\in I} F_i$
+is non-empty. 
+Suppose otherwise, i.e., suppose $\cap_{i\in I} F_i=\emptyset$. Then, 
+\begin{eqnarray*}
+X&=&\left(\bigcap_{i\in I} F_i\right)^c\\
+ &=&\bigcup_{i\in I} F_i^c.
+\end{eqnarray*}
+(Here, the complement of a set $A$ in $X$ is written as $A^c$.)
+Since each $F_i$ is closed, the collection $\{F_i^c\}_{i\in I}$
+is an open cover for $X$. By compactness, there is  a 
+finite subset $J\subset I$ such
+that $X=\cup_{i\in J} F_i^c$. But then 
+$X=(\cap_{i\in J} F_i)^c$, so $\cap_{i\in J} F_i=\emptyset$, which 
+contradicts the finite intersection property of $\{F_i\}_{i\in I}$. 
+
+The proof in the other direction is analogous. 
+Suppose $X$ has the finite intersection property.
+To prove that
+$X$ is compact, let $\{F_i\}_{i\in I}$ be a collection of open sets
+in $X$ that cover $X$. We claim that this collection contains a finite subcollection
+of sets that also cover $X$. 
+The proof is by contradiction. 
+Suppose
+that $X\neq \cup_{i\in J} F_i$ holds for all finite $J\subset I$.
+Let us first show that the collection of closed subsets 
+$\{F_i^c\}_{i\in I}$ has the finite intersection property. 
+If $J$ is a finite subset of $I$, then 
+\begin{eqnarray*}
+\bigcap_{i\in J} F^c_i &=& \Big(\bigcup_{i\in J} F_i\Big)^c \neq \emptyset,
+\end{eqnarray*}
+where the last assertion follows since $J$ was finite. 
+Then, since $X$ has the finite intersection property, 
+\begin{eqnarray*}
+\emptyset &\neq& \bigcap_{i\in I} F_i^c = \Big(\bigcup_{i\in I} F_i\Big)^c.
+\end{eqnarray*}
+This contradicts the assumption that $\{F_i\}_{i\in I}$ is a cover for $X$. 
+$\Box$
+
+\begin{thebibliography}{9}
+\bibitem{edwards} R.E. Edwards, \emph{Functional Analysis: Theory and Applications}, Dover Publications, 1995.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

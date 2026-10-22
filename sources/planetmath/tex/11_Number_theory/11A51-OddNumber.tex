@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{OddNumber}
+\pmcreated{2013-03-22 17:42:30}
+\pmmodified{2013-03-22 17:42:30}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{odd number}
+\pmrecord{7}{40152}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmrelated{EvenNumber}
+\pmrelated{SumOfOddNumbers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+An {\em odd number} $n$ is an integer of the form $2m + 1$, and as such it is not divisible by 2. In terms of congruences, $n \equiv 1 \mod 2$, and in its binary representation the least significant bit is 1. With the exception of 2, all prime numbers are odd numbers.
+
+The addition of two odd numbers gives an even number, or any even number of odd summands gives an even number as a result. For example, $11 + 13 + 17 + 19 = 60$.
+
+But the multiplication of two odd numbers, or any even amount of odd multiplicands always gives an odd number. For example, $11 \times 13 \times 17 \times 19 = 46189$.
+
+A negative number raised to the power of an odd number gives a negative number. For example, $(-1)^{11} = (-1)^{13} = (-1)^{17} = (-1)^{19} = -1$ (compare $(-1)^{10} = (-1)^{12} = (-1)^{16} = (-1)^{18} = 1$).
+
+The sum of the first $n$ consecutive positive odd numbers is $n^2$.
+
+The famous Gregory series which gives a quarter of $\pi$ is an alternating sum of the reciprocals of the odd numbers: $$\frac{\pi}{4} = \sum_{i = 0}^\infty (-1)^i \frac{1}{2i + 1} = 1 - \frac{1}{3} + \frac{1}{5} - \frac{1}{7} + \frac{1}{9} - \ldots$$ However, note that this series is not absolutely convergent.
+
+%%%%%
+%%%%%
+\end{document}

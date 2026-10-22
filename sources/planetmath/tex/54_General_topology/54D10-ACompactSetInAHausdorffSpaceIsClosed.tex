@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ACompactSetInAHausdorffSpaceIsClosed}
+\pmcreated{2013-03-22 13:34:31}
+\pmmodified{2013-03-22 13:34:31}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{a compact set in a Hausdorff space is closed}
+\pmrecord{6}{34194}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D10}
+\pmclassification{msc}{54D30}
+\pmrelated{ClosedSubsetsOfACompactSetAreCompact}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+\newcommand{\comp}[0]{\complement}
+
+{\bf Theorem.} A compact set in a Hausdorff space is closed.
+
+\emph{Proof.}
+Let $A$ be a compact set in a Hausdorff space $X$.
+The case when $A$ is empty is trivial, so let us
+assume that $A$ is non-empty.
+Using \PMlinkname{this theorem}{APointAndACompactSetInAHausdorffSpaceHaveDisjointOpenNeighborhoods}, 
+it follows that each point
+$y$ in $A^{\comp}$ has a neighborhood $U_y$, which
+is disjoint to $A$. (Here, we denote the complement of $A$
+by $A^{\comp}$.)
+We can therefore write
+\begin{eqnarray*}
+A^{\comp} &=& \bigcup_{y\in A^{\comp}} U_y.
+\end{eqnarray*}
+Since an arbitrary union of open sets is open, it follows that $A$ is
+closed. $\Box$
+
+
+{\bf Note.}Â \\
+The above theorem can, for instance, be found in \cite{kelley} (page 141),
+or \cite{singer} (Section 2.1, Theorem 2).
+
+\begin{thebibliography}{9}
+\bibitem{kelley}
+J.L. Kelley,
+\emph{General Topology},
+D. van Nostrand Company, Inc., 1955.
+\bibitem{singer}
+I.M. Singer, J.A.Thorpe,
+\emph{Lecture Notes on Elementary Topology and Geometry},
+Springer-Verlag, 1967.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

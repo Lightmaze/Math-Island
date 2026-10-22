@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TotallyBoundedUniformSpace}
+\pmcreated{2013-03-22 16:44:09}
+\pmmodified{2013-03-22 16:44:09}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{totally bounded uniform space}
+\pmrecord{5}{38958}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+\pmdefines{totally bounded}
+\pmdefines{totally bounded uniformity}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\begin{document}
+A uniform space $X$ with uniformity $\mathcal{U}$ is called \emph{totally bounded} if for every entourage $U\in \mathcal{U}$, there is a finite cover $C_1,\ldots,C_n$ of $X$, such that $C_i\times C_i\in U$ for every $i=1,\ldots,n$.  $\mathcal{U}$ is called a totally bounded uniformity.
+
+\textbf{Remark}.  A uniform space is compact (under the uniform topology) iff it is complete and totally bounded.
+
+\begin{thebibliography}{9}
+\bibitem{willard} S. Willard, \emph{General Topology},
+Addison-Wesley, Publishing Company, 1970.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

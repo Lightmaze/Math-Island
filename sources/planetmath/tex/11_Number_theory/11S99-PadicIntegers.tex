@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PadicIntegers}
+\pmcreated{2013-03-22 12:48:04}
+\pmmodified{2013-03-22 12:48:04}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{$p$-adic integers}
+\pmrecord{10}{33118}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11S99}
+\pmclassification{msc}{12J12}
+\pmsynonym{$p$-adic numbers}{PadicIntegers}
+\pmsynonym{$\mathbb{Z}_p$}{PadicIntegers}
+\pmrelated{InverseLimit}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+\usepackage[all]{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\ilim}{\,\underset{\longleftarrow}{\lim}\,}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\p}{\mathfrak{p}}
+\begin{document}
+\section{Basic construction}
+
+For any prime $p$, the {\em $p$--adic integers} is the ring obtained by taking the completion of the integers $\Z$ with respect to the metric induced by the norm
+\begin{equation}\label{valuation}
+|x| := \frac{1}{p^{\nu_p(x)}},\ \ x \in \Z,
+\end{equation}
+where $\nu_p(x)$ denotes the largest integer $e$ such that $p^e$ divides $x$. The induced metric $d(x,y) := |x-y|$ is called the {\em $p$--adic metric} on $\Z$. The ring of $p$--adic integers is usually denoted by $\Z_p$, and its fraction field by $\Q_p$.
+
+\section{Profinite viewpoint}
+
+The ring $\Z_p$ of $p$--adic integers can also be constructed by taking the inverse limit
+$$
+\Z_p := \ilim \Z/p^n\Z
+$$
+over the inverse system $\cdots \to \Z/p^2\Z \to \Z/p\Z \to 0$ consisting of the rings $\Z/p^n\Z$, for all $n \geq 0$, with the projection maps defined to be the unique maps such that the diagram
+$$
+\xymatrix{
+& \Z \ar[dl] \ar[dr]\\
+\Z/p^{n+1}\Z \ar[rr] & & \Z/p^n\Z
+}
+$$
+commutes. An algebraic and topological isomorphism between the two constructions is obtained by taking the coordinatewise projection map $\Z \to \ilim \Z/p^n\Z$, extended to the completion of $\Z$ under the $p$--adic metric.
+
+This alternate characterization shows that $\Z_p$ is compact, since it is a closed subspace of the space
+$$
+\prod_{n \geq 0} \Z/p^n\Z
+$$
+which is an infinite product of finite topological spaces and hence compact under the product topology.
+
+\section{Generalizations}
+
+If we interpret the prime $p$ as an equivalence class of valuations on $\Q$, then the field $\Q_p$ is simply the completion of the topological field $\Q$ with respect to the metric induced by any member valuation of $p$ (indeed, the valuation defined in Equation~\eqref{valuation}, extended to $\Q$, may serve as the representative). This notion easily generalizes to other fields and valuations; namely, if $K$ is any field, and $\p$ is any prime of $K$, then the $\p$--adic field $K_\p$ is defined to be the completion of $K$ with respect to any valuation in $\p$. The analogue of the $p$--adic integers in this case can be obtained by taking the subset (and subring) of $K_\p$ consisting of all elements of absolute value less than or equal to $1$, which is well defined independent of the choice of valuation representing $\p$.
+
+In the special case where $K$ is a number field, the $\p$--adic ring $K_\p$ is always a finite extension of $\Q_p$ whenever $\p$ is a finite prime, and is always equal to either $\mathbb{R}$ or $\mathbb{C}$ whenever $\p$ is an infinite prime.
+%%%%%
+%%%%%
+\end{document}

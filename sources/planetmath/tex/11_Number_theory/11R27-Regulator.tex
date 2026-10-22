@@ -1,0 +1,108 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Regulator}
+\pmcreated{2013-03-22 13:54:34}
+\pmmodified{2013-03-22 13:54:34}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{regulator}
+\pmrecord{8}{34663}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R27}
+%\pmkeywords{regulator}
+%\pmkeywords{unit}
+\pmrelated{NumberField}
+\pmrelated{DirichletsUnitTheorem}
+\pmrelated{ClassNumberFormula}
+\pmrelated{RegulatorOfAnEllipticCurve}
+\pmdefines{regulator of a number field}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem*{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+Let $K$ be a number field with $[K:\Rats]=n=r_1+2r_2$. Here $r_1$
+denotes the number of real embeddings:
+$$\sigma_i\colon K \hookrightarrow \Reals,\quad 1\leq i\leq r_1$$
+while $r_2$ is half of the number of complex embeddings:
+$$\tau_j\colon K \hookrightarrow \Complex,\quad 1\leq j\leq r_2$$
+Note that $\{\tau_j, \bar{\tau}_j\mid 1\leq j\leq r_2\}$ are
+\emph{all} the complex embeddings of $K$. Let $r=r_1+r_2$ and for
+$1\leq i\leq r$ define the ``norm'' in $K$ corresponding to each
+embedding:
+$$ \parallel \cdot \parallel _i\colon K^{\times} \to \Reals^+$$
+$$ \parallel \alpha \parallel_i = \mid\sigma_i(\alpha)\mid, \quad
+1\leq i \leq r_1$$
+$$ \parallel \alpha \parallel_{r_1+j} = \mid\tau_j(\alpha)\mid^2, \quad
+1\leq j \leq r_2$$ Let $\mathcal{O}_K$ be the ring of integers of
+$K$. By Dirichlet's unit theorem, we know that the rank of the
+unit group $\mathcal{O}_K^{\times}$ is exactly $r-1=r_1+r_2-1$.
+Let
+$$\{ \epsilon_1,\epsilon_2,\ldots,\epsilon_{r-1}\}$$
+be a fundamental system of generators of $\mathcal{O}_K^{\times}$
+modulo roots of unity (this is, modulo the torsion subgroup). Let
+$A$ be the $r\times (r-1)$ matrix $$A=\left(
+\begin{array}{cccc}
+  \log \parallel \epsilon_1 \parallel_1 & \log \parallel \epsilon_2 \parallel_1 & \ldots & \log \parallel \epsilon_{r-1} \parallel_1 \\
+  \log \parallel \epsilon_1 \parallel_2 & \log \parallel \epsilon_2 \parallel_2 & \ldots & \log \parallel \epsilon_{r-1} \parallel_2 \\
+  \vdots & \vdots & \ddots & \vdots \\
+  \log \parallel \epsilon_1 \parallel_r & \log \parallel \epsilon_2 \parallel_r & \ldots & \log \parallel \epsilon_{r-1} \parallel_r \\
+\end{array}
+\right)$$ and let $A_i$ be the $(r-1)\times(r-1)$ matrix obtained
+by deleting the $i$-th row from $A$, $1\leq i\leq r$. It can be
+checked that the determinant of $A_i$, $\det{A_i}$, is independent
+up to sign of the choice of fundamental system of generators of
+$\mathcal{O}_K^{\times}$ and is also independent of the choice of
+$i$.
+\begin{defn}
+The \emph{regulator of} $K$ is defined to be
+$$\operatorname{Reg}_K=\mid\det{A_1}\mid$$
+\end{defn}
+
+The regulator is one of the main ingredients in the analytic class number formula for number fields.
+
+\begin{thebibliography}{9}
+\bibitem{marcus} Daniel A. Marcus, {\em Number Fields},
+Springer, New York.
+\bibitem{lang} Serge Lang, {\em Algebraic Number Theory}. Springer-Verlag, New York.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

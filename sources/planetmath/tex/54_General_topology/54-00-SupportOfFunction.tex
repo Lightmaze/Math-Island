@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SupportOfFunction}
+\pmcreated{2013-03-22 13:46:10}
+\pmmodified{2013-03-22 13:46:10}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{support of function}
+\pmrecord{16}{34475}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+\pmsynonym{support}{SupportOfFunction}
+\pmsynonym{carrier}{SupportOfFunction}
+\pmrelated{ZeroOfAFunction}
+\pmrelated{ApplicationsOfUrysohnsLemmaToLocallyCompactHausdorffSpaces}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+\begin{document}
+\PMlinkescapeword{words}
+\PMlinkescapeword{support}
+\newcommand{\supp}[0]{\operatorname{supp}}
+
+{\bf Definition}
+Suppose $X$ is a topological space, and $f\colon X\to \sC$ is a function.
+Then the \emph{support} of $f$ (written as $\supp f$), is the set
+$$ 
+  \supp f = \overline{\{x\in X\mid f(x)\neq 0\}}.
+$$
+In other words, $\supp f$ is the closure of the set where $f$
+does not vanish.
+
+\subsubsection*{Properties}
+Let $f\colon X\to \sC$ be a function. 
+\begin{enumerate}
+\item $\supp f$ is closed.
+\item If $x\notin \supp f$, then $f(x)=0$. 
+\item If $\supp f = \emptyset$, then $f=0$. 
+\item If $\chi\colon X\to \sC$ is such that $\chi = 1$ on $\supp f$, then
+$f=\chi f$. 
+\item If $f,g\colon X\to \sC$ are functions, then we have
+\begin{eqnarray*}
+\supp (fg) &\subset & \supp f \cap \supp g, \\
+\supp (f+g) &\subset & \supp f \cup \supp g.
+\end{eqnarray*}
+\item If $Y$ is another topological space, and $\Psi\colon Y\to X$ is a 
+homeomorphism, then 
+$$ 
+  \supp (f\circ \Psi) = \Psi^{-1}(\supp f).
+$$
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

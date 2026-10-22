@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HurwitzEquation}
+\pmcreated{2013-03-22 17:26:13}
+\pmmodified{2013-03-22 17:26:13}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Hurwitz equation}
+\pmrecord{4}{39816}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11J06}
+\pmclassification{msc}{11D72}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given a length $k$ and a multiplier $m$, a {\em Hurwitz equation} for a set of integers $x_1, x_2, \ldots , x_k$ states that
+
+$$\sum_{i = 1}^k {x_i}^2 = m\prod_{i = 1}^k x_i.$$
+
+There is no solution to the equation if $m > k$. Solutions can sometimes be found for $m \leq k$ by starting from a $k$-long set of 1s. The Markov equation for the Markov numbers has $k = m = 3$.
+
+\begin{thebibliography}{2}
+\bibitem{rg} R. K. Guy, {\it Unsolved Problems in Number Theory} New York: Springer-Verlag 2004: D12
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

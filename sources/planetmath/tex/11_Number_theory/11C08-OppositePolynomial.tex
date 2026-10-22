@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{OppositePolynomial}
+\pmcreated{2013-03-22 14:47:41}
+\pmmodified{2013-03-22 14:47:41}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{opposite polynomial}
+\pmrecord{9}{36447}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11C08}
+\pmclassification{msc}{12E05}
+\pmclassification{msc}{13P05}
+%\pmkeywords{coefficient}
+\pmrelated{OppositeNumber}
+\pmrelated{Unity}
+\pmrelated{BasicPolynomial}
+\pmrelated{MinimalPolynomialEndomorphism}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The {\em opposite polynomial} of a polynomial $P$ in a polynomial ring $R[X]$ is a polynomial \,$-P$\, such that
+                     $$P\!+\!(-P) \;=\; \textbf{0},$$
+where $\textbf{0}$ denotes the zero polynomial. \,It is clear that \,$-P$\, is obtained by changing the signs of all of the coefficients of $P$, \PMlinkname{i.e.}{Ie}
+  $$-\sum_{\nu = 0}^n a_\nu X^\nu \;=\; \sum_{\nu = 0}^n (-a_\nu)X^\nu.$$
+
+The opposite polynomial may be used to define subtraction of polynomials:
+                         $$P\!-\!Q \;=:\; P\!+\!(-Q)$$
+
+Forming the opposite polynomial is a linear mapping \,\,$R[X]\to R[X]$.
+%%%%%
+%%%%%
+\end{document}

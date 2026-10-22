@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DirichletEtaFunction}
+\pmcreated{2013-03-22 14:31:28}
+\pmmodified{2013-03-22 14:31:28}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{Dirichlet eta function}
+\pmrecord{9}{36066}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11M41}
+\pmrelated{ZerosOfDirichletEtaFunction}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+For $s\in\mathbb{C}$, the \emph{Dirichlet eta function} is defined as
+
+\begin{equation}
+\eta(s) := \sum_{n=1}^{\infty} \frac{\left( -1 \right)^{n-1}}{n^{s}}\,.
+\end{equation}
+
+Let  $s=\sigma + it$.  For $s$ a positive real number  the series converges by the alternating series test, by the second \PMlinkescapetext{property} listed in the entry on   Dirichlet series it converges for all $s$ with $\sigma > 0$.
+
+It can be shown that $\eta(s) = (1-2^{1-s})\zeta(s)$, where $\zeta(s)$ is the Riemann zeta function. The pole of $\zeta(s)$ at $s=1$ is cancelled by the zero
+of $1-2^{1-s}$. 
+%%%%%
+%%%%%
+\end{document}

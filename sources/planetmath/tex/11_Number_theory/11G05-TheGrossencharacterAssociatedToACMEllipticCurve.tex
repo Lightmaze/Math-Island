@@ -1,0 +1,129 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheGrossencharacterAssociatedToACMEllipticCurve}
+\pmcreated{2013-03-22 15:45:29}
+\pmmodified{2013-03-22 15:45:29}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{the Gr\"ossencharacter associated to a CM elliptic curve}
+\pmrecord{4}{37712}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11G05}
+\pmrelated{Grossencharacter}
+\pmrelated{EllipticCurve}
+\pmdefines{grossencharacter associated to an elliptic curve}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\newcommand{\RInts}{\mathcal{O}_K}
+\begin{document}
+Let $K$ be a quadratic imaginary field and let $A/F$ be an
+elliptic curve defined over a number field $F$ (such that
+$K\subset F$), with complex multiplication by $K$. The so-called
+`Main Theorem of Complex Multiplication' (\cite{sil2}, Thm. 8.2)
+implies the existence of a Gr\"ossencharacter of $F$,
+$\psi_{A/F}:\mathcal{A}_F^\ast\to \Complex^\ast$ associated to the
+curve $A/F$ satisfying several interesting properties which we
+collect in the following statement.
+
+\begin{thm}[\cite{sil2}, Thm. 9.1, Prop. 10.4, Cor. 10.4.1]
+\label{grossen} Let $\wp$ be a prime of $F$ of good reduction for
+$A/F$, i.e. the reduction $\widetilde{A}/F$ of $A$ modulo $\wp$ is
+smooth. There exists a Gr\"ossencharacter of $F$,
+$\psi_{A/F}:\mathcal{A}_F^\ast \to \Complex^\ast$, such that:
+\begin{enumerate}
+\item $\psi_{A/F}$ is unramified at a prime $\mathfrak{Q}$ of $F$
+if and only if $A/F$ has good reduction at $\mathfrak{Q}$;
+
+\item $\psi_{A/F}(\wp)$ belongs to $\RInts$, thus multiplication
+by $[\psi_{A/F}(\wp)]$ is a well defined endomorphism of $A/F$.
+Moreover $N_\Rats^F(\wp)=N_\Rats^K(\psi_{A/F}(\wp))$;
+
+\item the following diagram is commutative
+\begin{center}
+$\xymatrix{ 
+A \ar@{->}[d] \ar@{->}[r]^{[\psi_{A/F}(\wp)]} & A \ar@{->}[d] &\\
+\widetilde{A} \ar@{->}[r]^{\phi_\wp} & \widetilde{A} &
+}$
+\end{center}
+where $\phi_\wp:\widetilde{A}\to\widetilde{A}$ be the
+$N_\Rats^F(\wp)$-power Frobenius map and the vertical maps are
+reduction mod $\wp$;
+
+\item let $|\widetilde{A}(\mathcal{O}_F/\wp)|$ be the number of
+points in $\widetilde{A}$ over the finite field
+$\mathcal{O}_F/\wp$ and put $a_\wp=N_{\Rats}^F(\wp) +1 -
+|\widetilde{A}(\mathcal{O}_F/\wp)|$. Then
+$$a_{\wp}=\psi_{A/F}(\wp)+\overline{\psi_{A/F}(\wp)}=2\cdot \Re
+(\psi_{A/F}(\wp)).$$
+
+\item (due to Deuring) let $L(A/F,s)$ be the $L$-function
+associated to the elliptic curve $A/F$. If $K\subset F$ then
+$L(A/F,s)=L(\psi_{A/F},s)L(\overline{\psi_{A/F}},s)$. If
+$K\nsubseteq F$, and $F'=FK$, then $L(E/F,s)=L(\psi_{A/F'},s)$.
+\end{enumerate}
+\end{thm}
+
+In particular, if $h_K=1$ then $A$ is defined over $K$ (actually,
+it may be defined over $\Rats$), $\psi_{A/K}(\wp)$ is a generator
+of $\wp$ (by part (2), and the explicit generator can be pinned
+down using part (4)). Thus, if $e$ is the number of roots of unity
+in $K$, then $\psi_{A/K}^k(\wp)=\alpha^k$ where $\alpha$ is {\it
+any} generator of $\wp$. Also, by part (5),
+$L(A/\Rats,s)=L(\psi_{A/K},s)$.
+
+\begin{thebibliography}{00}
+\bibitem{silverman} J. H. Silverman, {\em The Arithmetic of
+Elliptic Curves}, Springer-Verlag, New York.
+\bibitem{sil2} J. H. Silverman, {\em Advanced Topics in
+the Arithmetic of Elliptic Curves}. Springer-Verlag, New York,
+1994.
+
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

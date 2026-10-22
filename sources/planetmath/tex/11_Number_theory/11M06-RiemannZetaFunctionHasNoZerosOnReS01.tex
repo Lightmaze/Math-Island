@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RiemannZetaFunctionHasNoZerosOnReS01}
+\pmcreated{2013-03-22 17:54:37}
+\pmmodified{2013-03-22 17:54:37}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{Riemann zeta function has no zeros on $\Re s=0,1$}
+\pmrecord{5}{40404}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11M06}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\PMlinkescapeword{point}
+\PMlinkescapeword{points}
+This article shows that the Riemann zeta function $\zeta(s)$ has no zeros along the lines $\Re s=0$ or $\Re s=1$. That implies that all nontrivial zeros of $\zeta(s)$ lie strictly within the critical strip $0<\Re s<1$. As the \PMlinkescapetext{parent} article points out, this is known to be equivalent to one version of the prime number theorem. 
+
+It can in fact be shown that $\zeta(s)\neq 0$ for any $s=\sigma+it$ with $0<\sigma<1$ if
+\[\sigma\geq 1-\frac{c}{\log(\lvert t\rvert+1)}\]
+for some constant $c$. By using the functional equation
+\[
+  \pi^{\frac{-s}{2}}\Gamma\left(\frac{s}{2}\right)\zeta(s) =
+     \pi^{-\frac{1-s}{2}}\Gamma\left(\frac{1-s}{2}\right)\zeta(1-s)
+\]
+we have also that $\zeta(\sigma+it)\neq 0$ if
+\[\sigma \leq \frac{c}{\log(\lvert t\rvert+1)}\]
+Bounding the zeros of $\zeta(s)$ away from $\Re s = 0$, $1$ leads to a version of the prime number theorem with more precise error terms.
+
+\begin{thm} $\zeta(1+it)\neq 0$ for $t\in\Reals$.
+\end{thm}
+
+\textbf{Proof.}\ 
+Notice that for $\theta\in\Complex$
+\begin{equation}\label{eqn:costheta}
+0\leq 2(1+\cos\theta)^2 = 2\cos^2\theta + 4\cos \theta + 2 = 3+4\cos\theta+\cos(2\theta)
+\end{equation}
+If $\sigma=\Re s>1$, then $\zeta(\sigma+it)=\prod_{p\text{ prime}} (1-p^{-\sigma-it})^{-1}$, so that
+\[\log\zeta(\sigma+it)=-\sum_{p\text{ prime}} \log(1-p^{-\sigma-it}) = \sum_{p\text{ prime}} \sum_{m=1}^{\infty} \frac{1}{m}p^{-m\sigma-imt}\]
+and thus
+\[
+\log\lvert\zeta(\sigma+it)\rvert = \sum_{p\text{ prime}}\sum_{m=1}^{\infty}\frac{1}{mp^{m\sigma}}\cos(mt\log p)
+\]
+since the log of the absolute value is the real part of the log.
+
+Using equation \eqref{eqn:costheta}, we then have
+\begin{align*}
+3\log \zeta(\sigma) + & 4\log\lvert\zeta(\sigma+it)\rvert + \log\lvert\zeta(\sigma+i2t)\rvert \\
+&= \sum_{p\text{ prime}}\sum_{m=1}^{\infty}\frac{1}{mp^{m\sigma}}(3+4\cos(mt\log p)+\cos(2mt\log p))\geq 0\end{align*}
+so that
+\begin{equation}\label{eq:f}\zeta(\sigma)^3\lvert\zeta(\sigma+it)\rvert^4\lvert\zeta(\sigma+it\cdot 2)\rvert\geq 1\ \text{ for all }\ \sigma>1, t\in\Reals\end{equation}
+But if $\zeta$ has a zero at $\sigma+it_0$, then
+\[\lim_{\sigma\to 1^+}\zeta(\sigma)^3\lvert\zeta(\sigma+it_0)\rvert^4\lvert\zeta(\sigma+i2t)\rvert=0\]
+since the first factor gives a \PMlinkname{pole}{Pole} of order 3 at $1$ and the second factor gives a zero of order at least 4 at $1+it_0$. This contradicts equation \eqref{eq:f}.
+
+
+\begin{cor} $\zeta(it)\neq 0$ for $t\in\Reals$.
+\end{cor}
+
+\textbf{Proof. }\ Use the functional equation
+\[\pi^{\frac{-s}{2}}\Gamma\left(\frac{s}{2}\right)\zeta(s)=\pi^{-\frac{1-s}{2}}\Gamma\left(\frac{1-s}{2}\right)\zeta(1-s)\]
+and set $s=it$. The theorem implies that the RHS is nonzero, so the LHS is as well. Thus $\zeta(s)\ne 0$.
+
+
+%%%%%
+%%%%%
+\end{document}

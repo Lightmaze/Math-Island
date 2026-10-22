@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MethodForComputingSimpleContinuedFractionsWithTheAidOfCalculatorAndPencilAndPaper}
+\pmcreated{2013-03-22 17:29:56}
+\pmmodified{2013-03-22 17:29:56}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{method for computing simple continued fractions with the aid of calculator and pencil and paper}
+\pmrecord{4}{39887}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A55}
+\pmclassification{msc}{11J70}
+\pmclassification{msc}{11Y65}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+In most computer algebra systems, there is often a simple command for obtaining the continued fraction of a number, be it a rational number or an irrational number.
+
+But with the aid of a scientific calculator, a software calculator or perhaps even a basic pocket calculator, one can calculate some continued fractions, though with some caveats about possible loss of precision.
+
+For this method, one needs some way of calculating a reciprocal. On a scientific calculator, there usually is a key labeled ``\verb=1/x=''. If there isn't, but there is a key for the displayed answer (such as on 2-line scientific calculators) one can then use ``\verb=1 / ANS=''. A workaround on a limited basic calculator is possible if the calculator has user-accessible memory registers.
+
+Before starting, it might be a good idea to decide on a value to stop at if the pattern for a periodic continued fraction does not make itself apparent. If one knows in advance the continued fraction is neither periodic nor terminating, one should then decide on a stopping value, preferably before loss of precision sets in.
+
+This method is for non-integers. Starting with the number currently displayed, the method is as follows:
+
+\begin{enumerate}
+\item If there is an integer portion to the number, subtract it and write it down on a sheet of paper.
+\item Calculate the reciprocal of this number.
+\item If the result is an integer, then the method is done. Likewise if one notices a pattern to the continued fraction. Otherwise, go back to step 1 with the number on the display.
+\end{enumerate}
+
+For example, let's say we wish to compute the continued fraction of the square root of 3, $\sqrt{3}$, using the Windows Calculator in scientific mode. \verb'3 ^ (1 / 2) = ' gives us 1.7320508075688772935274463415059.
+
+\begin{enumerate}
+\item We subtract the 1 and write it down, leaving 0.73205080756887729352744634150587 on the display.
+\item The reciprocal of that number is 1.3660254037844386467637231707529.
+\item We subtract the 1 and write it down, leaving 0.36602540378443864676372317075294 on the display.
+\item The reciprocal of that number is 2.7320508075688772935274463415059.
+\item We subtract the 2 and write it down, leaving 0.73205080756887729352744634150587 on the display.
+\item The reciprocal of that number is 1.3660254037844386467637231707529.
+\item We subtract the 1 and write it down, leaving 0.36602540378443864676372317075294 on the display.
+\item The reciprocal of that number is 2.7320508075688772935274463415059.
+\item We subtract the 2 and write it down. At this point it seems obvious that after the integer part, this continued fraction simply repeats 1 and 2 periodically. A couple more iterations support this assumption.
+\end{enumerate}
+
+Of course the possible loss of precision in floating point arithmetic can cause this method to give erroneous or misleading answers. The continued fraction of $\sqrt{47}$ seems misleadingly to have an excessively long period with this method carried out on a CVS-brand scientific calculator. Similarly, a continued fraction from the first 25 prime numbers was constructed on that same calculator, giving the displayed value of 2.31303673. Application of this method recovered the first eight primes followed by 21.
+%%%%%
+%%%%%
+\end{document}

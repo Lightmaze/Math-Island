@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExistenceOfSquareRootsOfNonnegativeRealNumbers}
+\pmcreated{2013-03-22 16:32:42}
+\pmmodified{2013-03-22 16:32:42}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{existence of square roots of non-negative real numbers}
+\pmrecord{8}{38727}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+%\pmkeywords{root}
+%\pmkeywords{square root}
+%\pmkeywords{supremum}
+%\pmkeywords{completeness axiom}
+\pmrelated{AxiomOfAnalysis}
+\pmrelated{ArchimedeanProperty}
+\pmrelated{Supremum}
+\pmrelated{ExistenceOfNthRoot}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{plain}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lem}{Lemma}
+\newtheorem*{cor}{Corollary}
+
+
+\begin{document}
+\begin{thm}
+Every non-negative real number has a square root. 
+\end{thm}
+\begin{proof}
+Let $x\geq 0\in\mathbb{R}$. If $x=0$ then the result is trivial, so suppose $x>0$ and define $S=\{y\in\mathbb{R}:y> 0\text{ and }y^2<x\}$. $S$ is nonempty, for if $0<y<\min\{x,1\}$, then $y^2< y<x$, and $y\in S$. $S$ is also bounded above, for if $y>\max\{x,1\}$, then $y^2>y>x$, so such a $y$ is an upper bound of $S$. Thus $S$ is nonempty and bounded, and hence has a supremum which we denote $L$. We will show that $L^2=x$. First suppose $L^2<x$. By the Archimedean Principle there exists some $n\in\mathbb{N}$ such that $n>(2L+1)/(x-L^2)$. Then we have
+\begin{equation}
+\bigg(L+\dfrac{1}{n}\bigg)^2=L^2+\dfrac{2L}{n}+\dfrac{1}{n^2}
+<L^2+\dfrac{2L}{n}+\dfrac{1}{n}<x\text{.}
+\end{equation}
+So $L+1/n$ is a member of $S$ strictly greater than $L$, contrary to assumption. Now suppose that $L^2>x$. Again by the Archimedean Principle there exists some $n\in\mathbb{N}$ such that $1/n<(L^2-x)/2L$ and $1/n<L$. Then we have
+\begin{equation}
+\bigg(L-\dfrac{1}{n}\bigg)^2=L^2-\dfrac{2L}{n}+\dfrac{1}{n^2}
+>L^2-\dfrac{2L}{n}>x\text{.}
+\end{equation}
+But there must exist some $y\in S$ such that $L-1/n<y<L$, which gives $x<\big(L-1/n\big)^2<y^2$, so that $y\notin S$, a contradiction. Thus it must be that $L^2=x$. 
+\end{proof}
+
+%%%%%
+%%%%%
+\end{document}

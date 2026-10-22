@@ -1,0 +1,154 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FreshmansDream}
+\pmcreated{2013-03-22 15:51:17}
+\pmmodified{2013-03-22 15:51:17}
+\pmowner{Algeboy}{12884}
+\pmmodifier{Algeboy}{12884}
+\pmtitle{freshman's dream}
+\pmrecord{18}{37839}
+\pmprivacy{1}
+\pmauthor{Algeboy}{12884}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11T23}
+\pmclassification{msc}{11T30}
+\pmsynonym{Frobenius Automorphism}{FreshmansDream}
+%\pmkeywords{Field automorphism}
+%\pmkeywords{finite characteristic}
+%\pmkeywords{positive characteristic}
+\pmrelated{PolynomialCongruence}
+
+\endmetadata
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+%%\usepackage{xypic}
+
+%-----------------------------------------------------
+
+%       Standard theoremlike environments.
+
+%       Stolen directly from AMSLaTeX sample
+
+%-----------------------------------------------------
+
+%% \theoremstyle{plain} %% This is the default
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{coro}[thm]{Corollary}
+
+\newtheorem{lem}[thm]{Lemma}
+
+\newtheorem{lemma}[thm]{Lemma}
+
+\newtheorem{prop}[thm]{Proposition}
+
+\newtheorem{conjecture}[thm]{Conjecture}
+
+\newtheorem{conj}[thm]{Conjecture}
+
+\newtheorem{defn}[thm]{Definition}
+
+\newtheorem{remark}[thm]{Remark}
+
+\newtheorem{ex}[thm]{Example}
+
+
+
+%\countstyle[equation]{thm}
+
+
+
+%--------------------------------------------------
+
+%       Item references.
+
+%--------------------------------------------------
+
+
+\newcommand{\exref}[1]{Example-\ref{#1}}
+
+\newcommand{\thmref}[1]{Theorem-\ref{#1}}
+
+\newcommand{\defref}[1]{Definition-\ref{#1}}
+
+\newcommand{\eqnref}[1]{(\ref{#1})}
+
+\newcommand{\secref}[1]{Section-\ref{#1}}
+
+\newcommand{\lemref}[1]{Lemma-\ref{#1}}
+
+\newcommand{\propref}[1]{Prop\-o\-si\-tion-\ref{#1}}
+
+\newcommand{\corref}[1]{Cor\-ol\-lary-\ref{#1}}
+
+\newcommand{\figref}[1]{Fig\-ure-\ref{#1}}
+
+\newcommand{\conjref}[1]{Conjecture-\ref{#1}}
+
+
+% Normal subgroup or equal.
+
+\providecommand{\normaleq}{\unlhd}
+
+% Normal subgroup.
+
+\providecommand{\normal}{\lhd}
+
+\providecommand{\rnormal}{\rhd}
+% Divides, does not divide.
+
+\providecommand{\divides}{\mid}
+
+\providecommand{\ndivides}{\nmid}
+
+
+\providecommand{\union}{\cup}
+
+\providecommand{\bigunion}{\bigcup}
+
+\providecommand{\intersect}{\cap}
+
+\providecommand{\bigintersect}{\bigcap}
+\begin{document}
+\begin{thm}[Freshman's dream]
+If $k$ if a field of \PMlinkname{characteristic}{Characteristic} $p>0$ (so $p$ is prime) 
+then for all $x,y\in k$ we have
+\[(x+y)^{p^i}=x^{p^i}+y^{p^i}.\]
+Therefore $x\mapsto x^{p^i}$ is a field monomorphism (called a Frobenius monomorphism.)  
+\end{thm}
+
+When $k$ is finite then it is indeed an automorphism.
+A field $k$ is called a perfect field when the map is surjective.
+
+The theorem is so named because it is a common mistake for freshman math students 
+to make over the real numbers.  However, as the characteristic of the real numbers 
+is 0, this does not apply in any interesting way to that setting. 
+
+It should also be noted that the result applies only to powers of the characteristic, 
+and not all exponents.
+
+
+\begin{proof}
+The proof is an application of the binomial theorem.  We prove it for $p$ first.
+\[(x+y)^{p}=\sum_{i=0}^p \binom{p}{i} x^{i} y^{p-i}.\]
+Now observe
+\[\binom{p}{i}=\frac{p!}{(p-i)!i!}=p\!\cdot\!\frac{(p-1)!}{(p-i)! i!}.\]
+As $p$ is prime and $1\leq i\leq p-1$ it follows $i!$ and $(p-i)!$ do not divide $p$.  
+As the field $k$ has characteristic $p$, $\frac{(p-1)!}{(p-i)!i!}$ is an integer $m$ where
+\[\binom{p}{i}=pm\equiv 0 .\]
+Thus $(x+y)^p=x^p+y^p$.
+
+Now for $p^i$ simply use induction:
+\[(x+y)^{p^i}=((x+y)^p)^{p^{i-1}}=(x^p+y^p)^{p^{i-1}}
+=x^{p^i}+y^{p^i}.\]
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

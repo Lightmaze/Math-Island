@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HyperbolicMetricSpace}
+\pmcreated{2013-03-22 17:11:29}
+\pmmodified{2013-03-22 17:11:29}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{hyperbolic metric space}
+\pmrecord{6}{39509}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E99}
+\pmclassification{msc}{54E35}
+\pmclassification{msc}{20F06}
+\pmdefines{$\delta$ hyperbolic}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pstricks}
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\begin{document}
+Let $\delta \ge 0$.  A metric space $(X,d)$ is \emph{$\delta$ hyperbolic} if, for any figure $ABC$ in $X$ that is a geodesic triangle with respect to $d$ and for every $P \in \overline{AB}$, there exists a point $Q \in \overline{AC} \cup \overline{BC}$ such that $d(P,Q) \le \delta$.
+
+A \emph{hyperbolic metric space} is a metric space that is $\delta$ hyperbolic for some $\delta \ge 0$.
+
+Although a metric space is hyperbolic if it is $\delta$ hyperbolic for some $\delta \ge 0$, one usually tries to find the smallest value of $\delta$ for which a hyperbolic metric space $(X,d)$ is $\delta$ hyperbolic.
+
+A \PMlinkescapetext{simple} example of a hyperbolic metric space is the real line under the usual metric.  Given any three points $A,B,C \in \mathbb{R}$, we always have that $\overline{AB} \subseteq \overline{AC} \cup \overline{BC}$.  Thus, for any $P \in \overline{AB}$, we can take $Q=P$.  Therefore, the real line is 0 hyperbolic.  \PMlinkescapetext{Similar} reasoning can be used to show that every real tree is 0 hyperbolic.
+%%%%%
+%%%%%
+\end{document}

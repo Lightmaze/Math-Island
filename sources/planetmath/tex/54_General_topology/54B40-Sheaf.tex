@@ -1,0 +1,331 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Sheaf}
+\pmcreated{2013-03-22 12:37:05}
+\pmmodified{2013-03-22 12:37:05}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{sheaf}
+\pmrecord{14}{32878}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B40}
+\pmclassification{msc}{18F20}
+\pmclassification{msc}{14F05}
+\pmrelated{Stalk}
+\pmrelated{PrimeSpectrum}
+\pmrelated{Sheafification2}
+\pmrelated{Sheaf2}
+\pmdefines{presheaf}
+\pmdefines{section}
+\pmdefines{morphism of sheaves}
+\pmdefines{isomorphism of sheaves}
+\pmdefines{sheaf isomorphism}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+\usepackage[all]{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\p}{{\mathfrak{p}}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\H}{\mathcal{H}}
+\newcommand{\A}{\mathcal{A}}
+\renewcommand{\c}{\mathcal{C}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\lra}{\longrightarrow}
+\newcommand{\res}{\operatorname{res}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\diff}{\operatorname{diff}}
+\newcommand{\incl}{\operatorname{incl}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\begin{document}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\section{Presheaves}
+
+Let $X$ be a topological space and let $\A$ be a category. A
+\emph{presheaf} on $X$ with values in $\A$ is a contravariant functor
+$F$ from the category $\mathcal{B}$ whose objects are open sets in $X$ and whose morphisms are inclusion mappings of open sets of $X$, to
+the category $\A$.
+
+As this definition may be less than helpful to many readers, we offer
+the following equivalent (but longer) definition. A \emph{presheaf} $F$
+on $X$ consists of the following data:
+\begin{enumerate}
+\item An object $F(U)$ in $\A$, for each open set $U \subset X$
+\item A morphism $\res_{V,U}\colon F(V) \to F(U)$ for each pair of open
+sets $U \subset V$ in $X$ (called the \emph{restriction morphism}), such
+that:
+\begin{enumerate}
+\item For every open set $U \subset X$, the morphism $\res_{U,U}$ is
+the identity morphism.
+\item For any open sets $U \subset V \subset W$ in $X$, the diagram
+$$
+\xymatrix{
+F(W) \ar@/^1pc/[rr]^{\res_{W,U}} \ar[r]_{\res_{W,V}} & F(V)
+\ar[r]_{\res_{V,U}} & F(U)
+}
+$$
+commutes.
+\end{enumerate}
+\end{enumerate}
+If the object $F(U)$ of $\A$ is a set, its elements are called \emph{sections} of $U$.
+
+\section{Morphisms of Presheaves}
+
+Let $f\colon X \to Y$ be a continuous map of topological spaces. Suppose
+$F_X$ is a presheaf on $X$, and $G_Y$ is a presheaf on $Y$ (with $F_X$
+and $G_Y$ both having values in $\A$). We define a \emph{morphism of
+presheaves} $\phi$ from $G_Y$ to $F_X$, relative to $f$, to be a
+collection of morphisms $\phi_U\colon G_Y(U) \to F_X(f^{-1}(U))$ in $\A$,
+one for every open set $U \subset Y$, such that the diagram
+$$
+\xymatrix{
+G_Y(V) \ar[r]^-{\phi_V} \ar[d]_{\res_{V,U}} & F_X(f^{-1}(V))
+\ar[d]^{\res_{f^{-1}(V),f^{-1}(U)}} \\
+G_Y(U) \ar[r]_-{\phi_U} & F_X(f^{-1}(U))
+}
+$$
+commutes, for each pair of open sets $U \subset V$ in $Y$.
+
+Alternatively, a morphism of presheaves can be regarded as a natural
+transformation from $G_Y$ to $F_Y$, where $F_Y$ is the presheaf on $Y$
+given by $F_Y(U) := F_X(f^{-1}(U))$.  In the special case that $f$ is the
+identity map $\id\colon X \to X$, we omit mention of the map $f$, and speak of
+$\phi$ as simply a morphism of presheaves on $X$.
+
+Form the category whose objects are presheaves
+on $X$ and whose morphisms are morphisms of presheaves on $X$. Then an
+\emph{isomorphism} of presheaves $\phi$ on $X$ is a morphism of
+presheaves on $X$ which is an isomorphism in this category; that is,
+there exists a morphism $\phi^{-1}$ whose composition with $\phi$ both
+ways is the identity morphism.
+
+More generally, if $f\colon X \to Y$ is any homeomorphism of topological
+spaces, a morphism of presheaves $\phi$ relative to $f$ is an \emph{isomorphism} if it admits a two--sided inverse morphism of presheaves
+$\phi^{-1}$ relative to $f^{-1}$.
+
+\section{Sheaves}
+
+We now assume that the category $\A$ is a concrete category. A \emph{sheaf} is a presheaf $F$ on $X$, with values in $\A$, such that for
+every open set $U \subset X$, and every open cover $\{U_i\}$ of
+$U$, the following two conditions hold:
+\begin{enumerate}
+\item Any two elements $f_1, f_2 \in F(U)$ which have identical
+restrictions to each $U_i$ are equal. That is, if $\res_{U,U_i} f_1 =
+\res_{U,U_i} f_2$ for every $i$, then $f_1 = f_2$.
+\item Any collection of elements $f_i \in F(U_i)$ that have common
+restrictions can be realized as the collective restrictions of a
+single element of $F(U)$. That is, if $\res_{U_i, U_i \cap U_j} f_i =
+\res_{U_j, U_i \cap U_j} f_j$ for every $i$ and $j$, then there exists
+an element $f \in F(U)$ such that $\res_{U,U_i} f = f_i$ for all $i$.
+\end{enumerate}
+
+\section{Sheaves in abelian categories}
+
+If $\A$ is a concrete abelian category, then a presheaf $F$ is a sheaf
+if and only if for every open subset $U$ of $X$, the sequence
+\begin{equation}\label{exact}
+\xymatrix{
+0 \ar[r] & F(U) \ar[r]^-{\incl} & \prod_i F(U_i) \ar[r]^-{\diff} &
+\prod_{i,j} F(U_i \cap U_j)
+}
+\end{equation}
+is an exact sequence of morphisms in $\A$ for every open cover
+$\{U_i\}$ of $U$ in $X$. This diagram requires some explanation,
+because we owe the reader a definition of the morphisms $\incl$ and
+$\diff$. We start with $\incl$ (short for ``inclusion''). The
+restriction morphisms $F(U) \to F(U_i)$ induce a morphism
+$$
+F(U) \to \prod_i F(U_i)
+$$
+to the categorical direct product $\prod_i F(U_i)$, which we define
+to be $\incl$. The map $\diff$ (called ``difference'') is defined as
+follows. For each $U_i$, form the morphism
+$$
+\alpha_i\colon F(U_i) \to \prod_j F(U_i \cap U_j).
+$$
+By the universal properties of categorical direct product, there
+exists a unique morphism
+$$
+\alpha\colon \prod_i F(U_i) \to \prod_i \prod_j F(U_i \cap U_j)
+$$
+such that $\pi_i \alpha = \alpha_i \pi_i$ for all $i$, where $\pi_i$
+is projection onto the $i^\text{th}$ factor. In a similar manner, form
+the morphism
+$$
+\beta\colon \prod_j F(U_j) \to \prod_j \prod_i F(U_i \cap U_j).
+$$
+Then $\alpha$ and $\beta$ are both elements of the set
+$$
+\Hom\left(\prod_i F(U_i), \prod_{i,j} F(U_i \cap U_j)\right),
+$$
+which is an abelian group since
+$\A$ is an abelian category. Take the difference $\alpha - \beta$ in
+this group, and define this morphism to be $\diff$.
+
+Note that exactness of the sequence~\eqref{exact} is an element free
+condition, and therefore makes sense for any abelian category $\A$,
+even if $\A$ is not concrete. Accordingly, for any abelian category
+$\A$, we define a sheaf to be a presheaf $F$ for which the
+sequence~\eqref{exact} is always exact.
+
+\section{Examples}
+
+It's high time that we give some examples of sheaves and
+presheaves. We begin with some of the standard ones.
+
+\begin{example}
+If $F$ is a presheaf on $X$, and $U \subset X$ is an open subset, then
+one can define a presheaf $F|_U$ on $U$ by restricting the functor $F$
+to the subcategory of open sets of $X$ in $U$ and inclusion
+morphisms. In other words, for open subsets of $U$, define $F|_U$ to
+be exactly what $F$ was, and ignore open subsets of $X$ that are not
+open subsets of $U$. The resulting presheaf is called, for obvious
+reasons, the \emph{restriction presheaf} of $F$ to $U$, or the \emph{restriction sheaf} if $F$ was a sheaf to begin with.
+\end{example}
+
+\begin{example}
+For any topological space $X$, let $\c_X$ be the presheaf on $X$, with
+values in the category of rings, given by
+\begin{itemize}
+\item $\c_X(U) := $ the ring of continuous real--valued functions $U
+\to \R$,
+\item $\res_{V,U} f := $ the restriction of $f$ to $U$, for every
+element $f\colon V \to \R$ of $\c_X(V)$ and every subset $U$ of $V$.
+\end{itemize}
+Then $\c_X$ is actually a sheaf of rings, because continuous functions
+are uniquely specified by their values on an open cover. The sheaf
+$\c_X$ is called the \emph{sheaf of continuous real--valued functions}
+on $X$.
+\end{example}
+
+\begin{example}
+Let $X$ be a smooth differentiable manifold. Let $\D_X$ be the
+presheaf on $X$, with values in the category of real vector spaces,
+defined by setting $\D_X(U)$ to be the space of smooth real--valued
+functions on $U$, for each open set $U$, and with the restriction
+morphism given by restriction of functions as before. Then $\D_X$ is a
+sheaf as well, called the \emph{sheaf of smooth real--valued functions}
+on $X$.
+
+Much more surprising is that the construct $\D_X$ can actually be used
+to {\bf define} the concept of smooth manifold! That is, one can
+define a smooth manifold to be a locally Euclidean $n$--dimensional
+second countable topological space $X$, together with a sheaf $F$,
+such that there exists an open cover $\{U_i\}$ of $X$ where:
+\begin{quotation}
+For every $i$, there exists a homeomorphism $f_i\colon U_i \to \R^n$ and
+an isomorphism of sheaves $\phi_i\colon \D_{\R^n} \to F|_{U_i}$ relative
+to $f_i$.
+\end{quotation}
+The idea here is that not only does every smooth manifold $X$ have a
+sheaf $\D_X$ of smooth functions, but specifying this sheaf of smooth
+functions is sufficient to fully describe the smooth manifold
+structure on $X$. While this phenomenon may seem little more than a
+toy curiousity for differential geometry, it arises in full force in
+the field of algebraic geometry where the coordinate functions are
+often unwieldy and algebraic structures in many cases can only be
+satisfactorily described by way of sheaves and schemes.
+\end{example}
+
+\begin{example}
+Similarly, for a complex analytic manifold $X$, one can form the sheaf
+$\H_X$ of holomorphic functions by setting $\H_X(U)$ equal to the
+complex vector space of $\C$--valued holomorphic functions on $U$,
+with the restriction morphism being restriction of functions as
+before.
+\end{example}
+
+\begin{example}
+The algebraic geometry analogue of the sheaf $\D_X$ of differential
+geometry is the prime spectrum $\operatorname{Spec}(R)$ of a
+commutative ring $R$. However, the construction of the sheaf
+$\operatorname{Spec}(R)$ is beyond the scope of this discussion and
+merits a separate article.
+\end{example}
+
+\begin{example}
+For an example of a presheaf that is not a sheaf, consider the
+presheaf $F$ on $X$, with values in the category of real vector
+spaces, whose sections on $U$ are locally constant real--valued
+functions on $U$ modulo constant functions on $U$. Then every section
+$f \in F(U)$ is locally zero in some fine enough open cover $\{U_i\}$
+(it is enough to take a cover where each $U_i$ is connected), whereas
+$f$ may be nonzero if $U$ is not connected.
+\end{example}
+
+We conclude with some interesting examples of morphisms of
+sheaves, chosen to illustrate the unifying power of the language of
+schemes across various diverse branches of mathematics.
+
+\begin{enumerate}
+\item For any continuous function $f\colon X \to Y$, the map $\phi_U\colon
+\c_Y(U) \to \c_X(f^{-1}(U))$ given by $\phi_U(g) := gf$ defines a
+morphisms of sheaves from $\c_Y$ to $\c_X$ with respect to $f$.
+\item For any continuous function $f\colon X \to Y$ of smooth
+differentiable manifolds, the map given by $\phi_U(g) := gf$ has the
+property
+$$
+g \in \D_Y(U) \implies \phi_U(g) \in \D_X(f^{-1}(U))
+$$
+if and only if $f$ is a smooth function.
+\item For any continuous function $f\colon X \to Y$ of complex analytic
+manifolds, the map given by $\phi_U(g) := gf$ has the property
+$$
+g \in \H_Y(U) \implies \phi_U(g) \in \H_X(f^{-1}(U))
+$$
+if and only if $f$ is a holomorphic function.
+\item For any Zariski continuous function $f\colon X \to Y$ of algebraic
+varieties over a field $k$, the map given by $\phi_U(g) := gf$ has the
+property
+$$
+g \in \O_Y(U) \implies \phi_U(g) \in \O_X(f^{-1}(U))
+$$
+if and only if $f$ is a regular function. Here $\O_X$ denotes the
+sheaf of $k$--valued regular functions on the algebraic variety $X$.
+\end{enumerate}
+
+\begin{thebibliography}{9}
+\bibitem{mumford} David Mumford, \emph{The Red Book of Varieties and
+Schemes, Second Expanded Edition}, Springer--Verlag, 1999 (LNM {\bf
+1358}).
+\bibitem{weibel} Charles Weibel, \emph{An Introduction to Homological
+Algebra}, Cambridge University Press, 1994.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

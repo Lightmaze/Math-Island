@@ -1,0 +1,46 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrattCertificate}
+\pmcreated{2013-03-22 18:53:06}
+\pmmodified{2013-03-22 18:53:06}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Pratt certificate}
+\pmrecord{4}{41733}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em Pratt certificate} for a given integer $n$ is a primality certificate in which the numbers allow verification of primality by using the converse of Fermat's little theorem (or Lehmer's theorem). Generating a Pratt certificate requires knowledge of the prime factorization of $n - 1$ (the primes $p_i$). Then, one must find a witness $w$ such that $w^{n - 1} \equiv 1 \mod n$ but not $$w^{\frac{n - 1}{p_i}} \equiv 1 \mod n$$ for any $i \leq \omega(n - 1)$ (with $\omega(x)$ being the number of distinct prime factors function). Pratt certificates typically include witnesses not just for $n$ but also for the prime factors of $n - 1$.
+
+Because a Pratt certificate requires the factorization of $n - 1$, it is generally only used for small numbers, with ``small'' being roughly defined as being less than about a billion. We'll use a much smaller number for our example, one for which it would actually be faster to just perform trial division: $n = 127$. We then have to factor 126, which gives us 2, 3, 3, 7. Choosing our witness $w = 12$, we then see that $12^{126} \equiv 1 \mod 127$ but $12^{63} \equiv -1 \mod 127$, $12^{42} \equiv 107 \mod 127$ and $12^{18} \equiv 8 \mod 127$. Most algorithms for the Pratt certificate generally hard-code 2 as a prime number, but provide certificates for the other primes in the factorization. For this example we won't bother to give certificates for 3 and 7.
+%%%%%
+%%%%%
+\end{document}

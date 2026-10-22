@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CharacterizationOfT2Spaces}
+\pmcreated{2013-03-22 14:41:47}
+\pmmodified{2013-03-22 14:41:47}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{characterization of $T2$ spaces}
+\pmrecord{7}{36306}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D10}
+\pmrelated{LocallyCompactHausdorffSpace}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{prop}\cite{steen, bourbaki}
+Suppose $X$ is a topological space. Then $X$ is a \PMlinkname{$T_2$ space}{T2Space} if and only if
+for all $x\in X$, we have
+\begin{eqnarray}
+\label{ceq}
+  \{x\} &=& \bigcap \{A \mid A\subseteq X\ \mbox{closed}, \mbox{$\exists$ open set}\  U\ \mbox{such that}\ x\in U\subseteq A\}.
+\end{eqnarray}
+\end{prop}
+
+\begin{proof}
+By manipulating the definition using de Morgan's laws, the claim 
+can be rewritten as 
+$$
+  \{x\}^\complement = \bigcup \{V \mid V\subseteq X\ \mbox{open}, \mbox{$\exists$ open set}\  U\ \mbox{such that}\ x\in U\subseteq V^\complement\}.
+$$
+Suppose $y\in \{x\}^\complement$. As $X$ is a $T_2$ space,
+there are open sets $U,V$ such that $x\in U, y\in V$, and $U\cap V=\emptyset$. 
+Thus, the inclusion from left to right holds. 
+On the other hand, suppose $y\in V$ for some open $V$ such that 
+$\{x\}\subseteq V^\complement$. Then 
+$$
+  y\in V\subseteq \{x\}^\complement
+$$
+and the claim follows.
+\end{proof}
+
+\subsubsection*{Notes}
+If we adopt the notation that a neighborhood of $x$ 
+is any set containing an open set containing $x$, then the equation \ref{ceq}
+can be written as 
+\begin{eqnarray*}
+  \{x\} &=& \bigcap \{A \mid A\subseteq X\ \mbox{is a closed neighborhood of $x$} \}.
+\end{eqnarray*}
+
+
+
+\begin{thebibliography}{9}
+\bibitem{steen} L.A. Steen, J.A.Seebach, Jr.,
+\emph{Counterexamples in topology},
+Holt, Rinehart and Winston, Inc., 1970.
+\bibitem{bourbaki} N. Bourbaki, \emph{General Topology, Part 1},
+Addison-Wesley Publishing Company, 1966.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

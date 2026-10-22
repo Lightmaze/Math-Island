@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClassificationOfTopologicalPropertiesAccordingToBehaviourUnderMapping}
+\pmcreated{2013-03-22 14:38:04}
+\pmmodified{2013-03-22 14:38:04}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{classification of topological properties according to behaviour under mapping}
+\pmrecord{15}{36217}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C05}
+\pmdefines{hereditary}
+\pmdefines{hereditarily}
+\pmdefines{weakly hereditary}
+\pmdefines{continuous}
+\pmdefines{open}
+\pmdefines{closed invariant}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Topological properties may be classified by their behaviour with respect to mappings.  The basis of such a classification is the following question:  Given two topological spaces $X$ and $Y$ and a continuous map $f \colon X \to Y$, can one infer that one of the spaces has a certain topological property from the fact that the other space has this property? 
+
+A trivial case of this question may be disposed of.  If $f$ is a homeomorphism, then the spaces $X$ and $Y$ cannot be distinguished using only the techniques of topology, and hence both spaces will have exactly the same topological properties.
+
+To obtain a non-trivial classification, we must consider more general maps.  Since every map may be expressed as the composition of an inclusion and a surjection, it is natural to consider the cases where $f$ is an inclusion and where it is a surjection.
+
+In the case of an inclusion, we can define the following classifications:
+
+A property of a topological space is called {\bf hereditary} if it is the case that whenever a space has that property, every subspace of that space also has the same property.
+
+A property of a topological space is called {\bf weakly hereditary} if it is the case that whenever a space has that property, every \emph{closed} subspace of that space also has the same property.
+
+In the case of a surjection, we can define the following classifications:
+
+A property of a topological space is called {\bf continuous} if it is the case that, whenever a space has this property, the images of this space under all continuous mapping also have the same property.
+
+A property of a topological space is called {\bf open} if it is the case that, whenever a space has this property, the images of this space under all open continuous mappings also have the same property.
+
+A property of a topological space is called {\bf closed invariant} if it is the case that, whenever a space has this property, the images of this space under all closed continuous mapping also have the same property.
+%%%%%
+%%%%%
+\end{document}

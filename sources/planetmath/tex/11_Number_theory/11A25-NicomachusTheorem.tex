@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NicomachusTheorem}
+\pmcreated{2013-03-22 18:07:12}
+\pmmodified{2013-03-22 18:07:12}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Nicomachus' theorem}
+\pmrecord{7}{40668}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{CubeOfAnInteger}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Theorem (Nicomachus). The sum of the cubes of the first $n$ integers is equal to the square of the $n$th triangular number. To put it algebraically, $$\sum_{i = 1}^n i^3 = \left( \frac{n^2 + n}{2} \right)^2.$$
+
+\begin{proof} There are several formulas for the triangular numbers. Gauss figured out that to compute $$\sum_{i = 1}^n i,$$ one can, instead of summing the numbers one by one, pair up the numbers thus: $1 + n$, $2 + (n - 1)$, $3 + (n - 2)$, etc., and each of these sums has the same result, namely, $n + 1$. Since there are $n$ of these sums, carrying this all the way through to the end, we are in effect squaring $n + 1$, which is $(n + 1)^2 = (n + 1)(n + 1) = n^2 + n$. But this is redundant, since it includes both $1 + n$ and $n + 1$, both $2 + (n - 1)$ and $(n - 1) + 2$, etc., in effect, each of these twice. Therefore, $$\frac{n^2 + n}{2} = \sum_{i = 1}^n i.$$
+
+As Sir Charles Wheatstone proved, we can rewrite $i^3$ as $$\sum_{j = 1}^i (2ij + i).$$ That sum can always be rewritten as a sum of odd terms, namely $$\sum_{k = 1}^i (i^2 + i + 2k).$$ Thus, the sum of the first $n$ cubes is in fact also $$\sum_{i = 0}^{n - 1} (2i + 1).$$ The sum of the first $n - 1$ odd numbers is $n^2$, and therefore $$\sum_{i = 1}^n i^3 = \left( \sum_{i = 1}^n i \right)^2,$$ as the theorem states.
+\end{proof}
+
+For example, the sum of the first four cubes is 1 + 9 + 27 + 64 = 100. This is also equal to 1 + 3 + 5 + 7 + 9 + 11 + 13 + 17 + 19 = 100. The square root of 100 is 10, the fourth triangular number, and indeed 10 = 1 + 2 + 3 + 4.
+%%%%%
+%%%%%
+\end{document}

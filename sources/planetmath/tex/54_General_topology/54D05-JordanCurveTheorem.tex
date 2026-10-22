@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{JordanCurveTheorem}
+\pmcreated{2013-03-22 13:08:53}
+\pmmodified{2013-03-22 13:08:53}
+\pmowner{rmilson}{146}
+\pmmodifier{rmilson}{146}
+\pmtitle{Jordan curve theorem}
+\pmrecord{9}{33587}
+\pmprivacy{1}
+\pmauthor{rmilson}{146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D05}
+\pmclassification{msc}{54A05}
+%\pmkeywords{Jordan curve}
+%\pmkeywords{simple closed curve}
+
+\endmetadata
+
+%\documentclass{article}
+\usepackage{amssymb, amsmath, amsthm, alltt, setspace}
+\newtheorem{thm}{Theorem}
+
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\theoremstyle{definition}
+\newtheorem*{rem}{Remark}
+
+\theoremstyle{definition}
+\newtheorem*{nott}{Notation}
+
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\newtheorem*{eg}{Example}
+\newtheorem*{ex}{Exercise}
+\newtheorem*{prop}{Proposition}
+
+
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\leftbb}{[ \! [}
+\newcommand{\rightbb}{] \! ]}
+\newcommand{\bt}{\begin{thm}}
+\newcommand{\et}{\end{thm}}
+\newcommand{\Rel}{\mathbf{R}}
+\newcommand{\er}{\thicksim}
+\newcommand{\sqle}{\sqsubseteq}
+\newcommand{\floor}[1]{\lfloor{#1}\rfloor}
+\newcommand{\ceil}[1]{\lceil{#1}\rceil}
+\begin{document}
+\PMlinkescapeword{divides}
+\PMlinkescapeword{equivalent}
+\PMlinkescapeword{states}
+\PMlinkescapeword{connected components}
+\PMlinkescapeword{connected component}
+
+Informally, the Jordan curve theorem states that every Jordan curve divides the Euclidean plane into an ``outside'' and an ``inside''.  The proof of this geometrically plausible result requires surprisingly heavy machinery from topology.  The difficulty lies in the great generality of the statement and inherent difficulty in formalizing the exact meaning of words like ``curve'', ``inside'', and ``outside.''
+
+There are several equivalent formulations.
+
+\begin{thm}
+If $\Gamma$ is a simple closed curve in $\RR^2$, then $\RR^2 \setminus \Gamma$ has precisely two \PMlinkname{connected components}{ConnectedSpace}.
+\end{thm}
+
+\begin{thm}
+If $\Gamma$ is a simple closed curve in the sphere $S^2$, then $S^2 \setminus \Gamma$ consists of precisely two connected components.
+\end{thm}
+
+\begin{thm}
+Let $h: \RR \to \RR^2$ be a one-to-one continuous map such that $|h(t)| \to \infty$ as $|t| \to \infty$.  Then $\RR^2 \setminus h(\RR)$ consists of precisely two connected components.
+\end{thm}
+
+The two connected components mentioned in each formulation are, of course, the inside and the outside the Jordan curve, although only in the first formulation is there a clear way to say what is out and what is in.  There we can define ``inside'' to be the bounded connected component, as any picture can easily convey.
+%%%%%
+%%%%%
+\end{document}

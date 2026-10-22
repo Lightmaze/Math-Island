@@ -1,0 +1,103 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SolutionsOf1xx2x3y2}
+\pmcreated{2013-03-22 17:05:09}
+\pmmodified{2013-03-22 17:05:09}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{solutions of $1+x+x^2+x^3=y^2$}
+\pmrecord{10}{39378}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11F80}
+\pmclassification{msc}{14H52}
+\pmclassification{msc}{11D41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+This article shows that the only solutions in integers to the equation
+\[1+x+x^2+x^3=y^2\]
+are the obvious trivial solutions $x=0,\pm 1$ together with $x=7, y=20$. This result was known to Fermat.
+
+First, note that the equation is $(1+x)(1+x^2)=y^2$, so we have immediately that $x\ge -1$. So, noting the solutions for $x=0,\pm 1$, assume in what follows that $x>1$.
+
+Let $d=\gcd(1+x,1+x^2)$. Then $x\equiv -1\pmod d$, so that $1+x^2\equiv 2\pmod d$. But $d\mid 1+x^2$ so that $2\equiv 0\pmod d$ and $d$ is either $1$ or $2$. If $d=1$, so that $1+x$ and $1+x^2$ are coprime, then $1+x$ and $1+x^2$ must both be squares. But $1+x^2$ is not a square for $x>1$. Thus the $\gcd$ of $1+x$ and $1+x^2$ is $2$, so each must be twice a square, say
+\begin{gather*}
+1+x=2r^2\\
+1+x^2=2s^2
+\end{gather*}
+and then
+\[(r^2)^2+(r^2-1)^2=\left(\frac{1+x}{2}\right)^2+\left(\frac{-1+x}{2}\right)^2=\frac{1+x^2}{2}=s^2\]
+so that $r^2, r^2-1, s$ form a primitive Pythagorean triple (note that $r>1$ since $x>1$).
+
+Recall that if $(a,b,c)$ is a primitive Pythagorean triple, then precisely one of $a$ and $b$ is even, and we can choose coprime integers $p,q$ such that $a=p^2-q^2, b=2pq, c=p^2+q^2$ or $a=2pq, b=p^2-q^2, c=p^2+q^2$ depending on the parity of $a$.
+
+Suppose first that $r$ is odd. Then
+\begin{gather*}
+r^2=p^2-q^2\\
+r^2-1=2pq\\
+s=p^2+q^2
+\end{gather*}
+Then $1=r^2-(r^2-1)=(p-q)^2-2q^2$. Now, note that $p-q$ must be a square, say $p-q=t^2$, since $\gcd(p-q,p+q)=1$ and $(p-q)(p+q)$ is a square. Then
+\[t^4=(p-q)^2=2q^2+1=(q^2+1)^2-q^4\]
+so that
+\[t^4+q^4=(q^2+1)^2\]
+But we know that \PMlinkname{the sum of two fourth powers can be a square}{ExampleOfFermatsLastTheorem} only for the trivial case where all are zero. So $r$ cannot be odd.
+
+So suppose that $r$ is even. Then
+\begin{gather*}
+r^2=2pq\\
+r^2-1=p^2-q^2\\
+s=p^2+q^2
+\end{gather*}
+From the second of these formulas, we see that $p$ must be even (consider both sides $\pmod 4$), say $p=2t^2$. Now,
+\begin{multline*}(p+q-1)(p+q+1)=(p+q)^2-1=p^2+2pq+q^2-1=\\
+p^2+2pq+q^2-(r^2-(r^2-1))=p^2+2pq+q^2-2pq+p^2-q^2=2p^2=8t^4
+\end{multline*}
+Since $p$ and $q$ have opposite parity, $p+q\pm 1$ are even, so that
+\[2t^4=\frac{p+q-1}{2}\cdot\left(\frac{p+q-1}{2}+1\right)=u(u+1)\]
+Thus one of $u,u+1$ is a fourth power and the other is twice a fourth power, say $b^4$ and $2c^4$.
+
+Now,
+\begin{gather*}
+u=b^4\Rightarrow u+1=2c^4\Rightarrow b^4-2c^4=-1\\
+u=2c^4\Rightarrow u+1=b^4\Rightarrow b^4-2c^4=1
+\end{gather*}
+so that $b^4-2c^4=\pm 1$.
+
+If $b^4-2c^4=1$, then
+\[((c^2)^2+1)^2=(c^2)^4+b^4\]
+and again we have a square being the sum of two fourth powers. So this case is impossible.
+
+If $b^4-2c^4=-1$, write $e=c^2$, then $(e^2-1)^2=e^4-b^4$. It follows (see \PMlinkname{here}{X4Y4z2HasNoSolutionsInPositiveIntegers}) that either $b=0$ or $e^2-1=0$. If $b=0$, we get the impossibility $e^4-2e^2+1=e^4$, while if $(e^2-1)^2=0$, then $e^4=b^4, e=\pm 1$ and so $b=\pm 1$. Then $\displaystyle \frac{p+q-1}{2}=b^4=1$, so that $p+q=3$. Thus $r^2=4$, so $r=2$ and, finally, $1+x=2r^2=8$, so that $x=7$.
+
+Thus, the only nontrivial solution to the equation given is
+\[1+7+49+343=400\]
+%%%%%
+%%%%%
+\end{document}

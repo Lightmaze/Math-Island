@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{QuadraticCongruence}
+\pmcreated{2013-03-22 17:45:30}
+\pmmodified{2013-03-22 17:45:30}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{quadratic congruence}
+\pmrecord{11}{40211}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A15}
+\pmclassification{msc}{11A07}
+\pmrelated{LinearCongruence}
+\pmrelated{LegendreSymbol}
+\pmrelated{QuadraticFormula}
+\pmrelated{ConditionalCongruences}
+\pmdefines{quadratic congruence}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{roots} \PMlinkescapeword{root}
+Let $a,\,b,\,c$ be known integers and $p$ an odd prime number not dividing $a$.\, The number of non-congruent roots of the quadratic congruence
+\begin{align}
+               ax^2\!+\!bx\!+\!c \;\equiv\; 0 \pmod{p}
+\end{align}
+is
+\begin{itemize}
+\item two, if\, $b^2\!-\!4ac$\, is a quadratic residue modulo $p$;
+\item one, if\, $b^2\!-\!4ac \equiv 0 \pmod{p}$;
+\item zero, if\, $b^2\!-\!4ac$\, is a quadratic nonresidue modulo $p$.\\
+\end{itemize}
+
+
+
+{\em Proof.}\, Since\, $\gcd(p,\,4a) = 1$,\, multiplying (1) by $4a$ gives an \PMlinkname{equivalent}{Equivalent3} congruence
+$$4a^2x^2\!+\!4abx\!+\!4ac \;\equiv\; 0 \pmod{p}$$
+which may furthermore be written as
+$$(2ax\!+\!b)^2 \;\equiv\; b^2\!-\!4ac \pmod{p}.$$
+Accordingly, one can obtain the the solution of the given congruence from the solution of the pair of congruences
+\begin{align*}
+\begin{cases}
+               y^2 \;\equiv\; b^2\!-\!4ac \pmod{p} \qquad\qquad (2)\\
+               2ax\!+\!b \;\equiv\; y \pmod{p}.\; \qquad\qquad (3) \\
+\end{cases}
+\end{align*}
+Case 1:\, $b^2\!-\!4ac$ is a quadratic residue$\pmod{p}$.\, Then (2) has a root \,$y = y_0 \neq 0$,\, and therefore also the second root\, $y = -y_0$.\, The roots\, $y = \pm y_0$ are incongruent, because otherwise one had\; 
+$p \mid 2y_0$\; and thus\; $p \mid y_0 \mid y_0^2 \equiv b^2\!-\!4ac$\; which is not possible in this case.\\
+Case 2:\, $b^2\!-\!4ac \equiv 0 \pmod{p}$.\, Now (2) implies that\, $y \equiv 0 \pmod{p}$,\, whence the corresponding root $x_0$ of the linear congruence (3) does not allow other incongruent roots for (1).\\
+Case 3:\, $b^2\!-\!4ac$ is a quadratic nonresidue$\pmod{p}$.\, The congruence (2) cannot have solutions; the same concerns thus also (1).\\
+
+\textbf{Example.}\, Solve the congruence
+$$4x^2+6x-3 \;\equiv\; 0 \pmod{43}.$$
+We have\, $b^2\!-\!4ac = 36+4\cdot4\cdot3 = 84 \equiv -2 \pmod{43}$\, and the Legendre symbol
+$$\left(\frac{-2}{43}\right) \;=\; \left(\frac{-1}{43}\right)\left(\frac{2}{43}\right) \;=\; -1\cdot(-1) \;=\; 1$$
+(see values of the Legendre symbol) says that $-2$ is a quadratic residue modulo 43.\, The congruence corresponding (2) is
+$$y^2 \;\equiv\; -2 \pmod{43},$$
+which is satisfied by\, $y \equiv \pm16 \pmod{43}$ as one finds after a little experimenting.\, Then we have the two linear congruences\, $2\cdot4x+6 \equiv \pm16 \pmod{43}$,\, i.e.
+$$4x \;\equiv\; \pm8-3 \pmod{43}$$
+corresponding (3).\, The first of them,\, $4x\equiv 5 \pmod{43}$,\, is satisfied by\, $x = 12$\, and the second,\, $4x\equiv -11 \pmod{43}$,\, by\, $x = 8$.\, Thus the solution of the given congruence is
+$$x \;\equiv\; 8 \pmod{43} \quad \mbox{or} \quad x \;\equiv\; 12 \pmod{43}.$$
+
+
+
+
+
+%%%%%
+%%%%%
+\end{document}

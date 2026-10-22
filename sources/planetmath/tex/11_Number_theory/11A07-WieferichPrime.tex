@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WieferichPrime}
+\pmcreated{2013-03-22 13:50:21}
+\pmmodified{2013-03-22 13:50:21}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Wieferich prime}
+\pmrecord{7}{34575}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A07}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\newtheorem{thm}{Theorem}
+\begin{document}
+A Wieferich prime a is prime number $p$ such that $p^2$ divides $2^{p-1}-1$; compare this with Fermat's little theorem, which states that every prime $p$ divides $2^{p-1}-1$. Wieferich primes were first described by Arthur Wieferich in 1909 in works pertaining to Fermat's last theorem.
+
+The only known Wieferich primes are 1093 and 3511, found by W. Meissner in 1913 and N. G. W. H. Beeger in 1922, respectively; if any others exist, they must be at least $1.25\times 10^{15}$. The conjecture that only finitely many Wieferich primes exist remains unproven, though J. H. Silverman was able to show in 1988 that if the abc Conjecture holds, then for any positive integer $a>1$, there exist infinitely many primes $p$ such that $p^2$ does not divide $a^{p-1}-1$.  In particular, there are infinitely many primes which are not Wieferich.
+
+\subsection*{Wieferich primes and Fermat's last theorem}
+
+The following theorem connecting Wieferich primes and Fermat's last theorem was proven by Wieferich in 1909:
+
+\begin{thm}
+Let $p$ be prime, and let $x, y, z$ be integers such that $x^p+y^p+z^p=0$. Furthermore, assume that $p$ does not divide the product $xyz$. Then $p$ is a Wieferich prime.
+\end{thm}
+
+In 1910, Mirimanoff was able to expand this theorem by showing that, if the preconditions of the theorem hold true for some prime $p$, then $p^2$ must also divide $3^{p-1}$. Prime numbers of this kind have been called Mirimanoff primes on occasion, but the name has not entered general mathematical use.
+
+An analysis of Wieferich primes also proved crucial to Preda Mihailescu's proof of the (formerly-named) Catalan's conjecture.
+
+\begin{thebibliography}{9}
+\bibitem{IR} Ireland, Kenneth and Rosen, Michael.  A Classical Introduction to Modern Number Theory.  Springer, 1998.
+
+\bibitem{Na} Nathanson, Melvyn B.  Elementary Methods in Number Theory.  Springer, 2000.
+
+\bibitem{Wiki} Wikipedia, the free encyclopedia, entry on Wieferich primes.  All text is available under the terms of the GNU Free Documentation License  
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

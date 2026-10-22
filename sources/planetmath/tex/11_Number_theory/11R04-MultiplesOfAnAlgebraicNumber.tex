@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MultiplesOfAnAlgebraicNumber}
+\pmcreated{2014-05-16 19:58:36}
+\pmmodified{2014-05-16 19:58:36}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{multiples of an algebraic number}
+\pmrecord{10}{37126}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmrelated{TheoryOfAlgebraicNumbers}
+\pmrelated{AlgebraicSinesAndCosines}
+\pmrelated{SomethingRelatedToAlgebraicInteger}
+\pmrelated{RationalAlgebraicIntegers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+\textbf{Theorem.}\, If $\alpha$ is an algebraic number, then there exists a non-zero \PMlinkname{multiple}{GeneralAssociativity} of $\alpha$ which is an algebraic integer.
+
+
+{\em Proof.}\, Let $\alpha$ be a \PMlinkescapetext{root} of the equation
+$$x^n\!+\!r_1x^{n-1}\!+\!r_2x^{n-2}\!+\cdots+\!r_n = 0,$$
+where $r_1$, $r_2$, \ldots, $r_n$ are rational numbers ($n > 0$).\, Let $l$ be the least common multiple of the denominators of the $r_j$'s.\, Then we have
+$$0 = l^n(\alpha^n\!+\!r_1\alpha^{n-1}\!+\!r_2\alpha^{n-2}\!+\cdots+\!r_n) =
+ (l\alpha)^n\!+\!lr_1(l\alpha)^{n-1}\!+\!l^2r_2(l\alpha)^{n-2}\!+\cdots+\!l^nr_n,$$
+i.e. the \PMlinkescapetext{multiple \,$l\alpha$\, of $\alpha$ satisfies} the algebraic equation
+$$x^n\!+\!lr_1x^{n-1}\!+\!l^2r_2x^{n-2}\!+\cdots+\!l^nr_n = 0$$
+with rational integer coefficients.\\
+
+According to the theorem, any algebraic number $\xi$ is a 
+\PMlinkname{quotient}{Division} of an algebraic integer 
+(of the field $\mathbb{Q}(\xi)$) and a rational integer.
+%%%%%
+%%%%%
+\end{document}

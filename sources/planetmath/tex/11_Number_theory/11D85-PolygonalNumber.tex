@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PolygonalNumber}
+\pmcreated{2013-03-22 13:55:38}
+\pmmodified{2013-03-22 13:55:38}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{polygonal number}
+\pmrecord{5}{34685}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D85}
+\pmclassification{msc}{11D09}
+\pmsynonym{figurate number}{PolygonalNumber}
+\pmdefines{pentagonal number}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\begin{document}
+\PMlinkescapeword{connection}
+\PMlinkescapeword{fixed}
+\PMlinkescapeword{formulas}
+A polygonal number, or figurate number, is any value of the function
+$$P_d(n)=\frac{(d-2)n^2+(4-d)n}{2}$$
+for integers $n\ge 0$ and $d\ge 3$.
+A ``generalized polygonal number''
+is any value of $P_d(n)$ for some integer $d\ge 3$ and any $n\in\mathbb{Z}$.
+For fixed $d$, $P_d(n)$ is called a $d$-gonal or $d$-polygonal number.
+For $d=3,4,5,\ldots$, we speak of a triangular number, a square
+number or a square, a pentagonal number, and so on.
+
+An equivalent definition of $P_d$, by induction on $n$, is:
+$$P_d(0)=0$$
+$$P_d(n)=P_d(n-1)+(d-2)(n-1)+1\qquad\text{ for all }n\ge 1$$
+$$P_d(n-1)=P_d(n)+(d-2)(1-n)-1\qquad\text{ for all }n<0\;.$$
+From these equations, we can deduce that all generalized polygonal
+numbers are nonnegative integers.
+The first two formulas show that $P_d(n)$ points can be arranged in a
+set of $n$ nested $d$-gons, as in this diagram of
+$P_3(5)=15$ and $P_5(5)=35$.
+\begin{center}\includegraphics{dgon}\end{center}
+
+Polygonal numbers were studied somewhat by the ancients, as far
+back as the Pythagoreans, but nowadays their interest
+is mostly historical, in connection with this famous result:
+
+\textbf{Theorem: }For any $d\ge 3$, any integer $n\ge 0$ is the
+sum of some $d$ $d$-gonal numbers.
+
+In other words, any nonnegative integer is a sum of three
+triangular numbers, four squares, five pentagonal numbers,
+and so on.
+Fermat made this remarkable statement in a letter to Mersenne.
+Regrettably, he never revealed the argument or proof that he
+had in mind. More than a century passed before Lagrange proved
+the easiest case: Lagrange's four-square theorem. The
+case $d=3$ was demonstrated by Gauss around 1797, and the
+general case by Cauchy in 1813.
+%%%%%
+%%%%%
+\end{document}

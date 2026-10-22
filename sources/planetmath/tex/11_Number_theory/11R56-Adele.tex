@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Adele}
+\pmcreated{2013-03-22 12:39:31}
+\pmmodified{2013-03-22 12:39:31}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{ad\`{e}le}
+\pmrecord{5}{32927}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R56}
+\pmrelated{Idele}
+\pmdefines{ad\`{e}le group}
+\pmdefines{group of ad\`{e}les}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\p}{{\mathfrak{p}}}
+\newcommand{\m}{{\mathfrak{m}}}
+\newcommand{\M}{{\mathfrak{M}}}
+\renewcommand{\P}{{\mathfrak{P}}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\renewcommand{\H}{\mathcal{H}}
+\newcommand{\A}{\mathbb{A}}
+\renewcommand{\c}{\mathcal{C}}
+\renewcommand{\O}{\mathcal{O}}
+\renewcommand{\o}{\mathfrak{o}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\lra}{\longrightarrow}
+\renewcommand{\div}{\mid}
+\newcommand{\res}{\operatorname{res}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\diff}{\operatorname{diff}}
+\newcommand{\incl}{\operatorname{incl}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\renewcommand{\Re}{\operatorname{Re}}
+\newcommand{\intersect}{\cap}
+\newcommand{\union}{\cup}
+\newcommand{\bigintersect}{\bigcap}
+\newcommand{\bigunion}{\bigcup}
+\newcommand{\ilim}{\,\underset{\longleftarrow}{\lim}\,}
+\begin{document}
+Let $K$ be a number field. For each finite prime $v$ of $K$, let
+$\o_v$ denote the valuation ring of the completion $K_v$ of $K$ at
+$v$. The {\em ad\`ele group} $\A_K$ of $K$ is defined to be the
+restricted direct product of the collection of locally compact
+additive groups $\{K_v\}$ over all primes $v$ of $K$ (both finite
+primes and infinite primes), with respect to the collection of compact
+open subgroups $\{\o_v\}$ defined for all finite primes $v$.
+
+The set $\A_K$ inherits addition and multiplication operations
+(defined pointwise) which make it into a topological ring. The
+original field $K$ embeds as a ring into $\A_K$ via the map
+$$
+x \mapsto \prod_v x_v.
+$$
+defined for $x \in K$, where $x_v$ denotes the image of $x$ in $K_v$
+under the embedding $K \hookrightarrow K_v$. Note that $x_v \in \o_v$
+for all but finitely many $v$, so that the element $x$ is sent under
+the above definition into the restricted direct product as claimed.
+
+It turns out that the image of $K$ in $\A_K$ is a discrete set and the
+quotient group $\A_K/K$ is a compact space in the quotient topology.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{displaystylesumnleXYOmeganOleftfracxlogXy12yrightFor1leY2}
+\pmcreated{2013-03-22 16:09:15}
+\pmmodified{2013-03-22 16:09:15}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{$\displaystyle \sum_{n \le x} y^{\Omega(n)}=O\left( \frac{x(\log x)^{y-1}}{2-y} \right)$ for $1 \le y<2$}
+\pmrecord{18}{38235}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N37}
+\pmrelated{AsymptoticEstimate}
+\pmrelated{ConvolutionMethod}
+\pmrelated{DisplaystyleXlog2xOleftsum_nLeX2OmeganRight}
+\pmrelated{DisplaystyleSum_nLeXYomeganO_yxlogXy1ForYGe0}
+\pmrelated{DisplaystyleSum_nLeXTaunaO_axlogX2a1ForAGe0}
+\pmrelated{2omeganLeTaunLe2Omegan}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+\begin{document}
+Within this entry, $\Omega$ refers to the \PMlinkname{number of (nondistinct) prime factors function}{NumberOfNondistinctPrimeFactorsFunction}, $\mu$ refers to the M\"{o}bius function, $\log$ refers to the natural logarithm, $p$ refers to a prime, and $d$, $k$, $m$, and $n$ refer to positive integers.
+
+\begin{thm*}
+For $1 \le y<2$, $\displaystyle \sum_{n \le x} y^{\Omega(n)}=O\left( \frac{x(\log x)^{y-1}}{2-y} \right)$.
+\end{thm*}
+
+\begin{proof}
+Let $g$ be a function such that $y^{\Omega}=1*g$.  Then $g$ is multiplicative and $g=\mu*y^{\Omega}$.  Thus:
+
+\begin{center}
+\begin{tabular}{ll}
+$\displaystyle \sum_{n \le x} y^{\Omega(n)}$ & $\displaystyle =\sum_{d \le x} \sum_{m \le \frac{x}{d}} g(d)$ by the convolution method \\
+& $\displaystyle =O\left( \sum_{d \le x} g(d) \cdot \frac{x}{d} \right)$ \\
+& $\displaystyle =O\left( x \prod_{p \le x} \left( 1+\sum_{k} \frac{g(p^k)}{p^k} \right) \right)$ \\
+& $\displaystyle =O\left( x \prod_{p \le x} \left( 1+\sum_{k} \frac{\mu(1)y^k+\mu(p)y^{k-1}}{p^k} \right) \right)$ \\
+& $\displaystyle =O\left( x \prod_{p \le x} \left( 1+\frac{y-1}{p} \sum_{k} \left( \frac{y}{p} \right)^{k-1} \right) \right)$ \\
+& $\displaystyle =O\left( x \prod_{p \le x} \left( 1+\frac{y-1}{p} \cdot \frac{1}{1-\frac{y}{p}} \right) \right)$ \\
+& $\displaystyle =O\left( x \prod_{p \le x} \left( 1+\frac{y-1}{p-y} \right) \right)$ \\
+& $\displaystyle =O\left( x \left(1+\frac{y-1}{2-y} \right) \prod_{3 \le p \le x} \left( 1+\frac{y-1}{p-y} \right) \right)$ \\
+& $\displaystyle =O\left( x \left(\frac{2-y+y-1}{2-y} \right) \prod_{3 \le p \le x} \exp \left(\frac{y-1}{p-y} \right) \right)$ \\
+& $\displaystyle =O\left( \frac{x}{2-y} \left( \exp \left(\sum_{3 \le p \le x} \frac{y-1}{p-y} \right) \right) \right)$ \\
+& $\displaystyle =O\left( \frac{x}{2-y} \left( \exp \left( \sum_{3 \le p \le x} \frac{1}{p-y} \right) \right)^{y-1} \right)$ \\
+& $\displaystyle =O\left( \frac{x}{2-y} \left( \exp \left( \log\log x+O(1) \right) \right)^{y-1} \right)$ \\
+& $\displaystyle =O\left( \frac{x}{2-y} \left(ce^{\log\log x} \right)^{y-1} \right)$ for some $c>0$ \\
+& $\displaystyle =O\left( \frac{x}{2-y} \left(\max\{1,c\}\log x\right)^{y-1} \right)$ \\
+& $\displaystyle =O\left( \frac{x}{2-y} \left(\max\{1,c\}\right)^{2-1} \left( \log x \right)^{y-1} \right)$ \\
+& $\displaystyle =O\left( \frac{x \left( \log x \right)^{y-1}}{2-y} \right)$. \end{tabular}
+\end{center}
+\end{proof}
+
+Note that a \PMlinkescapetext{similar} result for $y=2$ (and therefore for $y \ge 2$), such as $\displaystyle \sum_{n \le x} 2^{\Omega(n)}=O(x\log x)$, is unobtainable, as evidenced by \PMlinkname{this theorem}{DisplaystyleXlog2xOleftsum_nLeX2OmeganRight}.  On the other hand, the asymptotic estimates $\displaystyle \sum_{n \le x} 2^{\omega(n)}=O(x\log x)$ and $\displaystyle \sum_{n \le x} \tau(n)=O(x\log x)$ are true.
+%%%%%
+%%%%%
+\end{document}

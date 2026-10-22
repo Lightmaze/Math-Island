@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ArithmeticDerivative}
+\pmcreated{2013-03-22 13:35:09}
+\pmmodified{2013-03-22 13:35:09}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{arithmetic derivative}
+\pmrecord{14}{34208}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11Z05}
+\pmrelated{Prime}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The {\em arithmetic derivative} $n'$ of a natural number $n$ is defined by the following rules:
+\begin{itemize}
+\item $p'=1$ for any prime $p$.
+\item $(ab)'=a'b+ab'$ for any $a,b \in \mathbb{N}$ (Leibniz rule).
+\end{itemize}
+To define the arithmetic derivative of a negative number, we first note that $1'=0$ by the Leibniz rule ($1'=(1\cdot 1)'=1\cdot 1'+1'\cdot 1=2\cdot 1'$, so $1'=0$), and further that we must have 
+\begin{align*}
+0=1'=\left((-1)\cdot(-1)\right)'=-2\cdot(-1)',
+\end{align*}
+so $(-1)'=0$.  The product rule now requires that we define $(-n)'=-(n')+n(-1)'=-(n')$.
+
+Further, we can extend this definition to rational numbers by insisting that the quotient rule holds, i.e. for a prime $p$ we should have
+
+\begin{align*}
+0=1'=\left(p\cdot\frac{1}{p}\right)'=\left(\frac{1}{p}\right)'p+\frac{1}{p},
+\end{align*}
+giving us that $$\left(\frac{1}{p}\right)'=-\frac{1}{p^2},$$ i.e. the usual quotient rule from calculus.  We now complete the definition by extending multiplicatively (i.e. using the Leibniz rule).
+
+The arithmetic derivatives for the first few positive integers are 0, 1, 1, 4, 1, 5, 1, 12, 6, 7, 1, 16, 1, 9, 8, 32, 1, 21, 1, 24, 10, 13, 1, 44, 10, etc.
+
+As a consequence of $p' = 1$ for a prime $p$, the arithmetic derivative of a semiprime (whether squarefree or not) works out to $(pq)' = p'q + pq' = 1p + q1 = p + q$. For example, the arithmetic derivative of 10 is 7, which is 2 plus 5.
+
+The only cases of $n' = n$ for $-1 < n < 1024$ are 0, 4, 27.
+
+\begin{tabular}{|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|r|}
+$n$ & $n'$ & $n$ & $n'$ & $n$ & $n'$ & $n$ & $n'$ & $n$ & $n'$ & $n$ & $n'$ & $n$ & $n'$ & $n$ & $n'$ & $n$ & $n'$ & $n$ & $n'$ \\
+0 & 0 & 10 & 7 & 20 & 24 & 30 & 31 & 40 & 68 & 50 & 45 & 60 & 92 & 70 & 59 & 80 & 176 & 90 & 123 \\
+1 & 0 & 11 & 1 & 21 & 10 & 31 & 1 & 41 & 1 & 51 & 20 & 61 & 1 & 71 & 1 & 81 & 108 & 91 & 20 \\
+2 & 1 & 12 & 16 & 22 & 13 & 32 & 80 & 42 & 41 & 52 & 56 & 62 & 33 & 72 & 156 & 82 & 43 & 92 & 96 \\
+3 & 1 & 13 & 1 & 23 & 1 & 33 & 14 & 43 & 1 & 53 & 1 & 63 & 51 & 73 & 1 & 83 & 1 & 93 & 34 \\
+4 & 4 & 14 & 9 & 24 & 44 & 34 & 19 & 44 & 48 & 54 & 81 & 64 & 192 & 74 & 39 & 84 & 124 & 94 & 49 \\
+5 & 1 & 15 & 8 & 25 & 10 & 35 & 12 & 45 & 39 & 55 & 16 & 65 & 18 & 75 & 55 & 85 & 22 & 95 & 24 \\
+6 & 5 & 16 & 32 & 26 & 15 & 36 & 60 & 46 & 25 & 56 & 92 & 66 & 61 & 76 & 80 & 86 & 45 & 96 & 272 \\
+7 & 1 & 17 & 1 & 27 & 27 & 37 & 1 & 47 & 1 & 57 & 22 & 67 & 1 & 77 & 18 & 87 & 32 & 97 & 1 \\
+8 & 12 & 18 & 21 & 28 & 32 & 38 & 21 & 48 & 112 & 58 & 31 & 68 & 72 & 78 & 71 & 88 & 140 & 98 & 77 \\
+9 & 6 & 19 & 1 & 29 & 1 & 39 & 16 & 49 & 14 & 59 & 1 & 69 & 26 & 79 & 1 & 89 & 1 & 99 & 75 \\
+\end{tabular}
+
+\begin{thebibliography}{1}
+\bibitem[1]{Bar}{EJ Barbeau,} ``Remark on an arithmetic derivative''. {\em Can. Math. Bull.} {\bf 4} (1961): 117 - 122
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

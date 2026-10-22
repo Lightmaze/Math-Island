@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HyperperfectNumber}
+\pmcreated{2013-03-22 17:49:38}
+\pmmodified{2013-03-22 17:49:38}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{hyperperfect number}
+\pmrecord{4}{40291}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em hyperperfect number} $n$ for a given $k$ is an integer such that $k \sigma(n) = -1 + k + (k + 1)n$, where $\sigma(x)$ is the sum of divisors function. $n$ is then called $k$-hyperperfect. For example, 325 is 3-hyperperfect since its divisors (1, 5, 13, 25, 65, 325) add up to 434, and $3 \times 434 = -1 + 3 + (3 + 1)325 = 1302$. Numbers that are 1-hyperperfect are by default called perfect numbers, since $1 \sigma(n) = -1 + 1 + (1 + 1)n = 2n$.
+
+The 2-hyperperfect numbers are listed in A007593 of Sloane's OEIS. As of 2007, the only known 3-hyperperfect number is 325. The two known 4-hyperperfect numbers are 1950625 and 1220640625, a sequence too short to list in the OEIS, and no 5-hyperperfect numbers are known to exist. The 6-hyperperfect numbers are listed in A028499.
+
+\begin{thebibliography}{1}
+\bibitem{abeiler} Judson S. McCrainie, ``A Study of Hyperperfect Numbers'' {\it Journal of Integer Sequences} {\bf 3} (2000): 00.1.3
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

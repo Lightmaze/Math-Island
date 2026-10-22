@@ -1,0 +1,131 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Completion}
+\pmcreated{2013-03-22 12:39:22}
+\pmmodified{2013-03-22 12:39:22}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{completion}
+\pmrecord{8}{32923}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D35}
+\pmclassification{msc}{13J10}
+\pmclassification{msc}{26-00}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+\usepackage[all]{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\p}{{\mathfrak{p}}}
+\newcommand{\m}{{\mathfrak{m}}}
+\newcommand{\M}{{\mathfrak{M}}}
+\renewcommand{\P}{{\mathfrak{P}}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\renewcommand{\H}{\mathcal{H}}
+\newcommand{\A}{\mathcal{A}}
+\renewcommand{\c}{\mathcal{C}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\lra}{\longrightarrow}
+\renewcommand{\div}{\mid}
+\newcommand{\res}{\operatorname{res}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\diff}{\operatorname{diff}}
+\newcommand{\incl}{\operatorname{incl}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\renewcommand{\Re}{\operatorname{Re}}
+\newcommand{\intersect}{\cap}
+\newcommand{\union}{\cup}
+\newcommand{\bigintersect}{\bigcap}
+\newcommand{\bigunion}{\bigcup}
+\newcommand{\ilim}{\,\underset{\longleftarrow}{\lim}\,}
+\begin{document}
+Let $(X,d)$ be a metric space. Let $\bar{X}$ be the set of all Cauchy
+sequences $\{x_n\}_{n \in \N}$ in $X$. Define an equivalence relation
+$\sim$ on $\bar{X}$ by setting $\{x_n\} \sim \{y_n\}$ if the
+interleave sequence of the sequences $\{x_n\}$ and $\{y_n\}$ is also a
+Cauchy sequence. The {\em completion} of $X$ is defined to be the set
+$\hat{X}$ of equivalence classes of $\bar{X}$ modulo $\sim$.
+
+The metric $d$ on $X$ extends to a metric on $\hat{X}$ in the
+following manner:
+$$
+d(\{x_n\},\{y_n\}) := \lim_{n \to \infty} d(x_n,y_n),
+$$
+where $\{x_n\}$ and $\{y_n\}$ are representative Cauchy sequences of
+elements in $\hat{X}$. The definition of $\sim$ is tailored so that
+the limit in the above definition is well defined, and the fact that these
+sequences are Cauchy, together with the fact that $\R$ is complete,
+ensures that the limit exists. The space $\hat{X}$ with this metric is of course a complete metric space.
+
+The original metric space $X$ is isometric to the subset of $\hat{X}$ consisting of equivalence classes of constant sequences.
+
+Note the similarity between the construction of $\hat{X}$ and the
+construction of $\R$ from $\Q$. The process used here is the same as
+that used to construct the real numbers $\R$, except for the minor
+detail that one can not use the terminology of metric spaces in the
+construction of $\R$ itself because it is necessary to construct $\R$
+in the first place before one can define metric spaces.
+
+\section{Metric spaces with richer structure}
+
+If the metric space $X$ has an algebraic structure, then in many
+cases this algebraic structure carries through unchanged to $\hat{X}$
+simply by applying it one element at a time to sequences in $X$. We
+will not attempt to state this principle precisely, but we will
+mention the following important instances:
+
+\begin{enumerate}
+\item If $(X,\cdot)$ is a topological group, then $\hat{X}$ is also a
+  topological group with multiplication defined by
+$$
+\{x_n\} \cdot \{y_n\} = \{x_n \cdot y_n\}.
+$$
+\item If $X$ is a topological ring, then addition and multiplication
+  extend to $\hat{X}$ and make the completion into a topological ring.
+\item If $F$ is a field with a valuation $v$, then the completion of
+  $F$ with respect to the metric imposed by $v$ is a topological
+  field, denoted $F_v$ and called the completion of $F$ at $v$.
+\end{enumerate}
+
+\section{Universal property of completions}
+
+The completion $\hat{X}$ of $X$ satisfies the following universal property: for every uniformly continuous map $f: X \lra Y$ of $X$ into a complete metric space $Y$, there exists a unique lifting of $f$ to a continuous map $\hat{f}: \hat{X} \lra Y$ making the diagram
+$$
+\xymatrix{
+X \ar[rr]^f \ar[dr] & & Y \\
+& \hat{X} \ar[ur]_{\hat{f}}
+}
+$$
+commute. Up to isomorphism, the completion of $X$ is the unique metric space satisfying this property. The ability to extend uniformly continuous functions from $X$ to $\hat{X}$ is often the reason why algebraic structures on $X$ extend to $\hat{X}$ as described in the previous section.
+%%%%%
+%%%%%
+\end{document}

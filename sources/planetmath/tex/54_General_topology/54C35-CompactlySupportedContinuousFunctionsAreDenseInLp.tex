@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CompactlySupportedContinuousFunctionsAreDenseInLp}
+\pmcreated{2013-03-22 18:38:53}
+\pmmodified{2013-03-22 18:38:53}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{compactly supported continuous functions are dense in $L^p$}
+\pmrecord{6}{41390}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C35}
+\pmclassification{msc}{46E30}
+\pmclassification{msc}{28C15}
+\pmsynonym{$C_c(X)$ is dense in $L^p(X)$}{CompactlySupportedContinuousFunctionsAreDenseInLp}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $(X, \mathcal{B}, \mu)$ be a measure space, where $X$ is a locally compact Hausdorff space, $\mathcal{B}$ a \PMlinkname{$\sigma$-algebra}{SigmaAlgebra} that contains all compact subsets of $X$ and $\mu$ a measure such that:
+
+\begin{itemize}
+\item $\mu(K) < \infty$ for all compact sets $K \subset X$.
+\item $\mu$ is inner regular, meaning $\mu(A) = \sup\{ \mu(K) : K \subset A, \; K\,\text{is compact}\}$
+\item $\mu$ is outer regular, meaning $\mu(A) = \inf\{ \mu(U) : A \subset U,\; U \in \mathcal{B} \text{and}\; U\,\text{is open}\}$
+\end{itemize}
+
+We denote by $C_c(X)$ the space of continuous functions $X \to \mathbb{C}$ with compact support.
+
+{\bf Theroem -} For every $1 \leq p < \infty$, $C_c(X)$ is dense in \PMlinkname{$L^p(X)$}{LpSpace}.
+
+{\bf \emph{\PMlinkescapetext{Proof}}:} It is clear that $C_c(X)$ is indeed contained in $L^p(X)$, where we identify each function in $C_c(X)$ with its class in $L^p(X)$.
+
+We begin by proving that for each $A \in \mathcal{B}$ with finite measure, the characteristic function $\chi_A$ can be approximated, in the $L^p$ norm, by functions in $C_c(X)$. Let $\epsilon > 0$. By \PMlinkescapetext{inner and outer regularity} of $\mu$, we know there exist an open set $U$ and a compact set $K$ such that $K \subset A \subset U$ and
+\begin{align*}
+\mu(U \setminus K) = \mu(U) - \mu(K) < \epsilon
+\end{align*}
+
+By the \PMlinkname{Urysohn's lemma for locally compact Hausdorff spaces}{ApplicationsOfUrysohnsLemmaToLocallyCompactHausdorffSpaces}, we know there is a function $f \in C_c(X)$ such that $0 \leq f \leq 1$, $f|_K = 1$ and $\mathrm{supp}\,f \subset U$. Hence,
+
+\begin{align*}
+\int_X |\chi_A - f|^p \;d\mu = \int_{U \setminus K} |\chi_A - f|^p \;d\mu < \epsilon
+\end{align*}
+
+Thus, $\chi_A$ can be approximated in $L^p$ by functions in $C_c(X)$.
+
+Now, it follows easily that any simple function $\sum_{i=1}^n c_i \chi_{A_i}$, where each $A_i$ has finite measure, can also be approximated by a compactly supported continuous function. Since this kind of simple functions are dense in $L^p(X)$ we see that $C_c(X)$ is also dense in $L^p(X)$. $\square$
+%%%%%
+%%%%%
+\end{document}

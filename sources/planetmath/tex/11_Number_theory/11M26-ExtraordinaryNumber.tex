@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExtraordinaryNumber}
+\pmcreated{2013-03-22 19:33:41}
+\pmmodified{2013-03-22 19:33:41}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{extraordinary number}
+\pmrecord{14}{42547}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11M26}
+\pmclassification{msc}{11A25}
+%\pmkeywords{sum of divisors}
+%\pmkeywords{Riemann Hypothesis}
+\pmrelated{PropertiesOfXiFunction}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+Define the function $G$ for integers $n>1$ by
+        $$G(n) \; :=\; \frac{\sigma(n)}{n\ln(\ln{n})},$$
+where $\sigma(n)$ is the sum of the positive divisors of $n$.\, A positive integer $N$ is said to be an {\it extraordinary number} if it is composite and
+          $$G(N) \;\ge\; \max\{G(N/p),\,G(aN)\}$$
+for any prime factor $p$ of $N$ and any multiple $aN$ of $N$.\\
+
+It has been proved in [1] that the Riemann Hypothesis is true iff 4 is the only extraordinary number.\, The proof is based on Gronwall's theorem and Robin's theorem.
+
+
+\begin{thebibliography}{8}
+\bibitem{CNS}{\sc Geoffrey Caveney, Jean-Louis Nicolas, Jonathan Sondow}:\, Robin's theorem, primes, and a new  elementary reformulation of the Riemann Hypothesis.\, $-$ \emph{Integers} \textbf{11} (2011) article A33;\; available directly at \PMlinkexternal{arXiv}{http://arxiv.org/pdf/1110.5078.pdf}.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

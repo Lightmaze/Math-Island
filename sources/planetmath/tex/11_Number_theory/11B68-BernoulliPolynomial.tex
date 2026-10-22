@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BernoulliPolynomial}
+\pmcreated{2013-03-22 11:45:51}
+\pmmodified{2013-03-22 11:45:51}
+\pmowner{KimJ}{5}
+\pmmodifier{KimJ}{5}
+\pmtitle{Bernoulli polynomial}
+\pmrecord{12}{30215}
+\pmprivacy{1}
+\pmauthor{KimJ}{5}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B68}
+\pmclassification{msc}{65-01}
+%\pmkeywords{number theory}
+\pmrelated{BernoulliNumber}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%%\usepackage{xypic}
+\begin{document}
+The \emph{Bernoulli polynomials} are the sequence $\{ b_r(x) \} _{r=0}^{\infty}$ of polynomials defined on $[0,1]$ by the conditions:
+\begin{eqnarray*}
+b_0(x) & = & 1, \\
+b'_r(x) & = & r b_{r-1}(x), r \geq 1, \\
+\int_0^1 b_r(x)dx & = & 0, r \geq 1
+\end{eqnarray*}
+
+These assumptions imply the identity
+\[ \sum_{r=0}^{\infty} b_r(x) \frac{y^r}{r!} = \frac{ye^{xy}}{e^y-1} \]
+allowing us to calculate the $b_r$. We have
+
+\begin{eqnarray*}
+b_0(x) & = & 1 \\
+b_1(x) & = & x-\frac{1}{2} \\
+b_2(x) & = & x^2 - x + \frac{1}{6} \\
+b_3(x) & = & x^3 - \frac{3}{2}x^2 + \frac{1}{2}x \\
+b_4(x) & = & x^4 - 2x^3 + x^2 - \frac{1}{30} \\
+\vdots & &
+\end{eqnarray*}
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

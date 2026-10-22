@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EverySubspaceOfANormedSpaceOfFiniteDimensionIsClosed}
+\pmcreated{2013-03-22 14:56:28}
+\pmmodified{2013-03-22 14:56:28}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{every subspace of a normed space of finite dimension is closed}
+\pmrecord{12}{36632}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E52}
+\pmclassification{msc}{15A03}
+\pmclassification{msc}{46B99}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $(V, \| \cdot \|)$ be a  normed vector space, and $S \subset V$ a finite dimensional  subspace. Then $S$ is closed.
+
+
+\textbf{Proof}
+
+Let $a \in \overline{S} $ and choose a sequence $\{a_n\}$ with $a_n \in S$ such that
+$a_n$ converges to $a$. Then $\{a_n\}$ is a Cauchy sequence in $V$ and 
+is also a Cauchy sequence in $S$. Since a finite dimensional normed
+space is a Banach space, $S$ is complete, so $\{a_n\}$ converges to an 
+element of $S$. Since limits in a normed  space are unique, that limit
+must be $a$, so $a \in S$.
+
+\textbf{Example}
+
+The result depends on the field being the real or complex numbers.
+Suppose the $V = Q \times R$, viewed as a vector space over $Q$ and
+$S = Q \times Q$ is the finite dimensional subspace. Then clearly $(1, \sqrt{2})$ is in
+$V$ and is a limit point of $S$ which is not in $S$. So $S$ is not closed.
+
+\textbf{Example}
+
+On the other hand, there is an example where $Q$ is the underlying 
+field and we can still show a finite dimensional subspace is closed.  Suppose
+that $V = Q^n$, the set of $n$-tuples of rational numbers, viewed
+as vector space over $Q$. Then if $S$ is a finite dimensional subspace 
+it must be that $S = \{x | Ax = 0\}$ for some matrix $A$. 
+That is,  $S$ is the inverse image of the closed set $\{0\}$.
+Since the map $x \to Ax$ is continuous, it follows that $S$ is a closed set.
+
+
+%%%%%
+%%%%%
+\end{document}

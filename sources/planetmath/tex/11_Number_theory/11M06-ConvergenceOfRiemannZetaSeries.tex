@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConvergenceOfRiemannZetaSeries}
+\pmcreated{2015-08-22 13:15:14}
+\pmmodified{2015-08-22 13:15:14}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{convergence of Riemann zeta series}
+\pmrecord{8}{39853}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11M06}
+\pmclassification{msc}{30A99}
+%\pmkeywords{Riemann zeta function}
+\pmrelated{ModulusOfComplexNumber}
+\pmrelated{ComplexExponentialFunction}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+The series
+\begin{align}
+\sum_{n=1}^\infty\frac{1}{n^s}
+\end{align}
+converges absolutely for all $s$ with real part greater than 1.\\
+
+{\em Proof.}  Let\, $s = \sigma+it$\, where\, $\sigma$ and $t$ are 
+real numbers and\, $\sigma > 1$.\, Then
+$$\left|\frac{1}{n^s}\right| = \frac{1}{|e^{s\log{n}}|} = 
+\frac{1}{e^{\sigma\log{n}}} = \frac{1}{n^\sigma}.$$
+Since the series \,$\sum_{n=1}^\infty\frac{1}{n^\sigma}$ converges, by the \PMlinkname{$p$-test}{PTest}, for\, $\sigma > 1$, we conclude that the series (1) is absolutely convergent in the half-plane \,$\sigma > 1$.  
+%%%%%
+%%%%%
+\end{document}

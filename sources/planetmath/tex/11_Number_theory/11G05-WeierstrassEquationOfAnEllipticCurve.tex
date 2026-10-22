@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WeierstrassEquationOfAnEllipticCurve}
+\pmcreated{2013-03-22 15:48:00}
+\pmmodified{2013-03-22 15:48:00}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Weierstrass equation of an elliptic curve}
+\pmrecord{6}{37762}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11G05}
+\pmclassification{msc}{14H52}
+\pmclassification{msc}{11G07}
+\pmsynonym{Weierstrass model}{WeierstrassEquationOfAnEllipticCurve}
+\pmdefines{Weierstrass equation}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem*{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+Recall that an {\it elliptic curve} over a field $K$ is a projective nonsingular curve $E$ defined over $K$ of genus $1$ together with a point $O\in E$ defined over $K$. 
+
+\begin{defn}
+Let $K$ be an arbitrary field. A Weierstrass equation for an elliptic curve $E/K$ is an equation of the form:
+$$y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6$$
+where $a_1, a_2, a_3,a_4,a_6$ are constants in $K$.
+\end{defn}
+
+All elliptic curves have a Weierstrass model in $\mathbb{P}^2(K)$, the projective plane over $K$. This is a simple application of the \PMlinkid{Riemann Roch theorem for curves}{RiemannRochTheorem}:
+
+\begin{thm}
+Let $E$ be an elliptic curve defined over a field $K$. Then there exists rational functions $x,y\in K(E)$ such that the map $\psi:E\to \mathbb{P}^2(K)$ sending $P$ to $[x(P),y(P),1]$ is an isomorphism of $E/K$ to the projective curve given by
+$$ y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6$$
+where $a_1, a_2, a_3,a_4,a_6$ are constants in $K$.
+\end{thm}
+
+Moreover, the following proposition specifies any possible change of variables.
+\begin{prop}
+\label{change}
+Let $E/K$ be an elliptic curve given by a Weierstrass model of the form:
+$$ y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6$$
+with $a_i\in K$. Then:
+\begin{enumerate}
+\item The only change of variables $(x,y)\mapsto (x',y')$ preserving the projective point $[0,1,0]$ and  which also result in a Weierstrass equation, are of the form:
+$$x=u^2x'+r,\quad y=u^3y'+su^2x'+t$$ 
+with $u,r,s,t\in K$ and $u\neq 0$.
+
+\item Any two Weierstrass equations for $E/K$ differ by a change of variables of the form given in $(1)$.
+\end{enumerate}
+\end{prop}
+
+Once we have one Weierstrass model for a given elliptic curve $E/K$, and as long as the characteristic of $K$ is not $2$ or $3$, there exists a change of variables (of the form given in the previous proposition) which simplifies the model considerably.
+
+\begin{cor}
+Let $K$ be a field of characteristic different from $2$ or $3$. Let $E$ be an elliptic curve defined over $K$. Then there exists a Weierstrass model for $E$ of the form:
+$$y^2=x^3+Ax+B$$
+where $A,B$ are elements of $K$.
+\end{cor}
+
+Finally, remember that the $j$-invariant of an elliptic curve is invariant under isomorphism, but the discriminant depends on the model chosen.
+
+\begin{prop}
+Let $E/K$ be an elliptic curve and let
+$$ E_1: y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6, \quad E_2: y'^2+a_1x'y'+a_3y'=x'^3+a_2x'^2+a_4x'+a_6$$
+be two distinct Weierstrass models for $E/K$. Then (by Prop. \ref{change}) there exists a change of variables $(x,y)\mapsto (x',y')$ of the form:
+$$x=u^2x'+r,\quad y=u^3y'+su^2x'+t$$ 
+with $u,r,s,t\in K$ and $u\neq 0$. Moreover, $j(E_1)=j(E_2)$, i.e. the $j$ invariants are equal ($j(E)$ is defined in \PMlinkid{this entry}{JInvariant}) and $\Delta(E_1)=u^{12}\Delta(E_2)$, where $\Delta(E_i)$ is the discriminant (as defined in \PMlinkid{here}{JInvariant}).
+\end{prop}
+%%%%%
+%%%%%
+\end{document}

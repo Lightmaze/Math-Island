@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TietzeExtensionTheorem}
+\pmcreated{2013-03-22 13:35:30}
+\pmmodified{2013-03-22 13:35:30}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{Tietze extension theorem}
+\pmrecord{5}{34215}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D15}
+\pmrelated{ApplicationsOfUrysohnsLemmaToLocallyCompactHausdorffSpaces}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $X$ be a topological space. Then the following are equivalent:
+\begin{enumerate}
+\item $X$ is normal.
+\item If $A$ is a closed subset in $X$, and $f\colon A\to [-1,1]$ is a
+continuous function, then $f$ has a continuous 
+\PMlinkescapetext{extension} to all of $X$.
+(In other words, there is a continuous function $f^\ast\colon X\to [-1,1]$ such that
+$f$ and $f^\ast$ coincide on $A$.)
+\end{enumerate}
+
+\emph{Remark:}
+If $X$ and $A$ are as above, and $f\colon A\to(-1,1)$ is a continuous function, then $f$ has a continuous \PMlinkescapetext{extension} to all of $X$.
+
+The present result can be found in \cite{mukherjea}.
+\begin{thebibliography}{9}
+\bibitem{mukherjea}
+A. Mukherjea, K. Pothoven,
+\emph{Real and Functional analysis},
+Plenum press, 1978.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

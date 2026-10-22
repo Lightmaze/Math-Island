@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CantorsIntersectionTheorem}
+\pmcreated{2013-03-22 15:12:35}
+\pmmodified{2013-03-22 15:12:35}
+\pmowner{paolini}{1187}
+\pmmodifier{paolini}{1187}
+\pmtitle{Cantor's Intersection Theorem}
+\pmrecord{4}{36970}
+\pmprivacy{1}
+\pmauthor{paolini}{1187}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E45}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\R}{\mathbb R}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{example}{Example}
+\begin{document}
+\begin{theorem}
+Let $K_1\supset K_2\supset K_3 \supset \ldots \supset K_n\supset \ldots$ be a sequence of non-empty, compact subsets of a metric space $X$. Then the intersection $\bigcap_i K_i$ is not empty.
+\end{theorem}
+\begin{proof}
+Choose a point $x_i\in K_i$ for every $i=1,2,\ldots$
+Since $x_i \in K_i \subset K_1$ is a sequence in a compact set, by Bolzano-Weierstrass Theorem, there exists a subsequence $x_{i_j}$ which converges to a point $x\in K_1$. Notice, however, that for a fixed index $n$, the sequence $x_{i_j}$ lies in $K_n$ for all $j$ sufficiently large (namely for all $j$ such that $i_j>n$). So one has $x\in K_n$. 
+Since this is true for every $n$, the result follows.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

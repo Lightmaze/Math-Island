@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LookAndSaySequence}
+\pmcreated{2013-03-22 18:02:34}
+\pmmodified{2013-03-22 18:02:34}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{look and say sequence}
+\pmrecord{4}{40565}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The {\em look and say sequence} $a$ for a given integer $n$ in base $b$ consists of each $a_i$ being the run-length encoding of the digits of $a_{i - 1}$ for $i > 0$, with $a_0 = n$.
+
+For example, with $n = 7777$ and $b = 10$, the number consists of four 7s, so its run-length encoding is 47 and $a_1 = 47$. Then in turn, 47 is one 4 and one 7, so $a_2 = 1417$. The sequence continues 11141117, 31143117, 132114132117, etc.
+
+John Horton Conway has thoroughly studied look and say sequences in base 10 starting with values containing only 1s, 2s and 3s and no more than three consecutive repetitions of any digit. With the exception of 22 (two 2s), all other such starting values eventually ``decay'' to one of 92 ``atoms'' which Conway has named after the elements of the periodic table up to uranium. The whole concept he has termed with the awful pun ``audioactive decay.''
+
+The base 10 look and say sequences starting with 1, 2 and 3 are given in A005150, A006751 and A006715 respectively in Sloane's OEIS.
+
+\begin{thebibliography}{1}
+\bibitem{sf} Steven R. Finch, {\it Mathematical Constants}. Cambridge: Cambridge University Press (2003): 452 - 455
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

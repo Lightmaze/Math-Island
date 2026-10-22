@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BitwiseNOT}
+\pmcreated{2013-03-22 17:02:55}
+\pmmodified{2013-03-22 17:02:55}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{bitwise NOT}
+\pmrecord{4}{39338}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmrelated{BitwiseAND}
+\pmrelated{BitwiseOR}
+\pmrelated{BitwiseXOR}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\em Bitwise NOT} is a bit-level operation on a single binary value that sets the bits that are off and turns off the bits that are on. For example, performing a bitwise NOT on 163 gives 92.
+
+\begin{tabular}{|r|c|c|c|c|c|c|c|c|}
+NOT & 1 & 0 & 1 & 0 & 0 & 0 & 1 & 1 \\
+  = & 0 & 1 & 0 & 1 & 1 & 1 & 0 & 0 \\
+\end{tabular}
+
+Performing a bitwise NOT on a number $n$ has the same effect as performing a bitwise XOR on a Mersenne number of the form $2^k - 1$ (where $k$ is the bit size of the data type in use, e.g., 8 for bytes, 16 for words, 32 for double words, etc.) and $n$. Obviously a bitwise NOT on 0 gives the largest Mersenne number that can fit in the data type in use.
+
+The Windows Calculator offers bitwise NOT in scientific calculator mode, while the Mac OS X Calculator offers it in programmer mode.
+%%%%%
+%%%%%
+\end{document}

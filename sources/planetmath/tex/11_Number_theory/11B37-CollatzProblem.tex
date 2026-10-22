@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CollatzProblem}
+\pmcreated{2013-03-22 11:42:43}
+\pmmodified{2013-03-22 11:42:43}
+\pmowner{akrowne}{2}
+\pmmodifier{akrowne}{2}
+\pmtitle{Collatz problem}
+\pmrecord{32}{30029}
+\pmprivacy{1}
+\pmauthor{akrowne}{2}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B37}
+\pmsynonym{Ulam's Problem}{CollatzProblem}
+\pmsynonym{1-4-2 Problem}{CollatzProblem}
+\pmsynonym{Syracuse problem}{CollatzProblem}
+\pmsynonym{Thwaites conjecture}{CollatzProblem}
+\pmsynonym{Kakutani's problem}{CollatzProblem}
+\pmsynonym{3n+1 problem}{CollatzProblem}
+%\pmkeywords{Collatz}
+%\pmkeywords{Ulam}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%%%%%%%%%%%%%\usepackage{xypic}
+\begin{document}
+We define the function $f : \mathbb{N} \longrightarrow \mathbb{N} $ (where $\mathbb{N}$ excludes zero) such that
+
+$$ f(a) =  \left\{
+\begin{array}{rl}
+3a+1  & \text{ if } a \text{ is odd }   \\
+ a/2  & \text{ if } a \text{ is even.}  
+\end{array}
+\right. $$
+
+Then let the sequence $c_n$ be defined as $c_i = f(c_{i-1})$, with $c_0$ an arbitrary natural seed value.
+
+It is conjectured that the sequence $c_0, c_1, c_2, \ldots$ will always end in  $1,4,2$, repeating infinitely.  This has been verified by computer up to very large values of $c_0$, but is unproven in general. It is also not known whether this problem is decideable.  This is generally called the \emph{Collatz problem}.
+
+The sequence $c_n$ is sometimes called the ``hailstone sequence''.  This is because it behaves analogously to a hailstone in a cloud which falls by gravity and is tossed up again repeatedly.  The sequence similarly ends in an eternal oscillation.
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

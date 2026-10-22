@@ -1,0 +1,21 @@
+{
+  "seed": "20261022:replacement",
+  "policy": "These three replacement IDs were already selected and read before the later historical-resource filter. Preserve them across subsequent data filtering; do not redraw to obtain a clean sample.",
+  "replacements": [
+    {
+      "initial_id": "pm:InteriorPointOfSetInTopologicalSpace",
+      "replacement_id": "pm:PerfectRuler",
+      "domain": "逻辑与基础"
+    },
+    {
+      "initial_id": "pm:OnLineEncyclopediaOfIntegerSequences",
+      "replacement_id": "pm:SemanticPropertiesOfSubstitutability",
+      "domain": "逻辑与基础"
+    },
+    {
+      "initial_id": "pm:CWcomplexApproximationOfQuantumStateSpacesInQAT",
+      "replacement_id": "pm:SchrodingerOperator",
+      "domain": "数学物理与应用"
+    }
+  ]
+}

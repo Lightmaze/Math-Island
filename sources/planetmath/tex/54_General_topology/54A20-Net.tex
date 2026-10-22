@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Net}
+\pmcreated{2013-03-22 12:54:03}
+\pmmodified{2013-03-22 12:54:03}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{net}
+\pmrecord{12}{33250}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A20}
+\pmsynonym{Moore-Smith sequence}{Net}
+\pmrelated{Filter}
+\pmrelated{NetsAndClosuresOfSubspaces}
+\pmrelated{ContinuityAndConvergentNets}
+\pmrelated{CompactnessAndConvergentSubnets}
+\pmrelated{AccumulationPointsAndConvergentSubnets}
+\pmrelated{TestingForContinuityViaNets}
+\pmdefines{subnet}
+\pmdefines{Moore-Smith convergence}
+\pmdefines{cluster point}
+
+\endmetadata
+
+%\usepackage{amssymb}
+%\usepackage{amsmath}
+%\usepackage{amsfonts}
+
+\begin{document}
+\PMlinkescapeword{sequences}
+
+Let $X$ be a set.  A \emph{net} is a map from a directed set to $X$.
+In other words, it is a pair $(A,\gamma)$
+where $A$ is a directed set and $\gamma$ is a map from $A$ to $X$.
+If $a\in A$ then $\gamma(a)$ is normally written $x_a$,
+and then the net is written $(x_a)_{a\in A}$,
+or simply $(x_a)$ if the direct set $A$ is understood.
+
+Now suppose $X$ is a topological space, $A$ is a directed set,
+and $(x_a)_{a\in A}$ is a net.  Let $x\in X$.
+Then $(x_a)$ is said to \emph{converge} to $x$ if
+whenever $U$ is an open neighbourhood of $x$,
+there is some $b \in A$ such that $x_a \in U$ whenever $a \geq b$.
+
+Similarly, $x$ is said to be an \emph{accumulation point} (or \emph{cluster point})
+of $(x_a)$ if whenever $U$ is an open neighbourhood of $x$ and $b \in A$
+there is $a \in A$ such that $a \geq b$ and $x_a \in U$.
+
+Nets are sometimes called \emph{Moore--Smith sequences},
+in which case convergence of nets may be called \emph{Moore--Smith convergence}.
+
+If $B$ is another directed set,
+and $\delta\colon B\rightarrow A$ is an increasing map
+such that $\delta(B)$ is cofinal in $A$,
+then the pair $(B, \gamma\circ\delta)$
+is said to be a \emph{subnet} of $(A,\gamma)$.
+Alternatively, a subnet of a net $(x_\alpha)_{\alpha\in A}$
+is sometimes defined to be a net $(x_{\alpha_\beta})_{\beta\in B}$
+such that for each $\alpha_0\in A$
+there exists a $\beta_0\in B$
+such that $\alpha_\beta\geq\alpha_0$ for all $\beta\geq\beta_0$.
+
+Nets are a generalisation of \PMlinkname{sequences}{Sequence},
+and in many respects they work better in arbitrary topological spaces
+than sequences do. For example:
+
+\begin{itemize}
+\item
+If $X$ is Hausdorff then any net in $X$ converges to at most one point.
+\item
+If $Y$ is a subspace of $X$
+then $x\in\overline{Y}$ if and only if there is a net in $Y$ converging to $x$.
+\item
+if $X'$ is another topological space
+and $f\colon X\rightarrow X'$ is a map,
+then $f$ is continuous at $x$ if and only if
+whenever $(x_a)$ is a net converging to $x$,
+$(f(x_a))$ is a net converging to $f(x)$.
+\item
+$X$ is compact if and only if every net has a convergent subnet.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

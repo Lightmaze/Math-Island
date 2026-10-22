@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PartialFractions}
+\pmcreated{2013-03-22 14:18:10}
+\pmmodified{2013-03-22 14:18:10}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{partial fractions}
+\pmrecord{34}{35761}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmsynonym{partial fractions of fractional numbers}{PartialFractions}
+\pmrelated{CategoryOfAdditiveFractions}
+\pmdefines{fractional number}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Every {\em fractional number}, i. e. such a rational number $\frac {m}{n}$ that the integer $m$ is not divisible by the integer $n$, can be decomposed to a sum of {\em partial fractions} as follows:
+$$\frac{m}{n} \;=\; \frac{m_1}{p_1^{\nu_1}}+\frac{m_2}{p_2^{\nu_2}}+\cdots+\frac{m_t}{p_t^{\nu_t}}$$
+Here, the $p_i$'s are distinct positive prime numbers, the $\nu_i$'s positive integers and the $m_i$'s some integers.\, Cf. the partial fractions of expressions.
+
+\textbf{Examples:} 
+ $$\frac{6}{289} \;=\; \frac{6}{17^2}$$ 
+ $$-\frac{1}{24} \;=\; -\frac{3}{2^3}+\frac{1}{3^1}$$
+ $$\frac{1}{504} \;=\; -\frac{1}{2^3}+\frac{32}{3^2}-\frac{24}{7^1}$$\\
+
+How to get the numerators $m_i$ for decomposing a fractional number $\frac{1}{n}$ to partial fractions?\, First one can take the highest power $p^{\nu}$ of a prime $p$ which divides the denominator $n$.\, Then\, $n = p^{\nu}u$,\, where\, $\gcd{(u,\,p^{\nu})} = 1$.\, Euclid's algorithm gives some integers $x$ and $y$ such that 
+                     $$1 \;=\; xu\!+\!yp^{\nu}.$$
+Dividing this equation by $p^{\nu}u$ gives the \PMlinkescapetext{decomposition}
+  $$\frac{1}{n} \;=\; \frac{1}{p^{\nu}u} \;=\; \frac{x}{p^{\nu}}\!+\!\frac{y}{u}.$$
+If $u$ has more than one distinct prime factors, a similar procedure can be made for the fraction $\frac{y}{u}$, and so on.
+
+\textbf{Note.}\, The numerators\, $m_1$, $m_2$, \ldots, $m_t$\, in the decomposition are not unique.\, E. g., we have also
+          $$-\frac{1}{24} \;=\; -\frac{11}{2^3}+\frac{4}{3^1}.$$\\
+
+Cf. the programme ``Murto'' (in Finnish) or ``Murd'' (in Estonian) or ``Bruch'' (in German) or ``Br\aa k'' (in Swedish) or ``Fraction''(in French) \PMlinkexternal{here}{http://www.wakkanet.fi/~pahio/ohjelmi.html}. 
+
+%%%%%
+%%%%%
+\end{document}

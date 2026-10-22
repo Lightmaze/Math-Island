@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AsymptoticallyStable}
+\pmcreated{2013-03-22 13:55:19}
+\pmmodified{2013-03-22 13:55:19}
+\pmowner{Koro}{127}
+\pmmodifier{Koro}{127}
+\pmtitle{asymptotically stable}
+\pmrecord{10}{34679}
+\pmprivacy{1}
+\pmauthor{Koro}{127}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54H20}
+\pmclassification{msc}{37B99}
+\pmrelated{UnstableFixedPoint}
+\pmrelated{LiapunovStable}
+\pmdefines{Lyapunov stable}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Per}{\operatorname{Per}}
+\begin{document}
+Let $(X,d)$ be a metric space and $f\colon X\to X$ a continuous function. A point $x\in X$ is said to be \emph{Lyapunov stable} if for each $\epsilon>0$ there is $\delta>0$ such that for all $n\in \N$ and all $y\in X$ such that $d(x,y)<\delta$, we have  $d(f^n(x),f^n(y))<\epsilon$.
+
+We say that $x$ is asymptotically stable if it belongs to the interior of its stable set, i.e. if there is $\delta>0$ such that $\lim_{n\to\infty} d(f^n(x),f^n(y))=0$ whenever $d(x,y)<\delta$.
+
+In a similar way, if $\varphi\colon X\times \R\to X$ is a flow, a point $x\in X$ is said to be Lyapunov stable if for each $\epsilon>0$ there is $\delta>0$ such that, whenever $d(x,y)<\delta$, we have $d(\varphi(x,t),\varphi(y,t))<\epsilon$ for each $t\geq 0$; and $x$ is called asymptotically stable if there is a neighborhood $U$ of $x$ such that $\lim_{t\to\infty} d(\varphi(x,t),\varphi(y,t)) = 0$ for each $y\in U$.
+%%%%%
+%%%%%
+\end{document}

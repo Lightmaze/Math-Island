@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RestrictedDirectProduct}
+\pmcreated{2013-03-22 12:35:38}
+\pmmodified{2013-03-22 12:35:38}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{restricted direct product}
+\pmrecord{5}{32845}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R56}
+\pmclassification{msc}{22D05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $\{G_v\}_{v \in V}$ be a collection of locally compact topological groups. For all but finitely many $v \in V$, let $H_v \subset G_v$ be a compact open subgroup of $G_v$. The {\em restricted direct product} of the collection $\{G_v\}$ with respect to the collection $\{H_v\}$ is the subgroup
+$$
+G := \left\{ \left. (g_v)_{v \in V} \in \prod_{v \in V} G_v\ \right| \ g_v \in H_v \text{  for all but finitely many $v \in V$} \right\}
+$$
+of the direct product $\prod_{v \in V} G_v$.
+
+We define a topology on $G$ as follows. For every finite subset $S \subset V$ that contains all the elements $v$ for which $H_v$ is undefined, form the topological group
+$$
+G_S := \prod_{v \in S} G_v \times \prod_{v \notin S} H_v
+$$
+consisting of the direct product of the $G_v$'s, for $v \in S$, and the $H_v$'s, for $v \notin S$. The topological group $G_S$ is a subset of $G$ for each such $S$, and we take for a topology on $G$ the weakest topology such that the $G_S$ are open subsets of $G$, with the subspace topology on each $G_S$ equal to the topology that $G_S$ already has in its own right.
+%%%%%
+%%%%%
+\end{document}

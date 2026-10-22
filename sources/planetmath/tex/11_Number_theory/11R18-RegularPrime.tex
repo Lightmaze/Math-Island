@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RegularPrime}
+\pmcreated{2013-03-22 12:44:20}
+\pmmodified{2013-03-22 12:44:20}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{regular prime}
+\pmrecord{6}{33040}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R18}
+\pmclassification{msc}{11R29}
+\pmdefines{irregular prime}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A prime $p$ is {\em regular} if the class number of the cyclotomic field $\mathbb{Q}(\zeta_p)$ is not divisible by $p$ (where $\zeta_p := e^{2 \pi i/p}$ denotes a primitive $p^\mathrm{th}$ root of unity). An {\em irregular prime} is a prime that is not regular.
+
+Regular primes rose to prominence as a result of Ernst Kummer's work in the 1850's on Fermat's Last Theorem. Kummer was able to prove Fermat's Last Theorem in the case where the exponent is a regular prime, a result that prior to Wiles's recent work was the only demonstration of Fermat's Last Theorem for a large class of exponents. In the course of this work Kummer also established the following numerical criterion for determining whether a prime is regular:
+
+\begin{itemize}
+\item $p$ is regular if and only if none of the numerators of the Bernoulli numbers $B_0$, $B_2$, $B_4, \ldots, B_{p-3}$ is a multiple of $p$.
+\end{itemize}
+
+Based on this criterion it is possible to give a heuristic argument that the regular primes have density $e^{-1/2}$ in the set of all primes~\cite{ir}. Despite this, there is no known proof that the set of regular primes is infinite, although it is known that there are infinitely many irregular primes.
+
+\begin{thebibliography}{9}
+\bibitem{ir} Kenneth Ireland \& Michael Rosen, \emph{A
+Classical Introduction to Modern Number Theory,} Springer-Verlag, New
+York, Second Edition, 1990.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

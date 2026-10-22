@@ -1,0 +1,155 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheGroupsOfRealNumbers}
+\pmcreated{2013-03-22 16:08:50}
+\pmmodified{2013-03-22 16:08:50}
+\pmowner{Algeboy}{12884}
+\pmmodifier{Algeboy}{12884}
+\pmtitle{the groups of real numbers}
+\pmrecord{5}{38226}
+\pmprivacy{1}
+\pmauthor{Algeboy}{12884}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C30}
+\pmclassification{msc}{26-00}
+\pmclassification{msc}{12D99}
+\pmrelated{ExponentialFunction}
+\pmrelated{GroupHomomorphism}
+\pmrelated{GroupsInField}
+
+\endmetadata
+
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+%%\usepackage{xypic}
+
+%-----------------------------------------------------
+
+%       Standard theoremlike environments.
+
+%       Stolen directly from AMSLaTeX sample
+
+%-----------------------------------------------------
+
+%% \theoremstyle{plain} %% This is the default
+
+\newtheorem{thm}{Theorem}
+
+\newtheorem{coro}[thm]{Corollary}
+
+\newtheorem{lem}[thm]{Lemma}
+
+\newtheorem{lemma}[thm]{Lemma}
+
+\newtheorem{prop}[thm]{Proposition}
+
+\newtheorem{conjecture}[thm]{Conjecture}
+
+\newtheorem{conj}[thm]{Conjecture}
+
+\newtheorem{defn}[thm]{Definition}
+
+\newtheorem{remark}[thm]{Remark}
+
+\newtheorem{ex}[thm]{Example}
+
+
+
+%\countstyle[equation]{thm}
+
+
+
+%--------------------------------------------------
+
+%       Item references.
+
+%--------------------------------------------------
+
+
+\newcommand{\exref}[1]{Example-\ref{#1}}
+
+\newcommand{\thmref}[1]{Theorem-\ref{#1}}
+
+\newcommand{\defref}[1]{Definition-\ref{#1}}
+
+\newcommand{\eqnref}[1]{(\ref{#1})}
+
+\newcommand{\secref}[1]{Section-\ref{#1}}
+
+\newcommand{\lemref}[1]{Lemma-\ref{#1}}
+
+\newcommand{\propref}[1]{Prop\-o\-si\-tion-\ref{#1}}
+
+\newcommand{\corref}[1]{Cor\-ol\-lary-\ref{#1}}
+
+\newcommand{\figref}[1]{Fig\-ure-\ref{#1}}
+
+\newcommand{\conjref}[1]{Conjecture-\ref{#1}}
+
+
+% Normal subgroup or equal.
+
+\providecommand{\normaleq}{\unlhd}
+
+% Normal subgroup.
+
+\providecommand{\normal}{\lhd}
+
+\providecommand{\rnormal}{\rhd}
+% Divides, does not divide.
+
+\providecommand{\divides}{\mid}
+
+\providecommand{\ndivides}{\nmid}
+
+
+\providecommand{\union}{\cup}
+
+\providecommand{\bigunion}{\bigcup}
+
+\providecommand{\intersect}{\cap}
+
+\providecommand{\bigintersect}{\bigcap}
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+\begin{prop}
+The additive group of real number $\langle \mathbb{R},+\rangle$ is isomorphic
+to the multiplicative group of positive real numbers $\langle \mathbb{R}^+,\times\rangle$.
+\end{prop}
+\begin{proof}
+Let $f(x)=e^x$.  This maps the group $\langle \mathbb{R},+\rangle$ to the group
+$\langle \mathbb{R}^+,\times\rangle$.  As $f$ has an inverse $f^{-1}(x)=\ln x$
+we observe $f$ is invertible.  Furthermore, $f(x+y)=e^{x+y}=e^x e^y=f(x)f(y)$ so
+$f$ is a homomorphism.  Thus $f$ is an isomorphism.
+\end{proof}
+
+\begin{coro}
+The multiplicative group of non-zero real number $\mathbb{R}^\times$ is isomorphic to $\mathbb{Z}_2\oplus \langle \mathbb{R},+\rangle$.
+\end{coro}
+\begin{proof}
+Use the map $f:\mathbb{Z}_2\oplus \langle \mathbb{R},+\rangle\rightarrow \mathbb{R}^\times$ defined by $f(s,r)=(-1)^s e^r$.\footnote{We write $(-1)^s$ to mean $(-1)^{s'}$ for any integer $s'$ representative of the equivalence class of $s$ in
+$\mathbb{Z}_2$.}  Then 
+\[f((s_1,r_1)+(s_2,r_2))=f(s_1+s_2,r_1+r_2)=(-1)^{s_1+s_2}e^{r_1+r_2}
+=(-1)^{s_1} e^{r_1} (-1)^{s_2}e^{r_2}=f(s_1,r_1) f(s_2,r_2)\]
+so that $f$ is a homomorphism.  Furthermore, $f^{-1}(r)=(\operatorname{sign} r,\ln |r|)$
+is the inverse of $f$ so that $f$ is bijective and thus an isomorphism of groups.
+\end{proof}
+
+
+%%%%%
+%%%%%
+\end{document}

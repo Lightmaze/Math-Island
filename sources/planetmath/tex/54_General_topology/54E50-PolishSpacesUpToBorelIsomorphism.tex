@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PolishSpacesUpToBorelIsomorphism}
+\pmcreated{2013-03-22 18:47:00}
+\pmmodified{2013-03-22 18:47:00}
+\pmowner{gel}{22282}
+\pmmodifier{gel}{22282}
+\pmtitle{Polish spaces up to Borel isomorphism}
+\pmrecord{6}{41578}
+\pmprivacy{1}
+\pmauthor{gel}{22282}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E50}
+%\pmkeywords{Polish space}
+%\pmkeywords{Borel isomorphism}
+\pmrelated{CategoryOfPolishGroups}
+
+\endmetadata
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{corollary*}{Corollary}
+\newtheorem*{definition*}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+
+\begin{document}
+\PMlinkescapeword{borel isomorphism}
+\PMlinkescapeword{inverse}
+\PMlinkescapeword{function}
+\PMlinkescapeword{isomorphic}
+\PMlinkescapeword{countable}
+
+Two topological spaces $X$ and $Y$ are \PMlinkname{Borel isomorphic}{BorelIsomorphism} if there is a Borel measurable function $f\colon X\rightarrow Y$ with Borel inverse. Such a function is said to be a Borel isomorphism. The following result classifies all Polish spaces up to Borel isomorphism.
+
+\begin{theorem*}
+Every uncountable Polish space is Borel isomorphic to $\mathbb{R}$ with the standard topology.
+\end{theorem*}
+
+As the Borel $\sigma$-algebra on any countable metric space is just its power set, this shows that every Polish space is Borel isomorphic to one and only one of the following.
+
+\begin{enumerate}
+\item $\left\{1,2,\ldots,n\right\}$ for some $n\ge 0$, with the discrete topology.
+\item $\mathbb{N}=\left\{1,2,\ldots\right\}$ with the discrete topology.
+\item $\mathbb{R}$ with the standard topology.
+\end{enumerate}
+
+In particular, two Polish spaces are Borel isomorphic if and only if they have the same cardinality, and any uncountable Polish space has the cardinality of the continuum.
+
+%%%%%
+%%%%%
+\end{document}

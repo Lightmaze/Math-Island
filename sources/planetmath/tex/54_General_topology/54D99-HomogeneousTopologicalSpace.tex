@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HomogeneousTopologicalSpace}
+\pmcreated{2013-03-22 16:18:21}
+\pmmodified{2013-03-22 16:18:21}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{homogeneous topological space}
+\pmrecord{5}{38428}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D99}
+\pmsynonym{homogeneous space}{HomogeneousTopologicalSpace}
+\pmdefines{homogeneous}
+\pmdefines{bihomogeneous}
+\pmdefines{bihomogeneous space}
+\pmdefines{bihomogeneous topological space}
+
+\endmetadata
+
+
+\begin{document}
+\PMlinkescapeword{argument}
+\PMlinkescapeword{euclidean}
+\PMlinkescapeword{even}
+\PMlinkescapephrase{initial point}
+
+\section*{Definitions}
+
+A topological space $X$ is said to be \emph{homogeneous}
+if for all $a,b\in X$ there is a homeomorphism $\phi\colon X\to X$
+such that $\phi(a)=b$.
+
+A topological space $X$ is said to be \emph{bihomogeneous}
+if for all $a,b\in X$ there is a homeomorphism $\phi\colon X\to X$
+such that $\phi(a)=b$ and $\phi(b)=a$.
+
+\section*{Examples}
+
+The long line (without initial point) is homogeneous,
+but it is not bihomogeneous
+as its self-homeomorphisms are all order-preserving.
+This can be considered a pathological example,
+as most homogeneous topological spaces encountered in practice
+are also bihomogeneous.
+
+Every topological group is bihomogeneous.
+To see this, note that if $G$ is a topological group and $a,b\in G$,
+then $x\mapsto ax^{-1}b$ defines a homeomorphism interchanging $a$ and $b$.
+
+Every connected topological manifold without boundary is homogeneous.
+This is true even if we do not require our manifolds to be paracompact,
+as any two points share a Euclidean neighbourhood,
+and a suitable homeomorphism for this neighbourhood
+can be extended to the whole manifold.
+In fact, except for the long line (as mentioned above),
+every connected topological manifold without boundary is bihomogeneous.
+This is for essentially the same reason,
+except that the argument breaks down for $1$-manifolds.
+
+%%%%%
+%%%%%
+\end{document}

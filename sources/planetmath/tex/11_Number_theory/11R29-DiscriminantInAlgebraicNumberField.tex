@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DiscriminantInAlgebraicNumberField}
+\pmcreated{2013-03-22 19:09:23}
+\pmmodified{2013-03-22 19:09:23}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{discriminant in algebraic number field}
+\pmrecord{6}{42060}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R29}
+\pmsynonym{discriminant in terms of conjugates}{DiscriminantInAlgebraicNumberField}
+\pmrelated{IndependenceOfCharacteristicPolynomialOnPrimitiveElement}
+\pmdefines{discriminant}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+Let us consider the elements $\alpha_1,\,\alpha_2,\,\ldots,\,\alpha_n$ of an algebraic number field 
+$\mathbb{Q}(\vartheta)$ of \PMlinkname{degree}{NumberField} $n$.\, Let 
+$\vartheta_1 = \vartheta,\,\vartheta_2,\,\ldots,\,\vartheta_n$ be the algebraic conjugates of the primitive element $\vartheta$ and
+$$\alpha_i \;=\; r_i(\vartheta) \quad (i \;=\; 1,\,2,\,\ldots,\,n)$$
+the canonical forms of the elements $\alpha_i$.\, Then the \PMlinkname{$\mathbb{Q}(\vartheta)$-conjugates}{CharacteristicPolynomialOfAlgebraicNumber} of those elements are
+$$\alpha_i^{(j)} \;=\; r_i(\vartheta_j).$$
+Using these, one can define the \emph{discriminant}\, $\Delta(\alpha_1,\,\alpha_2,\,\ldots,\,\alpha_n)$ of the elenents $\alpha_i$ as
+$$\Delta(\alpha_1,\,\alpha_2,\,\ldots,\,\alpha_n) \;:=\; \det(r_i(\vartheta_j))^2 
+\;=\; \det\!\left(\alpha_i^{(j)}\right)^2\!,$$
+i.e. 
+$$\Delta(\alpha_1,\,\alpha_2,\,\ldots,\,\alpha_n) \;:=\;
+\left|\begin{array}{cccc}
+r_1(\vartheta_1) & r_1(\vartheta_2) &\ldots & r_1(\vartheta_n)\\
+r_2(\vartheta_1) & r_2(\vartheta_2) &\ldots & r_2(\vartheta_n)\\
+\vdots & \vdots & \ddots & \vdots \\
+r_n(\vartheta_1) & r_n(\vartheta_2) &\ldots & r_n(\vartheta_n)
+\end{array}\right|^2 \;=\;
+\left|\begin{array}{cccc}
+\alpha_1^{(1)} & \alpha_1^{(2)} &\ldots & \alpha_1^{(n)}\\
+\alpha_2^{(1)} & \alpha_2^{(2)} &\ldots & \alpha_2^{(n)}\\
+\vdots & \vdots & \ddots & \vdots \\
+\alpha_n^{(1)} & \alpha_n^{(2)} &\ldots & \alpha_n^{(n)}
+\end{array}\right|^2\!.
+$$
+
+Basing on the properties of determinants, one sees at once that the discriminant is \PMlinkescapetext{independent on the ordering} of the numbers $\alpha_i$.\, The entry independence of characteristic polynomial on primitive element allows to see that the discriminant also does not depend on the used primitive element of the field.\, Moreover, the method for multiplying the determinants enables to convert the discriminant into the form
+$$\Delta(\alpha_1,\,\alpha_2,\,\ldots,\,\alpha_n) \;=\;
+\left|\begin{array}{cccc}
+\mbox{S}(\alpha_1\alpha_1) & \mbox{S}(\alpha_1\alpha_2) &\ldots & \mbox{S}(\alpha_1\alpha_n)\\
+\mbox{S}(\alpha_2\alpha_1) & \mbox{S}(\alpha_2\alpha_2) &\ldots & \mbox{S}(\alpha_2\alpha_n)\\
+\vdots & \vdots & \ddots & \vdots \\
+\mbox{S}(\alpha_n\alpha_1) & \mbox{S}(\alpha_n\alpha_2) &\ldots & \mbox{S}(\alpha_n\alpha_n)
+\end{array}\right|\!,
+$$
+where $\mbox{S}$ is the trace function defined in $\mathbb{Q}(\vartheta)$; therefore the discriminant is always a rational number (and an integer if every $\alpha_i$ is an algebraic integer of the field).\, Cf. the \PMlinkname{parent entry}{DiscriminantOfANumberField}.
+
+%%%%%
+%%%%%
+\end{document}

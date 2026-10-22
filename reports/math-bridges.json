@@ -1,0 +1,1085 @@
+{
+  "schema_version": "math-atlas-bridges-1",
+  "count": 21,
+  "scope": "Selected established cross-field connections, not an exhaustive bridge catalogue or new discoveries.",
+  "verification": "All 21 sources fetched; relevant statements/definitions or constructions read. Full proofs not reverified; no kernel certification.",
+  "bridges": [
+    {
+      "id": "bridge:001",
+      "source_title": "Elliptic curve",
+      "target_title": "Modular form",
+      "title_zh": "椭圆曲线 → 模形式",
+      "domains": [
+        "number_theory",
+        "algebraic_geometry"
+      ],
+      "relation": "representation",
+      "status": "known_in_literature",
+      "mechanism": "把椭圆曲线的算术信息转入模形式与 Galois 表示的语言，利用模性提升连接两侧。",
+      "assumptions": [
+        "本条记录 Wiles 1995 的范围：定义在 Q 上的半稳定椭圆曲线。"
+      ],
+      "conclusion": "这些椭圆曲线具有相应的模参数化；结合 Frey–Ribet 路线可推出费马大定理。",
+      "limitations": "此引文不能单独证明所有 Q 上椭圆曲线的完整模性，也不是任意数域的结论。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Andrew Wiles, Modular elliptic curves and Fermat’s Last Theorem (1995)",
+          "url": "https://annals.math.princeton.edu/1995/141-3/p01",
+          "fetch_url": "https://sites.math.rutgers.edu/~zeilberg/EM22/AW1995.pdf",
+          "locator": "Introduction, semistable modularity theorem",
+          "read_scope": "PDF pp. 2–3, 7; Theorem 0.4 and its relation to Theorem 0.5",
+          "source_type": "published_research_article",
+          "fetched_sha256": "69b968590df204c59702ee9ffcc857d8ee3cf683146c04133ff098c27bc2b831",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:002",
+      "source_title": "Modular form",
+      "target_title": "Sphere packing",
+      "title_zh": "模形式 → 八维球堆积",
+      "domains": [
+        "number_theory",
+        "geometry",
+        "analysis"
+      ],
+      "relation": "bound_transfer",
+      "status": "known_in_literature",
+      "mechanism": "用模形式构造具有所需符号和 Fourier 变换性质的 Schwartz 函数，使 Cohn–Elkies 上界在 E8 上取等。",
+      "assumptions": [
+        "欧氏空间 R^8；同半径球的通常堆积密度。"
+      ],
+      "conclusion": "E8 格点堆积达到所有八维球堆积的最大密度。",
+      "limitations": "不是仅在格点堆积中最优；也不是任意维数的最优结论。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Maryna Viazovska, The sphere packing problem in dimension 8 (2017)",
+          "url": "https://arxiv.org/abs/1603.04246",
+          "fetch_url": "https://arxiv.org/pdf/1603.04246",
+          "locator": "Introduction and modular-form construction",
+          "read_scope": "PDF pp. 1–3; Theorem 1 and outline of modular-form/Fourier construction",
+          "source_type": "research_paper_preprint",
+          "fetched_sha256": "f9f3a16da44702bb812d8db28ef5cb53bd4904fc6815a9be9ea80b653e341ac7",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:003",
+      "source_title": "Hodge theory",
+      "target_title": "Matroid",
+      "title_zh": "霍奇理论结构 → 拟阵对数凹性",
+      "domains": [
+        "algebraic_geometry",
+        "combinatorics"
+      ],
+      "relation": "bound_transfer",
+      "status": "known_in_literature",
+      "mechanism": "给拟阵构造 Chow 环，在其中建立 Hard Lefschetz 与 Hodge–Riemann 关系，再把交叉乘积不等式转为组合系数不等式。",
+      "assumptions": [
+        "有限非空基集上的无自环（loopless）拟阵的 Chow 环；使用其 ample 类。"
+      ],
+      "conclusion": "拟阵特征多项式系数的绝对值构成对数凹序列。",
+      "limitations": "不要求拟阵可由向量表示；并非声称每个拟阵都来自一个光滑射影簇。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Adiprasito, Huh, Katz, Hodge Theory for Combinatorial Geometries (2018)",
+          "url": "https://arxiv.org/abs/1511.02888",
+          "fetch_url": "https://arxiv.org/pdf/1511.02888",
+          "locator": "Abstract and main theorem statements",
+          "read_scope": "PDF pp. 1–5; loopless definition, characteristic-polynomial conjecture, Chow ring, Theorem 1.4, proof architecture",
+          "source_type": "research_paper_preprint",
+          "fetched_sha256": "e4bee71d420afcd4b3b75b6daff8b05468ae19c8ad672735916a65bbc926fffb",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:004",
+      "source_title": "Lovász local lemma",
+      "target_title": "Randomized algorithm",
+      "title_zh": "局部引理 → 重抽样算法",
+      "domains": [
+        "probability",
+        "combinatorics",
+        "computer_science"
+      ],
+      "relation": "construction",
+      "status": "known_in_literature",
+      "mechanism": "对独立随机变量定义坏事件；每遇到坏事件只重抽样其涉及变量，用 witness trees 控制重抽样次数。",
+      "assumptions": [
+        "有限独立变量模型和有限坏事件族；Γ(A) 由共享变量的坏事件构成。",
+        "存在 0<x(A)<1，使 P(A)≤x(A)∏_{B∈Γ(A)}(1−x(B))。"
+      ],
+      "conclusion": "得到避开所有坏事件的赋值；事件 A 的期望重抽样次数至多 x(A)/(1−x(A))。",
+      "limitations": "运行时间还依赖检测事件和重抽样的成本；不能直接推广到任意依赖模型。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Moser and Tardos, A constructive proof of the general Lovasz Local Lemma (2009)",
+          "url": "https://arxiv.org/abs/0903.0544",
+          "fetch_url": "https://arxiv.org/pdf/0903.0544",
+          "locator": "Theorem 1.2",
+          "read_scope": "PDF p. 3; Theorem 1.2, finite variables/events and expected resampling count",
+          "source_type": "research_paper_preprint",
+          "fetched_sha256": "394a21143451acad99ae93e934dc12a5d7df4da68659b8060786fdd8a9665a0c",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:005",
+      "source_title": "Szemerédi’s theorem",
+      "target_title": "Prime number",
+      "title_zh": "稠密组合定理 → 素数等差数列",
+      "domains": [
+        "combinatorics",
+        "number_theory"
+      ],
+      "relation": "reduction",
+      "status": "known_in_literature",
+      "mechanism": "用筛法生成的伪随机控制测度容纳稀疏素数，并建立相对 Szemerédi 定理以迁移稠密集合中的组合结论。",
+      "assumptions": [
+        "每个固定正整数 k。",
+        "迁移步骤需要论文中的伪随机性条件，不能仅假定集合无限。"
+      ],
+      "conclusion": "素数中存在任意有限长度的等差数列。",
+      "limitations": "不是要求数列由连续素数组成；不能把正整数中的正密度假设直接用于零密度的素数集。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Green and Tao, The primes contain arbitrarily long arithmetic progressions (2008)",
+          "url": "https://arxiv.org/abs/math/0404188",
+          "fetch_url": "https://arxiv.org/pdf/math/0404188",
+          "locator": "Introduction and transference discussion",
+          "read_scope": "PDF pp. 2–4; Theorems 1.1–1.2 and transference discussion",
+          "source_type": "research_paper_preprint",
+          "fetched_sha256": "d03dd6156165fc92e488b3fec35a574c8f7c9df55125cec0f3eebdf95d7256e1",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:006",
+      "source_title": "Optimal transport",
+      "target_title": "Ricci curvature",
+      "title_zh": "最优输运 → 合成 Ricci 曲率",
+      "domains": [
+        "analysis",
+        "geometry",
+        "probability"
+      ],
+      "relation": "representation",
+      "status": "known_in_literature",
+      "mechanism": "在概率测度的 Wasserstein 空间上，以熵类泛函沿测地线的位移凸性表达曲率下界。",
+      "assumptions": [
+        "使用 Lott–Villani 论文的紧致测度长度空间与概率测度框架。",
+        "有限 N 的非负 N-Ricci 与无限维 K 下界分别有自己的定义。",
+        "此版本要求在每对端点之间存在合适的 Wasserstein 测地线，不要求所有测地线都满足。"
+      ],
+      "conclusion": "得到可用于非光滑空间、并在所述 measured Gromov–Hausdorff 极限下保持的曲率条件。",
+      "limitations": "不把所有可能的 CD、RCD 或非分支条件混为同一版本。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Lott and Villani, Ricci curvature for metric-measure spaces via optimal transport (2009)",
+          "url": "https://arxiv.org/abs/math/0412127",
+          "fetch_url": "https://arxiv.org/pdf/math/0412127",
+          "locator": "Abstract and definitions in introduction",
+          "read_scope": "PDF pp. 1, 4; Definition 0.7: compact space, existence of a suitable geodesic, weak displacement convexity",
+          "source_type": "research_paper_preprint",
+          "fetched_sha256": "71d5a3dfb55ecdb84448372cf034c515211e5ef8592735c10a50391d50c76fb2",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:007",
+      "source_title": "Expander graph",
+      "target_title": "Error-correcting code",
+      "title_zh": "扩张图 → 纠错码",
+      "domains": [
+        "combinatorics",
+        "information_theory",
+        "computer_science"
+      ],
+      "relation": "construction",
+      "status": "known_in_literature",
+      "mechanism": "以具有足够扩张性质的图组织局部校验，使局部错误信号能够引导迭代纠正。",
+      "assumptions": [
+        "图满足构造和解码定理所需的定量扩张条件。",
+        "局部码和码率参数必须与选定的 expander-code 构造匹配。"
+      ],
+      "conclusion": "可构造渐近良好码族，并有能纠正常数比例错误的有效解码算法。",
+      "limitations": "任意被称为 expander 的图加任意局部码，并不自动满足相同解码保证。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Sipser and Spielman, Expander Codes (1996)",
+          "url": "https://www.cs.yale.edu/homes/spielman/Research/expanders.html",
+          "fetch_url": "https://www.cs.yale.edu/homes/spielman/PAPERS/expandersIT.pdf",
+          "locator": "Abstract and construction overview",
+          "read_scope": "PDF p. 1 rendered as image; abstract and introduction, construction families and decoding claims",
+          "source_type": "published_research_article",
+          "fetched_sha256": "2b2d441b6c23aceb7288c221c4f2640d0ec3d92c1b1797b4500e2ad8f7e6415f",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:008",
+      "source_title": "Stability theory (model theory)",
+      "target_title": "Szemerédi regularity lemma",
+      "title_zh": "模型论稳定性 → 图正则性",
+      "domains": [
+        "logic",
+        "combinatorics"
+      ],
+      "relation": "bound_transfer",
+      "status": "known_in_literature",
+      "mechanism": "将半图序结构识别为模型论不稳定性的组合见证；排除统一大小的半图后应用稳定性理论分解。",
+      "assumptions": [
+        "有限图满足固定 k 的 non-k-order property。",
+        "固定近似参数 ε>0。"
+      ],
+      "conclusion": "得到稳定图的加强正则分割，其中没有通常版本中的不规则对，并改善分割规模界。",
+      "limitations": "条件不是单纯排除某一种诱导完整图；不能用于所有有限图。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Malliaris and Shelah, Regularity lemmas for stable graphs (2014)",
+          "url": "https://arxiv.org/abs/1102.3904",
+          "fetch_url": "https://arxiv.org/pdf/1102.3904",
+          "locator": "Abstract; Theorem 5.18 locator",
+          "read_scope": "PDF p. 1; abstract and reproduced Theorem 5.18, fixed non-k-order property",
+          "source_type": "research_paper_preprint",
+          "fetched_sha256": "848b8a5bcaddf087bc2870ef27c937b6d99d9cc6c5fb41880507e3d900f8a430",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:009",
+      "source_title": "Intuitionistic logic",
+      "target_title": "Lambda calculus",
+      "title_zh": "直觉主义逻辑 ↔ 带类型 λ 演算",
+      "domains": [
+        "logic",
+        "computer_science"
+      ],
+      "relation": "equivalence",
+      "status": "known_in_literature",
+      "mechanism": "把命题对应为类型、证明对应为项、证明归约对应为程序求值；连接引入/消去规则与构造/使用规则。",
+      "assumptions": [
+        "首个基本实例：直觉主义蕴含片段与只有函数类型的简单类型 λ 演算。",
+        "扩展到合取、析取、假命题 ⊥ 时，分别加入 product、sum、empty types，并匹配引入和消去规则。"
+      ],
+      "conclusion": "证明对象可作为受类型检查的程序表达，逻辑规则和程序构造建立精确对应。",
+      "limitations": "加入任意递归、异常或不受控制的公理后，不能仍无条件把任意程序当作总正确性证明。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Philip Wadler, Propositions as Types (2015)",
+          "url": "https://www.research.ed.ac.uk/en/publications/propositions-as-types/",
+          "fetch_url": "https://www.pure.ed.ac.uk/ws/portalfiles/portal/20001186/propositions_as_types.pdf",
+          "locator": "Propositions/types and proofs/programs sections",
+          "read_scope": "PDF p. 2; intuitionistic natural deduction and simply typed lambda calculus correspondence",
+          "source_type": "authored_research_exposition",
+          "fetched_sha256": "2dad5d60331d4d0395f9a1495ce03d1a826f45ba80d4f1448324b3ba15904770",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:010",
+      "source_title": "Type theory",
+      "target_title": "Homotopy theory",
+      "title_zh": "依赖类型论 ↔ 同伦结构",
+      "domains": [
+        "logic",
+        "topology"
+      ],
+      "relation": "representation",
+      "status": "known_in_literature",
+      "mechanism": "把类型看作空间、恒等类型看作路径，再把高阶恒等解释为同伦；univalence 将类型相等与等价连接。",
+      "assumptions": [
+        "明确所用依赖类型论、恒等类型规则及 univalence 等额外公理。"
+      ],
+      "conclusion": "可以在该基础内构造和计算同伦不变量，并用同伦语言组织证明。",
+      "limitations": "不是说任意传统类型系统已自动满足 univalence，亦不宣称本地图经过证明助手核验。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "The Univalent Foundations Program, Homotopy Type Theory (2013)",
+          "url": "https://homotopytypetheory.org/book/",
+          "fetch_url": "https://hott.github.io/book/hott-online-82-g578b85c.pdf",
+          "locator": "Chapter 2: types, identity paths, and univalence",
+          "read_scope": "PDF pp. 16, 101–102; types/spaces interpretation and Axiom 2.10.3 (univalence); version hott-online-82-g578b85c",
+          "source_type": "collaborative_mathematical_book",
+          "fetched_sha256": "89bfbed17259573dcdc1c1f0e14347030aa42902baba7e0a395fcd7493594aac",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:011",
+      "source_title": "Von Neumann algebra",
+      "target_title": "Jones polynomial",
+      "title_zh": "算子代数 → 纽结不变量",
+      "domains": [
+        "analysis",
+        "algebra",
+        "topology"
+      ],
+      "relation": "construction",
+      "status": "known_in_literature",
+      "mechanism": "从子因子相关的代数关系得到辫群表示，并用满足 Markov 性质的迹归一化，消除辫表示选择的依赖。",
+      "assumptions": [
+        "温和的有向经典链环；辫闭包和 Markov 等价。",
+        "迹与归一化必须满足不变性所需关系。"
+      ],
+      "conclusion": "构造 Jones 多项式这一链环同痕不变量。",
+      "limitations": "不变量相同不保证纽结同痕；不能把一个不变量误当完整分类。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Vaughan Jones, A polynomial invariant for knots via von Neumann algebras (1985)",
+          "url": "https://doi.org/10.1090/S0273-0979-1985-15304-2",
+          "fetch_url": "https://metaphor.ethz.ch/x/2019/fs/401-3574-61L/files/Jones_original_1985.pdf",
+          "locator": "Pages 103–105, Theorems 1–2",
+          "read_scope": "PDF pp. 1–3 through web PDF extraction; braid closure, Markov moves, trace construction, Theorems 1–2",
+          "source_type": "published_research_article",
+          "fetched_sha256": "bcae6367fee9babd50989066ebe22af3ac776c26eba38061fdd5799390ff9408",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:012",
+      "source_title": "Covering space",
+      "target_title": "Fundamental group",
+      "title_zh": "覆盖空间 ↔ 基本群的子群",
+      "domains": [
+        "topology",
+        "algebra"
+      ],
+      "relation": "equivalence",
+      "status": "known_in_literature",
+      "mechanism": "通过路径提升把覆盖的纤维组织为基本群作用；连通覆盖由相应子群刻画。",
+      "assumptions": [
+        "基空间路径连通、局部路径连通、半局部单连通。",
+        "带基点版本用子群，忘掉基点的连通覆盖用共轭类。"
+      ],
+      "conclusion": "得到覆盖空间分类与群论对象之间的对应。",
+      "limitations": "不能删掉局部条件后仍声称全部经典分类定理成立。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Allen Hatcher, Algebraic Topology (2002), Section 1.3",
+          "url": "https://pi.math.cornell.edu/~hatcher/AT/ATpage.html",
+          "fetch_url": "https://pi.math.cornell.edu/~hatcher/AT/ATch1.pdf",
+          "locator": "Section 1.3, classification of covering spaces",
+          "read_scope": "Chapter 1 PDF pp. 43, 47; semilocal condition and Theorem 1.38",
+          "source_type": "authored_mathematical_book",
+          "fetched_sha256": "50b1632a200c66eeef2efba61fec49bb6d80442269f766df38817f23a01bde7c",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:013",
+      "source_title": "Radical ideal",
+      "target_title": "Algebraic set",
+      "title_zh": "根理想 ↔ 仿射代数集合",
+      "domains": [
+        "algebra",
+        "algebraic_geometry"
+      ],
+      "relation": "equivalence",
+      "status": "known_in_literature",
+      "mechanism": "利用 Hilbert 零点定理把多项式共同零点与消失理想互相转换，I(V(I))=√I。",
+      "assumptions": [
+        "k 为代数闭域；k[x1,…,xn] 为有限变量多项式环。"
+      ],
+      "conclusion": "仿射代数集合与根理想之间建立反向包含的双射。",
+      "limitations": "一般非代数闭域上只取 k-有理点不能恢复同样的理想；有理点为空不表示理想是单位理想。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "The Stacks Project, Hilbert Nullstellensatz, Tag 00FV",
+          "url": "https://stacks.math.columbia.edu/tag/00FV",
+          "fetch_url": "https://stacks.math.columbia.edu/tag/00FV",
+          "locator": "Theorem 10.34.1 and its proof; algebraically closed specialization",
+          "read_scope": "HTML theorem Tag 00FV, both clauses and proof; algebraically closed specialization explicitly stated by atlas",
+          "source_type": "collaborative_mathematical_reference",
+          "fetched_sha256": "6cd63b63c40ce5998c105e5c5ce5b3e78aa099ff5dea75c17280eb1d66030bde",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:014",
+      "source_title": "Gaussian curvature",
+      "target_title": "Euler characteristic",
+      "title_zh": "曲率积分 → 欧拉示性数",
+      "domains": [
+        "geometry",
+        "topology",
+        "analysis"
+      ],
+      "relation": "invariant_identity",
+      "status": "known_in_literature",
+      "mechanism": "局部曲率的积分通过 Gauss–Bonnet 转换为拓扑不变量。",
+      "assumptions": [
+        "采用所引讲义的范围：R^3 中光滑、紧致、无边界、可定向的正则曲面，取诱导度量。"
+      ],
+      "conclusion": "∫M K dA=2πχ(M)。",
+      "limitations": "有边界需加边界曲率项；非紧情形不能直接套用此式。相同总曲率不能反推同一个度量或曲率分布。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Robert Hale, The Gauss–Bonnet Theorem, University of Chicago REU (2022)",
+          "url": "https://www.math.uchicago.edu/~may/REU2022/REUPapers/Hale.pdf",
+          "fetch_url": "https://www.math.uchicago.edu/~may/REU2022/REUPapers/Hale.pdf",
+          "locator": "Global Gauss–Bonnet statement; institutional expository source",
+          "read_scope": "PDF pp. 1, 12; author Robert Hale; Theorem 5.5; atlas uses compact boundaryless regular surfaces in R^3",
+          "source_type": "institutional_student_exposition",
+          "fetched_sha256": "00c227de8b1a751f5342a94ba4346bd20a3954a82d67ef2b5e9cfed259516f80",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:015",
+      "source_title": "Brownian motion",
+      "target_title": "Heat equation",
+      "title_zh": "Brownian 路径 → 抛物型 PDE",
+      "domains": [
+        "probability",
+        "analysis"
+      ],
+      "relation": "representation",
+      "status": "known_in_literature",
+      "mechanism": "沿 Brownian 路径对初值和势函数取期望，把概率演化转为带势热方程的解。",
+      "assumptions": [
+        "保守的充分范围：R^d 上有界、非负、光滑势 V 和有界光滑初值 f；固定有限 t。",
+        "Brownian 运动的生成元取 (1/2)Δ。"
+      ],
+      "conclusion": "u(t,x)=E_x[exp(−∫0^t V(Bs)ds)f(Bt)] 解 ∂t u=(1/2)Δu−Vu，u(0,x)=f(x)。",
+      "limitations": "对无界势、爆炸扩散或边界停止问题需要额外可积性和边界条件。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Steven Lalley, Stochastic Differential Equations, Diffusion Processes, and the Feynman–Kac Formula",
+          "url": "https://www.stat.uchicago.edu/~lalley/Courses/391/",
+          "fetch_url": "https://www.stat.uchicago.edu/~lalley/Courses/391/Lecture12.pdf",
+          "locator": "Feynman–Kac theorem; stated here in conservative smooth bounded scope",
+          "read_scope": "PDF p. 7, Theorem 4; nonnegative potential, bounded data, d-dimensional Brownian generator",
+          "source_type": "institutional_lecture_notes",
+          "fetched_sha256": "8c29cbbf5892a716b2be7601fda2480d746e5429145406509ccdeb57f5a9ca9f",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:016",
+      "source_title": "Restricted isometry property",
+      "target_title": "Compressed sensing",
+      "title_zh": "稀疏几何 → 凸优化恢复",
+      "domains": [
+        "analysis",
+        "optimization",
+        "information_theory"
+      ],
+      "relation": "bound_transfer",
+      "status": "known_in_literature",
+      "mechanism": "以受限等距性控制稀疏方向，将欠定观测中的稀疏恢复问题交给带噪声约束的 ℓ1 最小化。",
+      "assumptions": [
+        "矩阵的受限等距常数满足 δ_(3S)+3δ_(4S)<2（所引论文定理 1）。",
+        "真实误差满足 ||e||2≤ε；使用约束 ℓ1 问题的全局最小解。"
+      ],
+      "conclusion": "足够稀疏向量的恢复误差由观测噪声控制；近似稀疏时额外包含尾部逼近误差。",
+      "limitations": "不是任意低秩矩阵、任意可行解或未检查噪声半径都能恢复；本条不混用后续文献的更优 RIP 常数。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Candès, Romberg, Tao, Stable Signal Recovery from Incomplete and Inaccurate Measurements (2006)",
+          "url": "https://arxiv.org/abs/math/0503066",
+          "fetch_url": "https://arxiv.org/pdf/math/0503066",
+          "locator": "Abstract and main recovery statements",
+          "read_scope": "PDF pp. 3–4; Theorems 1–2, delta_3S+3delta_4S<2 and approximate sparsity tail",
+          "source_type": "research_paper_preprint",
+          "fetched_sha256": "8d58bc40026054dfc5ec3137e338bfab2904f434a1e07cfc822d8bc2a1bcadcf",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:017",
+      "source_title": "Concentration of measure",
+      "target_title": "Johnson–Lindenstrauss lemma",
+      "title_zh": "概率集中 → 欧氏降维",
+      "domains": [
+        "probability",
+        "geometry",
+        "computer_science"
+      ],
+      "relation": "construction",
+      "status": "known_in_literature",
+      "mechanism": "随机投影对一个向量的长度集中，再对有限点对作 union bound，得到同时保持距离的嵌入。",
+      "assumptions": [
+        "n≥2 个欧氏点，0<ε<1，目标维数 k 为正整数。",
+        "目标维数 k≥4 log(n)/(ε²/2−ε³/3) 可采用所引证明；k≥原维数时可用等距嵌入。"
+      ],
+      "conclusion": "存在到 R^k 的映射，使所有点对平方距离落在原值的 (1±ε) 范围内。",
+      "limitations": "不是保持整个连续空间中所有点对，也不能直接替代一般度量空间嵌入定理。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Dasgupta and Gupta, An elementary proof of a theorem of Johnson and Lindenstrauss (2003)",
+          "url": "https://doi.org/10.1002/rsa.10073",
+          "fetch_url": "https://cseweb.ucsd.edu/~dasgupta/papers/jl.pdf",
+          "locator": "Theorem 2.1 and proof outline",
+          "read_scope": "PDF p. 2; Theorem 2.1 and random-projection/union-bound proof outline",
+          "source_type": "published_research_article",
+          "fetched_sha256": "a6706e37c21a69694f85415c162324ed031eb33e675367aa04ee6abdf37ada97",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:018",
+      "source_title": "Borsuk–Ulam theorem",
+      "target_title": "Polynomial partitioning",
+      "title_zh": "拓扑零点原理 → 多项式划分",
+      "domains": [
+        "topology",
+        "algebraic_geometry",
+        "combinatorics"
+      ],
+      "relation": "construction",
+      "status": "known_in_literature",
+      "mechanism": "把多项式系数看作参数空间，借拓扑零点论证同时平衡细胞中的代数簇交会数。",
+      "assumptions": [
+        "Γ 是 R^n 中有限个 k 维、复杂度有统一界的实代数簇。",
+        "D≥1；复杂度界固定后常数才能统一。"
+      ],
+      "conclusion": "存在非零 deg P≤D，使 R^n\\Z(P) 每个连通分支与至多 C D^(k−n)|Γ| 个成员相交。",
+      "limitations": "不控制落在 Z(P) 上的部分；一个簇可穿过多个细胞；这里不是高效构造算法的保证。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Larry Guth, Polynomial partitioning for a set of varieties (2015)",
+          "url": "https://arxiv.org/abs/1410.8871",
+          "fetch_url": "https://arxiv.org/pdf/1410.8871",
+          "locator": "Main theorem and topological argument",
+          "read_scope": "PDF pp. 2–4; Theorem 0.3, failed naive balancing, Theorem 1.2 and product-polynomial construction",
+          "source_type": "research_paper_preprint",
+          "fetched_sha256": "af3933b62284b05f84b44fc0c1f099d0890de39215738e8f9a512576e5adc2c5",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:019",
+      "source_title": "Semidefinite programming",
+      "target_title": "Shannon capacity",
+      "title_zh": "半正定优化 → 零误差容量上界",
+      "domains": [
+        "optimization",
+        "combinatorics",
+        "information_theory"
+      ],
+      "relation": "bound_transfer",
+      "status": "known_in_literature",
+      "mechanism": "用正交表示或等价的半正定规划定义 Lovász θ；借图乘积性质控制独立集增长。",
+      "assumptions": [
+        "有限无向简单图；Shannon 容量使用强图乘积的独立数增长率。"
+      ],
+      "conclusion": "α(G)≤Θ(G)≤θ(G)；五边形 C5 有 Θ(C5)=√5。",
+      "limitations": "一般图不保证 Θ(G)=θ(G)；高精度数值 SDP 结果需额外误差控制才能成为严格上界证书。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "László Lovász, On the Shannon Capacity of a Graph (1979)",
+          "url": "https://doi.org/10.1109/TIT.1979.1055985",
+          "fetch_url": "https://www.sfu.ca/~mdevos/notes/semidef/lovasz-theta.pdf",
+          "locator": "Definition of theta and capacity upper bound",
+          "read_scope": "PDF p. 2 rendered as image; strong product, theta via orthogonal representations, Theorems 1–2",
+          "source_type": "published_research_article",
+          "fetched_sha256": "7963ddb98447c1d512d73143bc67b055621506962f5d0851faa1def74c51aadd",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:020",
+      "source_title": "Polynomial interpolation",
+      "target_title": "Reed–Solomon code",
+      "title_zh": "有限域插值 → Reed–Solomon 码",
+      "domains": [
+        "algebra",
+        "information_theory",
+        "computer_science"
+      ],
+      "relation": "construction",
+      "status": "known_in_literature",
+      "mechanism": "把消息作为低次多项式的系数，在多个不同的有限域元素上求值；根数界把多项式差异转成 Hamming 距离。",
+      "assumptions": [
+        "有限域 Fq；1≤k≤n≤q；n 个求值点互异。",
+        "求值多项式次数严格小于 k。"
+      ],
+      "conclusion": "得到 [n,k,n−k+1]q 码；任意 k 个无误符号可插值恢复消息。",
+      "limitations": "擦除恢复与未知位置错误纠正是不同保证；重复求值点会破坏距离论证。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "MIT 6.885 Algebra and Computation, Lecture 16 (2005), Reed–Solomon evaluation codes; original: Reed and Solomon (1960)",
+          "url": "https://people.csail.mit.edu/madhu/FT05/scribe/lect16.pdf",
+          "fetch_url": "https://people.csail.mit.edu/madhu/FT05/scribe/lect16.pdf",
+          "locator": "Section on Reed–Solomon codes; primary course notes, not a scan of the 1960 paper",
+          "read_scope": "PDF p. 1, Section 3: polynomial messages and distinct-point evaluation; [n,k,n-k+1] is the explicit standard root-counting consequence",
+          "source_type": "institutional_lecture_notes",
+          "fetched_sha256": "8baa9d9e20e6fdae1bbb1b0cb98cf1fe43f9d019241b934d219b991baac7abe7",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    },
+    {
+      "id": "bridge:021",
+      "source_title": "Polynomial identity testing",
+      "target_title": "Sum-check protocol",
+      "title_zh": "多项式根数界 → 交互式证明",
+      "domains": [
+        "algebra",
+        "probability",
+        "computer_science"
+      ],
+      "relation": "bound_transfer",
+      "status": "known_in_literature",
+      "mechanism": "逐轮将高维有限和压为一元多项式一致性检查，用新鲜随机挑战把虚假等式的通过概率限制在根数比例内。",
+      "assumptions": [
+        "有限域 F；每个变量次数至多 d；m 轮。",
+        "验证者逐轮检查次数并使用独立均匀挑战；最后能可信求值目标多项式。"
+      ],
+      "conclusion": "标准 sum-check 具有完备性，虚假和的接受概率至多 md/|F|（并且总是不超过 1）。",
+      "limitations": "复用挑战、取消次数检查、或把最终求值交给未验证的回答都会失去该保证。",
+      "source_node_id": null,
+      "target_node_id": null,
+      "endpoint_binding_status": "unbound",
+      "sources": [
+        {
+          "title": "Justin Thaler, The Sum-Check Protocol; Proofs, Arguments, and Zero-Knowledge",
+          "url": "https://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK.html",
+          "fetch_url": "https://people.cs.georgetown.edu/jthaler/sumcheck.pdf",
+          "locator": "Protocol and soundness theorem",
+          "read_scope": "PDF pp. 1–2; oracle/evaluation requirement, fresh uniform challenges, degree rejection, Proposition 1.1 and induction",
+          "source_type": "authored_technical_notes",
+          "fetched_sha256": "18da69d1ae19c2609fb553fd8cb2fd1b4be6536cbc7e777021e9c130518d59e6",
+          "fetch_status": 200
+        }
+      ],
+      "novelty_claim": false,
+      "machine_certified": false,
+      "discovery_history_status": "not_inferred_from_mathematical_connection",
+      "typed_annotations": {
+        "registry_version": null,
+        "artifact_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        },
+        "discovery_action_type": {
+          "must": [],
+          "may": [],
+          "open": true
+        }
+      },
+      "review_status": "selected_statement_scope_reviewed_not_full_proof"
+    }
+  ]
+}

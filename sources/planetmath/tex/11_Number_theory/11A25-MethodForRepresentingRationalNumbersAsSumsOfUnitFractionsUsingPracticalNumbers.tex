@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MethodForRepresentingRationalNumbersAsSumsOfUnitFractionsUsingPracticalNumbers}
+\pmcreated{2013-03-22 18:07:00}
+\pmmodified{2013-03-22 18:07:00}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{method for representing rational numbers as sums of unit fractions using practical numbers}
+\pmrecord{4}{40663}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Fibonacci's application for practical numbers $n$ was an algorithm to represent proper fractions $\frac{m}{n}$ (with $m > 1$) as sums of unit fractions $\displaystyle \sum \frac{d_i}{n}$, with the $d_i$ being divisors of the practical number $n$. (By the way, there are infinitely many practical numbers which are also Fibonacci numbers). The method is:
+
+\begin{enumerate}
+\item Reduce the fraction to lowest terms. If the numerator is then 1, we're done.
+\item Rewrite $m$ as a sum of divisors of $n$.
+\item Make those divisors of $n$ that add up to $m$ into the numerators of fractions with $n$ as denominator.
+\item Reduce those fractions to lowest terms, thus obtaining the representation $\displaystyle \frac{m}{n} = \sum \frac{d_i}{n}$.
+\end{enumerate}
+
+To illustrate the algorithm, let's rewrite $\frac{37}{42}$ as a sum of unit fractions. Since 42 is practical, success is guaranteed. 
+
+At the first step we can't reduce this fraction because 37 is a prime number. So we go on to the second step, and represent 37 as 2 + 14 + 21. This gives us the fractions $$\frac{2}{42} + \frac{14}{42} + \frac{21}{42},$$ which we then reduce to lowest terms: $$\frac{1}{21} + \frac{1}{3} + \frac{1}{2},$$ giving us the desired unit fractions.
+
+\begin{thebibliography}{2}
+\bibitem{mh}  M. R. Heyworth, ``More on panarithmic numbers'' {\it New Zealand Math. Mag.} {\bf 17} (1980): 28 - 34
+\bibitem{gm} Giuseppe Melfi, ``A survey on practical numbers'' {\it Rend. Sem. Mat. Univ. Pol. Torino} {\bf 53} (1995): 347 - 359
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NonprincipalRealCharactersmodPAreUnique}
+\pmcreated{2013-03-22 16:34:51}
+\pmmodified{2013-03-22 16:34:51}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{nonprincipal real characters $\mod p$ are unique}
+\pmrecord{6}{38772}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Leg}[2]{\left(\frac{#1}{#2}\right)}
+\newtheorem{thm}{Theorem}
+\begin{document}
+\begin{thm} Let $p$ be a prime. Then there is a unique nonprincipal real Dirichlet character $\chi \mod p$, given by
+\[\chi(n)=\Leg{n}{p}\]
+\end{thm}
+\textbf{Proof. }
+Note first that $\chi(n)=\Leg{n}{p}$ is obviously a nonprincipal real character $\mod p$. Now, suppose $\chi$ is any nonprincipal real character $\mod p$. Choose some generator, $a$, of $(\Ints/p\Ints)^*$. Clearly $\chi(a)=-1$ (since otherwise $\chi$ is principal), and thus $\chi(a^k)=(-1)^k$. Since $a^{p-1}=1$, and no lower power of $a$ is $1$, it follows that $\chi$ is $-1$ on exactly $(p-1)/2$ elements of $(\Ints/p\Ints)^*$ and is $1$ on exactly $(p-1)/2$ elements. However, since $\chi(x^2)=\chi(x)^2=1$, $\chi$ is $1$ on each of the $(p-1)/2$ squares in $(\Ints/p\Ints)^*$. Thus $\chi$ is $1$ on squares and $-1$ on nonsquares, so $\chi(n)=\Leg{n}{p}$.
+
+Note that this result is not true if $p$ is not prime. For example, the following is a table of Dirichlet characters modulo $8$, all of which are real:
+\begin{center}
+\begin{tabular}{c|rrrr}
+&$\chi_1$&$\chi_2$&$\chi_3$&$\chi_4$\\
+\hline\\
+$1$&$1$&$1$&$1$&$1$\\
+$3$&$1$&$1$&$-1$&$-1$\\
+$5$&$1$&$-1$&$1$&$-1$\\
+$7$&$1$&$-1$&$-1$&$1$
+\end{tabular}
+\end{center}
+
+%%%%%
+%%%%%
+\end{document}

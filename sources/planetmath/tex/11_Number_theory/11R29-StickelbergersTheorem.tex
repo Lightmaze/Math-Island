@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{StickelbergersTheorem}
+\pmcreated{2013-03-22 14:12:31}
+\pmmodified{2013-03-22 14:12:31}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Stickelberger's theorem}
+\pmrecord{6}{35642}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R29}
+\pmdefines{Stickelberger element}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{Theo}{Theorem}
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+\begin{Theo}[Stickelberger]
+Let $L=\mathbb{Q}(\zeta_m)$ be a cyclotomic field extension of $\Q$ with Galois group $G=\{\sigma_a\}_{a\in(\Z/m\Z)^\times}$, and consider the group ring $\Q[G]$.  Define the Stickelberger element $\theta\in\Q[G]$ by
+\begin{align*}
+\theta=\frac{1}{m}\sum_{1\leq a\leq m, (a,m)=1}a\sigma_a^{-1},
+\end{align*}
+and take $\beta\in\Z[G]$ such that $\beta\theta\in\Z[G]$ as well.  Then $\beta\theta$ is an annihilator for the ideal class group of $\Q(\zeta_m)$.
+\end{Theo}
+
+Note that $\theta$ itself need not be an annihilator, just that any multiple of it in $\Z[G]$ is.
+
+This result allows for the most basic \PMlinkescapetext{connections} between the (otherwise hard to determine) \PMlinkescapetext{structure} of a cyclotomic ideal class group and its \PMlinkescapetext{collection} of annihilators.  For an application of Stickelberger's theorem, see Herbrand's theorem.
+%%%%%
+%%%%%
+\end{document}

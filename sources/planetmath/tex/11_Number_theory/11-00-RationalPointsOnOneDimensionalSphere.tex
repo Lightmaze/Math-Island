@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RationalPointsOnOneDimensionalSphere}
+\pmcreated{2013-03-22 19:07:49}
+\pmmodified{2013-03-22 19:07:49}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{rational points on one dimensional sphere}
+\pmrecord{7}{42026}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmrelated{RationalSineAndCosine}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $$\mathbb{S}^{1}=\{(x,y)\in\mathbb{R}^2 \ |\ x^2+y^2=1\}$$ be a one dimensional sphere.
+
+We will denote by $$\mathbb{S}^{1}_{\mathbb{Q}}=\{(x,y)\in\mathbb{Q}^2\ |\ (x,y)\in\mathbb{S}^1\}$$
+
+the rational sphere. We shall try to describe $\mathbb{S}^1_{\mathbb{Q}}$ in terms of Pythagorean triplets.
+
+\textbf{Theorem.} Let $(x,y)\in\mathbb{R}^2$. Then $(x,y)\in\mathbb{S}^1_{\mathbb{Q}}$ if and only if there exists a Pythagorean triplet $a,b,c\in\mathbb{Z}$ (i.e. $|a|,|b|,|c|\in\mathbb{N}$ is a Pythagorean triplet) such that $x,y$ are of the form $\frac{a}{c}$ and $\frac{b}{c}$.
+
+\textit{Proof.} ,,$\Leftarrow$'' If (for example) $x=\frac{a}{c}$ and $y=\frac{b}{c}$ for a Pythagorean triplet $a,b,c\in\mathbb{Z}$, then we have
+$$x^2+y^2=\frac{a^2}{c^2}+\frac{b^2}{c^2}=\frac{a^2+b^2}{c^2}=\frac{c^2}{c^2}=1$$
+and thus $(x,y)\in\mathbb{S}^1_{\mathbb{Q}}$.
+
+,,$\Rightarrow$'' Assume that $(x,y)\in\mathbb{S}^{1}_{\mathbb{Q}}$. Then $x=\frac{p}{q}$ for some $p,q\in\mathbb{Z}$. It follows, that
+$$1=x^2+y^2=\frac{p^2}{q^2}+y^2$$
+and this is if and only if 
+$$y = \frac{\sqrt{q^2-p^2}}{q}$$
+(up to a sign of course). Therefore $y\in\mathbb{Q}$ if and only if $\sqrt{q^2-p^2}=n$ is an integer. In this case we have
+$$x=\frac{p}{q},\ \ \ \ y=\frac{n}{q}.$$
+Note, that
+$$q^2-p^2=n^2$$
+and thus
+$$q^2=n^2+p^2,$$
+so $n,p,q\in\mathbb{Z}$ is a Pythagorean triplet, which completes the proof. $\square$
+
+\textbf{Corollary.} The rational sphere $\mathbb{S}^1_{\mathbb{Q}}$ is an infinite set.
+
+\textit{Proof.} Let $m,n\in\mathbb{N}$ be natural numbers such that $n$ is fixed and even. Let $m$ run through primes. Then (due to the theorem in parent entry)
+$$2mn,\ m^2-n^2,\ m^2+n^2\in\mathbb{N}$$
+is a Pythagorean triplet.
+Let $$x_{m}=\frac{2mn}{m^2+n^2}=\frac{2n}{m+\frac{n^2}{m}}.$$
+Ir follows from the theorem, that there exists $y_m\in\mathbb{Q}$ such that $(x_m,y_m)\in\mathbb{S}^1_{\mathbb{Q}}$. It is easy to see, that $x_m=x_{m'}$ if and only if $m=m'$ and thus we generated infinitely many rational points on sphere. This completes the proof. $\square$
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,114 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FieldIsDiscreteAndCocompactInItsAdeles}
+\pmcreated{2013-03-22 18:00:05}
+\pmmodified{2013-03-22 18:00:05}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{field is discrete and cocompact in its ad\`{e}les}
+\pmrecord{4}{40515}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R56}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Ade}{\mathbb{A}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Alg}{\mathcal{O}}
+\renewcommand{\o}{\mathfrak{o}}
+\newcommand{\smp}{\mathfrak{p}}
+\newcommand{\Abs}[1]{\left\lvert #1\right\rvert}
+\newcommand{\Rprod}{\sideset{}{'}\prod}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}[thm]{Proposition}
+
+\begin{document}
+\PMlinkescapeword{even}
+For brevity, we write $P_f$ for the set of finite places of $K$, and $P_{\infty}$ for the set of infinite places. We also write $\Rprod$ for a restricted direct product. Then 
+\[\Ade_K = \Rprod_{v\in P_f} K_v \times \prod_{v\in P_{\infty}} K_v\]
+
+\begin{thm} $K$ is discrete as a subgroup of $\Ade_K$.
+\end{thm}
+\textbf{Proof. } Since $\Ade_K$ is a topological ring, it suffices to show that there is a neighborhood in $\Ade_K$ meeting $K$ in only $0$.
+
+Let
+\[U=\prod_{v\in P_f} \o_v \times \prod_{v\in P_{\infty}} B\left(0,\frac{1}{2}\right)\]
+Since $\o_v$ is open in $K_v$ for $v$ finite, this is an open set. (Note that $\o_v = \Alg_{K_v}$, the ring of algebraic integers of $K_v$).
+
+Now consider an element $x\in U\cap K\subset \Ade_K$. If $x=(x_v)$, then for $v$ finite, $x_v\in \o_v$, and for $v$ infinite, $x_v\in B\left(0,\frac{1}{2}\right)$. Assume $x\neq 0$. Then
+\[\Abs{x_v}_v \leq\begin{cases} 1 & v \text{ finite}\\ \frac{1}{2}<1 & v \text{ infinite}\end{cases}\]
+but then
+\[\prod \Abs{x}_v = \prod \Abs{x_v}_v < 1\]
+in contradiction to the product formula. Thus $x=0$ and we are done.
+
+
+The above theorem is very sensitive to the fact that all places are included in $\Ade_K$. For example, it is clear that the image of $\Ade_K$ in $\prod_{v\in P_{\infty}} K_v$ is \emph{dense}, since $K_v$ is characterized by an embedding $K\hookrightarrow K_v\cong\Reals,\Complex,\Rats_p$. Then by an argument familiar from Minkowski's theorem, $\Alg_K$ is a full-rank lattice in the image of $K$. But $K$ is the $\Rats$-span of that lattice, so is dense in $K_v$.
+
+Furthermore, the same is true for the finite places:
+\begin{prop} The image of $K$ in $\Rprod_{v\in P_f} \o_v$ is dense.
+\end{prop}
+\textbf{Proof. }
+Suppose $x=(x_v)_v\in \Rprod_{v\in P_f} \o_v$. We show that $x$ can be approximated as closely as desired by an element of $K$ by showing that for any ideal $I\subset \Alg_K$, there is $y\in K$ such that $y-x_v\in I\o_v$ for each $v\in P_f$.
+
+First multiply through by some $z$ so that everything is in $\Alg_K$: choose $z\neq 0$ such that $zx_v\in\o_v$ for all $v\in P_f$. This is possible since all but finitely many $x_v$ are already in $\o_v$. Thus $y-x_v\in I\o_v$ is equivalent to $zy-zx_v\in(zI)\o_v\subset I\o_v$. So assume wlog that $x_v\in\o_v$ for all $v$; in the end simply divide by $z$ to recover the general case. But then the existence of $y$ is guaranteed by the Chinese Remainder Theorem, since if $I=\prod \smp_i^{e_i}$, then $I\o_v = \smp_i^{e_i}$ for some $i$.
+
+
+It is true, though somewhat harder to prove, that $K$ is in fact dense in $\Ade_K$ if even one place is missing from the product!
+
+\begin{thm} $\Ade_K/K$ is compact.
+\end{thm}
+\textbf{Proof. } The set
+\[U = \prod_{v\in P_f}\o_v \times \prod_{v\in P_{\infty}} K_v\]
+is open in $\Ade_K$.
+
+Claim first that $K+U=\Ade_K$. Choose $(x_v)\in \Ade_K$. There is a finite set $S$ of finite places $v$ such that $x_v\notin \o_v$ for $v\in S$. Using an argument identical to the approximation argument above, choose $y\in K$ such that $y-x_v \in \o_v, v\in S$ and $y\in\o_v, v\notin S$. Then $(x_v-y)_v$ is in $\o_v$ for $v\in S$, is in $\o_v$ for $v\notin S$ but finite, and is in $K_v$ for $v$ infinite. Thus $(x_v-y)_v\in U$ and we are done.
+
+Claim next that $K\cap U = \Alg_K$. $\supset$ is obvious. To see $\subset$, note that an element of $K\cap U$ is an element of $K$ that is integral at every finite place, so it is integral and is in $\Alg_K$.
+
+Thus we get a natural map $U\hookrightarrow \Ade_K \twoheadrightarrow \Ade_K/K$. This map is surjective since $K+U=\Ade_K$, and its kernel is $K\cap U$. So it suffices to show that $U/(K\cap U)=U/\Alg_K$ is compact. There is obviously an exact sequence induced by the projection $U\to\prod_{v\in P_{\infty}} K_v$,
+\[\prod_{v\in P_f} \o_v\to U/\Alg_K\to \prod_{v\in P_{\infty}} K_v/\Alg_K\to 0\]
+The left-hand side is compact since each $\o_v$ is, and the right-hand side is 
+\[\Reals^{r_1+2r_2}/\Alg_K\]
+which know is compact since $\Alg_K$ forms a full-rank lattice in $\Reals^n$. Thus $U/\Alg_K$ is also compact and we are done.
+
+
+So we have shown that $\Ade_K$ is a locally compact ring, and that $K\subset \Ade_K$ is discrete and cocompact. This is analogous to two other situations with which we are familiar:
+\begin{gather*}
+\Reals\text{ is locally compact, }\Ints\subset\Reals\text{ is discrete and cocompact}\\
+\prod_{v\in P_{\infty}}K_v\text{ is locally compact, }\Alg_K\subset\prod_{v\in P_{\infty}}K_v\text{ is discrete and cocompact}
+\end{gather*}
+This is a useful concept because in such a situation one can do Fourier analysis. For example, if $f:\Reals\to\Reals$ is a $C^{\infty}$ function with exponential decay (or at least integrable on all of $\Reals$), then we can define its Fourier transform $\hat{f}$, and the Poisson summation formula
+\[\sum_{n\in\Ints} f(n) = \sum_{n\in\Ints} \hat{f}(n)\]
+relates the two. The same theory thus exists for appropriately defined functions $f:\Ade_K\to \Reals$, and the Poisson formula again holds with the sum over $K$ rather than over $\Ints$. This can be used to show that the $L$-functions have analytic continuations, just as the real Poisson formula is used to show this for $\zeta$.
+
+%%%%%
+%%%%%
+\end{document}

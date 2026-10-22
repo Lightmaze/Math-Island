@@ -1,0 +1,59 @@
+{
+  "source": "The Stacks Project",
+  "commit": "a04446e57ec1fbc252a871afcec7752fb2807b14",
+  "archive_sha256": "fa2cce9de74122a420c0724538ce46fc2693461c851f3df89a09de70234806b2",
+  "generated_at": "2026-10-22T09:27:22.805714+00:00",
+  "entries": 14852,
+  "kinds": {
+    "definition": 1721,
+    "lemma": 12587,
+    "proposition": 330,
+    "theorem": 214
+  },
+  "chapters": 110,
+  "raw_references": 43905,
+  "rejected": [
+    {
+      "chapter": "coding",
+      "label": "lemma-bar",
+      "reason": "no_stable_tag"
+    },
+    {
+      "chapter": "more-morphisms",
+      "label": "lemma-weighting-specialization",
+      "reason": "no_stable_tag"
+    },
+    {
+      "chapter": "more-morphisms",
+      "label": "lemma-weighting-on-dense-set",
+      "reason": "no_stable_tag"
+    },
+    {
+      "chapter": "relative-cycles",
+      "label": "lemma-weightings-pre",
+      "reason": "no_stable_tag"
+    },
+    {
+      "chapter": "relative-cycles",
+      "label": "lemma-flat-pullback-as-action",
+      "reason": "no_stable_tag"
+    },
+    {
+      "chapter": "relative-cycles",
+      "label": "lemma-flat-pullback-as-composition",
+      "reason": "no_stable_tag"
+    },
+    {
+      "chapter": "topology",
+      "label": "lemma-dense-in-constructible",
+      "reason": "no_stable_tag"
+    }
+  ],
+  "scope": "Every labelled definition/theorem/lemma/proposition/corollary with a stable tag; proof/example/section/item tags excluded.",
+  "limitations": [
+    "A tag is a sourced statement unit, not a separate mathematical theory.",
+    "Theorem environments report source classification; this extraction is not formal verification.",
+    "Syntactic proof references may cite definitions, equations, or explanatory material and are not certified proof dependencies.",
+    "Local context remains in the linked source chapter; statement snippets alone need not be self-contained."
+  ]
+}

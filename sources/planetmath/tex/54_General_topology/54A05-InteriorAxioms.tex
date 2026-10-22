@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{InteriorAxioms}
+\pmcreated{2013-03-22 16:30:37}
+\pmmodified{2013-03-22 16:30:37}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{interior axioms}
+\pmrecord{8}{38687}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A05}
+\pmrelated{GaloisConnection}
+\pmdefines{interior operator}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{axiom}{Axiom}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+Let $S$ be a set.  Then an \emph{interior operator} is a function
+$\,^\circ \colon \mathcal{P}(S) \to \mathcal{P}(S)$ which satisfies the 
+following properties:
+\begin{axiom}
+$S^\circ = S$
+\end{axiom}
+\begin{axiom}
+For all $X \subset S$, one has $X^\circ \subseteq S$.
+\end{axiom}
+\begin{axiom}
+For all $X \subset S$, one has $(X^\circ)^\circ = X^\circ$.
+\end{axiom}
+\begin{axiom}
+For all $X, Y \subset S$, one has $(X \cap Y)^\circ = 
+X^\circ \cap Y^\circ$.
+\end{axiom}
+
+If $S$ is a topological space, then the operator which assigns to
+each set its interior satisfies these axioms.  Conversely, given an
+interior operator $\,^\circ$ on a set $S$, the set $\{X^\circ \mid
+X \subset S\}$ defines a topology on $S$ in which $X^\circ$ is the
+interior of $X$ for any subset $X$ of $S$.  Thus, specifying an
+interior operator on a set is equivalent to specifying a topology
+on that set.
+
+The concepts of interior operator and closure operator are closely
+related.  
+Given an interior operator $\,^\circ$, one can 
+define a closure operator $\,^c$ by the condition
+ \[ X^c = ({(X')^\circ})\vphantom{X}' \]
+and, given a closure operator $\,^c$, one can 
+define an interior operator $\,^\circ$ by the condition
+\ \[ X^\circ = ({(X')^c})\vphantom{X}' .\]
+%%%%%
+%%%%%
+\end{document}

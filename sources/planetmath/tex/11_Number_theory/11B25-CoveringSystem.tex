@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CoveringSystem}
+\pmcreated{2013-03-22 18:04:37}
+\pmmodified{2013-03-22 18:04:37}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{covering system}
+\pmrecord{7}{40613}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B25}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em covering system} is a system of congruences such that every natural number $n$ is ``covered'' by at least one of the congruences, that is, given the finite sets $a$ and $m$ both containing $k$ nonnegative integers (but each $m_i > 1$), for every $n$ there's at least one value of $i$ such that $n \equiv a_i \mod m_i$.
+
+For example, Davenport gives the following system: $0 \mod 2$, $0 \mod 3$, $1 \mod 4$, $1 \mod 6$ and $11 \mod 12$. For the sake of demonstration it will be sufficient here to show that this system of congruences covers all $12 < n < 37$. Examining the congruences in the order stated for the first half of our sample range, the multiples of 2 and 3 are covered by the first two congruences, leaving us just 13, 17, 19 and 23 to worry about. The third congruence takes care of 13 and 17. The fourth congruence takes care of 19, with 13 already taken care of. The fifth congruence covers 23. In many cases, a particular number will be taken care of by more than one congruence. The following table shows all the congruences that cover the remainder of our sample range.
+
+\begin{tabular}{|r|r|r|}
+25 &   $1 \mod 4$ & $1 \mod 6$ \\
+26 &   $0 \mod 2$ &            \\
+27 &   $0 \mod 3$ &            \\
+28 &   $0 \mod 2$ &            \\
+29 &   $1 \mod 4$ &            \\
+30 &   $0 \mod 2$ & $0 \mod 3$ \\
+31 &   $1 \mod 6$ &            \\
+32 &   $0 \mod 2$ &            \\
+33 &   $0 \mod 3$ & $1 \mod 4$ \\
+34 &   $0 \mod 2$ &            \\
+35 & $11 \mod 12$ &            \\
+36 &   $0 \mod 2$ & $0 \mod 3$ \\
+\end{tabular}
+
+There are various open problems pertaining to covering systems. Erd\H{o}s conjectured that for any positive $N$ there is always a covering system in which all the moduli are greater than $N$. Another one, posed by Erd\H{o}s and Selfridge is whether there is a covering system in which all the moduli are odd. Erd\H{o}s has presented a covering system which does not use 2 as a modulus but it does use 4.
+
+\begin{thebibliography}{2}
+\bibitem{hd} H. Davenport, {\it The Higher Arithmetic}, Sixth Edition. Cambridge: Cambridge University Press (1995): 57 - 58
+\bibitem{pe} Paul Erd\H{o}s \& J\'anos Sur\'anyi {\it Topics in the theory of numbers} New York: Springer (2003): 46
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

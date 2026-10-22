@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MangoldtSummatoryFunction}
+\pmcreated{2013-03-22 13:27:16}
+\pmmodified{2013-03-22 13:27:16}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Mangoldt summatory function}
+\pmrecord{9}{34020}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmsynonym{von Mangoldt summatory function}{MangoldtSummatoryFunction}
+\pmrelated{ChebyshevFunctions}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A number theoretic function used in the study of prime numbers; specifically it was used in the proof of the prime number theorem.
+
+It is defined thus:
+
+$$
+\psi(x) = \sum_{r \leq x} \Lambda(r)
+$$
+
+where $\Lambda$ is the Mangoldt function.
+
+The Mangoldt summatory function is valid for all positive real x.
+
+Note that we do not have to worry that the inequality above is ambiguous, because $\Lambda(x)$ is only non-zero for natural $x$. So no matter whether we take it to mean r is real, integer or natural, the result is the same because we just get a lot of zeros added to our answer.
+
+The prime number theorem, which states:
+
+$$
+\pi(x) \sim \frac{x}{\ln(x)}
+$$
+
+where $\pi(x)$ is the prime counting function, is equivalent to the statement that:
+
+$$
+\psi(x) \sim x
+$$
+
+We can also define a ``smoothing function'' for the summatory function, defined as:
+
+$$
+\psi_1(x) = \int_0^x \psi(t) dt
+$$
+
+and then the prime number theorem is also equivalent to:
+
+$$
+\psi_1(x) \sim \frac{1}{2} x^2
+$$
+
+which turns out to be easier to work with than the original form.
+%%%%%
+%%%%%
+\end{document}

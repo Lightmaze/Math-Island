@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KloostermanSum}
+\pmcreated{2013-03-22 13:59:33}
+\pmmodified{2013-03-22 13:59:33}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Kloosterman sum}
+\pmrecord{7}{34769}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11L05}
+\pmclassification{msc}{43A25}
+\pmrelated{GaussSum}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Fpstar}{\mathbb{F}_p^*}
+\newcommand{\Fqstar}{\mathbb{F}_q^*}
+\newcommand{\Fp}{\mathbb{F}_p}
+\newcommand{\Fq}{\mathbb{F}_q}
+\begin{document}
+\PMlinkescapeword{theory}
+\PMlinkescapeword{finite}
+
+The Kloosterman sum is one of various trigonometric sums that are
+useful in number theory and, more generally, in finite harmonic
+analysis.
+The original Kloosterman sum is
+$$K_p(a,b)=\sum_{x\in\Fpstar}
+\exp \left( \frac{2\pi i(ax+bx^{-1})}{p} \right) $$
+where $\Fp$ is the field of prime order $p$.
+Such sums have been generalized
+in a few different ways since their introduction in 1926.
+For instance, let $q$ be a prime power, $\Fq$ the field
+of $q$ elements, $\chi:\Fqstar\to\C$ a character, and
+$\psi:\Fq\to\C$
+a mapping such that $\psi(x+y)=\psi(x)\psi(y)$ identically.
+The sums
+$$K_\psi(\chi|a,b)=\sum_{x\in\Fqstar}\chi(x)\psi(ax+bx^{-1})$$
+are of interest, because they come up as Fourier coefficients
+of modular forms.
+
+Kloosterman sums are finite analogs of the $K$-Bessel
+functions of this kind:
+$$K_s(a)=\frac{1}{2}
+\int_0^\infty
+x^{s-1}\exp\left(\frac{-a(x+x^{-1})}{2}\right) dx$$
+where $\Re(a)>0$.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Interior}
+\pmcreated{2013-03-22 12:48:20}
+\pmmodified{2013-03-22 12:48:20}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{interior}
+\pmrecord{19}{33123}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+%\pmkeywords{topology}
+\pmrelated{Complement}
+\pmrelated{Closure}
+\pmrelated{BoundaryInTopology}
+\pmdefines{exterior}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\def\int{\operatorname{int}}
+\def\emptyset{\varnothing}
+\begin{document}
+\PMlinkescapeword{entire}
+\PMlinkescapeword{implies}
+\PMlinkescapeword{mean}
+\PMlinkescapeword{properties}
+
+Let $A$ be a subset of a topological space $X$.
+
+The union of all open sets contained in $A$
+is defined to be the \emph{interior} of $A$.
+Equivalently, one could define the interior
+of $A$ to the be the largest open set contained in $A$.
+
+In this entry we denote the interior of $A$ by $\int(A)$.
+Another common notation is $A^\circ$.
+
+The \emph{exterior} of $A$ is defined as 
+the union of all open sets whose intersection with $A$ is empty.
+That is, the exterior of $A$ is the interior of the complement of $A$.
+
+The interior of a set enjoys many special properties,
+some of which are listed below:
+\begin{enumerate}
+\item $\int(A)\subseteq A$
+\item $\int(A)$ is open
+\item $\int(\int(A))=\int(A)$
+\item $\int(X)=X$
+\item $\int(\emptyset)=\emptyset$
+\item $A$ is open if and only if $A=\int(A)$
+\item $\overline{A^\complement}=(\int(A))^\complement$
+\item $\overline{A}^\complement = \int(A^\complement)$
+\item $A\subseteq B$ implies that $\int(A)\subseteq \int(B)$
+\item $\int(A)=A\setminus \partial A$,
+      where $\partial A$ is the boundary of $A$
+\item $X=\int(A)\cup \partial A \cup \int(A^\complement)$
+\end{enumerate}
+
+\begin{thebibliography}{9}
+\bibitem{willard} S. Willard, \emph{General Topology},
+Addison-Wesley Publishing Company, 1970.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

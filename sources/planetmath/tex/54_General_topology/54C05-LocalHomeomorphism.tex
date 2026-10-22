@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LocalHomeomorphism}
+\pmcreated{2013-03-22 18:53:47}
+\pmmodified{2013-03-22 18:53:47}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{local homeomorphism}
+\pmrecord{4}{41743}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\textbf{Definition.} Let $X$ and $Y$ be topological spaces. Continuous map $f:X\to Y$ is said to be \textit{locally invertible in $x\in X$} iff there exist open subsets $U\subseteq X$ and $V\subseteq Y$ such that $x\in U$, $f(x)\in V$ and the restriction $$f:U\to V$$ is a homeomorphism. If $f$ is locally invertible in every point of $X$, then $f$ is called a \textit{local homeomorphism}.
+
+\textbf{Examples.} Of course every homeomorphism is a local homeomorphism, but the converse is not true. For example, let $f:\mathbb{C}\to\mathbb{C}$ be an exponential function, i.e. $f(z)=e^z$. Then $f$ is a local homeomorphism, but it is not a homeorphism (indeed, $f(z)=f(z+2\pi i)$ for any $z\in\mathbb{C}$).
+
+One of the most important theorem of differential calculus (i.e. inverse function theorem) states, that if $f:M\to N$ is a $C^1$-map between $C^1$-manifolds such that $T_{x}f:T_{x}M\to T_{f(x)}N$ is a linear isomorphism for a given $x\in M$, then $f$ is locally invertible in $x$ (in this case the local inverse is even a $C^1$-map).
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HausdorffMetric}
+\pmcreated{2013-03-22 13:28:34}
+\pmmodified{2013-03-22 13:28:34}
+\pmowner{Koro}{127}
+\pmmodifier{Koro}{127}
+\pmtitle{Hausdorff metric}
+\pmrecord{11}{34046}
+\pmprivacy{1}
+\pmauthor{Koro}{127}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+\pmsynonym{Hausdorff distance}{HausdorffMetric}
+\pmdefines{Hausdorff hemimetric}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\begin{document}
+Let $(X,d)$ be a metric space, and let $\mathcal{F}_X$ be the family of all
+closed and bounded subsets of $X$. Given $A\in \mathcal{F}_X$, we will denote by
+$N_r(A)$ the neighborhood of $A$ of radius $r$, i.e. the set
+$\cup_{x\in A} B(x,r)$.
+
+The \emph{upper Hausdorff hemimetric} is defined by
+ $$\delta^*(A,B)=\inf\{r>0 : B\subset N_r(A)\}.$$
+Analogously, the \emph{lower Hausdorff hemimetric} is $$\delta_*(A,B) =
+\inf\{r>0 : A\subset N_r(B)\}.$$ 
+Finally, the \emph{Hausdorff metric} is given by
+$$\delta(A,B) = \max\{\delta^*(A,B),\delta_*(A,B)\}.$$
+for $A,B\in \mathcal{F}_X$.
+
+The following properties follow straight from the definitions:
+\begin{enumerate}
+\item $\delta^*(A,B) = \delta_*(B,A)$;
+\item $\delta^*(A,B)=0$ if and only if $B\subset A$;
+\item $\delta_*(A,B)=0$ if and only if $A\subset B$;
+\item $\delta^*(A,C) \leq \delta^*(A,B) + \delta^*(B,C)$, and similarly for
+$\delta_*$.
+\end{enumerate}
+
+From this it is clear that $\delta$ is a metric: the triangle inequality follows from that of $\delta_*$ and $\delta^*$; symmetry follows from
+$\delta^*(A,B)=\delta_*(A,B)$; and $\delta(A,B) = 0$ iff both $\delta_*(A,B)$ and $\delta^*(A,B)$ are zero iff $A\subset B$ and $B\subset A$ iff $A=B$.
+
+Hausdorff metric inherits completeness; i.e. if $(X,d)$ is complete, then so is $(\mathcal{F}_X,\delta)$. Also, if $(X,d)$ is totally bounded, then so is
+$(\mathcal{F}_X,\delta)$. 
+
+Intuitively, the Hausdorff hemimetric $\delta^*$ (resp. $\delta_*$) measure how much bigger (resp. smaller) is a set compared to another. This allows us to define hemicontinuity of correspondences.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PandigitalNumber}
+\pmcreated{2013-03-22 16:04:28}
+\pmmodified{2013-03-22 16:04:28}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{pandigital number}
+\pmrecord{4}{38131}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmdefines{zeroless pandigital number}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given a base $b$ integer $$n = \sum_{i = 1}^k d_ib^{i - 1}$$ where $d_1$ is the least significant digit and $d_k$ is the most significant, and $k \ge b$, if for each $-1 < m < b$ there is at least one $d_x = m$ among the digits of $n$, then $n$ is a {\em pandigital number} in base $b$.
+
+The smallest pandigital number in base $b$ is $$b^{b - 1} + \sum_{d = 2}^{b - 1} db^{(b - 1) - d},$$ while the largest (with only one instance of each digit) is $$\sum_{d = 1}^{b - 1} db^d.$$
+
+There are infinitely many pandigital numbers with more than one instance of one or more digits.
+
+If $b$ is not prime, a pandigital number must have at least $b + 1$ digits to be prime. With $k = b$ for the length of digits of a pandigital number $n$, it follows from the divisibility rules in that base that $(b - 1)|n$.
+
+Sometimes a number with at least one instance each of the digits 1 through $b - 1$ but no instances of 0 is called a {\em zeroless pandigital number}.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MultiplicativelyIndependent}
+\pmcreated{2013-03-22 19:36:03}
+\pmmodified{2013-03-22 19:36:03}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{multiplicatively independent}
+\pmrecord{6}{42592}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11J85}
+\pmclassification{msc}{12F05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+A set $X$ of nonzero complex numbers is said to be {\it multiplicatively independent} iff every equation
+$$x_1^{\nu_1}x_2^{\nu_2}\cdots x_n^{\nu_n} \;=\; 1$$
+with\, $x_1,\,x_2,\,\ldots,\,x_n \in X$\, and\, $\nu_1,\,\nu_2,\,\ldots,\,\nu_n \in \mathbb{Z}$\, implies that
+$$\nu_1 \;=\; \nu_2 \;= \ldots =\; \nu_n \;=\; 0.$$
+
+For example, the set of prime numbers is multiplicatively independent, by the fundamental theorem of arithmetics.\\
+
+Any algebraically independent set is also multiplicatively independent.\\
+
+Evidently, $\{x_1,\,x_2,\,\ldots,\,x_n\}$ is multiplicatively
+independent if and only if the numbers $\log x_1$,\,$\log x_2$,\,...,\,$\log x_n$ are linearly independent over $\mathbb{Q}$.\, Thus the Schanuel's conjecture may be formulated as the
+
+\textbf{Conjecture.}\, If\, $\{x_1,\,x_2,\,\ldots,\,x_n\}$\, is multiplicatively independent, then the transcendence degree of the set
+$$\{x_1,\,x_2,\,\ldots,\,x_n,\,\log x_1,\,\log x_2,\,\ldots,\,\log x_n\}$$
+is at least $n$.
+
+\begin{thebibliography}{8}
+\bibitem{MS}{\sc Diego Marques \& Jonathan Sondow}: {\it Schanuel's conjecture and algebraic powers $z^w$ and $w^z$ with $z$ and $w$ transcendental} (2011).  Available \PMlinkexternal{here}{http://arxiv.org/pdf/1010.6216.pdf}.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

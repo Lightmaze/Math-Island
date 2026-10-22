@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KleinBottle}
+\pmcreated{2013-03-22 13:37:00}
+\pmmodified{2013-03-22 13:37:00}
+\pmowner{vernondalhart}{2191}
+\pmmodifier{vernondalhart}{2191}
+\pmtitle{Klein bottle}
+\pmrecord{12}{34249}
+\pmprivacy{1}
+\pmauthor{vernondalhart}{2191}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B15}
+\pmrelated{MobiusStrip}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Where a M\"obius strip is a two dimensional object with only one surface and one edge, a Klein bottle is a two dimensional object with a single surface, and no edges. Consider for comparison, that a sphere is a two dimensional surface with no edges, but that has two surfaces.
+
+A Klein bottle can be constructed by taking a rectangular subset of $\mathbb{R}^2$ and identifying opposite edges with each other, in the following fashion:
+
+Consider the rectangular subset $[-1,1] \times [-1,1]$. Identify the points $(x, 1)$ with $(x, -1)$, and the points $(1,y)$ with the points $(-1,-y)$. Doing these two operations simultaneously will give you the Klein bottle.
+
+Visually, the above is accomplished by the following. Take a rectangle, and match up the arrows on the edges so that their orientation matches:
+
+\begin{center}
+\includegraphics{klein.eps}
+\end{center}
+
+This of course is completely impossible to do physically in 3-dimensional space; to be able to properly create a Klein bottle, one would need to be able to build it in 4-dimensional space.
+
+To construct a pseudo-Klein bottle in 3-dimensional space, you would first take a cylinder and cut a hole at one point on the side. Next, bend one end of the cylinder through that hole, and attach it to the other end of the clyinder.
+
+A Klein bottle may be parametrized by the following equations:
+\begin{align*}
+x &= \begin{cases}
+a\cos(u)\bigl(1+\sin(u)\bigr) + r\cos(u)\cos(v) & 0 \le u < \pi\\
+a\cos(u)\bigl(1+\sin(u)\bigr) + r\cos(v + \pi) & \pi < u \le 2\pi
+\end{cases}\\
+y &=\begin{cases}
+b\sin(u) + r\sin(u)\cos(v) & 0 \le u < \pi\\
+b\sin(u) & \pi < u \le 2\pi
+\end{cases}\\
+z &= r\sin(v)
+\end{align*}
+
+where $v\in [0,2\pi], u \in [0, 2\pi], r = c(1-\frac{\cos(u)}{2})$ and $a, b, c$ are chosen arbitrarily.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SchauderLemma}
+\pmcreated{2013-03-22 19:09:44}
+\pmmodified{2013-03-22 19:09:44}
+\pmowner{karstenb}{16623}
+\pmmodifier{karstenb}{16623}
+\pmtitle{Schauder lemma}
+\pmrecord{4}{42068}
+\pmprivacy{1}
+\pmauthor{karstenb}{16623}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E50}
+\pmclassification{msc}{46A30}
+%\pmkeywords{almost open set}
+%\pmkeywords{open mapping}
+\pmrelated{OpenMappingTheorem}
+\pmdefines{almost open set}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage[sort&compress]{natbib}
+
+%\usepackage{psfrag}
+%\usepackage{graphicx}
+%%%\usepackage{xypic}
+
+%theorems
+\theoremstyle{definition}
+\newtheorem{Def}{Definition}
+
+\theoremstyle{plain}
+\newtheorem{Lem}{Theorem}
+\newtheorem{Lem2}{Lemma}
+\newtheorem{Cor}{Corollary}
+\newtheorem{Rem}{Remark}
+
+
+
+
+\begin{document}
+The following theorem is in the functional analysis literature generally referred to as the \emph{Schauder lemma}. It is a version of the open mapping theorem in Fr\'echet spaces and is often used to verify the open-ness of linear, continuous maps.
+
+\textbf{Theorem.} Let $E, F$ be Fr\'echet spaces. Denote by $\mathcal{U}_0(E), \mathcal{U}_0(F)$ the zero neighborhood filter of $E$ and $F$ respectively. Let $T \colon E \to F$ be a linear and continuous map which is \emph{almost open}, i.e. 
+\begin{align*}
+\forall_{U \in \mathscr{U}_0(E)} \overline{T(U)}^{F} &\in \mathscr{U}_0(F)
+\end{align*}
+
+Then $T$ is open.
+%%%%%
+%%%%%
+\end{document}

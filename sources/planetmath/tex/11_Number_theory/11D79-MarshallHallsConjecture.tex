@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MarshallHallsConjecture}
+\pmcreated{2013-03-22 18:15:36}
+\pmmodified{2013-03-22 18:15:36}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Marshall Hall's conjecture}
+\pmrecord{4}{40857}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D79}
+\pmsynonym{Marshall Hall conjecture}{MarshallHallsConjecture}
+\pmrelated{PerfectPower}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Conjecture. (Marshall Hall, Jr.). With the exception of $n^2$ being a perfect sixth power, for any positive integer $n$, the inequality $|n^2 - m^3| > C \sqrt{m}$, (with $m$ also being a positive integer and $C$ being a number less than 1 that nears 1 as $n$ tends to infinity) always holds.
+
+The reason for the exception of perfect sixth powers (those cases of $n$ for which there is a solution to $n^2 = h^6$ in integers) is a simple consequence of associativity: if $n^2 = h^6$, then $h^6 = h^2 h^2 h^2 = h^3 h^3$. Then $m = h$ and $n^2 - m^3 = 0$. For example, $8^2 - 4^3 = 0$.
+
+For small $n$, $C$ can't be exactly 1. For example, $3^2 - 2^3 = 1$, and $\sqrt{2} > 1$. But even among the smaller numbers, the conjecture generally holds even with $C = 1$. After $n = 3$, the next counterexample (that is not a perfect sixth power) to $C = 1$ is $n = 378661$, with the corresponding $m = 5234$ producing a difference of just 17. A078933 in Sloane's OEIS lists smaller values of $m$ with cubes being at a distance from the nearest square that is less than $\sqrt{m}$. Noam Elkies has found some fairly large counterexamples to setting $C = 1$, such as $n = 447884928428402042307918$ and $m = 5853886516781223$, the difference between the square of the former and the cube of the latter being a relatively small 1641843. 
+
+\begin{thebibliography}{1}
+\bibitem{rg} R. K. Guy, {\it Unsolved Problems in Number Theory} New York: Springer-Verlag 2004: D9
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

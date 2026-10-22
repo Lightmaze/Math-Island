@@ -1,0 +1,434 @@
+{
+  "reviewer": "agent:/root/atlas_semantics",
+  "recorded_utc": "2026-10-22T10:10:39.009877+00:00",
+  "graph_nodes_modified": false,
+  "nodes_sha256": "4f146b824e4cce0f3b8e47e1c756557124c5075288fdf8cd7db0145a879abce1",
+  "edges_sha256": "ffc436ae4c1c8f35caf8127e347cd4547b1c24178389904fb0e40efc922a4fe4",
+  "bridge_count": 21,
+  "bound_bridge_count": 21,
+  "missing_endpoints": [],
+  "endpoint_occurrences": 42,
+  "distinct_endpoint_nodes": 41,
+  "endpoint_source_hash_checks": [
+    {
+      "id": "pm:AlgebraicSetsAndPolynomialIdeals",
+      "source_file": "sources/planetmath/tex/14_Algebraic_geometry/14A10-AlgebraicSetsAndPolynomialIdeals.tex",
+      "source_sha256": "82299b72fb26301ca21a4996c5264b2e2b11065062c728c309fb06fea9a595af",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:BorsukUlamTheorem",
+      "source_file": "sources/planetmath/tex/54_General_topology/54C99-BorsukUlamTheorem.tex",
+      "source_sha256": "9d493da8e00317a9eaff8bbd3da1005cd71d8006c3b061d792c75f7019f7dfad",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:BrownianMotion",
+      "source_file": "sources/planetmath/tex/60_Probability_theory_and_stochastic_processes/60J65-BrownianMotion.tex",
+      "source_sha256": "917875fcd8a92b55c47a391c88452a2b3706a416dd016f0da9340eeecc27e027",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:CoveringSpace",
+      "source_file": "sources/planetmath/tex/55_Algebraic_topology/55R05-CoveringSpace.tex",
+      "source_sha256": "ce2cf3594c6838a0386be5ec18ff7fe58ff9758cd2a820afabc8dedf14d4486b",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:EllipticCurve",
+      "source_file": "sources/planetmath/tex/11_Number_theory/11G07-EllipticCurve.tex",
+      "source_sha256": "cb51a257982f761fdb61dd138c1946074936a0a514c07c552ae2affd8a8cad7c",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:EulerCharacteristic",
+      "source_file": "sources/planetmath/tex/55_Algebraic_topology/55N99-EulerCharacteristic.tex",
+      "source_sha256": "92fcd976a2ce2613751e25cb1dcadba54dcad32b3ebcfbdb7f43b68b025c26d0",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:FundamentalGroup",
+      "source_file": "sources/planetmath/tex/57_Manifolds_and_cell_complexes/57M05-FundamentalGroup.tex",
+      "source_sha256": "e3e140e624eb33929a2c52a286d925aa4aab60fc06c4cef3c02bd1032006e2db",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:GaussianCurvature",
+      "source_file": "sources/planetmath/tex/53_Differential_geometry/53A05-GaussianCurvature.tex",
+      "source_sha256": "1dc7417fee8c233a9db64561a20d19930624226b2c95de68b1e360b9a38a7999",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:HeatEquation",
+      "source_file": "sources/planetmath/tex/35_Partial_differential_equations/35Q99-HeatEquation.tex",
+      "source_sha256": "dd7ff768acc74ef7feb8238c3ca02697832bc834b3aeb1a6465c539ba61145a0",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:HodgeTheory",
+      "source_file": "sources/planetmath/tex/14_Algebraic_geometry/14N05-HodgeTheory.tex",
+      "source_sha256": "e01ba8e56ee511c2b78f9d87491fd4a82e8bdf0375af53f57f9c045408963dbd",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:LambdaCalculus",
+      "source_file": "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03B40-LambdaCalculus.tex",
+      "source_sha256": "f6abdb2f182e8e82a4d5844a7c0fe0112bb91300e2e127c5d3216a101b894cf5",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:Matroid",
+      "source_file": "sources/planetmath/tex/05_Combinatorics/05B35-Matroid.tex",
+      "source_sha256": "90e261b3fd7ef8ff4165533a0780e1f5db4e685b8faa5f679d47d1d16dc576a2",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:ModularForm",
+      "source_file": "sources/planetmath/tex/11_Number_theory/11F11-ModularForm.tex",
+      "source_sha256": "76bdab4a740250f22f92fad3c667da6b09e88cf95a953c6356b87cedc1629b0f",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:Prime",
+      "source_file": "sources/planetmath/tex/11_Number_theory/11A41-Prime.tex",
+      "source_sha256": "bdd95ea2c9943cab36cd386d09163a543daa3cdaa8f2c514972b91ce1801d3ff",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:RadicalOfAnIdeal",
+      "source_file": "sources/planetmath/tex/14_Algebraic_geometry/14A05-RadicalOfAnIdeal.tex",
+      "source_sha256": "4dea4423a90d65f33f60c6b8ab20d435cc3417bc232ae4414ae31a4b282f7ffa",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:SzemeredisTheorem",
+      "source_file": "sources/planetmath/tex/11_Number_theory/11B25-SzemeredisTheorem.tex",
+      "source_sha256": "6c0b6dc6e626cc3c64b03b642860cb1aa31a0c52f26fe22b1e86f8c224a18039",
+      "source_hash_pass": true
+    },
+    {
+      "id": "pm:VonNeumannAlgebra",
+      "source_file": "sources/planetmath/tex/46_Functional_analysis/46C15-VonNeumannAlgebra.tex",
+      "source_sha256": "b8a4f99e4b73f83ded01c9669b16bbb530a17bfa77bce810077b2fa7781fc791",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Compressed_sensing",
+      "source_file": "sources/wikipedia/bridges/Compressed_sensing.html",
+      "source_sha256": "a99bb2642f59066ebbbb5ad136437a0195506b327d593993caedbbe461e2f95b",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Concentration_of_measure",
+      "source_file": "sources/wikipedia/bridges/Concentration_of_measure.html",
+      "source_sha256": "19ceec2b1f8a48e9bf2b3ac1b81229063fd9c9c0544f0a5b62df895e7b4f8992",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Error_correction_code",
+      "source_file": "sources/wikipedia/bridges/Error_correction_code.html",
+      "source_sha256": "06b57560d2b1bef98fdcad31b79a3e80a6ee87e45e5fc64b19e43435fe7c7eea",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Expander_graph",
+      "source_file": "sources/wikipedia/bridges/Expander_graph.html",
+      "source_sha256": "668fd14f454fa0f51ef059cc95163dd8e03b5866d80c87886c218cdbf26be0eb",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Homotopy_theory",
+      "source_file": "sources/wikipedia/bridges/Homotopy_theory.html",
+      "source_sha256": "54bd693f345ce60b1eee507dd3d6f9ce05d3ebde01f73cfe272338b501908db5",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Intuitionistic_logic",
+      "source_file": "sources/wikipedia/bridges/Intuitionistic_logic.html",
+      "source_sha256": "b18a604f67dbe2fdf5a8840f060161588a759a6eddf00c38750522732065c17d",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Johnson–Lindenstrauss_lemma",
+      "source_file": "sources/wikipedia/bridges/Johnson–Lindenstrauss_lemma.html",
+      "source_sha256": "bf846dd786c3f923013ab186f15c5191fa60b3312602ec7d4aecb5a95809b200",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Jones_polynomial",
+      "source_file": "sources/wikipedia/bridges/Jones_polynomial.html",
+      "source_sha256": "90e0013ed11d871b14d661ee7c579dc43c7658d1671341af1b7d625cb2417f41",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Lovász_local_lemma",
+      "source_file": "sources/wikipedia/bridges/Lovász_local_lemma.html",
+      "source_sha256": "e97f37f1a0b7abe425f6950e3136fdae96c227b04ee91f900afcaab0bb592fa9",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Optimal_transport",
+      "source_file": "sources/wikipedia/bridges/Optimal_transport.html",
+      "source_sha256": "78511c1ac5d7be4f89ccbbd64ad908c27deea0db61491da71e1bd08f8074d28b",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Polynomial_identity_testing",
+      "source_file": "sources/wikipedia/bridges/Polynomial_identity_testing.html",
+      "source_sha256": "51ea3f249832526be0a86c04c24e467e381383bb53663472bd22adda8538a925",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Polynomial_interpolation",
+      "source_file": "sources/wikipedia/bridges/Polynomial_interpolation.html",
+      "source_sha256": "c49e1822e6b85c5a8d97c16bb0db344c21fe0da68afdf1bf2e1c0c4eed6a486b",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Polynomial_partitioning",
+      "source_file": "sources/wikipedia/bridges/Polynomial_partitioning.html",
+      "source_sha256": "b2f598b06cc4b714c6ce8bd18fbacf5b661667d92dd02ff542cd5eadc1aeefa5",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Randomized_algorithm",
+      "source_file": "sources/wikipedia/bridges/Randomized_algorithm.html",
+      "source_sha256": "698027c00234d1eea1cb138f7113f2981d350e630fe9497c9d88c1f77e8c3397",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Reed–Solomon_error_correction",
+      "source_file": "sources/wikipedia/bridges/Reed–Solomon_error_correction.html",
+      "source_sha256": "9971c026a731d935eb21b2853c158048f022b53e8edbc8b3442181b1621b99aa",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Restricted_isometry_property",
+      "source_file": "sources/wikipedia/bridges/Restricted_isometry_property.html",
+      "source_sha256": "c7390311f618b78026b2e7e86e27626af7de8c69281aaaba67577a83415a4033",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Ricci_curvature",
+      "source_file": "sources/wikipedia/bridges/Ricci_curvature.html",
+      "source_sha256": "0e406859c20610ed609640585348e347721a9cb8c19cb9269507dbe00b81472d",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Semidefinite_programming",
+      "source_file": "sources/wikipedia/bridges/Semidefinite_programming.html",
+      "source_sha256": "0cb542f39bfdd6c71640fb364924c502b6395d73855dcba05b745e5105e867f9",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Shannon_capacity_of_a_graph",
+      "source_file": "sources/wikipedia/bridges/Shannon_capacity_of_a_graph.html",
+      "source_sha256": "347b1c8183612a9a4c8f7e21c16e595dae59b12eb9918b369a8603ac27f6cc41",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Sphere_packing",
+      "source_file": "sources/wikipedia/bridges/Sphere_packing.html",
+      "source_sha256": "8b9e90311f3d86ba3638fdc547707992f7f8cfc97c71318c86e9645d04300ed0",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Stable_theory",
+      "source_file": "sources/wikipedia/bridges/Stable_theory.html",
+      "source_sha256": "44a81692a7e7a8d791c01d70daa002a1b9e7344c13b8dd40286f9517c418047b",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Sum-check_protocol",
+      "source_file": "sources/wikipedia/bridges/Sum-check_protocol.html",
+      "source_sha256": "0f61f247f6af2d60b34b14ea65a38433b20138dbd8a99a29043dd21ec97066bb",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Szemerédi_regularity_lemma",
+      "source_file": "sources/wikipedia/bridges/Szemerédi_regularity_lemma.html",
+      "source_sha256": "473e4caaad0df91aeffcd3a87fa0b856ccce3f08030ddd24b5e857df855b2ae8",
+      "source_hash_pass": true
+    },
+    {
+      "id": "wikipedia:Type_theory",
+      "source_file": "sources/wikipedia/bridges/Type_theory.html",
+      "source_sha256": "fa6178d8d5438f03daf53478d94c2549d3c789609b5cb22efb06199e51522c46",
+      "source_hash_pass": true
+    }
+  ],
+  "literature_source_hash_checks": [
+    {
+      "bridge_id": "bridge:001",
+      "sha256": "69b968590df204c59702ee9ffcc857d8ee3cf683146c04133ff098c27bc2b831",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:002",
+      "sha256": "f9f3a16da44702bb812d8db28ef5cb53bd4904fc6815a9be9ea80b653e341ac7",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:003",
+      "sha256": "e4bee71d420afcd4b3b75b6daff8b05468ae19c8ad672735916a65bbc926fffb",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:004",
+      "sha256": "394a21143451acad99ae93e934dc12a5d7df4da68659b8060786fdd8a9665a0c",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:005",
+      "sha256": "d03dd6156165fc92e488b3fec35a574c8f7c9df55125cec0f3eebdf95d7256e1",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:006",
+      "sha256": "71d5a3dfb55ecdb84448372cf034c515211e5ef8592735c10a50391d50c76fb2",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:007",
+      "sha256": "2b2d441b6c23aceb7288c221c4f2640d0ec3d92c1b1797b4500e2ad8f7e6415f",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:008",
+      "sha256": "848b8a5bcaddf087bc2870ef27c937b6d99d9cc6c5fb41880507e3d900f8a430",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:009",
+      "sha256": "2dad5d60331d4d0395f9a1495ce03d1a826f45ba80d4f1448324b3ba15904770",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:010",
+      "sha256": "89bfbed17259573dcdc1c1f0e14347030aa42902baba7e0a395fcd7493594aac",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:011",
+      "sha256": "bcae6367fee9babd50989066ebe22af3ac776c26eba38061fdd5799390ff9408",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:012",
+      "sha256": "50b1632a200c66eeef2efba61fec49bb6d80442269f766df38817f23a01bde7c",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:013",
+      "sha256": "6cd63b63c40ce5998c105e5c5ce5b3e78aa099ff5dea75c17280eb1d66030bde",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:014",
+      "sha256": "00c227de8b1a751f5342a94ba4346bd20a3954a82d67ef2b5e9cfed259516f80",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:015",
+      "sha256": "8c29cbbf5892a716b2be7601fda2480d746e5429145406509ccdeb57f5a9ca9f",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:016",
+      "sha256": "8d58bc40026054dfc5ec3137e338bfab2904f434a1e07cfc822d8bc2a1bcadcf",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:017",
+      "sha256": "a6706e37c21a69694f85415c162324ed031eb33e675367aa04ee6abdf37ada97",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:018",
+      "sha256": "af3933b62284b05f84b44fc0c1f099d0890de39215738e8f9a512576e5adc2c5",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:019",
+      "sha256": "7963ddb98447c1d512d73143bc67b055621506962f5d0851faa1def74c51aadd",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:020",
+      "sha256": "8baa9d9e20e6fdae1bbb1b0cb98cf1fe43f9d019241b934d219b991baac7abe7",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    },
+    {
+      "bridge_id": "bridge:021",
+      "sha256": "18da69d1ae19c2609fb553fd8cb2fd1b4be6536cbc7e777021e9c130518d59e6",
+      "cached_bytes_match_review_receipt": true,
+      "formal_proof_verified": false
+    }
+  ],
+  "csv_and_graph_bridge_pairs_match_bindings": true,
+  "semantic_review_scope": "Final scope review by atlas_semantics plus independent second scope-only pass by atlas_audit; root separately read all 21 scopes and required explicit Curry–Howard fragment matching. Shared model/context, not independent human peer review.",
+  "critical_scope_review": [
+    "001: Wiles is scoped to semistable elliptic curves over Q, not all number fields.",
+    "002: Viazovska is dimension 8 and all sphere packings, not merely lattices.",
+    "003: AHK uses a finite nonempty loopless matroid and an ample class; representability is not required.",
+    "004: Moser–Tardos requires finite independent variables and finite bad events with the displayed local-lemma criterion.",
+    "005: Green–Tao uses a pseudorandom/transference setup; primality is not positive density among all integers.",
+    "006: Lott–Villani recorded scope is compact measured length spaces and existence of an appropriate Wasserstein geodesic.",
+    "007: Expander-code guarantee explicitly remains conditional on the selected quantitative expansion/local-code construction; no universal expander guarantee.",
+    "008: Stable regularity uses fixed non-k-order property in model theory; endpoint is not dynamical stability.",
+    "009: Base Curry–Howard correspondence is intuitionistic implication versus function-only simply typed lambda calculus; conjunction/disjunction/false require matching product/sum/empty types and rules. Unrestricted recursion is not treated as proof.",
+    "010: HoTT adds explicit identity-type/univalence assumptions, not an automatic property of all type theories.",
+    "011: Jones construction is for tame oriented links and a Markov-compatible trace; not a complete knot invariant.",
+    "012: Covering classification retains path connectivity, local path connectivity and semilocal simple connectivity; unpointed classification uses conjugacy classes.",
+    "013: Algebraic-set/radical-ideal correspondence assumes algebraically closed base field and finite-variable polynomial ring.",
+    "014: Gauss–Bonnet is an invariant_identity, not object-level equivalence; recorded scope is compact oriented boundaryless regular surfaces in R^3.",
+    "015: Feynman–Kac recorded sufficient scope has bounded smooth nonnegative potential and bounded smooth initial data; generator is half-Laplacian.",
+    "016: CRT source version uses delta_3S+3delta_4S<2, bounded noise and a global l1 minimizer.",
+    "017: JL keeps n>=2, 0<epsilon<1 and positive integer target dimension; exact embedding covers target dimension above original dimension.",
+    "018: Guth keeps finite bounded-complexity varieties, D>=1 and only complementary cells outside the zero set.",
+    "019: Theta gives a bound for finite simple graphs and strong products; equality is claimed only for C5.",
+    "020: Reed–Solomon uses distinct finite-field evaluation points and degree<k; erasure recovery is separate from unknown-error correction.",
+    "021: Sum-check keeps degree checking, fresh uniform challenges and trusted final polynomial evaluation; soundness is min(1,md/|F|)."
+  ],
+  "critical_unresolved_errors_found": [],
+  "limitations": [
+    "Full cited proofs were not reverified and no kernel certification was performed.",
+    "These are literature-established navigation bridges, not new mathematical discoveries.",
+    "Several entries are intentionally overview contracts referring to a paper’s precise construction parameters, not complete executable theorem specifications.",
+    "Cached-byte equality checks source integrity, not author authenticity or mathematical truth."
+  ],
+  "status": "pass_with_stated_scope",
+  "independent_scope_review": {
+    "reviewer": "agent:/root/atlas_audit",
+    "result": "No new overstrong conclusion found in second reading of current 21 assumption/conclusion pairs; Gauss invariant identity, loopless matroids and finite bad-event family corrections confirmed.",
+    "full_proofs_reverified": false
+  },
+  "math_bridges_sha256": "4c15a75d6d150694468e8c54429fbb5537eca5ff26e7a44de1cb6b882adad59f",
+  "final_integrity_refresh": {
+    "node_count": 21741,
+    "reason": "Refresh against final graph after exclusion of person/institution entries; bridge definitions and graph data unchanged by this review.",
+    "endpoint_id_set_unchanged": true,
+    "literature_receipts_rehashed": 21,
+    "endpoint_sources_rehashed": 41
+  }
+}

@@ -1,0 +1,118 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{StereographicProjection}
+\pmcreated{2013-03-22 15:18:35}
+\pmmodified{2013-03-22 15:18:35}
+\pmowner{GrafZahl}{9234}
+\pmmodifier{GrafZahl}{9234}
+\pmtitle{stereographic projection}
+\pmrecord{5}{37110}
+\pmprivacy{1}
+\pmauthor{GrafZahl}{9234}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E40}
+\pmclassification{msc}{54C25}
+\pmclassification{msc}{54C05}
+\pmclassification{msc}{51M15}
+%\pmkeywords{projection}
+%\pmkeywords{map}
+\pmrelated{CoordinateSystems}
+\pmrelated{ClosedComplexPlane}
+\pmrelated{RiemannSphere}
+\pmdefines{north pole}
+\pmdefines{south pole}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[latin1]{inputenc}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Bigcup}{\bigcup\limits}
+\newcommand{\Prod}{\prod\limits}
+\newcommand{\Sum}{\sum\limits}
+\newcommand{\mbb}{\mathbb}
+\newcommand{\mbf}{\mathbf}
+\newcommand{\mc}{\mathcal}
+\newcommand{\mmm}[9]{\left(\begin{array}{rrr}#1&#2&#3\\#4&#5&#6\\#7&#8&#9\end{array}\right)}
+\newcommand{\ol}{\overline}
+
+% Math Operators/functions
+\DeclareMathOperator{\Frob}{Frob}
+\DeclareMathOperator{\cwe}{cwe}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\we}{we}
+\DeclareMathOperator{\wt}{wt}
+\begin{document}
+\PMlinkescapeword{restricted}
+The $n$-dimensional Euclidean \PMlinkid{unit sphere}{186} $S^n$ is
+defined as a subset
+of $\mbb{R}^{n+1}$:
+\begin{equation*}
+S^n=\biggl\{(x_1,\ldots,x_{n+1})\in\mbb{R}^{n+1}\mid\Sum_{k=1}^{n+1}x_k^2=1\biggr\}.
+\end{equation*}
+The \emph{stereographic projection} maps all points of $S^n$ to
+the $n$-dimensional Euclidean space $\mbb{R}^n$ except one. Let
+$N:=(0,\ldots,0,1)\in S^n$ be this point (it is usually called the
+\emph{north pole}). Then the stereographic projection is defined by
+\begin{equation*}
+\sigma\colon S^n\setminus
+N\to\mbb{R}^n,\quad(x_1,\ldots,x_{n+1})\mapsto\frac{c-1}{x_{n+1}-1}(x_1,\ldots,x_n).
+\end{equation*}
+Here, $c$ is an arbitrary real number. If $c=1$, the projection
+degenerates; in all other cases, however, $\sigma$ is a smooth
+bijective mapping.
+
+The image $P'$ of a point $P$ under $\sigma$ can be geometrically
+constructed as follows. Embed $\mbb{R}^n$ into
+$\mbb{R}^{n+1}$ as a hyperplane at $x_{n+1}=c$. Unless $c=1$, the
+straight line defined by $N$ and $P$ intersects with $\mbb{R}^n$ in
+precisely one point, $P'$. The most common values for $c$ are $c=-1$
+and $c=0$, see figures~\ref{fig1} and~\ref{fig2}.
+
+\begin{figure}
+\label{fig1}
+\begin{center}
+\includegraphics{StereographicProjection.1.eps}
+\end{center}
+\sf\caption{Stereographic projection of the one dimensional unit
+sphere for $c=-1$}
+\end{figure}
+
+\begin{figure}
+\label{fig2}
+\begin{center}
+\includegraphics{StereographicProjection.2.eps}
+\end{center}
+\sf\caption{Stereographic projection of the one dimensional unit
+sphere for $c=0$}
+\end{figure}
+
+Let $-\id\colon\mbb{R}^{n+1}\to\mbb{R}^{n+1}$ be the map $x\mapsto
+-x$, then $\tilde{\sigma}:=\sigma\circ(-\id)$ (a suitably restricted composition) maps all points of $S^n$
+except the \emph{south pole} $S:=(0,\ldots,0,-1)$ smoothly and
+bijectively to $\mbb{R}^n$. Together, $\sigma$ and $\tilde{\sigma}$
+form an atlas of $S^n$, so $S^n$ is an $n$-dimensional smooth
+manifold.
+%%%%%
+%%%%%
+\end{document}

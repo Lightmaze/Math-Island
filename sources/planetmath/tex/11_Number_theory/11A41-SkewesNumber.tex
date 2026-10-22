@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SkewesNumber}
+\pmcreated{2013-03-22 17:02:58}
+\pmmodified{2013-03-22 17:02:58}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Skewes' number}
+\pmrecord{5}{39339}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmsynonym{Skewes's number}{SkewesNumber}
+\pmsynonym{Skewes number}{SkewesNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\DeclareMathOperator{\li}{li}
+\begin{document}
+{\em Skewes' number} is the smallest number $n$ for which $\pi(n) > \li(n)$, where $\pi(x)$ is the prime counting function and $\li(x)$ is the logarithmic integral. The logarithmic integral is a good estimate for the prime counting function, but in the range of prime numbers for which we know all smaller primes, the logarithmic integral is an overestimate. Thus, Skewes' number is the smallest number for which $\li(x)$ ``goes from being an overestimate to being an underestimate.'' (Wells, 1986)
+
+The exact value of Skewes' number is not currently known. Stanley Skewes in 1933 gave the lower bound $e^{e^{e^{79}}}$, approximately $10^{{10}^{{10}^{34}}}$. He assumed the Riemann hypothesis to be true. Others have proven smaller bounds to as low as about $1.4 \times 10^{316}$.
+
+In the 1930s, Skewes' number was the largest that had ever been used in a serious mathematical proof. It has since then been significantly dwarfed by Graham's number. It still is the second largest number with its own entry in Wells' {\it The Penguin Dictionary of Curious and Interesting Numbers}, appearing on the penultimate page of the main text.
+
+\begin{thebibliography}{1}
+\bibitem{cb} Bays, C. \& Hudson, R. H. ``A new bound for the smallest $x$ with $\pi(x) > \li(x)$.'' {\it Math. Comput.} {\bf 69} (2000): 1285 - 1296
+\bibitem{dw} Wells, D. {\it The Penguin Dictionary of Curious and Interesting Numbers} London: Penguin Group. (1986): 209
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

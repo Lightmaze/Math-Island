@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RepresentingPrimesAsX2ny2}
+\pmcreated{2013-03-22 15:49:28}
+\pmmodified{2013-03-22 15:49:28}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{representing primes as $x^2+ny^2$}
+\pmrecord{17}{37791}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmrelated{ThuesLemma2}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\BZ}{\mathbb{Z}}
+\newcommand{\BQ}{\mathbb{Q}}
+\newcommand{\Order}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\Leg}[2]{\left(\frac{#1}{#2}\right)}
+%
+%% \theoremstyle{plain} %% This is the default
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{ax}{Axiom}
+\newtheorem{defn}{Definition}
+
+\begin{document}
+\PMlinkescapeword{simple}
+\begin{thm}[Fermat] An odd prime $p$ can be written $p=x^2+y^2$ with $x,y\in\BZ$ if and only if $p \equiv 1 \pmod 4$.
+\end{thm}
+
+\begin{proof}
+$\Rightarrow$: This direction is obvious. Since $p$ is odd, exactly one of $x,y$ is odd. If (say) $x$ is odd and $y$ is even, then $x^2\equiv 1\pmod 4$ and $y^2\equiv 0\pmod 4$.
+\newline
+$\Leftarrow$: Since $p \equiv 1 \pmod 4$, by Euler's Criterion we have that $\left(\frac{-1}{p}\right)=1$ where $\left(\frac{n}{p}\right)$ is the Legendre symbol. Choose $k$ such that $p\mid k^2+1$. Working in $\BZ[i]$ we have $k^2+1=(k+i)(k-i)$. Then $p\mid k^2+1$, but $p$ does not divide either factor since $p\nmid k$. Hence $p$ is not prime. Since $\BZ[i]$ is a UFD, it follows that $p$ is not irreducible either, so we can write $p=(a+bi)(c+di)$, where neither factor is a unit (i.e. neither factor has norm $1$). Taking norms, we get 
+\[
+  p^2 = \textrm{N}(p)=\textrm{N}(a+bi)\textrm{N}(c+di)=(a^2+b^2)(c^2+d^2)
+\]
+Since neither factor has norm $1$, we must have $p=a^2+b^2=c^2+d^2$, so $p$ is the sum of two squares.
+\end{proof}
+
+There are more elementary proofs of $\Leftarrow$, but one can try to generalize the given proof for arbitrary $n$. When can $p$ be written as $x^2+ny^2, n>0$? By analogy with the proof for $n=1$, suppose we find $k$ such that $p\mid k^2+n$ (i.e. that $\left(\frac{-n}{p}\right)=1$). Then in $\BZ[\sqrt{-n}]$, it follows that $k^2+n=(k+\sqrt{-n})(k-\sqrt{-n})$, so again $p$ is not prime since it does not divide either factor. If $\BZ[\sqrt{-n}]$ is a UFD, then $p$ is not irreducible either. We can then write as before $p=(a+b\sqrt{-n})(c+d\sqrt{-n})$ and, taking norms, we get the same result: $p=a^2+nb^2=c^2+nd^2$.
+
+This argument relies on two things: first, that $-n$ is a square $\mod p$ (i.e. that $\left(\frac{-n}{p}\right)=1$); second, that $\BZ[\sqrt{-n}]$ is a UFD. It is known that the only imaginary quadratic rings $\BQ(\sqrt{-n})$ that are UFDs are those for $n=1,2,3,7,11,19,43,67,163$, and the only $n$ in that set for which $\BZ[\sqrt{-n}]$ is the ring of integers are $n=1,2$.
+
+So for $n=1,2$, and $p$ an odd prime, $p=x^2+ny^2$ if and only if $\left(\frac{-n}{p}\right)=1$, while for the other $n$ ($3,\,7,\,11,\,19,\,43,\,67,\,163$), the ring of integers of $\BQ(\sqrt{n})$ is not $\BZ[\sqrt{-n}]$, so $\BZ[\sqrt{-n}]$ is not integrally closed and thus is not a UFD and hence this proof will not work for those values of $n$.
+
+The cases $n=3$ and $n=7$ can be dealt with by the following relatively simple argument (which, as you can see, does not generalize further): Corollary 6 in the article on representation of integers by equivalent integral binary quadratic forms states that if $p$ is an odd prime not dividing $n$, then $\Leg{-n}{p}=1$ if and only if $p$ is represented by a \PMlinkname{primitive form}{IntegralBinaryQuadraticForms} of \PMlinkname{discriminant}{RepresentationOfIntegersByEquivalentIntegralBinaryQuadraticForms} $-4n$. So if there is only one \PMlinkname{reduced form}{ReducedIntegralBinaryQuadraticForms} with that \PMlinkescapetext{discriminant} (which must perforce be the \PMlinkescapetext{reduced form} $x^2+ny^2$), then we are done. But $h(-4n)=1 \iff n=1, 2, 3, 4, 7$ (see \PMlinkname{this article}{ThereIsAUniqueReducedFormOfDiscriminant4nOnlyForN12347}). $n=1$ and $n=2$ were dealt with above. $n=4$ is the form $x^2+4y^2$, and if an odd prime $p$ can be written $p=x^2+4y^2$, then clearly we have also $p=x^2+(2y)^2$; conversely, if $p=x^2+y^2$, then either $x$ or $y$ is even, so that also $p=x^2+2(y')^2$. Thus $n=4$ has the same set of solutions as $n=1$. But we do get two new cases, $n=3$ and $n=7$, for which have shown  that $p$ is representable as $x^2+ny^2$ if and only if $\Leg{-n}{p}=1$, i.e. $-n$ is a square $\mod p$. We have thus proven
+\begin{thm} If $n=1$, $2$, $3$, $4$, or $7$, then an odd prime $p$ can be written as $p=x^2+ny^2$ with $x$, $y\in\BZ$ if and only if
+\[
+ \Leg{-n}{p}=1
+\]
+i.e. if and only if $-n$ is a square $\mod p$.
+\end{thm}
+
+
+\textbf{References}
+
+Cox, D.A. ``Primes of the Form $x^2 + ny^2$: Fermat, Class Field Theory, and Complex Multiplication'', Wiley 1997.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NeighborhoodSystemOnASet}
+\pmcreated{2013-03-22 16:41:34}
+\pmmodified{2013-03-22 16:41:34}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{neighborhood system on a set}
+\pmrecord{13}{38905}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+\pmdefines{abstract neighborhood system}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+
+\begin{document}
+In point-set topology, a neighborhood system is defined as the set of neighborhoods of some point in the topological space.
+
+However, one can start out with the definition of a ``abstract neighborhood system'' $\mathfrak{N}$ on an arbitrary set $X$ and define a topology $T$ on $X$ based on this system $\mathfrak{N}$ so that $\mathfrak{N}$ is the neighborhood system of $T$.  This is done as follows:
+
+\begin{quote}
+Let $X$ be a set and $\mathfrak{N}$ be a subset of $X\times P(X)$, where $P(X)$ is the power set of $X$.  Then $\mathfrak{N}$ is said to be a \emph{abstract neighborhood system} of $X$ if the following conditions are satisfied:
+\begin{enumerate}
+\item if $(x,U)\in \mathfrak{N}$, then $x\in U$,
+\item for every $x\in X$, there is a $U\subseteq X$ such that $(x,U)\in \mathfrak{N}$,
+\item if $(x,U)\in \mathfrak{N}$ and $U\subseteq V\subseteq X$, then $(x,V)\in \mathfrak{N}$,
+\item if $(x,U),(x,V)\in \mathfrak{N}$, then $(x,U\cap V)\in \mathfrak{N}$,
+\item if $(x,U)\in \mathfrak{N}$, then there is a $V\subseteq X$ such that 
+\begin{itemize}
+\item $(x,V)\in \mathfrak{N}$, and
+\item $(y,U)\in \mathfrak{N}$ for all $y\in V$.
+\end{itemize}
+\end{enumerate}
+In addition, given this $\mathfrak{N}$, define the \emph{abstract neighborhood system around} $x\in X$ to be the subset $\mathfrak{N}_x$ of $\mathfrak{N}$ consisting of all those elements whose first coordinate is $x$.  Evidently, $\mathfrak{N}$ is the disjoint union of $\mathfrak{N}_x$ for all $x\in X$.  Finally, let 
+\begin{eqnarray*}
+T &=& \lbrace U\subseteq X\mid \mbox{for every }x\in U\mbox{, }(x,U)\in \mathfrak{N} \rbrace \\
+&=& \lbrace U\subseteq X\mid \mbox{for every }x\in U\mbox{, there is a }V\subseteq U\mbox{, such that }(x,V)\in \mathfrak{N} \rbrace.
+\end{eqnarray*}
+\end{quote}
+The two definitions are the same by condition 3.  We assert that $T$ defined above is a topology on $X$.  Furthermore, $T_x:=\lbrace U\mid (x,U)\in \mathfrak{N}_x \rbrace$ is the set of neighborhoods of $x$ under $T$.
+
+\begin{proof} We first show that $T$ is a topology.  For every $x\in X$, some $U\subseteq X$, we have $(x,U)\in \mathfrak{N}$ by condition 2.  Hence $(x,X)\in \mathfrak{N}$ by condition 3.  So $X\in T$.  Also, $\varnothing\in T$ is vacuously satisfied, for no $x\in \varnothing$.  If $U,V\in T$, then $U\cap V\in T$ by condition 4.  Let $\lbrace U_i\rbrace$ be a subset of $T$ whose elements are indexed by $I$ ($i\in I$).  Let $U=\bigcup U_i$.  Pick any $x\in U$, then $x\in U_i$ for some $i\in I$.  Since $U_i\in T$, $(x,U_i)\in \mathfrak{N}$.  Since $U_i\subseteq U$, $(x,U)\in \mathfrak{N}$ by condition 3, so $U\in T$. 
+
+Next, suppose $\mathcal{N}$ is the set of neighborhoods of $x$ under $T$.  We need to show $\mathcal{N}=T_x$:
+\begin{enumerate}
+\item ($\mathcal{N}\subseteq T_x$).  If $N\in\mathcal{N}$, then there is $U\in T$ with $x\in U\subseteq N$.  But $(x,U)\in \mathfrak{N}$, so by condition 3, $(x,N)\in \mathfrak{N}$, or $(x,N)\in \mathfrak{N}_x$, or $N\in T_x$.
+\item ($T_x\subseteq \mathcal{N}$).  Pick any $U\in T_x$ and set $W=\lbrace z\mid U\in T_z\rbrace$.  Then $x\in W\subseteq U$ by condition 1.  We show $W$ is open.  This means we need to find, for each $z\in W$, a $V\subseteq W$ such that $(z,V)\in \mathfrak{N}$.  If $z\in W$, then $(z,U)\in \mathfrak{N}$.  By condition 5, there is $V\in \mathfrak{N}$ such that $(z,V)\in \mathfrak{N}$, and for any $y\in V$, $(y,U)\in \mathfrak{N}$, or $y\in U$ by condition 1.  So $y\in W$ by the definition of $W$, or $V\subseteq W$.  Thus $W$ is open and $U\in \mathcal{N}$.
+\end{enumerate}
+This completes the proof.  By the way, $W$ defined above is none other than the interior of $U$: $W=U^{\circ}$.
+\end{proof}
+
+\textbf{Remark}.  
+Conversely, if $T$ is a topology on $X$, we can define $\mathfrak{N}_x$ to be the set consisting of $(x,U)$ such that $U$ is a neighborhood of $x$.  The the union $\mathfrak{N}$ of $\mathfrak{N}_x$ for each $x\in X$ satisfies conditions $1$ through $5$ above: 
+\begin{enumerate}
+\item (condition 1): clear
+\item (condition 2): because $(x,X)\in \mathfrak{N}$ for each $x\in X$
+\item (condition 3): if $U$ is a neighborhood of $x$ and $V$ a supserset of $U$, then $V$ is also a neighborhood of $x$
+\item (condition 4): if $U$ and $V$ are neighborhoods of $x$, there are open $A,B$ with $x\in A\subseteq U$ and $x\in B\subseteq V$, so $x\in A\cap B\subseteq U\cap V$, which means $U\cap V$ is a neighborhood of $x$
+\item (condition 5): if $U$ is a neighborhood of $x$, there is open $A$ with $x\in A\subseteq U$; clearly $A$ is a neighborhood of $x$ and any $y\in A$ has $U$ as neighborhood.
+\end{enumerate}
+
+So the definition of a neighborhood system on an arbitrary set gives an alternative way of defining a topology on the set.  There is a one-to-one correspondence between the set of topologies on a set and the set of abstract  neighborhood systems on the set.
+%%%%%
+%%%%%
+\end{document}

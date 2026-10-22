@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DiscriminantOfAlgebraicNumber}
+\pmcreated{2013-03-22 17:49:59}
+\pmmodified{2013-03-22 17:49:59}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{discriminant of algebraic number}
+\pmrecord{10}{40303}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R29}
+\pmrelated{Discriminant}
+\pmrelated{DerivativeOfPolynomial}
+\pmdefines{discriminant of number}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\textbf{Theorem.}\, If $\vartheta$ is an algebraic number of degree $n$ with minimal polynomial $f(x)$, then the {\em \PMlinkescapetext{discriminant} of the number} $\vartheta$, i.e. the discriminant $\Delta(1,\,\vartheta,\,\ldots,\,\vartheta^{n-1})$,\, is
+$$d(\vartheta) = (-1)^\frac{n(n-1)}{2}\mbox{N}(f'(\vartheta)),$$
+where N means the absolute norm.\\
+
+{\em Proof.}  Let the algebraic conjugates of the number $\vartheta$, i.e. all complex zeroes of $f(x)$,\, be\,  $\vartheta_1 = \vartheta,\,\vartheta_2,\,\ldots,\,\vartheta_n$.\, If\, $f(x) = x^n+a_1x^{n-1}+\ldots+a_n$,\, we have 
+$$f'(\vartheta) = n\vartheta^{n-1}+(n-1)a_1\vartheta^{n-2}+\ldots+2a_{n-2}\vartheta+a_{n-1} \in \mathbb{Q}(\vartheta).$$
+The \PMlinkname{norm}{AbsoluteNorm} of $f'(\vartheta)$ in $\mathbb{Q}(\vartheta)/\mathbb{Q}$ is the product of all 
+\PMlinkid{$\mathbb{Q}(\vartheta)$-conjugates}{12046} $[f'(\vartheta)]^{(i)}$ of $f'(\vartheta)$, which is
+$$\mbox{N}(f'(\vartheta)) = 
+[f'(\vartheta)]^{(1)}[f'(\vartheta)]^{(2)}\cdots[f'(\vartheta)]^{(n)} = f'(\vartheta_1)f'(\vartheta_2)\cdots f'(\vartheta_n).$$
+On the other side, the polynonomial $f(x)$ in its linear factors is 
+$$f(x) = (x-\vartheta_1)(x-\vartheta_2)\cdots(x-\vartheta_n),$$
+whence its derivative may be written
+$$f'(x) = \sum_{\nu=1}^n(x-\vartheta_1)\cdots(x-\vartheta_{\nu-1})\,(x-\vartheta_{\nu+1})\cdots(x-\vartheta_n).$$
+Substituting\, $x = \vartheta_\nu$\, gives simply
+$$f'(\vartheta_\nu) = \prod_{j\neq\nu}(\vartheta_\nu-\vartheta_j)\quad \mbox{for\;\;} \nu = 1,\,\ldots,\,n.$$
+Multiplying these equations we obtain 
+$$\mbox{N}(f'(\vartheta)) = \prod_{\nu=1}^nf'(\vartheta_\nu) = \prod_{i\neq j}(\vartheta_i-\vartheta_j).$$
+The discriminant of $\vartheta$ is same as the discriminant of the equation \,$f(x) = 0$.\, Therefore
+$$d(\vartheta) = \left[\prod_{i<j}(\vartheta_i-\vartheta_j)\right]^2,$$
+where the number of the factors in the brackets is\, $(n-1)+(n-2)+\ldots+1 = \frac{(n-1)n}{2}$.\, Thus we obtain the asserted result
+$$d(\vartheta) = 
+\left[\prod_{i<j}(\vartheta_i-\vartheta_j)\right]\cdot(-1)^\frac{n(n-1)}{2}\left[\prod_{j<i}(\vartheta_i-\vartheta_j)\right] 
+= (-1)^\frac{n(n-1)}{2}\prod_{i\neq j}(\vartheta_i-\vartheta_j) = (-1)^\frac{n(n-1)}{2}\mbox{N}(f'(\vartheta)).$$
+
+%%%%%
+%%%%%
+\end{document}

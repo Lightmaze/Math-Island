@@ -1,0 +1,121 @@
+{
+  "method": "12 source-domain regions; unweighted macro sfdp on cross-domain adjacency; per-region sfdp for nodes with within-domain references; nodes without within-domain links on a deterministic phyllotactic outer shelf; uniform scaling and non-overlap packing.",
+  "seed": 20261022,
+  "graphviz": "sfdp - graphviz version 2.42.4 (0)",
+  "semantic_limit": "2D proximity, area, edge length and compass direction do not measure mathematical importance, difficulty, implication or proof distance.",
+  "regions": [
+    {
+      "domain": "交换代数",
+      "count": 2530,
+      "center": [
+        -7.422171230005662,
+        0.03021033342024851
+      ],
+      "radius": 1.1855612829185826
+    },
+    {
+      "domain": "代数与结构",
+      "count": 1759,
+      "center": [
+        0.2050620000000015,
+        -2.3988206666666665
+      ],
+      "radius": 0.9885455084224611
+    },
+    {
+      "domain": "代数几何",
+      "count": 9693,
+      "center": [
+        -4.115657910333049,
+        -1.8141557188125919
+      ],
+      "radius": 2.3205602771744585
+    },
+    {
+      "domain": "几何与拓扑",
+      "count": 1551,
+      "center": [
+        -0.960777999999999,
+        1.5804793333333333
+      ],
+      "radius": 0.9282600210429547
+    },
+    {
+      "domain": "分析与微分方程",
+      "count": 1420,
+      "center": [
+        5.008822,
+        0.3552553333333332
+      ],
+      "radius": 0.8881941729649485
+    },
+    {
+      "domain": "数值与优化",
+      "count": 52,
+      "center": [
+        3.106142000000001,
+        -3.107476666666667
+      ],
+      "radius": 0.4
+    },
+    {
+      "domain": "数学物理与应用",
+      "count": 66,
+      "center": [
+        2.0937020000000013,
+        3.501723333333334
+      ],
+      "radius": 0.4
+    },
+    {
+      "domain": "数论与算术",
+      "count": 825,
+      "center": [
+        2.2601020000000016,
+        -1.4475846666666667
+      ],
+      "radius": 0.67700320038633
+    },
+    {
+      "domain": "概率与统计",
+      "count": 259,
+      "center": [
+        1.2747020000000018,
+        1.4361273333333335
+      ],
+      "radius": 0.4
+    },
+    {
+      "domain": "离散与计算",
+      "count": 587,
+      "center": [
+        3.167502000000002,
+        0.6263833333333336
+      ],
+      "radius": 0.5710613899670605
+    },
+    {
+      "domain": "范畴与同调",
+      "count": 2292,
+      "center": [
+        -3.5478944542568254,
+        1.9859673159002464
+      ],
+      "radius": 1.1284207253207172
+    },
+    {
+      "domain": "逻辑与基础",
+      "count": 707,
+      "center": [
+        -1.0695324054044586,
+        -0.748108597174568
+      ],
+      "radius": 0.6267198558987722
+    }
+  ],
+  "all_nodes": 21741,
+  "all_coordinates_distinct": true,
+  "node_input_sha256": "8e2c0dd15d5f4a1679c9ff8d6fb05e51ca0ae416e45666fed94ab957853e042e",
+  "edges_input_sha256": "ffc436ae4c1c8f35caf8127e347cd4547b1c24178389904fb0e40efc922a4fe4",
+  "all_semantic_edges_preserved_in_csv": true
+}

@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Factorion}
+\pmcreated{2013-03-22 17:43:52}
+\pmmodified{2013-03-22 17:43:52}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{factorion}
+\pmrecord{7}{40180}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmclassification{msc}{05A10}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given a base $b$ integer $$n = \sum_{i = 1}^k d_ib^{i - 1}$$ where $d_1$ is the least significant digit and $d_k$ is the most significant, if it is also the case that $$n = \sum_{i = 1}^k d_i!$$ then $n$ is a \emph{factorion}. In other words, the sum of the factorials of the digits in a standard positional integer base $b$ (such as base 10) gives the same number as multiplying the digits by the appropriate power of that base. With the exception of 1, the factorial base representation of a factorion is always different from that in the integer base. Obviously, all numbers are factorions in factorial base.
+
+1 is a factorion in any integer base. 2 is a factorion in all integer bases except binary. In base 10, there are only four factorions: 1, 2, 145 and 40585. For example, $4 \times 10^4 + 0 \times 10^3 + 5 \times 10^2 + 8 \times 10^1 + 5 \times 10^0 = 4! + 0! + 5! + 8! + 5! = 40585$. (The factorial base representation of 40585 is 10021001).
+
+\begin{thebibliography}{1}
+\bibitem{dw} D. Wells, {\it The Penguin Dictionary of Curious and Interesting Numbers} London: Penguin Group. (1987): 125
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

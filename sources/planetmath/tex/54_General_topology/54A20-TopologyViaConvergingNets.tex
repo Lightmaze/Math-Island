@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TopologyViaConvergingNets}
+\pmcreated{2013-03-22 17:14:27}
+\pmmodified{2013-03-22 17:14:27}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{topology via converging nets}
+\pmrecord{10}{39570}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A20}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\begin{document}
+Given a topological space $X$, one can define the concept of convergence of a sequence, and more generally, the convergence of a net.  Conversely, given a set $X$, a class of nets, and a suitable definition of ``convergence'' of a net, we can topologize $X$.  The procedure is done as follows: 
+\begin{quote}
+Let $C$ be the class of all pairs of the form $(x,y)$ where $x$ is a net in $X$ and $y$ is an element of $X$.  For any subset $U$ of $X$ with $y\in U$, we say that a net $x$ \emph{converges} to $y$ \emph{with respect to} $U$ if $x$ is eventually in $U$.  We denote this by $x\to_U y$.  Let $$\mathcal{T}:=\lbrace U\subseteq X\mid (x,y)\in C\mbox{ and }y\in U\mbox{ imply }x\to_U y\rbrace.$$
+Then $\mathcal{T}$ is a topology on $X$.
+\begin{proof}
+Clearly $x\to_X y$ for any pair $(x,y)\in C$.  In addition, $x\to_{\varnothing} y$ is vacuously true.  For any $U,V\in \mathcal{T}$, we want to show that $W:=U\cap V\in \mathcal{T}$.  Since $x$ is eventually in $U$ and $V$, there are $i,j\in D$ (where $D$ is the domain of $x$), such that $x_r\in U$ and $x_s\in V$ for all $r\ge i$ and $s\ge j$.  Since $D$ is directed, there is a $k\in D$ such that $k\ge i$ and $k\ge j$.  It is clear that $x_k\in W$ and that any $t\ge k$ we have that $x_t\in W$ as well.  Next, if $U_{\alpha}$ are sets in $\mathcal{T}$, we want to show their union $U:=\bigcup \lbrace U_{\alpha}\rbrace$ is also in $\mathcal{T}$.  If $y$ is a point in $U$ then $y$ is a point in some $U_{\alpha}$.  Since $(x,y)\in C$ with $x$ is eventually in $U_{\alpha}$, we have that $x$ is eventually in $U$ as well.
+\end{proof}
+\end{quote}
+
+\textbf{Remark}.  The above can be generalized.  In fact, if the class of pairs $(x,y)$ satisfies some ``axioms'' that are commonly found as properties of convergence, then $X$ can be topologized.  Specifically, let $X$ be a set and $C$ again be the class of all pairs $(x,y)$ as described above.  A subclass $\mathcal{C}$ of $C$ is called a \emph{convergence class} if the following conditions are satisfied
+\begin{enumerate}
+\item $x$ is a constant net with value $y\in X$, then $(x,y)\in \mathcal{C}$
+\item $(x,y)\in \mathcal{C}$ implies $(z,y)\in \mathcal{C}$ for any subnet $z$ of $x$
+\item if every subnet $z$ of a net $x$ has a subnet $t$ with $(t,y)\in \mathcal{C}$, then $(x,y)\in \mathcal{C}$
+\item suppose $(x,y)\in \mathcal{C}$ with $D=\operatorname{dom}(x)$, and for each $i\in D$, we have that $(z_i,x_i)\in \mathcal{C}$, with $D_i=\operatorname{dom}(z_i)$.  Then $(z,x)\in \mathcal{C}$, where $z$ is the net whose domain is $D\times F$ with $F:=\prod \lbrace D_i \mid i\in D\rbrace$, given by $z(i,f)=(i,f(i))$.
+\end{enumerate}
+If $(x,y)\in \mathcal{C}$, we write $x\to y$ or $\lim_D x=y$.  The last condition can then be visualized as
+$$
+\begin{array}{cccccccccccccccccccc}
+       & \vdots     & \vdots  & \vdots     & \vdots  & \vdots     &         &          &   & &               
+\ddots &            &         &            &         &            &         &          &   \\
+\cdots & z_{ia}     & \vdots  & z_{jf}     & \vdots  & z_{kp}     & \cdots  &          &   & &               
+       & z_{if(i)}  &         &            &         &            &         &          &   \\
+\cdots & \vdots     & \vdots  & \vdots     & \vdots  & \vdots     & \cdots  &          &   & &               
+       &            & \ddots  &            &         &            &         &          &   \\
+\cdots & z_{ib}     & \vdots  & z_{jg}     & \vdots  & z_{kq}     & \cdots  &          &   & &               
+       &            &         & z_{jf(j)}  &         &            &         &          &   \\
+\cdots & \vdots     & \vdots  & \vdots     & \vdots  & \vdots     & \cdots  &          &   & \Rightarrow &
+       &            &         &            & \ddots  &            &         &          &   \\
+\cdots & z_{ic}     & \vdots  & z_{jh}     & \vdots  & z_{kr}     & \cdots  &          &   & &               
+       &            &         &            &         & z_{kf(k)}  &         &          &   \\
+\cdots & \vdots     & \vdots  & \vdots     & \vdots  & \vdots     & \cdots  &          &   & &               
+       &            &         &            &         &            & \ddots  &          &   \\
+\cdots & \downarrow & \vdots  & \downarrow & \vdots  & \downarrow & \cdots  &          &   & &               
+       &            &         &            &         &            &         & \searrow &   \\
+\cdots & x_i        & \cdots  & x_j        & \cdots  & x_k        & \cdots  & \to      & y & &               
+       &            &         &            &         &            &         &          & y, 
+\end{array}
+$$
+which is reminiscent of Cantor's diagonal argument.
+
+Now, for any subset $A$ of $X$, we define $A^c$ to be the subset of $X$ consisting of all points $y\in X$ such that there is a net $x$ in $A$ with $x\to y$.  It can be shown that $^c$ is a closure operator, which induces a topology $\mathcal{T}_{\mathcal{C}}$ on $X$.  Furthermore, under this induced topology, the notion of converging nets (as defined by the topology) is exactly the same as the notion of convergence described by the convergence class $\mathcal{C}$.
+
+In addition, it may be shown that there is a one-to-one correspondence between the topologies and the convergence classes on the set $X$.  The correspondence is order reversing in the sense that if $\mathcal{C}_1\subseteq \mathcal{C}_2$ as convergent classes, then $\mathcal{T}_{\mathcal{C}_2}\subseteq \mathcal{T}_{\mathcal{C}_1}$ as topologies.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AllUnnaturalSquareRootsAreIrrational}
+\pmcreated{2013-03-22 17:37:03}
+\pmmodified{2013-03-22 17:37:03}
+\pmowner{ubershmekel}{18723}
+\pmmodifier{ubershmekel}{18723}
+\pmtitle{All unnatural square roots are irrational}
+\pmrecord{12}{40035}
+\pmprivacy{1}
+\pmauthor{ubershmekel}{18723}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11J82}
+\pmclassification{msc}{11J72}
+\pmsynonym{The square of a fraction is always a fraction}{AllUnnaturalSquareRootsAreIrrational}
+%\pmkeywords{irrational numbers rational square root sqrt}
+\pmrelated{RationalBriggsianLogarithmsOfIntegers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\textbf{Theorem:}\ If $n$ is a natural number and $\sqrt[2]{n}$ is not whole, then $\sqrt[2]{n}$ must be irrational.
+
+\textbf{Proof}\ Ad absurdum:
+Assume there exists a natural number $n$ that $\sqrt[2]{n}$ is not whole, but is rational.
+
+Therefore $\sqrt[2]{n}$ can be notated as an irreducible fraction: $\frac{m}{d}$
+
+Now break the numerator and denominator into their prime factors:
+
+$\sqrt[2]{n} = \frac{m}{d} = \frac{m_1 \times m_2 \times \dots \times m_{k}}{d_1 \times \dots \times d_{l}}$
+
+Because the fraction is irreducible, none of the factors can cancel each other out.
+
+For any $i$ and $j$, $m_i\neq d_j$.
+
+Now look at $n$:
+
+$n = \frac{{m_1}^2 \times {m_2}^2 \times \dots \times {m_k}^2}{{d_1}^2 \times \dots \times {d_l}^2}$
+
+Because $n$ is a natural number, all the denominator factors are supposed to cancel out,
+
+but this is impossible because for any $i$ and $j$, $m_i\neq d_j$.
+
+Therefore $\sqrt[2]{n}$ must be irrational.
+
+Unfortunately this means that a (non-integer) fraction can never become whole by simply squaring, cubing, etc.
+
+I call this unsatisfying fact my "Greenfield Lemma".
+%%%%%
+%%%%%
+\end{document}

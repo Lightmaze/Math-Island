@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DePolignacsFormula}
+\pmcreated{2013-03-22 17:59:54}
+\pmmodified{2013-03-22 17:59:54}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{de Polignac's formula}
+\pmrecord{6}{40511}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given $n$, the prime factorization of $n!$ can be obtained by applying {\em de Polignac's formula}: $$\prod_{i = 1}^{\pi(n)} {p_i}^{\displaystyle \sum_{j = 1}^{\lfloor \log_{p_i} n \rfloor} \lfloor \frac{n}{{p_i}^j} \rfloor},$$ where $p_i$ is the $i$th prime and $\pi(n)$ is the prime counting function. For both the product and the summation, the iterator's end value can be set to infinity and the formula is still correct. When $n < {p_i}^j$, dividing the former by the latter gives a value that floors to zero, and then ${p_i}^0 = 1$. And when $i > \pi(n)$ then all $j$ give zero in the summation, and the multiplicand for the product is also 1. It is for the sake of a computer implementation that it is necessary to stop the iterations when they no longer give useful results.
+
+A small disadvantage of de Polignac's formula is that it is necessary to know all the primes up to $n$. If the implementation mistakenly iterates through a composite value, the error might not be detected, while even with a dumb implementation of trial division (e.g., one that tries odd composite values) the worst that can happen is that time is wasted by trying to divide by a composite value whose prime factors have already been divided out of the factorial.
+
+Let's work out an example: factoring 10!. The primes less than 10 are 2, 3, 5 and 7. The base 2 logarithm of 10 is approximately 3.32, meaning we only need to divide and floor up to 2's cube. Half 10 is 5, a quarter of 10 is 2.5 and an eighth of 10 is 1.25; adding up the integer parts of these gives us 8, so the exponent for 2 in the factorization of 10! is 8. The base 3 logarithm of 10 is approximately 2.0959. A third of 10 is about 3.3333 and a ninth of 10 is about 1.1111; the integer parts of these added up gives 4, so the exponent for 3 in the factorization is 4. For both bases 5 and 7, the logarithm of 10 is more than 1 but less than 2. 10 divided by 5 is 2, so that's our exponent for 5. 10 divided by 7 is about 1.42857, so 1 is our exponent for 7. Then we verify that indeed $2^8 \times 3^4 \times 5^2 \times 7^1 = 3628800 = 10!$
+%%%%%
+%%%%%
+\end{document}

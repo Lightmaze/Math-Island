@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SpacesHomeomorphicToBaireSpace}
+\pmcreated{2013-03-22 18:46:48}
+\pmmodified{2013-03-22 18:46:48}
+\pmowner{gel}{22282}
+\pmmodifier{gel}{22282}
+\pmtitle{spaces homeomorphic to Baire space}
+\pmrecord{7}{41574}
+\pmprivacy{1}
+\pmauthor{gel}{22282}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E50}
+%\pmkeywords{Polish space}
+%\pmkeywords{Baire space}
+\pmrelated{PolishSpace}
+\pmrelated{InjectiveImagesOfBaireSpace}
+
+\endmetadata
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{corollary*}{Corollary}
+\newtheorem*{definition*}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+
+ \makeatletter
+\@ifundefined{url}{\newcommand*{\sfrac}{\cfrac}}{\newcommand*{\sfrac}{\frac}}
+\makeatother
+
+\begin{document}
+\PMlinkescapeword{functions}
+\PMlinkescapeword{unit}
+\PMlinkescapeword{interval}
+\PMlinkescapeword{homeomorphism}
+\PMlinkescapeword{expansion}
+\PMlinkescapeword{real numbers}
+\PMlinkescapeword{satisfy}
+\PMlinkescapeword{theorem}
+\PMlinkescapeword{open subset}
+\PMlinkescapeword{properties}
+
+Baire space, $\mathcal{N}\equiv\mathbb{N}^\mathbb{N}$, is the set of all functions $x\colon\mathbb{N}\rightarrow\mathbb{N}$ together with the product topology. This is homeomorphic to the set of irrational numbers in the unit interval, with the homeomorphism $f\colon\mathcal{N}\rightarrow(0,1)\setminus\mathbb{Q}$ given by continued fraction expansion
+\begin{equation*}
+f(x)=\sfrac{1}{x(1)+\sfrac{1}{x(2)+\sfrac{1}{\ddots}}}.
+\end{equation*}
+
+\begin{theorem}\label{thm:1}
+Let $I$ be an open interval of the real numbers and $S$ be a countable dense subset of $I$. Then, $I\setminus S$ is homeomorphic to Baire space.
+\end{theorem}
+
+More generally, Baire space is uniquely characterized up to homeomorphism by the following properties.
+
+\begin{theorem}
+A topological space $X$ is homeomorphic to Baire space if and only if
+\begin{enumerate}
+\item It is a nonempty Polish space.
+\item It is \PMlinkname{zero dimensional}{ZeroDimensional}.
+\item No nonempty open subsets are compact.
+\end{enumerate}
+\end{theorem}
+
+In particular, for an open interval $I$ of the real numbers and countable dense subset $S\subseteq I$, then $I\setminus S$ is easily seen to satisfy these properties and Theorem \ref{thm:1} follows.
+
+%%%%%
+%%%%%
+\end{document}

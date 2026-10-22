@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FactorialModuloPrimePowers}
+\pmcreated{2013-03-22 13:22:52}
+\pmmodified{2013-03-22 13:22:52}
+\pmowner{Thomas Heye}{1234}
+\pmmodifier{Thomas Heye}{1234}
+\pmtitle{factorial modulo prime powers}
+\pmrecord{7}{33915}
+\pmprivacy{1}
+\pmauthor{Thomas Heye}{1234}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A07}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\pfac}[1]{\left(#1!\right)_p}
+\begin{document}
+For $n \in \mathbb{N}$ and any prime number $p$, $\pfac{n}$ is the product of numbers $1 \le m \le n$, where $p \not\vert m$.
+
+For natural numbers $n, s$ and a given prime number $p$, we have the congruence
+\begin{displaymath} \frac{n!}{p^{\sum\limits_{i=0}^d \left\lfloor
+\frac{n}{p^i}\right\rfloor}} \equiv\prod\limits_{i=0}^d\left((\pm
+1)^{\left\lfloor\frac{n}{p^s+i}\right\rfloor} \pfac{N_i}\right) \pmod{p^s},
+\end{displaymath}
+where $N_i$ is the least non-negative residue of $\left\lfloor \frac{n}{p^i}\right\rfloor
+\pmod{p^s}$. Here $d+1$ denotes the number of digits in the representation
+of $n$ in base $p$. More precisely, $\pm 1$ is $-1$ unless $p=2, s \ge 3$.
+
+\begin{proof}
+Let $i \ge 0$. Then the set of numbers between 1 and
+$\left\lfloor \frac{n}{p^i}\right\rfloor$ is
+\[\left\{kp, k \ge 1, k \le \left\lfloor\frac{n}{p^{i+1}}\right\rfloor\right\}.\]
+This is true for every integer $i$ with $p^{i+1} \le n$. So we have
+\begin{equation}
+\label{F1}
+\frac{\left\lfloor \frac{n}{p^i}\right\rfloor!}{\left\lfloor \frac{n}{p^{i+1}}\right\rfloor
+p^{\left\lfloor\frac{n}{p^{i+1}}\right\rfloor}}
+=\pfac{\left\lfloor\frac{n}{p^i}\right\rfloor}.
+\end{equation}
+Multiplying all terms with $0 \le i \le d$, where $d$ is the largest power of
+$p$ not greater than $n$, the statement follows from the generalization of
+Anton's congruence.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

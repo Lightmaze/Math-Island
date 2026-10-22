@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{StreamInterlaceAndDeinterlace}
+\pmcreated{2013-03-22 15:37:08}
+\pmmodified{2013-03-22 15:37:08}
+\pmowner{michal}{7107}
+\pmmodifier{michal}{7107}
+\pmtitle{stream interlace and deinterlace}
+\pmrecord{16}{37543}
+\pmprivacy{1}
+\pmauthor{michal}{7107}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B83}
+\pmsynonym{interlace deinterlace}{StreamInterlaceAndDeinterlace}
+\pmrelated{FraenkelsPartitionTheorem}
+\pmrelated{BeattySequence}
+\pmrelated{DataStream}
+\pmdefines{stream junction method}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+{\it Interlace} is the method to create a new data stream from
+two data streams, each of which has a constant time interval sequence.
+Formally, suppose $A = (a , \Delta_{a} )$ and $B = (b, \Delta_{b})$
+are two data streams, each have a constant time sequence. For convenience,
+we use $\Delta_{a}$ and $\Delta_{b}$ to also denote the constant terms
+of each of those sequences. We construct a new data stream $C = (c, \Delta_{c})$, also having constant time interval, as follows:
+
+$
+c_{n}=\left\{
+\begin{array}{cc}
+b_{n-\left\lfloor n z \right\rfloor } & \left\lfloor n z
+\right\rfloor =\left\lfloor \left( n+1\right) z \right\rfloor \\
+a_{\left\lfloor n z \right\rfloor } & \left\lfloor n z \right\rfloor
+\neq \left\lfloor \left( n+1\right) z \right\rfloor
+\end{array}
+\right. , z =\frac{\Delta _{b}}{\Delta _{a}+\Delta _{b}},\Delta _{c}=
+\frac{\Delta _{a}\Delta _{b}}{\Delta _{a}+\Delta _{b}} \label{interlace}
+$
+
+{\it Deinterlace } is the method of constructing two data streams , $A$ and
+$B$,
+each having constant time interval, from a given data stream $C$ and primary interlace value $\Delta $ of computed stream, where
+$C$ has constant time interval.
+
+$
+a_{n} = c_{n+ \left\lceil \frac{(n+1)\Delta _{a}}{\Delta _{b}} \right\rceil }\
+,\ \Delta _{a}=\frac{\Delta _{c}\Delta _{b}}{\left\vert \Delta _{c}-\Delta _{b}\right\vert }
+\label{deinterlace_a}
+$
+and
+$
+b_{n} = c_{n+\left\lfloor \frac{n\Delta _{b}}{\Delta _{a}}\right\rfloor}
+,\ \Delta _{b}=\frac{\Delta _{c}\Delta _{a}}{\left\vert \Delta _{c}-\Delta_{a}\right\vert } \label{deintrlace_b}
+$
+
+This sequences are the Fraenkel partition theorem instance.
+
+{\Huge \bf References}
+
+\begin{description}
+\item[ [1] ] Aviezri S. Fraenkel, {\em The bracket function and complementary sets of integers}, Canad. J.
+Math. {\bf 21} (1969), 6--27. {\bf \PMlinkexternal{MR
+38:3214}{http://www.ams.org/mathscinet-getitem?mr=38:3214}}
+\item[ [2] ] Michal Widera, {\em Deterministic method of data sequence processing}, Vol. IV, ISSN 1732-1360, Annales UMCS (2006), 314--331. {\bf \PMlinkexternal{UMCS Annales AI}{http://www.annales.umcs.lublin.pl/AI/index.html}}
+
+\end{description}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available skin-thumbsize-clientpref-standard skin-underline-clientpref-browser" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Polynomial method in combinatorics - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available skin-thumbsize-clientpref-standard skin-underline-clientpref-browser";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"f972719a-817c-4be0-bb63-f3c19463fa3b","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Polynomial_method_in_combinatorics","wgTitle":"Polynomial method in combinatorics","wgCurRevisionId":1380998454,"wgRevisionId":1380998454,"wgArticleId":62461655,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Combinatorics"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"Polynomial_method_in_combinatorics","wgRelevantArticleId":62461655,"wgTempUserName":null,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}},"namespaces":[0,4]},"wgConfirmEditCaptchaNeededForGenericEdit":"hcaptcha","wgConfirmEditForceShowCaptcha":false,"wgConfirmEditHCaptchaSiteKey":"5d0c670e-a5f4-4258-ad16-1f42792c9c62","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgMediaViewerDesktopVue":false,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":false,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgParsoidHtmlVersion":"2.8.0","parsermigration-parsoid":true,"wgPageAssessments":{"Mathematics":{"class":"C","importance":"Unknown"},"Project-independent assessment":{"class":"C","importance":""}},"wgTestKitchenUserExperiments":{"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[]},"wgEditSubmitButtonLabelPublish":true,"wgVisualEditorPageIsDisambiguation":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgULSLanguageSelectorV2Enabled":true,"wgWikibaseItemId":"Q97359605","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"wgCheckUserClientHintsInEditRequest":true,"wgPersonalDashboardMenuVisible":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.math.styles":"ready","ext.cite.parsoid.styles":"ready","ext.cite.styles":"ready","ext.wikimediamessages.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.math.polyfills","ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.testKitchen","ext.wikimediaCustomizations.discordSurvey","ext.wikimediaCustomizations.donorAccountCreation","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","wikibase.databox.fromWikidata","ext.checkUser.clientHints","ext.quicksurveys.init","ext.readerExperiments/preferredSources"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.parsoid.styles%7Cext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.47.0-wmf.24">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="Polynomial method in combinatorics - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="discord:component-embed" type="application/json" href="https://en.wikipedia.org/w/rest.php/discord/v0-internal/discord-preview?title=Polynomial+method+in+combinatorics&amp;db=enwiki&amp;lang=en">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Polynomial_method_in_combinatorics">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="skin--responsive skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject mw-editable page-Polynomial_method_in_combinatorics rootpage-Polynomial_method_in_combinatorics skin-vector-2022 action-view">
+<div id="mw-aria-live-region" class="mw-aria-live-region" aria-live="polite"></div><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"   >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin" aria-label="Move Main menu to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin" aria-label="Hide Main menu">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/enwiki-25.svg" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg" style="width: 8.75em; height: 1.375em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en-25.svg" width="140" height="11" style="width: 8.75em; height: 0.6875em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="none" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"   >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Polynomial+method+in+combinatorics" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Polynomial+method+in+combinatorics" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out vector-user-links-dropdown--collapsible"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"   >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span class="vector-icon mw-ui-icon-heart mw-ui-icon-wikimedia-heart cdx-button__icon"></span>
+
+<span>Donate</span></a>
+</li>
+<li id="pt-createaccount" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=Polynomial+method+in+combinatorics" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
+
+<span>Create account</span></a>
+</li>
+<li id="pt-login" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=Polynomial+method+in+combinatorics" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn cdx-button__icon"></span>
+
+<span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	data-pinned-container-id="vector-toc-pinned-container"
+	data-unpinned-container-id="vector-toc-unpinned-container"
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin" aria-label="Move Contents to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin" aria-label="Hide Contents">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Mathematical_overview"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Mathematical_overview">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Mathematical overview</span>
+			</div>
+		</a>
+		
+			<button aria-controls="toc-Mathematical_overview-sublist" class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-toc-toggle">
+				<span class="vector-icon mw-ui-icon-wikimedia-expand"></span>
+				<span>Toggle Mathematical overview subsection</span>
+			</button>
+		
+		<ul id="toc-Mathematical_overview-sublist" class="vector-toc-list">
+			<li id="toc-Example"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Example">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.1</span>
+					<span>Example</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Example-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+		<li id="toc-Polynomial_partitioning"
+			class="vector-toc-list-item vector-toc-level-2">
+			<a class="vector-toc-link" href="#Polynomial_partitioning">
+				<div class="vector-toc-text">
+					<span class="vector-toc-numb">1.2</span>
+					<span>Polynomial partitioning</span>
+				</div>
+			</a>
+			
+			<ul id="toc-Polynomial_partitioning-sublist" class="vector-toc-list">
+			</ul>
+		</li>
+	</ul>
+	</li>
+	<li id="toc-Applications"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Applications">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Applications</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Applications-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>See also</span>
+			</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-External_links"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#External_links">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>External links</span>
+			</div>
+		</a>
+		
+		<ul id="toc-External_links-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"   >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span lang="en" dir="ltr"><span class="mw-page-title-main">Polynomial method in combinatorics</span></span></h1>
+			
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector"  aria-label="Add languages" aria-description="This article is only available in this language. Add the article for other languages"  >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-0" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Add languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="uls-after-portlet-link"></span><span class="wb-langlinks-add wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q97359605#sitelinks-wikipedia" title="Add interlanguage links" class="wbc-editpage">Add links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-nstab-main" class="selected mw-list-item vector-tab-noicon"><a data-mw-interface  href="/wiki/Polynomial_method_in_combinatorics" title="View the content page [c]" accesskey="c" class=""><span>Article</span></a>
+</li>
+<li id="ca-talk" class="mw-list-item vector-tab-noicon"><a data-mw-interface  href="/wiki/Talk:Polynomial_method_in_combinatorics" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t" class=""><span>Talk</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"    >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+			    
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-view" class="selected mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/wiki/Polynomial_method_in_combinatorics" class=""><span>Read</span></a>
+</li>
+<li id="ca-edit" class="mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;action=edit" title="Edit this page [e]" accesskey="e" class=""><span>Edit</span></a>
+</li>
+<li id="ca-history" class="mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;action=history" title="Past revisions of this page [h]" accesskey="h" class=""><span>View history</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+			</nav>
+
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"   >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-verticalEllipsis mw-ui-icon-wikimedia-verticalEllipsis cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin" aria-label="Move Tools to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin" aria-label="Hide Tools">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-view-more" class="selected mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/wiki/Polynomial_method_in_combinatorics" class=""><span class="vector-icon mw-ui-icon-eye mw-ui-icon-wikimedia-eye cdx-button__icon"></span>
+
+<span>Read</span></a>
+</li>
+<li id="ca-edit-more" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;action=edit" title="Edit this page [e]" accesskey="e" class=""><span class="vector-icon mw-ui-icon-edit mw-ui-icon-wikimedia-edit cdx-button__icon"></span>
+
+<span>Edit</span></a>
+</li>
+<li id="ca-history-more" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;action=history" title="Past revisions of this page [h]" accesskey="h" class=""><span class="vector-icon mw-ui-icon-history mw-ui-icon-wikimedia-history cdx-button__icon"></span>
+
+<span>View history</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/Polynomial_method_in_combinatorics" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/Polynomial_method_in_combinatorics" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;oldid=1380998454" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Polynomial_method_in_combinatorics&amp;id=1380998454&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPolynomial_method_in_combinatorics"><span>Get shortened URL</span></a></li><li id="parsermigration-switch-to-legacy" class="mw-list-item"><a href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;useparsoid=0"><span>Switch to legacy parser</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=Polynomial_method_in_combinatorics&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q97359605" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin" aria-label="Move Appearance to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin" aria-label="Hide Appearance">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+						<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+						
+					</div>
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr" data-mw-parsoid-version="0.24.0.0-alpha27" data-mw-html-version="2.8.0"><section data-mw-section-id="0" id="mwAQ"><p id="mwAg">In mathematics, <b id="mwAw">the polynomial method</b> is an algebraic approach to <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Combinatorics" title="Combinatorics" id="mwBA">combinatorics</a> problems that involves capturing some combinatorial structure using polynomials and proceeding to argue about their algebraic properties. Recently (around 2016), the polynomial method has led to the development of remarkably simple solutions to several long-standing open problems.<sup about="#mwt3" class="mw-ref reference" id="cite_ref-Guth_2016_p._1-0" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"Guth 2016 p."},"body":{"id":"mw-reference-text-cite_note-Guth_2016_p.-1"}}'><a href="#cite_note-Guth_2016_p.-1" id="mwBQ"><span class="mw-reflink-text" id="mwBg"><span class="cite-bracket" id="mwBw">[</span>1<span class="cite-bracket" id="mwCA">]</span></span></a></sup>  The polynomial method encompasses a wide range of specific techniques for using polynomials and ideas from areas such as <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Algebraic_geometry" title="Algebraic geometry" id="mwCQ">algebraic geometry</a> to solve combinatorics problems.  While a few techniques that follow the framework of the polynomial method, such as <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Noga_Alon" title="Noga Alon" id="mwCg">Alon</a>'s <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Restricted_sumset#Combinatorial_Nullstellensatz" title="Restricted sumset" id="mwCw">Combinatorial Nullstellensatz</a>,<sup about="#mwt6" class="mw-ref reference" id="cite_ref-Alon1999_2-0" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"Alon1999"},"body":{"id":"mw-reference-text-cite_note-Alon1999-2"}}'><a href="#cite_note-Alon1999-2" id="mwDA"><span class="mw-reflink-text" id="mwDQ"><span class="cite-bracket" id="mwDg">[</span>2<span class="cite-bracket" id="mwDw">]</span></span></a></sup> have been known since the 1990s, it was not until around 2010 that a broader framework for the polynomial method has been developed.</p>
+
+<meta property="mw:PageProp/toc" id="mwEA" data-mw='{"autoGenerated":true}'/></section><section data-mw-section-id="1" id="mwEQ" aria-labelledby="Mathematical_overview"><div class="mw-heading mw-heading2"><h2 id="Mathematical_overview">Mathematical overview</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;action=edit&amp;section=1" title="Edit section: Mathematical overview"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwEg">Many uses of the polynomial method follow the same high-level approach.  The approach is as follows:</p>
+
+<ul id="mwEw"><li id="mwFA">Embed some combinatorial problem into a <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Vector_space" title="Vector space" id="mwFQ">vector space</a>.</li>
+<li id="mwFg">Capture the hypotheses of the problem by constructing a polynomial of low-degree that is zero on a certain set</li>
+<li id="mwFw">After constructing the polynomial, argue about its algebraic properties to deduce that the original configuration must satisfy the desired properties.</li></ul>
+
+<section data-mw-section-id="2" id="mwGA" aria-labelledby="Example"><div class="mw-heading mw-heading3"><h3 id="Example">Example</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;action=edit&amp;section=2" title="Edit section: Example"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwGQ">As an example, we outline Dvir's proof of the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Kakeya_set#Kakeya_sets_in_vector_spaces_over_finite_fields" title="Kakeya set" id="mwGg">Finite Field Kakeya Conjecture</a> using the polynomial method.<sup about="#mwt9" class="mw-ref reference" id="cite_ref-Dvir2008_3-0" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"Dvir2008"},"body":{"id":"mw-reference-text-cite_note-Dvir2008-3"}}'><a href="#cite_note-Dvir2008-3" id="mwGw"><span class="mw-reflink-text" id="mwHA"><span class="cite-bracket" id="mwHQ">[</span>3<span class="cite-bracket" id="mwHg">]</span></span></a></sup></p>
+
+<p id="mwHw"><b id="mwIA">Finite Field Kakeya Conjecture</b>: Let <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt10" id="mwIQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\mathbb{F}_q"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \mathbb {F} _{q}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {F} _{q}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbb96e056c071d13fc7702013f9273e7f5cd88a7" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:2.409ex; height:2.843ex;" alt="{\displaystyle \mathbb {F} _{q}}"/></span> be a finite field with <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt11" id="mwIg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"q"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle q}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/06809d64fa7c817ffc7e323f85997f783dbdf71d" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:1.07ex; height:2.009ex;" alt="{\displaystyle q}"/></span> elements.  Let <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt12" id="mwIw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"K \\subseteq \\mathbb{F}_q^n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle K\subseteq \mathbb {F} _{q}^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+        <mo>⊆<!-- ⊆ --></mo>
+        <msubsup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K\subseteq \mathbb {F} _{q}^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b1af49514701883eb711d4927ddecadf4ae73dee" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.171ex; width:7.803ex; height:3.176ex;" alt="{\displaystyle K\subseteq \mathbb {F} _{q}^{n}}"/></span> be a Kakeya set, i.e. for each vector <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt13" id="mwJA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"y \\in \\mathbb{F}_q^n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle y\in \mathbb {F} _{q}^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>y</mi>
+        <mo>∈<!-- ∈ --></mo>
+        <msubsup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle y\in \mathbb {F} _{q}^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0c774e3eda89dc5e64bf99c2559f0dcf919219c0" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.171ex; width:6.635ex; height:3.176ex;" alt="{\displaystyle y\in \mathbb {F} _{q}^{n}}"/></span>there exists <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt14" id="mwJQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"x \\in \\mathbb{F}_q^n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle x\in \mathbb {F} _{q}^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+        <mo>∈<!-- ∈ --></mo>
+        <msubsup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x\in \mathbb {F} _{q}^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/40e850e730ff531f18a696ad2a3bb954fed0e113" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.171ex; width:6.809ex; height:3.176ex;" alt="{\displaystyle x\in \mathbb {F} _{q}^{n}}"/></span> such that <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt15" id="mwJg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"K"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="{\displaystyle K}"/></span> contains a line <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt16" id="mwJw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\{x + ty, t \\in \\mathbb{F}_q \\}"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \{x+ty,t\in \mathbb {F} _{q}\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">{</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>t</mi>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo>∈<!-- ∈ --></mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \{x+ty,t\in \mathbb {F} _{q}\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b8588b656dd794fa60402654cb34fa86f54b2b0" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:15.613ex; height:3.009ex;" alt="{\displaystyle \{x+ty,t\in \mathbb {F} _{q}\}}"/></span>. Then the set <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt17" id="mwKA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"K"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="{\displaystyle K}"/></span> has size at least <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt18" id="mwKQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"c_nq^n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle c_{n}q^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{n}q^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4a2de0839bf22cb35794fbcae1d8770804062303" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:4.523ex; height:2.676ex;" alt="{\displaystyle c_{n}q^{n}}"/></span>where <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt19" id="mwKg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"c_n > 0"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle c_{n}>0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo>></mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{n}>0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2bad48de7e3ff5a22e32b25d39f0b878cff56a4c" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:6.486ex; height:2.509ex;" alt="{\displaystyle c_{n}>0}"/></span> is a constant that only depends on <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt20" id="mwKw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle n}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>n</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle n}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a601995d55609f2d9f5e233e36fbe9ea26011b3b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.395ex; height:1.676ex;" alt="{\displaystyle n}"/></span>.</p>
+
+<p id="mwLA"><b id="mwLQ">Proof:</b>  The proof we give will show that <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt21" id="mwLg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"K"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="{\displaystyle K}"/></span> has size at least <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt22" id="mwLw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"c_nq^{n-1}"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle c_{n}q^{n-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>−<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{n}q^{n-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bb60e0c09e51e72429dc5f3ca8d2e43c4f06a19e" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:6.624ex; height:3.009ex;" alt="{\displaystyle c_{n}q^{n-1}}"/></span>.  The bound of <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt23" id="mwMA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"c_nq^n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle c_{n}q^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>c</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <msup>
+          <mi>q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c_{n}q^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4a2de0839bf22cb35794fbcae1d8770804062303" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:4.523ex; height:2.676ex;" alt="{\displaystyle c_{n}q^{n}}"/></span> can be obtained using the same method with a little additional work.</p>
+
+<p id="mwMQ">Assume we have a Kakeya set <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt24" id="mwMg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"K"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="{\displaystyle K}"/></span> with</p>
+
+<p id="mwMw"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt25" id="mwNA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"|K| &lt; {q+n-3\\choose n-1}"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle |K|&lt;{q+n-3 \choose n-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>K</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>&lt;</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mrow class="MJX-TeXAtom-OPEN">
+              <mo maxsize="2.047em" minsize="2.047em">(</mo>
+            </mrow>
+            <mfrac linethickness="0">
+              <mrow>
+                <mi>q</mi>
+                <mo>+</mo>
+                <mi>n</mi>
+                <mo>−<!-- − --></mo>
+                <mn>3</mn>
+              </mrow>
+              <mrow>
+                <mi>n</mi>
+                <mo>−<!-- − --></mo>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+            <mrow class="MJX-TeXAtom-CLOSE">
+              <mo maxsize="2.047em" minsize="2.047em">)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |K|&lt;{q+n-3 \choose n-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/ff230e9833c28b028c775fa5dd011128bb8c6af3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.505ex; width:19.187ex; height:6.176ex;" alt="{\displaystyle |K|&lt;{q+n-3 \choose n-1}}"/></span></p>
+
+<p id="mwNQ">Consider the set of monomials of the form <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt26" id="mwNg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"x_1^{d_1}x_2^{d_2} \\dots x_n^{d_n}"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle x_{1}^{d_{1}}x_{2}^{d_{2}}\dots x_{n}^{d_{n}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>d</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>1</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <msubsup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>d</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mn>2</mn>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+        <mo>…<!-- … --></mo>
+        <msubsup>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <msub>
+              <mi>d</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+              </mrow>
+            </msub>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x_{1}^{d_{1}}x_{2}^{d_{2}}\dots x_{n}^{d_{n}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/584c78696398ed4ca9e8609fca337c214249ee66" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:13.376ex; height:3.509ex;" alt="{\displaystyle x_{1}^{d_{1}}x_{2}^{d_{2}}\dots x_{n}^{d_{n}}}"/></span> of degree exactly <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt27" id="mwNw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"q-2"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle q-2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+        <mo>−<!-- − --></mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q-2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2dc973ed9054d0e1b231e8758a906d014fbaf482" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:5.072ex; height:2.509ex;" alt="{\displaystyle q-2}"/></span>.  There are exactly <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt28" id="mwOA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"{q+n-3\\choose n-1}"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle {q+n-3 \choose n-1}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mrow class="MJX-TeXAtom-OPEN">
+              <mo maxsize="2.047em" minsize="2.047em">(</mo>
+            </mrow>
+            <mfrac linethickness="0">
+              <mrow>
+                <mi>q</mi>
+                <mo>+</mo>
+                <mi>n</mi>
+                <mo>−<!-- − --></mo>
+                <mn>3</mn>
+              </mrow>
+              <mrow>
+                <mi>n</mi>
+                <mo>−<!-- − --></mo>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+            <mrow class="MJX-TeXAtom-CLOSE">
+              <mo maxsize="2.047em" minsize="2.047em">)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {q+n-3 \choose n-1}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/bf957d9ea5459e360987f248ee2b47200e2e71bb" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.505ex; width:12.729ex; height:6.176ex;" alt="{\displaystyle {q+n-3 \choose n-1}}"/></span> such monomials.  Thus, there exists a nonzero <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Homogeneous_polynomial" title="Homogeneous polynomial" id="mwOQ">homogeneous polynomial</a> <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt29" id="mwOg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"P(x_1,x_2, \\dots , x_n)"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle P(x_{1},x_{2},\dots ,x_{n})}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>1</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>2</mn>
+          </mrow>
+        </msub>
+        <mo>,</mo>
+        <mo>…<!-- … --></mo>
+        <mo>,</mo>
+        <msub>
+          <mi>x</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(x_{1},x_{2},\dots ,x_{n})}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/51f887632b00774d75d5871d83ffdbb7dde67711" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:17.083ex; height:2.843ex;" alt="{\displaystyle P(x_{1},x_{2},\dots ,x_{n})}"/></span> of degree <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt30" id="mwOw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"q-2"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle q-2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+        <mo>−<!-- − --></mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q-2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2dc973ed9054d0e1b231e8758a906d014fbaf482" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:5.072ex; height:2.509ex;" alt="{\displaystyle q-2}"/></span> that vanishes on all points in <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt31" id="mwPA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"K"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="{\displaystyle K}"/></span><i id="mwPQ">.</i>  Note this is because finding such a polynomial reduces to solving a system of <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt32" id="mwPg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"|K|"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle |K|}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>K</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |K|}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/029cb0f5f1e5c4b41c20a19ef1520d4542b0260b" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:3.36ex; height:2.843ex;" alt="{\displaystyle |K|}"/></span> linear equations for the coefficients.</p>
+
+<p id="mwPw">Now we will use the property that <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt33" id="mwQA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"K"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="{\displaystyle K}"/></span> is a Kakeya set to show that <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt34" id="mwQQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"P"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle P}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b4dc73bf40314945ff376bd363916a738548d40a" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.745ex; height:2.176ex;" alt="{\displaystyle P}"/></span> must vanish on all of <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt35" id="mwQg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\mathbb{F}_q^n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \mathbb {F} _{q}^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {F} _{q}^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a630603c6f2f8f58f5d1fb9ef1b9ad194e258a2" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.171ex; width:2.639ex; height:3.176ex;" alt="{\displaystyle \mathbb {F} _{q}^{n}}"/></span>.  Clearly <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt36" id="mwQw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"P(0,0 \\dots , 0) = 0"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle P(0,0\dots ,0)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mn>0</mn>
+        <mo>,</mo>
+        <mn>0</mn>
+        <mo>…<!-- … --></mo>
+        <mo>,</mo>
+        <mn>0</mn>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(0,0\dots ,0)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/cae8d9670b00c5d0b589234c0abb36fa4181d956" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:16.868ex; height:2.843ex;" alt="{\displaystyle P(0,0\dots ,0)=0}"/></span>.  Next, for <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt37" id="mwRA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"y \\neq 0"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle y\neq 0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>y</mi>
+        <mo>≠<!-- ≠ --></mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle y\neq 0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/fe09d44abefff1fcada712301b088a303591f9e5" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:5.416ex; height:2.676ex;" alt="{\displaystyle y\neq 0}"/></span>, there is an <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt38" id="mwRQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"x"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle x}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>x</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/87f9e315fd7e2ba406057a97300593c4802b53e4" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.33ex; height:1.676ex;" alt="{\displaystyle x}"/></span> such that the line <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt39" id="mwRg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\{x + ty, t \\in \\mathbb{F}_q \\}"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \{x+ty,t\in \mathbb {F} _{q}\}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mo fence="false" stretchy="false">{</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>t</mi>
+        <mi>y</mi>
+        <mo>,</mo>
+        <mi>t</mi>
+        <mo>∈<!-- ∈ --></mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+        <mo fence="false" stretchy="false">}</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \{x+ty,t\in \mathbb {F} _{q}\}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/7b8588b656dd794fa60402654cb34fa86f54b2b0" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:15.613ex; height:3.009ex;" alt="{\displaystyle \{x+ty,t\in \mathbb {F} _{q}\}}"/></span> is contained in <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt40" id="mwRw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"K"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle K}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>K</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle K}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2b76fce82a62ed5461908f0dc8f037de4e3686b0" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:2.066ex; height:2.176ex;" alt="{\displaystyle K}"/></span>.  Since <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt41" id="mwSA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"P"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle P}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b4dc73bf40314945ff376bd363916a738548d40a" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.745ex; height:2.176ex;" alt="{\displaystyle P}"/></span> is homogeneous, if <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt42" id="mwSQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"P(z) = 0"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle P(z)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(z)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/50814b226d94434f884e9800aed98950c508d208" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:8.904ex; height:2.843ex;" alt="{\displaystyle P(z)=0}"/></span> for some <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt43" id="mwSg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"z \\in \\mathbb{F}_q^n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle z\in \mathbb {F} _{q}^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>z</mi>
+        <mo>∈<!-- ∈ --></mo>
+        <msubsup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle z\in \mathbb {F} _{q}^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/5d971df50f9734bbe957fec6fb69449c33576365" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.171ex; width:6.568ex; height:3.176ex;" alt="{\displaystyle z\in \mathbb {F} _{q}^{n}}"/></span> then <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt44" id="mwSw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"P(cz) = 0"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle P(cz)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>c</mi>
+        <mi>z</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(cz)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/304ee77265b5b82a9ce266ba78b6302a9992cf2f" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:9.911ex; height:2.843ex;" alt="{\displaystyle P(cz)=0}"/></span> for any <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt45" id="mwTA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"c \\in \\mathbb{F}_q"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle c\in \mathbb {F} _{q}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>c</mi>
+        <mo>∈<!-- ∈ --></mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle c\in \mathbb {F} _{q}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2daa132b680baafba2fdb6f760217aac2a09d635" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:6.256ex; height:2.843ex;" alt="{\displaystyle c\in \mathbb {F} _{q}}"/></span>.  In particular</p>
+
+<p id="mwTQ"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt46" id="mwTg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"P(tx + y) = P(t(x+t^{-1}y)) = 0"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle P(tx+y)=P(t(x+t^{-1}y))=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mo stretchy="false">(</mo>
+        <mi>x</mi>
+        <mo>+</mo>
+        <msup>
+          <mi>t</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>−<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(tx+y)=P(t(x+t^{-1}y))=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/41efd38d932f286494352605bb8381f761243117" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:31.781ex; height:3.176ex;" alt="{\displaystyle P(tx+y)=P(t(x+t^{-1}y))=0}"/></span></p>
+
+<p id="mwTw">for all nonzero <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt47" id="mwUA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"t \\in \\mathbb{F}_q"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle t\in \mathbb {F} _{q}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>t</mi>
+        <mo>∈<!-- ∈ --></mo>
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t\in \mathbb {F} _{q}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e0f7a744a9136507cffa390306d8790b0176963f" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:6.089ex; height:2.843ex;" alt="{\displaystyle t\in \mathbb {F} _{q}}"/></span>.  However, <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt48" id="mwUQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"P(tx+y) "}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle P(tx+y)}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>t</mi>
+        <mi>x</mi>
+        <mo>+</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(tx+y)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e4832de656fde7334013b66feed220367e4d1b9e" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:9.72ex; height:2.843ex;" alt="{\displaystyle P(tx+y)}"/></span> is a polynomial of degree <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt49" id="mwUg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"q-2"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle q-2}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+        <mo>−<!-- − --></mo>
+        <mn>2</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q-2}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2dc973ed9054d0e1b231e8758a906d014fbaf482" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:5.072ex; height:2.509ex;" alt="{\displaystyle q-2}"/></span> in <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt50" id="mwUw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"t"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle t}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>t</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/65658b7b223af9e1acc877d848888ecdb4466560" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:0.84ex; height:2.009ex;" alt="{\displaystyle t}"/></span> but it has at least <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt51" id="mwVA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"q-1"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle q-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+        <mo>−<!-- − --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9bfc49678846b112cde021e3cb52d9b3b15decaf" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:5.072ex; height:2.509ex;" alt="{\displaystyle q-1}"/></span> roots corresponding to the nonzero elements of <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt52" id="mwVQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\mathbb{F}_q"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \mathbb {F} _{q}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {F} _{q}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/dbb96e056c071d13fc7702013f9273e7f5cd88a7" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.005ex; width:2.409ex; height:2.843ex;" alt="{\displaystyle \mathbb {F} _{q}}"/></span> so it must be identically zero.  In particular, plugging in <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt53" id="mwVg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"t = 0"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle t=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>t</mi>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle t=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/43469ec032d858feae5aa87029e22eaaf0109e9c" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:5.101ex; height:2.176ex;" alt="{\displaystyle t=0}"/></span> we deduce <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt54" id="mwVw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"P(y) = 0"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle P(y)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(y)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/903b76d4226dd16fce626bb8c46e09b84c026ff3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:8.971ex; height:2.843ex;" alt="{\displaystyle P(y)=0}"/></span>.</p>
+
+<p id="mwWA">We have shown that <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt55" id="mwWQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"P(y) = 0"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle P(y)=0}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+        <mo stretchy="false">(</mo>
+        <mi>y</mi>
+        <mo stretchy="false">)</mo>
+        <mo>=</mo>
+        <mn>0</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P(y)=0}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/903b76d4226dd16fce626bb8c46e09b84c026ff3" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:8.971ex; height:2.843ex;" alt="{\displaystyle P(y)=0}"/></span> for all <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt56" id="mwWg" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"y \\in \\mathbb{F}_q^n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle y\in \mathbb {F} _{q}^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>y</mi>
+        <mo>∈<!-- ∈ --></mo>
+        <msubsup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle y\in \mathbb {F} _{q}^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0c774e3eda89dc5e64bf99c2559f0dcf919219c0" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.171ex; width:6.635ex; height:3.176ex;" alt="{\displaystyle y\in \mathbb {F} _{q}^{n}}"/></span> but <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt57" id="mwWw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"P"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle P}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>P</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b4dc73bf40314945ff376bd363916a738548d40a" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.338ex; width:1.745ex; height:2.176ex;" alt="{\displaystyle P}"/></span> has degree less than <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt58" id="mwXA" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"q - 1"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle q-1}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>q</mi>
+        <mo>−<!-- − --></mo>
+        <mn>1</mn>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle q-1}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9bfc49678846b112cde021e3cb52d9b3b15decaf" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.671ex; width:5.072ex; height:2.509ex;" alt="{\displaystyle q-1}"/></span> in each of the variables so this is impossible by the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Schwartz–Zippel_lemma" title="Schwartz–Zippel lemma" id="mwXQ">Schwartz–Zippel lemma</a>.  We deduce that we must actually have</p>
+
+<p id="mwXg"><span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt59" id="mwXw" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"|K| \\ge {q+n-3\\choose n-1} \\sim \\frac{q^{n-1}}{(n-1)!}"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle |K|\geq {q+n-3 \choose n-1}\sim {\frac {q^{n-1}}{(n-1)!}}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mi>K</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">|</mo>
+        </mrow>
+        <mo>≥<!-- ≥ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow>
+            <mrow class="MJX-TeXAtom-OPEN">
+              <mo maxsize="2.047em" minsize="2.047em">(</mo>
+            </mrow>
+            <mfrac linethickness="0">
+              <mrow>
+                <mi>q</mi>
+                <mo>+</mo>
+                <mi>n</mi>
+                <mo>−<!-- − --></mo>
+                <mn>3</mn>
+              </mrow>
+              <mrow>
+                <mi>n</mi>
+                <mo>−<!-- − --></mo>
+                <mn>1</mn>
+              </mrow>
+            </mfrac>
+            <mrow class="MJX-TeXAtom-CLOSE">
+              <mo maxsize="2.047em" minsize="2.047em">)</mo>
+            </mrow>
+          </mrow>
+        </mrow>
+        <mo>∼<!-- ∼ --></mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <msup>
+              <mi>q</mi>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mi>n</mi>
+                <mo>−<!-- − --></mo>
+                <mn>1</mn>
+              </mrow>
+            </msup>
+            <mrow>
+              <mo stretchy="false">(</mo>
+              <mi>n</mi>
+              <mo>−<!-- − --></mo>
+              <mn>1</mn>
+              <mo stretchy="false">)</mo>
+              <mo>!</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle |K|\geq {q+n-3 \choose n-1}\sim {\frac {q^{n-1}}{(n-1)!}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/86916d0813c78a5dff3e565acb1734a5652eb21d" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -2.671ex; width:30.975ex; height:6.509ex;" alt="{\displaystyle |K|\geq {q+n-3 \choose n-1}\sim {\frac {q^{n-1}}{(n-1)!}}}"/></span></p>
+
+</section><section data-mw-section-id="3" id="mwYA" aria-labelledby="Polynomial_partitioning"><div class="mw-heading mw-heading3"><h3 id="Polynomial_partitioning">Polynomial partitioning</h3><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;action=edit&amp;section=3" title="Edit section: Polynomial partitioning"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwYQ">A variation of the polynomial method, often called polynomial partitioning, was introduced by Guth and Katz in their solution to the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Erdős_distinct_distances_problem" title="Erdős distinct distances problem" id="mwYg">Erdős distinct distances problem</a>.<sup about="#mwt62" class="mw-ref reference" id="cite_ref-GuthKatz2015_4-0" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"GuthKatz2015"},"body":{"id":"mw-reference-text-cite_note-GuthKatz2015-4"}}'><a href="#cite_note-GuthKatz2015-4" id="mwYw"><span class="mw-reflink-text" id="mwZA"><span class="cite-bracket" id="mwZQ">[</span>4<span class="cite-bracket" id="mwZg">]</span></span></a></sup> Polynomial partitioning involves using polynomials to divide the underlying space into regions and arguing about the geometric structure of the partition.  These arguments rely on results from algebraic geometry bounding the number of incidences between various algebraic curves.  The technique of polynomial partitioning has been used to give a new proof of the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Szemerédi–Trotter_theorem" title="Szemerédi–Trotter theorem" id="mwZw">Szemerédi–Trotter theorem</a> via the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Ham_sandwich_theorem#Generalizations" title="Ham sandwich theorem" id="mwaA">polynomial ham sandwich theorem</a> and has been applied to a variety of problems in <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Incidence_geometry" title="Incidence geometry" id="mwaQ">incidence geometry</a>.<sup about="#mwt65" class="mw-ref reference" id="cite_ref-KaplanMatoušek2012_5-0" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"KaplanMatoušek2012"},"body":{"id":"mw-reference-text-cite_note-KaplanMatoušek2012-5"}}'><a href="#cite_note-KaplanMatoušek2012-5" id="mwag"><span class="mw-reflink-text" id="mwaw"><span class="cite-bracket" id="mwbA">[</span>5<span class="cite-bracket" id="mwbQ">]</span></span></a></sup><sup about="#mwt68" class="mw-ref reference" id="cite_ref-Dvir2012_6-0" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"Dvir2012"},"body":{"id":"mw-reference-text-cite_note-Dvir2012-6"}}'><a href="#cite_note-Dvir2012-6" id="mwbg"><span class="mw-reflink-text" id="mwbw"><span class="cite-bracket" id="mwcA">[</span>6<span class="cite-bracket" id="mwcQ">]</span></span></a></sup></p>
+
+</section></section><section data-mw-section-id="4" id="mwcg" aria-labelledby="Applications"><div class="mw-heading mw-heading2"><h2 id="Applications">Applications</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;action=edit&amp;section=4" title="Edit section: Applications"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwcw">A few examples of longstanding open problems that have been solved using the polynomial method are:</p>
+
+<ul id="mwdA"><li id="mwdQ">The <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Kakeya_set#Kakeya_sets_in_vector_spaces_over_finite_fields" title="Kakeya set" id="mwdg">finite field Kakeya conjecture</a><sup about="#mwt69" class="mw-ref reference" id="cite_ref-Dvir2008_3-1" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"Dvir2008"}}'><a href="#cite_note-Dvir2008-3" id="mwdw"><span class="mw-reflink-text" id="mweA"><span class="cite-bracket" id="mweQ">[</span>3<span class="cite-bracket" id="mweg">]</span></span></a></sup> by Dvir</li>
+<li id="mwew">The <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Cap_set" title="Cap set" id="mwfA">cap set</a> problem by Ellenberg and Gijswijt<sup about="#mwt73" class="mw-ref reference" id="cite_ref-EllenbergGijswijt20172_7-0" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"EllenbergGijswijt20172"},"body":{"id":"mw-reference-text-cite_note-EllenbergGijswijt20172-7"}}'><a href="#cite_note-EllenbergGijswijt20172-7" id="mwfQ"><span class="mw-reflink-text" id="mwfg"><span class="cite-bracket" id="mwfw">[</span>7<span class="cite-bracket" id="mwgA">]</span></span></a></sup> with the original framework developed on the analogous problem over <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt74" id="mwgQ" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\mathbb{Z}_4^n"}}'><span class="mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \mathbb {Z} _{4}^{n}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msubsup>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi mathvariant="double-struck">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mn>4</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle \mathbb {Z} _{4}^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2a6a2c26b1974882216cbf4217063a9caebde95d" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:2.769ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} _{4}^{n}}"/></span> by Croot, Lev and Pach<sup about="#mwt78" class="mw-ref reference" id="cite_ref-CrootLev2017_8-0" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"CrootLev2017"},"body":{"id":"mw-reference-text-cite_note-CrootLev2017-8"}}'><a href="#cite_note-CrootLev2017-8" id="mwgg"><span class="mw-reflink-text" id="mwgw"><span class="cite-bracket" id="mwhA">[</span>8<span class="cite-bracket" id="mwhQ">]</span></span></a></sup></li>
+<li id="mwhg">The <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Erdős_distinct_distances_problem" title="Erdős distinct distances problem" id="mwhw">Erdős distinct distances problem</a> by Guth and Katz<sup about="#mwt79" class="mw-ref reference" id="cite_ref-GuthKatz2015_4-1" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"GuthKatz2015"}}'><a href="#cite_note-GuthKatz2015-4" id="mwiA"><span class="mw-reflink-text" id="mwiQ"><span class="cite-bracket" id="mwig">[</span>4<span class="cite-bracket" id="mwiw">]</span></span></a></sup></li>
+<li id="mwjA">The Joints Problem in 3D by Guth and Katz.<sup about="#mwt82" class="mw-ref reference" id="cite_ref-GuthKatz2010_9-0" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"GuthKatz2010"},"body":{"id":"mw-reference-text-cite_note-GuthKatz2010-9"}}'><a href="#cite_note-GuthKatz2010-9" id="mwjQ"><span class="mw-reflink-text" id="mwjg"><span class="cite-bracket" id="mwjw">[</span>9<span class="cite-bracket" id="mwkA">]</span></span></a></sup> Their argument was later simplified by Elekes, Kaplan and Sharir<sup about="#mwt85" class="mw-ref reference" id="cite_ref-ElekesKaplan2011_10-0" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"ElekesKaplan2011"},"body":{"id":"mw-reference-text-cite_note-ElekesKaplan2011-10"}}'><a href="#cite_note-ElekesKaplan2011-10" id="mwkQ"><span class="mw-reflink-text" id="mwkg"><span class="cite-bracket" id="mwkw">[</span>10<span class="cite-bracket" id="mwlA">]</span></span></a></sup></li></ul>
+
+</section><section data-mw-section-id="5" id="mwlQ" aria-labelledby="See_also"><div class="mw-heading mw-heading2"><h2 id="See_also">See also</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;action=edit&amp;section=5" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul id="mwlg"><li id="mwlw"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Restricted_sumset#Combinatorial_Nullstellensatz" title="Restricted sumset" id="mwmA">Combinatorial Nullstellensatz</a></li></ul>
+
+</section><section data-mw-section-id="6" id="mwmQ" aria-labelledby="References"><div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;action=edit&amp;section=6" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<!-- Inline citations added to your article will automatically display here. See en.wikipedia.org/wiki/WP:REFB for instructions on how to add citations. -->
+
+<div class="mw-references-wrap" typeof="mw:Extension/references" about="#mwt86" id="mwmg" data-mw='{"name":"references","attrs":{}}'><ol class="mw-references references" id="mwmw"><li about="#cite_note-Guth_2016_p.-1" id="cite_note-Guth_2016_p.-1" data-mw-footnote-number="1"><span class="mw-cite-backlink" id="mwnA"><a href="#cite_ref-Guth_2016_p._1-0" rel="mw:referencedBy" id="mwnQ"><span class="mw-linkback-text" id="mwng">↑</span></a></span> <span id="mw-reference-text-cite_note-Guth_2016_p.-1" class="mw-reference-text reference-text"><style data-mw-deduplicate="TemplateStyles:r1333433106" typeof="mw:Extension/templatestyles mw:Transclusion" about="#mwt1" id="mwnw" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite book ","href":"./Template:Cite_book"},"params":{"last":{"wt":"Guth"},"first":{"wt":"L."},"title":{"wt":"Polynomial Methods in Combinatorics"},"publisher":{"wt":"American Mathematical Society"},"series":{"wt":"University Lecture Series"},"year":{"wt":"2016"},"isbn":{"wt":"978-1-4704-2890-7"},"url":{"wt":"https://books.google.com/books?id=t9ZTDAAAQBAJ"},"access-date":{"wt":"2019-12-11"},"page":{"wt":""}},"i":0}}]}'>.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite id="CITEREFGuth2016" class="citation book cs1" about="#mwt1">Guth, L. (2016). <a rel="mw:ExtLink nofollow" href="https://books.google.com/books?id=t9ZTDAAAQBAJ" class="external text" id="mwoA"><i id="mwoQ">Polynomial Methods in Combinatorics</i></a>. University Lecture Series. American Mathematical Society. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISBN_(identifier)" title="ISBN (identifier)" class="mw-redirect" id="mwog">ISBN</a><span typeof="mw:Entity" id="mwow"> </span><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Special:BookSources/978-1-4704-2890-7" title="Special:BookSources/978-1-4704-2890-7" id="mwpA"><bdi id="mwpQ">978-1-4704-2890-7</bdi></a><span class="reference-accessdate" id="mwpg">. Retrieved <span class="nowrap" id="mwpw">2019-12-11</span></span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=book&amp;rft.btitle=Polynomial+Methods+in+Combinatorics&amp;rft.series=University+Lecture+Series&amp;rft.pub=American+Mathematical+Society&amp;rft.date=2016&amp;rft.isbn=978-1-4704-2890-7&amp;rft.aulast=Guth&amp;rft.aufirst=L.&amp;rft_id=https%3A%2F%2Fbooks.google.com%2Fbooks%3Fid%3Dt9ZTDAAAQBAJ&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APolynomial+method+in+combinatorics" class="Z3988" about="#mwt1" id="mwqA"></span></span></li>
+<li about="#cite_note-Alon1999-2" id="cite_note-Alon1999-2" data-mw-footnote-number="2"><span class="mw-cite-backlink" id="mwqQ"><a href="#cite_ref-Alon1999_2-0" rel="mw:referencedBy" id="mwqg"><span class="mw-linkback-text" id="mwqw">↑</span></a></span> <span id="mw-reference-text-cite_note-Alon1999-2" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt4" typeof="mw:Extension/templatestyles mw:Transclusion" id="mwrA" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite journal","href":"./Template:Cite_journal"},"params":{"last1":{"wt":"Alon"},"first1":{"wt":"Noga"},"title":{"wt":"Combinatorial Nullstellensatz"},"journal":{"wt":"Combinatorics, Probability and Computing"},"volume":{"wt":"8"},"issue":{"wt":"1–2"},"year":{"wt":"1999"},"pages":{"wt":"7–29"},"issn":{"wt":"0963-5483"},"doi":{"wt":"10.1017/S0963548398003411"},"s2cid":{"wt":"209877602"}},"i":0}}]}'/><cite id="CITEREFAlon1999" class="citation journal cs1" about="#mwt4">Alon, Noga (1999). "Combinatorial Nullstellensatz". <i id="mwrQ">Combinatorics, Probability and Computing</i>. <b id="mwrg">8</b> (<span class="nowrap" id="mwrw">1–</span>2): <span class="nowrap" id="mwsA">7–</span>29. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mwsQ">doi</a>:<a rel="mw:ExtLink nofollow" href="https://doi.org/10.1017%2FS0963548398003411" class="external text" id="mwsg">10.1017/S0963548398003411</a>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISSN_(identifier)" title="ISSN (identifier)" class="mw-redirect" id="mwsw">ISSN</a><span typeof="mw:Entity" id="mwtA"> </span><a rel="mw:ExtLink nofollow" href="https://search.worldcat.org/issn/0963-5483" class="external text" id="mwtQ">0963-5483</a>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/S2CID_(identifier)" title="S2CID (identifier)" class="mw-redirect" id="mwtg">S2CID</a><span typeof="mw:Entity" id="mwtw"> </span><a rel="mw:ExtLink nofollow" href="https://api.semanticscholar.org/CorpusID:209877602" class="external text" id="mwuA">209877602</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Combinatorics%2C+Probability+and+Computing&amp;rft.atitle=Combinatorial+Nullstellensatz&amp;rft.volume=8&amp;rft.issue=%3Cspan+class%3D%22nowrap%22%3E1%E2%80%93%3C%2Fspan%3E2&amp;rft.pages=7-29&amp;rft.date=1999&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A209877602%23id-name%3DS2CID&amp;rft.issn=0963-5483&amp;rft_id=info%3Adoi%2F10.1017%2FS0963548398003411&amp;rft.aulast=Alon&amp;rft.aufirst=Noga&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APolynomial+method+in+combinatorics" class="Z3988" about="#mwt4" id="mwuQ"></span></span></li>
+<li about="#cite_note-Dvir2008-3" id="cite_note-Dvir2008-3" data-mw-footnote-number="3"><span rel="mw:referencedBy" class="mw-cite-backlink" id="mwug"><a href="#cite_ref-Dvir2008_3-0" id="mwuw"><span class="mw-linkback-text" id="mwvA">1</span></a> <a href="#cite_ref-Dvir2008_3-1" id="mwvQ"><span class="mw-linkback-text" id="mwvg">2</span></a></span> <span id="mw-reference-text-cite_note-Dvir2008-3" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt7" typeof="mw:Extension/templatestyles mw:Transclusion" id="mwvw" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite journal","href":"./Template:Cite_journal"},"params":{"last1":{"wt":"Dvir"},"first1":{"wt":"Zeev"},"year":{"wt":"2008"},"title":{"wt":"On the size of Kakeya sets in finite fields"},"journal":{"wt":"Journal of the American Mathematical Society"},"volume":{"wt":"22"},"issue":{"wt":"4"},"pages":{"wt":"1093–1097"},"doi":{"wt":"10.1090/S0894-0347-08-00607-3"},"issn":{"wt":"0894-0347"},"doi-access":{"wt":"free"},"arxiv":{"wt":"0803.2336"}},"i":0}}]}'/><cite id="CITEREFDvir2008" class="citation journal cs1" about="#mwt7">Dvir, Zeev (2008). <a rel="mw:ExtLink nofollow" href="https://doi.org/10.1090%2FS0894-0347-08-00607-3" class="external text" id="mwwA">"On the size of Kakeya sets in finite fields"</a>. <i id="mwwQ">Journal of the American Mathematical Society</i>. <b id="mwwg">22</b> (4): <span class="nowrap" id="mwww">1093–</span>1097. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ArXiv_(identifier)" title="ArXiv (identifier)" class="mw-redirect" id="mwxA">arXiv</a>:<span class="id-lock-free" title="Freely accessible" id="mwxQ"><a rel="mw:ExtLink nofollow" href="https://arxiv.org/abs/0803.2336" class="external text" id="mwxg">0803.2336</a></span>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mwxw">doi</a>:<span class="id-lock-free" title="Freely accessible" id="mwyA"><a rel="mw:ExtLink nofollow" href="https://doi.org/10.1090%2FS0894-0347-08-00607-3" class="external text" id="mwyQ">10.1090/S0894-0347-08-00607-3</a></span>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISSN_(identifier)" title="ISSN (identifier)" class="mw-redirect" id="mwyg">ISSN</a><span typeof="mw:Entity" id="mwyw"> </span><a rel="mw:ExtLink nofollow" href="https://search.worldcat.org/issn/0894-0347" class="external text" id="mwzA">0894-0347</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+the+American+Mathematical+Society&amp;rft.atitle=On+the+size+of+Kakeya+sets+in+finite+fields&amp;rft.volume=22&amp;rft.issue=4&amp;rft.pages=1093-1097&amp;rft.date=2008&amp;rft_id=info%3Aarxiv%2F0803.2336&amp;rft.issn=0894-0347&amp;rft_id=info%3Adoi%2F10.1090%2FS0894-0347-08-00607-3&amp;rft.aulast=Dvir&amp;rft.aufirst=Zeev&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1090%252FS0894-0347-08-00607-3&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APolynomial+method+in+combinatorics" class="Z3988" about="#mwt7" id="mwzQ"></span></span></li>
+<li about="#cite_note-GuthKatz2015-4" id="cite_note-GuthKatz2015-4" data-mw-footnote-number="4"><span rel="mw:referencedBy" class="mw-cite-backlink" id="mwzg"><a href="#cite_ref-GuthKatz2015_4-0" id="mwzw"><span class="mw-linkback-text" id="mw0A">1</span></a> <a href="#cite_ref-GuthKatz2015_4-1" id="mw0Q"><span class="mw-linkback-text" id="mw0g">2</span></a></span> <span id="mw-reference-text-cite_note-GuthKatz2015-4" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt60" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw0w" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite journal","href":"./Template:Cite_journal"},"params":{"last1":{"wt":"Guth"},"first1":{"wt":"Larry"},"last2":{"wt":"Katz"},"first2":{"wt":"Nets"},"year":{"wt":"2015"},"title":{"wt":"On the Erdős distinct distances problem in the plane"},"journal":{"wt":"Annals of Mathematics"},"pages":{"wt":"155–190"},"doi":{"wt":"10.4007/annals.2015.181.1.2"},"issn":{"wt":"0003-486X"},"hdl":{"wt":"1721.1/92873"},"s2cid":{"wt":"43051852"},"hdl-access":{"wt":"free"}},"i":0}}]}'/><cite id="CITEREFGuthKatz2015" class="citation journal cs1" about="#mwt60">Guth, Larry; Katz, Nets (2015). "On the Erdős distinct distances problem in the plane". <i id="mw1A">Annals of Mathematics</i>: <span class="nowrap" id="mw1Q">155–</span>190. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mw1g">doi</a>:<a rel="mw:ExtLink nofollow" href="https://doi.org/10.4007%2Fannals.2015.181.1.2" class="external text" id="mw1w">10.4007/annals.2015.181.1.2</a>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Hdl_(identifier)" title="Hdl (identifier)" class="mw-redirect" id="mw2A">hdl</a>:<span class="id-lock-free" title="Freely accessible" id="mw2Q"><a rel="mw:ExtLink nofollow" href="https://hdl.handle.net/1721.1%2F92873" class="external text" id="mw2g">1721.1/92873</a></span>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISSN_(identifier)" title="ISSN (identifier)" class="mw-redirect" id="mw2w">ISSN</a><span typeof="mw:Entity" id="mw3A"> </span><a rel="mw:ExtLink nofollow" href="https://search.worldcat.org/issn/0003-486X" class="external text" id="mw3Q">0003-486X</a>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/S2CID_(identifier)" title="S2CID (identifier)" class="mw-redirect" id="mw3g">S2CID</a><span typeof="mw:Entity" id="mw3w"> </span><a rel="mw:ExtLink nofollow" href="https://api.semanticscholar.org/CorpusID:43051852" class="external text" id="mw4A">43051852</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Annals+of+Mathematics&amp;rft.atitle=On+the+Erd%C5%91s+distinct+distances+problem+in+the+plane&amp;rft.pages=155-190&amp;rft.date=2015&amp;rft_id=info%3Ahdl%2F1721.1%2F92873&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A43051852%23id-name%3DS2CID&amp;rft.issn=0003-486X&amp;rft_id=info%3Adoi%2F10.4007%2Fannals.2015.181.1.2&amp;rft.aulast=Guth&amp;rft.aufirst=Larry&amp;rft.au=Katz%2C+Nets&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APolynomial+method+in+combinatorics" class="Z3988" about="#mwt60" id="mw4Q"></span></span></li>
+<li about="#cite_note-KaplanMatoušek2012-5" id="cite_note-KaplanMatoušek2012-5" data-mw-footnote-number="5"><span class="mw-cite-backlink" id="mw4g"><a href="#cite_ref-KaplanMatoušek2012_5-0" rel="mw:referencedBy" id="mw4w"><span class="mw-linkback-text" id="mw5A">↑</span></a></span> <span id="mw-reference-text-cite_note-KaplanMatoušek2012-5" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt63" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw5Q" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite journal","href":"./Template:Cite_journal"},"params":{"last1":{"wt":"Kaplan"},"first1":{"wt":"Haim"},"last2":{"wt":"Matoušek"},"first2":{"wt":"Jiří"},"authorlink2":{"wt":"Jiří Matoušek (mathematician)"},"last3":{"wt":"Sharir"},"first3":{"wt":"Micha"},"authorlink3":{"wt":"Micha  Sharir"},"title":{"wt":"Simple Proofs of Classical Theorems in Discrete Geometry via the Guth–Katz Polynomial Partitioning Technique"},"journal":{"wt":"[[Discrete &amp; Computational Geometry]]"},"volume":{"wt":"48"},"issue":{"wt":"3"},"year":{"wt":"2012"},"pages":{"wt":"499–517"},"issn":{"wt":"0179-5376"},"doi":{"wt":"10.1007/s00454-012-9443-3"},"arxiv":{"wt":"1102.5391"},"s2cid":{"wt":"254037375"}},"i":0}}]}'/><cite id="CITEREFKaplanMatoušekSharir2012" class="citation journal cs1" about="#mwt63">Kaplan, Haim; <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Jiří_Matoušek_(mathematician)" title="Jiří Matoušek (mathematician)" id="mw5g">Matoušek, Jiří</a>; <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Micha_Sharir" title="Micha Sharir" id="mw5w">Sharir, Micha</a> (2012). "Simple Proofs of Classical Theorems in Discrete Geometry via the Guth–Katz Polynomial Partitioning Technique". <i id="mw6A"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Discrete_&amp;_Computational_Geometry" title="Discrete &amp; Computational Geometry" id="mw6Q">Discrete &amp; Computational Geometry</a></i>. <b id="mw6g">48</b> (3): <span class="nowrap" id="mw6w">499–</span>517. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ArXiv_(identifier)" title="ArXiv (identifier)" class="mw-redirect" id="mw7A">arXiv</a>:<span class="id-lock-free" title="Freely accessible" id="mw7Q"><a rel="mw:ExtLink nofollow" href="https://arxiv.org/abs/1102.5391" class="external text" id="mw7g">1102.5391</a></span>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mw7w">doi</a>:<a rel="mw:ExtLink nofollow" href="https://doi.org/10.1007%2Fs00454-012-9443-3" class="external text" id="mw8A">10.1007/s00454-012-9443-3</a>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISSN_(identifier)" title="ISSN (identifier)" class="mw-redirect" id="mw8Q">ISSN</a><span typeof="mw:Entity" id="mw8g"> </span><a rel="mw:ExtLink nofollow" href="https://search.worldcat.org/issn/0179-5376" class="external text" id="mw8w">0179-5376</a>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/S2CID_(identifier)" title="S2CID (identifier)" class="mw-redirect" id="mw9A">S2CID</a><span typeof="mw:Entity" id="mw9Q"> </span><a rel="mw:ExtLink nofollow" href="https://api.semanticscholar.org/CorpusID:254037375" class="external text" id="mw9g">254037375</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Discrete+%26+Computational+Geometry&amp;rft.atitle=Simple+Proofs+of+Classical+Theorems+in+Discrete+Geometry+via+the+Guth%E2%80%93Katz+Polynomial+Partitioning+Technique&amp;rft.volume=48&amp;rft.issue=3&amp;rft.pages=499-517&amp;rft.date=2012&amp;rft_id=info%3Aarxiv%2F1102.5391&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A254037375%23id-name%3DS2CID&amp;rft.issn=0179-5376&amp;rft_id=info%3Adoi%2F10.1007%2Fs00454-012-9443-3&amp;rft.aulast=Kaplan&amp;rft.aufirst=Haim&amp;rft.au=Matou%C5%A1ek%2C+Ji%C5%99%C3%AD&amp;rft.au=Sharir%2C+Micha&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APolynomial+method+in+combinatorics" class="Z3988" about="#mwt63" id="mw9w"></span></span></li>
+<li about="#cite_note-Dvir2012-6" id="cite_note-Dvir2012-6" data-mw-footnote-number="6"><span class="mw-cite-backlink" id="mw-A"><a href="#cite_ref-Dvir2012_6-0" rel="mw:referencedBy" id="mw-Q"><span class="mw-linkback-text" id="mw-g">↑</span></a></span> <span id="mw-reference-text-cite_note-Dvir2012-6" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt66" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw-w" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite journal","href":"./Template:Cite_journal"},"params":{"last1":{"wt":"Dvir"},"first1":{"wt":"Zeev"},"year":{"wt":"2012"},"title":{"wt":"Incidence Theorems and Their Applications"},"journal":{"wt":"Foundations and Trends in Theoretical Computer Science"},"volume":{"wt":"6"},"issue":{"wt":"4"},"pages":{"wt":"257–393"},"doi":{"wt":"10.1561/0400000056"},"issn":{"wt":"1551-305X"},"bibcode":{"wt":"2012arXiv1208.5073D"},"arxiv":{"wt":"1208.5073"},"s2cid":{"wt":"15932528"}},"i":0}}]}'/><cite id="CITEREFDvir2012" class="citation journal cs1" about="#mwt66">Dvir, Zeev (2012). "Incidence Theorems and Their Applications". <i id="mw_A">Foundations and Trends in Theoretical Computer Science</i>. <b id="mw_Q">6</b> (4): <span class="nowrap" id="mw_g">257–</span>393. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ArXiv_(identifier)" title="ArXiv (identifier)" class="mw-redirect" id="mw_w">arXiv</a>:<span class="id-lock-free" title="Freely accessible" id="mwAQA"><a rel="mw:ExtLink nofollow" href="https://arxiv.org/abs/1208.5073" class="external text" id="mwAQE">1208.5073</a></span>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Bibcode_(identifier)" title="Bibcode (identifier)" class="mw-redirect" id="mwAQI">Bibcode</a>:<a rel="mw:ExtLink nofollow" href="https://ui.adsabs.harvard.edu/abs/2012arXiv1208.5073D" class="external text" id="mwAQM">2012arXiv1208.5073D</a>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mwAQQ">doi</a>:<a rel="mw:ExtLink nofollow" href="https://doi.org/10.1561%2F0400000056" class="external text" id="mwAQU">10.1561/0400000056</a>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISSN_(identifier)" title="ISSN (identifier)" class="mw-redirect" id="mwAQY">ISSN</a><span typeof="mw:Entity" id="mwAQc"> </span><a rel="mw:ExtLink nofollow" href="https://search.worldcat.org/issn/1551-305X" class="external text" id="mwAQg">1551-305X</a>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/S2CID_(identifier)" title="S2CID (identifier)" class="mw-redirect" id="mwAQk">S2CID</a><span typeof="mw:Entity" id="mwAQo"> </span><a rel="mw:ExtLink nofollow" href="https://api.semanticscholar.org/CorpusID:15932528" class="external text" id="mwAQs">15932528</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Foundations+and+Trends+in+Theoretical+Computer+Science&amp;rft.atitle=Incidence+Theorems+and+Their+Applications&amp;rft.volume=6&amp;rft.issue=4&amp;rft.pages=257-393&amp;rft.date=2012&amp;rft_id=https%3A%2F%2Fapi.semanticscholar.org%2FCorpusID%3A15932528%23id-name%3DS2CID&amp;rft_id=info%3Abibcode%2F2012arXiv1208.5073D&amp;rft_id=info%3Aarxiv%2F1208.5073&amp;rft.issn=1551-305X&amp;rft_id=info%3Adoi%2F10.1561%2F0400000056&amp;rft.aulast=Dvir&amp;rft.aufirst=Zeev&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APolynomial+method+in+combinatorics" class="Z3988" about="#mwt66" id="mwAQw"></span></span></li>
+<li about="#cite_note-EllenbergGijswijt20172-7" id="cite_note-EllenbergGijswijt20172-7" data-mw-footnote-number="7"><span class="mw-cite-backlink" id="mwAQ0"><a href="#cite_ref-EllenbergGijswijt20172_7-0" rel="mw:referencedBy" id="mwAQ4"><span class="mw-linkback-text" id="mwAQ8">↑</span></a></span> <span id="mw-reference-text-cite_note-EllenbergGijswijt20172-7" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt70" typeof="mw:Extension/templatestyles mw:Transclusion" id="mwARA" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite journal","href":"./Template:Cite_journal"},"params":{"last1":{"wt":"Ellenberg"},"first1":{"wt":"Jordan"},"last2":{"wt":"Gijswijt"},"first2":{"wt":"Dion"},"year":{"wt":"2017"},"title":{"wt":"On large subsets of &lt;math>\\mathbb{F}_q^n &lt;/math> with no three-term arithmetic progression"},"journal":{"wt":"Annals of Mathematics"},"volume":{"wt":"185"},"issue":{"wt":"1"},"pages":{"wt":"339–343"},"doi":{"wt":"10.4007/annals.2017.185.1.8"},"issn":{"wt":"0003-486X"},"url":{"wt":"http://resolver.tudelft.nl/uuid:24934b91-cb43-49ef-9423-731dd1fb9306"}},"i":0}}]}'/><cite id="CITEREFEllenbergGijswijt2017" class="citation journal cs1" about="#mwt70">Ellenberg, Jordan; Gijswijt, Dion (2017). <a rel="mw:ExtLink nofollow" href="http://resolver.tudelft.nl/uuid:24934b91-cb43-49ef-9423-731dd1fb9306" class="external text" id="mwARE">"On large subsets of <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt72" id="mwARI" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\mathbb{F}_q^n "}}'><span class="mwe-math-mathml-a11y" style="display: none;" id="mwARM"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \mathbb {F} _{q}^{n}}" id="mwARQ">
+  <semantics id="mwARU">
+    <mrow class="MJX-TeXAtom-ORD" id="mwARY">
+      <mstyle displaystyle="true" scriptlevel="0" id="mwARc">
+        <msubsup id="mwARg">
+          <mrow class="MJX-TeXAtom-ORD" id="mwARk">
+            <mi mathvariant="double-struck" id="mwARo">F</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD" id="mwARs">
+            <mi id="mwARw">q</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD" id="mwAR0">
+            <mi id="mwAR4">n</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex" id="mwAR8">{\displaystyle \mathbb {F} _{q}^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/0a630603c6f2f8f58f5d1fb9ef1b9ad194e258a2" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -1.171ex; width:2.639ex; height:3.176ex;" alt="{\displaystyle \mathbb {F} _{q}^{n}}" id="mwASA"/></span> with no three-term arithmetic progression"</a>. <i id="mwASE">Annals of Mathematics</i>. <b id="mwASI">185</b> (1): <span class="nowrap" id="mwASM">339–</span>343. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mwASQ">doi</a>:<a rel="mw:ExtLink nofollow" href="https://doi.org/10.4007%2Fannals.2017.185.1.8" class="external text" id="mwASU">10.4007/annals.2017.185.1.8</a>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISSN_(identifier)" title="ISSN (identifier)" class="mw-redirect" id="mwASY">ISSN</a><span typeof="mw:Entity" id="mwASc"> </span><a rel="mw:ExtLink nofollow" href="https://search.worldcat.org/issn/0003-486X" class="external text" id="mwASg">0003-486X</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Annals+of+Mathematics&amp;rft.atitle=On+large+subsets+of+MATH+RENDER+ERROR+with+no+three-term+arithmetic+progression&amp;rft.volume=185&amp;rft.issue=1&amp;rft.pages=339-343&amp;rft.date=2017&amp;rft_id=info%3Adoi%2F10.4007%2Fannals.2017.185.1.8&amp;rft.issn=0003-486X&amp;rft.aulast=Ellenberg&amp;rft.aufirst=Jordan&amp;rft.au=Gijswijt%2C+Dion&amp;rft_id=http%3A%2F%2Fresolver.tudelft.nl%2Fuuid%3A24934b91-cb43-49ef-9423-731dd1fb9306&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APolynomial+method+in+combinatorics" class="Z3988" about="#mwt70" id="mwASk"></span></span></li>
+<li about="#cite_note-CrootLev2017-8" id="cite_note-CrootLev2017-8" data-mw-footnote-number="8"><span class="mw-cite-backlink" id="mwASo"><a href="#cite_ref-CrootLev2017_8-0" rel="mw:referencedBy" id="mwASs"><span class="mw-linkback-text" id="mwASw">↑</span></a></span> <span id="mw-reference-text-cite_note-CrootLev2017-8" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt75" typeof="mw:Extension/templatestyles mw:Transclusion" id="mwAS0" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite journal","href":"./Template:Cite_journal"},"params":{"last1":{"wt":"Croot"},"first1":{"wt":"Ernie"},"last2":{"wt":"Lev"},"first2":{"wt":"Vsevolod"},"last3":{"wt":"Pach"},"first3":{"wt":"Péter"},"title":{"wt":"Progression-free sets in &lt;math>\\mathbb{Z}_4^n&lt;/math> are exponentially small"},"journal":{"wt":"Annals of Mathematics"},"volume":{"wt":"185"},"issue":{"wt":"1"},"year":{"wt":"2017"},"pages":{"wt":"331–337"},"issn":{"wt":"0003-486X"},"doi":{"wt":"10.4007/annals.2017.185.1.7"},"url":{"wt":"http://real.mtak.hu/62116/1/prog_free.pdf"}},"i":0}}]}'/><cite id="CITEREFCrootLevPach2017" class="citation journal cs1" about="#mwt75">Croot, Ernie; Lev, Vsevolod; Pach, Péter (2017). <a rel="mw:ExtLink nofollow" href="http://real.mtak.hu/62116/1/prog_free.pdf" class="external text" id="mwAS4">"Progression-free sets in <span class="mwe-math-element mwe-math-element-inline" typeof="mw:Extension/math" about="#mwt77" id="mwAS8" data-mw='{"name":"math","attrs":{},"body":{"extsrc":"\\mathbb{Z}_4^n"}}'><span class="mwe-math-mathml-a11y" style="display: none;" id="mwATA"><math xmlns="http://www.w3.org/1998/Math/MathML" class="mathjax_ignore" alttext="{\displaystyle \mathbb {Z} _{4}^{n}}" id="mwATE">
+  <semantics id="mwATI">
+    <mrow class="MJX-TeXAtom-ORD" id="mwATM">
+      <mstyle displaystyle="true" scriptlevel="0" id="mwATQ">
+        <msubsup id="mwATU">
+          <mrow class="MJX-TeXAtom-ORD" id="mwATY">
+            <mi mathvariant="double-struck" id="mwATc">Z</mi>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD" id="mwATg">
+            <mn id="mwATk">4</mn>
+          </mrow>
+          <mrow class="MJX-TeXAtom-ORD" id="mwATo">
+            <mi id="mwATs">n</mi>
+          </mrow>
+        </msubsup>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex" id="mwATw">{\displaystyle \mathbb {Z} _{4}^{n}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2a6a2c26b1974882216cbf4217063a9caebde95d" class="mwe-math-fallback-image-inline mw-invert skin-invert" aria-hidden="true" style="vertical-align: -0.838ex; width:2.769ex; height:2.843ex;" alt="{\displaystyle \mathbb {Z} _{4}^{n}}" id="mwAT0"/></span> are exponentially small"</a> <span class="cs1-format" id="mwAT4">(PDF)</span>. <i id="mwAT8">Annals of Mathematics</i>. <b id="mwAUA">185</b> (1): <span class="nowrap" id="mwAUE">331–</span>337. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mwAUI">doi</a>:<a rel="mw:ExtLink nofollow" href="https://doi.org/10.4007%2Fannals.2017.185.1.7" class="external text" id="mwAUM">10.4007/annals.2017.185.1.7</a>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISSN_(identifier)" title="ISSN (identifier)" class="mw-redirect" id="mwAUQ">ISSN</a><span typeof="mw:Entity" id="mwAUU"> </span><a rel="mw:ExtLink nofollow" href="https://search.worldcat.org/issn/0003-486X" class="external text" id="mwAUY">0003-486X</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Annals+of+Mathematics&amp;rft.atitle=Progression-free+sets+in+MATH+RENDER+ERROR+are+exponentially+small&amp;rft.volume=185&amp;rft.issue=1&amp;rft.pages=331-337&amp;rft.date=2017&amp;rft_id=info%3Adoi%2F10.4007%2Fannals.2017.185.1.7&amp;rft.issn=0003-486X&amp;rft.aulast=Croot&amp;rft.aufirst=Ernie&amp;rft.au=Lev%2C+Vsevolod&amp;rft.au=Pach%2C+P%C3%A9ter&amp;rft_id=http%3A%2F%2Freal.mtak.hu%2F62116%2F1%2Fprog_free.pdf&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APolynomial+method+in+combinatorics" class="Z3988" about="#mwt75" id="mwAUc"></span></span></li>
+<li about="#cite_note-GuthKatz2010-9" id="cite_note-GuthKatz2010-9" data-mw-footnote-number="9"><span class="mw-cite-backlink" id="mwAUg"><a href="#cite_ref-GuthKatz2010_9-0" rel="mw:referencedBy" id="mwAUk"><span class="mw-linkback-text" id="mwAUo">↑</span></a></span> <span id="mw-reference-text-cite_note-GuthKatz2010-9" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt80" typeof="mw:Extension/templatestyles mw:Transclusion" id="mwAUs" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite journal","href":"./Template:Cite_journal"},"params":{"last1":{"wt":"Guth"},"first1":{"wt":"Larry"},"authorlink1":{"wt":"Larry Guth"},"last2":{"wt":"Katz"},"first2":{"wt":"Nets Hawk"},"author2-link":{"wt":"Nets Katz"},"title":{"wt":"Algebraic methods in discrete analogs of the Kakeya problem"},"journal":{"wt":"[[Advances in Mathematics]]"},"volume":{"wt":"225"},"issue":{"wt":"5"},"year":{"wt":"2010"},"pages":{"wt":"2828–2839"},"issn":{"wt":"0001-8708"},"doi":{"wt":"10.1016/j.aim.2010.05.015"},"doi-access":{"wt":"free"},"arxiv":{"wt":"0812.1043"}},"i":0}}]}'/><cite id="CITEREFGuthKatz2010" class="citation journal cs1" about="#mwt80"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Larry_Guth" title="Larry Guth" id="mwAUw">Guth, Larry</a>; <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Nets_Katz" title="Nets Katz" id="mwAU0">Katz, Nets Hawk</a> (2010). <a rel="mw:ExtLink nofollow" href="https://doi.org/10.1016%2Fj.aim.2010.05.015" class="external text" id="mwAU4">"Algebraic methods in discrete analogs of the Kakeya problem"</a>. <i id="mwAU8"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Advances_in_Mathematics" title="Advances in Mathematics" id="mwAVA">Advances in Mathematics</a></i>. <b id="mwAVE">225</b> (5): <span class="nowrap" id="mwAVI">2828–</span>2839. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ArXiv_(identifier)" title="ArXiv (identifier)" class="mw-redirect" id="mwAVM">arXiv</a>:<span class="id-lock-free" title="Freely accessible" id="mwAVQ"><a rel="mw:ExtLink nofollow" href="https://arxiv.org/abs/0812.1043" class="external text" id="mwAVU">0812.1043</a></span>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mwAVY">doi</a>:<span class="id-lock-free" title="Freely accessible" id="mwAVc"><a rel="mw:ExtLink nofollow" href="https://doi.org/10.1016%2Fj.aim.2010.05.015" class="external text" id="mwAVg">10.1016/j.aim.2010.05.015</a></span>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISSN_(identifier)" title="ISSN (identifier)" class="mw-redirect" id="mwAVk">ISSN</a><span typeof="mw:Entity" id="mwAVo"> </span><a rel="mw:ExtLink nofollow" href="https://search.worldcat.org/issn/0001-8708" class="external text" id="mwAVs">0001-8708</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Advances+in+Mathematics&amp;rft.atitle=Algebraic+methods+in+discrete+analogs+of+the+Kakeya+problem&amp;rft.volume=225&amp;rft.issue=5&amp;rft.pages=2828-2839&amp;rft.date=2010&amp;rft_id=info%3Aarxiv%2F0812.1043&amp;rft.issn=0001-8708&amp;rft_id=info%3Adoi%2F10.1016%2Fj.aim.2010.05.015&amp;rft.aulast=Guth&amp;rft.aufirst=Larry&amp;rft.au=Katz%2C+Nets+Hawk&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1016%252Fj.aim.2010.05.015&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APolynomial+method+in+combinatorics" class="Z3988" about="#mwt80" id="mwAVw"></span></span></li>
+<li about="#cite_note-ElekesKaplan2011-10" id="cite_note-ElekesKaplan2011-10" data-mw-footnote-number="10"><span class="mw-cite-backlink" id="mwAV0"><a href="#cite_ref-ElekesKaplan2011_10-0" rel="mw:referencedBy" id="mwAV4"><span class="mw-linkback-text" id="mwAV8">↑</span></a></span> <span id="mw-reference-text-cite_note-ElekesKaplan2011-10" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt83" typeof="mw:Extension/templatestyles mw:Transclusion" id="mwAWA" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite journal","href":"./Template:Cite_journal"},"params":{"last1":{"wt":"Elekes"},"first1":{"wt":"György"},"last2":{"wt":"Kaplan"},"first2":{"wt":"Haim"},"last3":{"wt":"Sharir"},"first3":{"wt":"Micha"},"authorlink3":{"wt":"Micha Sharir"},"year":{"wt":"2011"},"title":{"wt":"On lines, joints, and incidences in three dimensions"},"journal":{"wt":"[[Journal of Combinatorial Theory]]"},"series":{"wt":"Series A"},"volume":{"wt":"118"},"issue":{"wt":"3"},"pages":{"wt":"962–977"},"doi":{"wt":"10.1016/j.jcta.2010.11.008"},"doi-access":{"wt":"free"},"issn":{"wt":"0097-3165"},"hdl":{"wt":"10831/47842"},"hdl-access":{"wt":"free"},"arxiv":{"wt":"0905.1583"}},"i":0}}]}'/><cite id="CITEREFElekesKaplanSharir2011" class="citation journal cs1" about="#mwt83">Elekes, György; Kaplan, Haim; <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Micha_Sharir" title="Micha Sharir" id="mwAWE">Sharir, Micha</a> (2011). <a rel="mw:ExtLink nofollow" href="https://doi.org/10.1016%2Fj.jcta.2010.11.008" class="external text" id="mwAWI">"On lines, joints, and incidences in three dimensions"</a>. <i id="mwAWM"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Journal_of_Combinatorial_Theory" title="Journal of Combinatorial Theory" id="mwAWQ">Journal of Combinatorial Theory</a></i>. Series A. <b id="mwAWU">118</b> (3): <span class="nowrap" id="mwAWY">962–</span>977. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ArXiv_(identifier)" title="ArXiv (identifier)" class="mw-redirect" id="mwAWc">arXiv</a>:<span class="id-lock-free" title="Freely accessible" id="mwAWg"><a rel="mw:ExtLink nofollow" href="https://arxiv.org/abs/0905.1583" class="external text" id="mwAWk">0905.1583</a></span>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mwAWo">doi</a>:<span class="id-lock-free" title="Freely accessible" id="mwAWs"><a rel="mw:ExtLink nofollow" href="https://doi.org/10.1016%2Fj.jcta.2010.11.008" class="external text" id="mwAWw">10.1016/j.jcta.2010.11.008</a></span>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Hdl_(identifier)" title="Hdl (identifier)" class="mw-redirect" id="mwAW0">hdl</a>:<span class="id-lock-free" title="Freely accessible" id="mwAW4"><a rel="mw:ExtLink nofollow" href="https://hdl.handle.net/10831%2F47842" class="external text" id="mwAW8">10831/47842</a></span>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISSN_(identifier)" title="ISSN (identifier)" class="mw-redirect" id="mwAXA">ISSN</a><span typeof="mw:Entity" id="mwAXE"> </span><a rel="mw:ExtLink nofollow" href="https://search.worldcat.org/issn/0097-3165" class="external text" id="mwAXI">0097-3165</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Journal+of+Combinatorial+Theory&amp;rft.atitle=On+lines%2C+joints%2C+and+incidences+in+three+dimensions&amp;rft.volume=118&amp;rft.issue=3&amp;rft.pages=962-977&amp;rft.date=2011&amp;rft_id=info%3Aarxiv%2F0905.1583&amp;rft.issn=0097-3165&amp;rft_id=info%3Ahdl%2F10831%2F47842&amp;rft_id=info%3Adoi%2F10.1016%2Fj.jcta.2010.11.008&amp;rft.aulast=Elekes&amp;rft.aufirst=Gy%C3%B6rgy&amp;rft.au=Kaplan%2C+Haim&amp;rft.au=Sharir%2C+Micha&amp;rft_id=https%3A%2F%2Fdoi.org%2F10.1016%252Fj.jcta.2010.11.008&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3APolynomial+method+in+combinatorics" class="Z3988" about="#mwt83" id="mwAXM"></span></span></li>
+</ol></div>
+
+</section><section data-mw-section-id="7" id="mwAXQ" aria-labelledby="External_links"><div class="mw-heading mw-heading2"><h2 id="External_links">External links</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Polynomial_method_in_combinatorics&amp;action=edit&amp;section=7" title="Edit section: External links"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul id="mwAXU"><li id="mwAXY"><a rel="mw:ExtLink nofollow" href="https://arxiv.org/abs/1310.6482" class="external text" id="mwAXc">Survey on the Polynomial Method</a> by Terence Tao</li>
+<li id="mwAXg"><a rel="mw:ExtLink nofollow" href="http://math.mit.edu/~lguth/Exposition/erdossurvey.pdf" class="external text" id="mwAXk">Survey on the Polynomial Method</a> by Larry Guth</li></ul>
+
+<link rel="mw:PageProp/Category" href="./Category:Combinatorics" id="mwAXo"/></section>
+<!-- 
+NewPP limit report
+Parsed by mw‐api‐int.eqiad.main‐547849799c‐8nhbf
+Cached time: 20261019101040
+Cache expiry: 2592000
+Cache expiry source: Module:Citation/CS1 (os.date(%Y))
+Reduced expiry: false
+Complications: [vary‐revision‐sha1, show‐toc, use‐parsoid]
+CPU time usage: 0.378 seconds
+Real time usage: 1.569 seconds
+Preprocessor visited node count: 662/1000000
+Revision size: 9563/2097152 bytes
+Post‐expand include size: 25804/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 4/100
+Expensive parser function count: 1/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 24723/5000000 bytes
+Lua time usage: 0.059/10.000 seconds
+Lua memory usage: 4421837/52428800 bytes
+Number of Wikibase entities loaded: 0/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00% 1443.686      1 -total
+  2.90%   41.837      9 Template:Cite_journal
+  2.58%   37.224      1 Template:Cite_book
+-->
+
+<!-- Render ID 561d5f4e-cba5-11f1-8c2f-8184b433a882 -->
+
+<!-- Saved in parser cache with key enwiki:parsoid-pcache:62461655:|#|:idhash:useParsoid=1 and timestamp 20261019101040 and revision id 1380998454. Rendering was triggered because: MediaWiki\Rest\Handler\Helper\HtmlOutputRendererHelper::getParserOutput
+ -->
+
+<!-- Parsoid 0.24.0.0-alpha27 -->
+</div><!--
+Post‐processing cache key enwiki:postproc‐parsoid‐pcache:62461655:|#|:idhash:injectTOC=0!postproc=1!skin=vector‐2022!useParsoid=1!visibleLinks=single, generated at 20261019101046
+--><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Polynomial_method_in_combinatorics&amp;oldid=1380998454">https://en.wikipedia.org/w/index.php?title=Polynomial_method_in_combinatorics&amp;oldid=1380998454</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw-interface=""><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Category</a>: <ul><li><a href="/wiki/Category:Combinatorics" title="Category:Combinatorics">Combinatorics</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			<footer id="footer" class="mw-footer" >
+				<ul id="footer-info" class="mw-portlet mw-portlet-footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 19 October 2026, at 10:10<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-renderedwith">Page was rendered with <a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid" class="extiw" title="mw:Special:MyLanguage/Parsoid">Parsoid</a>.</li>
+	<li id="footer-info-copyright">Text is available under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">Creative Commons Attribution-ShareAlike 4.0 License</a>;
+additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy" class="extiw" title="foundation:Special:MyLanguage/Policy:Privacy policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+				<ul id="footer-places" class="mw-portlet mw-portlet-footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-legal-safety-contacts"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information">Legal &amp; safety contacts</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.wikipedia.org/w/index.php?title=Polynomial_method_in_combinatorics&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+				<ul id="footer-icons" class="mw-portlet mw-portlet-footer-icons noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+			</footer>
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"   >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span lang="en" dir="ltr"><span class="mw-page-title-main">Polynomial method in combinatorics</span></span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock cdx-button__icon"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language cdx-button__icon"></span>
+
+<span>Add languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive cdx-button__icon"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.codfw.main-b8fdf46bd-f7sk2","wgBackendResponseTime":104,"wgPageParseReport":{"limitreport":{"cputime":"0.378","walltime":"1.569","ppvisitednodes":{"value":662,"limit":1000000},"revisionsize":{"value":9563,"limit":2097152},"postexpandincludesize":{"value":25804,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":4,"limit":100},"expensivefunctioncount":{"value":1,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":24723,"limit":5000000},"entityaccesscount":{"value":0,"limit":500},"timingprofile":["100.00% 1443.686      1 -total","  2.90%   41.837      9 Template:Cite_journal","  2.58%   37.224      1 Template:Cite_book"]},"scribunto":{"limitreport-timeusage":{"value":"0.059","limit":"10.000"},"limitreport-memusage":{"value":4421837,"limit":52428800}},"cachereport":{"origin":"mw-api-int.eqiad.main-547849799c-8nhbf","timestamp":"20261019101040","ttl":2592000,"transientcontent":false,"expiry-source":"Module:Citation/CS1 (os.date(%Y))"}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Polynomial method in combinatorics","url":"https:\/\/en.wikipedia.org\/wiki\/Polynomial_method_in_combinatorics","sameAs":"http:\/\/www.wikidata.org\/entity\/Q97359605","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q97359605","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2019-11-29T20:12:13Z","dateModified":"2026-10-19T10:10:36Z"}</script>
+</body>
+</html>

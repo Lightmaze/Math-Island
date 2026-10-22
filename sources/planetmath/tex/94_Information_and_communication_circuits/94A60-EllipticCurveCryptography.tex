@@ -1,0 +1,127 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EllipticCurveCryptography}
+\pmcreated{2013-03-22 17:00:52}
+\pmmodified{2013-03-22 17:00:52}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{elliptic curve cryptography}
+\pmrecord{7}{39297}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94A60}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\em Elliptic curve cryptography} (ECC) is an approach to public-key cryptography based on the algebraic structure of elliptic curves over finite fields. The use of elliptic curves in cryptography was suggested independently by Neal Koblitz and Victor S. Miller in 1985.
+
+Elliptic curves are also used in several integer factorization algorithms that have applications in cryptography, such as, for instance, Lenstra elliptic curve factorization, but this use of elliptic curves is ''not'' usually referred to as "elliptic curve cryptography."
+
+An elliptic curve is a plane curve defined by an equation of the form $y^2 = x^3 + a x + b$. 
+
+The set of points on such a curve (i.e., all solutions of the equation together with a point at infinity) can be shown to form an abelian group (with the point at infinity as identity element). If the coordinates $x$ and $y$ are chosen from a large finite field, the solutions form a finite abelian group. The discrete logarithm problem on such elliptic curve groups is believed to be more difficult than the corresponding problem in (the multiplicative group of nonzero elements of) the underlying finite field. Thus keys in elliptic curve cryptography can be chosen to be much shorter for a comparable level of security. 
+
+As for other popular public key cryptosystems, no mathematical proof of difficulty has been published for ECC as of 2006. However, the U.S. National Security Agency has endorsed ECC technology by including it in its Suite B set of recommended algorithms. Although the RSA patent has expired, there are patents in force covering some aspects of ECC.
+
+Elliptic curves used in cryptography are typically defined over two types of finite fields: fields of odd characteristic ($\mathbb{F}_p$, where $p > 3$ is a large prime number) and fields of characteristic two ($\mathbb{F}_{2^m}$). When the distinction is not important we denote both of them as $\mathbb{F}_q$, where $q = p$ or $q = 2^m$. In $\mathbb{F}_p$ the elements are integers ($0 \le x < p$) which are combined using modular arithmetic. The case of $\mathbb{F}_{2^m}$ is slightly more complicated (see finite field arithmetic for details): one obtains different representations of the field elements as bitstrings for each choice of irreducible binary polynomial $f(x)$ of degree $m$. But it is perfectly possible to construct elliptic curves using other finite fields. Specifically, finite fields of order $p^m$ where $p$ is a prime are possible. Some optimized implementations have a field of characteristic 3. Large finite fields with moderate size odd characteristics are also known to be convenient for implementation on personal computers. These are known as Optimal Extension Fields (OEFs). In an OEF, a prime $p$ is chosen to be a prime that is slightly smaller than the word size of the computer. This makes computation particularly fast because one can use the built in arithmetic operations to perform the computation.
+
+The set of all pairs of affine coordinates $(x, y)$ for $x, y \in \mathbb{F}_q$ form the affine plane $\mathbb{F}_q \times \mathbb{F}_q$. An elliptic curve is the locus of points in the affine plane whose coordinates satisfy a certain cubic equation together with a point at infinity $O$ (the point at which the locus in the projective plane intersects the line at infinity). In the case of characteristic p > 3 the ''defining equation'' of $E(\mathbb{F}_p)$ can be written: $y^2 = x^3 + a x + b\, $ where $a \in \mathbb{F}_p$ and $b \in \mathbb{F}_p$ are constants such that $4 a^3 + 27 b^2 \ne 0$. In the binary case the defining equation of $E(\mathbb{F}_{2^m})$ can be written: $y^2 + x y = x^3 + a x^2 + b \, $ where $a \in \mathbb{F}_{2^m}$ and $b \in \mathbb{F}_{2^m}$ are constants and $b \ne 0$. 
+Although the point at infinity $O$ has no affine coordinates, it is convenient to represent it using a pair of coordinates which do not satisfy the defining equation, for example, $O = (0, 0)$ if $b \ne 0$ and $O = (0, 1)$ otherwise. According to Hasse's theorem on elliptic curves the number of points on a curve is close to the size of the underlying field; more precisely: $(\sqrt q - 1)^2 \leq |E(\mathbb{F}_q)| \leq (\sqrt q + 1)^2$.
+
+The points on an elliptic curve form an abelian group $(E(\mathbb{F}), +)$ with $O$, the distinguished point at infinity, playing the role of additive identity. In other words, given two points $P, Q \in E(\mathbb{F}_q)$, there is a third point, denoted by $P+Q \, $ on $E(\mathbb{F}_q)$, and the following relations hold for all $P, Q, R \in E(\mathbb{F}_q)$
+
+$P + Q = Q+P$ (commutativity)
+
+$(P + Q) + R = P + (Q + R)$ (associativity)
+$P + O = O + P = P$ (existence of an identity element)
+
+There exists $(-P)$ such that $-P + P = P + (-P) = O$ (existence of inverses)
+
+We already specified how $O$ is defined. If we define the negative of a point $P = (x, y)$ to be $-P = (x, -y)$ for $P \in E(\mathbb{F}_p)$ and $-P = (x, x+y)$ for $P \in E(\mathbb{F}_{2^m})$, we can define the addition operation as follows:
+
+if $Q = O$ then $P + Q = P$
+
+if $Q = -P$ then $P + Q = O$
+
+if $Q \ne P$ then $P + Q = R$, where in the prime case $x_R = \lambda^2 - x_P - x_Q$, $y_R = \lambda(x_P - x_R) - y_P$, and $\lambda = \frac{y_Q-y_P}{x_Q-x_P}$, or in the binary case $x_R = \lambda^2 + \lambda + x_P + x_Q + a$, $y_R = \lambda (x_P + x_R) + x_R + y_P$, and $\lambda = \frac{y_P + y_Q}{x_P + x_Q}$ (Geometrically, $P + Q$ is the inverse of the third point of intersection of the cubic with the line through $P$ and $Q$.)
+
+If $Q = P$ then $P + Q = R$, where in the prime case $x_R = \lambda^2 - 2 x_P$, $y_R = \lambda(x_P - x_R) - y_P$, and $\lambda = \frac{3 x_P^2 + a}{2 y_P}$, or
+ in the binary case $x_R = \lambda^2 + \lambda + a$, $y_R = x_P^2 + (\lambda + 1) x_R$, and $\lambda = x_P + \frac{y_P}{x_P}$
+(Geometrically, $2P$ is the inverse of the third point of intersection of the cubic with its tangent line at $P$.)
+
+We already described the underlying field $\mathbb{F}_q$ and the group of points of elliptic curve $E(\mathbb{F}_q)$ but there is yet another mathematical structure commonly used in cryptography Ã¢ a cyclic subgroup of $E(\mathbb{F}_q)$. For any point $G$ the set
+$(O, G, G+G, G+G+G, G+G+G+G, \ldots)$
+is a cyclic group. It is convenient to use the following notation: $0 G = O$, $1 G = G$, $2G = G+G$, $3G = G+G+G$, etc. The calculation of $k G$, where $k$ is an integer and $G$ is a point, is called ''scalar multiplication''.
+
+Since the (additive) cyclic group described above can be considered similar to the (multiplicative) group of powers of an integer $g$ modulo prime $p$: $(g^0, g, g^2, g^3, g^4, \ldots)$, the problem of finding $k$ given points $k G$ and $G$ is called the elliptic curve discrete logarithm problem (ECDLP). The assumed hardness of several problems related to the discrete logarithm in the subgroup of $E(\mathbb{F}_q)$ allows cryptographic use of elliptic curves. Most of the elliptic curve cryptographic schemes are related to the discrete logarithm schemes which were originally formulated for usual modular arithmetic: the Elliptic Curve Diffie-Hellman key agreement scheme is based on the Diffie-Hellman scheme; the Elliptic Curve Digital Signature Algorithm is based on the Digital Signature Algorithm; the ECMQV key agreement scheme is based on the MQV key agreement scheme.
+
+Not all the DLP schemes should be ported to the elliptic curve domain. For example, the well known ElGamal encryption scheme was never standardized by official bodies and should not be directly used over an elliptic curve (the standard encryption scheme for ECC is called Elliptic Curve Integrated Encryption Scheme). The main reason is that although it is straightforward to convert an arbitrary message (of limited length) to an integer modulo $p$, it is not that simple to convert a bitstring to a point of a curve (not for every $x$ there is an $y$ such that $(x, y) \in E(\mathbb{F}_q)$). (Another factor is that ElGamal scheme is vulnerable to chosen-ciphertext attacks.)
+
+To use ECC all parties must agree on all the elements defining the elliptic curve, that is domain parameters of the scheme. The field is defined by $p$ in the prime case and the pair of $m$ and $f$ in the binary case. The elliptic curve is defined by the constants $a$ and $b$ used in its defining equation. Finally, the cyclic subgroup is defined by its generator or base point $G$. For cryptographic application the order of $G$, that is the smallest non-negative number $n$ such that $n G = O$, must be prime. Since $n$ is the size of a subgroup of $E(\mathbb{F}_q)$ it follows from the Lagrange's theorem that the number $h = \frac{|E|}{n}$ is integer. In cryptographic applications this number $h$, called cofactor, at least must be small ($h \le 4$) and, preferably, $h = 1$. Let us summarize: in the prime case the domain parameters are $(p, a, b, G, n, h)$ and in the binary case they are $(m, f, a, b, G, n, h)$.
+
+Unless there is an assurance that domain parameters were generated by a party trusted with respect to their use, the domain parameters ''must'' be validated before use. % TODO: Validation procedure
+
+The generation of domain parameters is not usually done by each participant since this involves counting the number of points on a curve which is time-consuming and troublesome to implement. As a result several standard bodies published domain parameters of elliptic curves for several common field sizes, NIST and SECG being the most important.
+
+If one (despite the said above) wants to build his own domain parameters he should select the underlying field and then use one of the following strategies to find a curve with appropriate (i.e., near prime) number of points using one of the following methods:
+
+Select a random curve and use a general point-counting algorithm, for example, Schoof's algorithm or Schoof-Elkies-Atkin algorithm,
+
+Select a random curve from a family which allows easy calculation of the number of points (e.g., Koblitz curves), or
+Select the number of points and generate a curve with this number of points using ''complex multiplication'' technique.
+
+Several classes of curves are weak and shall be avoided:
+
+Curves over $\mathbb{F}_{2^m}$ with non-prime $m$ are vulnerable to Weil descent attacks.
+
+Curves such that $n$ divides $p^B-1$ (where $p$ is the characteristic of the field $-q$ for a prime field, or $2$ for a binary field) for sufficiently small $B$ are vulnerable to MOV attack which applies usual DLP in a small degree extension field of $\mathbb{F}_p$ to solve ECDLP. The bound $B$ should be chosen so that discrete logarithms in the field $\mathbb{F}_{p^B}$ are at least as difficult to compute as discrete logs on the elliptic curve $E(\mathbb{F}_q)$.
+
+Curves such that $|E(\mathbb{F}_q)| = q$ are vulnerable to the attack that maps the points on the curve to the additive group of $\mathbb{F}_q$
+
+Since all the fastest known algorithms that allow to solve the ECDLP (baby-step giant-step, Pollard's rho, etc.), need $O(\sqrt{n})$ steps, it follows that the size of the underlying field shall be roughly twice the security parameter. For example, for 128-bit security one needs a curve over $\mathbb{F}_q$, where $q \approx 2^{256}$. This can be contrasted with finite-field cryptography (e.g., DSA) which requires 3072-bit public keys and 256-bit private keys, and integer factorization cryptography (e.g., RSA) which requires 3072-bit public and private keys. The hardest ECC scheme (publicly) broken to date had a 109-bit key (that is about 55 bits of security). For the prime field case, it was broken near the beginning of 2003 using over 10, 000 Pentium class PCs running continuously for over 540 days . For the binary field case, it was broken in April 2004 using 2600 computers for 17 months.
+
+A close examination of the addition rules shows that in order to add two points one needs not only several additions and multiplications in $\mathbb{F}_q$ but also an inversion operation. The inversion (for given $x \in \mathbb{F}_q$ find $y \in \mathbb{F}_q$ such that $x y = 1$) is one to two orders of magnitude slower than multiplication. Fortunately, points on a curve can be represented in different coordinate systems which do not require an inversion operation to add two points. Several such systems were proposed: in the ''projective'' system each point is represented by three coordinates $(X, Y, Z)$ using the following relation: $x = \frac{X}{Z}$, $y = \frac{Y}{Z}$; in the Jacobian'' system a point is also represented with three coordinates $(X, Y, Z)$, but a different relation is used: $x = \frac{X}{Z^2}$, $y = \frac{Y}{Z^3}$; in the modified Jacobian system the same relations are used but four coordinates are stored and used for calculations $(X, Y, Z, aZ^4)$; and in the Chudnovsky Jacobian system five coordinates are used $(X, Y, Z, Z^2, Z^3)$. Note that there are may be different naming conventions, for example, IEEE P1363-2000 standard uses projective coordinates to refer to what is commonly called Jacobian coordinates. An additional speed-up is possible if mixed coordinates are used.
+
+Reduction modulo $p$ (which is needed for addition and multiplication) can be executed much faster if the prime $p$ is a pseudo-Mersenne prime that is $p \approx 2^d$, for example, $p = 2^{521} - 1$ or $p = 2^{256} - 2^{32} - 2^9 - 2^8 - 2^7 - 2^6 - 2^4 - 1$. Compared to Barrett reduction there can be an order of magnitude speed-up. The curves over $\mathbb{F}_p$ with pseudo-Mersenne $p$ are recommended by NIST. Yet another advantage of the NIST curves is the fact that they use $a = -3$ which improves addition in Jacobian coordinates.
+
+Unlike DLP systems (where it is possible to use the same procedure for squaring and multiplication) the EC addition is significantly different for doubling ($P = Q$) and general addition ($P \ne Q$). Consequently, it is important to counteract side channel attacks (e.g., timing and simple power analysis attacks) using, for example, fixed pattern window (aka. comb) methods (note that this does not increase the computation time).
+
+Most of ECC (e.g., ECDH, ECIES, ECDSA) is not encumbered by patents whereas some other schemes (ECMQV) and some implementation techniques are covered. See ECC patents for details.
+
+{\it This entry was adapted from the Wikipedia article \PMlinkexternal{Elliptic curve cryptography}{http://en.wikipedia.org/wiki/Elliptic_curve_cryptography} as of April 28, 2007.}
+
+\begin{thebibliography}{7}
+\bibitem{nk} N. Koblitz, ``Elliptic curve cryptosystems'', in {\it Mathematics of Computation} {\bf 48}, (1987): 203 - 209
+\bibitem{vm} V. Miller, ``Use of elliptic curves in cryptography'', {\it CRYPTO 85} (1985)
+\bibitem{sg} S.D. Galbraith \& N.P. Smart, ``A cryptographic application of the Weil descent'', {\it Cryptography and Coding} (1999)
+\bibitem{am} A. Menezes, T. Okamoto, \& S.A. Vanstone, ``Reducing elliptic curve logarithms to logarithms in a finite field'', {\it IEEE Transactions on Information Theory} {\bf 39} (1993)
+\bibitem{is} I. Semaev, ``Evaluation of discrete logarithm in a group of P-torsion points of an elliptic curve in characteristic $P$'', {\it Mathematics of Computation}, {\bf 67} (1998)
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

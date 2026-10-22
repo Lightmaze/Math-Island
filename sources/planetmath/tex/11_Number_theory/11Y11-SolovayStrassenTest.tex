@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SolovayStrassenTest}
+\pmcreated{2013-03-22 14:27:33}
+\pmmodified{2013-03-22 14:27:33}
+\pmowner{mathwizard}{128}
+\pmmodifier{mathwizard}{128}
+\pmtitle{Solovay-Strassen test}
+\pmrecord{7}{35978}
+\pmprivacy{1}
+\pmauthor{mathwizard}{128}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11Y11}
+\pmrelated{MillerRabinPrimeTest}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\jacobi}[2]{{\genfrac{(}{)}{}{}{#1}{#2}}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{protocol}[theorem]{Protocol}
+\newtheorem{example}[theorem]{Example}
+\newcommand{\ndiv}{\nmid}
+\renewcommand{\div}{\mid}
+
+
+\begin{document}
+It is known that an odd number $n$ is prime if and only if for every $1<a<n$ such that $(a,n)=1$ we have
+\begin{equation}\label{eq:criterion}
+\jacobi{a}{n}\equiv a^{\frac{n-1}{2}}\pmod n
+\end{equation}
+where $\jacobi{a}{n}$ is the Jacobi symbol. (The only if part is obvious; the if part follows from Theorem~\ref{ss-half}.) From this we can derive the following algorithm.
+\begin{enumerate}
+\item Choose a random number $a$ between $1$ and $n-1$.
+\item Check if $(a,n)=1$ (for example using the Euclidean algorithm). If it is not, then $n$ is not prime and $(a,n)$ is a divisor of $n$.
+\item Check if Equation~\eqref{eq:criterion} holds. If it does not, then $n$ is not prime. Otherwise $n$ is a candidate for primality.
+\end{enumerate}
+By repeating this algorithm we can increase the chance that the result is correct. In order to estimate the probability of error, we make use of Theorem~\ref{ss-half}, which says that every independent iteration of the algorithm has a chance of at most $50\%$ of being wrong. Hence, after $t$ iterations there is at most a $2^{-t}$ chance of getting a wrong result.
+
+\begin{theorem}\label{ss-half}
+Let $n \geq 3$ be an odd composite integer. Then at least half of the
+elements of $\Z_n^*$ do not satisfy Equation~\eqref{eq:criterion}.
+\end{theorem}
+\begin{proof}
+It suffices to exhibit one element $a \in \Z_n^*$ which does not satisfy Equation~\eqref{eq:criterion}. Indeed, if there exists one such element, then the set of
+all elements which do satisfy Equation~\eqref{eq:criterion} forms a proper subgroup of $\Z_n^*$, from which we
+conclude that the elements satisfying Equation~\eqref{eq:criterion} number no more than half of the elements
+of $\Z_n^*$.
+
+We consider separately the cases where $n$ is squarefree and not
+squarefree.  If $n$ is squarefree, let $p$ be a prime dividing $n$ and
+let $b$ be a quadratic non-residue mod $n$. Using the Chinese
+Remainder Theorem, choose an integer $a \in \Z_n^*$ such that:
+\begin{align*}
+a &\equiv b \pmod{p}, \\
+a &\equiv 1 \pmod{\frac{n}{p}}.
+\end{align*}
+The Jacobi symbol $\jacobi{a}{n}$ is given by
+\[
+\jacobi{a}{n} = \jacobi{a}{p} \jacobi{a}{n/p} = \jacobi{b}{p}
+\jacobi{1}{n/p} = (-1) \cdot 1 = -1.
+\]
+We will assume that $a^{\frac{n-1}{2}} \equiv -1 \pmod{n}$ and derive
+a contradiction. The equation $a^{\frac{n-1}{2}} \equiv -1 \pmod{n}$
+implies that $a^{\frac{n-1}{2}} \equiv -1 \pmod{\frac{n}{p}}$.
+However, since $a \equiv 1 \pmod{\frac{n}{p}}$, we must have
+$a^{\frac{n-1}{2}} \equiv 1 \pmod{\frac{n}{p}}$, so that $1 \equiv -1
+\pmod{\frac{n}{p}}$, which is a contradiction.
+
+Now suppose that $n$ is not squarefree. Let $p$ be a prime such that
+$p^2 \div n$, and set $a = 1 + \frac{n}{p}$. By the binomial theorem,
+we have
+\[
+a^p = \left(1+\frac{n}{p}\right)^p = 1 +
+\binom{p}{1}\left(n/p\right) +
+\binom{p}{2}\left(n/p\right)^2 + \cdots +
+\binom{p}{p}\left(n/p\right)^p
+\equiv 1 \pmod{n},
+\]
+so the multiplicative order of $a \bmod n$ is equal to $p$, and hence
+in particular $a^{n-1} \neq 1 \pmod{n}$, since $p \ndiv n-1$. On the
+other hand,
+\[
+\jacobi{a}{n} = \jacobi{1+\frac{n}{p}}{n} = \jacobi{1+\frac{n}{p}}{p}
+\jacobi{1+\frac{n}{p}}{n/p} = \jacobi{1}{p} \jacobi{1}{n/p} = 1,
+\]
+so $a$ does not satisfy Equation~\eqref{eq:criterion}.
+\end{proof}
+
+%%%%%
+%%%%%
+\end{document}

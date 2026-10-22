@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ContinuousRelation}
+\pmcreated{2013-03-22 17:05:39}
+\pmmodified{2013-03-22 17:05:39}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{continuous relation}
+\pmrecord{12}{39389}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A99}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\newcommand{\up}{\uparrow\!\!}
+\newcommand{\down}{\downarrow\!\!}
+\begin{document}
+The idea of a continuous relation is neither as old nor as well-established as the idea of a continuous function.
+Different authors use somewhat different definitions.  The present article is based on the following definition:
+
+Let $X$ and $Y$ be topological spaces and $R$ a relation between $X$ and $Y$ ($R$ is a subset of $X\times Y$).  $R$ is said to be \PMlinkescapetext{\emph{continuous}} if 
+\begin{center} for any open subset $V$ of $Y$, $R^{-1}(V)$ is open in $X$.\end{center}  
+Here $R^{-1}(V)$ is the inverse image of $V$ under $R$, and is defined as $$R^{-1}(V):=\lbrace x\in X\mid xRy\mbox{ for some }y\in V\rbrace.$$  Equivalently, $R$ is a continuous relation if for any open set $V$ of $Y$, the set $\pi_X((X\times V)\cap R)$ is open in $X$, where $\pi_X$ is the projection map $X\times  Y\to X$.
+
+\textbf{Remark}.  Continuous relations are generalization of continuous functions: if a continuous relation is also a function, then it is a continuous function.
+
+Some examples.
+\begin{itemize}
+\item Let $X$ be an ordered space.  Then the partial order $\le$ is continuous iff for every open subset $A$ of $X$, its lower set $\down A$ is also open in $X$.
+
+In particular, in $\mathbb{R}$, the usual linear ordering $\le$ on $\mathbb{R}$ is continuous.  To see this, let $A$ be an open subset of $\mathbb{R}$.  If $A=\varnothing$, then $\down A=\varnothing$ as well, and so is open.  Suppose now that $A$ is non-empty and deal with the case when $A$ is not bounded from above.  If $r\in \mathbb{R}$, then there is $a\in A$ such that $r\le a$, so that $r\in \down A$, which implies $\down A=\mathbb{R}$.  Hence $\down A$ is open.  If $A$ is bounded from above, then $A$ has a supremum (since $\mathbb{R}$ is Dedekind complete), say $x$.  Since $A$ is open, $x\notin A$ (or else $x\in (a,b)\subseteq A$, implying $x<\frac{x+b}{2}\in (a,b)$, contradicting the fact that $x$ is the least upper bound of $A$).  So $\down A=(-\infty,x)$, which is open also.  Therefore, $\le$ is a continuous relation on $\mathbb{R}$.
+\item Again, we look at the space $\mathbb{R}$ with its usual interval topology.  The relation this time is $R=\lbrace (x,y)\in \mathbb{R}^2 \mid x^2+y^2=1\rbrace$.  This is not a continuous relation.  Take $A=(-2,2)$, which is open.  But then $R^{-1}(A)=[-1,1]$, which is closed.
+\item Now, let $X$ be a locally connected topological space.  For any $x,y\in X$, define $x\sim y$ iff $x$ and $y$ belong to the same connected component of $X$.  Let $A$ be an open subset of $X$.  Then $B=\sim^{-1}(A)$ is the union of all connected components containing points of $A$.  Since (it can be shown) each connected component is open, so is their union, and hence $B$ is open. Thus $\sim$ is a continuous relation.
+\item If $R$ is symmetric, then $R$ is continuous iff $R^{-1}$ is.  In particular, in a topological space $X$, an equivalence relation $\sim$ on $X$ is continuous iff the projection $p$ of $X$ onto the quotient space $X/\sim$ is an open mapping.
+\end{itemize}
+
+\textbf{Remark}.  Alternative definitions:
+One apparently common definition (as described by Wyler) is to require inverse images of open sets to be open and inverse
+images of closed sets to be closed (making the relation upper and lower semi-continuous).  Wyler suggests the following
+definition:
+If $r\colon e\to f$ is a relation between topological spaces $E$ and $F$, then $r$ is continuous iff for each topological space $A$, and functions $f\colon A\to E$ and $g\colon A\to F$ such that $f(u) \mathrel{r} g(u)$ for all $u\in A$, continuity of $f$ implies continuity of $g$.
+
+\begin{thebibliography}{8}
+\bibitem{tsb} T.~S.~Blyth, \emph{Lattices and Ordered Algebraic Structures}, Springer, New York (2005).
+\bibitem{kelley} J.~L.~Kelley, \emph{General Topology}, D.~van Nostrand Company, Inc., 1955.
+\bibitem{owyler} Oswald Wyler, \emph{\PMlinkexternal{\emph{A Characterization of Regularity in Topology}}{http://links.jstor.org/sici?sici=0002-9939\%28197108\%2929\%3A3\%3C588\%3AACORIT\%3E2.0.CO\%3B2-3}}
+Proceedings of the American Mathematical Society, Vol.~29, No. 3. (Aug., 1971), pp. 588-590.
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IntegralBasis}
+\pmcreated{2013-03-22 12:36:03}
+\pmmodified{2013-03-22 12:36:03}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{integral basis}
+\pmrecord{12}{32853}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmsynonym{minimal basis}{IntegralBasis}
+\pmsynonym{minimal bases}{IntegralBasis}
+%\pmkeywords{integral basis}
+\pmrelated{AlgebraicInteger}
+\pmrelated{Integral}
+\pmrelated{Basis}
+\pmrelated{DiscriminantOfANumberField}
+\pmrelated{ConditionForPowerBasis}
+\pmrelated{BasisOfIdealInAlgebraicNumberField}
+\pmrelated{CanonicalFormOfElementOfNumberField}
+\pmdefines{integral bases}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $K$ be a number field.  A set of algebraic integers
+$\{\alpha_1,\ldots,\alpha_s\}$ is said to be an {\em integral basis} for $K$
+if every $\gamma$ in $\mathcal{O}_K$ can be represented uniquely 
+as an integer linear combination of $\{\alpha_1,\ldots,\alpha_s\}$ (i.e. one can write $\gamma = m_1 \alpha_1 + \cdots + m_s \alpha_s$ with $m_1,\ldots,m_s$
+(rational) integers).
+
+If $I$ is an ideal of $\mathcal{O}_K$, then $\{\alpha_1,\ldots,\alpha_s\} \in I$ is said to be an {\em integral basis} for $I$ if every element of $I$ can be represented uniquely as an integer linear combination of $\{\alpha_1,\ldots,\alpha_s\}$.
+
+(In the above, $\mathcal{O}_K$ denotes the ring of algebraic integers of $K$.)
+
+An integral basis for $K$ over $\mathbb{Q}$ is a basis for $K$ over $\mathbb{Q}$.
+%%%%%
+%%%%%
+\end{document}

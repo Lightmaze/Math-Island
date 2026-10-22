@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Semimetric}
+\pmcreated{2013-03-22 14:24:15}
+\pmmodified{2013-03-22 14:24:15}
+\pmowner{Koro}{127}
+\pmmodifier{Koro}{127}
+\pmtitle{semimetric}
+\pmrecord{8}{35904}
+\pmprivacy{1}
+\pmauthor{Koro}{127}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E25}
+\pmrelated{GeneralizationOfAPseudometric}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Per}{\operatorname{Per}}
+\begin{document}
+A semimetric on a set $X$ is a function $d\colon X\times X\to \R$ which satisfies:
+\begin{enumerate}
+\item $d(x,y)\geq 0$
+\item $d(x,y)= 0$ if and only if $x=y$;
+\item $d(x,y) = d(y,x)$.
+\end{enumerate}
+
+A semimetric differs from a metric in that the triangle inequality is not required to hold.
+%%%%%
+%%%%%
+\end{document}

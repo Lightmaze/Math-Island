@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CatalansConjecture}
+\pmcreated{2014-12-16 16:16:07}
+\pmmodified{2014-12-16 16:16:07}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Catalan's conjecture}
+\pmrecord{8}{40198}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D45}
+\pmclassification{msc}{11D61}
+\pmsynonym{Mihailescu's theorem}{CatalansConjecture}
+\pmrelated{FermatsLastTheorem}
+\pmrelated{SolutionsOfXyYx}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+The successive positive integers 8 and 9 are integer powers of positive integers ($2^3$ and $3^2$), with exponents greater than 1. {\em Catalan's conjecture} (1844) said that there are no other such successive positive integers, i.e. that the only integer solution of the Diophantine equation
+$$x^m-y^n = 1$$
+with\; $x > 1$,\, $y > 1$,\, $m > 1$,\, $n > 1$\; is
+$$x = n = 3, \quad y = m = 2.$$
+
+It took more than 150 years before the conjecture was proven.  Mihailescu gave in 2002 a proof in which he used the theory of cyclotomic fields and Galois modules.
+
+For details, see e.g. 
+\PMlinkexternal{this article}{http://www.ams.org/journals/bull/2004-41-01/S0273-0979-03-00993-5/S0273-0979-03-00993-5.pdf}.
+
+See also a related problem concerning the equation 
+\PMlinkname{$x^y = y^x$}{solutionsofxyyx}.
+%%%%%
+%%%%%
+\end{document}

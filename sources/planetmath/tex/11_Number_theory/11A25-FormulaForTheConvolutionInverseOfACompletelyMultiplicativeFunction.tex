@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FormulaForTheConvolutionInverseOfACompletelyMultiplicativeFunction}
+\pmcreated{2013-03-22 16:55:09}
+\pmmodified{2013-03-22 16:55:09}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{formula for the convolution inverse of a completely multiplicative function}
+\pmrecord{5}{39181}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Corollary}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{CriterionForAMultiplicativeFunctionToBeCompletelyMultiplicative}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem{cor*}{Corollary}
+
+\begin{document}
+\PMlinkescapeword{formula}
+
+\begin{cor*}
+If $f$ is a completely multiplicative function, then its convolution inverse is $f\mu$, where $\mu$ denotes the M\"{o}bius function.
+\end{cor*}
+
+\begin{proof}
+Recall the M\"{o}bius inversion formula $1*\mu = \varepsilon$, where $\varepsilon$ denotes the convolution identity function.  Thus, $f(1*\mu) = f\varepsilon$.  Since \PMlinkname{pointwise multiplication of a completely multiplicative function distributes over convolution}{PropertyOfCompletelyMultiplicativeFunctions}, $(f \cdot 1)*(f\mu)=f\varepsilon$.  Note that, for all natural numbers $n$, $f(n)1(n)=f(n) \cdot 1=f(n)$ and $f(n)\varepsilon(n)=\varepsilon(n)$.  Thus, $f*(f \mu)=\varepsilon$.  It follows that $f\mu$ is the convolution inverse of $f$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

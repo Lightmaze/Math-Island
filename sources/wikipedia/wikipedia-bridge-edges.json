@@ -1,0 +1,470 @@
+[
+  {
+    "source": "wikipedia:Langlands_program",
+    "target": "wikipedia:Geometric_Langlands_correspondence",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Langlands_program",
+    "evidence_sha256": "8bee4d7e6d65fe589a0d122cc5e2c19ed51f6974ecba43378e2fc4333fc87c79",
+    "evidence_locator": "article-content link to Geometric Langlands correspondence; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Modularity_theorem",
+    "target": "wikipedia:Langlands_program",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Modularity_theorem",
+    "evidence_sha256": "fb0f13a3e9d323b6730d1a6c9447e21c5170ec20e981b61b28f59d7daa87f042",
+    "evidence_locator": "article-content link to Langlands program; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Modularity_theorem",
+    "target": "wikipedia:Modular_form",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Modularity_theorem",
+    "evidence_sha256": "fb0f13a3e9d323b6730d1a6c9447e21c5170ec20e981b61b28f59d7daa87f042",
+    "evidence_locator": "article-content link to Modular form; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Prismatic_cohomology",
+    "target": "wikipedia:Motivic_cohomology",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Prismatic_cohomology",
+    "evidence_sha256": "b7d5eb1f1e6162c6636cc1bcd1322a787d708455f09392c9df5b1a866d6a5e0b",
+    "evidence_locator": "article-content link to Motivic cohomology; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Motivic_cohomology",
+    "target": "wikipedia:Étale_cohomology",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Motivic_cohomology",
+    "evidence_sha256": "bf5edf71fadb60b3458d717137a246640d7738065cb820e4125e90be747f07eb",
+    "evidence_locator": "article-content link to Étale cohomology; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Homotopy_type_theory",
+    "target": "wikipedia:Homotopy_theory",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Homotopy_type_theory",
+    "evidence_sha256": "b19cb105e5b3306a2d7c6bce6fa145a08bd6e9eb17850f68b2a96957b68cb214",
+    "evidence_locator": "article-content link to Homotopy theory; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Homotopy_type_theory",
+    "target": "wikipedia:Univalent_foundations",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Homotopy_type_theory",
+    "evidence_sha256": "b19cb105e5b3306a2d7c6bce6fa145a08bd6e9eb17850f68b2a96957b68cb214",
+    "evidence_locator": "article-content link to Univalent foundations; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Univalent_foundations",
+    "target": "wikipedia:Homotopy_type_theory",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Univalent_foundations",
+    "evidence_sha256": "7407f68be256bfec1f425efe3f1a3bed3b7a9d187ca4f315cebb7d77f336126e",
+    "evidence_locator": "article-content link to Homotopy type theory; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Topological_quantum_field_theory",
+    "target": "wikipedia:Floer_homology",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Topological_quantum_field_theory",
+    "evidence_sha256": "67bedc7265000b8aa67d7a84c4c9b88adc9d62acf41f768e3aa4ed5a36951da6",
+    "evidence_locator": "article-content link to Floer homology; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Topological_quantum_field_theory",
+    "target": "wikipedia:Jones_polynomial",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Topological_quantum_field_theory",
+    "evidence_sha256": "67bedc7265000b8aa67d7a84c4c9b88adc9d62acf41f768e3aa4ed5a36951da6",
+    "evidence_locator": "article-content link to Jones polynomial; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Mirror_symmetry_(string_theory)",
+    "target": "wikipedia:Topological_quantum_field_theory",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Mirror_symmetry_(string_theory)",
+    "evidence_sha256": "e2c8b966cefdcfd8a997978d96f97c69794cc53bdc946632e07f4f8eca9e0d39",
+    "evidence_locator": "article-content link to Topological quantum field theory; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Floer_homology",
+    "target": "wikipedia:Topological_quantum_field_theory",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Floer_homology",
+    "evidence_sha256": "04d0e98ce830cdbd5e4de4d39c9968a58988531581c3bc4a2ce7962c9b01912d",
+    "evidence_locator": "article-content link to Topological quantum field theory; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Monstrous_moonshine",
+    "target": "wikipedia:Vertex_operator_algebra",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Monstrous_moonshine",
+    "evidence_sha256": "068a0799e67f7ac6a51cebafb715ac31d11fe5c038658b2508b917fcfd0441a5",
+    "evidence_locator": "article-content link to Vertex operator algebra; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Vertex_operator_algebra",
+    "target": "wikipedia:Geometric_Langlands_correspondence",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Vertex_operator_algebra",
+    "evidence_sha256": "94c6d43306c16f9b1d7de2fbdb4dde9511b4dbbe0e4a52a15522763764661753",
+    "evidence_locator": "article-content link to Geometric Langlands correspondence; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Vertex_operator_algebra",
+    "target": "wikipedia:Monstrous_moonshine",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Vertex_operator_algebra",
+    "evidence_sha256": "94c6d43306c16f9b1d7de2fbdb4dde9511b4dbbe0e4a52a15522763764661753",
+    "evidence_locator": "article-content link to Monstrous moonshine; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Modular_form",
+    "target": "wikipedia:Langlands_program",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Modular_form",
+    "evidence_sha256": "00485a487a73c3eb4c8fd4d049105bb5693c3386953b346db56b2a17f7726584",
+    "evidence_locator": "article-content link to Langlands program; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Modular_form",
+    "target": "wikipedia:Modularity_theorem",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Modular_form",
+    "evidence_sha256": "00485a487a73c3eb4c8fd4d049105bb5693c3386953b346db56b2a17f7726584",
+    "evidence_locator": "article-content link to Modularity theorem; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Modular_form",
+    "target": "wikipedia:Sphere_packing",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Modular_form",
+    "evidence_sha256": "00485a487a73c3eb4c8fd4d049105bb5693c3386953b346db56b2a17f7726584",
+    "evidence_locator": "article-content link to Sphere packing; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Ramanujan_graph",
+    "target": "wikipedia:Error_correction_code",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Ramanujan_graph",
+    "evidence_sha256": "1422a3860b732d229ad14731c1550d0f3b18ce265237d71b36dafc6749c7a479",
+    "evidence_locator": "article-content link to Error correction code; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Ramanujan_graph",
+    "target": "wikipedia:Expander_graph",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Ramanujan_graph",
+    "evidence_sha256": "1422a3860b732d229ad14731c1550d0f3b18ce265237d71b36dafc6749c7a479",
+    "evidence_locator": "article-content link to Expander graph; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Ramanujan_graph",
+    "target": "wikipedia:Random_matrix_theory",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Ramanujan_graph",
+    "evidence_sha256": "1422a3860b732d229ad14731c1550d0f3b18ce265237d71b36dafc6749c7a479",
+    "evidence_locator": "article-content link to Random matrix; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Ramanujan_graph",
+    "target": "wikipedia:Spectral_graph_theory",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Ramanujan_graph",
+    "evidence_sha256": "1422a3860b732d229ad14731c1550d0f3b18ce265237d71b36dafc6749c7a479",
+    "evidence_locator": "article-content link to Spectral graph theory; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Expander_graph",
+    "target": "wikipedia:Ramanujan_graph",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Expander_graph",
+    "evidence_sha256": "668fd14f454fa0f51ef059cc95163dd8e03b5866d80c87886c218cdbf26be0eb",
+    "evidence_locator": "article-content link to Ramanujan graph; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Expander_graph",
+    "target": "wikipedia:Random_matrix_theory",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Expander_graph",
+    "evidence_sha256": "668fd14f454fa0f51ef059cc95163dd8e03b5866d80c87886c218cdbf26be0eb",
+    "evidence_locator": "article-content link to Random matrix; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Expander_graph",
+    "target": "wikipedia:Spectral_graph_theory",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Expander_graph",
+    "evidence_sha256": "668fd14f454fa0f51ef059cc95163dd8e03b5866d80c87886c218cdbf26be0eb",
+    "evidence_locator": "article-content link to Spectral graph theory; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Spectral_graph_theory",
+    "target": "wikipedia:Expander_graph",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Spectral_graph_theory",
+    "evidence_sha256": "50e990e53c684fbda89790c8bc2a3cd66645ee3a2728a6a5b90f51059f6c1d6a",
+    "evidence_locator": "article-content link to Expander graph; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Restricted_isometry_property",
+    "target": "wikipedia:Compressed_sensing",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Restricted_isometry_property",
+    "evidence_sha256": "c7390311f618b78026b2e7e86e27626af7de8c69281aaaba67577a83415a4033",
+    "evidence_locator": "article-content link to Compressed sensing; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Restricted_isometry_property",
+    "target": "wikipedia:Johnson–Lindenstrauss_lemma",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Restricted_isometry_property",
+    "evidence_sha256": "c7390311f618b78026b2e7e86e27626af7de8c69281aaaba67577a83415a4033",
+    "evidence_locator": "article-content link to Johnson–Lindenstrauss lemma; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Restricted_isometry_property",
+    "target": "wikipedia:Random_matrix_theory",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Restricted_isometry_property",
+    "evidence_sha256": "c7390311f618b78026b2e7e86e27626af7de8c69281aaaba67577a83415a4033",
+    "evidence_locator": "article-content link to Random matrix; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Random_matrix_theory",
+    "target": "wikipedia:Concentration_of_measure",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Random_matrix",
+    "evidence_sha256": "7b139c224a2234da7877257b698d734dc959ca268989de55d3575158e9e4c0d5",
+    "evidence_locator": "article-content link to Concentration of measure; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Random_matrix_theory",
+    "target": "wikipedia:Free_probability",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Random_matrix",
+    "evidence_sha256": "7b139c224a2234da7877257b698d734dc959ca268989de55d3575158e9e4c0d5",
+    "evidence_locator": "article-content link to Free probability; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Free_probability",
+    "target": "wikipedia:Random_matrix_theory",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Free_probability",
+    "evidence_sha256": "af941cd178dcef09567612052760eff34077360456b42714e3b468b3af51861e",
+    "evidence_locator": "article-content link to Random matrix; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Ricci_flow",
+    "target": "wikipedia:Ricci_curvature",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Ricci_flow",
+    "evidence_sha256": "8e9899239774f1cb2a4018b87c4615b09ca0148f168d9b408e206fe7e8ec5687",
+    "evidence_locator": "article-content link to Ricci curvature; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Arithmetic_combinatorics",
+    "target": "wikipedia:Green–Tao_theorem",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Arithmetic_combinatorics",
+    "evidence_sha256": "54d7841a6ac71ee4851fbaf0d6fe3a27aeda4d7acae95b3d22560b8e46a658ad",
+    "evidence_locator": "article-content link to Green–Tao theorem; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Green–Tao_theorem",
+    "target": "wikipedia:Arithmetic_combinatorics",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Green%E2%80%93Tao_theorem",
+    "evidence_sha256": "6f335def71f739257f0136866a8cad0371e4e52067c93ab4f782b64ea0ffe5ff",
+    "evidence_locator": "article-content link to Arithmetic combinatorics; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Sphere_packing",
+    "target": "wikipedia:Semidefinite_programming",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Sphere_packing",
+    "evidence_sha256": "8b9e90311f3d86ba3638fdc547707992f7f8cfc97c71318c86e9645d04300ed0",
+    "evidence_locator": "article-content link to Semidefinite programming; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Lovász_local_lemma",
+    "target": "wikipedia:Randomized_algorithm",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Lov%C3%A1sz_local_lemma",
+    "evidence_sha256": "e97f37f1a0b7abe425f6950e3136fdae96c227b04ee91f900afcaab0bb592fa9",
+    "evidence_locator": "article-content link to Randomized algorithm; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Randomized_algorithm",
+    "target": "wikipedia:Expander_graph",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Randomized_algorithm",
+    "evidence_sha256": "698027c00234d1eea1cb138f7113f2981d350e630fe9497c9d88c1f77e8c3397",
+    "evidence_locator": "article-content link to Expander graph; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Ricci_curvature",
+    "target": "wikipedia:Optimal_transport",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Ricci_curvature",
+    "evidence_sha256": "0e406859c20610ed609640585348e347721a9cb8c19cb9269507dbe00b81472d",
+    "evidence_locator": "article-content link to Optimal transport; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Ricci_curvature",
+    "target": "wikipedia:Ricci_flow",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Ricci_curvature",
+    "evidence_sha256": "0e406859c20610ed609640585348e347721a9cb8c19cb9269507dbe00b81472d",
+    "evidence_locator": "article-content link to Ricci flow; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Error_correction_code",
+    "target": "wikipedia:Reed–Solomon_error_correction",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Error_correction_code",
+    "evidence_sha256": "06b57560d2b1bef98fdcad31b79a3e80a6ee87e45e5fc64b19e43435fe7c7eea",
+    "evidence_locator": "article-content link to Reed–Solomon error correction; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Stable_theory",
+    "target": "wikipedia:Arithmetic_combinatorics",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Stable_theory",
+    "evidence_sha256": "44a81692a7e7a8d791c01d70daa002a1b9e7344c13b8dd40286f9517c418047b",
+    "evidence_locator": "article-content link to Arithmetic combinatorics; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Szemerédi_regularity_lemma",
+    "target": "wikipedia:Stable_theory",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Szemer%C3%A9di_regularity_lemma",
+    "evidence_sha256": "473e4caaad0df91aeffcd3a87fa0b856ccce3f08030ddd24b5e857df855b2ae8",
+    "evidence_locator": "article-content link to Stable theory; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Type_theory",
+    "target": "wikipedia:Homotopy_type_theory",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Type_theory",
+    "evidence_sha256": "fa6178d8d5438f03daf53478d94c2549d3c789609b5cb22efb06199e51522c46",
+    "evidence_locator": "article-content link to Homotopy type theory; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Type_theory",
+    "target": "wikipedia:Intuitionistic_logic",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Type_theory",
+    "evidence_sha256": "fa6178d8d5438f03daf53478d94c2549d3c789609b5cb22efb06199e51522c46",
+    "evidence_locator": "article-content link to Intuitionistic logic; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Homotopy_theory",
+    "target": "wikipedia:Homotopy_type_theory",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Homotopy_theory",
+    "evidence_sha256": "54bd693f345ce60b1eee507dd3d6f9ce05d3ebde01f73cfe272338b501908db5",
+    "evidence_locator": "article-content link to Homotopy type theory; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Johnson–Lindenstrauss_lemma",
+    "target": "wikipedia:Compressed_sensing",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma",
+    "evidence_sha256": "bf846dd786c3f923013ab186f15c5191fa60b3312602ec7d4aecb5a95809b200",
+    "evidence_locator": "article-content link to Compressed sensing; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Johnson–Lindenstrauss_lemma",
+    "target": "wikipedia:Concentration_of_measure",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma",
+    "evidence_sha256": "bf846dd786c3f923013ab186f15c5191fa60b3312602ec7d4aecb5a95809b200",
+    "evidence_locator": "article-content link to Concentration of measure; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Johnson–Lindenstrauss_lemma",
+    "target": "wikipedia:Random_matrix_theory",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma",
+    "evidence_sha256": "bf846dd786c3f923013ab186f15c5191fa60b3312602ec7d4aecb5a95809b200",
+    "evidence_locator": "article-content link to Random matrix; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Johnson–Lindenstrauss_lemma",
+    "target": "wikipedia:Restricted_isometry_property",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Johnson%E2%80%93Lindenstrauss_lemma",
+    "evidence_sha256": "bf846dd786c3f923013ab186f15c5191fa60b3312602ec7d4aecb5a95809b200",
+    "evidence_locator": "article-content link to Restricted isometry property; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Reed–Solomon_error_correction",
+    "target": "wikipedia:Polynomial_interpolation",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Reed%E2%80%93Solomon_error_correction",
+    "evidence_sha256": "9971c026a731d935eb21b2853c158048f022b53e8edbc8b3442181b1621b99aa",
+    "evidence_locator": "article-content link to Polynomial interpolation; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  },
+  {
+    "source": "wikipedia:Polynomial_identity_testing",
+    "target": "wikipedia:Randomized_algorithm",
+    "relation": "source_hyperlink",
+    "evidence_url": "https://en.wikipedia.org/wiki/Polynomial_identity_testing",
+    "evidence_sha256": "51ea3f249832526be0a86c04c24e467e381383bb53663472bd22adda8538a925",
+    "evidence_locator": "article-content link to Randomized algorithm; navigation/references lists excluded",
+    "semantic_status": "hyperlink_observed_not_proof_dependency"
+  }
+]

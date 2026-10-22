@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WheelFactorization}
+\pmcreated{2013-03-22 18:22:58}
+\pmmodified{2013-03-22 18:22:58}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{wheel factorization}
+\pmrecord{4}{41025}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N35}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\em Wheel factorization} is a method for screening out composite numbers by arranging numbers around a circle and then striking out those numbers that are obviously composite as indicated by where they fall around the circle.
+
+\begin{center}
+\includegraphics{Wheel30}
+\end{center}
+
+Wheel factorization is performed thus:
+
+\begin{enumerate}
+\item Use another method to find the first $i$ primes. Multiply the first $i$ primes, obtaining the primorial $p_i\#$.
+\item Around a circle, write the numbers 1 to $p_i\#$.
+\item On a circle larger than the innermost circle, write the $p_i\# + 1$ to $2p_i\#$, lining up 1 with $p_i\# + 1$ and $2p_i\#$.
+\item Make a few more circles, as desired, but always aligning the numbers according to their residues modulo $p_i\#$.
+\item Circle the first $i$ primes, and strike out those numbers that are lined up with them in the outer circles.
+\item For each prime $p_j$ from 2 to $p_i$, strike out its multiples from ${p_j}^2$ to $p_i\#$, as well as the numbers on the outer circles with the same residue modulo the primorial.
+\end{enumerate}
+
+The name is somewhat misleading, as wheel factorization does not completely factor any number, but merely identifies (in the case of the struck-out numbers) one of their prime factors. All wheel factorization does is identify which numbers are coprime to the primorial (the numbers that have not been struck out). Of course the prime numbers greater than the primorial will not be struck out, since they must of course by definition be coprime to the the primorial. But as one does more and more circles, more and more composites will pass undetected by this method, as the likelihood increases that their least prime factor is a primer greater than the primorial. Even the innermost circle will always have at least one composite number avoid being struck out, whenever $i > 3$, specifically ${p_{i + 1}}^2$. And there is no practical reason why this algorithm needs to be performed on a circle, other than that it is more visually interesting to humans than a rectangular table. Indeed, with the sieve of Eratosthenes, if one has chosen a row width that is a multiple of a primorial, one can strike out entire columns at once.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,147 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SzemeredisTheorem}
+\pmcreated{2013-03-22 13:19:40}
+\pmmodified{2013-03-22 13:19:40}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Szemer\'edi's theorem}
+\pmrecord{17}{33839}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B25}
+\pmclassification{msc}{05D10}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\makeatletter
+%\@ifundefined{url}{\usepackage{url}}{}
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+Let $k$ be a positive integer and let $\delta>0$. There exists a positive integer $N=N(k,\delta)$ such that every subset of $\{1,2,\dotsc,N\}$ of \PMlinkname{size}{Cardinality} $\delta N$ contains an arithmetic progression of length $k$.
+
+The case $k=3$ was first proved by Roth\cite{cite:roth_szem_three}. His method did not seem to extend to the case $k>3$. Using completely different ideas Szemer\'edi proved the case $k=4$ \cite{cite:szemeredi_szemth_four}, and the general case of an arbitrary $k$ \cite{cite:szemeredi_szemth_gen}.
+
+The best known bounds for $N(k,\delta)$ are 
+\begin{equation*}
+e^{c (\log \frac{1}{\delta})^{k-1}}\leq N(k,\delta)\leq 2^{2^{\delta^{-2^{2^{k+9}}}}},
+\end{equation*}
+where the lower bound is due to Behrend\cite{cite:behrend_szem_low} (for $k=3$) and Rankin\cite{cite:rankin_behrgen}, and the upper bound is due to Gowers\cite{cite:gowers_szem_new_gen}.
+
+For $k=3$ a better upper bound was obtained by Bourgain
+\begin{equation*}
+N(3,\delta)\leq c \delta^{-2} e^{2^{56} \delta^{-2}}.
+\end{equation*}
+
+\begin{thebibliography}{1}
+
+\bibitem{cite:behrend_szem_low}
+Felix~A. Behrend.
+\newblock On the sets of integers which contain no three in arithmetic
+  progression.
+\newblock {\em Proc. Nat. Acad. Sci.}, 23:331--332, 1946.
+\newblock \PMlinkexternal{Zbl 0060.10302}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0060.10302}.
+
+\bibitem{cite:gowers_szem_new_gen}
+Timothy Gowers.
+\newblock A new proof of {S}zemer{\'e}di's theorem.
+\newblock {\em Geom. Funct. Anal.}, 11(3):465--588, 2001.
+\newblock Preprint available at
+  \PMlinkexternal{http://www.dpmms.cam.ac.uk/~wtg10/papers.html}{http://www.dpmms.cam.ac.uk/~wtg10/papers.html}.
+
+\bibitem{cite:rankin_behrgen}
+Robert~A. Rankin.
+\newblock Sets of integers containing not more than a given number of terms in
+  arithmetical progression.
+\newblock {\em Proc. Roy. Soc. Edinburgh Sect. A}, 65:332--344, 1962.
+\newblock \PMlinkexternal{Zbl 0104.03705}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0104.03705}.
+
+\bibitem{cite:roth_szem_three}
+Klaus~Friedrich Roth.
+\newblock On certain sets of integers.
+\newblock {\em J. London Math. Soc.}, 28:245--252, 1953.
+\newblock \PMlinkexternal{Zbl 0050.04002}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0050.04002}.
+
+\bibitem{cite:szemeredi_szemth_four}
+Endre Szemer{\'e}di.
+\newblock On sets of integers containing no four elements in arithmetic
+  progression.
+\newblock {\em Acta Math. Acad. Sci. Hung.}, 20:89--104, 1969.
+\newblock \PMlinkexternal{Zbl 0175.04301}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0175.04301}.
+
+
+\bibitem{cite:szemeredi_szemth_gen}
+Endre Szemer{\'e}di.
+\newblock On sets of integers containing no $k$ elements in arithmetic
+  progression.
+\newblock {\em Acta. Arith.}, 27:299--345, 1975.
+\newblock \PMlinkexternal{Zbl 0303.10056}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0303.10056}.
+
+\end{thebibliography}
+%
+%
+%@ARTICLE{cite:gowers_szem_new_gen,
+% author    = {Timothy Gowers},
+% title     = {A new proof of {S}zemer{\'e}di's theorem},
+% journal   = {Geom. Funct. Anal.},
+% volume    = 11,
+% number    = 3,
+% year      = 2001,
+% pages     = {465--588},
+% note      = {Preprint available at %\href{http://www.dpmms.cam.ac.uk/~wtg10/papers.html}{http://www.dpmms.cam.ac.uk/~wtg10/papers.html}}
+%}
+%
+%@ARTICLE{cite:behrend_szem_low,
+% author    = {Felix A. Behrend},
+% title     = {On the sets of integers which contain no three in arithmetic %progression},
+% journal   = {Proc. Nat. Acad. Sci.},
+% volume    = 23,
+% year      = 1946,
+% pages     = {331--332}
+%}
+%
+%@ARTICLE{cite:roth_szem_three,
+% author    = {Klaus Friedrich Roth},
+% title     = {On certain sets of integers},
+% journal   = {J. London Math. Soc.},
+% volume    = 28,
+% year      = 1953,
+% pages      = {245--252}
+%}
+%
+%@ARTICLE{cite:szemeredi_szemth_four,
+% author    = {Endre Szemer{\'e}di},
+% title     = {On sets of integers containing no four elements in arithmetic %progression},
+% journal   = {Acta Math. Acad. Sci. Hung.},
+% volume    = 20,
+% year      = 1969,
+% pages     = {89--104}
+%}
+%
+%@ARTICLE{cite:szemeredi_szemth_gen,
+% author    = {Endre Szemer{\'e}di},
+% title     = {On sets of integers containing no $k$ elements in arithmetic %progression},
+% journal   = {Acta. Arith.},
+% volume    = 27,
+% year      = 1975,
+% pages     = {299--345}
+%}
+%
+%@ARTICLE{cite:rankin_behrgen,
+% author    = {Rankin, Robert A.},
+% title     = {Sets of integers containing not more than a given number of terms %in arithmetical progression},
+% journal   = {Proc. Roy. Soc. Edinburgh Sect. A},
+% volume    = 65,
+% year      = 1962,
+% pages     = {332--344}
+%}
+%%%%%
+%%%%%
+\end{document}

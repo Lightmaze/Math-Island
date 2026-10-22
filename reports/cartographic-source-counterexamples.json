@@ -1,0 +1,111 @@
+{
+  "case": "negative-edge-in-source-dijkstra-description",
+  "source_node_id": "pm:TheRealHistoryOfGettingSettledToAccomplishStudies",
+  "source_path": "sources/planetmath/tex/05_Combinatorics/05C85-TheRealHistoryOfGettingSettledToAccomplishStudies.tex",
+  "source_sha256": "63b7dd1944a79d8959cb496b11dd127b1dae146776ee735a33c7ce0365eadc8f",
+  "graph": {
+    "s": {
+      "a": 2,
+      "b": 5
+    },
+    "a": {
+      "c": 2
+    },
+    "b": {
+      "a": -4
+    },
+    "c": {
+      "s": 100
+    }
+  },
+  "source_algorithm_trace": [
+    {
+      "examined_next": "a",
+      "distances": {
+        "s": 0,
+        "a": 2,
+        "b": 5,
+        "c": 4
+      }
+    },
+    {
+      "examined_next": "c",
+      "distances": {
+        "s": 0,
+        "a": 2,
+        "b": 5,
+        "c": 4
+      }
+    },
+    {
+      "examined_next": "b",
+      "distances": {
+        "s": 0,
+        "a": 1,
+        "b": 5,
+        "c": 4
+      }
+    }
+  ],
+  "reachability_from_every_vertex": {
+    "s": [
+      "a",
+      "b",
+      "c",
+      "s"
+    ],
+    "a": [
+      "a",
+      "b",
+      "c",
+      "s"
+    ],
+    "b": [
+      "a",
+      "b",
+      "c",
+      "s"
+    ],
+    "c": [
+      "a",
+      "b",
+      "c",
+      "s"
+    ]
+  },
+  "simple_cycle_weights": {
+    "s-a-c-s": 104,
+    "s-b-a-c-s": 103
+  },
+  "all_simple_paths_s_to_c": [
+    {
+      "path": [
+        "s",
+        "a",
+        "c"
+      ],
+      "weight": 4
+    },
+    {
+      "path": [
+        "s",
+        "b",
+        "a",
+        "c"
+      ],
+      "weight": 3
+    }
+  ],
+  "source_algorithm_distance_c": 4,
+  "actual_shortest_path": {
+    "path": [
+      "s",
+      "b",
+      "a",
+      "c"
+    ],
+    "weight": 3
+  },
+  "conclusion": "该有向加权强连通图且无负环满足来源列明的连通条件，按原更新规则得到c距离4，真实值3；须补非负边权等充分条件，不能把该原文当作无条件正确算法。",
+  "scope": "Exact finite integer counterexample; no novelty claim; source text retained unchanged."
+}

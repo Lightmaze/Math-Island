@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UnitaryPerfectNumber}
+\pmcreated{2013-03-22 16:19:29}
+\pmmodified{2013-03-22 16:19:29}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{unitary perfect number}
+\pmrecord{4}{38453}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em unitary perfect number} is an integer which is the sum of its positive proper unitary divisors, not including the number itself. (A divisor $d$ of a number $n$ is a unitary divisor if $d$ and $\frac{n}{d}$ share no common factors.) Some perfect numbers are not unitary perfect numbers, and some unitary perfect numbers are not regular perfect numbers.
+
+The first few unitary perfect numbers are 6, 60, 90, 87360, 146361946186458562560000 (sequence A002827 in the OEIS).
+
+There are no odd unitary perfect numbers. This follows since one has $2d*(n)$ dividing the sum of the unitary divisors of an odd number (where $d*(n)$ is the number of distinct prime divisors of $n$). One gets this because the sum of all the unitary divisors is a multiplicative function and one has the sum of the unitary divisors of a power of a prime $p^a$ is $p^a + 1$ which is even for all odd primes $p$. Therefore, an odd unitary perfect number must have only one distinct prime factor, and it is not hard to show that a power of prime cannot be a unitary perfect number, since there are not enough divisors. It's not known whether or not there are infinitely many unitary perfect numbers.
+
+%%%%%
+%%%%%
+\end{document}

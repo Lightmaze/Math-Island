@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DivisorFunction}
+\pmcreated{2013-11-27 18:13:38}
+\pmmodified{2013-11-27 18:13:38}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{divisor function}
+\pmrecord{8}{87979}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmclassification{msc}{11A05}
+\pmclassification{msc}{11A25}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%\usepackage{xypic}
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+In the parent article there has been proved the formula
+$$
+\sigma_1(n) \;=\; \sum_{0 < d \mid n}\!d \;=\;
+\prod_{i=1}^k\frac{p_i^{m_i+1}-1}{p_i-1}
+$$
+giving the sum of all positive divisors of an integer $n$; 
+there the $p_i$'s are the distinct positive prime factors of $n$ and $m_i$'s their multiplicities.\\
+
+It follows that the sum of the $z$'th powers of those divisors is given by
+\begin{align}
+\sigma_z(n) \;=\; \sum_{0 < d \mid n}\!d^z \;=\;
+\prod_{i=1}^k\frac{p_i^{(m_i+1)z}-1}{p_i^z-1}.
+\end{align}
+This complex function of $z$ is called 
+{\it \PMlinkname{divisor function}{DivisorFunction}}.\, The 
+equation (1) may be written in the form
+\begin{align}
+\sigma_z(n)\;=\; 
+\prod_{i=1}^k(1+p_i^z+p_i^{2z}+\ldots+p_i^{m_iz})
+\end{align}
+usable also for\, $z = 0$.\, For the special case of one prime 
+power the function consists of the single 
+\PMlinkname{geometric sum}{GeometricSeries}
+$$\sigma_z(p^m) \;=\; 1+p^z+p^{2z}+\ldots+p^{mz},$$
+which particularly gives $m\!+\!1$ when $p^z = 1$, i.e. when $z$ 
+is a multiple of $2i\pi/\ln{p}$.
+
+
+A special case of the function (1) is the 
+\PMlinkname{$\tau$ function}{TauFunction} of $n$:
+$$
+\sigma_0(n) \;=\; \sum_{0 < d \mid n}\!1 \;=\;
+\prod_{i=1}^k(m_i+1) \;=\; \tau(n)
+$$\\
+
+
+
+
+
+
+
+
+\textbf{Some inequalities}
+
+$$\sigma_m(n)\,\ge\;n^{\frac{m}{2}}\sigma_0(n)
+\quad\mbox{for}\quad m = 0,\,1,\,2,\,\ldots$$
+
+$$\sigma_1(mn) > \sigma_1(m)+\sigma_1(n) 
+\quad \forall\, m, n \in \mathbb{Z}$$
+
+$$\sigma_1(n)\,\le\;\frac{n\!+\!1}{2}\sigma_0(n)$$
+$$n\!+\!\sqrt{n} \,< \sigma_1(n) < 
+\frac{6}{\pi^2}\!\cdot\!n\sqrt{n}$$
+
+
+\end{document}

@@ -1,0 +1,129 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FundamentalTheoremOfIdealTheory}
+\pmcreated{2013-03-22 19:12:40}
+\pmmodified{2013-03-22 19:12:40}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{fundamental theorem of ideal theory}
+\pmrecord{27}{42128}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmsynonym{principal theorem of ideal theory}{FundamentalTheoremOfIdealTheory}
+%\pmkeywords{unique factorization of ideals}
+\pmrelated{AlgebraicNumberTheory}
+\pmrelated{DedekindDomain}
+\pmrelated{EveryIdealInADedekindDomainIsAFactorOfAPrincipalIdeal}
+\pmrelated{PrimeIdealFactorizationIsUnique}
+\pmrelated{UniqueFactorizationAndIdealsInRingOfIntegers}
+\pmrelated{CancellativeSemigroup}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{factors} \PMlinkescapeword{factor}
+
+
+\textbf{Theorem.}\, Every nonzero ideal of the ring of integers of an algebraic number field can be written as \PMlinkname{product}{ProductOfIdeals} of prime ideals of the ring.\, The prime ideal \PMlinkescapetext{decomposition is unique except for the order} of the \PMlinkname{factors}{Product}.\\
+
+In this entry we consider the ring $\mathcal{O}$ of the integers of a number field $\mathbb{Q}(\vartheta)$.\, We use as starting \PMlinkescapetext{point} the fact that the ideals of $\mathcal{O}$ are finitely generated submodules of $\mathcal{O}$ (cf. basis of ideal in algebraic number field) and that its prime ideals $\mathfrak{p}$ are maximal ideals, i.e. the only ideal factors of $\mathfrak{p}$ are $\mathfrak{p}$ itself and the unit ideal \,$(1) = \mathcal{O}$.
+
+For proving the above fundamental theorem of ideal theory, we present and prove some lemmata.\\
+
+\textbf{Lemma 1.}\, The equation \,$\mathfrak{a = bc}$\, between the ideals of $\mathcal{O}$ implies that\, 
+$\mathfrak{a \subseteq c}$.
+
+\emph{Proof.}\, Let\, $\mathfrak{b} = (\beta_1,\ldots,\beta_s)$\, and\, $\mathfrak{c} = (\gamma_1,\ldots,\gamma_t)$.\, If
+$$\alpha \;\in\; \mathfrak{a} \;=\; (\beta_1\gamma_1,\ldots,\beta_i\gamma_j,\ldots,\beta_s\gamma_t),$$
+then there are the elements $\lambda_{ij}$ of $\mathcal{O}$ such that
+$$\alpha \;=\; \sum_i\sum_j\lambda_{ij}\beta_i\gamma_j 
+\;=\; \sum_j\left(\sum_i\lambda_{ij}\beta_i\right)\gamma_j.$$
+But the \PMlinkescapetext{coefficients} of $\gamma_j$ in the parentheses are elements of the ring $\mathcal{O}$, whence the last sum form of $\alpha$ shows that\, $\alpha \in \mathfrak{c}$.\, Consequently, $\mathfrak{a \subseteq c}$.\\
+
+\textbf{Lemma 2.}\, Any nonzero element $\alpha$ of $\mathcal{O}$ belongs only to a finite number of ideals of $\mathcal{O}$.
+
+\emph{Proof.}\, Let\, $\mathfrak{a} = (\alpha_1,\ldots,\alpha_r)$\, be any ideal containing $\alpha$ and let\, 
+$\{\varrho_1,\ldots,\varrho_m\}$\, be a complete residue system modulo $\alpha$ (cf. congruence in algebraic number field).\, Then
+$$\alpha_i \;=\; \alpha\lambda_i\!+\!\varrho_{n_i} \qquad (i \;=\; 1,\,\ldots,\,r)$$
+where the numbers $\lambda_i$ belong to $\mathcal{O}$.\, Since we have
+$$\mathfrak{a} \;=\; (\alpha_1,\,\ldots,\,\alpha_r,\,\alpha) \;=\; 
+(\alpha\lambda_1\!+\!\varrho_{n_1},\,\ldots,\,\alpha\lambda_r\!+\!\varrho_{n_r},\,\alpha)
+\;=\; (\varrho_{n_1},\,\ldots,\,\varrho_{n_r},\,\alpha),$$
+there can be different ideals $\mathfrak{a}$ only a finite number, at most 
+$1\!+\!m\!+\!{n \choose 2}\!+\ldots+\!{m \choose m} = 2^m$.\\
+
+\textbf{Lemma 3.}\, Each ideal $\mathfrak{a}$ of $\mathcal{O}$ has only a finite number of ideal factors.
+
+\emph{Proof.}\, If \,$\mathfrak{c \mid a}$\, and\, $\alpha \in \mathfrak{a}$,\, then by Lemma 1,\, 
+$\alpha \in \mathfrak{c}$,\, whence Lemma 2 implies that there is only a finite number of such factors $\mathfrak{c}$.\\
+
+\textbf{Lemma 4.}\, All nonzero ideals of $\mathcal{O}$ are \PMlinkname{cancellative}{CancellationIdeal}, i.e. if\, $\mathfrak{ac = ad}$\, then\, $\mathfrak{c = d}$.
+
+\emph{Proof.}\, The theorem of \PMlinkid{Steinitz (1911)}{3154} guarantees an ideal $\mathfrak{g}$ of $\mathcal{O}$ such that the product $\mathfrak{ga}$ is a principal ideal $(\omega)$.\, Then we may write
+$$(\omega)\mathfrak{c} \;=\; \mathfrak{(ga)c} \;=\; \mathfrak{g(ac)} 
+\;=\; \mathfrak{g(ad)} \;=\; \mathfrak{(ga)d} \;=\; (\omega)\mathfrak{d}.$$
+If\, $\mathfrak{c} = (\gamma_1,\ldots,\gamma_s)$\, and\, $\mathfrak{d} = (\delta_1,\ldots,\delta_t)$,\, we thus have the equation
+$$(\omega\gamma_1,\ldots,\omega\gamma_s) \;=\; (\omega\delta_1,\ldots,\omega\delta_t)$$
+by which there must exist the elements $\lambda_{i1},\ldots,\lambda_{it}$ of $\mathcal{O}$ such that
+$$\omega\gamma_i \;=\; \lambda_{i1}\omega\delta_1+\ldots+\lambda_{it}\omega\delta_t.$$
+Consequently, the \PMlinkid{generators}{7040} \,$\gamma_i = \lambda_{i1}\delta_1+\ldots+\lambda_{it}\delta_t$\, of $\mathfrak{c}$ belong to the ideal $\mathfrak{d}$, and therefore \,$\mathfrak{c \subseteq d}$.\, Similarly one gets the reverse containment.\\
+
+\textbf{Lemma 5.}\, If\, $\mathfrak{a = bc}$\, and\, $\mathfrak{b} \neq (1)$,\, then $\mathfrak{c}$ has less ideal factors than $\mathfrak{a}$.
+
+\emph{Proof.}\, Evidently, any factor of $\mathfrak{c}$ is a factor of $\mathfrak{a}$.\, But\, 
+$\mathfrak{a \mid a}$\, and\, $\mathfrak{a \nmid c}$, since otherwise we had\, 
+$\mathfrak{c = ad = bcd}$\, whence $(1) = \mathfrak{bd}$ which would, by Lemma 4, imply $\mathfrak{b} = (1)$.\\
+
+\textbf{Lemma 6.}\, Any proper ideal $\mathfrak{a}$ of $\mathcal{O}$ has a prime ideal factor.
+
+\emph{Proof.}\, Let $\mathfrak{c}$ be such a factor of $\mathfrak{a}$ that has as few factors as possible.\, Then 
+$\mathfrak{c}$ must be a prime ideal, because otherwise we had\, $\mathfrak{c} = \mathfrak{c}_1\mathfrak{d}$\, where 
+$\mathfrak{c}_1$ and $\mathfrak{d}$ are proper ideals of $\mathcal{O}$ and, by Lemma 5, the ideal $\mathfrak{c}_1$ would have less factors than $\mathfrak{c}$; this however contradicts the fact\, $\mathfrak{c}_1 \mid \mathfrak{a}$.\\
+
+\textbf{Lemma 7.}\, Every nonzero proper ideal $\mathfrak{a}$ of $\mathcal{O}$ can be written as a product 
+$\mathfrak{p}_1\cdots \mathfrak{p}_k$ where\, $k > 0$\, and the factors $\mathfrak{p}_i$ are prime ideals.
+
+\emph{Proof.}\, If $\mathfrak{a}$ has only one factor $\mathfrak{p}$ distinct from $(1)$, then\, $\mathfrak{a} 
+= \mathfrak{p}$\, is a prime ideal.\\
+Induction hypothesis:\, Lemma 7 is in \PMlinkescapetext{force} always when $\mathfrak{a}$ has at most $n$ factors.\, Let $\mathfrak{a}$ now have $n\!+\!1$ factors.\, Lemma 6 implies that there is a prime ideal $\mathfrak{p}$ such that\, 
+$\mathfrak{a = pd}$\, where\, $\mathfrak{d} \neq (1)$\, and $\mathfrak{d}$ has, by Lemma 5, at most $n$ factors.\, Hence,\, $\mathfrak{d} = \mathfrak{p}_1\cdots\mathfrak{p}_k$\, and therefore,\, 
+$\mathfrak{a} = \mathfrak{p}\mathfrak{p}_1\cdots\mathfrak{p}_k$\, where all $\mathfrak{p}$'s are prime ideals.\\
+
+\textbf{Lemma 8.}\, Any two prime factor \PMlinkescapetext{decompositions}
+$$\mathfrak{a} \;=\; \mathfrak{p}_1\cdots\mathfrak{p}_r \;=\; \mathfrak{q}_1\cdots\mathfrak{q}_s$$
+of a nonzero ideal $\mathfrak{a}$ of $\mathcal{O}$ are identical, i.e.\, $r = s$\, and each prime factor $\mathfrak{p}_i$ is equal to a prime factor $\mathfrak{q}_j$ and vice versa.
+
+\emph{Proof.}\, Any prime ideal has the property that if it divides a product of ideals, it divides one of the factors of the product; now these factors are prime ideals and therefore the prime ideal coincides with one of the factors.\, Similarly as in the proof of the fundamental theorem of arithmetics, one sees the uniqueness of the prime factorisation of $\mathfrak{a}$.
+
+
+%%%%%
+%%%%%
+\end{document}

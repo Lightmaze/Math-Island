@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FraenkelsPartitionTheorem}
+\pmcreated{2013-03-22 13:40:09}
+\pmmodified{2013-03-22 13:40:09}
+\pmowner{Kevin OBryant}{1315}
+\pmmodifier{Kevin OBryant}{1315}
+\pmtitle{Fraenkel's partition theorem}
+\pmrecord{6}{34333}
+\pmprivacy{1}
+\pmauthor{Kevin OBryant}{1315}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B83}
+\pmsynonym{Fraenkel's theorem}{FraenkelsPartitionTheorem}
+\pmrelated{BeattySequence}
+\pmrelated{BeattysTheorem}
+\pmrelated{DataStream}
+\pmrelated{WideraInterlaceAndDeinterlace}
+
+\endmetadata
+
+\usepackage{amsmath,amssymb,amsthm}
+\newcommand{\alpr}{{\alpha^\prime}}
+\newcommand{\bepr}{\beta^\prime}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceiling}[1]{\left\lceil #1 \right\rceil}
+\newenvironment{namedtheorem}[1]{\medskip \noindent {\bf #1:}\begin{em}}{\end{em}\medskip}
+\begin{document}
+Fraenkel's partition theorem is a generalization of Beatty's Theorem. Set
+    $$ {\cal B}(\alpha,\alpha^\prime) := \left( \floor{\frac{n-\alpha^\prime}{\alpha}} \right)_{n=1}^\infty. $$
+We say that two sequences partition $\mathbb{N}=\{1,2,3,\ldots\}$ if the sequences are disjoint and their union is $\mathbb{N}$.
+
+
+\begin{namedtheorem}{Fraenkel's Partition Theorem}
+The sequences ${\cal B}(\alpha,\alpr)$ and ${\cal B}(\beta,\bepr)$ partition $\mathbb{N}$ if and only if the following five conditions are
+satisfied.
+\begin{enumerate}
+ \item
+    $0<\alpha<1$.
+ \item
+    $\alpha+\beta=1$.
+ \item
+    $0\le\alpha+\alpr \le 1$.
+ \item
+    If $\alpha$ is irrational, then $\alpr+\bepr=0$ and $k\alpha+\alpr\not\in\mathbb{Z}$ for $2\le k\in \mathbb{N}$.
+ \item
+    If $\alpha$ is rational (say $q\in \mathbb{N}$ is minimal with $q\alpha \in \mathbb{N}$), then
+    $\frac1q \le \alpha+\alpr$ and $\ceiling{q\alpr}+\ceiling{q\bepr}=1.$
+\end{enumerate}
+\end{namedtheorem}
+
+{\Huge \bf References}
+
+\begin{description}
+\item[ [1] ] Aviezri S. Fraenkel, {\em The bracket function and complementary sets of integers}, Canad. J.
+    Math. {\bf 21} (1969), 6--27. {\bf \PMlinkexternal{MR
+    38:3214}{http://www.ams.org/mathscinet-getitem?mr=38:3214}}
+\item[ [2] ] Kevin O'Bryant, {\em Fraenkel's partition and Brown's decomposition},
+\PMlinkexternal{arXiv:math.NT/0305133}{http://lanl.arxiv.org/abs/math.NT/0305133}.
+\end{description}
+%%%%%
+%%%%%
+\end{document}

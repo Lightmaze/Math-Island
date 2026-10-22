@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{QuadraticCharacterOf2}
+\pmcreated{2013-03-22 13:58:03}
+\pmmodified{2013-03-22 13:58:03}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{quadratic character of 2}
+\pmrecord{5}{34737}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A15}
+\pmrelated{ValuesOfTheLegendreSymbol}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\begin{document}
+For any odd prime $p$, Gauss's lemma quickly yields
+\begin{eqnarray}
+\left( \frac{2}{p} \right) &=& 1 \text{ if }p\equiv\pm 1\pmod{8} \\
+\left( \frac{2}{p} \right) &=& -1 \text{ if }p\equiv\pm 3\pmod{8}
+\end{eqnarray}
+But there is another way, which goes back to Euler, and is worth
+seeing, inasmuch as it is the prototype of certain more general arguments
+about character sums.
+
+Let $\sigma$ be a primitive eighth root of unity in an algebraic closure
+of $\mathbb{Z}/p\mathbb{Z}$, and write $\tau=\sigma+\sigma^{-1}$. 
+We have $\sigma^4=-1$,
+whence $\sigma^2+\sigma^{-2}=0$, whence
+$$\tau^2=2\;.$$
+By the binomial formula, we have
+$$\tau^p=\sigma^p+\sigma^{-p}\;.$$
+If $p\equiv\pm 1\pmod 8$, this implies $\tau^p=\tau$.
+If $p\equiv\pm 3\pmod 8$, we get instead $\tau^p=\sigma^5+\sigma^{-5}=
+-\sigma^{-1}-\sigma=-\tau$.
+In both cases, we get $\tau^{p-1}=\left( \frac{2}{p} \right)$,
+proving (1) and (2).
+
+A variation of the argument, closer to Euler's, goes as follows.
+Write
+$$\sigma=\exp(2\pi i/8)$$
+$$\tau=\sigma+\sigma^{-1}$$
+Both are algebraic integers. Arguing much as above, we end up with
+$$\tau^{p-1}\equiv\left( \frac{2}{p} \right)\pmod{p}$$
+which is enough.
+%%%%%
+%%%%%
+\end{document}

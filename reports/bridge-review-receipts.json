@@ -1,0 +1,132 @@
+{
+  "scope": "Pinned byte hashes for the selected-passage reviews actually performed by atlas_semantics in this run. Re-fetching different bytes does not inherit review.",
+  "reviewer": "agent:/root/atlas_semantics",
+  "receipts": [
+    {
+      "bridge_id": "bridge:001",
+      "sha256": "69b968590df204c59702ee9ffcc857d8ee3cf683146c04133ff098c27bc2b831",
+      "source_type": "published_research_article",
+      "passage_read_scope": "PDF pp. 2–3, 7; Theorem 0.4 and its relation to Theorem 0.5"
+    },
+    {
+      "bridge_id": "bridge:002",
+      "sha256": "f9f3a16da44702bb812d8db28ef5cb53bd4904fc6815a9be9ea80b653e341ac7",
+      "source_type": "research_paper_preprint",
+      "passage_read_scope": "PDF pp. 1–3; Theorem 1 and outline of modular-form/Fourier construction"
+    },
+    {
+      "bridge_id": "bridge:003",
+      "sha256": "e4bee71d420afcd4b3b75b6daff8b05468ae19c8ad672735916a65bbc926fffb",
+      "source_type": "research_paper_preprint",
+      "passage_read_scope": "PDF pp. 1–5; loopless definition, characteristic-polynomial conjecture, Chow ring, Theorem 1.4, proof architecture"
+    },
+    {
+      "bridge_id": "bridge:004",
+      "sha256": "394a21143451acad99ae93e934dc12a5d7df4da68659b8060786fdd8a9665a0c",
+      "source_type": "research_paper_preprint",
+      "passage_read_scope": "PDF p. 3; Theorem 1.2, finite variables/events and expected resampling count"
+    },
+    {
+      "bridge_id": "bridge:005",
+      "sha256": "d03dd6156165fc92e488b3fec35a574c8f7c9df55125cec0f3eebdf95d7256e1",
+      "source_type": "research_paper_preprint",
+      "passage_read_scope": "PDF pp. 2–4; Theorems 1.1–1.2 and transference discussion"
+    },
+    {
+      "bridge_id": "bridge:006",
+      "sha256": "71d5a3dfb55ecdb84448372cf034c515211e5ef8592735c10a50391d50c76fb2",
+      "source_type": "research_paper_preprint",
+      "passage_read_scope": "PDF pp. 1, 4; Definition 0.7: compact space, existence of a suitable geodesic, weak displacement convexity"
+    },
+    {
+      "bridge_id": "bridge:007",
+      "sha256": "2b2d441b6c23aceb7288c221c4f2640d0ec3d92c1b1797b4500e2ad8f7e6415f",
+      "source_type": "published_research_article",
+      "passage_read_scope": "PDF p. 1 rendered as image; abstract and introduction, construction families and decoding claims"
+    },
+    {
+      "bridge_id": "bridge:008",
+      "sha256": "848b8a5bcaddf087bc2870ef27c937b6d99d9cc6c5fb41880507e3d900f8a430",
+      "source_type": "research_paper_preprint",
+      "passage_read_scope": "PDF p. 1; abstract and reproduced Theorem 5.18, fixed non-k-order property"
+    },
+    {
+      "bridge_id": "bridge:009",
+      "sha256": "2dad5d60331d4d0395f9a1495ce03d1a826f45ba80d4f1448324b3ba15904770",
+      "source_type": "authored_research_exposition",
+      "passage_read_scope": "PDF p. 2; intuitionistic natural deduction and simply typed lambda calculus correspondence"
+    },
+    {
+      "bridge_id": "bridge:010",
+      "sha256": "89bfbed17259573dcdc1c1f0e14347030aa42902baba7e0a395fcd7493594aac",
+      "source_type": "collaborative_mathematical_book",
+      "passage_read_scope": "PDF pp. 16, 101–102; types/spaces interpretation and Axiom 2.10.3 (univalence); version hott-online-82-g578b85c"
+    },
+    {
+      "bridge_id": "bridge:011",
+      "sha256": "bcae6367fee9babd50989066ebe22af3ac776c26eba38061fdd5799390ff9408",
+      "source_type": "published_research_article",
+      "passage_read_scope": "PDF pp. 1–3 through web PDF extraction; braid closure, Markov moves, trace construction, Theorems 1–2"
+    },
+    {
+      "bridge_id": "bridge:012",
+      "sha256": "50b1632a200c66eeef2efba61fec49bb6d80442269f766df38817f23a01bde7c",
+      "source_type": "authored_mathematical_book",
+      "passage_read_scope": "Chapter 1 PDF pp. 43, 47; semilocal condition and Theorem 1.38"
+    },
+    {
+      "bridge_id": "bridge:013",
+      "sha256": "6cd63b63c40ce5998c105e5c5ce5b3e78aa099ff5dea75c17280eb1d66030bde",
+      "source_type": "collaborative_mathematical_reference",
+      "passage_read_scope": "HTML theorem Tag 00FV, both clauses and proof; algebraically closed specialization explicitly stated by atlas"
+    },
+    {
+      "bridge_id": "bridge:014",
+      "sha256": "00c227de8b1a751f5342a94ba4346bd20a3954a82d67ef2b5e9cfed259516f80",
+      "source_type": "institutional_student_exposition",
+      "passage_read_scope": "PDF pp. 1, 12; author Robert Hale; Theorem 5.5; atlas uses compact boundaryless regular surfaces in R^3"
+    },
+    {
+      "bridge_id": "bridge:015",
+      "sha256": "8c29cbbf5892a716b2be7601fda2480d746e5429145406509ccdeb57f5a9ca9f",
+      "source_type": "institutional_lecture_notes",
+      "passage_read_scope": "PDF p. 7, Theorem 4; nonnegative potential, bounded data, d-dimensional Brownian generator"
+    },
+    {
+      "bridge_id": "bridge:016",
+      "sha256": "8d58bc40026054dfc5ec3137e338bfab2904f434a1e07cfc822d8bc2a1bcadcf",
+      "source_type": "research_paper_preprint",
+      "passage_read_scope": "PDF pp. 3–4; Theorems 1–2, delta_3S+3delta_4S<2 and approximate sparsity tail"
+    },
+    {
+      "bridge_id": "bridge:017",
+      "sha256": "a6706e37c21a69694f85415c162324ed031eb33e675367aa04ee6abdf37ada97",
+      "source_type": "published_research_article",
+      "passage_read_scope": "PDF p. 2; Theorem 2.1 and random-projection/union-bound proof outline"
+    },
+    {
+      "bridge_id": "bridge:018",
+      "sha256": "af3933b62284b05f84b44fc0c1f099d0890de39215738e8f9a512576e5adc2c5",
+      "source_type": "research_paper_preprint",
+      "passage_read_scope": "PDF pp. 2–4; Theorem 0.3, failed naive balancing, Theorem 1.2 and product-polynomial construction"
+    },
+    {
+      "bridge_id": "bridge:019",
+      "sha256": "7963ddb98447c1d512d73143bc67b055621506962f5d0851faa1def74c51aadd",
+      "source_type": "published_research_article",
+      "passage_read_scope": "PDF p. 2 rendered as image; strong product, theta via orthogonal representations, Theorems 1–2"
+    },
+    {
+      "bridge_id": "bridge:020",
+      "sha256": "8baa9d9e20e6fdae1bbb1b0cb98cf1fe43f9d019241b934d219b991baac7abe7",
+      "source_type": "institutional_lecture_notes",
+      "passage_read_scope": "PDF p. 1, Section 3: polynomial messages and distinct-point evaluation; [n,k,n-k+1] is the explicit standard root-counting consequence"
+    },
+    {
+      "bridge_id": "bridge:021",
+      "sha256": "18da69d1ae19c2609fb553fd8cb2fd1b4be6536cbc7e777021e9c130518d59e6",
+      "source_type": "authored_technical_notes",
+      "passage_read_scope": "PDF pp. 1–2; oracle/evaluation requirement, fresh uniform challenges, degree rejection, Proposition 1.1 and induction"
+    }
+  ]
+}

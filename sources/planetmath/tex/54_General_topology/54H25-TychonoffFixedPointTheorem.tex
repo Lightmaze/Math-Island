@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TychonoffFixedPointTheorem}
+\pmcreated{2013-03-22 16:04:11}
+\pmmodified{2013-03-22 16:04:11}
+\pmowner{paolini}{1187}
+\pmmodifier{paolini}{1187}
+\pmtitle{Tychonoff fixed point theorem}
+\pmrecord{8}{38125}
+\pmprivacy{1}
+\pmauthor{paolini}{1187}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54H25}
+\pmclassification{msc}{46B50}
+\pmclassification{msc}{47H10}
+\pmrelated{SchauderFixedPointTheorem}
+\pmrelated{BrouwerFixedPointTheorem}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\R}{\mathbb R}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\theoremstyle{remark}
+\newtheorem{example}{Example}
+\begin{document}
+Let $X$ be a locally convex topological vector space, and let $K\subset X$ be a non-empty, compact, and convex set. 
+Then given any continuous mapping $f\colon K \to K$
+there exists $x\in K$ such that $f(x)=x$.
+
+Notice that a normed vector space is a locally convex topological
+vector space so this theorem extends the Schauder fixed point theorem.
+
+\begin{thebibliography}{9}
+\bibitem{rudin} Rudin, \emph{Functional Analysis}, Chapter 5.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

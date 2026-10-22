@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{APrimeOccursInTheEuclidMullinSequenceNoMoreThanOnce}
+\pmcreated{2013-03-22 17:41:29}
+\pmmodified{2013-03-22 17:41:29}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{a prime occurs in the Euclid-Mullin sequence no more than once}
+\pmrecord{5}{40132}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Theorem.} A prime $p$ which occurs in the Euclid-Mullin sequence $a$ starting with 2 (or any variant made by changing the initial value to an odd prime) occurs only once.
+
+Whether $a_1 = 2$ or some odd prime, each succeeding term is the least prime factor of the product of the previous terms plus 1.
+
+The proof is barely little more than a rehashing of Euclid's proof that there are infinitely many primes.
+
+\begin{proof}
+We begin by asserting that $p$ does indeed occur twice in the Euclid-Mullin sequence (or some variant thereof), and that the second occurrence is at position $n$. Or, to put it algebraically, the first occurrence is at position $m$ and there is an $n > m$ such that $a_n = a_m$. 
+
+For our convenience, we assign $\alpha_j$ thus: $$\alpha_j = \prod_{i = 1}^{j - 1} a_i.$$ Obviously $\alpha_n$ is divisible by each $a_i$ for $i < n$, and that obviously includes $a_m$. Without yet concerning ourselves with primality, then it is obvious that $\alpha_n + 1$ is not divisible by any of the previous $a_i$, and that also includes $a_m$. If $\alpha_n + 1$ is indeed prime, then $a_n = \alpha + 1$ and $a_n > a_i$, often spectacularly so, obviously contradicting our initial assertion. But if $\alpha_n + 1$ is composite, its least prime factor can't be any of the previous $a_i$, because they're all factors of $\alpha_n$, and we now invoke the proof that two consecutive integers are always coprime.
+\end{proof}
+
+When $\alpha_n + 1$ is prime the proof is undoubtable; it is a prime greater than all the previous primes in the sequence. But if there is any doubt whatsoever when $\alpha_n + 1$ is composite, it might perhaps be at least a tiny bit worthwhile to work out an example: I assert that $a_5$ in the Euclid-Mullin sequence is a repeated term. The first four terms of the Euclid-Mullin sequence are 2, 3, 7, 43. Their product is 1806, which is obviously even, and it is also divisible by 3. It's up to you whether you want to use a divisibility test for 7 or just perform the calculation to verify that 1806 is indeed divisible by 7. And 1806 is 43 times... 42. 1807 can't be divisible by any of the same positive numbers 1806 is divisible by (other than of course 1). But it's nowhere to be found on a list of prime numbers. It's not divisible by 11 but it turns out to be divisible by 13. 13, though smaller than 43, is clearly not equal to either 2, 3 or 7. Therefore my initial assertion is incorrect.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NestedIntervalTheorem}
+\pmcreated{2013-03-22 17:27:12}
+\pmmodified{2013-03-22 17:27:12}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{nested interval theorem}
+\pmrecord{11}{39835}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C30}
+\pmclassification{msc}{26-00}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\newtheorem{prop}{Proposition}
+\begin{document}
+\begin{prop} If 
+$$[a_1,\,b_1] \;\supseteq\; [a_2,\,b_2] \;\supseteq\; [a_3,\,b_3] \;\supseteq\ldots$$
+is a sequence of nested closed intervals, then 
+\begin{align*}
+\bigcap_{n=1}^\infty [a_n,\,b_n] \;\neq\; \varnothing.
+\end{align*}
+If also\, $\displaystyle\lim_{n\to\infty}(b_n\!-\!a_n) = 0$,\, then the infinite 
+intersection consists of a unique real number.
+\end{prop}
+
+\begin{proof}  There are two consequences to nesting of intervals: $[a_m,\,b_m]\subseteq[a_n,\,b_n]$ for $n\le m$:
+\begin{enumerate}
+\item first of all, we have the inequality $a_n\le a_m$ for $n\le m$, which means that the sequence $a_1, a_2, \ldots, a_n, \ldots$ is nondecreasing;
+\item in addition, we also have two inequalities: $a_m\le b_n$ and $a_n\le b_m$.  In either case, we have that $a_i\le b_j$ for all $i,j$.  This means that the sequence $a_1, a_2, \ldots, a_n, \ldots$ is bounded from above by all $b_i$, where $i=1,2,\ldots$.  
+\end{enumerate}
+Therefore, the limit of the sequence $(a_i)$ exists, and is just the supremum, say $a$ (see proof \PMlinkname{here}{NondecreasingSequenceWithUpperBound}).  Similarly the sequence $(b_i)$ is nonincreasing and bounded from below by all $a_i$, where $i=1,2,\ldots$, and hence has an infimum $b$.  
+
+Now, as the supremum of $(a_i)$, $a\le b_i$ for all $i$.  But because $b$ is the infimum of $(b_i)$, $a\le b$.  Therefore, the interval $[a,b]$ is non-empty (containing at least one of $a,b$).  Since $a_i\le a\le b\le b_i$, every interval $[a_i,b_i]$ contains the interval $[a,b]$, so their intersection also contains $[a,b]$, hence is non-empty.
+
+If $c$ is a point outside of $[a,b]$, say $c<a$, then there is some $a_i$, such that $c<a_i$ (by the definition of the supremum $a$), and hence $c\notin [a_i,b_i]$.  This shows that the intersection actually coincides with $[a,b]$.
+
+Now, since $\displaystyle\lim_{n\to\infty}(b_n-a_n) = 0$, we have that $b-a=\displaystyle\lim_{n\to\infty}b_n - \displaystyle\lim_{n\to\infty} a_n = \displaystyle\lim_{n\to\infty}(b_n-a_n) = 0$.  So $a=b$.  This means that the intersection of the nested intervals contains a single point $a$.
+\end{proof}
+
+\textbf{Remark}.\, This result is called the \emph{nested interval theorem}.
+It is a restatement of the \emph{finite intersection property}
+for the compact set \,$[a_1,\,b_1]$.\, The result may also be proven by elementary methods:
+namely, any number lying in between the supremum of all the $a_n$ and the infimum of all the $b_n$
+will be in all the nested intervals.
+
+%%%%%
+%%%%%
+\end{document}

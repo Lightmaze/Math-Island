@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FactorizationOfTheDedekindZetaFunctionOfAnAbelianNumberField}
+\pmcreated{2013-03-22 16:01:21}
+\pmmodified{2013-03-22 16:01:21}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Factorization of the Dedekind zeta function of an abelian number field}
+\pmrecord{4}{38062}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11M06}
+\pmclassification{msc}{11R42}
+\pmrelated{ValuesOfDedekindZetaFunctionsOfRealQuadraticNumberFieldsAtNegativeIntegers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+The Dedekind zeta function of an abelian number field
+factors as a product of Dirichlet L-functions as follows. Let $K$
+be an abelian number field, i.e. $K/\Rats$ is Galois and
+$\Gal(K/\Rats)$ is abelian. Then, by the Kronecker-Weber theorem,
+there is an integer $n$ (which we choose to be minimal) such that
+$K\subseteq \Rats(\zeta_n)$ where $\zeta_n$ is a primitive $n$th
+root of unity. Let $G=\Gal(\Rats(\zeta_n)/\Rats)\cong
+(\Ints/n\Ints)^\times$ and let $\chi:G\to \Complex^\times$ be a
+Dirichlet character. Then the kernel of $\chi$ determines a fixed
+field of $\Rats(\zeta_n)$. Further, for any field $K$ as before,
+there exists a group $X$ of Dirichlet characters of $G$ such that
+$K$ is equal to the intersection of the fixed fields by the
+kernels of all $\chi\in X$. The order of $X$ is $[K:\Rats]$ and
+$X\cong \Gal(K/\Rats)$.
+
+\begin{thm}[\cite{wash}, Thm. 4.3]
+\label{factor} Let $K$ be an abelian number field and let $X$ be
+the associated group of Dirichlet characters. The Dedekind zeta
+function of $K$ factors as follows:
+$$\zeta_K(s)=\prod_{\chi \in X} L(s,\chi).$$
+\end{thm}
+Notice that for the trivial character $\chi_0$ one has
+$L(s,\chi_0)=\zeta(s)$, the Riemann zeta function, which has a
+simple pole at $s=1$ with residue $1$. Thus, for an arbitrary
+abelian number field $K$:
+$$\zeta_K(s)=\prod_{\chi \in X}L(s,\chi)=\zeta(s)\cdot \prod_{\chi_0\neq \chi \in
+X} L(s,\chi)$$ where the last product is taken over all
+non-trivial characters $\chi \in X$.
+
+\begin{thebibliography}{99}
+\bibitem{wash} L. C. Washington, {\em Introduction to Cyclotomic Fields}, Springer-Verlag, New York.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

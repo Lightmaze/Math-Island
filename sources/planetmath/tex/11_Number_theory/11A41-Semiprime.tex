@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Semiprime}
+\pmcreated{2013-03-22 12:49:22}
+\pmmodified{2013-03-22 12:49:22}
+\pmowner{drini}{3}
+\pmmodifier{drini}{3}
+\pmtitle{semiprime}
+\pmrecord{9}{33145}
+\pmprivacy{1}
+\pmauthor{drini}{3}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmsynonym{semi-prime}{Semiprime}
+\pmsynonym{2-almost prime}{Semiprime}
+%\pmkeywords{number theory}
+%\pmkeywords{primes}
+\pmdefines{almost prime}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A composite number which is the product of two (possibly equal) primes is called  \emph{semiprime}. Such numbers are sometimes also called 2-\emph{almost primes}. For example:
+
+\begin{itemize}
+\item 1 is not a semiprime because it is not a composite number or a prime, 
+\item 2 is not a semiprime, as it is a prime,
+\item 4 is a semiprime, since $4 = 2\cdot 2$,
+\item 8 is not a semiprime, since it is a product of three primes ($8 = 2\cdot 2\cdot 2$),
+\item 2003 is not a semiprime, as it is a prime,
+\item 2005 is a semiprime, since $2005 = 5\cdot 401$,
+\item 2007 is not a semiprime, since it is a product of three primes ($2007 = 3\cdot 3\cdot 223$).
+\end{itemize} 
+
+The first few semiprimes are $4, 6, 9, 10, 14, 15, 21, 22, 25, 26, 33, 34, 35, 38, 39, 46, 49, 51, 55, 57, 58, 62, \ldots$ (\PMlinkexternal{Sloane's sequence A001358}{http://www.research.att.com/cgi-bin/access.cgi/as/njas/sequences/eisA.cgi?Anum=001358}
+). The Moebius function $\mu(n)$ for semiprimes can be only equal to 0 or 1. If we form an integer sequence of values of $\mu(n)$ for semiprimes we get a binary sequence: $0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, \ldots$. (\PMlinkexternal{Sloane's sequence A072165}{http://www.research.att.com/cgi-bin/access.cgi/as/njas/sequences/eisA.cgi?Anum=072165}
+).
+
+All the squares of primes are also semiprimes. The first few squares of primes are then $4, 9, 25, 49, 121, 169, 289, 361, 529, 841, 961, 1369, 1681, 1849, 2209, 2809, 3481, 3721, 4489, 5041, \ldots$. (\PMlinkexternal{Sloane's sequence A001248}{http://www.research.att.com/cgi-bin/access.cgi/as/njas/sequences/eisA.cgi?Anum=001248}
+). The Moebius function $\mu(n)$ for the squares of primes is always equal to 0 as it is equal to 0 for all squares.
+%%%%%
+%%%%%
+\end{document}

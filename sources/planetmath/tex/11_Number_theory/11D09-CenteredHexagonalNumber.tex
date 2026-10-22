@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CenteredHexagonalNumber}
+\pmcreated{2013-03-22 16:34:35}
+\pmmodified{2013-03-22 16:34:35}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{centered hexagonal number}
+\pmrecord{5}{38767}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D09}
+\pmsynonym{hex number}{CenteredHexagonalNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em centered hexagonal number}, or {\em hex number} is a figurate number that represents a hexagon with a dot in the center and all other dots surrounding the center dot equidistantly. The centered hexagonal number for $n$ is given by the formula $1 + 6\left({1 \over 2} n(n + 1 ) \right)$. In other words, the centered hexagonal number for $n$ is the triangular number for $n$ multiplied by 6, then add 1.
+
+The first few centered hexagonal numbers are: 1, 7, 19, 37, 61, 91, 127, 169, 217, 271, 331, 397, 469, 547, 631, 721, 817, 919, ... listed in A003215 of Sloane's OEIS.
+
+To find centered hexagonal numbers besides 1 that are also triangular numbers or squares, it is necessary to solve Diophantine equations. By solving the Diophantine equation ${1 \over 2} m(m + 1) = 3n^2 + 3n + 1,$ we learn that 91, 8911 and 873181 are numbers that are both centered hexagonal numbers and triangular numbers (they grow very large after that), while solving the Diophantine equation $m^2 = 3n^2 + 3n + 1,$ we learn that 169 and 32761 are centered hexagonal numbers that are also squares.
+
+The sum of the first $n$ centered hexagonal numbers is $n^3$. The difference between $(2n)^2$ and the $n$th centered hexagonal number is a number of the form $n^2 + 3n - 1$, while the difference between $(2n - 1))^2$ and the $n$th centered hexagonal number is an oblong number.
+%%%%%
+%%%%%
+\end{document}

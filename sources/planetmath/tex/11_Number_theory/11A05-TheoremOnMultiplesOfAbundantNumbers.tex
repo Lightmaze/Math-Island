@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheoremOnMultiplesOfAbundantNumbers}
+\pmcreated{2013-03-22 16:05:46}
+\pmmodified{2013-03-22 16:05:46}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{theorem on multiples of abundant numbers}
+\pmrecord{15}{38158}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmrelated{APositiveMultipleOfAnAbundantNumberIsAbundant}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Theorem. The product $nm$ of an abundant number $n$ and any integer $m > 0$ is also an abundant number, regardless of the abundance or deficiency of $m$.
+
+Proof. Choose an abundant number $n$ with $k$ divisors $d_1, \ldots ,d_k$ (where the divisors are sorted in ascending order and $d_1 = 1$, $d_k = n$) that add up to $2n + a$, where $a > 0$ is the abundance of $n$. For maximum flair, set $a = 1$, the bare minimum for abundance (that is, a quasiperfect number). Next, for $m$ choose a spectacularly deficient number such that $\gcd(m, n) = 1$, preferably some large prime number. If we choose a prime number, its divisors will only add up to $m + 1$. However, the divisors of $nm$ will include each $d_im$, where $d_i$ is a divisor of $n$ and $0 < i \le k$. Therefore, the divisors of $nm$ will add up to $$\sum_{i = 1}^k d_i + \sum_{i = 1}^k d_im = 2nm + a(m + 1) + 2n.$$
+
+It now becomes obvious that by insisting that $m$ and $n$ be coprime we are guaranteeing that \PMlinkescapetext{even} if $m$ is itself prime, it will bring at least $k$ new divisors to the table. But what if $\gcd(m, n) > 1$, or in the most extreme case, $m = n$? In such a case, we just can't use the same formula for the sum of divisors of $nm$ that we used when $m$ and $n$ were coprime, as that would count some divisors twice. However, $m = n$ still brings new divisors to the table, and those new divisors add up to $$\sum_{i = 2}^k d_id_k = 2n^2 + 2a^2 + a.$$
+
+Having proven these extreme cases, it is obvious that $nm$ will be abundant in other cases, such as $m$ being a composite deficient number, a perfect number, an abundant number sharing some but not all prime factors with $n$, etc.
+%%%%%
+%%%%%
+\end{document}

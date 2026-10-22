@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SemiinnerProduct}
+\pmcreated{2013-03-22 17:47:10}
+\pmmodified{2013-03-22 17:47:10}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{semi-inner product}
+\pmrecord{7}{40246}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11E39}
+\pmclassification{msc}{15A63}
+\pmclassification{msc}{46C50}
+\pmsynonym{positive semi-definite inner product}{SemiinnerProduct}
+\pmsynonym{semi inner product}{SemiinnerProduct}
+\pmdefines{semi-inner product space}
+\pmdefines{Cauchy-Schwartz inequality for semi-inner products}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\subsubsection{Definition}
+
+Let $V$ be a vector space over a field $\mathbb{K}$, where $\mathbb{K}$ is $\mathbb{R}$ or $\mathbb{C}$.
+
+A {\bf semi-inner product} on $V$ is a function $\;\langle \cdot , \cdot \rangle : V \times V \longrightarrow \mathbb{K}\;$ that \PMlinkescapetext{satisfies} the following conditions:
+
+\begin{enumerate}
+\item $\langle \lambda_1 v_1 + \lambda_2 v_2 , w \rangle = \lambda_1 \langle v_1 , w \rangle + \lambda_2 \langle v_2 , w \rangle\;$ for every $v_1, v_2, w \in V$ and $\lambda_1, \lambda_2 \in \mathbb{K}$.
+\item $\langle v ,w \rangle = \overline{\langle w ,v \rangle}\;$ for every $v, w \in V$, where the \PMlinkescapetext{line} above means complex conjugation. 
+\item $\langle v ,v \rangle \geq 0$ (\PMlinkescapetext{positive} semi definite).
+\end{enumerate}
+
+Hence, a semi-inner product on a vector space is just like an inner product, but for which $\langle v ,v \rangle$ can be zero (\PMlinkescapetext{even} if $v \neq 0$).
+
+A \emph{semi-inner product space} is just a vector space endowed with a semi-inner product.
+
+\subsubsection{Topology}
+
+Every semi-inner product space $V$ can be given a topology associated with the semi-inner product. In fact, a semi-norm $\| \cdot \|$ can be defined in $V$ by
+\begin{displaymath}
+\|v\| := \sqrt{\langle v ,v \rangle}
+\end{displaymath}
+
+\subsubsection{Cauchy-Schwarz inequality}
+
+The Cauchy-Schwarz inequality is valid for semi-inner product spaces:
+\begin{displaymath}
+|\langle v , w \rangle| \leq \sqrt{\langle v,v \rangle}\sqrt{\langle w, w \rangle}
+\end{displaymath}
+
+\subsubsection{Properties}
+
+Let $V$ be a semi-inner product space and $W:=\{v \in V : \langle v , v \rangle = 0\}$. It is not difficult to see, using the Cauchy-Schwarz inequality, that $W$ is a vector subspace.
+
+The semi-inner product in $V$ induces a well defined semi-inner product in the \PMlinkname{quotient}{QuotientModule} $V/W$ which is, in fact, an inner product. Thus, the \PMlinkescapetext{quotient} $V/W$ is an inner product space.
+%%%%%
+%%%%%
+\end{document}

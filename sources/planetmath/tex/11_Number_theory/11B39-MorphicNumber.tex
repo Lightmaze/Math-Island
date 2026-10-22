@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MorphicNumber}
+\pmcreated{2013-03-22 19:09:51}
+\pmmodified{2013-03-22 19:09:51}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{morphic number}
+\pmrecord{6}{42070}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B39}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+The golden ratio \,$\varphi = \frac{1+\sqrt{5}}{2}$\, satisfies the equations
+\begin{align}
+\begin{cases}
+\varphi\!+\!1 \;=\; \varphi^2, \\
+\varphi\!-\!1 \;=\; \varphi^{-1}
+\end{cases}
+\end{align}
+from which the latter is obained from the former by dividing by $\varphi$.\,
+There is a \PMlinkescapetext{similar} pair of equations satisfied by the plastic number $P$:
+\begin{align}
+\begin{cases}
+P\!+\!1 \;=\; P^3, \\
+P\!-\!1 \;=\; P^{-4}
+\end{cases}
+\end{align}
+Here, the latter equation is justified by
+$$P^5\!-\!P^4\!-\!1 \;\equiv\; (\underbrace{P^3\!-\!P\!-\!1}_{=\;0})(P^2\!-\!P\!+\!1) $$
+when this is divided by $P^4$.\\
+
+An algebraic integer is called a \emph{morphic number}, iff it satisfies a pair of equations
+\begin{align}
+\begin{cases}
+x\!+\!1 \;=\; x^m, \\
+x\!-\!1 \;=\; x^{-n}
+\end{cases}
+\end{align}
+for some positive integers $m$ and $n$.\\
+
+Accordingly, the golden ratio and the plastic number are morphic numbers.\, It can be shown that there are no other real morphic numbers greater than 1.
+
+\begin{thebibliography}{8}
+\bibitem{naw}{\sc J. Aarts, R. Fokkink, G. Kruijtzer}: Morphic numbers.\, -- \emph{Nieuw  Archief voor Wiskunde} 5/2 (2001).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

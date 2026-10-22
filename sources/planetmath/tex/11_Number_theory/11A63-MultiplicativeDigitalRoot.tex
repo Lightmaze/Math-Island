@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MultiplicativeDigitalRoot}
+\pmcreated{2013-03-22 16:00:42}
+\pmmodified{2013-03-22 16:00:42}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{multiplicative digital root}
+\pmrecord{4}{38046}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{repeated digit product}{MultiplicativeDigitalRoot}
+\pmsynonym{repeated digital product}{MultiplicativeDigitalRoot}
+\pmdefines{multiplicative persistence}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given an integer $m$ consisting of $k$ digits $d_1, \dots, d_k$ in base $b$, let $$j = \prod_{i = 1}^{k} d_i,$$ then repeat this operation on the digits of $j$ until $j < b$. This stores in $j$ the {\em multiplicative digital root} of $m$. The number of iterations of the multiplication operation is called the {\em multiplicative persistence} of $m$.
+%%%%%
+%%%%%
+\end{document}

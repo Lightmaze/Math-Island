@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SiegelsTheorem}
+\pmcreated{2013-03-22 15:57:24}
+\pmmodified{2013-03-22 15:57:24}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Siegel's theorem}
+\pmrecord{6}{37969}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11G05}
+\pmrelated{FaltingsTheorem}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+The following theorem is a very deep application of Roth's theorem. Let $K$ be a number field and let $S$ be a finite set of places of $K$. Let $R_S$ be the \PMlinkid{ring of $S$-integers}{RingOfSIntegers} in $K$. Let $C/K$ be a smooth projective curve of genus $g$ defined over $K$ and let $f$ be a non-constant function in the function field of $C/K$, i.e. $f\in K(C)$. 
+
+\begin{thm}[Siegel's Theorem]
+Assume that $C/K$ has genus $g\geq 1$. Then the set $\{P\in C(K) : f(P) \in R_S\}$ is finite.
+\end{thm} 
+
+In particular, when $f$ is the coordinate functions $x(P)$ and $y(P)$, Siegel's theorem implies that a curve of genus $\geq 1$ has only finitely many integral points. For example, this shows that an elliptic curve defined over $\Rats$ can only have finitely many points defined over $\Ints$.
+%%%%%
+%%%%%
+\end{document}

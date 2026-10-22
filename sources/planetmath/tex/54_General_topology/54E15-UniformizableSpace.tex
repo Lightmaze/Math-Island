@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UniformizableSpace}
+\pmcreated{2013-03-22 16:49:05}
+\pmmodified{2013-03-22 16:49:05}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{uniformizable space}
+\pmrecord{5}{39055}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E15}
+\pmdefines{uniformizable}
+\pmdefines{completely uniformizable}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\begin{document}
+Let $X$ be a topological space with $\mathcal{T}$ the topology defined on it.  $X$ is said to be \emph{uniformizable}
+\begin{enumerate}
+\item there is a uniformity $\mathcal{U}$ defined on $X$, and 
+\item $\mathcal{T}=T_{\mathcal{U}}$, the uniform topology induced by $\mathcal{U}$.
+\end{enumerate}
+
+It can be shown that a topological space is uniformizable iff it is completely regular.
+
+Clearly, every pseudometric space is uniformizable.  The converse is true if the space has a countable basis.  Pushing this idea further, one can show that a uniformizable space is metrizable iff it is separating (or Hausdorff) and has a countable basis.
+
+Let $X$, $\mathcal{T}$, and $\mathcal{U}$ be defined as above.  Then $X$ is said to be \emph{completely uniformizable} if $\mathcal{U}$ is a complete uniformity.
+
+Every paracompact space is completely uniformizable.  Every completely uniformizable space is completely regular, and hence uniformizable.
+%%%%%
+%%%%%
+\end{document}

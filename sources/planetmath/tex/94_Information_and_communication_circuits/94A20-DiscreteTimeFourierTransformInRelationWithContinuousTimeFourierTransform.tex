@@ -1,0 +1,256 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DiscreteTimeFourierTransformInRelationWithContinuousTimeFourierTransform}
+\pmcreated{2013-03-22 17:37:45}
+\pmmodified{2013-03-22 17:37:45}
+\pmowner{fernsanz}{8869}
+\pmmodifier{fernsanz}{8869}
+\pmtitle{discrete time Fourier transform in relation with continuous time Fourier transform}
+\pmrecord{10}{40050}
+\pmprivacy{1}
+\pmauthor{fernsanz}{8869}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94A20}
+%\pmkeywords{Sampling}
+%\pmkeywords{Fourier Transform}
+%\pmkeywords{Discrete Time Fourier Transform}
+%\pmkeywords{DTFT}
+%\pmkeywords{replicas}
+\pmrelated{SamplingTheorem}
+\pmrelated{ApproximatingFourierIntegralsWithDiscreteFourierTransforms}
+\pmrelated{Distribution4}
+\pmrelated{SpaceOfRapidlyDecreasingFunctions}
+\pmdefines{DTFT}
+\pmdefines{Discrete Time Fourier Transform}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+% THEOREMS -------------------------------------------------------
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}{Corollary}
+\newtheorem{lem}{Lemma}
+\newtheorem{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newtheorem*{notat}{Notation}
+%\numberwithin{equation}{section}
+% MATH -----------------------------------------------------------
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\To}{\rightarrow}
+\newcommand{\xd}{x_d[n]}
+\newcommand{\xc}{x(t)}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\rapid}{\mathcal{S}}
+\newcommand{\replica}[3]{\sum_{k=#2}^{#3} #1 \left(\frac{\omega- 2\pi \cdot k}{T}
+\right)}
+\newcommand{\DTFT}[1]{\sum_{k=-\infty}^{+\infty} \frac{#1(kT^+)+#1(kT^-)}{2} e^{-j\omega
+k}}
+
+\begin{document}
+\title{Fourier Transforms of Sampled Signals}%
+\author{Fernando Diego Sanz Gamiz}%
+
+% ----------------------------------------------------------------
+\textbf{Introduction}
+
+Computers are able to handle only finite number of data. Hence, if
+we are to study and treat real world signals (i.e. functions $\R \To
+\C$) in a computer, a way to characterize signals by a finite number
+of data has to be found.
+
+
+\noindent If we sample the values of the signal $\xc$ at periodic
+times $t=nT, n \in \Z$ we form the sequence $\xd=x(nT)$. Does this
+sequence contain all the information relative to $\xc$?
+
+
+\noindent We know from the sampling theorem that if the signal $\xc$
+is bandlimited, the sampled sequence allows us to recover the
+original continuous time signal provided the sampling frequency
+$1/T$ is at least twice the maximum frequency of the signal. However,
+real signals are not of finite bandwidth as this would imply the
+signal to be of infinite time duration. Therefore, a problem arise
+of how well can we approximate the original signal $\xc$ by the
+sampled sequence $x_d[n]$. In fact, we are interested in studying
+the spectrum of the original signal based upon the samples $\xd$.
+
+
+\noindent While the relation between $\xd$ and the spectrum of $\xc$
+is widely used in communication and electronic engineering books, it
+is difficult to find a rigorous proof. We cover here the gap between
+engineering daily knowledge and rigorous mathematical proof of the
+named relations establishing under what assumptions those relations
+are valid.
+
+
+\textbf{Relation between Discrete Time Fourier Transform and Continuous time Fourier transform}
+
+\begin{thm}
+Let $x:\R \To \C$ be a bounded variation (it can be, in particular,
+piecewise smooth) $L^1$ function and let $X(\omega)$ be its Fourier
+transform \footnote{in the present entry we will take the Fourier
+transform of $x(t)$ to be $X(\omega)=\int_{-\infty}^{+\infty}
+x(t)e^{-jwt} d\omega$}. Let $T \in \R$. If $g_n(\omega)
+=\replica{X}{-n}{+n}$ converges a.e as $n \To +\infty$ and is there
+is $M$ such that $\abs{g_n(\omega)}<M$ a.e. then \label{eq1}
+\begin{equation}
+\frac {1}{T} \replica{X}{-\infty}{+\infty} = \DTFT{x} \mbox{\,\,\,
+in } L^2([-\pi, \pi])
+\end{equation}
+
+If additionally $\replica{X}{-\infty}{+\infty}$ is continuous, the
+right hand side of (\ref{eq1}) converges uniformly to the left hand
+side in any closed interval $[a,b] \subset [-\pi, \pi]$.
+\end{thm}
+
+\begin{proof}
+By hypothesis we can form the function $$g(\omega)=\lim_{n \To
++\infty } g_n(\omega)= \lim_{n \To +\infty } \replica{X}{-n}{+n}$$
+This function is obviously periodic of period $2 \pi$ and bounded,
+hence it can be expanded in its Fourier series which converge in
+$L^2([-\pi, \pi])$; the Fourier theory shows that the convergence is
+uniformly in $[a,b] \subset [-\pi, \pi]$ if $g(\omega)$ is
+continuous.
+$$g(\omega)= \replica{X}{-\infty}{+\infty} =
+\sum_{k=-\infty}^{+\infty} c_ke^{j\omega k}$$ where the coefficients
+$c_k$ are given by $$ c_k = \frac{1}{2\pi} \int_{-\pi}^{\pi}
+g(\omega) e^{-j\omega k} d\omega = \frac{1}{2\pi} \int_{-\pi}^{\pi}
+\lim_{n \To +\infty } g_n(\omega) e^{-j\omega k} d\omega$$
+
+As $\abs{g_n(\omega)}<M$ we can appeal the dominated convergence
+theorem to write
+\begin{eqnarray*}
+\frac{1}{2\pi} \int_{-\pi}^{\pi} \lim_{n \To +\infty } g_n(\omega)
+e^{-j\omega k} d\omega & = & \lim_{n \To +\infty } \frac{1}{2\pi}
+\int_{-\pi}^{\pi} g_n(\omega) e^{-j\omega k} d\omega \\ & = &
+\frac{1}{2\pi} \sum_{k=-\infty}^{+\infty}
+\int_{-\pi-2k\pi}^{\pi+2k\pi} X \left(\frac{\omega}{T}\right)
+e^{-j\omega k} d\omega \\ & = & \frac{T}{2\pi} P.V.
+\int_{-\infty}^{+\infty} X(\omega) e^{j\omega(-kT)} d\omega
+\end{eqnarray*}
+
+Now, as $x(t)$ is of bounded variation, the Jordan theorem on
+Fourier transform inversion says that $$\frac{1}{2\pi} P.V.
+\int_{-\infty}^{+\infty} X(\omega) e^{j\omega(-kT)} d\omega =
+\frac{x(-kT^+)+x(-kT^-)}{2}$$ and the result follows.
+
+\end{proof}
+
+\noindent There are, however, very \PMlinkescapetext{simple functions} which do not
+satisfy the conditions required in the theorem above. Such is the
+case of the \emph{pulse} function $$rect(t)= \begin{cases}
+1 & \text{if} \abs{t} < \frac{1}{2},\\
+0 & \text{if} \abs{t} \geq \frac{1}{2}.
+\end{cases}$$ whose Fourier transform is $\frac{sin(x/2)}{x/2}$ -with the definition made in
+footnote 1-. $sinc(x)$ behaves as $\frac{1}{x}$, so
+$\sum_{k=-\infty}^{+\infty} sinc \left(\frac{\omega- 2\pi \cdot
+k}{T} \right)$ will not converge in general \footnote{for monotone
+decreasing functions "series behaves as integrals", that is, if
+$\sum_{k=0}^{+\infty} f(x-k \cdot M)$ converges or diverges so does
+$\int_{0}^{+\infty} f$}; it will converge for those $T$ that make
+the series an \PMlinkname{alternating}{AlternatingSeries} one, but not for the rest values of $T$.
+Therefore we need another result which somehow relates both sides of
+eq \ref{eq1}.
+
+\bigskip
+
+\noindent As we have pointed out, the problem with the pulse
+function is that its Fourier transform does not decay rapid enough
+for the series to converge. So we will try smoothing the signal out
+so that its Fourier transform will decay faster and, hopefully, the
+series converges. We wish the smoothed version of $x(t)$ to resemble
+the original signal, so uniform approximation seems reasonable. But,
+as we will see, for an infinite number of samples $\{nT, n \in \Z\}$
+each of these might require a different degree of approximation and
+it could be impossible to find an uniform approximation for all the
+samples. So, we will focus on time limited signal, for which we have
+the following result.
+
+\begin{notat}
+$\D(\R)$ will denote the set of test functions on $\R$ and $\rapid$
+the set of rapidly decreasing functions on $\R$ -the Schwartz
+space-. The symbol $\hat{}$ above a function will denote its Fourier
+transform. We know that $\D(\R) \subset \rapid$ and that the Fourier
+transform is an isomorphism of $\rapid$ onto itself. The product of
+two functions $X$ and $\phi$ at $\omega$ will be denoted by
+$X\phi(\omega)$. Convolution will be denoted by $\ast$.
+\end{notat}
+
+\medskip
+
+\begin{thm}
+Let $\phi \in \D(\R)$ be a test function and $\{\phi_j(t)=j \cdot
+\phi(j \cdot t),\,\, j=1,2,\ldots \}$ be an approximate identity.
+Let $x(t)$ be a time limited bounded variation signal. If
+$\replica{X\hat{\phi_j}}{-\infty}{+\infty}$ converges for all
+$j=1,2,\ldots$ to a continuous function, then \label{eq2}
+\begin{equation}
+\lim_{j \rightarrow \infty}\frac {1}{T}
+\replica{X\hat{\phi_j}}{-\infty}{+\infty} = \DTFT{x}
+\end{equation}
+\end{thm}
+
+\begin{proof}
+Take the signal $(x \ast \phi_j)(t)$ whose Fourier transform is
+$X\hat{\phi}(\omega)$. This signal satisfies, by hypothesis, the
+conditions of Theorem 1, so we can write $$\frac {1}{T}
+\replica{X\hat{\phi_j}}{-\infty}{+\infty} = \DTFT{(x \ast \phi_j)}
+$$
+
+The right hand side is actually a sum of a finite number of terms
+since the signal $(x \ast \phi_j)(t)$ is time limited -being the
+convolution of two compact supported functions-. This makes the
+Fourier series a continuous function, which, together with the
+hypothesis that $\frac {1}{T}
+\replica{X\hat{\phi_j}}{-\infty}{+\infty}$ is continuous, shows that
+equality in the above equation is pointwise.
+
+\noindent Now let $j \rightarrow \infty$ and use the fact that
+$\{\phi_j(t)\}$ is an approximate identity to obtain equation
+(\ref{eq2}).
+\end{proof}
+
+\noindent The rationale behind choosing test functions in the last
+theorem is that, in most
+cases,$\replica{X\hat{\phi_j}}{-\infty}{+\infty}$ will converge even
+though $\replica{X}{-\infty}{+\infty}$ do not. This is because
+rapidly decreasing functions decay faster than $\frac{1}{x^\alpha}$
+for any $\alpha$. So, for example, the Fourier transform of the
+pulse function has been tamed enough to make the series converge.
+
+
+\begin{rem}
+When the signal $x(t)$ is continuous, the right hand side of eqs.
+(\ref{eq1}) or (\ref{eq2}) reads $$ \sum_{k=-\infty}^{+\infty}
+x_d[k] e^{-j\omega k}$$ where $x_d[k]=x(kT)$. This is defined as the
+\emph{(Discrete Time) Fourier Transform, DTFT} of the sequence
+${x_d[n]=x(nT)}$
+\end{rem}
+
+%%%%%
+%%%%%
+\end{document}

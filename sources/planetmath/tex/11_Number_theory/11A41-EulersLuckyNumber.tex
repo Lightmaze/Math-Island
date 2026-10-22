@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EulersLuckyNumber}
+\pmcreated{2013-03-22 16:55:33}
+\pmmodified{2013-03-22 16:55:33}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Euler's lucky number}
+\pmrecord{4}{39189}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmsynonym{lucky number of Euler}{EulersLuckyNumber}
+\pmsynonym{Eulerian lucky number}{EulersLuckyNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\PMlinkescapeword{lucky number}
+
+A prime number $p$ is one of {\em Euler's lucky numbers} if $n^2 - n + p$ for each $0 < n < p$ is also a prime. Put another way, a lucky number of Euler's plus the $n$th oblong number produces a list of primes $p$-long. There are only six of them: 2, 3, 5, 11, 17 and 41, these are listed in A014556 of Sloane's OEIS.
+
+41 is perhaps the most famous of these. We can verify that 2 + 41 is 43, a prime, that 47 is also prime, so are 53, 61, 71, 83, 97, and so on to 1601, giving a list of 41 primes. Predictably, 1681 is divisible by 41, being its square. For $n > p$ the formula does not consistently give only composites or only primes.
+%%%%%
+%%%%%
+\end{document}

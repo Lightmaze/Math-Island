@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FortunateNumber}
+\pmcreated{2013-03-22 17:31:10}
+\pmmodified{2013-03-22 17:31:10}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Fortunate number}
+\pmrecord{5}{39911}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given a positive integer $n$, the $n$th {\em Fortunate number} $F_n > 1$ is the difference between the primorial $$\prod_{i = 1}^{\pi(n)} p_i$$ (where $\pi(x)$ is the prime counting function and $p_i$ is the $i$th prime number) and the nearest prime number above (ignoring the primorial prime that may be there). For example, the 3rd Fortunate number is 7, since the third primorial is 30 since the next highest prime is 37 (the primorial prime 31 is ignored).
+
+The first few Fortunate numbers are 3, 5, 7, 13, 23, 17, 19, 23, 37, 61, 67, 61, 71, 47, 107, 59, 61, 109, 89, 103, 79, 151, etc. listed in \PMlinkexternal{A005235}{http://www.research.att.com/~njas/sequences/A005235} in Sloane's OEIS. Some Fortunate numbers occur more than once, such as 23, which occurs for both the fifth and eighth primorials. \PMlinkescapetext{Even} so, the inequality $F_n > n$ always holds. These numbers are named after the anthropologist Reo Fortune, who conjectured on their primality.
+
+%%%%%
+%%%%%
+\end{document}

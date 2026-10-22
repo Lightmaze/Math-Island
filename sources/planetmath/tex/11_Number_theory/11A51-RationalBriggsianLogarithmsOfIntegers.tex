@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RationalBriggsianLogarithmsOfIntegers}
+\pmcreated{2013-03-22 17:39:55}
+\pmmodified{2013-03-22 17:39:55}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{rational Briggsian logarithms of integers}
+\pmrecord{14}{40101}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmrelated{Transcendental}
+\pmrelated{RationalSineAndCosine}
+\pmrelated{AllUnnaturalSquareRootsAreIrrational}
+\pmrelated{BriggsianLogarithms}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\DeclareMathOperator{\lb}{lb}
+\begin{document}
+\textbf{Theorem.}\, The only positive integers, whose Briggsian logarithms are rational, are the \PMlinkname{powers}{GeneralAssociativity}\, $1,\,10,\,100,\,\ldots$\, of ten.\, The logarithms of other positive integers are thus irrational (in fact, transcendental numbers).\, The same concerns also the Briggsian logarithms of the positive fractional numbers.\\
+
+{\em Proof.}\, Let $a$ be a positive integer such that
+$$\lg{a} = \frac{m}{n} \in \mathbb{Q},$$
+where $m$ and $n$ are positive integers.\, By the definition of logarithm, we have\, 
+$\displaystyle10^{\frac{m}{n}} = a$,\, which is \PMlinkname{equivalent}{Equivalent3} to
+$$10^m = 2^m\cdot 5^m = a^n.$$
+According to the fundamental theorem of arithmetics, the integer $a^n$ must have exactly $m$ prime divisors $2$ and equally many prime divisors $5$.\, This is not possible otherwise than that also $a$ itself consists of a same amount of prime divisors 2 and 5, i.e. the number $a$ is an integer power of 10.
+
+As for any rational number $\displaystyle\frac{a}{b}$ (with\, $a,\,b \in \mathbb{Z}_+$), if one had
+$$\lg{\frac{a}{b}} = \frac{m}{n} \in \mathbb{Q},$$
+then
+$$\left(\frac{a}{b}\right)^n = 10^m,$$
+and it is apparent that the rational number $\displaystyle\frac{a}{b}$ has to be an integer, more accurately a power of ten.\, Therefore the logarithms of all fractional numbers are irrational.\\
+
+
+
+\textbf{Note.}\, An analogous theorem concerns e.g. the binary logarithms ($\lb{a}$).\, As for the natural logarithms of positive rationals ($\ln{a}$), they all are transcendental numbers except\, $\ln1 = 0$.
+%%%%%
+%%%%%
+\end{document}

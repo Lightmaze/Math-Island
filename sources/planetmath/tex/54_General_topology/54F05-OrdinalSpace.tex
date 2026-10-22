@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{OrdinalSpace}
+\pmcreated{2013-03-22 17:10:56}
+\pmmodified{2013-03-22 17:10:56}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{ordinal space}
+\pmrecord{8}{39498}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54F05}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\mpdiff}[3]{\frac{\partial^#1 #2}{\partial #3^#1}}
+\newcommand{\up}{\uparrow\!\!}
+\newcommand{\down}{\downarrow\!\!}
+\begin{document}
+Let $\alpha$ be an ordinal.  The set $W(\alpha):=\lbrace \beta \mid \beta < \alpha\rbrace$ ordered by $\le$ is a well-ordered set.  $W(\alpha)$ becomes a topological space if we equip $W(\alpha)$ with the interval topology.  An \emph{ordinal space} $X$ is a topological space such that $X=W(\alpha)$ (with the interval topology) for some ordinal $\alpha$.  In this entry, we will always assume that $W(\alpha)\ne \varnothing$, or $0<\alpha$.
+
+Before examining some basic topological structures of $W(\alpha)$, let us look at some of its order structures.  
+\begin{enumerate}
+\item
+First, it is easy to see that $W(\alpha)=\up y \cup W(y)$, for any $y\in W(\alpha)$.  Here, $\up y$ is the upper set of $y$.
+\item
+Another way of saying that $W(\alpha)$ is well-ordered is that for any non-empyt subset $S$ of $W(\alpha)$, $\bigwedge S$ exists.  Clearly, $0\in W(\alpha)$ is its least element.  If in addition $1<\alpha$, $W(\alpha)$ is also atomic, with $1$ as the sole atom.
+\item
+Next, $W(\alpha)$ is bounded complete.  If $S\subseteq W(\alpha)$ is bounded from above by $a\in W(\alpha)$, then $b=\bigvee S$ is an ordinal such that $b\le a<\alpha$, therefore $b\in W(\alpha)$ as well.  
+\item
+Finally, we note that $W(\alpha)$ is a complete lattice iff $\alpha$ is not a limit ordinal.  If $W(\alpha)$ is complete, then $z=\bigvee W(\alpha)\in W(\alpha)$.  So $z<\alpha$.  This means that $z+1\le \alpha$.  If $z+1<\alpha$, then $z+1\in W(\alpha)$ so that $z+1\le \bigvee W(\alpha)=z$, a contradiction.  As a result, $z+1=\alpha$.  On the other hand, if $\alpha=z+1$, then $z=\bigvee W(\alpha)\in W(\alpha)$, so that $W(\alpha)$ is complete.
+\end{enumerate}
+
+In any ordinal space $W(\alpha)$ where $0<\alpha$, a typical open interval may be written $(x,y)$, where $0\le x\le y<\alpha$.  If $y$ is not a limit ordinal, we can also write $(x,y)=[x+1,z]$ where $z+1=y$.  This means that $(x,y)$ is a clopen set if $y$ is not a limit ordinal.  In particular, if $y$ is not a limit ordinal, then $\lbrace y\rbrace = (z,y+1)$ is clopen, where $z+1=y$, so that $y$ is an isolated point.  For example, any finite ordinal is an isolated point in $W(\alpha)$.  
+
+Conversely, an isolated point can not be a limit ordinal.  If $y$ is isolated, then $\lbrace y\rbrace$ is open.  Write $\lbrace y\rbrace$ as the union of open intervals $(a_i,b_i)$.  So $a_i<y<b_i$.  Since $y+1$ covers $y$, each $b_i$ must be $y+1$ or $(a_i,b_i)$ would contain more than a point.  If $y$ is a limit ordinal, then $a_i<a_i+1<y$ so that, again, $(a_i,b_i)$ would contain more than just $y$.  Therefore, $y$ can not be a limit ordinal and all $a_i$ must be the same.  Therefore $(a_i,b_i)=(z,y+1)$, where $z$ is the predecessor of $y$: $z+1=y$.
+
+Several basic properties of an ordinal space are: 
+\begin{enumerate}
+\item
+Isolated points in $W(\alpha)$ are exactly those points that are limit ordinals (just a summary of the last two paragraphs).
+\item
+$W(y)$ is open in $W(\alpha)$ for any $y\in W(\alpha)$.  $W(y)$ is closed iff $y$ is not a limit ordinal.
+\item
+For any $y\in W(\alpha)$, the collection of intervals of the form $(a,y]$ (where $a<y$) forms a neighborhood base of $y$.
+\item
+$W(\alpha)$ is a normal space for any $\alpha$; 
+\item
+$W(\alpha)$ is compact iff $\alpha$ is not a limit ordinal.
+\end{enumerate}
+
+Some interesting ordinal spaces are 
+\begin{itemize}
+\item
+$W(\omega)$, which is homeomorphic to the set of natural numbers $\mathbb{N}$.
+\item
+$W(\omega_1)$, where $\omega_1$ is the first uncountable ordinal.  $W(\omega_1)$ is often written $\Omega_0$.  $\Omega_0$ is not a compact space.
+\item
+$W(\omega_1+1)$, or $\Omega$.  $\Omega$ is compact, and, in fact, a one-point compactification of $\Omega_0$.
+\end{itemize}
+
+\begin{thebibliography}{9}
+\bibitem{willard} S. Willard, \emph{General Topology}, Addison-Wesley, Publishing Company, 1970.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

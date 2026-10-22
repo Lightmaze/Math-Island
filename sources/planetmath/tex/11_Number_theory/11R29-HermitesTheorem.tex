@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HermitesTheorem}
+\pmcreated{2013-03-22 15:05:35}
+\pmmodified{2013-03-22 15:05:35}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Hermite's theorem}
+\pmrecord{5}{36820}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Corollary}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R29}
+\pmclassification{msc}{11H06}
+\pmdefines{unramified outside a set of primes}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem*{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem*{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+The following is a corollary of Minkowski's theorem on ideal classes, which is a corollary of Minkowski's theorem on lattices.
+
+\begin{defn}
+Let $S=\{p_1,\ldots,p_r\}$ be a set of rational primes $p_i \in \Ints$. We say that a number field $K$ is {\bf unramified outside $S$} if any prime not in $S$ is unramified in $K$. In other words, if $p$ is ramified in $K$, then $p\in S$. In other words, the only primes that divide the discriminant of $K$ are elements of $S$.
+\end{defn}
+
+\begin{cor}[Hermite's Theorem]
+Let $S=\{p_1,\ldots,p_r\}$ be a set of rational primes $p_i \in \Ints$ and let $N\in \Nats$ be arbitrary. There is only a finite number of fields $K$ which are unramified outside $S$ and bounded degree $[K:\Rats]\leq N$.  
+\end{cor}
+%%%%%
+%%%%%
+\end{document}

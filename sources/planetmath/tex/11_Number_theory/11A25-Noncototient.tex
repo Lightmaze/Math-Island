@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Noncototient}
+\pmcreated{2013-03-22 15:55:48}
+\pmmodified{2013-03-22 15:55:48}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{noncototient}
+\pmrecord{5}{37938}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{Nontotient}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+An integer $n > 0$ is called a {\it noncototient} if there is no solution
+to $x - {\phi}(x) = n$, where ${\phi}(x)$ is Euler's totient function. The first few noncototients are 10, 26, 34, 50, 52, 58, 86, 100, 116, 122, 130 (listed in A005278 of Sloane's OEIS).
+
+Browkin and Schinzel proved in 1995 that there are infinitely many noncototients. What is still unknown is whether they are all even. Goldbach's conjecture would seem to suggest that this is the case: given a semiprime $pq$, it follows that $pq - {\phi}(pq) = pq - (p - 1)(q - 1) = p + q - 1$, an odd number if $2 < p \le q$.
+%%%%%
+%%%%%
+\end{document}

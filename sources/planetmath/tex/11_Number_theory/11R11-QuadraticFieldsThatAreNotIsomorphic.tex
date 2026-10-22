@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{QuadraticFieldsThatAreNotIsomorphic}
+\pmcreated{2013-03-22 16:19:44}
+\pmmodified{2013-03-22 16:19:44}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{quadratic fields that are not isomorphic}
+\pmrecord{9}{38458}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R11}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+\newtheorem*{cor*}{Corollary}
+\begin{document}
+\PMlinkescapeword{isomorphic}
+\PMlinkescapeword{isomorphism}
+
+Within this entry, $S$ denotes the set of all squarefree integers not equal to $1$.
+
+\begin{thm*}
+Let $m,n \in S$ with $m \neq n$.  Then $\mathbb{Q}(\sqrt{m})$ and $\mathbb{Q}(\sqrt{n})$ are not \PMlinkname{isomorphic}{FieldIsomorphism}.
+\end{thm*}
+
+\begin{proof}
+Suppose that $\mathbb{Q}(\sqrt{m})$ and $\mathbb{Q}(\sqrt{n})$ are isomorphic.  Let $\varphi \colon \mathbb{Q}(\sqrt{m}) \to \mathbb{Q}(\sqrt{n})$ be a field isomorphism.  Recall that field homomorphisms fix prime subfields.  Thus, for every $x \in \mathbb{Q}$, $\varphi(x)=x$.
+
+Let $a,b \in \mathbb{Q}$ with $\varphi(\sqrt{m})=a+b\sqrt{n}$.  Since $\varphi(a)=a$ and $\varphi$ is injective, $b \neq 0$.  Also, $m=\varphi(m)=\varphi((\sqrt{m})^2)=(\varphi(\sqrt{m}))^2=(a+b\sqrt{n})^2=a^2+2ab\sqrt{n}+b^2n$.  If $a \neq 0$, then $\displaystyle \sqrt{n}=\frac{m-a^2-b^2n}{2ab} \in \mathbb{Q}$, a contradiction.  Thus, $a=0$.  Therefore, $m=b^2n$.  Since $m$ is squarefree, $b^2=1$.  Hence, $m=n$, a contradiction.  It follows that $K$ and $L$ are not isomorphic.
+\end{proof}
+
+This yields an obvious corollary:
+
+\begin{cor*}
+There are infinitely many distinct quadratic fields.
+\end{cor*}
+
+\begin{proof}
+Note that there are infinitely many elements of $S$.  Moreover, if $m$ and $n$ are distinct elements of $S$, then $\mathbb{Q}(\sqrt{m})$ and $\mathbb{Q}(\sqrt{n})$ are not isomorphic and thus cannot be equal.
+\end{proof}
+
+Note that the above corollary could have also been obtained by using the result regarding \PMlinkname{Galois groups of finite abelian extensions of $\mathbb{Q}$}{GaloisGroupsOfFiniteAbelianExtensionsOfMathbbQ}.  On the other hand, using this result to prove the above corollary can be likened to ``using a sledgehammer to kill a housefly''.
+%%%%%
+%%%%%
+\end{document}

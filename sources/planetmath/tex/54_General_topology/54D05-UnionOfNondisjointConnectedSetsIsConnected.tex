@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UnionOfNondisjointConnectedSetsIsConnected}
+\pmcreated{2013-03-22 15:17:50}
+\pmmodified{2013-03-22 15:17:50}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{union of non-disjoint connected sets is connected}
+\pmrecord{8}{37095}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\F}{\mathbbmss{F}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{thm} Suppose $A,B$ are connected sets in a topological 
+  space $X$. If $A,B$ are not disjoint, then $A\cup B$ is connected.
+\end{thm}
+
+\begin{proof} By assumption, we have two implications.
+First, if $U,V$ are open in $A$ and $U\cup V=A$, then $U\cap V\neq \emptyset$.
+Second, if $U,V$ are open in $B$ and $U\cup V=B$, then $U\cap V\neq \emptyset$.
+To prove that $A\cup B$ is connected, suppose $U,V$ are open in $A\cup B$
+and $U\cup V=A\cup B$.
+Then 
+\begin{eqnarray*}
+  U\cup V &=& ((U\cup V )\cap A) \,\cup \,((U\cup V)\cap B) \\
+&=& (U\cap A) \cup (V\cap A) \cup (U\cap B)\cup (V\cap B)
+\end{eqnarray*}
+Let us show that $U\cap A$ and $V\cap A$ are open in $A$. 
+To do this, we use \PMlinkname{this result}{SubspaceOfASubspace}
+  and notation from that entry too. 
+For example, as $U\in \tau_{A\cup B, X}$, $U\cap A \in \tau_{A,A\cup B, X}=\tau_{A,X}$, 
+  and so $U\cap A$, $V\cap A$ are open in $A$. 
+Since $(U\cap A)\cup (V\cap A)=A$, it follows that 
+$$
+  \emptyset \neq (U\cap A)\cap (V\cap A) =(U\cap V)\cap A.
+$$
+If $U\cap V=\emptyset$, then this is a contradition, so 
+   $A\cup B$ must be connected.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

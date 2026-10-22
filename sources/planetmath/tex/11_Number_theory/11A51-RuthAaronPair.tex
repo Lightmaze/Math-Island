@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RuthAaronPair}
+\pmcreated{2013-03-22 16:07:09}
+\pmmodified{2013-03-22 16:07:09}
+\pmowner{CompositeFan}{12809}
+\pmmodifier{CompositeFan}{12809}
+\pmtitle{Ruth-Aaron pair}
+\pmrecord{5}{38187}
+\pmprivacy{1}
+\pmauthor{CompositeFan}{12809}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmsynonym{Ruth Aaron pair}{RuthAaronPair}
+\pmsynonym{Aaron-Ruth pair}{RuthAaronPair}
+\pmsynonym{Aaron Ruth pair}{RuthAaronPair}
+\pmdefines{Ruth-Aaron number}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+After Hank Aaron broke Babe Ruth's home run record of 714, Carl Pomerance noticed that the prime factors of 714 and 715 both add up to 29. Since then, a pair of integers $n$ and $m = n + 1$ is called a {\em Ruth-Aaron pair} if the prime factors add up to the same number, and individually $n$ is called a {\em Ruth-Aaron number} and so is $m$.
+
+Given the factorizations of the numbers $$n = \prod_{i = 1}^{\omega(n)} {p_i}^{a_i}, m = \prod_{j = 1}^{\omega(m)} {q_j}^{b_j},$$ where the $p_i$ and $q_j$ are all distinct primes, and the $a_i$ and $b_j$ are positive integers (not necessarily distinct), and $\omega(x)$ is the number of distinct prime factors function, it becomes apparent that there are at least two different ways to sum up the prime factors.
+
+The most obvious way is to simply test $$\sum_{i = 1}^{\omega(n)} p_i = \sum_{j = 1}^{\omega(m)} q_j,$$ in which case the first few Ruth-Aaron pairs are (5, 6), (24, 25), (49, 50), (77, 78), (104, 105), (153, 154), (369, 370), (492, 493), (714, 715), ... (see A006145 in the OEIS).
+
+The second way is to count repeated prime factors as they occur (e.g., the sum of prime factors of $72 = 2^33^2$ is 12). Thus the test becomes $$\sum_{i = 1}^{\omega(n)} p_ia_i = \sum_{j = 1}^{\omega(m)} q_jb_j,$$ in which case the first few Ruth-Aaron pairs are (5, 6), (8, 9), (15, 16), (77, 78), (125, 126), (714, 715), (948, 949), ... (see A039752 in the OEIS).
+
+The pairs (5, 6), (77, 78), (714, 715), ... work under either definition, and it can be observed that $|\mu(n)| = |\mu(m)| = 1$, where $\mu(x)$ is the M\"obius function (at least for $n < 1777028$).
+%%%%%
+%%%%%
+\end{document}

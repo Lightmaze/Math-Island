@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{QuotientSpace}
+\pmcreated{2013-03-22 12:39:40}
+\pmmodified{2013-03-22 12:39:40}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{quotient space}
+\pmrecord{5}{32930}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B15}
+\pmrelated{AdjunctionSpace}
+\pmdefines{quotient topology}
+\pmdefines{quotient map}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $X$ be a topological space, and let $\sim$ be an equivalence relation on $X$. Write $X^*$ for the set of equivalence classes of $X$ under $\sim$. The {\em quotient topology} on $X^*$ is the topology whose open sets are the subsets $U \subset X^*$ such that
+$$
+\bigcup U \subset X
+$$
+is an open subset of $X$. The space $X^*$ is called the {\em quotient space} of the space $X$ with respect to $\sim$. It is often written $X/\sim$.
+
+The projection map $\pi: X \longrightarrow X^*$ which sends each element of $X$ to its equivalence class is always a continuous map. In fact, the map $\pi$ satisfies the stronger property that a subset $U$ of $X^*$ is open if and only if the subset $\pi^{-1}(U)$ of $X$ is open. In general, any surjective map $p: X \longrightarrow Y$ that satisfies this stronger property is called a {\em quotient map}, and given such a quotient map, the space $Y$ is always homeomorphic to the quotient space of $X$ under the equivalence relation
+$$
+x \sim x' \iff p(x) = p(x').
+$$
+
+As a set, the construction of a quotient space collapses each of the equivalence classes of $\sim$ to a single point. The topology on the quotient space is then chosen to be the strongest topology such that the projection map $\pi$ is continuous.
+
+For $A \subset X$, one often writes $X/A$ for the quotient space obtained by identifying all the points of $A$ with each other.
+%%%%%
+%%%%%
+\end{document}

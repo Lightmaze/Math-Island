@@ -1,0 +1,108 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Separated}
+\pmcreated{2013-03-22 15:16:34}
+\pmmodified{2013-03-22 15:16:34}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{separated}
+\pmrecord{15}{37064}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+\pmclassification{msc}{54D05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\F}{\mathbbmss{F}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+{\bf Definition} 
+Suppose $A$ and $B$ are subsets of a topological space
+$X$. Then $A$ and $B$ are {\bf separated} provided that
+\[
+\begin{array}{ccc}
+\overline{A}\cap B &=& \emptyset, \\
+A\cap \overline{B} &=& \emptyset,
+\end{array}
+\]
+where $\overline{A}$ is the \PMlinkname{closure operator}{Closure} in $X$.
+
+\subsubsection*{Properties}
+\begin{enumerate}
+\item If $A,B$ are separated in $X$, and $f\colon X\to Y$ is a homeomorphism, 
+then $f(A)$ and $f(B)$ are separated in $Y$. 
+\end{enumerate}
+
+\subsubsection*{Examples}
+\begin{enumerate}
+\item On $\R$, the intervals $(0,1)$ and $(1,2)$ are separated.
+\item If $d(x,y)\ge r+s$, then the open balls $B_r(x)$ and $B_s(y)$ are 
+  separated \PMlinkname{(proof.)}{WhenAreBallsSeparated}.
+\item If $A$ is a clopen set, then $A$ and $A^\complement$ are separated.
+This follows since $\overline{S}=S$ when $S$ is a closed set.
+\end{enumerate}
+
+\subsubsection*{Remarks}
+The above definition follows \cite{kelley}. In
+\cite{jameson}, separated sets are called
+{\bf strongly disjoin{t}} sets.
+
+\begin{thebibliography}{9}
+\bibitem{kelley}
+J.L. Kelley, \emph{General Topology}, D. van Nostrand Company, Inc., 1955.
+\bibitem{jameson} G.J. Jameson, \emph{Topology and Normed Spaces},
+Chapman and Hall, 1974.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DigitalRoot}
+\pmcreated{2013-03-22 15:59:34}
+\pmmodified{2013-03-22 15:59:34}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{digital root}
+\pmrecord{13}{38017}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{repeated digit sum}{DigitalRoot}
+\pmsynonym{repeated digital sum}{DigitalRoot}
+\pmdefines{additive persistence}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given an integer $m$ consisting of $k$ digits $d_1, \dots, d_k$ in base $b$, let $$j = \sum_{i = 1}^{k} d_i,$$ then repeat this operation on the digits of $j$ until $j < b$. This stores in $j$ the {\em digital root} of $m$. The number of iterations of the sum operation is called the {\em additive persistence} of $m$.
+
+The digital root of $b^x$ is always 1 for any natural $x$, while the digital root of $yb^n$ (where $y$ is another natural number) is the same as the digital root of $y$. This should not be taken to imply that the digital root is necessarily a multiplicative function.
+
+The digital root of an integer of the form $n(b - 1)$ is always $b - 1$. 
+
+Another way to calculate the digital root for $m > b$ is with the formula $m - (b - 1)\lfloor {{m - 1} \over {b - 1}} \rfloor$.
+%%%%%
+%%%%%
+\end{document}

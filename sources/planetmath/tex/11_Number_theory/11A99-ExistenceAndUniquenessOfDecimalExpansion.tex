@@ -1,0 +1,257 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExistenceAndUniquenessOfDecimalExpansion}
+\pmcreated{2013-03-22 15:42:12}
+\pmmodified{2013-03-22 15:42:12}
+\pmowner{stevecheng}{10074}
+\pmmodifier{stevecheng}{10074}
+\pmtitle{existence and uniqueness of decimal expansion}
+\pmrecord{8}{37648}
+\pmprivacy{1}
+\pmauthor{stevecheng}{10074}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A99}
+\pmsynonym{every decimal expansion represents a real number}{ExistenceAndUniquenessOfDecimalExpansion}
+\pmrelated{CantorsDiagonalArgument}
+\pmrelated{DecimalExpansion}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%\usepackage{amsthm}
+\usepackage{enumerate}
+%\usepackage{graphicx}
+%\usepackage{psfrag}
+%%%\usepackage{xypic}
+
+% define commands here
+\newcommand{\complex}{\mathbb{C}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\rat}{\mathbb{Q}}
+\newcommand{\nat}{\mathbb{N}}
+
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\absW}[1]{\left\lvert#1\right\rvert}
+\providecommand{\absB}[1]{\Bigl\lvert#1\Bigr\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\normW}[1]{\left\lVert#1\right\rVert}
+\providecommand{\normB}[1]{\Bigl\lVert#1\Bigr\rVert}
+\providecommand{\defnterm}[1]{\emph{#1}}
+
+\DeclareMathOperator{\D}{D}
+\DeclareMathOperator{\linspan}{span}
+\begin{document}
+The existence and uniqueness of decimal expansions 
+(or more generally, base-$b$ expansions)
+is taken for granted
+by most grade school students, 
+but they are facts that need to be rigorously proven if one wants to understand 
+the real numbers thoroughly. 
+
+We mention the following fact about natural numbers $n,m \in \nat_0$,
+which we will use many times implicitly:
+\[
+n < m \Leftrightarrow n \leq m-1\,
+\]
+This fact can be proven by mathematical induction on $m$.
+
+\tableofcontents
+
+\section{Proof of Existence}
+Let $x$ be a number for which we want to write a base-$b$ expansion
+for any natural number $b$ greater than one.
+
+We shall assume $x \geq 0$, since the base-$b$ 
+expansion of a negative number is by definition
+the negative of the expansion for its absolute value.
+
+\subsection{Expansions for non-negative integers}
+First we prove the existence of expansions of the form
+\[
+x = \sum_{i=0}^k a_i b^i\,, \quad 0 \leq a_i < b\,, a_i \in \nat_0
+\]
+for non-negative integers $x$,
+using mathematical induction.  (This proof is essentially the formal
+statement of how to do addition by base-$b$ digits.)
+
+The number $x = 0$ obviously has the expansion $0$.
+
+Suppose that we know the existence of expansions for a number $x-1$.
+We prove the existence of an expansion for $x$.
+
+Let $x-1$ be expanded as
+\[
+x - 1 = \sum_{i=0}^k a_i b^i\,, \quad 0 \leq a_i < b\,, a_i \in \nat_0\,, a_{k+1} = 0\,.
+\]
+From the above equation, add $1$ to both sides:
+\[
+x = (a_0+1) + \sum_{i=1}^k a_i b^i \,.
+\]
+If $a_0 < b-1$, then we are done.  Otherwise,
+$(a_0+1) = b$, and therefore we may write instead
+\[
+x = 0 + (a_1+1) b + \sum_{i=2}^k a_i b^i\,.
+\]
+If $a_1 < b-1$, then we can stop.  Otherwise,
+repeat the process and continue carrying digits
+until we reach some $i$ for which $a_i < b-1$.
+Since $a_{k+1} = 0$, this process is guaranteed to stop.
+At the end we will have expressed $x$ in base $b$.
+
+\subsection{Reduction to numbers in $[0,1)$}
+Let $\lfloor x \rfloor$ be the greatest integer less than or equal to $x$,
+otherwise known as the floor of $x$.  
+We prove that the floor of $x$ exists.
+
+The set
+\[
+A = \{ n \in \nat_0 \colon n \leq x \}
+\]
+is bounded above by $x$.
+However, by the Archimedean 
+property, the set of natural numbers is \emph{not} bounded
+above, so $\nat_0 \setminus A$ must be non-empty,
+and have a smallest element $u$
+(formally, by the well-ordering principle).
+For every $n \in A$, we have
+$n \leq x < u$.
+The latter condition is equivalent to $n \leq u-1 < x$,
+so $u-1$ is the maximum element of $A$.
+In other words, $\lfloor x \rfloor = u-1$.
+
+Since $u-1 \leq x < u$, we have
+$0 \leq x - \lfloor x \rfloor < 1$.
+We shall obtain the base $b$ expansion of $x$
+as the sum of the expansion of $\lfloor x \rfloor$ and
+$x - \lfloor x \rfloor$.
+
+\subsection{Expansion of numbers in $[0,1)$}
+Given $x \in [0,1)$,
+let $a_1 = \lfloor bx \rfloor$.
+Then $0 \leq a_1 \leq bx < b$, so we can take $a_1$ as the first
+digit of the base-$b$ expansion of $x$.
+Next, write
+\[
+x = a_1 b^{-1} + yb^{-1}\,,
+\]
+and observe that $0 \leq x - a_1 b^{-1} = b^{-1} (bx - \lfloor bx \rfloor) < b^{-1}$,
+so it is possible to get the next digit of the expansion by
+expanding $y$.
+We do this recursively, leading to these recursive relations:
+\[
+y_{i} = a_i b^{-1} + y_{i+1} b^{-1} \,, \quad 0 \leq a_i = \lfloor by_i \rfloor < b\,, \quad 0 \leq y_i < 1\,, \quad y_1 = x\,.
+\]
+More explicitly, we have
+\begin{align*}
+x - (a_1 b^{-1} + a_2 b^{-2} + \dotsb + a_k b^{-k}) &= 
+b^{-1} \bigl( y_2 - (a_2 b^{-1} + \dotsb + a_k b^{-k+1}) \bigr) \\ &=
+b^{-2} \bigl( y_3 - (a_3 b^{-1} + \dotsb + a_k b^{-k+2}) \bigr) \\
+&= \dotsb \\
+&= b^{-k+1} (y_{k} - a_k b^{-1}) \\
+&= b^{-k} y_{k+1}\,.
+\end{align*}
+
+It is easy to prove that the expansion
+\[
+a_1 b^{-1} + a_2 b^{-2} + \dotsb + a_k b^{-k} + \dotsb
+\]
+converges to $x$:
+\[
+0 \leq x - \sum_{i=1}^k a_i b^{-i} = b^{-k} y_{k+1} < \frac{1}{b^k} \to 0\,, \quad
+\text{as $k \to \infty$.}
+\]
+(Formally, the ``$\to 0$'' part appeals to the Archimedean property.)
+
+
+
+
+\section{Proof of uniqueness}
+
+\subsection{Uniqueness for non-negative integers}
+Suppose that
+\[
+x = \sum_{i=0}^k a_i b^i\,, \quad 0 \leq a_i < b\,.
+\]
+Now 
+\[
+a_k b^k \leq \sum_{i=0}^k a_i b^i \leq a_k b^k + \sum_{i=0}^{k-1} (b-1) b^i = a_k b^k + (b^k - 1) < (a_k + 1)b^k\,,
+\]
+and the intervals $[a_k b^k, (a_k+1)b^k)$ are disjoint for each
+value of $a_k$, so $a_k$ is uniquely determined by where $x$ lies
+in amongst these intervals.
+
+Then we can consider
+\[
+x - a_k b^k = \sum_{i=0}^{k-1} a_i b^i\,.
+\]
+Repeating the previous argument with $k$ replaced by $k-1$,
+we see that $a_{k-1}$ is uniquely determined.
+Then we can consider $x - a_k b^k - a_{k-1} b^{k-1}$ and so on.
+Continuing this way, we see that all the digits $a_i$ are uniquely
+determined.
+
+\subsection{Near-uniqueness for non-negative numbers}
+If
+\[
+x = a_k b^k + \dotsb + a_1 b + a_0 + a_{-1} b^{-1} + a_{-2} b^{-2} + \dotsb
+\]
+then $a_0, \dotsc, a_k$ are uniquely determined,
+since $a_k b^k + \dotsb + a_1 + a_0$ 
+is the expansion for the non-negative integer $\lfloor x \rfloor$.
+
+The argument to prove that $a_{-i}$ are uniquely determined proceeds
+similarly as before.
+We have
+\begin{align*}
+a_{-1} b^{-1} &\leq a_{-1} b^{-1} + a_{-2} b^{-2} + \dotsb \\
+&\leq a_{-1} b^{-1} + \sum_{i=2}^\infty (b-1) b^{-i} 
+& \text{(geometric series)}
+\\
+&= a_{-1} b^{-1} + \frac{(b-1)b^2}{1-b^{-1}} \\
+&= (a_{-1}+1)\, b^{-1}\,,
+\end{align*}
+where equality on the second line occurs if and only if 
+$a_{-i} = b-1$ for every $i \geq 2$.
+If we insist that $a_{-i}$ is never eventually the same
+digit $b-1$,
+then this shows that the digit $a_{-1}$ is uniquely determined by 
+where the original number $x$ in the disjoint intervals $[a_{-1} b^{-1}, (a_{-1} + 1) b^{-1})$.
+
+This argument may be repeated, to show that $a_{-i}$ are uniquely
+determined, under the assumption that the expansion
+does not end in all digits being $b-1$.
+
+If the assumption is not made, then
+numbers which have an expansion ending in all digits $0$
+have an alternate expansion ending in all digits $b-1$,
+but other numbers still have unique base-$b$ expansions.
+
+\section{Every base-$b$ expansion represents a real number}
+
+We also want to prove that for every sequence of digits $a_k, a_{k-1}, \dotsc, a_1, a_0, a_{-1}, a_{-2}, \dotsc$
+there exists a real number $x$
+with the base-$b$ expansion
+\[
+x = \sum_{i=0}^k a_i b^i + \sum_{i=0}^\infty a_{-i} b^{-i}\,.
+\]
+
+This is the \PMlinkescapetext{place} where we use the least upper bounds property of the 
+real numbers.  (So far we have only used the Archimedean property,
+so what we have done so far is also valid for $\rat$.)
+
+Consider the sequence $\{ s_n \}$ with the \PMlinkescapetext{terms}
+\[
+s_n = \sum_{i=0}^k a_i b^i + \sum_{i=0}^n a_{-i} b^{-i}\,.
+\]
+This sequence, considered as a set,
+is bounded above, for $s_n \leq a_k b^k + \dotsb + a_0 + 1$.
+So it has a least upper bound $x$. 
+Since the sequence $\{ s_n \}$ is also \emph{increasing},
+its least upper bound is the same as its
+limit.
+%%%%%
+%%%%%
+\end{document}

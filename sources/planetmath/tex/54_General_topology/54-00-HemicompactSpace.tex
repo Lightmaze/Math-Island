@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HemicompactSpace}
+\pmcreated{2013-03-22 19:08:18}
+\pmmodified{2013-03-22 19:08:18}
+\pmowner{karstenb}{16623}
+\pmmodifier{karstenb}{16623}
+\pmtitle{hemicompact space}
+\pmrecord{8}{42037}
+\pmprivacy{1}
+\pmauthor{karstenb}{16623}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+%\pmkeywords{\sigma compact}
+%\pmkeywords{first countable}
+%\pmkeywords{locally compact}
+\pmrelated{SigmaCompact}
+\pmdefines{hemicompact space}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage[sort&compress]{natbib}
+
+%\usepackage{psfrag}
+%\usepackage{graphicx}
+%%%\usepackage{xypic}
+
+%theorems
+\theoremstyle{definition}
+\newtheorem{Def}{Definition}
+
+\theoremstyle{plain}
+\newtheorem{Lem}{Theorem}
+\newtheorem{Lem2}{Lemma}
+\newtheorem{Cor}{Corollary}
+\newtheorem{Rem}{Remark}
+
+
+
+\begin{document}
+A topological space $(X, \tau)$ is called a \emph{hemicompact} space if there is an \emph{admissible sequence} in $X$, i.e. there is a sequence of compact sets $(K_n)_{n \in \mathbb{N}}$ in $X$ such that for every $K \subset X$ compact there is an $n \in \mathbb{N}$ with $K \subset K_n$.
+
+\begin{itemize}
+\item The above conditions imply that if $X$ is hemicompact with admissible sequence $(K_n)_{n \in \mathbb{N}}$ then $X = \bigcup_{n \in \mathbb{N}} K_n$ because every point of $X$ is compact and lies in one of the $K_n$.
+
+\item A hemicompact space is clearly $\sigma$-compact. The converse is false in general. This follows from the fact that a first countable hemicompact space is locally compact (see below). Consider the set of rational numbers $\mathbb{Q}$ with the induced euclidean topology. $\mathbb{Q}$ is $\sigma$-compact but not hemicompact. Since $\mathbb{Q}$ satisfies the first axiom of countability it can't be hemicompact as this would imply local compactness.
+
+\item Not every locally compact space (like $\mathbb{R}$) is hemicompact. Take for example an uncountable discrete space. If we assume in addition $\sigma$-compactness we obtain a hemicompact space (see below).
+\end{itemize}
+
+\textbf{Proposition.} Let $(X, \tau)$ be a first countable hemicompact space. Then $X$ is locally compact.
+
+\begin{proof}
+Let $\cdots \subset K_n \subset K_{n+1} \subset \cdots$ be an admissible sequence of $X$. 
+Assume for contradiction that there is an $x \in X$ without compact neighborhood. Let $U_n \supset U_{n+1} \supset \cdots$ be a countable basis for the neighbourhoods of $x$. For every $n \in \mathbb{N}$ choose a point $x_n \in U_n \setminus K_n$. The set $K := \{x_n : n \in \mathbb{N}\} \cup \{x\}$ is compact but there is no $n \in \mathbb{N}$ with $K \subset K_n$. We have a contradiction.
+\end{proof}
+
+\textbf{Proposition.} Let $(X, \tau)$ be a locally compact and $\sigma$-compact space. Then $X$ is hemicompact. 
+
+\begin{proof}
+By local compactness we choose a cover $X \subset \bigcup_{i \in I} U_i$ of open sets with compact closure (take a compact neighborhood of every point). By $\sigma$-compactness there is a sequence $(K_n)_{n \in \mathbb{N}}$ of compacts such that $X = \bigcup_{n \in \mathbb{N}} K_n$. To each $K_n$ there is a finite subfamily of $(U_i)_{i \in I}$ which covers $K_n$.
+Denote the union of this finite family by $U_n$ for each $n \in \mathbb{N}$. Set $\tilde{K}_n := \overline{\bigcup_{k=1}^n U_k}$. Then $(\tilde{K}_n)_{n \in \mathbb{N}}$ is a sequence of compacts. Let $K \subset X$ be compact then there is a finite subfamily of $(U_i)_{i \in I}$ covering $K$. Therefore $K \subset K_n$ for some $n \in \mathbb{N}$. 
+\end{proof}
+
+
+%%%%%
+%%%%%
+\end{document}

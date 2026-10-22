@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LinearCode}
+\pmcreated{2013-03-22 14:21:24}
+\pmmodified{2013-03-22 14:21:24}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{linear code}
+\pmrecord{7}{35836}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94B05}
+\pmrelated{CyclicCode}
+\pmrelated{WeightEnumerator}
+\pmrelated{DualCode}
+\pmrelated{EvenCode}
+\pmrelated{AutomorphismGroupLinearCode}
+\pmdefines{binary code}
+\pmdefines{ternary code}
+\pmdefines{quaternary code}
+\pmdefines{dimension of a linear code}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Often in coding \PMlinkescapetext{theory}, a code's alphabet is taken to be a finite field.  In particular, if $A$ is the finite field with two (resp. three, four, etc.) elements, we call $C$ a binary (resp. ternary, quaternary, etc.) code.  In particular, when our alphabet is a finite field then the set $A^n$ is a vector space over $A$, and we define a \emph{linear code over $A$} of block length $n$ to be a subspace (as opposed to merely a subset) of $A^n$.  We define the \emph{dimension of $C$} to be its dimension as a vector space over $A$.
+
+Though not sufficient for unique classification, a linear code's block length, dimension, and minimum distance are three crucial parameters in determining the strength of the code.  For referencing, a linear code with block length $n$, dimension $k$, and minimum distance $d$ is referred to as an $(n,k,d)$-code.
+
+Some examples of linear codes are Hamming Codes, BCH codes, Goppa codes, Reed-Solomon codes, and the \PMlinkname{Golay code}{BinaryGolayCode}.
+%%%%%
+%%%%%
+\end{document}

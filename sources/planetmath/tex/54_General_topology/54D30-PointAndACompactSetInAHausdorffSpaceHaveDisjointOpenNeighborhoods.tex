@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PointAndACompactSetInAHausdorffSpaceHaveDisjointOpenNeighborhoods}
+\pmcreated{2013-03-22 13:34:27}
+\pmmodified{2013-03-22 13:34:27}
+\pmowner{drini}{3}
+\pmmodifier{drini}{3}
+\pmtitle{point and a compact set in a Hausdorff space have  disjoint open neighborhoods.}
+\pmrecord{13}{34193}
+\pmprivacy{1}
+\pmauthor{drini}{3}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D30}
+\pmclassification{msc}{54D10}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\begin{document}
+\PMlinkescapeword{satisfy}
+\begin{thm} Let $X$ be a Hausdorff space, let $A$ be a compact
+non-empty set in $X$, and let $y$ a point in the complement of $A$. 
+Then there exist disjoint open sets $U$ and $V$ in $X$ such that 
+$A\subset U$ and $y\in V$. 
+\end{thm}
+
+\begin{proof} 
+First we use the fact that $X$ is a Hausdorff space. 
+Thus, for all $x\in A$ there exist
+disjoint open sets $U_x$ and $V_x$ such that $x\in U_x$ and $y\in V_x$. 
+Then $\{U_x\}_{x\in A}$ is an open cover for $A$. 
+Using \PMlinkname{this characterization of compactness}{YIsCompactIfAndOnlyIfEveryOpenCoverOfYHasAFiniteSubcover}, 
+it follows that there
+exist a finite set $A_0\subset A$ such that $\{U_x\}_{x\in A_0}$
+is a finite open cover for $A$. 
+Let us define
+\begin{eqnarray*}
+U= \bigcup_{x\in A_0} U_x,\,\,\,\,\,&\,&\,\,\,\,\, V= \bigcap_{x\in A_0} V_x.
+\end{eqnarray*}
+Next we show  that these sets satisfy the given conditions 
+for $U$ and $V$. First, it is clear
+that $U$ and $V$ are open. We also have that $A\subset U$ and $y\in V$. 
+To see that $U$ and $V$ are disjoint, suppose $z\in U$. Then
+$z\in U_x$ for some $x\in A_0$. 
+Since $U_x$ and $V_x$ are disjoint, $z$ can not be in $V_x$, and 
+consequently $z$ can not be in $V$.
+\end{proof}
+
+The above result and proof follows \cite{kelley} (Chapter 5, Theorem 7) or \cite{singer} (page 27).
+
+\begin{thebibliography}{9}
+\bibitem{kelley} J.L. Kelley, \emph{General Topology},
+D. van Nostrand Company, Inc., 1955.
+\bibitem{singer} I.M. Singer, J.A.Thorpe,
+\emph{Lecture Notes on Elementary Topology and Geometry},
+Springer-Verlag, 1967.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

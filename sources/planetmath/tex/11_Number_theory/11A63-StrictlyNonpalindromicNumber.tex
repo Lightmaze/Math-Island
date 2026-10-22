@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{StrictlyNonpalindromicNumber}
+\pmcreated{2013-03-22 16:25:12}
+\pmmodified{2013-03-22 16:25:12}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{strictly non-palindromic number}
+\pmrecord{5}{38570}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+If for a given integer $n > 0$ there is no base $1 < b < (n - 1)$ such that each digit $d_i = d_{k + 1 - i}$ of $n$ (where $k$ is the number of significant digits of $n$ in base $b$ and $i$ is a simple iterator in the range $0 < i < (k + 1)$), meaning that $n$ is not a palindromic number in any of these bases, then $n$ is called a {\em strictly non-palindromic number}.
+
+Clearly $n > 2$ will be palindromic for $b = n - 1$, and though trivially, this is also true for $b > n$.
+
+6 is the largest composite strictly non-palindromic number. For any other $2|n$, it is easy to find a base in which $n$ is written $22_b$ by simply computing $b = \frac{n}{2} - 1$. For odd composites $n = mp$, where $p$ is an odd prime and $m \ge p$ we can almost always either find that for $b = p - 1$, $n = b^2 + 2b + 1$, or for $b = m - 1$ then $n = pb + p$ and written with two instances of the digit corresponding to $p$ in that base. The one odd case of $n = 9$ is quickly dismissed with $b = 2$.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConstructibleAnglesWithIntegerValuesInDegrees}
+\pmcreated{2013-03-22 14:16:36}
+\pmmodified{2013-03-22 14:16:36}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{constructible angles with integer values in degrees}
+\pmrecord{9}{35728}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11S20}
+\pmclassification{msc}{11R32}
+\pmclassification{msc}{51M15}
+\pmclassification{msc}{13B05}
+\pmsynonym{constructible angle}{ConstructibleAnglesWithIntegerValuesInDegrees}
+\pmrelated{ExactTrigonometryTables}
+\pmrelated{TheoremOnConstructibleAngles}
+\pmrelated{ClassicalProblemsOfConstructibility}
+
+\endmetadata
+
+\usepackage{graphicx}
+%%%\usepackage{xypic} 
+\usepackage{bbm}
+\newcommand{\Z}{\mathbbmss{Z}}
+\newcommand{\C}{\mathbbmss{C}}
+\newcommand{\R}{\mathbbmss{R}}
+\newcommand{\Q}{\mathbbmss{Q}}
+\newcommand{\mathbb}[1]{\mathbbmss{#1}}
+\newcommand{\figura}[1]{\begin{center}\includegraphics{#1}\end{center}}
+\newcommand{\figuraex}[2]{\begin{center}\includegraphics[#2]{#1}\end{center}}
+\newtheorem{lem}{Lemma}
+\newtheorem{thm}{Theorem}
+\begin{document}
+The aim is to characterize all constructible angles with straightedge and compass whose value is an integer number of degrees (like $60\sp\circ$ or $36\sp\circ$).
+From now on, every time we refer to the measurement of an angle, it is meant to be in degrees, not radians.
+
+We need two short lemmas:
+
+\begin{lem}
+If an angle measuring $x$ degrees can be constructed, then angles measuring
+\[\frac x2,\frac x4,\frac x8,\ldots,\frac{x}{2\sp k}\]
+can be constructed.
+\end{lem}
+
+Notice that we are not stating all of them have integer values, only constructibility. The proof follows almost inmediately by knowing any angle can be bisected with ruler and compass.
+
+\begin{lem}
+If an angle measuring $x$ degrees can be constructed, then angles measuring any integer multiple of $x$, that is, $2x,3x,4x,\ldots$ can be constructed
+\end{lem}
+
+If you can construct $x$, you can construct again an adjacent angle with the same value and you will have constructed an angle measuring $2x$. Repeat the procedure and you get $3x,4x,\ldots$.
+
+\bigskip
+
+Now, a theorem.
+
+\begin{thm}
+The angle measuring $3\sp\circ$ can be constructed.
+\end{thm}
+
+It is well known that both regular pentagon and equilateral triangle can be built with ruler and compass. That allows us to construct angles measuring $72\sp\circ$ and $60\sp\circ$.
+
+
+By first lemma we can construct then 
+\[72\sp\circ, \frac{72\sp\circ}{2}=36\sp\circ, \frac{36\sp\circ}{2}=18\sp\circ,
+\frac{18\sp\circ}{2}=9\sp\circ,\
+\frac{9\sp\circ}{2}=4.5\sp\circ=4\sp\circ\, 30'
+\]
+and also we can construct
+\[
+60\sp\circ,\frac{60\sp\circ}{2}=30\sp\circ,
+\frac{30\sp\circ}{2}=15\sp\circ,
+\frac{15\sp\circ}{2}=7.5\sp\circ = 7\sp\circ\, 30'
+\]
+
+But if we can construct $4\sp\circ\ 30'$ and $7\sp\circ\ 30'$ we can then construct their difference, which is exactly $3\sp\circ$.
+
+
+Alternative (J. Pahikkala): Since $72\sp\circ$ and $60\sp\circ$ can be constructed, $12\sp\circ=72\sp\circ-60\sp\circ$ can be also constructed. Bisecting $12\sp\circ$ gives $6\sp\circ$ and bisecting again shows that $3\sp\circ$ can be constructed.
+
+\begin{thm}
+We can construct any angle measuring an integer multiple of $3\sp\circ$.
+\end{thm}
+
+The proof follows directly from the second Lemma.
+
+\begin{thm}
+The only constructible angles measuring an integer number of degrees are precisely the multiples of $3\sp\circ$.
+\end{thm}
+
+We are only left to prove we cannot construct any other integer value. We will work by contradiction.
+
+Suppose we are able to construct with ruler and compass an angle measuring $t\sp\circ$ with $t$ integer and $t$ not multiple of $3$.
+
+Since $3$ does not divide $t$ and $3$ is prime, it follows that $3$ and $t$ are coprime, that is, $ \gcd(3,t)=1$.
+
+But then, by Euclid's algorithm we can find integers $m,n$ so that
+$3m-tn=1$ ($n$ or $m$ could be negative).
+
+By the second lemma, we can construct both $3m\sp\circ$ and $tn\sp\circ$, so we can construct their sum (or difference), which would prove $1\sp\circ$ is constructible, and therefore any angle equal to an integer number of degrees could be constructed with ruler and compass.
+
+However, the standard proof of the impossibility of trisecting an arbitrary angle goes by proving $20\sp\circ$ cannot be constructed with ruler and compass, this contradicts what we just showed, and therefore only angles being an integer multiple of $3\sp\circ$ can be constructed.
+
+Q.E.D.
+
+For a more general proof for other real values besides integers, see the theorem on constructible angles.
+%%%%%
+%%%%%
+\end{document}

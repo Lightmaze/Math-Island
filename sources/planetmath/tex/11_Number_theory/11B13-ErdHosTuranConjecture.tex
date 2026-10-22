@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ErdHosTuranConjecture}
+\pmcreated{2013-03-22 13:27:11}
+\pmmodified{2013-03-22 13:27:11}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Erd\H{o}s-Turan conjecture}
+\pmrecord{8}{34018}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B13}
+\pmclassification{msc}{11B34}
+\pmclassification{msc}{11B05}
+%\pmkeywords{Sidon set}
+%\pmkeywords{thin bases}
+\pmrelated{SidonSet}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand*{\naturals}{\mathbb{N}}
+\newcommand*{\integers}{\mathbb{Z}}
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+Erd\H{o}s-Turan conjecture asserts there exist no \PMlinkname{asymptotic basis}{AsymptoticBasis} $A\subset \naturals_0$ of order $2$ such that its representation function
+\begin{equation*}
+r'_{A,2}(n)=\sum_{\substack{a_1+a_2=n\\a_1\leq a_2}} 1
+\end{equation*}
+is bounded.
+
+Alternatively, the question can be phrased as whether there exists a power series $F$ with coefficients $0$ and $1$ such that all coefficients of $F^2$ are greater than $0$, but are bounded.
+
+If we replace set of nonnegative integers by the set of all integers, then the question was settled by Nathanson\cite{cite:nathanson_everyrepr} in negative, that is, there exists a set $A\subset \integers$ such that $r'_{A,2}(n)=1$.
+
+\begin{thebibliography}{1}
+
+\bibitem{cite:halberstam_sequences}
+Heini Halberstam and Klaus~Friedrich Roth.
+\newblock {\em Sequences}.
+\newblock Springer-Verlag, second edition, 1983.
+\newblock \PMlinkexternal{Zbl 0498.10001}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0498.10001}.
+
+\bibitem{cite:nathanson_everyrepr}
+Melvyn~B. Nathanson.
+\newblock Every function is the representation function of an additive basis
+  for the integers.
+\newblock \PMlinkexternal{arXiv:math.NT/0302091}{http://front.math.ucdavis.edu/math.NT/0302091}.
+
+\end{thebibliography}
+%
+%@BOOK{cite:halberstam_sequences,
+% author    = {Heini Halberstam and Klaus Friedrich Roth},
+% title     = "Sequences",
+% publisher = {Springer-Verlag},
+% year      = {1983},
+% edition   = {Second}
+%}
+%
+%@MISC{cite:nathanson_everyrepr,
+%    title = {Every function is the representation function of an additive
+%        basis for the integers},
+%    author = {Melvyn B. Nathanson},
+%    note = {arXiv:math.NT/0302091}
+%}
+%%%%%
+%%%%%
+\end{document}

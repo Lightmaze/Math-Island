@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HogattsTheorem}
+\pmcreated{2013-03-22 13:43:24}
+\pmmodified{2013-03-22 13:43:24}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Hogatt's theorem}
+\pmrecord{8}{34408}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B39}
+%\pmkeywords{Fibonacci sum}
+\pmrelated{FibonacciSequence}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Hogatt's theorem states that every positive integer can be expressed as 
+a sum of distinct Fibonacci numbers.
+
+For any positive integer, $k\in\Z^+$, there exists a unique positive integer 
+$n$ so that $F_{n-1} < k \leq F_n$. We proceed by strong induction on $n$.  For $k=0,1,2,3$, the property is true as $0,1,2,3$ are themselves Fibonacci numbers.  Suppose $k\geq 4$ and that every integer less than $k$ is a sum of distinct Fibonacci numbers.  Let $n$ be the largest positive integer such that $F_n<k$. We first note that if $k-F_n > F_{n-1}$ then
+$$F_{n+1} \geq k > F_n + F_{n-1} = F_{n+1}, $$
+giving us a contradiction.  Hence $k-F_n \leq F_{n-1}$ and consequently the positive integer $(k-F_n)$ can be expressed as a sum of distinct Fibonacci numbers.  Moreover, this sum does not contain the term $F_n$ as $k-F_n \leq F_{n-1} < F_n$.
+Hence,$k = (k-F_n) + F_n$ is a sum of distinct Fibonacci numbers and Hogatt's theorem is proved by induction.
+%%%%%
+%%%%%
+\end{document}

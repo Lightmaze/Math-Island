@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ThereIsAUniqueReducedFormOfDiscriminant4nOnlyForN12347}
+\pmcreated{2013-03-22 16:56:46}
+\pmmodified{2013-03-22 16:56:46}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{there is a unique reduced form of discriminant $-4n$ only for $n=1,2,3,4,7$}
+\pmrecord{6}{39214}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11E12}
+\pmclassification{msc}{11R29}
+\pmclassification{msc}{11E16}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\newcommand{\Alg}{\mathcal{O}}
+\newcommand{\ol}{\overline}
+\newcommand{\Leg}[2]{\left(\frac{#1}{#2}\right)}
+\renewcommand{\frak}[1]{\mathfrak{#1}}
+%
+%% \theoremstyle{plain} %% This is the default
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{ax}{Axiom}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\begin{document}
+The number of reduced \PMlinkid{integral binary quadratic forms}{IntegralBinaryQuadraticForms} of a given \PMlinkid{discriminant}{IntegralBinaryQuadraticForms} $\Delta<0$ is finite; the number of such forms is $h_{\Delta}$.
+
+\begin{thm}Let $n$ be a positive integer. Then $h_{-4n}=1$ if and only if $n=1,2,3,4,\text{ or }7$. 
+\end{thm}
+\begin{proof} (This proof is taken from \cite{bib:cox}, which is itself taken from an earlier proof).
+\newline
+By computing all reduced forms of discriminants $-4,-8,-12,-16, -20$ one can see that $h_{-4n}=1$ in the five cases given in the statement of the theorem. We show there are no others.
+
+Clearly $x^2+ny^2$ is a reduced form of discriminant $-4n$. For $n\notin \{1,2,3,4,7\}$, we will produce a second reduced form of the same discriminant, showing that $h_{-4n}>1$. We may assume $n>1$, since we already know that $h_{-4}=1$.
+
+Suppose first that $n$ has at least two distinct prime factors. Then we can write $n=ac$ where $1<a<c,\ \gcd(a,c)=1$. Then $ax^2+cy^2$ is reduced, and its discriminant is $-4ac=-4n$. So if $n$ has two distinct prime factors, $h_{-4n}>1$.
+
+We now consider the prime power case, taking $2^r$ and $p^r$, $p$ an odd prime, separately.
+
+If $n=2^r$, then we already know that for $r=1,2$, $h_{-4n}=1$. For $r=3$, one can compute the classes of discriminant $-32$ and see that $h_{-4n}=2$. For $r\geq 4$, then
+	\[4x^2+4xy+(2^{r-2}+1)y^2
+\]
+is clearly primitive, and is also reduced since $4\leq 2^{r-2}+1$. Further, its discriminant is $4^2-4\cdot 4\cdot(2^{r-2}+1)=-16\cdot 2^{r-2}=-4n$. Thus in this case as well, $h_{-4n}>1$.
+
+Finally, suppose $n=p^r$, $p$ an odd prime. Suppose we can write $n+1=ac, 2\leq a<c,\ \gcd(a,c)=1$. Then
+\[ax^2+2xy+cy^2\] is reduced and has discriminant $-4n$, so $h_{-4n}>1$. So we are left with the case where $n+1$ is a prime power which, since it is even, must be $2^s$. $s=1,2,3$ correspond to $n=1,3,7$; $s=4$ corresponds to $n=15$, which is not a prime power; and for $s=5$, one can simply compute the forms of discriminant $-4\cdot 31$ to see that $h_{-4\cdot 31}=3$. So the only possibility remaining is that $s\geq 6$. In this case, though,
+\[8x^2+6xy+(2^{s-3}+1)y^2\]
+has relatively prime coefficients, and is reduced since $s\geq 6\Rightarrow 8\leq 2^{s-3}+1$. Also, its discriminant is $6^2-4\cdot 8\cdot(2^{s-3}+1)=4-4\cdot2^s=4-4(n+1)=-4n$, and thus $h_{-4n}>1$ in this case as well.
+\end{proof}
+
+\begin{thebibliography}{10}
+\bibitem{bib:cox}
+Cox,~D.A. \emph{Primes of the Form $x^2 + ny^2$: Fermat, Class Field Theory, and Complex Multiplication}, Wiley 1997.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

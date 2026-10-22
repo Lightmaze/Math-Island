@@ -1,0 +1,51 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KeithNumber}
+\pmcreated{2013-03-22 16:00:20}
+\pmmodified{2013-03-22 16:00:20}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Keith number}
+\pmrecord{5}{38035}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+\pmsynonym{repfigit number}{KeithNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given a base $b$ integer $$n = \sum_{i = 1}^k d_ib^{i - 1}$$ where $d_1$ is the least significant digit and $d_k$ is the most significant, construct the sequence $a_1 = d_k, \ldots a_k = d_1$, and for $m > k$, $$a_m = \sum_{i = 1}^k a_{m - i}.$$ If there is an $x$ such that $a_x = n$, then $n$ is a {\em Keith number} or {\em repfigit number}.
+
+In base 10, the first few Keith numbers below ten thousand are: 14, 19, 28, 47, 61, 75, 197, 742, 1104, 1537, 2208, 2580, 3684, 4788, 7385, 7647, 7909 (see A007629 in Sloane's OEIS for a longer listing). 47 is a base 10 Keith number because it is contained the Fibonacci-like recurrence started from its base 10 digits: 4, 7, 11, 18, 29, 47, etc.
+
+\begin{thebibliography}{1}
+\bibitem{mk} M. Keith, ``Repfigit Numbers" {\it J. Rec. Math.} 19 (1987), 41 - 42.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

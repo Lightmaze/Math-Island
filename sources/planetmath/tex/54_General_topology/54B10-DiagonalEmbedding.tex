@@ -1,0 +1,74 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DiagonalEmbedding}
+\pmcreated{2013-03-22 14:20:41}
+\pmmodified{2013-03-22 14:20:41}
+\pmowner{waj}{4416}
+\pmmodifier{waj}{4416}
+\pmtitle{diagonal embedding}
+\pmrecord{8}{35817}
+\pmprivacy{1}
+\pmauthor{waj}{4416}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B10}
+\pmclassification{msc}{18A05}
+\pmsynonym{diagonal map}{DiagonalEmbedding}
+\pmrelated{ASpaceMathnormalXIsHausdorffIfAndOnlyIfDeltaXIsClosed}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+\PMlinkescapeword{structure}
+\PMlinkescapeword{information}
+\PMlinkescapeword{algebraic}
+\PMlinkescapeword{compact}
+
+Given a topological space $X$, the \emph{diagonal embedding}, or \emph{diagonal map} of $X$ into $X\times X$ (with the product topology) is the map
+
+\[x\stackrel{\Delta}{\longmapsto}(x,x) .\]
+
+$X$ is homeomorphic to the image of $\Delta$ (which is why we use the word ``embedding{}'').
+
+
+We can perform the same construction with objects other than topological spaces: for instance, there's a diagonal map $\Delta\colon G\to G\times G$, from a group into its direct sum with itself, given by the same \PMlinkescapetext{formula}.  It's sensible to call this an embedding, too, since $\Delta$ is a monomorphism.
+
+We could also imagine a diagonal map into an n-fold product given by
+
+\[x\stackrel{\Delta_n}{\longmapsto}(x,x,\ldots ,x).\]
+
+\subsubsection*{Why call it the diagonal map?}
+
+Picture $\mathbb{R}$.  Its diagonal embedding into the Cartesian plane $\mathbb{R}\times\mathbb{R}$ is the diagonal line $y=x$.
+
+\subsubsection*{What's it good for?}
+
+Sometimes we can use information about the product space $X\times X$ together with the diagonal embedding to get back information about $X$.  For instance, $X$ is Hausdorff if and only if the image of $\Delta$ is closed in $X\times X$ [\PMlinkname{proof}{ASpaceMathnormalXIsHausdorffIfAndOnlyIfDeltaXIsClosed}].  If we know more about the product space than we do about $X$, it might be easier to check if $\operatorname{Im}\Delta$ is closed than to verify the Hausdorff condition directly.
+
+When studying algebraic topology, the fact that we have a diagonal embedding for any space $X$ lets us define a bit of extra structure in cohomology, called the cup product.  This makes cohomology into a ring, so that we can bring additional algebraic muscle to bear on topological questions.
+
+Another application from algebraic topology: there is something called an $H$-space, which is essentially a topological space in which you can multiply two points together.  The diagonal embedding, together with the multiplication, lets us say that the cohomology of an $H$-space is a Hopf algebra; this structure lets us find out lots of things about $H$-spaces by analogy to what we know about compact Lie groups.
+%%%%%
+%%%%%
+\end{document}

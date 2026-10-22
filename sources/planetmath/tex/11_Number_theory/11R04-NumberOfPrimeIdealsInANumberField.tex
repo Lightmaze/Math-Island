@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NumberOfPrimeIdealsInANumberField}
+\pmcreated{2013-03-22 19:12:51}
+\pmmodified{2013-03-22 19:12:51}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{number of prime ideals in a number field}
+\pmrecord{4}{42133}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+%\pmkeywords{infinitude of prime ideals}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\textbf{Theorem.}\, The ring of integers of an algebraic number field contains infinitely many prime ideals.\\
+
+\emph{Proof.}\, Let $\mathcal{O}$ be the ring of integers of a number field.\, If $p$ is a rational prime number, then the principal ideal $(p)$ of $\mathcal{O}$ does not coincide with\, $(1) = \mathcal{O}$\, and thus $(p)$ has a set of prime ideals of $\mathcal{O}$ as factors.\, Two different (positive) rational primes $p$ and $q$ satisfy
+$$\gcd((p),\,(q)) \;=\; (p,\,q) \;=\; (1),$$
+since there exist integers $x$ and $y$ such that\, $xp\!+\!yq = 1$\, and consequently\, $1 \in (p,\,q)$.\, Therefore, the principal ideals $(p)$ and $(q)$ of $\mathcal{O}$ have no common prime ideal factors.\, Because there are \PMlinkid{infinitely many rational prime numbers}{3036}, also the corresponding principal ideals have infinitely many different prime ideal factors.
+%%%%%
+%%%%%
+\end{document}

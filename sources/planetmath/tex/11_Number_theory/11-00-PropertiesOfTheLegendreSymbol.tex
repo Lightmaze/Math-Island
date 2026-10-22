@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PropertiesOfTheLegendreSymbol}
+\pmcreated{2013-03-22 16:17:52}
+\pmmodified{2013-03-22 16:17:52}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{properties of the Legendre symbol}
+\pmrecord{4}{38418}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmrelated{EulersCriterion}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem*{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem*{rem}{Remark}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+Let $p$ be an odd prime and let $a$ be an arbitrary integer. Let $\displaystyle \left(\frac{a}{p}\right)$ be the Legendre symbol of $a$ modulo $p$. Then:
+
+\begin{prop} The following properties are satisfied:
+\begin{enumerate}
+\item If $a\equiv b \mod p$ then $\displaystyle \left(\frac{a}{p}\right)=\left(\frac{b}{p}\right)$.
+
+\item If $a\neq 0 \mod p$ then $\displaystyle \left(\frac{a^2}{p}\right)=1$.
+
+\item If $a\neq 0 \mod p$ and $b\in \mathbb{Z}$ then $\displaystyle \left(\frac{a^2b}{p}\right)=\left(\frac{b}{p}\right)$.
+
+\item $\displaystyle \left(\frac{a}{p}\right)\left(\frac{b}{p}\right)=\left(\frac{ab}{p}\right)$.
+\end{enumerate}
+\end{prop}
+
+\begin{proof}
+The first three properties are immediate from the definition of the Legendre symbol. Remember that $(a/p)$ is $1$ if $x^2\equiv a \mod p$ has solutions, the value is $-1$ if there are no solutions, and equals $0$ if $a\equiv 0 \mod p$.
+
+The fourth property is a consequence of Euler's criterion. Indeed,
+$$\left(\frac{a}{p}\right)\equiv a^{(p-1)/2},\quad \left(\frac{b}{p}\right)\equiv b^{(p-1)/2},\quad
+\text{and } \left(\frac{ab}{p}\right)\equiv (ab)^{(p-1)/2} \mod
+p.$$ It is clear then that $(a/p)(b/p)\equiv (ab/p) \mod p$. Since
+the numbers involved are all $\pm 1$ or $0$, the congruence also
+holds with equality in $\mathbb{Z}$.
+\end{proof}
+
+\begin{rem}
+Property (4) is somewhat surprising because, in particular, it says that the product of two quadratic non-residues modulo $p$ is a quadratic residue modulo $p$, which is not at all obvious.
+\end{rem}
+%%%%%
+%%%%%
+\end{document}

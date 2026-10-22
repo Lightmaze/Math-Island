@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GaussianPrime}
+\pmcreated{2013-03-22 16:54:13}
+\pmmodified{2013-03-22 16:54:13}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Gaussian prime}
+\pmrecord{7}{39161}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em Gaussian prime} $p$ is a Gaussian integer $a + bi$ (where $i$ is the imaginary unit and $a$ and $b$ are real integers) that is divisible only by the units 1, $-1$, $i$ and $-i$, itself, its associates and no others. For example, $3 + 20i$ is a Gaussian prime because there is no pair of Gaussian integers (besides the units and associates) that multiply to $3 + 20i$. But $3 + 21i$ is not a Gaussian prime because $3(-i)(1 + i)(1 + 2i)^2 = 3 + 21i$. If $a + bi$ is prime then so are $a - bi$, $-a + bi$ and $-a - bi$, as well as the associates $b + ai$, $b - ai$, $b - ai$ and $-b - ai$.
+
+The real and the imaginary parts must be of different parity. For a real prime to be a Gaussian prime of the form $p + 0i$, the real part has to be of the form $p = 4n - 1$; the same goes for the associates $0 + pi$. It follows from \PMlinkname{Fermat's theorem on sums of two squares}{RepresentingPrimesAsX2ny2} that since real primes of the form $p = 4n + 1$ can be represented as $x^2 + y^2$, then in the complex plane they have the factorization $(x + yi)(x - yi)$. For example, $17 = 4^2 + 1^2$, so $(4 + i)(4 - i) = 17$.
+
+Sometimes Gaussian primes are simply called ``complex primes,'' which is an incorrect term found in some of the older literature.
+
+\begin{thebibliography}{1}
+\bibitem{ek} Kogbetliantz, Ervand George {\it Handbook of first complex prime numbers} London: Gordon and Breach Science Publishers (1971)
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,213 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AsymptoticsOfCentralBinomialCoefficient}
+\pmcreated{2013-03-22 17:40:50}
+\pmmodified{2013-03-22 17:40:50}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{asymptotics of central binomial coefficient}
+\pmrecord{18}{40120}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B65}
+\pmclassification{msc}{05A10}
+\pmrelated{CatalanNumbers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+By making use of the expression 
+\[
+ 4^{-n} {2n \choose n} = \prod_{m=1}^n {2m - 1 \over 2m}  ,
+\]
+we may obtain estimates of the central binomial 
+coefficient ${2n \choose n}$ for large values of $n$.
+We begin by making some elementary algebraic 
+manipulations of this product:
+\[
+ 4^{-n} (2n+1) {2n \choose n} = {(2n+1) \prod_{m=1}^n (2m-1) \over
+\prod_{m=1}^n 2m} = {\prod_{m=1}^n (2m+1) \over \prod_{m=1}^n 2m} =
+\prod_{m=1}^n {2m+1 \over 2m}
+\]
+Then we multiply this by our previous expression, factor-by-factor:
+\[
+ 16^{-n} (2n+1) {2n \choose n}^2 = \prod_{m=1}^n {(2m+1) (2m-1)
+\over (2m)^2} .
+\]
+With a bit of rearrangement and manipulation, this gives
+us the following formula for the central binomial coefficient,
+\[
+ {2n \choose n} = {4^n \over \sqrt{2n+1}} \sqrt{ \prod_{m=1}^n 
+ \left( 1 - {1 \over 4 m^2} \right)} ,
+\]
+which we shall examine to obtain estimates of the central
+binomial coefficient for large $n$.
+
+To make use of this formula, we make two key observations
+about the product which appears on the right-hand side.
+First, since each of the terms in the product lies between
+$0$ and $1$, the product is an decreasing function of $n$,
+Thus, we have            
+\[
+ 4^{-a} \sqrt{2a+1} {2a \choose a} > 
+ 4^{-b} \sqrt{2b+1} {2b \choose b}
+\]
+when $a < b$.  Secondly, the product converges in the limit
+$n \to \infty$.  In fact, it turns out to be Wallis' product
+for $\pi$, so we have
+\[
+ \lim_{n \to \infty}
+ 4^{-n} \sqrt{2n+1} {2n \choose n} =
+ \sqrt{2 \over \pi} .
+\]
+
+This limit may be reread as an approximate formula when
+$n$ is large:
+\[
+ {2n \choose n} \approx 
+ \sqrt{2 \over \pi} 
+ {4^n \over \sqrt{2n+1}}
+\]
+As an example, let us consider the case $n=10$.  The
+exact answer is ${20 \choose 10} = 184756$.  The approximate
+answer is $(4^{10} \sqrt{2}/\sqrt{21 \pi}) = 182570.38\ldots$,
+which agrees with the exact answer to a percent.  Also
+note that the estimate is smaller than the exact answer ---
+this is a general feature which is due to the observation
+made above that the product is an decreasing function of $n$.
+Moreover, this observation also implies that the percentage 
+error decreases as $n$ increases; in particular, the approximation
+is good within a percent when $n > 10$.
+
+It is worth noting that same result can be obtained from Stirling's 
+formula.  In fact, one can deduce Stirling's formula by a similar 
+line of reasoning.
+
+With a little more work, wee can improve our approximation.
+We begin by considering the product
+\[
+ \prod_{m=1}^n  {64 m^2 - 9 \over 64 m^2 - 25} .
+\]
+On the one hand, we can evaluate this product by factoring 
+the numerator and denominator and cancelling terms:
+\begin{align*}
+ \prod_{m=1}^n {64 m^2 - 9 \over 64 m^2 - 25} &=
+ \prod_{m=1}^n {(8m-3)(8m+3) \over (8m-5)(8m+5)} \\ &=
+ {5 \cdot 11 \over 3 \cdot 13} \cdot
+ {13 \cdot 19 \over 11 \cdot 21} \cdot
+ {21 \cdot 27 \over 19 \cdot 29}
+ \cdots \cdots
+ {(8n-11)(8n+5) \over (8n-13)(8n-3)} \cdot
+ {(8n-3)(8n+3) \over (nm-5)(8n+5)} \\ &=
+ {5 \over 3} \cdot {8n+3 \over 8n+5}
+\end{align*}
+From this expression, it follows that the product converges
+to $5/3$ as $n \to \infty$.
+On the other hand, we can multiply this product by the product
+we obtained earlier termwise:
+\begin{align*}
+ \left( 
+  \prod_{m=1}^n {64 m^2 - 9 \over 64 m^2 - 25} 
+ \right)
+ \left( 
+  \prod_{m=1}^n 
+    \left( 1 - {1 \over 4 m^2} \right)
+ \right) &=
+ \prod_{m=1}^n
+  {64 m^2 - 9 \over 64 m^2 - 25} \cdot
+  {4 m^2 - 1 \over 4 m^2} \\ &=
+ \prod_{m=1}^n
+  {256 m^4 - 100 m^2 + 9 \over 256 m^4 - 100 m^2} \\ &=
+ \prod_{m=1}^n
+  \left(
+   1 + {9 \over 256 m^4 - 100 m^2}
+  \right)
+\end{align*}
+By taking limits on both sides, we conclude that
+\[
+  \prod_{m=1}^\infty
+  \left(
+   1 + {9 \over 256 m^4 - 100 m^2}
+  \right) =
+ {10 \over 3 \pi} .
+\]
+Embracing our earlier formula for the central binomial
+coefficient with both hands, we obtain
+\[
+ 16^{-n} \cdot
+  {80 n^2 + 70 n + 15 \over 24 n + 15} 
+  {2n \choose n}^2 =
+ \prod_{m=1}^n
+  \left(
+   1 + {9 \over 256 m^4 - 100 m^2}
+  \right) .
+\]
+Juggling terms from one hand to the other, we obtain
+a new formula for the central binomial coefficient:
+\[
+ {2n \choose n} =
+ 4^n 
+  \sqrt{24 n + 15 \over 80 n^2 + 70 n + 15} \,
+  \sqrt{
+   \prod_{m=1}^n
+    \left(
+     1 + {9 \over 256 m^4 - 100 m^2}
+    \right)}
+\]
+Despite the increase in complexity, this formula is
+actually an improvement over the old formula.  The reason
+for this is that the product converges more rapidly
+because the polynomial in the denominator is now
+of the fourth order.
+
+As before, we may take the limit $n \to \infty$:
+\[
+ \lim_{n \to \infty}
+  4^{-n} \,
+  \sqrt{16 n^2 + 14 n + 3 \over 8 n + 5} 
+  {2n \choose n} =
+ \sqrt{2 \over \pi}
+\]
+This gives us a new, improved asymptotic formula:
+\[
+ {2n \choose n} \approx
+ \sqrt{2 \over \pi} \,
+  4^n \,
+  \sqrt{8 n + 5 \over 16 n^2 + 14 n + 3}
+\]
+
+To see just how good this formula is, let us revisit 
+the case $n=10$.  Now, we get the approximation 
+$(4^{10} \sqrt{170/1743\pi}) = 184756.93\ldots$.
+Because the terms in the new product are greater
+than unity, the approximation is an overestimate,
+so we round it down to $184756$, which just so
+happens to be the exact answer.  The approximation
+is that good!
+%%%%%
+%%%%%
+\end{document}

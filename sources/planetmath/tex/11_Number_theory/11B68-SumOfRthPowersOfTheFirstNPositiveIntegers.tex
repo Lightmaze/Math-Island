@@ -1,0 +1,130 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SumOfRthPowersOfTheFirstNPositiveIntegers}
+\pmcreated{2013-03-22 14:14:38}
+\pmmodified{2013-03-22 14:14:38}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{sum of $r$th powers of the first $n$ positive integers}
+\pmrecord{14}{35689}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B68}
+\pmclassification{msc}{05A15}
+\pmrelated{BernoulliNumber}
+\pmrelated{FormalPowerSeries}
+\pmrelated{ArithmeticProgression}
+\pmrelated{SumOfPowers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\PMlinkescapeword{terms}
+A very classic problem is this: what is the sum of the numbers from $1$ to $100$?  The answer is $5050$, and there are a number of ways to see it.  Before stating them, we generalize the problem somewhat: What is $\sum_{k=1}^n k$?
+
+\begin{theorem}
+\[
+\sum_{k=1}^n k = \frac{n(n+1)}{2}
+\]
+\end{theorem}
+\begin{proof}
+Write the sum twice:
+\[
+\begin{array}{cccccccccc}
+  & 1   & + & 2     & + & 3     & + & \cdots & + & n \\
++ & n   & + & (n-1) & + & (n-2) & + & \cdots & + & 1 \\
+= & n+1 & + & n+1   & + & n+1   & + & \cdots & + & n+1 \\
+\end{array}
+\]
+which is exactly $n(n+1)$, so 
+\[
+\sum_{k=1}^n k = \frac{n(n+1)}{2}.\qedhere
+\]
+\end{proof}
+
+Having seen this, it is natural to generalize this question further, and ask: What is $\sum_{k=1}^n k^r$, for any integer $r>0$?
+
+This question, being so general, does not have such a tidy answer, but it can be solved.
+
+\begin{theorem}
+Let $B_m$ denote the $m$th Bernoulli number, and let $r$ be a positive integer.  Then
+\[
+\sum_{k=0}^n k^r = \sum_{l=1}^{r+1} \binom{r+1}{l}\frac{B_{r+1-l}}{r+1}(n+1)^l.
+\]
+\end{theorem}
+Observe that this formula is a polynomial in $n$ of \PMlinkname{degree}{OrderAndDegreeOfPolynomial} $r+1$; for a given $r$, we can look up all the Bernoulli numbers we need and write down the polynomial explicitly. For example:
+\[
+1^2 + 2^2 + 3^2 + \cdots + n^2 = \frac{n(n+1)(2n+1)}{6},
+\]
+\[
+1^3 + 2^3 + 3^3 + \cdots + n^3 = \frac{(n(n+1))^2}{4},
+\]
+and
+\[
+1^4 + 2^4 + 3^4 + \cdots + n^4 = \frac{n(2n+1)(n+1)(3n^2+3n-1)}{30}.
+\]
+
+We will prove the result by a generating function argument.
+\begin{proof}
+For no obvious reason, let
+\[
+f_n(x) := \frac{x(e^{(n+1)x} - 1)}{(e^x-1)}.
+\]
+
+On the one hand, we have
+\[
+f_n(x) = x\frac{1-(e^x)^{n+1}}{1-e^x} = x\sum_{k=0}^{n} e^{kx}, 
+\]
+and so the coefficient of $x^{r+1}$ is $\sum_{k=0}^{n} k^r/r!$, more or less the sum we want.
+
+On the other hand, using the definition of the Bernoulli numbers, 
+\begin{align*}
+f_n(x) & = (e^{(n+1)x}-1) \sum_{j=0}^{\infty} B_j \frac{x^j}{j!}\\
+       & = \sum_{l=1}^{\infty} \sum_{j=0}^{\infty} B_j (n+1)^l \frac{x^{l+j}}{l!j!}
+\end{align*}
+so the coefficient of $x^{r+1}$ is 
+\[
+\sum_{l=1}^{r+1} \frac{(n+1)^l}{l!}\frac{B_{r+1-l}}{(r+1-l)!}.
+\]
+
+Combining these two results, we get
+\[
+\sum_{k=0}^n k^r = \sum_{l=1}^{r+1} \binom{r+1}{l}\frac{B_{r+1-l}}{r+1}(n+1)^l.\qedhere
+\]
+\end{proof}
+
+Observe that we need not use the Bernoulli numbers directly; any way we can extract the Taylor coefficients of $f_n$ will give us the same results.  In practical terms, we can hand $f_n$ to a computer algebra system and it will print out the needed formula.
+
+This proof is given as Exercise 2.23 in \PMlinkexternal{generatingfunctionology}{http://www.math.upenn.edu/~wilf/DownldGF.html}.
+%%%%%
+%%%%%
+\end{document}

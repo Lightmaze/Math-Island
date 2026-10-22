@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UniformNeighborhood}
+\pmcreated{2013-03-22 16:42:31}
+\pmmodified{2013-03-22 16:42:31}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{uniform neighborhood}
+\pmrecord{6}{38924}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E15}
+\pmrelated{TopologyInducedByAUniformStructure}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+
+\begin{document}
+Let $X$ be a uniform space with uniformity $\mathcal{U}$.  For each $x\in X$ and $U\in \mathcal{U}$, define the following items
+\begin{itemize}
+\item $U[x]:=\lbrace y\mid (x,y)\in U\rbrace$, and
+\item $\mathfrak{N}_x:=\lbrace (x,U[x])\mid U\in \mathcal{U}\rbrace$
+\item $\mathfrak{N}=\bigcup_{x\in X} \mathfrak{N}_x$.
+\end{itemize}
+\textbf{Proposition}.  $\mathfrak{N}_x$ is the abstract neighborhood system around $x$, hence $\mathfrak{N}$ is the abstract neighborhood system of $X$.
+\begin{proof}  We show that all five defining conditions of a neighborhood system on a set are met:
+\begin{enumerate}
+\item
+For each $(x,U[x])\in \mathfrak{N}$, $x\in U[x]$, since every entourage contains the diagonal relation.
+\item
+Every $x\in X$ and every entourage $U\in \mathcal{U}$, $U[x]\subseteq X$ with $(x,U[x])\in \mathfrak{N}$
+\item
+Suppose $(x,U[x])\in \mathfrak{N}$ and $U[x]\subseteq Y\subseteq X$.  Showing that $(x,Y)\in\mathfrak{N}$ amounts to showing $Y=V[x]$ for some $V\in \mathcal{U}$.  First, note that each entourage $U$ can be decomposed into disjoint union of sets ``slices'' of the form $\lbrace a\rbrace \times U[a]$.  We replace the ``slice'' $\lbrace x\rbrace \times U[x]$ by $\lbrace x\rbrace \times Y$.  The resulting disjoint union is a set $V$, which is a superset of $U$.  Since $\mathcal{U}$ is a filter, $V\in \mathcal{U}$.  Furthermore, $V[x]=Y$.
+\item $a\in U[x]\cap V[x]$ iff $(x,a)\in U\cap V$ iff $a\in (U\cap V)[x]$.  This implies that if $(x,U[x]),(x,V[x])\in \mathfrak{N}$, then $(x,U[x]\cap V[x]) = (x,(U\cap V)[x])\in \mathfrak{N}$.
+\item Suppose $(x,U[x])\in \mathfrak{N}$.  There is $V\in\mathcal{U}$ such that $(V\circ V)[x]\subseteq U[x]$.  We show that $V[x]\subseteq X$ is what we want.  Clearly, $x\in V[x]$.  For any $y\in V[x]$, and any $a\in V[y]$, we have $(x,a)=(x,y)\circ (y,a)\in V\circ V$, or $a\in (V\circ V)[x]\subseteq U[x]$.  So $V[y]\subseteq U[x]$ for any $y\in V[x]$.  In order to show that $(y,U[x])\in \mathfrak{N}$, we must find $W \in \mathcal{U}$ such that $U[x]=W[y]$.  By the third step above, since $V[y]\subseteq U[x]$, there is $W\in \mathcal{U}$ with $W[y]=U[x]$.  Thus $(y,U[x])=(y,W[y])\in \mathfrak{N}$.
+\end{enumerate}
+\end{proof}
+
+\textbf{Definition}.  For each $x$ in a uniform space $X$ with uniformity $\mathcal{U}$, a \emph{uniform neighborhood} of $x$ is a set $U[x]$ for some entourage $U\in\mathcal{U}$.  In general, for any $A\subseteq X$, the set $$U[A]:=\lbrace y \in X \mid (x,y)\in U\mbox{ for some }x\in A\rbrace $$ is called a \emph{uniform neighborhood} of $A$.
+
+Two immediate properties that we have already seen in the proof above are: (1). for each $U\in\mathcal{U}$, $x\in U[x]$; and (2). $U[x]\cap V[x]=(U\cap V)[x]$.  More generally, $\bigcap U_i[x]=(\bigcap U_i)[x]$.
+
+\textbf{Remark}.  If we define $T_{\mathcal{U}}:=\lbrace A\subseteq X\mid \forall x\in A, \exists U\in \mathcal{U}\mbox{ such that }U[x]\subseteq A\rbrace$, then $T_{\mathcal{U}}$ is a \PMlinkname{topology induced by the uniform structure}{TopologyInducedByAUniformStructure} $\mathcal{U}$.  Under this topology, uniform neighborhoods are synonymous with neighborhoods.
+
+%%%%%
+%%%%%
+\end{document}

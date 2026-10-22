@@ -1,0 +1,119 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ModularForm}
+\pmcreated{2013-03-22 14:07:37}
+\pmmodified{2013-03-22 14:07:37}
+\pmowner{olivierfouquetx}{2421}
+\pmmodifier{olivierfouquetx}{2421}
+\pmtitle{modular form}
+\pmrecord{31}{35534}
+\pmprivacy{1}
+\pmauthor{olivierfouquetx}{2421}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11F11}
+\pmrelated{TaniyamaShimuraConecture}
+\pmrelated{HeckeAlgebra}
+\pmrelated{AlgebraicNumberTheory}
+\pmrelated{RamanujanTauFunction}
+\pmdefines{cusp form}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+\newcommand{\sldeuxz}{\textrm{SL}_{2}(\mathbb{Z})}
+\newcommand{\sldeuxr}{\textrm{SL}_{2}(\mathbb{R})}
+\begin{document}
+Let $\sldeuxr$ be the group of real $2\times 2$ matrices with determinant $1$ (see entry on special linear groups).  The group $\sldeuxr$ acts on $H$, the upper half plane, through \emph{fractional linear transformations}.  That is, if
+\[
+\gamma = \begin{pmatrix}a & b \\ c & d\end{pmatrix},
+\]
+and $\tau\in H$, then we let
+\begin{equation}
+\gamma \tau=\frac{a\tau+b}{c\tau+d}.
+\end{equation}
+
+For any natural number $N \geq 1$, define the {\em congruence subgroup} $\Gamma_0(N)$ of level $N$ to be the following subgroup of the group $\sldeuxz$ of integer coefficient matrices of determinant $1$:
+$$
+\Gamma_0(N) := \left\{ \left.
+\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}
+\in \sldeuxz\ \right|\ c \equiv 0 \pmod{N} \right\}.
+$$
+
+Fix an integer $k$.  For $\gamma\in\sldeuxz$ and a function $f$ defined on $H$, we define $$f_{\mid\gamma}(\tau)=\frac{f(\gamma \tau)}{(c\tau+d)^k}.$$
+For a finite index subgroup $\Gamma$ of $\sldeuxz$ containing a congruence subgroup, a function $f$ defined on $H$ is said to be a weight $k$ \emph{modular form} if:
+\begin{enumerate}
+\item $f=f_{\mid \gamma}$ for $\gamma \in \Gamma$.
+\item $f$ is holomorphic on $H$.
+\item $f$ is holomorphic at the cusps.
+\end{enumerate}
+
+This last condition requires some explanation.  First observe that the element 
+\[
+\mu =
+\begin{pmatrix}
+1 & m \\
+0 & 1
+\end{pmatrix}
+\in \Gamma_0(N),
+\]
+and $\mu z = z + m$, while if $f$ satisfies all the other conditions above, $f_{\mid \mu} = f$.  In other words, $f$ is periodic with period $1$.  Thus, convergence permitting, $f$ admits a Fourier expansion.  Therefore, we say that $f$ is holomorphic at the cusps if, for all $\gamma \in \Gamma$, $f_{\mid \gamma}$ admits a a Fourier expansion
+\begin{equation}
+f_{\mid \gamma}(\tau)=\sum_{n=0}^{\infty}a_{n}q^{n},
+\end{equation}
+where $q=e^{2i\pi \tau}$.
+
+If all the $a_n$ are zero for $n\le 0$, then a modular form $f$ is said to be a \emph{cusp form}.  The set of modular forms for $\Gamma$ (respectively cusp forms for $\Gamma$) is often denoted by $M_{k}(\Gamma)$ (respectively $S_{k}(\Gamma)$).  Both $M_{k}(\Gamma)$ and $S_{k}(\Gamma)$ are finite dimensional vector spaces.
+
+The space of modular forms for $\sldeuxz$ (respectively cusp forms) is non-trivial for any $k$ even and greater than 4 (respectively greater than $12$ and not $14$).  Examples of modular forms for $\sldeuxz$ are:
+\begin{enumerate}
+\item The Eisenstein series $E_{m}$, where $m$ is even and greater than $4$, is a modular form of weight $m$.  Here $B_{m}$ denotes the $m$-th Bernoulli number and, as usual, $q=e^{2i\pi \tau}$:
+\begin{equation}
+E_{m}(\tau)=1-\frac{2m}{B_{m}}\underset{n=1}{\overset{\infty}{\sum}}\sigma_{m-
+1}(n)q^n.
+\end{equation}
+For instance,
+\begin{equation}
+E_{4}(\tau)=1+240\underset{n=1}{\overset{\infty}{\sum}}\sigma_{3}(n)q^n
+\end{equation}
+and
+\begin{equation}
+E_{6}(\tau)=1-504\underset{n=1}{\overset{\infty}{\sum}}\sigma_{5}(n)q^n.
+\end{equation}
+
+\item The Weierstrass $\Delta$ function, also called the modular discriminant, is a modular form of weight $12$:
+\begin{equation}
+\Delta(\tau)=q\underset{n=1}{\overset{\infty}{\prod}}(1-q^n)^{24}.
+\end{equation}
+\end{enumerate}
+
+Every modular form is expressible as
+\begin{equation}
+f(\tau)=\underset{n=0}{\overset{\lfloor{k/12}\rfloor}{\sum}}{a_n}{E_{k-12n}(\tau)}{(\Delta(\tau))^n},
+\end{equation}
+where the $a_n$ are arbitrary constants, $E_0(\tau)=1$ and $E_2(\tau)=0$.  Cusp forms are the forms with $a_0=0$.
+%%%%%
+%%%%%
+\end{document}

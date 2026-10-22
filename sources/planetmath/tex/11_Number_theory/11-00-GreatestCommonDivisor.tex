@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GreatestCommonDivisor}
+\pmcreated{2013-03-22 11:46:50}
+\pmmodified{2013-03-22 11:46:50}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{greatest common divisor}
+\pmrecord{22}{30248}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmclassification{msc}{03E20}
+\pmclassification{msc}{06F25}
+\pmsynonym{gcd}{GreatestCommonDivisor}
+\pmsynonym{greatest common factor}{GreatestCommonDivisor}
+\pmsynonym{highest common factor}{GreatestCommonDivisor}
+\pmsynonym{hcf}{GreatestCommonDivisor}
+%\pmkeywords{number theory}
+\pmrelated{GcdDomain}
+\pmrelated{CorollaryOfBezoutsLemma}
+\pmrelated{ExampleOfGcd}
+\pmrelated{ExistenceAndUniquenessOfTheGcdOfTwoIntegers}
+\pmrelated{DivisionOfCongruence}
+\pmrelated{Congruences}
+\pmrelated{RationalSineAndCosine}
+\pmrelated{IntegralBasisOfQuadraticField}
+\pmrelated{SquareRootsOfRationals}
+\pmrelated{IntegerContraharmonicMeans}
+\pmrelated{SubgroupsWithCoprim}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+%%%%\usepackage{xypic}
+\begin{document}
+Let $a$ and $b$ be given integers, with at least one of them different from zero. The \emph{greatest common divisor} of $a$ and $b$, denoted by $\gcd(a,b)$, is the positive integer $d$ satisfying
+\begin{enumerate}
+\item $d\mid a$ and $d\mid b$,
+\item if $c\mid a$ and $c\mid b$, then $c\mid d$.
+\end{enumerate}
+More intuitively, the greatest common divisor is the largest integer dividing both $a$ and $b$.
+
+For example, $\gcd(345,135)=15$, $\gcd(-7,-21)=7$, $\gcd(18,0)=18$, and $\gcd(44,97)=1$
+
+Given two (rational) integers, one can construct their gcd via Euclidean algorithm.  Once the gcd is found, it can be written as a linear combination of the two integers.  That is, for any two integers $a$ and $b$, we have $\operatorname{gcd}(a,b)=ra+sb$ for some integers $r$ and $s$.  This expression is known as the Bezout identity.
+
+One can generalize the notion of a gcd of two integers into a gcd of two elements in a commutative ring.  However, given two elements in a general commutative ring, even an integral domain, a gcd may not exist.  For example, in $\mathbb{Z}[x^2,x^3]$, a gcd for the elements $x^5$ and $x^6$ does not exist, for $x^2$ and $x^3$ are both common divisors of $x^5$ and $x^6$, but neither one divides another.
+
+The idea of the gcd of two integers can be generalized in another direction: to the gcd of a non-empty set of integers.  If $S$ is a non-empty set of integers, then the $\operatorname{gcd}$ of $S$, is a positive integer $d$ such that 
+\begin{enumerate}
+\item $d\mid a$ for all $a\in S$,
+\item if $c\mid a, \forall a\in S$, then $c\mid d$.
+\end{enumerate}
+We denote $d=\operatorname{gcd}(S)$.
+
+\textbf{Remarks}.
+\begin{itemize}
+\item $\gcd(a,b,c)=\gcd(\gcd(a,b),c)$.
+\item If $\varnothing\ne T\subseteq S\subseteq \mathbb{Z}$, then $\gcd(S)\mid \gcd(T)$.
+\item For any $\varnothing\ne S\subseteq\mathbb{Z}$, there is a finite subset $T\subseteq S$ such that $\gcd(T)=\gcd(S)$.
+\end{itemize}
+%%%%%
+%%%%%
+%%%%%
+%%%%%
+\end{document}

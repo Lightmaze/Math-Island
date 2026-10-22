@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ScatteredSpace}
+\pmcreated{2013-03-22 16:42:59}
+\pmmodified{2013-03-22 16:42:59}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{scattered space}
+\pmrecord{6}{38934}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54G12}
+\pmrelated{DenseInItself}
+\pmdefines{scattered}
+\pmdefines{scattered set}
+\pmdefines{scattered line}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+
+\begin{document}
+A topological space $X$ is said to be \emph{scattered} if for every closed subset $C$ of $X$, the set of isolated points of $C$ is dense in $C$.  Equivalently, $X$ is a scattered space if no non-empty closed subset of $X$ is dense in itself: for every closed subset $C$ of $X$, the closure of the interior of $C$ is not $C$.
+
+A subset of a topological space is called \emph{scattered} if it is a scattered space with the subspace topology.
+
+Every discrete space is scattered, since every singleton is open, hence isolated.
+
+\underline{Scattered line}.  Let $\mathbb{R}$ be the real line equipped with the usual topology $T$ (formed by the open intervals).  Let's define a new topology $S$ on $\mathbb{R}$ as follows: a subset $A$ is open under $S$ ($A\in S$) if $A=B\cup C$, where $B$ is open under $T$ ($B\in T$) and $C\subseteq \mathbb{R}-\mathbb{Q}$, a subset of the irrational numbers.  We make the following observations:
+\begin{enumerate}
+\item $S$ is a topology on $\mathbb{R}$ which is finer than $T$
+\item $\mathbb{R}$ is a Hausdorff space under $S$,
+\item a singleton in $\mathbb{R}$ is clopen iff it contains an irrational number
+\item any subset of irrationals is scattered under the subspace topology of $\mathbb{R}$ under $S$
+\end{enumerate}
+\begin{proof}
+\begin{enumerate}
+\item First note that every element of $T$ is an element of $S$, so $\varnothing, \mathbb{R}\in S$ in particular.  Suppose $A_1,A_2\in S$ with $A_1=B_1\cup C_1$ and $A_2=B_2\cup C_2$, where $B_i,C_i$ are defined as in the setup above.  Then $A_1\cap A_2= B\cup C$, where $B=B_1\cap B_2\in T$ and $C=(C_1\cap B_2)\cup ((B_1\cup C_1)\cap C_2)$ is a subset of the irrationals.  So $A_1\cap A_2\in S$.  If $A_i\in S$ with $A_i=B_i\cup C_i$, then $\bigcup A_i=\bigcup B_i\cup \bigcup C_i\in S$.  So $S$ is a topology which is finer than $T$
+\item $\mathbb{R}$ is Hausdorff under $S$ is clear, the topological property is inherited from $T$.
+\item First, any singleton is closed since $X$ is Hausdorff under $S$.  If $x$ is irrational, then $\lbrace x\rbrace$ is open (under $S$) as well.  So $\lbrace x\rbrace$ is clopen.  If $x$ is rational and $\lbrace x\rbrace\in S$, then it is the union of a $T$-open set $B$ and a subset $C$ of the irrationals.  The only $T$-open subset of $\lbrace x\rbrace$ is the empty set, so $\lbrace x\rbrace$ is a subset of the irrationals, a contradiction.
+\item Let $C$ is a subset of the irrational numbers. and considered the subspace topology under $S$.  Then every point $r$ of $C$ is isolated, since $\lbrace r\rbrace$ is the open subset of $C$ separating it from the rest.  The closure of the collection of these points is clearly $C$ itself, so $C$ is scattered.
+\end{enumerate}
+\end{proof}
+The real line under the topology $S$ is called a \emph{scattered line}.
+
+\textbf{Remark}.  Every topological space is a disjoint union of a perfect set and a scattered set.
+%%%%%
+%%%%%
+\end{document}

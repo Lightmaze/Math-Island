@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Torus}
+\pmcreated{2013-03-22 12:55:17}
+\pmmodified{2013-03-22 12:55:17}
+\pmowner{Daume}{40}
+\pmmodifier{Daume}{40}
+\pmtitle{torus}
+\pmrecord{15}{33274}
+\pmprivacy{1}
+\pmauthor{Daume}{40}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B15}
+\pmclassification{msc}{51H05}
+\pmrelated{MobiusStrip}
+\pmrelated{NTorus}
+\pmrelated{SurfaceOfRevolution2}
+\pmdefines{major radius}
+\pmdefines{minor radius}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Visually, the torus looks like a doughnut. Informally, we take a rectangle, identify two edges to form a cylinder, and then identify the two ends of the cylinder to form the torus. Doing this gives us a surface of genus one. It can also be described as the Cartesian product of two circles, that is, $S^1 \times S^1$. The torus can be parameterized in Cartesian coordinates by:
+$$x = \cos(s) \cdot(R + r \cdot \cos(t))$$
+$$y = \sin(s) \cdot (R + r \cdot \cos(t))$$
+$$z = r \cdot \sin(t)$$
+with $R$ the \emph{major radius} and $r$ the \emph{minor radius} are constant, and $s,t \in [0,2\pi)$.
+
+\begin{center}
+\includegraphics[scale=0.8]{torus} \\
+\tiny{Figure 1: A torus generated with Mathematica 4.1}
+\end{center}
+
+To create the torus mathematically, we start with the closed subset $X = [0,1] \times [0,1] \subseteq \mathbb{R}^2$. Let $X^*$ be the set with elements:
+$$\{ x \times 0, x \times 1 \mid 0 < x < 1 \}$$
+$$\{ 0 \times y, 1 \times y \mid 0 < y < 1 \}$$
+and also the four-point set
+$$\{ 0 \times 0, 1 \times 0, 0 \times 1, 1 \times 1 \}.$$
+
+This can be schematically represented in the following diagram.
+\begin{center}
+\includegraphics[scale=0.5]{torus-2} \\
+\tiny{Diagram 1: The identifications made on $I^2$ to make a torus. \\ Opposite sides are identified with equal orientations, and the four corners \\
+are identified to one point.}
+\end{center}
+
+Note that $X^*$ is a partition of $X$, where we have identified opposite sides of the square together, and all four corners together. We can then form the quotient topology induced by the quotient map $p\colon X \longrightarrow X^*$ by sending each element $x \in X$ to the corresponding element of $X^*$ containing $x$. \\
+%%%%%
+%%%%%
+\end{document}

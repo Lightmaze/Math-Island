@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PartialOrderingInATopologicalSpace}
+\pmcreated{2013-03-22 16:35:02}
+\pmmodified{2013-03-22 16:35:02}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{partial ordering in a topological space}
+\pmrecord{10}{38775}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54F99}
+\pmdefines{specialization order}
+\pmdefines{specialization preorder}
+\pmdefines{specialization}
+\pmdefines{generization}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\begin{document}
+Let $X$ be a topological space.  For any $x,y\in X$, we define a binary relation $\le$ on $X$ as follows: $$x\le y \qquad \mbox{ iff } \qquad x \in \overline{\lbrace y\rbrace}.$$
+
+\begin{prop}  $\le$ is a preorder. \end{prop}
+\begin{proof}
+Clearly $x\le x$.  Next, suppose $x\le y$ and $y\le z$.  Let $C$ be a closed set containing $z$.  Since $y$ is in the closure of $\lbrace z\rbrace$, $y\in C$.  Since $x$ is in the closure of $\lbrace y\rbrace$, $x\in C$ also.  So $x\le z$.  \end{proof}
+
+We call $\le$ the \emph{specialization preorder} on $X$.  If $x\le y$, then $x$ is called a \emph{specialization point} of $y$, and $y$ a \emph{generization point} of $x$.  For any set $A\subseteq X$, 
+\begin{itemize}
+\item
+the set of all specialization points of points of $A$ is called the \emph{specialization} of $A$, and is denoted by $\mathrm{Sp}(A)$; 
+\item
+the set of all generization points of points of $A$ is called the \emph{generization} of $A$, and is denoted by $\mathrm{Gen}(A)$.
+\end{itemize}
+
+\begin{prop}.  If $X$ is \PMlinkname{$T_0$}{T0}, then $\le$ is a partial order. \end{prop}
+\begin{proof}
+Suppose next that $x\le y$ and $y\le x$.  If $x\ne y$, then there is an open set $A$ such that $x\in A$ and $y\notin A$.  So $y\in A^c$, the complement of $A$, which is a closed set.  But then $x\in A^c$ since it is in the closure of $\lbrace y\rbrace$.  So $x\in A\cap A^c=\varnothing$, a contradition.  Thus $x=y$.  \end{proof}
+
+This turns a $T_0$ topological space into a poset, where $\le$ here is called the \emph{specialization order} of the space.  
+
+Given a $T_0$ space, we have the following: 
+\begin{prop} $x\le y$ iff $x\in U$ implies $y\in U$ for any open set $U$ in $X$. \end{prop}  
+\begin{proof} $(\Rightarrow):$  if $x\in U$ and $y\notin U$, then $y\in U^c$.  Since $x\le y$, we have $x\in U^c$, a contradiction. $(\Leftarrow) :$ if $x\notin \overline{\lbrace y\rbrace}$, then for some closed set $C$, we have $y\in C$ and $x\notin C$.  But then $x\in C^c$, so that $y\in C^c$, a contradiction.  \end{proof}
+
+\textbf{Remarks}.
+\begin{itemize}
+\item $\overline{\lbrace x\rbrace}=\downarrow x$, the lower set of $x$.  ($z\in \downarrow x$ iff $z\le x$ iff $z\in\overline{\lbrace x\rbrace}$).
+\item But if $X$ is \PMlinkname{$T_1$}{T1}, then the partial ordering just defined is trivial (the diagonal set), since every point is a closed point (for verification, just modify the antisymmetry portion of the above proof).
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

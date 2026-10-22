@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ContinuousImageOfACompactSetIsCompact}
+\pmcreated{2013-03-22 15:53:14}
+\pmmodified{2013-03-22 15:53:14}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{continuous image of a compact set is compact}
+\pmrecord{16}{37888}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D30}
+\pmrelated{CompactnessIsPreservedUnderAContinuousMap}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\newtheorem{thm*}{Theorem}
+
+\def\R{\mathbb{ R}}
+\def\N{\mathbb{ N}}
+\def\Z{\mathbb{ Z}}
+\def\K{\mathbb{ K}}
+\def\sub{\subseteq}
+\def\bcap{\bigcap}
+\def\bcup{\bigcup}
+\def\empty{\varnothing}
+\def\imp{\rightarrow}
+\begin{document}
+\begin{thm*}
+The continuous image of a compact set is also compact.
+\end{thm*}
+
+\begin{proof}
+Let $X$ and $Y$ be topological spaces, $f \colon X \to Y$ be continuous, $A$ be a compact subset of $X$, $I$ be an indexing set, and $\{V_\alpha\}_{\alpha\in I}$ be an open cover of $f(A)$.  Thus, $\displaystyle f(A)\sub \bigcup_{\alpha\in I} V_\alpha$.  Therefore, $\displaystyle A\sub f^{-1}\bigg( f(A) \bigg) \sub f^{-1} \left( \bigcup_{\alpha\in I} V_{\alpha} \right)=\bigcup_{\alpha\in I} f^{-1} (V_\alpha)$.
+
+Since $f$ is continuous, each $f^{-1}(V_\alpha)$ is an open subset of $X$.  Since $\displaystyle A\sub \bigcup_{\alpha\in I} f^{-1} (V_\alpha)$ and $A$ is compact, there exists $n \in \mathbb{N}$ with $\displaystyle A\sub\bigcup_{j=1}^n f^{-1} \left( V_{\alpha_j} \right)$ for some $\alpha_1, \dots , \alpha_n \in I$.  Hence, $\displaystyle f(A)\sub f \left( \bigcup_{j=1}^n f^{-1} (V_{\alpha_j}) \right)=f\left( f^{-1} \left( \bigcup_{j=1}^n V_{\alpha_j} \right) \right) \sub \bigcup_{j=1}^n V_{\alpha_j}$.  It follows that $f(A)$ is compact.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

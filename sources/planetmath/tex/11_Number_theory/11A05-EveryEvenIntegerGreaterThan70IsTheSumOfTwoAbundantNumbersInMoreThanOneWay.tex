@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EveryEvenIntegerGreaterThan70IsTheSumOfTwoAbundantNumbersInMoreThanOneWay}
+\pmcreated{2013-03-22 17:44:14}
+\pmmodified{2013-03-22 17:44:14}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{every even integer greater than 70 is the sum of two abundant numbers in more than one way}
+\pmrecord{5}{40187}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+{\bf Theorem} Every even $n > 70$ can be expressed as $n = a + b$, with both $a$ and $b$ abundant numbers, in more than one way. Due to the commutative property of addition, swaps of $a$ and $b$ are not counted as separate ways.
+
+\begin{proof}
+To prove this it is enough to find just two ways for each even $n > 70$, though of course there are plenty more ways as the numbers get larger, purely for our convenience we'll seek to choose the smallest values for $b$ possible. Since every multiple of a perfect number is an abundant number, and 6 is a perfect number, it follows that every multiple of 6 is abundant, and it is small enough a modulus that reviewing all possible cases should not prove tiresome.
+
+If $n = 6m$ and $m > 5$, the two desired pairs are $a = 6(m - 2)$, $b = 12$, and $a = 6(m - 3)$, $b = 18$. This leaves us the cases $n = 6m + 2$ and $n = 6m + 4$ to concern ourselves with.
+
+If $n \equiv 2 \mod 6$ and $m > 10$ then the pairs are are $a = 6(m - 3)$, $b = 20$, and $a = 6(m - 9)$, $b = 56$.
+
+If $n \equiv 4 \mod 6$ and $m > 12$ then the pairs are $a = 6(m - 6)$, $b = 40$, and $a = 6(m - 11)$, $b = 70$.
+
+The lower bounds of $m$ have been chosen to ensure the formulas give distinct pairs of abundant numbers and never the perfect number 6 itself, but its multiples. These values of $m$ correspond to the values of $n$ 36, 68, 82. To complete the proof we are left with the special case of $n = 76$ to examine on its own. Ignoring the bounds for $m$, the formulas above give us 76 = 40 + 36, a valid pair, and 76 = 70 + 6, which is not a pair of abundant numbers. But there is one other pair, 56 + 20, of which neither $a$ nor $b$ is a multiple of 6.
+\end{proof}
+
+The special case of 76 shows that there are solutions that don't use multiples of 6. These become more readily available as the numbers get larger.
+%%%%%
+%%%%%
+\end{document}

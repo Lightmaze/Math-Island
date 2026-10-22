@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConvolutionMethod}
+\pmcreated{2013-03-22 15:58:24}
+\pmmodified{2013-03-22 15:58:24}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{convolution method}
+\pmrecord{13}{37989}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N37}
+\pmrelated{DirichletHyperbolaMethod}
+\pmrelated{MoebiusFunction}
+\pmrelated{DisplaystyleYOmeganOleftFracxlogXy12YRightFor1LeY2}
+\pmrelated{DisplaystyleXlog2xOleftsum_nLeX2OmeganRight}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $f$, $g$, and $h$ be multiplicative functions such that $f=g*h$, where $*$ denotes the \PMlinkname{convolution}{MultiplicativeFunction} of $g$ and $h$.  The {\sl convolution method\/} is a way to \PMlinkescapetext{calculate} $\displaystyle \sum_{n \le x} f(n)$ by using the fact that $f=g*h$:
+
+\begin{center}
+$\begin{array}{ll}
+\displaystyle \sum_{n \le x} f(n) & \displaystyle = \sum_{n \le x} \sum_{d|n} g(d) h \left( \frac{n}{d} \right) \\
+& \displaystyle = \sum_{d \le x} \sum_{m \le \frac{x}{d}} g(d) h(m) \\
+& \displaystyle = \sum_{d \le x} g(d) \sum_{m \le \frac{x}{d}} h(m)
+\end{array}$
+\end{center}
+
+This method for calculating $\displaystyle \sum_{n \le x} f(n)$ is advantageous when the sums in \PMlinkescapetext{terms} of $g$ and $h$ are easier to handle.
+
+As an example, the sum $\displaystyle \sum_{n \le x} \mu^2(n)$ will be calculated using the convolution method.
+
+Since $\mu^2=\mu^2*\varepsilon=\mu^2*(\mu*1)=(\mu^2*\mu)*1$, the functions $\mu^2*\mu$ and $1$ can be used.
+
+To use the convolution method, a nice way to \PMlinkescapetext{calculate} $(\mu^2*\mu)(n)$ needs to be found.  Note that $\mu^2*\mu$ is \PMlinkname{multiplicative}{MultiplicativeFunction}, so it only needs to be evaluated at prime powers.
+
+Let $k \in \mathbb{N}$.  Then
+
+$$ (\mu^2*\mu)(p^k) = \sum_{j=0}^k \mu^2(p^j) \mu(p^{k-j}) = \mu(p^k)+\mu(p^{k-1}) = \begin{cases}
+0 & \text{if } k \neq 2 \\
+-1 & \text{if } k=2. \end{cases}$$
+
+Since $\mu^2*\mu$ is \PMlinkname{multiplicative}{MultiplicativeFunction}, then $(\mu^2*\mu)(n)= \begin{cases}
+0 & \text{if } n \text{ is not a square} \\
+\mu(\sqrt{n}) & \text{if } n \text{ is a square.} \end{cases}$
+
+The convolution method yields:
+
+\begin{center}
+$\begin{array}{ll}
+\displaystyle \sum_{n \le x} \mu^2(n) & \displaystyle = \sum_{d \le x} (\mu^2*\mu)(d) \sum_{m \le \frac{x}{d}} 1 \\
+& \\
+& \displaystyle = \sum_{d \le x} (\mu^2*\mu)(d) \left( \frac{x}{d} + O(1) \right) \\
+& \\
+& \displaystyle = \sum_{a \le \sqrt{x}} \mu(a) \left( \frac{x}{a^2} + O(1) \right) \\
+& \\
+& \displaystyle = x \sum_{a \le \sqrt{x}} \frac{\mu(a)}{a^2} + O \left( \sum_{a \le \sqrt{x}} |\mu(a)| \right) \\
+& \\
+& \displaystyle = x \left( \sum_{a \in \mathbb{N}} \frac{\mu(a)}{a^2} - \sum_{a>\sqrt{x}} \frac{\mu(a)}{a^2} \right) + O \left( \sum_{a \le \sqrt{x}} 1 \right) \\
+& \\
+& \displaystyle = x \sum_{a \in \mathbb{N}} \frac{\mu(a)}{a^2} + O \left( x \sum_{a>\sqrt{x}} \left| \frac{\mu(a)}{a^2} \right| \right) + O(\sqrt{x}) \\
+& \\
+& \displaystyle = \frac{6}{\pi^2}x + O \left( x \sum_{a>\sqrt{x}} \frac{1}{a^2} \right) + O(\sqrt{x}) \\
+& \\
+& \displaystyle = \frac{6}{\pi^2}x + O \left( x \left( \frac{1}{\sqrt{x}} \right) \right) + O(\sqrt{x}) \\
+& \\
+& \displaystyle = \frac{6}{\pi^2}x + O(\sqrt{x}) \end{array}$
+\end{center}
+%%%%%
+%%%%%
+\end{document}

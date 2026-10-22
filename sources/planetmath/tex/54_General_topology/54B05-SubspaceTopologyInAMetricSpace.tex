@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SubspaceTopologyInAMetricSpace}
+\pmcreated{2013-03-22 15:17:44}
+\pmmodified{2013-03-22 15:17:44}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{subspace topology in a metric space}
+\pmrecord{5}{37093}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B05}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\F}{\mathbbmss{F}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{thm}
+Suppose $X$ is a topological space whose topology is induced by a
+metric $d$, and suppose $Y\subseteq X$ is a subset. 
+Then the subspace topology in $Y$ is the same as the metric topology
+when by $d$ restricted to $Y$.
+\end{thm}
+
+Let $d'\colon Y\colon Y\to \sR$ be the restriction of $d$ to $Y$,
+and let 
+\begin{eqnarray*}
+   B_r(x) &=& \{ z\in X: d'(z,x)<r \}, \\
+   B'_r(x) &=& \{ z\in Y: d'(z,x)<r\}.
+\end{eqnarray*}
+The proof rests on the  identity
+$$
+   B'_r(x)=Y\cap B_r(x), \quad x\in Y, r>0.
+$$
+Suppose $A\subseteq Y$ is open in the subspace topology of $Y$, 
+then $A=Y\cap V$ for some open 
+  $V\subseteq X$. Since $V$ is open in $X$, 
+$$
+   V=\cup \{ B_{r_i}(x_i) : i=1,2, \ldots \}
+$$
+  for some $r_i>0$, $x_i\in X$, and 
+\begin{eqnarray*}
+  A&=&\cup \{ Y\cap B_{r_i}(x_i) : i=1,2, \ldots \} \\
+    &=&\cup \{ B'_{r_i}(x_i) : i=1,2, \ldots \}.
+\end{eqnarray*}
+Thus $A$ is open also in the metric topology of $d'$.
+The converse direction is proven similarly.
+%%%%%
+%%%%%
+\end{document}

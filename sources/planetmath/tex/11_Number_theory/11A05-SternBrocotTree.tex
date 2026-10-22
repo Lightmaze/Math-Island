@@ -1,0 +1,117 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SternBrocotTree}
+\pmcreated{2013-03-22 13:41:19}
+\pmmodified{2013-03-22 13:41:19}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Stern-Brocot tree}
+\pmrecord{9}{34361}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A05}
+\pmclassification{msc}{11A55}
+%\pmkeywords{mediant}
+\pmrelated{FareySequence}
+\pmrelated{ContinuedFraction}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+%%\usepackage{xypic}
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+If we start with irreducible fractions representing zero and
+infinity,
+\begin{equation*}
+\frac{0}{1}, \frac{1}{0},
+\end{equation*}
+and then between adjacent fractions $\frac{m}{n}$ and
+$\frac{m'}{n'}$ we insert fraction $\frac{m+m'}{n+n'}$, then we
+obtain
+\begin{equation*}
+\frac{0}{1}, \frac{1}{1}, \frac{1}{0}.
+\end{equation*}
+Repeating the process, we get
+\begin{equation*}
+\frac{0}{1}, \frac{1}{2}, \frac{1}{1}, \frac{2}{1}, \frac{1}{0},
+\end{equation*}
+and then
+\begin{equation*}
+\frac{0}{1}, \frac{1}{3}, \frac{1}{2}, \frac{2}{3}, \frac{1}{1},
+\frac{3}{2}, \frac{2}{1}, \frac{3}{1}, \frac{1}{0},
+\end{equation*}
+and so forth. It can be proven that every irreducible fraction
+appears at some iteration and no fraction ever appears twice \cite{cite:knuth_concmath}. The process
+can be represented graphically by means of so-called
+\emph{Stern-Brocot tree}, named after its discoverers, Moritz Stern
+and Achille Brocot.
+
+% Remove *!C\xybox when Bug 122 is fixed
+\begin{equation*}
+\begin{xy}
+*!C\xybox{\xymatrix@C=0.4em{
+\frac{0}{1}\ar@{.}[d] & & & & & &
+&&\frac{1}{1}\ar@{-}[lllld]\ar@{.}[d]\ar@{-}[rrrrd]& & & & & & & &
+\frac{1}{0}\ar@{.}[d]\\
+\frac{0}{1}\ar@{.}[d] &
+&&&\frac{1}{2}\ar@{-}[lld]\ar@{.}[d]\ar@{-}[rrd]&&&&
+\frac{1}{1}\ar@{.}[d]&&&&\frac{2}{1}\ar@{-}[lld]\ar@{.}[d]\ar@{-}[rrd]&&
+&&\frac{1}{0}\ar@{.}[d] \\
+\frac{0}{1}\ar@{.}[d] &
+&\frac{1}{3}\ar@{-}[ld]\ar@{.}[d]\ar@{-}[rd]&&\frac{1}{2}\ar@{.}[d]&&
+\frac{2}{3}\ar@{-}[ld]\ar@{.}[d]\ar@{-}[rd]&&\frac{1}{1}\ar@{.}[d]
+& & \frac{3}{2}\ar@{-}[ld]\ar@{.}[d]\ar@{-}[rd] & &
+\frac{2}{1}\ar@{.}[d] &
+&\frac{3}{1}\ar@{-}[ld]\ar@{.}[d]\ar@{-}[rd]&&\frac{1}{0}\ar@{.}[d] \\
+\frac{0}{1}\ar@{.}+<0em,-5ex> &
+\frac{1}{4}\ar@{-}+<-0.5em,-5ex>\ar@{.}+<0em,-5ex>\ar@{-}+<0.5em,-5ex>&\frac{1}{3}\ar@{.}+<0em,-5ex>&
+\frac{2}{5}\ar@{-}+<-0.5em,-5ex>\ar@{.}+<0em,-5ex>\ar@{-}+<0.5em,-5ex>&\frac{1}{2}\ar@{.}+<0em,-5ex>&
+\frac{3}{5}\ar@{-}+<-0.5em,-5ex>\ar@{.}+<0em,-5ex>\ar@{-}+<0.5em,-5ex>&\frac{2}{3}\ar@{.}+<0em,-5ex>&
+\frac{3}{4}\ar@{-}+<-0.5em,-5ex>\ar@{.}+<0em,-5ex>\ar@{-}+<0.5em,-5ex>&\frac{1}{1}\ar@{.}+<0em,-5ex>&
+\frac{4}{3}\ar@{-}+<-0.5em,-5ex>\ar@{.}+<0em,-5ex>\ar@{-}+<0.5em,-5ex>&\frac{3}{2}\ar@{.}+<0em,-5ex>&
+\frac{5}{3}\ar@{-}+<-0.5em,-5ex>\ar@{.}+<0em,-5ex>\ar@{-}+<0.5em,-5ex>&\frac{2}{1}\ar@{.}+<0em,-5ex>&
+\frac{5}{2}\ar@{-}+<-0.5em,-5ex>\ar@{.}+<0em,-5ex>\ar@{-}+<0.5em,-5ex>&\frac{3}{1}\ar@{.}+<0em,-5ex>&
+\frac{4}{1}\ar@{-}+<-0.5em,-5ex>\ar@{.}+<0em,-5ex>\ar@{-}+<0.5em,-5ex>&\frac{1}{0}\ar@{.}+<0em,-5ex>
+}}
+\end{xy}
+\end{equation*}
+
+If we specify position of a fraction in the tree as a path consisting of L(eft) an R(ight) moves along the tree starting from the top (fraction $\frac{1}{1}$), and also define matrices 
+\begin{equation*}
+L=\begin{bmatrix} 1&1\\0&1 \end{bmatrix},\qquad
+R=\begin{bmatrix} 1&0\\1&1 \end{bmatrix},
+\end{equation*}
+then product of the matrices corresponding to the path is matrix $\left[\begin{smallmatrix}n&n'\\m&m'\end{smallmatrix}\right]$ whose entries are numerators and denominators of parent fractions. For example, the path leading to fraction $\frac{3}{5}$ is LRL. The corresponding matrix product is
+\begin{equation*}
+LRL=\begin{bmatrix} 1&1\\0&1 \end{bmatrix}\begin{bmatrix} 1&0\\1&1 \end{bmatrix}\begin{bmatrix} 1&1\\0&1 \end{bmatrix}=\begin{bmatrix} 2&3\\1&2 \end{bmatrix},
+\end{equation*}
+and the parents of $\frac{3}{5}$ are $\frac{1}{2}$ and $\frac{2}{3}$.
+
+Continued fractions and Stern-Brocot tree are closely related. A continued fraction $\langle a_0;a_1,a_2,\dotsc\rangle$ corresponds to fraction whose path from the top is $R^{a_0}L^{a_1}R^{a_2}\dotsb$ with the last element removed. For example,
+\begin{align*}
+\frac{5}{3}&=1+\frac{1}{1+\frac{1}{2}}=\langle 1;1,2\rangle=R^1L^1R^{2-1}=RLR,\\
+\frac{4}{11}&=0+\frac{1}{2+\frac{1}{1+\frac{1}{3}}}=\langle 0;2,1,3\rangle=R^0L^2R^1L^{3-1}=LLRLL.
+\end{align*}
+The irrational numbers correspond to the infinite paths in the Stern-Brocot tree. For example, the golden mean $\phi=\langle 1;1,1,1,\dotsc\rangle$ corresponds to the infinite path $RLRLR\dotsb$. In particular, the denominator of the fraction corresponding to the string $RLR\dotsb$ of length $n$ is the $n$'th Fibonacci number.
+
+\begin{thebibliography}{1}
+
+\bibitem{cite:knuth_concmath}
+Ronald~L. Graham, Donald~E. Knuth, and Oren Patashnik.
+\newblock {\em Concrete Mathematics}.
+\newblock Addison-Wesley, 1998.
+\newblock \PMlinkexternal{Zbl 0836.00001}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0836.00001}.
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

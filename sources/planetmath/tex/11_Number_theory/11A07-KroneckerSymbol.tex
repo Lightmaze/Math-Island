@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KroneckerSymbol}
+\pmcreated{2013-03-22 14:33:21}
+\pmmodified{2013-03-22 14:33:21}
+\pmowner{mathwizard}{128}
+\pmmodifier{mathwizard}{128}
+\pmtitle{Kronecker symbol}
+\pmrecord{6}{36108}
+\pmprivacy{1}
+\pmauthor{mathwizard}{128}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A07}
+\pmclassification{msc}{11A15}
+\pmsynonym{Kronecker-Jacobi symbol}{KroneckerSymbol}
+\pmrelated{JacobiSymbol}
+\pmrelated{LegendreSymbol}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The {\bf Kronecker symbol} is a generalization of the Jacobi symbol to all integers.
+
+Let $n$ be an integer, with prime factorization $u \cdot {p_1}^{e_1} \cdots {p_k}^{e_k}$, where $u$ is a unit and the $p_i$ are primes.  Let $a \geq 0$ be an integer.  The Kronecker symbol  $\left(\frac{a}{n}\right)$ is defined to be
+
+\[ \left(\frac{a}{n}\right) =  \left(\frac{a}{u}\right) \prod_{i=1}^k \left(\frac{a}{p_i}\right)^{e_i} \]
+
+For odd $p_i$, the number $\left(\frac{a}{p_i}\right)$ is simply the usual Legendre symbol.  This leaves the case when $p_i=2$.  We define $\left(\frac{a}{2}\right)$ by
+
+\[ \left(\frac{a}{2}\right) = \begin{cases}
+0 &\text{if $a$ is even}\\
+1 & \text{if $a$ is odd and $n \equiv 1$ or $n \equiv  7 \pmod{8}$} \\
+-1 & \text{if $a$ is odd and $n \equiv 3$ or $n \equiv 5 \pmod{8}$} \\
+\end{cases} \]
+
+Since it extends the Jacobi symbol, the quantity $\left(\frac{a}{u}\right)$ is simply 1 when $u=1$.  When $u=-1$, we define it by
+
+\[ \left(\frac{a}{-1}\right) = \begin{cases}
+-1 & \text{if $a < 0$} \\
+1 & \text{if $a > 0$} \\
+\end{cases} \]
+
+These extensions suffice to define the Kronecker symbol for all integer values $n$.
+%%%%%
+%%%%%
+\end{document}

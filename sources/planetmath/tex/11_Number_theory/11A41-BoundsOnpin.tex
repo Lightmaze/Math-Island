@@ -1,0 +1,118 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BoundsOnpin}
+\pmcreated{2013-03-22 16:23:51}
+\pmmodified{2013-03-22 16:23:51}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{bounds on $\pi(n)$}
+\pmrecord{4}{38545}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{lem}{Lemma}
+\begin{document}
+This article shows that
+\[\ln 2\left(\frac{n}{\ln n}\right)-1\leq \pi(n)\leq 8\ln 2\left(\frac{n}{\ln n}\right)\]
+and thus that the function
+\[\pi(n)/\frac{n}{\ln n}\]
+is bounded above and below.
+
+\begin{defn} If $n$ is an integer, write $n=\prod p_i^{r_i}$ where the $p_i$ are distinct primes. Then
+\[ord_p(n)=\begin{cases}
+r_i&\text{if } p=p_i\\
+0&\text{otherwise}
+\end{cases}
+\]
+\end{defn}
+
+\begin{lem}  
+\[ord_p(n!)=\sum_{i=1}^{\infty}\lfloor \frac{n}{p^i}\rfloor\]
+\end{lem}
+\textbf{Proof.}
+Note that the number of multiples of $p\leq n$ is simply $\lfloor \frac{n}{p}\rfloor$. But that does not result in $ord_p(n!)$ since some of those $\lfloor \frac{n}{p}\rfloor$ numbers may have additional factors of $p$. So divide each by $p$; then clearly 
+\[ord_p(n!)=\lfloor \frac{n}{p}\rfloor+ord_p(\lfloor \frac{n}{p}\rfloor!)\]
+The result follows inductively. Note that the sum is actually finite.
+
+
+\begin{lem} If $\binom{m+n}{n}=\prod q_i, q_i=p_i^{r_i}$, all $p_i$ distinct, then $\forall i, q_i\leq m+n$.
+\end{lem}
+\textbf{Proof.}
+Consider $q_1=p^c$. Choose $a$ such that $p^a\leq m+n<p^{a+1}$; it suffices to show $c\leq a$.
+\[c=ord_p(\binom{m+n}{n})=ord_p((m+n)!)-ord_p(m!)-ord_p(n!)=\sum_1^{\infty} (\lfloor\frac{m+n}{p^i}\rfloor-\lfloor\frac{m}{p^i}\rfloor-\lfloor\frac{n}{p^i}\rfloor)\]
+Now, in general, if $\lfloor x\rfloor=r, \lfloor y\rfloor=s$, then $\lfloor x+y\rfloor=r+s$ or $r+s+1$. So the sum above has at most $a$ terms (since $p^{a+1}>m+n$), each of which is either $0$ or $1$, and thus $c\leq a$.
+
+\begin{thm} \emph{(Chebyshev)} If $n\geq 2$
+\[\pi(n)\geq \ln 2\left(\frac{n}{\ln n}\right)-1\]
+\end{thm}
+\textbf{Proof.}
+Choose $r$ such that $0<r<n$, and write $\binom{n}{r}=\prod p_i\!^{\lambda_i}$. Each $p_i^{\lambda_i}\leq n$ by the preceding lemma, and there are at most $\pi(n)$ terms on the right-hand side. Thus
+\[n^{\pi(n)}\geq\binom{n}{r}\ \forall r\]
+Summing from $r=1$ to $r=n-1$, we get
+\[(n-1)n^{\pi(n)}\geq\sum_{r=1}^{n-1}\binom{n}{r}=2^n-2\]
+But $n^{\pi(n)}\geq 2$ since $n\geq 2$, so
+\[n^{\pi(n)+1}\geq 2^n\]
+so $(\pi(n)+1)\ln n\geq n\ln 2$ and thus
+\[\pi(n)\geq \ln 2\left(\frac{n}{\ln n}\right)-1
+\]
+
+
+\begin{thm} \emph{(Chebyshev)}
+\[\pi(n)\leq 8\ln 2\left(\frac{n}{\ln n}\right)\]
+\end{thm}
+\textbf{Proof.}
+Note that if $p$ is prime, $n\leq p\leq 2n$, then $p$ divides $\binom{2n}{n}$ since $p$ occurs in the numerator but not in the denominator. Thus $\prod_{n\leq p\leq 2n} p$ divides $\binom{2n}{n}$ as well, and thus
+\[\prod_{n\leq p\leq 2n} p\leq\binom{2n}{n}\leq 2^{2n}\]
+and therefore
+\[n^{\pi(2n)-\pi(n)}\leq 2^{2n}\]
+Taking logs, we get
+\[\pi(2n)-\pi(n)\leq\frac{2n\ln 2}{\ln n}=2\ln 2\frac{n}{\ln n}\]
+Let $f(n)=\pi(n)\ln n$. Then
+\begin{eqnarray*}
+&f(2n)-f(n)&=\pi(2n)\ln 2n-\pi(n)\ln n\\
+&&=(\pi(2n)-\pi(n))\ln n + \pi(2n)(\ln 2n-\ln n)\\
+&&=(\pi(2n)-\pi(n))\ln n+\pi(2n)\ln 2\\
+&&\leq 2n\ln 2+2n\ln 2\\
+&&=4n\ln 2
+\end{eqnarray*}
+Then
+\begin{eqnarray*}
+&f(2^t)&=(f(2^t)-f(2^{t-1}))+(f(2^{t-1})-f(2^{t-2}))+\ldots+(f(2)-f(1))\\
+&&\leq 4 \ln 2(2^{t-1}+2^{t-2}+\ldots+2^0)\\
+&&\leq 4\ln 2\cdot 2^t
+\end{eqnarray*}
+Note that $f$ is monotonically increasing, so if we choose $t$ with $2^{t-1}\leq n<2^t$, then
+\[f(n)\leq f(2^t)\leq 4\ln 2\cdot 2^t\leq 4\ln 2\cdot 2n=8n\ln 2
+\]
+
+%%%%%
+%%%%%
+\end{document}

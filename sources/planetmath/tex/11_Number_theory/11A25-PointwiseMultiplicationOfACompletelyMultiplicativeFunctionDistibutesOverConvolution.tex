@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PointwiseMultiplicationOfACompletelyMultiplicativeFunctionDistibutesOverConvolution}
+\pmcreated{2013-03-22 15:59:49}
+\pmmodified{2013-03-22 15:59:49}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{pointwise multiplication of a completely multiplicative function distibutes over convolution}
+\pmrecord{8}{38022}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{ArithmeticFunction}
+\pmrelated{CompletelyMultiplicative}
+\pmrelated{MultiplicativeFunction}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+\begin{document}
+\begin{thm*}
+Let $f$ be a completely multiplicative function and $g$ and $h$ be arithmetic functions.  Then $f(g*h)=(fg)*(fh)$.
+\end{thm*}
+
+\begin{proof}
+Let $n$ be a positive integer.  Then
+
+\begin{center}
+\begin{tabular}{ll}
+$\displaystyle (f(g*h))(n)$ & $\displaystyle = f(n)(g*h)(n)$ \\
+& $\displaystyle = f(n) \sum_{d|n} g(d)h\left( \frac{n}{d} \right)$ \\
+& $\displaystyle = \sum_{d|n} f(n)g(d)h\left( \frac{n}{d} \right)$ \\
+& $\displaystyle = \sum_{d|n} f\left( d \cdot \frac{n}{d} \right) g(d)h\left( \frac{n}{d} \right)$ \\
+& $\displaystyle = \sum_{d|n} f(d)f\left( \frac{n}{d} \right) g(d)h\left( \frac{n}{d} \right)$ \\
+& $\displaystyle = \sum_{d|n} (fg)(d)(fh)\left( \frac{n}{d} \right)$ \\
+& $\displaystyle = ((fg)*(fh))(n)$. \end{tabular}
+\end{center}
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

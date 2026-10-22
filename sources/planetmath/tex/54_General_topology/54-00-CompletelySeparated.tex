@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CompletelySeparated}
+\pmcreated{2013-03-22 16:54:51}
+\pmmodified{2013-03-22 16:54:51}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{completely separated}
+\pmrecord{7}{39175}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+\pmclassification{msc}{54D05}
+\pmclassification{msc}{54D15}
+\pmsynonym{functionally distinguishable}{CompletelySeparated}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\begin{document}
+\begin{prop} Let $A,B$ be two subsets of a topological space $X$.  The following are equivalent:
+\begin{enumerate}
+\item There is a continuous function $f:X\to [0,1]$ such that $f(A)=0$ and $f(B)=1$,
+\item There is a continuous function $g:X\to \mathbb{R}$ such that $g(A)\le r<s \le g(B)$, $r,s\in \mathbb{R}$.
+\end{enumerate}
+\end{prop}
+\begin{proof}
+Clearly 1 implies 2 (by setting $r=0$ and $s=1$).  To see that 2 implies 1, first take the transformation $$h(x)=\frac{g(x)-r}{s-r}$$ so that $h(A)\le 0< 1\le h(B)$.  Then take the transformation $f(x)=(h(x)\vee 0)\wedge 1$, where $0(x)=0$ and $1(x)=1$ for all $x\in X$.  Then $f(A)=(h(A)\vee 0)\wedge 1=0\wedge 1=0$ and $f(B)=(h(B)\vee 0)\wedge 1=h(B)\wedge 1=1$.  Here, $\vee$ and $\wedge$ denote the binary operations of taking the maximum and minimum of two given real numbers (see ring of continuous functions for more detail).  Since during each transformation, the resulting function remains continuous, the first assertion is proved.
+\end{proof}
+
+\textbf{Definition}.  Any two sets $A,B$ in a topological space $X$ satisfying the above equivalent conditions are said to be \emph{completely separated}.  When $A$ and $B$ are completely separated, we also say that $\lbrace A,B\rbrace$ is completely separated.
+
+Clearly, two sets that are completely separated are disjoint, and in fact separated.
+
+\textbf{Remark}.  A T1 topological space in which every pair of disjoint closed sets are completely separated is a normal space.  A T0 topological space in which every pair consisting of a closed set and a singleton is completely separated is a completely regular space.
+%%%%%
+%%%%%
+\end{document}

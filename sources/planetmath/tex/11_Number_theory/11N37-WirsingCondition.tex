@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WirsingCondition}
+\pmcreated{2013-03-22 16:08:45}
+\pmmodified{2013-03-22 16:08:45}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{Wirsing condition}
+\pmrecord{13}{38224}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N37}
+\pmrelated{DisplaystyleSum_nLeXYomeganO_yxlogXy1ForYGe0}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{lem*}{Lemma}
+\begin{document}
+Note that, within this entry, $p$ always refers to a prime, $k$ always refers to a positive integer, and $\log$ always refers to the natural logarithm.
+
+Let $f$ be a real-valued nonnegative multiplicative function.  The \emph{Wirsing condition} is that there exist $c, \lambda \in \mathbb{R}$ with $c \ge 0$ and $0 \le \lambda <2$ such that, for every prime $p$ and every positive integer $k$, $f(p^k) \le c \lambda^k$.
+
+The Wirsing condition is important because of the following lemma:
+
+\begin{lem*}
+If a real-valued nonnegative multiplicative function $f$ \PMlinkescapetext{satisfies} the Wirsing condition, then it automatically \PMlinkescapetext{satisfies} the conditions in \PMlinkname{this theorem}{AsymptoticEstimatesForRealValuedNonnegativeMultiplicativeFunctions}.  Those conditions are:
+
+\begin{enumerate}
+\item There exists $A \ge 0$ such that, for every $y \ge 0$, $\displaystyle \sum_{p \le y} f(p) \log p \le Ay$.
+\item There exists $B \ge 0$ such that $\displaystyle \sum_p \sum_{k \ge 2} \frac{f(p^k)\log(p^k)}{p^k} \le B$.
+\end{enumerate}
+\end{lem*}
+
+\begin{proof}
+Let $f$ \PMlinkescapetext{satisfy} the hypotheses of the lemma.
+
+Let $y \ge 0$.  Thus,
+
+\begin{center}
+\begin{tabular}{ll}
+$\displaystyle \sum_{p \le y} f(p)\log p$ & $\displaystyle \le c\lambda \sum_{p \le y} \log p$ \\
+& $\displaystyle \le c\lambda y \log 4$ by \PMlinkname{this theorem}{UpperBoundOnVarthetan}. \end{tabular}
+\end{center}
+
+Also:
+
+\begin{center}
+\begin{tabular}{ll}
+$\displaystyle \sum_p \sum_{k \ge 2} \frac{f(p^k)\log(p^k)}{p^k}$ & $\displaystyle \le \sum_p \sum_{k \ge 2} \frac{c\lambda^k \cdot k\log p}{p^k}$ \\
+& $\displaystyle \le c\sum_p \log p \sum_{k \ge 2} k\left( \frac{\lambda}{p} \right)^k$ \\
+& $\displaystyle \le c\sum_p \log p \cdot \frac{2\left( \frac{\lambda}{p} \right)^2-\left( \frac{\lambda}{p} \right)^3}{\left( 1-\frac{\lambda}{p} \right)^2}$ \\
+& $\displaystyle \le \frac{2c}{\left( 1-\frac{\lambda}{2} \right)^2} \sum_p \log p \left( \frac{\lambda}{p} \right)^2$ \\
+& $\displaystyle \le \frac{2c\lambda^2}{\left( 1-\frac{\lambda}{2} \right)^2} \sum_p \frac{\log p}{p^2}$ \\
+& $\displaystyle \le \frac{2c\lambda^2\zeta\left( \frac{3}{2} \right)}{\left( 1-\frac{\lambda}{2} \right)^2}$, where $\zeta$ denotes the Riemann zeta function \end{tabular}
+\end{center}
+
+Hence, $A=c\lambda \log 4$ and $\displaystyle B=\frac{2c\lambda^2\zeta\left( \frac{3}{2} \right)}{\left( 1-\frac{\lambda}{2} \right)^2}$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

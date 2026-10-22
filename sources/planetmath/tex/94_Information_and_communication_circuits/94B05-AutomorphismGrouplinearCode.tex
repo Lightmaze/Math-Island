@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AutomorphismGrouplinearCode}
+\pmcreated{2013-03-22 15:18:40}
+\pmmodified{2013-03-22 15:18:40}
+\pmowner{GrafZahl}{9234}
+\pmmodifier{GrafZahl}{9234}
+\pmtitle{automorphism group (linear code)}
+\pmrecord{5}{37114}
+\pmprivacy{1}
+\pmauthor{GrafZahl}{9234}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{94B05}
+\pmsynonym{automorphism group}{AutomorphismGrouplinearCode}
+%\pmkeywords{code}
+%\pmkeywords{transform}
+\pmrelated{LinearCode}
+\pmdefines{monomial transform}
+\pmdefines{equivalent}
+\pmdefines{equivalent code}
+\pmdefines{automorphism}
+\pmdefines{permutation group}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[latin1]{inputenc}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Bigcup}{\bigcup\limits}
+\newcommand{\Prod}{\prod\limits}
+\newcommand{\Sum}{\sum\limits}
+\newcommand{\mbb}{\mathbb}
+\newcommand{\mbf}{\mathbf}
+\newcommand{\mc}{\mathcal}
+\newcommand{\mmm}[9]{\left(\begin{array}{rrr}#1&#2&#3\\#4&#5&#6\\#7&#8&#9\end{array}\right)}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+
+% Math Operators/functions
+\DeclareMathOperator{\Aut}{Aut}
+\DeclareMathOperator{\Frob}{Frob}
+\DeclareMathOperator{\cwe}{cwe}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\we}{we}
+\DeclareMathOperator{\wt}{wt}
+\begin{document}
+\PMlinkescapeword{difference}
+Let $\mbb{F}_q$ be the finite field with $q$ elements. The group
+$\mc{M}_{n,q}$ of $n\times n$ monomial matrices with entries in $\mbb{F}_q$
+acts on the set $\mf{C}_{n,q}$ of linear codes over $\mbb{F}_q$ of
+block length $n$ via the \emph{monomial transform}: let $M=(M_{ij})_{i,j=1}^n\in\mc{M}_{n,q}$ and $C\in\mf{C}_{n,q}$ and set
+\begin{equation*}
+C_M:=\left\{\left(\Sum_{i=1}^nM_{i1}c_i,\ldots,\Sum_{i=1}^nM_{in}c_i\right)\mid(c_1,\ldots,c_n)\in C\right\}.
+\end{equation*}
+This definition looks quite complicated, but since $M$ is \PMlinkescapetext{monomial}, it
+really just means that $C_M$ is the linear code obtained from $C$ by
+permuting its coordinates and then multiplying each coordinate with
+some nonzero element from $\mbb{F}_q$.
+
+Two linear codes lying in the same orbit with respect to this action
+are said to be \emph{equivalent}. The isotropy subgroup of $C$
+is its \emph{automorphism group}, denoted by $\Aut(C)$. The elements
+of $\Aut(C)$ are the \emph{automorphisms} of $C$.
+
+Sometimes one is only interested in the action of the permutation
+matrices on $\mf{C}_{n,q}$. The permutation matrices form a subgroup
+of $\mc{M}_{n,q}$ and the resulting subgroup of the automorphism group
+$\Aut(C)$ of a linear code $C\in\mf{C}_{n,q}$ is called the
+\emph{permutation group}. In the case of binary codes, this doesn't
+make any difference, since the finite field $\mbb{F}_2$ contains only
+one nonzero element.
+%%%%%
+%%%%%
+\end{document}

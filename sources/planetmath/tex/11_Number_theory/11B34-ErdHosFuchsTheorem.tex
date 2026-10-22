@@ -1,0 +1,130 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ErdHosFuchsTheorem}
+\pmcreated{2013-03-22 13:20:59}
+\pmmodified{2013-03-22 13:20:59}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{Erd\H{o}s-Fuchs theorem}
+\pmrecord{12}{33868}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B34}
+%\pmkeywords{representation functions}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+\PMlinkescapeword{states}
+\PMlinkescapeword{represent}
+\PMlinkescapeword{Ph}
+
+Let $A$ be a set of natural numbers. Let $R_n(A)$ be the number of ways to represent $n$ as a sum of two elements in $A$, that is, 
+\begin{equation*}
+R_n(A)=\sum_{\substack{a_i+a_j=n\\a_i,a_j \in A}} 1.
+\end{equation*}
+
+Erd\H{o}s-Fuchs theorem \cite{cite:erdos_fuchs_lowbnd, cite:halberstam_sequences} states that if $c>0$, then
+\begin{equation}\label{erdfcheq}
+\sum_{n \leq N} R_n(A)=c N + o\left(N^{\frac{1}{4}}\log^{-\frac{1}{2}}N\right)
+\end{equation}
+cannot hold.
+
+On the other hand, Ruzsa \cite{cite:ruzsa_upperdfch} constructed a set for which
+\begin{equation*}
+\sum_{n \leq N} R_n(A)=c N + O\left(N^{\frac{1}{4}}\log N\right).
+\end{equation*}
+
+Montgomery and Vaughan \cite{cite:montgomery_vaughan_fch} improved on the original Erd\H{o}s-Fuchs theorem by showing that for every $c>0$ 
+\begin{equation*}
+\max_{N\leq M}\left\lvert \sum_{n \leq N} R_n(A)-c n\right\rvert=
+\Omega\left(M^{\frac{1}{4}}\log^{-\frac{1}{4}}M\right)
+\end{equation*}
+holds. In \cite{cite:montgomery_vaughan_fch} a result of Jurkat is cited
+which appeared
+in the Ph.~D. thesis of Hayashi \cite{cite:hayashi_fch} which 
+improves $N^{\frac{1}{4}}\log^{-\frac{1}{2}}N$ in \eqref{erdfcheq} to $N^{\frac{1}{4}}$. 
+
+
+\begin{thebibliography}{1}
+
+\bibitem{cite:erdos_fuchs_lowbnd}
+Paul Erd\H{o}s and Wolfgang~H.J. Fuchs.
+\newblock On a problem of additive number theory.
+\newblock {\em J. Lond. Math. Soc.}, 31:67--73, 1956.
+\newblock \PMlinkexternal{Zbl 0070.04104}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0070.04104}.
+
+\bibitem{cite:halberstam_sequences}
+Heini Halberstam and Klaus~Friedrich Roth.
+\newblock {\em Sequences}.
+\newblock Springer-Verlag, second edition, 1983.
+\newblock \PMlinkexternal{Zbl 0498.10001}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0498.10001}.
+
+\bibitem{cite:hayashi_fch}
+E.~K. Hayashi.
+\newblock {\em Omega theorems for the iterated additive convolution of
+  non-negative arithmetic function}.
+\newblock PhD thesis, University of Illinois at Urbana-Champaign, 1973.
+
+\bibitem{cite:montgomery_vaughan_fch}
+H.~L. Montgomery and R.~C. Vaughan.
+\newblock On the {E}rd{\H o}s-{F}uchs theorems.
+\newblock In {\em A tribute to Paul Erd\H os}, pages 331--338. Cambridge Univ.
+  Press, Cambridge, 1990.
+\newblock \PMlinkexternal{Zbl 0715.11005}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0715.11005}.
+
+\bibitem{cite:ruzsa_upperdfch}
+Imre Ruzsa.
+\newblock A converse to a theorem of {E}rd{\H{o}}s and {F}uchs.
+\newblock {\em J. Number Theory}, 62(2):397--402, 1997.
+\newblock \PMlinkexternal{Zbl 0872.11014}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0872.11014}.
+
+\end{thebibliography}
+%BibTeX bibliography
+%@ARTICLE{cite:erdos_fuchs_lowbnd,
+% author    = {Paul Erd{\H{o}}s and Fuchs, Wolfgang H.J.},
+% title     = {On a problem of additive number theory},
+% journal   = {J. Lond. Math. Soc.},
+% volume    = 31,
+% year      = 1956,
+% pages     = {67--73},
+% note      = {\PMlinkexternal{Zbl 0070.04104}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0070.04104}}
+%}
+%
+%@ARTICLE{cite:ruzsa_upperdfch,
+% author    = {Imre Ruzsa},
+% title     = {A converse to a theorem of {E}rd{\H{o}}s and {F}uchs},
+% journal   = {J. Number Theory},
+% volume    = 62,
+% number    = 2,
+% pages     = {397--402},
+% year      = 1997,
+% note      = {\PMlinkexternal{Zbl 0872.11014}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0872.11014}}
+%}
+%
+%@BOOK{cite:halberstam_sequences,
+% author    = {Heini Halberstam and Klaus Friedrich Roth},
+% title     = "Sequences",
+% publisher = {Springer-Verlag},
+% year      = {1983},
+% edition   = {Second}
+% note      = {\PMlinkexternal{Zbl 0498.10001}{http://www.emis.de/cgi-bin/zmen/ZMATH/en/quick.html?type=html&an=0498.10001}}
+%}
+%@phdthesis{cite:hayashi_fch,
+% author    = {E. K. Hayashi},
+% title     = {Omega theorems for the iterated additive convolution of non-negative arithmetic function},
+% school    = {University of Illinois at Urbana-Champaign},
+% year      = {1973}
+%}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SolutionOf1x1y1n}
+\pmcreated{2013-03-22 16:30:44}
+\pmmodified{2013-03-22 16:30:44}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{solution of $1/x + 1/y = 1/n$}
+\pmrecord{13}{38689}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11D99}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\begin{theorem}
+Given an integer $n$, if there exist integers $x$ and $y$ such that
+\[ 
+\frac{1}{x} + \frac{1}{y} = \frac{1}{n} ,
+\]
+then one has
+\begin{eqnarray*}
+x &=& \frac{n(u+v)}{u} \\
+y &=& \frac{n(u+v)}{v}
+\end{eqnarray*}
+where $u$ and $v$ are integers such that $uv$ divides $n$.
+\end{theorem}
+
+\begin{proof}
+To begin, cross multiply to obtain
+\[
+xy = n(x+y).
+\]
+
+Since this involves setting a product equal to another
+product, we can think in terms of factorization. To
+clarify things, let us pull out a common factor and
+write $x = kv$ and $y = ku$, where $k$ is the greatest
+common factor and $u$ is relatively prime to $v$. Then,
+cancelling a common factor of $k$, our equation becomes
+the following:
+
+\[
+kuv = n(u+v)
+\]
+
+This is equivalent to
+
+\[
+uv \mid n(u+v)
+\]
+
+Since $u$ and $v$ are relatively prime, it follows that $u$ is
+relatively prime to $u+v$ and that $v$ is relatively prime to
+$u+v$ as well. Hence, we must have that $uv$ divides $n$,
+
+Now we can obtain the general solution to the equation.
+Write $n = muv$ with $u$ and $v$ relatively prime. Then,
+substituting into our equation and cancelling a $u$ and a
+$v$, we obtain
+
+\[
+k = m(u+v),
+\]
+
+so the solution to the original equation is
+
+\begin{eqnarray*}
+x &=& mv(u+v) \\
+y &=& mu(u+v)
+\end{eqnarray*}
+Using the definition of $m$, this can be rewritten as
+\begin{eqnarray*}
+x &=& \frac{n(u+v)}{u} \\
+y &=& \frac{n(u+v)}{v}.
+\end{eqnarray*}
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

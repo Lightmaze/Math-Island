@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AlternativeCharacterizationOfUltrafilter}
+\pmcreated{2013-03-22 14:42:20}
+\pmmodified{2013-03-22 14:42:20}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{alternative characterization of ultrafilter}
+\pmrecord{13}{36324}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A20}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\def\F{\mathcal{F}}
+\begin{document}
+\PMlinkescapeword{finite}
+
+Let $X$ be a set.
+A filter $\F$ over $X$ is an ultrafilter if and only if
+it satisfies the following condition:
+if $A \coprod B = X$ (see disjoint union),
+then either $A \in \F$ or $B \in \F$.
+
+This result can be generalized somewhat:
+a filter $\F$ over $X$ is an ultrafilter if and only if
+it satisfies the following condition:
+if $A \cup B = X$ (see union), then either $A \in \F$ or $B \in \F$.
+
+This theorem can be extended to
+the following two propositions about finite unions:
+\begin{enumerate}
+\item A filter $\F$ over $X$ is an ultrafilter if and only if,
+whenever $A_1,\dots,A_n$ are subsets of $X$ such that $\coprod_{i=1}^n A_i = X$
+then there exists exactly one $i$ such that $A_i \in \F$.
+\item A filter $\F$ over $X$ is an ultrafilter if and only if,
+whenever $A_1,\dots,A_n$ are subsets of $X$ such that $\bigcup_{i=1}^n A_i = X$
+then there exists an $i$ such that $A_i \in \F$.
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

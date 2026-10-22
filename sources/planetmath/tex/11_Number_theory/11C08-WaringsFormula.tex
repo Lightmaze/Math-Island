@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WaringsFormula}
+\pmcreated{2013-03-22 15:34:26}
+\pmmodified{2013-03-22 15:34:26}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Waring's formula}
+\pmrecord{9}{37480}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11C08}
+\pmsynonym{Waring formula}{WaringsFormula}
+%\pmkeywords{elementary symmetric polynomials}
+\pmrelated{NewtonGirardFormulaSymmetricPolynomials}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $x_1,\ldots, x_n$ be $n$ indeterminates. For $k\geq 1$, let
+$\sigma_k$ be the $k$th elementary symmetric polynomials in $x_1,
+\ldots, x_n$, and $S_k$ be the $k$th power sum defined as
+\[
+  S_k = \sum_{i=1}^n x_i^k.
+\]
+
+Like the Newton's formula, the Waring formula is a relation
+between $\sigma_k$ and $S_k$:
+
+\[S_k = \sum (-1)^{(i_2+i_4+i_6+\ldots)} \frac{(i_1+i_2+\ldots+i_n-1)!k}{i_1!i_2!\cdots i_n!}
+\sigma_1^{i_1} \sigma_2^{i_2} \cdots \sigma_n^{i_n},
+\]
+where the summation is over all $n$-tuples $(i_1,\ldots, i_n)\in\mathbb{Z}^n$ with non-negative components, such that
+\[
+i_1+2i_2+\ldots+ni_n = k.
+\]
+
+In particular, when there are two indeterminates, i.e. $n=2$, the
+Waring formula reads
+\[
+  x_1^k + x_2^k = \sum_{i=0}^{\lfloor k/2 \rfloor}
+  (-1)^i\frac{k}{k-i}\binom{k-i}{i}(x_1+x_2)^{k-2i}(x_1x_2)^i.
+\]
+%%%%%
+%%%%%
+\end{document}

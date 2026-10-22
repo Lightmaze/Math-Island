@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ZeroSetOfATopologicalSpace}
+\pmcreated{2013-03-22 16:56:06}
+\pmmodified{2013-03-22 16:56:06}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{zero set of a topological space}
+\pmrecord{10}{39201}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C50}
+\pmclassification{msc}{54C40}
+\pmclassification{msc}{54C35}
+\pmdefines{zero set}
+\pmdefines{level set}
+\pmdefines{cozero set}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\begin{document}
+Let $X$ be a topological space and $f\in C(X)$, the ring of continuous functions on $X$.  The \emph{level set} of $f$ at $r\in \mathbb{R}$ is the set $f^{-1}(r):=\lbrace x\in X\mid f(x)=r\rbrace$.  The \emph{zero set} of $f$ is defined to be the level set of $f$ at $0$.  The zero set of $f$ is denoted by $Z(f)$.  A subset $A$ of $X$ is called a \emph{zero set} of $X$ if $A=Z(f)$ for some $f\in C(X)$.
+
+\textbf{Properties}.  Let $X$ be a topological space and, unless otherwise specified, $f\in C(X)$.
+\begin{enumerate}
+\item Any zero set of $X$ is closed.  The converse is not true.  However, if $X$ is a metric space, then any closed set $A$ is a zero set: simply define $f:X\to \mathbb{R}$ by $f(x):=d(x,A)$ where $d$ is the metric on $X$.
+\item The level set of $f$ at $r$ is the zero set of $f-\hat{r}$, where $\hat{r}$ is the constant function valued at $r$.
+\item $Z(\hat{r})=X$ iff $r=0$.  Otherwise, $Z(\hat{r})=\varnothing$.  In fact, $Z(f)=\varnothing$ iff $f$ is a unit in the ring $C(X)$.
+\item Since $f(a)=0$ iff $|f(a)|<\frac{1}{n}$ for all $n\in \mathbb{N}$, and each $\lbrace x\in X \mid |f(x)|<\frac{1}{n} \rbrace$ is open in $X$, we see that $$Z(f)=\bigcap_{n=1}^{\infty}\lbrace x\in X \mid |f(x)|<\frac{1}{n} \rbrace.$$ This shows every zero set is a \PMlinkname{$G_{\delta}$}{G_deltaSet} set.
+\item For any $f\in C(X)$, $Z(f)=Z(f^n)=Z(|f|)$, where $n$ is any positive integer.
+\item $Z(fg)=Z(f)\cup Z(g)$.
+\item $Z(f)\cap Z(g)=Z(f^2+g^2)=Z(|f|+|g|)$.
+\item $\lbrace x\in X\mid 0\le f(x)\rbrace$ is a zero set, since it is equal to $Z(f-|f|)$.
+\item If $C(X)$ is considered as an algebra over $\mathbb{R}$, then $Z(rf)=Z(f)$ iff $r\ne 0$.
+\end{enumerate}
+
+The complement of a zero set is called a \emph{cozero set}.  In other words, a cozero set looks like $\lbrace x\in X\mid f(x)\ne 0\rbrace$ for some $f\in C(X)$.  By the last property above, a cozero set also has the form $\operatorname{pos}(f):=\lbrace x\in X\mid 0<f(x)\rbrace$ for some $f\in C(X)$.
+
+Let $A$ be a subset of $C(X)$.  The \emph{zero set} of $A$ is defined as the set of all zero sets of elements of $A$: $Z(A):=\lbrace Z(f)\mid f\in A\rbrace$.  When $A=C(X)$, we also write $Z(X):=Z(C(X))$ and call it \emph{the family of zero sets} of $X$.  Evidently, $Z(X)$ is a subset of the family of all closed $G_{\delta}$ sets of $X$.  
+
+\textbf{Remarks}.  
+\begin{itemize}
+\item
+By properties 6. and 7. above,  $Z(X)$ is closed under set union and set intersection operations.  It can be shown that $Z(X)$ is also closed under countable intersections.
+\item
+It is also possible to define a zero set of $X$ to be the zero set of some $f\in C^*(X)$, the subring of $C(X)$ consisting of the bounded continuous functions into $\mathbb{R}$.  However, this definition turns out to be equivalent to the one given for $C(X)$, by the observation that $Z(f)=Z(|f|\wedge \hat{1})$.
+\end{itemize}
+
+\begin{thebibliography}{7}
+\bibitem{gj} L. Gillman, M. Jerison: {\em Rings of Continuous Functions}, Van Nostrand, (1960).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

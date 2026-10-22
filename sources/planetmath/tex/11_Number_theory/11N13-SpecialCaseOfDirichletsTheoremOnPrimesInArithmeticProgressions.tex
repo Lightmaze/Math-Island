@@ -1,0 +1,45 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SpecialCaseOfDirichletsTheoremOnPrimesInArithmeticProgressions}
+\pmcreated{2013-03-22 14:35:38}
+\pmmodified{2013-03-22 14:35:38}
+\pmowner{bbukh}{348}
+\pmmodifier{bbukh}{348}
+\pmtitle{special case of Dirichlet's theorem on primes in arithmetic progressions}
+\pmrecord{9}{36158}
+\pmprivacy{1}
+\pmauthor{bbukh}{348}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N13}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+The special case of Dirichlet's theorem for primes in arithmetic progressions for primes congruent to $1$ modulo $q$ where $q$ itself is a prime can be established by the following elegant modification of \PMlinkname{Euclid's proof}{ProofThatThereAreInfinitelyManyPrimes}.
+
+Let $f(n)=\frac{n^q-1}{n-1}=1+n+n^2+\dotsb+n^{q-1}$. Let $n>1$ be an integer, and suppose $p\mid f(n)$. Then $n^q\equiv 1\pmod p$ which implies by Lagrange's theorem that either $q\mid p-1$ or $n\equiv 1\pmod p$. In other words, every prime divisor of $f(n)$ is congruent to $1$ modulo $q$ unless $n$ is congruent to $1$ modulo that divisor. 
+
+Suppose there are only finitely many primes that are congruent to $1$ modulo $q$. Let $P$ be twice their product. Note that $P\equiv 2\pmod q$. Let $p$ be any prime divisor of $f(P)$. If $p\equiv 1\pmod q$, then $p\mid P$ which contradicts $f(P)\equiv 1\pmod P$. Therefore, by the above $P\equiv 1\pmod p$. Therefore $f(P)\equiv 1+P+P^2+\dotsb+P^{q-1}\equiv 1+1+1+\dotsb+1\equiv q\pmod p$. Since $q$ is prime, it follows that $p=q$. 
+Then $P\equiv 1\pmod p$ implies $P\equiv 1\pmod q$. However, that is inconsistent with our deduction that $P\equiv 2\pmod q$ above. 
+Therefore the original assumption that there are only finitely many primes congruent to $1$ modulo $q$ is false.
+
+\begin{thebibliography}{1}
+
+\bibitem{cite:iwaniec_kowalski_ant}
+Henryk Iwaniec and Emmanuel Kowalski.
+\newblock {\em Analytic Number Theory}, volume~53 of {\em AMS Colloquium
+  Publications}.
+\newblock AMS, 2004.
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

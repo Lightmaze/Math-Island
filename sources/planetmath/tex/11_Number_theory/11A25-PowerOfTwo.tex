@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PowerOfTwo}
+\pmcreated{2013-03-22 18:09:56}
+\pmmodified{2013-03-22 18:09:56}
+\pmowner{1and2and4}{20899}
+\pmmodifier{1and2and4}{20899}
+\pmtitle{power of two}
+\pmrecord{4}{40726}
+\pmprivacy{1}
+\pmauthor{1and2and4}{20899}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+\pmrelated{AllPositiveIntegersArePoliteNumbersExceptPowersOfTwo}
+\pmdefines{impolite number}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+A {\em power of two} is a number of the form $2^n$, with $n$ generally understood to be a nonnegative integer. The first few powers of two are 1, 2, 4, 8, 16, 32, 64, 128 and so forth. These are listed in A000079 of Sloane's OEIS. Because computers use the binary numeral system for their computations, the powers of two are of paramount importance in computer science.
+
+With $n$ a negative integer, the larger powers of two are the fractions $\frac{1}{2}$, $\frac{1}{4}$, $\frac{1}{8}$, $\frac{1}{16}$, $\frac{1}{32}$, $\frac{1}{64}$, $\frac{1}{128}$, $\frac{1}{256}$, which are so often used in conjunction with units of the British Weights and Measures Act of which some have been inherited and are still used in the United States. These fractions are also used in music for gradually smaller rhythmic units, as well as in photography, though somewhat relabelled (e.g., the readout of a camera might read $\frac{1}{250}$ rather than $\frac{1}{256}$).
+
+The binary representation of an power of two greater than 1 is always a digit 1 as the most significant digit followed by as many zeroes as indicated by the exponent for 2, such as $2^4$ is in binary $10000_2$. Hence $2^n \textrm{XOR} 2^n - 1 = 0$.
+
+For $2^n$, the value of $\tau(2^n)$ (the divisor function) is always $n + 1$, and the divisors are the powers of two from $2^0$ to $2^n$. The value of the sum of divisors function $\sigma(2^n)$ is therefore a Mersenne number $2^{n + 1} - 1$. The powers of two are  therefore deficient numbers always 1 short of being a perfect numbers. In fact, they are the only known almost perfect numbers. So the sum of consecutive powers of two from $i = -1$  down to some other negative $i$ is a fraction with a Mersenne number as its numerator and a power of two as its denominator. This suggests that $$\lim_{n \to \infty} \sum_{i = 1}^n \frac{1}{2^i} = 1.$$
+
+Only a Collatz sequence starting with a power of two is in strictly descending order, and will reach 1 in precisely $n$ steps. Any other starting value guarantees that there will be steps at which the value will be tripled and incremented rather than just halved.
+
+For $n > 0$, a number $2^n$ is an {\em impolite number}, it cannot be represented as the sum of consecutive nonnegative integers, whereas all other positive integers can be (and are thus polite numbers).
+
+% \begin{thebibliography}{1}
+% \bibitem{il} I. Lukovits \& D. Janezic, ``Enumeration of conjugated circuits in nanotubes'', {\it J. Chem. Inf. Comput. Sci.}, {\bf 44} (2004): 410 - 414
+% \end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

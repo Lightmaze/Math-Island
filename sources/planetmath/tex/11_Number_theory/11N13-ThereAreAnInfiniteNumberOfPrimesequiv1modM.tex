@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ThereAreAnInfiniteNumberOfPrimesequiv1modM}
+\pmcreated{2013-03-22 17:43:02}
+\pmmodified{2013-03-22 17:43:02}
+\pmowner{rm50}{10146}
+\pmmodifier{rm50}{10146}
+\pmtitle{there are an infinite number of primes $\equiv 1\mod m$}
+\pmrecord{7}{40162}
+\pmprivacy{1}
+\pmauthor{rm50}{10146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N13}
+\pmrelated{SpecialCaseOfDirichletsTheoremOnPrimesInArithmeticProgressions}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Ints}{\mathbb{Z}}
+\begin{document}
+This article proves a special case of Dirichlet's theorem, namely that for any integer $m>1$, there are an infinite number of primes $p\equiv 1\pmod m$. 
+
+Let $p$ be an odd prime not dividing $m$, let $\Phi_k(x)$ be the $k^{\mathrm{th}}$ cyclotomic polynomial, and note that
+\[x^m-1=\Phi_m(x)\cdot\prod_{\substack{d\mid m\\d<m}} \Phi_d(x)\]
+If $a\in\Ints$ with $p\mid\Phi_m(a)$, then clearly $p\mid a^m-1$ and thus $\gcd(a,p)=1$. In fact, the \PMlinkname{order}{OrderGroup} of $a\mod p$ is precisely $m$, for if it were not, say $a^d\equiv 1\pmod p$ for $d<m$, then $a$ would be a root $\mod p$ of $\Phi_d(x)$ and thus $x^m-1$ would have multiple roots $\mod p$, which is a contradiction. But then, by Fermat's little theorem, we have $a^{p-1}\equiv 1\pmod p$, so since $m$ is the least integer with this property, we have $m\mid p-1$ so that $p\equiv 1\pmod m$.
+
+We have thus shown that if $p\nmid m$ and $p\mid \Phi_m(a)$, then $p\equiv 1\pmod m$. The result then follows from the following claim: if $f(x)\in \Ints[x]$ is any polynomial of degree at least one, then the factorizations of
+\[f(1),f(2),f(3),\ldots\]
+contain infinitely many primes. The proof is \PMlinkescapetext{similar} to Euclid's proof of the infinitude of primes. Assume not, and let $p_1,\ldots,p_k$ be all of the primes. Since $f$ is nonconstant, choose $n$ with $f(n)=a\neq 0$. Then $f(n+ap_1\cdot p_2\cdots p_kx)$ is clearly divisible by $a$, so $g(x)=a^{-1}f(n+ap_1\cdot p_2\cdots p_kx)\in\Ints[x]$, and $g(m)\equiv 1\pmod {p_1\cdots p_k}$ for each $m\in\Ints$. $g$ is nonconstant, so choose $m$ such that $g(m)\neq 1$. Then $g(m)$ is clearly divisible by some prime other that the $p_i$ and thus $f(n+ap_1\cdot p_2\cdots p_kx)$ is as well. Contradiction.
+
+Thus the set $\Phi_m(1),\Phi_m(2),\ldots$ contains an infinite number of primes in their factorizations, only a finite number of which can divide $m$. The remainder must be primes $p\equiv 1\pmod m$.
+%%%%%
+%%%%%
+\end{document}

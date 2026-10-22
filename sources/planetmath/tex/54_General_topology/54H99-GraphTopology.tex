@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GraphTopology}
+\pmcreated{2013-03-22 13:37:03}
+\pmmodified{2013-03-22 13:37:03}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{graph topology}
+\pmrecord{10}{34250}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54H99}
+\pmclassification{msc}{05C62}
+\pmclassification{msc}{05C10}
+\pmsynonym{one-dimensional CW complex}{GraphTopology}
+%\pmkeywords{graph topology construction}
+%\pmkeywords{one-dimensional CW complex}
+\pmrelated{GraphTheory}
+\pmrelated{Graph}
+\pmrelated{ConnectedGraph}
+\pmrelated{QuotientSpace}
+\pmrelated{Realization}
+\pmrelated{RSupercategory}
+\pmrelated{CWComplexDefinitionRelatedToSpinNetworksAndSpinFoams}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\def\sse{\subseteq}
+\def\bigtimes{\mathop{\mbox{\Huge $\times$}}}
+\def\impl{\Rightarrow}
+\begin{document}
+A graph $(V,E)$ is identified by its vertices $V=\{v_1,v_2,\ldots\}$ and its
+edges $E=\{\{v_i,v_j\},\{v_k,v_l\},\ldots\}$. A graph also admits a natural
+topology, called the \emph{graph topology}, by identifying every edge
+$\{v_i,v_j\}$ with the unit interval $I=[0,1]$ and gluing them together at
+coincident vertices.
+
+This construction can be easily realized in the framework of simplicial
+complexes. We can form a simplicial complex $G=\left\{\{v\}\mid v\in V\right\} \cup
+E$. And the desired topological realization of the graph is just the
+geometric realization $|G|$ of $G$.
+
+Viewing a graph as a topological space has several advantages:
+\begin{itemize}
+\item The notion of graph isomorphism becomes that of simplicial (or cell) \PMlinkname{complex}{CWComplex} isomorphism.
+\item The notion of a connected graph coincides with topological
+  \PMlinkname{connectedness}{ConnectedSpace}.
+\item A connected graph is a tree if and only if its fundamental group is trivial.
+\end{itemize}
+
+{\bf Remark:}
+A graph is/can be regarded as a one-dimensional $CW$-complex.
+%%%%%
+%%%%%
+\end{document}

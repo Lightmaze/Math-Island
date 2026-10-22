@@ -1,0 +1,102 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrimeIdealDecompositionInQuadraticExtensionsOfmathbbQ}
+\pmcreated{2013-03-22 13:53:46}
+\pmmodified{2013-03-22 13:53:46}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{prime ideal decomposition in quadratic extensions of $\mathbb{Q}$}
+\pmrecord{7}{34643}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R11}
+%\pmkeywords{quadratic field}
+%\pmkeywords{prime decomposition}
+%\pmkeywords{splitting}
+\pmrelated{CalculatingTheSplittingOfPrimes}
+\pmrelated{ExamplesOfPrimeIdealDecompositionInNumberFields}
+\pmrelated{PrimeIdealDecompositionInCyclotomicExtensionsOfMathbbQ}
+\pmrelated{NumberField}
+\pmrelated{SplittingAndRamificationInNumberFieldsAndGaloisExtensions}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+Let $K$ be a quadratic number field, i.e. $K=\Rats(\sqrt{d})$ for
+some square-free integer $d$. The discriminant of the extension is
+\begin{equation*}
+D_{K/\Rats}=\begin{cases} d, & \text{ if } d\equiv 1 \ \operatorname{mod}\ 4,\\
+4d, & \text{ if } d\equiv 2,3 \operatorname{mod}\ 4.\end{cases}
+\end{equation*}
+Let $\mathcal{O}_K$ denote the ring of integers of $K$. We have:
+\begin{equation*}\mathcal{O}_K\cong \begin{cases}
+\Ints\oplus \frac{1+\sqrt{d}}{2}\Ints, & \text{ if } d\equiv 1 \ \operatorname{mod}\ 4,\\
+\Ints\oplus \sqrt{d}\Ints, & \text{ if } d\equiv 2,3
+\operatorname{mod}\ 4. \end{cases}
+\end{equation*}
+Prime ideals of $\Ints$ decompose as follows in $\mathcal{O}_K$:
+
+\begin{thm} Let $p\in \Ints$ be a prime.
+\begin{enumerate}
+\item If $p\mid d$ (divides), then
+$p\mathcal{O}_K=(p,\sqrt{d})^2$;
+
+\item If $d$ is odd, then
+\begin{equation*}2\mathcal{O}_K=\begin{cases}
+(2,1+\sqrt{d})^2, & \text{ if } d\equiv 3\ \operatorname{mod}\ 4,\\
+\left(2,\frac{1+\sqrt{d}}{2}\right)\left(2,\frac{1-\sqrt{d}}{2}\right), & \text{ if } d\equiv 1\ \operatorname{mod}\ 8,\\
+\text{prime}, & \text{ if } d\equiv 5\ \operatorname{mod}\ 8.
+\end{cases} \end{equation*}
+
+\item If $p\neq 2$, $p$ does not divide $d$, then
+\begin{equation*}
+p\mathcal{O}_K=\begin{cases} (p,n+\sqrt{d})(p,n-\sqrt{d}), & \text{ if } d\equiv n^2\ \operatorname{mod}\ p,\\
+\text{prime}, & \text{ if $d$ is not a square } \operatorname{mod}\ p.
+\end{cases}
+\end{equation*}
+\end{enumerate}
+\end{thm}
+
+\begin{thebibliography}{9}
+\bibitem{marcus} Daniel A.Marcus, {\em Number Fields}. Springer, New York.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

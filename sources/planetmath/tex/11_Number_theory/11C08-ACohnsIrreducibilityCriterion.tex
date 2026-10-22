@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ACohnsIrreducibilityCriterion}
+\pmcreated{2013-03-22 14:37:02}
+\pmmodified{2013-03-22 14:37:02}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{A. Cohn's irreducibility criterion}
+\pmrecord{17}{36194}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11C08}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem*{theorem}{Theorem}
+\begin{document}
+ \begin{theorem} 
+Assume $n  \geq 2$ is an integer  and that $P$ is a polynomial with coefficients in $\{0,1,\ldots,n-1\}$. If $P(n)$ is prime then $P(x)$ is \PMlinkname{irreducible}{IrreduciblePolynomial2} in $\mathbb{Z}[x]$.
+ \end{theorem}
+A proof is given in \cite{MRM}.
+
+ A. Cohn \cite{PZ} proved this theorem for the case $n=10$.
+
+
+
+This special case of the above theorem is sketched as problem 128, Part VIII, in \cite{PZ}.
+
+
+ \begin{thebibliography}{0}
+ \bibitem[PZ]{PZ}
+George PÃ³lya, Gabor Szego,
+ {\it Problems and Theorems in Analysis II},
+ Classics in Mathematics 1998.
+\bibitem[MRM]{MRM}
+M. Ram Murty, {\it Prime Numbers and Irreducible Polynomials}, American
+Mathematical Monthly, vol. 109, (2002), 452-458.
+ \end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

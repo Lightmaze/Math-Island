@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FiniteAndCountableDiscreteSpaces}
+\pmcreated{2013-03-22 15:17:11}
+\pmmodified{2013-03-22 15:17:11}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{finite and countable discrete spaces}
+\pmrecord{9}{37077}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54-00}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\F}{\mathbbmss{F}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{thm}
+Suppose $X\neq \emptyset$ is equipped with the discrete topology.
+\begin{enumerate}
+\item If $X$ if finite, then $X$ is homeomorphic to $\{1,\ldots, n\}$
+  for some $n\ge 1$.
+\item If $X$ if countable, then $X$ is homeomorphic to $\Z$.
+\end{enumerate}
+Here, $\{1,\ldots, n\}$ and $\Z$ are endowed with the discrete topology 
+(or, equivalently, the subspace topology from $\R$).
+\end{thm}
+
+\begin{proof} The first claim will be proven. If 
+  $$
+     X=\{a_1,\ldots, a_n\}
+  $$
+let $\Phi\colon \{1,\ldots, n\} \to X$ be
+  $$
+    \Phi(i)=a_i,\quad i=1,\ldots, n.
+  $$
+Since $\Phi$ is a bijection, it is a homeomorphism.
+
+The proof of the second claim is \PMlinkescapetext{similar} to that of the first. 
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

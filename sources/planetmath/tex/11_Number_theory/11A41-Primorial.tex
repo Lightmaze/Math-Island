@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Primorial}
+\pmcreated{2013-03-22 16:00:23}
+\pmmodified{2013-03-22 16:00:23}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{primorial}
+\pmrecord{7}{38036}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+The {\em primorial} of $n$, or $n\#$, is the product of the first $n$ consecutive primes, thus:
+
+$$\prod_{i = 1}^n p_i$$
+
+($p_i$ is the $i$th prime number).
+
+The first few primorials are 2, 6, 30, 210, 2310, 30030, 510510, 9699690, 223092870, 6469693230, 200560490130; these are listed in A002110 of Sloane's OEIS. Sometimes the notation $n\#$ is used to refer to the product of all primes $p < \pi(n)$, where $\pi$ is the prime counting function (so then $4\# = 6$ rather than 210).
+
+Primorials are used in the classic proof that there are infinitely many primes: assuming that there are exactly $n$ primes and no more, $n\# + 1$ is a number that is not divisible by any of the existing primes, but if that is a prime then it contradicts the initial assumption.
+
+If, in reckoning the sieve of Eratosthenes, one strikes out again numbers that have already been struck off, the sequence of the smallest number struck off $n$ times is precisely the sequence of the primorials.
+
+Any highly composite number (with the exception of 1) can be expressed as a product of primorials in at least one way.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PracticalNumber}
+\pmcreated{2013-03-22 14:12:17}
+\pmmodified{2013-03-22 14:12:17}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{practical number}
+\pmrecord{6}{35637}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A positive integer $m$ is called a \emph{practical number} if every positive integer $n<m$ is a sum of distinct positive divisors of $m$. 
+
+{\bf \PMlinkescapetext{Lemma}.}
+An integer $\,m\ge 2,$
+$\,m=p_1^{\alpha_1}p_2^{\alpha_2}\cdots p_\ell^{\alpha_\ell},$
+with primes $p_1<p_2<\dots<p_\ell$ and integers $\alpha_i\ge 1,$
+is practical\index{practical} if and only if $\,p_1=2\,$ and, for
+$i=2,3,\dots,\ell,$
+$$p_i\le\sigma\!\left(p_1^{\alpha_
+1}p_2^{\alpha_2}\cdots p_{i-1}
+^{\alpha_{i-1}}\right)+1,$$
+where $\sigma(n)$ denotes the sum of the positive divisors of $n.$
+
+Let $P(x)$ be the counting function of practical numbers. 
+Saias~\cite{Sai}, using suitable sieve methods introduced by Tenenbaum
+\cite{Te1,Te2}, proved
+a good estimate in terms of
+a Chebishev-type theorem: for suitable
+constants $c_1$ and $c_2$,
+$$c_1\frac x{\log x}<P(x)<c_2\frac x{\log x}.$$
+
+In \cite{Me1} Melfi proved a Goldbach-type result showing
+that every even positive integer is a sum of two practical numbers, and that there exist infinitely many triplets of practical numbers of the form $m-2,m,m+2$.
+
+
+\begin{thebibliography}{9}
+
+
+\bibitem{Me1} G.~Melfi, On two conjectures about practical numbers,
+{\it J.~Number Theory} {\bf 56} (1996), 205--210.
+
+\bibitem{Sai} E.~Saias, Entiers \`a
+diviseurs denses 1, {\it J.~Number Theory} {\bf 62} (1997), 163--191. 
+
+\bibitem{Te1} G.~Tenenbaum, Sur un probl\`eme de crible et ses applications, 
+Ann. Sci.
+\'Ec. Norm. Sup. (4) {\bf 19 } (1986), 1--30.
+
+\bibitem{Te2} G.~Tenenbaum, Sur un probl\`eme de crible et ses 
+applications, 2.
+Corrigendum et \'etude du graphe divisoriel, Ann. Sci. \'Ec. Norm. Sup.
+(4) {\bf 28 } (1995), 115--127.
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BaireCategoryTheorem}
+\pmcreated{2013-03-22 12:43:32}
+\pmmodified{2013-03-22 12:43:32}
+\pmowner{Koro}{127}
+\pmmodifier{Koro}{127}
+\pmtitle{Baire category theorem}
+\pmrecord{13}{33024}
+\pmprivacy{1}
+\pmauthor{Koro}{127}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E52}
+\pmrelated{SardsTheorem}
+\pmrelated{Meager}
+\pmrelated{Residual}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\Prob}[2]{\mathbb{P}_{#1}\left\{#2\right\}}
+\begin{document}
+In a non-empty complete metric space, any countable intersection of dense, open subsets is non-empty.
+
+In fact, such countable intersections of dense, open subsets are dense.  So the theorem holds also for any non-empty open subset of a complete metric space.
+
+\textbf{Alternative formulations:}
+Call a set \emph{first category}, or a \emph{meagre} set, if it is a countable union of nowhere dense sets, otherwise \emph{second category}. The Baire category theorem is often stated as ``no non-empty complete metric space is of first category'', or, trivially, as ``a non-empty, complete metric space is of second category''. In short, this theorem says that every nonempty complete metric space is a Baire space.
+
+In functional analysis, this important property of complete metric spaces forms the {b}asis for the proofs of the important principles of Banach spaces: the open mapping theorem and the closed graph theorem.
+
+It may also be taken as giving a concept of ``small sets'', similar to sets of measure zero: a countable union of these sets remains ``small''.  However, the real line $\mathbb{R}$ may be partitioned into a set of measure zero and a set of first category; the two concepts are distinct.
+
+Note that, apart from the requirement that the set be a complete metric space, all conditions and conclusions of the theorem are phrased topologically.  This ``metric requirement'' is thus something of a disappointment.  As it turns out, there are two ways to reduce this requirement.
+
+First, if a topological space $\mathcal{T}$ is homeomorphic to a non-empty open subset of a complete metric space, then we can transfer the Baire property through the homeomorphism, so in $\mathcal{T}$ too any countable intersection of open dense sets is non-empty (and, in fact, dense).  The other formulations also hold in this case.
+
+Second, the Baire category theorem holds for a locally compact, Hausdorff\footnote{Some authors only define a locally compact space to be a Hausdorff space; that is the sense required for this theorem.} topological space  $\mathcal{T}$.
+%%%%%
+%%%%%
+\end{document}

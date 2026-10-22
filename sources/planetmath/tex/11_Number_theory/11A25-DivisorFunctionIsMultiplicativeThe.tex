@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DivisorFunctionIsMultiplicativeThe}
+\pmcreated{2013-03-22 15:03:47}
+\pmmodified{2013-03-22 15:03:47}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{divisor function is multiplicative, the}
+\pmrecord{9}{36783}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+
+\endmetadata
+
+\usepackage{amsthm}
+
+\newtheorem*{thm*}{Theorem}
+
+\begin{document}
+\begin{thm*}
+The \PMlinkname{divisor function}{TauFunction} is multiplicative.
+\end{thm*}
+
+{\bf Proof.}
+Let $t=mn$ with $m,n$ coprime.
+Applying the fundamental theorem of arithmetic, we can write
+\[
+  m=p_1^{a_1}p_2^{a_2}\cdots p_{r}^{a_r},
+  \qquad n=q_1^{b_1}q_2^{b_2}\cdots q_s^{b_s},
+\]
+where each $p_j$ and $q_i$ are prime.
+Moreover, since $m$ and $n$ are coprime, we conclude that
+\[
+t=p_1^{a_1}p_2^{a_2}\cdots p_{r}^{a_r}q_1^{b_1}q_2^{b_2}\cdots q_s^{b_s}.
+\]
+
+Now, each divisor of $t$ is of the form
+\[
+t=p_1^{k_1}p_2^{k_2}\cdots p_{r}^{k_r}q_1^{h_1}q_2^{h_2}\cdots q_s^{h_s}.
+\]
+with $0\leq k_j\leq a_j$ and $0\leq h_i\leq b_i$,
+and for each such divisor we get a divisor of $m$ and a divisor of $n$,
+given respectively by
+\[
+  u=p_1^{k_1}p_2^{k_2}\cdots p_{r}^{k_r},
+  \qquad v=q_1^{h_1}q_2^{h_2}\cdots q_s^{h_s}.
+\]
+
+Now, each respective divisor of $m$, $n$ is of the form above,
+and for each such pair their product is also a divisor of $t$.
+Therefore we get a bijection between the set of positive divisors of $t$
+and the set of pairs of divisors of $m$, $n$ respectively.
+Such bijection implies that the cardinalities of both sets are the same,
+and thus
+\[
+  d(mn)=d(m)d(n).
+\]
+%%%%%
+%%%%%
+\end{document}

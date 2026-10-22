@@ -1,0 +1,124 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PolyaVinogradovInequality}
+\pmcreated{2013-03-22 12:46:23}
+\pmmodified{2013-03-22 12:46:23}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{P\'olya-Vinogradov inequality}
+\pmrecord{7}{33084}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11L40}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\begin{document}
+\begin{theorem}
+For $m,n \in {\bf N}$ and $p$ a positive odd rational
+prime,
+$$\left|\sum_{t=m}^{m+n} \left(\frac{t}{p}\right)\right| < \sqrt{p} \,
+\ln p.$$
+\end{theorem}
+
+\begin{proof}
+Start with the following manipulations:
+$$
+\sum_{t=m}^{m+n} \left(\frac{t}{p}\right) = \frac{1}{p}
+\sum_{t=0}^{p-1} \sum_{x=m}^{m+n} \sum_{a=0}^{p-1}
+\left(\frac{t}{p} \right) e^{2 \pi i a (x-t)/p} = \frac{1}{p}
+\sum_{a=1}^{p-1} \sum_{x=m}^{m+n} e^{2 \pi i a x/p}
+\sum_{t=0}^{p-1} \left(\frac{t}{p} \right) e^{-2 \pi i a t/p}
+$$
+
+The expression \begin{math}\sum_{t=0}^{p-1} (\frac{t}{p}) e^{-2 \pi i
+a t/p}\end{math} is just a Gauss sum, and has magnitude 
+\begin{math}\sqrt{p} \,\end{math}. Hence
+
+\begin{eqnarray*}
+\left|\sum_{t=m}^{m+n} \left(\frac{t}{p}\right)\right| & \leq &
+\left|\frac{\sqrt{p}}{p} \sum_{a=1}^{p-1}
+\sum_{x=m}^{m+n} e^{2 \pi a i x/p}\right|
+= \left|\frac{\sqrt{p}}{p} \sum_{a=1}^{p-1} e^{2 \pi i a m/p}
+\sum_{x=0}^{n} e^{2 \pi i a x/p}\right| \leq
+\left|\frac{\sqrt{p}}{p} \sum_{a=1}^{p-1} 
+\frac{e^{2 \pi i a n/p}-1}{e^{2 \pi ia/p}-1}\right|
+\\
+& = & \left|\frac{\sqrt{p}}{p} \sum_{a=1}^{p-1}
+\frac{e^{\pi ian/p} \sin(\pi a n/p)}{e^{\pi ia/p} \sin(\pi a/p)}\right|
+\leq \frac{\sqrt{p}}{p} \sum_{a=1}^{p-1} \left|\frac{1}{\sin(\pi
+\langle a/p \rangle)}\right|
+\leq \frac{\sqrt{p}}{p} \sum_{a=1}^{p-1} \frac{1}{2 \langle a/p \rangle}
+\end{eqnarray*}
+
+Here $\langle x \rangle$ denotes the absolute value of the difference
+between $x$ and the closest integer to $x$, i.e. $\langle x \rangle = 
+\inf_{z \in {\bf Z}} \{|x-z|\}$.
+
+Since $p$ is odd, we have
+
+$$
+\frac{1}{2} \sum_{a=1}^{p-1} \frac{1}{\langle a/p \rangle} = 
+\sum_{0<a<\frac{p}{2}} \frac{p}{a} = 
+p \sum_{a=1}^{\frac{p-1}{2}} \frac{1}{a}
+$$
+
+Now $\ln \frac{2x+1}{2x-1} > \frac{1}{x}$ for $x>1$; to prove this, it
+suffices to show that the function $f:[1,\infty)\rightarrow{\bf R}$
+given by $f(x)=x \ln \frac{2x+1}{2x-1}$
+is decreasing and approaches 1 as $x\rightarrow \infty$. To prove the
+latter statement, substitute $v=1/x$ and take the limit as $v
+\rightarrow 0$ using L'H\^opital's rule. To prove the former statement,
+it will suffice to show that $f'$ is less than zero on the interval
+$[1,\infty)$. But $f'(x)\rightarrow 0$ as $x \rightarrow \infty$ and
+$f'$ is increasing on $[1,\infty)$, since $f''(x) = 
+\frac{-4}{4 x^2-1} (1-\frac{4x^2+1}{4x^2-1}) > 0$ for $x>1$, so $f'$
+is less than zero for $x>1$.
+
+With this in hand, we have
+
+$$
+\left|\sum_{t=m}^{m+n} \left(\frac{t}{p}\right)\right| \leq
+\frac{\sqrt{p}}{p} \cdot p \sum_{a=1}^{\frac{p-1}{2}} \frac{1}{a} < 
+\sqrt{p} \sum_{a=1}^{\frac{p-1}{2}} \ln \frac{2a+1}{2a-1} = 
+\sqrt{p} \, \ln p.
+$$
+\end{proof}
+\begin{thebibliography}{9}
+\bibitem{v} Vinogradov, I. M., {\em Elements of Number Theory}, 5th rev. ed., Dover, 1954.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RealTree}
+\pmcreated{2013-03-22 15:16:55}
+\pmmodified{2013-03-22 15:16:55}
+\pmowner{GrafZahl}{9234}
+\pmmodifier{GrafZahl}{9234}
+\pmtitle{real tree}
+\pmrecord{10}{37071}
+\pmprivacy{1}
+\pmauthor{GrafZahl}{9234}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E99}
+\pmclassification{msc}{54E40}
+\pmsynonym{$\mathbb{R}$-tree}{RealTree}
+\pmrelated{MetricSpace}
+\pmrelated{Arc}
+\pmrelated{Curve}
+\pmrelated{SNCFMetric}
+\pmrelated{Isometry}
+\pmrelated{FreeGroup}
+\pmrelated{HyperbolicGroup}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[latin1]{inputenc}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Bigcup}{\bigcup\limits}
+\newcommand{\Prod}{\prod\limits}
+\newcommand{\Sum}{\sum\limits}
+\newcommand{\mbb}{\mathbb}
+\newcommand{\mbf}{\mathbf}
+\newcommand{\mc}{\mathcal}
+\newcommand{\mmm}[9]{\left(\begin{array}{rrr}#1&#2&#3\\#4&#5&#6\\#7&#8&#9\end{array}\right)}
+\newcommand{\ol}{\overline}
+
+% Math Operators/functions
+\DeclareMathOperator{\Frob}{Frob}
+\DeclareMathOperator{\cwe}{cwe}
+\DeclareMathOperator{\we}{we}
+\DeclareMathOperator{\wt}{wt}
+\begin{document}
+A metric space $X$ is said to be a \emph{real tree} or
+\emph{$\mbb{R}$-tree}, if for each $x,y\in X$ there is a unique arc
+from $x$ to $y$, and furthermore this arc is an isometric \PMlinkid{embedding}{429}.
+
+Every real tree is a hyperbolic metric space; moreover, every real tree is 0 hyperbolic.
+
+The Cayley graph of any free group is considered to be a real tree.  Note that its graph is a tree in the graph theoretic sense.  To make it a real tree, we view the edges as \PMlinkname{isometric}{Isometric} to the line segment $[0,1]$ under a (surjective) \PMlinkname{isometry}{Isometry} and attach the edges to the tree.  The resulting 1-complex is then a locally finite real tree.  Because of this result, every free group is a hyperbolic group.
+%%%%%
+%%%%%
+\end{document}

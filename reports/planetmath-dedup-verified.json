@@ -1,0 +1,1776 @@
+{
+  "entry_input_sha256": "7763910fb70f234802f2fe4d1cf71cf1edf9cc00515731d34283ae8d027ddb66",
+  "same_nonempty_record_id_groups": 0,
+  "same_label_candidate_groups": 70,
+  "verified_merge_groups": 9,
+  "removed_duplicate_count": 11,
+  "merge_map": {
+    "pm:Bounded1": "pm:Bounded",
+    "pm:ConjugacyClass1": "pm:ConjugacyClass",
+    "pm:Eigenvalue1": "pm:Eigenvalue",
+    "pm:FunctorCategory1": "pm:FunctorCategory",
+    "pm:MotivicCohomology1": "pm:MotivicCohomology",
+    "pm:SymmetricGroup": "pm:SymmetricGroup1",
+    "pm:ZeroIdeal1": "pm:ZeroIdeal",
+    "pm:CarmichalNumber5611": "pm:CarmichalNumber561",
+    "pm:GrothendieckCategoryTheorems1": "pm:GrothendieckCategoryTheorems",
+    "pm:GrothendieckCategoryTheorems12": "pm:GrothendieckCategoryTheorems",
+    "pm:GrothendieckCategoryTheorems123": "pm:GrothendieckCategoryTheorems"
+  },
+  "verified_groups": [
+    {
+      "keep_id": "pm:Bounded",
+      "merge_ids": [
+        "pm:Bounded1"
+      ],
+      "decision": "same_concept_subject",
+      "reviewer": "/root/atlas_sources",
+      "verification_scope": "subject_identity_only_not_whole_source_correctness",
+      "reason": "Both entries explicitly finish with bounded subsets of an arbitrary metric space; strict versus non-strict finite bound gives the same property. Range-bounded functions are additional exposition.",
+      "evidence": [
+        {
+          "id": "pm:Bounded",
+          "source_file": "sources/planetmath/tex/54_General_topology/54E35-Bounded.tex",
+          "source_sha256": "6e79e7f140d882c22f8cc4a60af5cfba191f1a5ad3b6749e3dd1fc567aff09bf",
+          "body_sha256": "5dbdb235e3721d06204aeff4f95545fd64be5b9957a3eaa2a0719248d7873185",
+          "source_url": "https://github.com/planetmath/54_General_topology/blob/master/54E35-Bounded.tex"
+        },
+        {
+          "id": "pm:Bounded1",
+          "source_file": "sources/planetmath/tex/54_General_topology/54E35-Bounded1.tex",
+          "source_sha256": "e7375423393b6821a49f3286113663531802116fffcb948f370bf27901893b14",
+          "body_sha256": "54806ca38996cd58d33bfeef76dbaaa5b94aa8b9abaea38ab249c02bdc685536",
+          "source_url": "https://github.com/planetmath/54_General_topology/blob/master/54E35-Bounded1.tex"
+        }
+      ]
+    },
+    {
+      "keep_id": "pm:ConjugacyClass",
+      "merge_ids": [
+        "pm:ConjugacyClass1"
+      ],
+      "decision": "same_concept_subject",
+      "reviewer": "/root/atlas_sources",
+      "verification_scope": "subject_identity_only_not_whole_source_correctness",
+      "reason": "Both define equivalence classes of group elements under x -> g x g^{-1}. The first additionally discusses conjugate subsets.",
+      "evidence": [
+        {
+          "id": "pm:ConjugacyClass",
+          "source_file": "sources/planetmath/tex/20_Group_theory_and_generalizations/20A05-ConjugacyClass.tex",
+          "source_sha256": "09c60c12ce8e0ea840a78f868b4a2c722ef11257fd508cade5af6d19d02db833",
+          "body_sha256": "c941930ecfc1b791803218eef56ccdea6d142e472559f8a312e53d4b7e228967",
+          "source_url": "https://github.com/planetmath/20_Group_theory_and_generalizations/blob/master/20A05-ConjugacyClass.tex"
+        },
+        {
+          "id": "pm:ConjugacyClass1",
+          "source_file": "sources/planetmath/tex/20_Group_theory_and_generalizations/20E45-ConjugacyClass1.tex",
+          "source_sha256": "1f7943c5f006b6e4eacdb2997220cea6ee30aed0427ae3d56cb88ce6661d59ee",
+          "body_sha256": "afd4bf3cc022afef88d6a5548c1d49509ec7ff756d0e95cf51f3f3c8fe221ac4",
+          "source_url": "https://github.com/planetmath/20_Group_theory_and_generalizations/blob/master/20E45-ConjugacyClass1.tex"
+        }
+      ]
+    },
+    {
+      "keep_id": "pm:Eigenvalue",
+      "merge_ids": [
+        "pm:Eigenvalue1"
+      ],
+      "decision": "same_concept_subject",
+      "reviewer": "/root/atlas_sources",
+      "verification_scope": "subject_identity_only_not_whole_source_correctness",
+      "reason": "Both define a scalar lambda over a field k for which the same-field vector-space endomorphism has a nonzero eigenvector T(v)=lambda v.",
+      "evidence": [
+        {
+          "id": "pm:Eigenvalue",
+          "source_file": "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A18-Eigenvalue.tex",
+          "source_sha256": "386acad679320547e523c75debc66768cbb1886f717840478e789b99fabb7dd6",
+          "body_sha256": "d13d1d317c82ce72b6a684c5c4f778497e39395499ffc51fb22634f9e2ee1156",
+          "source_url": "https://github.com/planetmath/15_Linear_and_multilinear_algebra_matrix_theory/blob/master/15A18-Eigenvalue.tex"
+        },
+        {
+          "id": "pm:Eigenvalue1",
+          "source_file": "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A18-Eigenvalue1.tex",
+          "source_sha256": "f3caf26fe05503701c8538268c9c118b81c3c019a02bd853ea1b29b8d8c22baa",
+          "body_sha256": "35c85fd5a113574354215f859db2968811e4343bd1c5c66e1b9144c8e6c7c391",
+          "source_url": "https://github.com/planetmath/15_Linear_and_multilinear_algebra_matrix_theory/blob/master/15A18-Eigenvalue1.tex"
+        }
+      ]
+    },
+    {
+      "keep_id": "pm:FunctorCategory",
+      "merge_ids": [
+        "pm:FunctorCategory1"
+      ],
+      "decision": "same_concept_subject",
+      "reviewer": "/root/atlas_sources",
+      "verification_scope": "subject_identity_only_not_whole_source_correctness",
+      "reason": "Both identify the category whose objects are covariant functors and arrows are natural transformations, explicitly discussing the small-domain condition. Size caveats remain attached to each source.",
+      "evidence": [
+        {
+          "id": "pm:FunctorCategory",
+          "source_file": "sources/planetmath/tex/18_Category_theory_homological_algebra/18-00-FunctorCategory.tex",
+          "source_sha256": "1678d024d7b3e120b8d788d7696d3fa76102da533bf5c5bbcafa275b9477983f",
+          "body_sha256": "2581ef786d05a3f3184107825ee7ac9a57c569fba55cf5f80bf8bc915c88f4ec",
+          "source_url": "https://github.com/planetmath/18_Category_theory_homological_algebra/blob/master/18-00-FunctorCategory.tex"
+        },
+        {
+          "id": "pm:FunctorCategory1",
+          "source_file": "sources/planetmath/tex/18_Category_theory_homological_algebra/18E05-FunctorCategory1.tex",
+          "source_sha256": "4e3805e7a624b14d6dbc0427f60142ab0a677b639b43ccbaa8491413343a8c86",
+          "body_sha256": "7949a2ad4a8135c5f138b6326cae997d174b017089ab41eb3bb5efdca00e893d",
+          "source_url": "https://github.com/planetmath/18_Category_theory_homological_algebra/blob/master/18E05-FunctorCategory1.tex"
+        }
+      ]
+    },
+    {
+      "keep_id": "pm:MotivicCohomology",
+      "merge_ids": [
+        "pm:MotivicCohomology1"
+      ],
+      "decision": "same_concept_subject",
+      "reviewer": "/root/atlas_sources",
+      "verification_scope": "subject_identity_only_not_whole_source_correctness",
+      "reason": "Both entries present the same higher-Chow-group and Suslin–Voevodsky motivic-complex constructions, with substantially overlapping exposition. Historical framing and correctness of all formulas are not certified.",
+      "evidence": [
+        {
+          "id": "pm:MotivicCohomology",
+          "source_file": "sources/planetmath/tex/57_Manifolds_and_cell_complexes/57M07-MotivicCohomology.tex",
+          "source_sha256": "a1cc90884bad12de7196ce0bf4cb39aa9c7f5d44c7e1f6dbb62c05092163372c",
+          "body_sha256": "43359cb2e5b36796cc086e0b45619c369985ee7ff709b3b87341025477a38f48",
+          "source_url": "https://github.com/planetmath/57_Manifolds_and_cell_complexes/blob/master/57M07-MotivicCohomology.tex"
+        },
+        {
+          "id": "pm:MotivicCohomology1",
+          "source_file": "sources/planetmath/tex/14_Algebraic_geometry/14F42-MotivicCohomology1.tex",
+          "source_sha256": "3128349ae5fe0e3d6b6d14721baaecbb47eea6b891ca24c61af9c745ca87a162",
+          "body_sha256": "4dec55dc6a5bf5debeaa3bcb6554e7fd3e71014f48a0b7b8911e8692b796a429",
+          "source_url": "https://github.com/planetmath/14_Algebraic_geometry/blob/master/14F42-MotivicCohomology1.tex"
+        }
+      ]
+    },
+    {
+      "keep_id": "pm:SymmetricGroup1",
+      "merge_ids": [
+        "pm:SymmetricGroup"
+      ],
+      "decision": "same_concept_subject",
+      "reviewer": "/root/atlas_sources",
+      "verification_scope": "subject_identity_only_not_whole_source_correctness",
+      "reason": "Both define the group of all bijections X -> X under composition. The shorter representative avoids known incorrect ancillary claims in the other source; all source warnings must remain.",
+      "evidence": [
+        {
+          "id": "pm:SymmetricGroup1",
+          "source_file": "sources/planetmath/tex/20_Group_theory_and_generalizations/20B30-SymmetricGroup1.tex",
+          "source_sha256": "a287f9d240d2ac749b32f78877fe113e88eed214b7dbf8d0f9d70ecf3116b5c7",
+          "body_sha256": "fbdd4abcab9152b810d0e7e62dd87c2f5bc404427dd4d0751ee5d45b8aa05ed7",
+          "source_url": "https://github.com/planetmath/20_Group_theory_and_generalizations/blob/master/20B30-SymmetricGroup1.tex"
+        },
+        {
+          "id": "pm:SymmetricGroup",
+          "source_file": "sources/planetmath/tex/20_Group_theory_and_generalizations/20B30-SymmetricGroup.tex",
+          "source_sha256": "0e2fea88d8f9e7ca55c89f418c377047a1dab25e52de9df16398e6999196d721",
+          "body_sha256": "82e128f5434d2aa9f3b6490300f3879e13a1336f721da96fade4df404997a6ad",
+          "source_url": "https://github.com/planetmath/20_Group_theory_and_generalizations/blob/master/20B30-SymmetricGroup.tex"
+        }
+      ]
+    },
+    {
+      "keep_id": "pm:ZeroIdeal",
+      "merge_ids": [
+        "pm:ZeroIdeal1"
+      ],
+      "decision": "same_concept_subject",
+      "reviewer": "/root/atlas_sources",
+      "verification_scope": "subject_identity_only_not_whole_source_correctness",
+      "reason": "Both identify the singleton {0} ideal in a ring. Additional source remarks retain their original scope and are not automatically verified.",
+      "evidence": [
+        {
+          "id": "pm:ZeroIdeal",
+          "source_file": "sources/planetmath/tex/16_Associative_rings_and_algebras/16D25-ZeroIdeal.tex",
+          "source_sha256": "e6fcc87e5b28269fbc387ab8ccfe1c091593403c59896842141161011e2ca25b",
+          "body_sha256": "c105a2ba2cc6c36a5144fc190fb4e68a446ad48c9c2cdae7672e8931d363199f",
+          "source_url": "https://github.com/planetmath/16_Associative_rings_and_algebras/blob/master/16D25-ZeroIdeal.tex"
+        },
+        {
+          "id": "pm:ZeroIdeal1",
+          "source_file": "sources/planetmath/tex/14_Algebraic_geometry/14K99-ZeroIdeal1.tex",
+          "source_sha256": "6e00b88a0fddecd2a84212e7d95ba23502acbdb8d9b55084a8cd543aff99e8be",
+          "body_sha256": "391495a4d3f8d682bf1a640315274a6142a32c86207fca6f9ae3dafb0e6200a6",
+          "source_url": "https://github.com/planetmath/14_Algebraic_geometry/blob/master/14K99-ZeroIdeal1.tex"
+        }
+      ]
+    },
+    {
+      "keep_id": "pm:CarmichalNumber561",
+      "merge_ids": [
+        "pm:CarmichalNumber5611"
+      ],
+      "decision": "same_concept_subject",
+      "reviewer": "/root/atlas_sources",
+      "verification_scope": "subject_identity_only_not_whole_source_correctness",
+      "reason": "Both explicitly identify the same integer 561 as their subject; differing Gaussian pseudoprime example bases remain unverified source claims, not separate mathematical objects.",
+      "evidence": [
+        {
+          "id": "pm:CarmichalNumber561",
+          "source_file": "sources/planetmath/tex/06_Order_lattices_ordered_algebraic_structures/06B99-CarmichalNumber5612.tex",
+          "source_sha256": "7964d66eb81ce96f19efc10fdaa074887ea96217d66e1b3a53b3c0abd1241ac3",
+          "body_sha256": "6a3f8bd0ad5b55e950e947afd2f552da8ddbee619add69fafbb698405147347d",
+          "source_url": "https://github.com/planetmath/06_Order_lattices_ordered_algebraic_structures/blob/master/06B99-CarmichalNumber5612.tex"
+        },
+        {
+          "id": "pm:CarmichalNumber5611",
+          "source_file": "sources/planetmath/tex/06_Order_lattices_ordered_algebraic_structures/06B99-CarmichalNumber5611.tex",
+          "source_sha256": "0c330c93b17605a885efda71d9e8524f89483560eb031df1b8ba27ce07bf0928",
+          "body_sha256": "9a01fe247989b4718b28794b1c27332668091b83b274d0bded15a3c2d56168a8",
+          "source_url": "https://github.com/planetmath/06_Order_lattices_ordered_algebraic_structures/blob/master/06B99-CarmichalNumber5611.tex"
+        }
+      ]
+    },
+    {
+      "keep_id": "pm:GrothendieckCategoryTheorems",
+      "merge_ids": [
+        "pm:GrothendieckCategoryTheorems1",
+        "pm:GrothendieckCategoryTheorems12",
+        "pm:GrothendieckCategoryTheorems123"
+      ],
+      "decision": "same_concept_subject",
+      "reviewer": "/root/atlas_sources",
+      "verification_scope": "subject_identity_only_not_whole_source_correctness",
+      "reason": "The complete extracted document body is byte-for-byte identical after UTF-8 decoding; only source metadata differs. Mathematical validity is not certified.",
+      "evidence": [
+        {
+          "id": "pm:GrothendieckCategoryTheorems",
+          "source_file": "sources/planetmath/tex/18_Category_theory_homological_algebra/18-00-GrothendieckCategoryTheorems.tex",
+          "source_sha256": "ed9c8c7810b15e88179fb3ab9991dba742e0578fa23ed85a1660bc7bfd58a23e",
+          "body_sha256": "71016fdba87756a9495d11a3af948ee0b115a61c1adeded9771ec89b36a05a08",
+          "source_url": "https://github.com/planetmath/18_Category_theory_homological_algebra/blob/master/18-00-GrothendieckCategoryTheorems.tex"
+        },
+        {
+          "id": "pm:GrothendieckCategoryTheorems1",
+          "source_file": "sources/planetmath/tex/18_Category_theory_homological_algebra/18-00-GrothendieckCategoryTheorems1.tex",
+          "source_sha256": "de6084b96aa974954067a44f8aa05a7615ea388e0db4c89c97502d948b71b3de",
+          "body_sha256": "71016fdba87756a9495d11a3af948ee0b115a61c1adeded9771ec89b36a05a08",
+          "source_url": "https://github.com/planetmath/18_Category_theory_homological_algebra/blob/master/18-00-GrothendieckCategoryTheorems1.tex"
+        },
+        {
+          "id": "pm:GrothendieckCategoryTheorems12",
+          "source_file": "sources/planetmath/tex/18_Category_theory_homological_algebra/18-00-GrothendieckCategoryTheorems12.tex",
+          "source_sha256": "2a14dcaf3aad5945b628f670622cf4dea701e73c82498f7b8cf389654a32b0a1",
+          "body_sha256": "71016fdba87756a9495d11a3af948ee0b115a61c1adeded9771ec89b36a05a08",
+          "source_url": "https://github.com/planetmath/18_Category_theory_homological_algebra/blob/master/18-00-GrothendieckCategoryTheorems12.tex"
+        },
+        {
+          "id": "pm:GrothendieckCategoryTheorems123",
+          "source_file": "sources/planetmath/tex/18_Category_theory_homological_algebra/18-00-GrothendieckCategoryTheorems123.tex",
+          "source_sha256": "a5987f35bc8726c31c83a6a6a0123957c7a7162f03c0864fa55a7403a0b98a15",
+          "body_sha256": "71016fdba87756a9495d11a3af948ee0b115a61c1adeded9771ec89b36a05a08",
+          "source_url": "https://github.com/planetmath/18_Category_theory_homological_algebra/blob/master/18-00-GrothendieckCategoryTheorems123.tex"
+        }
+      ]
+    }
+  ],
+  "reviewed_distinctions": [
+    {
+      "ids": [
+        "pm:AdditiveFunction",
+        "pm:AdditiveFunction1"
+      ],
+      "decision": "retain_separate",
+      "reason": "additivity on vector-space addition versus number-theoretic additivity on coprime products",
+      "verification_scope": "subject_or_scope_difference_review",
+      "source_files": [
+        "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A04-AdditiveFunction.tex",
+        "sources/planetmath/tex/11_Number_theory/11A25-AdditiveFunction1.tex"
+      ]
+    },
+    {
+      "ids": [
+        "pm:CharacteristicFunction",
+        "pm:CharacteristicFunction1"
+      ],
+      "decision": "retain_separate",
+      "reason": "indicator of a set versus Fourier transform of a probability law",
+      "verification_scope": "subject_or_scope_difference_review",
+      "source_files": [
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03-00-CharacteristicFunction.tex",
+        "sources/planetmath/tex/60_Probability_theory_and_stochastic_processes/60E10-CharacteristicFunction1.tex"
+      ]
+    },
+    {
+      "ids": [
+        "pm:BaireSpace",
+        "pm:BaireSpace1"
+      ],
+      "decision": "retain_separate",
+      "reason": "a topological property versus the particular product space N^N",
+      "verification_scope": "subject_or_scope_difference_review",
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54E52-BaireSpace.tex",
+        "sources/planetmath/tex/54_General_topology/54E50-BaireSpace1.tex"
+      ]
+    },
+    {
+      "ids": [
+        "pm:AnalyticSet",
+        "pm:AnalyticSet1"
+      ],
+      "decision": "retain_separate",
+      "reason": "holomorphic zero sets versus descriptive/measure-theoretic analytic sets",
+      "verification_scope": "subject_or_scope_difference_review",
+      "source_files": [
+        "sources/planetmath/tex/32_Several_complex_variables_and_analytic_spaces/32C25-AnalyticSet.tex",
+        "sources/planetmath/tex/28_Measure_and_integration/28A05-AnalyticSet1.tex"
+      ]
+    },
+    {
+      "ids": [
+        "pm:Square",
+        "pm:Square1"
+      ],
+      "decision": "retain_separate",
+      "reason": "regular quadrilateral versus squaring operation",
+      "verification_scope": "subject_or_scope_difference_review",
+      "source_files": [
+        "sources/planetmath/tex/51_Geometry/51-00-Square.tex",
+        "sources/planetmath/tex/11_Number_theory/11-00-Square1.tex"
+      ]
+    },
+    {
+      "ids": [
+        "pm:Adjacent",
+        "pm:Adjacent1"
+      ],
+      "decision": "retain_separate",
+      "reason": "right-triangle non-hypotenuse side versus either triangle side incident to an angle; source explicitly distinguishes them",
+      "verification_scope": "subject_or_scope_difference_review",
+      "source_files": [
+        "sources/planetmath/tex/51_Geometry/51-01-Adjacent.tex",
+        "sources/planetmath/tex/51_Geometry/51-00-Adjacent1.tex"
+      ]
+    },
+    {
+      "ids": [
+        "pm:Midpoint",
+        "pm:Midpoint1"
+      ],
+      "decision": "retain_separate",
+      "reason": "midpoint of a segment versus centre of symmetry of a curve or figure",
+      "verification_scope": "subject_or_scope_difference_review",
+      "source_files": [
+        "sources/planetmath/tex/51_Geometry/51-00-Midpoint.tex",
+        "sources/planetmath/tex/51_Geometry/51M15-Midpoint1.tex"
+      ]
+    },
+    {
+      "ids": [
+        "pm:PracticalNumber",
+        "pm:PracticalNumber1"
+      ],
+      "decision": "retain_separate",
+      "reason": "different allowed-divisor conventions; the second excludes 1 and excludes powers of 2",
+      "verification_scope": "subject_or_scope_difference_review",
+      "source_files": [
+        "sources/planetmath/tex/11_Number_theory/11A25-PracticalNumber.tex",
+        "sources/planetmath/tex/11_Number_theory/11A25-PracticalNumber1.tex"
+      ]
+    },
+    {
+      "ids": [
+        "pm:FreeModule",
+        "pm:FreeModule1"
+      ],
+      "decision": "retain_separate",
+      "reason": "source hypotheses differ (commutative ring with unity versus general ring); no automatic scope-collapse",
+      "verification_scope": "subject_or_scope_difference_review",
+      "source_files": [
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16D40-FreeModule.tex",
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16D40-FreeModule1.tex"
+      ]
+    },
+    {
+      "ids": [
+        "pm:Module",
+        "pm:Module1"
+      ],
+      "decision": "retain_separate",
+      "reason": "different ring/unital-module conventions remain explicit; no automatic scope-collapse",
+      "verification_scope": "subject_or_scope_difference_review",
+      "source_files": [
+        "sources/planetmath/tex/13_Commutative_rings_and_algebras/13-00-Module.tex",
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16D10-Module1.tex"
+      ]
+    },
+    {
+      "ids": [
+        "pm:SieveOfEratosthenes",
+        "pm:SieveOfEratosthenes1"
+      ],
+      "decision": "retain_separate",
+      "reason": "prime-enumeration algorithm versus inclusion-exclusion counting-sieve presentation, with a known source-quality error in the former",
+      "verification_scope": "subject_or_scope_difference_review",
+      "source_files": [
+        "sources/planetmath/tex/11_Number_theory/11A41-SieveOfEratosthenes.tex",
+        "sources/planetmath/tex/11_Number_theory/11N35-SieveOfEratosthenes1.tex"
+      ]
+    }
+  ],
+  "unresolved_same_label_groups": [
+    {
+      "label": "akhmim wooden tablet",
+      "ids": [
+        "pm:AkhmimWoodenTablet",
+        "pm:AkhmimWoodenTablet1"
+      ],
+      "canonical_names": [
+        "AkhmimWoodenTablet",
+        "AkhmimWoodenTablet1"
+      ],
+      "msc": [
+        [
+          "01A16"
+        ],
+        [
+          "01A16"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/01_History_and_biography/01A16-AkhmimWoodenTablet.tex",
+        "sources/planetmath/tex/01_History_and_biography/01A16-AkhmimWoodenTablet1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "algebraic",
+      "ids": [
+        "pm:Algebraic",
+        "pm:Algebraic1"
+      ],
+      "canonical_names": [
+        "Algebraic",
+        "Algebraic1"
+      ],
+      "msc": [
+        [
+          "11R04",
+          "11R32",
+          "13B05"
+        ],
+        [
+          "13B02"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/13_Commutative_rings_and_algebras/13B05-Algebraic.tex",
+        "sources/planetmath/tex/13_Commutative_rings_and_algebras/13B02-Algebraic1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "alternative definition of category",
+      "ids": [
+        "pm:AlternativeDefinitionOfCategory",
+        "pm:AlternativeDefinitionOfCategory1"
+      ],
+      "canonical_names": [
+        "AlternativeDefinitionOfCategory",
+        "AlternativeDefinitionOfCategory1"
+      ],
+      "msc": [
+        [
+          "18A05"
+        ],
+        [
+          "18A05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18A05-AlternativeDefinitionOfCategory.tex",
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18A05-AlternativeDefinitionOfCategory1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "annulus",
+      "ids": [
+        "pm:Annulus",
+        "pm:Annulus1"
+      ],
+      "canonical_names": [
+        "Annulus",
+        "Annulus1"
+      ],
+      "msc": [
+        [
+          "51-00"
+        ],
+        [
+          "30-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/51_Geometry/51-00-Annulus.tex",
+        "sources/planetmath/tex/30_Functions_of_a_complex_variable/30-00-Annulus1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "centralizer",
+      "ids": [
+        "pm:Centralizer",
+        "pm:Centralizer1"
+      ],
+      "canonical_names": [
+        "Centralizer",
+        "Centralizer1"
+      ],
+      "msc": [
+        [
+          "20-00"
+        ],
+        [
+          "58E40"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20-00-Centralizer.tex",
+        "sources/planetmath/tex/58_Global_analysis_analysis_on_manifolds/58E40-Centralizer1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "chinese remainder theorem",
+      "ids": [
+        "pm:ChineseRemainderTheorem",
+        "pm:ChineseRemainderTheorem1"
+      ],
+      "canonical_names": [
+        "ChineseRemainderTheorem",
+        "ChineseRemainderTheorem1"
+      ],
+      "msc": [
+        [
+          "11D79"
+        ],
+        [
+          "11A05",
+          "11N99",
+          "13A15"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/11_Number_theory/11D79-ChineseRemainderTheorem.tex",
+        "sources/planetmath/tex/11_Number_theory/11N99-ChineseRemainderTheorem1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "completeness theorem for propositional logic",
+      "ids": [
+        "pm:CompletenessTheoremForPropositionalLogic",
+        "pm:CompletenessTheoremForPropositionalLogic1"
+      ],
+      "canonical_names": [
+        "CompletenessTheoremForPropositionalLogic",
+        "CompletenessTheoremForPropositionalLogic1"
+      ],
+      "msc": [
+        [
+          "03B05"
+        ],
+        [
+          "03B05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03B05-CompletenessTheoremForPropositionalLogic.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03B05-CompletenessTheoremForPropositionalLogic1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "cone",
+      "ids": [
+        "pm:Cone",
+        "pm:Cone1"
+      ],
+      "canonical_names": [
+        "Cone",
+        "Cone1"
+      ],
+      "msc": [
+        [
+          "54B99"
+        ],
+        [
+          "46-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54B99-Cone.tex",
+        "sources/planetmath/tex/46_Functional_analysis/46-00-Cone1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "congruence",
+      "ids": [
+        "pm:Congruence",
+        "pm:Congruence1",
+        "pm:Congruence12"
+      ],
+      "canonical_names": [
+        "Congruence",
+        "Congruence1",
+        "Congruence12"
+      ],
+      "msc": [
+        [
+          "11A05",
+          "11A07",
+          "18-00",
+          "18C10",
+          "18E05",
+          "55M05",
+          "92B05",
+          "92B20"
+        ],
+        [
+          "20M99"
+        ],
+        [
+          "03C05",
+          "03C07"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18C10-Congruence.tex",
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20M99-Congruence1.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03C05-Congruence12.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "connected sum",
+      "ids": [
+        "pm:ConnectedSum",
+        "pm:ConnectedSum1"
+      ],
+      "canonical_names": [
+        "ConnectedSum",
+        "ConnectedSum1"
+      ],
+      "msc": [
+        [
+          "57M25"
+        ],
+        [
+          "57-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/57_Manifolds_and_cell_complexes/57M25-ConnectedSum.tex",
+        "sources/planetmath/tex/57_Manifolds_and_cell_complexes/57-00-ConnectedSum1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "convolution",
+      "ids": [
+        "pm:Convolution",
+        "pm:Convolution1"
+      ],
+      "canonical_names": [
+        "Convolution",
+        "Convolution1"
+      ],
+      "msc": [
+        [
+          "44A35",
+          "94A12"
+        ],
+        [
+          "68Q45",
+          "68Q70",
+          "68R15"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/44_Integral_transforms_operational_calculus/44A35-Convolution.tex",
+        "sources/planetmath/tex/68_Computer_science/68Q45-Convolution1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "cycle",
+      "ids": [
+        "pm:Cycle",
+        "pm:Cycle1",
+        "pm:Cycle12"
+      ],
+      "canonical_names": [
+        "Cycle",
+        "Cycle1",
+        "Cycle12"
+      ],
+      "msc": [
+        [
+          "05C38"
+        ],
+        [
+          "03-00",
+          "05A05",
+          "20F55"
+        ],
+        [
+          "34A12",
+          "34C07"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/05_Combinatorics/05C38-Cycle.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03-00-Cycle1.tex",
+        "sources/planetmath/tex/34_Ordinary_differential_equations/34A12-Cycle12.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "diameter",
+      "ids": [
+        "pm:Diameter",
+        "pm:Diameter1",
+        "pm:Diameter12"
+      ],
+      "canonical_names": [
+        "Diameter",
+        "Diameter1",
+        "Diameter12"
+      ],
+      "msc": [
+        [
+          "54-00"
+        ],
+        [
+          "51-00"
+        ],
+        [
+          "05C12"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54-00-Diameter.tex",
+        "sources/planetmath/tex/51_Geometry/51-00-Diameter1.tex",
+        "sources/planetmath/tex/05_Combinatorics/05C12-Diameter12.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "direct image",
+      "ids": [
+        "pm:DirectImage",
+        "pm:DirectImage1"
+      ],
+      "canonical_names": [
+        "DirectImage",
+        "DirectImage1"
+      ],
+      "msc": [
+        [
+          "03E20",
+          "16W30",
+          "17B37",
+          "18-00",
+          "18D10",
+          "18D35",
+          "81-00"
+        ],
+        [
+          "54B40"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03E20-DirectImage.tex",
+        "sources/planetmath/tex/54_General_topology/54B40-DirectImage1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "discriminant",
+      "ids": [
+        "pm:Discriminant",
+        "pm:Discriminant1"
+      ],
+      "canonical_names": [
+        "Discriminant",
+        "Discriminant1"
+      ],
+      "msc": [
+        [
+          "12E05"
+        ],
+        [
+          "11R29"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/12_Field_theory_and_polynomials/12E05-Discriminant.tex",
+        "sources/planetmath/tex/11_Number_theory/11R29-Discriminant1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "distribution",
+      "ids": [
+        "pm:Distribution",
+        "pm:Distribution1"
+      ],
+      "canonical_names": [
+        "Distribution",
+        "Distribution1"
+      ],
+      "msc": [
+        [
+          "46-00",
+          "46F05"
+        ],
+        [
+          "53-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/46_Functional_analysis/46-00-Distribution.tex",
+        "sources/planetmath/tex/53_Differential_geometry/53-00-Distribution1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "domain",
+      "ids": [
+        "pm:Domain",
+        "pm:Domain1",
+        "pm:Domain12"
+      ],
+      "canonical_names": [
+        "Domain",
+        "Domain1",
+        "Domain12"
+      ],
+      "msc": [
+        [
+          "30-00",
+          "54A05",
+          "54E35"
+        ],
+        [
+          "03E20"
+        ],
+        [
+          "06B35"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/30_Functions_of_a_complex_variable/30-00-Domain.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03E20-Domain1.tex",
+        "sources/planetmath/tex/06_Order_lattices_ordered_algebraic_structures/06B35-Domain12.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "exact sequence",
+      "ids": [
+        "pm:ExactSequence",
+        "pm:ExactSequence1"
+      ],
+      "canonical_names": [
+        "ExactSequence",
+        "ExactSequence1"
+      ],
+      "msc": [
+        [
+          "16-00"
+        ],
+        [
+          "18E10"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16-00-ExactSequence.tex",
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18E10-ExactSequence1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "filtration",
+      "ids": [
+        "pm:Filtration",
+        "pm:Filtration1"
+      ],
+      "canonical_names": [
+        "Filtration",
+        "Filtration1"
+      ],
+      "msc": [
+        [
+          "03E20"
+        ],
+        [
+          "03B45"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03E20-Filtration.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03B45-Filtration1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "first isomorphism theorem",
+      "ids": [
+        "pm:FirstIsomorphismTheorem",
+        "pm:FirstIsomorphismTheorem1"
+      ],
+      "canonical_names": [
+        "FirstIsomorphismTheorem",
+        "FirstIsomorphismTheorem1"
+      ],
+      "msc": [
+        [
+          "13A15",
+          "20A05"
+        ],
+        [
+          "03C07"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/13_Commutative_rings_and_algebras/13A15-FirstIsomorphismTheorem.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03C07-FirstIsomorphismTheorem1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "flow",
+      "ids": [
+        "pm:Flow",
+        "pm:Flow1"
+      ],
+      "canonical_names": [
+        "Flow",
+        "Flow1"
+      ],
+      "msc": [
+        [
+          "05C20",
+          "94C15"
+        ],
+        [
+          "37C10"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/05_Combinatorics/05C20-Flow.tex",
+        "sources/planetmath/tex/37_Dynamical_systems_and_ergodic_theory/37C10-Flow1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "frame",
+      "ids": [
+        "pm:Frame",
+        "pm:Frame1"
+      ],
+      "canonical_names": [
+        "Frame",
+        "Frame1"
+      ],
+      "msc": [
+        [
+          "15A03"
+        ],
+        [
+          "46C99"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A03-Frame.tex",
+        "sources/planetmath/tex/46_Functional_analysis/46C99-Frame1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "graph",
+      "ids": [
+        "pm:Graph",
+        "pm:Graph1"
+      ],
+      "canonical_names": [
+        "Graph",
+        "Graph1"
+      ],
+      "msc": [
+        [
+          "05C99"
+        ],
+        [
+          "03E20"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/05_Combinatorics/05C99-Graph.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03E20-Graph1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "harmonic function",
+      "ids": [
+        "pm:HarmonicFunction",
+        "pm:HarmonicFunction1"
+      ],
+      "canonical_names": [
+        "HarmonicFunction",
+        "HarmonicFunction1"
+      ],
+      "msc": [
+        [
+          "30F15",
+          "31A05",
+          "31B05",
+          "31C05"
+        ],
+        [
+          "05C99"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/31_Potential_theory/31C05-HarmonicFunction.tex",
+        "sources/planetmath/tex/05_Combinatorics/05C99-HarmonicFunction1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "homeomorphism",
+      "ids": [
+        "pm:Homeomorphism",
+        "pm:Homeomorphism1"
+      ],
+      "canonical_names": [
+        "Homeomorphism",
+        "Homeomorphism1"
+      ],
+      "msc": [
+        [
+          "54C05"
+        ],
+        [
+          "05C99"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54C05-Homeomorphism.tex",
+        "sources/planetmath/tex/05_Combinatorics/05C99-Homeomorphism1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "homogeneous polynomial",
+      "ids": [
+        "pm:HomogeneousPolynomial",
+        "pm:HomogeneousPolynomial1"
+      ],
+      "canonical_names": [
+        "HomogeneousPolynomial",
+        "HomogeneousPolynomial1"
+      ],
+      "msc": [
+        [
+          "12-00"
+        ],
+        [
+          "11E76",
+          "13B25",
+          "16R99",
+          "16S36"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/12_Field_theory_and_polynomials/12-00-HomogeneousPolynomial.tex",
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16R99-HomogeneousPolynomial1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "ideal",
+      "ids": [
+        "pm:Ideal",
+        "pm:Ideal1"
+      ],
+      "canonical_names": [
+        "Ideal",
+        "Ideal1"
+      ],
+      "msc": [
+        [
+          "11N80",
+          "13A15",
+          "14K99",
+          "16D25",
+          "54C05",
+          "54C08",
+          "54D99",
+          "54E05",
+          "54E15",
+          "54E17",
+          "54J05"
+        ],
+        [
+          "20M10",
+          "20M12"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/14_Algebraic_geometry/14K99-Ideal.tex",
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20M12-Ideal1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "irreducible",
+      "ids": [
+        "pm:Irreducible",
+        "pm:Irreducible1"
+      ],
+      "canonical_names": [
+        "Irreducible",
+        "Irreducible1"
+      ],
+      "msc": [
+        [
+          "13G05"
+        ],
+        [
+          "14A10",
+          "14A15",
+          "54B05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/13_Commutative_rings_and_algebras/13G05-Irreducible.tex",
+        "sources/planetmath/tex/14_Algebraic_geometry/14A15-Irreducible1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "irreducible component",
+      "ids": [
+        "pm:IrreducibleComponent",
+        "pm:IrreducibleComponent1"
+      ],
+      "canonical_names": [
+        "IrreducibleComponent",
+        "IrreducibleComponent1"
+      ],
+      "msc": [
+        [
+          "14A10",
+          "14A15",
+          "54B05"
+        ],
+        [
+          "32A60",
+          "32C25"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54B05-IrreducibleComponent.tex",
+        "sources/planetmath/tex/32_Several_complex_variables_and_analytic_spaces/32C25-IrreducibleComponent1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "join",
+      "ids": [
+        "pm:Join",
+        "pm:Join1"
+      ],
+      "canonical_names": [
+        "Join",
+        "Join1"
+      ],
+      "msc": [
+        [
+          "06A12"
+        ],
+        [
+          "54B99"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/06_Order_lattices_ordered_algebraic_structures/06A12-Join.tex",
+        "sources/planetmath/tex/54_General_topology/54B99-Join1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "kernel",
+      "ids": [
+        "pm:Kernel",
+        "pm:Kernel1"
+      ],
+      "canonical_names": [
+        "Kernel",
+        "Kernel1"
+      ],
+      "msc": [
+        [
+          "20A05"
+        ],
+        [
+          "03C05",
+          "03C07"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20A05-Kernel.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03C05-Kernel1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "kleene algebra",
+      "ids": [
+        "pm:KleeneAlgebra",
+        "pm:KleeneAlgebra1"
+      ],
+      "canonical_names": [
+        "KleeneAlgebra",
+        "KleeneAlgebra1"
+      ],
+      "msc": [
+        [
+          "20M35",
+          "68Q70"
+        ],
+        [
+          "06D30"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20M35-KleeneAlgebra.tex",
+        "sources/planetmath/tex/06_Order_lattices_ordered_algebraic_structures/06D30-KleeneAlgebra1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "loop",
+      "ids": [
+        "pm:Loop",
+        "pm:Loop1"
+      ],
+      "canonical_names": [
+        "Loop",
+        "Loop1"
+      ],
+      "msc": [
+        [
+          "05C99",
+          "20N05"
+        ],
+        [
+          "54-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/05_Combinatorics/05C99-Loop.tex",
+        "sources/planetmath/tex/54_General_topology/54-00-Loop1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "loop theorem",
+      "ids": [
+        "pm:LoopTheorem",
+        "pm:LoopTheorem12"
+      ],
+      "canonical_names": [
+        "LoopTheorem",
+        "LoopTheorem12"
+      ],
+      "msc": [
+        [
+          "57M35"
+        ],
+        []
+      ],
+      "source_files": [
+        "sources/planetmath/tex/57_Manifolds_and_cell_complexes/57M35-LoopTheorem.tex",
+        "sources/planetmath/tex/40_Sequences_series_summability/40A05-LoopTheorem12.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "monic",
+      "ids": [
+        "pm:Monic",
+        "pm:Monic1"
+      ],
+      "canonical_names": [
+        "Monic",
+        "Monic1"
+      ],
+      "msc": [
+        [
+          "18-00",
+          "18A20"
+        ],
+        [
+          "12E10"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18A20-Monic.tex",
+        "sources/planetmath/tex/12_Field_theory_and_polynomials/12E10-Monic1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "nilradical",
+      "ids": [
+        "pm:Nilradical",
+        "pm:Nilradical1"
+      ],
+      "canonical_names": [
+        "Nilradical",
+        "Nilradical1"
+      ],
+      "msc": [
+        [
+          "13A10"
+        ],
+        [
+          "17B05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/13_Commutative_rings_and_algebras/13A10-Nilradical.tex",
+        "sources/planetmath/tex/17_Nonassociative_rings_and_algebras/17B05-Nilradical1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "normal closure",
+      "ids": [
+        "pm:NormalClosure",
+        "pm:NormalClosure1"
+      ],
+      "canonical_names": [
+        "NormalClosure",
+        "NormalClosure1"
+      ],
+      "msc": [
+        [
+          "12F10"
+        ],
+        [
+          "20A05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/12_Field_theory_and_polynomials/12F10-NormalClosure.tex",
+        "sources/planetmath/tex/20_Group_theory_and_generalizations/20A05-NormalClosure1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "orientation",
+      "ids": [
+        "pm:Orientation",
+        "pm:Orientation1"
+      ],
+      "canonical_names": [
+        "Orientation",
+        "Orientation1"
+      ],
+      "msc": [
+        [
+          "30A99"
+        ],
+        [
+          "57N99"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/30_Functions_of_a_complex_variable/30A99-Orientation.tex",
+        "sources/planetmath/tex/57_Manifolds_and_cell_complexes/57N99-Orientation1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "parallelogram law",
+      "ids": [
+        "pm:ParallelogramLaw",
+        "pm:ParallelogramLaw1"
+      ],
+      "canonical_names": [
+        "ParallelogramLaw",
+        "ParallelogramLaw1"
+      ],
+      "msc": [
+        [
+          "51-00"
+        ],
+        [
+          "46C05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/51_Geometry/51-00-ParallelogramLaw.tex",
+        "sources/planetmath/tex/46_Functional_analysis/46C05-ParallelogramLaw1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "partition",
+      "ids": [
+        "pm:Partition",
+        "pm:Partition1"
+      ],
+      "canonical_names": [
+        "Partition",
+        "Partition1"
+      ],
+      "msc": [
+        [
+          "03-00",
+          "45D05"
+        ],
+        [
+          "26A42",
+          "28-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03-00-Partition.tex",
+        "sources/planetmath/tex/28_Measure_and_integration/28-00-Partition1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "path",
+      "ids": [
+        "pm:Path",
+        "pm:Path1"
+      ],
+      "canonical_names": [
+        "Path",
+        "Path1"
+      ],
+      "msc": [
+        [
+          "54D05"
+        ],
+        [
+          "05C38"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54D05-Path.tex",
+        "sources/planetmath/tex/05_Combinatorics/05C38-Path1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "polygon",
+      "ids": [
+        "pm:Polygon",
+        "pm:Polygon1"
+      ],
+      "canonical_names": [
+        "Polygon",
+        "Polygon1"
+      ],
+      "msc": [
+        [
+          "51-00",
+          "51G05"
+        ],
+        [
+          "51-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/51_Geometry/51-00-Polygon.tex",
+        "sources/planetmath/tex/51_Geometry/51-00-Polygon1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "positive semidefinite",
+      "ids": [
+        "pm:PositiveSemidefinite",
+        "pm:PositiveSemidefinite1"
+      ],
+      "canonical_names": [
+        "PositiveSemidefinite",
+        "PositiveSemidefinite1"
+      ],
+      "msc": [
+        [
+          "15A48"
+        ],
+        [
+          "12D15"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A48-PositiveSemidefinite.tex",
+        "sources/planetmath/tex/12_Field_theory_and_polynomials/12D15-PositiveSemidefinite1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "primary decomposition theorem",
+      "ids": [
+        "pm:PrimaryDecompositionTheorem",
+        "pm:PrimaryDecompositionTheorem1"
+      ],
+      "canonical_names": [
+        "PrimaryDecompositionTheorem",
+        "PrimaryDecompositionTheorem1"
+      ],
+      "msc": [
+        [
+          "15A04"
+        ],
+        [
+          "13C99"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A04-PrimaryDecompositionTheorem.tex",
+        "sources/planetmath/tex/13_Commutative_rings_and_algebras/13C99-PrimaryDecompositionTheorem1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "radical",
+      "ids": [
+        "pm:Radical",
+        "pm:Radical1",
+        "pm:Radical12"
+      ],
+      "canonical_names": [
+        "Radical",
+        "Radical1",
+        "Radical12"
+      ],
+      "msc": [
+        [
+          "17B05"
+        ],
+        [
+          "12F05",
+          "12F10"
+        ],
+        [
+          "00A05",
+          "12D99",
+          "30-00"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/17_Nonassociative_rings_and_algebras/17B05-Radical.tex",
+        "sources/planetmath/tex/12_Field_theory_and_polynomials/12F05-Radical1.tex",
+        "sources/planetmath/tex/30_Functions_of_a_complex_variable/30-00-Radical12.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "sheaf",
+      "ids": [
+        "pm:Sheaf",
+        "pm:Sheaf1"
+      ],
+      "canonical_names": [
+        "Sheaf",
+        "Sheaf1"
+      ],
+      "msc": [
+        [
+          "14F05",
+          "18F20",
+          "54B40"
+        ],
+        [
+          "14F20",
+          "18F10",
+          "18F20"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/54_General_topology/54B40-Sheaf.tex",
+        "sources/planetmath/tex/14_Algebraic_geometry/14F20-Sheaf1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "sheafification",
+      "ids": [
+        "pm:Sheafification",
+        "pm:Sheafification1"
+      ],
+      "canonical_names": [
+        "Sheafification",
+        "Sheafification1"
+      ],
+      "msc": [
+        [
+          "14F05",
+          "18F20",
+          "54B40"
+        ],
+        [
+          "14F20",
+          "18F10",
+          "18F20"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/18_Category_theory_homological_algebra/18F20-Sheafification.tex",
+        "sources/planetmath/tex/14_Algebraic_geometry/14F20-Sheafification1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "support",
+      "ids": [
+        "pm:Support",
+        "pm:Support1",
+        "pm:Support12"
+      ],
+      "canonical_names": [
+        "Support",
+        "Support1",
+        "Support12"
+      ],
+      "msc": [
+        [
+          "13C99",
+          "16D10"
+        ],
+        [
+          "60A99",
+          "68Q30"
+        ],
+        [
+          "16S34"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16D10-Support.tex",
+        "sources/planetmath/tex/60_Probability_theory_and_stochastic_processes/60A99-Support1.tex",
+        "sources/planetmath/tex/16_Associative_rings_and_algebras/16S34-Support12.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "trace",
+      "ids": [
+        "pm:Trace",
+        "pm:Trace1"
+      ],
+      "canonical_names": [
+        "Trace",
+        "Trace1"
+      ],
+      "msc": [
+        [
+          "15A04",
+          "15A15"
+        ],
+        [
+          "12F05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/15_Linear_and_multilinear_algebra_matrix_theory/15A15-Trace.tex",
+        "sources/planetmath/tex/12_Field_theory_and_polynomials/12F05-Trace1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    },
+    {
+      "label": "transitive",
+      "ids": [
+        "pm:Transitive",
+        "pm:Transitive1"
+      ],
+      "canonical_names": [
+        "Transitive",
+        "Transitive1"
+      ],
+      "msc": [
+        [
+          "03E20"
+        ],
+        [
+          "03B05"
+        ]
+      ],
+      "source_files": [
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03E20-Transitive.tex",
+        "sources/planetmath/tex/03_Mathematical_logic_and_foundations/03B05-Transitive1.tex"
+      ],
+      "decision": "retain_pending_identity_review",
+      "reason": "Same label/numeric suffix alone does not establish identical meaning."
+    }
+  ],
+  "rules": "No auto-merge on title, numeric suffix, MSC overlap or lexical similarity alone. Exact-body identity or direct review of matching mathematical subject is required. All original files and attribution remain in the compact source package."
+}

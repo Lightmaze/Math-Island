@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TypesOfLimitPoints}
+\pmcreated{2013-03-22 14:37:50}
+\pmmodified{2013-03-22 14:37:50}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{types of limit points}
+\pmrecord{7}{36211}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A99}
+\pmdefines{$\omega$-accumulation points}
+\pmdefines{condensation points}
+\pmdefines{cluster points}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Let $X$ be a topological space and $A\subset X$ be a subset.
+
+A point $x\in X$ is an \emph{$\omega$-accumulation point of $A$} if every open set in $X$ that contains $x$ also contains infinitely many points of $A$.
+
+A point $x\in X$ is a \emph{condensation point of $A$} if every open set in $X$ that contains $x$ also contains uncountably many points of $A$.
+
+If $X$ is in addition a metric space, then a \emph{cluster point} of a sequence $\{x_n\}$ is a point $x\in X$ such that every $\epsilon>0$, there are infinitely many point $x_n$ such that $d(x,x_n)<\epsilon$.
+
+These are all clearly examples of limit points.
+%%%%%
+%%%%%
+\end{document}

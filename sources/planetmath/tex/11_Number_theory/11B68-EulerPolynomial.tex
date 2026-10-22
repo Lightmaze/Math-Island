@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EulerPolynomial}
+\pmcreated{2013-03-22 19:07:07}
+\pmmodified{2013-03-22 19:07:07}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{Euler polynomial}
+\pmrecord{7}{42013}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11B68}
+\pmrelated{BernoulliPolynomial}
+\pmrelated{BernoulliPolynomialsAndNumbers}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+The \emph{Euler polynomials}\, $E_0(x),\,E_1(x),\,E_2(x),\,\ldots$\, are certain polynomials of the indeterminate $x$ with rational coefficients (whose denominators may only be powers $1,\,2,\,4,\,8,\,\ldots$\, of 2).\, The Euler polynomials may be defined by means of the generating function such that
+$$\frac{2e^{xt}}{e^t\!+\!1} \;=\; \sum_{n=0}^\infty E_n(x)\frac{t^n}{n!},$$
+i.e. one can get them by dividing the Taylor series $2+2xt+x^2t^2+\frac{1}{3}x^3t^3+\ldots$\, by the Taylor series $2+t+\frac{1}{2}t^2+\frac{1}{6}t^3+\ldots$.\, There are also explicit formulae for the polynomials, e.g.
+$$E_n(x) \;=\; \sum_{k=0}^n {n \choose k}\frac{E_k}{2^k}\left(x\!-\!\frac{1}{2}\right)^{n-k}$$
+via the Euler numbers $E_k$.\, Conversely, the Euler numbers are expressed with the Euler polynomials through
+$$E_k \;=\; 2^kE_k\!\!\left(\!\frac{1}{2}\!\right).$$\\
+The first seven Euler polynomials are
+\begin{align*}
+    & E_0(x) \;=\; 1\\
+    & E_1(x) \;=\; x\!-\!\frac{1}{2}\\
+    & E_2(x) \;=\; x^2\!-\!x\\
+    & E_3(x) \;=\; x^3\!-\!\frac{3}{2}x^2\!+\!\frac{1}{4}\\
+    & E_4(x) \;=\; x^4\!-\!2x^3\!+\!x\\
+    & E_5(x) \;=\; x^5\!-\!\frac{5}{2}x^4\!+\!\frac{5}{2}x^2\!-\!\frac{1}{2}\\
+    & E_6(x) \;=\; x^6\!-\!3x^5\!+\!5x^3\!-\!3x
+\end{align*}
+
+The Euler polynomials have the beautiful addition formula
+$$E_n(x\!+\!y) \;=\; \sum_{k=0}^n{n \choose k}E_k(x)y^k$$
+and the derivative
+$$E_n'(x) \;=\; nE_{n-1}(x) \qquad (\textrm{for  } n = 1,\,2,\,\ldots).$$
+The Euler polynomials form an example of Appell sequences.
+
+
+%%%%%
+%%%%%
+\end{document}

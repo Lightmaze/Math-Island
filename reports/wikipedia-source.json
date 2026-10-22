@@ -1,0 +1,46 @@
+{
+  "executor": "/root/atlas_wikipedia",
+  "admitted_source": "Wikipedia bridge articles only",
+  "nodes": 50,
+  "distinct_canonical_urls": 50,
+  "all_recorded_source_links": 4348,
+  "domains": {
+    "number_theory": 6,
+    "geometry": 13,
+    "logic": 6,
+    "algebra": 2,
+    "discrete": 10,
+    "analysis": 8,
+    "probability": 5
+  },
+  "verification": {
+    "all_ids_unique": true,
+    "all_edge_endpoints_present": true,
+    "all_source_hashes_match": true,
+    "all_revision_ids_present": true,
+    "all_article_summaries_nonempty": true
+  },
+  "excluded_exploration": {
+    "mathworld_distinct_index_urls": 21322,
+    "mathworld_reason": "Unresolved semantic aliases and restrictive bulk reproduction terms; not counted or released",
+    "wikipedia_index_distinct_nonredirect_urls": 23872,
+    "wikipedia_index_reason": "Includes people, institutions, books; semantic admission not completed"
+  },
+  "license": "Wikipedia article text CC BY-SA 4.0; attribute linked page contributors; retain share-alike for extracts",
+  "semantic_limits": [
+    "Hyperlinks are not theorem-proof dependencies",
+    "Manual title-level domain and kind classifications are not MathCups formal types",
+    "No automatic proof or new discovery is claimed"
+  ],
+  "source_hyperlink_edges_within_50": 52,
+  "source_scopes": {
+    "article": 49,
+    "named_article_section": 1
+  },
+  "addendum": {
+    "initial_nodes": 30,
+    "added_nodes": 20,
+    "model_theory_disambiguation": "Stable_theory source fetched via Stability_(model_theory), verified model-theory lead; not dynamical Stability_theory",
+    "polynomial_partitioning": "Actual named section of Polynomial method in combinatorics, only section links extracted"
+  }
+}

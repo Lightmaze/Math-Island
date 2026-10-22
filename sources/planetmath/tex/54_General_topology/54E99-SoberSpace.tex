@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SoberSpace}
+\pmcreated{2013-03-22 16:43:44}
+\pmmodified{2013-03-22 16:43:44}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{sober space}
+\pmrecord{6}{38950}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E99}
+\pmdefines{irreducible set}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+% \newcommand{\cl}[1]{\overline{\lbrace{#1}\rbrace}}
+\newcommand{\cl}[1]{\operatorname{cl}(#1)}
+\begin{document}
+Let $X$ be a topological space.  A subset $A$ of $X$ is said to be \emph{irreducible} if whenever $A\subseteq B\cup C$ with $B,C$ closed, we have $A\subseteq B$ or $A\subseteq C$.  Any singleton and its closure are irreducible.  More generally, the closure of an irreducible set is irreducible.
+
+A topological space $X$ is called a \emph{sober space} if every irreducible closed subset is the closure of some \emph{unique} point in $X$.
+
+\textbf{Remarks}.
+\begin{itemize}
+\item For any sober space, the closure of a point determines the point.  In other words, $\cl x=\cl y$ implies $x=y$.
+\item A space is sober iff the closure of every irreducible set is the closure of a unique point.
+\item Any sober space is T0.
+\item Any Hausdorff space is sober.
+\item A closed subspace of a sober space is sober.
+\item Any product of sober spaces is sober.
+\end{itemize}
+%%%%%
+%%%%%
+\end{document}

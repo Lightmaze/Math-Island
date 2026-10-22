@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RingOfContinuousFunctions}
+\pmcreated{2013-03-22 16:54:54}
+\pmmodified{2013-03-22 16:54:54}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{ring of continuous functions}
+\pmrecord{14}{39176}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54C40}
+\pmclassification{msc}{54C35}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+\newtheorem{prop}{Proposition}
+\newtheorem{thm}{Theorem}
+\newtheorem{ex}{Example}
+\newcommand{\real}{\mathbb{R}}
+\begin{document}
+Let $X$ be a topological space and $C(X)$ be the function space consisting of all continuous functions from $X$ into $\mathbb{R}$, the reals (with the usual metric topology).
+
+\subsubsection*{Ring Structure on $C(X)$}
+
+To formally define $C(X)$ as a ring, we take a step backward, and look at $\mathbb{R}^X$, the set of all functions from $X$ to $\mathbb{R}$.  We will define a ring structure on $\mathbb{R}^X$ so that $C(X)$ inherits that structure and forms a ring itself.
+
+For any $f,g\in \mathbb{R}^X$ and any $r\in\mathbb{R}$, we define the following operations:
+\begin{enumerate}
+\item (addition) $(f+g)(x):=f(x)+g(x)$,
+\item (multiplication) $(fg)(x):=f(x)g(x)$,
+\item (identities) Define $r(x):=r$ for all $x\in X$.  These are the constant functions.  The special constant functions $1(x)$ and $0(x)$ are the \emph{multiplicative} and \emph{additive identities} in $\mathbb{R}^X$.
+\item (additive inverse) $(-f)(x):=-(f(x))$,
+\item (multiplicative inverse) if $f(x)\ne 0$ for all $x\in X$, then we may define the multiplicative inverse of $f$, written $f^{-1}$ by $$f^{-1}(x):=\frac{1}{f(x)}.$$ This is not to be confused with the functional inverse of $f$.
+\end{enumerate}
+
+All the ring axioms are easily verified.  So $\mathbb{R}^X$ is a ring, and actually a commutative ring.  It is immediate that any constant function other than the additive identity is invertible.
+
+Since $C(X)$ is closed under all of the above operations, and that $0,1\in C(X)$, $C(X)$ is a subring of $\mathbb{R}^X$, and is called \emph{the ring of continuous functions} over $X$.
+
+\subsubsection*{Additional Structures on $C(X)$}
+
+$\mathbb{R}^X$ becomes an $\mathbb{R}$-algebra if we define scalar multiplication by $(rf)(x):=r(f(x))$.  As a result, $C(X)$ is a subalgebra of $\mathbb{R}^X$.
+
+In addition to having a ring structure, $\mathbb{R}^X$ also has a natural order structure, with the partial order defined by $f\le g$ iff $f(x)\le g(x)$ for all $x\in X$.  The positive cone is the set $\lbrace f\mid 0\le f\rbrace$.  The absolute value, given by $|f|(x):=|f(x)|$, is an operator mapping $\mathbb{R}^X$ onto its positive cone.  With the absolute value operator defined, we can put a \PMlinkname{lattice structure}{Lattice} on $\mathbb{R}^X$ as well:
+\begin{itemize}
+\item (meet) $f\vee g:=2^{-1}(f+g+|f-g|)$.  Here, $2^{-1}$ is the constant function valued at $\frac{1}{2}$ (also as the multiplicative inverse of the constant function $2$).
+\item (join) $f\wedge g:=f+g-(f\vee g)$.
+\end{itemize}
+
+Since taking the absolute value of a continuous function is again continuous, $C(X)$ is a sublattice of $\mathbb{R}^X$.  As a result, we may consider $C(X)$ as a lattice-ordered ring of continuous functions.
+
+\textbf{Remarks}.  Any subring of $C(X)$ is called a \emph{ring of continuous functions} over $X$.  This subring may or may not be a sublattice of $C(X)$.  Other than $C(X)$, the two commonly used lattice-ordered subrings of $C(X)$ are 
+\begin{itemize}
+\item 
+$C^*(X)$, the subset of $C(X)$ consisting of all bounded continuous functions.  It is easy to see that $C^*(X)$ is closed under all of the algebraic operations (ring-theoretic or lattice-theoretic).  So $C^*(X)$ is a lattice-ordered subring of $C(X)$.  When $X$ is pseudocompact, and in particular, when $X$ is compact, $C^*(X)=C(X)$.  
+
+In this subring, there is a natural norm that can be defined: $$\|f\|:= \sup_{x \in X} |f(x)|=\inf \lbrace r\in\mathbb{R} \mid |f|\le r\rbrace.$$  Routine verifications show that $\|fg\|\le \|f\|\|g\|$, so that $C^*(X)$ becomes a normed ring.
+\item
+The subset of $C^*(X)$ consisting of all constant functions.  This is isomorphic to $\mathbb{R}$, and is often identified as such, so that $\mathbb{R}$ is considered as a lattice-ordered subring of $C(X)$.
+\end{itemize}
+
+\begin{thebibliography}{7}
+\bibitem{gj} L. Gillman, M. Jerison: {\em Rings of Continuous Functions}, Van Nostrand, (1960).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

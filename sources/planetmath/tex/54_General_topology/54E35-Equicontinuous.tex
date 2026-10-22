@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Equicontinuous}
+\pmcreated{2013-03-22 18:38:10}
+\pmmodified{2013-03-22 18:38:10}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{equicontinuous}
+\pmrecord{6}{41376}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+\pmclassification{msc}{54C35}
+\pmsynonym{equicontinuity}{Equicontinuous}
+\pmrelated{Equicontinuous2}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\section{Definition}
+
+Let $X$ be a topological space, $(Y, d)$ a metric space and $C(X,Y)$ the set of continuous functions $X \to Y$.
+
+Let $\mathcal{F}$ be a subset of $C(X,Y)$. A function $f \in \mathcal{F}$ is continuous at a point $x_0$ when given $\epsilon > 0$ there is a neighbourhood $U$ of $x_0$ such that $d(f(x),f(x_0)) < \epsilon$ for every $x \in U$. When the same neighbourhood $U$ can be chosen for all functions $f \in \mathcal{F}$, the family $\mathcal{F}$ is said to be \emph{equicontinuous}. More precisely:
+
+$\,$
+
+{\bf Definition -} Let $\mathcal{F}$ be a subset of $C(X,Y)$. The set of functions $\mathcal{F}$ is said to be {\bf equicontinuous at} $x_0 \in X$ if for every $\epsilon >0$ there is a neighbourhood $U$ of $x_0$ such that for every $x \in U$ and every $f \in \mathcal{F}$ we have
+\begin{align*}
+d(f(x),f(x_0)) < \epsilon
+\end{align*}
+
+The set $\mathcal{F}$ is said to be {\bf equicontinuous} if it is equicontinuous at every point $x \in X$.
+
+\section{Examples}
+\begin{itemize}
+\item A finite set of functions in $C(X, Y)$ is always equicontinuous.
+\item When $X$ is also a metric space, a family of functions in $C(X,Y)$ that share the same Lipschitz constant is equicontinuous.
+\item The family of functions $\{f_n\}_{n \in \mathbb{N}}$, where $f_n:\mathbb{R} \to \mathbb{R}$ is given by $f_n(x):=\arctan (nx)$ is not equicontinuous at $0$.
+\end{itemize}
+
+\section{Properties}
+
+\begin{itemize}
+\item If a subset $\mathcal{F} \subseteq C(X, Y)$ is totally bounded under the uniform metric, then $\mathcal{F}$ is equicontinuous.
+\item Suppose $X$ is compact. If a sequence of functions $\{f_n\}$ in $C(X, \mathbb{R}^k)$ is equibounded and equicontinuous, then the sequence $\{f_n\}$ has a uniformly convergent subsequence. (\PMlinkname{ArzelÃ 's theorem}{AscoliArzelaTheorem})
+\item Let $\{f_n\}$ be a sequence of functions in $C(X, Y)$. If $\{f_n\}$ is equicontinuous and converges pointwise to a function $f:X \to Y$, then $f$ is continuous and $\{f_n\}$ converges to $f$ in the compact-open topology.
+\end{itemize}
+
+\begin{thebibliography}{9}
+\bibitem{munkres} J. Munkres, \emph{Topology} (2nd edition), Prentice Hall, 1999.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

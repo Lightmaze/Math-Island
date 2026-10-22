@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HilbertSymbol}
+\pmcreated{2013-03-22 12:50:48}
+\pmmodified{2013-03-22 12:50:48}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{Hilbert symbol}
+\pmrecord{5}{33175}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11S31}
+\pmclassification{msc}{11S80}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $K$ be any local field. For any two nonzero elements $a,b \in K^\times$, we define:
+$$
+(a,b) :=
+\begin{cases}
++1 & \text{ if $z^2 = ax^2 + by^2$ has a nonzero solution $(x,y,z) \neq (0,0,0)$ in $K^3$,} \\
+-1 & \text{ otherwise.}
+\end{cases}
+$$
+The number $(a,b)$ is called the {\em Hilbert symbol} of $a$ and $b$ in $K$.
+%%%%%
+%%%%%
+\end{document}

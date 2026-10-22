@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ASpaceIsConnectedUnderTheOrderedTopologyIfAndOnlyIfItIsALinearContinuum}
+\pmcreated{2013-03-22 17:38:38}
+\pmmodified{2013-03-22 17:38:38}
+\pmowner{dfeuer}{18434}
+\pmmodifier{dfeuer}{18434}
+\pmtitle{a space is connected under the ordered topology if and only if it is a linear continuum.}
+\pmrecord{7}{40066}
+\pmprivacy{1}
+\pmauthor{dfeuer}{18434}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54B99}
+\pmclassification{msc}{06F30}
+%\pmkeywords{order}
+%\pmkeywords{topology}
+%\pmkeywords{order topology}
+%\pmkeywords{connected}
+%\pmkeywords{complete}
+%\pmkeywords{gap}
+%\pmkeywords{linear continuum}
+\pmrelated{LinearContinuum}
+\pmrelated{OrderTopology}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $X$ be totally ordered by the strict total order $<$, and let it have the order topology.
+
+Suppose $X$ is not a linear continuum.  Then either $X$ is not bounded-complete, or the order on $X$ is not a dense total order.
+
+Suppose $X$ is not bounded-complete.  Let $A$ be a nonempty subset of $X$ that is bounded above by $b$, but has no least upper bound.  Let $U$ be the set of upper bounds of $A$.  If $x \in U$, then $x$ is not a least upper bound of $A$, so there is a $z \in X$ such that $z<x$ and $z$ is an upper bound of $A$.  Then the set $\{y\in X \mid y>z\}$ is open and contains $x$.  Furthermore, all of its elements exceed $z$, so it is a subset of $U$.  Thus, $U$ is open.  $U$ contains $b$, so it is not empty.  Let $x\in X \setminus U$.  Then $x$ is not an upper bound of $A$, so there is an $a \in A$ such that $x < a$.  The set $\{y \in X \mid y < a\}$ is open, and contains no upper bounds of $A$, so it is a subset of $X \setminus U$.  Thus $X \setminus U$ contains a neighborhood of each of its points, and is therefore open.  Since $U$ and $X \setminus U$ are open, X is not connected.
+
+Suppose the ordering of $X$ is not dense, so there are $a$ and $b$ in $X$ with $a<b$ so that there is no $c$ in $X$ with $a<c<b$ (there is a gap between $a$ and $b$).  Let $U = \{x \in X \mid x < b\}$ and let $V = \{x \in X \mid x > a\}$.  Because there are no elements between $a$ and $b$, $U \cap V = \emptyset$.  By transitivity and trichotomy, $U \cup V = X$.  $U$ and $V$ are both open.  $a \in U$ and $b \in V$, so neither $U$ nor $V$ is empty. Thus, $U$ and $V$ separate $X$, so $X$ is not connected.
+
+Therefore, if $X$ is connected, then $X$ is a linear continuum.
+
+Now suppose that $X$ is disconnected and bounded-complete, and that $U$ and $V$ are (nonempty, open and closed) sets separating $X$.  Suppose that $a \in U$, and suppose also that there is an element $b \in V$ such that $a < b$ (if there is none, swap the names of $U$ and $V$, or reverse the ordering).  $Z = \{x \in V \mid x > a\}$ is open (it is the intersection of two open sets), and contains $b$ (so it is not empty).  $Z$ is bounded below by $a$, so it has a greatest lower bound $z$.
+
+If $z \in U$, then, since $U$ is open, there is an interval in $U$ containing $z$, which must, to exclude $b$, be of the form $\{x\mid x<k\}$ or of the form $\{x\mid j<x<k\}$, for some $k$ and perhaps $j$.  But then $k$ would be a lower bound of $Z$, contradicting the fact that $z$ is the infimum of $Z$.
+
+If $z \in V$, then, since $V$ is open, there is an interval in $V$ containing $z$, which must, to exclude $a$, be of the form $\{x\mid j<x\}$ or of the form $\{x\mid j<x<k\}$ for some $j$ and perhaps $k$.  In either case, $a<j<z$ and the set $W=\{x\mid j<x<z\}$ is a subset of $V$.  If $x \in W$, then $x \in V$ and $x > a$, so $x \in Z$, contradicting the fact that $z$ is the infimum of $Z$.  Thus, there are no elements of $X$ between $j$ and $z$, so the order on $X$ is not dense.  This proves that if $X$ is a linear continuum, then $X$ is connected.
+%%%%%
+%%%%%
+\end{document}

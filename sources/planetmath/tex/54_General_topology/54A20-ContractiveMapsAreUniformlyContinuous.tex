@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ContractiveMapsAreUniformlyContinuous}
+\pmcreated{2013-03-22 13:46:28}
+\pmmodified{2013-03-22 13:46:28}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{contractive maps are uniformly continuous}
+\pmrecord{6}{34481}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54A20}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+\begin{document}
+{\bf Theorem} A contraction mapping is uniformly continuous.
+
+{\bf Proof} Let $T:X\to X$ be a contraction mapping in a metric space
+$X$ with metric $d$. Thus, for some $q\in [0,1)$, we have
+for all $x,y\in X$,
+$$ d(Tx,Ty)\le q d(x,y).$$
+To prove that $T$ is uniformly continuous, let $\varepsilon>0$ be given.
+There are two cases.
+If $q=0$, our claim is trivial, since then for all $x,y\in X$,
+ $$ d(Tx,Ty)=0<\varepsilon.$$
+On the other hand, suppose $q\in(0,1)$. Then for all $x,y\in X$ with
+$d(x,y)<\varepsilon/q$, we have
+$$ d(Tx,Ty) \le q d(x,y) < \varepsilon.$$
+In conclusion, $T$ is uniformly continuous. $\Box$
+
+The result is stated without proof in \cite{rudin}, pp. 221.
+
+\begin{thebibliography}{9}
+ \bibitem{rudin}
+ W. Rudin, \emph{Principles of Mathematical Analysis}, McGraw-Hill Inc., 1976.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

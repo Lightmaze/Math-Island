@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CompactnessIsPreservedUnderAContinuousMap}
+\pmcreated{2013-03-22 13:55:50}
+\pmmodified{2013-03-22 13:55:50}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{compactness is preserved under a continuous map}
+\pmrecord{13}{34689}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54D30}
+\pmrelated{ContinuousImageOfACompactSpaceIsCompact}
+\pmrelated{ContinuousImageOfACompactSetIsCompact}
+\pmrelated{ConnectednessIsPreservedUnderAContinuousMap}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+\def\emptyset{\varnothing}
+
+% The below lines should work as the command
+% \renewcommand{\bibname}{References}
+% without creating havoc when rendering an entry in 
+% the page-image mode.
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+\begin{document}
+\PMlinkescapeword{between}
+\PMlinkescapeword{theorem}
+
+{\bf Theorem} \cite{singer, kelley} 
+Suppose $f\colon X\to Y$ is a continuous map 
+between topological spaces $X$ and $Y$. 
+If $X$ is compact and $f$ is surjective, then $Y$ is compact.
+
+The inclusion map $[0,1]\hookrightarrow[0,2)$ shows that the requirement for $f$ to be surjective cannot be omitted.
+If $X$ is compact and $f$ is continuous we can always conclude, however, that $f(X)$ is compact, since \PMlinkname{$f\colon X\to f(X)$ is continuous}{IfFcolonXtoYIsContinuousThenFcolonXtoFXIsContinuous}.
+
+\emph{Proof of theorem.} (Following \cite{singer}.)
+Suppose $\{V_\alpha \mid \alpha \in I\}$ is an arbitrary
+open cover for $f(X)$. Since $f$ is continuous, it follows
+that 
+$$\{f^{-1} (V_\alpha) \mid \alpha \in I\}$$
+is a collection of open sets in $X$. 
+Since $A\subseteq f^{-1} f (A)$ for any $A\subseteq X$,
+and since the inverse commutes with unions 
+(see \PMlinkname{this page}{InverseImage}), 
+we have 
+\begin{eqnarray*}
+X &\subseteq & f^{-1} f(X) \\
+  &= & f^{-1} \big( \bigcup_{\alpha \in I} (V_\alpha)\big) \\
+  &=& \bigcup_{\alpha \in I} f^{-1}(V_\alpha).
+\end{eqnarray*}
+Thus $\{ f^{-1}(V_\alpha) \mid \alpha \in I\}$ is an open cover for $X$. 
+Since $X$ is compact, there exists a finite subset $J\subseteq I$ 
+such that $\{ f^{-1}(V_\alpha) \mid \alpha \in J\}$ is a 
+finite open cover for $X$. 
+Since $f$ is a surjection, we have $ff^{-1}(A)=A$ for any $A\subseteq Y$
+(see \PMlinkname{this page}{InverseImage}). Thus 
+\begin{eqnarray*}
+f(X) &= & f \big(\bigcup_{i\in J} f^{-1}(V_\alpha)\big)\\
+     &= & ff^{-1} \bigcup_{i\in J} f^{-1}(V_\alpha)\\
+     &=&  \bigcup_{i\in J} V_\alpha.
+\end{eqnarray*}
+Thus $\{ V_\alpha \mid \alpha \in J\}$ is an open cover for $f(X)$,
+and $f(X)$ is compact.
+$\Box$
+
+A shorter proof can be given using the
+\PMlinkname{characterization of compactness by the finite intersection
+property}{ASpaceIsCompactIfAndOnlyIfTheSpaceHasTheFiniteIntersectionProperty}:
+
+\emph{Shorter proof.}
+Suppose $\{A_i\mid i\in I\}$ is a collection of closed
+subsets of $Y$ with the finite intersection property.
+Then $\{f^{-1}(A_i)\mid i\in I\}$ is a collection of closed subsets of $X$
+with the finite intersection property,
+because if $F\subseteq I$ is finite then
+\[
+ \bigcap_{i\in F} f^{-1}(A_i) = f^{-1}\!\left(\,\bigcap_{i\in F} A_i\!\right),
+\]
+which is nonempty as $f$ is a surjection.
+As $X$ is compact, we have
+\[
+ f^{-1}\left(\,\bigcap_{i\in I} A_i\!\right) = \bigcap_{i\in I} f^{-1}(A_i) \neq \emptyset
+\]
+and so $\bigcap_{i\in I} A_i\neq \emptyset$.
+Therefore $Y$ is compact.
+$\Box$
+
+\begin{thebibliography}{9}
+ \bibitem{singer}
+ I.M. Singer, J.A.Thorpe,
+ \emph{Lecture Notes on Elementary Topology and Geometry},
+ Springer-Verlag, 1967.
+ \bibitem{kelley}
+ J.L. Kelley, \emph{General Topology}, D. van Nostrand Company, Inc., 1955.
+ \bibitem{jameson} G.J. Jameson, \emph{Topology and Normed Spaces},
+ Chapman and Hall, 1974.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

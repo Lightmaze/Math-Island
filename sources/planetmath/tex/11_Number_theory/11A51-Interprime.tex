@@ -1,0 +1,47 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Interprime}
+\pmcreated{2013-03-22 18:08:25}
+\pmmodified{2013-03-22 18:08:25}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{interprime}
+\pmrecord{5}{40695}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A51}
+\pmrelated{MinimalAndMaximalNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given two consecutive odd primes, the $i$th prime $p_i$ and the next one, $p_{i + 1}$, an {\em interprime} $n$ is the arithmetic mean of the two: $$n = \frac{p_i + p_{i + 1}}{2}$$ Thus, $n - p_i = p_{i + 1} - n$, so alternatively $$n = p_i + \frac{p_{i + 1} - p_i}{2} = p_{i + 1} - \frac{p_{i + 1} - p_i}{2}.$$ For example, given the 269th and 270th primes, 1723 and 1733, the interprime is 1728, and indeed $1728 - 1723 = 1733 - 1728 = 5$. Interprimes themselves are of course always composite, though not always even. An interprime between a twin prime will always be even, while an interprime between the second (ending in 3 in base 10) and third (ending in 7 in base 10) member of a prime quadruplet will always be odd and be divisible by 5.
+
+The first few interprimes are 4, 6, 9, 12, 15, 18, 21, 26, 30, 34, 39, 42, 45, 50, 56, 60, 64, 69, 72, 76, 81, 86, 93, 99, etc., listed in A024675 of Sloane's OEIS.
+%%%%%
+%%%%%
+\end{document}

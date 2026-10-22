@@ -1,0 +1,85 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RegulatorOfAnEllipticCurve}
+\pmcreated{2013-03-22 16:23:24}
+\pmmodified{2013-03-22 16:23:24}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{regulator of an elliptic curve}
+\pmrecord{8}{38535}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11G07}
+\pmclassification{msc}{11G05}
+\pmclassification{msc}{14H52}
+\pmrelated{CanonicalHeightOnAnEllipticCurve}
+\pmrelated{BirchAndSwinnertonDyerConjecture}
+\pmrelated{Regulator}
+\pmdefines{elliptic regulator}
+\pmdefines{height matrix}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+Let $E/\Rats$ be an elliptic curve, let $E(\Rats)$ be the group of rational points on the curve and let $\langle \cdot, \cdot \rangle$ be the N\'eron-Tate pairing:
+$$\langle P,Q \rangle=\hat{h}(P+Q)-\hat{h}(P)-\hat{h}(Q)$$
+where $\hat{h}$ is the canonical height on the elliptic curve $E/\Rats$.
+
+\begin{defn}
+Let $E/\Rats$ be an elliptic curve and let $\{P_1,\ldots,P_r\}$ be a set of generators of the free part of $E(\Rats)$, i.e. the points $P_i$ generate $E(\Rats)$ modulo the torsion subgroup $E_{\operatorname{tors}}(\Rats)$. The {\bf height matrix} of $E/\Rats$ is the $r\times r$ matrix $H$ whose $ij$th component is $\langle P_i, P_j \rangle$, i.e.
+$$H = (\langle P_i, P_j \rangle).$$
+If $r=0$ then we define $H=1$.
+\end{defn}
+
+\begin{defn}
+The {\bf \PMlinkescapetext{regulator}} of $E/\Rats$ (or the elliptic regulator), denoted by $\operatorname{Reg}(E/\Rats)$ or $R_{E/\Rats}$ is defined by
+$$\operatorname{Reg}(E/\Rats)=\det(H)$$
+where $H$ is the height matrix.
+\end{defn}
+
+Notice the similarities with the regulator of a number field. The regulator of an elliptic curve is the volume of a fundamental domain for $E(\Rats)$ modulo torsion, with respect to the quadratic form defined by the N\'eron-Tate pairing.
+%%%%%
+%%%%%
+\end{document}

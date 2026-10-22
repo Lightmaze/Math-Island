@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CompleteUniformSpace}
+\pmcreated{2013-03-22 16:41:40}
+\pmmodified{2013-03-22 16:41:40}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{complete uniform space}
+\pmrecord{7}{38907}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E15}
+\pmsynonym{semicomplete}{CompleteUniformSpace}
+\pmsynonym{semi-complete}{CompleteUniformSpace}
+\pmrelated{Complete}
+\pmdefines{Cauchy filter}
+\pmdefines{Cauchy sequence}
+\pmdefines{sequentially complete}
+\pmdefines{complete uniformity}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+\usepackage{pst-plot}
+\usepackage{psfrag}
+
+% define commands here
+
+\begin{document}
+\PMlinkescapeword{complete}
+
+Let $X$ be a uniform space with uniformity $\mathcal{U}$.  A filter $\mathcal{F}$ on $X$ is said to be a \emph{Cauchy filter} if for each entourage $V$ in $\mathcal{U}$, there is an $F\in \mathcal{F}$ such that $F\times F\subseteq V$.  
+
+We say that $X$ is \emph{complete} if every Cauchy filter is a convergent filter in the topology $T_{\mathcal{U}}$ \PMlinkname{induced}{TopologyInducedByUniformStructure} by $\mathcal{U}$.  $\mathcal{U}$ in this case is called a \emph{complete uniformity}.
+
+A \emph{Cauchy sequence} $\lbrace x_i\rbrace$ in a uniform space $X$ is a sequence in $X$ whose section filter is a Cauchy filter.  A Cauchy sequence is said to be convergent if its section filter is convergent.  $X$ is said to be \emph{sequentially complete} if every Cauchy sequence converges (every section filter of it converges).
+
+\textbf{Remark}.  This is a generalization of the concept of completeness in a metric space, as a metric space is a uniform space.  As we see above, in the course of this generalization, two notions of completeness emerge: that of completeness and sequentially completeness.  Clearly, completeness always imply sequentially completeness.  In the context of a metric space, or a metrizable uniform space, the two notions are indistinguishable: sequentially completeness also implies completeness.
+%%%%%
+%%%%%
+\end{document}

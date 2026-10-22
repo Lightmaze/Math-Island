@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CompletelyMultiplicativeFunctionsWhoseConvolutionInversesAreCompletelyMultiplicative}
+\pmcreated{2013-03-22 16:55:12}
+\pmmodified{2013-03-22 16:55:12}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{completely multiplicative functions whose convolution inverses are completely multiplicative}
+\pmrecord{4}{39182}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Corollary}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A25}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem{cor*}{Corollary}
+
+\begin{document}
+\begin{cor*}
+The only completely multiplicative function whose convolution inverse is also completely multiplicative is $\varepsilon$, the convolution identity function.
+\end{cor*}
+
+\begin{proof}
+Let $f$ be a completely multiplicative function whose convolution inverse is completely multiplicative.  By \PMlinkname{this entry}{FormulaForTheConvolutionInverseOfACompletelyMultiplicativeFunction}, $f\mu$ is the convolution inverse of $f$, where $\mu$ denotes the M\"{o}bius function.  Thus, $f\mu$ is completely multiplicative.
+
+Let $p$ be any prime.  Then
+
+\begin{center}
+$\begin{array}{rl}
+(f(p))^2 & =(f(p))^2(-1)^2 \\
+\\
+& =(f(p))^2(\mu(p))^2 \\
+\\
+& =(f(p)\mu(p))^2 \\
+\\
+& =f(p^2)\mu(p^2) \\
+\\
+& =f(p^2) \cdot 0 \\
+\\
+& =0. \end{array}$
+\end{center}
+
+Thus, $f(p)=0$ for every prime $p$.  Since $f$ is completely multiplicative,
+
+$$f(n)=\begin{cases}
+1 & \text{if } n=1 \\
+0 & \text{if } n\neq 1. \end{cases}$$
+
+Hence, $f=\varepsilon$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

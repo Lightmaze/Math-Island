@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UncountablePolishSpacesContainCantorSpace}
+\pmcreated{2013-03-22 18:48:33}
+\pmmodified{2013-03-22 18:48:33}
+\pmowner{gel}{22282}
+\pmmodifier{gel}{22282}
+\pmtitle{uncountable Polish spaces contain Cantor space}
+\pmrecord{6}{41611}
+\pmprivacy{1}
+\pmauthor{gel}{22282}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E50}
+%\pmkeywords{Polish space}
+%\pmkeywords{Cantor space}
+\pmrelated{PolishSpace}
+
+\endmetadata
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{corollary*}{Corollary}
+\newtheorem*{definition*}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{definition}{Definition}
+
+\begin{document}
+\PMlinkescapeword{contains}
+\PMlinkescapeword{theorem}
+\PMlinkescapeword{subset}
+\PMlinkescapeword{continuous}
+\PMlinkescapeword{function}
+\PMlinkescapeword{implies}
+\PMlinkescapeword{homeomorphism}
+
+Cantor space is an example of a compact and uncountable Polish space. In fact, every uncountable Polish space contains Cantor space, as stated by the following theorem.
+
+\begin{theorem*}
+Let $X$ be an uncountable Polish space. Then, it contains a subset $S$ which is homeomorphic to Cantor space.
+\end{theorem*}
+
+For example, the set $\mathbb{R}$ of real numbers contains the \PMlinkname{Cantor middle thirds set}{CantorSet}. Note that, being homeomorphic to Cantor space, $S$ must be a compact and hence closed subset of $X$.
+The result is trivial in the case of Baire space $\mathcal{N}$, in which case we may take $S$ to be the set of all $s\in\mathcal{N}$ satisfying $s_n\in\{1,2\}$ for all $n$.
+Then, for any uncountable Polish space $X$ there exists a continuous and one-to-one function $f\colon\mathcal{N}\to X$ (see \PMlinkname{here}{InjectiveImagesOfBaireSpace}). Then $f$ gives a continuous bijection from $S$ to $f(S)$. The \PMlinkname{inverse function theorem}{InverseFunctionTheoremTopologicalSpaces} implies that $f$ is a homeomorphism between $S$ and $f(S)$ and, therefore, $f(S)$ is homeomorphic to Cantor space.
+
+%%%%%
+%%%%%
+\end{document}

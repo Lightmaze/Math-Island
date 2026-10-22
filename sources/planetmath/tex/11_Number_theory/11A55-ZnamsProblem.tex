@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ZnamsProblem}
+\pmcreated{2013-03-22 15:47:39}
+\pmmodified{2013-03-22 15:47:39}
+\pmowner{Mravinci}{12996}
+\pmmodifier{Mravinci}{12996}
+\pmtitle{Zn\'am's problem}
+\pmrecord{8}{37755}
+\pmprivacy{1}
+\pmauthor{Mravinci}{12996}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A55}
+\pmsynonym{Znam's problem}{ZnamsProblem}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Given a length $k$, is it possible to construct a set of integers $n_1, \ldots , n_k$ such that each
+
+$$n_i |(1 + \prod_{j \ne i}^n n_j)$$
+
+as a proper divisor? This is \emph{Zn\'am's problem}.
+
+This problem has solutions for $k > 4$, and all solutions for $4 < k < 9$ have been found, and a few for higher $k$ are known. The Sylvester sequence provides many of the solutions. At Wayne \PMlinkescapetext{State} University in 2001, Brenton and Vasiliu devised an algorithm to exhaustively search for solutions for a given length, and thus they found all solutions for $k = 8$. Their algorithm, though smarter than a brute force search, is still computationally intense the larger $k$ gets.
+
+Solutions to the problem have applications in continued fractions and perfectly weighted graphs.
+
+The problem is believed to have been first posed by \PMlinkname{\v{S}tefan Zn\'am}{VStefanZnam} in 1972. Qi Sun proved in 1983 that there are solutions for all $k > 4$.
+
+References
+
+Brenton, L, and Vasiliu, A. ``Znam's Problem." Math. Mag. {\bf 75}, 3-11, 2002.
+%%%%%
+%%%%%
+\end{document}

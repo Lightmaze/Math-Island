@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheJinvariantClassifiesEllipticCurvesUpToIsomorphism}
+\pmcreated{2013-03-22 15:06:25}
+\pmmodified{2013-03-22 15:06:25}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{the $j$-invariant classifies elliptic curves up to isomorphism}
+\pmrecord{5}{36839}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11G05}
+\pmclassification{msc}{14H52}
+\pmrelated{IsomorphismOfVarieties}
+\pmrelated{ArithmeticOfEllipticCurves}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+In this entry, an isomorphism over $K$ should be understood in the sense of the entry isomorphism of varieties.
+
+\begin{thm}
+Let $K$ be a field, and let $\overline{K}$ be a fixed algebraic closure of $K$.
+\begin{enumerate}
+\item Two elliptic curves $E_1$ and $E_2$ are \PMlinkname{isomorphic}{IsomorphismOfVarieties} (over $\overline{K}$) if and only if they have the same $j$-invariant, i.e. $j(E_1)=j(E_2)$.\\
+\item Let $j_0\in \overline{K}$ be fixed. There exists an elliptic curve $E$ defined over the field $K(j_0)$ such that $j(E)=j_0$.
+\end{enumerate}
+\end{thm}
+
+\begin{proof}
+For part $2$:
+\begin{itemize}
+\item For $j_0=0$, the curve $E_0\colon y^2+y=x^3$ satisfies $j(E)=0$;
+\item For $j_0=1728$, the curve $E_{1728} \colon y^2=x^3+x$ satisfies $j(E_{1728})=1728$;
+\item If $j_0\neq 0, 1728$ consider the elliptic curve:
+$$E=E_{j_0} \colon y^2+xy=x^3-\frac{36}{j_0-1728}x-\frac{1}{j_0-1728}.$$
+It satisfies $j(E)=j_0$ and it is defined over $K(j_0)$.
+\end{itemize}
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KaprekarNumber}
+\pmcreated{2013-03-22 16:00:17}
+\pmmodified{2013-03-22 16:00:17}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Kaprekar number}
+\pmrecord{7}{38034}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $n$ be a $k$-digit integer in base $b$. Then $n$ is said to be a {\em Kaprekar number} in base $b$ if $n^2$ has the following property: when you add the number formed by its right hand digits to that formed by its left hand digits, you get $n$.
+
+Or to put it algebraically, an integer $n$ such that in a given base $b$ has $$n^2 = \sum_{i = 0}^{k - 1} d_ib^i$$ (where $d_x$ are digits, with $d_0$ the least significant digit and $d_{k - 1}$ the most significant) such that $$\sum_{i = {k \over 2} + 1}^k d_ib^{i - {k \over 2} - 1} + \sum_{i = 1}^{k \over 2} d_ib^{i - 1} = n$$ if $k$ is even or $$\sum_{i = \lceil {k \over 2} \rceil}^k d_ib^{i - \lfloor {k \over 2} \rfloor - 1} + \sum_{i = 1}^{k \over 2} d_ib^{i - 1} = n$$ if $k$ is odd.
+
+$b^x - 1$ for a natural $x$ is always a Kaprekar number in base $b$.
+
+\begin{thebibliography}{1}
+\bibitem{dk} D. R. Kaprekar, ``On Kaprekar numbers" {\it J. Rec. Math.} 13 (1980-1981), 81 - 82.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

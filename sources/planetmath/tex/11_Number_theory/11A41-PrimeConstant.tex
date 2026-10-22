@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrimeConstant}
+\pmcreated{2013-03-22 15:02:17}
+\pmmodified{2013-03-22 15:02:17}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{prime constant}
+\pmrecord{12}{36749}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The number $\rho$ defined by 
+\[ \rho = \sum_{p} \frac{1}{2^p} \]
+is known as the {\sl prime constant}. It is simply the number whose binary expansion corresponds to the characteristic function of the set of prime numbers.    That is, its $n$th binary digit is $1$ if $n$ is prime and $0$ if $n$ is composite.
+
+The beginning of the decimal expansion of $\rho$ is:
+\[ \rho = 0.414682509851111660248109622... \]
+
+The number $\rho$ is easily shown to be irrational.  To see why, suppose it were rational.  Denote the $k$th digit of the binary expansion of $\rho$ by $r_k$.  Then, since $\rho$ is assumed rational, there must exist $N$, $k$ positive integers such that $r_n=r_{n+ik}$ for all $n>N$ and all $i \in \mathbb{N}$.
+
+Since there are an infinite number of primes, we may choose a prime $p>N$.  By definition we see that $r_p=1$.  As noted, we have $r_p=r_{p+ik}$ for all $i \in \mathbb{N}$.  Now consider the case $i=p$.  We have $r_{p+i \cdot k}=r_{p+p \cdot k}=r_{p(k+1)}=0$, since $p(k+1)$ is composite because $k+1 \geq 2$.  Since $r_p \neq r_{p(k+1)}$ we see that $\rho$ is irrational.
+
+The partial continued fractions of the prime constant can be found \PMlinkexternal{here}{http://www.research.att.com/cgi-bin/access.cgi/as/njas/sequences/eisA.cgi?Anum=A051007}.
+%%%%%
+%%%%%
+\end{document}

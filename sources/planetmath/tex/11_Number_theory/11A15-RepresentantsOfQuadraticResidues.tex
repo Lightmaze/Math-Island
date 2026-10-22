@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RepresentantsOfQuadraticResidues}
+\pmcreated{2013-03-22 19:00:35}
+\pmmodified{2013-03-22 19:00:35}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{representants of quadratic residues}
+\pmrecord{7}{41879}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A15}
+\pmsynonym{representant system of quadratic residues}{RepresentantsOfQuadraticResidues}
+\pmrelated{GaussianSum}
+\pmrelated{DifferenceOfSquares}
+\pmrelated{DivisibilityByPrimeNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+\PMlinkescapeword{complete}
+\textbf{Theorem.}\, Let $p$ be a positive odd prime number.\, Then the integers
+\begin{align}
+1^2,\,2^2,\,\ldots,\,\left(\frac{p\!-\!1}{2}\right)^{\!2}
+\end{align}
+constitute a \PMlinkescapetext{complete} representant system of incongruent quadratic residues modulo $p$.\, Accordingly, there are $\frac{p\!-\!1}{2}$ quadratic residues and equally many nonresidues modulo $p$.\\
+
+\emph{Proof.}\, Firstly, the numbers (1), being squares, are quadratic residues modulo $p$.\, Secondly, they are incongruent, because a congruence \,$a^2 \equiv b^2 \pmod{p}$\, would imply
+$$p \mid a\!+\!b \quad \mbox{or} \quad p \mid a\!-\!b,$$
+which is impossible when $a$ and $b$ are different integers among $1,\,2,\,\ldots,\,\frac{p\!-\!1}{2}$.\, Third, if $c$ is any quadratic residue modulo $p$, and therefore the congruence \,$x^2 \equiv c \pmod{p}$\, has a solution $x$, then $x$ is congruent with one of the numbers
+$$\pm1,\,\pm2,\,\ldots,\,\pm\frac{p\!-\!1}{2}$$
+which form a reduced residue system modulo $p$ (see absolutely least remainders).\, Then $x^2$ and $c$ are congruent with one of the numbers (1).
+%%%%%
+%%%%%
+\end{document}

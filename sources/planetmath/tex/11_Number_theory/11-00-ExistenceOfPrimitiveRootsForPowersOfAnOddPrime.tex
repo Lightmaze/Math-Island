@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExistenceOfPrimitiveRootsForPowersOfAnOddPrime}
+\pmcreated{2013-03-22 16:21:01}
+\pmmodified{2013-03-22 16:21:01}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{existence of primitive roots for powers of an odd prime}
+\pmrecord{4}{38484}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11-00}
+\pmrelated{EveryPrimeHasAPrimitiveRoot}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+The following theorem gives a way of finding a primitive root for $p^k$, for an odd prime $p$ and $k\geq 1$, given a primitive root of $p$. Recall that every prime has a primitive root.
+
+\begin{thm}Suppose that $p$ is an odd prime. Then $p^k$ also has a primitive root, for all $k\geq 1$. Moreover:
+\begin{enumerate}
+\item If $g$ is a primitive root of $p$ and $g^{p-1}\neq 1 \mod p^2$ then $g$ is a primitive root of $p^2$. Otherwise, if $g^{p-1}\equiv 1 \mod p^2$ then $g+p$ is a primitive root of $p^2$.
+
+\item If $k\geq 2$ and $h$ is a primitive root of $p^k$ then $h$ is a primitive root of $p^{k+1}$.
+\end{enumerate}
+\end{thm}
+%%%%%
+%%%%%
+\end{document}

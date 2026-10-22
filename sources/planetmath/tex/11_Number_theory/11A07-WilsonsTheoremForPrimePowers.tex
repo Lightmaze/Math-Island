@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{WilsonsTheoremForPrimePowers}
+\pmcreated{2013-03-22 13:22:14}
+\pmmodified{2013-03-22 13:22:14}
+\pmowner{Thomas Heye}{1234}
+\pmmodifier{Thomas Heye}{1234}
+\pmtitle{Wilson's theorem for prime powers}
+\pmrecord{8}{33899}
+\pmprivacy{1}
+\pmauthor{Thomas Heye}{1234}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A07}
+\pmclassification{msc}{11A41}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+\newcommand{\pfac}[1]{\left(#1\underline{!}\right)_p}
+\begin{document}
+For every natural number $n$, let $\pfac{n}$ denote the product of numbers $1
+\le m \le n$ with $gcd(m,p) =1$.
+
+For prime $p$ and $s \in \mathbb{N}$
+\[\pfac{p^s} \equiv \left(
+\begin{array}{ll}
+1 & \mbox{for } p=2, s \ge 3 \\
+-1 & \mbox{otherwise}
+\end{array}\right. \pmod{p^s}.\]
+
+\textbf{Proof:} We pair up all factors of the product $\pfac{p^s}$ into those
+numbers $m$ where $m \not\equiv m^{-1} \pmod{p^s}$ and those where this is not
+the case. So $\pfac{p^s}$ is congruent (modulo $p^s$) to the product of those
+numbers $m$ where $m \equiv m{-1} \pmod{p^s} \leftrightarrow m^2 \equiv 1
+\pmod{p^s}$.
+
+Let $p$ be an odd prime and $s \in \mathbb{N}$. Since $2 \not\vert p^s$, $p^s
+\vert (m^2 -1)$ implies $p^s \vert (m +1)$ either or $p^s \vert (m-1)$. This
+leads to
+\[\pfac{p^s} \equiv -1 \pmod{p^s}\]
+for odd prime $p$ and any $s \in \mathbb{N}$.
+
+Now let $p=2$ and $s \ge 2$. Then
+\[\left(1 +t.2^{s-1}\right)^2 \equiv 1 \pmod{2^s}, t =\stackrel{-}{+}1.\]
+Since
+\[\left(2^{s -1} +1\right)\left(2^{s-1} -1\right) \equiv -1 \pmod{2^s},\]
+we have
+\[\pfac{p^s} \equiv (-1).(-1) =1 \pmod{p^s}\]
+For $p=2, s \ge 3$, but $-1$ for $s=1,2. \square$
+%%%%%
+%%%%%
+\end{document}

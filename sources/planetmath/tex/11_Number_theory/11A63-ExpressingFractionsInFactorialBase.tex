@@ -1,0 +1,208 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExpressingFractionsInFactorialBase}
+\pmcreated{2013-03-22 16:46:04}
+\pmmodified{2013-03-22 16:46:04}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{expressing fractions in factorial base}
+\pmrecord{13}{38995}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Algorithm}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A63}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Given a fraction $p/q$, one may re-express it in factorial
+base as follows.  For simplicity, we assume that the 
+fraction is already written in lowest terms, i.e. that
+$p$ and $q$ have no common factor.  As in the \PMlinkname{parent}{FactorialBaseRepresentationOfFractions}
+entry, we assume the both $p$ and $q$ are positive and
+that $p < q$, so our fraction is less than 1.
+
+To begin, determine the smallest integer $d(q)$ such that $q$ 
+\PMlinkname{divides}{Divisibility} $d(q)!$.
+
+Rewrite the fraction with $d(q)!$ as denominator:
+\[
+{p \over q} = {p \cdot d(q)!/q \over d(q)!}
+\]
+
+Successively split off terms as follows: given a
+fraction $m/n!$, write\, $m = k \cdot n + r$\, where
+$r < n$ and then write
+\[
+{m \over n!} := {k \over (n-1)!} + {r \over n!}
+\]
+Initially, we choose $m = p \cdot d(q)!/q$ and
+$n = d(q)$.  At each successive repetition of the
+procedure, set $m$ to be the value of $k$ from
+the previous step and decrease $n$ by 1.
+
+Let us illustrate this with an example.  We
+will rewrite $7/8$ in factorial base.  Looking 
+at factorials, we see that $8$ does not divide
+either $2!$ or $3!$, but it does divide $4!$,
+so we have $d(8) = 4$.
+
+Next we rewrite the fraction with $4!$ as
+denominator.  Since $4! = 24$ and $24/8 = 3$,
+we should multiply both numerator and denominator
+of our fraction by $3$ to obtain $7/8 = 21/24 = 
+21/4!$.
+
+Now, we split off terms.  We have $21 = 5 \cdot 4 +
+1$, so
+\[
+\frac{21}{4!} = \frac{5}{3!} + \frac{1}{4!}.
+\] 
+Next, $5 = 1 \cdot 3 + 2$, so
+\begin{eqnarray*}
+\frac{5}{3!} &=& \frac{1}{2!} + \frac{2}{3!} \\
+\frac{21}{4!} &=& \frac{1}{2!} + \frac{2}{3!} +
+\frac{1}{4!}.
+\end{eqnarray*}
+Since $1 < 2$, we are done.  Thus, we see that the
+factorial base representation of $7/8$ is 
+$0 \, . \, 1 \, 2 \, 1$ as in the table in the 
+parent entry.
+
+We can make the calculation more concise by noting
+that the splitting off of terms can also be described 
+as follows:  the factorial base representation of
+$m/n!$ is the factorial base representation of
+$k/(n-1)!$ followed by $r$, where\, $m = k \cdot n
++ r$\, as above.  For example, let us compute the
+factorial base representation of $7/9$ using this
+trick.  Looking at factorials, we see that $d(9) = 6$.
+We express our fraction with a denominator of $6! = 720$:
+\[
+\frac{7}{9} = \frac{80 \cdot 7}{80 \cdot 9} =
+\frac{560}{720} = \frac{560}{6!}
+\]
+We now split of digits like follows:
+\begin{eqnarray*}
+\frac{560}{6!} &=& \frac{93}{5!} \, 2 \\
+&=& \frac{18}{4!} \, 3 \, 2 \\
+&=& \frac{4}{3!} \, 2 \, 3 \, 2 \\
+&=& \frac{1}{2!} \, 1 \, 2 \, 3 \, 2 
+\end{eqnarray*}
+Hence, we see that the factorial base representation
+of $7/9$ is $0 \, . \, 1 \, 1 \, 2 \, 3 \, 2$.
+
+The following LISP program computes factorial base
+representations of rational numbers using this method.
+It was used to compute the table of factorial base
+representations in the parent entry.
+
+\begin{flushleft}
+\texttt{
+(defun factorial) (n) \\
+\ \ (cond ((= n 0) 1) \\
+\ \ \ \ \ \ \ \ (t (* n (factorial (- n 1))))))}
+\end{flushleft}
+
+\begin{flushleft}
+\texttt{
+(defun d-tilde (n m) \\
+\ \ (cond ((= (\% (factorial m) n) 0) m) \\
+\ \ \ \ \ \ \ \ (t (d-tilde n (+ m 1))))) }
+\end{flushleft}
+
+\begin{flushleft}
+\texttt{
+(defun d (n) (d-tilde n 1))}
+\end{flushleft}
+
+\begin{flushleft}
+\texttt{
+(defun s (p q) \\
+\ \ (cond ((= q 1) nil) \\
+\ \ \ \ \ \ \ \ (t (append \\
+\ \ \ \ \ \ \ \ \ \ \ \ (s (/ p q) (- q 1)) \\
+\ \ \ \ \ \ \ \ \ \ \ \ (list (\% p q)))))) }
+\end{flushleft}
+
+\begin{flushleft}
+\texttt{
+(defun r (p q)
+\ \ (s \\
+\ \ \ (* p (/ (f (d q)) q)) \\
+\ \ \ (d q))) }
+\end{flushleft}
+
+Since LISP can look rather confusing to someone who is not familiar
+with its notational conventions --- all functions are written as
+prefixes and parentheses are used a bit differently than usually, 
+a translation into more typical mathematical notation may be helpful.  
+To do this, let us define a few symbols.  Let `$\ast$' denote the 
+concatenaton of tuplets --- given an $n$-tuplet $(x1, x_2, \ldots, x_n)$
+and an $m$-tuplet $(y_1, y_2, \ldots, y_m)$, we set
+$(x1, x_2, \ldots, x_n) \ast (y_1, y_2, \ldots, y_m)$ to be the
+$m+n$-tuplet $(x1, x_2, \ldots, x_n, y_1, y_2, \ldots y_m)$.
+Let ``$m \div n$'' denote the integer part of $m/n$ and let
+``$m \operatorname{\%} n$ denote the remainder of dividing $m$ by $n$.  For
+instance, $13 \div 5 = 2$ and $13 \operatorname{\%} 5 = 3$.  With these notational
+conventions, we may re-express our program as follows:
+
+\[
+n! := 
+\begin{cases}
+1 & n = 0 \\ 
+n \cdot (n-1)! & \textrm{otherwise} 
+\end{cases}
+\]
+
+\[
+{\tilde d} (n,m) := 
+\begin{cases}
+m & m! \operatorname{\%} n = 0 \\
+{\tilde d} (n, m+1) & \textrm{otherwise} 
+\end{cases}
+\]
+
+\[
+d(n) := {\tilde d} (n,1)
+\]
+
+\[
+s(p,q) := 
+\begin{cases}
+() & q = 1 \\
+s (p \div q, q - 1) \ast (p \operatorname{\%} q) &
+\mathrm{otherwise}
+\end{cases}
+\]
+
+\[
+r(p,q) := s (p \cdot f(d(q)) / q, d(q)
+\]
+
+%%%%%
+%%%%%
+\end{document}

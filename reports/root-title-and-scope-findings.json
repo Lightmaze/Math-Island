@@ -1,0 +1,61 @@
+{
+  "issues": [
+    {
+      "id": "pm:TheHistoryToGettingSettledToCompleteReviews",
+      "source_sha256": "1997b9aaea412ea75a491c0b0c2e21347478d06fb4fb3a5dc3ec6d1a9e762bed",
+      "source_file": "sources/planetmath/tex/92_Biology_and_other_natural_sciences/92D25-TheHistoryToGettingSettledToCompleteReviews.tex",
+      "issue": "source_title_mismatch",
+      "correction": "Leslie model",
+      "reviewer": "/root",
+      "semantic_scope": "display-title identity only"
+    },
+    {
+      "id": "pm:TheRealHistoryOfGettingSettledToAccomplishStudies",
+      "source_sha256": "63b7dd1944a79d8959cb496b11dd127b1dae146776ee735a33c7ce0365eadc8f",
+      "source_file": "sources/planetmath/tex/05_Combinatorics/05C85-TheRealHistoryOfGettingSettledToAccomplishStudies.tex",
+      "issue": "source_title_mismatch",
+      "correction": "Dijkstra's algorithm",
+      "reviewer": "/root",
+      "semantic_scope": "display-title identity only",
+      "additional_scope_issue": "The described Dijkstra procedure omits the nonnegative-edge-weight condition; it can be wrong even on a strongly connected graph with no negative cycle.",
+      "exact_witness": {
+        "edges": {
+          "s": {
+            "a": 2,
+            "b": 5
+          },
+          "a": {
+            "t": 2
+          },
+          "b": {
+            "a": -10,
+            "s": 100
+          },
+          "t": {
+            "b": 100
+          }
+        },
+        "settlement_order": [
+          "a",
+          "t",
+          "b"
+        ],
+        "returned_distances": {
+          "s": 0,
+          "a": -5,
+          "b": 5,
+          "t": 4
+        },
+        "true_distance_to_t": -3,
+        "path": [
+          "s",
+          "b",
+          "a",
+          "t"
+        ],
+        "no_negative_cycle": "All Floyd-Warshall diagonal entries are nonnegative.",
+        "strongly_connected": "All exact all-pairs distances are finite."
+      }
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PrimitiveElementOfBiquadraticField}
+\pmcreated{2013-03-22 17:54:17}
+\pmmodified{2013-03-22 17:54:17}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{primitive element of biquadratic field}
+\pmrecord{9}{40396}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R16}
+\pmrelated{PrimitiveElementTheorem}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{pstricks}
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\begin{document}
+\PMlinkescapeword{algebraic}
+\PMlinkescapeword{basic}
+
+\begin{thm*}
+Let $m$ and $n$ be distinct squarefree integers, neither of which is equal to $1$.  Then the biquadratic field $\Q(\sqrt{m},\sqrt{n})$ is equal to $\Q(\sqrt{m}+\sqrt{n})$.
+\end{thm*}
+
+In other words, $\sqrt{m}+\sqrt{n}$ is a \PMlinkname{primitive element}{PrimitiveElement} of $\Q(\sqrt{m},\sqrt{n})$.
+
+\begin{proof}
+We clearly have $\Q(\sqrt{m}+\sqrt{n}) \subseteq \Q(\sqrt{m},\sqrt{n})$.  For the reverse inclusion, it is \PMlinkname{equivalent}{Equivalent3} to show that $\sqrt{m}+\sqrt{n}$ does not belong to any of the quadratic subfields of $\Q(\sqrt{m},\sqrt{n})$, which are $\Q(\sqrt{m})$, $\Q(\sqrt{n})$, and $\Q(\sqrt{mn})$.
+
+Suppose that $\sqrt{m}+\sqrt{n}\in\Q(\sqrt{m})$.  Then $\sqrt{n}\in\Q(\sqrt{m})$.  Thus, $\Q(\sqrt{n})=\Q(\sqrt{m})$, which is proven to be false \PMlinkname{here}{QuadraticFieldsThatAreNotIsomorphic}.  By a \PMlinkescapetext{similar} \PMlinkescapetext{argument}, $\sqrt{m}+\sqrt{n}\notin\Q(\sqrt{n})$.
+
+Suppose that $\sqrt{m}+\sqrt{n}\in\Q(\sqrt{mn})$.  Let $a,b,c,d\in\Z$ with $\gcd(a,b)=\gcd(c,d)=1$, $b\neq 0$, and $d\neq 0$ such that
+\begin{align}
+\label{sqrts}
+\sqrt{m}+\sqrt{n}=\frac{a}{b}+\frac{c}{d}\sqrt{mn}.
+\end{align}
+
+Now, we perform some basic algebraic manipulations.
+
+\begin{align*}
+bd\sqrt{m}+bd\sqrt{n} & =ad+bc\sqrt{mn} \\
+bd\sqrt{m}+bd\sqrt{n}-ad & =bc\sqrt{mn} \\
+(bd\sqrt{m}+bd\sqrt{n}-ad)^2 & =(bc\sqrt{mn})^2 \\
+b^2d^2m+2b^2d^2\sqrt{mn}-2abd^2\sqrt{m}+b^2d^2n-2abd^2\sqrt{n}+a^2d^2 & =b^2c^2mn \\
+b^2d^2m+b^2d^2n+a^2d^2-b^2c^2mn & =2abd^2(\sqrt{m}+\sqrt{n})-2b^2d^2\sqrt{mn}
+\end{align*}
+
+Now, we use equation (\ref{sqrts}) to eliminate the $\sqrt{m}+\sqrt{n}$ and obtain
+\begin{align*}
+b^2d^2m+b^2d^2n+a^2d^2-b^2c^2mn & =2abd^2\left( \frac{a}{b}+\frac{c}{d}\sqrt{mn} \right) -2b^2d^2\sqrt{mn}.
+\end{align*}
+
+Now, we perform some more basic algebraic manipulations.
+
+\begin{align*}
+b^2d^2m+b^2d^2n+a^2d^2-b^2c^2mn & =2a^2d^2+2abcd\sqrt{mn}-2b^2d^2\sqrt{mn} \\
+b^2d^2m+b^2d^2n-a^2d^2-b^2c^2mn & =2bd(ac-bd)\sqrt{mn}
+\end{align*}
+
+Since $\sqrt{mn}\notin\Q$, $b\neq 0$, and $d\neq 0$, we must have $ac-bd=0$.  Thus, $\frac{c}{d}=\frac{b}{a}$.  (Note that we have $a\neq 0$ since $ac=bd\neq 0$.)  Using this in equation (\ref{sqrts}), we obtain
+\[
+\sqrt{m}+\sqrt{n}=\frac{a}{b}+\frac{b}{a}\sqrt{mn}.
+\]
+
+Now we perform \PMlinkescapetext{similar} calculations as before.
+
+\begin{align*}
+ab\sqrt{m}+ab\sqrt{n} & =a^2+b^2\sqrt{mn} \\
+ab\sqrt{m}+ab\sqrt{n}-a^2 & =b^2\sqrt{mn} \\
+(ab\sqrt{m}+ab\sqrt{n}-a^2)^2 & =(b^2\sqrt{mn})^2 \\
+a^2b^2m+2a^2b^2\sqrt{mn}-2a^3b\sqrt{m}+a^2b^2n-2a^3b\sqrt{n}+a^4 & =b^4mn \\
+a^2b^2m+a^2b^2n+a^4-b^4mn & =2a^3b(\sqrt{m}+\sqrt{n})-2a^2b^2\sqrt{mn} \\
+a^2b^2m+a^2b^2n+a^4-b^4mn & =2a^3b\left( \frac{a}{b}+\frac{b}{a}\sqrt{mn} \right)-2a^2b^2\sqrt{mn} \\
+a^2b^2m+a^2b^2n+a^4-b^4mn & =2a^4+2a^2b^2\sqrt{mn}-2a^2b^2\sqrt{mn} \\
+a^2b^2m+a^2b^2n-a^4-b^4mn & =0
+\end{align*}
+
+Since $b^2$ divides $a^4$ and $\gcd(a,b)=1$, we must have $b^2=1$.  Plugging into the equation above yields
+\[
+a^2m+a^2n-a^4-mn=0.
+\]
+
+Now for yet some more algebraic manipulations.
+\begin{center}
+$\begin{array}{rl}
+a^2m-a^4-mn+a^2n & =0 \\
+a^2(m-a^2)-n(m-a^2) & =0 \\
+(m-a^2)(a^2-n) & =0
+\end{array}$
+\end{center}
+
+Thus, $m=a^2$ or $n=a^2$, a contradiction.  It follows that $\Q(\sqrt{m}+\sqrt{n})=\Q(\sqrt{m},\sqrt{n})$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

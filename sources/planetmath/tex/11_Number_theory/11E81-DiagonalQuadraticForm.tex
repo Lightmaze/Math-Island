@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DiagonalQuadraticForm}
+\pmcreated{2013-03-22 15:42:05}
+\pmmodified{2013-03-22 15:42:05}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{diagonal quadratic form}
+\pmrecord{12}{37646}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11E81}
+\pmclassification{msc}{15A63}
+\pmclassification{msc}{11H55}
+\pmsynonym{canonical quadratic form}{DiagonalQuadraticForm}
+\pmrelated{DiagonalizationOfQuadraticForm}
+
+\endmetadata
+
+\usepackage{amssymb,amscd}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% define commands here
+\begin{document}
+Let $Q(\boldsymbol{x})\in k[x_1,\ldots,x_n]$ be a quadratic form over a field $k$ ($\operatorname{char}(k)\neq 2$), where $\boldsymbol{x}$ is the column vector $(x_1,\ldots,x_n)^T$.  We write $Q$ as 
+
+$$Q(\boldsymbol{x})=\boldsymbol{x}^TM(Q)\boldsymbol{x},$$
+
+where $M(Q)$ is the associated $n\times n$ symmetric matrix over $k$.  We say that $Q$ is a \emph{diagonal quadratic form} if $M(Q)$ is a diagonal matrix.
+
+Let's see what a diagonal quadratic form looks like.  If $M=M(Q)$ is diagonal whose diagonal entry in cell $(i,i)$ is $r_i$, then 
+
+\begin{center}$
+Q(\boldsymbol{x})=\boldsymbol{x}^T
+\begin{pmatrix}r_1 & \cdots & 0 \\
+\vdots & \ddots & \vdots \\
+0 & \cdots & r_n\end{pmatrix}
+\begin{pmatrix}x_1 \\
+\vdots \\ x_n\end{pmatrix}
+=\begin{pmatrix}x_1 & \cdots & x_n\end{pmatrix}
+\begin{pmatrix}r_1x_1 \\ \vdots \\ r_nx_n\end{pmatrix}
+=r_1x_1^2+\cdots+r_nx_n^2.
+$\end{center}
+
+So the coefficients of $x_ix_j$ for $i\neq j$ are all $0$ in a diagonal quadratic form.  A diagonal quadratic form is completely determined by the diagonal entries of $M(Q)$.
+
+\textbf{Remark.} Every quadratic form is \PMlinkname{equivalent}{EquivalentQuadraticForms} to a diagonal quadratic form.  On the other hand, a quadratic form may be \PMlinkescapetext{equivalent} to more than one diagonal quadratic form.
+%%%%%
+%%%%%
+\end{document}

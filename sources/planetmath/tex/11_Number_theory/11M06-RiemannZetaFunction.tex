@@ -1,0 +1,181 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RiemannZetaFunction}
+\pmcreated{2013-03-22 12:38:01}
+\pmmodified{2013-03-22 12:38:01}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Riemann zeta function}
+\pmrecord{18}{32896}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11M06}
+\pmsynonym{$\zeta$ function}{RiemannZetaFunction}
+\pmrelated{AnalyticContinuationOfRiemannZeta}
+\pmrelated{DedekindZetaFunction}
+\pmrelated{DirichletSeries}
+\pmrelated{EulerProduct}
+\pmrelated{Complex}
+\pmrelated{EulerProductFormula2}
+\pmrelated{HarmonicSeriesOfPrimes}
+\pmdefines{Euler product formula}
+\pmdefines{Riemann hypothesis}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\p}{{\mathfrak{p}}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\renewcommand{\H}{\mathcal{H}}
+\newcommand{\A}{\mathcal{A}}
+\renewcommand{\c}{\mathcal{C}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\lra}{\longrightarrow}
+\newcommand{\res}{\operatorname{res}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\diff}{\operatorname{diff}}
+\newcommand{\incl}{\operatorname{incl}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\renewcommand{\Re}{\operatorname{Re}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\begin{document}
+\section{Definition}
+
+The \emph{Riemann zeta function} is defined to be the complex valued
+function given by the series
+\begin{equation}\label{def}
+\zeta(s) := \sum_{n=1}^\infty \frac{1}{n^s},
+\end{equation}
+which is valid (in fact, absolutely convergent) for all complex
+numbers $s$ with $\Re(s) > 1$. We list here some of the key
+properties~\cite{ahlfors} of the zeta function.
+\begin{enumerate}
+\item For all $s$ with $\Re(s) > 1$, the zeta function satisfies the
+\emph{Euler product formula}
+\begin{equation}\label{product}
+\zeta(s) = \prod_{p} \frac{1}{1 - p^{-s}},
+\end{equation}
+where the product is taken over all positive integer primes $p$, and converges
+uniformly in a neighborhood of $s$.
+\item The zeta function has a meromorphic continuation to the entire
+complex plane with a simple pole at $s=1$, of residue $1$, and no
+other singularities.
+\item The zeta function satisfies the \emph{functional equation}
+\begin{equation}\label{functional}
+\zeta(s) = 2^s \pi^{s-1} \sin \frac{\pi s}{2} \Gamma(1-s) \zeta(1-s),
+\end{equation}
+for any $s \in \C$ (where $\Gamma$ denotes the Gamma function).
+\end{enumerate}
+
+\section{Distribution of primes}
+
+The Euler product formula~\eqref{product} given above expresses the
+zeta function as a product over the primes $p \in \Z$, and
+consequently provides a link between the analytic properties of the
+zeta function and the distribution of primes in the integers. As the
+simplest possible illustration of this link, we show how the
+properties of the zeta function given above can be used to prove that
+there are infinitely many primes.
+
+If the set $S$ of primes in $\Z$ were finite, then the Euler product
+formula
+$$
+\zeta(s) = \prod_{p \in S} \frac{1}{1 - p^{-s}}
+$$
+would be a finite product, and consequently $\lim_{s \to 1} \zeta(s)$
+would exist and would equal
+$$
+\lim_{s \to 1} \zeta(s) = \prod_{p \in S} \frac{1}{1 - p^{-1}}.
+$$
+But the existence of this limit contradicts the fact that $\zeta(s)$
+has a pole at $s=1$, so the set $S$ of primes cannot be finite.
+
+A more sophisticated analysis of the zeta function along these lines
+can be used to prove both the analytic prime number theorem and
+Dirichlet's theorem on primes in arithmetic progressions\footnote{In the case of arithmetic progressions, one also needs to examine the closely related Dirichlet $L$--functions in addition to the zeta function itself.}. Proofs of
+the prime number theorem can be found in~\cite{bak-newman}
+and~\cite{patterson}, and for proofs of Dirichlet's theorem on primes
+in arithmetic progressions the reader may look in~\cite{janusz}
+and~\cite{serre}.
+
+\section{Zeros of the zeta function}
+
+A \emph{nontrivial zero} of the Riemann zeta function is defined to be
+a root $\zeta(s) = 0$ of the zeta function with the property that $0
+\leq \Re(s) \leq 1$. Any other zero is called \emph{trivial zero} of
+the zeta function.
+
+The reason behind the terminology is as follows. For complex numbers
+$s$ with real part greater than 1, the series definition~\eqref{def}
+immediately shows that no zeros of the zeta function exist in this
+region. It is then an easy matter to use the functional
+equation~\eqref{functional} to find all zeros of the zeta function
+with real part less than 0 (it turns out they are exactly the values
+$-2n$, for $n$ a positive integer). However, for values of $s$ with
+real part between 0 and 1, the situation is quite different, since we
+have neither a series definition nor a functional equation to fall
+back upon; and indeed to this day very little is known about the
+behavior of the zeta function inside this critical strip of the
+complex plane.
+
+It is known that the prime number theorem is equivalent to the
+assertion that the zeta function has no zeros $s$ with $\Re(s) = 0$ or
+$\Re(s) = 1$. The celebrated \emph{Riemann hypothesis} asserts that all nontrivial zeros $s$ of the zeta function satisfy the much more precise equation $\Re(s) = 1/2$. If true, the hypothesis would have profound
+consequences on the distribution of primes in the
+integers~\cite{patterson}.
+
+\newpage
+
+\begin{thebibliography}{9}
+\bibitem{ahlfors} Lars Ahlfors, \emph{Complex Analysis, Third Edition},
+McGraw--Hill, Inc., 1979.
+\bibitem{bak-newman} Joseph Bak \& Donald Newman, \emph{Complex
+Analysis, Second Edition}, Springer--Verlag, 1991.
+\bibitem{janusz} Gerald Janusz, \emph{Algebraic Number Fields, Second
+Edition}, American Mathematical Society, 1996.
+\bibitem{lang} Serge Lang, \emph{Algebraic Number Theory, Second
+Edition}, Springer--Verlag, 1994.
+\bibitem{patterson} Stephen Patterson, \emph{Introduction to the Theory
+of the Riemann Zeta Function}, Cambridge University Press, 1988.
+\bibitem{riemann} B. Riemann, \emph{Ueber die Anzahl der Primzahlen unter einer gegebenen Gr\"osse}, \PMlinkexternal{http://www.maths.tcd.ie/pub/HistMath/People/Riemann/Zeta/}{http://www.maths.tcd.ie/pub/HistMath/People/Riemann/Zeta/}
+\bibitem{serre} Jean--Pierre Serre, \emph{A Course in Arithmetic},
+Springer--Verlag, 1973.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

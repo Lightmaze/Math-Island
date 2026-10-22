@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{StrongPrime}
+\pmcreated{2013-03-22 16:34:39}
+\pmmodified{2013-03-22 16:34:39}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{strong prime}
+\pmrecord{7}{38768}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11A41}
+\pmrelated{BalancedPrime}
+\pmrelated{WeakPrime}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+In number theory, if for the given $n$th prime $p_n$ the inequality $$p_n > {1 \over 3} \sum_{i = n - 1}^{n + 1} p_i$$ is true, then $p_n$ is said to be a {\em strong prime}. That is, the arithmetic mean of the given prime, the prime immediately below and the one immediately above, is less than the middle prime. The first few are 11, 17, 29, 37, 41, 59, 67, 71, 79, 97, 101, 107, 127, 137, 149, 163, 179, 191, 197, listed in  A051634 of Sloane's OEIS.
+
+For example, 17 is the seventh prime. The sixth and eighth primes, 13 and 19, add up to 32, and half that is 16. That is less than 17, thus 17 is a strong prime.
+
+Given a twin prime ${p, p + 2}$, the lesser prime of the two, $p$, will almost certainly be a strong prime.  The only twin prime pairs ${p, p + 2}$ for which $p$ is not a strong prime are {3, 5} and {5, 7}.
+
+There is a different meaning in cryptography, where the term {\em strong prime} is sometimes used to refer to a prime that can't be cracked by Pollard's $p - 1$ algorithm in a reasonable amount of time because $p \pm 1 = 2qr$, where $q$ and $r$ are sufficiently large primes. Some of these primes might be vulnerable to Lenstra elliptic curve factorization, however.
+
+It is possible for a prime to be a strong prime both in the cryptographic sense and the number theoretic sense. For the sake of illustration, 439351292910452432574786963588089477522344331 is a strong prime in the number theoretic sense because the arithmetic mean of its two neighboring primes is 62 less. Without the aid of a computer, this number would be a strong prime in the cryptographic sense because 439351292910452432574786963588089477522344330 has the large prime factor 1747822896920092227343 (and in turn the number one less than that has the large prime factor 1683837087591611009), 439351292910452432574786963588089477522344332 has the large prime factor 864608136454559457049 (and in turn the number one less than that has the large prime factor 105646155480762397). Even using algorithms more advanced than trial division, these numbers would be difficult to factor by hand. For a modern computer algebra system, these numbers can be factored almost instantaneously. A cryptographically strong prime has to be much larger than this example.
+%%%%%
+%%%%%
+\end{document}

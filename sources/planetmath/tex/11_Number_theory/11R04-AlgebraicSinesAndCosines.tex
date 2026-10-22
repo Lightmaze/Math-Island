@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AlgebraicSinesAndCosines}
+\pmcreated{2013-03-22 18:51:27}
+\pmmodified{2013-03-22 18:51:27}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{algebraic sines and cosines}
+\pmrecord{7}{41667}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Corollary}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11R04}
+\pmclassification{msc}{11C08}
+\pmrelated{RationalSineAndCosine}
+\pmrelated{MultiplesOfAnAlgebraicNumber}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+For any rational number $r$, the sine and the cosine of the number $r\pi$ are algebraic numbers.\\
+
+\emph{Proof.}\, According to the \PMlinkid{parent entry}{11664}, $\sin{n\varphi}$ and $\cos{n\varphi}$ can be expressed as polynomials with integer coefficients of $\sin\varphi$ or $\cos\varphi$, respectively, when $n$ is an integer.\, Thus we can write 
+$$\sin{n\varphi} \;=\; P(\sin\varphi), \quad \cos{n\varphi} \;=\; Q(\cos\varphi),$$
+where\, $P(x),\,Q(x) \in \mathbb{Z}[x]$.\, If\, $\displaystyle r = \frac{m}{n}$\, where $m,\,n$ are integers and\, 
+$n \neq 0$,\, we have
+$$P(\sin{r\pi}) \;=\; \sin{nr\pi} \;=\; \sin{m\pi} \;=\; 0, \quad
+  Q(\cos{r\pi}) \;=\; \cos{nr\pi} \;=\; \cos{m\pi} \;=\; \pm1,$$
+i.e. both $\sin{r\pi}$ and $\cos{r\pi}$ satisfy an algebraic equation.\, Q.E.D.\\
+
+
+For example,
+$$\cos{7\varphi} \;=\; 64\cos^7\varphi-112\cos^5\varphi+56\cos^3\varphi-7\cos\varphi,$$
+whence we have the identity
+$$64\cos^7\frac{\pi}{7}-112\cos^5\frac{\pi}{7}+56\cos^3\frac{\pi}{7}-7\cos\frac{\pi}{7}+1 \;=\; 0,$$
+and therefore $\cos\frac{\pi}{7}$ is algebraic over $\mathbb{Z}$.
+
+%%%%%
+%%%%%
+\end{document}

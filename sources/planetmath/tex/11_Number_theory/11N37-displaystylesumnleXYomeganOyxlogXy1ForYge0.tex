@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{displaystylesumnleXYomeganOyxlogXy1ForYge0}
+\pmcreated{2013-03-22 16:11:22}
+\pmmodified{2013-03-22 16:11:22}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{$\displaystyle \sum_{n \le x} y^{\omega(n)}=O_y(x(\log x)^{y-1})$ for $y \ge 0$}
+\pmrecord{9}{38279}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{11N37}
+\pmrelated{AsymptoticEstimate}
+\pmrelated{DisplaystyleYOmeganOleftFracxlogXy12YRightFor1LeY2}
+\pmrelated{WirsingCondition}
+
+\endmetadata
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem{thm*}{Theorem}
+
+\begin{document}
+Within this entry, $\omega$ refers to the number of distinct prime factors function, $\lfloor \, \cdot \, \rfloor$ refers to the floor function, $\log$ refers to the natural logarithm, $p$ refers to a prime, and $k$ and $n$ refer to positive integers.
+
+\begin{thm*} For $y \ge 0$, $\displaystyle \sum_{n \le x} y^{\omega(n)}=O_y(x(\log x)^{y-1})$.
+\end{thm*}
+
+\begin{proof}
+Since $y^{\omega(p^k)}=y$ for all $p$ and $k$, the real-valued nonnegative multiplicative function $y^{\omega(n)}$ \PMlinkescapetext{satisfies} the Wirsing condition with $c=y$ and $\lambda=1$.  Thus:
+
+\begin{center}
+\begin{tabular}{ll}
+$\displaystyle \sum_{n \le x} y^{\omega(n)}$ & $\displaystyle =O_y \left( \frac{x}{\log x} \sum_{n \le x} \frac{y^{\omega(n)}}{n} \right)$ \\
+& $\displaystyle =O_y \left( \frac{x}{\log x} \prod_{p \le x} \left( 1+\sum_{k=1}^{\left\lfloor \frac{\log x}{\log p} \right\rfloor } \frac{y^{\omega(p^k)}}{p^k} \right) \right)$ \\
+& $\displaystyle =O_y \left( \frac{x}{\log x} \left( \exp \left( \sum_{p \le x} \sum_{k=1}^{\left\lfloor \frac{\log x}{\log p} \right\rfloor } \frac{y}{p^k} \right) \right) \right)$ \\
+& $\displaystyle =O_y \left( \frac{x}{\log x} \left( \exp \left( y \sum_{p \le x} \sum_{k=1}^{\left\lfloor \frac{\log x}{\log p} \right\rfloor } \frac{1}{p^k} \right) \right) \right)$ \\
+& $\displaystyle =O_y \left( \frac{x}{\log x} ( \exp (y(\log(\log x)+O(1)))) \right)$ \\
+& $\displaystyle =O_y \left( \frac{x}{\log x} ( \exp (\log (\log x)^y)) \right)$ \\
+& $\displaystyle =O_y \left( \frac{x}{\log x} (\log x)^y \right)$ \\
+& $\displaystyle =O_y(x(\log x)^{y-1})$ \end{tabular}
+\end{center}
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

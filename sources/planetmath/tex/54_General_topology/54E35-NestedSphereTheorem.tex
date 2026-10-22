@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NestedSphereTheorem}
+\pmcreated{2013-03-22 14:57:12}
+\pmmodified{2013-03-22 14:57:12}
+\pmowner{Daume}{40}
+\pmmodifier{Daume}{40}
+\pmtitle{nested sphere theorem}
+\pmrecord{5}{36648}
+\pmprivacy{1}
+\pmauthor{Daume}{40}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{54E35}
+\pmclassification{msc}{54E50}
+
+\endmetadata
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+% The below lines should work as the command
+% \renewcommand{\bibname}{References}
+% without creating havoc when rendering an entry in
+% the page-image mode.
+\makeatletter
+\@ifundefined{bibname}{}{\renewcommand{\bibname}{References}}
+\makeatother
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+In a metric space $X$, let $\overline{B}_{r}(x)$ be the closed
+ ball centered at $x\in X$ with radius $r>0$.
+\begin{thm}[Nested sphere theorem \cite{KF}]
+A metric space $X$ is complete if and only if every sequence $\{\overline B_{r_n}(x_n)\}_n$ such that $\overline B_{r_{i+1}}(x_{i+1}) \subseteq \overline B_{r_i}(x_i)$ and $r_n \to 0$ when $n \to \infty$ has a nonempty intersection \textit{(i.e. $\bigcap_{n=1}^{\infty}\overline B_{r_n}(x_n) \neq \emptyset$)}.
+\end{thm}
+
+\begin{thebibliography}{1}
+\bibitem[KF]{KF} Kolmogorov, A.N. \& Fomin, S.V.: Introductory Real Analysis, Translated \& Edited by Richard A. Silverman.  Dover Publications, Inc. New York, 1970.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}
