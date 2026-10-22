@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
   "module": "MathCups Mathematical Archipelago education",
-  "version": "0.1.0",
-  "createdAt": "2026-10-22T15:00:21.952959+00:00",
+  "version": "0.2.0",
+  "createdAt": "2026-10-22T16:16:42.139438+00:00",
   "sourceRepository": "https://github.com/Lightmaze/Math-Island",
-  "sourceCommit": "b2d74628aedc78124752b1f22db93aa198631e94",
+  "sourceCommit": "0cb6f26dcd166ef597779723bd248829d2cff169",
   "sourceDirectory": "education",
   "basePath": "/Math-Island/",
   "coreSnapshot": "66751e9d9b0e661ec06c4b60c61c9204972917b6",
@@ -41,29 +41,41 @@
       "sha256": "971f017ea5a018894e6c9ca74a2abf3cd43e1c11476bc2edc3df5722b39bb411",
       "bytes": 1775952
     },
-    "assets/CoreAtlas-CWHO4zWN.js": {
-      "sha256": "be2a301dcc8e27707f4160b08509fe7f6407d81ebf408e1a8575da8975a48061",
+    "assets/ConnectionWorkbench-B7cf3Mnx.js": {
+      "sha256": "39e9ad0511c36d9d3723e7cdbf363dcbd6a8259b26e5130c0e06b303977ea538",
+      "bytes": 96044
+    },
+    "assets/ConnectionWorkbench-ZZm2OsP_.css": {
+      "sha256": "ad082878f098475d941e115cbf6661d4ae94a8f14cbb1d990b2e2a23eed67292",
+      "bytes": 15318
+    },
+    "assets/CoreAtlas-CeRBIJaE.js": {
+      "sha256": "2173b9c4808ca610efb7a296b758c6b921f87dcbbd6142da58bcb19475c54f99",
       "bytes": 43857
     },
     "assets/CoreAtlas-Cfb0bOUl.css": {
       "sha256": "31d39fb80aaa9a71f7dfac593d382a1ef8342abab0bd4d0eec7599f4351d4283",
       "bytes": 17992
     },
+    "assets/ObjectLab-B02v6_a8.js": {
+      "sha256": "0f4d64a627ee96d1f3230132f49bd76fb0093482e8548851358c536facb3a39b",
+      "bytes": 92059
+    },
     "assets/ObjectLab-Dt_JNGtx.css": {
       "sha256": "347336b1528e20c045946e6dd335f0a8b8443d248439c6546d6d60bee32c6101",
       "bytes": 13045
     },
-    "assets/ObjectLab-b0w-URss.js": {
-      "sha256": "51814f5c3ae57c80bb685c1d073c37152c3eec63ca7f9d80e4a969fc0b5150c4",
-      "bytes": 101993
+    "assets/index-BwPb_-Bh.css": {
+      "sha256": "cd54a8538aab906735b1f8c89a06b759634e15730e1c4becb40a2e66ef84d511",
+      "bytes": 33542
     },
-    "assets/index-Cj737VVO.css": {
-      "sha256": "3d6407c10876eb028a2349fbea1eb1ee7cd658c36e543338bcfbd93b14d24b67",
-      "bytes": 25682
+    "assets/index-CJPhl0JF.js": {
+      "sha256": "83827cced7c749c172e153eee01528f50f6f3cc85db0d47c5117d45a28965c83",
+      "bytes": 389445
     },
-    "assets/index-D4_0Yvfl.js": {
-      "sha256": "53490d4a84928b06aad21a5057238eafb26bafbeb5919dadc1944220ee8b8f76",
-      "bytes": 379149
+    "assets/models-D70FOF2K.js": {
+      "sha256": "88d56c8dced2152a37a5c37ac684d4f65178bc61915701ae75eba107266c3daa",
+      "bytes": 10520
     },
     "attribution.html": {
       "sha256": "31133e778e84a87a844c161e136f30c5d1d0e21613c9673cfdf5e575001c1afd",
@@ -90,7 +102,7 @@
       "bytes": 387
     },
     "index.html": {
-      "sha256": "ea2e690ed838032c57ff79f4d567b3e150c53a831e0830be36d041b95a9280aa",
+      "sha256": "953216d4164fa281000de240df983c97c77523c2107907ff7ddc68bf3e37ed20",
       "bytes": 692
     },
     "licenses/CC-BY-SA-3.0.txt": {
@@ -122,5 +134,6 @@
       "bytes": 6236
     }
   },
-  "manifestScope": "All deployed files except this self-describing deployment.json; hashes cover uncompressed HTTP bodies."
+  "manifestScope": "All deployed files except this self-describing deployment.json; hashes cover uncompressed HTTP bodies.",
+  "authoredConnections": 6
 }
