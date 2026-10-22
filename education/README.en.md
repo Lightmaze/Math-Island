@@ -2,6 +2,8 @@
 
 [中文](README.zh-CN.md) · [Repository and core atlas](../README.en.md)
 
+[Open the archipelago](https://mathcups-mathematical-islands.ljie5996.chatgpt.site) (currently owner-private) · [Download the public static site](https://github.com/Lightmaze/Math-Island/archive/refs/tags/education-static-v0.1.0.zip). Extract the archive, run `python -m http.server 8000` inside its directory, and open `http://localhost:8000`; no Node installation or build is needed. GitHub Pages is not enabled; see the [deployment record](docs/deployment.md).
+
 This is an independent education module for the MathCups Mathematical Archipelago. Habitats are organized around mathematical structure: ideals form divisibility layers, sheaves express compatible local data, and heat flow reveals frequency-dependent decay. Terrain is a teaching metaphor. Laboratory diagrams and numerical outputs are computed from specified mathematical models.
 
 ## What you can explore
@@ -10,7 +12,7 @@ This is an independent education module for the MathCups Mathematical Archipelag
 - **The complete 21,741-entry atlas.** Original coordinates and stable IDs are retained. Search, pan, zoom, filter by domain, inspect actual neighboring relations and evidence, and export a view.
 - **21 established literature bridges.** Read mechanisms, assumptions, conclusions and limitations, and locate both endpoints.
 - **Four editorial learning journeys.** Frequencies and heat flow; local and global structure; independence and structure; randomness and motion. Dashed routes indicate lesson order, not new proof dependencies or historical causation.
-- **Learner-owned field notes.** Local storage, Markdown export, JSON backup and import. No account or telemetry; notes are not uploaded.
+- **Learner-owned field notes.** Local storage, Markdown export, JSON backup and import. The application has no account system or telemetry; notes are not uploaded. The current private Sites host separately requires ChatGPT sign-in; local or self-hosted copies do not.
 
 Twenty-four is the number of authored lessons. The 21,741 source entries include concepts, definitions, methods, problems and mathematical statements. They are not 21,741 independent theories, nor individually authored educational habitats. About 68% of the current source snapshot comes from Stacks, so coverage is uneven.
 
@@ -84,3 +86,5 @@ When the core advances, run `npm run data:build` to produce a new educational pr
 Start a new island with a source-backed stable ID. Specify its object, operations, invariants, assumptions and counterexamples before choosing its habitat and implementing a model. Verify both languages, actual outcomes, mobile reading, keyboard paths and sources. Do not generate invented references, proof relations or mastery certificates to increase the lesson count.
 
 Original software is MIT licensed. Original educational prose and design are shared under CC BY-SA 4.0. Derived source data retains its original licenses. Generated scenic artwork is disclosed as AI-generated. See the [license scope](LICENSE.md) and [core third-party notices](../THIRD_PARTY_NOTICES.md).
+
+[交付与验证 / Delivery and verification](docs/delivery.md)

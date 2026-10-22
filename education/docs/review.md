@@ -4,16 +4,16 @@
 
 Reviewer: the **`/root/education_review` sub-agent**. The parent owns integration and publication. Source inspection, automated checks, browser actions and visual review are distinguished.
 
-截至 2026-10-22，生产构建通过 **93 项测试、96 个实验配置、20 组端到端检查和112个 axe 状态检查**。待完成：命名控件组的语义定点复查，以及整合上游 README 修正后的发布基线审计。详见[机器证据](../evidence/review.json)。
+截至 2026-10-22，生产构建通过 **93 项测试、96 个实验配置、20 组端到端检查和112个 axe 状态检查**。随后完成16个语义定点状态复查、真实HTTP缓存重验证/失败重试，以及整合上游README修正后的7,314文件发布基线审计，均通过。详见[机器证据](../evidence/review.json)。
 
-The production build passed **93 tests, 96 lesson configurations, 20 end-to-end checks, and 112 automated axe states**. Pending: focused semantic-group checks and the post-rebase publication-baseline audit. See the [machine-readable evidence](../evidence/review.json).
+The production build passed **93 tests, 96 lesson configurations, 20 end-to-end checks, and 112 automated axe states**. The subsequent 16 focused semantic states, real HTTP cache revalidation/retry, and all 7,314 post-rebase publication-baseline files also passed. See the [machine-readable evidence](../evidence/review.json).
 
 ## 两个明确的核心基线 / Two explicit core baselines
 
 | 基线 / Baseline | 提交 / Commit | 已执行结果 / Executed result |
 | --- | --- | --- |
 | 原始任务 / Original task | `66751e9d9b0e661ec06c4b60c61c9204972917b6` | 整合上游前7,314/7,314文件通过 / All 7,314 files passed before upstream integration |
-| 发布上游 / Publication upstream | `0b56806abb61fe06f7f63481c2008adad646a3af` | 重放前仅README.md存在预期差异；重放后待查 / Only the expected README difference before rebase; post-rebase audit pending |
+| 发布上游 / Publication upstream | `0b56806abb61fe06f7f63481c2008adad646a3af` | 重放后7,314/7,314文件通过；旧基线仅README存在预期差异 / All 7,314 files pass after rebase; only README differs from the old baseline |
 
 开发期间，上游独立将根 README 项目名从 `Mafh` 改为 `Math`。两个实际 Git tree 的文件集合均为7,314项，唯一变化的 blob 是 README.md。[发布基线](publication-base.json)保留未变项，并从新提交的真实 Git blob 计算 README 的 SHA-256；[原始基线](core-baseline.json)原封保留。不能声称整合修正后的 README 仍与原始任务版本逐字节相同。
 
@@ -72,7 +72,11 @@ These finite-model checks and bounded pedagogical reviews are **not kernel-check
 - **20/20端到端检查**：前进/后退、焦点、双语检索、目录、领域、四路线、Canvas键盘、21桥双语正文与分享、真实PNG、笔记持久化/跨页签/确认删除/Markdown与JSON导出、严格导入和完整往返。
 - **故障注入**：存储不可用仍能导出内存笔记；损坏缓存恢复为空；超5MB或部分非法导入整体拒绝且不丢已有记录；剪贴板拒绝时提供URL；两语言各阻断实验chunk，错误页仍可导出原航记，恢复后刷新可进入实验。
 - **数学结论**：3重覆盖1/2圈不闭合、3圈闭合；K₄三角形秩2且依赖；120以内30素数；椭圆互逆和为O、奇异例拒绝套用光滑群律；类型不匹配不推出结论；不相容截面需修正才能胶合。
-- **112/112 axe状态**：24课、地图、全图、展开文献桥、航记×两语言×两宽度，WCAG2A/AA及2.1A/AA自动规则零违规，无规则排除。进一步人工追查了控件组ARIA语义，并复看手机地图、椭圆、复平面图和数据表。
+- **112/112 axe状态**：24课、地图、全图、展开文献桥、航记×两语言×两宽度，WCAG2A/AA及2.1A/AA自动规则零违规，无规则排除。进一步人工追查并修复了四个命名控件组的role；16个双语桌面/手机定点状态复查全过，ARIA未决项消除。人工复看手机地图、椭圆、复平面图和数据表。
+
+最后一次完整功能扫描与最终小改动使用不同构建摘要，证据JSON分别记录。最后的role与缓存修改以定点检查复核，没有把旧构建结果冒称为新构建的完整重跑。
+
+A separate real-HTTP test served fresh one-hour cache entries with ETags: all three atlas JSON requests revalidated via 304, a deliberate edge 503 left nodes/search usable, and retry restored the edges. All 12 requests were GET. The final semantic/cache changes have a separately recorded build hash and focused checks; an earlier complete functional run is not presented as a rerun of the final build.
 
 Axe cannot fully decide short mathematical labels, text over SVG/images or every assistive-technology behavior. **Zero automated violations is not full WCAG conformance.** Keyboard and selected visual reviews supplement the scan; no dedicated screen-reader study was performed. Control scans do not exhaust every Cartesian product of parameters.
 
@@ -85,9 +89,17 @@ npm test
 npm run build
 npm run test:browser
 npm run test:a11y
+node scripts/cache-audit.mjs
 npm run verify:publication
 ```
 
 可用`CHROMIUM_PATH`指定浏览器，或`BROWSER_AUDIT_URL`审查部署版。详细临时结果在被Git忽略的`test-results/`；本次执行者、结果和范围持久化在[证据JSON](../evidence/review.json)。整合上游后，`npm run verify:historical-core`预期只对README报告版本差异；不要为了让历史比较通过而回退用户修正。
 
 Use `CHROMIUM_PATH` for a system browser or `BROWSER_AUDIT_URL` for a deployment. Detailed transient results are ignored by Git; review evidence is retained. After upstream integration, the historical comparison should report the README difference; do not undo the user's correction to make it pass.
+
+
+## 部署验证范围 / Deployment verification scope
+
+上述功能扫描针对本地提供的生产静态产物。主代理通过 Sites 原生返回结果核实部署状态为 `succeeded`，但未重新操作登录门后的网页。GitHub Pages 创建返回403，因此未验证其公开页面可用性，也不据此宣称 Pages 已上线。公开静态包的独立下载、哈希核验与子路径检查另见[分发证据](../evidence/static-package.json)；其执行者是审查子代理，主代理负责整合与发布。
+
+The functional scans above tested locally served production artifacts. The parent confirmed native Sites deployment status as `succeeded`, but did not repeat browser interactions behind the sign-in gate. GitHub Pages creation returned HTTP403, so its public availability is not claimed. Independent public-package download, hashes and subpath checks are recorded separately; the review sub-agent executes those checks and the parent integrates and publishes.

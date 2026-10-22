@@ -37,3 +37,18 @@ React + Vite + TypeScript。全图由一个 Canvas2D 实例绘制，DPR 至多�
 URL 保存视图、语言与选中岛屿；浏览器本地存储保存笔记与已观察记录。缩放控件和列表选择提供拖拽/悬停的替代路径。小屏幕显示纵向图面和底部阅读面板，重要信息不依赖悬停。
 
 视觉设计以自然史图谱的细线、明确对象与空间层次组织阅读；真实数学图形直接用代码生成，不把生成式概念插画当作证明或数值图。
+
+
+## 交付对照 / Delivery mapping
+
+本轮在三小时预算内完成实现、复核和持久化；预算不是虚构持续工作满三小时的声明。源码与公开静态产物已分别推送。Sites 于15:08 UTC返回部署成功；Pages 创建因当前连接权限403未完成，已保留可直接启用的分支。
+
+| 原定目标 | 交付结果 |
+| --- | --- |
+| 全量来源图谱 | 21,741节点、46,812关系、21文献桥；检索、筛选、缩放、证据、PNG与分享 |
+| 对象生态 | 12领域×2课；24种独立地貌及确定性数学叠图；中英文课程与教师指南 |
+| 可操作实验 | 24模型，真实参数与结果；适用范围、反例和高级延伸 |
+| 双端完整使用 | 桌面与手机；四路线、目录、笔记保存/导入/导出、分享与故障恢复 |
+| 可核验证据 | 93测试、96实验配置、20端到端组、112 axe状态、16语义复查、缓存与7,314核心文件核验 |
+
+The implementation and delivery fit within the three-hour budget; this does not claim that three full hours elapsed. See the [delivery record](delivery.md), [independent review](review.md) and [hosting details](deployment.md) for actual scope, executors and limitations.

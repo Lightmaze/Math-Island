@@ -8,7 +8,7 @@
 
 ## 课前准备
 
-打开教育应用，选择授课语言，并实际试用准备使用的控件。下文课程链接使用 canonical 仓库 [Lightmaze/Math-Island](https://github.com/Lightmaze/Math-Island) 对应的 Pages 地址 `https://lightmaze.github.io/Math-Island/`，保留具体岛屿、实验和语言的 hash 路由。公开发布与链接可用性仍待 root 在部署后核验；此处更新链接不代表已经完成发布核验。把 `lang=zh` 改为 `lang=en` 即选择英文。
+打开教育应用，选择授课语言，并实际试用准备使用的控件。下文课程链接使用已部署的 Sites 入口 `https://mathcups-mathematical-islands.ljie5996.chatgpt.site/`，保留具体岛屿、实验和语言的 hash 路由。当前托管入口仅创建者可访问，不能直接作为公开课堂链接分发。GitHub Pages 尚未发布；公开教学可自行部署 [Lightmaze/Math-Island](https://github.com/Lightmaze/Math-Island) 的 [`education-pages` 成品分支](https://github.com/Lightmaze/Math-Island/tree/education-pages)，再把本指南中的站点根 URL 替换为自己的公开地址，保留 `#view=…` 路由。把 `lang=zh` 改为 `lang=en` 即选择英文。
 
 结合图像、数值读数和条件说明授课。不要让任务只能凭颜色完成：使用点名、边名、系数、正负号和读数。键盘可以操作原生控件；纸面课堂可以使用相同的公式和表格，但不会复现交互。切换实验前记录参数，因为局部实验状态可能重置。
 
@@ -46,7 +46,7 @@
 
 ### 1. 频率与热 — `waves-and-heat`
 
-**建议安排：**90 分钟；学生已接触三角函数、导数和矩阵乘法。研究延伸需要傅里叶分析与算子理论。使用[复流海峡](https://lightmaze.github.io/Math-Island/#view=islands&island=complex-current&lab=1&lang=zh)、[傅里叶潮汐](https://lightmaze.github.io/Math-Island/#view=islands&island=fourier-tide&lab=1&lang=zh)、[热流海岸](https://lightmaze.github.io/Math-Island/#view=islands&island=heat-shore&lab=1&lang=zh)、[本征态灯塔](https://lightmaze.github.io/Math-Island/#view=islands&island=spectral-lighthouse&lab=1&lang=zh)。
+**建议安排：**90 分钟；学生已接触三角函数、导数和矩阵乘法。研究延伸需要傅里叶分析与算子理论。使用[复流海峡](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=complex-current&lab=1&lang=zh)、[傅里叶潮汐](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=fourier-tide&lab=1&lang=zh)、[热流海岸](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=heat-shore&lab=1&lang=zh)、[本征态灯塔](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=spectral-lighthouse&lab=1&lang=zh)。
 
 1. **0–15 分钟：旋转是一种运算。**把非零复乘子的模设为 1，改变辐角，记录标记点的像。在纸上计算连续乘以 i 两次和四次的结果，再观察模为 0 时的塌缩。讨论关于角度的哪些结论需要非零导数或乘子。
 2. **15–35 分钟：基可以表示形状。**把奇次谐波数从 1 增加到 25，分别记录平坦区和跳跃附近的表现。区分采样最大值与精确上确界。解释为什么连续有限和不可能一致收敛到不连续方波。
@@ -60,7 +60,7 @@
 
 ### 2. 局部与整体 — `local-to-global`
 
-**建议安排：**90 分钟；已知基本环运算、函数和有限线性代数。概形、层上同调和导出构造属于研究延伸。使用[理想沉积湾](https://lightmaze.github.io/Math-Island/#view=islands&island=ideal-basin&lab=1&lang=zh)、[素谱湿地](https://lightmaze.github.io/Math-Island/#view=islands&island=spectrum-marsh&lab=1&lang=zh)、[层的云冠](https://lightmaze.github.io/Math-Island/#view=islands&island=sheaf-canopy&lab=1&lang=zh)、[同调洞窟](https://lightmaze.github.io/Math-Island/#view=islands&island=homology-cavern&lab=1&lang=zh)。
+**建议安排：**90 分钟；已知基本环运算、函数和有限线性代数。概形、层上同调和导出构造属于研究延伸。使用[理想沉积湾](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=ideal-basin&lab=1&lang=zh)、[素谱湿地](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=spectrum-marsh&lab=1&lang=zh)、[层的云冠](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=sheaf-canopy&lab=1&lang=zh)、[同调洞窟](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=homology-cavern&lab=1&lang=zh)。
 
 1. **0–20 分钟：算术变成结构。**把理想生成元设为 4 和 6，列出和、交中的若干元素。用 `2=6−4` 解释现象，再通过整除和 Bézout 等式证明 gcd/lcm 公式。说明并集为什么不是理想和。
 2. **20–35 分钟：点集不能恢复环。**比较 n=6 与 n=12 的素谱，令 f=0、f=1，解释 D(0)、D(1)。两者都有两个点；在纸上比较幂零元：模 12 的 6 非零且平方为零，而 ℤ/6ℤ 是约化环。
@@ -74,7 +74,7 @@
 
 ### 3. 独立性与结构保持 — `independence`
 
-**建议安排：**80 分钟；已知图和函数的基本语言。高级阅读需要拟阵与分次代数。使用[图的桥群](https://lightmaze.github.io/Math-Island/#view=islands&island=graph-bridges&lab=1&lang=zh)、[拟阵森林](https://lightmaze.github.io/Math-Island/#view=islands&island=matroid-forest&lab=1&lang=zh)、[对称林](https://lightmaze.github.io/Math-Island/#view=islands&island=symmetry-grove&lab=1&lang=zh)、[函子港](https://lightmaze.github.io/Math-Island/#view=islands&island=functor-harbor&lab=1&lang=zh)。
+**建议安排：**80 分钟；已知图和函数的基本语言。高级阅读需要拟阵与分次代数。使用[图的桥群](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=graph-bridges&lab=1&lang=zh)、[拟阵森林](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=matroid-forest&lab=1&lang=zh)、[对称林](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=symmetry-grove&lab=1&lang=zh)、[函子港](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=functor-harbor&lab=1&lang=zh)。
 
 1. **0–20 分钟：先说明优化目标。**目标点不变，比较 BFS 与 Dijkstra，再改变 E–H 边权重复实验。分别记录边数和总权。解释等非负权为何保证两种目标一致，也说明非等权不意味着每个实例都必然得到不同路线。
 2. **20–40 分钟：独立性不等于边数。**在 K₄ 中选一个三角形，保留第四个孤立顶点，计算 `r(A)=4−c(A)=2`，再与三边生成树比较。在两棵树之间找一次有效基交换，并找一次会产生环的无效交换。
@@ -88,7 +88,7 @@
 
 ### 4. 随机、平均与运输 — `chance-and-motion`
 
-**建议安排：**90 分钟；已知期望、方差和初等微积分。Feynman–Kac 与合成曲率需要后续读书会。使用[布朗三角洲](https://lightmaze.github.io/Math-Island/#view=islands&island=brownian-delta&lab=1&lang=zh)、[均值潮汐](https://lightmaze.github.io/Math-Island/#view=islands&island=mean-tide&lab=1&lang=zh)、[热流海岸](https://lightmaze.github.io/Math-Island/#view=islands&island=heat-shore&lab=1&lang=zh)、[运输沙洲](https://lightmaze.github.io/Math-Island/#view=islands&island=transport-sandbar&lab=1&lang=zh)。
+**建议安排：**90 分钟；已知期望、方差和初等微积分。Feynman–Kac 与合成曲率需要后续读书会。使用[布朗三角洲](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=brownian-delta&lab=1&lang=zh)、[均值潮汐](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=mean-tide&lab=1&lang=zh)、[热流海岸](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=heat-shore&lab=1&lang=zh)、[运输沙洲](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=transport-sandbar&lab=1&lang=zh)。
 
 1. **0–20 分钟：随机对象和样本群统计量不同。**比较一条与多条 Brownian 路径，细化时间网格并观察终点统计量。说明 `Var(B_t)=t`，明确逐时刻的 ±2√t 带限制了什么、没有限制什么。
 2. **20–40 分钟：显式更换样本空间。**均值潮汐使用 Bernoulli 试验，不是把前一实验的 Brownian 位置连续取平均。延长同一个样本前缀，找一次均值远离 p 的更新。若显示 Hoeffding 带，说明保证针对固定 n，而非整条路径的同时覆盖。
@@ -106,7 +106,7 @@
 
 ### A. 一条规则凭什么能用 — 60 分钟
 
-使用[素数礁](https://lightmaze.github.io/Math-Island/#view=islands&island=prime-reef&lab=1&lang=zh)、[有限域环礁](https://lightmaze.github.io/Math-Island/#view=islands&island=finite-field-atoll&lab=1&lang=zh)、[类型观测台](https://lightmaze.github.io/Math-Island/#view=islands&island=type-observatory&lab=1&lang=zh)。适合作为初次证明工作坊，有限域记号需要明确介绍。
+使用[素数礁](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=prime-reef&lab=1&lang=zh)、[有限域环礁](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=finite-field-atoll&lab=1&lang=zh)、[类型观测台](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=type-observatory&lab=1&lang=zh)。适合作为初次证明工作坊，有限域记号需要明确介绍。
 
 - **20 分钟：筛法。**完成 2、3、5 的筛轮后检查 49。证明不超过 N 的合数具有不超过 √N 的质因子，解释保留 p 和从 p² 开始的理由。
 - **20 分钟：插值。**在一个支持的素数域中先保留两个、再保留三个互异求值点。在纸上证明次数小于 3 时的唯一性：两个候选多项式之差有三个互异根。说明重复位置或任意错误值为什么改变了问题。模 6 是反驳“每个模数都给出一个域”的书面例子，界面没有把它作为域选项。
@@ -116,7 +116,7 @@
 
 ### B. 几何改变时，哪些信息保留 — 100 分钟
 
-使用[零点群峰](https://lightmaze.github.io/Math-Island/#view=islands&island=zero-set-peaks&lab=1&lang=zh)、[椭圆曲线园](https://lightmaze.github.io/Math-Island/#view=islands&island=elliptic-garden&lab=1&lang=zh)、[覆盖梯田](https://lightmaze.github.io/Math-Island/#view=islands&island=covering-terraces&lab=1&lang=zh)、[曲率山脊](https://lightmaze.github.io/Math-Island/#view=islands&island=curvature-ridge&lab=1&lang=zh)。如果先修知识差异较大，可拆成两次活动。
+使用[零点群峰](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=zero-set-peaks&lab=1&lang=zh)、[椭圆曲线园](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=elliptic-garden&lab=1&lang=zh)、[覆盖梯田](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=covering-terraces&lab=1&lang=zh)、[曲率山脊](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=curvature-ridge&lab=1&lang=zh)。如果先修知识差异较大，可拆成两次活动。
 
 - **25 分钟：方程与奇点。**比较 `xy=c` 与 `c=0`，用 `F=F_x=F_y=0` 定位相交奇点；比较半径为零与非零的实圆。指出实图忽略了哪些复点和射影完备化信息。
 - **25 分钟：有条件的运算法则。**选择椭圆实验的割线、切线、互逆和奇异预设，代入方程核对给定点，计算 `y²=x³−x+1` 上的割线和点。区分 O 与 (0,0)。不要要求任意拖动点：此界面有意采用满足条件的预设。
@@ -127,7 +127,7 @@
 
 ### C. 三种“最终会怎样” — 60 分钟
 
-使用[Cantor 海岸](https://lightmaze.github.io/Math-Island/#view=islands&island=cantor-coast&lab=1&lang=zh)、[梯度盆地](https://lightmaze.github.io/Math-Island/#view=islands&island=gradient-basin&lab=1&lang=zh)、[均值潮汐](https://lightmaze.github.io/Math-Island/#view=islands&island=mean-tide&lab=1&lang=zh)。适合引入极限；概率部分在相关假设已经讲清时加入。
+使用[Cantor 海岸](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=cantor-coast&lab=1&lang=zh)、[梯度盆地](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=gradient-basin&lab=1&lang=zh)、[均值潮汐](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=islands&island=mean-tide&lab=1&lang=zh)。适合引入极限；概率部分在相关假设已经讲清时加入。
 
 - **20 分钟：长度缩小。**推导 Cantor 有限阶段的区间数与总长度，比较“总长度趋于零”和“极限集合有限”。用无限 0/2 三进制选择讨论基数，明确屏幕上每个有限阶段仍含非退化区间。
 - **20 分钟：收缩。**推导梯度迭代的两个乘子，令 λ=4 比较稳定和不稳定步长。表述“对所有初始点都收敛”的严格条件 `0<η<2/λ`；端点可能有模为 1 的乘子。特殊初值可能把不稳定坐标设为零，所以量词不能省。

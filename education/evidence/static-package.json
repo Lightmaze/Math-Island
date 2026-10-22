@@ -1,0 +1,905 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "/root/education_review",
+  "started": "2026-10-22T15:17:55.763Z",
+  "request": {
+    "url": "https://github.com/Lightmaze/Math-Island/archive/refs/tags/education-static-v0.1.0.zip",
+    "expectedSourceCommit": "b2d74628aedc78124752b1f22db93aa198631e94",
+    "basePath": "/Math-Island/"
+  },
+  "localDistUsed": false,
+  "browserAvailability": "Isolated local Chromium/Playwright fallback after browser-tool discovery; no personal browser profile accessed.",
+  "cases": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "language": "zh",
+      "checks": [
+        "home identity, meaningful content, no overlay or overflow",
+        "D4 noncommuting compositions swap actual outputs",
+        "advanced heat model updates energy and nine-row readout",
+        "full atlas and existing bridge003 load from packaged JSON",
+        "journal survives reload and exports exact note JSON"
+      ],
+      "exportBytes": 474,
+      "heatEnergy": {
+        "initial": 5.152,
+        "final": 0.425
+      },
+      "finalPath": "/Math-Island/",
+      "passed": true
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "language": "en",
+      "checks": [
+        "home identity, meaningful content, no overlay or overflow",
+        "D4 noncommuting compositions swap actual outputs",
+        "advanced heat model updates energy and nine-row readout",
+        "full atlas and existing bridge003 load from packaged JSON",
+        "journal survives reload and exports exact note JSON"
+      ],
+      "exportBytes": 474,
+      "heatEnergy": {
+        "initial": 5.152,
+        "final": 0.425
+      },
+      "finalPath": "/Math-Island/",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "language": "zh",
+      "checks": [
+        "home identity, meaningful content, no overlay or overflow",
+        "D4 noncommuting compositions swap actual outputs",
+        "advanced heat model updates energy and nine-row readout",
+        "full atlas and existing bridge003 load from packaged JSON",
+        "journal survives reload and exports exact note JSON"
+      ],
+      "exportBytes": 473,
+      "heatEnergy": {
+        "initial": 5.152,
+        "final": 0.425
+      },
+      "finalPath": "/Math-Island/",
+      "passed": true
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "language": "en",
+      "checks": [
+        "home identity, meaningful content, no overlay or overflow",
+        "D4 noncommuting compositions swap actual outputs",
+        "advanced heat model updates energy and nine-row readout",
+        "full atlas and existing bridge003 load from packaged JSON",
+        "journal survives reload and exports exact note JSON"
+      ],
+      "exportBytes": 473,
+      "heatEnergy": {
+        "initial": 5.152,
+        "final": 0.425
+      },
+      "finalPath": "/Math-Island/",
+      "passed": true
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "badResponses": [],
+  "failedRequests": [],
+  "outsideSubpath": [],
+  "externalRequests": [],
+  "serverRequests": [
+    {
+      "path": "/Math-Island/",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-D4_0Yvfl.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-Cj737VVO.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-g.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-h.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-c.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-f.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-d.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-e.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/ObjectLab-b0w-URss.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/ObjectLab-Dt_JNGtx.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/CoreAtlas-Cfb0bOUl.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/CoreAtlas-CWHO4zWN.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/data/atlas-index.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/data/atlas-edges.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/data/atlas-bridges.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-c.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-D4_0Yvfl.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-Cj737VVO.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-d.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-c.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-D4_0Yvfl.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-Cj737VVO.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-g.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-h.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-c.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-f.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-d.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-e.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/ObjectLab-b0w-URss.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/ObjectLab-Dt_JNGtx.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/CoreAtlas-Cfb0bOUl.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/CoreAtlas-CWHO4zWN.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/data/atlas-index.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/data/atlas-edges.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/data/atlas-bridges.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-D4_0Yvfl.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-Cj737VVO.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-d.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-c.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-D4_0Yvfl.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-Cj737VVO.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-g.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-h.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-f.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-d.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-c.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-e.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/ObjectLab-b0w-URss.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/ObjectLab-Dt_JNGtx.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/CoreAtlas-Cfb0bOUl.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/CoreAtlas-CWHO4zWN.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/data/atlas-index.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/data/atlas-edges.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/data/atlas-bridges.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-c.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-Cj737VVO.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-D4_0Yvfl.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-d.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-c.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-D4_0Yvfl.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-Cj737VVO.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-g.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-h.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-f.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-d.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-c.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-e.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/ObjectLab-b0w-URss.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/ObjectLab-Dt_JNGtx.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/CoreAtlas-Cfb0bOUl.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/CoreAtlas-CWHO4zWN.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/data/atlas-index.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/data/atlas-edges.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/data/atlas-bridges.json",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-c.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-Cj737VVO.css",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/assets/index-D4_0Yvfl.js",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/favicon.svg",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-d.webp",
+      "method": "GET",
+      "status": 200
+    },
+    {
+      "path": "/Math-Island/art/math-islands-c.webp",
+      "method": "GET",
+      "status": 200
+    }
+  ],
+  "package": {
+    "httpStatus": 200,
+    "resolvedUrl": "https://codeload.github.com/Lightmaze/Math-Island/zip/refs/tags/education-static-v0.1.0",
+    "responseHeaders": {
+      "Content-Type": "application/zip",
+      "ETag": "\"457f8bba7d2a51fb2441ca434cf94f3b10c1610e6bdfd22a8f18a3c824a20588\"",
+      "Last-Modified": null
+    },
+    "archiveBytes": 11664085,
+    "archiveSha256": "25160b1adf74a65f6bcd7feea147edaf400125b47cfe3d89c46812958b0e6e13",
+    "archiveRoot": "Math-Island-education-static-v0.1.0",
+    "zipEntries": 33,
+    "regularFiles": 28,
+    "declaredPayloadFiles": 27,
+    "safePaths": true,
+    "symlinksRejected": true,
+    "duplicatePathsRejected": true,
+    "pathCounterexamplesRejected": 6,
+    "exactFileSet": true,
+    "sourceCommit": "b2d74628aedc78124752b1f22db93aa198631e94",
+    "basePath": "/Math-Island/",
+    "files": [
+      {
+        "path": ".nojekyll",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      {
+        "path": "art/math-islands-c.webp",
+        "sha256": "55a5fefd729a9985913b10d1ce21246399b3716002575f1e3a63ef4e9c4161bb",
+        "bytes": 1735688
+      },
+      {
+        "path": "art/math-islands-d.webp",
+        "sha256": "b7f636d7de86543a4c71611c89db28ef40b45b13e64aa789cde60c92f214d519",
+        "bytes": 1124332
+      },
+      {
+        "path": "art/math-islands-e.webp",
+        "sha256": "4db298f6ff0dc860d994ff75cb114c106e1f6462dbe8c3269b40003f0a4d2b42",
+        "bytes": 1456818
+      },
+      {
+        "path": "art/math-islands-f.webp",
+        "sha256": "400122a2fb6f05bccff7e9f41abbe8b5f85f289f1a5e8cf41e9deedd97fa3ae5",
+        "bytes": 1447070
+      },
+      {
+        "path": "art/math-islands-g.webp",
+        "sha256": "13a85c6f95731682d685dd7ed30ead0c1233f1a79aba0f67335a1bb9ee7ba416",
+        "bytes": 1789052
+      },
+      {
+        "path": "art/math-islands-h.webp",
+        "sha256": "971f017ea5a018894e6c9ca74a2abf3cd43e1c11476bc2edc3df5722b39bb411",
+        "bytes": 1775952
+      },
+      {
+        "path": "assets/CoreAtlas-CWHO4zWN.js",
+        "sha256": "be2a301dcc8e27707f4160b08509fe7f6407d81ebf408e1a8575da8975a48061",
+        "bytes": 43857
+      },
+      {
+        "path": "assets/CoreAtlas-Cfb0bOUl.css",
+        "sha256": "31d39fb80aaa9a71f7dfac593d382a1ef8342abab0bd4d0eec7599f4351d4283",
+        "bytes": 17992
+      },
+      {
+        "path": "assets/ObjectLab-Dt_JNGtx.css",
+        "sha256": "347336b1528e20c045946e6dd335f0a8b8443d248439c6546d6d60bee32c6101",
+        "bytes": 13045
+      },
+      {
+        "path": "assets/ObjectLab-b0w-URss.js",
+        "sha256": "51814f5c3ae57c80bb685c1d073c37152c3eec63ca7f9d80e4a969fc0b5150c4",
+        "bytes": 101993
+      },
+      {
+        "path": "assets/index-Cj737VVO.css",
+        "sha256": "3d6407c10876eb028a2349fbea1eb1ee7cd658c36e543338bcfbd93b14d24b67",
+        "bytes": 25682
+      },
+      {
+        "path": "assets/index-D4_0Yvfl.js",
+        "sha256": "53490d4a84928b06aad21a5057238eafb26bafbeb5919dadc1944220ee8b8f76",
+        "bytes": 379149
+      },
+      {
+        "path": "attribution.html",
+        "sha256": "31133e778e84a87a844c161e136f30c5d1d0e21613c9673cfdf5e575001c1afd",
+        "bytes": 5333
+      },
+      {
+        "path": "data/atlas-bridges.json",
+        "sha256": "f916381c6f55c273cdb21e14e51caec5f342f5e381999b76059d06a38254240a",
+        "bytes": 69750
+      },
+      {
+        "path": "data/atlas-edges.json",
+        "sha256": "a5a14295966207102e76a576cfad14e56c9d6aa698876d6c7d5c3df3558378ea",
+        "bytes": 4198769
+      },
+      {
+        "path": "data/atlas-index.json",
+        "sha256": "dff26facf265f2ebcb240a1a5be1254f7b9c710d72e47ffa63761aeaba20db3b",
+        "bytes": 3375519
+      },
+      {
+        "path": "data/atlas-manifest.json",
+        "sha256": "0b1910b99a93db94b503cfb52b8ae1502b03d37fa913fd5c9efa6eead5b7df13",
+        "bytes": 1696
+      },
+      {
+        "path": "deployment.json",
+        "sha256": "646b2c541aaf6bc6c3d4344174d12affeed5b1cbe66bb6827c3b6470f06bb0b7",
+        "bytes": 4574
+      },
+      {
+        "path": "favicon.svg",
+        "sha256": "a30fa767a583c2f8777c05537cd93185b23e7f2d895f39fca3aaa7e946188c5a",
+        "bytes": 387
+      },
+      {
+        "path": "index.html",
+        "sha256": "ea2e690ed838032c57ff79f4d567b3e150c53a831e0830be36d041b95a9280aa",
+        "bytes": 692
+      },
+      {
+        "path": "licenses/CC-BY-SA-3.0.txt",
+        "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+        "bytes": 23342
+      },
+      {
+        "path": "licenses/CC-BY-SA-4.0.txt",
+        "sha256": "cde7883b9050a1104f4ac19a1572aafd6e5d7323b68351aaf51fbf4beba54966",
+        "bytes": 18375
+      },
+      {
+        "path": "licenses/GFDL-Stacks.txt",
+        "sha256": "4b2c8fc390f802cd92f0622dc00a708a588bec54d0145d2ee135d6d7672bfe85",
+        "bytes": 20404
+      },
+      {
+        "path": "licenses/MIT-project.txt",
+        "sha256": "81ca2b467fb9ef2b09037a57bc1bf1c34a60b4bf722a06f544bc4dcfb8d8a4ee",
+        "bytes": 1084
+      },
+      {
+        "path": "licenses/Stacks-CONTRIBUTORS.txt",
+        "sha256": "3aae5a471106a0e922e7e523bc2956c764a2c3127957bd864ea7866c27fd4cf8",
+        "bytes": 10329
+      },
+      {
+        "path": "licenses/Stacks-README.txt",
+        "sha256": "8d42a1d61b4693951cc78843d1d9eb4e586104fe8c966d90bf87ef8c8b50901c",
+        "bytes": 969
+      },
+      {
+        "path": "licenses/npm-runtime-notices.txt",
+        "sha256": "601106b582c8e65cbfd4f92641d2bafd97518030c9c4553aa102c575db84d09f",
+        "bytes": 6236
+      }
+    ]
+  },
+  "browser": "154.0.8037.57",
+  "passed": true,
+  "resourcePaths": [
+    "/Math-Island/",
+    "/Math-Island/art/math-islands-c.webp",
+    "/Math-Island/art/math-islands-d.webp",
+    "/Math-Island/art/math-islands-e.webp",
+    "/Math-Island/art/math-islands-f.webp",
+    "/Math-Island/art/math-islands-g.webp",
+    "/Math-Island/art/math-islands-h.webp",
+    "/Math-Island/assets/CoreAtlas-CWHO4zWN.js",
+    "/Math-Island/assets/CoreAtlas-Cfb0bOUl.css",
+    "/Math-Island/assets/ObjectLab-Dt_JNGtx.css",
+    "/Math-Island/assets/ObjectLab-b0w-URss.js",
+    "/Math-Island/assets/index-Cj737VVO.css",
+    "/Math-Island/assets/index-D4_0Yvfl.js",
+    "/Math-Island/data/atlas-bridges.json",
+    "/Math-Island/data/atlas-edges.json",
+    "/Math-Island/data/atlas-index.json",
+    "/Math-Island/favicon.svg"
+  ],
+  "scope": "Fresh public ZIP integrity and local /Math-Island/ subpath smoke only; not a live GitHub Pages or login-gated Sites interaction test.",
+  "temporaryServerClosed": true,
+  "temporaryArchiveAndExtractionRemoved": true,
+  "finished": "2026-10-22T15:18:29.213Z",
+  "scriptSha256": "529372455a55794d304e7136e8bc122950bbdf88a4931576e1b656cb5b85f4ab",
+  "executedScriptSha256": "f648762937259916a25ddb58ce6d3ba11bb66366a21d910d87a6a0a9a9cbb9e0",
+  "metadataWordingUpdated": "After the passing run, only the browser-tool availability explanation was corrected in script and evidence; no browser logic or result changed, and the audit was not rerun."
+}

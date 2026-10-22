@@ -10,8 +10,8 @@
     ],
     "independentOfFeatureImplementation": true
   },
-  "updatedAt": "2026-10-22T14:56:48.856038+00:00",
-  "status": "functional_review_passed_publication_audit_pending",
+  "updatedAt": "2026-10-22T15:02:49.219109+00:00",
+  "status": "passed",
   "sourceSnapshot": {
     "coreCommit": "66751e9d9b0e661ec06c4b60c61c9204972917b6",
     "nodes": 21741,
@@ -71,9 +71,42 @@
       }
     },
     "publicationAfterRebase": {
-      "status": "pending"
+      "status": "passed",
+      "baseline_commit": "0b56806abb61fe06f7f63481c2008adad646a3af",
+      "baseline_sha256": "3a38d24b53d44fbc73718567cd29c1147472fc3c76b6f283bde0ffe8c1f34919",
+      "baseline_file_count": 7314,
+      "files_checked": 7314,
+      "git_tree_checked": true,
+      "errors": [],
+      "scope": "All pinned core file bytes; no core file was written or repaired.",
+      "future_core_changes": "This delivery audit is not a permanent core gate. Education may retain its pinned snapshot while core evolves; importing a new education snapshot requires an explicit reference migration."
     },
-    "futureGrowth": "Version-specific delivery audits; not a permanent core-development gate. Education may keep an older snapshot as core evolves."
+    "futureGrowth": "Version-specific delivery audits; not a permanent core-development gate. Education may keep an older snapshot as core evolves.",
+    "historicalAfterRebase": {
+      "expectedDifferenceOnly": true,
+      "report": {
+        "status": "failed",
+        "baseline_commit": "66751e9d9b0e661ec06c4b60c61c9204972917b6",
+        "baseline_sha256": "b75f8dcaa27ca020eeb0181b8312022042efe972be4d5fce8bdbd5b93596e44a",
+        "baseline_file_count": 7314,
+        "files_checked": 7314,
+        "git_tree_checked": true,
+        "errors": [
+          {
+            "path": "README.md",
+            "reason": "sha256_changed",
+            "expected": "3fb02a4663e78404f75fe6bc4e1510b71236d677cd4254189615a9bb998e6d27",
+            "actual": "daf65b75d587230c2c1da828a238e1ea5a0d51c36269976c3193d33aa24c4844"
+          },
+          {
+            "path": "README.md",
+            "reason": "differs_from_pinned_git_blob"
+          }
+        ],
+        "scope": "All pinned core file bytes; no core file was written or repaired.",
+        "future_core_changes": "This delivery audit is not a permanent core gate. Education may retain its pinned snapshot while core evolves; importing a new education snapshot requires an explicit reference migration."
+      }
+    }
   },
   "temporaryGitFixture": {
     "validAccepted": true,
@@ -1074,7 +1107,31 @@
       "color-contrast"
     ],
     "focusedSemanticGroupRecheck": {
-      "status": "pending"
+      "status": "passed",
+      "started": "2026-10-22T14:58:17.988Z",
+      "finished": "2026-10-22T14:58:52.634Z",
+      "buildIndexSha256": "ea2e690ed838032c57ff79f4d567b3e150c53a831e0830be36d041b95a9280aa",
+      "cases": 16,
+      "passedCases": 16,
+      "violationRules": [],
+      "pageErrors": [],
+      "incompleteRules": [
+        "color-contrast"
+      ],
+      "checkedGroups": [
+        "Header language controls",
+        "Full atlas domain controls",
+        "Finite-field retained-coordinate controls",
+        "Graphic-matroid edge controls"
+      ],
+      "widths": [
+        1440,
+        390
+      ],
+      "languages": [
+        "zh",
+        "en"
+      ]
     },
     "fullWCAGConformanceClaimed": false
   },
@@ -1143,8 +1200,13 @@
     },
     {
       "id": "named-control-groups",
-      "status": "source_fix_pending_focused_recheck",
-      "summary": "Manual investigation of axe incomplete records found unnamed-role div groups; owners are adding role=group."
+      "status": "fixed_and_focused_browser_tested",
+      "summary": "All four named containers use role=group; 16 focused bilingual desktop/mobile axe states pass with no remaining aria-prohibited-attr incompletes."
+    },
+    {
+      "id": "fresh-cache-revalidation",
+      "status": "fixed_and_http_browser_tested",
+      "summary": "All three JSON resources revalidated fresh one-hour HTTP cache entries through ETag/304; deliberate edge 503 preserved node search and retry restored edges."
     }
   ],
   "retainedArtifactHashes": {
@@ -1153,17 +1215,172 @@
     "scripts/accessibility-audit.mjs": "29f17065427cbad00cf1e5f2028d5c0d1b8ab72beeca45c577622e2b87033e70",
     "tests/education-contract.test.ts": "1e9728c624f06e6308da6356cf625a81b62c6e1c2a8134511065df094f1ecc50",
     "docs/core-baseline.json": "b75f8dcaa27ca020eeb0181b8312022042efe972be4d5fce8bdbd5b93596e44a",
-    "docs/publication-base.json": "3a38d24b53d44fbc73718567cd29c1147472fc3c76b6f283bde0ffe8c1f34919"
+    "docs/publication-base.json": "3a38d24b53d44fbc73718567cd29c1147472fc3c76b6f283bde0ffe8c1f34919",
+    "scripts/cache-audit.mjs": "279bf29114c2c4419586e0d682d9a0b8d3c859f3e05ce5f6ea6df89353f3267c"
   },
-  "pending": [
-    "focused_semantic_group_recheck",
-    "publication_baseline_after_rebase"
-  ],
+  "pending": [],
   "scopeLimitations": [
     "Finite models and source fidelity are not formal proof verification or full literature certification.",
     "Automated axe success is not full WCAG conformance; text over SVG/images and short labels require visual assessment.",
     "Control scans do not exhaust every Cartesian product of parameters.",
     "21,741 source entries are not presented as 21,741 fully authored lessons.",
     "Historical and publication README versions differ by the independently committed upstream project-name correction."
-  ]
+  ],
+  "httpCacheAudit": {
+    "command": "node scripts/cache-audit.mjs",
+    "schemaVersion": 1,
+    "started": "2026-10-22T15:01:22.280Z",
+    "buildIndexSha256": "ea2e690ed838032c57ff79f4d567b3e150c53a831e0830be36d041b95a9280aa",
+    "requests": [
+      {
+        "path": "/data/atlas-index.json",
+        "method": "GET",
+        "ifNoneMatch": null,
+        "cacheControl": "max-age=0",
+        "status": 200
+      },
+      {
+        "path": "/data/atlas-edges.json",
+        "method": "GET",
+        "ifNoneMatch": null,
+        "cacheControl": "max-age=0",
+        "status": 200
+      },
+      {
+        "path": "/data/atlas-bridges.json",
+        "method": "GET",
+        "ifNoneMatch": null,
+        "cacheControl": "max-age=0",
+        "status": 200
+      },
+      {
+        "path": "/data/atlas-index.json",
+        "method": "GET",
+        "ifNoneMatch": "\"dff26facf265f2ebcb240a1a5be1254f7b9c710d72e47ffa63761aeaba20db3b\"",
+        "cacheControl": "max-age=0",
+        "status": 304
+      },
+      {
+        "path": "/data/atlas-edges.json",
+        "method": "GET",
+        "ifNoneMatch": "\"a5a14295966207102e76a576cfad14e56c9d6aa698876d6c7d5c3df3558378ea\"",
+        "cacheControl": "max-age=0",
+        "status": 304
+      },
+      {
+        "path": "/data/atlas-bridges.json",
+        "method": "GET",
+        "ifNoneMatch": "\"f916381c6f55c273cdb21e14e51caec5f342f5e381999b76059d06a38254240a\"",
+        "cacheControl": "max-age=0",
+        "status": 304
+      },
+      {
+        "path": "/data/atlas-index.json",
+        "method": "GET",
+        "ifNoneMatch": "\"dff26facf265f2ebcb240a1a5be1254f7b9c710d72e47ffa63761aeaba20db3b\"",
+        "cacheControl": "max-age=0",
+        "status": 304
+      },
+      {
+        "path": "/data/atlas-edges.json",
+        "method": "GET",
+        "ifNoneMatch": "\"a5a14295966207102e76a576cfad14e56c9d6aa698876d6c7d5c3df3558378ea\"",
+        "cacheControl": "max-age=0",
+        "status": 503
+      },
+      {
+        "path": "/data/atlas-bridges.json",
+        "method": "GET",
+        "ifNoneMatch": "\"f916381c6f55c273cdb21e14e51caec5f342f5e381999b76059d06a38254240a\"",
+        "cacheControl": "max-age=0",
+        "status": 304
+      },
+      {
+        "path": "/data/atlas-index.json",
+        "method": "GET",
+        "ifNoneMatch": "\"dff26facf265f2ebcb240a1a5be1254f7b9c710d72e47ffa63761aeaba20db3b\"",
+        "cacheControl": "max-age=0",
+        "status": 304
+      },
+      {
+        "path": "/data/atlas-edges.json",
+        "method": "GET",
+        "ifNoneMatch": null,
+        "cacheControl": "max-age=0",
+        "status": 200
+      },
+      {
+        "path": "/data/atlas-bridges.json",
+        "method": "GET",
+        "ifNoneMatch": "\"f916381c6f55c273cdb21e14e51caec5f342f5e381999b76059d06a38254240a\"",
+        "cacheControl": "max-age=0",
+        "status": 304
+      }
+    ],
+    "pageErrors": [],
+    "browser": "154.0.8037.57",
+    "allThreeFreshResponsesRevalidated": true,
+    "nodesRemainUsableDuringEdgeFailure": true,
+    "fetches": [
+      {
+        "url": "./data/atlas-index.json",
+        "cache": "no-cache"
+      },
+      {
+        "url": "./data/atlas-edges.json",
+        "cache": "no-cache"
+      },
+      {
+        "url": "./data/atlas-bridges.json",
+        "cache": "no-cache"
+      },
+      {
+        "url": "./data/atlas-index.json",
+        "cache": "no-cache"
+      },
+      {
+        "url": "./data/atlas-edges.json",
+        "cache": "no-cache"
+      },
+      {
+        "url": "./data/atlas-bridges.json",
+        "cache": "no-cache"
+      },
+      {
+        "url": "./data/atlas-index.json",
+        "cache": "no-cache"
+      },
+      {
+        "url": "./data/atlas-edges.json",
+        "cache": "no-cache"
+      },
+      {
+        "url": "./data/atlas-bridges.json",
+        "cache": "no-cache"
+      },
+      {
+        "url": "./data/atlas-index.json",
+        "cache": "no-cache"
+      },
+      {
+        "url": "./data/atlas-edges.json",
+        "cache": "no-cache"
+      },
+      {
+        "url": "./data/atlas-bridges.json",
+        "cache": "no-cache"
+      }
+    ],
+    "retryRestoredEdges": true,
+    "httpMethods": [
+      "GET"
+    ],
+    "passed": true,
+    "finished": "2026-10-22T15:01:29.144Z"
+  },
+  "finalBuild": {
+    "indexSha256": "ea2e690ed838032c57ff79f4d567b3e150c53a831e0830be36d041b95a9280aa",
+    "differenceFromFullFunctionalScan": "Final changes add four explicit group roles and no-cache revalidation for three atlas JSON fetches; focused semantic and actual HTTP-cache regressions passed.",
+    "fullFunctionalBuildIndexSha256": "54669e61ea022d68adb556c237dcec57a5d513b3d5411b210d266799ffcae408"
+  }
 }

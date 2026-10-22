@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "executor": "/root",
+  "sites": {
+    "id": "appgdep_6ada26f205a0819180cb51126b855fae",
+    "project_id": "appgprj_6ada2585660c81918e529bd7f6153311",
+    "title": "数学群岛 · Mathematical Archipelago",
+    "version_id": "appgprj_6ada2585660c81918e529bd7f6153311~appgver_ff6800f9cccc819198602ca1914326c6",
+    "type": "publish",
+    "status": "succeeded",
+    "url": "https://mathcups-mathematical-islands.ljie5996.chatgpt.site",
+    "has_mcp": false,
+    "screenshot_asset_pointer": null,
+    "provider_deployment_id": "site---6ada2585660c81918e529bd7f6153311",
+    "failure_message": null,
+    "env_set_revision": 0,
+    "updated_at": "2026-10-22T15:08:47.932994+00:00",
+    "audience": "owner-private",
+    "sourceCommit": "fdd4b2c12a4068183dae3c325d280025b6291e74",
+    "archiveSha256": "88488c81866c790b24865eb6eb9e8768cb55ecade85bfb1426c802ea2a9cab1d",
+    "verification": "Successful native deployment response; the private authenticated page was not separately browser-tested."
+  },
+  "github": {
+    "repository": "https://github.com/Lightmaze/Math-Island",
+    "sourceCommit": "b2d74628aedc78124752b1f22db93aa198631e94",
+    "staticBranch": "education-pages",
+    "staticCommit": "4addada979e8f7f5155afb47bb2a4c048fb2db85",
+    "pagesCreation": {
+      "status": "blocked",
+      "httpStatus": 403,
+      "message": "Resource not accessible by integration",
+      "expectedUrl": "https://lightmaze.github.io/Math-Island/",
+      "live": false
+    },
+    "staticBuildFilesMatch": 26,
+    "staticTag": "education-static-v0.1.0",
+    "staticArchiveUrl": "https://github.com/Lightmaze/Math-Island/archive/refs/tags/education-static-v0.1.0.zip",
+    "publicArchiveVerification": "static-package.json"
+  },
+  "credentialsPersisted": false
+}
