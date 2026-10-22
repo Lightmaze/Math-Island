@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "moduleVersion": "0.2.0",
+  "executor": "/root",
+  "checkedAt": "2026-10-22T16:20:34.940619+00:00",
+  "canonicalRepository": "https://github.com/Lightmaze/Math-Island",
+  "canonicalSourceCommit": "0cb6f26dcd166ef597779723bd248829d2cff169",
+  "staticArtifact": {
+    "tag": "education-static-v0.2.0",
+    "branch": "education-pages",
+    "commit": "597ad9ffc46b17e72ac5cf515249cef148ac53d0",
+    "url": "https://github.com/Lightmaze/Math-Island/archive/refs/tags/education-static-v0.2.0.zip",
+    "payloadFiles": 30,
+    "independentAudit": "static-package-0.2.json"
+  },
+  "sites": {
+    "projectId": "appgprj_6ada2585660c81918e529bd7f6153311",
+    "versionId": "appgprj_6ada2585660c81918e529bd7f6153311~appgver_dce6a6f78d00819192ad704d8d53cd3b",
+    "versionNumber": 2,
+    "deploymentId": "appgdep_6ada374395bc8191a37d21243ce888fb",
+    "sourceCommit": "699d83f1d720a133fcb50b5deb1fd73e15dcbd11",
+    "status": "succeeded",
+    "deployedAt": "2026-10-22T16:18:20.327962+00:00",
+    "url": "https://mathcups-mathematical-islands.ljie5996.chatgpt.site",
+    "audience": "owner-private; preserved",
+    "matchingApplicationFiles": 29,
+    "indexSha256": "953216d4164fa281000de240df983c97c77523c2107907ff7ddc68bf3e37ed20",
+    "submittedGzipSha256": "6b1dbff40cc13866d9d9b1632c9641d54e11d4745236dc2ca21eaa2f4680171b",
+    "submittedGzipBytes": 11685058,
+    "localUncompressedTarSha256": "7daf850c990fef1c3e14f204432ddd91d3b262ffa736241c739d96de1d44a6c7",
+    "localUncompressedTarBytes": 17838080,
+    "serverReportedArchive": {
+      "sha256": "b46bca3a64a7cecb7b54864f48ebbb27cec51185e0a5d26a4f5caa028e999d95",
+      "bytes": 17807360,
+      "files": 30,
+      "hashScope": "Server-reported stored tar identity; not asserted to equal the submitted gzip or its local decompressed tar."
+    },
+    "provenance": "Built from committed and pushed Sites source. All 29 application files exactly match the reviewed canonical dist. Native get_site_version confirms the pushed source SHA; save_version_and_deploy_private returned succeeded."
+  },
+  "githubPages": {
+    "enabled": false,
+    "reason": "Previously returned 403 for unavailable Pages administration permission; not retried and not presented as a live endpoint."
+  },
+  "limitations": [
+    "Authenticated production browser interaction was not repeated. Native deployment/version checks establish publication; browser evidence is from matching local production bytes and the downloaded public static artifact.",
+    "The server-stored archive could not be separately retrieved through download_file (not authorized or resolved); its hash is recorded as reported, not independently verified.",
+    "This report preserves the existing owner-private audience. Public distribution is through the GitHub static artifact."
+  ]
+}

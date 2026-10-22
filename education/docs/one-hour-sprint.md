@@ -62,10 +62,24 @@ The [0.1 delivery](delivery.md), [0.1 review](review.md) and earlier evidence re
 
 ## 发布入口与部署 / Publication and deployment
 
-0.2 静态交付链接：[`education-static-v0.2.0.zip`](https://github.com/Lightmaze/Math-Island/archive/refs/tags/education-static-v0.2.0.zip)。本轮最终打包、上传与发布链接核验由主代理完成，并在此追加实际结果；此链接的列出本身不代表已经核验发布成功。
+主代理已完成源码提交、公开静态包和现有 Sites 更新。应用源码提交为 [`0cb6f26`](https://github.com/Lightmaze/Math-Island/commit/0cb6f26dcd166ef597779723bd248829d2cff169)；之后的发布证据提交只补充文档与执行记录。
 
-0.2 static delivery link: [`education-static-v0.2.0.zip`](https://github.com/Lightmaze/Math-Island/archive/refs/tags/education-static-v0.2.0.zip). The coordinating agent will append actual packaging, upload and publication checks. Listing the target link is not itself evidence that publication has succeeded.
+The coordinating agent committed the implementation, published the static artifact and updated the existing Site. Application source is pinned at [`0cb6f26`](https://github.com/Lightmaze/Math-Island/commit/0cb6f26dcd166ef597779723bd248829d2cff169); later publication-evidence commits add documentation and execution records only.
 
-现有 Sites 入口为 [数学群岛](https://mathcups-mathematical-islands.ljie5996.chatgpt.site)，当前仅创建者可访问；GitHub Pages 尚未启用。本节不声明该入口已更新为 0.2。公开教学可自行部署静态成品。既有托管限制见[部署记录](deployment.md)。
+- **公开静态成品 / Public static artifact:** [`education-static-v0.2.0.zip`](https://github.com/Lightmaze/Math-Island/archive/refs/tags/education-static-v0.2.0.zip), 11,709,855 bytes. SHA-256: `5725b0ac0dd2f7cd5dc79573e49e69436d94a4786de2810b0bda7c70a363cd4c`.
+- **现有站点 / Existing Site:** [直接进入联岛实验 / Open Connections](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=connections&lang=zh&connection=fourier-heat). Sites version **2**, deployment succeeded at **2026-10-22 16:18:20 UTC**; current audience remains **owner-private**. GitHub source and the static ZIP are public. GitHub Pages remains disabled.
+- **发布记录 / Release:** [education-v0.2.0](https://github.com/Lightmaze/Math-Island/releases/tag/education-v0.2.0). The core release keeps its existing Latest designation.
 
-The existing [Sites entry](https://mathcups-mathematical-islands.ljie5996.chatgpt.site) is currently owner-private; GitHub Pages is not enabled. This section does not assert that the hosted entry already serves 0.2. Public teaching can use a self-hosted static artifact. See the existing [deployment record](deployment.md) for hosting limitations.
+独立代理从公开链接下载 ZIP，核对了 30 个载荷文件及清单的精确集合、大小和哈希；在 `/Math-Island/` 子路径运行中英 × 桌面/手机 4 个组合，各自检查六个联岛入口及参数改变、保存、重载、导出。结果均通过，无页面、控制台或请求错误。这验证的是公开下载包的实际运行，未将它称为 GitHub Pages 在线验证。
+
+An independent agent downloaded the public ZIP, checked the exact file set and the size/hash of all 30 payload files, and ran four language/device configurations under `/Math-Island/`. Each exercised all six connection entries plus parameter changes, saving, reload and export. All passed without page, console or request errors. This verifies the downloaded artifact, not a live GitHub Pages endpoint.
+
+Sites 从已提交并推送的专用源码 `699d83f1d720a133fcb50b5deb1fd73e15dcbd11` 重建；29 个应用文件与审查后的主仓库构建逐字节相同。Sites 工具确认部署成功及保存版本对应的源码 SHA。未声称另行完成登录后的生产浏览器操作。服务端存档哈希与本地压缩包哈希按各自范围记录。
+
+Sites was rebuilt from committed and pushed source `699d83f1d720a133fcb50b5deb1fd73e15dcbd11`; all 29 application files match the reviewed canonical build byte for byte. Native Sites tools confirmed successful deployment and the saved version's source SHA. No separate authenticated production-browser interaction is claimed. Server archive and submitted-package hashes are recorded under their respective scopes.
+
+实际验证总览：主代理执行 **147 项测试通过**；独立审查执行 **24 个完整浏览器状态、7 项集成检查**，最后仅触控 CSS 改动另测 **4 个状态**；视觉审查覆盖 320px 两语言触控复查；**7,314 个本体基线文件**保持不变。接近 5 MiB 的 90 条记录备份实际导出、回导后哈希相同。
+
+Executed verification: **147 tests passed** by the coordinating agent; the independent reviewer checked **24 complete browser states and seven integration cases**, followed by **four focused states** for the final touch-control CSS change. Visual review included 320px bilingual touch controls. All **7,314 core baseline files** remain unchanged. A 90-record backup near the 5 MiB limit exported and reimported with an identical hash.
+
+机器证据 / Machine-readable evidence: [independent connection review](../evidence/connections-review.json), [public static package](../evidence/static-package-0.2.json), [hosting and source provenance](../evidence/hosting-0.2.json). Visual findings and actual repairs: [concept-to-production ledger](design/connections-fidelity-ledger.md).
