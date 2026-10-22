@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "module": "MathCups Mathematical Archipelago education",
+  "version": "0.1.0",
+  "createdAt": "2026-10-22T15:00:21.952959+00:00",
+  "sourceRepository": "https://github.com/Lightmaze/Math-Island",
+  "sourceCommit": "b2d74628aedc78124752b1f22db93aa198631e94",
+  "sourceDirectory": "education",
+  "basePath": "/Math-Island/",
+  "coreSnapshot": "66751e9d9b0e661ec06c4b60c61c9204972917b6",
+  "authoredLessons": 24,
+  "coreEntries": 21741,
+  "coreEdges": 46812,
+  "literatureBridges": 21,
+  "files": {
+    ".nojekyll": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "art/math-islands-c.webp": {
+      "sha256": "55a5fefd729a9985913b10d1ce21246399b3716002575f1e3a63ef4e9c4161bb",
+      "bytes": 1735688
+    },
+    "art/math-islands-d.webp": {
+      "sha256": "b7f636d7de86543a4c71611c89db28ef40b45b13e64aa789cde60c92f214d519",
+      "bytes": 1124332
+    },
+    "art/math-islands-e.webp": {
+      "sha256": "4db298f6ff0dc860d994ff75cb114c106e1f6462dbe8c3269b40003f0a4d2b42",
+      "bytes": 1456818
+    },
+    "art/math-islands-f.webp": {
+      "sha256": "400122a2fb6f05bccff7e9f41abbe8b5f85f289f1a5e8cf41e9deedd97fa3ae5",
+      "bytes": 1447070
+    },
+    "art/math-islands-g.webp": {
+      "sha256": "13a85c6f95731682d685dd7ed30ead0c1233f1a79aba0f67335a1bb9ee7ba416",
+      "bytes": 1789052
+    },
+    "art/math-islands-h.webp": {
+      "sha256": "971f017ea5a018894e6c9ca74a2abf3cd43e1c11476bc2edc3df5722b39bb411",
+      "bytes": 1775952
+    },
+    "assets/CoreAtlas-CWHO4zWN.js": {
+      "sha256": "be2a301dcc8e27707f4160b08509fe7f6407d81ebf408e1a8575da8975a48061",
+      "bytes": 43857
+    },
+    "assets/CoreAtlas-Cfb0bOUl.css": {
+      "sha256": "31d39fb80aaa9a71f7dfac593d382a1ef8342abab0bd4d0eec7599f4351d4283",
+      "bytes": 17992
+    },
+    "assets/ObjectLab-Dt_JNGtx.css": {
+      "sha256": "347336b1528e20c045946e6dd335f0a8b8443d248439c6546d6d60bee32c6101",
+      "bytes": 13045
+    },
+    "assets/ObjectLab-b0w-URss.js": {
+      "sha256": "51814f5c3ae57c80bb685c1d073c37152c3eec63ca7f9d80e4a969fc0b5150c4",
+      "bytes": 101993
+    },
+    "assets/index-Cj737VVO.css": {
+      "sha256": "3d6407c10876eb028a2349fbea1eb1ee7cd658c36e543338bcfbd93b14d24b67",
+      "bytes": 25682
+    },
+    "assets/index-D4_0Yvfl.js": {
+      "sha256": "53490d4a84928b06aad21a5057238eafb26bafbeb5919dadc1944220ee8b8f76",
+      "bytes": 379149
+    },
+    "attribution.html": {
+      "sha256": "31133e778e84a87a844c161e136f30c5d1d0e21613c9673cfdf5e575001c1afd",
+      "bytes": 5333
+    },
+    "data/atlas-bridges.json": {
+      "sha256": "f916381c6f55c273cdb21e14e51caec5f342f5e381999b76059d06a38254240a",
+      "bytes": 69750
+    },
+    "data/atlas-edges.json": {
+      "sha256": "a5a14295966207102e76a576cfad14e56c9d6aa698876d6c7d5c3df3558378ea",
+      "bytes": 4198769
+    },
+    "data/atlas-index.json": {
+      "sha256": "dff26facf265f2ebcb240a1a5be1254f7b9c710d72e47ffa63761aeaba20db3b",
+      "bytes": 3375519
+    },
+    "data/atlas-manifest.json": {
+      "sha256": "0b1910b99a93db94b503cfb52b8ae1502b03d37fa913fd5c9efa6eead5b7df13",
+      "bytes": 1696
+    },
+    "favicon.svg": {
+      "sha256": "a30fa767a583c2f8777c05537cd93185b23e7f2d895f39fca3aaa7e946188c5a",
+      "bytes": 387
+    },
+    "index.html": {
+      "sha256": "ea2e690ed838032c57ff79f4d567b3e150c53a831e0830be36d041b95a9280aa",
+      "bytes": 692
+    },
+    "licenses/CC-BY-SA-3.0.txt": {
+      "sha256": "7ceea266ced01724665f699b988af355baddff9736f77a33aa6287eb33ec4337",
+      "bytes": 23342
+    },
+    "licenses/CC-BY-SA-4.0.txt": {
+      "sha256": "cde7883b9050a1104f4ac19a1572aafd6e5d7323b68351aaf51fbf4beba54966",
+      "bytes": 18375
+    },
+    "licenses/GFDL-Stacks.txt": {
+      "sha256": "4b2c8fc390f802cd92f0622dc00a708a588bec54d0145d2ee135d6d7672bfe85",
+      "bytes": 20404
+    },
+    "licenses/MIT-project.txt": {
+      "sha256": "81ca2b467fb9ef2b09037a57bc1bf1c34a60b4bf722a06f544bc4dcfb8d8a4ee",
+      "bytes": 1084
+    },
+    "licenses/Stacks-CONTRIBUTORS.txt": {
+      "sha256": "3aae5a471106a0e922e7e523bc2956c764a2c3127957bd864ea7866c27fd4cf8",
+      "bytes": 10329
+    },
+    "licenses/Stacks-README.txt": {
+      "sha256": "8d42a1d61b4693951cc78843d1d9eb4e586104fe8c966d90bf87ef8c8b50901c",
+      "bytes": 969
+    },
+    "licenses/npm-runtime-notices.txt": {
+      "sha256": "601106b582c8e65cbfd4f92641d2bafd97518030c9c4553aa102c575db84d09f",
+      "bytes": 6236
+    }
+  },
+  "manifestScope": "All deployed files except this self-describing deployment.json; hashes cover uncompressed HTTP bodies."
+}
