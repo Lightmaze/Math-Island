@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "reviewer": "/root/education_advanced",
+  "started": "2026-10-22T16:07:59.560Z",
+  "request": {
+    "tag": "education-static-v0.2.0",
+    "url": "https://github.com/Lightmaze/Math-Island/archive/refs/tags/education-static-v0.2.0.zip",
+    "expectedSourceCommit": null,
+    "basePath": "/Math-Island/",
+    "checkConnections": true
+  },
+  "localDistUsed": false,
+  "browserAvailability": "Browser skill was read, but its required js runtime tool is not exposed after tool discovery. The requested reproducible audit uses isolated local Chromium/Playwright; no personal browser profile is accessed.",
+  "historicalEvidence": {
+    "path": "evidence/static-package.json",
+    "sha256Before": "1f8dcf9dcb61f1468accfdf36a94d94cf82d7935b76cd8d700eaaf550dd94266"
+  },
+  "cases": [],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "badResponses": [],
+  "failedRequests": [],
+  "outsideSubpath": [],
+  "externalRequests": [],
+  "serverRequests": [],
+  "status": "awaiting-public-tag",
+  "passed": null,
+  "executed": false,
+  "prepared": "2026-10-22T16:07:59.560Z",
+  "scriptSha256": "3fc7c2d4703e35a69ed8f5f9e4f21510b53900420cf3d0b5f188dc1c5f52aebb",
+  "pending": [
+    "Public tag publication by the release owner",
+    "Explicit EXPECTED_SOURCE_COMMIT from that build",
+    "Fresh public ZIP download, manifest validation and subpath browser smoke"
+  ]
+}

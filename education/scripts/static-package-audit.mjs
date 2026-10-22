@@ -1,7 +1,10 @@
 /** Independently download and audit the public versioned static ZIP.
  * No local dist files are read. ZIP validation precedes serving extracted files.
- * Run: node scripts/static-package-audit.mjs
- * Evidence is intentionally retained at evidence/static-package.json.
+ * Prepare only: node scripts/static-package-audit.mjs --prepare
+ * Run: STATIC_TAG=education-static-v0.2.0 EXPECTED_SOURCE_COMMIT=<40-hex>
+ *      EVIDENCE_FILE=evidence/static-package-0.2.json node scripts/static-package-audit.mjs
+ * Optional: STATIC_BASE_PATH, SCREENSHOT_DIRECTORY, CHECK_CONNECTIONS, CHROMIUM_PATH.
+ * The original evidence/static-package.json is protected from overwrites.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -12,19 +15,38 @@ import {createHash} from 'node:crypto';
 import {createServer} from 'node:http';
 import {chromium,expect} from '@playwright/test';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const url='https://github.com/Lightmaze/Math-Island/archive/refs/tags/education-static-v0.1.0.zip';
-const expectedCommit='b2d74628aedc78124752b1f22db93aa198631e94',prefix='/Math-Island/';
+const tag=process.env.STATIC_TAG||'education-static-v0.2.0';
+if(!/^education-static-v\d+\.\d+\.\d+$/.test(tag))throw new Error('STATIC_TAG must identify a versioned education-static-vX.Y.Z tag');
+const version=tag.slice('education-static-v'.length),edition=version.split('.').slice(0,2).join('.');
+const url=`https://github.com/Lightmaze/Math-Island/archive/refs/tags/${tag}.zip`;
+const expectedCommit=process.env.EXPECTED_SOURCE_COMMIT||(tag==='education-static-v0.1.0'?'b2d74628aedc78124752b1f22db93aa198631e94':'');
+if(expectedCommit&&!/^[a-f0-9]{40}$/.test(expectedCommit))throw new Error('EXPECTED_SOURCE_COMMIT must be a complete 40-character lowercase Git commit');
+const prefix=process.env.STATIC_BASE_PATH||'/Math-Island/';
+if(!/^\/(?:[A-Za-z0-9_-]+\/)*$/.test(prefix))throw new Error('STATIC_BASE_PATH must be an absolute directory path ending in /');
+if(process.env.CHECK_CONNECTIONS&&!['0','1'].includes(process.env.CHECK_CONNECTIONS))throw new Error('CHECK_CONNECTIONS must be 0 or 1');
+const checkConnections=process.env.CHECK_CONNECTIONS?process.env.CHECK_CONNECTIONS==='1':tag!=='education-static-v0.1.0';
+const evidence=path.resolve(root,process.env.EVIDENCE_FILE||`evidence/static-package-${edition}.json`);
+const historicalEvidence=path.join(root,'evidence/static-package.json');
+if(evidence===historicalEvidence||(fs.existsSync(evidence)&&fs.realpathSync(evidence)===fs.realpathSync(historicalEvidence)))throw new Error('Historical v0.1 evidence is immutable; use a different EVIDENCE_FILE');
+const historicalSha256=createHash('sha256').update(fs.readFileSync(historicalEvidence)).digest('hex');
+const screenshotDirectory=path.resolve(root,process.env.SCREENSHOT_DIRECTORY||`test-results/static-package-${version}`);
+const hash=file=>createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+const report={schemaVersion:2,reviewer:'/root/education_advanced',started:new Date().toISOString(),request:{tag,url,expectedSourceCommit:expectedCommit||null,basePath:prefix,checkConnections},localDistUsed:false,browserAvailability:'Browser skill was read, but its required js runtime tool is not exposed after tool discovery. The requested reproducible audit uses isolated local Chromium/Playwright; no personal browser profile is accessed.',historicalEvidence:{path:'evidence/static-package.json',sha256Before:historicalSha256},cases:[],pageErrors:[],consoleErrors:[],badResponses:[],failedRequests:[],outsideSubpath:[],externalRequests:[],serverRequests:[]};
+if(process.argv.includes('--prepare')){
+ if(fs.existsSync(evidence)&&JSON.parse(fs.readFileSync(evidence,'utf8')).executed===true)throw new Error('Preparation cannot replace an executed audit; use a new EVIDENCE_FILE');
+ report.status='awaiting-public-tag';report.passed=null;report.executed=false;report.prepared=new Date().toISOString();report.scriptSha256=hash(fileURLToPath(import.meta.url));
+ report.pending=['Public tag publication by the release owner','Explicit EXPECTED_SOURCE_COMMIT from that build','Fresh public ZIP download, manifest validation and subpath browser smoke'];
+ fs.mkdirSync(path.dirname(evidence),{recursive:true});fs.writeFileSync(evidence,JSON.stringify(report,null,2));console.log(JSON.stringify({status:report.status,tag,evidence,requiresExpectedSourceCommit:!expectedCommit}));process.exit(0);
+}
+if(!expectedCommit)throw new Error('Set EXPECTED_SOURCE_COMMIT from the release build; the downloaded manifest cannot supply its own expected identity');
 const work=fs.mkdtempSync(path.join(tmpdir(),'math-islands-public-package-'));
 const archive=path.join(work,'download.zip'),content=path.join(work,'extracted');
-const evidence=path.join(root,'evidence/static-package.json');
-const screenshotDirectory=path.join(root,'test-results/static-package');fs.mkdirSync(screenshotDirectory,{recursive:true});
-const hash=file=>createHash('sha256').update(fs.readFileSync(file)).digest('hex');
-const report={schemaVersion:1,reviewer:'/root/education_review',started:new Date().toISOString(),request:{url,expectedSourceCommit:expectedCommit,basePath:prefix},localDistUsed:false,browserAvailability:'Isolated local Chromium/Playwright fallback after browser-tool discovery; no personal browser profile accessed.',cases:[],pageErrors:[],consoleErrors:[],badResponses:[],failedRequests:[],outsideSubpath:[],externalRequests:[],serverRequests:[]};
+fs.mkdirSync(screenshotDirectory,{recursive:true});report.executed=true;
 let server,browser;
 const validatePython=String.raw`
 import sys,json,hashlib,urllib.request,zipfile,stat,re
 from pathlib import Path,PurePosixPath
-url,archive,destination,expected_commit=sys.argv[1:]
+url,archive,destination,expected_commit,expected_prefix=sys.argv[1:]
 def valid_path(name,directory=False):
  if not isinstance(name,str) or not name or '\\' in name or '\x00' in name or name.startswith('/') or re.match(r'^[A-Za-z]:',name):raise ValueError('unsafe ZIP path')
  raw=name[:-1] if directory and name.endswith('/') else name
@@ -77,9 +99,10 @@ with zipfile.ZipFile(archive) as bundle:
  raw_manifest=bundle.read(files['deployment.json'])
  manifest=json.loads(raw_manifest,object_pairs_hook=unique_object)
  assert manifest['sourceCommit']==expected_commit
- assert manifest['basePath']=='/Math-Island/'
+ assert manifest['basePath']==expected_prefix
  assert manifest['sourceRepository']=='https://github.com/Lightmaze/Math-Island'
- declared=manifest['files'];assert isinstance(declared,dict) and len(declared)==27
+ declared=manifest['files'];assert isinstance(declared,dict) and 0<len(declared)<=1023
+ assert {'index.html','data/atlas-index.json','data/atlas-edges.json','data/atlas-bridges.json'}<=set(declared),'required payload missing'
  for name,record in declared.items():
   valid_path(name);assert name!='deployment.json'
   assert isinstance(record,dict) and type(record['bytes']) is int and record['bytes']>=0
@@ -105,12 +128,13 @@ with zipfile.ZipFile(archive) as bundle:
  print(json.dumps({'httpStatus':200,'resolvedUrl':resolved,'responseHeaders':headers,'archiveBytes':Path(archive).stat().st_size,'archiveSha256':hashlib.sha256(Path(archive).read_bytes()).hexdigest(),'archiveRoot':top,'zipEntries':len(entries),'regularFiles':len(files),'declaredPayloadFiles':len(declared),'safePaths':True,'symlinksRejected':True,'duplicatePathsRejected':True,'pathCounterexamplesRejected':len(negative),'exactFileSet':True,'sourceCommit':manifest['sourceCommit'],'basePath':manifest['basePath'],'files':sorted(checked,key=lambda item:item['path'])},ensure_ascii=False))
 `;
 try{
- report.package=JSON.parse(execFileSync('python',['-c',validatePython,url,archive,content,expectedCommit],{encoding:'utf8',timeout:60000,maxBuffer:2*1024*1024}));
+ report.package=JSON.parse(execFileSync('python',['-c',validatePython,url,archive,content,expectedCommit,prefix],{encoding:'utf8',timeout:60000,maxBuffer:2*1024*1024}));
  const mime={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.webp':'image/webp','.png':'image/png','.svg':'image/svg+xml','.woff2':'font/woff2','.txt':'text/plain'};
  server=createServer((req,res)=>{
   const pathname=new URL(req.url,'http://localhost').pathname;const item={path:pathname,method:req.method,status:200};report.serverRequests.push(item);
   if(!pathname.startsWith(prefix)){item.status=404;res.writeHead(404);res.end();return;}
-  const relative=decodeURIComponent(pathname.slice(prefix.length))||'index.html',file=path.resolve(content,relative);
+  let relative;try{relative=decodeURIComponent(pathname.slice(prefix.length))||'index.html'}catch{item.status=400;res.writeHead(400);res.end();return;}
+  const file=path.resolve(content,relative);
   if(!file.startsWith(content+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){item.status=404;res.writeHead(404);res.end();return;}
   res.writeHead(200,{'Content-Type':mime[path.extname(file)]||'application/octet-stream','Cache-Control':'no-store'});fs.createReadStream(file).pipe(res);
  });
@@ -131,19 +155,49 @@ try{
    await page.screenshot({path:path.join(screenshotDirectory,`${width}-${lang}-home.png`)});
    const search=page.locator('.island-search input');await search.fill(lang==='zh'?'对称林':'Symmetry Grove');await page.locator('.search-results button').filter({hasText:lang==='zh'?'对称林':'Symmetry Grove'}).click();await page.locator('.enter-island').click();await expect(page.locator('.detail-heading h1')).toHaveText(lang==='zh'?'对称林':'Symmetry Grove');
    const outputs=page.locator('.lab-metrics output');await expect(outputs).toHaveCount(3);const before=await outputs.allTextContents();await page.getByRole('button',{name:lang==='zh'?'交换顺序':'Swap the order',exact:true}).click();const after=await outputs.allTextContents();expect(after[0]).toBe(before[1]);expect(after[1]).toBe(before[0]);expect(before[0]).not.toBe(before[1]);await frameHealthy();item.checks.push('D4 noncommuting compositions swap actual outputs');
-   await page.locator('.main-nav button').nth(0).click();await page.locator('.island-search input').fill(lang==='zh'?'热流海岸':'Heat Shore');await page.locator('.search-results button').filter({hasText:lang==='zh'?'热流海岸':'Heat Shore'}).click();await page.locator('.enter-island').click();await expect(page.locator('.advanced-lab')).toBeVisible();
+   await page.locator('.main-nav').getByRole('button',{name:lang==='zh'?'探索群岛':'Explore',exact:true}).click();await page.locator('.island-search input').fill(lang==='zh'?'热流海岸':'Heat Shore');await page.locator('.search-results button').filter({hasText:lang==='zh'?'热流海岸':'Heat Shore'}).click();await page.locator('.enter-island').click();await expect(page.locator('.advanced-lab')).toBeVisible();
    const time=page.locator('.advanced-lab input[type=range]').first(),energy=page.locator('.advanced-metrics > div').last().locator('dd');await time.focus();await time.press('Home');const initialEnergy=Number(await energy.innerText());await time.press('End');const finalEnergy=Number(await energy.innerText());expect(finalEnergy).toBeLessThan(initialEnergy);const data=page.locator('.advanced-data');await data.locator('summary').click();await expect(data.locator('tbody tr')).toHaveCount(9);await frameHealthy();item.checks.push('advanced heat model updates energy and nine-row readout');
    const note=`Public package ${lang} ${width}: D4 order matters; heat energy decreases.`;await page.locator('#island-note').fill(note);
-   await page.locator('.main-nav button').nth(1).click();await expect(page.locator('.core-atlas__counts small')).toContainText('46,812',{timeout:20000});const route=page.locator('.core-atlas__route-toolbar select');await expect(route).toBeEnabled();await route.selectOption('bridge:003');await expect(page.locator('.core-atlas__bridge-endpoints small')).toHaveText(['pm:HodgeTheory','pm:Matroid']);await expect(page.locator('.core-atlas__bridge-reading dd')).toHaveCount(4);await expect(page.locator('.core-atlas__bridge-source')).toHaveAttribute('href','https://arxiv.org/abs/1511.02888');await frameHealthy();item.checks.push('full atlas and existing bridge003 load from packaged JSON');
-   await page.locator('.main-nav button').nth(2).click();await expect(page.locator('.entry-note').filter({hasText:note})).toHaveText(note);const[download]=await Promise.all([page.waitForEvent('download'),page.locator('.journal-export button').filter({hasText:'JSON'}).click()]);const bytes=fs.readFileSync(await download.path()),journal=JSON.parse(bytes.toString());expect(journal.entries['heat-shore'].note).toBe(note);await page.reload();await expect(page.locator('.entry-note').filter({hasText:note})).toHaveText(note);await frameHealthy();item.checks.push('journal survives reload and exports exact note JSON');
-   item.exportBytes=bytes.length;item.heatEnergy={initial:initialEnergy,final:finalEnergy};item.finalPath=localPath(page.url());item.passed=true;
+   await page.locator('.main-nav').getByRole('button',{name:lang==='zh'?'全部图谱':'Full atlas',exact:true}).click();await expect(page.locator('.core-atlas__counts small')).toContainText('46,812',{timeout:20000});const route=page.locator('.core-atlas__route-toolbar select');await expect(route).toBeEnabled();await route.selectOption('bridge:003');await expect(page.locator('.core-atlas__bridge-endpoints small')).toHaveText(['pm:HodgeTheory','pm:Matroid']);await expect(page.locator('.core-atlas__bridge-reading dd')).toHaveCount(4);await expect(page.locator('.core-atlas__bridge-source')).toHaveAttribute('href','https://arxiv.org/abs/1511.02888');await frameHealthy();item.checks.push('full atlas and existing bridge003 load from packaged JSON');
+   await page.locator('.main-nav').getByRole('button',{name:lang==='zh'?'我的航记':'Field notes',exact:true}).click();await expect(page.locator('.entry-note').filter({hasText:note})).toHaveText(note);const[download]=await Promise.all([page.waitForEvent('download'),page.locator('.journal-export button').filter({hasText:'JSON'}).click()]);const bytes=fs.readFileSync(await download.path()),journal=JSON.parse(bytes.toString());expect(journal.entries['heat-shore'].note).toBe(note);await page.reload();await expect(page.locator('.entry-note').filter({hasText:note})).toHaveText(note);await frameHealthy();item.checks.push('journal survives reload and exports exact note JSON');
+   item.exportBytes=bytes.length;item.heatEnergy={initial:initialEnergy,final:finalEnergy};
+   if(checkConnections){
+    const ids=['fourier-heat','graph-homology','complex-covering','transport-cdf','ideal-zeros','symmetry-representation'];
+    for(const id of ids){
+     await page.goto(base+`#view=connections&lang=${lang}&connection=${id}`);
+     await expect(page.locator(`.connection-experiment[data-connection="${id}"] > section`)).toBeVisible();
+     await expect(page.locator('.connection-save')).toBeEnabled();await frameHealthy();
+     expect(new URLSearchParams(new URL(page.url()).hash.slice(1)).get('connection')).toBe(id);
+    }
+    item.loadedConnections=ids;item.checks.push('all six connection deep links load inside the packaged subpath');
+    await page.goto(base+`#view=connections&lang=${lang}&connection=fourier-heat`);
+    const laboratory=page.locator('.connection-experiment[data-connection="fourier-heat"]');await expect(laboratory).toBeVisible();
+    const diffusion=laboratory.locator('input[type=range]').first(),currentEnergy=laboratory.locator('.ac-metrics dd').first();
+    await diffusion.focus();await diffusion.press('Home');const initial=Number((await currentEnergy.innerText()).replaceAll(',',''));
+    await diffusion.press('End');const final=Number((await currentEnergy.innerText()).replaceAll(',',''));expect(final).toBeLessThan(initial);
+    const connectionNote=`Public ${tag} ${lang} ${width}: Fourier coefficients determine heat and energy.`;
+    await page.locator('#connection-note').fill(connectionNote);await page.locator('.connection-save').click();
+    const readExperiments=()=>page.evaluate(()=>JSON.parse(localStorage.getItem('mathcups.education.experiments.v1')));
+    await expect.poll(async()=>(await readExperiments())?.records.length).toBe(1);
+    const saved=await readExperiments(),record=saved.records[0];expect(record.connectionId).toBe('fourier-heat');expect(record.note).toBe(connectionNote);
+    const p=record.snapshot.parameters;expect(p.time).toBe(Number(await diffusion.getAttribute('max')));
+    const expectedEnergy=2*Math.PI*p.mean**2+Math.PI*p.coefficients.reduce((sum,a,index)=>sum+a*a*Math.exp(-2*(index+1)**2*p.time),0);
+    expect(record.snapshot.observations.energy).toBeCloseTo(expectedEnergy,12);
+    await page.reload();await expect(page.locator('.experiment-record-note')).toHaveText(connectionNote);expect(await readExperiments()).toEqual(saved);
+    const [experimentDownload]=await Promise.all([page.waitForEvent('download'),page.locator('.experiment-archive').getByRole('button',{name:lang==='zh'?'导出实验 JSON':'Export experiment JSON',exact:true}).click()]);
+    const experimentBytes=fs.readFileSync(await experimentDownload.path());expect(JSON.parse(experimentBytes.toString())).toEqual(saved);await frameHealthy();
+    item.connection={energy:{initial,final},savedSnapshot:record.snapshot,exportBytes:experimentBytes.length,persistedAfterReload:true};
+    item.checks.push('Fourier/heat control changes computed energy; saved snapshot survives reload and matches exported JSON');
+    await page.locator('.connection-experiment').scrollIntoViewIfNeeded();await page.screenshot({path:path.join(screenshotDirectory,`${width}-${lang}-connection.png`)});
+   }
+   item.finalPath=localPath(page.url());item.passed=true;
   }catch(error){item.passed=false;item.error=String(error);}finally{await context.close();}
   console.log(JSON.stringify(item));
  }
  report.passed=report.cases.length===4&&report.cases.every(item=>item.passed)&&['pageErrors','consoleErrors','badResponses','failedRequests','outsideSubpath','externalRequests'].every(key=>!report[key].length)&&report.serverRequests.every(item=>item.status===200&&item.method==='GET');
- report.resourcePaths=[...new Set(report.serverRequests.map(item=>item.path))].sort();report.scope='Fresh public ZIP integrity and local /Math-Island/ subpath smoke only; not a live GitHub Pages or login-gated Sites interaction test.';
+ report.resourcePaths=[...new Set(report.serverRequests.map(item=>item.path))].sort();report.scope=`Fresh public ZIP integrity and local ${prefix} subpath smoke, including connection loading/save/export when enabled; not a live GitHub Pages or login-gated Sites interaction test.`;
 }catch(error){report.passed=false;report.error=String(error);}
 finally{
- if(browser)await browser.close();if(server)await new Promise(resolve=>server.close(resolve));fs.rmSync(work,{recursive:true,force:true});report.temporaryServerClosed=true;report.temporaryArchiveAndExtractionRemoved=true;report.finished=new Date().toISOString();report.scriptSha256=hash(fileURLToPath(import.meta.url));
+ if(browser)await browser.close();if(server)await new Promise(resolve=>server.close(resolve));fs.rmSync(work,{recursive:true,force:true});report.temporaryServerClosed=true;report.temporaryArchiveAndExtractionRemoved=true;report.finished=new Date().toISOString();report.scriptSha256=hash(fileURLToPath(import.meta.url));report.historicalEvidence.sha256After=hash(historicalEvidence);report.historicalEvidence.unchanged=report.historicalEvidence.sha256After===historicalSha256;if(!report.historicalEvidence.unchanged)report.passed=false;report.status=report.passed?'passed':'failed';
  fs.mkdirSync(path.dirname(evidence),{recursive:true});fs.writeFileSync(evidence,JSON.stringify(report,null,2));console.log(JSON.stringify({passed:report.passed,cases:report.cases.length,verifiedFiles:report.package?.declaredPayloadFiles,archiveSha256:report.package?.archiveSha256,errors:report.error||report.cases.filter(item=>!item.passed),badResponses:report.badResponses,outsideSubpath:report.outsideSubpath,pageErrors:report.pageErrors},null,2));if(!report.passed)process.exitCode=1;
 }

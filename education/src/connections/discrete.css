@@ -1,0 +1,70 @@
+.discrete-connection { color:#244947; min-width:0; }
+.dc-heading { margin-bottom:20px; }
+.dc-heading h3 { margin:0 0 8px; font-size:20px; line-height:1.5; font-weight:600; letter-spacing:-.02em; }
+.dc-heading p { margin:0; color:#4f665d; font-size:14px; line-height:1.8; max-width:85ch; }
+.dc-formula { margin-top:10px; font:16px/1.7 'DejaVu Sans','Cambria Math',Georgia,serif; color:#205f59; overflow-wrap:anywhere; }
+.dc-two-domains { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); align-items:start; gap:20px; }
+.dc-figure { margin:0; min-width:0; border:1px solid #dce4d5; border-radius:12px; overflow:hidden; background:#f7f6ec; }
+.dc-figure figcaption { padding:14px 18px 2px; font-size:14px; line-height:1.6; font-weight:600; }
+.dc-figure svg { display:block; width:100%; height:auto; }
+.dc-figure svg text { font-family:'DejaVu Sans','Noto Sans CJK SC','PingFang SC',sans-serif; }
+.dc-figure .dc-vector-label { paint-order:stroke; stroke:#f7f6ec; stroke-width:3px; stroke-linejoin:round; }
+.dc-controls { display:flex; flex-direction:column; gap:14px; margin:22px 0 16px; }
+.dc-controls fieldset { display:flex; flex-wrap:wrap; gap:8px; margin:0; padding:11px 12px 13px; border:1px solid #d4dfcf; border-radius:8px; }
+.dc-controls legend { padding:0 6px; color:#4f665d; font-size:13px; line-height:1.7; }
+.dc-controls button { min-height:44px; padding:8px 13px; font:inherit; font-size:13px; border-radius:7px; border:1px solid #bccfbd; color:#244947; background:#fbfaf4; line-height:1.6; cursor:pointer; }
+.dc-controls button:hover:not(:disabled) { background:#e7eee0; }
+.dc-controls button.dc-selected { background:#367f78; border-color:#367f78; color:#fff; }
+.dc-controls button.dc-chain-selected { background:#884325; border-color:#884325; color:#fff; }
+.dc-controls button:disabled { opacity:.45; cursor:not-allowed; }
+.dc-controls button:focus-visible,.dc-controls input:focus-visible,.dc-controls select:focus-visible,.dc-data summary:focus-visible { outline:3px solid #a27b28; outline-offset:3px; }
+.dc-button-group { display:flex; flex-wrap:wrap; gap:9px; }
+.dc-legend { color:#4f665d; font-size:13px; line-height:1.8; margin:12px 0 16px; }
+.dc-metrics { display:flex; flex-wrap:wrap; gap:18px 25px; padding:18px 0; border-top:1px solid #d8e1d2; border-bottom:1px solid #d8e1d2; }
+.dc-metrics>div { display:flex; flex:1 1 120px; flex-direction:column; gap:6px; }
+.dc-metrics span { font-size:12px; line-height:1.6; color:#4f665d; }
+.dc-metrics output { font-size:22px; font-weight:600; line-height:1.5; font-variant-numeric:tabular-nums; }
+.dc-observation { margin:18px 0; padding:16px 18px; border-left:3px solid #367f78; background:#edf1e7; font-size:14px; line-height:1.8; }
+.dc-observation strong { font-weight:600; }
+.dc-observation p { margin:5px 0 0; overflow-wrap:anywhere; }
+.dc-matrix-pair { margin:18px 0; }
+.dc-matrix-scroll { overflow-x:auto; min-width:0; background:#f7f6ec; border:1px solid #dce4d5; border-radius:9px; padding:8px; }
+.dc-matrix-scroll:focus-visible { outline:3px solid #a27b28; outline-offset:3px; }
+.dc-boundary-matrix { border-collapse:collapse; width:100%; font-size:14px; color:#244947; font-variant-numeric:tabular-nums; }
+.dc-boundary-matrix caption { text-align:left; padding:7px 6px 12px; font-size:14px; font-weight:600; }
+.dc-boundary-matrix th,.dc-boundary-matrix td { min-width:30px; padding:8px 6px; text-align:center; border:1px solid #d4dece; }
+.dc-boundary-matrix th { font-size:12px; font-weight:600; }
+.dc-boundary-matrix .dc-one { background:#dce9dc; }
+.dc-boundary-matrix .dc-marked { border-bottom:3px solid #884325; }
+.dc-equation-readout { color:#205f59; font-size:14px; line-height:1.8; overflow-wrap:anywhere; }
+.dc-data { margin-top:15px; font-size:13px; color:#244947; }
+.dc-data summary { cursor:pointer; min-height:44px; padding:10px 0; line-height:1.7; }
+.dc-data table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+.dc-data td,.dc-data th { padding:9px 8px; text-align:left; border-bottom:1px solid #d4dece; line-height:1.7; overflow-wrap:anywhere; }
+.dc-data th { font-weight:600; }
+.dc-boundary { margin:22px 0 0; padding-top:17px; border-top:1px solid #d8e1d2; font-size:13px; line-height:1.9; color:#4f665d; }
+.dc-sym-controls { flex-direction:row; flex-wrap:wrap; align-items:flex-end; gap:15px; }
+.dc-sym-controls label { display:flex; flex:1 1 160px; flex-direction:column; gap:8px; font-size:13px; color:#4f665d; }
+.dc-sym-controls select { width:100%; min-width:0; padding:9px 10px; min-height:44px; border:1px solid #bccfbd; border-radius:7px; background:#fbfaf4; color:#244947; font:inherit; }
+.dc-sym-controls input[type=range] { width:100%; height:44px; accent-color:#367f78; }
+.dc-sym-controls output { color:#244947; font-weight:600; }
+.dc-action-formulas { display:flex; flex-wrap:wrap; gap:10px 24px; padding:10px 0 18px; font:14px/1.7 'DejaVu Sans','Cambria Math',Georgia,serif; color:#205f59; }
+.dc-four-matrices { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; margin-bottom:22px; }
+.dc-small-matrix { display:flex; flex-direction:column; align-items:center; gap:12px; padding:16px 9px; background:#f7f6ec; border-radius:9px; border:1px solid #dce4d5; }
+.dc-small-matrix strong { font-size:14px; font-weight:600; }
+.dc-small-matrix table { border-left:2px solid #4f665d; border-right:2px solid #4f665d; border-radius:5px; font-size:21px; font-variant-numeric:tabular-nums; }
+.dc-small-matrix td { text-align:center; min-width:32px; padding:4px 7px; }
+@media(max-width:700px) {
+  .dc-two-domains { grid-template-columns:minmax(0,1fr); gap:16px; }
+  .dc-heading h3 { font-size:18px; }
+  .dc-heading p { font-size:13px; }
+  .dc-figure figcaption { padding:12px 13px 1px; font-size:13px; }
+  .dc-controls button { min-height:44px; }
+  .dc-four-matrices { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+  .dc-sym-controls label { flex-basis:120px; }
+  .dc-metrics { gap:14px; }
+  .dc-metrics>div { flex-basis:110px; }
+  .dc-metrics output { font-size:19px; }
+  .dc-data { overflow-wrap:anywhere; }
+  .dc-data td,.dc-data th { padding:8px 5px; font-size:12px; }
+}

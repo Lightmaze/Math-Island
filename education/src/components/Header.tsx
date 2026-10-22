@@ -1,4 +1,4 @@
-import { BookOpen, Compass, Network } from 'lucide-react';
+import { BookOpen, Compass, Network, Waypoints } from 'lucide-react';
 import type { Language, View } from '../lib/state';
 
 function Mark() {
@@ -8,6 +8,7 @@ export default function Header({ language, view, onView, onLanguage }: { languag
   const links: { value: View; zh: string; en: string; icon: typeof Compass }[] = [
     { value: 'islands', zh: '探索群岛', en: 'Explore', icon: Compass },
     { value: 'atlas', zh: '全部图谱', en: 'Full atlas', icon: Network },
+    { value: 'connections', zh: '联岛实验', en: 'Connections', icon: Waypoints },
     { value: 'journal', zh: '我的航记', en: 'Field notes', icon: BookOpen },
   ];
   return <header className="site-header">

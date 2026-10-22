@@ -174,6 +174,23 @@
 
 交付物是一份有来源定位的阅读笔记：准确主张、假设、构造、证明位置、尚未解决的一步，以及学生自己实际检查的范围。它可以包含失败尝试和缺失先修知识。不能用成功的初等演示替换未完成的高级证明，然后报告研究定理已经完成。
 
+## 六个联岛实验：让联系成为可操作对象
+
+请确认使用的是包含“联岛实验”入口的新版本；此前的单岛版本不含这组界面。下列链接沿用当前 Sites 托管入口及创建者访问限制。公开教学部署时，同样只替换站点根 URL、保留 hash。六项联系的模型、来源定位和实际阅读范围见[联岛课程契约](connection-curriculum.md)。
+
+这六个活动可以各用 20–30 分钟，按课堂基础分组开展。它们使用共同参数显示同一对象的不同表示，或把明确构造的输入输出放在一起。不会把教学关系自动写成核心图边或正式类型。
+
+| 活动 | 实际操作与可检查产物 | 反例或边界 |
+|---|---|---|
+| [同一频谱，热怎样演化](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=connections&connection=fourier-heat&lang=zh) | 改均值和四个正弦系数，推进时间；逐项求导验证 PDE，再由正交性计算能量。 | 均值为 0.2 时，能量极限为 0.08π，不是零；周期模型不是波动方程。 |
+| [从图的循环到同调类](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=connections&connection=graph-homology&lang=zh) | 选择 K₄ 边、面和一条 1-链；核对 ∂₁z、∂₁∂₂ 与两个矩阵秩。 | 四个面边界并不独立；全部填面留下 β₂=1，因为没有三维单形。 |
+| [复幂映射与路径提升](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=connections&connection=complex-covering&lang=zh) | 设置 n、起点 k、绕数和进度；用提升点的 n 次幂核对投影，记录最终纤维标签。 | 三重覆盖一圈不闭合；每圈重置主辐角会破坏连续提升。 |
+| [运输成本与累计差面积](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=connections&connection=transport-cdf&lang=zh) | 逐段加 CDF 差的矩形面积，再与同一对测度的单调运输成本比较。 | p=0.5、b=0.5、δ=0.5 时均值相同但 W₁=0.75；不能推广成高维 CDF 面积公式。 |
+| [Bézout 系数与共同零点](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=connections&connection=ideal-zeros&lang=zh) | 在所选素数域中输入多项式；核对 uf+vg=d 以及 d 整除两输入，再枚举域内根。 | F₃ 中 x²+1 无根但不是单位；f=g=0 的 d=0 不称首一。 |
+| [一个对称，三种表示](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=connections&connection=symmetry-representation&lang=zh) | 选两个 D₄ 元素和测试向量；比较复数作用、实矩阵复合与向量结果。 | r 与 s 都固定原点不说明交换；在 1 上两种顺序分别给出 i 和 −i。 |
+
+每组交付四项：参数配置、两侧对应的一组数值或代数对象、一条错误主张及反例、一段具有明确前提的论证。把“同一个模型的两种计算一致”与“引用定理的适用前提已经满足”分开说明；两者都不等于形式化内核认证。若继续研究，可追问当前构造在不同系数域、维数、边界或底空间下需要哪些新工具。
+
 ## 怎样提出一座新主题岛，同时保持本体独立
 
 从数学对象和真实问题出发。值得补充的缺口包括明确的重抽样过程、多项式划分的参数空间、指定拟阵的 Chow 环计算，或有限 sum-check 对话实例。把一张装饰性网络图换成新领域名称，并不足以形成新课程。

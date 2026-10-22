@@ -1,11 +1,12 @@
 export type Language = 'zh' | 'en';
-export type View = 'islands' | 'atlas' | 'journal';
+export type View = 'islands' | 'atlas' | 'connections' | 'journal';
 export interface RouteState {
   view: View;
   lang: Language;
   island?: string;
   core?: string;
   lab?: boolean;
+  connection?: string;
 }
 export interface JournalEntry {
   islandId: string;
@@ -19,7 +20,7 @@ export interface Journal {
   entries: Record<string, JournalEntry>;
 }
 export const JOURNAL_KEY = 'mathcups.education.journal.v1';
-const allowedViews = new Set(['islands', 'atlas', 'journal']);
+const allowedViews = new Set(['islands', 'atlas', 'connections', 'journal']);
 
 export function parseRoute(hash: string): RouteState {
   const p = new URLSearchParams(hash.replace(/^#/, ''));
@@ -30,6 +31,7 @@ export function parseRoute(hash: string): RouteState {
     island: p.get('island') || undefined,
     core: p.get('core') || undefined,
     lab: p.get('lab') === '1',
+    ...(p.get('connection') ? { connection: p.get('connection')! } : {}),
   };
 }
 
@@ -38,6 +40,7 @@ export function encodeRoute(route: RouteState): string {
   if (route.island) p.set('island', route.island);
   if (route.core && route.view === 'atlas') p.set('core', route.core);
   if (route.lab && route.view === 'islands') p.set('lab', '1');
+  if (route.connection && route.view === 'connections') p.set('connection', route.connection);
   return `#${p.toString()}`;
 }
 

@@ -1,0 +1,1704 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "/root/education_review",
+  "started": "2026-10-22T15:33:00Z",
+  "status": "passed",
+  "scope": "Six new educational connection experiments; separate from the earlier 24-island audit.",
+  "experiments": [
+    "fourier-heat",
+    "graph-homology",
+    "complex-covering",
+    "transport-cdf",
+    "ideal-zeros",
+    "symmetry-representation"
+  ],
+  "mathematicalChecks": [
+    {
+      "script": "tests/connections-independent.test.ts",
+      "runAt": "2026-10-22T16:03:19Z",
+      "tests": 10,
+      "passed": 10,
+      "scope": [
+        "Fourier energy/dissipation versus independent midpoint integration; mean and t=0 boundaries",
+        "225 probability-measure pairs versus brute minimum across all 24 empirical couplings",
+        "All 113 valid K4 subcomplexes versus explicit cycle and boundary sets; complete surface has beta2=1",
+        "All 64 D4 ordered products on independent basis vectors and a nonbasis vector",
+        "Covering n=2..8, all starting sheets, winding=-8..8, four times including nonclosed prefixes",
+        "793 pairs of degree<=2 polynomials over F2/F3; exact Bezout and quotient identities",
+        "Invalid incidence, duplicate indices, nonprime fields, nonfinite input, nonunit no-root and same-roots/different-ideals counterexamples",
+        "Very small nonzero Fourier variance is computed without subtractive cancellation."
+      ],
+      "sha256": "5c1c81ebbbd52896d7b498c42d410aebd6dd9668e1a9ee0c2cdc83b276a22246"
+    }
+  ],
+  "dataContractChecks": [
+    {
+      "script": "tests/connections-contract.test.ts",
+      "runAt": "2026-10-22T16:03:19Z",
+      "tests": 5,
+      "passed": 5,
+      "sha256": "276dff46c65252ba98339390a730fb24a224103dcfadb2686e5c30c0fb551a51",
+      "scope": "Six unique IDs, nonempty bilingual fields, real lesson/core references, bounded literature locators, implemented counterexamples, and nonmutating rejection of a UTF-8 merge over 5 MiB despite each input being valid and count below 500."
+    }
+  ],
+  "browserChecks": [
+    {
+      "id": "fourier-heat",
+      "width": 1440,
+      "lang": "zh",
+      "snapshot": {
+        "parameters": {
+          "time": 1.2,
+          "mean": 0.5,
+          "coefficients": [
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        "observations": {
+          "energy": 2.2125225010697784,
+          "initialEnergy": 29.845130209103033,
+          "energyDerivative": -1.2863248729775176,
+          "mean": 0.5,
+          "variance": 0.10213389274729852,
+          "currentCoefficients": [
+            0.4517913178683032,
+            0.012344620573530045,
+            3.059925511675794e-05,
+            6.880772619971286e-09
+          ]
+        }
+      },
+      "size": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 15
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 19.125,
+      "passed": true
+    },
+    {
+      "id": "graph-homology",
+      "width": 1440,
+      "lang": "zh",
+      "snapshot": {
+        "parameters": {
+          "edges": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "faces": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "chain": [
+            0,
+            1,
+            3
+          ]
+        },
+        "observations": {
+          "rankD1": 3,
+          "rankD2": 3,
+          "betti": [
+            1,
+            0,
+            1
+          ],
+          "boundary": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "isCycle": true,
+          "isBoundary": true,
+          "homologyClass": 0,
+          "cycleCount": 8,
+          "boundaryCount": 8,
+          "classCount": 1
+        }
+      },
+      "size": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 23
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 25.37844669117647,
+      "passed": true
+    },
+    {
+      "id": "complex-covering",
+      "width": 1440,
+      "lang": "zh",
+      "snapshot": {
+        "parameters": {
+          "degree": 8,
+          "startIndex": 7,
+          "winding": 1,
+          "progress": 1
+        },
+        "observations": {
+          "baseTurns": 1,
+          "liftedTurns": 0.125,
+          "finalFibreIndex": 0,
+          "baseCurrentlyClosed": true,
+          "liftCurrentlyClosed": false,
+          "finalLiftClosed": false,
+          "liftedEndpoint": [
+            1,
+            -2.4492935982947064e-16
+          ],
+          "fibrePermutation": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            0
+          ],
+          "projectionError": 1.7145055188062944e-15
+        }
+      },
+      "size": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 14
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 17.933125,
+      "passed": true
+    },
+    {
+      "id": "transport-cdf",
+      "width": 1440,
+      "lang": "zh",
+      "snapshot": {
+        "parameters": {
+          "translation": 1,
+          "tilt": 0,
+          "centralMass": 1
+        },
+        "observations": {
+          "transportCost": 1,
+          "cdfArea": 1,
+          "identityResidual": 0,
+          "marginalResidual": 0,
+          "sourceMasses": [
+            0,
+            1,
+            0
+          ],
+          "targetMasses": [
+            0,
+            1,
+            0
+          ],
+          "cdfDifferences": [
+            1
+          ]
+        }
+      },
+      "size": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 20
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 19.125,
+      "passed": true
+    },
+    {
+      "id": "ideal-zeros",
+      "width": 1440,
+      "lang": "zh",
+      "snapshot": {
+        "parameters": {
+          "prime": 3,
+          "fCoefficients": "1, 0, 1",
+          "gCoefficients": "1, 1, 1, 1"
+        },
+        "observations": {
+          "validInput": true,
+          "gcd": [
+            1,
+            0,
+            1
+          ],
+          "bezoutU": [
+            1
+          ],
+          "bezoutV": [
+            0
+          ],
+          "commonRoots": [],
+          "gcdRoots": [],
+          "unitIdeal": false,
+          "zeroIdeal": false,
+          "divisionSteps": 2
+        }
+      },
+      "size": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 27
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 17.933125,
+      "passed": true
+    },
+    {
+      "id": "symmetry-representation",
+      "width": 1440,
+      "lang": "zh",
+      "snapshot": {
+        "parameters": {
+          "a": 4,
+          "b": 1,
+          "z": [
+            0,
+            0
+          ]
+        },
+        "observations": {
+          "ab": 7,
+          "ba": 5,
+          "matrixAB": [
+            0,
+            -1,
+            -1,
+            0
+          ],
+          "matrixBA": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "afterAB": [
+            0,
+            0
+          ],
+          "afterBA": [
+            0,
+            0
+          ],
+          "matricesCommute": false,
+          "thisVectorAgrees": true,
+          "representationHolds": true,
+          "determinant": -1
+        }
+      },
+      "size": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 47
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 24.04285714285714,
+      "passed": true
+    },
+    {
+      "id": "fourier-heat",
+      "width": 1440,
+      "lang": "en",
+      "snapshot": {
+        "parameters": {
+          "time": 1.2,
+          "mean": 0.5,
+          "coefficients": [
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        "observations": {
+          "energy": 2.2125225010697784,
+          "initialEnergy": 29.845130209103033,
+          "energyDerivative": -1.2863248729775176,
+          "mean": 0.5,
+          "variance": 0.10213389274729852,
+          "currentCoefficients": [
+            0.4517913178683032,
+            0.012344620573530045,
+            3.059925511675794e-05,
+            6.880772619971286e-09
+          ]
+        }
+      },
+      "size": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 15
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 19.125,
+      "passed": true
+    },
+    {
+      "id": "graph-homology",
+      "width": 1440,
+      "lang": "en",
+      "snapshot": {
+        "parameters": {
+          "edges": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "faces": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "chain": [
+            0,
+            1,
+            3
+          ]
+        },
+        "observations": {
+          "rankD1": 3,
+          "rankD2": 3,
+          "betti": [
+            1,
+            0,
+            1
+          ],
+          "boundary": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "isCycle": true,
+          "isBoundary": true,
+          "homologyClass": 0,
+          "cycleCount": 8,
+          "boundaryCount": 8,
+          "classCount": 1
+        }
+      },
+      "size": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 22
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 25.37844669117647,
+      "passed": true
+    },
+    {
+      "id": "complex-covering",
+      "width": 1440,
+      "lang": "en",
+      "snapshot": {
+        "parameters": {
+          "degree": 8,
+          "startIndex": 7,
+          "winding": 1,
+          "progress": 1
+        },
+        "observations": {
+          "baseTurns": 1,
+          "liftedTurns": 0.125,
+          "finalFibreIndex": 0,
+          "baseCurrentlyClosed": true,
+          "liftCurrentlyClosed": false,
+          "finalLiftClosed": false,
+          "liftedEndpoint": [
+            1,
+            -2.4492935982947064e-16
+          ],
+          "fibrePermutation": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            0
+          ],
+          "projectionError": 1.7145055188062944e-15
+        }
+      },
+      "size": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 14
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 17.933125,
+      "passed": true
+    },
+    {
+      "id": "transport-cdf",
+      "width": 1440,
+      "lang": "en",
+      "snapshot": {
+        "parameters": {
+          "translation": 1,
+          "tilt": 0,
+          "centralMass": 1
+        },
+        "observations": {
+          "transportCost": 1,
+          "cdfArea": 1,
+          "identityResidual": 0,
+          "marginalResidual": 0,
+          "sourceMasses": [
+            0,
+            1,
+            0
+          ],
+          "targetMasses": [
+            0,
+            1,
+            0
+          ],
+          "cdfDifferences": [
+            1
+          ]
+        }
+      },
+      "size": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 20
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 19.125,
+      "passed": true
+    },
+    {
+      "id": "ideal-zeros",
+      "width": 1440,
+      "lang": "en",
+      "snapshot": {
+        "parameters": {
+          "prime": 3,
+          "fCoefficients": "1, 0, 1",
+          "gCoefficients": "1, 1, 1, 1"
+        },
+        "observations": {
+          "validInput": true,
+          "gcd": [
+            1,
+            0,
+            1
+          ],
+          "bezoutU": [
+            1
+          ],
+          "bezoutV": [
+            0
+          ],
+          "commonRoots": [],
+          "gcdRoots": [],
+          "unitIdeal": false,
+          "zeroIdeal": false,
+          "divisionSteps": 2
+        }
+      },
+      "size": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 25
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 17.933125,
+      "passed": true
+    },
+    {
+      "id": "symmetry-representation",
+      "width": 1440,
+      "lang": "en",
+      "snapshot": {
+        "parameters": {
+          "a": 4,
+          "b": 1,
+          "z": [
+            0,
+            0
+          ]
+        },
+        "observations": {
+          "ab": 7,
+          "ba": 5,
+          "matrixAB": [
+            0,
+            -1,
+            -1,
+            0
+          ],
+          "matrixBA": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "afterAB": [
+            0,
+            0
+          ],
+          "afterBA": [
+            0,
+            0
+          ],
+          "matricesCommute": false,
+          "thisVectorAgrees": true,
+          "representationHolds": true,
+          "determinant": -1
+        }
+      },
+      "size": {
+        "width": 1440,
+        "scrollWidth": 1440
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 24.04285714285714,
+      "passed": true
+    },
+    {
+      "id": "fourier-heat",
+      "width": 390,
+      "lang": "zh",
+      "snapshot": {
+        "parameters": {
+          "time": 1.2,
+          "mean": 0.5,
+          "coefficients": [
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        "observations": {
+          "energy": 2.2125225010697784,
+          "initialEnergy": 29.845130209103033,
+          "energyDerivative": -1.2863248729775176,
+          "mean": 0.5,
+          "variance": 0.10213389274729852,
+          "currentCoefficients": [
+            0.4517913178683032,
+            0.012344620573530045,
+            3.059925511675794e-05,
+            6.880772619971286e-09
+          ]
+        }
+      },
+      "size": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 17.4,
+      "passed": true
+    },
+    {
+      "id": "graph-homology",
+      "width": 390,
+      "lang": "zh",
+      "snapshot": {
+        "parameters": {
+          "edges": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "faces": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "chain": [
+            0,
+            1,
+            3
+          ]
+        },
+        "observations": {
+          "rankD1": 3,
+          "rankD2": 3,
+          "betti": [
+            1,
+            0,
+            1
+          ],
+          "boundary": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "isCycle": true,
+          "isBoundary": true,
+          "homologyClass": 0,
+          "cycleCount": 8,
+          "boundaryCount": 8,
+          "classCount": 1
+        }
+      },
+      "size": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 21
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 15.742233455882353,
+      "passed": true
+    },
+    {
+      "id": "complex-covering",
+      "width": 390,
+      "lang": "zh",
+      "snapshot": {
+        "parameters": {
+          "degree": 8,
+          "startIndex": 7,
+          "winding": 1,
+          "progress": 1
+        },
+        "observations": {
+          "baseTurns": 1,
+          "liftedTurns": 0.125,
+          "finalFibreIndex": 0,
+          "baseCurrentlyClosed": true,
+          "liftCurrentlyClosed": false,
+          "finalLiftClosed": false,
+          "liftedEndpoint": [
+            1,
+            -2.4492935982947064e-16
+          ],
+          "fibrePermutation": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            0
+          ],
+          "projectionError": 1.7145055188062944e-15
+        }
+      },
+      "size": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 16.2,
+      "passed": true
+    },
+    {
+      "id": "transport-cdf",
+      "width": 390,
+      "lang": "zh",
+      "snapshot": {
+        "parameters": {
+          "translation": 1,
+          "tilt": 0,
+          "centralMass": 1
+        },
+        "observations": {
+          "transportCost": 1,
+          "cdfArea": 1,
+          "identityResidual": 0,
+          "marginalResidual": 0,
+          "sourceMasses": [
+            0,
+            1,
+            0
+          ],
+          "targetMasses": [
+            0,
+            1,
+            0
+          ],
+          "cdfDifferences": [
+            1
+          ]
+        }
+      },
+      "size": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 20
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 17.4,
+      "passed": true
+    },
+    {
+      "id": "ideal-zeros",
+      "width": 390,
+      "lang": "zh",
+      "snapshot": {
+        "parameters": {
+          "prime": 3,
+          "fCoefficients": "1, 0, 1",
+          "gCoefficients": "1, 1, 1, 1"
+        },
+        "observations": {
+          "validInput": true,
+          "gcd": [
+            1,
+            0,
+            1
+          ],
+          "bezoutU": [
+            1
+          ],
+          "bezoutV": [
+            0
+          ],
+          "commonRoots": [],
+          "gcdRoots": [],
+          "unitIdeal": false,
+          "zeroIdeal": false,
+          "divisionSteps": 2
+        }
+      },
+      "size": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 24
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 16.2,
+      "passed": true
+    },
+    {
+      "id": "symmetry-representation",
+      "width": 390,
+      "lang": "zh",
+      "snapshot": {
+        "parameters": {
+          "a": 4,
+          "b": 1,
+          "z": [
+            0,
+            0
+          ]
+        },
+        "observations": {
+          "ab": 7,
+          "ba": 5,
+          "matrixAB": [
+            0,
+            -1,
+            -1,
+            0
+          ],
+          "matrixBA": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "afterAB": [
+            0,
+            0
+          ],
+          "afterBA": [
+            0,
+            0
+          ],
+          "matricesCommute": false,
+          "thisVectorAgrees": true,
+          "representationHolds": true,
+          "determinant": -1
+        }
+      },
+      "size": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 14.914285714285715,
+      "passed": true
+    },
+    {
+      "id": "fourier-heat",
+      "width": 390,
+      "lang": "en",
+      "snapshot": {
+        "parameters": {
+          "time": 1.2,
+          "mean": 0.5,
+          "coefficients": [
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ]
+        },
+        "observations": {
+          "energy": 2.2125225010697784,
+          "initialEnergy": 29.845130209103033,
+          "energyDerivative": -1.2863248729775176,
+          "mean": 0.5,
+          "variance": 0.10213389274729852,
+          "currentCoefficients": [
+            0.4517913178683032,
+            0.012344620573530045,
+            3.059925511675794e-05,
+            6.880772619971286e-09
+          ]
+        }
+      },
+      "size": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 17.4,
+      "passed": true
+    },
+    {
+      "id": "graph-homology",
+      "width": 390,
+      "lang": "en",
+      "snapshot": {
+        "parameters": {
+          "edges": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "faces": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "chain": [
+            0,
+            1,
+            3
+          ]
+        },
+        "observations": {
+          "rankD1": 3,
+          "rankD2": 3,
+          "betti": [
+            1,
+            0,
+            1
+          ],
+          "boundary": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "isCycle": true,
+          "isBoundary": true,
+          "homologyClass": 0,
+          "cycleCount": 8,
+          "boundaryCount": 8,
+          "classCount": 1
+        }
+      },
+      "size": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 21
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 15.742233455882353,
+      "passed": true
+    },
+    {
+      "id": "complex-covering",
+      "width": 390,
+      "lang": "en",
+      "snapshot": {
+        "parameters": {
+          "degree": 8,
+          "startIndex": 7,
+          "winding": 1,
+          "progress": 1
+        },
+        "observations": {
+          "baseTurns": 1,
+          "liftedTurns": 0.125,
+          "finalFibreIndex": 0,
+          "baseCurrentlyClosed": true,
+          "liftCurrentlyClosed": false,
+          "finalLiftClosed": false,
+          "liftedEndpoint": [
+            1,
+            -2.4492935982947064e-16
+          ],
+          "fibrePermutation": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            0
+          ],
+          "projectionError": 1.7145055188062944e-15
+        }
+      },
+      "size": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 13
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 16.2,
+      "passed": true
+    },
+    {
+      "id": "transport-cdf",
+      "width": 390,
+      "lang": "en",
+      "snapshot": {
+        "parameters": {
+          "translation": 1,
+          "tilt": 0,
+          "centralMass": 1
+        },
+        "observations": {
+          "transportCost": 1,
+          "cdfArea": 1,
+          "identityResidual": 0,
+          "marginalResidual": 0,
+          "sourceMasses": [
+            0,
+            1,
+            0
+          ],
+          "targetMasses": [
+            0,
+            1,
+            0
+          ],
+          "cdfDifferences": [
+            1
+          ]
+        }
+      },
+      "size": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 20
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 17.4,
+      "passed": true
+    },
+    {
+      "id": "ideal-zeros",
+      "width": 390,
+      "lang": "en",
+      "snapshot": {
+        "parameters": {
+          "prime": 3,
+          "fCoefficients": "1, 0, 1",
+          "gCoefficients": "1, 1, 1, 1"
+        },
+        "observations": {
+          "validInput": true,
+          "gcd": [
+            1,
+            0,
+            1
+          ],
+          "bezoutU": [
+            1
+          ],
+          "bezoutV": [
+            0
+          ],
+          "commonRoots": [],
+          "gcdRoots": [],
+          "unitIdeal": false,
+          "zeroIdeal": false,
+          "divisionSteps": 2
+        }
+      },
+      "size": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 24
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 16.2,
+      "passed": true
+    },
+    {
+      "id": "symmetry-representation",
+      "width": 390,
+      "lang": "en",
+      "snapshot": {
+        "parameters": {
+          "a": 4,
+          "b": 1,
+          "z": [
+            0,
+            0
+          ]
+        },
+        "observations": {
+          "ab": 7,
+          "ba": 5,
+          "matrixAB": [
+            0,
+            -1,
+            -1,
+            0
+          ],
+          "matrixBA": [
+            0,
+            1,
+            1,
+            0
+          ],
+          "afterAB": [
+            0,
+            0
+          ],
+          "afterBA": [
+            0,
+            0
+          ],
+          "matricesCommute": false,
+          "thisVectorAgrees": true,
+          "representationHolds": true,
+          "determinant": -1
+        }
+      },
+      "size": {
+        "width": 390,
+        "scrollWidth": 390
+      },
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "nodes": 45
+        }
+      ],
+      "axePassed": true,
+      "minimumSvgTextPixels": 14.914285714285715,
+      "passed": true
+    }
+  ],
+  "accessibilityChecks": [
+    {
+      "executor": "/root/education_review",
+      "states": 24,
+      "passed": 24,
+      "violations": 0,
+      "tags": [
+        "wcag2a",
+        "wcag2aa",
+        "wcag21a",
+        "wcag21aa"
+      ],
+      "disabledRules": [],
+      "incompleteRules": [
+        "color-contrast"
+      ],
+      "minimumMeasuredSvgTextPixels": 14.914285714285715,
+      "scope": "Automated axe checks of actual altered mathematical states; color-contrast incompletes remain for manual assessment. Not full WCAG certification."
+    }
+  ],
+  "findings": [
+    {
+      "id": "connection-summary-real-visual",
+      "finding": "Symmetry curriculum claimed square vertex labels absent from this new vector-based lab.",
+      "owner": "education_curriculum",
+      "resolution": "Replaced the claim with the actual complex-plane vectors, complex formulas and real matrices.",
+      "status": "source-fix-verified"
+    },
+    {
+      "id": "initial-snapshot-order",
+      "finding": "Parent passive reset could discard the child initial snapshot and disable saving until parameters changed.",
+      "owner": "root",
+      "resolution": "Snapshot state bound to selected connection; default save enabled in every one of the 24 final configurations.",
+      "status": "verified-final-browser"
+    },
+    {
+      "id": "structure-mobile-label-size",
+      "finding": "12-unit SVG labels would scale to roughly 9 CSS pixels in nested mobile panels.",
+      "owner": "education_atlas",
+      "resolution": "Larger mobile labels, less nested padding, zoom/keyboard scrolling and 44px controls. Across all six final 390px scenes the smallest measured SVG text size was 14.914 CSS pixels.",
+      "status": "verified-final-browser-and-screenshot"
+    },
+    {
+      "id": "cdf-jump-meaning",
+      "finding": "Vertical lines at CDF jumps could be mistaken for function values.",
+      "owner": "education_advanced",
+      "resolution": "Added hollow left-limit and filled right-continuous-value dots, with bilingual explanation that vertical segments only mark jumps.",
+      "status": "verified-final-source-and-browser"
+    },
+    {
+      "id": "mapping-glyph-missing",
+      "finding": "An actual Chinese mobile screenshot showed a missing glyph for the mapsto character in new connection prose.",
+      "owner": "education_atlas, education_labs, education_curriculum",
+      "resolution": "Changed the affected mapping statements to Chinese/English words; rebuilt and reran all 24 states and 7 integration checks.",
+      "status": "verified-final-source-and-browser"
+    },
+    {
+      "id": "notebook-byte-capacity",
+      "finding": "A valid local notebook could otherwise grow beyond the 5 MiB import limit; pretty JSON could also cross the limit after size validation.",
+      "owner": "root",
+      "resolution": "Validate combined compact UTF-8 bytes, show a visible capacity error, preserve previous records, and export the same compact JSON encoding. Independently rejected a 60+40-record Chinese-text merge and roundtripped a real 5,241,855-byte, 90-record export in fresh browser contexts.",
+      "status": "verified-unit-and-final-browser"
+    },
+    {
+      "id": "storage-event-writeback",
+      "finding": "The persistence effect could write incoming storage events back to another tab.",
+      "owner": "root",
+      "resolution": "Persist only user writes. Independent two-tab test measured writes [2,1], with zero event-driven writebacks after saves and deletion.",
+      "status": "verified-final-browser"
+    },
+    {
+      "id": "d4-touch-control-height",
+      "finding": "The visual reviewer measured D4 selects at 42px and range inputs at 28px on the compact layout after the full audit.",
+      "owner": "root",
+      "resolution": "Root changed only the three discrete CSS control-height rules. Independent follow-up checked all six D4 controls in Chinese/English at 1440px and 390px: every control is 44 CSS pixels high, no overflow or runtime errors, and axe reports zero violations.",
+      "status": "verified-focused-browser",
+      "buildIndexSha256": "953216d4164fa281000de240df983c97c77523c2107907ff7ddc68bf3e37ed20"
+    }
+  ],
+  "limitations": [
+    "Finite exact/numerical checks test these implemented models and do not prove general theorems or complete the MathCups research framework.",
+    "Axe reported no violations in 24 states but retains color-contrast incompletes; manual screenshot review is sampled, not full WCAG conformance.",
+    "Experiment URLs reopen an entry, not stored parameter states; the UI explicitly explains this. Saved snapshots remain exportable.",
+    "Multiple tabs use last-writer-wins storage. The test verifies event synchronization without writebacks, not concurrent collaborative merging.",
+    "These functional checks target an immutable local copy of the final production build. They do not establish availability of a later public hosting deployment.",
+    "Literature passages were checked at the specified locators; complete books and all general proofs were not reverified."
+  ],
+  "sourceEvidence": {
+    "method": "Independent reading of the curriculum agent’s downloaded source files and extracted text; reviewer checked file hashes and the stated passages. HTTP retrieval was performed by the curriculum agent. No whole-book proof re-verification is claimed.",
+    "records": [
+      {
+        "url": "https://pi.math.cornell.edu/~hatcher/AT/AT.pdf",
+        "bytes": 8121741,
+        "sha256": "bebb3032bf9021b956da3bd070eb6c67dc662cf849be9cdf6679f677560e5618",
+        "reviewedPassages": "Printed pp. 56–57 and 60: circle power covering and fixed-start path lifting; pp. 105–106 and 153: boundary maps, homology quotient and Z2 coefficients."
+      },
+      {
+        "url": "https://arxiv.org/pdf/1803.00567",
+        "bytes": 42429657,
+        "sha256": "5292a1fc53631ac28fdbcccecc060de8e072b3008fb8d36c22d963a8f6a06bac",
+        "reviewedPassages": "Printed pp. 31–32; W1 CDF identity (2.37), with explicit caution that adjacent Monge-map language is not unconditional for atoms."
+      },
+      {
+        "url": "https://kconrad.math.uconn.edu/blurbs/ringtheory/ideals.pdf",
+        "bytes": 349505,
+        "sha256": "1a19460414395e939bd4093753e2a081f7ac1145e6345062facbf3c81542f281",
+        "reviewedPassages": "Theorem 2.1 and proof, p. 3: principal ideals in F[T], via division with remainder."
+      },
+      {
+        "url": "https://kconrad.math.uconn.edu/blurbs/grouptheory/dihedral2.pdf",
+        "bytes": 290802,
+        "sha256": "703f3820a886af0d180e11de9832e7b1d76bf573e0ce946ba69d721b5341b72d",
+        "reviewedPassages": "Printed p. 3: geometric GL2(R) rotation/reflection matrices."
+      },
+      {
+        "url": "https://www.math.toronto.edu/ivrii/PDE-textbook/Chapter6/S6.1.html",
+        "bytes": 7785,
+        "sha256": "138c9c49a944416313c291c8790408db6e96f6d0520774f74e8dfa116d3e7095",
+        "reviewedPassages": "Modal ODE (6.1.4), periodic boundary list and nondecaying constant term (6.1.21)."
+      },
+      {
+        "url": "https://www.math.toronto.edu/ivrii/PDE-textbook/Chapter4/S4.2.html",
+        "bytes": 14431,
+        "sha256": "174eb4d953e185acb2f62b801d09d34d1afbfb185b7f0a8dca92e91cb6c93ec2",
+        "reviewedPassages": "Example 4, (4.2.13)–(4.2.20): periodic eigenvalues, sine/cosine/exponential eigenfunctions."
+      }
+    ]
+  },
+  "finished": "2026-10-22T16:14:37.533Z",
+  "integrationChecks": [
+    {
+      "name": "save, language switch, export JSON/Markdown, import exact roundtrip",
+      "records": 1,
+      "jsonBytes": 705,
+      "passed": true
+    },
+    {
+      "name": "unknown experiment is preserved; duplicate IDs keep local; invalid backup is atomic",
+      "unknownPreserved": true,
+      "atomicRejection": true,
+      "passed": true
+    },
+    {
+      "name": "500-record merge limit is rejected without render failure or data loss",
+      "mergedWouldBe": 501,
+      "passed": true
+    },
+    {
+      "name": "keyboard skip link preserves connection and focuses main content",
+      "passed": true
+    },
+    {
+      "name": "connected lesson/core navigation and all four mobile header routes remain usable",
+      "width": 390,
+      "routes": 4,
+      "passed": true
+    },
+    {
+      "name": "two tabs receive saved snapshots and deletion without writing back storage events",
+      "localWrites": [
+        2,
+        1
+      ],
+      "storageEventWritebacks": 0,
+      "semantics": "last-writer-wins; no concurrent merge claim",
+      "passed": true
+    },
+    {
+      "name": "near-5-MiB UTF-8 notebook exports compact JSON and imports without loss",
+      "records": 90,
+      "exportedBytes": 5241855,
+      "maximumBytes": 5242880,
+      "roundtripSha256": "2eba695580e9fa98e05ac720ddde23747f5071bfcb18768f98688508ec253906",
+      "passed": true
+    }
+  ],
+  "browserRun": {
+    "schemaVersion": 1,
+    "started": "2026-10-22T16:08:30.060Z",
+    "scope": "Six connection experiments: actual model changes, saved snapshots, routes, import/export and automated axe. No claim of full WCAG compliance.",
+    "pageErrors": [],
+    "consoleErrors": [],
+    "badResponses": [],
+    "buildIndexSha256": "9090c31b46c407175459d8fb1ee07535f813d1e2265e11d9e606853d880b1330",
+    "browser": "154.0.8037.57",
+    "passed": true,
+    "temporaryServerClosed": true,
+    "temporaryBuildRemoved": true,
+    "finished": "2026-10-22T16:09:53.637Z",
+    "scriptSha256": "37754cdaeb497ccdcfeb2d3db8a9d6c1862bf4a09d9b1fa31ac327aef6dcb181",
+    "executionMode": "Isolated local Chromium/Playwright fallback after browser-tool discovery; no personal browser profile accessed."
+  },
+  "manualScreenshotReview": {
+    "executor": "/root/education_review",
+    "observations": "Reviewed desktop D4 at z=0 and mobile Chinese covering/English ideal experiments. Mathematical figures, four-item navigation and labels were readable without observed page overflow. Earlier missing mapping glyphs were replaced with words in the final source/bundle. Screenshot review is sampled, not an exhaustive visual proof.",
+    "files": [
+      {
+        "path": "test-results/connections-audit/390-zh-complex-covering.png",
+        "sha256": "dc28ab48afdeddcf4cbcce5d12f0a9c0fcd142a671f42bb4ba7e48104fec40ba"
+      },
+      {
+        "path": "test-results/connections-audit/390-en-ideal-zeros.png",
+        "sha256": "8561ac960e0d5a04abe4e1d0a73185c45814261a415714f0a386a47636b15536"
+      },
+      {
+        "path": "test-results/connections-audit/1440-en-symmetry-representation.png",
+        "sha256": "406fab6dd009a1031da798f0c01baabea11cb45f3525b4201742348d113db292"
+      }
+    ]
+  },
+  "coreAudit": {
+    "executor": "/root/education_review",
+    "command": "python scripts/verify_core.py --baseline docs/publication-base.json --require-git",
+    "status": "passed",
+    "baselineCommit": "0b56806abb61fe06f7f63481c2008adad646a3af",
+    "baselineSha256": "3a38d24b53d44fbc73718567cd29c1147472fc3c76b6f283bde0ffe8c1f34919",
+    "filesChecked": 7314,
+    "gitTreeChecked": true,
+    "errors": [],
+    "scope": "Explicit delivery audit, not a permanent prohibition on core evolution."
+  },
+  "additionalParentVerification": {
+    "executor": "/root",
+    "reportedTests": 147,
+    "reportedPassed": 147,
+    "command": "npm test -- --maxWorkers=2",
+    "note": "Root reported all 147 tests passing in the final integrated source. An earlier whole-edge contract exceeded its timeout during concurrent CPU load; the bounded-worker rerun passed that same assertion without weakening the test. The independent reviewer directly executed the 15 new mathematical/contract tests and the browser audit recorded above."
+  },
+  "postFullAuditCssDelta": {
+    "started": "2026-10-22T16:14:23.353Z",
+    "scope": "CSS-only follow-up: D4 touch controls, actual zero-vector state, and axe in Chinese/English at 1440/390px. Earlier 24+7 report is preserved.",
+    "buildIndexSha256": "953216d4164fa281000de240df983c97c77523c2107907ff7ddc68bf3e37ed20",
+    "cases": [
+      {
+        "width": 1440,
+        "lang": "zh",
+        "controlSizes": [
+          {
+            "tag": "SELECT",
+            "type": null,
+            "height": 44,
+            "width": 225.3125
+          },
+          {
+            "tag": "SELECT",
+            "type": null,
+            "height": 44,
+            "width": 225.328125
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "height": 44,
+            "width": 92.1875
+          },
+          {
+            "tag": "INPUT",
+            "type": "range",
+            "height": 44,
+            "width": 225.3125
+          },
+          {
+            "tag": "INPUT",
+            "type": "range",
+            "height": 44,
+            "width": 225.328125
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "height": 44,
+            "width": 77.53125
+          }
+        ],
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 45
+          }
+        ],
+        "passed": true
+      },
+      {
+        "width": 1440,
+        "lang": "en",
+        "controlSizes": [
+          {
+            "tag": "SELECT",
+            "type": null,
+            "height": 44,
+            "width": 216.265625
+          },
+          {
+            "tag": "SELECT",
+            "type": null,
+            "height": 44,
+            "width": 216.28125
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "height": 44,
+            "width": 109.90625
+          },
+          {
+            "tag": "INPUT",
+            "type": "range",
+            "height": 44,
+            "width": 216.265625
+          },
+          {
+            "tag": "INPUT",
+            "type": "range",
+            "height": 44,
+            "width": 216.28125
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "height": 44,
+            "width": 96
+          }
+        ],
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 45
+          }
+        ],
+        "passed": true
+      },
+      {
+        "width": 390,
+        "lang": "zh",
+        "controlSizes": [
+          {
+            "tag": "SELECT",
+            "type": null,
+            "height": 44,
+            "width": 167.5
+          },
+          {
+            "tag": "SELECT",
+            "type": null,
+            "height": 44,
+            "width": 167.5
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "height": 44,
+            "width": 92.1875
+          },
+          {
+            "tag": "INPUT",
+            "type": "range",
+            "height": 44,
+            "width": 242.8125
+          },
+          {
+            "tag": "INPUT",
+            "type": "range",
+            "height": 44,
+            "width": 257.46875
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "height": 44,
+            "width": 77.53125
+          }
+        ],
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 45
+          }
+        ],
+        "passed": true
+      },
+      {
+        "width": 390,
+        "lang": "en",
+        "controlSizes": [
+          {
+            "tag": "SELECT",
+            "type": null,
+            "height": 44,
+            "width": 167.5
+          },
+          {
+            "tag": "SELECT",
+            "type": null,
+            "height": 44,
+            "width": 167.5
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "height": 44,
+            "width": 109.90625
+          },
+          {
+            "tag": "INPUT",
+            "type": "range",
+            "height": 44,
+            "width": 225.09375
+          },
+          {
+            "tag": "INPUT",
+            "type": "range",
+            "height": 44,
+            "width": 239
+          },
+          {
+            "tag": "BUTTON",
+            "type": "button",
+            "height": 44,
+            "width": 96
+          }
+        ],
+        "violations": [],
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 45
+          }
+        ],
+        "passed": true
+      }
+    ],
+    "pageErrors": [],
+    "badResponses": [],
+    "passed": true,
+    "finished": "2026-10-22T16:14:37.533Z",
+    "temporaryFilesRemoved": true,
+    "scriptSha256": "df226b9ddd8cc2889d7955de1bd8a88e741a607703afaef25ef611ed03333718"
+  },
+  "finalArtifactIndexSha256": "953216d4164fa281000de240df983c97c77523c2107907ff7ddc68bf3e37ed20"
+}

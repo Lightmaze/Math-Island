@@ -1,0 +1,4590 @@
+{
+  "started": "2026-10-22T16:09:34.034Z",
+  "indexSha256": "9090c31b46c407175459d8fb1ee07535f813d1e2265e11d9e606853d880b1330",
+  "viewports": [
+    {
+      "config": {
+        "name": "desktop",
+        "width": 1506,
+        "height": 1045,
+        "lang": "zh"
+      },
+      "measurements": {
+        "viewport": {
+          "width": 1506,
+          "height": 1045,
+          "scrollWidth": 1506,
+          "scrollHeight": 2632
+        },
+        "h1": {
+          "text": "同一频谱，热怎样演化",
+          "x": 262,
+          "y": 110,
+          "width": 1212,
+          "height": 44.796875,
+          "fontFamily": "\"Noto Serif CJK SC\", \"Songti SC\", STSong, Georgia, serif",
+          "fontSize": "32px",
+          "lineHeight": "44.8px",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        "figures": [
+          {
+            "caption": "铜色虚框：aₖ；青色实心：aₖe⁻ᵏ²ᵗ。均值 m 是不衰减的零频模态。",
+            "x": 262,
+            "y": 213.796875,
+            "width": 597,
+            "height": 416.84375
+          },
+          {
+            "caption": "x 为周期坐标，区间 [−π,π] 两端相接。纵轴随初始系数确定，推进时间时保持固定。",
+            "x": 877,
+            "y": 213.796875,
+            "width": 597,
+            "height": 416.84375
+          }
+        ],
+        "svgTexts": [
+          {
+            "text": "-1.5",
+            "sourceFontPx": 18,
+            "renderedFontPx": 19.13,
+            "x": 338.21875,
+            "y": 510.171875,
+            "width": 33.15625,
+            "height": 28
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 18,
+            "renderedFontPx": 19.13,
+            "x": 360.765625,
+            "y": 399.671875,
+            "width": 10.609375,
+            "height": 28
+          },
+          {
+            "text": "1.5",
+            "sourceFontPx": 18,
+            "renderedFontPx": 19.13,
+            "x": 344.84375,
+            "y": 289.171875,
+            "width": 26.53125,
+            "height": 28
+          },
+          {
+            "text": "k=1",
+            "sourceFontPx": 18,
+            "renderedFontPx": 19.13,
+            "x": 406.4921875,
+            "y": 544.171875,
+            "width": 31.765625,
+            "height": 28
+          },
+          {
+            "text": "k=2",
+            "sourceFontPx": 18,
+            "renderedFontPx": 19.13,
+            "x": 508.4921875,
+            "y": 544.171875,
+            "width": 31.765625,
+            "height": 28
+          },
+          {
+            "text": "k=3",
+            "sourceFontPx": 18,
+            "renderedFontPx": 19.13,
+            "x": 610.4921875,
+            "y": 544.171875,
+            "width": 31.765625,
+            "height": 28
+          },
+          {
+            "text": "k=4",
+            "sourceFontPx": 18,
+            "renderedFontPx": 19.13,
+            "x": 712.4921875,
+            "y": 544.171875,
+            "width": 31.765625,
+            "height": 28
+          },
+          {
+            "text": "-2.1",
+            "sourceFontPx": 18,
+            "renderedFontPx": 19.13,
+            "x": 953.21875,
+            "y": 505.921875,
+            "width": 33.15625,
+            "height": 28
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 18,
+            "renderedFontPx": 19.13,
+            "x": 975.765625,
+            "y": 393.296875,
+            "width": 10.609375,
+            "height": 28
+          },
+          {
+            "text": "2.1",
+            "sourceFontPx": 18,
+            "renderedFontPx": 19.13,
+            "x": 959.84375,
+            "y": 280.671875,
+            "width": 26.53125,
+            "height": 28
+          },
+          {
+            "text": "−π",
+            "sourceFontPx": 18,
+            "renderedFontPx": 19.13,
+            "x": 985.4453125,
+            "y": 544.171875,
+            "width": 23.109375,
+            "height": 28
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 18,
+            "renderedFontPx": 19.13,
+            "x": 1182.9453125,
+            "y": 544.171875,
+            "width": 10.609375,
+            "height": 28
+          },
+          {
+            "text": "π",
+            "sourceFontPx": 18,
+            "renderedFontPx": 19.13,
+            "x": 1373.25,
+            "y": 544.171875,
+            "width": 12.5,
+            "height": 28
+          }
+        ],
+        "controls": [
+          {
+            "type": "BUTTON",
+            "label": "探索群岛",
+            "x": 540.140625,
+            "y": 0,
+            "width": 82.015625,
+            "height": 77
+          },
+          {
+            "type": "BUTTON",
+            "label": "全部图谱",
+            "x": 660.15625,
+            "y": 0,
+            "width": 82.015625,
+            "height": 77
+          },
+          {
+            "type": "BUTTON",
+            "label": "联岛实验",
+            "x": 780.171875,
+            "y": 0,
+            "width": 82.015625,
+            "height": 77
+          },
+          {
+            "type": "BUTTON",
+            "label": "我的航记",
+            "x": 900.1875,
+            "y": 0,
+            "width": 82.015625,
+            "height": 77
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 262,
+            "y": 671.640625,
+            "width": 389.328125,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 673.328125,
+            "y": 671.640625,
+            "width": 389.328125,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 1084.65625,
+            "y": 671.640625,
+            "width": 389.34375,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 262,
+            "y": 756.640625,
+            "width": 389.328125,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 673.328125,
+            "y": 756.640625,
+            "width": 389.328125,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 1084.65625,
+            "y": 756.640625,
+            "width": 389.34375,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "恢复示例初值（t=0）",
+            "x": 262,
+            "y": 820.640625,
+            "width": 389.328125,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "保存实验记录",
+            "x": 262,
+            "y": 1624.875,
+            "width": 171.015625,
+            "height": 48.390625
+          },
+          {
+            "type": "BUTTON",
+            "label": "分享实验入口",
+            "x": 459.015625,
+            "y": 1627.0625,
+            "width": 96.015625,
+            "height": 44
+          }
+        ],
+        "body": {
+          "fontFamily": "\"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      }
+    },
+    {
+      "config": {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "lang": "zh"
+      },
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 4252
+        },
+        "h1": {
+          "text": "同一频谱，热怎样演化",
+          "x": 20,
+          "y": 202,
+          "width": 350,
+          "height": 37.5,
+          "fontFamily": "\"Noto Serif CJK SC\", \"Songti SC\", STSong, Georgia, serif",
+          "fontSize": "25px",
+          "lineHeight": "37.5px",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        "figures": [
+          {
+            "caption": "铜色虚框：aₖ；青色实心：aₖe⁻ᵏ²ᵗ。均值 m 是不衰减的零频模态。",
+            "x": 20,
+            "y": 319.875,
+            "width": 350,
+            "height": 323.6875
+          },
+          {
+            "caption": "x 为周期坐标，区间 [−π,π] 两端相接。纵轴随初始系数确定，推进时间时保持固定。",
+            "x": 20,
+            "y": 661.5625,
+            "width": 350,
+            "height": 323.6875
+          }
+        ],
+        "svgTexts": [
+          {
+            "text": "-1.5",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 35.76250457763672,
+            "y": 526.8250122070312,
+            "width": 30.18749237060547,
+            "height": 25
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 56.29375076293945,
+            "y": 451.42498779296875,
+            "width": 9.656246185302734,
+            "height": 25
+          },
+          {
+            "text": "1.5",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 41.80937957763672,
+            "y": 376.0249938964844,
+            "width": 24.140625,
+            "height": 25
+          },
+          {
+            "text": "k=1",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 86.28905487060547,
+            "y": 550.0250244140625,
+            "width": 28.921875,
+            "height": 25
+          },
+          {
+            "text": "k=2",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 155.88906860351562,
+            "y": 550.0250244140625,
+            "width": 28.921875,
+            "height": 25
+          },
+          {
+            "text": "k=3",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 225.48904418945312,
+            "y": 550.0250244140625,
+            "width": 28.921875,
+            "height": 25
+          },
+          {
+            "text": "k=4",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 295.08905029296875,
+            "y": 550.0250244140625,
+            "width": 29.265625,
+            "height": 25
+          },
+          {
+            "text": "-2.1",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 35.76250457763672,
+            "y": 865.6124877929688,
+            "width": 30.18749237060547,
+            "height": 25
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 56.29375076293945,
+            "y": 788.7625122070312,
+            "width": 9.656246185302734,
+            "height": 25
+          },
+          {
+            "text": "2.1",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 41.80937957763672,
+            "y": 711.9124755859375,
+            "width": 24.140625,
+            "height": 25
+          },
+          {
+            "text": "−π",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 62.68437576293945,
+            "y": 891.7125244140625,
+            "width": 21.031246185302734,
+            "height": 25
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 198.8718719482422,
+            "y": 891.7125244140625,
+            "width": 9.65625,
+            "height": 25
+          },
+          {
+            "text": "π",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 328.5124816894531,
+            "y": 891.7125244140625,
+            "width": 11.375,
+            "height": 25
+          }
+        ],
+        "controls": [
+          {
+            "type": "BUTTON",
+            "label": "探索群岛",
+            "x": 20,
+            "y": 64,
+            "width": 87.5,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "全部图谱",
+            "x": 107.5,
+            "y": 64,
+            "width": 87.5,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "联岛实验",
+            "x": 195,
+            "y": 64,
+            "width": 87.5,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "我的航记",
+            "x": 282.5,
+            "y": 64,
+            "width": 87.5,
+            "height": 48
+          },
+          {
+            "type": "SELECT",
+            "label": "选择联岛实验傅里叶与热流图与同调复数与覆盖分布与输运理想与零点对称与表示",
+            "x": 20,
+            "y": 132,
+            "width": 350,
+            "height": 47
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 20,
+            "y": 1026.25,
+            "width": 350,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 20,
+            "y": 1104.25,
+            "width": 350,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 20,
+            "y": 1182.25,
+            "width": 350,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 20,
+            "y": 1260.25,
+            "width": 350,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 20,
+            "y": 1338.25,
+            "width": 350,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 20,
+            "y": 1416.25,
+            "width": 350,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "恢复示例初值（t=0）",
+            "x": 20,
+            "y": 1473.25,
+            "width": 350,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "保存实验记录",
+            "x": 20,
+            "y": 2604.9375,
+            "width": 171.015625,
+            "height": 48.390625
+          },
+          {
+            "type": "BUTTON",
+            "label": "分享实验入口",
+            "x": 211.015625,
+            "y": 2607.125,
+            "width": 96.015625,
+            "height": 44
+          }
+        ],
+        "body": {
+          "fontFamily": "\"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      }
+    },
+    {
+      "config": {
+        "name": "mobile-en",
+        "width": 390,
+        "height": 844,
+        "lang": "en"
+      },
+      "measurements": {
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 4816
+        },
+        "h1": {
+          "text": "One spectrum, evolving heat",
+          "x": 20,
+          "y": 202,
+          "width": 350,
+          "height": 75,
+          "fontFamily": "\"Noto Serif CJK SC\", \"Songti SC\", STSong, Georgia, serif",
+          "fontSize": "25px",
+          "lineHeight": "37.5px",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        "figures": [
+          {
+            "caption": "Copper outline: aₖ. Teal fill: aₖe⁻ᵏ²ᵗ. The mean m is the unchanged zero-frequency mode.",
+            "x": 20,
+            "y": 357.375,
+            "width": 350,
+            "height": 323.6875
+          },
+          {
+            "caption": "x is periodic: the endpoints of [−π,π] are identified. The vertical range depends on the initial coefficients and stays fixed while time changes.",
+            "x": 20,
+            "y": 699.0625,
+            "width": 350,
+            "height": 344.53125
+          }
+        ],
+        "svgTexts": [
+          {
+            "text": "-1.5",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 35.76250457763672,
+            "y": 564.3250122070312,
+            "width": 30.18749237060547,
+            "height": 25
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 56.29375076293945,
+            "y": 488.92498779296875,
+            "width": 9.656246185302734,
+            "height": 25
+          },
+          {
+            "text": "1.5",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 41.80937957763672,
+            "y": 413.5249938964844,
+            "width": 24.140625,
+            "height": 25
+          },
+          {
+            "text": "k=1",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 86.28905487060547,
+            "y": 587.5250244140625,
+            "width": 28.921875,
+            "height": 25
+          },
+          {
+            "text": "k=2",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 155.88906860351562,
+            "y": 587.5250244140625,
+            "width": 28.921875,
+            "height": 25
+          },
+          {
+            "text": "k=3",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 225.48904418945312,
+            "y": 587.5250244140625,
+            "width": 28.921875,
+            "height": 25
+          },
+          {
+            "text": "k=4",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 295.08905029296875,
+            "y": 587.5250244140625,
+            "width": 29.265625,
+            "height": 25
+          },
+          {
+            "text": "-2.1",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 35.76250457763672,
+            "y": 903.1124877929688,
+            "width": 30.18749237060547,
+            "height": 25
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 56.29375076293945,
+            "y": 826.2625122070312,
+            "width": 9.656246185302734,
+            "height": 25
+          },
+          {
+            "text": "2.1",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 41.80937957763672,
+            "y": 749.4124755859375,
+            "width": 24.140625,
+            "height": 25
+          },
+          {
+            "text": "−π",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 62.68437576293945,
+            "y": 929.2125244140625,
+            "width": 21.031246185302734,
+            "height": 25
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 198.8718719482422,
+            "y": 929.2125244140625,
+            "width": 9.65625,
+            "height": 25
+          },
+          {
+            "text": "π",
+            "sourceFontPx": 24,
+            "renderedFontPx": 17.4,
+            "x": 328.5124816894531,
+            "y": 929.2125244140625,
+            "width": 11.375,
+            "height": 25
+          }
+        ],
+        "controls": [
+          {
+            "type": "BUTTON",
+            "label": "Explore",
+            "x": 20,
+            "y": 64,
+            "width": 87.5,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Full atlas",
+            "x": 107.5,
+            "y": 64,
+            "width": 87.5,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Connections",
+            "x": 195,
+            "y": 64,
+            "width": 87.5,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Field notes",
+            "x": 282.5,
+            "y": 64,
+            "width": 87.5,
+            "height": 48
+          },
+          {
+            "type": "SELECT",
+            "label": "Choose a connection experimentFourier & heatGraphs & homologyComplex coversDistributions & transportIdeals & zerosSymmetry & representations",
+            "x": 20,
+            "y": 132,
+            "width": 350,
+            "height": 47
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 20,
+            "y": 1084.59375,
+            "width": 350,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 20,
+            "y": 1162.59375,
+            "width": 350,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 20,
+            "y": 1240.59375,
+            "width": 350,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 20,
+            "y": 1318.59375,
+            "width": 350,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 20,
+            "y": 1396.59375,
+            "width": 350,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 20,
+            "y": 1474.59375,
+            "width": 350,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Restore example initial data (t=0)",
+            "x": 20,
+            "y": 1531.59375,
+            "width": 350,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Save experiment record",
+            "x": 20,
+            "y": 2808.890625,
+            "width": 259.25,
+            "height": 48.390625
+          },
+          {
+            "type": "BUTTON",
+            "label": "Share experiment entry",
+            "x": 20,
+            "y": 2867.28125,
+            "width": 155.671875,
+            "height": 44
+          }
+        ],
+        "body": {
+          "fontFamily": "\"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      }
+    },
+    {
+      "config": {
+        "name": "mobile-320-en",
+        "width": 320,
+        "height": 844,
+        "lang": "en"
+      },
+      "measurements": {
+        "viewport": {
+          "width": 320,
+          "height": 844,
+          "scrollWidth": 320,
+          "scrollHeight": 5040
+        },
+        "h1": {
+          "text": "One spectrum, evolving heat",
+          "x": 14,
+          "y": 200,
+          "width": 292,
+          "height": 69,
+          "fontFamily": "\"Noto Serif CJK SC\", \"Songti SC\", STSong, Georgia, serif",
+          "fontSize": "23px",
+          "lineHeight": "34.5px",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        "figures": [
+          {
+            "caption": "Copper outline: aₖ. Teal fill: aₖe⁻ᵏ²ᵗ. The mean m is the unchanged zero-frequency mode.",
+            "x": 14,
+            "y": 374.5625,
+            "width": 292,
+            "height": 285.015625
+          },
+          {
+            "caption": "x is periodic: the endpoints of [−π,π] are identified. The vertical range depends on the initial coefficients and stays fixed while time changes.",
+            "x": 14,
+            "y": 677.578125,
+            "width": 292,
+            "height": 350.703125
+          }
+        ],
+        "svgTexts": [
+          {
+            "text": "-1.5",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 27.320606231689453,
+            "y": 552.8499145507812,
+            "width": 25.140625,
+            "height": 21
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 44.41435623168945,
+            "y": 490.01824951171875,
+            "width": 8.046875,
+            "height": 21
+          },
+          {
+            "text": "1.5",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 32.35185623168945,
+            "y": 427.1866149902344,
+            "width": 20.109375,
+            "height": 21
+          },
+          {
+            "text": "k=1",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 69.41357421875,
+            "y": 572.1827392578125,
+            "width": 24.09374237060547,
+            "height": 21
+          },
+          {
+            "text": "k=2",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 127.41201782226562,
+            "y": 572.1827392578125,
+            "width": 24.093734741210938,
+            "height": 21
+          },
+          {
+            "text": "k=3",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 185.4104461669922,
+            "y": 572.1827392578125,
+            "width": 24.093765258789062,
+            "height": 21
+          },
+          {
+            "text": "k=4",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 243.4088897705078,
+            "y": 572.1827392578125,
+            "width": 24.093734741210938,
+            "height": 21
+          },
+          {
+            "text": "-2.1",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 27.320606231689453,
+            "y": 877.4489135742188,
+            "width": 25.140625,
+            "height": 21
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 44.41435623168945,
+            "y": 813.4089965820312,
+            "width": 8.046875,
+            "height": 21
+          },
+          {
+            "text": "2.1",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 32.35185623168945,
+            "y": 749.3690185546875,
+            "width": 20.109375,
+            "height": 21
+          },
+          {
+            "text": "−π",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 49.74491882324219,
+            "y": 899.1983642578125,
+            "width": 18.038848876953125,
+            "height": 21
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 163.22637939453125,
+            "y": 899.1983642578125,
+            "width": 8.046859741210938,
+            "height": 21
+          },
+          {
+            "text": "π",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 271.25469970703125,
+            "y": 899.1983642578125,
+            "width": 10,
+            "height": 21
+          }
+        ],
+        "controls": [
+          {
+            "type": "BUTTON",
+            "label": "Explore",
+            "x": 14,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Full atlas",
+            "x": 87,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Connections",
+            "x": 160,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Field notes",
+            "x": 233,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "SELECT",
+            "label": "Choose a connection experimentFourier & heatGraphs & homologyComplex coversDistributions & transportIdeals & zerosSymmetry & representations",
+            "x": 14,
+            "y": 130,
+            "width": 292,
+            "height": 47
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 14,
+            "y": 1069.28125,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 14,
+            "y": 1147.28125,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 14,
+            "y": 1225.28125,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 14,
+            "y": 1303.28125,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 14,
+            "y": 1381.28125,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 14,
+            "y": 1459.28125,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Restore example initial data (t=0)",
+            "x": 14,
+            "y": 1516.28125,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Save experiment record",
+            "x": 14,
+            "y": 2931.1875,
+            "width": 259.25,
+            "height": 48.390625
+          },
+          {
+            "type": "BUTTON",
+            "label": "Share experiment entry",
+            "x": 14,
+            "y": 2989.578125,
+            "width": 155.671875,
+            "height": 44
+          }
+        ],
+        "body": {
+          "fontFamily": "\"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      }
+    }
+  ],
+  "alternates": [
+    {
+      "id": "graph-homology",
+      "measurements": {
+        "viewport": {
+          "width": 320,
+          "height": 844,
+          "scrollWidth": 320,
+          "scrollHeight": 5867
+        },
+        "h1": {
+          "text": "From graph cycles to homology",
+          "x": 14,
+          "y": 200,
+          "width": 292,
+          "height": 69,
+          "fontFamily": "\"Noto Serif CJK SC\", \"Songti SC\", STSong, Georgia, serif",
+          "fontSize": "23px",
+          "lineHeight": "34.5px",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        "figures": [
+          {
+            "caption": "Graph and selected triangular faces",
+            "x": 14,
+            "y": 563.921875,
+            "width": 292,
+            "height": 270.546875
+          },
+          {
+            "caption": "Cycles grouped modulo boundaries",
+            "x": 14,
+            "y": 850.46875,
+            "width": 292,
+            "height": 270.546875
+          }
+        ],
+        "svgTexts": [
+          {
+            "text": "ABC",
+            "sourceFontPx": 19,
+            "renderedFontPx": 13.12,
+            "x": 178.77525329589844,
+            "y": 676.47607421875,
+            "width": 26.890625,
+            "height": 15
+          },
+          {
+            "text": "ABD",
+            "sourceFontPx": 19,
+            "renderedFontPx": 13.12,
+            "x": 113.7481460571289,
+            "y": 676.47607421875,
+            "width": 28.06249237060547,
+            "height": 15
+          },
+          {
+            "text": "ACD",
+            "sourceFontPx": 19,
+            "renderedFontPx": 13.12,
+            "x": 113.77940368652344,
+            "y": 717.902587890625,
+            "width": 27.999984741210938,
+            "height": 15
+          },
+          {
+            "text": "BCD",
+            "sourceFontPx": 19,
+            "renderedFontPx": 13.12,
+            "x": 178.21275329589844,
+            "y": 717.902587890625,
+            "width": 28.015625,
+            "height": 15
+          },
+          {
+            "text": "A",
+            "sourceFontPx": 23,
+            "renderedFontPx": 15.88,
+            "x": 57.900733947753906,
+            "y": 636.8826904296875,
+            "width": 11,
+            "height": 19
+          },
+          {
+            "text": "B",
+            "sourceFontPx": 23,
+            "renderedFontPx": 15.88,
+            "x": 251.20863342285156,
+            "y": 636.8826904296875,
+            "width": 10.906234741210938,
+            "height": 19
+          },
+          {
+            "text": "C",
+            "sourceFontPx": 23,
+            "renderedFontPx": 15.88,
+            "x": 251.11488342285156,
+            "y": 761.162109375,
+            "width": 11.093734741210938,
+            "height": 19
+          },
+          {
+            "text": "D",
+            "sourceFontPx": 23,
+            "renderedFontPx": 15.88,
+            "x": 57.221046447753906,
+            "y": 761.162109375,
+            "width": 12.234382629394531,
+            "height": 19
+          },
+          {
+            "text": "z = AB + AC + AD + BC + BD + CD",
+            "sourceFontPx": 20,
+            "renderedFontPx": 13.81,
+            "x": 36.882808685302734,
+            "y": 799.7554931640625,
+            "width": 246.234375,
+            "height": 16
+          },
+          {
+            "text": "H₁ = Z₁ / B₁",
+            "sourceFontPx": 25,
+            "renderedFontPx": 17.26,
+            "x": 110.21092987060547,
+            "y": 895.5023803710938,
+            "width": 99.57811737060547,
+            "height": 20
+          },
+          {
+            "text": "[0]",
+            "sourceFontPx": 23,
+            "renderedFontPx": 15.88,
+            "x": 148.74998474121094,
+            "y": 954.4994506835938,
+            "width": 22.5,
+            "height": 19
+          },
+          {
+            "text": "dim H₁ = 0 · |H₁| = 1",
+            "sourceFontPx": 21,
+            "renderedFontPx": 14.5,
+            "x": 84.9765625,
+            "y": 1082.15966796875,
+            "width": 150.04685974121094,
+            "height": 17.0001220703125
+          }
+        ],
+        "controls": [
+          {
+            "type": "BUTTON",
+            "label": "Explore",
+            "x": 14,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Full atlas",
+            "x": 87,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Connections",
+            "x": 160,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Field notes",
+            "x": 233,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "SELECT",
+            "label": "Choose a connection experimentFourier & heatGraphs & homologyComplex coversDistributions & transportIdeals & zerosSymmetry & representations",
+            "x": 14,
+            "y": 130,
+            "width": 292,
+            "height": 47
+          },
+          {
+            "type": "BUTTON",
+            "label": "Full graph skeleton",
+            "x": 14,
+            "y": 1143.015625,
+            "width": 142.8125,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Fill all four faces",
+            "x": 165.8125,
+            "y": 1143.015625,
+            "width": 125.34375,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Keep a tree",
+            "x": 14,
+            "y": 1196.015625,
+            "width": 96.109375,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "AB",
+            "x": 27,
+            "y": 1287.109375,
+            "width": 44.453125,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "AC",
+            "x": 79.453125,
+            "y": 1287.109375,
+            "width": 44.0625,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "AD",
+            "x": 131.515625,
+            "y": 1287.109375,
+            "width": 44.859375,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "BC",
+            "x": 184.375,
+            "y": 1287.109375,
+            "width": 44.84375,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "BD",
+            "x": 237.21875,
+            "y": 1287.109375,
+            "width": 45.5,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "CD",
+            "x": 27,
+            "y": 1339.109375,
+            "width": 45.25,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "ABC",
+            "x": 27,
+            "y": 1444.203125,
+            "width": 52.75,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "ABD",
+            "x": 87.75,
+            "y": 1444.203125,
+            "width": 53.390625,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "ACD",
+            "x": 149.140625,
+            "y": 1444.203125,
+            "width": 53,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "BCD",
+            "x": 210.140625,
+            "y": 1444.203125,
+            "width": 53.78125,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "AB",
+            "x": 27,
+            "y": 1549.296875,
+            "width": 44.453125,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "AC",
+            "x": 79.453125,
+            "y": 1549.296875,
+            "width": 44.0625,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "AD",
+            "x": 131.515625,
+            "y": 1549.296875,
+            "width": 44.859375,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "BC",
+            "x": 184.375,
+            "y": 1549.296875,
+            "width": 44.84375,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "BD",
+            "x": 237.21875,
+            "y": 1549.296875,
+            "width": 45.5,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "CD",
+            "x": 27,
+            "y": 1601.296875,
+            "width": 45.25,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Zero chain",
+            "x": 80.25,
+            "y": 1601.296875,
+            "width": 91.765625,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Save experiment record",
+            "x": 14,
+            "y": 3710.984375,
+            "width": 259.25,
+            "height": 48.390625
+          },
+          {
+            "type": "BUTTON",
+            "label": "Share experiment entry",
+            "x": 14,
+            "y": 3769.375,
+            "width": 155.671875,
+            "height": 44
+          }
+        ],
+        "body": {
+          "fontFamily": "\"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      }
+    },
+    {
+      "id": "complex-covering",
+      "measurements": {
+        "viewport": {
+          "width": 320,
+          "height": 844,
+          "scrollWidth": 320,
+          "scrollHeight": 5355
+        },
+        "h1": {
+          "text": "Complex powers and lifted paths",
+          "x": 14,
+          "y": 200,
+          "width": 292,
+          "height": 69,
+          "fontFamily": "\"Noto Serif CJK SC\", \"Songti SC\", STSong, Georgia, serif",
+          "fontSize": "23px",
+          "lineHeight": "34.5px",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        "figures": [
+          {
+            "caption": "Covering circle: follow one preimage",
+            "x": 14,
+            "y": 660.59375,
+            "width": 292,
+            "height": 414.046875
+          },
+          {
+            "caption": "Base circle: the power map sends z to zⁿ",
+            "x": 14,
+            "y": 1088.640625,
+            "width": 292,
+            "height": 433.84375
+          }
+        ],
+        "svgTexts": [
+          {
+            "text": "Re",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 252.3567657470703,
+            "y": 819.205322265625,
+            "width": 15.765640258789062,
+            "height": 18
+          },
+          {
+            "text": "Im",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 165.17198181152344,
+            "y": 729.0651245117188,
+            "width": 16.921875,
+            "height": 18
+          },
+          {
+            "text": "1",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 236.1019744873047,
+            "y": 829.5492553710938,
+            "width": 7.609375,
+            "height": 18
+          },
+          {
+            "text": "0.3333",
+            "sourceFontPx": 32,
+            "renderedFontPx": 23.64,
+            "x": 127.515625,
+            "y": 801.861328125,
+            "width": 64.96875,
+            "height": 26
+          },
+          {
+            "text": "turns from start",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 110.45311737060547,
+            "y": 825.1161499023438,
+            "width": 99.29744720458984,
+            "height": 18
+          },
+          {
+            "text": "z = -0.5 + 0.866i",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 112.16405487060547,
+            "y": 921.167236328125,
+            "width": 95.67188262939453,
+            "height": 18
+          },
+          {
+            "text": "Re",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 252.3567657470703,
+            "y": 1247.252197265625,
+            "width": 15.765640258789062,
+            "height": 18
+          },
+          {
+            "text": "Im",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 165.17198181152344,
+            "y": 1157.1119384765625,
+            "width": 16.921875,
+            "height": 18
+          },
+          {
+            "text": "1",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 236.1019744873047,
+            "y": 1257.59619140625,
+            "width": 7.609375,
+            "height": 18
+          },
+          {
+            "text": "1",
+            "sourceFontPx": 32,
+            "renderedFontPx": 23.64,
+            "x": 154.09375,
+            "y": 1229.908203125,
+            "width": 11.8125,
+            "height": 26
+          },
+          {
+            "text": "accumulated turns",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 101.55467987060547,
+            "y": 1253.1630859375,
+            "width": 116.89063262939453,
+            "height": 17.9998779296875
+          },
+          {
+            "text": "zⁿ = 1 + 0i",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 130.390625,
+            "y": 1349.214111328125,
+            "width": 59.21873474121094,
+            "height": 18
+          }
+        ],
+        "controls": [
+          {
+            "type": "BUTTON",
+            "label": "Explore",
+            "x": 14,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Full atlas",
+            "x": 87,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Connections",
+            "x": 160,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Field notes",
+            "x": 233,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "SELECT",
+            "label": "Choose a connection experimentFourier & heatGraphs & homologyComplex coversDistributions & transportIdeals & zerosSymmetry & representations",
+            "x": 14,
+            "y": 130,
+            "width": 292,
+            "height": 47
+          },
+          {
+            "type": "BUTTON",
+            "label": "Enlarge readings",
+            "x": 27,
+            "y": 1017.640625,
+            "width": 119.1875,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Enlarge readings",
+            "x": 27,
+            "y": 1465.484375,
+            "width": 119.1875,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "Covering degree n3",
+            "x": 14,
+            "y": 1569.328125,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "SELECT",
+            "label": "Lifted start kk = 0 · exp(2πi·0/3)k = 1 · exp(2πi·1/3)k = 2 · exp(2πi·2/3)",
+            "x": 14,
+            "y": 1654.171875,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "Winding m of the full base loop1",
+            "x": 14,
+            "y": 1739.015625,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "Path progress t100%",
+            "x": 14,
+            "y": 1823.859375,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Return to the start",
+            "x": 14,
+            "y": 1883.859375,
+            "width": 135.90625,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Complete this path",
+            "x": 157.90625,
+            "y": 1883.859375,
+            "width": 140.984375,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Try n full turns",
+            "x": 14,
+            "y": 1935.859375,
+            "width": 113.328125,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Save experiment record",
+            "x": 14,
+            "y": 3311.453125,
+            "width": 259.25,
+            "height": 48.390625
+          },
+          {
+            "type": "BUTTON",
+            "label": "Share experiment entry",
+            "x": 14,
+            "y": 3369.84375,
+            "width": 155.671875,
+            "height": 44
+          }
+        ],
+        "body": {
+          "fontFamily": "\"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      }
+    },
+    {
+      "id": "transport-cdf",
+      "measurements": {
+        "viewport": {
+          "width": 320,
+          "height": 844,
+          "scrollWidth": 320,
+          "scrollHeight": 4845
+        },
+        "h1": {
+          "text": "Transport cost as CDF area",
+          "x": 14,
+          "y": 200,
+          "width": 292,
+          "height": 69,
+          "fontFamily": "\"Noto Serif CJK SC\", \"Songti SC\", STSong, Georgia, serif",
+          "fontSize": "23px",
+          "lineHeight": "34.5px",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        "figures": [
+          {
+            "caption": "Outside each circle is position; inside is probability. The two rows distinguish measures; cost uses only the difference in horizontal coordinates.",
+            "x": 14,
+            "y": 399.75,
+            "width": 292,
+            "height": 326.703125
+          },
+          {
+            "caption": "F(x)=P(X≤x) takes the right-continuous value. Hollow dots are left limits; filled dots are the values. Vertical segments only mark jumps. Shading width is a position interval.",
+            "x": 14,
+            "y": 744.453125,
+            "width": 292,
+            "height": 350.703125
+          }
+        ],
+        "svgTexts": [
+          {
+            "text": "0.25",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 85.20475769042969,
+            "y": 474.12353515625,
+            "width": 28.15625,
+            "height": 21
+          },
+          {
+            "text": "-2",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 92.74382781982422,
+            "y": 446.936767578125,
+            "width": 13.078125,
+            "height": 21
+          },
+          {
+            "text": "0.5",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 157.1951141357422,
+            "y": 474.12353515625,
+            "width": 20.109390258789062,
+            "height": 21
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 163.22637939453125,
+            "y": 446.936767578125,
+            "width": 8.046859741210938,
+            "height": 21
+          },
+          {
+            "text": "0.25",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 221.13861083984375,
+            "y": 474.12353515625,
+            "width": 28.15625,
+            "height": 21
+          },
+          {
+            "text": "2",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 231.1932830810547,
+            "y": 446.936767578125,
+            "width": 8.046875,
+            "height": 21
+          },
+          {
+            "text": "0.35",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 105.5948257446289,
+            "y": 561.725341796875,
+            "width": 28.15624237060547,
+            "height": 21
+          },
+          {
+            "text": "-1.4",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 107.1026382446289,
+            "y": 588.912109375,
+            "width": 25.14061737060547,
+            "height": 21
+          },
+          {
+            "text": "0.5",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 177.585205078125,
+            "y": 561.725341796875,
+            "width": 20.109375,
+            "height": 21
+          },
+          {
+            "text": "0.6",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 177.585205078125,
+            "y": 588.912109375,
+            "width": 20.109375,
+            "height": 21
+          },
+          {
+            "text": "0.15",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 241.5286865234375,
+            "y": 561.725341796875,
+            "width": 28.15625,
+            "height": 21
+          },
+          {
+            "text": "2.6",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 245.55210876464844,
+            "y": 588.912109375,
+            "width": 20.109359741210938,
+            "height": 21
+          },
+          {
+            "text": "μ",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 24.670312881469727,
+            "y": 474.12353515625,
+            "width": 9.109373092651367,
+            "height": 21
+          },
+          {
+            "text": "ν",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 24.670312881469727,
+            "y": 561.725341796875,
+            "width": 7.999998092651367,
+            "height": 21
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 44.41435623168945,
+            "y": 947.9488525390625,
+            "width": 8.046875,
+            "height": 21
+          },
+          {
+            "text": "0.5",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 32.35185623168945,
+            "y": 884.8151245117188,
+            "width": 20.109375,
+            "height": 21
+          },
+          {
+            "text": "1",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 44.41435623168945,
+            "y": 821.681396484375,
+            "width": 8.046875,
+            "height": 21
+          },
+          {
+            "text": "-3",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 58.76036071777344,
+            "y": 966.0733642578125,
+            "width": 13.078125,
+            "height": 21
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 163.22637939453125,
+            "y": 966.0733642578125,
+            "width": 8.046859741210938,
+            "height": 21
+          },
+          {
+            "text": "3",
+            "sourceFontPx": 24,
+            "renderedFontPx": 14.5,
+            "x": 265.1767578125,
+            "y": 966.0733642578125,
+            "width": 8.046875,
+            "height": 21
+          }
+        ],
+        "controls": [
+          {
+            "type": "BUTTON",
+            "label": "Explore",
+            "x": 14,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Full atlas",
+            "x": 87,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Connections",
+            "x": 160,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Field notes",
+            "x": 233,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "SELECT",
+            "label": "Choose a connection experimentFourier & heatGraphs & homologyComplex coversDistributions & transportIdeals & zerosSymmetry & representations",
+            "x": 14,
+            "y": 130,
+            "width": 292,
+            "height": 47
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 14,
+            "y": 1136.15625,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 14,
+            "y": 1214.15625,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "",
+            "x": 14,
+            "y": 1292.15625,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Make the distributions identical",
+            "x": 14,
+            "y": 1349.15625,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Save experiment record",
+            "x": 14,
+            "y": 2757.546875,
+            "width": 259.25,
+            "height": 48.390625
+          },
+          {
+            "type": "BUTTON",
+            "label": "Share experiment entry",
+            "x": 14,
+            "y": 2815.9375,
+            "width": 155.671875,
+            "height": 44
+          }
+        ],
+        "body": {
+          "fontFamily": "\"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      }
+    },
+    {
+      "id": "ideal-zeros",
+      "measurements": {
+        "viewport": {
+          "width": 320,
+          "height": 844,
+          "scrollWidth": 320,
+          "scrollHeight": 6221
+        },
+        "h1": {
+          "text": "Bézout coefficients and common zeros",
+          "x": 14,
+          "y": 200,
+          "width": 292,
+          "height": 69,
+          "fontFamily": "\"Noto Serif CJK SC\", \"Songti SC\", STSong, Georgia, serif",
+          "fontSize": "23px",
+          "lineHeight": "34.5px",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        "figures": [
+          {
+            "caption": "Algebra: the computed remainder chain",
+            "x": 14,
+            "y": 687.59375,
+            "width": 292,
+            "height": 433.84375
+          },
+          {
+            "caption": "Geometry: enumerate every point of Fₚ",
+            "x": 14,
+            "y": 1135.4375,
+            "width": 292,
+            "height": 433.84375
+          }
+        ],
+        "svgTexts": [
+          {
+            "text": "f",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 45.477603912353516,
+            "y": 774.5364379882812,
+            "width": 6,
+            "height": 18
+          },
+          {
+            "text": "degree 2",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 215.4140625,
+            "y": 774.5364379882812,
+            "width": 55.109375,
+            "height": 18
+          },
+          {
+            "text": "g",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 45.477603912353516,
+            "y": 805.568359375,
+            "width": 8.171875,
+            "height": 18
+          },
+          {
+            "text": "degree 2",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 215.4140625,
+            "y": 805.568359375,
+            "width": 55.109375,
+            "height": 18
+          },
+          {
+            "text": "r1",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 45.477603912353516,
+            "y": 836.6002197265625,
+            "width": 13.093746185302734,
+            "height": 18
+          },
+          {
+            "text": "degree 1",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 152.6114501953125,
+            "y": 836.6002197265625,
+            "width": 55.10939025878906,
+            "height": 18
+          },
+          {
+            "text": "r2",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 45.477603912353516,
+            "y": 867.632080078125,
+            "width": 13.093746185302734,
+            "height": 18
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 80.20375061035156,
+            "y": 867.632080078125,
+            "width": 7.609382629394531,
+            "height": 18
+          },
+          {
+            "text": "All arithmetic in F5[x]",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 45.477603912353516,
+            "y": 948.167236328125,
+            "width": 131.50001525878906,
+            "height": 18
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 54.233436584472656,
+            "y": 1379.756103515625,
+            "width": 7.609378814697266,
+            "height": 18
+          },
+          {
+            "text": "1",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 105.95323181152344,
+            "y": 1379.756103515625,
+            "width": 7.609375,
+            "height": 18
+          },
+          {
+            "text": "2",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 157.67303466796875,
+            "y": 1379.756103515625,
+            "width": 7.609375,
+            "height": 18
+          },
+          {
+            "text": "3",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 209.392822265625,
+            "y": 1379.756103515625,
+            "width": 7.6093597412109375,
+            "height": 18
+          },
+          {
+            "text": "4",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 261.11260986328125,
+            "y": 1379.756103515625,
+            "width": 8,
+            "height": 18
+          },
+          {
+            "text": "0",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 41.5625,
+            "y": 1366.456787109375,
+            "width": 7.609375,
+            "height": 18
+          },
+          {
+            "text": "1",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 41.5625,
+            "y": 1331.3612060546875,
+            "width": 7.609375,
+            "height": 18
+          },
+          {
+            "text": "2",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 41.5625,
+            "y": 1296.265625,
+            "width": 7.609375,
+            "height": 18
+          },
+          {
+            "text": "3",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 41.5625,
+            "y": 1261.1700439453125,
+            "width": 7.609375,
+            "height": 18
+          },
+          {
+            "text": "4",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 41.5625,
+            "y": 1226.074462890625,
+            "width": 8,
+            "height": 18
+          },
+          {
+            "text": "x",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 270.828125,
+            "y": 1396.749755859375,
+            "width": 7.03125,
+            "height": 18
+          },
+          {
+            "text": "f(x), g(x) ∈ F5",
+            "sourceFontPx": 18,
+            "renderedFontPx": 13.3,
+            "x": 58.038124084472656,
+            "y": 1204.647705078125,
+            "width": 82.71875762939453,
+            "height": 18
+          }
+        ],
+        "controls": [
+          {
+            "type": "BUTTON",
+            "label": "Explore",
+            "x": 14,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Full atlas",
+            "x": 87,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Connections",
+            "x": 160,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Field notes",
+            "x": 233,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "SELECT",
+            "label": "Choose a connection experimentFourier & heatGraphs & homologyComplex coversDistributions & transportIdeals & zerosSymmetry & representations",
+            "x": 14,
+            "y": 130,
+            "width": 292,
+            "height": 47
+          },
+          {
+            "type": "BUTTON",
+            "label": "Enlarge readings",
+            "x": 27,
+            "y": 1064.4375,
+            "width": 119.1875,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Enlarge readings",
+            "x": 27,
+            "y": 1512.28125,
+            "width": 119.1875,
+            "height": 44
+          },
+          {
+            "type": "SELECT",
+            "label": "Choose a distinguishing caseCustomA shared linear factorCoprime: the whole ringNo field roots, yet a proper idealA repeated factor forgotten by the point setTwo zero polynomials",
+            "x": 14,
+            "y": 1616.125,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "SELECT",
+            "label": "Coefficient field Fₚp = 2p = 3p = 5p = 7p = 11",
+            "x": 14,
+            "y": 1700.96875,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "f: coefficients from constant term upward",
+            "x": 14,
+            "y": 1785.8125,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "g: coefficients from constant term upward",
+            "x": 14,
+            "y": 1870.65625,
+            "width": 292,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Save experiment record",
+            "x": 14,
+            "y": 3970.515625,
+            "width": 259.25,
+            "height": 48.390625
+          },
+          {
+            "type": "BUTTON",
+            "label": "Share experiment entry",
+            "x": 14,
+            "y": 4028.90625,
+            "width": 155.671875,
+            "height": 44
+          }
+        ],
+        "body": {
+          "fontFamily": "\"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      }
+    },
+    {
+      "id": "symmetry-representation",
+      "measurements": {
+        "viewport": {
+          "width": 320,
+          "height": 844,
+          "scrollWidth": 320,
+          "scrollHeight": 5402
+        },
+        "h1": {
+          "text": "One symmetry, three representations",
+          "x": 14,
+          "y": 200,
+          "width": 292,
+          "height": 69,
+          "fontFamily": "\"Noto Serif CJK SC\", \"Songti SC\", STSong, Georgia, serif",
+          "fontSize": "23px",
+          "lineHeight": "34.5px",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        },
+        "figures": [
+          {
+            "caption": "Vector action in the complex plane (equal scales)",
+            "x": 14,
+            "y": 612.6875,
+            "width": 292,
+            "height": 346.59375
+          },
+          {
+            "caption": "Real vectors pass through both matrix orders",
+            "x": 14,
+            "y": 975.28125,
+            "width": 292,
+            "height": 291.34375
+          }
+        ],
+        "svgTexts": [
+          {
+            "text": "-3",
+            "sourceFontPx": 18,
+            "renderedFontPx": 12.43,
+            "x": 46.09821319580078,
+            "y": 927.638427734375,
+            "width": 12.375,
+            "height": 15
+          },
+          {
+            "text": "-3",
+            "sourceFontPx": 18,
+            "renderedFontPx": 12.43,
+            "x": 32.288692474365234,
+            "y": 913.138427734375,
+            "width": 12.375003814697266,
+            "height": 15
+          },
+          {
+            "text": "-2",
+            "sourceFontPx": 18,
+            "renderedFontPx": 12.43,
+            "x": 82.00297546386719,
+            "y": 927.638427734375,
+            "width": 12.375007629394531,
+            "height": 15
+          },
+          {
+            "text": "-2",
+            "sourceFontPx": 18,
+            "renderedFontPx": 12.43,
+            "x": 32.288692474365234,
+            "y": 877.233642578125,
+            "width": 12.375003814697266,
+            "height": 15
+          },
+          {
+            "text": "-1",
+            "sourceFontPx": 18,
+            "renderedFontPx": 12.43,
+            "x": 117.90774536132812,
+            "y": 927.638427734375,
+            "width": 12.375,
+            "height": 15
+          },
+          {
+            "text": "-1",
+            "sourceFontPx": 18,
+            "renderedFontPx": 12.43,
+            "x": 32.288692474365234,
+            "y": 841.328857421875,
+            "width": 12.375003814697266,
+            "height": 15
+          },
+          {
+            "text": "1",
+            "sourceFontPx": 18,
+            "renderedFontPx": 12.43,
+            "x": 191.95162963867188,
+            "y": 927.638427734375,
+            "width": 7.9062652587890625,
+            "height": 15
+          },
+          {
+            "text": "1",
+            "sourceFontPx": 18,
+            "renderedFontPx": 12.43,
+            "x": 34.523067474365234,
+            "y": 769.5193481445312,
+            "width": 7.90625,
+            "height": 15
+          },
+          {
+            "text": "2",
+            "sourceFontPx": 18,
+            "renderedFontPx": 12.43,
+            "x": 227.85641479492188,
+            "y": 927.638427734375,
+            "width": 7.9062652587890625,
+            "height": 15
+          },
+          {
+            "text": "2",
+            "sourceFontPx": 18,
+            "renderedFontPx": 12.43,
+            "x": 34.523067474365234,
+            "y": 733.6145629882812,
+            "width": 7.90625,
+            "height": 15
+          },
+          {
+            "text": "3",
+            "sourceFontPx": 18,
+            "renderedFontPx": 12.43,
+            "x": 263.76116943359375,
+            "y": 927.638427734375,
+            "width": 7.90625,
+            "height": 15
+          },
+          {
+            "text": "3",
+            "sourceFontPx": 18,
+            "renderedFontPx": 12.43,
+            "x": 34.523067474365234,
+            "y": 697.7098388671875,
+            "width": 7.90625,
+            "height": 15
+          },
+          {
+            "text": "z",
+            "sourceFontPx": 21,
+            "renderedFontPx": 14.5,
+            "x": 202.8095245361328,
+            "y": 802.3526611328125,
+            "width": 7.6249847412109375,
+            "height": 16
+          },
+          {
+            "text": "ABz",
+            "sourceFontPx": 21,
+            "renderedFontPx": 14.5,
+            "x": 184.85714721679688,
+            "y": 754.7098388671875,
+            "width": 27.484375,
+            "height": 16
+          },
+          {
+            "text": "BAz",
+            "sourceFontPx": 21,
+            "renderedFontPx": 14.5,
+            "x": 148.95237731933594,
+            "y": 826.5193481445312,
+            "width": 27.484375,
+            "height": 16
+          },
+          {
+            "text": "Re",
+            "sourceFontPx": 21,
+            "renderedFontPx": 14.5,
+            "x": 259.0216064453125,
+            "y": 684.28125,
+            "width": 18.423583984375,
+            "height": 16
+          },
+          {
+            "text": "Im",
+            "sourceFontPx": 21,
+            "renderedFontPx": 14.5,
+            "x": 29.273067474365234,
+            "y": 684.28125,
+            "width": 18.40625,
+            "height": 16
+          },
+          {
+            "text": "ρ(A)ρ(B)",
+            "sourceFontPx": 21,
+            "renderedFontPx": 14.5,
+            "x": 129.578125,
+            "y": 1034.445556640625,
+            "width": 60.84375,
+            "height": 16
+          },
+          {
+            "text": "ρ(B)ρ(A)",
+            "sourceFontPx": 21,
+            "renderedFontPx": 14.5,
+            "x": 129.578125,
+            "y": 1148.368408203125,
+            "width": 60.84375,
+            "height": 16
+          },
+          {
+            "text": "ρ(B)",
+            "sourceFontPx": 19,
+            "renderedFontPx": 13.12,
+            "x": 97.89567565917969,
+            "y": 1054.0875244140625,
+            "width": 27.546875,
+            "height": 15
+          },
+          {
+            "text": "ρ(A)",
+            "sourceFontPx": 19,
+            "renderedFontPx": 13.12,
+            "x": 194.56524658203125,
+            "y": 1054.0875244140625,
+            "width": 27.531265258789062,
+            "height": 15
+          },
+          {
+            "text": "ρ(A)",
+            "sourceFontPx": 19,
+            "renderedFontPx": 13.12,
+            "x": 97.90348815917969,
+            "y": 1168.01025390625,
+            "width": 27.53125,
+            "height": 15
+          },
+          {
+            "text": "ρ(B)",
+            "sourceFontPx": 19,
+            "renderedFontPx": 13.12,
+            "x": 194.55743408203125,
+            "y": 1168.01025390625,
+            "width": 27.546875,
+            "height": 15
+          },
+          {
+            "text": "z",
+            "sourceFontPx": 23,
+            "renderedFontPx": 15.88,
+            "x": 59.166358947753906,
+            "y": 1073.181640625,
+            "width": 8.34375,
+            "height": 19
+          },
+          {
+            "text": "x=1",
+            "sourceFontPx": 20,
+            "renderedFontPx": 13.81,
+            "x": 49.08041763305664,
+            "y": 1095.8948974609375,
+            "width": 28.515628814697266,
+            "height": 16
+          },
+          {
+            "text": "y=0.5",
+            "sourceFontPx": 20,
+            "renderedFontPx": 13.81,
+            "x": 42.49448013305664,
+            "y": 1113.8463134765625,
+            "width": 41.687503814697266,
+            "height": 16
+          },
+          {
+            "text": "Bz",
+            "sourceFontPx": 23,
+            "renderedFontPx": 15.88,
+            "x": 150.38279724121094,
+            "y": 1073.181640625,
+            "width": 19.234375,
+            "height": 19
+          },
+          {
+            "text": "x=1",
+            "sourceFontPx": 20,
+            "renderedFontPx": 13.81,
+            "x": 145.7421875,
+            "y": 1095.8948974609375,
+            "width": 28.515625,
+            "height": 16
+          },
+          {
+            "text": "y=-0.5",
+            "sourceFontPx": 20,
+            "renderedFontPx": 13.81,
+            "x": 136.67185974121094,
+            "y": 1113.8463134765625,
+            "width": 46.65625,
+            "height": 16
+          },
+          {
+            "text": "ABz",
+            "sourceFontPx": 23,
+            "renderedFontPx": 15.88,
+            "x": 241.61489868164062,
+            "y": 1073.181640625,
+            "width": 30.09375,
+            "height": 19
+          },
+          {
+            "text": "x=0.5",
+            "sourceFontPx": 20,
+            "renderedFontPx": 13.81,
+            "x": 235.81802368164062,
+            "y": 1095.8948974609375,
+            "width": 41.6875,
+            "height": 16
+          },
+          {
+            "text": "y=1",
+            "sourceFontPx": 20,
+            "renderedFontPx": 13.81,
+            "x": 242.40394592285156,
+            "y": 1113.8463134765625,
+            "width": 28.515640258789062,
+            "height": 16
+          },
+          {
+            "text": "z",
+            "sourceFontPx": 23,
+            "renderedFontPx": 15.88,
+            "x": 59.166358947753906,
+            "y": 1187.1043701171875,
+            "width": 8.34375,
+            "height": 19
+          },
+          {
+            "text": "x=1",
+            "sourceFontPx": 20,
+            "renderedFontPx": 13.81,
+            "x": 49.08041763305664,
+            "y": 1209.817626953125,
+            "width": 28.515628814697266,
+            "height": 16
+          },
+          {
+            "text": "y=0.5",
+            "sourceFontPx": 20,
+            "renderedFontPx": 13.81,
+            "x": 42.49448013305664,
+            "y": 1227.76904296875,
+            "width": 41.687503814697266,
+            "height": 16
+          },
+          {
+            "text": "Az",
+            "sourceFontPx": 23,
+            "renderedFontPx": 15.88,
+            "x": 150.39842224121094,
+            "y": 1187.1043701171875,
+            "width": 19.203125,
+            "height": 19
+          },
+          {
+            "text": "x=-0.5",
+            "sourceFontPx": 20,
+            "renderedFontPx": 13.81,
+            "x": 136.67185974121094,
+            "y": 1209.817626953125,
+            "width": 46.65625,
+            "height": 16
+          },
+          {
+            "text": "y=1",
+            "sourceFontPx": 20,
+            "renderedFontPx": 13.81,
+            "x": 145.7421875,
+            "y": 1227.76904296875,
+            "width": 28.515625,
+            "height": 16
+          },
+          {
+            "text": "BAz",
+            "sourceFontPx": 23,
+            "renderedFontPx": 15.88,
+            "x": 241.61489868164062,
+            "y": 1187.1043701171875,
+            "width": 30.09375,
+            "height": 19
+          },
+          {
+            "text": "x=-0.5",
+            "sourceFontPx": 20,
+            "renderedFontPx": 13.81,
+            "x": 233.33363342285156,
+            "y": 1209.817626953125,
+            "width": 46.65623474121094,
+            "height": 16
+          },
+          {
+            "text": "y=-1",
+            "sourceFontPx": 20,
+            "renderedFontPx": 13.81,
+            "x": 239.91175842285156,
+            "y": 1227.76904296875,
+            "width": 33.50001525878906,
+            "height": 16
+          }
+        ],
+        "controls": [
+          {
+            "type": "BUTTON",
+            "label": "Explore",
+            "x": 14,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Full atlas",
+            "x": 87,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Connections",
+            "x": 160,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "BUTTON",
+            "label": "Field notes",
+            "x": 233,
+            "y": 64,
+            "width": 73,
+            "height": 48
+          },
+          {
+            "type": "SELECT",
+            "label": "Choose a connection experimentFourier & heatGraphs & homologyComplex coversDistributions & transportIdeals & zerosSymmetry & representations",
+            "x": 14,
+            "y": 130,
+            "width": 292,
+            "height": 47
+          },
+          {
+            "type": "SELECT",
+            "label": "Ae · zr · i·zr² · −zr³ · −i·zs · conj(z)rs · i·conj(z)r²s · −conj(z)r³s · −i·conj(z)",
+            "x": 14,
+            "y": 1315.625,
+            "width": 138.5,
+            "height": 42
+          },
+          {
+            "type": "SELECT",
+            "label": "Be · zr · i·zr² · −zr³ · −i·zs · conj(z)rs · i·conj(z)r²s · −conj(z)r³s · −i·conj(z)",
+            "x": 167.5,
+            "y": 1315.625,
+            "width": 138.5,
+            "height": 42
+          },
+          {
+            "type": "BUTTON",
+            "label": "Swap A and B",
+            "x": 14,
+            "y": 1414.625,
+            "width": 109.90625,
+            "height": 44
+          },
+          {
+            "type": "INPUT",
+            "label": "Re z 1",
+            "x": 140.90625,
+            "y": 1428.625,
+            "width": 167.09375,
+            "height": 28
+          },
+          {
+            "type": "INPUT",
+            "label": "Im z 0.5",
+            "x": 16,
+            "y": 1529.625,
+            "width": 181,
+            "height": 28
+          },
+          {
+            "type": "BUTTON",
+            "label": "Inspect z=0",
+            "x": 210,
+            "y": 1515.625,
+            "width": 96,
+            "height": 44
+          },
+          {
+            "type": "BUTTON",
+            "label": "Save experiment record",
+            "x": 14,
+            "y": 3232.640625,
+            "width": 259.25,
+            "height": 48.390625
+          },
+          {
+            "type": "BUTTON",
+            "label": "Share experiment entry",
+            "x": 14,
+            "y": 3291.03125,
+            "width": 155.671875,
+            "height": 44
+          }
+        ],
+        "body": {
+          "fontFamily": "\"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+          "fontSize": "16px",
+          "lineHeight": "normal",
+          "color": "rgb(25, 58, 57)",
+          "background": "rgba(0, 0, 0, 0)"
+        }
+      }
+    }
+  ],
+  "interactions": {
+    "time": {
+      "before": "0.12",
+      "after": "0.13",
+      "curveChanged": true
+    },
+    "savedCount": 1,
+    "savedParameters": {
+      "time": 0.13,
+      "mean": 0.2,
+      "coefficients": [
+        1,
+        0.45,
+        -0.3,
+        0.2
+      ]
+    },
+    "shareUrl": "http://127.0.0.1:38307/#view=connections&lang=zh&connection=fourier-heat",
+    "shareLabel": "链接已复制",
+    "directorySwitchUrl": "http://127.0.0.1:38307/#view=connections&lang=zh&connection=complex-covering"
+  },
+  "errors": [],
+  "finished": "2026-10-22T16:09:47.975Z",
+  "temporaryServerClosed": true,
+  "finalPatchVerification": {
+    "started": "2026-10-22T16:13:08.643Z",
+    "indexSha256": "953216d4164fa281000de240df983c97c77523c2107907ff7ddc68bf3e37ed20",
+    "scope": "Final D4 control-height CSS correction; other figures unchanged.",
+    "cases": [
+      {
+        "config": {
+          "name": "320-en",
+          "width": 320,
+          "height": 844,
+          "lang": "en"
+        },
+        "measurements": {
+          "viewport": {
+            "width": 320,
+            "height": 844,
+            "scrollWidth": 320,
+            "scrollHeight": 5436
+          },
+          "h1": {
+            "text": "One symmetry, three representations",
+            "x": 14,
+            "y": 200,
+            "width": 292,
+            "height": 69,
+            "fontFamily": "\"Noto Serif CJK SC\", \"Songti SC\", STSong, Georgia, serif",
+            "fontSize": "23px",
+            "lineHeight": "34.5px",
+            "color": "rgb(25, 58, 57)",
+            "background": "rgba(0, 0, 0, 0)"
+          },
+          "figures": [
+            {
+              "caption": "Vector action in the complex plane (equal scales)",
+              "x": 14,
+              "y": 612.6875,
+              "width": 292,
+              "height": 346.59375
+            },
+            {
+              "caption": "Real vectors pass through both matrix orders",
+              "x": 14,
+              "y": 975.28125,
+              "width": 292,
+              "height": 291.34375
+            }
+          ],
+          "svgTexts": [
+            {
+              "text": "-3",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 46.09821319580078,
+              "y": 927.638427734375,
+              "width": 12.375,
+              "height": 15
+            },
+            {
+              "text": "-3",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 32.288692474365234,
+              "y": 913.138427734375,
+              "width": 12.375003814697266,
+              "height": 15
+            },
+            {
+              "text": "-2",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 82.00297546386719,
+              "y": 927.638427734375,
+              "width": 12.375007629394531,
+              "height": 15
+            },
+            {
+              "text": "-2",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 32.288692474365234,
+              "y": 877.233642578125,
+              "width": 12.375003814697266,
+              "height": 15
+            },
+            {
+              "text": "-1",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 117.90774536132812,
+              "y": 927.638427734375,
+              "width": 12.375,
+              "height": 15
+            },
+            {
+              "text": "-1",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 32.288692474365234,
+              "y": 841.328857421875,
+              "width": 12.375003814697266,
+              "height": 15
+            },
+            {
+              "text": "1",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 191.95162963867188,
+              "y": 927.638427734375,
+              "width": 7.9062652587890625,
+              "height": 15
+            },
+            {
+              "text": "1",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 34.523067474365234,
+              "y": 769.5193481445312,
+              "width": 7.90625,
+              "height": 15
+            },
+            {
+              "text": "2",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 227.85641479492188,
+              "y": 927.638427734375,
+              "width": 7.9062652587890625,
+              "height": 15
+            },
+            {
+              "text": "2",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 34.523067474365234,
+              "y": 733.6145629882812,
+              "width": 7.90625,
+              "height": 15
+            },
+            {
+              "text": "3",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 263.76116943359375,
+              "y": 927.638427734375,
+              "width": 7.90625,
+              "height": 15
+            },
+            {
+              "text": "3",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 34.523067474365234,
+              "y": 697.7098388671875,
+              "width": 7.90625,
+              "height": 15
+            },
+            {
+              "text": "z",
+              "sourceFontPx": 21,
+              "renderedFontPx": 14.5,
+              "x": 202.8095245361328,
+              "y": 802.3526611328125,
+              "width": 7.6249847412109375,
+              "height": 16
+            },
+            {
+              "text": "ABz",
+              "sourceFontPx": 21,
+              "renderedFontPx": 14.5,
+              "x": 184.85714721679688,
+              "y": 754.7098388671875,
+              "width": 27.484375,
+              "height": 16
+            },
+            {
+              "text": "BAz",
+              "sourceFontPx": 21,
+              "renderedFontPx": 14.5,
+              "x": 148.95237731933594,
+              "y": 826.5193481445312,
+              "width": 27.484375,
+              "height": 16
+            },
+            {
+              "text": "Re",
+              "sourceFontPx": 21,
+              "renderedFontPx": 14.5,
+              "x": 259.0216064453125,
+              "y": 684.28125,
+              "width": 18.423583984375,
+              "height": 16
+            },
+            {
+              "text": "Im",
+              "sourceFontPx": 21,
+              "renderedFontPx": 14.5,
+              "x": 29.273067474365234,
+              "y": 684.28125,
+              "width": 18.40625,
+              "height": 16
+            },
+            {
+              "text": "ρ(A)ρ(B)",
+              "sourceFontPx": 21,
+              "renderedFontPx": 14.5,
+              "x": 129.578125,
+              "y": 1034.445556640625,
+              "width": 60.84375,
+              "height": 16
+            },
+            {
+              "text": "ρ(B)ρ(A)",
+              "sourceFontPx": 21,
+              "renderedFontPx": 14.5,
+              "x": 129.578125,
+              "y": 1148.368408203125,
+              "width": 60.84375,
+              "height": 16
+            },
+            {
+              "text": "ρ(B)",
+              "sourceFontPx": 19,
+              "renderedFontPx": 13.12,
+              "x": 97.89567565917969,
+              "y": 1054.0875244140625,
+              "width": 27.546875,
+              "height": 15
+            },
+            {
+              "text": "ρ(A)",
+              "sourceFontPx": 19,
+              "renderedFontPx": 13.12,
+              "x": 194.56524658203125,
+              "y": 1054.0875244140625,
+              "width": 27.531265258789062,
+              "height": 15
+            },
+            {
+              "text": "ρ(A)",
+              "sourceFontPx": 19,
+              "renderedFontPx": 13.12,
+              "x": 97.90348815917969,
+              "y": 1168.01025390625,
+              "width": 27.53125,
+              "height": 15
+            },
+            {
+              "text": "ρ(B)",
+              "sourceFontPx": 19,
+              "renderedFontPx": 13.12,
+              "x": 194.55743408203125,
+              "y": 1168.01025390625,
+              "width": 27.546875,
+              "height": 15
+            },
+            {
+              "text": "z",
+              "sourceFontPx": 23,
+              "renderedFontPx": 15.88,
+              "x": 59.166358947753906,
+              "y": 1073.181640625,
+              "width": 8.34375,
+              "height": 19
+            },
+            {
+              "text": "x=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 49.08041763305664,
+              "y": 1095.8948974609375,
+              "width": 28.515628814697266,
+              "height": 16
+            },
+            {
+              "text": "y=0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 42.49448013305664,
+              "y": 1113.8463134765625,
+              "width": 41.687503814697266,
+              "height": 16
+            },
+            {
+              "text": "Bz",
+              "sourceFontPx": 23,
+              "renderedFontPx": 15.88,
+              "x": 150.38279724121094,
+              "y": 1073.181640625,
+              "width": 19.234375,
+              "height": 19
+            },
+            {
+              "text": "x=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 145.7421875,
+              "y": 1095.8948974609375,
+              "width": 28.515625,
+              "height": 16
+            },
+            {
+              "text": "y=-0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 136.67185974121094,
+              "y": 1113.8463134765625,
+              "width": 46.65625,
+              "height": 16
+            },
+            {
+              "text": "ABz",
+              "sourceFontPx": 23,
+              "renderedFontPx": 15.88,
+              "x": 241.61489868164062,
+              "y": 1073.181640625,
+              "width": 30.09375,
+              "height": 19
+            },
+            {
+              "text": "x=0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 235.81802368164062,
+              "y": 1095.8948974609375,
+              "width": 41.6875,
+              "height": 16
+            },
+            {
+              "text": "y=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 242.40394592285156,
+              "y": 1113.8463134765625,
+              "width": 28.515640258789062,
+              "height": 16
+            },
+            {
+              "text": "z",
+              "sourceFontPx": 23,
+              "renderedFontPx": 15.88,
+              "x": 59.166358947753906,
+              "y": 1187.1043701171875,
+              "width": 8.34375,
+              "height": 19
+            },
+            {
+              "text": "x=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 49.08041763305664,
+              "y": 1209.817626953125,
+              "width": 28.515628814697266,
+              "height": 16
+            },
+            {
+              "text": "y=0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 42.49448013305664,
+              "y": 1227.76904296875,
+              "width": 41.687503814697266,
+              "height": 16
+            },
+            {
+              "text": "Az",
+              "sourceFontPx": 23,
+              "renderedFontPx": 15.88,
+              "x": 150.39842224121094,
+              "y": 1187.1043701171875,
+              "width": 19.203125,
+              "height": 19
+            },
+            {
+              "text": "x=-0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 136.67185974121094,
+              "y": 1209.817626953125,
+              "width": 46.65625,
+              "height": 16
+            },
+            {
+              "text": "y=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 145.7421875,
+              "y": 1227.76904296875,
+              "width": 28.515625,
+              "height": 16
+            },
+            {
+              "text": "BAz",
+              "sourceFontPx": 23,
+              "renderedFontPx": 15.88,
+              "x": 241.61489868164062,
+              "y": 1187.1043701171875,
+              "width": 30.09375,
+              "height": 19
+            },
+            {
+              "text": "x=-0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 233.33363342285156,
+              "y": 1209.817626953125,
+              "width": 46.65623474121094,
+              "height": 16
+            },
+            {
+              "text": "y=-1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 239.91175842285156,
+              "y": 1227.76904296875,
+              "width": 33.50001525878906,
+              "height": 16
+            }
+          ],
+          "controls": [
+            {
+              "type": "BUTTON",
+              "label": "Explore",
+              "x": 14,
+              "y": 64,
+              "width": 73,
+              "height": 48
+            },
+            {
+              "type": "BUTTON",
+              "label": "Full atlas",
+              "x": 87,
+              "y": 64,
+              "width": 73,
+              "height": 48
+            },
+            {
+              "type": "BUTTON",
+              "label": "Connections",
+              "x": 160,
+              "y": 64,
+              "width": 73,
+              "height": 48
+            },
+            {
+              "type": "BUTTON",
+              "label": "Field notes",
+              "x": 233,
+              "y": 64,
+              "width": 73,
+              "height": 48
+            },
+            {
+              "type": "SELECT",
+              "label": "Choose a connection experimentFourier & heatGraphs & homologyComplex coversDistributions & transportIdeals & zerosSymmetry & representations",
+              "x": 14,
+              "y": 130,
+              "width": 292,
+              "height": 47
+            },
+            {
+              "type": "SELECT",
+              "label": "Ae · zr · i·zr² · −zr³ · −i·zs · conj(z)rs · i·conj(z)r²s · −conj(z)r³s · −i·conj(z)",
+              "x": 14,
+              "y": 1315.625,
+              "width": 138.5,
+              "height": 44
+            },
+            {
+              "type": "SELECT",
+              "label": "Be · zr · i·zr² · −zr³ · −i·zs · conj(z)rs · i·conj(z)r²s · −conj(z)r³s · −i·conj(z)",
+              "x": 167.5,
+              "y": 1315.625,
+              "width": 138.5,
+              "height": 44
+            },
+            {
+              "type": "BUTTON",
+              "label": "Swap A and B",
+              "x": 14,
+              "y": 1432.625,
+              "width": 109.90625,
+              "height": 44
+            },
+            {
+              "type": "INPUT",
+              "label": "Re z 1",
+              "x": 140.90625,
+              "y": 1430.625,
+              "width": 167.09375,
+              "height": 44
+            },
+            {
+              "type": "INPUT",
+              "label": "Im z 0.5",
+              "x": 16,
+              "y": 1547.625,
+              "width": 181,
+              "height": 44
+            },
+            {
+              "type": "BUTTON",
+              "label": "Inspect z=0",
+              "x": 210,
+              "y": 1549.625,
+              "width": 96,
+              "height": 44
+            },
+            {
+              "type": "BUTTON",
+              "label": "Save experiment record",
+              "x": 14,
+              "y": 3266.640625,
+              "width": 259.25,
+              "height": 48.390625
+            },
+            {
+              "type": "BUTTON",
+              "label": "Share experiment entry",
+              "x": 14,
+              "y": 3325.03125,
+              "width": 155.671875,
+              "height": 44
+            }
+          ],
+          "body": {
+            "fontFamily": "\"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "color": "rgb(25, 58, 57)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        }
+      },
+      {
+        "config": {
+          "name": "320-zh",
+          "width": 320,
+          "height": 844,
+          "lang": "zh"
+        },
+        "measurements": {
+          "viewport": {
+            "width": 320,
+            "height": 844,
+            "scrollWidth": 320,
+            "scrollHeight": 4559
+          },
+          "h1": {
+            "text": "一个对称，三种表示",
+            "x": 14,
+            "y": 200,
+            "width": 292,
+            "height": 34.5,
+            "fontFamily": "\"Noto Serif CJK SC\", \"Songti SC\", STSong, Georgia, serif",
+            "fontSize": "23px",
+            "lineHeight": "34.5px",
+            "color": "rgb(25, 58, 57)",
+            "background": "rgba(0, 0, 0, 0)"
+          },
+          "figures": [
+            {
+              "caption": "复平面中的向量作用（等比例坐标）",
+              "x": 14,
+              "y": 504.421875,
+              "width": 292,
+              "height": 325.796875
+            },
+            {
+              "caption": "实向量按两种顺序经过矩阵",
+              "x": 14,
+              "y": 846.21875,
+              "width": 292,
+              "height": 270.546875
+            }
+          ],
+          "svgTexts": [
+            {
+              "text": "-3",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 46.09821319580078,
+              "y": 798.575927734375,
+              "width": 12.375,
+              "height": 15
+            },
+            {
+              "text": "-3",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 32.288692474365234,
+              "y": 784.075927734375,
+              "width": 12.375003814697266,
+              "height": 15
+            },
+            {
+              "text": "-2",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 82.00297546386719,
+              "y": 798.575927734375,
+              "width": 12.375007629394531,
+              "height": 15
+            },
+            {
+              "text": "-2",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 32.288692474365234,
+              "y": 748.171142578125,
+              "width": 12.375003814697266,
+              "height": 15
+            },
+            {
+              "text": "-1",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 117.90774536132812,
+              "y": 798.575927734375,
+              "width": 12.375,
+              "height": 15
+            },
+            {
+              "text": "-1",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 32.288692474365234,
+              "y": 712.266357421875,
+              "width": 12.375003814697266,
+              "height": 15
+            },
+            {
+              "text": "1",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 191.95162963867188,
+              "y": 798.575927734375,
+              "width": 7.9062652587890625,
+              "height": 15
+            },
+            {
+              "text": "1",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 34.523067474365234,
+              "y": 640.4568481445312,
+              "width": 7.90625,
+              "height": 15
+            },
+            {
+              "text": "2",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 227.85641479492188,
+              "y": 798.575927734375,
+              "width": 7.9062652587890625,
+              "height": 15
+            },
+            {
+              "text": "2",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 34.523067474365234,
+              "y": 604.5520629882812,
+              "width": 7.90625,
+              "height": 15
+            },
+            {
+              "text": "3",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 263.76116943359375,
+              "y": 798.575927734375,
+              "width": 7.90625,
+              "height": 15
+            },
+            {
+              "text": "3",
+              "sourceFontPx": 18,
+              "renderedFontPx": 12.43,
+              "x": 34.523067474365234,
+              "y": 568.6473388671875,
+              "width": 7.90625,
+              "height": 15
+            },
+            {
+              "text": "z",
+              "sourceFontPx": 21,
+              "renderedFontPx": 14.5,
+              "x": 202.8095245361328,
+              "y": 673.2901611328125,
+              "width": 7.6249847412109375,
+              "height": 16
+            },
+            {
+              "text": "ABz",
+              "sourceFontPx": 21,
+              "renderedFontPx": 14.5,
+              "x": 184.85714721679688,
+              "y": 625.6473388671875,
+              "width": 27.484375,
+              "height": 16
+            },
+            {
+              "text": "BAz",
+              "sourceFontPx": 21,
+              "renderedFontPx": 14.5,
+              "x": 148.95237731933594,
+              "y": 697.4568481445312,
+              "width": 27.484375,
+              "height": 16
+            },
+            {
+              "text": "Re",
+              "sourceFontPx": 21,
+              "renderedFontPx": 14.5,
+              "x": 259.0216064453125,
+              "y": 555.21875,
+              "width": 18.423583984375,
+              "height": 16
+            },
+            {
+              "text": "Im",
+              "sourceFontPx": 21,
+              "renderedFontPx": 14.5,
+              "x": 29.273067474365234,
+              "y": 555.21875,
+              "width": 18.40625,
+              "height": 16
+            },
+            {
+              "text": "ρ(A)ρ(B)",
+              "sourceFontPx": 21,
+              "renderedFontPx": 14.5,
+              "x": 129.578125,
+              "y": 884.5862426757812,
+              "width": 60.84375,
+              "height": 15.99993896484375
+            },
+            {
+              "text": "ρ(B)ρ(A)",
+              "sourceFontPx": 21,
+              "renderedFontPx": 14.5,
+              "x": 129.578125,
+              "y": 998.509033203125,
+              "width": 60.84375,
+              "height": 16
+            },
+            {
+              "text": "ρ(B)",
+              "sourceFontPx": 19,
+              "renderedFontPx": 13.12,
+              "x": 97.89567565917969,
+              "y": 904.2281494140625,
+              "width": 27.546875,
+              "height": 15
+            },
+            {
+              "text": "ρ(A)",
+              "sourceFontPx": 19,
+              "renderedFontPx": 13.12,
+              "x": 194.56524658203125,
+              "y": 904.2281494140625,
+              "width": 27.531265258789062,
+              "height": 15
+            },
+            {
+              "text": "ρ(A)",
+              "sourceFontPx": 19,
+              "renderedFontPx": 13.12,
+              "x": 97.90348815917969,
+              "y": 1018.1509399414062,
+              "width": 27.53125,
+              "height": 14.99993896484375
+            },
+            {
+              "text": "ρ(B)",
+              "sourceFontPx": 19,
+              "renderedFontPx": 13.12,
+              "x": 194.55743408203125,
+              "y": 1018.1509399414062,
+              "width": 27.546875,
+              "height": 14.99993896484375
+            },
+            {
+              "text": "z",
+              "sourceFontPx": 23,
+              "renderedFontPx": 15.88,
+              "x": 59.166358947753906,
+              "y": 923.322265625,
+              "width": 8.34375,
+              "height": 19
+            },
+            {
+              "text": "x=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 49.08041763305664,
+              "y": 946.0354614257812,
+              "width": 28.515628814697266,
+              "height": 16
+            },
+            {
+              "text": "y=0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 42.49448013305664,
+              "y": 963.9869384765625,
+              "width": 41.687503814697266,
+              "height": 16
+            },
+            {
+              "text": "Bz",
+              "sourceFontPx": 23,
+              "renderedFontPx": 15.88,
+              "x": 150.38279724121094,
+              "y": 923.322265625,
+              "width": 19.234375,
+              "height": 19
+            },
+            {
+              "text": "x=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 145.7421875,
+              "y": 946.0354614257812,
+              "width": 28.515625,
+              "height": 16
+            },
+            {
+              "text": "y=-0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 136.67185974121094,
+              "y": 963.9869384765625,
+              "width": 46.65625,
+              "height": 16
+            },
+            {
+              "text": "ABz",
+              "sourceFontPx": 23,
+              "renderedFontPx": 15.88,
+              "x": 241.61489868164062,
+              "y": 923.322265625,
+              "width": 30.09375,
+              "height": 19
+            },
+            {
+              "text": "x=0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 235.81802368164062,
+              "y": 946.0354614257812,
+              "width": 41.6875,
+              "height": 16
+            },
+            {
+              "text": "y=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 242.40394592285156,
+              "y": 963.9869384765625,
+              "width": 28.515640258789062,
+              "height": 16
+            },
+            {
+              "text": "z",
+              "sourceFontPx": 23,
+              "renderedFontPx": 15.88,
+              "x": 59.166358947753906,
+              "y": 1037.2449951171875,
+              "width": 8.34375,
+              "height": 19
+            },
+            {
+              "text": "x=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 49.08041763305664,
+              "y": 1059.958251953125,
+              "width": 28.515628814697266,
+              "height": 16
+            },
+            {
+              "text": "y=0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 42.49448013305664,
+              "y": 1077.90966796875,
+              "width": 41.687503814697266,
+              "height": 16
+            },
+            {
+              "text": "Az",
+              "sourceFontPx": 23,
+              "renderedFontPx": 15.88,
+              "x": 150.39842224121094,
+              "y": 1037.2449951171875,
+              "width": 19.203125,
+              "height": 19
+            },
+            {
+              "text": "x=-0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 136.67185974121094,
+              "y": 1059.958251953125,
+              "width": 46.65625,
+              "height": 16
+            },
+            {
+              "text": "y=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 145.7421875,
+              "y": 1077.90966796875,
+              "width": 28.515625,
+              "height": 16
+            },
+            {
+              "text": "BAz",
+              "sourceFontPx": 23,
+              "renderedFontPx": 15.88,
+              "x": 241.61489868164062,
+              "y": 1037.2449951171875,
+              "width": 30.09375,
+              "height": 19
+            },
+            {
+              "text": "x=-0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 233.33363342285156,
+              "y": 1059.958251953125,
+              "width": 46.65623474121094,
+              "height": 16
+            },
+            {
+              "text": "y=-1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 13.81,
+              "x": 239.91175842285156,
+              "y": 1077.90966796875,
+              "width": 33.50001525878906,
+              "height": 16
+            }
+          ],
+          "controls": [
+            {
+              "type": "BUTTON",
+              "label": "探索群岛",
+              "x": 14,
+              "y": 64,
+              "width": 73,
+              "height": 48
+            },
+            {
+              "type": "BUTTON",
+              "label": "全部图谱",
+              "x": 87,
+              "y": 64,
+              "width": 73,
+              "height": 48
+            },
+            {
+              "type": "BUTTON",
+              "label": "联岛实验",
+              "x": 160,
+              "y": 64,
+              "width": 73,
+              "height": 48
+            },
+            {
+              "type": "BUTTON",
+              "label": "我的航记",
+              "x": 233,
+              "y": 64,
+              "width": 73,
+              "height": 48
+            },
+            {
+              "type": "SELECT",
+              "label": "选择联岛实验傅里叶与热流图与同调复数与覆盖分布与输运理想与零点对称与表示",
+              "x": 14,
+              "y": 130,
+              "width": 292,
+              "height": 47
+            },
+            {
+              "type": "SELECT",
+              "label": "Ae · zr · i·zr² · −zr³ · −i·zs · conj(z)rs · i·conj(z)r²s · −conj(z)r³s · −i·conj(z)",
+              "x": 14,
+              "y": 1165.765625,
+              "width": 138.5,
+              "height": 44
+            },
+            {
+              "type": "SELECT",
+              "label": "Be · zr · i·zr² · −zr³ · −i·zs · conj(z)rs · i·conj(z)r²s · −conj(z)r³s · −i·conj(z)",
+              "x": 167.5,
+              "y": 1165.765625,
+              "width": 138.5,
+              "height": 44
+            },
+            {
+              "type": "BUTTON",
+              "label": "交换 A 与 B",
+              "x": 14,
+              "y": 1282.765625,
+              "width": 92.1875,
+              "height": 44
+            },
+            {
+              "type": "INPUT",
+              "label": "Re z 1",
+              "x": 123.1875,
+              "y": 1280.765625,
+              "width": 184.8125,
+              "height": 44
+            },
+            {
+              "type": "INPUT",
+              "label": "Im z 0.5",
+              "x": 16,
+              "y": 1397.765625,
+              "width": 199.46875,
+              "height": 44
+            },
+            {
+              "type": "BUTTON",
+              "label": "观察 z=0",
+              "x": 228.46875,
+              "y": 1399.765625,
+              "width": 77.53125,
+              "height": 44
+            },
+            {
+              "type": "BUTTON",
+              "label": "保存实验记录",
+              "x": 14,
+              "y": 2869.375,
+              "width": 171.015625,
+              "height": 48.390625
+            },
+            {
+              "type": "BUTTON",
+              "label": "分享实验入口",
+              "x": 205.015625,
+              "y": 2871.5625,
+              "width": 96.015625,
+              "height": 44
+            }
+          ],
+          "body": {
+            "fontFamily": "\"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "color": "rgb(25, 58, 57)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        }
+      },
+      {
+        "config": {
+          "name": "desktop-en",
+          "width": 1506,
+          "height": 1045,
+          "lang": "en"
+        },
+        "measurements": {
+          "viewport": {
+            "width": 1506,
+            "height": 1045,
+            "scrollWidth": 1506,
+            "scrollHeight": 3093
+          },
+          "h1": {
+            "text": "One symmetry, three representations",
+            "x": 262,
+            "y": 110,
+            "width": 1212,
+            "height": 44.796875,
+            "fontFamily": "\"Noto Serif CJK SC\", \"Songti SC\", STSong, Georgia, serif",
+            "fontSize": "32px",
+            "lineHeight": "44.8px",
+            "color": "rgb(25, 58, 57)",
+            "background": "rgba(0, 0, 0, 0)"
+          },
+          "figures": [
+            {
+              "caption": "Vector action in the complex plane (equal scales)",
+              "x": 262,
+              "y": 386.359375,
+              "width": 596,
+              "height": 634.390625
+            },
+            {
+              "caption": "Real vectors pass through both matrix orders",
+              "x": 878,
+              "y": 386.359375,
+              "width": 596,
+              "height": 521.234375
+            }
+          ],
+          "svgTexts": [
+            {
+              "text": "-3",
+              "sourceFontPx": 18,
+              "renderedFontPx": 25.46,
+              "x": 326.6839294433594,
+              "y": 957.5642700195312,
+              "width": 25.375,
+              "height": 30
+            },
+            {
+              "text": "-3",
+              "sourceFontPx": 18,
+              "renderedFontPx": 25.46,
+              "x": 298.3982238769531,
+              "y": 927.8642578125,
+              "width": 25.375,
+              "height": 30
+            },
+            {
+              "text": "-2",
+              "sourceFontPx": 18,
+              "renderedFontPx": 25.46,
+              "x": 400.2267761230469,
+              "y": 957.5642700195312,
+              "width": 25.375,
+              "height": 30
+            },
+            {
+              "text": "-2",
+              "sourceFontPx": 18,
+              "renderedFontPx": 25.46,
+              "x": 298.3982238769531,
+              "y": 854.3214111328125,
+              "width": 25.375,
+              "height": 30
+            },
+            {
+              "text": "-1",
+              "sourceFontPx": 18,
+              "renderedFontPx": 25.46,
+              "x": 473.7696533203125,
+              "y": 957.5642700195312,
+              "width": 25.375,
+              "height": 30
+            },
+            {
+              "text": "-1",
+              "sourceFontPx": 18,
+              "renderedFontPx": 25.46,
+              "x": 298.3982238769531,
+              "y": 780.778564453125,
+              "width": 25.375,
+              "height": 30
+            },
+            {
+              "text": "1",
+              "sourceFontPx": 18,
+              "renderedFontPx": 25.46,
+              "x": 625.4490966796875,
+              "y": 957.5642700195312,
+              "width": 16.1875,
+              "height": 30
+            },
+            {
+              "text": "1",
+              "sourceFontPx": 18,
+              "renderedFontPx": 25.46,
+              "x": 302.9919738769531,
+              "y": 633.69287109375,
+              "width": 16.1875,
+              "height": 30
+            },
+            {
+              "text": "2",
+              "sourceFontPx": 18,
+              "renderedFontPx": 25.46,
+              "x": 698.991943359375,
+              "y": 957.5642700195312,
+              "width": 16.1875,
+              "height": 30
+            },
+            {
+              "text": "2",
+              "sourceFontPx": 18,
+              "renderedFontPx": 25.46,
+              "x": 302.9919738769531,
+              "y": 560.1500244140625,
+              "width": 16.1875,
+              "height": 30
+            },
+            {
+              "text": "3",
+              "sourceFontPx": 18,
+              "renderedFontPx": 25.46,
+              "x": 772.5347900390625,
+              "y": 957.5642700195312,
+              "width": 16.1875,
+              "height": 30
+            },
+            {
+              "text": "3",
+              "sourceFontPx": 18,
+              "renderedFontPx": 25.46,
+              "x": 302.9919738769531,
+              "y": 486.6071472167969,
+              "width": 16.1875,
+              "height": 29.999969482421875
+            },
+            {
+              "text": "z",
+              "sourceFontPx": 21,
+              "renderedFontPx": 29.7,
+              "x": 647.6856689453125,
+              "y": 698.9928588867188,
+              "width": 15.59375,
+              "height": 35
+            },
+            {
+              "text": "ABz",
+              "sourceFontPx": 21,
+              "renderedFontPx": 29.7,
+              "x": 610.914306640625,
+              "y": 601.4071044921875,
+              "width": 56.265625,
+              "height": 35
+            },
+            {
+              "text": "BAz",
+              "sourceFontPx": 21,
+              "renderedFontPx": 29.7,
+              "x": 537.3714599609375,
+              "y": 748.4928588867188,
+              "width": 56.265625,
+              "height": 35
+            },
+            {
+              "text": "Re",
+              "sourceFontPx": 21,
+              "renderedFontPx": 29.7,
+              "x": 762.865966796875,
+              "y": 457.1499938964844,
+              "width": 37.56256103515625,
+              "height": 35
+            },
+            {
+              "text": "Im",
+              "sourceFontPx": 21,
+              "renderedFontPx": 29.7,
+              "x": 292.2419738769531,
+              "y": 457.1499938964844,
+              "width": 37.6875,
+              "height": 35
+            },
+            {
+              "text": "ρ(A)ρ(B)",
+              "sourceFontPx": 21,
+              "renderedFontPx": 29.7,
+              "x": 1113.6484375,
+              "y": 431.69189453125,
+              "width": 124.703125,
+              "height": 35
+            },
+            {
+              "text": "ρ(B)ρ(A)",
+              "sourceFontPx": 21,
+              "renderedFontPx": 29.7,
+              "x": 1113.6484375,
+              "y": 665.0425415039062,
+              "width": 124.703125,
+              "height": 35
+            },
+            {
+              "text": "ρ(B)",
+              "sourceFontPx": 19,
+              "renderedFontPx": 26.87,
+              "x": 1048.7840576171875,
+              "y": 472.8765563964844,
+              "width": 56.4373779296875,
+              "height": 31
+            },
+            {
+              "text": "ρ(A)",
+              "sourceFontPx": 19,
+              "renderedFontPx": 26.87,
+              "x": 1246.8018798828125,
+              "y": 472.8765563964844,
+              "width": 56.390625,
+              "height": 31
+            },
+            {
+              "text": "ρ(A)",
+              "sourceFontPx": 19,
+              "renderedFontPx": 26.87,
+              "x": 1048.807373046875,
+              "y": 706.2271728515625,
+              "width": 56.390625,
+              "height": 31
+            },
+            {
+              "text": "ρ(B)",
+              "sourceFontPx": 19,
+              "renderedFontPx": 26.87,
+              "x": 1246.7784423828125,
+              "y": 706.2271728515625,
+              "width": 56.4375,
+              "height": 31
+            },
+            {
+              "text": "z",
+              "sourceFontPx": 23,
+              "renderedFontPx": 32.53,
+              "x": 969.4664306640625,
+              "y": 513.1324462890625,
+              "width": 17.078125,
+              "height": 38
+            },
+            {
+              "text": "x=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 28.28,
+              "x": 948.8023681640625,
+              "y": 559.559814453125,
+              "width": 58.40625,
+              "height": 33
+            },
+            {
+              "text": "y=0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 28.28,
+              "x": 935.3179931640625,
+              "y": 596.3302612304688,
+              "width": 85.375,
+              "height": 32.99993896484375
+            },
+            {
+              "text": "Bz",
+              "sourceFontPx": 23,
+              "renderedFontPx": 32.53,
+              "x": 1156.3125,
+              "y": 513.1324462890625,
+              "width": 39.375,
+              "height": 38
+            },
+            {
+              "text": "x=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 28.28,
+              "x": 1146.796875,
+              "y": 559.559814453125,
+              "width": 58.40625,
+              "height": 33
+            },
+            {
+              "text": "y=-0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 28.28,
+              "x": 1128.2109375,
+              "y": 596.3302612304688,
+              "width": 95.578125,
+              "height": 32.99993896484375
+            },
+            {
+              "text": "ABz",
+              "sourceFontPx": 23,
+              "renderedFontPx": 32.53,
+              "x": 1343.1820068359375,
+              "y": 513.1324462890625,
+              "width": 61.6248779296875,
+              "height": 38
+            },
+            {
+              "text": "x=0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 28.28,
+              "x": 1331.3070068359375,
+              "y": 559.559814453125,
+              "width": 85.3748779296875,
+              "height": 33
+            },
+            {
+              "text": "y=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 28.28,
+              "x": 1344.7913818359375,
+              "y": 596.3302612304688,
+              "width": 58.4061279296875,
+              "height": 32.99993896484375
+            },
+            {
+              "text": "z",
+              "sourceFontPx": 23,
+              "renderedFontPx": 32.53,
+              "x": 969.4664306640625,
+              "y": 746.4830322265625,
+              "width": 17.078125,
+              "height": 38
+            },
+            {
+              "text": "x=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 28.28,
+              "x": 948.8023681640625,
+              "y": 792.9105224609375,
+              "width": 58.40625,
+              "height": 33
+            },
+            {
+              "text": "y=0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 28.28,
+              "x": 935.3179931640625,
+              "y": 829.6808471679688,
+              "width": 85.375,
+              "height": 33
+            },
+            {
+              "text": "Az",
+              "sourceFontPx": 23,
+              "renderedFontPx": 32.53,
+              "x": 1156.34375,
+              "y": 746.4830322265625,
+              "width": 39.3125,
+              "height": 38
+            },
+            {
+              "text": "x=-0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 28.28,
+              "x": 1128.2109375,
+              "y": 792.9105224609375,
+              "width": 95.578125,
+              "height": 33
+            },
+            {
+              "text": "y=1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 28.28,
+              "x": 1146.796875,
+              "y": 829.6808471679688,
+              "width": 58.40625,
+              "height": 33
+            },
+            {
+              "text": "BAz",
+              "sourceFontPx": 23,
+              "renderedFontPx": 32.53,
+              "x": 1343.1820068359375,
+              "y": 746.4830322265625,
+              "width": 61.6248779296875,
+              "height": 38
+            },
+            {
+              "text": "x=-0.5",
+              "sourceFontPx": 20,
+              "renderedFontPx": 28.28,
+              "x": 1326.2054443359375,
+              "y": 792.9105224609375,
+              "width": 95.5780029296875,
+              "height": 33
+            },
+            {
+              "text": "y=-1",
+              "sourceFontPx": 20,
+              "renderedFontPx": 28.28,
+              "x": 1339.6898193359375,
+              "y": 829.6808471679688,
+              "width": 68.6092529296875,
+              "height": 33
+            }
+          ],
+          "controls": [
+            {
+              "type": "BUTTON",
+              "label": "Explore",
+              "x": 515.875,
+              "y": 0,
+              "width": 81.125,
+              "height": 77
+            },
+            {
+              "type": "BUTTON",
+              "label": "Full atlas",
+              "x": 635,
+              "y": 0,
+              "width": 92.609375,
+              "height": 77
+            },
+            {
+              "type": "BUTTON",
+              "label": "Connections",
+              "x": 765.609375,
+              "y": 0,
+              "width": 120.046875,
+              "height": 77
+            },
+            {
+              "type": "BUTTON",
+              "label": "Field notes",
+              "x": 923.65625,
+              "y": 0,
+              "width": 107.09375,
+              "height": 77
+            },
+            {
+              "type": "SELECT",
+              "label": "Ae · zr · i·zr² · −zr³ · −i·zs · conj(z)rs · i·conj(z)r²s · −conj(z)r³s · −i·conj(z)",
+              "x": 262,
+              "y": 1100.75,
+              "width": 232.765625,
+              "height": 44
+            },
+            {
+              "type": "SELECT",
+              "label": "Be · zr · i·zr² · −zr³ · −i·zs · conj(z)rs · i·conj(z)r²s · −conj(z)r³s · −i·conj(z)",
+              "x": 509.765625,
+              "y": 1100.75,
+              "width": 232.78125,
+              "height": 44
+            },
+            {
+              "type": "BUTTON",
+              "label": "Swap A and B",
+              "x": 757.546875,
+              "y": 1100.75,
+              "width": 109.90625,
+              "height": 44
+            },
+            {
+              "type": "INPUT",
+              "label": "Re z 1",
+              "x": 884.453125,
+              "y": 1098.75,
+              "width": 232.765625,
+              "height": 44
+            },
+            {
+              "type": "INPUT",
+              "label": "Im z 0.5",
+              "x": 1132.21875,
+              "y": 1098.75,
+              "width": 232.78125,
+              "height": 44
+            },
+            {
+              "type": "BUTTON",
+              "label": "Inspect z=0",
+              "x": 1378,
+              "y": 1100.75,
+              "width": 96,
+              "height": 44
+            },
+            {
+              "type": "BUTTON",
+              "label": "Save experiment record",
+              "x": 262,
+              "y": 2022.359375,
+              "width": 259.25,
+              "height": 48.390625
+            },
+            {
+              "type": "BUTTON",
+              "label": "Share experiment entry",
+              "x": 547.25,
+              "y": 2024.546875,
+              "width": 155.671875,
+              "height": 44
+            }
+          ],
+          "body": {
+            "fontFamily": "\"Noto Sans CJK SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+            "fontSize": "16px",
+            "lineHeight": "normal",
+            "color": "rgb(25, 58, 57)",
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        }
+      }
+    ],
+    "errors": [],
+    "finished": "2026-10-22T16:13:21.719Z",
+    "temporaryServerClosed": true
+  }
+}

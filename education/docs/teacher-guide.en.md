@@ -174,6 +174,23 @@ Allow approximately 90 minutes per meeting plus source reading. Assign different
 
 The deliverable is a source-grounded reading note: exact claim, assumptions, construction, proof locator, unresolved step and scope of the student's own check. It may record a failed attempt or a missing prerequisite. Do not replace an incomplete proof with a successful elementary demonstration and report the research theorem as completed.
 
+## Six connection experiments: make a relationship operable
+
+Use the version with the “Connections” entry; the earlier single-island version does not include these scenes. Links below retain the current Sites entry and its creator-only access restriction. For a public deployment, replace only the site-root URL and retain the hash. Models, source locators and actual reading scope are recorded in the [connection curriculum](connection-curriculum.md).
+
+Allow roughly 20–30 minutes per activity, grouping them according to prerequisites. Each shares parameters across representations of one object, or exposes a precise construction's input and output. These teaching relations do not automatically become core edges or formal types.
+
+| Activity | Operation and checkable artifact | Counterexample or boundary |
+|---|---|---|
+| [One spectrum, evolving heat](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=connections&connection=fourier-heat&lang=en) | Change the mean and four sine coefficients, evolve time, verify the PDE term by term, then derive the energy by orthogonality. | With mean 0.2 the limiting energy is 0.08π, not zero; this periodic heat model is not the wave equation. |
+| [From graph cycles to homology](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=connections&connection=graph-homology&lang=en) | Choose K₄ edges, faces and a 1-chain; check ∂₁z, ∂₁∂₂ and the two matrix ranks. | The four face boundaries are dependent; all faces leave β₂=1 because no 3-simplex is added. |
+| [Complex powers and lifted paths](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=connections&connection=complex-covering&lang=en) | Set n, starting index k, winding and progress; project the lift by its nth power and record the final fiber label. | A one-turn base loop need not lift to a loop; resetting a principal angle can destroy continuity. |
+| [Transport cost and CDF area](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=connections&connection=transport-cdf&lang=en) | Sum CDF-gap rectangle areas and compare with the monotone transport cost of the same pair of measures. | At p=0.5, b=0.5, δ=0.5 the means agree but W₁=0.75; this is not a high-dimensional CDF formula. |
+| [Bézout coefficients and common zeros](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=connections&connection=ideal-zeros&lang=en) | Enter polynomials over a selected prime field; check uf+vg=d, divisibility by d, and every field-valued root. | x²+1 over F₃ has no root but is not a unit; the all-zero pair has d=0, which is not monic. |
+| [One symmetry, three representations](https://mathcups-mathematical-islands.ljie5996.chatgpt.site/#view=connections&connection=symmetry-representation&lang=en) | Select two D₄ elements and a test vector; compare complex action, real matrix composition and vector output. | Both orders fix zero without commuting; at 1 they give i and −i. |
+
+Ask for four artifacts: a parameter configuration, corresponding values or algebraic objects on both sides, a false claim with a counterexample, and an argument with explicit assumptions. Separate agreement of two computations from justification that a cited theorem applies. Neither is kernel certification. Further reading can ask which new tools are needed when the coefficient field, dimension, boundary conditions or base space changes.
+
 ## Propose a new themed island without changing the core
 
 Start from a mathematical object and a genuine question. Examples of worthwhile gaps include an explicit resampling process, a polynomial-partitioning parameter space, a Chow-ring calculation with a fully specified matroid, or a finite instance of a sum-check transcript. A decorative graph with the new topic's name is insufficient.

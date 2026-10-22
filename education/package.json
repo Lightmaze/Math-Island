@@ -1,6 +1,6 @@
 {
   "name": "mathcups-island-education",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,6 +12,7 @@
     "verify:core": "python scripts/verify_core.py --baseline docs/publication-base.json",
     "test:browser": "node scripts/browser-audit.mjs",
     "test:a11y": "node scripts/accessibility-audit.mjs",
+    "test:connections:browser": "node scripts/connections-audit.mjs",
     "verify:publication": "python scripts/verify_core.py --baseline docs/publication-base.json --require-git",
     "verify:historical-core": "python scripts/verify_core.py --baseline docs/core-baseline.json"
   },
